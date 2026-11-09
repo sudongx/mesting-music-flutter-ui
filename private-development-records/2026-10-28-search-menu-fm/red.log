@@ -1,0 +1,105 @@
+00:00 +0: loading D:/AnLi/test/search_menu_fm_regression_test.dart
+00:00 +0: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: menu connector surfaces leave the scene after separation and rejoin on reverse
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: no matching candidates
+  Actual: _WidgetPredicateWidgetFinder:<Found 2 widgets with widget matching predicate: [
+            GlassContainer-[<'beta105-liquid-source'>](dependencies: [InheritedLiquidGlass]),
+            GlassContainer-[<'beta105-liquid-neck'>](dependencies: [InheritedLiquidGlass]),
+          ]>
+   Which: means some were found but none were expected
+A subpixel connector still influences the blended SDF and leaves a dot/bump.
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/search_menu_fm_regression_test.dart:126:5)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/search_menu_fm_regression_test.dart line 126
+The test description was:
+  menu connector surfaces leave the scene after separation and rejoin on reverse
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:01 +0 -1: menu connector surfaces leave the scene after separation and rejoin on reverse [E]
+  Test failed. See exception logs above.
+  The test description was: menu connector surfaces leave the scene after separation and rejoin on reverse
+  
+00:01 +0 -1: FM waits for its initial viewport batch before showing any songs
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: no matching candidates
+  Actual: _TypeWidgetFinder:<Found 5 widgets with type "EditorialTrackRow": [
+            EditorialTrackRow(dependencies: [InheritedCupertinoTheme, _InheritedTheme,
+_LocalizationsScope-[GlobalKey#535d3], _UncontrolledProviderScope], state: _ConsumerState#160b0),
+            EditorialTrackRow(dependencies: [InheritedCupertinoTheme, _InheritedTheme,
+_LocalizationsScope-[GlobalKey#535d3], _UncontrolledProviderScope], state: _ConsumerState#34955),
+            EditorialTrackRow(dependencies: [InheritedCupertinoTheme, _InheritedTheme,
+_LocalizationsScope-[GlobalKey#535d3], _UncontrolledProviderScope], state: _ConsumerState#d6cce),
+            EditorialTrackRow(dependencies: [InheritedCupertinoTheme, _InheritedTheme,
+_LocalizationsScope-[GlobalKey#535d3], _UncontrolledProviderScope], state: _ConsumerState#2ecb4),
+            EditorialTrackRow(dependencies: [InheritedCupertinoTheme, _InheritedTheme,
+_LocalizationsScope-[GlobalKey#535d3], _UncontrolledProviderScope], state: _ConsumerState#64878),
+          ]>
+   Which: means some were found but none were expected
+The cached first five must not appear while the rest of the first screen is pending.
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/search_menu_fm_regression_test.dart:142:5)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/search_menu_fm_regression_test.dart line 142
+The test description was:
+  FM waits for its initial viewport batch before showing any songs
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +0 -2: FM waits for its initial viewport batch before showing any songs [E]
+  Test failed. See exception logs above.
+  The test description was: FM waits for its initial viewport batch before showing any songs
+  
+00:02 +0 -2: FM loading indicator has no filled panel behind it
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: no matching candidates
+  Actual: _AncestorWidgetFinder:<Found 1 widget with type "PlatformPanel" that are ancestors of
+widget with type "MestingLoadingIndicator": [
+            PlatformPanel(dependencies: [InheritedCupertinoTheme, _InheritedTheme,
+_LocalizationsScope-[GlobalKey#1b543]]),
+          ]>
+   Which: means one was found but none were expected
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/search_menu_fm_regression_test.dart:158:5)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/search_menu_fm_regression_test.dart line 158
+The test description was:
+  FM loading indicator has no filled panel behind it
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +0 -3: FM loading indicator has no filled panel behind it [E]
+  Test failed. See exception logs above.
+  The test description was: FM loading indicator has no filled panel behind it
+  
+00:02 +0 -3: (tearDownAll)
+00:02 +0 -3: Some tests failed.

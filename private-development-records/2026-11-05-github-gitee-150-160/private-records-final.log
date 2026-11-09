@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\AnLi\.codex-artifacts\2026-11-05-github-gitee-150-160\private_records160.py", line 58, in <module>
+    commit,tree=commit_tree(entries,'private-development-records',parent,'backup: private handoff and filtered development records through 1.0.60')
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AnLi\.codex-artifacts\2026-11-05-github-gitee-150-160\common160.py", line 68, in commit_tree
+    for name in entries:safe(name)
+                        ~~~~^^^^^^
+  File "D:\AnLi\.codex-artifacts\2026-11-05-github-gitee-150-160\common160.py", line 34, in safe
+    assert not {part.lower() for part in p.parts}.intersection({'.git','.codex-artifacts','.codex-backups','.codex-temp','.dart_tool','.gradle','.kotlin','build','node_modules','.firecrawl'}),name
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: private-development-records/2026-10-27-v1.0.1/.firecrawl/apple-buttons.md

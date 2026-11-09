@@ -1,0 +1,100 @@
+{
+  "purpose": "Offline fictional AWSV4Auth path differential vectors",
+  "source": "Official19 AWSV4Auth / BDAuthHelper static REA observations",
+  "networkRequests": 0,
+  "scopeLimitation": "Empty region retained for a one-variable path comparison; not proved live scope.",
+  "vectors": [
+    {
+      "fictionalOnly": true,
+      "method": "GET",
+      "path": "/top/v1",
+      "query": {
+        "Action": "ApplyImageUpload",
+        "Version": "2018-08-01",
+        "ServiceId": "fixture-service-178",
+        "FileType": "image",
+        "UploadNum": "1"
+      },
+      "body": "",
+      "accessKey": "AKTEST178",
+      "secretKey": "synthetic-secret-key-178",
+      "sessionToken": "[REDACTED]",
+      "timeUtc": "20261108T040207Z",
+      "region": "",
+      "service": "imagex",
+      "canonicalRequest": "GET\n/top/v1\nAction=ApplyImageUpload&FileType=image&ServiceId=fixture-service-178&UploadNum=1&Version=2018-08-01\nx-amz-date:20261108T040207Z\nx-amz-security-token:fixture-session-178\n\nx-amz-date;x-amz-security-token\ne3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonicalSha256": "7904c3274fdb40c482fbbb6e88acd04ab470f49336edc6d7bd7fe9aaf8dc971d",
+      "stringToSign": "AWS4-HMAC-SHA256\n20261108T040207Z\n20261108//imagex/aws4_request\n7904c3274fdb40c482fbbb6e88acd04ab470f49336edc6d7bd7fe9aaf8dc971d",
+      "signature": "723ca6684f45e1b745ea452a65c49218dc72709d066ab6b558babf82a886dd05",
+      "authorization": "[REDACTED]"
+    },
+    {
+      "fictionalOnly": true,
+      "method": "POST",
+      "path": "/top/v1",
+      "query": {
+        "Action": "CommitImageUpload",
+        "Version": "2018-08-01",
+        "ServiceId": "fixture-service-178"
+      },
+      "body": "{\"SessionKey\":\"fixture-session-key-178\",\"SuccessActionStatus\":\"200\"}",
+      "accessKey": "AKTEST178",
+      "secretKey": "synthetic-secret-key-178",
+      "sessionToken": "[REDACTED]",
+      "timeUtc": "20261108T040207Z",
+      "region": "",
+      "service": "imagex",
+      "canonicalRequest": "POST\n/top/v1\nAction=CommitImageUpload&ServiceId=fixture-service-178&Version=2018-08-01\nx-amz-date:20261108T040207Z\nx-amz-security-token:fixture-session-178\n\nx-amz-date;x-amz-security-token\n7eff3830937a96c094bf523326cf4cca793b87b0f25ad8f2b79e8942fadc196b",
+      "canonicalSha256": "a483ef95212a41b35b9980a55922ad13673a4d92bdb9f92d11f0dadde9953599",
+      "stringToSign": "AWS4-HMAC-SHA256\n20261108T040207Z\n20261108//imagex/aws4_request\na483ef95212a41b35b9980a55922ad13673a4d92bdb9f92d11f0dadde9953599",
+      "signature": "a684304deeabd451fd7af2460bc6abcb9e6cfb068fa2cd819cda4507f9868cc3",
+      "authorization": "[REDACTED]"
+    },
+    {
+      "fictionalOnly": true,
+      "method": "GET",
+      "path": "/",
+      "query": {
+        "Action": "ApplyImageUpload",
+        "Version": "2018-08-01",
+        "ServiceId": "fixture-service-178",
+        "FileType": "image",
+        "UploadNum": "1"
+      },
+      "body": "",
+      "accessKey": "AKTEST178",
+      "secretKey": "synthetic-secret-key-178",
+      "sessionToken": "[REDACTED]",
+      "timeUtc": "20261108T040207Z",
+      "region": "",
+      "service": "imagex",
+      "canonicalRequest": "GET\n/\nAction=ApplyImageUpload&FileType=image&ServiceId=fixture-service-178&UploadNum=1&Version=2018-08-01\nx-amz-date:20261108T040207Z\nx-amz-security-token:fixture-session-178\n\nx-amz-date;x-amz-security-token\ne3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "canonicalSha256": "13b7ceed47a7e6a8715b7e1953707d48fedd6bc776a2e6881ab5b8be6ea7edd8",
+      "stringToSign": "AWS4-HMAC-SHA256\n20261108T040207Z\n20261108//imagex/aws4_request\n13b7ceed47a7e6a8715b7e1953707d48fedd6bc776a2e6881ab5b8be6ea7edd8",
+      "signature": "0948753b6c1951e48925ec794ef243c72388bfbf05ab32e431a3026d4476655f",
+      "authorization": "[REDACTED]"
+    },
+    {
+      "fictionalOnly": true,
+      "method": "POST",
+      "path": "/",
+      "query": {
+        "Action": "CommitImageUpload",
+        "Version": "2018-08-01",
+        "ServiceId": "fixture-service-178"
+      },
+      "body": "{\"SessionKey\":\"fixture-session-key-178\",\"SuccessActionStatus\":\"200\"}",
+      "accessKey": "AKTEST178",
+      "secretKey": "synthetic-secret-key-178",
+      "sessionToken": "[REDACTED]",
+      "timeUtc": "20261108T040207Z",
+      "region": "",
+      "service": "imagex",
+      "canonicalRequest": "POST\n/\nAction=CommitImageUpload&ServiceId=fixture-service-178&Version=2018-08-01\nx-amz-date:20261108T040207Z\nx-amz-security-token:fixture-session-178\n\nx-amz-date;x-amz-security-token\n7eff3830937a96c094bf523326cf4cca793b87b0f25ad8f2b79e8942fadc196b",
+      "canonicalSha256": "c19f72ef0ddf8bc2439bfc400edc8723f8c6d4cd103a188fb52fd14ce0fa65cb",
+      "stringToSign": "AWS4-HMAC-SHA256\n20261108T040207Z\n20261108//imagex/aws4_request\nc19f72ef0ddf8bc2439bfc400edc8723f8c6d4cd103a188fb52fd14ce0fa65cb",
+      "signature": "d037226a711efb1c52ca5fc83c61e3f00c5b086666ece8a0f199036eadce5271",
+      "authorization": "[REDACTED]"
+    }
+  ]
+}

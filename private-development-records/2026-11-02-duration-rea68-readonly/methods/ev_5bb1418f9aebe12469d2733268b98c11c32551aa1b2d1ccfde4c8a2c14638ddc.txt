@@ -1,0 +1,6 @@
+    public static void p(String str, String str2, JSONObject jSONObject) {
+        IStatistic iStatistic = (IStatistic) ServiceFacade.get(IStatistic.class);
+        if (iStatistic != null) {
+            iStatistic.logJSONRealTime(str, str2, jSONObject);
+        }
+    }

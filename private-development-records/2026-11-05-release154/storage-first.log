@@ -1,0 +1,97 @@
+00:00 +0: loading D:/AnLi/test/release_154_storage_test.dart
+00:00 +0: D:/AnLi/test/release_154_storage_test.dart: timed-out callers reuse one native read and receive its late completion
+00:00 +1: D:/AnLi/test/release_154_storage_test.dart: timed-out callers reuse one native read and receive its late completion
+00:00 +2: D:/AnLi/test/release_152_accounts_test.dart: ambiguous migration write never deletes the old login
+00:00 +2 -1: D:/AnLi/test/release_154_storage_test.dart: failed Kugou cold restore -> verified login -> new-store restore, without touching old bytes
+00:00 +2 -1: D:/AnLi/test/release_152_accounts_test.dart: ambiguous migration write never deletes the old login [E]
+  Expected: throws <Instance of 'StateError'>
+    Actual: <Instance of 'Future<PlatformSession?>'>
+     Which: threw CredentialStoreException:<本机登录资料暂时无法保存，请重试或查看连接诊断；原资料已保留>
+            stack package:mesting_music/core/security/credential_failure.dart 68:5  credentialStep
+                  ===== asynchronous gap ===========================
+                  package:matcher                                                   expectLater
+                  package:flutter_test/src/widget_tester.dart 507:8                 expectLater
+                  test\release_152_accounts_test.dart 110:11                        main.<fn>
+                  
+            which is not an instance of 'StateError'
+  
+  package:matcher                                    expectLater
+  package:flutter_test/src/widget_tester.dart 507:8  expectLater
+  test\release_152_accounts_test.dart 110:11         main.<fn>
+  
+00:00 +3 -1: D:/AnLi/test/release_154_storage_test.dart: failed Kugou cold restore -> verified login -> new-store restore, without touching old bytes
+00:00 +4 -1: D:/AnLi/test/release_154_storage_test.dart: failed Kugou cold restore -> verified login -> new-store restore, without touching old bytes
+00:00 +4 -2: D:/AnLi/test/release_154_storage_test.dart: failed Kugou cold restore -> verified login -> new-store restore, without touching old bytes
+00:00 +4 -2: D:/AnLi/test/release_152_accounts_test.dart: malformed encrypted snapshot is not treated as an empty list [E]
+  Expected: throws <Instance of 'FormatException'>
+    Actual: <Instance of 'Future<void>'>
+     Which: threw CredentialStoreException:<本机登录资料暂时无法解析，可重新登录；原资料已保留>
+            stack package:mesting_music/core/security/credential_failure.dart 68:5  credentialStep
+                  ===== asynchronous gap ===========================
+                  package:matcher                                                   expectLater
+                  package:flutter_test/src/widget_tester.dart 507:8                 expectLater
+                  test\release_152_accounts_test.dart 153:13                        main.<fn>
+                  
+            which is not an instance of 'FormatException'
+  
+  package:matcher                                    expectLater
+  package:flutter_test/src/widget_tester.dart 507:8  expectLater
+  test\release_152_accounts_test.dart 153:13         main.<fn>
+  
+00:00 +4 -3: D:/AnLi/test/release_154_storage_test.dart: failed Kugou cold restore -> verified login -> new-store restore, without touching old bytes
+00:00 +4 -3: D:/AnLi/test/release_152_accounts_test.dart: failed change restores exact previous encrypted snapshot [E]
+  Expected: throws <Instance of 'StateError'>
+    Actual: <Instance of 'Future<void>'>
+     Which: threw CredentialStoreException:<本机登录资料暂时无法保存，请重试或查看连接诊断；原资料已保留>
+            stack package:mesting_music/core/security/credential_failure.dart 68:5  credentialStep
+                  ===== asynchronous gap ===========================
+                  package:matcher                                                   expectLater
+                  package:flutter_test/src/widget_tester.dart 507:8                 expectLater
+                  test\release_152_accounts_test.dart 162:11                        main.<fn>
+                  ===== asynchronous gap ===========================
+                  dart:async                                                        _CustomZone.registerUnaryCallback
+                  test\release_152_accounts_test.dart 159:5                         main.<fn>
+                  
+            which is not an instance of 'StateError'
+  
+  package:matcher                                    expectLater
+  package:flutter_test/src/widget_tester.dart 507:8  expectLater
+  test\release_152_accounts_test.dart 162:11         main.<fn>
+  ===== asynchronous gap ===========================
+  dart:async                                         _CustomZone.registerUnaryCallback
+  test\release_152_accounts_test.dart 159:5          main.<fn>
+  
+00:00 +5 -3: D:/AnLi/test/release_154_storage_test.dart: failed Kugou cold restore -> verified login -> new-store restore, without touching old bytes
+00:00 +6 -3: D:/AnLi/test/release_154_storage_test.dart: failed Kugou cold restore -> verified login -> new-store restore, without touching old bytes
+00:00 +7 -3: D:/AnLi/test/release_152_accounts_test.dart: switch pauses and saves departing owner before publishing destination
+00:00 +8 -3: D:/AnLi/test/release_152_accounts_test.dart: switch pauses and saves departing owner before publishing destination
+00:00 +9 -3: D:/AnLi/test/release_152_accounts_test.dart: switch pauses and saves departing owner before publishing destination
+00:00 +10 -3: D:/AnLi/test/release_152_accounts_test.dart: switch pauses and saves departing owner before publishing destination
+00:00 +11 -3: D:/AnLi/test/release_152_accounts_test.dart: switch pauses and saves departing owner before publishing destination
+00:00 +12 -3: D:/AnLi/test/release_152_accounts_test.dart: same UID standard authorization keeps primary token and does not reset playback
+00:00 +13 -3: D:/AnLi/test/release_152_accounts_test.dart: late standard login cannot attach to a different selected account
+00:00 +14 -3: D:/AnLi/test/release_152_accounts_test.dart: cancelled standard authorization rolls back a delayed secure write
+00:00 +15 -3: D:/AnLi/test/release_152_accounts_test.dart: failed account persistence keeps live identity and selected login
+00:00 +15 -4: D:/AnLi/test/release_152_accounts_test.dart: failed account persistence keeps live identity and selected login [E]
+  Expected: throws <Instance of 'StateError'>
+    Actual: <Instance of 'Future<void>'>
+     Which: threw CredentialStoreException:<本机登录资料暂时无法保存，请重试或查看连接诊断；原资料已保留>
+            stack package:mesting_music/core/security/credential_failure.dart 68:5  credentialStep
+                  ===== asynchronous gap ===========================
+                  package:matcher                                                   expectLater
+                  package:flutter_test/src/widget_tester.dart 507:8                 expectLater
+                  test\release_152_accounts_test.dart 338:13                        main.<fn>
+                  ===== asynchronous gap ===========================
+                  dart:async                                                        _CustomZone.registerUnaryCallback
+                  test\release_152_accounts_test.dart 336:25                        main.<fn>
+                  
+            which is not an instance of 'StateError'
+  
+  package:matcher                                    expectLater
+  package:flutter_test/src/widget_tester.dart 507:8  expectLater
+  test\release_152_accounts_test.dart 338:13         main.<fn>
+  ===== asynchronous gap ===========================
+  dart:async                                         _CustomZone.registerUnaryCallback
+  test\release_152_accounts_test.dart 336:25         main.<fn>
+  
+00:00 +15 -4: Some tests failed.

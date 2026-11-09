@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-30",
+  "scope": "user-authorized read-only device investigation and UI navigation stress; no product source changes or installations",
+  "installedVersion": "1.0.20",
+  "installedCode": 41,
+  "installedApkSha256": "73e60f7b9681567fbfc81269496dad3e0bfa651b8cca60e9e4e0ddd30944f635",
+  "matchesFrozen120": true,
+  "reportedReproduction": {
+    "musicBeforeCrash": "not started",
+    "navigation": "rapid consecutive tabs, library to profile"
+  },
+  "crash": {
+    "systemExitTimestamp": "2026-10-30 14:06:30.097 +08:00",
+    "pid": 4447,
+    "reason": "APP CRASH(NATIVE)",
+    "status": 11,
+    "thread": "1.raster",
+    "signal": "SIGSEGV/SEGV_MAPERR",
+    "faultAddress": "0x1c",
+    "library": "/vendor/lib64/hw/vulkan.adreno.so",
+    "entryPoint": "qglinternal::vkCmdBeginRenderPass",
+    "driverBuildId": "33f69a5b3c5ea87c251952c3e0b7a7a2",
+    "flutterBuildId": "0d216f3f630e1105257f8a3f74e22c9b43c22a51",
+    "specificTriggerProven": false,
+    "sameFamilyAsPreviousCrash": true
+  },
+  "boundedUiStress": {
+    "pidBefore": 5235,
+    "pidAfter": 5235,
+    "tabClicks": 80,
+    "scrollSwipes": 32,
+    "fastestRound": {
+      "libraryProfileTabClicks": 40,
+      "elapsedSeconds": 5.92,
+      "inputSpacingMs": {
+        "min": 90,
+        "median": 130,
+        "max": 240
+      }
+    },
+    "crashDuringBoundedTest": false,
+    "noAdditionalExitRecordedAtEnd": true,
+    "musicDuringTest": "existing current track paused via visible in-app button; no queue cleared"
+  },
+  "performanceEvidence": {
+    "appScopedMemorySnapshotsRetained": true,
+    "memoryLeakProven": false,
+    "frameTimelineTraceBytes": 94036,
+    "frameTimelineContainsAppSurfaceFrames": false,
+    "reliableAppFpsOrJankPercentageAvailable": false,
+    "initialGfxinfoIsHwuiNotFlutterFrameEvidence": true,
+    "sourceReviewCandidatePaths": [
+      "rapid route transition overlap",
+      "glass matte and shadow image allocation/lifecycle",
+      "inactive page painting and artwork decode"
+    ],
+    "candidatePathsAreHypotheses": true
+  },
+  "deviceStateAtPause": "other app foreground; foreground guard stopped input; process remains alive",
+  "productSourceModified": false,
+  "candidateInstalled": false,
+  "phoneDataCleared": false,
+  "logBuffersCleared": false,
+  "credentialsExtracted": false,
+  "messagesOpenedOrSent": false,
+  "gitCommittedOrPushed": false,
+  "nextStep": "await user confirmation of 1.0.21/code42 fix plan per AGENTS.md",
+  "traceTool": {
+    "version": "Perfetto v59.1",
+    "sha256": "3acc5aca1c764541033a82ba3bb0a47524b5c3c0aa194eea8d9a7b0cdb346bdc",
+    "schemaReference": "https://github.com/google/perfetto/blob/main/protos/third_party/android/frameworks/native/tracing/frameworks_native_trace_packet.proto"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "evidence_id": "ev_24b10d3eb84996ab310fe646b7f3cccfa902de2bf1920e871dff16046149b791",
+  "subject": {
+    "name": "soda-classes6-analysis.apk",
+    "digest": {
+      "sha256": "f0168eeb1883653f1309c805eb71bad4d0c40bbe996a4755530d50ee705c8326"
+    },
+    "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-07-release174\\official\\soda-classes6-analysis.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "D:/AnLi/.codex-artifacts/2026-11-07-release174/official/soda-classes6-analysis.apk",
+    "class_name": "com.luna.biz.main.init.preload.PreloadTabDataTask",
+    "method_name": "e",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "10"
+    },
+    "bridge_sha256": "f9d6d68eadd3d51a89e2debda359454c20534560080d4438f9b9cfe5a19f0b2e",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\zyt\\AppData\\Local\\Temp\\rea-android-3d0847d2f41f7cff4780d53ec17255e2\\target.apk",
+      "class_count": 3171,
+      "resource_count": 2,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"17.0.20.1\",\"available_processors\":8,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":3221225472}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "C:\\Users\\zyt\\AppData\\Local\\Temp\\rea-android-3d0847d2f41f7cff4780d53ec17255e2\\target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\zyt\\\\AppData\\\\Local\\\\Temp\\\\rea-android-3d0847d2f41f7cff4780d53ec17255e2\\\\target.apk\",\"class_count\":3171,\"raw_class_count\":3171,\"resource_count\":2,\"load_duration_ms\":3823,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.luna.biz.main.init.preload.PreloadTabDataTask"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_classes\":[\"com.luna.biz.main.init.preload.PreloadTabDataTask.Companion\"],\"full_name\":\"com.luna.biz.main.init.preload.PreloadTabDataTask\",\"methods\":[{\"def_pos\":0,\"raw_name\":\"\\u003cclinit\\u003e\",\"dex_descriptor\":\"()V\",\"signature\":\"\\u003cclinit\\u003e(): void\",\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false},{\"def_pos\":0,\"raw_name\":\"\\u003cinit\\u003e\",\"dex_descriptor\":\"()V\",\"signature\":\"\\u003cinit\\u003e(): void\",\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true},{\"def_pos\":0,\"raw_name\":\"c\",\"dex_descriptor\":\"(Lcom/luna/music/launch/api/Event;Landroid/app/Application;)V\",\"signature\":\"c(com.luna.music.launch.api.Event, android.app.Application): void\",\"name\":\"c\",\"is_constructor\":false},{\"def_pos\":0,\"raw_name\":\"e\",\"dex_descriptor\":\"(Lcom/luna/common/arch/init/stage/MessageQueueIdleWithPageLoadComplete;Landroid/app/Application;)V\",\"signature\":\"e(com.luna.common.arch.init.stage.MessageQueueIdleWithPageLoadComplete, android.app.Application): void\",\"name\":\"e\",\"is_constructor\":false}],\"fields\":[{\"type\":\"com.luna.biz.main.init.preload.PreloadTabDataTask$Companion\",\"name\":\"b\",\"raw_name\":\"b\",\"dex_type\":\"Lcom/luna/biz/main/init/preload/PreloadTabDataTask$Companion;\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"c\",\"raw_name\":\"c\",\"dex_type\":\"Z\",\"def_pos\":0},{\"type\":\"com.bytedance.hotfix.base.ChangeQuickRedirect\",\"name\":\"d\",\"raw_name\":\"d\",\"dex_type\":\"Lcom/bytedance/hotfix/base/ChangeQuickRedirect;\",\"def_pos\":0}],\"inner_class_raw_names\":[\"com.luna.biz.main.init.preload.PreloadTabDataTask$Companion\"],\"inner_class_count\":1,\"name\":\"PreloadTabDataTask\",\"raw_name\":\"com.luna.biz.main.init.preload.PreloadTabDataTask\",\"method_count\":4,\"field_count\":3}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.luna.biz.main.init.preload.PreloadTabDataTask",
+          "method_name": "e",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":true,\"full_name\":\"com.luna.biz.main.init.preload.PreloadTabDataTask.e\",\"overload_index\":0,\"method_name\":\"e\",\"overload_count\":1,\"dex_descriptor\":\"(Lcom/luna/common/arch/init/stage/MessageQueueIdleWithPageLoadComplete;Landroid/app/Application;)V\",\"class_name\":\"com.luna.biz.main.init.preload.PreloadTabDataTask\",\"mode\":\"smali\",\"body\":\".method public e(Lcom/luna/common/arch/init/stage/MessageQueueIdleWithPageLoadComplete;Landroid/app/Application;)V\\n    .registers 9\\n    .param p1    # Lcom/luna/common/arch/init/stage/MessageQueueIdleWithPageLoadComplete;\\n        .annotation build Lorg/jetbrains/annotations/NotNull;\\n        .end annotation\\n    .end param\\n    .param p2    # Landroid/app/Application;\\n        .annotation build Lorg/jetbrains/annotations/NotNull;\\n        .end annotation\\n    .end param\\n\\n    sget-object v3, Lcom/luna/biz/main/init/preload/PreloadTabDataTask;-\\u003ed:Lcom/bytedance/hotfix/base/ChangeQuickRedirect;\\n\\n    if-eqz v3, :cond_14\\n\\n    const/4 v4, 0x0\\n\\n    const v5, 0xe8bd\\n\\n    move-object v0, p1\\n\\n    move-object v1, p2\\n\\n    move-object v2, p0\\n\\n    invoke-static/range {v0 .. v5}, Lcom/bytedance/hotfix/PatchProxy;-\\u003eproxy(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lcom/bytedance/hotfix/base/ChangeQuickRedirect;ZI)Lcom/bytedance/hotfix/PatchProxyResult;\\n\\n    move-result-object p1\\n\\n    iget-boolean p1, p1, Lcom/bytedance/hotfix/PatchProxyResult;-\\u003eisSupported:Z\\n\\n    if-eqz p1, :cond_14\\n\\n    return-void\\n\\n    .line 41\\n    :cond_14\\n    sget-object p1, Lcom/luna/common/arch/net/preload/NewPreloadTabDataConfig;-\\u003ea:Lcom/luna/common/arch/net/preload/NewPreloadTabDataConfig;\\n\\n    invoke-virtual {p1}, Lcom/luna/common/arch/net/preload/NewPreloadTabDataConfig;-\\u003ea()Z\\n\\n    move-result p2\\n\\n    if-eqz p2, :cond_3b\\n\\n    .line 42\\n    sget-boolean p2, Lcom/luna/biz/main/init/preload/PreloadTabDataTask;-\\u003ec:Z\\n\\n    if-nez p2, :cond_3b\\n\\n    .line 43\\n    invoke-static {}, Lcom/luna/biz/explore/IExploreServiceKt;-\\u003ea()Lcom/luna/biz/explore/IExploreService;\\n\\n    move-result-object p2\\n\\n    if-eqz p2, :cond_29\\n\\n    invoke-interface {p2}, Lcom/luna/biz/explore/IExploreService;-\\u003eu()V\\n\\n    .line 44\\n    :cond_29\\n    invoke-virtual {p1}, Lcom/luna/common/arch/net/preload/NewPreloadTabDataConfig;-\\u003eb()Z\\n\\n    move-result p1\\n\\n    if-eqz p1, :cond_38\\n\\n    .line 45\\n    invoke-static {}, Lcom/luna/biz/me/IMeServiceKt;-\\u003egetMeService()Lcom/luna/biz/me/IMeService;\\n\\n    move-result-object p1\\n\\n    if-eqz p1, :cond_38\\n\\n    invoke-interface {p1}, Lcom/luna/biz/me/IMeService;-\\u003epreloadUserData()V\\n\\n    :cond_38\\n    const/4 p1, 0x1\\n\\n    .line 47\\n    sput-boolean p1, Lcom/luna/biz/main/init/preload/PreloadTabDataTask;-\\u003ec:Z\\n\\n    :cond_3b\\n    return-void\\n.end method\",\"markers\":[\"java_body_unavailable\"]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 3072
+    },
+    "class_name": "com.luna.biz.main.init.preload.PreloadTabDataTask",
+    "method": {
+      "name": "e",
+      "reported_signature": "e(com.luna.common.arch.init.stage.MessageQueueIdleWithPageLoadComplete, android.app.Application): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Lcom/luna/common/arch/init/stage/MessageQueueIdleWithPageLoadComplete;Landroid/app/Application;)V"
+    },
+    "overload_count": 1,
+    "representation": "smali",
+    "body_status": "available",
+    "fell_back": true,
+    "markers": [
+      "java_body_unavailable"
+    ],
+    "source": {
+      "status": "complete",
+      "text": ".method public e(Lcom/luna/common/arch/init/stage/MessageQueueIdleWithPageLoadComplete;Landroid/app/Application;)V\n    .registers 9\n    .param p1    # Lcom/luna/common/arch/init/stage/MessageQueueIdleWithPageLoadComplete;\n        .annotation build Lorg/jetbrains/annotations/NotNull;\n        .end annotation\n    .end param\n    .param p2    # Landroid/app/Application;\n        .annotation build Lorg/jetbrains/annotations/NotNull;\n        .end annotation\n    .end param\n\n    sget-object v3, Lcom/luna/biz/main/init/preload/PreloadTabDataTask;->d:Lcom/bytedance/hotfix/base/ChangeQuickRedirect;\n\n    if-eqz v3, :cond_14\n\n    const/4 v4, 0x0\n\n    const v5, 0xe8bd\n\n    move-object v0, p1\n\n    move-object v1, p2\n\n    move-object v2, p0\n\n    invoke-static/range {v0 .. v5}, Lcom/bytedance/hotfix/PatchProxy;->proxy(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lcom/bytedance/hotfix/base/ChangeQuickRedirect;ZI)Lcom/bytedance/hotfix/PatchProxyResult;\n\n    move-result-object p1\n\n    iget-boolean p1, p1, Lcom/bytedance/hotfix/PatchProxyResult;->isSupported:Z\n\n    if-eqz p1, :cond_14\n\n    return-void\n\n    .line 41\n    :cond_14\n    sget-object p1, Lcom/luna/common/arch/net/preload/NewPreloadTabDataConfig;->a:Lcom/luna/common/arch/net/preload/NewPreloadTabDataConfig;\n\n    invoke-virtual {p1}, Lcom/luna/common/arch/net/preload/NewPreloadTabDataConfig;->a()Z\n\n    move-result p2\n\n    if-eqz p2, :cond_3b\n\n    .line 42\n    sget-boolean p2, Lcom/luna/biz/main/init/preload/PreloadTabDataTask;->c:Z\n\n    if-nez p2, :cond_3b\n\n    .line 43\n    invoke-static {}, Lcom/luna/biz/explore/IExploreServiceKt;->a()Lcom/luna/biz/explore/IExploreService;\n\n    move-result-object p2\n\n    if-eqz p2, :cond_29\n\n    invoke-interface {p2}, Lcom/luna/biz/explore/IExploreService;->u()V\n\n    .line 44\n    :cond_29\n    invoke-virtual {p1}, Lcom/luna/common/arch/net/preload/NewPreloadTabDataConfig;->b()Z\n\n    move-result p1\n\n    if-eqz p1, :cond_38\n\n    .line 45\n    invoke-static {}, Lcom/luna/biz/me/IMeServiceKt;->getMeService()Lcom/luna/biz/me/IMeService;\n\n    move-result-object p1\n\n    if-eqz p1, :cond_38\n\n    invoke-interface {p1}, Lcom/luna/biz/me/IMeService;->preloadUserData()V\n\n    :cond_38\n    const/4 p1, 0x1\n\n    .line 47\n    sput-boolean p1, Lcom/luna/biz/main/init/preload/PreloadTabDataTask;->c:Z\n\n    :cond_3b\n    return-void\n.end method",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

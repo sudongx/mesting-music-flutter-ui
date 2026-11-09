@@ -1,0 +1,16 @@
+11-05 09:15:28.784  5195 12191 E FlutterSecureStorage: Key mismatch detected during cipher initialization: Invalid key, key type incompatible with cipher
+11-05 09:15:28.784  5195 12191 E FlutterSecureStorage: android.security.keystore.KeyPermanentlyInvalidatedException: Key permanently invalidated
+11-05 09:15:28.784  5195 12191 E FlutterSecureStorage: This typically occurs after an algorithm change.
+11-05 09:15:28.784  5195 12191 E FlutterSecureStorage: Stored key cannot be decrypted with current algorithm.
+11-05 09:15:28.784  5195 12191 I FlutterSecureStorage: migrateOnAlgorithmChange is enabled. Attempting data migration...
+11-05 09:15:28.785  5195 12191 I FlutterSecureStorage: Starting data migration from saved to current cipher algorithms...
+11-05 09:15:28.786  5195 12191 I FlutterSecureStorage: Detected non-biometric migration: FROM=[cipher-enum], TO=AES_GCM_NoPadding
+11-05 09:15:28.786  5195 12191 I FlutterSecureStorage: Starting non-biometric migration (no authentication required)...
+11-05 09:15:28.786  5195 12191 D FlutterSecureStorage: Step 1/6: Initializing saved cipher...
+11-05 09:15:28.788  5195 12191 E FlutterSecureStorage: Non-biometric migration failed
+11-05 09:15:28.788  5195 12191 E FlutterSecureStorage: android.security.keystore.KeyPermanentlyInvalidatedException: Key permanently invalidated
+11-05 09:15:28.789  5195 12191 E FlutterSecureStorage: Data migration failed: Non-biometric migration failed
+11-05 09:15:28.789  5195 12191 E FlutterSecureStorage: java.lang.Exception: Non-biometric migration failed
+11-05 09:15:28.789  5195 12191 E FlutterSecureStorage: Caused by: android.security.keystore.KeyPermanentlyInvalidatedException: Key permanently invalidated
+11-05 09:15:28.789  5195 12191 E FlutterSecureStorage: 	... 9 more
+11-05 09:15:28.789  5195 12191 E FlutterSecureStorage: Set resetOnError=true to automatically delete data after migration failure.

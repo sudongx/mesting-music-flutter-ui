@@ -1,0 +1,11 @@
+PASS 8-byte IV synthetic full sample decodes exact bytes
+PASS 16-byte IV exact bytes
+PASS subsample clear ranges do not consume cipher counter
+PASS truncated declared sample table rejects
+PASS truncated MP4 box rejects
+PASS invalid authorization rejects
+PASS unknown scheme rejects
+PASS missing sample encryption never passes ciphertext through
+PASS subsample size overflow rejects
+PASS cancellation before plaintext publication
+QISHUI_CENC_HOST_PASSED=10

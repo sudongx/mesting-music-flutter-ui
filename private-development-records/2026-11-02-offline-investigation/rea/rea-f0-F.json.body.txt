@@ -1,0 +1,30 @@
+    /* JADX INFO: Access modifiers changed from: private */
+    public synchronized void F() {
+        String strD = D();
+        if (this.h != null) {
+            if (this.j.equals(strD) && this.k == NeteaseMusicUtils.getFileInode(y(strD))) {
+                return;
+            }
+            v();
+            u(new File(y(this.j)));
+        }
+        try {
+            String strY = y(strD);
+            File parentFile = new File(strY).getParentFile();
+            if (!parentFile.exists()) {
+                parentFile.mkdirs();
+            }
+            this.h = new FileOutputStream(strY, true);
+            this.k = NeteaseMusicUtils.getFileInode(strY);
+            this.j = strD;
+            String loginCookie = (ISession.NO_PROFILE_ID.equals(strD) || o22.u.f() == null) ? null : o22.u.f().d().getLoginCookie();
+            if (loginCookie != null) {
+                n3.c(E()).edit().putString(strD, loginCookie).commit();
+            }
+            if (com.netease.cloudmusic.utils.e0.g()) {
+                Log.d(this.m, ">>>>init" + this.j);
+            }
+        } catch (IOException e2) {
+            e2.printStackTrace();
+        }
+    }

@@ -1,0 +1,689 @@
+{
+  "evidence_id": "ev_9bb7044b5ab4dacf049d2163bfb4594f78195ff1964dd0b1798e5b0c7912edf2",
+  "subject": {
+    "name": "official-current-classes19-analysis-only.apk",
+    "digest": {
+      "sha256": "e8850c1cbc0e7f3551357d5226f151c199963944370c41088b77272cbbaa2f23"
+    },
+    "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-02-duration-phone139\\official-current-classes19-analysis-only.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-analysis-view",
+    "name": "REA analysis view projection",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis-view",
+  "operation": "inspect_analysis_view",
+  "parameters": {
+    "parent_evidence_id": "ev_ff3dce0413bf06491e27319c727e96386b895d9c462ce2c3fdfc673b21764294",
+    "view": {
+      "kind": "summary"
+    }
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "kind": "summary",
+    "view": {
+      "kind": "summary"
+    },
+    "parent_evidence_id": "ev_ff3dce0413bf06491e27319c727e96386b895d9c462ce2c3fdfc673b21764294",
+    "parent_operation": "inspect_android_class",
+    "parent_digest": "ff3dce0413bf06491e27319c727e96386b895d9c462ce2c3fdfc673b21764294",
+    "view_digest": "2aa09e66789b1ac0f52884acb9bcbc7c449129c018f35c4d052febcb4a44c746",
+    "artifact": {
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-02-duration-phone139\\official-current-classes19-analysis-only.apk",
+      "sha256": "e8850c1cbc0e7f3551357d5226f151c199963944370c41088b77272cbbaa2f23"
+    },
+    "coverage": {
+      "status": "complete-within-view",
+      "examined": 1,
+      "total": 1,
+      "next_offset": null,
+      "exhausted": true
+    },
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ],
+    "unknowns": [
+      "Static class and method analysis does not establish runtime behavior or APK authenticity."
+    ],
+    "summary": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 3072
+      },
+      "class_name": "com.netease.cloudmusic.music.biz.chat.meta.MsgBody",
+      "methods": [
+        {
+          "name": "<clinit>",
+          "reported_signature": "<clinit>(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(): void",
+          "overload_index": 0,
+          "is_constructor": true,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(java.lang.Object, java.lang.String, com.netease.cloudmusic.music.biz.chat.meta.Sender, long, int, java.lang.String, com.netease.cloudmusic.music.biz.chat.meta.TextMsg, int, java.lang.String, int, boolean, java.lang.String, long, int, int, com.netease.cloudmusic.music.biz.chat.meta.AppendInfo, java.lang.String, java.lang.String): void",
+          "overload_index": 1,
+          "is_constructor": true,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/String;Lcom/netease/cloudmusic/music/biz/chat/meta/Sender;JILjava/lang/String;Lcom/netease/cloudmusic/music/biz/chat/meta/TextMsg;ILjava/lang/String;IZLjava/lang/String;JIILcom/netease/cloudmusic/music/biz/chat/meta/AppendInfo;Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(java.lang.Object, java.lang.String, com.netease.cloudmusic.music.biz.chat.meta.Sender, long, int, java.lang.String, com.netease.cloudmusic.music.biz.chat.meta.TextMsg, int, java.lang.String, int, boolean, java.lang.String, long, int, int, com.netease.cloudmusic.music.biz.chat.meta.AppendInfo, java.lang.String, java.lang.String, int, kotlin.jvm.internal.DefaultConstructorMarker): void",
+          "overload_index": 2,
+          "is_constructor": true,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/String;Lcom/netease/cloudmusic/music/biz/chat/meta/Sender;JILjava/lang/String;Lcom/netease/cloudmusic/music/biz/chat/meta/TextMsg;ILjava/lang/String;IZLjava/lang/String;JIILcom/netease/cloudmusic/music/biz/chat/meta/AppendInfo;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V"
+        },
+        {
+          "name": "access$isSupportType",
+          "reported_signature": "access$isSupportType(com.netease.cloudmusic.music.biz.chat.meta.MsgBody, int): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lcom/netease/cloudmusic/music/biz/chat/meta/MsgBody;I)Z"
+        },
+        {
+          "name": "component1",
+          "reported_signature": "component1(): java.lang.Object",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/Object;"
+        },
+        {
+          "name": "component10",
+          "reported_signature": "component10(): int",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()I"
+        },
+        {
+          "name": "component11",
+          "reported_signature": "component11(): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Z"
+        },
+        {
+          "name": "component12",
+          "reported_signature": "component12(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "component13",
+          "reported_signature": "component13(): long",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()J"
+        },
+        {
+          "name": "component14",
+          "reported_signature": "component14(): int",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()I"
+        },
+        {
+          "name": "component15",
+          "reported_signature": "component15(): int",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()I"
+        },
+        {
+          "name": "component16",
+          "reported_signature": "component16(): com.netease.cloudmusic.music.biz.chat.meta.AppendInfo",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Lcom/netease/cloudmusic/music/biz/chat/meta/AppendInfo;"
+        },
+        {
+          "name": "component17",
+          "reported_signature": "component17(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "component18",
+          "reported_signature": "component18(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "component2",
+          "reported_signature": "component2(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "component3",
+          "reported_signature": "component3(): com.netease.cloudmusic.music.biz.chat.meta.Sender",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Lcom/netease/cloudmusic/music/biz/chat/meta/Sender;"
+        },
+        {
+          "name": "component4",
+          "reported_signature": "component4(): long",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()J"
+        },
+        {
+          "name": "component5",
+          "reported_signature": "component5(): int",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()I"
+        },
+        {
+          "name": "component6",
+          "reported_signature": "component6(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "component7",
+          "reported_signature": "component7(): com.netease.cloudmusic.music.biz.chat.meta.TextMsg",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Lcom/netease/cloudmusic/music/biz/chat/meta/TextMsg;"
+        },
+        {
+          "name": "component8",
+          "reported_signature": "component8(): int",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()I"
+        },
+        {
+          "name": "component9",
+          "reported_signature": "component9(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "copy",
+          "reported_signature": "copy(java.lang.Object, java.lang.String, com.netease.cloudmusic.music.biz.chat.meta.Sender, long, int, java.lang.String, com.netease.cloudmusic.music.biz.chat.meta.TextMsg, int, java.lang.String, int, boolean, java.lang.String, long, int, int, com.netease.cloudmusic.music.biz.chat.meta.AppendInfo, java.lang.String, java.lang.String): com.netease.cloudmusic.music.biz.chat.meta.MsgBody",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/String;Lcom/netease/cloudmusic/music/biz/chat/meta/Sender;JILjava/lang/String;Lcom/netease/cloudmusic/music/biz/chat/meta/TextMsg;ILjava/lang/String;IZLjava/lang/String;JIILcom/netease/cloudmusic/music/biz/chat/meta/AppendInfo;Ljava/lang/String;Ljava/lang/String;)Lcom/netease/cloudmusic/music/biz/chat/meta/MsgBody;"
+        },
+        {
+          "name": "copy$default",
+          "reported_signature": "copy$default(com.netease.cloudmusic.music.biz.chat.meta.MsgBody, java.lang.Object, java.lang.String, com.netease.cloudmusic.music.biz.chat.meta.Sender, long, int, java.lang.String, com.netease.cloudmusic.music.biz.chat.meta.TextMsg, int, java.lang.String, int, boolean, java.lang.String, long, int, int, com.netease.cloudmusic.music.biz.chat.meta.AppendInfo, java.lang.String, java.lang.String, int, java.lang.Object): com.netease.cloudmusic.music.biz.chat.meta.MsgBody",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lcom/netease/cloudmusic/music/biz/chat/meta/MsgBody;Ljava/lang/Object;Ljava/lang/String;Lcom/netease/cloudmusic/music/biz/chat/meta/Sender;JILjava/lang/String;Lcom/netease/cloudmusic/music/biz/chat/meta/TextMsg;ILjava/lang/String;IZLjava/lang/String;JIILcom/netease/cloudmusic/music/biz/chat/meta/AppendInfo;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/netease/cloudmusic/music/biz/chat/meta/MsgBody;"
+        },
+        {
+          "name": "equals",
+          "reported_signature": "equals(java.lang.Object): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;)Z"
+        },
+        {
+          "name": "getAggregationType",
+          "reported_signature": "getAggregationType(): int",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()I"
+        },
+        {
+          "name": "getAppendInfo",
+          "reported_signature": "getAppendInfo(): com.netease.cloudmusic.music.biz.chat.meta.AppendInfo",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Lcom/netease/cloudmusic/music/biz/chat/meta/AppendInfo;"
+        },
+        {
+          "name": "getBody",
+          "reported_signature": "getBody(): java.lang.Object",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/Object;"
+        },
+        {
+          "name": "getBriefText",
+          "reported_signature": "getBriefText(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getBuryPointMsgType",
+          "reported_signature": "getBuryPointMsgType(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getExtraStr",
+          "reported_signature": "getExtraStr(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getMsgId",
+          "reported_signature": "getMsgId(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getMsgTime",
+          "reported_signature": "getMsgTime(): long",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()J"
+        },
+        {
+          "name": "getMsgType",
+          "reported_signature": "getMsgType(): int",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()I"
+        },
+        {
+          "name": "getNeedToast",
+          "reported_signature": "getNeedToast(): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Z"
+        },
+        {
+          "name": "getRelatedId",
+          "reported_signature": "getRelatedId(): long",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()J"
+        },
+        {
+          "name": "getSctrp",
+          "reported_signature": "getSctrp(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getSendStatus",
+          "reported_signature": "getSendStatus(): int",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()I"
+        },
+        {
+          "name": "getSender",
+          "reported_signature": "getSender(): com.netease.cloudmusic.music.biz.chat.meta.Sender",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Lcom/netease/cloudmusic/music/biz/chat/meta/Sender;"
+        },
+        {
+          "name": "getSpecialType",
+          "reported_signature": "getSpecialType(): int",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()I"
+        },
+        {
+          "name": "getStatus",
+          "reported_signature": "getStatus(): int",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()I"
+        },
+        {
+          "name": "getText",
+          "reported_signature": "getText(): com.netease.cloudmusic.music.biz.chat.meta.TextMsg",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Lcom/netease/cloudmusic/music/biz/chat/meta/TextMsg;"
+        },
+        {
+          "name": "getTip",
+          "reported_signature": "getTip(): com.netease.cloudmusic.music.biz.chat.meta.TipInfo",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Lcom/netease/cloudmusic/music/biz/chat/meta/TipInfo;"
+        },
+        {
+          "name": "getTraceId",
+          "reported_signature": "getTraceId(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getUnikey",
+          "reported_signature": "getUnikey(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "hasExtra",
+          "reported_signature": "hasExtra(): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Z"
+        },
+        {
+          "name": "hashCode",
+          "reported_signature": "hashCode(): int",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()I"
+        },
+        {
+          "name": "isOfficialAgg",
+          "reported_signature": "isOfficialAgg(): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Z"
+        },
+        {
+          "name": "isSupportType",
+          "reported_signature": "isSupportType(int): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(I)Z"
+        },
+        {
+          "name": "isTip",
+          "reported_signature": "isTip(): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Z"
+        },
+        {
+          "name": "setAggregationType",
+          "reported_signature": "setAggregationType(int): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(I)V"
+        },
+        {
+          "name": "setAppendInfo",
+          "reported_signature": "setAppendInfo(com.netease.cloudmusic.music.biz.chat.meta.AppendInfo): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lcom/netease/cloudmusic/music/biz/chat/meta/AppendInfo;)V"
+        },
+        {
+          "name": "setBody",
+          "reported_signature": "setBody(java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;)V"
+        },
+        {
+          "name": "setBriefText",
+          "reported_signature": "setBriefText(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setBuryPointMsgType",
+          "reported_signature": "setBuryPointMsgType(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setMsgId",
+          "reported_signature": "setMsgId(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setMsgTime",
+          "reported_signature": "setMsgTime(long): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(J)V"
+        },
+        {
+          "name": "setMsgType",
+          "reported_signature": "setMsgType(int): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(I)V"
+        },
+        {
+          "name": "setNeedToast",
+          "reported_signature": "setNeedToast(boolean): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Z)V"
+        },
+        {
+          "name": "setRelatedId",
+          "reported_signature": "setRelatedId(long): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(J)V"
+        },
+        {
+          "name": "setSctrp",
+          "reported_signature": "setSctrp(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setSendStatus",
+          "reported_signature": "setSendStatus(int): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(I)V"
+        },
+        {
+          "name": "setSender",
+          "reported_signature": "setSender(com.netease.cloudmusic.music.biz.chat.meta.Sender): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lcom/netease/cloudmusic/music/biz/chat/meta/Sender;)V"
+        },
+        {
+          "name": "setSpecialType",
+          "reported_signature": "setSpecialType(int): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(I)V"
+        },
+        {
+          "name": "setStatus",
+          "reported_signature": "setStatus(int): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(I)V"
+        },
+        {
+          "name": "setText",
+          "reported_signature": "setText(com.netease.cloudmusic.music.biz.chat.meta.TextMsg): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lcom/netease/cloudmusic/music/biz/chat/meta/TextMsg;)V"
+        },
+        {
+          "name": "setTraceId",
+          "reported_signature": "setTraceId(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setUnikey",
+          "reported_signature": "setUnikey(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "toString",
+          "reported_signature": "toString(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        }
+      ],
+      "fields": [
+        {
+          "name": "Companion",
+          "reported_type": "com.netease.cloudmusic.music.biz.chat.meta.MsgBody$Companion",
+          "dex_static_value": null
+        },
+        {
+          "name": "aggregationType",
+          "reported_type": "int",
+          "dex_static_value": null
+        },
+        {
+          "name": "appendInfo",
+          "reported_type": "com.netease.cloudmusic.music.biz.chat.meta.AppendInfo",
+          "dex_static_value": null
+        },
+        {
+          "name": "body",
+          "reported_type": "java.lang.Object",
+          "dex_static_value": null
+        },
+        {
+          "name": "briefText",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "buryPointMsgType",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "msgId",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "msgTime",
+          "reported_type": "long",
+          "dex_static_value": null
+        },
+        {
+          "name": "msgType",
+          "reported_type": "int",
+          "dex_static_value": null
+        },
+        {
+          "name": "needToast",
+          "reported_type": "boolean",
+          "dex_static_value": null
+        },
+        {
+          "name": "relatedId",
+          "reported_type": "long",
+          "dex_static_value": null
+        },
+        {
+          "name": "sctrp",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "sendStatus",
+          "reported_type": "int",
+          "dex_static_value": null
+        },
+        {
+          "name": "sender",
+          "reported_type": "com.netease.cloudmusic.music.biz.chat.meta.Sender",
+          "dex_static_value": null
+        },
+        {
+          "name": "serialVersionUID",
+          "reported_type": "long",
+          "dex_static_value": {
+            "type": "long",
+            "value": "-999999999999"
+          }
+        },
+        {
+          "name": "specialType",
+          "reported_type": "int",
+          "dex_static_value": null
+        },
+        {
+          "name": "status",
+          "reported_type": "int",
+          "dex_static_value": null
+        },
+        {
+          "name": "text",
+          "reported_type": "com.netease.cloudmusic.music.biz.chat.meta.TextMsg",
+          "dex_static_value": null
+        },
+        {
+          "name": "traceId",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "unikey",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        }
+      ],
+      "inner_classes": [
+        "com.netease.cloudmusic.music.biz.chat.meta.MsgBody.Companion"
+      ]
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-02-duration-phone139\\official-current-classes19-analysis-only.apk"
+    }
+  ],
+  "evidence_links": [
+    "ev_ff3dce0413bf06491e27319c727e96386b895d9c462ce2c3fdfc673b21764294"
+  ]
+}

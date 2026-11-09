@@ -1,0 +1,193 @@
+{
+  "version": "1.0.45",
+  "code": 66,
+  "candidate": "sync-fix-r2",
+  "installedApkSha256": "ed450f0b68507fcdcbefeae06145b5143c3147f62d2e94c6d2c35765f3ba5c27",
+  "generatedUtc": "2026-11-03T07:37:54.753759+00:00",
+  "authorization": "[REDACTED]",
+  "profiles": [
+    0,
+    999
+  ],
+  "trials": [
+    {
+      "label": "u0-next1-before-receiver-resume",
+      "scenario": "cold_restore_background",
+      "senderUser": 0,
+      "receiverUser": 999,
+      "observationUtc": "2026-11-03T07:21:17.916477+00:00",
+      "elapsedAfterActionSeconds": 10.474,
+      "focusKnown": true,
+      "receiverForegroundAtObservation": false,
+      "matchingMediaMetadata": false,
+      "trackSyncObservedBeforeResumingReceiver": false,
+      "result": "FAIL",
+      "playPauseAccepted": false,
+      "phaseCaptureFolders": [
+        "capture-1"
+      ],
+      "receiverApplicationCompletedEvents": 0
+    },
+    {
+      "label": "u999-next1-before-u0-resume",
+      "scenario": "background_receiver_after_playback",
+      "senderUser": 999,
+      "receiverUser": 0,
+      "observationUtc": "2026-11-03T07:22:37.072171+00:00",
+      "elapsedAfterActionSeconds": 6.489,
+      "focusKnown": true,
+      "receiverForegroundAtObservation": false,
+      "matchingMediaMetadata": true,
+      "trackSyncObservedBeforeResumingReceiver": true,
+      "result": "PASS",
+      "playPauseAccepted": false,
+      "phaseCaptureFolders": [
+        "capture-1"
+      ],
+      "receiverApplicationCompletedEvents": 1,
+      "firstApplicationCompletedAfterActionSeconds": 3.408
+    },
+    {
+      "label": "u0-next2-before-u999-resume",
+      "scenario": "background_receiver_after_playback",
+      "senderUser": 0,
+      "receiverUser": 999,
+      "observationUtc": "2026-11-03T07:23:06.256562+00:00",
+      "elapsedAfterActionSeconds": 6.419,
+      "focusKnown": true,
+      "receiverForegroundAtObservation": false,
+      "matchingMediaMetadata": true,
+      "trackSyncObservedBeforeResumingReceiver": true,
+      "result": "PASS",
+      "playPauseAccepted": false,
+      "phaseCaptureFolders": [
+        "capture-1"
+      ],
+      "receiverApplicationCompletedEvents": 1,
+      "firstApplicationCompletedAfterActionSeconds": 3.551
+    },
+    {
+      "label": "u0-next3-u999-paused-background",
+      "scenario": "paused_background_receiver",
+      "senderUser": 0,
+      "receiverUser": 999,
+      "observationUtc": "2026-11-03T07:23:39.693431+00:00",
+      "elapsedAfterActionSeconds": 6.618,
+      "focusKnown": true,
+      "receiverForegroundAtObservation": false,
+      "matchingMediaMetadata": true,
+      "trackSyncObservedBeforeResumingReceiver": true,
+      "result": "PASS",
+      "playPauseAccepted": false,
+      "phaseCaptureFolders": [
+        "capture-1"
+      ],
+      "receiverApplicationCompletedEvents": 2,
+      "firstApplicationCompletedAfterActionSeconds": 0.43
+    },
+    {
+      "label": "both-home-system-next1",
+      "scenario": "both_instances_on_home_screen",
+      "senderUser": 0,
+      "receiverUser": 999,
+      "observationUtc": "2026-11-03T07:26:14.939620+00:00",
+      "elapsedAfterActionSeconds": 6.362,
+      "focusKnown": true,
+      "receiverForegroundAtObservation": false,
+      "matchingMediaMetadata": true,
+      "trackSyncObservedBeforeResumingReceiver": true,
+      "result": "PASS",
+      "playPauseAccepted": false,
+      "phaseCaptureFolders": [
+        "capture-2"
+      ],
+      "receiverApplicationCompletedEvents": 2,
+      "firstApplicationCompletedAfterActionSeconds": 0.354
+    },
+    {
+      "label": "u999-foreground-received-system-next",
+      "scenario": "foreground_receiver_system_next_to_background_sender",
+      "senderUser": 0,
+      "receiverUser": 999,
+      "observationUtc": "2026-11-03T07:26:48.413221+00:00",
+      "elapsedAfterActionSeconds": 5.451,
+      "focusKnown": true,
+      "receiverForegroundAtObservation": true,
+      "matchingMediaMetadata": true,
+      "trackSyncObservedBeforeResumingReceiver": false,
+      "result": "PASS",
+      "playPauseAccepted": false,
+      "phaseCaptureFolders": [
+        "capture-2"
+      ],
+      "receiverApplicationCompletedEvents": 1,
+      "firstApplicationCompletedAfterActionSeconds": 3.75
+    },
+    {
+      "label": "u999-next2-before-u0-resume",
+      "scenario": "background_receiver_additional_media_check",
+      "senderUser": 999,
+      "receiverUser": 0,
+      "observationUtc": "2026-11-03T07:29:00.983350+00:00",
+      "elapsedAfterActionSeconds": 6.585,
+      "focusKnown": true,
+      "receiverForegroundAtObservation": false,
+      "matchingMediaMetadata": true,
+      "trackSyncObservedBeforeResumingReceiver": true,
+      "result": "PASS",
+      "playPauseAccepted": false,
+      "phaseCaptureFolders": [],
+      "receiverApplicationCompletedEvents": 0
+    },
+    {
+      "label": "cold-next1-extended-before-resume",
+      "scenario": "cold_restore_background_repeat",
+      "senderUser": 0,
+      "receiverUser": 999,
+      "observationUtc": "2026-11-03T07:31:45.918757+00:00",
+      "elapsedAfterActionSeconds": 28.341,
+      "focusKnown": true,
+      "receiverForegroundAtObservation": false,
+      "matchingMediaMetadata": false,
+      "trackSyncObservedBeforeResumingReceiver": false,
+      "result": "FAIL",
+      "playPauseAccepted": false,
+      "phaseCaptureFolders": [
+        "capture-3"
+      ],
+      "receiverApplicationCompletedEvents": 0
+    }
+  ],
+  "passed": 6,
+  "failed": 2,
+  "captures": [
+    {
+      "folder": "capture-1",
+      "elapsedSeconds": 165.21,
+      "samples": 68,
+      "completed": true
+    },
+    {
+      "folder": "capture-2",
+      "elapsedSeconds": 180.07,
+      "samples": 77,
+      "completed": true
+    },
+    {
+      "folder": "capture-3",
+      "elapsedSeconds": 180.01,
+      "samples": 74,
+      "completed": true
+    }
+  ],
+  "rawLogcatPersisted": false,
+  "playPauseAcceptance": "NOT TESTED: same-device clone audio focus interferes.",
+  "coldRestoreAcceptance": "FAILED twice before any playback in receiver; no active foreground media service and pulses stop after a few seconds.",
+  "overallBackgroundFixAccepted": false,
+  "limitations": [
+    "One physical phone with two Android profiles.",
+    "No lock-screen or independent-phone play/pause acceptance.",
+    "One additional successful trial has media/focus readback only because the bounded phase capture had already stopped.",
+    "Native wake ownership is a candidate hypothesis; no claim of OS freezer root cause."
+  ]
+}

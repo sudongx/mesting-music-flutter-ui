@@ -1,0 +1,30 @@
+{
+  "recordedAtUtc": "2026-11-06T23:43:05.908921+00:00",
+  "source": "C:\\Users\\zyt\\Documents\\Codex\\2026-11-06\\mesting-qishui-signer\\work\\app\\qishui-signer\\src\\policy.mjs",
+  "sourceSha256AtHandoff": "6a2a29a3a7c7f720b040acd26f6b2a243e55f9de46fc3069d260ae1f1c01fe37",
+  "currentFixedHeaderSetStillRejectsCookie": true,
+  "probeExecutedInPreviousConversationTurn": true,
+  "probeRerunDuringHandoff": false,
+  "probeUsesSyntheticIdentityAndCookieOnly": true,
+  "probeFunction": "validateRequest",
+  "method": "POST",
+  "path": "/luna/pc/track_v2",
+  "actualPreviousProbeResults": [
+    {
+      "accountCookie": false,
+      "accepted": true
+    },
+    {
+      "accountCookie": true,
+      "accepted": false,
+      "status": 400,
+      "code": "forbidden_header"
+    }
+  ],
+  "nativeSignerCalled": false,
+  "nasOrOfficialNetworkCalled": false,
+  "realCookieTokenOrPrivateIdentityRead": false,
+  "helperModifiedTestSuiteRunBuiltOrDeployed": false,
+  "deployedNasBinaryHashCompared": false,
+  "conclusion": "Local old helper policy reproduces account-Cookie rejection. User on-toggle HTTP400 is consistent; current NAS response code/body or deployed hash has not been collected."
+}

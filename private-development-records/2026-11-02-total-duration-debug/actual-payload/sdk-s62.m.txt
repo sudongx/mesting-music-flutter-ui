@@ -1,0 +1,413 @@
+9558            -
+  Class descriptor  : 'Ls62/m;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ls62/p;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+    #0              : (in Ls62/m;)
+      name          : 'H'
+      type          : 'Lcom/netease/cloudmusic/network/model/MultipleUploadEntity;'
+      access        : 0x0002 (PRIVATE)
+    #1              : (in Ls62/m;)
+      name          : 'I'
+      type          : 'Z'
+      access        : 0x0002 (PRIVATE)
+  Direct methods    -
+    #0              : (in Ls62/m;)
+      name          : '<init>'
+      type          : '(Lcom/netease/cloudmusic/network/model/MultipleUploadEntity;)V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 2
+      insns size    : 11 16-bit code units
+4a57e0:                                        |[4a57e0] s62.m.<init>:(Lcom/netease/cloudmusic/network/model/MultipleUploadEntity;)V
+4a57f0: 5420 832a                              |0000: iget-object v0, v2, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity;.url:Ljava/lang/String; // field@2a83
+4a57f4: 7020 28e4 0100                         |0002: invoke-direct {v1, v0}, Ls62/p;.<init>:(Ljava/lang/String;)V // method@e428
+4a57fa: 1200                                   |0005: const/4 v0, #int 0 // #0
+4a57fc: 5c10 7260                              |0006: iput-boolean v0, v1, Ls62/m;.I:Z // field@6072
+4a5800: 5b12 7160                              |0008: iput-object v2, v1, Ls62/m;.H:Lcom/netease/cloudmusic/network/model/MultipleUploadEntity; // field@6071
+4a5804: 0e00                                   |000a: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+      locals        :
+        0x0000 - 0x000b reg=1 this Ls62/m;
+        0x0000 - 0x000b reg=2 (null) Lcom/netease/cloudmusic/network/model/MultipleUploadEntity;
+
+  Virtual methods   -
+    #0              : (in Ls62/m;)
+      name          : 'Y0'
+      type          : '()Ljava/lang/String;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 2
+      insns size    : 38 16-bit code units
+4a5640:                                        |[4a5640] s62.m.Y0:()Ljava/lang/String;
+4a5650: 5420 7160                              |0000: iget-object v0, v2, Ls62/m;.H:Lcom/netease/cloudmusic/network/model/MultipleUploadEntity; // field@6071
+4a5654: 3800 2200                              |0002: if-eqz v0, 0024 // +0022
+4a5658: 5400 822a                              |0004: iget-object v0, v0, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity;.uploadFiles:Ljava/util/List; // field@2a82
+4a565c: 3800 1e00                              |0006: if-eqz v0, 0024 // +001e
+4a5660: 7210 e9c3 0000                         |0008: invoke-interface {v0}, Ljava/util/List;.isEmpty:()Z // method@c3e9
+4a5666: 0a00                                   |000b: move-result v0
+4a5668: 3900 1800                              |000c: if-nez v0, 0024 // +0018
+4a566c: 5420 7160                              |000e: iget-object v0, v2, Ls62/m;.H:Lcom/netease/cloudmusic/network/model/MultipleUploadEntity; // field@6071
+4a5670: 5400 822a                              |0010: iget-object v0, v0, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity;.uploadFiles:Ljava/util/List; // field@2a82
+4a5674: 1201                                   |0012: const/4 v1, #int 0 // #0
+4a5676: 7220 e7c3 1000                         |0013: invoke-interface {v0, v1}, Ljava/util/List;.get:(I)Ljava/lang/Object; // method@c3e7
+4a567c: 0c00                                   |0016: move-result-object v0
+4a567e: 1f00 5c15                              |0017: check-cast v0, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile; // type@155c
+4a5682: 5400 7e2a                              |0019: iget-object v0, v0, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;.file:Ljava/io/File; // field@2a7e
+4a5686: 6e10 e9c1 0000                         |001b: invoke-virtual {v0}, Ljava/io/File;.getAbsolutePath:()Ljava/lang/String; // method@c1e9
+4a568c: 0c00                                   |001e: move-result-object v0
+4a568e: 7110 8ea5 0000                         |001f: invoke-static {v0}, Lcom/netease/cloudmusic/utils/NeteaseMusicUtils;.d:(Ljava/lang/String;)Ljava/lang/String; // method@a58e
+4a5694: 0c00                                   |0022: move-result-object v0
+4a5696: 1100                                   |0023: return-object v0
+4a5698: 1200                                   |0024: const/4 v0, #int 0 // #0
+4a569a: 1100                                   |0025: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+        0x0013 line=20
+        0x0014 line=21
+        0x0015 line=22
+        0x0016 line=23
+        0x0017 line=24
+        0x0018 line=25
+        0x0019 line=26
+        0x001a line=27
+        0x001b line=28
+        0x001c line=29
+        0x001d line=30
+        0x001e line=31
+        0x001f line=32
+        0x0020 line=33
+        0x0021 line=34
+        0x0022 line=35
+        0x0023 line=36
+        0x0024 line=37
+        0x0025 line=38
+      locals        :
+        0x0000 - 0x0026 reg=2 this Ls62/m;
+
+    #1              : (in Ls62/m;)
+      name          : 'Z0'
+      type          : '()Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+4a5628:                                        |[4a5628] s62.m.Z0:()Z
+4a5638: 5510 7260                              |0000: iget-boolean v0, v1, Ls62/m;.I:Z // field@6072
+4a563c: 0f00                                   |0002: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+      locals        :
+        0x0000 - 0x0003 reg=1 this Ls62/m;
+
+    #2              : (in Ls62/m;)
+      name          : 'a1'
+      type          : '(Z)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 0
+      insns size    : 3 16-bit code units
+4a5808:                                        |[4a5808] s62.m.a1:(Z)V
+4a5818: 5c01 7260                              |0000: iput-boolean v1, v0, Ls62/m;.I:Z // field@6072
+4a581c: 0e00                                   |0002: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+      locals        :
+        0x0000 - 0x0003 reg=0 this Ls62/m;
+        0x0000 - 0x0003 reg=1 (null) Z
+
+    #3              : (in Ls62/m;)
+      name          : 'y'
+      type          : '()Lokhttp3/RequestBody;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 7
+      ins           : 1
+      outs          : 4
+      insns size    : 154 16-bit code units
+4a569c:                                        |[4a569c] s62.m.y:()Lokhttp3/RequestBody;
+4a56ac: 5460 4c60                              |0000: iget-object v0, v6, Ls62/e;.G:Lokhttp3/RequestBody; // field@604c
+4a56b0: 3800 0300                              |0002: if-eqz v0, 0005 // +0003
+4a56b4: 1100                                   |0004: return-object v0
+4a56b6: 5460 5460                              |0005: iget-object v0, v6, Ls62/f;.d:Lr62/a; // field@6054
+4a56ba: 5461 7160                              |0007: iget-object v1, v6, Ls62/m;.H:Lcom/netease/cloudmusic/network/model/MultipleUploadEntity; // field@6071
+4a56be: 5411 812a                              |0009: iget-object v1, v1, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity;.params:Ljava/util/Map; // field@2a81
+4a56c2: 6e20 66de 1000                         |000b: invoke-virtual {v0, v1}, Lr62/a;.o:(Ljava/util/Map;)V // method@de66
+4a56c8: 2200 8f2c                              |000e: new-instance v0, Lokhttp3/MultipartBody$Builder; // type@2c8f
+4a56cc: 7010 bad4 0000                         |0010: invoke-direct {v0}, Lokhttp3/MultipartBody$Builder;.<init>:()V // method@d4ba
+4a56d2: 6201 8253                              |0013: sget-object v1, Lokhttp3/MultipartBody;.FORM:Lokhttp3/MediaType; // field@5382
+4a56d6: 6e20 bfd4 1000                         |0015: invoke-virtual {v0, v1}, Lokhttp3/MultipartBody$Builder;.setType:(Lokhttp3/MediaType;)Lokhttp3/MultipartBody$Builder; // method@d4bf
+4a56dc: 0c00                                   |0018: move-result-object v0
+4a56de: 6f10 90e3 0600                         |0019: invoke-super {v6}, Ls62/e;.y:()Lokhttp3/RequestBody; // method@e390
+4a56e4: 0c01                                   |001c: move-result-object v1
+4a56e6: 2012 852c                              |001d: instance-of v2, v1, Lokhttp3/FormBody; // type@2c85
+4a56ea: 3802 1d00                              |001f: if-eqz v2, 003c // +001d
+4a56ee: 1f01 852c                              |0021: check-cast v1, Lokhttp3/FormBody; // type@2c85
+4a56f2: 6e10 85d4 0100                         |0023: invoke-virtual {v1}, Lokhttp3/FormBody;.size:()I // method@d485
+4a56f8: 0a02                                   |0026: move-result v2
+4a56fa: 1203                                   |0027: const/4 v3, #int 0 // #0
+4a56fc: 3523 3d00                              |0028: if-ge v3, v2, 0065 // +003d
+4a5700: 6e20 84d4 3100                         |002a: invoke-virtual {v1, v3}, Lokhttp3/FormBody;.name:(I)Ljava/lang/String; // method@d484
+4a5706: 0c04                                   |002d: move-result-object v4
+4a5708: 6e20 86d4 3100                         |002e: invoke-virtual {v1, v3}, Lokhttp3/FormBody;.value:(I)Ljava/lang/String; // method@d486
+4a570e: 0c05                                   |0031: move-result-object v5
+4a5710: 7120 c0d4 5400                         |0032: invoke-static {v4, v5}, Lokhttp3/MultipartBody$Part;.createFormData:(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/MultipartBody$Part; // method@d4c0
+4a5716: 0c04                                   |0035: move-result-object v4
+4a5718: 6e20 bcd4 4000                         |0036: invoke-virtual {v0, v4}, Lokhttp3/MultipartBody$Builder;.addPart:(Lokhttp3/MultipartBody$Part;)Lokhttp3/MultipartBody$Builder; // method@d4bc
+4a571e: d803 0301                              |0039: add-int/lit8 v3, v3, #int 1 // #01
+4a5722: 28ed                                   |003b: goto 0028 // -0013
+4a5724: 2012 912c                              |003c: instance-of v2, v1, Lokhttp3/MultipartBody; // type@2c91
+4a5728: 3802 2400                              |003e: if-eqz v2, 0062 // +0024
+4a572c: 1f01 912c                              |0040: check-cast v1, Lokhttp3/MultipartBody; // type@2c91
+4a5730: 6e10 c1d4 0100                         |0042: invoke-virtual {v1}, Lokhttp3/MultipartBody;.parts:()Ljava/util/List; // method@d4c1
+4a5736: 0c01                                   |0045: move-result-object v1
+4a5738: 7210 e9c3 0100                         |0046: invoke-interface {v1}, Ljava/util/List;.isEmpty:()Z // method@c3e9
+4a573e: 0a02                                   |0049: move-result v2
+4a5740: 3902 1b00                              |004a: if-nez v2, 0065 // +001b
+4a5744: 7210 eac3 0100                         |004c: invoke-interface {v1}, Ljava/util/List;.iterator:()Ljava/util/Iterator; // method@c3ea
+4a574a: 0c01                                   |004f: move-result-object v1
+4a574c: 7210 d1c3 0100                         |0050: invoke-interface {v1}, Ljava/util/Iterator;.hasNext:()Z // method@c3d1
+4a5752: 0a02                                   |0053: move-result v2
+4a5754: 3802 1100                              |0054: if-eqz v2, 0065 // +0011
+4a5758: 7210 d2c3 0100                         |0056: invoke-interface {v1}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@c3d2
+4a575e: 0c02                                   |0059: move-result-object v2
+4a5760: 1f02 902c                              |005a: check-cast v2, Lokhttp3/MultipartBody$Part; // type@2c90
+4a5764: 3802 f4ff                              |005c: if-eqz v2, 0050 // -000c
+4a5768: 6e20 bcd4 2000                         |005e: invoke-virtual {v0, v2}, Lokhttp3/MultipartBody$Builder;.addPart:(Lokhttp3/MultipartBody$Part;)Lokhttp3/MultipartBody$Builder; // method@d4bc
+4a576e: 28ef                                   |0061: goto 0050 // -0011
+4a5770: 6e20 bdd4 1000                         |0062: invoke-virtual {v0, v1}, Lokhttp3/MultipartBody$Builder;.addPart:(Lokhttp3/RequestBody;)Lokhttp3/MultipartBody$Builder; // method@d4bd
+4a5776: 5461 7160                              |0065: iget-object v1, v6, Ls62/m;.H:Lcom/netease/cloudmusic/network/model/MultipleUploadEntity; // field@6071
+4a577a: 5411 822a                              |0067: iget-object v1, v1, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity;.uploadFiles:Ljava/util/List; // field@2a82
+4a577e: 3801 2c00                              |0069: if-eqz v1, 0095 // +002c
+4a5782: 7210 e9c3 0100                         |006b: invoke-interface {v1}, Ljava/util/List;.isEmpty:()Z // method@c3e9
+4a5788: 0a02                                   |006e: move-result v2
+4a578a: 3902 2600                              |006f: if-nez v2, 0095 // +0026
+4a578e: 7210 eac3 0100                         |0071: invoke-interface {v1}, Ljava/util/List;.iterator:()Ljava/util/Iterator; // method@c3ea
+4a5794: 0c01                                   |0074: move-result-object v1
+4a5796: 7210 d1c3 0100                         |0075: invoke-interface {v1}, Ljava/util/Iterator;.hasNext:()Z // method@c3d1
+4a579c: 0a02                                   |0078: move-result v2
+4a579e: 3802 1c00                              |0079: if-eqz v2, 0095 // +001c
+4a57a2: 7210 d2c3 0100                         |007b: invoke-interface {v1}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@c3d2
+4a57a8: 0c02                                   |007e: move-result-object v2
+4a57aa: 1f02 5c15                              |007f: check-cast v2, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile; // type@155c
+4a57ae: 5423 802a                              |0081: iget-object v3, v2, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;.type:Ljava/lang/String; // field@2a80
+4a57b2: 5424 7f2a                              |0083: iget-object v4, v2, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;.name:Ljava/lang/String; // field@2a7f
+4a57b6: 5425 7d2a                              |0085: iget-object v5, v2, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;.contentType:Ljava/lang/String; // field@2a7d
+4a57ba: 7110 b6d4 0500                         |0087: invoke-static {v5}, Lokhttp3/MediaType;.parse:(Ljava/lang/String;)Lokhttp3/MediaType; // method@d4b6
+4a57c0: 0c05                                   |008a: move-result-object v5
+4a57c2: 5422 7e2a                              |008b: iget-object v2, v2, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;.file:Ljava/io/File; // field@2a7e
+4a57c6: 7120 ffd4 2500                         |008d: invoke-static {v5, v2}, Lokhttp3/RequestBody;.create:(Lokhttp3/MediaType;Ljava/io/File;)Lokhttp3/RequestBody; // method@d4ff
+4a57cc: 0c02                                   |0090: move-result-object v2
+4a57ce: 6e40 bbd4 3024                         |0091: invoke-virtual {v0, v3, v4, v2}, Lokhttp3/MultipartBody$Builder;.addFormDataPart:(Ljava/lang/String;Ljava/lang/String;Lokhttp3/RequestBody;)Lokhttp3/MultipartBody$Builder; // method@d4bb
+4a57d4: 28e1                                   |0094: goto 0075 // -001f
+4a57d6: 6e10 bed4 0000                         |0095: invoke-virtual {v0}, Lokhttp3/MultipartBody$Builder;.build:()Lokhttp3/MultipartBody; // method@d4be
+4a57dc: 0c00                                   |0098: move-result-object v0
+4a57de: 1100                                   |0099: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+        0x0013 line=20
+        0x0014 line=21
+        0x0015 line=22
+        0x0016 line=23
+        0x0017 line=24
+        0x0018 line=25
+        0x0019 line=26
+        0x001a line=27
+        0x001b line=28
+        0x001c line=29
+        0x001d line=30
+        0x001e line=31
+        0x001f line=32
+        0x0020 line=33
+        0x0021 line=34
+        0x0022 line=35
+        0x0023 line=36
+        0x0024 line=37
+        0x0025 line=38
+        0x0026 line=39
+        0x0027 line=40
+        0x0028 line=41
+        0x0029 line=42
+        0x002a line=43
+        0x002b line=44
+        0x002c line=45
+        0x002d line=46
+        0x002e line=47
+        0x002f line=48
+        0x0030 line=49
+        0x0031 line=50
+        0x0032 line=51
+        0x0033 line=52
+        0x0034 line=53
+        0x0035 line=54
+        0x0036 line=55
+        0x0037 line=56
+        0x0038 line=57
+        0x0039 line=58
+        0x003a line=59
+        0x003b line=60
+        0x003c line=61
+        0x003d line=62
+        0x003e line=63
+        0x003f line=64
+        0x0040 line=65
+        0x0041 line=66
+        0x0042 line=67
+        0x0043 line=68
+        0x0044 line=69
+        0x0045 line=70
+        0x0046 line=71
+        0x0047 line=72
+        0x0048 line=73
+        0x0049 line=74
+        0x004a line=75
+        0x004b line=76
+        0x004c line=77
+        0x004d line=78
+        0x004e line=79
+        0x004f line=80
+        0x0050 line=81
+        0x0051 line=82
+        0x0052 line=83
+        0x0053 line=84
+        0x0054 line=85
+        0x0055 line=86
+        0x0056 line=87
+        0x0057 line=88
+        0x0058 line=89
+        0x0059 line=90
+        0x005a line=91
+        0x005b line=92
+        0x005c line=93
+        0x005d line=94
+        0x005e line=95
+        0x005f line=96
+        0x0060 line=97
+        0x0061 line=98
+        0x0062 line=99
+        0x0063 line=100
+        0x0064 line=101
+        0x0065 line=102
+        0x0066 line=103
+        0x0067 line=104
+        0x0068 line=105
+        0x0069 line=106
+        0x006a line=107
+        0x006b line=108
+        0x006c line=109
+        0x006d line=110
+        0x006e line=111
+        0x006f line=112
+        0x0070 line=113
+        0x0071 line=114
+        0x0072 line=115
+        0x0073 line=116
+        0x0074 line=117
+        0x0075 line=118
+        0x0076 line=119
+        0x0077 line=120
+        0x0078 line=121
+        0x0079 line=122
+        0x007a line=123
+        0x007b line=124
+        0x007c line=125
+        0x007d line=126
+        0x007e line=127
+        0x007f line=128
+        0x0080 line=129
+        0x0081 line=130
+        0x0082 line=131
+        0x0083 line=132
+        0x0084 line=133
+        0x0085 line=134
+        0x0086 line=135
+        0x0087 line=136
+        0x0088 line=137
+        0x0089 line=138
+        0x008a line=139
+        0x008b line=140
+        0x008c line=141
+        0x008d line=142
+        0x008e line=143
+        0x008f line=144
+        0x0090 line=145
+        0x0091 line=146
+        0x0092 line=147
+        0x0093 line=148
+        0x0094 line=149
+        0x0095 line=150
+        0x0096 line=151
+        0x0097 line=152
+        0x0098 line=153
+        0x0099 line=154
+      locals        :
+        0x0000 - 0x009a reg=6 this Ls62/m;
+
+  source_file_idx   : 25392 (ProGuard)
+

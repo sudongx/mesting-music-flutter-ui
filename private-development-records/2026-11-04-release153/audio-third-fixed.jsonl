@@ -1,0 +1,20 @@
+{"protocolVersion":"0.1.1","runnerVersion":"1.30.0","pid":253160,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"D:/AnLi/test/release_153_audio_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading D:/AnLi/test/release_153_audio_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":1}
+{"count":1,"time":5,"type":"allSuites"}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":1966}
+{"group":{"id":2,"suiteID":0,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":null,"column":null,"url":null},"type":"group","time":1968}
+{"test":{"id":3,"name":"initial cache preparation failure retries same recording directly without skipping queue","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":71,"column":3,"url":"file:///D:/AnLi/test/release_153_audio_test.dart"},"type":"testStart","time":1970}
+{"testID":3,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2106}
+{"test":{"id":4,"name":"a superseded cache failure cannot overwrite a newer selection","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":91,"column":3,"url":"file:///D:/AnLi/test/release_153_audio_test.dart"},"type":"testStart","time":2107}
+{"testID":4,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2119}
+{"test":{"id":5,"name":"cache header deadline fails its consumer once without unhandled fetch errors","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":113,"column":3,"url":"file:///D:/AnLi/test/release_153_audio_test.dart"},"type":"testStart","time":2120}
+{"testID":5,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2240}
+{"test":{"id":6,"name":"stalled chunks fail instead of publishing a truncated cache","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":133,"column":3,"url":"file:///D:/AnLi/test/release_153_audio_test.dart"},"type":"testStart","time":2240}
+{"testID":6,"error":"TimeoutException: Audio data deadline","stackTrace":"dart:async                                  _ControllerEventSinkWrapper.addError\npackage:just_audio/just_audio.dart 3548:14  LockCachingAudioSource._fetch.<fn>\n===== asynchronous gap ===========================\ndart:async                                  Stream.timeout\npackage:just_audio/just_audio.dart 3547:29  LockCachingAudioSource._fetch\n===== asynchronous gap ===========================\ndart:async                                  _CustomZone.registerUnaryCallback\npackage:just_audio/just_audio.dart 3512:23  LockCachingAudioSource._fetch\npackage:just_audio/just_audio.dart 3750:9   LockCachingAudioSource.request\n===== asynchronous gap ===========================\ndart:async                                  _CustomZone.registerUnaryCallback\npackage:just_audio/just_audio.dart 3735:23  LockCachingAudioSource.request\ntest\\release_153_audio_test.dart 148:35     main.<fn>\n===== asynchronous gap ===========================\ndart:async                                  _CustomZone.registerUnaryCallback\ntest\\release_153_audio_test.dart 134:20     main.<fn>\n","isFailure":false,"type":"error","time":2370}
+{"testID":6,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":2370}
+{"test":{"id":7,"name":"complete cache is flushed before it becomes reusable","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":153,"column":3,"url":"file:///D:/AnLi/test/release_153_audio_test.dart"},"type":"testStart","time":2371}
+{"testID":7,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2410}
+{"success":false,"type":"done","time":2442}

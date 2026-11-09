@@ -1,0 +1,1486 @@
+{
+  "source_sha256": "b639e67c13e03377f0f9d8068c5e0419b1acd42c7d529362f11ae704b3838741",
+  "dex_entry": "classes9.dex",
+  "dex_sha256": "b92150c0f44f48cf8c0237944afe13445c5262d9089b017d672a03a45b92d90a",
+  "scope": "Bounded raw DEX annotation reader for selected, byte-identical APK classes.\n\nThis records declarations/annotations, not executable behavior or a call graph.\nIt complements focused REA/JADX analysis when the host cannot run two JVMs.\nIt neither loads classes nor runs APK/native code. No third-party parser code.\n",
+  "classes": [
+    {
+      "class_def_index": 5156,
+      "descriptor": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+      "access_flags": 1,
+      "super": "Ljava/lang/Object;",
+      "interfaces": [
+        "Lcom/luna/common/tea/json/KeepElement;"
+      ],
+      "class_data_offset": 10716883,
+      "static_values_offset": 10985977,
+      "fields": [
+        {
+          "dex_field_index": 2147,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "expireTime",
+          "type": "Ljava/lang/Long;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10163967,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "expire_time"
+              }
+            },
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 2148,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "fromOtherQueue",
+          "type": "Ljava/lang/Boolean;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10163947,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "from_other_queue"
+              }
+            },
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 2149,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "interceptType",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10164017,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "intercept_type"
+              }
+            },
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 2150,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "isLoginSupport",
+          "type": "Z",
+          "annotations": [
+            {
+              "annotation_item_offset": 9867159,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "is_login_support"
+              }
+            }
+          ]
+        },
+        {
+          "dex_field_index": 2151,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "isLogoutSupport",
+          "type": "Z",
+          "annotations": [
+            {
+              "annotation_item_offset": 9867169,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "is_logout_support"
+              }
+            }
+          ]
+        },
+        {
+          "dex_field_index": 2152,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "limitedFree",
+          "type": "Ljava/lang/Boolean;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10163957,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "limited_free"
+              }
+            },
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 2153,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "limitedFreeType",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10163997,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "limited_free_type"
+              }
+            },
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 2154,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "lunaCommercialStyle",
+          "type": "Lcom/luna/common/arch/net/entity/track/LunaCommercialStyle;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10164037,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "luna_commercial_style"
+              }
+            },
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 2155,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "rewindPrevInterceptType",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10164007,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "rewind_prev_intercept_type"
+              }
+            },
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 2157,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "sign",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10163987,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "sign"
+              }
+            },
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 2158,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "signVersion",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10163977,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "sign_version"
+              }
+            },
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 2159,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "trackValue",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10164027,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "track_value"
+              }
+            },
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "dex_method_index": 8182,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component1",
+          "descriptor": "()Ljava/lang/Boolean;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8183,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component10",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8184,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component11",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8185,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component12",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/track/LunaCommercialStyle;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8188,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component4",
+          "descriptor": "()Ljava/lang/Boolean;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8189,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component5",
+          "descriptor": "()Ljava/lang/Long;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8190,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component6",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8191,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component7",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8192,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component8",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8193,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component9",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8194,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "copy",
+          "descriptor": "(Ljava/lang/Boolean;ZZLjava/lang/Boolean;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/luna/common/arch/net/entity/track/LunaCommercialStyle;)Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840751,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8197,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "getExpireTime",
+          "descriptor": "()Ljava/lang/Long;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8198,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "getFromOtherQueue",
+          "descriptor": "()Ljava/lang/Boolean;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8199,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "getInterceptType",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8200,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "getLimitedFree",
+          "descriptor": "()Ljava/lang/Boolean;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8201,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "getLimitedFreeType",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8202,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "getLunaCommercialStyle",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/track/LunaCommercialStyle;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8203,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "getRewindPrevInterceptType",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8204,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "getSign",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8205,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "getSignVersion",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8206,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "getTrackValue",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840747,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 8219,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "toString",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9840751,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "declared_fields": [
+        {
+          "dex_field_index": 2145,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "$stable",
+          "type": "I",
+          "access_flags": 25
+        },
+        {
+          "dex_field_index": 2146,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "changeQuickRedirect",
+          "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+          "access_flags": 9
+        },
+        {
+          "dex_field_index": 2147,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "expireTime",
+          "type": "Ljava/lang/Long;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 2148,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "fromOtherQueue",
+          "type": "Ljava/lang/Boolean;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 2149,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "interceptType",
+          "type": "Ljava/lang/String;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 2150,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "isLoginSupport",
+          "type": "Z",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 2151,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "isLogoutSupport",
+          "type": "Z",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 2152,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "limitedFree",
+          "type": "Ljava/lang/Boolean;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 2153,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "limitedFreeType",
+          "type": "Ljava/lang/String;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 2154,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "lunaCommercialStyle",
+          "type": "Lcom/luna/common/arch/net/entity/track/LunaCommercialStyle;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 2155,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "rewindPrevInterceptType",
+          "type": "Ljava/lang/String;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 2156,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "robustFieldMap",
+          "type": "Ljava/lang/Object;",
+          "access_flags": 193
+        },
+        {
+          "dex_field_index": 2157,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "sign",
+          "type": "Ljava/lang/String;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 2158,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "signVersion",
+          "type": "Ljava/lang/String;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 2159,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "trackValue",
+          "type": "Ljava/lang/String;",
+          "access_flags": 1
+        }
+      ],
+      "declared_methods": [
+        {
+          "dex_method_index": 8179,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "access_flags": 65544,
+          "code_item_offset": 1767644
+        },
+        {
+          "dex_method_index": 8180,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "<init>",
+          "descriptor": "(Ljava/lang/Boolean;ZZLjava/lang/Boolean;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/luna/common/arch/net/entity/track/LunaCommercialStyle;)V",
+          "access_flags": 65537,
+          "code_item_offset": 1767664
+        },
+        {
+          "dex_method_index": 8181,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "<init>",
+          "descriptor": "(Ljava/lang/Boolean;ZZLjava/lang/Boolean;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/luna/common/arch/net/entity/track/LunaCommercialStyle;ILkotlin/jvm/internal/DefaultConstructorMarker;)V",
+          "access_flags": 69633,
+          "code_item_offset": 1767940
+        },
+        {
+          "dex_method_index": 8195,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "copy$default",
+          "descriptor": "(Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;Ljava/lang/Boolean;ZZLjava/lang/Boolean;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/luna/common/arch/net/entity/track/LunaCommercialStyle;ILjava/lang/Object;)Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "access_flags": 4105,
+          "code_item_offset": 1765952
+        },
+        {
+          "dex_method_index": 8182,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component1",
+          "descriptor": "()Ljava/lang/Boolean;",
+          "access_flags": 17,
+          "code_item_offset": 1766884
+        },
+        {
+          "dex_method_index": 8183,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component10",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 1767028
+        },
+        {
+          "dex_method_index": 8184,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component11",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 1767052
+        },
+        {
+          "dex_method_index": 8185,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component12",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/track/LunaCommercialStyle;",
+          "access_flags": 17,
+          "code_item_offset": 1766492
+        },
+        {
+          "dex_method_index": 8186,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component2",
+          "descriptor": "()Z",
+          "access_flags": 17,
+          "code_item_offset": 1765528
+        },
+        {
+          "dex_method_index": 8187,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component3",
+          "descriptor": "()Z",
+          "access_flags": 17,
+          "code_item_offset": 1765552
+        },
+        {
+          "dex_method_index": 8188,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component4",
+          "descriptor": "()Ljava/lang/Boolean;",
+          "access_flags": 17,
+          "code_item_offset": 1766908
+        },
+        {
+          "dex_method_index": 8189,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component5",
+          "descriptor": "()Ljava/lang/Long;",
+          "access_flags": 17,
+          "code_item_offset": 1766980
+        },
+        {
+          "dex_method_index": 8190,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component6",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 1767076
+        },
+        {
+          "dex_method_index": 8191,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component7",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 1767100
+        },
+        {
+          "dex_method_index": 8192,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component8",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 1767124
+        },
+        {
+          "dex_method_index": 8193,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "component9",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 1767148
+        },
+        {
+          "dex_method_index": 8194,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "copy",
+          "descriptor": "(Ljava/lang/Boolean;ZZLjava/lang/Boolean;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/luna/common/arch/net/entity/track/LunaCommercialStyle;)Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "access_flags": 17,
+          "code_item_offset": 1766240
+        },
+        {
+          "dex_method_index": 8196,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "equals",
+          "descriptor": "(Ljava/lang/Object;)Z",
+          "access_flags": 1,
+          "code_item_offset": 1765576
+        },
+        {
+          "dex_method_index": 8197,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "getExpireTime",
+          "descriptor": "()Ljava/lang/Long;",
+          "access_flags": 17,
+          "code_item_offset": 1767004
+        },
+        {
+          "dex_method_index": 8198,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "getFromOtherQueue",
+          "descriptor": "()Ljava/lang/Boolean;",
+          "access_flags": 17,
+          "code_item_offset": 1766932
+        },
+        {
+          "dex_method_index": 8199,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "getInterceptType",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 1767172
+        },
+        {
+          "dex_method_index": 8200,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "getLimitedFree",
+          "descriptor": "()Ljava/lang/Boolean;",
+          "access_flags": 17,
+          "code_item_offset": 1766956
+        },
+        {
+          "dex_method_index": 8201,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "getLimitedFreeType",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 1767196
+        },
+        {
+          "dex_method_index": 8202,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "getLunaCommercialStyle",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/track/LunaCommercialStyle;",
+          "access_flags": 17,
+          "code_item_offset": 1766516
+        },
+        {
+          "dex_method_index": 8203,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "getRewindPrevInterceptType",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 1767220
+        },
+        {
+          "dex_method_index": 8204,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "getSign",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 1767244
+        },
+        {
+          "dex_method_index": 8205,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "getSignVersion",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 1767268
+        },
+        {
+          "dex_method_index": 8206,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "getTrackValue",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 1767292
+        },
+        {
+          "dex_method_index": 8207,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "hashCode",
+          "descriptor": "()I",
+          "access_flags": 1,
+          "code_item_offset": 1766540
+        },
+        {
+          "dex_method_index": 8208,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "isLoginSupport",
+          "descriptor": "()Z",
+          "access_flags": 17,
+          "code_item_offset": 1765904
+        },
+        {
+          "dex_method_index": 8209,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "isLogoutSupport",
+          "descriptor": "()Z",
+          "access_flags": 17,
+          "code_item_offset": 1765928
+        },
+        {
+          "dex_method_index": 8210,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "setExpireTime",
+          "descriptor": "(Ljava/lang/Long;)V",
+          "access_flags": 17,
+          "code_item_offset": 1768224
+        },
+        {
+          "dex_method_index": 8211,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "setInterceptType",
+          "descriptor": "(Ljava/lang/String;)V",
+          "access_flags": 17,
+          "code_item_offset": 1768248
+        },
+        {
+          "dex_method_index": 8212,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "setLimitedFree",
+          "descriptor": "(Ljava/lang/Boolean;)V",
+          "access_flags": 17,
+          "code_item_offset": 1768272
+        },
+        {
+          "dex_method_index": 8213,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "setLimitedFreeType",
+          "descriptor": "(Ljava/lang/String;)V",
+          "access_flags": 17,
+          "code_item_offset": 1768296
+        },
+        {
+          "dex_method_index": 8214,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "setLunaCommercialStyle",
+          "descriptor": "(Lcom/luna/common/arch/net/entity/track/LunaCommercialStyle;)V",
+          "access_flags": 17,
+          "code_item_offset": 1768320
+        },
+        {
+          "dex_method_index": 8215,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "setRewindPrevInterceptType",
+          "descriptor": "(Ljava/lang/String;)V",
+          "access_flags": 17,
+          "code_item_offset": 1768344
+        },
+        {
+          "dex_method_index": 8216,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "setSign",
+          "descriptor": "(Ljava/lang/String;)V",
+          "access_flags": 17,
+          "code_item_offset": 1768368
+        },
+        {
+          "dex_method_index": 8217,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "setSignVersion",
+          "descriptor": "(Ljava/lang/String;)V",
+          "access_flags": 17,
+          "code_item_offset": 1768392
+        },
+        {
+          "dex_method_index": 8218,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "setTrackValue",
+          "descriptor": "(Ljava/lang/String;)V",
+          "access_flags": 17,
+          "code_item_offset": 1768416
+        },
+        {
+          "dex_method_index": 8219,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "toString",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 1,
+          "code_item_offset": 1767316
+        }
+      ],
+      "annotations": [
+        {
+          "annotation_item_offset": 9840794,
+          "visibility": 0,
+          "type": "Landroidx/compose/runtime/internal/StabilityInferred;",
+          "elements": {
+            "parameters": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            }
+          }
+        },
+        {
+          "annotation_item_offset": 10164047,
+          "visibility": 1,
+          "type": "Lkotlin/Metadata;",
+          "elements": {
+            "d1": [
+              "��6\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n��\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\t\n��\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b0\n\u0002\u0010��\n��\n\u0002\u0010\b\n\u0002\b\u0002\b\b\u0018��2\u00020\u0001B\u0001\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0005\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0011¢\u0006\u0004\b\u0012\u0010\u0013J\u0010\u00102\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u0015J\t\u00103\u001a\u00020\u0003HÆ\u0003J\t\u00104\u001a\u00020\u0003HÆ\u0003J\u0010\u00105\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u0015J\u0010\u00106\u001a\u0004\u0018\u00010\bHÆ\u0003¢\u0006\u0002\u0010\u001cJ\u000b\u00107\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u00108\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u00109\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u0010:\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u0010;\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u0010<\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u0010=\u001a\u0004\u0018\u00010\u0011HÆ\u0003J\u0001\u0010>\u001a\u00020��2\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0011HÆ\u0001¢\u0006\u0002\u0010?J\u0013\u0010@\u001a\u00020\u00032\b\u0010A\u001a\u0004\u0018\u00010BHÖ\u0003J\t\u0010C\u001a\u00020DHÖ\u0001J\t\u0010E\u001a\u00020\nHÖ\u0001R\u001a\u0010\u0002\u001a\u0004\u0018\u00010\u00038\u0006X\u0004¢\u0006\n\n\u0002\u0010\u0016\u001a\u0004\b\u0014\u0010\u0015R\u0016\u0010\u0004\u001a\u00020\u00038\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b\u0004\u0010\u0017R\u0016\u0010\u0005\u001a\u00020\u00038\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b\u0005\u0010\u0017R\"\u0010\u0006\u001a\u0004\u0018\u00010\u00038\u0006@\u0006X\u000e¢\u0006\u0010\n\u0002\u0010\u0016\u001a\u0004\b\u0018\u0010\u0015\"\u0004\b\u0019\u0010\u001aR\"\u0010\u0007\u001a\u0004\u0018\u00010\b8\u0006@\u0006X\u000e¢\u0006\u0010\n\u0002\u0010\u001f\u001a\u0004\b\u001b\u0010\u001c\"\u0004\b\u001d\u0010\u001eR \u0010\t\u001a\u0004\u0018\u00010\n8\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b \u0010!\"\u0004\b\"\u0010#R \u0010\u000b\u001a\u0004\u0018\u00010\n8\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b$\u0010!\"\u0004\b%\u0010#R \u0010\f\u001a\u0004\u0018\u00010\n8\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b&\u0010!\"\u0004\b'\u0010#R \u0010\r\u001a\u0004\u0018\u00010\n8\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b(\u0010!\"\u0004\b)\u0010#R \u0010\u000e\u001a\u0004\u0018\u00010\n8\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b*\u0010!\"\u0004\b+\u0010#R \u0010\u000f\u001a\u0004\u0018\u00010\n8\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b,\u0010!\"\u0004\b-\u0010#R \u0010\u0010\u001a\u0004\u0018\u00010\u00118\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b.\u0010/\"\u0004\b0\u00101¨\u0006F"
+            ],
+            "d2": [
+              "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+              "Lcom/luna/common/tea/json/KeepElement;",
+              "fromOtherQueue",
+              "",
+              "isLoginSupport",
+              "isLogoutSupport",
+              "limitedFree",
+              "expireTime",
+              "",
+              "signVersion",
+              "",
+              "sign",
+              "limitedFreeType",
+              "rewindPrevInterceptType",
+              "interceptType",
+              "trackValue",
+              "lunaCommercialStyle",
+              "Lcom/luna/common/arch/net/entity/track/LunaCommercialStyle;",
+              "<init>",
+              "(Ljava/lang/Boolean;ZZLjava/lang/Boolean;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/luna/common/arch/net/entity/track/LunaCommercialStyle;)V",
+              "getFromOtherQueue",
+              "()Ljava/lang/Boolean;",
+              "Ljava/lang/Boolean;",
+              "()Z",
+              "getLimitedFree",
+              "setLimitedFree",
+              "(Ljava/lang/Boolean;)V",
+              "getExpireTime",
+              "()Ljava/lang/Long;",
+              "setExpireTime",
+              "(Ljava/lang/Long;)V",
+              "Ljava/lang/Long;",
+              "getSignVersion",
+              "()Ljava/lang/String;",
+              "setSignVersion",
+              "(Ljava/lang/String;)V",
+              "getSign",
+              "setSign",
+              "getLimitedFreeType",
+              "setLimitedFreeType",
+              "getRewindPrevInterceptType",
+              "setRewindPrevInterceptType",
+              "getInterceptType",
+              "setInterceptType",
+              "getTrackValue",
+              "setTrackValue",
+              "getLunaCommercialStyle",
+              "()Lcom/luna/common/arch/net/entity/track/LunaCommercialStyle;",
+              "setLunaCommercialStyle",
+              "(Lcom/luna/common/arch/net/entity/track/LunaCommercialStyle;)V",
+              "component1",
+              "component2",
+              "component3",
+              "component4",
+              "component5",
+              "component6",
+              "component7",
+              "component8",
+              "component9",
+              "component10",
+              "component11",
+              "component12",
+              "copy",
+              "(Ljava/lang/Boolean;ZZLjava/lang/Boolean;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/luna/common/arch/net/entity/track/LunaCommercialStyle;)Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+              "equals",
+              "other",
+              "",
+              "hashCode",
+              "",
+              "toString",
+              "common-arch_release"
+            ],
+            "k": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "01",
+              "unsigned_value": 1
+            },
+            "mv": [
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "02",
+                "unsigned_value": 2
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "01",
+                "unsigned_value": 1
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              }
+            ],
+            "xi": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "30",
+              "unsigned_value": 48
+            }
+          }
+        }
+      ],
+      "parameter_annotations": [
+        {
+          "dex_method_index": 8180,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "<init>",
+          "descriptor": "(Ljava/lang/Boolean;ZZLjava/lang/Boolean;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/luna/common/arch/net/entity/track/LunaCommercialStyle;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [],
+            [],
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 8194,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "copy",
+          "descriptor": "(Ljava/lang/Boolean;ZZLjava/lang/Boolean;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/luna/common/arch/net/entity/track/LunaCommercialStyle;)Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [],
+            [],
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 8196,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "equals",
+          "descriptor": "(Ljava/lang/Object;)Z",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 8210,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "setExpireTime",
+          "descriptor": "(Ljava/lang/Long;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 8211,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "setInterceptType",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 8212,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "setLimitedFree",
+          "descriptor": "(Ljava/lang/Boolean;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 8213,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "setLimitedFreeType",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 8214,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "setLunaCommercialStyle",
+          "descriptor": "(Lcom/luna/common/arch/net/entity/track/LunaCommercialStyle;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 8215,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "setRewindPrevInterceptType",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 8216,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "setSign",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 8217,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "setSignVersion",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 8218,
+          "owner": "Lcom/luna/common/arch/net/entity/card/NetLimitedFreeParam;",
+          "name": "setTrackValue",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9840747,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "evidence_id": "ev_46a9d6197469f994cd0ea980d7d1148d4dff49dfae49a0de3cfd0f902abb336c",
+  "subject": {
+    "name": "soda-classes6-analysis.apk",
+    "digest": {
+      "sha256": "f0168eeb1883653f1309c805eb71bad4d0c40bbe996a4755530d50ee705c8326"
+    },
+    "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-07-release174\\official\\soda-classes6-analysis.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "D:/AnLi/.codex-artifacts/2026-11-07-release174/official/soda-classes6-analysis.apk",
+    "class_name": "com.luna.biz.main.init.preload.PreloadTabDataTask"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "10"
+    },
+    "bridge_sha256": "f9d6d68eadd3d51a89e2debda359454c20534560080d4438f9b9cfe5a19f0b2e",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\zyt\\AppData\\Local\\Temp\\rea-android-6d234910a1653d57ae71d2e183505cb0\\target.apk",
+      "class_count": 3171,
+      "resource_count": 2,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"max_heap_bytes\":3221225472,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":8,\"java_version\":\"17.0.20.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "C:\\Users\\zyt\\AppData\\Local\\Temp\\rea-android-6d234910a1653d57ae71d2e183505cb0\\target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\zyt\\\\AppData\\\\Local\\\\Temp\\\\rea-android-6d234910a1653d57ae71d2e183505cb0\\\\target.apk\",\"class_count\":3171,\"raw_class_count\":3171,\"resource_count\":2,\"load_duration_ms\":5938,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.luna.biz.main.init.preload.PreloadTabDataTask",
+          "dex_static_values": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"field_count\":3,\"method_count\":4,\"raw_name\":\"com.luna.biz.main.init.preload.PreloadTabDataTask\",\"name\":\"PreloadTabDataTask\",\"inner_class_count\":1,\"inner_class_raw_names\":[\"com.luna.biz.main.init.preload.PreloadTabDataTask$Companion\"],\"fields\":[{\"def_pos\":0,\"dex_type\":\"Lcom/luna/biz/main/init/preload/PreloadTabDataTask$Companion;\",\"raw_name\":\"b\",\"name\":\"b\",\"type\":\"com.luna.biz.main.init.preload.PreloadTabDataTask$Companion\"},{\"def_pos\":0,\"dex_type\":\"Z\",\"raw_name\":\"c\",\"name\":\"c\",\"type\":\"boolean\"},{\"def_pos\":0,\"dex_type\":\"Lcom/bytedance/hotfix/base/ChangeQuickRedirect;\",\"raw_name\":\"d\",\"name\":\"d\",\"type\":\"com.bytedance.hotfix.base.ChangeQuickRedirect\"}],\"methods\":[{\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\",\"signature\":\"\\u003cclinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"\\u003cclinit\\u003e\",\"def_pos\":0},{\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"signature\":\"\\u003cinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"is_constructor\":false,\"name\":\"c\",\"signature\":\"c(com.luna.music.launch.api.Event, android.app.Application): void\",\"dex_descriptor\":\"(Lcom/luna/music/launch/api/Event;Landroid/app/Application;)V\",\"raw_name\":\"c\",\"def_pos\":0},{\"is_constructor\":false,\"name\":\"e\",\"signature\":\"e(com.luna.common.arch.init.stage.MessageQueueIdleWithPageLoadComplete, android.app.Application): void\",\"dex_descriptor\":\"(Lcom/luna/common/arch/init/stage/MessageQueueIdleWithPageLoadComplete;Landroid/app/Application;)V\",\"raw_name\":\"e\",\"def_pos\":0}],\"full_name\":\"com.luna.biz.main.init.preload.PreloadTabDataTask\",\"inner_classes\":[\"com.luna.biz.main.init.preload.PreloadTabDataTask.Companion\"]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 3072
+    },
+    "class_name": "com.luna.biz.main.init.preload.PreloadTabDataTask",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(com.luna.music.launch.api.Event, android.app.Application): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/luna/music/launch/api/Event;Landroid/app/Application;)V"
+      },
+      {
+        "name": "e",
+        "reported_signature": "e(com.luna.common.arch.init.stage.MessageQueueIdleWithPageLoadComplete, android.app.Application): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/luna/common/arch/init/stage/MessageQueueIdleWithPageLoadComplete;Landroid/app/Application;)V"
+      }
+    ],
+    "fields": [
+      {
+        "name": "b",
+        "reported_type": "com.luna.biz.main.init.preload.PreloadTabDataTask$Companion",
+        "dex_static_value": null
+      },
+      {
+        "name": "c",
+        "reported_type": "boolean",
+        "dex_static_value": null
+      },
+      {
+        "name": "d",
+        "reported_type": "com.bytedance.hotfix.base.ChangeQuickRedirect",
+        "dex_static_value": null
+      }
+    ],
+    "inner_classes": [
+      "com.luna.biz.main.init.preload.PreloadTabDataTask.Companion"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\AnLi\.codex-artifacts\2026-11-05-github-gitee-150-160\finish_cleanup160.py", line 32, in <module>
+    subprocess.run(['git','--git-dir='+str(fresh),'-c','http.sslBackend=openssl','-c','http.version=HTTP/1.1','fetch','--depth=1','--no-tags',url,private['branch']],env=dict(os.environ,GIT_TERMINAL_PROMPT='0',GCM_INTERACTIVE='Never'),check=True,capture_output=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zyt\AppData\Local\Programs\Python\Python314\Lib\subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['git', '--git-dir=D:\\AnLi\\.codex-artifacts\\2026-11-05-github-gitee-150-160\\fresh-private-delta.git', '-c', 'http.sslBackend=openssl', '-c', 'http.version=HTTP/1.1', 'fetch', '--depth=1', '--no-tags', 'https://gitee.com/Mesting42/mesting-music-flutter.git', 'refs/heads/private-development-records-20261105']' returned non-zero exit status 128.

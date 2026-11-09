@@ -1,0 +1,14 @@
+PASS five-second cadence survives a missing acknowledgement
+PASS new lease rejects an old revision and late callbacks
+PASS configuration replay is idempotent
+PASS exit releases pending delivery and disables ordinary pulses
+PASS unresponsive engine loses lease and fallback may renew it
+PASS acknowledgements renew the bounded lease without room identifiers
+6 native scheduler scenarios passed
+
+PASS scheduled, sent, timeout and stale acknowledgement are distinct
+PASS acknowledgement keeps its delivery-only counter and pending state
+PASS bounded native history retains the newest detached events
+PASS optional log observer receives only detached safe events
+4 native diagnostics scenarios passed
+

@@ -1,0 +1,5404 @@
+{
+  "_id": "@neteasecloudmusicapienhanced/api",
+  "_rev": "37-7b6dce70510a765a271a785b00b0317a",
+  "name": "@neteasecloudmusicapienhanced/api",
+  "dist-tags": {
+    "latest": "4.41.1"
+  },
+  "versions": {
+    "4.29.11": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.29.11",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.29.11",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "emotionui@qq.com"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/md5",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "5ad3caa38d599e18cabe42a13e54b285b6127e66",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.29.11.tgz",
+        "fileCount": 412,
+        "integrity": "sha512-6yajC4cDH74+xpI5OadFXqIeA1TgmAi67QLRv3JbPet9JIWN6DXAagCz0QJUbo0bUPIdH1CimyU/P+eEyxP5nA==",
+        "signatures": [
+          {
+            "sig": "MEUCIQCQogGfHN8QDGPwKyaNAPmO2T+43mGRdRDv/9neuyofMQIgE+X/PS9w6xdsa57X3/uKG14NrFPWkxlzGyPdIxr10x8=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 10746364
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "6d33efee4725f69d680b318313d3ab5a3392296b",
+      "scripts": {
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o bin/app --no-bytecode",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o bin/app --no-bytecode",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o bin/app --no-bytecode"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "emotionui@qq.com"
+      },
+      "_npmVersion": "10.8.2",
+      "description": "为停更的网易云音乐 NodeJs API 提供持续的维护！",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "20.19.5",
+      "dependencies": {
+        "md5": "^2.3.0",
+        "axios": "^1.12.2",
+        "yargs": "^17.7.2",
+        "dotenv": "^16.6.1",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.1.0",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.3.1",
+        "music-metadata": "^7.14.0",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@unblockneteasemusic/server": "^0.28.0"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "7.0.4",
+        "mocha": "11.7.3",
+        "eslint": "8.7.0",
+        "prettier": "3.6.2",
+        "typescript": "4.5.2",
+        "@types/node": "24.6.1",
+        "lint-staged": "12.1.7",
+        "@types/mocha": "^9.1.1",
+        "power-assert": "1.6.1",
+        "@types/express": "^5.0.3",
+        "eslint-plugin-html": "8.1.3",
+        "eslint-config-prettier": "8.5.0",
+        "eslint-plugin-prettier": "4.0.0",
+        "intelli-espower-loader": "1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "5.0.0",
+        "@typescript-eslint/eslint-plugin": "5.0.0"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.29.11_1760702816248_0.85584635064951",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.29.12": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.29.12",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.29.12",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "emotionui@qq.com"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/md5",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "945ebd92998a40eb14315f521c10c56ec92e49dc",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.29.12.tgz",
+        "fileCount": 412,
+        "integrity": "sha512-oIT+XgjMN/m0e1C7c+KUKee9AMjAziJY28aZ2m4yAAJyMkAwgcMHpNs9nQ91U8FRHGwX4TNXoWGX1Tczx484TA==",
+        "signatures": [
+          {
+            "sig": "MEYCIQCkZLQYtLR4CS8GGonNWJO5eZ25CAqD5dkZv2d0V23JvgIhANo9T5oGh3XyGYlT+BeMM7qP7e7eqVIHPzp3+5vDEYuI",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 10743513
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "b45739b62148562a05b386bde44a3cf08365607e",
+      "scripts": {
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o bin/app --no-bytecode",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o bin/app --no-bytecode",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o bin/app --no-bytecode"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "emotionui@qq.com"
+      },
+      "_npmVersion": "10.8.2",
+      "description": "为停更的网易云音乐 NodeJs API 提供持续的维护！",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "20.19.5",
+      "dependencies": {
+        "md5": "^2.3.0",
+        "axios": "^1.12.2",
+        "yargs": "^17.7.2",
+        "dotenv": "^17.2.3",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.1.0",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.3.1",
+        "music-metadata": "^7.14.0",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@unblockneteasemusic/server": "^0.28.0"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "7.0.4",
+        "mocha": "11.7.3",
+        "eslint": "8.7.0",
+        "prettier": "3.6.2",
+        "typescript": "4.5.2",
+        "@types/node": "24.6.1",
+        "lint-staged": "16.2.4",
+        "@types/mocha": "^9.1.1",
+        "power-assert": "1.6.1",
+        "@types/express": "^5.0.4",
+        "eslint-plugin-html": "8.1.3",
+        "eslint-config-prettier": "8.5.0",
+        "eslint-plugin-prettier": "4.0.0",
+        "intelli-espower-loader": "1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "5.0.0",
+        "@typescript-eslint/eslint-plugin": "5.62.0"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.29.12_1761299512242_0.0015347202894484546",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.29.13": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.29.13",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.29.13",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "emotionui@qq.com"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/md5",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "bc951a9775f950745f810998b6ff99844943bbea",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.29.13.tgz",
+        "fileCount": 412,
+        "integrity": "sha512-RJZnEV0JzGjDAhqaFRVE0LcKc+K9cfXIS2Sg1uL6eKkZgRIvoyLEZ8NDxnXCwut+jKYCKJOpbEgeDIbayV5pAQ==",
+        "signatures": [
+          {
+            "sig": "MEUCIQC7xkWHzasLqlqqsJiFY3dmPz66Y3itFjyXYTPen03uNQIgcF0+/seT3IwK+fqnLjuo5RKZC9uryO/7E+ib5iqETS4=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 10743511
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "597ac1498f35e9cff023403d1b299472f7cfa368",
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o bin/app --no-bytecode",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o bin/app --no-bytecode",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o bin/app --no-bytecode"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "emotionui@qq.com"
+      },
+      "_npmVersion": "10.8.2",
+      "description": "为停更的网易云音乐 NodeJs API 提供持续的维护！",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "20.19.5",
+      "dependencies": {
+        "md5": "^2.3.0",
+        "axios": "^1.13.1",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.2.3",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.1.0",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.3.1",
+        "music-metadata": "^7.14.0",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@unblockneteasemusic/server": "^0.28.0"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "9.1.7",
+        "mocha": "11.7.4",
+        "eslint": "9.39.0",
+        "globals": "^16.4.0",
+        "nodemon": "^3.1.10",
+        "prettier": "3.6.2",
+        "@eslint/js": "^9.39.0",
+        "typescript": "5.9.3",
+        "@types/node": "24.9.1",
+        "lint-staged": "16.2.6",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "1.6.1",
+        "@types/express": "^5.0.5",
+        "@eslint/eslintrc": "^3.3.1",
+        "eslint-plugin-html": "8.1.3",
+        "eslint-config-prettier": "10.1.8",
+        "eslint-plugin-prettier": "5.5.4",
+        "intelli-espower-loader": "1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "8.46.2",
+        "@typescript-eslint/eslint-plugin": "8.46.2"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.29.13_1761973931956_0.95847005549373",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.29.14": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.29.14",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.29.14",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "emotionui@qq.com"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/md5",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "5e715c9e1e7e79a7bd8104326973952efa3fbf90",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.29.14.tgz",
+        "fileCount": 413,
+        "integrity": "sha512-TI93ONZvfa7fsjRQQMyG8MZg2hfxWzd3sVXu4B2AYtdD8Vjn8mLdR2Q93T9OwWTx6fie6VNr9kvL2eKIs+E6iA==",
+        "signatures": [
+          {
+            "sig": "MEUCIQCiWu/Pf45hNL4YhdM7CA+OXsL9mtxVpF5pa7LVCmxUqAIgGkZXvcNFVaH/NA3jMER7I7X6pYL6LqjVQSCv64fin7o=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 10744068
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "d4d465e731598905be2870fa9413eb8ffbc563c0",
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o bin/app --no-bytecode",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o bin/app --no-bytecode",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o bin/app --no-bytecode"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "emotionui@qq.com"
+      },
+      "_npmVersion": "10.8.2",
+      "description": "为停更的网易云音乐 NodeJs API 提供持续的维护！",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "20.19.5",
+      "dependencies": {
+        "md5": "^2.3.0",
+        "axios": "^1.13.2",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.2.3",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.1.0",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.3.1",
+        "music-metadata": "^7.14.0",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@unblockneteasemusic/server": "^0.28.0"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "9.1.7",
+        "mocha": "11.7.4",
+        "eslint": "9.39.0",
+        "globals": "^16.5.0",
+        "nodemon": "^3.1.10",
+        "prettier": "3.6.2",
+        "@eslint/js": "^9.39.1",
+        "typescript": "5.9.3",
+        "@types/node": "24.9.1",
+        "lint-staged": "16.2.6",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "1.6.1",
+        "@types/express": "^5.0.5",
+        "@eslint/eslintrc": "^3.3.1",
+        "eslint-plugin-html": "8.1.3",
+        "eslint-config-prettier": "10.1.8",
+        "eslint-plugin-prettier": "5.5.4",
+        "intelli-espower-loader": "1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "8.46.2",
+        "@typescript-eslint/eslint-plugin": "8.46.2"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.29.14_1762513425897_0.44139173866129777",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.29.15": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.29.15",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.29.15",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "emotionui@qq.com"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/md5",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "e32514ad7c35bc5c9991bd3e4ac6e7ade0670c1f",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.29.15.tgz",
+        "fileCount": 413,
+        "integrity": "sha512-/dw0ON90NDXJnULEyKzGEvKjjkJyHYb9fJgKa1dxsN5AIN/tXNAu4AV2vMJcPGfA/NV7iRnLDEPS8ocJCbCU2w==",
+        "signatures": [
+          {
+            "sig": "MEYCIQCsIbI8JNzXwTxgnGL3WOpNPA+RIeqC4a/VcI3tQvZPRAIhALbSD7a6K+pJ7Vqa56nB7Cu2UEuyOuVWOGtRUgdcdDEa",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 10744269
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "3a10a4d7536965ebcc1fef2583a9aa49232472fa",
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o bin/app --no-bytecode",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o bin/app --no-bytecode",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o bin/app --no-bytecode"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "emotionui@qq.com"
+      },
+      "_npmVersion": "10.8.2",
+      "description": "为停更的网易云音乐 NodeJs API 提供持续的维护！",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "20.19.5",
+      "dependencies": {
+        "md5": "^2.3.0",
+        "axios": "^1.13.2",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.2.3",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.1.0",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.3.1",
+        "music-metadata": "^11.9.0",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@unblockneteasemusic/server": "^0.28.0"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "9.1.7",
+        "mocha": "11.7.4",
+        "eslint": "9.39.0",
+        "globals": "^16.5.0",
+        "nodemon": "^3.1.10",
+        "prettier": "3.6.2",
+        "@eslint/js": "^9.39.1",
+        "typescript": "5.9.3",
+        "@types/node": "24.10.0",
+        "lint-staged": "16.2.6",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "1.6.1",
+        "@types/express": "^5.0.5",
+        "@eslint/eslintrc": "^3.3.1",
+        "eslint-plugin-html": "8.1.3",
+        "eslint-config-prettier": "10.1.8",
+        "eslint-plugin-prettier": "5.5.4",
+        "intelli-espower-loader": "1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "8.46.2",
+        "@typescript-eslint/eslint-plugin": "8.46.2"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.29.15_1762586959861_0.219436974611541",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.29.16": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.29.16",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.29.16",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "emotionui@qq.com"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/md5",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "2f4e89fa1a2f567f3caac122f4b78ec72465cdbc",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.29.16.tgz",
+        "fileCount": 413,
+        "integrity": "sha512-ml6cTErjJ/fn+E0wvlNGGoW74rDj3mfogO85xySuTCuX/Mdhuayv+pPtoSm5YDM6j26hHmS8+rV2ma4o16pUiw==",
+        "signatures": [
+          {
+            "sig": "MEQCIHBdPbcBcC6dOmplHGHj2nSiB57MSV60vIKTz/b6R+aNAiAUwdfc8VJVt+IppYxrWgfy/qAsN7h+Gds1KunaS+xNKA==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 10744272
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "9019a2a4a5f68fcdbb3e1320876fd3a46cb54d20",
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o bin/app --no-bytecode",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o bin/app --no-bytecode",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o bin/app --no-bytecode"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "emotionui@qq.com"
+      },
+      "_npmVersion": "10.8.2",
+      "description": "为停更的网易云音乐 NodeJs API 提供持续的维护！",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "20.19.5",
+      "dependencies": {
+        "md5": "^2.3.0",
+        "axios": "^1.13.2",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.2.3",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.1.0",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.3.1",
+        "music-metadata": "^11.9.0",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@unblockneteasemusic/server": "^0.28.0"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "9.1.7",
+        "mocha": "11.7.4",
+        "eslint": "9.39.0",
+        "globals": "^16.5.0",
+        "nodemon": "^3.1.10",
+        "prettier": "3.6.2",
+        "@eslint/js": "^9.39.1",
+        "typescript": "5.9.3",
+        "@types/node": "24.10.0",
+        "lint-staged": "16.2.6",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "1.6.1",
+        "@types/express": "^5.0.5",
+        "@eslint/eslintrc": "^3.3.1",
+        "eslint-plugin-html": "8.1.3",
+        "eslint-config-prettier": "10.1.8",
+        "eslint-plugin-prettier": "5.5.4",
+        "intelli-espower-loader": "1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "8.46.2",
+        "@typescript-eslint/eslint-plugin": "8.46.2"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.29.16_1762647753679_0.3421854246401097",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.29.17": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.29.17",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.29.17",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "emotionui@qq.com"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/md5",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "8395f9f3847965ccc2a8b68e2e65885ef167d77b",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.29.17.tgz",
+        "fileCount": 414,
+        "integrity": "sha512-zKqmA7NoP+H3dK0b4/1K7SkxAYz69z9zwPd6+9wXcQNA42EO4AK/rDZ0ZPC9bonQjigHrvK4beFMaIl01S1iig==",
+        "signatures": [
+          {
+            "sig": "MEUCIBYJjU/hCNYG32gL4zM8pzp1xgwvJX8St0hEaukyLmHsAiEAhs2Ht0kEnEEPyKVTGFrx5gK/GgOoipzC3c8sihgag3s=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 10748297
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "9d186394645f779507635ddf778a3b178ea438cb",
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o bin/app --no-bytecode",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o bin/app --no-bytecode",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o bin/app --no-bytecode"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "emotionui@qq.com"
+      },
+      "_npmVersion": "10.8.2",
+      "description": "为停更的网易云音乐 NodeJs API 提供持续的维护！",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "20.19.5",
+      "dependencies": {
+        "md5": "^2.3.0",
+        "axios": "^1.13.2",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.2.3",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.1.0",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.3.1",
+        "music-metadata": "^11.10.0",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@unblockneteasemusic/server": "^0.28.0"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "9.1.7",
+        "mocha": "11.7.4",
+        "eslint": "9.39.0",
+        "globals": "^16.5.0",
+        "nodemon": "^3.1.11",
+        "prettier": "3.6.2",
+        "@eslint/js": "^9.39.1",
+        "typescript": "5.9.3",
+        "@types/node": "24.10.0",
+        "lint-staged": "16.2.6",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "1.6.1",
+        "@types/express": "^5.0.5",
+        "@eslint/eslintrc": "^3.3.1",
+        "eslint-plugin-html": "8.1.3",
+        "eslint-config-prettier": "10.1.8",
+        "eslint-plugin-prettier": "5.5.4",
+        "intelli-espower-loader": "1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "8.46.3",
+        "@typescript-eslint/eslint-plugin": "8.46.2"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.29.17_1763184346709_0.21533514302470413",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.29.18": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.29.18",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.29.18",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "emotionui@qq.com"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/md5",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "c4e5735f5ca1b8a7f7d77d8f4e709ce765cb2da5",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.29.18.tgz",
+        "fileCount": 414,
+        "integrity": "sha512-pswL6z1yNo/SIfGT2jXDYvD8xuPm7NmwJ/cka5LiocWEdoAF43h9FdVX09lqCSVH57fD5MQmF+m7WdmErw21NA==",
+        "signatures": [
+          {
+            "sig": "MEYCIQDIj8hPtL6vQTPu1Fb72Afr1P3vG73zy7UcRVuiVw8FOgIhAPQASYgSM/omJVmrqP5tqLACj9q/ayPvK1c/2I7PxrWG",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 10748423
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "77eb154028b0f2b79d4c5e0a6d38bafdbd5d4b95",
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o bin/app --no-bytecode",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o bin/app --no-bytecode",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o bin/app --no-bytecode"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "emotionui@qq.com"
+      },
+      "_npmVersion": "10.8.2",
+      "description": "A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced)|| 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "20.19.6",
+      "dependencies": {
+        "md5": "^2.3.0",
+        "axios": "^1.13.2",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.2.3",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.3.3",
+        "music-metadata": "^11.10.3",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@unblockneteasemusic/server": "^0.28.0"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "9.1.7",
+        "mocha": "11.7.5",
+        "eslint": "9.39.0",
+        "globals": "^16.5.0",
+        "nodemon": "^3.1.11",
+        "prettier": "3.6.2",
+        "@eslint/js": "^9.39.2",
+        "typescript": "5.9.3",
+        "@types/node": "24.10.0",
+        "lint-staged": "16.2.6",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.3",
+        "eslint-plugin-html": "8.1.3",
+        "eslint-config-prettier": "10.1.8",
+        "eslint-plugin-prettier": "5.5.4",
+        "intelli-espower-loader": "1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "8.46.3",
+        "@typescript-eslint/eslint-plugin": "8.46.2"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.29.18_1766150685972_0.49545347493473657",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.29.19": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.29.19",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.29.19",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "emotionui@qq.com"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/md5",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "4848db6c8d0df19aff9c4ef861cfabfa0d7fe793",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.29.19.tgz",
+        "fileCount": 415,
+        "integrity": "sha512-fbfcFRLoG+Fpj3FIVTXB7LA6IPDUYJTJvBhKsfPPnFIq/Qru6v4tyrwrOUeUYnyrib+JIxrVt25xYFCNT02nrQ==",
+        "signatures": [
+          {
+            "sig": "MEQCID/EQ22Xc2zD/A0XykLK41oOr+ounf952y9PObAq8gKUAiAXUpWc+XFXfr2E4tdnDNSa/t/IXP2PZmgYDOlF6I37mg==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 10748199
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "30bd839809066b380947157e00237c5abf7c3411",
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o bin/app --no-bytecode",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o bin/app --no-bytecode",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o bin/app --no-bytecode"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "emotionui@qq.com"
+      },
+      "_npmVersion": "10.8.2",
+      "description": "A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced)|| 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "20.19.6",
+      "dependencies": {
+        "md5": "^2.3.0",
+        "axios": "^1.13.2",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.2.3",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.3.3",
+        "music-metadata": "^11.10.3",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@unblockneteasemusic/server": "^0.28.0"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "9.1.7",
+        "mocha": "11.7.5",
+        "eslint": "9.39.0",
+        "globals": "^16.5.0",
+        "nodemon": "^3.1.11",
+        "prettier": "3.6.2",
+        "@eslint/js": "^9.39.2",
+        "typescript": "5.9.3",
+        "@types/node": "24.10.0",
+        "lint-staged": "16.2.6",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.3",
+        "eslint-plugin-html": "8.1.3",
+        "eslint-config-prettier": "10.1.8",
+        "eslint-plugin-prettier": "5.5.4",
+        "intelli-espower-loader": "1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "8.46.3",
+        "@typescript-eslint/eslint-plugin": "8.46.2"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.29.19_1766196923160_0.06005160656039776",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.29.20": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.29.20",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.29.20",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "emotionui@qq.com"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/md5",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "1b3a5a96821a029e5aafa181a566e5601f4f7afe",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.29.20.tgz",
+        "fileCount": 415,
+        "integrity": "sha512-f39oP7iA7QurwZW1h5edhB4gO1TzQnPH8yIaaJFhIMEW7xXJ01NRlIXRfZG+29LuU6P5wAF7DCMkc96S5SLq2g==",
+        "signatures": [
+          {
+            "sig": "MEUCIHXtZu7yoKngE4yI2ryVw1HLnuRqi67WKM9p+JXqVxiwAiEA1ooyRHsFo57tAhokoqQfaGa6F3s9G44YeRF0R8KqkUE=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 10746067
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "2d3f15f0e5176083106f3c8734ca8f28246ac66e",
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o bin/app --no-bytecode",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o bin/app --no-bytecode",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o bin/app --no-bytecode"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "emotionui@qq.com"
+      },
+      "_npmVersion": "10.8.2",
+      "description": "A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced)|| 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "20.19.6",
+      "dependencies": {
+        "md5": "^2.3.0",
+        "axios": "^1.13.2",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.2.3",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.3.3",
+        "music-metadata": "^11.10.3",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.1.3"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "9.1.7",
+        "mocha": "11.7.5",
+        "eslint": "9.39.0",
+        "globals": "^16.5.0",
+        "nodemon": "^3.1.11",
+        "prettier": "3.6.2",
+        "@eslint/js": "^9.39.2",
+        "typescript": "5.9.3",
+        "@types/node": "24.10.0",
+        "lint-staged": "16.2.6",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.3",
+        "eslint-plugin-html": "8.1.3",
+        "eslint-config-prettier": "10.1.8",
+        "eslint-plugin-prettier": "5.5.4",
+        "intelli-espower-loader": "1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "8.46.3",
+        "@typescript-eslint/eslint-plugin": "8.46.2"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.29.20_1766750072809_0.0895748806280805",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.29.21": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.29.21",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.29.21",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "emotionui@qq.com"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/md5",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "4c207e6c6d9227118cfd6f727348546b5d9626a4",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.29.21.tgz",
+        "fileCount": 415,
+        "integrity": "sha512-semXy25G3P/h8Mjrjo/f5Y1J275s07NJ/vLzQ2Nkhu7qsHclVEXUiUyf9wwDJWC5ZtcuZmLut3j0UOOQq60Gfg==",
+        "signatures": [
+          {
+            "sig": "MEUCIFvzuKGqOdwsOWkHFePcc1xm28WIi96FlShhqWVQHC8cAiEAv8tKFIYgYLOfG5hpAcYJnYUd/KgkWLmFtb2+iDpWzeo=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 10747756
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "2b69e9dda5ec3c164cfb85f2a39a43a015c77d02",
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o bin/app --no-bytecode",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o bin/app --no-bytecode",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o bin/app --no-bytecode"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "emotionui@qq.com"
+      },
+      "_npmVersion": "10.8.2",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "20.20.0",
+      "dependencies": {
+        "md5": "^2.3.0",
+        "axios": "^1.13.4",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.2.3",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.3.3",
+        "music-metadata": "^11.11.1",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.1.3"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "9.1.7",
+        "mocha": "11.7.5",
+        "eslint": "9.39.0",
+        "globals": "^16.5.0",
+        "nodemon": "^3.1.11",
+        "prettier": "3.7.4",
+        "@eslint/js": "^9.39.2",
+        "typescript": "5.9.3",
+        "@types/node": "25.0.9",
+        "lint-staged": "16.2.7",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.3",
+        "eslint-plugin-html": "8.1.3",
+        "eslint-config-prettier": "10.1.8",
+        "eslint-plugin-prettier": "5.5.5",
+        "intelli-espower-loader": "1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "8.53.0",
+        "@typescript-eslint/eslint-plugin": "8.46.3"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.29.21_1769786678584_0.11692178779741691",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.30.0": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.30.0",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.30.0",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "emotionui@qq.com"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/md5",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "a009bf43ab7ac8d8a68234ecbd7d6e7c9e080cd7",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.30.0.tgz",
+        "fileCount": 416,
+        "integrity": "sha512-S9WXg/HFsPearsIahZcDdNpJRmv/DAIZiR+yWD006aCPoA1D0SBkLMK3NANWTT+ROlz4ZbSz5EOexxLOUoDa8w==",
+        "signatures": [
+          {
+            "sig": "MEQCIENqTsHCJHzhnxr7bW2qOQzGubDVtpWoI0+zSXx0T4t2AiAzHCYnlCRyC+UQrq/Xti6SgC/CLL90gOa1YIxCbQq0Xw==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 10792124
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "ce51da91507deba0f124fdedc1994ac81ad4483a",
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "emotionui@qq.com"
+      },
+      "_npmVersion": "10.8.2",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "20.20.0",
+      "dependencies": {
+        "md5": "^2.3.0",
+        "axios": "^1.13.5",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.2.4",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.3.3",
+        "music-metadata": "^11.12.0",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.2.2"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "9.1.7",
+        "mocha": "11.7.5",
+        "eslint": "9.39.0",
+        "globals": "^16.5.0",
+        "nodemon": "^3.1.11",
+        "prettier": "3.7.4",
+        "@eslint/js": "^9.39.2",
+        "typescript": "5.9.3",
+        "@types/node": "25.0.9",
+        "lint-staged": "16.2.7",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.3",
+        "eslint-plugin-html": "8.1.3",
+        "eslint-config-prettier": "10.1.8",
+        "eslint-plugin-prettier": "5.5.5",
+        "intelli-espower-loader": "1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "8.53.0",
+        "@typescript-eslint/eslint-plugin": "8.46.3"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.30.0_1770651375410_0.37432744560732134",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.30.1": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.30.1",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.30.1",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "emotionui@qq.com"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/md5",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "e497a1564ffc89aa2aff56636999b49c3896ce15",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.30.1.tgz",
+        "fileCount": 418,
+        "integrity": "sha512-//Wl5CmYJBJJW3jvFRCGOtJ4tqvuox5xwHo8MFep9f/dXO3hjg+Q37B3UWseT+vOCdXbcoLbQbe5Um0CprUCbQ==",
+        "signatures": [
+          {
+            "sig": "MEUCIQCToYdeoAXHAOdgph6iXRqg76iKkrPkukXBK0Xh12VsvQIgKZTeg9ykc2MzukltXKwdHqLDj23ViNEh3BpzIXGueSs=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 10794003
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "2a0b54e442dfb1ddf6a48b6ada37aea74c638992",
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "emotionui@qq.com"
+      },
+      "_npmVersion": "10.8.2",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "20.20.0",
+      "dependencies": {
+        "md5": "^2.3.0",
+        "axios": "^1.13.5",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.2.4",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.3.3",
+        "music-metadata": "^11.12.0",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.2.2"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "9.1.7",
+        "mocha": "11.7.5",
+        "eslint": "9.39.0",
+        "globals": "^16.5.0",
+        "nodemon": "^3.1.11",
+        "prettier": "3.7.4",
+        "@eslint/js": "^9.39.2",
+        "typescript": "5.9.3",
+        "@types/node": "25.0.9",
+        "lint-staged": "16.2.7",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.3",
+        "eslint-plugin-html": "8.1.3",
+        "eslint-config-prettier": "10.1.8",
+        "eslint-plugin-prettier": "5.5.5",
+        "intelli-espower-loader": "1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "8.53.0",
+        "@typescript-eslint/eslint-plugin": "8.46.3"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.30.1_1770800734147_0.8732356388426215",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.30.2": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.30.2",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.30.2",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "e6f9b0911f1dc770818f614dc66ffae1ae6b38e8",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.30.2.tgz",
+        "fileCount": 423,
+        "integrity": "sha512-YtYhPhm+J81ZmMEcgnNolAGJ0bviw3t3aXnoILnU5T7tLD2m9EFbJiMrodS/E1Yu1r/6kMi2SXTlb9tVWV4UxA==",
+        "signatures": [
+          {
+            "sig": "MEQCIGfjQuhczRptcdVS52o1NsFjAeVVApHtOKIybPpP8EhwAiAtvO+tfN3OM8Dlibgvs11h5o2mn5cL+VkvaIwaFxU7HA==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 10127314
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "a9332af453a5a2ddf4e7d8dcb1a46bdc30d4effb",
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "noreply@focalors.ltd"
+      },
+      "_npmVersion": "10.8.2",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "20.20.0",
+      "dependencies": {
+        "axios": "^1.13.5",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.3.1",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.3.3",
+        "music-metadata": "^11.12.1",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.2.3"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.7.5",
+        "eslint": "^9.39.3",
+        "globals": "^16.5.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.8.1",
+        "@eslint/js": "^9.39.3",
+        "typescript": "^5.9.3",
+        "@types/node": "25.0.9",
+        "lint-staged": "^16.2.7",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.3",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.5",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.56.0",
+        "@typescript-eslint/eslint-plugin": "^8.56.0"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.30.2_1772265323327_0.5313852909428918",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.30.3": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.30.3",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.30.3",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "0462236a345e157bab4c14a49e51f456ff3dd59b",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.30.3.tgz",
+        "fileCount": 430,
+        "integrity": "sha512-ijWrL1UnQ7OoDu268UI/fo2gRcejN+QNah5ddFIorYJRbAkYTnx/eC66Ms4ajXfV2jVdc5T6k1A2dpBxvLphlQ==",
+        "signatures": [
+          {
+            "sig": "MEYCIQDbbQ66z7qCGrckbGR5syRmZ4AJ/a4Oz8zFqLj1dDxn6QIhAM03tmk38Q1m6RcGIm2R5amFS4Sl2FkdVO7Oua5OX1zz",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 10133071
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "3647fc5fa0e84cb9d1c08cf64669666da039a8ae",
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "noreply@focalors.ltd"
+      },
+      "_npmVersion": "10.8.2",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "20.20.0",
+      "dependencies": {
+        "axios": "^1.13.5",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.3.1",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.3.3",
+        "music-metadata": "^11.12.1",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.2.3"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.7.5",
+        "eslint": "^9.39.3",
+        "globals": "^16.5.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.8.1",
+        "@eslint/js": "^9.39.3",
+        "typescript": "^5.9.3",
+        "@types/node": "25.0.9",
+        "lint-staged": "^16.2.7",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.3",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.5",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.56.0",
+        "@typescript-eslint/eslint-plugin": "^8.56.0"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.30.3_1773420148992_0.6337905996216182",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.31.0": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.31.0",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.31.0",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "578c43c607a6a0d767b3599ffe7e415c1a50ce8e",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.31.0.tgz",
+        "fileCount": 435,
+        "integrity": "sha512-mDj1FYt2dzRKIE0bUcmY7ka6JOIVZyeGY4XaanvwljkiIBltQ17xeE2LuJk1HwicwV6uwI1s8cO8GP1uYCciZg==",
+        "signatures": [
+          {
+            "sig": "MEUCIQDHSPBczLdLd5Wz/ScG99VJeT9SnXFF6TC5MnGnbUyX2QIgPCAyQBhzAfkDCO+H5QzUBiyem33YOSUKQGkeLaRahmI=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 10136813
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "2c36daf07a4a092df3e5dc66f3acc9e1a9b4c91f",
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "noreply@focalors.ltd"
+      },
+      "_npmVersion": "10.8.2",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "20.20.1",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.13.6",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.3.1",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.12.3",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.2.4"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.7.5",
+        "eslint": "^9.39.4",
+        "globals": "^17.4.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.8.1",
+        "@eslint/js": "^9.39.4",
+        "typescript": "^5.9.3",
+        "@types/node": "25.5.0",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.5",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.5",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.57.2",
+        "@typescript-eslint/eslint-plugin": "^8.57.2"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.31.0_1774627857608_0.2442230234479319",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.32.0": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.32.0",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.32.0",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "881f3a87e69cb200db88ec4f20929b5cd22a5302",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.32.0.tgz",
+        "fileCount": 443,
+        "integrity": "sha512-p+ZTIgdniLywpM6m+hMNK/BxrpBt21mgdNYwaLU3xHRb9tzQNFcA11kxB5pFXUQB7rcazxypjfHgHAHauK9dBg==",
+        "signatures": [
+          {
+            "sig": "MEYCIQDQ99DgYeMTCXG0hYevKJxy9hdtrcjeJg/EEqku66nQ9wIhAIeaywiZojp+FJzN0jv+Jej5hJ28oHTaF862rtCaNZlm",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 10144623
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "ba9c6deaeed2705e4c332e3526de7c2bfc2a56eb",
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "noreply@focalors.ltd"
+      },
+      "_npmVersion": "10.8.2",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "20.20.2",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.13.6",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.3.1",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.12.3",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.2.4"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.7.5",
+        "eslint": "^9.39.4",
+        "globals": "^17.4.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.8.1",
+        "@eslint/js": "^9.39.4",
+        "typescript": "^5.9.3",
+        "@types/node": "25.5.0",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.5",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.5",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.57.2",
+        "@typescript-eslint/eslint-plugin": "^8.57.2"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.32.0_1776429888644_0.1661830148742589",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.32.1": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.32.1",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.32.1",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "fd3a7f7d00c986409d468977811ef3d400a7f682",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.32.1.tgz",
+        "fileCount": 444,
+        "integrity": "sha512-2w5ZKg5/sz15JQ5zyl7yqrTqn5ksqLZ//bRG3ENLvri6dTNdOs/muVPH4CvhNP2zYvFA9GXQzd6E/EpXyKs7JA==",
+        "signatures": [
+          {
+            "sig": "MEUCIQDQNMMOPYmRRBTjuALlQuDFvDBvsQu+9CgtA6QTDy4CcQIgJB/JbewYxHUqOKOWB2SoqwYkL/QEDQ/ZLW8w/dnwS/g=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 13028516
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "64d48473508e74427d79f52032dea723042d7d82",
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "noreply@focalors.ltd"
+      },
+      "_npmVersion": "11.9.0",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "24.14.0",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.16.1",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.4.2",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.12.3",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.3.1"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.7.5",
+        "eslint": "^9.39.4",
+        "globals": "^17.6.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.8.3",
+        "@eslint/js": "^9.39.4",
+        "typescript": "^5.9.3",
+        "@types/node": "25.5.0",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.5",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.5",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.59.3",
+        "@typescript-eslint/eslint-plugin": "^8.59.3"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.32.1_1778899661401_0.028179347833527713",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.33.0": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.33.0",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.33.0",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "ee4cff338b3e38e7c010f48e1c0c6078275c0981",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.33.0.tgz",
+        "fileCount": 447,
+        "integrity": "sha512-S8YSUqahFoKDJ+5T3oZ3Zifj+dbKsvUwv7DWwjldggPVK7QS85yydOFIs407a4K9f42r9Ne5SwjjRB52p82BEw==",
+        "signatures": [
+          {
+            "sig": "MEYCIQD+gOflQpxQa+y6a2O4jfVU7i5c6VngqvtGPh5TFz2SaAIhAONHDI1h+6pVrJjIsbnlZTapUTpf5j+IIZcBPGfaO0ll",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 13030891
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "086e379f2c69cb15fa89a11bf73b2914adcee486",
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "noreply@focalors.ltd"
+      },
+      "_npmVersion": "11.9.0",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "24.14.0",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.16.1",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.4.2",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.12.3",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.3.1"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.7.6",
+        "eslint": "^9.39.4",
+        "globals": "^17.6.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.8.3",
+        "@eslint/js": "^9.39.4",
+        "typescript": "^5.9.3",
+        "@types/node": "25.5.0",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.5",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.5",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.59.4",
+        "@typescript-eslint/eslint-plugin": "^8.59.4"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.33.0_1779453394241_0.5987489925820875",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.33.1": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.33.1",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.33.1",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "e945bac07acc958ad3ceb977dfee3aa6d8798077",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.33.1.tgz",
+        "fileCount": 447,
+        "integrity": "sha512-8miKa+WU1w7MeNUysQfPHmNguGnlPZt+a0OaPHucyyuHtJgfQLjh5MTl5g6/MRewzISd1hy/D8mvs3Z53e0B+A==",
+        "signatures": [
+          {
+            "sig": "MEUCICRQLN6EXB/DFd3oxY8lYs2SDNgX9pnigmLo8Zu8KcdPAiEAviVwY+kLGvnYsTySrn7EGnqtZqyvuAkzEPP9ifGkv28=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 13031364
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "fc5a76d5e2eed824af0ff1e681e8342d72ab7226",
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "noreply@focalors.ltd"
+      },
+      "_npmVersion": "11.9.0",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "24.14.0",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.16.1",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.4.2",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.12.3",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.3.1"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.7.6",
+        "eslint": "^9.39.4",
+        "globals": "^17.6.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.8.3",
+        "@eslint/js": "^9.39.4",
+        "typescript": "^5.9.3",
+        "@types/node": "25.5.0",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.5",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.5",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.59.4",
+        "@typescript-eslint/eslint-plugin": "^8.59.4"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.33.1_1780063561751_0.4007911444465029",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.34.0": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.34.0",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.34.0",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "f702e0b36c3254761e4a2245ddd68068f13371a4",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.34.0.tgz",
+        "fileCount": 449,
+        "integrity": "sha512-rRoR7Sz093VDgb8lYPtsY/RzzdrnXEHKJHi1xin0BTWN51uewHTAeY+NHdvJCu4+QvWEP/biVELurDPy6dx5Fw==",
+        "signatures": [
+          {
+            "sig": "MEUCIAPR+CZ2xBHsgSgB88LF7znFGJuD1wJcWWSs7ZIlnQ1CAiEAqWYSqqek1aKAgCsMKoPa5iyHDbLuGECFaifaadvIgeM=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 13056803
+      },
+      "main": "main.js",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "gitHead": "d0935f6e4224a60653a889e36a10ee37d02cd9a2",
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "prepare": "husky install",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app"
+      },
+      "_npmUser": {
+        "name": "iamfurina",
+        "email": "noreply@focalors.ltd"
+      },
+      "_npmVersion": "11.9.0",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "24.14.0",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.16.1",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.4.2",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.12.3",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.3.2"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.7.6",
+        "eslint": "^9.39.4",
+        "globals": "^17.6.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.8.3",
+        "@eslint/js": "^9.39.4",
+        "typescript": "^5.9.3",
+        "@types/node": "25.5.0",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.5",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.6",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.60.0",
+        "@typescript-eslint/eslint-plugin": "^8.60.0"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.34.0_1780071609174_0.2358552264812499",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.34.1": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.34.1",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.34.1",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "homepage": "https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced#readme",
+      "bugs": {
+        "url": "https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced/issues"
+      },
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "25a4ccf0055396ee43406ab752f19964654a7fe9",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.34.1.tgz",
+        "fileCount": 450,
+        "integrity": "sha512-qsp+kA95fIh58S3DHtjOT9HbC0SqwH1mdOHWhzdS5ZCHhxvbSnfBhnG1Zr6zXvfq/0JdF7wbsdfGCogwtrbSYQ==",
+        "signatures": [
+          {
+            "sig": "MEYCIQC8WO+Hs57JxP/4a1CQS51NjsuJ+J5rRdEJEU+GQRDqsAIhAIA1aucZAQTGgsJ9wQThQFiS+mBTv6Lhke7iNUg9snx9",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@neteasecloudmusicapienhanced%2fapi@4.34.1",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 15134273
+      },
+      "main": "main.js",
+      "_from": "file:neteasecloudmusicapienhanced-api-4.34.1.tgz",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app"
+      },
+      "_npmUser": {
+        "name": "GitHub Actions",
+        "email": "npm-oidc-no-reply@github.com",
+        "trustedPublisher": {
+          "id": "github",
+          "oidcConfigId": "oidc:03c95f43-68c1-4b09-94a5-e646c673dcdd"
+        }
+      },
+      "_resolved": "/tmp/3c713ed8124da42e252887a0d30ac06e/neteasecloudmusicapienhanced-api-4.34.1.tgz",
+      "_integrity": "sha512-qsp+kA95fIh58S3DHtjOT9HbC0SqwH1mdOHWhzdS5ZCHhxvbSnfBhnG1Zr6zXvfq/0JdF7wbsdfGCogwtrbSYQ==",
+      "repository": {
+        "url": "git+https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced.git",
+        "type": "git"
+      },
+      "_npmVersion": "11.13.0",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "24.16.0",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.16.1",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.4.2",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.12.3",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.3.2"
+      },
+      "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.7.6",
+        "eslint": "^9.39.4",
+        "globals": "^17.6.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.8.3",
+        "@eslint/js": "^9.39.4",
+        "typescript": "^5.9.3",
+        "@types/node": "25.5.0",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.5",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.6",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.60.0",
+        "@typescript-eslint/eslint-plugin": "^8.60.0"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.34.1_1780143544254_0.30131304488163724",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.34.2": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.34.2",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.34.2",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "homepage": "https://neteasecloudmusicapienhanced.js.org/",
+      "bugs": {
+        "url": "https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced/issues"
+      },
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "ddd8e2fb2d99c9c24f4580c5c3e17783d4f9b686",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.34.2.tgz",
+        "fileCount": 452,
+        "integrity": "sha512-3J855yXVLU0BkXaPQUBYorp63iIBNBTZA3sBuq8iZcdvjd4ouCEnsBi/an4I5NZu7ASeZkuvA/sOkmq+/Ya8aw==",
+        "signatures": [
+          {
+            "sig": "MEYCIQCoIKn7cGuc3BZv5oJenJZOFIrmZRpf1KAWUmrPbHSPGgIhAKNITOl/Y/PJH4KgeyXyuo6MDDKBmKxFGnuQq+B18Ts6",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@neteasecloudmusicapienhanced%2fapi@4.34.2",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 15135381
+      },
+      "main": "main.js",
+      "_from": "file:neteasecloudmusicapienhanced-api-4.34.2.tgz",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app"
+      },
+      "_npmUser": {
+        "name": "GitHub Actions",
+        "email": "npm-oidc-no-reply@github.com",
+        "trustedPublisher": {
+          "id": "github",
+          "oidcConfigId": "oidc:03c95f43-68c1-4b09-94a5-e646c673dcdd"
+        }
+      },
+      "_resolved": "/tmp/66df16074fa2c9857e8868a2a9242255/neteasecloudmusicapienhanced-api-4.34.2.tgz",
+      "_integrity": "sha512-3J855yXVLU0BkXaPQUBYorp63iIBNBTZA3sBuq8iZcdvjd4ouCEnsBi/an4I5NZu7ASeZkuvA/sOkmq+/Ya8aw==",
+      "repository": {
+        "url": "git+https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced.git",
+        "type": "git"
+      },
+      "_npmVersion": "11.13.0",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "24.16.0",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.16.1",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.4.2",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.12.3",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.3.2"
+      },
+      "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.7.6",
+        "eslint": "^9.39.4",
+        "globals": "^17.6.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.8.3",
+        "@eslint/js": "^9.39.4",
+        "typescript": "^5.9.3",
+        "@types/node": "25.5.0",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.5",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.6",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.60.0",
+        "@typescript-eslint/eslint-plugin": "^8.60.0"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.34.2_1780145167562_0.304513458030649",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.34.3": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.34.3",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.34.3",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "homepage": "https://neteasecloudmusicapienhanced.js.org/",
+      "bugs": {
+        "url": "https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced/issues"
+      },
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "7f6256a156115262af960905476a40972a5e43bf",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.34.3.tgz",
+        "fileCount": 452,
+        "integrity": "sha512-CF+5r+LRybwgoJXh/7eJAvYMcSjjZD4Q5Bdoe4V0HbaOsIXEkilvzs165WRlfo71otyANf/7/1ric/0KsapNvQ==",
+        "signatures": [
+          {
+            "sig": "MEUCIGjLiNNBu5AtyN3ut1f+bZiPrTJgUrobC4HP+kntsjC+AiEA6o80CLR/498G82VntAY0jXj1QMzwibBCqxl9HNliC8E=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@neteasecloudmusicapienhanced%2fapi@4.34.3",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 15135381
+      },
+      "main": "main.js",
+      "_from": "file:neteasecloudmusicapienhanced-api-4.34.3.tgz",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app"
+      },
+      "_npmUser": {
+        "name": "GitHub Actions",
+        "email": "npm-oidc-no-reply@github.com",
+        "trustedPublisher": {
+          "id": "github",
+          "oidcConfigId": "oidc:03c95f43-68c1-4b09-94a5-e646c673dcdd"
+        }
+      },
+      "_resolved": "/tmp/bd47c875ce9a0f09068e81bad39b25ae/neteasecloudmusicapienhanced-api-4.34.3.tgz",
+      "_integrity": "sha512-CF+5r+LRybwgoJXh/7eJAvYMcSjjZD4Q5Bdoe4V0HbaOsIXEkilvzs165WRlfo71otyANf/7/1ric/0KsapNvQ==",
+      "repository": {
+        "url": "git+https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced.git",
+        "type": "git"
+      },
+      "_npmVersion": "11.13.0",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "24.16.0",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.16.1",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.4.2",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.12.3",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.3.2"
+      },
+      "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.7.6",
+        "eslint": "^9.39.4",
+        "globals": "^17.6.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.8.3",
+        "@eslint/js": "^9.39.4",
+        "typescript": "^5.9.3",
+        "@types/node": "25.5.0",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.5",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.6",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.60.0",
+        "@typescript-eslint/eslint-plugin": "^8.60.0"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.34.3_1780145918968_0.01253136222105411",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.35.0": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.35.0",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.35.0",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "homepage": "https://neteasecloudmusicapienhanced.js.org/",
+      "bugs": {
+        "url": "https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced/issues"
+      },
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "1dc28be894b7e94bf34ecaca9604a9970751fae6",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.35.0.tgz",
+        "fileCount": 455,
+        "integrity": "sha512-GdST0iLfexQWFfD9+/0Cgoa1VCanlS486dwxu7OsGfEK2lyq0lUsp6ltaGjRgJSJOlsYE6ue6U8F6ZE/X656Kw==",
+        "signatures": [
+          {
+            "sig": "MEQCIHXycudqMuUHfvlLnMGKZy7du2bKL09+JO8zeVjrY3KkAiAqeVeURYLV1tZY1ZfYSoitLeme2OJf2M9uhP10OKioYA==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@neteasecloudmusicapienhanced%2fapi@4.35.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 15138163
+      },
+      "main": "main.js",
+      "_from": "file:neteasecloudmusicapienhanced-api-4.35.0.tgz",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app"
+      },
+      "_npmUser": {
+        "name": "GitHub Actions",
+        "email": "npm-oidc-no-reply@github.com",
+        "trustedPublisher": {
+          "id": "github",
+          "oidcConfigId": "oidc:03c95f43-68c1-4b09-94a5-e646c673dcdd"
+        }
+      },
+      "_resolved": "/tmp/f9e0f090743aae164557057758de99e8/neteasecloudmusicapienhanced-api-4.35.0.tgz",
+      "_integrity": "sha512-GdST0iLfexQWFfD9+/0Cgoa1VCanlS486dwxu7OsGfEK2lyq0lUsp6ltaGjRgJSJOlsYE6ue6U8F6ZE/X656Kw==",
+      "repository": {
+        "url": "git+https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced.git",
+        "type": "git"
+      },
+      "_npmVersion": "11.13.0",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "24.16.0",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.17.0",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.4.2",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.12.3",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.3.2"
+      },
+      "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.7.6",
+        "eslint": "^9.39.4",
+        "globals": "^17.6.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.8.3",
+        "@eslint/js": "^9.39.4",
+        "typescript": "^5.9.3",
+        "@types/node": "25.5.0",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.5",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.6",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.60.1",
+        "@typescript-eslint/eslint-plugin": "^8.60.1"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.35.0_1780731652197_0.48685410916706084",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.35.1": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.35.1",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.35.1",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "homepage": "https://neteasecloudmusicapienhanced.js.org/",
+      "bugs": {
+        "url": "https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced/issues"
+      },
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "14bd230635f2459c8b61321e7fc9b561c57c6a37",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.35.1.tgz",
+        "fileCount": 455,
+        "integrity": "sha512-3VMg7mbSZdR8VIAOgBW92nIZUYBQkONKtaIjeLjLY9eBrrznFkRZv+AR7UMuwbm97VyieKklTz9FWhTovRg9LQ==",
+        "signatures": [
+          {
+            "sig": "MEUCIB7mpRzQdsLhWi9KyYRB/LwmCAUP0sUP0Scz+3KrO54vAiEAhYyM78JrBe5kCmzxdyuELXs9ralTKRFpqteXrhzYQ/w=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@neteasecloudmusicapienhanced%2fapi@4.35.1",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 15138186
+      },
+      "main": "main.js",
+      "_from": "file:neteasecloudmusicapienhanced-api-4.35.1.tgz",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app"
+      },
+      "_npmUser": {
+        "name": "GitHub Actions",
+        "email": "npm-oidc-no-reply@github.com",
+        "trustedPublisher": {
+          "id": "github",
+          "oidcConfigId": "oidc:03c95f43-68c1-4b09-94a5-e646c673dcdd"
+        }
+      },
+      "_resolved": "/tmp/da9576e9cccb6dfbe34b61e15056332f/neteasecloudmusicapienhanced-api-4.35.1.tgz",
+      "_integrity": "sha512-3VMg7mbSZdR8VIAOgBW92nIZUYBQkONKtaIjeLjLY9eBrrznFkRZv+AR7UMuwbm97VyieKklTz9FWhTovRg9LQ==",
+      "repository": {
+        "url": "git+https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced.git",
+        "type": "git"
+      },
+      "_npmVersion": "11.13.0",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "24.16.0",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.17.0",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.4.2",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.13.0",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.3.2"
+      },
+      "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.7.6",
+        "eslint": "^9.39.4",
+        "globals": "^17.6.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.8.3",
+        "@eslint/js": "^9.39.4",
+        "typescript": "^5.9.3",
+        "@types/node": "25.9.2",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.5",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.6",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.60.1",
+        "@typescript-eslint/eslint-plugin": "^8.60.1"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.35.1_1780935045586_0.8567234660777214",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.35.2": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.35.2",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.35.2",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "homepage": "https://neteasecloudmusicapienhanced.js.org/",
+      "bugs": {
+        "url": "https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced/issues"
+      },
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "95333009f4506bfb1c8b75a88947c9187fce374d",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.35.2.tgz",
+        "fileCount": 455,
+        "integrity": "sha512-p7VRg4dY+AbmHUEy/Yq+Fhbo/paHaiAaOGnriiZMEhyhrgElxW9E4BvSzxMZbDt4TnoQazlxiR9c+YLNKymURQ==",
+        "signatures": [
+          {
+            "sig": "MEUCIDprkcPLoOMNiePnmYKNt26GQbwbBqdj8vS9G+4EMvM0AiEAiNya4e8uJMLcoL/6sw/qTr9zzFPWm4Y5NWa0GrEdRUo=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@neteasecloudmusicapienhanced%2fapi@4.35.2",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 15139731
+      },
+      "main": "main.js",
+      "_from": "file:neteasecloudmusicapienhanced-api-4.35.2.tgz",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app",
+        "docs:check": "node scripts/format-docs.js --check",
+        "docs:format": "node scripts/format-docs.js"
+      },
+      "_npmUser": {
+        "name": "GitHub Actions",
+        "email": "npm-oidc-no-reply@github.com",
+        "trustedPublisher": {
+          "id": "github",
+          "oidcConfigId": "oidc:03c95f43-68c1-4b09-94a5-e646c673dcdd"
+        }
+      },
+      "_resolved": "/tmp/df35757e831721086eb73184da83e651/neteasecloudmusicapienhanced-api-4.35.2.tgz",
+      "_integrity": "sha512-p7VRg4dY+AbmHUEy/Yq+Fhbo/paHaiAaOGnriiZMEhyhrgElxW9E4BvSzxMZbDt4TnoQazlxiR9c+YLNKymURQ==",
+      "repository": {
+        "url": "git+https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced.git",
+        "type": "git"
+      },
+      "_npmVersion": "11.13.0",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "24.16.0",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.17.0",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.4.2",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.13.0",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.3.2"
+      },
+      "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.7.6",
+        "eslint": "^9.39.4",
+        "globals": "^17.6.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.8.3",
+        "@eslint/js": "^9.39.4",
+        "typescript": "^5.9.3",
+        "@types/node": "25.9.2",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.5",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.6",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.60.1",
+        "@typescript-eslint/eslint-plugin": "^8.60.1"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.35.2_1781853265346_0.5657391729134216",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.36.0": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.36.0",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.36.0",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "homepage": "https://neteasecloudmusicapienhanced.js.org/",
+      "bugs": {
+        "url": "https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced/issues"
+      },
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "79ca71c1fc536f81abe787ff54028b643f5606cd",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.36.0.tgz",
+        "fileCount": 458,
+        "integrity": "sha512-Vu5dfULlvjMSNXyCf574UfaaFwjt+Nuy533az0JCu1XeaMhxJzrXwDN/ERyGKV6F6du/ltzb2bZ4hAXDmSDGGQ==",
+        "signatures": [
+          {
+            "sig": "MEUCIQDGREKjO29X1h7I9XscczH/6gaxh3u6R1MdDggwW/ea6QIgPCoOkV9I5/b5yTyGfbsFR1Ds9jDg2E0aUaVsmvZPPxU=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@neteasecloudmusicapienhanced%2fapi@4.36.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 15171720
+      },
+      "main": "main.js",
+      "_from": "file:neteasecloudmusicapienhanced-api-4.36.0.tgz",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app",
+        "docs:check": "node scripts/format-docs.js --check",
+        "docs:format": "node scripts/format-docs.js"
+      },
+      "_npmUser": {
+        "name": "GitHub Actions",
+        "email": "npm-oidc-no-reply@github.com",
+        "trustedPublisher": {
+          "id": "github",
+          "oidcConfigId": "oidc:03c95f43-68c1-4b09-94a5-e646c673dcdd"
+        }
+      },
+      "_resolved": "/tmp/738942d80146ad5baa0ede474483b0a3/neteasecloudmusicapienhanced-api-4.36.0.tgz",
+      "_integrity": "sha512-Vu5dfULlvjMSNXyCf574UfaaFwjt+Nuy533az0JCu1XeaMhxJzrXwDN/ERyGKV6F6du/ltzb2bZ4hAXDmSDGGQ==",
+      "repository": {
+        "url": "git+https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced.git",
+        "type": "git"
+      },
+      "_npmVersion": "11.13.0",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "24.16.0",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.18.0",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.4.2",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.13.0",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.3.3"
+      },
+      "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.7.6",
+        "eslint": "^9.39.4",
+        "globals": "^17.6.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.8.4",
+        "@eslint/js": "^9.39.4",
+        "typescript": "^5.9.3",
+        "@types/node": "25.9.2",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.5",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.6",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.61.1",
+        "@typescript-eslint/eslint-plugin": "^8.61.1"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.36.0_1781967226695_0.4193266877912962",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.36.1": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.36.1",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.36.1",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "homepage": "https://neteasecloudmusicapienhanced.js.org/",
+      "bugs": {
+        "url": "https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced/issues"
+      },
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "8492ed077c9c82a4aa013b3fe5819e7d585a2c7e",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.36.1.tgz",
+        "fileCount": 458,
+        "integrity": "sha512-Do677SCn+I62Sk+CWxQVinG8LRhD1qejrsNjoTT9twfU+JzdjK1VsYGR7k3IsEfPkZudKLdQUJq63ohfxQ5WPg==",
+        "signatures": [
+          {
+            "sig": "MEUCICbUmFvDauf9MLtOcr/8xCCFHsXJN9cH6qF1xRsUXBDdAiEAhw6qVHVq4zVf5scx3+H+9Dkzn0J2Q8CX97odFeyMptY=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@neteasecloudmusicapienhanced%2fapi@4.36.1",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 15171715
+      },
+      "main": "main.js",
+      "_from": "file:neteasecloudmusicapienhanced-api-4.36.1.tgz",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app",
+        "docs:check": "node scripts/format-docs.js --check",
+        "docs:format": "node scripts/format-docs.js"
+      },
+      "_npmUser": {
+        "name": "GitHub Actions",
+        "email": "npm-oidc-no-reply@github.com",
+        "trustedPublisher": {
+          "id": "github",
+          "oidcConfigId": "oidc:03c95f43-68c1-4b09-94a5-e646c673dcdd"
+        }
+      },
+      "_resolved": "/tmp/7eca9ada0b9741d8bdb952239255d6b3/neteasecloudmusicapienhanced-api-4.36.1.tgz",
+      "_integrity": "sha512-Do677SCn+I62Sk+CWxQVinG8LRhD1qejrsNjoTT9twfU+JzdjK1VsYGR7k3IsEfPkZudKLdQUJq63ohfxQ5WPg==",
+      "repository": {
+        "url": "git+https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced.git",
+        "type": "git"
+      },
+      "_npmVersion": "11.13.0",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "24.16.0",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.18.0",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.4.2",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.13.0",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.3.3"
+      },
+      "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.7.6",
+        "eslint": "^9.39.4",
+        "globals": "^17.6.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.8.4",
+        "@eslint/js": "^9.39.4",
+        "typescript": "^5.9.3",
+        "@types/node": "25.9.2",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.5",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.6",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.61.1",
+        "@typescript-eslint/eslint-plugin": "^8.61.1"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.36.1_1781969330589_0.3153857051762008",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.36.2": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.36.2",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.36.2",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "homepage": "https://neteasecloudmusicapienhanced.js.org/",
+      "bugs": {
+        "url": "https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced/issues"
+      },
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "624aa37380d4b4bc374c4c04c5946f1a072f8a4d",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.36.2.tgz",
+        "fileCount": 462,
+        "integrity": "sha512-AysfpR46xkIuS4LTccft2umaY2ZJi7SSHKsTzd4rMpvCt5RLEu//LVyPE0dF3sSBJ+IVE4fRw0HfbsL5JRbn8Q==",
+        "signatures": [
+          {
+            "sig": "MEUCIFfC1ruFYwrl7nWyDkepCVzU/YJ/lwUxfzyrnAITnY3OAiEAxVfMyxsg+VZi6gU4LPEwIowmSgFjshHaRmMADhhvt1E=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@neteasecloudmusicapienhanced%2fapi@4.36.2",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 15190658
+      },
+      "main": "main.js",
+      "_from": "file:neteasecloudmusicapienhanced-api-4.36.2.tgz",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app",
+        "docs:check": "node scripts/format-docs.js --check",
+        "docs:format": "node scripts/format-docs.js"
+      },
+      "_npmUser": {
+        "name": "GitHub Actions",
+        "email": "npm-oidc-no-reply@github.com",
+        "trustedPublisher": {
+          "id": "github",
+          "oidcConfigId": "oidc:03c95f43-68c1-4b09-94a5-e646c673dcdd"
+        }
+      },
+      "_resolved": "/tmp/13fb3b73dc40dbb965e01cd812b7d9df/neteasecloudmusicapienhanced-api-4.36.2.tgz",
+      "_integrity": "sha512-AysfpR46xkIuS4LTccft2umaY2ZJi7SSHKsTzd4rMpvCt5RLEu//LVyPE0dF3sSBJ+IVE4fRw0HfbsL5JRbn8Q==",
+      "repository": {
+        "url": "git+https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced.git",
+        "type": "git"
+      },
+      "_npmVersion": "11.16.0",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "24.18.0",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.18.1",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.4.2",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.13.0",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.3.4"
+      },
+      "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.7.6",
+        "eslint": "^9.39.4",
+        "globals": "^17.7.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.9.4",
+        "@eslint/js": "^9.39.4",
+        "typescript": "^5.9.3",
+        "@types/node": "25.9.2",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.5",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.6",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.62.1",
+        "@typescript-eslint/eslint-plugin": "^8.62.1"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.36.2_1783824211841_0.6073485676400787",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.37.0": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.37.0",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.37.0",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "homepage": "https://neteasecloudmusicapienhanced.js.org/",
+      "bugs": {
+        "url": "https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced/issues"
+      },
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "daf1224405191e4dc57e8f7c31fe82c131a7cce8",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.37.0.tgz",
+        "fileCount": 467,
+        "integrity": "sha512-TxEGbvvmKi+Anb2LTY2Y9TGUegMI9l5AvY2C0uaLbbwH26sc8qaSIFZU+UghDjAq4ydm5xX6tWOlPzYoDN2oug==",
+        "signatures": [
+          {
+            "sig": "MEQCIAp2m7YPrbLB/pmzIqI7YcbFHUsEhglClfo37gtGrN6kAiA4weK4bMPvdX0bLV/Ct7qkDQRnQQ31NTljs78kQmugmQ==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@neteasecloudmusicapienhanced%2fapi@4.37.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 15213200
+      },
+      "main": "main.js",
+      "_from": "file:neteasecloudmusicapienhanced-api-4.37.0.tgz",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app",
+        "docs:check": "node scripts/format-docs.js --check",
+        "docs:format": "node scripts/format-docs.js"
+      },
+      "_npmUser": {
+        "name": "GitHub Actions",
+        "email": "npm-oidc-no-reply@github.com",
+        "trustedPublisher": {
+          "id": "github",
+          "oidcConfigId": "oidc:03c95f43-68c1-4b09-94a5-e646c673dcdd"
+        }
+      },
+      "_resolved": "/tmp/912b15665600ea15dbaa5cf069eeb0c9/neteasecloudmusicapienhanced-api-4.37.0.tgz",
+      "_integrity": "sha512-TxEGbvvmKi+Anb2LTY2Y9TGUegMI9l5AvY2C0uaLbbwH26sc8qaSIFZU+UghDjAq4ydm5xX6tWOlPzYoDN2oug==",
+      "repository": {
+        "url": "git+https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced.git",
+        "type": "git"
+      },
+      "_npmVersion": "11.16.0",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "24.18.0",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.18.1",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.4.2",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.14.0",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.3.4"
+      },
+      "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.7.6",
+        "eslint": "^9.39.5",
+        "globals": "^17.7.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.9.5",
+        "@eslint/js": "^9.39.5",
+        "typescript": "^5.9.3",
+        "@types/node": "25.9.2",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.6",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.6",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.64.0",
+        "@typescript-eslint/eslint-plugin": "^8.64.0"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.37.0_1784103309865_0.8908704528303713",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.38.0": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.38.0",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.38.0",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "homepage": "https://neteasecloudmusicapienhanced.js.org/",
+      "bugs": {
+        "url": "https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced/issues"
+      },
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "03ccca36fd140d6135d19d7271332ca32ba2c9ca",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.38.0.tgz",
+        "fileCount": 483,
+        "integrity": "sha512-kemzVNN1HAottXu5p3kcRd44kSuw3bzSCzbd/4T+71Bj5KG+BoNvOZTeKznSC++omh5DrNT8Y75lDS1vFZOuTQ==",
+        "signatures": [
+          {
+            "sig": "MEQCIAJrHvGZ/43bzsuScSqSoiMIzcB9+BuKNJkCGrqxAn7wAiAqcIP6YowwqPWptuWkBe7Qodjh6K5dnNEuKrj0hnP9RQ==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@neteasecloudmusicapienhanced%2fapi@4.38.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 15229037
+      },
+      "main": "main.js",
+      "_from": "file:neteasecloudmusicapienhanced-api-4.38.0.tgz",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app",
+        "docs:check": "node scripts/format-docs.js --check",
+        "docs:format": "node scripts/format-docs.js"
+      },
+      "_npmUser": {
+        "name": "GitHub Actions",
+        "email": "npm-oidc-no-reply@github.com",
+        "trustedPublisher": {
+          "id": "github",
+          "oidcConfigId": "oidc:03c95f43-68c1-4b09-94a5-e646c673dcdd"
+        }
+      },
+      "_resolved": "/tmp/d2e8695d1f97573260a114fc3a390d4c/neteasecloudmusicapienhanced-api-4.38.0.tgz",
+      "_integrity": "sha512-kemzVNN1HAottXu5p3kcRd44kSuw3bzSCzbd/4T+71Bj5KG+BoNvOZTeKznSC++omh5DrNT8Y75lDS1vFZOuTQ==",
+      "repository": {
+        "url": "git+https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced.git",
+        "type": "git"
+      },
+      "_npmVersion": "11.16.0",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "24.18.0",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.18.1",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.4.2",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.14.0",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.3.4"
+      },
+      "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.7.6",
+        "eslint": "^9.39.5",
+        "globals": "^17.7.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.9.6",
+        "@eslint/js": "^9.39.5",
+        "typescript": "^5.9.3",
+        "@types/node": "25.9.2",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.6",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.6",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.65.0",
+        "@typescript-eslint/eslint-plugin": "^8.65.0"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.38.0_1784719152306_0.9145073237516532",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.39.0": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.39.0",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.39.0",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "homepage": "https://neteasecloudmusicapienhanced.js.org/",
+      "bugs": {
+        "url": "https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced/issues"
+      },
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "8cc8c7c54354f31a2310ad7f21160e77392ac8cc",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.39.0.tgz",
+        "fileCount": 492,
+        "integrity": "sha512-faaLGT9pOmw2lu2kxdHAeyy+Ni/UqZW/laAb+Np+QexUwXKxDvPTbW3GiLkIromdAfSR519oGGizX3+Unf0q2w==",
+        "signatures": [
+          {
+            "sig": "MEUCIGbDXg1WyW37dskUS8+KN1JBRP4Es2fy492iwcjfNtZdAiEA30RTxAw62X9ehvspImGWja/r2nALnrB1c1VIq4k0QVk=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@neteasecloudmusicapienhanced%2fapi@4.39.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 15265631
+      },
+      "main": "main.js",
+      "_from": "file:neteasecloudmusicapienhanced-api-4.39.0.tgz",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app",
+        "docs:check": "node scripts/format-docs.js --check",
+        "docs:format": "node scripts/format-docs.js"
+      },
+      "_npmUser": {
+        "name": "GitHub Actions",
+        "email": "npm-oidc-no-reply@github.com",
+        "trustedPublisher": {
+          "id": "github",
+          "oidcConfigId": "oidc:03c95f43-68c1-4b09-94a5-e646c673dcdd"
+        }
+      },
+      "_resolved": "/tmp/7f5dd81dabc645aedda49a5eea270856/neteasecloudmusicapienhanced-api-4.39.0.tgz",
+      "_integrity": "sha512-faaLGT9pOmw2lu2kxdHAeyy+Ni/UqZW/laAb+Np+QexUwXKxDvPTbW3GiLkIromdAfSR519oGGizX3+Unf0q2w==",
+      "repository": {
+        "url": "git+https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced.git",
+        "type": "git"
+      },
+      "_npmVersion": "11.16.0",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "24.18.0",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.18.1",
+        "yargs": "^18.0.0",
+        "dotenv": "^17.4.2",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.14.0",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.3.4"
+      },
+      "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.7.6",
+        "eslint": "^9.39.5",
+        "globals": "^17.7.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.9.6",
+        "@eslint/js": "^9.39.5",
+        "typescript": "^5.9.3",
+        "@types/node": "25.9.2",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.6",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.6",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.65.0",
+        "@typescript-eslint/eslint-plugin": "^8.65.0"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.39.0_1784884896751_0.1447860830971004",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.40.0": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.40.0",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.40.0",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "homepage": "https://neteasecloudmusicapienhanced.js.org/",
+      "bugs": {
+        "url": "https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced/issues"
+      },
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "fe13de06350bac613db40d111b0f2547f899f213",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.40.0.tgz",
+        "fileCount": 498,
+        "integrity": "sha512-Wt78YW2TVQvmFBGweD5wuPC/zB5LQOUCznURt3YuBcd34XR0MMXS3HyKTB2o+rC9wEr8Mr1gGCgR46t3HvBh6g==",
+        "signatures": [
+          {
+            "sig": "MEUCIA7HVmA5RS21Uc20I/0bNmvTey92YMj3tM0qt5ZhKex4AiEAlpLN2kjuKhCQ8wYVUg/HczHz7wsTk6oRJ4cE+nrp7OU=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@neteasecloudmusicapienhanced%2fapi@4.40.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 15318767
+      },
+      "main": "main.js",
+      "_from": "file:neteasecloudmusicapienhanced-api-4.40.0.tgz",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app",
+        "docs:check": "node scripts/format-docs.js --check",
+        "docs:format": "node scripts/format-docs.js"
+      },
+      "_npmUser": {
+        "name": "GitHub Actions",
+        "email": "npm-oidc-no-reply@github.com",
+        "trustedPublisher": {
+          "id": "github",
+          "oidcConfigId": "oidc:03c95f43-68c1-4b09-94a5-e646c673dcdd"
+        }
+      },
+      "_resolved": "/tmp/cc78ad13870f49edad2ea030cacbf6ca/neteasecloudmusicapienhanced-api-4.40.0.tgz",
+      "_integrity": "sha512-Wt78YW2TVQvmFBGweD5wuPC/zB5LQOUCznURt3YuBcd34XR0MMXS3HyKTB2o+rC9wEr8Mr1gGCgR46t3HvBh6g==",
+      "repository": {
+        "url": "git+https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced.git",
+        "type": "git"
+      },
+      "_npmVersion": "11.16.0",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "24.18.0",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.19.0",
+        "jsdom": "^24.1.3",
+        "yargs": "^18.1.0",
+        "dotenv": "^17.4.2",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.14.0",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.4.0"
+      },
+      "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.8.0",
+        "eslint": "^9.39.5",
+        "globals": "^17.9.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.9.6",
+        "@eslint/js": "^9.39.5",
+        "typescript": "^5.9.3",
+        "@types/node": "25.9.2",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.6",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.6",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.66.0",
+        "@typescript-eslint/eslint-plugin": "^8.66.0"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.40.0_1786245736441_0.5219765020799536",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.40.1": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.40.1",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.40.1",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "homepage": "https://neteasecloudmusicapienhanced.js.org/",
+      "bugs": {
+        "url": "https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced/issues"
+      },
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "907f2f0f09f0856e644e874330a6348c8c7e3ff2",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.40.1.tgz",
+        "fileCount": 501,
+        "integrity": "sha512-RUpVnxUCkeEt0yYeElc+UvCXqucikI/PIlJaLj18FlwHQ8X9wk4QkM/h7C+qePC97COMODcmgRXKgWO94YLuWA==",
+        "signatures": [
+          {
+            "sig": "MEYCIQDV+iLU2s1TC546zwQTBfobEqP9fJDfsMZ6Q8gZSuuvzQIhANP4QnUAfIuaLDp/ULiG0JCdLVxTpOuWOIjIg7No4/Mx",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@neteasecloudmusicapienhanced%2fapi@4.40.1",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 15322633
+      },
+      "main": "main.js",
+      "_from": "file:neteasecloudmusicapienhanced-api-4.40.1.tgz",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "pkg . -t node18-win-x64 -C GZip -o precompiled/app",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "pkg . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "pkg . -t node18-macos-x64 -C GZip -o precompiled/app",
+        "docs:check": "node scripts/format-docs.js --check",
+        "docs:format": "node scripts/format-docs.js"
+      },
+      "_npmUser": {
+        "name": "GitHub Actions",
+        "email": "npm-oidc-no-reply@github.com",
+        "trustedPublisher": {
+          "id": "github",
+          "oidcConfigId": "oidc:03c95f43-68c1-4b09-94a5-e646c673dcdd"
+        }
+      },
+      "_resolved": "/tmp/cea9a2d8430c39a9f5a6e490dc86dd2e/neteasecloudmusicapienhanced-api-4.40.1.tgz",
+      "_integrity": "sha512-RUpVnxUCkeEt0yYeElc+UvCXqucikI/PIlJaLj18FlwHQ8X9wk4QkM/h7C+qePC97COMODcmgRXKgWO94YLuWA==",
+      "repository": {
+        "url": "git+https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced.git",
+        "type": "git"
+      },
+      "_npmVersion": "11.17.0",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced) || 网易云音乐 API 备份 + 增强 || 本项目自原版v4.28.0版本后开始自行维护",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "24.19.0",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.19.0",
+        "jsdom": "^24.1.3",
+        "yargs": "^18.1.0",
+        "dotenv": "^17.4.2",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.14.0",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.4.2"
+      },
+      "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.8.0",
+        "eslint": "^9.39.5",
+        "globals": "^17.11.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.9.6",
+        "@eslint/js": "^9.39.5",
+        "typescript": "^5.9.3",
+        "@types/node": "25.9.2",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.6",
+        "eslint-plugin-html": "^8.1.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.6",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.67.0",
+        "@typescript-eslint/eslint-plugin": "^8.67.0"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.40.1_1787055960522_0.27556842815146965",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.41.0": {
+      "name": "@neteasecloudmusicapienhanced/api",
+      "version": "4.41.0",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "author": {
+        "name": "MoeFurina"
+      },
+      "license": "MIT",
+      "_id": "@neteasecloudmusicapienhanced/api@4.41.0",
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "homepage": "https://neteasecloudmusicapienhanced.js.org/",
+      "bugs": {
+        "url": "https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced/issues"
+      },
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "dist": {
+        "shasum": "d864608119c9e74589cba53f2a72bbf7d9956ff1",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.41.0.tgz",
+        "fileCount": 510,
+        "integrity": "sha512-qCMPf/0bvCv3AQaFGbL9ijgk/0xe71bch0BXWVZKDO4DCldhveydA2U4LKjNq81WUHBb2nTTzYHxmPTD6qYU8w==",
+        "signatures": [
+          {
+            "sig": "MEQCIH/Y5J87mq5GV/aNJqP/7ek9ZUIhQ+juXWq37TDUpuRqAiAvTeMA6pmIo3eDwFD0qLmKzoZvom8/2JXsC8oH7ZsyKw==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCIC0libleiJqJoxmio146ukBwVghH6CidV5XEAzD6Ov+8AiEA6q+aPUHxn/KF2v2gVRx4IHVrfqDeqvcAA64vruUEwd4=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@neteasecloudmusicapienhanced%2fapi@4.41.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 15346022
+      },
+      "main": "main.js",
+      "_from": "file:neteasecloudmusicapienhanced-api-4.41.0.tgz",
+      "types": "./interface.d.ts",
+      "engines": {
+        "node": ">=12"
+      },
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "node scripts/build-pkg.js . -t node18-win-x64 -C GZip -o precompiled/app",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "node scripts/build-pkg.js . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "node scripts/build-pkg.js . -t node18-macos-x64 -C GZip -o precompiled/app",
+        "docs:check": "node scripts/format-docs.js --check",
+        "docs:format": "node scripts/format-docs.js"
+      },
+      "_npmUser": {
+        "name": "GitHub Actions",
+        "email": "npm-oidc-no-reply@github.com",
+        "trustedPublisher": {
+          "id": "github",
+          "oidcConfigId": "03c95f43-68c1-4b09-94a5-e646c673dcdd"
+        }
+      },
+      "_resolved": "/tmp/824ec505395520101556d6c8364f8089/neteasecloudmusicapienhanced-api-4.41.0.tgz",
+      "_integrity": "sha512-qCMPf/0bvCv3AQaFGbL9ijgk/0xe71bch0BXWVZKDO4DCldhveydA2U4LKjNq81WUHBb2nTTzYHxmPTD6qYU8w==",
+      "repository": {
+        "url": "git+https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced.git",
+        "type": "git"
+      },
+      "_npmVersion": "11.19.0",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced)",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "_nodeVersion": "24.21.0",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.20.0",
+        "fzstd": "^0.1.1",
+        "jsdom": "^24.1.3",
+        "yargs": "^18.2.0",
+        "dotenv": "^17.4.2",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.16.1",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.4.5"
+      },
+      "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.8.0",
+        "eslint": "^9.39.5",
+        "globals": "^17.13.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.9.9",
+        "@eslint/js": "^9.39.5",
+        "typescript": "^5.9.3",
+        "@types/node": "25.9.2",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.7",
+        "eslint-plugin-html": "^8.2.1",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.6",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.71.0",
+        "@typescript-eslint/eslint-plugin": "^8.71.0"
+      },
+      "_npmOperationalInternal": {
+        "tmp": "tmp/api_4.41.0_1791032005075_0.9681233990341316",
+        "host": "s3://npm-registry-packages-npm-production"
+      }
+    },
+    "4.41.1": {
+      "_id": "@neteasecloudmusicapienhanced/api@4.41.1",
+      "bin": {
+        "api": "app.js"
+      },
+      "pkg": {
+        "assets": [
+          "node_modules/axios",
+          "node_modules/express",
+          "node_modules/express-fileupload",
+          "node_modules/music-metadata",
+          "node_modules/pac-proxy-agent",
+          "node_modules/qrcode",
+          "node_modules/safe-decode-uri-component",
+          "node_modules/tunnel",
+          "node_modules/yargs",
+          "node_modules/tslib",
+          "node_modules/vm2",
+          "module",
+          "public",
+          "data"
+        ],
+        "scripts": "module/*.js"
+      },
+      "bugs": {
+        "url": "https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced/issues"
+      },
+      "dist": {
+        "shasum": "3be814604cb4619837213363683b5f2af0c12210",
+        "tarball": "https://registry.npmjs.org/@neteasecloudmusicapienhanced/api/-/api-4.41.1.tgz",
+        "fileCount": 514,
+        "integrity": "sha512-0QDKtLrSLfz4iP2M57nQTqRQuJkzJV2AUOjHSCSBgqOFQEoGkw4zSue8bbfkzz/lFRLvnIr9SjsrPj95BThxUQ==",
+        "signatures": [
+          {
+            "sig": "MEQCIHdlOlFc8sj6zrKL42MWnsrIt2tGdende9qPtX1ba03fAiABltnsdwZqMesVmQqO4VXapa5zA830FZwZGXSxwX+SwQ==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+            "sig": "MEYCIQDwIHy4Ucala/UNN3OJln/CrgHiM1Ao/2FM6b/u2PsfnwIhANXZpppgzmaz8d35UJIf/bQ87aU+CPvc2nVUv9b2XI2Q"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@neteasecloudmusicapienhanced%2fapi@4.41.1",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 15348461
+      },
+      "main": "main.js",
+      "name": "@neteasecloudmusicapienhanced/api",
+      "_from": "file:neteasecloudmusicapienhanced-api-4.41.1.tgz",
+      "types": "./interface.d.ts",
+      "author": {
+        "name": "MoeFurina"
+      },
+      "engines": {
+        "node": ">=12"
+      },
+      "license": "MIT",
+      "scripts": {
+        "dev": "nodemon app.js",
+        "lint": "eslint \"**/*.{js,ts}\"",
+        "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
+        "start": "node app.js",
+        "pkgwin": "node scripts/build-pkg.js . -t node18-win-x64 -C GZip -o precompiled/app",
+        "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+        "pkglinux": "node scripts/build-pkg.js . -t node18-linux-x64 -C GZip -o precompiled/app",
+        "pkgmacos": "node scripts/build-pkg.js . -t node18-macos-x64 -C GZip -o precompiled/app",
+        "docs:check": "node scripts/format-docs.js --check",
+        "docs:format": "node scripts/format-docs.js"
+      },
+      "version": "4.41.1",
+      "_npmUser": {
+        "name": "GitHub Actions",
+        "email": "npm-oidc-no-reply@github.com",
+        "trustedPublisher": {
+          "id": "github",
+          "oidcConfigId": "03c95f43-68c1-4b09-94a5-e646c673dcdd"
+        }
+      },
+      "homepage": "https://neteasecloudmusicapienhanced.js.org/",
+      "keywords": [
+        "网易云音乐",
+        "网易云",
+        "音乐",
+        "网易云音乐nodejs"
+      ],
+      "_resolved": "/tmp/3d64a54d5aa7cb8753d660c274494b87/neteasecloudmusicapienhanced-api-4.41.1.tgz",
+      "_integrity": "sha512-0QDKtLrSLfz4iP2M57nQTqRQuJkzJV2AUOjHSCSBgqOFQEoGkw4zSue8bbfkzz/lFRLvnIr9SjsrPj95BThxUQ==",
+      "repository": {
+        "url": "git+https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced.git",
+        "type": "git"
+      },
+      "_npmVersion": "11.19.0",
+      "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced)",
+      "directories": {},
+      "lint-staged": {
+        "*.js": [
+          "eslint --fix",
+          "git add"
+        ]
+      },
+      "maintainers": [
+        {
+          "name": "iamfurina",
+          "email": "noreply@focalors.ltd"
+        }
+      ],
+      "_nodeVersion": "24.21.0",
+      "dependencies": {
+        "gzip": "^0.1.0",
+        "axios": "^1.20.0",
+        "fzstd": "^0.1.1",
+        "jsdom": "^24.1.3",
+        "yargs": "^18.2.0",
+        "dotenv": "^17.4.2",
+        "qrcode": "^1.5.4",
+        "tunnel": "^0.0.6",
+        "xml2js": "^0.6.2",
+        "express": "^5.2.1",
+        "crypto-js": "^4.2.0",
+        "node-forge": "^1.4.0",
+        "music-metadata": "^11.16.1",
+        "pac-proxy-agent": "^7.2.0",
+        "express-fileupload": "^1.5.2",
+        "safe-decode-uri-component": "^1.2.1",
+        "@neteasecloudmusicapienhanced/unblockmusic-utils": "^0.4.5"
+      },
+      "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+      },
+      "_hasShrinkwrap": false,
+      "devDependencies": {
+        "pkg": "^5.8.1",
+        "husky": "^9.1.7",
+        "mocha": "^11.8.0",
+        "eslint": "^9.39.5",
+        "globals": "^17.13.0",
+        "nodemon": "^3.1.14",
+        "prettier": "^3.9.9",
+        "@eslint/js": "^9.39.5",
+        "typescript": "^5.9.3",
+        "@types/node": "25.9.2",
+        "lint-staged": "^16.4.0",
+        "@types/mocha": "^10.0.10",
+        "power-assert": "^1.6.1",
+        "@types/express": "^5.0.6",
+        "@eslint/eslintrc": "^3.3.7",
+        "eslint-plugin-html": "^8.2.1",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.6",
+        "intelli-espower-loader": "^1.1.0",
+        "@types/express-fileupload": "^1.5.1",
+        "@typescript-eslint/parser": "^8.71.0",
+        "@typescript-eslint/eslint-plugin": "^8.71.0"
+      },
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages-npm-production",
+        "tmp": "tmp/api_4.41.1_1791211337419_0.33816113478808374"
+      }
+    }
+  },
+  "time": {
+    "created": "2025-10-17T12:06:56.187Z",
+    "modified": "2026-10-05T14:42:18.169Z",
+    "4.29.11": "2025-10-17T12:06:56.637Z",
+    "4.29.12": "2025-10-24T09:51:52.599Z",
+    "4.29.13": "2025-11-01T05:12:12.317Z",
+    "4.29.14": "2025-11-07T11:03:46.881Z",
+    "4.29.15": "2025-11-08T07:29:20.238Z",
+    "4.29.16": "2025-11-09T00:22:34.006Z",
+    "4.29.17": "2025-11-15T05:25:47.051Z",
+    "4.29.18": "2025-12-19T13:24:46.517Z",
+    "4.29.19": "2025-12-20T02:15:23.601Z",
+    "4.29.20": "2025-12-26T11:54:33.206Z",
+    "4.29.21": "2026-01-30T15:24:38.982Z",
+    "4.30.0": "2026-02-09T15:36:15.778Z",
+    "4.30.1": "2026-02-11T09:05:34.559Z",
+    "4.30.2": "2026-02-28T07:55:23.701Z",
+    "4.30.3": "2026-03-13T16:42:29.383Z",
+    "4.31.0": "2026-03-27T16:10:58.035Z",
+    "4.32.0": "2026-04-17T12:44:49.146Z",
+    "4.32.1": "2026-05-16T02:47:42.050Z",
+    "4.33.0": "2026-05-22T12:36:34.592Z",
+    "4.33.1": "2026-05-29T14:06:02.087Z",
+    "4.34.0": "2026-05-29T16:20:09.470Z",
+    "4.34.1": "2026-05-30T12:19:04.774Z",
+    "4.34.2": "2026-05-30T12:46:07.911Z",
+    "4.34.3": "2026-05-30T12:58:39.291Z",
+    "4.35.0": "2026-06-06T07:40:52.500Z",
+    "4.35.1": "2026-06-08T16:10:46.309Z",
+    "4.35.2": "2026-06-19T07:14:25.754Z",
+    "4.36.0": "2026-06-20T14:53:47.004Z",
+    "4.36.1": "2026-06-20T15:28:50.954Z",
+    "4.36.2": "2026-07-12T02:43:32.151Z",
+    "4.37.0": "2026-07-15T08:15:10.248Z",
+    "4.38.0": "2026-07-22T11:19:12.613Z",
+    "4.39.0": "2026-07-24T09:21:37.140Z",
+    "4.40.0": "2026-08-09T03:22:17.021Z",
+    "4.40.1": "2026-08-18T12:26:00.868Z",
+    "4.41.0": "2026-10-03T12:53:25.336Z",
+    "4.41.1": "2026-10-05T14:42:17.872Z"
+  },
+  "bugs": {
+    "url": "https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced/issues"
+  },
+  "author": {
+    "name": "MoeFurina"
+  },
+  "license": "MIT",
+  "homepage": "https://neteasecloudmusicapienhanced.js.org/",
+  "keywords": [
+    "网易云音乐",
+    "网易云",
+    "音乐",
+    "网易云音乐nodejs"
+  ],
+  "repository": {
+    "url": "git+https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced.git",
+    "type": "git"
+  },
+  "description": "全网最全的网易云音乐API接口 || A revival project for NeteaseCloudMusicApi Node.js Services (Half Refactor & Enhanced)",
+  "maintainers": [
+    {
+      "name": "iamfurina",
+      "email": "noreply@focalors.ltd"
+    }
+  ],
+  "readme": "<p align=\"center\">\n  <img src=\"./public/static/neteaselogo.png\" alt=\"网易云音乐 API Enhanced Logo\" />\n</p>\n\n<p align=\"center\">\n  <a href=\"https://www.npmjs.com/package/@neteasecloudmusicapienhanced/api\">\n    <img src=\"https://img.shields.io/npm/v/@neteasecloudmusicapienhanced/api?style=flat-square\" alt=\"NPM Version\" />\n  </a>\n  <a href=\"https://www.npmjs.com/package/@neteasecloudmusicapienhanced/api\">\n    <img src=\"https://img.shields.io/npm/dm/@neteasecloudmusicapienhanced/api?style=flat-square\" alt=\"NPM Downloads\" />\n  </a>\n  <a href=\"https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced\">\n    <img src=\"https://img.shields.io/github/license/NeteaseCloudMusicApiEnhanced/api-enhanced?style=flat-square\" alt=\"License\" />\n  </a>\n  <a href=\"https://nodejs.org/\">\n    <img src=\"https://img.shields.io/node/v/@neteasecloudmusicapienhanced/api?style=flat-square\" alt=\"Node Version\" />\n  </a>\n  <a href=\"https://hub.docker.com/r/moefurina/ncm-api\">\n    <img src=\"https://img.shields.io/docker/v/moefurina/ncm-api?style=flat-square\" alt=\"Docker Version\" />\n  </a>\n  <a href=\"https://hub.docker.com/r/moefurina/ncm-api\">\n    <img src=\"https://img.shields.io/docker/pulls/moefurina/ncm-api?style=flat-square\" alt=\"Docker Pulls\" />\n  </a>\n  <a href=\"https://www.typescriptlang.org/\">\n    <img src=\"https://img.shields.io/badge/TypeScript-Ready-blue?style=flat-square&logo=typescript\" alt=\"TypeScript\" />\n  </a>\n</p>\n\n\n\n## 项目简介\n\n网易云音乐第三方 Node.js API, 支持丰富的音乐相关接口，适合自建服务、二次开发和多平台部署\n\n> [!IMPORTANT]\n>\n> ## 注意\n>\n> - 本项目是自由项目, 不带任何担保, 在基于`MIT License`的许可下, 任何人都可以自由使用、修改和分发本项目的代码, 包括用于商业目的. \n> - 该项目是个合作计划, 有很多人参与了此次贡献, 前往 [Contributors](https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced/graphs/contributors) 页面查看所有贡献者\n> - 原作者项目 [Binaryify/NeteaseCloudMusicApi](https://github.com/binaryify/NeteaseCloudMusicApi) 并非完全停止维护, 你可以在 [NeteaseCloudMusicApi 的 NPMJS 页面](https://www.npmjs.com/package/NeteaseCloudMusicApi) 查看最新版本信息。   \n> - 感谢尊重和理解!\n\n## 快速开始\n\n### 环境要求\n\n- Node.js 22 及以上\n- 推荐使用 pnpm 进行依赖管理\n\n### 安装\n\n```bash\ngit clone https://github.com/neteasecloudmusicapienhanced/api-enhanced.git\ncd api-enhanced\npnpm i\n```\n\n### 启动服务\n\n```bash\n# 默认端口 3000\nnode app.js\n\n# 指定端口（如 4000）\nPORT=4000 node app.js  # Mac/Linux\nset PORT=4000 && node app.js  # Windows\n```\n\n### 重要提示\n\n- 调用前请务必阅读文档的 [调用前须知](https://neteasecloudmusicapienhanced.js.org/#/?id=%e8%b0%83%e7%94%a8%e5%89%8d%e9%a1%bb%e7%9f%a5) 部分。\n- 推荐将敏感信息（如 cookie）通过部署平台的环境变量进行配置。\n\n## 在线体验与文档\n\n- [在线文档](https://neteasecloudmusicapienhanced.js.org/)\n- [NPM 包地址](https://www.npmjs.com/package/@neteasecloudmusicapienhanced/api)\n- [Dockerhub 主页](https://hub.docker.com/r/moefurina/ncm-api)\n\n## 常见部署方式\n\n- 推荐参考[在线文档](https://neteasecloudmusicapienhanced.js.org/)\n\n## Docker 部署说明\n\n本项目支持通过 Docker 一键部署，无需手动安装 Node.js 或依赖。\n\n> 注意: 在 docker 中运行的时候, 由于使用了 request 来发请求, 所以会检查几个 proxy 相关的环境变量(如下所列), 这些环境变量 会影响到 request 的代理, 详情请参考[request 的文档](https://github.com/request/request#proxies), 如果这些环境变量 指向的代理不可用, 那么就会造成错误, 所以在使用 docker 的时候一定要注意这些环境变量. 不过, 要是你在 query 中加上了 proxy 参数, 那么环境变量会被覆盖, 就会用你通过 proxy 参数提供的代理了.\n\nrequest 相关的环境变量\n\n1. http_proxy\n2. https_proxy\n3. HTTP_PROXY\n4. HTTPS_PROXY\n5. no_proxy\n6. NO_PROXY\n\n```shell\ndocker pull moefurina/ncm-api:latest\n\ndocker run -d -p 3000:3000 --name ncm-api moefurina/ncm-api:latest\n\n\n// 或者\ndocker run -d -p 3000:3000 moefurina/ncm-api:latest\n\n// 去掉或者设置相关的环境变量\n\ndocker run -d -p 3000:3000 --name ncm-api -e http_proxy= -e https_proxy= -e no_proxy= -e HTTP_PROXY= -e HTTPS_PROXY= -e NO_PROXY= moefurina/ncm-api:latest\n\n// 或者\ndocker run -d -p 3000:3000 -e http_proxy= -e https_proxy= -e no_proxy= -e HTTP_PROXY= -e HTTPS_PROXY= -e NO_PROXY= moefurina/ncm-api:latest\n```\n\n> 以下是自行 build docker 镜像方式\n\n```shell\n$ git clone https://github.com/NeteaseCloudMusicApiEnhanced/api-enhanced && cd api-enhanced\n\n$ sudo docker build . -t ncm-api\n\n$ sudo docker run -d -p 3000:3000 ncm-api\n```\n\n## 3. 环境变量\n\n| 变量名                        | 默认值                                  | 说明                                                 |\n|----------------------------|--------------------------------------|----------------------------------------------------|\n| **CORS_ALLOW_ORIGIN**      | `*`                                  | 允许跨域请求的域名。可填写单个源，或使用逗号分隔多个源（例如 `https://a.com,https://b.com`）。 |\n| **ENABLE_PROXY**           | `false`                              | 是否启用反向代理功能。                                        |\n| **PROXY_URL**              | `https://your-proxy-url.com/?proxy=` | 代理服务地址。仅当 `ENABLE_PROXY=true` 时生效。                 |\n| **ENABLE_RANDOM_CN_IP**    | `false`                              | 是否默认启用随机中国IP。启用后，所有请求默认使用随机中国IP，除非请求参数 `randomCNIP` 显式关闭。 |\n| **ENABLE_GENERAL_UNBLOCK** | `true`                               | 是否启用全局解灰（推荐开启）。开启后所有歌曲都尝试自动解锁。                     |\n| **ENABLE_FLAC**            | `true`                               | 是否启用无损音质（FLAC）。                                    |\n| **SELECT_MAX_BR**          | `false`                              | 启用无损音质时，是否选择最高码率音质。                                |\n| **FOLLOW_SOURCE_ORDER**    | `true`                               | 是否严格按照音源列表顺序进行匹配。                                  |\n\n---\n\n### 4. 更新镜像\n\n更新到最新版本：\n\n```bash\ndocker pull moefurina/ncm-api:latest\ndocker stop ncm-api && docker rm ncm-api\ndocker run -d -p 3000:3000 moefurina/ncm-api:latest\n```\n\n## Vercel 一键部署\n\n1. fork 本项目\n2. 在 Vercel 官网新建项目，导入 fork 的仓库\n3. 直接 Deploy\n\n## 腾讯云 Serverless 部署\n\n1. fork 本项目\n2. 在腾讯云 serverless 控制台新建 Web 应用，选择 Express 框架\n3. 代码仓库选择 fork 的项目，启动文件填写：\n   ```bash\n   #!/bin/bash\n   export PORT=9000\n   /var/lang/node16/bin/node app.js\n   ```\n4. 完成部署后，访问 API 网关的 URL 即可\n\n## Node.js 方式调用\n\n支持直接在 Node.js 项目中引入和调用，返回 Promise：\n\n```js\nconst {\n  login_cellphone,\n  user_cloud,\n} = require('@neteasecloudmusicapienhanced/api')\nasync function main() {\n  const result = await login_cellphone({ phone: '手机号', password: "[REDACTED]" })\n  console.log(result)\n  const result2 = await user_cloud({ cookie: result.body.cookie })\n  console.log(result2.body)\n}\nmain()\n```\n\n## TypeScript 支持\n\n```ts\nimport { banner } from '@neteasecloudmusicapienhanced/api'\nbanner({ type: 0 }).then((res) => console.log(res))\n```\n\n## 单元测试\n\n```bash\npnpm test\n```\n\n## 主要功能特性\n\n- 登录/注册/验证码\n- 用户信息、歌单、动态、播放记录\n- 歌曲、专辑、歌手、MV、歌词、评论、排行榜\n- 搜索、推荐、私人 FM、签到、云盘\n- 歌曲解锁（解灰）\n\n## 贡献与社区\n\n- 欢迎提交 PR、Issue 参与维护\n- 要贡献新接口, 请参考[这篇文章](https://www.focalors.ltd/post/how-to-contribute-ncm-api)\n\n### 致谢\n\n原作者 [Binaryify/NeteaseCloudMusicApi](https://github.com/binaryify/NeteaseCloudMusicApi) 项目为本项目基础 (该项目在`npmjs`网站上仍持续维护, 但 github 仓库已不再更新)\n\n感谢大佬们为逆向eapi, weapi, xeapi等加密算法所做的贡献\n\n项目参考:\n\n[trazyn/ieaseMusic](https://github.com/trazyn/ieaseMusic)\n\n[listen1/listen1_chrome_extension](https://github.com/listen1/listen1_chrome_extension)\n\n[chaunsin/netease-cloud-music](https://github.com/chaunsin/netease-cloud-music)\n\n[folltoshe/netease-report-listen-song](https://github.com/folltoshe/netease-report-listen-song)\n\n### SDK 生态\n\n| 语言     | 作者                                          | 地址                                                                                       | 类型  |\n|--------|---------------------------------------------|------------------------------------------------------------------------------------------|-----|\n| Java   | [JackuXL](https://github.com/JackuXL)       | [NeteaseCloudMusicApi-SDK](https://github.com/JackuXL/NeteaseCloudMusicApi-SDK)          | 第三方 |\n| Java   | [1015770492](https://github.com/1015770492) | [yumbo-music-utils](https://github.com/1015770492/yumbo-music-utils)      | 第三方 |\n| Python | [盧瞳](https://github.com/2061360308)         | [NeteaseCloudMusic_PythonSDK](https://github.com/2061360308/NeteaseCloudMusic_PythonSDK) | 第三方 |\n| Swift  | [Lincb522](https://github.com/Lincb522)  | [NeteaseCloudMusicApi-Swift](https://github.com/Lincb522/NeteaseCloudMusicAPI-Swift)     | 第三方 |\n| Rust   | [SPlayer-Dev](https://github.com/splayer-dev)  | [ncm-api-rs](https://github.com/SPlayer-Dev/ncm-api-rs)     | 第三方 |\n\n\n### 依赖此项目的优秀开源项目\n\n- [qier2222/YesPlayMusic](https://github.com/qier222/YesPlayMusic)\n\n- [MaigoLabs/amaoke.app](https://github.com/MaigoLabs/amaoke.app)\n\n- [Yueby/music-together](https://github.com/Yueby/music-together)\n\n- [chthollyphlie/folia-major](https://github.com/chthollyphile/folia-major)\n\n## License\n\n[MIT License](https://github.com/MoeFurina/NeteaseCloudMusicApiEnhanced/blob/main/LICENSE)\n",
+  "readmeFilename": "README.MD"
+}

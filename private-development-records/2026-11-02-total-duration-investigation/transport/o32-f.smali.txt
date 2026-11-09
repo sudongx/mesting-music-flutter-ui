@@ -1,0 +1,3164 @@
+.class public abstract Lo32/f;
+.super Ljava/lang/Object;
+.source "ProGuard"
+
+# interfaces
+.implements Lo32/r;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<R:",
+        "Lo32/f;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lo32/r<",
+        "TR;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field private A:Z
+
+.field private B:Z
+
+.field private C:Z
+
+.field private D:Ljava/lang/String;
+
+.field private a:I
+
+.field private b:I
+
+.field protected final c:Ljava/lang/Object;
+
+.field protected d:Ln32/a;
+
+.field protected e:Ll32/a;
+
+.field private f:Ljava/util/LinkedHashSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/LinkedHashSet<",
+            "Lokhttp3/Interceptor;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private g:Ljava/util/LinkedHashSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/LinkedHashSet<",
+            "Ljava/lang/Class<",
+            "Lokhttp3/Interceptor;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+.field protected h:Lu22/g;
+
+.field protected i:Lw22/c;
+
+.field protected j:Lokhttp3/Request;
+
+.field protected k:Landroid/net/Uri;
+
+.field private l:Lokhttp3/Call;
+
+.field protected m:Ljava/lang/String;
+
+.field protected n:I
+
+.field protected o:I
+
+.field protected p:I
+
+.field protected q:Z
+
+.field protected r:Z
+
+.field protected s:Lu22/f;
+
+.field protected t:Lu22/f;
+
+.field protected u:I
+
+.field private v:Ljavax/net/SocketFactory;
+
+.field private w:I
+
+.field private x:Z
+
+.field private y:I
+
+.field private z:Lorg/chromium/net/UrlRequest;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .registers 3
+
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-direct {p0, p1, v0}, Lo32/f;-><init>(Ljava/lang/String;Ljava/util/Map;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/util/Map;)V
+    .registers 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "*>;)V"
+        }
+    .end annotation
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    invoke-virtual {p0}, Lo32/f;->F()I
+
+    move-result v0
+
+    iput v0, p0, Lo32/f;->a:I
+
+    .line 4
+    invoke-virtual {p0}, Lo32/f;->I()I
+
+    move-result v0
+
+    iput v0, p0, Lo32/f;->b:I
+
+    .line 5
+    new-instance v0, Ln32/a;
+
+    invoke-direct {v0}, Ln32/a;-><init>()V
+
+    iput-object v0, p0, Lo32/f;->d:Ln32/a;
+
+    .line 6
+    new-instance v0, Ll32/a;
+
+    invoke-direct {v0}, Ll32/a;-><init>()V
+
+    iput-object v0, p0, Lo32/f;->e:Ll32/a;
+
+    .line 7
+    sget-object v0, Landroid/net/Uri;->EMPTY:Landroid/net/Uri;
+
+    iput-object v0, p0, Lo32/f;->k:Landroid/net/Uri;
+
+    const/4 v0, 0x0
+
+    .line 8
+    iput-boolean v0, p0, Lo32/f;->q:Z
+
+    .line 9
+    iput-boolean v0, p0, Lo32/f;->r:Z
+
+    .line 10
+    iput v0, p0, Lo32/f;->u:I
+
+    .line 11
+    iput v0, p0, Lo32/f;->w:I
+
+    .line 12
+    iput-boolean v0, p0, Lo32/f;->x:Z
+
+    const/4 v1, -0x1
+
+    .line 13
+    iput v1, p0, Lo32/f;->y:I
+
+    .line 14
+    iput-boolean v0, p0, Lo32/f;->A:Z
+
+    .line 15
+    iput-boolean v0, p0, Lo32/f;->B:Z
+
+    .line 16
+    invoke-virtual {p0, p1}, Lo32/f;->z(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lo32/f;->k:Landroid/net/Uri;
+
+    .line 17
+    invoke-static {}, Lo22/u;->f()Lo22/u;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_69
+
+    .line 18
+    invoke-static {}, Lo22/u;->f()Lo22/u;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lo22/u;->c()Lo22/a;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_58
+
+    .line 19
+    invoke-virtual {p1}, Lo22/a;->A()Ll32/a;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_58
+
+    .line 20
+    iget-object v0, p0, Lo32/f;->e:Ll32/a;
+
+    invoke-virtual {p1}, Lo22/a;->A()Ll32/a;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ll32/a;->h(Ll32/a;)V
+
+    :cond_58
+    if-eqz p1, :cond_69
+
+    .line 21
+    invoke-virtual {p1}, Lo22/a;->B()Ln32/a;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_69
+
+    .line 22
+    iget-object v0, p0, Lo32/f;->d:Ln32/a;
+
+    invoke-virtual {p1}, Lo22/a;->B()Ln32/a;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Ln32/a;->r(Ln32/a;)V
+
+    .line 23
+    :cond_69
+    invoke-virtual {p0, p2}, Lo32/f;->s0(Ljava/util/Map;)Lo32/f;
+
+    .line 24
+    iput-object p0, p0, Lo32/f;->c:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method private D0(IZ)V
+    .registers 3
+
+    .line 1
+    if-eqz p2, :cond_8
+
+    .line 2
+    .line 3
+    iget p2, p0, Lo32/f;->a:I
+
+    .line 4
+    .line 5
+    or-int/2addr p1, p2
+
+    .line 6
+    iput p1, p0, Lo32/f;->a:I
+
+    .line 7
+    .line 8
+    goto :goto_e
+
+    .line 9
+    :cond_8
+    iget p2, p0, Lo32/f;->a:I
+
+    .line 10
+    .line 11
+    not-int p1, p1
+
+    .line 12
+    and-int/2addr p1, p2
+
+    .line 13
+    iput p1, p0, Lo32/f;->a:I
+
+    .line 14
+    .line 15
+    :goto_e
+    return-void
+.end method
+
+.method private H0(IZ)V
+    .registers 3
+
+    .line 1
+    if-eqz p2, :cond_8
+
+    .line 2
+    .line 3
+    iget p2, p0, Lo32/f;->b:I
+
+    .line 4
+    .line 5
+    or-int/2addr p1, p2
+
+    .line 6
+    iput p1, p0, Lo32/f;->b:I
+
+    .line 7
+    .line 8
+    goto :goto_e
+
+    .line 9
+    :cond_8
+    iget p2, p0, Lo32/f;->b:I
+
+    .line 10
+    .line 11
+    not-int p1, p1
+
+    .line 12
+    and-int/2addr p1, p2
+
+    .line 13
+    iput p1, p0, Lo32/f;->b:I
+
+    .line 14
+    .line 15
+    :goto_e
+    iget p1, p0, Lo32/f;->b:I
+
+    .line 16
+    .line 17
+    invoke-virtual {p0}, Lo32/f;->I()I
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p2
+
+    .line 21
+    if-eq p1, p2, :cond_19
+
+    .line 22
+    .line 23
+    invoke-virtual {p0}, Lo32/f;->o0()Lo32/f;
+
+    .line 24
+    .line 25
+    .line 26
+    :cond_19
+    return-void
+.end method
+
+.method private T(II)Z
+    .registers 3
+
+    .line 1
+    and-int/2addr p1, p2
+
+    .line 2
+    if-eqz p1, :cond_5
+
+    .line 3
+    .line 4
+    const/4 p1, 0x1
+
+    .line 5
+    goto :goto_6
+
+    .line 6
+    :cond_5
+    const/4 p1, 0x0
+
+    .line 7
+    :goto_6
+    return p1
+.end method
+
+
+# virtual methods
+.method public final A()Lokhttp3/Request$Builder;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->e:Ll32/a;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lo42/e;->a(Ll32/a;)Lokhttp3/Request$Builder;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public final A0(Z)Lo32/f;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z)TR;"
+        }
+    .end annotation
+
+    .line 1
+    iput-boolean p1, p0, Lo32/f;->C:Z
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public B()Lu22/f;
+    .registers 2
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->s:Lu22/f;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public B0(I)Lo32/f;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)TR;"
+        }
+    .end annotation
+
+    .line 1
+    iput p1, p0, Lo32/f;->u:I
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public C()I
+    .registers 2
+
+    .line 1
+    iget v0, p0, Lo32/f;->u:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final C0(Ljava/lang/String;)Lo32/f;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")TR;"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lo32/f;->D:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public D()Lw22/c;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->i:Lw22/c;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public E()Lokhttp3/CookieJar;
+    .registers 2
+
+    .line 1
+    sget-object v0, Lokhttp3/CookieJar;->NO_COOKIES:Lokhttp3/CookieJar;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public E0(Z)Lo32/f;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z)TR;"
+        }
+    .end annotation
+
+    .line 1
+    iput-boolean p1, p0, Lo32/f;->A:Z
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method protected F()I
+    .registers 2
+
+    .line 1
+    const/4 v0, 0x2
+
+    .line 2
+    return v0
+.end method
+
+.method public F0(Z)Lo32/f;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z)TR;"
+        }
+    .end annotation
+
+    .line 1
+    iput-boolean p1, p0, Lo32/f;->x:Z
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public G()Lokhttp3/Call;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->l:Lokhttp3/Call;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public G0(Z)Lo32/f;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z)TR;"
+        }
+    .end annotation
+
+    .line 1
+    iput-boolean p1, p0, Lo32/f;->B:Z
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public H()Ll32/a;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->e:Ll32/a;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method protected I()I
+    .registers 2
+
+    .line 1
+    const/4 v0, 0x2
+
+    .line 2
+    return v0
+.end method
+
+.method public I0(Lu22/f;)Lo32/f;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lu22/f;",
+            ")TR;"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lo32/f;->s:Lu22/f;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public J()Ln32/a;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->d:Ln32/a;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public J0(Lu22/f;)Lo32/f;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lu22/f<",
+            "TT;>;)TR;"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lo32/f;->t:Lu22/f;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public K()Lokhttp3/Request;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->j:Lokhttp3/Request;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public K0(I)Lo32/f;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)TR;"
+        }
+    .end annotation
+
+    .line 1
+    iput p1, p0, Lo32/f;->y:I
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public L()Lu22/f;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->t:Lu22/f;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public L0(Lorg/chromium/net/UrlRequest;)V
+    .registers 2
+
+    .line 1
+    iput-object p1, p0, Lo32/f;->z:Lorg/chromium/net/UrlRequest;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public M()Ljava/lang/String;
+    .registers 2
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->k:Landroid/net/Uri;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroid/net/Uri;->getPath()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public M0(Ljavax/net/SocketFactory;)Lo32/f;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljavax/net/SocketFactory;",
+            ")TR;"
+        }
+    .end annotation
+
+    .line 1
+    if-eqz p1, :cond_7
+
+    .line 2
+    .line 3
+    iput-object p1, p0, Lo32/f;->v:Ljavax/net/SocketFactory;
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lo32/f;->o0()Lo32/f;
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_7
+    return-object p0
+.end method
+
+.method public N()I
+    .registers 2
+
+    .line 1
+    iget v0, p0, Lo32/f;->y:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public N0(I)Lo32/f;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)TR;"
+        }
+    .end annotation
+
+    .line 1
+    iput p1, p0, Lo32/f;->p:I
+
+    .line 2
+    .line 3
+    iput p1, p0, Lo32/f;->o:I
+
+    .line 4
+    .line 5
+    iput p1, p0, Lo32/f;->n:I
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Lo32/f;->o0()Lo32/f;
+
+    .line 8
+    .line 9
+    .line 10
+    return-object p0
+.end method
+
+.method public O()I
+    .registers 2
+
+    .line 1
+    iget v0, p0, Lo32/f;->w:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public O0(Lokhttp3/RequestBody;)Lokhttp3/RequestBody;
+    .registers 2
+
+    .line 1
+    return-object p1
+.end method
+
+.method public P()Ljava/lang/Object;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->c:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method protected P0(Lokhttp3/Response;)Lp32/a;
+    .registers 2
+
+    .line 1
+    invoke-static {p1, p0}, Lp32/a;->u(Lokhttp3/Response;Lo32/f;)Lp32/a;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public Q()I
+    .registers 2
+
+    .line 1
+    iget v0, p0, Lo32/f;->n:I
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_6
+
+    .line 4
+    .line 5
+    const/16 v0, 0x2710
+
+    .line 6
+    .line 7
+    :cond_6
+    return v0
+.end method
+
+.method public Q0(I)Lo32/f;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)TR;"
+        }
+    .end annotation
+
+    .line 1
+    iput p1, p0, Lo32/f;->o:I
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lo32/f;->o0()Lo32/f;
+
+    .line 4
+    .line 5
+    .line 6
+    return-object p0
+.end method
+
+.method public final R()Ljava/lang/String;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->k:Landroid/net/Uri;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroid/net/Uri;->toString()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public S()Z
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->s:Lu22/f;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_6
+
+    .line 4
+    .line 5
+    const/4 v0, 0x1
+
+    .line 6
+    goto :goto_7
+
+    .line 7
+    :cond_6
+    const/4 v0, 0x0
+
+    .line 8
+    :goto_7
+    return v0
+.end method
+
+.method public U(Ljava/lang/String;Ljava/lang/String;)Lo32/f;
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ")TR;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->e:Ll32/a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2}, Ll32/a;->g(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object p0
+.end method
+
+.method public V(Ll32/a;)Lo32/f;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ll32/a;",
+            ")TR;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->e:Ll32/a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Ll32/a;->h(Ll32/a;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object p0
+.end method
+
+.method public W(Z)Lo32/f;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z)TR;"
+        }
+    .end annotation
+
+    .line 1
+    const/16 v0, 0x8
+
+    .line 2
+    .line 3
+    invoke-direct {p0, v0, p1}, Lo32/f;->D0(IZ)V
+
+    .line 4
+    .line 5
+    .line 6
+    if-eqz p1, :cond_c
+
+    .line 7
+    .line 8
+    const-class p1, Lcom/netease/cloudmusic/network/interceptor/v;
+
+    .line 9
+    .line 10
+    invoke-virtual {p0, p1}, Lo32/f;->x0(Ljava/lang/Class;)Lo32/f;
+
+    .line 11
+    .line 12
+    .line 13
+    :cond_c
+    return-object p0
+.end method
+
+.method public X()Z
+    .registers 3
+
+    .line 1
+    iget v0, p0, Lo32/f;->a:I
+
+    .line 2
+    .line 3
+    const/16 v1, 0x10
+
+    .line 4
+    .line 5
+    invoke-direct {p0, v0, v1}, Lo32/f;->T(II)Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public Y()Z
+    .registers 3
+
+    .line 1
+    iget v0, p0, Lo32/f;->a:I
+
+    .line 2
+    .line 3
+    const/16 v1, 0x20
+
+    .line 4
+    .line 5
+    invoke-direct {p0, v0, v1}, Lo32/f;->T(II)Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public Z()Z
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->l:Lokhttp3/Call;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_9
+
+    .line 4
+    .line 5
+    invoke-interface {v0}, Lokhttp3/Call;->isCanceled()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    goto :goto_a
+
+    .line 10
+    :cond_9
+    const/4 v0, 0x1
+
+    .line 11
+    :goto_a
+    return v0
+.end method
+
+.method public a0()Z
+    .registers 2
+
+    .line 1
+    iget-boolean v0, p0, Lo32/f;->A:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public b0()Z
+    .registers 3
+
+    .line 1
+    iget v0, p0, Lo32/f;->b:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x2
+
+    .line 4
+    invoke-direct {p0, v0, v1}, Lo32/f;->T(II)Z
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v0
+
+    .line 8
+    return v0
+.end method
+
+.method public c0()Z
+    .registers 2
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method public d(Lokhttp3/Interceptor;)Lo32/f;
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lokhttp3/Interceptor;",
+            ")TR;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->f:Ljava/util/LinkedHashSet;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_c
+
+    .line 4
+    .line 5
+    new-instance v0, Ljava/util/LinkedHashSet;
+
+    .line 6
+    .line 7
+    const/4 v1, 0x2
+
+    .line 8
+    invoke-direct {v0, v1}, Ljava/util/LinkedHashSet;-><init>(I)V
+
+    .line 9
+    .line 10
+    .line 11
+    iput-object v0, p0, Lo32/f;->f:Ljava/util/LinkedHashSet;
+
+    .line 12
+    .line 13
+    :cond_c
+    iget-object v0, p0, Lo32/f;->f:Ljava/util/LinkedHashSet;
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, p1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {p0}, Lo32/f;->o0()Lo32/f;
+
+    .line 19
+    .line 20
+    .line 21
+    return-object p0
+.end method
+
+.method public d0()Z
+    .registers 3
+
+    .line 1
+    iget v0, p0, Lo32/f;->a:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    invoke-direct {p0, v0, v1}, Lo32/f;->T(II)Z
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v0
+
+    .line 8
+    return v0
+.end method
+
+.method public e(Z)Lo32/f;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z)TR;"
+        }
+    .end annotation
+
+    .line 1
+    const/16 v0, 0x10
+
+    .line 2
+    .line 3
+    invoke-direct {p0, v0, p1}, Lo32/f;->D0(IZ)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object p0
+.end method
+
+.method public e0()Z
+    .registers 2
+
+    .line 1
+    iget-boolean v0, p0, Lo32/f;->x:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public f()V
+    .registers 4
+
+    .line 1
+    invoke-virtual {p0}, Lo32/f;->G()Lokhttp3/Call;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    if-eqz v0, :cond_9
+
+    .line 6
+    .line 7
+    invoke-interface {v0}, Lokhttp3/Call;->cancel()V
+
+    .line 8
+    .line 9
+    .line 10
+    :cond_9
+    iget-object v1, p0, Lo32/f;->z:Lorg/chromium/net/UrlRequest;
+
+    .line 11
+    .line 12
+    if-eqz v1, :cond_49
+
+    .line 13
+    .line 14
+    if-eqz v0, :cond_2c
+
+    .line 15
+    .line 16
+    invoke-interface {v0}, Lokhttp3/Call;->request()Lokhttp3/Request;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v1
+
+    .line 20
+    if-eqz v1, :cond_2c
+
+    .line 21
+    .line 22
+    invoke-interface {v0}, Lokhttp3/Call;->request()Lokhttp3/Request;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v1
+
+    .line 26
+    invoke-virtual {v1}, Lokhttp3/Request;->url()Lokhttp3/HttpUrl;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v1
+
+    .line 30
+    if-eqz v1, :cond_2c
+
+    .line 31
+    .line 32
+    invoke-interface {v0}, Lokhttp3/Call;->request()Lokhttp3/Request;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v0
+
+    .line 36
+    invoke-virtual {v0}, Lokhttp3/Request;->url()Lokhttp3/HttpUrl;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v0
+
+    .line 40
+    invoke-virtual {v0}, Lokhttp3/HttpUrl;->toString()Ljava/lang/String;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v0
+
+    .line 44
+    goto :goto_2e
+
+    .line 45
+    :cond_2c
+    const-string v0, ""
+
+    .line 46
+    .line 47
+    :goto_2e
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 48
+    .line 49
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 50
+    .line 51
+    .line 52
+    const-string v2, "cancel urlRequest:"
+
+    .line 53
+    .line 54
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 55
+    .line 56
+    .line 57
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 58
+    .line 59
+    .line 60
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v0
+
+    .line 64
+    const-string v1, "croneturl"
+
+    .line 65
+    .line 66
+    invoke-static {v1, v0}, Lbz/a;->f(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 67
+    .line 68
+    .line 69
+    iget-object v0, p0, Lo32/f;->z:Lorg/chromium/net/UrlRequest;
+
+    .line 70
+    .line 71
+    invoke-virtual {v0}, Lorg/chromium/net/UrlRequest;->cancel()V
+
+    .line 72
+    .line 73
+    .line 74
+    :cond_49
+    return-void
+.end method
+
+.method public f0()Z
+    .registers 2
+
+    .line 1
+    iget-boolean v0, p0, Lo32/f;->B:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public g()V
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->z:Lorg/chromium/net/UrlRequest;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_7
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lorg/chromium/net/UrlRequest;->cancel()V
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_7
+    return-void
+.end method
+
+.method public g0(Ljava/lang/Exception;)Z
+    .registers 3
+
+    .line 1
+    invoke-virtual {p0}, Lo32/f;->Z()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-nez v0, :cond_11
+
+    .line 6
+    .line 7
+    instance-of v0, p1, Ljava/io/InterruptedIOException;
+
+    .line 8
+    .line 9
+    if-eqz v0, :cond_f
+
+    .line 10
+    .line 11
+    instance-of p1, p1, Ljava/net/SocketTimeoutException;
+
+    .line 12
+    .line 13
+    if-nez p1, :cond_f
+
+    .line 14
+    .line 15
+    goto :goto_11
+
+    .line 16
+    :cond_f
+    const/4 p1, 0x0
+
+    .line 17
+    goto :goto_12
+
+    .line 18
+    :cond_11
+    :goto_11
+    const/4 p1, 0x1
+
+    .line 19
+    :goto_12
+    return p1
+.end method
+
+.method public h(I)Lo32/f;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)TR;"
+        }
+    .end annotation
+
+    .line 1
+    iput p1, p0, Lo32/f;->p:I
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lo32/f;->o0()Lo32/f;
+
+    .line 4
+    .line 5
+    .line 6
+    return-object p0
+.end method
+
+.method public h0()Z
+    .registers 2
+
+    .line 1
+    iget-boolean v0, p0, Lo32/f;->q:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public i(Lw22/c;)Lo32/f;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lw22/c;",
+            ")TR;"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lo32/f;->i:Lw22/c;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public i0()Z
+    .registers 3
+
+    .line 1
+    iget v0, p0, Lo32/f;->b:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x4
+
+    .line 4
+    invoke-direct {p0, v0, v1}, Lo32/f;->T(II)Z
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v0
+
+    .line 8
+    return v0
+.end method
+
+.method public final isBypassThrottle()Z
+    .registers 2
+
+    .line 1
+    iget-boolean v0, p0, Lo32/f;->C:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final j()Lokhttp3/Call;
+    .registers 2
+
+    .line 1
+    invoke-virtual {p0}, Lo32/f;->y()Lokhttp3/RequestBody;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {p0, v0}, Lo32/f;->O0(Lokhttp3/RequestBody;)Lokhttp3/RequestBody;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-virtual {p0, v0}, Lo32/f;->x(Lokhttp3/RequestBody;)Lokhttp3/Request;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    iput-object v0, p0, Lo32/f;->j:Lokhttp3/Request;
+
+    .line 14
+    .line 15
+    invoke-virtual {p0, v0}, Lo32/f;->w(Lokhttp3/Request;)Lokhttp3/Call;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    iput-object v0, p0, Lo32/f;->l:Lokhttp3/Call;
+
+    .line 20
+    .line 21
+    return-object v0
+.end method
+
+.method public j0()Z
+    .registers 3
+
+    .line 1
+    iget v0, p0, Lo32/f;->a:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x4
+
+    .line 4
+    invoke-direct {p0, v0, v1}, Lo32/f;->T(II)Z
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v0
+
+    .line 8
+    return v0
+.end method
+
+.method public k(Z)Lo32/f;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z)TR;"
+        }
+    .end annotation
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    invoke-direct {p0, v0, p1}, Lo32/f;->H0(IZ)V
+
+    .line 3
+    .line 4
+    .line 5
+    return-object p0
+.end method
+
+.method public k0()Z
+    .registers 3
+
+    .line 1
+    iget v0, p0, Lo32/f;->a:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x2
+
+    .line 4
+    invoke-direct {p0, v0, v1}, Lo32/f;->T(II)Z
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v0
+
+    .line 8
+    return v0
+.end method
+
+.method public l(Z)Lo32/f;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z)TR;"
+        }
+    .end annotation
+
+    .line 1
+    const/16 v0, 0x20
+
+    .line 2
+    .line 3
+    invoke-direct {p0, v0, p1}, Lo32/f;->D0(IZ)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object p0
+.end method
+
+.method public l0()Lo32/f;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TR;"
+        }
+    .end annotation
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    iput-boolean v0, p0, Lo32/f;->r:Z
+
+    .line 3
+    .line 4
+    return-object p0
+.end method
+
+.method public m(Z)Lo32/f;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z)TR;"
+        }
+    .end annotation
+
+    .line 1
+    const/4 v0, 0x4
+
+    .line 2
+    invoke-direct {p0, v0, p1}, Lo32/f;->D0(IZ)V
+
+    .line 3
+    .line 4
+    .line 5
+    return-object p0
+.end method
+
+.method public m0()Z
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->f:Ljava/util/LinkedHashSet;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_c
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/util/AbstractCollection;->size()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    if-lez v0, :cond_c
+
+    .line 10
+    .line 11
+    const/4 v0, 0x1
+
+    .line 12
+    goto :goto_d
+
+    .line 13
+    :cond_c
+    const/4 v0, 0x0
+
+    .line 14
+    :goto_d
+    return v0
+.end method
+
+.method public n()Lp32/a;
+    .registers 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;,
+            Lj32/d;
+        }
+    .end annotation
+
+    .line 1
+    :try_start_0
+    invoke-virtual {p0}, Lo32/f;->j()Lokhttp3/Call;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-interface {v0}, Lokhttp3/Call;->execute()Lokhttp3/Response;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iget-boolean v1, p0, Lo32/f;->r:Z
+
+    .line 10
+    .line 11
+    if-nez v1, :cond_11
+
+    .line 12
+    .line 13
+    invoke-virtual {p0, v0}, Lo32/f;->P0(Lokhttp3/Response;)Lp32/a;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    return-object v0
+
+    .line 18
+    :cond_11
+    new-instance v0, Lj32/i;
+
+    .line 19
+    .line 20
+    const-string v1, "Cache is fetched in advance, ignore the cache response"
+
+    .line 21
+    .line 22
+    invoke-direct {v0, v1}, Lj32/i;-><init>(Ljava/lang/String;)V
+
+    .line 23
+    .line 24
+    .line 25
+    throw v0
+    :try_end_19
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_19} :catch_19
+
+    .line 26
+    :catch_19
+    move-exception v0
+
+    .line 27
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v1
+
+    .line 31
+    instance-of v1, v1, Lj32/d;
+
+    .line 32
+    .line 33
+    if-eqz v1, :cond_29
+
+    .line 34
+    .line 35
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object v0
+
+    .line 39
+    check-cast v0, Lj32/d;
+
+    .line 40
+    .line 41
+    throw v0
+
+    .line 42
+    :cond_29
+    throw v0
+.end method
+
+.method public n0()Z
+    .registers 3
+
+    .line 1
+    iget v0, p0, Lo32/f;->b:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    invoke-direct {p0, v0, v1}, Lo32/f;->T(II)Z
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v0
+
+    .line 8
+    return v0
+.end method
+
+.method public o(Lu22/g;)V
+    .registers 3
+
+    .line 1
+    if-nez p1, :cond_8
+
+    .line 2
+    .line 3
+    new-instance v0, Lu22/l;
+
+    .line 4
+    .line 5
+    invoke-direct {v0}, Lu22/l;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    goto :goto_9
+
+    .line 9
+    :cond_8
+    move-object v0, p1
+
+    .line 10
+    :goto_9
+    iput-object v0, p0, Lo32/f;->h:Lu22/g;
+
+    .line 11
+    .line 12
+    new-instance v0, Lt22/a;
+
+    .line 13
+    .line 14
+    invoke-direct {v0, p0}, Lt22/a;-><init>(Lo32/f;)V
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {v0, p1}, Lt22/a;->f(Lu22/g;)V
+
+    .line 18
+    .line 19
+    .line 20
+    return-void
+.end method
+
+.method public o0()Lo32/f;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TR;"
+        }
+    .end annotation
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    iput-boolean v0, p0, Lo32/f;->q:Z
+
+    .line 3
+    .line 4
+    return-object p0
+.end method
+
+.method public p()Lorg/json/JSONObject;
+    .registers 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;,
+            Lj32/d;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {}, Lw22/e;->b()Lw22/e;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    iput-object v0, p0, Lo32/f;->i:Lw22/c;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Lo32/f;->n()Lp32/a;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    invoke-virtual {v0}, Lp32/a;->b()Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v1
+
+    .line 15
+    check-cast v1, Lorg/json/JSONObject;
+
+    .line 16
+    .line 17
+    invoke-virtual {v0}, Lp32/a;->l()Ljava/lang/String;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v0
+
+    .line 21
+    invoke-static {v0, v1}, Lo42/x;->b(Ljava/lang/String;Lorg/json/JSONObject;)V
+
+    .line 22
+    .line 23
+    .line 24
+    return-object v1
+.end method
+
+.method public p0()Z
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->g:Ljava/util/LinkedHashSet;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_c
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/util/AbstractCollection;->size()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    if-lez v0, :cond_c
+
+    .line 10
+    .line 11
+    const/4 v0, 0x1
+
+    .line 12
+    goto :goto_d
+
+    .line 13
+    :cond_c
+    const/4 v0, 0x0
+
+    .line 14
+    :goto_d
+    return v0
+.end method
+
+.method protected q()Lorg/json/JSONObject;
+    .registers 5
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;,
+            Lj32/d;
+        }
+    .end annotation
+
+    .line 1
+    const-string v0, "xBatchHeader"
+
+    .line 2
+    .line 3
+    invoke-static {}, Lw22/e;->b()Lw22/e;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    iput-object v1, p0, Lo32/f;->i:Lw22/c;
+
+    .line 8
+    .line 9
+    invoke-virtual {p0}, Lo32/f;->n()Lp32/a;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    invoke-virtual {v1}, Lp32/a;->b()Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v2
+
+    .line 17
+    check-cast v2, Lorg/json/JSONObject;
+
+    .line 18
+    .line 19
+    :try_start_12
+    invoke-virtual {v1}, Lp32/a;->j()Ljava/lang/String;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v1
+
+    .line 23
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v3
+
+    .line 27
+    if-nez v3, :cond_34
+
+    .line 28
+    .line 29
+    new-instance v3, Lorg/json/JSONObject;
+
+    .line 30
+    .line 31
+    invoke-direct {v3, v1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+
+    .line 32
+    .line 33
+    .line 34
+    if-eqz v2, :cond_2c
+
+    .line 35
+    .line 36
+    invoke-virtual {v2, v0}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
+
+    .line 37
+    .line 38
+    .line 39
+    move-result v1
+
+    .line 40
+    if-eqz v1, :cond_2c
+
+    .line 41
+    .line 42
+    invoke-virtual {v2, v0, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 43
+    .line 44
+    .line 45
+    :cond_2c
+    invoke-static {v3, v2}, Lo42/x;->c(Lorg/json/JSONObject;Lorg/json/JSONObject;)V
+    :try_end_2f
+    .catch Lorg/json/JSONException; {:try_start_12 .. :try_end_2f} :catch_30
+
+    .line 46
+    .line 47
+    .line 48
+    goto :goto_34
+
+    .line 49
+    :catch_30
+    move-exception v0
+
+    .line 50
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 51
+    .line 52
+    .line 53
+    :cond_34
+    :goto_34
+    return-object v2
+.end method
+
+.method public q0()Lo32/f;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TR;"
+        }
+    .end annotation
+
+    .line 1
+    const/4 v0, 0x4
+
+    .line 2
+    const/4 v1, 0x1
+
+    .line 3
+    invoke-direct {p0, v0, v1}, Lo32/f;->H0(IZ)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object p0
+.end method
+
+.method public r()Lorg/json/JSONObject;
+    .registers 6
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;,
+            Lj32/d;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {}, Lw22/e;->b()Lw22/e;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    iput-object v0, p0, Lo32/f;->i:Lw22/c;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Lo32/f;->n()Lp32/a;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    invoke-virtual {v0}, Lp32/a;->n()Ljava/lang/String;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v1
+
+    .line 15
+    invoke-virtual {v0}, Lp32/a;->b()Ljava/lang/Object;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v2
+
+    .line 19
+    check-cast v2, Lorg/json/JSONObject;
+
+    .line 20
+    .line 21
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    .line 22
+    .line 23
+    .line 24
+    move-result v3
+
+    .line 25
+    if-nez v3, :cond_2c
+
+    .line 26
+    .line 27
+    if-eqz v2, :cond_2c
+
+    .line 28
+    .line 29
+    const-string v3, "xHeaderTraceId"
+
+    .line 30
+    .line 31
+    invoke-virtual {v2, v3}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v4
+
+    .line 35
+    if-eqz v4, :cond_2c
+
+    .line 36
+    .line 37
+    :try_start_24
+    invoke-virtual {v2, v3, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+    :try_end_27
+    .catch Lorg/json/JSONException; {:try_start_24 .. :try_end_27} :catch_28
+
+    .line 38
+    .line 39
+    .line 40
+    goto :goto_2c
+
+    .line 41
+    :catch_28
+    move-exception v1
+
+    .line 42
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 43
+    .line 44
+    .line 45
+    :cond_2c
+    :goto_2c
+    invoke-virtual {v0}, Lp32/a;->l()Ljava/lang/String;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v0
+
+    .line 49
+    invoke-static {v0, v2}, Lo42/x;->b(Ljava/lang/String;Lorg/json/JSONObject;)V
+
+    .line 50
+    .line 51
+    .line 52
+    return-object v2
+.end method
+
+.method public r0(Ljava/lang/String;Ljava/lang/String;)Lo32/f;
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ")TR;"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->d:Ln32/a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2}, Ln32/a;->p(Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object p0
+.end method
+
+.method public s()Ljava/lang/String;
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;,
+            Lj32/d;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {}, Lw22/g;->b()Lw22/g;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    iput-object v0, p0, Lo32/f;->i:Lw22/c;
+
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Lo32/f;->n()Lp32/a;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    invoke-virtual {v0}, Lp32/a;->b()Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    check-cast v0, Ljava/lang/String;
+
+    .line 16
+    .line 17
+    return-object v0
+.end method
+
+.method public s0(Ljava/util/Map;)Lo32/f;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "*>;)TR;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->d:Ln32/a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Ln32/a;->q(Ljava/util/Map;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object p0
+.end method
+
+.method public t(Z)Lo32/f;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z)TR;"
+        }
+    .end annotation
+
+    .line 1
+    const/4 v0, 0x2
+
+    .line 2
+    invoke-direct {p0, v0, p1}, Lo32/f;->H0(IZ)V
+
+    .line 3
+    .line 4
+    .line 5
+    return-object p0
+.end method
+
+.method public t0(Ln32/a;)Lo32/f;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ln32/a;",
+            ")TR;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->d:Ln32/a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Ln32/a;->r(Ln32/a;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object p0
+.end method
+
+.method public u(Z)Lo32/f;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z)TR;"
+        }
+    .end annotation
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    invoke-direct {p0, v0, p1}, Lo32/f;->D0(IZ)V
+
+    .line 3
+    .line 4
+    .line 5
+    return-object p0
+.end method
+
+.method public varargs u0([Ljava/lang/String;)Lo32/f;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "([",
+            "Ljava/lang/String;",
+            ")TR;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p1}, Lo42/e;->c([Ljava/lang/String;)Ljava/util/Map;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    invoke-virtual {p0, p1}, Lo32/f;->s0(Ljava/util/Map;)Lo32/f;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    return-object p1
+.end method
+
+.method protected v()Lokhttp3/OkHttpClient$Builder;
+    .registers 9
+
+    .line 1
+    invoke-static {}, Lo22/u;->f()Lo22/u;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lo22/u;->i()Lokhttp3/OkHttpClient;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-virtual {v0}, Lokhttp3/OkHttpClient;->newBuilder()Lokhttp3/OkHttpClient$Builder;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    iget v1, p0, Lo32/f;->n:I
+
+    .line 14
+    .line 15
+    if-lez v1, :cond_16
+
+    .line 16
+    .line 17
+    int-to-long v1, v1
+
+    .line 18
+    sget-object v3, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1, v2, v3}, Lokhttp3/OkHttpClient$Builder;->readTimeout(JLjava/util/concurrent/TimeUnit;)Lokhttp3/OkHttpClient$Builder;
+
+    .line 21
+    .line 22
+    .line 23
+    :cond_16
+    iget v1, p0, Lo32/f;->o:I
+
+    .line 24
+    .line 25
+    if-lez v1, :cond_20
+
+    .line 26
+    .line 27
+    int-to-long v1, v1
+
+    .line 28
+    sget-object v3, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1, v2, v3}, Lokhttp3/OkHttpClient$Builder;->writeTimeout(JLjava/util/concurrent/TimeUnit;)Lokhttp3/OkHttpClient$Builder;
+
+    .line 31
+    .line 32
+    .line 33
+    :cond_20
+    iget v1, p0, Lo32/f;->p:I
+
+    .line 34
+    .line 35
+    if-lez v1, :cond_2a
+
+    .line 36
+    .line 37
+    int-to-long v1, v1
+
+    .line 38
+    sget-object v3, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1, v2, v3}, Lokhttp3/OkHttpClient$Builder;->connectTimeout(JLjava/util/concurrent/TimeUnit;)Lokhttp3/OkHttpClient$Builder;
+
+    .line 41
+    .line 42
+    .line 43
+    :cond_2a
+    invoke-virtual {p0}, Lo32/f;->m0()Z
+
+    .line 44
+    .line 45
+    .line 46
+    move-result v1
+
+    .line 47
+    const/4 v2, 0x0
+
+    .line 48
+    if-eqz v1, :cond_7c
+
+    .line 49
+    .line 50
+    iget-object v1, p0, Lo32/f;->f:Ljava/util/LinkedHashSet;
+
+    .line 51
+    .line 52
+    invoke-virtual {v1}, Ljava/util/AbstractCollection;->iterator()Ljava/util/Iterator;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object v1
+
+    .line 56
+    :goto_37
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 57
+    .line 58
+    .line 59
+    move-result v3
+
+    .line 60
+    if-eqz v3, :cond_7c
+
+    .line 61
+    .line 62
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object v3
+
+    .line 66
+    check-cast v3, Lokhttp3/Interceptor;
+
+    .line 67
+    .line 68
+    invoke-virtual {v0}, Lokhttp3/OkHttpClient$Builder;->interceptors()Ljava/util/List;
+
+    .line 69
+    .line 70
+    .line 71
+    move-result-object v4
+
+    .line 72
+    invoke-interface {v4}, Ljava/util/List;->size()I
+
+    .line 73
+    .line 74
+    .line 75
+    move-result v5
+
+    .line 76
+    if-lez v5, :cond_78
+
+    .line 77
+    .line 78
+    add-int/lit8 v6, v5, -0x1
+
+    .line 79
+    .line 80
+    invoke-interface {v4, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 81
+    .line 82
+    .line 83
+    move-result-object v7
+
+    .line 84
+    check-cast v7, Lokhttp3/Interceptor;
+
+    .line 85
+    .line 86
+    instance-of v7, v7, Lcom/netease/cloudmusic/network/cronet/d;
+
+    .line 87
+    .line 88
+    if-eqz v7, :cond_74
+
+    .line 89
+    .line 90
+    const/4 v7, 0x1
+
+    .line 91
+    if-le v5, v7, :cond_70
+
+    .line 92
+    .line 93
+    add-int/lit8 v5, v5, -0x2
+
+    .line 94
+    .line 95
+    invoke-interface {v4, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 96
+    .line 97
+    .line 98
+    move-result-object v7
+
+    .line 99
+    check-cast v7, Lokhttp3/Interceptor;
+
+    .line 100
+    .line 101
+    instance-of v7, v7, Lfl/i;
+
+    .line 102
+    .line 103
+    if-eqz v7, :cond_6c
+
+    .line 104
+    .line 105
+    invoke-interface {v4, v5, v3}, Ljava/util/List;->add(ILjava/lang/Object;)V
+
+    .line 106
+    .line 107
+    .line 108
+    goto :goto_37
+
+    .line 109
+    :cond_6c
+    invoke-interface {v4, v6, v3}, Ljava/util/List;->add(ILjava/lang/Object;)V
+
+    .line 110
+    .line 111
+    .line 112
+    goto :goto_37
+
+    .line 113
+    :cond_70
+    invoke-interface {v4, v2, v3}, Ljava/util/List;->add(ILjava/lang/Object;)V
+
+    .line 114
+    .line 115
+    .line 116
+    goto :goto_37
+
+    .line 117
+    :cond_74
+    invoke-interface {v4, v5, v3}, Ljava/util/List;->add(ILjava/lang/Object;)V
+
+    .line 118
+    .line 119
+    .line 120
+    goto :goto_37
+
+    .line 121
+    :cond_78
+    invoke-interface {v4, v5, v3}, Ljava/util/List;->add(ILjava/lang/Object;)V
+
+    .line 122
+    .line 123
+    .line 124
+    goto :goto_37
+
+    .line 125
+    :cond_7c
+    iget-object v1, p0, Lo32/f;->v:Ljavax/net/SocketFactory;
+
+    .line 126
+    .line 127
+    if-eqz v1, :cond_83
+
+    .line 128
+    .line 129
+    invoke-virtual {v0, v1}, Lokhttp3/OkHttpClient$Builder;->socketFactory(Ljavax/net/SocketFactory;)Lokhttp3/OkHttpClient$Builder;
+
+    .line 130
+    .line 131
+    .line 132
+    :cond_83
+    invoke-virtual {p0}, Lo32/f;->p0()Z
+
+    .line 133
+    .line 134
+    .line 135
+    move-result v1
+
+    .line 136
+    if-eqz v1, :cond_ad
+
+    .line 137
+    .line 138
+    invoke-virtual {v0}, Lokhttp3/OkHttpClient$Builder;->interceptors()Ljava/util/List;
+
+    .line 139
+    .line 140
+    .line 141
+    move-result-object v1
+
+    .line 142
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 143
+    .line 144
+    .line 145
+    move-result-object v1
+
+    .line 146
+    :cond_91
+    :goto_91
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 147
+    .line 148
+    .line 149
+    move-result v3
+
+    .line 150
+    if-eqz v3, :cond_ad
+
+    .line 151
+    .line 152
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 153
+    .line 154
+    .line 155
+    move-result-object v3
+
+    .line 156
+    check-cast v3, Lokhttp3/Interceptor;
+
+    .line 157
+    .line 158
+    iget-object v4, p0, Lo32/f;->g:Ljava/util/LinkedHashSet;
+
+    .line 159
+    .line 160
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 161
+    .line 162
+    .line 163
+    move-result-object v3
+
+    .line 164
+    invoke-virtual {v4, v3}, Ljava/util/AbstractCollection;->contains(Ljava/lang/Object;)Z
+
+    .line 165
+    .line 166
+    .line 167
+    move-result v3
+
+    .line 168
+    if-eqz v3, :cond_91
+
+    .line 169
+    .line 170
+    invoke-interface {v1}, Ljava/util/Iterator;->remove()V
+
+    .line 171
+    .line 172
+    .line 173
+    goto :goto_91
+
+    .line 174
+    :cond_ad
+    invoke-virtual {p0}, Lo32/f;->i0()Z
+
+    .line 175
+    .line 176
+    .line 177
+    move-result v1
+
+    .line 178
+    if-eqz v1, :cond_b8
+
+    .line 179
+    .line 180
+    sget-object v1, Ljava/net/Proxy;->NO_PROXY:Ljava/net/Proxy;
+
+    .line 181
+    .line 182
+    invoke-virtual {v0, v1}, Lokhttp3/OkHttpClient$Builder;->proxy(Ljava/net/Proxy;)Lokhttp3/OkHttpClient$Builder;
+
+    .line 183
+    .line 184
+    .line 185
+    :cond_b8
+    invoke-virtual {p0}, Lo32/f;->n0()Z
+
+    .line 186
+    .line 187
+    .line 188
+    move-result v1
+
+    .line 189
+    if-eqz v1, :cond_c5
+
+    .line 190
+    .line 191
+    invoke-virtual {p0}, Lo32/f;->E()Lokhttp3/CookieJar;
+
+    .line 192
+    .line 193
+    .line 194
+    move-result-object v1
+
+    .line 195
+    invoke-virtual {v0, v1}, Lokhttp3/OkHttpClient$Builder;->cookieJar(Lokhttp3/CookieJar;)Lokhttp3/OkHttpClient$Builder;
+
+    .line 196
+    .line 197
+    .line 198
+    :cond_c5
+    invoke-virtual {p0}, Lo32/f;->b0()Z
+
+    .line 199
+    .line 200
+    .line 201
+    move-result v1
+
+    .line 202
+    if-nez v1, :cond_ce
+
+    .line 203
+    .line 204
+    invoke-virtual {v0, v2}, Lokhttp3/OkHttpClient$Builder;->followRedirects(Z)Lokhttp3/OkHttpClient$Builder;
+
+    .line 205
+    .line 206
+    .line 207
+    :cond_ce
+    return-object v0
+.end method
+
+.method public varargs v0([Ljava/lang/Object;)Lo32/f;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "([",
+            "Ljava/lang/Object;",
+            ")TR;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p1}, Lo42/e;->b([Ljava/lang/Object;)Ljava/util/Map;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    invoke-virtual {p0, p1}, Lo32/f;->s0(Ljava/util/Map;)Lo32/f;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    return-object p1
+.end method
+
+.method public w(Lokhttp3/Request;)Lokhttp3/Call;
+    .registers 3
+
+    .line 1
+    iput-object p1, p0, Lo32/f;->j:Lokhttp3/Request;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lo32/f;->h0()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-nez v0, :cond_15
+
+    .line 8
+    .line 9
+    invoke-static {}, Lo22/u;->f()Lo22/u;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    invoke-virtual {v0}, Lo22/u;->i()Lokhttp3/OkHttpClient;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    invoke-virtual {v0, p1}, Lokhttp3/OkHttpClient;->newCall(Lokhttp3/Request;)Lokhttp3/Call;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object p1
+
+    .line 21
+    return-object p1
+
+    .line 22
+    :cond_15
+    invoke-virtual {p0}, Lo32/f;->v()Lokhttp3/OkHttpClient$Builder;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v0
+
+    .line 26
+    invoke-virtual {v0}, Lokhttp3/OkHttpClient$Builder;->build()Lokhttp3/OkHttpClient;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v0
+
+    .line 30
+    invoke-virtual {v0, p1}, Lokhttp3/OkHttpClient;->newCall(Lokhttp3/Request;)Lokhttp3/Call;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object p1
+
+    .line 34
+    return-object p1
+.end method
+
+.method public w0(I)Lo32/f;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)TR;"
+        }
+    .end annotation
+
+    .line 1
+    iput p1, p0, Lo32/f;->n:I
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lo32/f;->o0()Lo32/f;
+
+    .line 4
+    .line 5
+    .line 6
+    return-object p0
+.end method
+
+.method public abstract x(Lokhttp3/RequestBody;)Lokhttp3/Request;
+.end method
+
+.method public x0(Ljava/lang/Class;)Lo32/f;
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Class;",
+            ")TR;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lo32/f;->g:Ljava/util/LinkedHashSet;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_c
+
+    .line 4
+    .line 5
+    new-instance v0, Ljava/util/LinkedHashSet;
+
+    .line 6
+    .line 7
+    const/4 v1, 0x1
+
+    .line 8
+    invoke-direct {v0, v1}, Ljava/util/LinkedHashSet;-><init>(I)V
+
+    .line 9
+    .line 10
+    .line 11
+    iput-object v0, p0, Lo32/f;->g:Ljava/util/LinkedHashSet;
+
+    .line 12
+    .line 13
+    :cond_c
+    iget-object v0, p0, Lo32/f;->g:Ljava/util/LinkedHashSet;
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, p1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {p0}, Lo32/f;->o0()Lo32/f;
+
+    .line 19
+    .line 20
+    .line 21
+    return-object p0
+.end method
+
+.method public abstract y()Lokhttp3/RequestBody;
+.end method
+
+.method public y0(Z)Lo32/f;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z)TR;"
+        }
+    .end annotation
+
+    .line 1
+    const/4 v0, 0x2
+
+    .line 2
+    invoke-direct {p0, v0, p1}, Lo32/f;->D0(IZ)V
+
+    .line 3
+    .line 4
+    .line 5
+    return-object p0
+.end method
+
+.method public z(Ljava/lang/String;)Landroid/net/Uri;
+    .registers 2
+
+    .line 1
+    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    iput-object p1, p0, Lo32/f;->k:Landroid/net/Uri;
+
+    .line 6
+    .line 7
+    return-object p1
+.end method
+
+.method public z0()I
+    .registers 3
+
+    .line 1
+    iget v0, p0, Lo32/f;->w:I
+
+    .line 2
+    .line 3
+    add-int/lit8 v1, v0, 0x1
+
+    .line 4
+    .line 5
+    iput v1, p0, Lo32/f;->w:I
+
+    .line 6
+    .line 7
+    return v0
+.end method
+

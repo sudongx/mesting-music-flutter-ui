@@ -1,0 +1,11 @@
+    @Override // com.netease.cloudmusic.core.statistic.IStatistic
+    public void logJSONRealTime(String str, String str2, JSONObject jSONObject) {
+        p0.c(str2);
+        JSONObject jSONObject2 = new JSONObject();
+        if (jSONObject != null) {
+            jSONObject2.putAll(jSONObject);
+        }
+        jSONObject2.put("mspm", str2);
+        jSONObject2.put("lt", 1);
+        logJSONRealTime(str, jSONObject2);
+    }

@@ -1,0 +1,132 @@
+430            -
+  Class descriptor  : 'Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;)
+      name          : 'listener'
+      type          : 'J'
+      access        : 0x0002 (PRIVATE)
+  Direct methods    -
+    #0              : (in Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+2090a8:                                        |[2090a8] com.netease.cloudmusic.log.bilog.BILoggerWrapper.<init>:()V
+2090b8: 7010 accd 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@cdac
+2090be: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;
+
+    #1              : (in Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;)
+      name          : '_allocate'
+      type          : '()J'
+      access        : 0x010c (PROTECTED STATIC NATIVE)
+      code          : (none)
+
+    #2              : (in Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;)
+      name          : '_checkHeader'
+      type          : '(Ljava/lang/String;Lcom/netease/cloudmusic/log/bilog/BILogHeaderInfo;)V'
+      access        : 0x010c (PROTECTED STATIC NATIVE)
+      code          : (none)
+
+    #3              : (in Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;)
+      name          : '_deallocate'
+      type          : '(J)V'
+      access        : 0x010c (PROTECTED STATIC NATIVE)
+      code          : (none)
+
+    #4              : (in Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;)
+      name          : '_getAvailableName'
+      type          : '(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;'
+      access        : 0x010c (PROTECTED STATIC NATIVE)
+      code          : (none)
+
+    #5              : (in Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;)
+      name          : '_migrateOldLogs'
+      type          : '(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/netease/cloudmusic/log/bilog/MigrateResponse;)V'
+      access        : 0x010c (PROTECTED STATIC NATIVE)
+      code          : (none)
+
+    #6              : (in Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;)
+      name          : '_migrateSingleLog'
+      type          : '(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z'
+      access        : 0x010c (PROTECTED STATIC NATIVE)
+      code          : (none)
+
+    #7              : (in Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;)
+      name          : '_scanLogsInCacheDir'
+      type          : '(Ljava/lang/String;Lcom/netease/cloudmusic/log/bilog/ScanResponse;)V'
+      access        : 0x010c (PROTECTED STATIC NATIVE)
+      code          : (none)
+
+    #8              : (in Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;)
+      name          : '_scanLogsInOutputDir'
+      type          : '(Ljava/lang/String;Lcom/netease/cloudmusic/log/bilog/ScanResponse;)V'
+      access        : 0x010c (PROTECTED STATIC NATIVE)
+      code          : (none)
+
+    #9              : (in Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;)
+      name          : 'flushCache'
+      type          : '(Ljava/lang/String;Ljava/lang/String;)I'
+      access        : 0x010c (PROTECTED STATIC NATIVE)
+      code          : (none)
+
+  Virtual methods   -
+    #0              : (in Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;)
+      name          : '_close'
+      type          : '(J)V'
+      access        : 0x0104 (PROTECTED NATIVE)
+      code          : (none)
+
+    #1              : (in Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;)
+      name          : '_flush'
+      type          : '(J)V'
+      access        : 0x0104 (PROTECTED NATIVE)
+      code          : (none)
+
+    #2              : (in Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;)
+      name          : '_open'
+      type          : '(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIILcom/netease/cloudmusic/log/bilog/LoggerListenerWrapper;Ljava/lang/String;Ljava/lang/String;)V'
+      access        : 0x0104 (PROTECTED NATIVE)
+      code          : (none)
+
+    #3              : (in Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;)
+      name          : '_setFlushInterval'
+      type          : '(JI)V'
+      access        : 0x0104 (PROTECTED NATIVE)
+      code          : (none)
+
+    #4              : (in Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;)
+      name          : '_setSeq'
+      type          : '(JI)V'
+      access        : 0x0104 (PROTECTED NATIVE)
+      code          : (none)
+
+    #5              : (in Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;)
+      name          : '_setUserInfo'
+      type          : '(JLjava/lang/String;)V'
+      access        : 0x0104 (PROTECTED NATIVE)
+      code          : (none)
+
+    #6              : (in Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;)
+      name          : '_writeLog'
+      type          : '(JLjava/lang/String;)V'
+      access        : 0x0104 (PROTECTED NATIVE)
+      code          : (none)
+
+  source_file_idx   : 25025 (ProGuard)
+

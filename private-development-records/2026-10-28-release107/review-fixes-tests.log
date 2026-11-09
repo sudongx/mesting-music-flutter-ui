@@ -1,0 +1,95 @@
+00:00 +0: loading D:/AnLi/test/release_107_pcm_and_capture_test.dart
+00:00 +0: reopened recognition owns a separate temporary directory
+00:00 +1: nested repaint layers refresh on next frame and lenses share that frame image
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following LateError was thrown while running async test code:
+LateInitializationError: Local 'snapshot' has not been initialized.
+
+When the exception was thrown, this was the stack:
+#0      LateError._throwLocalNotInitialized (dart:_internal-patch/internal_patch.dart:215:5)
+#1      main.<anonymous closure>.capture.<anonymous closure> (file:///D:/AnLi/test/release_107_pcm_and_capture_test.dart)
+#2      AutomatedTestWidgetsFlutterBinding.runAsync.<anonymous closure> (package:flutter_test/src/binding.dart:2007:17)
+#5      AutomatedTestWidgetsFlutterBinding.runAsync (package:flutter_test/src/binding.dart:2003:26)
+#6      WidgetTester.runAsync (package:flutter_test/src/widget_tester.dart:838:17)
+#7      main.<anonymous closure>.capture (file:///D:/AnLi/test/release_107_pcm_and_capture_test.dart:96:36)
+<asynchronous suspension>
+#8      main.<anonymous closure> (file:///D:/AnLi/test/release_107_pcm_and_capture_test.dart:103:14)
+<asynchronous suspension>
+#9      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#10     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 3 frames from dart:async and package:stack_trace)
+
+The exception was caught synchronously.
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following LateError was thrown running a test:
+LateInitializationError: Local 'snapshot' has not been initialized.
+
+When the exception was thrown, this was the stack:
+#0      LateError._throwLocalNotInitialized (dart:_internal-patch/internal_patch.dart:215:5)
+#1      main.<anonymous closure>.capture (file:///D:/AnLi/test/release_107_pcm_and_capture_test.dart)
+<asynchronous suspension>
+#2      main.<anonymous closure> (file:///D:/AnLi/test/release_107_pcm_and_capture_test.dart:103:14)
+<asynchronous suspension>
+#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  nested repaint layers refresh on next frame and lenses share that frame image
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following message was thrown:
+Multiple exceptions (2) were detected during the running of the current test, and at least one was
+unexpected.
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:00 +1 -1: nested repaint layers refresh on next frame and lenses share that frame image [E]
+  Test failed. See exception logs above.
+  The test description was: nested repaint layers refresh on next frame and lenses share that frame image
+  
+00:00 +1 -1: recognition source lookup selects matching recording instead of first search hit
+00:00 +2 -1: recognition decodes mono/stereo RIFF into bounded 8k PCM and rejects malformed chunks
+00:00 +3 -1: recognizer keeps original Kugou identity for playback and favorites
+00:00 +4 -1: liquid source is inside the button edge facing the menu in both directions
+00:00 +5 -1: background lenses share full-DPR snapshot until actual repaint
+══╡ EXCEPTION CAUGHT BY SCHEDULER LIBRARY ╞═════════════════════════════════════════════════════════
+The following _TypeError was thrown during a scheduler callback:
+Null check operator used on a null value
+
+When the exception was thrown, this was the stack:
+#0      RenderRepaintBoundary.toImageSync (package:flutter/src/rendering/proxy_box.dart:3620:30)
+#1      RenderGlassBackgroundBoundary.captureSnapshot (package:liquid_glass_widgets/widgets/interactive/liquid_glass_scope.dart:182:20)
+#2      main.<anonymous closure>.capture.<anonymous closure> (file:///D:/AnLi/test/release_107_pcm_and_capture_test.dart:92:31)
+#3      SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#4      SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1357:11)
+#5      AutomatedTestWidgetsFlutterBinding.scheduleWarmUpFrame (package:flutter_test/src/binding.dart:2057:5)
+#6      _runWidget (package:flutter/src/widgets/binding.dart:1683:7)
+#7      runApp (package:flutter/src/widgets/binding.dart:1616:3)
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1670:5)
+#11     TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1656:10)
+#12     AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:2189:24)
+#13     FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
+#18     withClock (package:clock/src/default.dart:52:10)
+#19     FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
+#24     FakeAsync.run (package:fake_async/fake_async.dart:181:52)
+#25     AutomatedTestWidgetsFlutterBinding.runTest (package:flutter_test/src/binding.dart:2186:15)
+#26     testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:184:24)
+#27     Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:25)
+<asynchronous suspension>
+#28     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#29     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+(elided 10 frames from dart:async)
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:00 +5 -2: background lenses share full-DPR snapshot until actual repaint [E]
+  Test failed. See exception logs above.
+  The test description was: background lenses share full-DPR snapshot until actual repaint
+  
+00:00 +5 -2: Some tests failed.

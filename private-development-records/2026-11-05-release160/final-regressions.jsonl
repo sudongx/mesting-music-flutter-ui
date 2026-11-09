@@ -1,0 +1,378 @@
+{"protocolVersion":"0.1.1","runnerVersion":"1.30.0","pid":128336,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading D:/AnLi/test/release_159_reward_repository_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":1}
+{"suite":{"id":2,"platform":"vm","path":"D:/AnLi/test/release_159_reward_controller_test.dart"},"type":"suite","time":11}
+{"test":{"id":3,"name":"loading D:/AnLi/test/release_159_reward_controller_test.dart","suiteID":2,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":11}
+{"count":6,"time":12,"type":"allSuites"}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":12598}
+{"group":{"id":4,"suiteID":0,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":32,"line":null,"column":null,"url":null},"type":"group","time":12606}
+{"test":{"id":5,"name":"daily sign accepts explicit code 200 and sends mobile type zero","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":128,"column":5,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":12606}
+{"testID":5,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12738}
+{"test":{"id":6,"name":"daily sign accepts explicit code -2 and sends mobile type zero","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":128,"column":5,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":12739}
+{"testID":6,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12746}
+{"test":{"id":7,"name":"today signed profile confirms state without sending daily task","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":152,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":12747}
+{"testID":7,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12757}
+{"test":{"id":8,"name":"profile mobileSign is root data and cannot be guessed from code alone","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":162,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":12759}
+{"testID":8,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12786}
+{"test":{"id":9,"name":"known sign refusal is not a checked day and allows a later explicit attempt","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":181,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":12788}
+{"testID":9,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12828}
+{"test":{"id":10,"name":"lost sign reply remains pending across repository reconstruction","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":203,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":12829}
+{"testID":10,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12848}
+{"test":{"id":11,"name":"a missing sign code is uncertain and cannot automatically replay","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":225,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":12849}
+{"testID":11,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12854}
+{"test":{"id":12,"name":"pending sign is reconciled only by authoritative signed state","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":239,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":12855}
+{"testID":12,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12920}
+{"test":{"id":13,"name":"credential change while reading sign state prevents a sign write","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":261,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":12921}
+{"testID":13,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12942}
+{"test":{"id":14,"name":"cross-midnight receipt marks new day only with signedToday=true","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":276,"column":5,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":12942}
+{"testID":14,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12979}
+{"test":{"id":15,"name":"cross-midnight receipt marks new day only with signedToday=false","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":276,"column":5,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":12980}
+{"testID":15,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13000}
+{"test":{"id":16,"name":"read-only snapshot uses milliseconds asset and server task labels","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":299,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13001}
+{"testID":16,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13013}
+{"test":{"id":17,"name":"missing fields and failed reads do not synthesize zero or quotas","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":349,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13014}
+{"testID":17,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13018}
+{"test":{"id":18,"name":"direct claim forwards server entitlement allowlist without ad proof","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":372,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13019}
+{"testID":18,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13048}
+{"test":{"id":19,"name":"code 200 with gainFlag false is a refusal rather than a success","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":418,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13049}
+{"testID":19,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13060}
+{"test":{"id":20,"name":"code 200 without gainFlag stays pending across reconstructed services","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":438,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13060}
+{"testID":20,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13068}
+{"test":{"id":21,"name":"an explicit rights upper limit stops without counting a reward","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":457,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13071}
+{"testID":21,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13079}
+{"test":{"id":22,"name":"lost gain reply cannot be inferred from a later higher balance","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":476,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13080}
+{"testID":22,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13095}
+{"test":{"id":23,"name":"an unknown previous-day claim does not become a permanent new-day block","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":504,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13096}
+{"testID":23,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13106}
+{"test":{"id":24,"name":"unusable qualification cannot create a gain request: {code: 200, data: {qualified: false, source: not-entitled}}","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":534,"column":5,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13106}
+{"testID":24,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13112}
+{"test":{"id":25,"name":"unusable qualification cannot create a gain request: {code: 200, data: {qualified: not-a-boolean}}","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":534,"column":5,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13112}
+{"testID":25,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13118}
+{"test":{"id":26,"name":"unusable qualification cannot create a gain request: {code: 200, data: {source: missing-qualified}}","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":534,"column":5,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13119}
+{"testID":26,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13124}
+{"test":{"id":27,"name":"unusable qualification cannot create a gain request: {code: 415}","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":534,"column":5,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13125}
+{"testID":27,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13130}
+{"test":{"id":28,"name":"stop while qualification is in flight prevents the subsequent gain","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":545,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13130}
+{"testID":28,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13138}
+{"test":{"id":29,"name":"credential change while qualification is in flight prevents gain","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":560,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13139}
+{"testID":29,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13146}
+{"test":{"id":30,"name":"diagnostic gate blocks reward writes before any qualification request","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":574,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13147}
+{"testID":30,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13156}
+{"test":{"id":31,"name":"unreadable pending marker is conservative rather than silently deleted","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":585,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13157}
+{"testID":31,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13162}
+{"test":{"id":32,"name":"real encrypted eapi write is sent once and is not retried after reply loss","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":598,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13163}
+{"testID":32,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13304}
+{"test":{"id":33,"name":"already-stopped claim never starts a qualification read","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":630,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13305}
+{"testID":33,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13312}
+{"test":{"id":34,"name":"a slower balance cannot date yesterday sign as today","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":639,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13313}
+{"testID":34,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13326}
+{"test":{"id":35,"name":"a qualification crossing midnight cannot issue a new-day gain","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":669,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13327}
+{"testID":35,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13336}
+{"test":{"id":36,"name":"a profile response spanning midnight cannot mark the new day signed","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":688,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_repository_test.dart"},"type":"testStart","time":13337}
+{"testID":36,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13344}
+{"suite":{"id":37,"platform":"vm","path":"D:/AnLi/test/release_160_reward_diagnostics_test.dart"},"type":"suite","time":13435}
+{"test":{"id":38,"name":"loading D:/AnLi/test/release_160_reward_diagnostics_test.dart","suiteID":37,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":13435}
+{"testID":3,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":14412}
+{"group":{"id":39,"suiteID":2,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":18,"line":null,"column":null,"url":null},"type":"group","time":14412}
+{"test":{"id":40,"name":"saved disabled automation only reads and does not sign","suiteID":2,"groupIDs":[39],"metadata":{"skip":false,"skipReason":null},"line":110,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_controller_test.dart"},"type":"testStart","time":14413}
+{"testID":40,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14705}
+{"test":{"id":41,"name":"automatic sign persists one explicit receipt and skips another resume","suiteID":2,"groupIDs":[39],"metadata":{"skip":false,"skipReason":null},"line":117,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_controller_test.dart"},"type":"testStart","time":14706}
+{"testID":41,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14764}
+{"test":{"id":42,"name":"unknown automatic result is attempted once per owner and day","suiteID":2,"groupIDs":[39],"metadata":{"skip":false,"skipReason":null},"line":131,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_controller_test.dart"},"type":"testStart","time":14764}
+{"testID":42,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14789}
+{"test":{"id":43,"name":"authority confirming today prevents an unnecessary sign write","suiteID":2,"groupIDs":[39],"metadata":{"skip":false,"skipReason":null},"line":152,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_controller_test.dart"},"type":"testStart","time":14789}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":43,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14811}
+{"test":{"id":44,"name":"late first A reply cannot mark B or the new A generation","suiteID":2,"groupIDs":[39],"metadata":{"skip":false,"skipReason":null},"line":169,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_controller_test.dart"},"type":"testStart","time":14812}
+{"testID":44,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14845}
+{"test":{"id":45,"name":"only one reward write can own the account at a time","suiteID":2,"groupIDs":[39],"metadata":{"skip":false,"skipReason":null},"line":196,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_controller_test.dart"},"type":"testStart","time":14845}
+{"testID":45,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14863}
+{"test":{"id":46,"name":"unknown official limit uses bounded batch without claiming a daily quota","suiteID":2,"groupIDs":[39],"metadata":{"skip":false,"skipReason":null},"line":209,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_controller_test.dart"},"type":"testStart","time":14863}
+{"testID":46,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14895}
+{"test":{"id":47,"name":"server quota and interval are used without counting quota as success","suiteID":2,"groupIDs":[39],"metadata":{"skip":false,"skipReason":null},"line":226,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_controller_test.dart"},"type":"testStart","time":14896}
+{"testID":47,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14916}
+{"test":{"id":48,"name":"stop interrupts a pending interval before any next request","suiteID":2,"groupIDs":[39],"metadata":{"skip":false,"skipReason":null},"line":250,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_controller_test.dart"},"type":"testStart","time":14917}
+{"testID":48,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14945}
+{"test":{"id":49,"name":"stop during a sent claim keeps its confirmed receipt without continuing","suiteID":2,"groupIDs":[39],"metadata":{"skip":false,"skipReason":null},"line":261,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_controller_test.dart"},"type":"testStart","time":14945}
+{"testID":49,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14961}
+{"test":{"id":50,"name":"unknown write terminates the batch without an automatic retry","suiteID":2,"groupIDs":[39],"metadata":{"skip":false,"skipReason":null},"line":279,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_controller_test.dart"},"type":"testStart","time":14962}
+{"testID":50,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14978}
+{"test":{"id":51,"name":"account logout cancels the batch interval","suiteID":2,"groupIDs":[39],"metadata":{"skip":false,"skipReason":null},"line":298,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_controller_test.dart"},"type":"testStart","time":14979}
+{"testID":51,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14996}
+{"test":{"id":52,"name":"diagnostic start cancels any subsequent ad mutation","suiteID":2,"groupIDs":[39],"metadata":{"skip":false,"skipReason":null},"line":309,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_controller_test.dart"},"type":"testStart","time":14996}
+{"testID":52,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":15010}
+{"test":{"id":53,"name":"unavailable refresh retains same-day balance with a stale label","suiteID":2,"groupIDs":[39],"metadata":{"skip":false,"skipReason":null},"line":320,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_controller_test.dart"},"type":"testStart","time":15010}
+{"testID":53,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":15032}
+{"test":{"id":54,"name":"next server day cannot inherit yesterday daily free-listen progress","suiteID":2,"groupIDs":[39],"metadata":{"skip":false,"skipReason":null},"line":341,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_controller_test.dart"},"type":"testStart","time":15033}
+{"testID":54,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":15078}
+{"test":{"id":55,"name":"cross-midnight receipt records the platform-confirmed day only","suiteID":2,"groupIDs":[39],"metadata":{"skip":false,"skipReason":null},"line":364,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_controller_test.dart"},"type":"testStart","time":15084}
+{"testID":55,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":15120}
+{"test":{"id":56,"name":"a partial balance read retains known seconds and marks stale","suiteID":2,"groupIDs":[39],"metadata":{"skip":false,"skipReason":null},"line":390,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_controller_test.dart"},"type":"testStart","time":15120}
+{"testID":56,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":15143}
+{"test":{"id":57,"name":"server milestones are retained on partial same-day reads and cleared next day","suiteID":2,"groupIDs":[39],"metadata":{"skip":false,"skipReason":null},"line":415,"column":3,"url":"file:///D:/AnLi/test/release_159_reward_controller_test.dart"},"type":"testStart","time":15145}
+{"testID":57,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":15175}
+{"suite":{"id":58,"platform":"vm","path":"D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"suite","time":15241}
+{"test":{"id":59,"name":"loading D:/AnLi/test/release_160_reward_request_stages_test.dart","suiteID":58,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":15241}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":38,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":17934}
+{"group":{"id":60,"suiteID":37,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":8,"line":null,"column":null,"url":null},"type":"group","time":17934}
+{"test":{"id":61,"name":"(setUpAll)","suiteID":37,"groupIDs":[60],"metadata":{"skip":false,"skipReason":null},"line":15,"column":3,"url":"file:///D:/AnLi/test/release_160_reward_diagnostics_test.dart"},"type":"testStart","time":17936}
+{"testID":61,"messageType":"print","message":"[LiquidGlass] Initializing library...","type":"print","time":18112}
+{"testID":61,"messageType":"print","message":"[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)","type":"print","time":18112}
+{"testID":61,"messageType":"print","message":"[LiquidGlass] Initialization complete.","type":"print","time":18112}
+{"testID":61,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":18112}
+{"test":{"id":62,"name":"reward stages retain the schema-2 export contract","suiteID":37,"groupIDs":[60],"metadata":{"skip":false,"skipReason":null},"line":27,"column":3,"url":"file:///D:/AnLi/test/release_160_reward_diagnostics_test.dart"},"type":"testStart","time":18113}
+{"testID":62,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":18159}
+{"test":{"id":63,"name":"reward diagnostics stay bounded and reject free-form identity fields","suiteID":37,"groupIDs":[60],"metadata":{"skip":false,"skipReason":null},"line":69,"column":3,"url":"file:///D:/AnLi/test/release_160_reward_diagnostics_test.dart"},"type":"testStart","time":18160}
+{"testID":63,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":18177}
+{"test":{"id":64,"name":"diagnostic screen identifies rewardBalance","suiteID":37,"groupIDs":[60],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":102,"root_column":5,"root_url":"file:///D:/AnLi/test/release_160_reward_diagnostics_test.dart"},"type":"testStart","time":18183}
+{"testID":64,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20482}
+{"test":{"id":65,"name":"diagnostic screen identifies rewardProgress","suiteID":37,"groupIDs":[60],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":102,"root_column":5,"root_url":"file:///D:/AnLi/test/release_160_reward_diagnostics_test.dart"},"type":"testStart","time":20484}
+{"testID":59,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":20577}
+{"group":{"id":66,"suiteID":58,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":23,"line":null,"column":null,"url":null},"type":"group","time":20578}
+{"test":{"id":67,"name":"HTTP 200 business 500 retains qualification without HTTP identity","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":125,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":20578}
+{"testID":65,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20621}
+{"test":{"id":68,"name":"diagnostic screen identifies rewardQualification","suiteID":37,"groupIDs":[60],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":102,"root_column":5,"root_url":"file:///D:/AnLi/test/release_160_reward_diagnostics_test.dart"},"type":"testStart","time":20622}
+{"testID":68,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20751}
+{"test":{"id":69,"name":"diagnostic screen identifies rewardClaim","suiteID":37,"groupIDs":[60],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":102,"root_column":5,"root_url":"file:///D:/AnLi/test/release_160_reward_diagnostics_test.dart"},"type":"testStart","time":20752}
+{"testID":67,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20828}
+{"test":{"id":70,"name":"true HTTP 500 retains qualification and mutation uncertainty","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":147,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":20829}
+{"testID":70,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20852}
+{"test":{"id":71,"name":"qualification missing or invalid code null is an incomplete receipt","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":171,"column":7,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":20853}
+{"testID":71,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20868}
+{"test":{"id":72,"name":"qualification missing or invalid code not-a-code is an incomplete receipt","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":171,"column":7,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":20869}
+{"testID":72,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20887}
+{"test":{"id":73,"name":"qualification malformed JSON retains decode failure and never retries","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":194,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":20887}
+{"testID":69,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20889}
+{"test":{"id":74,"name":"diagnostic screen identifies rewardSignIn","suiteID":37,"groupIDs":[60],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":102,"root_column":5,"root_url":"file:///D:/AnLi/test/release_160_reward_diagnostics_test.dart"},"type":"testStart","time":20889}
+{"testID":73,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20907}
+{"test":{"id":75,"name":"qualification timeout retains its stage and never retries","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":215,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":20908}
+{"testID":75,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20932}
+{"test":{"id":76,"name":"qualification HTTP 503 cannot opt into generic read retries","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":233,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":20933}
+{"testID":76,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20947}
+{"test":{"id":77,"name":"HTTP 200 business 500 retains claim without HTTP identity","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":125,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":20948}
+{"testID":77,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20963}
+{"test":{"id":78,"name":"true HTTP 500 retains claim and mutation uncertainty","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":147,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":20964}
+{"testID":78,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20976}
+{"test":{"id":79,"name":"claim missing or invalid code null is an incomplete receipt","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":171,"column":7,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":20977}
+{"testID":79,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20989}
+{"test":{"id":80,"name":"claim missing or invalid code not-a-code is an incomplete receipt","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":171,"column":7,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":20990}
+{"testID":74,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20997}
+{"test":{"id":81,"name":"copying diagnostics preserves the failed reward stage","suiteID":37,"groupIDs":[60],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":137,"root_column":3,"root_url":"file:///D:/AnLi/test/release_160_reward_diagnostics_test.dart"},"type":"testStart","time":20998}
+{"testID":80,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21004}
+{"test":{"id":82,"name":"claim malformed JSON retains decode failure and never retries","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":194,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":21005}
+{"testID":82,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21016}
+{"test":{"id":83,"name":"claim timeout retains its stage and never retries","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":215,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":21016}
+{"testID":83,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21026}
+{"test":{"id":84,"name":"claim HTTP 503 cannot opt into generic read retries","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":233,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":21026}
+{"testID":84,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21036}
+{"test":{"id":85,"name":"claim code 200 with gainFlag=false never records a confirmed reward","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":249,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":21037}
+{"testID":85,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21049}
+{"test":{"id":86,"name":"claim code 200 with gainFlag=0 never records a confirmed reward","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":249,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":21049}
+{"testID":86,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21058}
+{"test":{"id":87,"name":"claim code 200 with gainFlag=0 never records a confirmed reward","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":249,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":21059}
+{"testID":87,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21066}
+{"test":{"id":88,"name":"claim code 200 with gainFlag=false never records a confirmed reward","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":249,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":21066}
+{"testID":88,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21073}
+{"test":{"id":89,"name":"claim code 200 with gainFlag=null never records a confirmed reward","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":249,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":21073}
+{"testID":89,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21080}
+{"test":{"id":90,"name":"claim code 200 with gainFlag=unexpected never records a confirmed reward","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":249,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":21080}
+{"testID":90,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21086}
+{"test":{"id":91,"name":"only an explicit gainFlag confirms the claim stage","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":281,"column":3,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":21086}
+{"testID":91,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21092}
+{"test":{"id":92,"name":"the underlying API exposes typed HTTP facts without its response body","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":297,"column":3,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":21093}
+{"testID":92,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21104}
+{"test":{"id":93,"name":"the underlying API exposes typed format failures without raw JSON","suiteID":58,"groupIDs":[66],"metadata":{"skip":false,"skipReason":null},"line":325,"column":3,"url":"file:///D:/AnLi/test/release_160_reward_request_stages_test.dart"},"type":"testStart","time":21105}
+{"testID":93,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21111}
+{"suite":{"id":94,"platform":"vm","path":"D:/AnLi/test/release_160_reward_repository_test.dart"},"type":"suite","time":21142}
+{"test":{"id":95,"name":"loading D:/AnLi/test/release_160_reward_repository_test.dart","suiteID":94,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":21142}
+{"testID":81,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21201}
+{"test":{"id":96,"name":"(tearDownAll)","suiteID":37,"groupIDs":[60],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":21203}
+{"testID":96,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":21207}
+{"suite":{"id":97,"platform":"vm","path":"D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"suite","time":21251}
+{"test":{"id":98,"name":"loading D:/AnLi/test/release_160_free_listen_entry_test.dart","suiteID":97,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":21251}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":95,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":22965}
+{"group":{"id":99,"suiteID":94,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":16,"line":null,"column":null,"url":null},"type":"group","time":22965}
+{"test":{"id":100,"name":"actual eapi serializes the issued entry before one direct gain","suiteID":94,"groupIDs":[99],"metadata":{"skip":false,"skipReason":null},"line":115,"column":3,"url":"file:///D:/AnLi/test/release_160_reward_repository_test.dart"},"type":"testStart","time":22965}
+{"testID":100,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":23133}
+{"test":{"id":101,"name":"progress business error stops before qualification with its stage","suiteID":94,"groupIDs":[99],"metadata":{"skip":false,"skipReason":null},"line":181,"column":3,"url":"file:///D:/AnLi/test/release_160_reward_repository_test.dart"},"type":"testStart","time":23134}
+{"testID":101,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":23143}
+{"test":{"id":102,"name":"an absent or unsupported actionUrl cannot dispatch: null","suiteID":94,"groupIDs":[99],"metadata":{"skip":false,"skipReason":null},"line":198,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_repository_test.dart"},"type":"testStart","time":23144}
+{"testID":102,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":23153}
+{"test":{"id":103,"name":"an absent or unsupported actionUrl cannot dispatch: https://example.invalid/steal?adPosition=1&resourceId=x","suiteID":94,"groupIDs":[99],"metadata":{"skip":false,"skipReason":null},"line":198,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_repository_test.dart"},"type":"testStart","time":23154}
+{"testID":103,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":23163}
+{"test":{"id":104,"name":"an absent or unsupported actionUrl cannot dispatch: orpheus://motivationAd/other?adPosition=1&resourceId=x","suiteID":94,"groupIDs":[99],"metadata":{"skip":false,"skipReason":null},"line":198,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_repository_test.dart"},"type":"testStart","time":23163}
+{"testID":104,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":23180}
+{"test":{"id":105,"name":"the official no-qualification gate is respected","suiteID":94,"groupIDs":[99],"metadata":{"skip":false,"skipReason":null},"line":220,"column":3,"url":"file:///D:/AnLi/test/release_160_reward_repository_test.dart"},"type":"testStart","time":23180}
+{"testID":105,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":23192}
+{"test":{"id":106,"name":"stop during progress prevents a qualification request","suiteID":94,"groupIDs":[99],"metadata":{"skip":false,"skipReason":null},"line":232,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_repository_test.dart"},"type":"testStart","time":23192}
+{"testID":106,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":23206}
+{"test":{"id":107,"name":"account during progress prevents a qualification request","suiteID":94,"groupIDs":[99],"metadata":{"skip":false,"skipReason":null},"line":232,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_repository_test.dart"},"type":"testStart","time":23206}
+{"testID":107,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":23226}
+{"test":{"id":108,"name":"day during progress prevents a qualification request","suiteID":94,"groupIDs":[99],"metadata":{"skip":false,"skipReason":null},"line":232,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_repository_test.dart"},"type":"testStart","time":23226}
+{"testID":108,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":23239}
+{"test":{"id":109,"name":"a hint source cannot replace a missing entry source","suiteID":94,"groupIDs":[99],"metadata":{"skip":false,"skipReason":null},"line":248,"column":3,"url":"file:///D:/AnLi/test/release_160_reward_repository_test.dart"},"type":"testStart","time":23240}
+{"testID":109,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":23251}
+{"test":{"id":110,"name":"each confirmed attempt obtains a fresh owner-bound entry","suiteID":94,"groupIDs":[99],"metadata":{"skip":false,"skipReason":null},"line":262,"column":3,"url":"file:///D:/AnLi/test/release_160_reward_repository_test.dart"},"type":"testStart","time":23253}
+{"testID":110,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":23286}
+{"test":{"id":111,"name":"gain business 500 stays pending across rebuild","suiteID":94,"groupIDs":[99],"metadata":{"skip":false,"skipReason":null},"line":289,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_repository_test.dart"},"type":"testStart","time":23286}
+{"testID":111,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":23309}
+{"test":{"id":112,"name":"gain HTTP 500 stays pending across rebuild","suiteID":94,"groupIDs":[99],"metadata":{"skip":false,"skipReason":null},"line":289,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_repository_test.dart"},"type":"testStart","time":23310}
+{"testID":112,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":23335}
+{"test":{"id":113,"name":"qualification business 500 never submits gain","suiteID":94,"groupIDs":[99],"metadata":{"skip":false,"skipReason":null},"line":319,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_repository_test.dart"},"type":"testStart","time":23336}
+{"testID":113,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":23356}
+{"test":{"id":114,"name":"qualification HTTP 500 never submits gain","suiteID":94,"groupIDs":[99],"metadata":{"skip":false,"skipReason":null},"line":319,"column":5,"url":"file:///D:/AnLi/test/release_160_reward_repository_test.dart"},"type":"testStart","time":23356}
+{"testID":114,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":23370}
+{"test":{"id":115,"name":"non-string rightsExtJson is not invented as JSON or forwarded","suiteID":94,"groupIDs":[99],"metadata":{"skip":false,"skipReason":null},"line":342,"column":3,"url":"file:///D:/AnLi/test/release_160_reward_repository_test.dart"},"type":"testStart","time":23370}
+{"testID":115,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":23382}
+{"testID":98,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":24047}
+{"group":{"id":116,"suiteID":97,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":68,"line":null,"column":null,"url":null},"type":"group","time":24048}
+{"group":{"id":117,"suiteID":97,"parentID":116,"name":"official motivationAd/show Bundle contract","metadata":{"skip":false,"skipReason":null},"testCount":32,"line":37,"column":3,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"group","time":24048}
+{"test":{"id":118,"name":"official motivationAd/show Bundle contract keeps query types and serializes reqParam and ext separately","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":38,"column":5,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24048}
+{"testID":118,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24072}
+{"test":{"id":119,"name":"official motivationAd/show Bundle contract missing optional context follows native false, zero and null defaults","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":82,"column":5,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24072}
+{"testID":119,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24075}
+{"test":{"id":120,"name":"official motivationAd/show Bundle contract qualification form omits null backupUrl while Bundle keeps null","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":110,"column":5,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24076}
+{"testID":120,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24078}
+{"test":{"id":121,"name":"official motivationAd/show Bundle contract qualification form preserves a nonnull backupUrl verbatim","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":129,"column":5,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24078}
+{"testID":121,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24081}
+{"test":{"id":122,"name":"official motivationAd/show Bundle contract native ext serialization omits null maps and keeps array nulls","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":140,"column":5,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24081}
+{"testID":122,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24084}
+{"test":{"id":123,"name":"official motivationAd/show Bundle contract only Java Boolean.parseBoolean true enables qualification: true","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":168,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24084}
+{"testID":123,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24087}
+{"test":{"id":124,"name":"official motivationAd/show Bundle contract only Java Boolean.parseBoolean true enables qualification: TRUE","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":168,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24087}
+{"testID":124,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24089}
+{"test":{"id":125,"name":"official motivationAd/show Bundle contract only Java Boolean.parseBoolean true enables qualification: TrUe","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":168,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24089}
+{"testID":125,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24092}
+{"test":{"id":126,"name":"official motivationAd/show Bundle contract non-true flag cannot start qualification: \"\"","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":179,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24092}
+{"testID":126,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24094}
+{"test":{"id":127,"name":"official motivationAd/show Bundle contract non-true flag cannot start qualification: \"false\"","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":179,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24094}
+{"testID":127,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24096}
+{"test":{"id":128,"name":"official motivationAd/show Bundle contract non-true flag cannot start qualification: \"1\"","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":179,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24096}
+{"testID":128,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24098}
+{"test":{"id":129,"name":"official motivationAd/show Bundle contract non-true flag cannot start qualification: \"yes\"","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":179,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24099}
+{"testID":129,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24101}
+{"test":{"id":130,"name":"official motivationAd/show Bundle contract non-true flag cannot start qualification: \" true\"","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":179,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24101}
+{"testID":130,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24104}
+{"test":{"id":131,"name":"official motivationAd/show Bundle contract non-true flag cannot start qualification: \"true \"","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":179,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24104}
+{"testID":131,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24108}
+{"test":{"id":132,"name":"official motivationAd/show Bundle contract bizReportInfo keeps its native string layer: null","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":198,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24108}
+{"testID":132,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24110}
+{"test":{"id":133,"name":"official motivationAd/show Bundle contract bizReportInfo keeps its native string layer: \"synthetic opaque report\"","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":198,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24111}
+{"testID":133,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24113}
+{"test":{"id":134,"name":"official motivationAd/show Bundle contract bizReportInfo keeps its native string layer: 7","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":198,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24113}
+{"testID":134,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24115}
+{"test":{"id":135,"name":"official motivationAd/show Bundle contract bizReportInfo keeps its native string layer: false","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":198,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24115}
+{"testID":135,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24117}
+{"test":{"id":136,"name":"official motivationAd/show Bundle contract bizReportInfo keeps its native string layer: [\"synthetic\",2]","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":198,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24118}
+{"testID":136,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24121}
+{"test":{"id":137,"name":"official motivationAd/show Bundle contract bizReportInfo keeps its native string layer: {\"synthetic\":\"object\"}","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":198,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24121}
+{"testID":137,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24123}
+{"test":{"id":138,"name":"official motivationAd/show Bundle contract nested ext and unrelated tracking fields cannot override Bundle context","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":220,"column":5,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24124}
+{"testID":138,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24127}
+{"test":{"id":139,"name":"official motivationAd/show Bundle contract invalid Java decimal source stays native zero: \"not-a-number\"","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":259,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24127}
+{"testID":139,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24129}
+{"test":{"id":140,"name":"official motivationAd/show Bundle contract invalid Java decimal source stays native zero: \"2147483648\"","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":259,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24130}
+{"testID":140,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24132}
+{"test":{"id":141,"name":"official motivationAd/show Bundle contract invalid Java decimal source stays native zero: \"-2147483649\"","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":259,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24132}
+{"testID":141,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24134}
+{"test":{"id":142,"name":"official motivationAd/show Bundle contract invalid Java decimal source stays native zero: \"0x10\"","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":259,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24134}
+{"testID":142,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24137}
+{"test":{"id":143,"name":"official motivationAd/show Bundle contract invalid Java decimal source stays native zero: \" 42\"","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":259,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24138}
+{"testID":143,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24140}
+{"test":{"id":144,"name":"official motivationAd/show Bundle contract invalid Java decimal source stays native zero: \"42 \"","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":259,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24140}
+{"testID":144,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24142}
+{"test":{"id":145,"name":"official motivationAd/show Bundle contract valid signed decimal adPosition is preserved: 0","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":271,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24142}
+{"testID":145,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24145}
+{"test":{"id":146,"name":"official motivationAd/show Bundle contract valid signed decimal adPosition is preserved: -2147483648","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":271,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24145}
+{"testID":146,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24147}
+{"test":{"id":147,"name":"official motivationAd/show Bundle contract valid signed decimal adPosition is preserved: 2147483647","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":271,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24147}
+{"testID":147,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24149}
+{"test":{"id":148,"name":"official motivationAd/show Bundle contract valid signed decimal adPosition is preserved: +42","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":271,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24149}
+{"testID":148,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24153}
+{"test":{"id":149,"name":"official motivationAd/show Bundle contract valid signed decimal adPosition is preserved: 0042","suiteID":97,"groupIDs":[116,117],"metadata":{"skip":false,"skipReason":null},"line":271,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24153}
+{"testID":149,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24155}
+{"group":{"id":150,"suiteID":97,"parentID":116,"name":"malformed or unrelated entries do not reach a network client","metadata":{"skip":false,"skipReason":null},"testCount":36,"line":280,"column":3,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"group","time":24156}
+{"test":{"id":151,"name":"malformed or unrelated entries do not reach a network client rejects null as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24156}
+{"testID":151,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24158}
+{"test":{"id":152,"name":"malformed or unrelated entries do not reach a network client rejects non-string as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24159}
+{"testID":152,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24160}
+{"test":{"id":153,"name":"malformed or unrelated entries do not reach a network client rejects empty as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24161}
+{"testID":153,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24163}
+{"test":{"id":154,"name":"malformed or unrelated entries do not reach a network client rejects HTTP as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24163}
+{"testID":154,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24165}
+{"test":{"id":155,"name":"malformed or unrelated entries do not reach a network client rejects HTTPS as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24165}
+{"testID":155,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24167}
+{"test":{"id":156,"name":"malformed or unrelated entries do not reach a network client rejects arbitrary host as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24169}
+{"testID":156,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24178}
+{"test":{"id":157,"name":"malformed or unrelated entries do not reach a network client rejects host suffix as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24179}
+{"testID":157,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24180}
+{"test":{"id":158,"name":"malformed or unrelated entries do not reach a network client rejects wrong route as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24181}
+{"testID":158,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24183}
+{"test":{"id":159,"name":"malformed or unrelated entries do not reach a network client rejects route suffix as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24183}
+{"testID":159,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24185}
+{"test":{"id":160,"name":"malformed or unrelated entries do not reach a network client rejects userinfo as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24185}
+{"testID":160,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24188}
+{"test":{"id":161,"name":"malformed or unrelated entries do not reach a network client rejects explicit port as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24188}
+{"testID":161,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24190}
+{"test":{"id":162,"name":"malformed or unrelated entries do not reach a network client rejects fragment as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24190}
+{"testID":162,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24192}
+{"test":{"id":163,"name":"malformed or unrelated entries do not reach a network client rejects missing position as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24192}
+{"testID":163,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24194}
+{"test":{"id":164,"name":"malformed or unrelated entries do not reach a network client rejects missing resource as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24194}
+{"testID":164,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24196}
+{"test":{"id":165,"name":"malformed or unrelated entries do not reach a network client rejects integer overflow as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24197}
+{"testID":165,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24199}
+{"test":{"id":166,"name":"malformed or unrelated entries do not reach a network client rejects hex integer as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24199}
+{"testID":166,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24201}
+{"test":{"id":167,"name":"malformed or unrelated entries do not reach a network client rejects leading integer whitespace as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24202}
+{"testID":167,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24205}
+{"test":{"id":168,"name":"malformed or unrelated entries do not reach a network client rejects trailing integer whitespace as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24205}
+{"testID":168,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24207}
+{"test":{"id":169,"name":"malformed or unrelated entries do not reach a network client rejects broken JSON as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24207}
+{"testID":169,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24209}
+{"test":{"id":170,"name":"malformed or unrelated entries do not reach a network client rejects list ext as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24210}
+{"testID":170,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24211}
+{"test":{"id":171,"name":"malformed or unrelated entries do not reach a network client rejects scalar ext as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24212}
+{"testID":171,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24215}
+{"test":{"id":172,"name":"malformed or unrelated entries do not reach a network client rejects null ext as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24216}
+{"testID":172,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24217}
+{"test":{"id":173,"name":"malformed or unrelated entries do not reach a network client rejects invalid UTF-8 resource as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24218}
+{"testID":173,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24221}
+{"test":{"id":174,"name":"malformed or unrelated entries do not reach a network client rejects invalid UTF-8 ext as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24221}
+{"testID":174,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24223}
+{"test":{"id":175,"name":"malformed or unrelated entries do not reach a network client rejects oversized URL as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24223}
+{"testID":175,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24225}
+{"test":{"id":176,"name":"malformed or unrelated entries do not reach a network client rejects duplicate adPosition as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24225}
+{"testID":176,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24227}
+{"test":{"id":177,"name":"malformed or unrelated entries do not reach a network client rejects duplicate resourceId as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24227}
+{"testID":177,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24229}
+{"test":{"id":178,"name":"malformed or unrelated entries do not reach a network client rejects duplicate source as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24229}
+{"testID":178,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24231}
+{"test":{"id":179,"name":"malformed or unrelated entries do not reach a network client rejects duplicate ext as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24231}
+{"testID":179,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24233}
+{"test":{"id":180,"name":"malformed or unrelated entries do not reach a network client rejects duplicate isNeedGetRights as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24233}
+{"testID":180,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24236}
+{"test":{"id":181,"name":"malformed or unrelated entries do not reach a network client rejects duplicate isShowEndToast as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24237}
+{"testID":181,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24239}
+{"test":{"id":182,"name":"malformed or unrelated entries do not reach a network client rejects duplicate showRightsEndDialog as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24239}
+{"testID":182,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24241}
+{"test":{"id":183,"name":"malformed or unrelated entries do not reach a network client rejects duplicate isNeedResume as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24242}
+{"testID":183,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24244}
+{"test":{"id":184,"name":"malformed or unrelated entries do not reach a network client rejects duplicate isNeedMute as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24245}
+{"testID":184,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24246}
+{"test":{"id":185,"name":"malformed or unrelated entries do not reach a network client rejects duplicate backupUrl as data without opening it","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":330,"column":7,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24247}
+{"testID":185,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24248}
+{"test":{"id":186,"name":"malformed or unrelated entries do not reach a network client valid entry and backupUrl are interpreted without opening either URL","suiteID":97,"groupIDs":[116,150],"metadata":{"skip":false,"skipReason":null},"line":345,"column":5,"url":"file:///D:/AnLi/test/release_160_free_listen_entry_test.dart"},"type":"testStart","time":24249}
+{"testID":186,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24251}
+{"success":true,"type":"done","time":24275}

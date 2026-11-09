@@ -1,0 +1,17 @@
+    private void I2(@Nullable com.alibaba.fastjson.JSONObject jSONObject) {
+        if (jSONObject == null || this.a == null) {
+            return;
+        }
+        String strG = iz0.s.g();
+        int i2 = 0;
+        if (vr.e(strG)) {
+            jSONObject.put("transitionSwitchStatus", 0);
+            return;
+        }
+        if (TextUtils.equals("transitionAutoMix", strG)) {
+            i2 = 1;
+        } else if (TextUtils.equals("transitionCrossFade", strG)) {
+            i2 = 2;
+        }
+        jSONObject.put("transitionSwitchStatus", Integer.valueOf(i2));
+    }

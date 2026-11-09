@@ -1,0 +1,275 @@
+    /* JADX WARN: Code duplicated, block: B:144:0x02db  */
+    /* JADX WARN: Code duplicated, block: B:148:0x02e8 A[Catch: all -> 0x0300, TryCatch #1 {, blocks: (B:146:0x02de, B:148:0x02e8, B:149:0x02f4), top: B:168:0x02de }] */
+    /* JADX WARN: Code duplicated, block: B:168:0x02de A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* JADX WARN: Code duplicated, block: B:204:0x0303 A[SYNTHETIC] */
+    /* JADX WARN: Unreachable blocks removed: 2, instructions: 11 */
+    @Override // com.netease.cloudmusic.core.iimage.IImagePrefetch
+    public void prefetch(@NotNull com.netease.cloudmusic.core.iimage.e request) {
+        String str;
+        Executor executorForBackgroundTasks;
+        AtomicInteger atomicInteger;
+        AtomicInteger atomicInteger2;
+        int i;
+        Executor executor;
+        boolean z;
+        boolean z2;
+        String message;
+        DataSource<Void> dataSourcePrefetchToDiskCache;
+        String str2;
+        boolean z3;
+        ExecutorSupplier executorSupplier;
+        b bVar;
+        Intrinsics.checkNotNullParameter(request, "request");
+        String tag = request.getTag();
+        request.a();
+        DataSource<Void> dataSource = null;
+        a aVar = new a(tag, null);
+        synchronized (stateLock) {
+            HashMap<String, Set<a>> map = activeBatches;
+            Set<a> hashSet = map.get(tag);
+            if (hashSet == null) {
+                hashSet = new HashSet<>();
+                map.put(tag, hashSet);
+            }
+            hashSet.add(aVar);
+        }
+        List<String> listTake = CollectionsKt.take(request.e(), request.getMaxCount() > 0 ? request.getMaxCount() : 32);
+        if (!m4.u()) {
+            i.a.a(tag, "no_network", request.e().size());
+            notifyComplete(aVar, 0, 0, request.e().size());
+            return;
+        }
+        if (request.getWifiOnly() && !m4.v()) {
+            i.a.a(tag, "wifi_only", request.e().size());
+            notifyComplete(aVar, 0, 0, request.e().size());
+            return;
+        }
+        int size = request.e().size() - listTake.size();
+        if (size > 0) {
+            i.a.a(tag, "limit", size);
+        }
+        ArrayList<String> arrayList = new ArrayList(listTake.size());
+        int i2 = size;
+        for (String str3 : listTake) {
+            if (j.a.a(str3)) {
+                synchronized (stateLock) {
+                    if (aVar.getCancelled().get()) {
+                        bVar = b.CANCELLED;
+                    } else if (urlCache.b(str3)) {
+                        aVar.c().add(str3);
+                        bVar = b.MARKED;
+                    } else {
+                        bVar = b.DEDUP;
+                    }
+                }
+                int i3 = c.$EnumSwitchMapping$0[bVar.ordinal()];
+                if (i3 != 1) {
+                    if (i3 != 2) {
+                        if (i3 == 3) {
+                            break;
+                        }
+                    } else {
+                        i2++;
+                        i.a.i(tag, str3, "dedup");
+                    }
+                } else {
+                    arrayList.add(str3);
+                }
+            } else {
+                i2++;
+                i.a.i(tag, str3, "invalid");
+            }
+        }
+        if (arrayList.isEmpty() || aVar.getCancelled().get()) {
+            notifyComplete(aVar, 0, 0, i2);
+            return;
+        }
+        try {
+            ImagePipelineFactory imagePipelineFactory = Fresco.getImagePipelineFactory();
+            executorForBackgroundTasks = (imagePipelineFactory == null || (executorSupplier = imagePipelineFactory.getExecutorSupplier()) == null) ? null : executorSupplier.forBackgroundTasks();
+            str = null;
+        } catch (Throwable th2) {
+            str = "pipeline_unavailable: " + th2.getMessage();
+            executorForBackgroundTasks = null;
+        }
+        if (executorForBackgroundTasks == null) {
+            i iVar = i.a;
+            if (str == null) {
+                str = "pipeline_unavailable";
+            }
+            iVar.c(tag, "", str);
+            synchronized (stateLock) {
+                if (!aVar.getCancelled().get()) {
+                    for (String str4 : arrayList) {
+                        urlCache.c(str4);
+                        aVar.c().remove(str4);
+                    }
+                }
+                Unit unit = Unit.INSTANCE;
+            }
+            notifyComplete(aVar, 0, arrayList.size(), i2);
+            return;
+        }
+        AtomicInteger atomicInteger3 = new AtomicInteger(1);
+        AtomicInteger atomicInteger4 = new AtomicInteger(0);
+        AtomicInteger atomicInteger5 = new AtomicInteger(0);
+        int size2 = arrayList.size();
+        int i4 = 0;
+        while (true) {
+            if (i4 < size2) {
+                Object obj = arrayList.get(i4);
+                Intrinsics.checkNotNullExpressionValue(obj, "toSubmit[i]");
+                String str5 = (String) obj;
+                if (!aVar.getCancelled().get()) {
+                    try {
+                        ImageRequest imageRequestBuildRequest = buildRequest(str5, request.getPriority());
+                        if (imageRequestBuildRequest == null) {
+                            str2 = "request_unavailable";
+                            dataSourcePrefetchToDiskCache = dataSource;
+                        } else {
+                            ImagePipeline imagePipeline = Fresco.getImagePipeline();
+                            dataSourcePrefetchToDiskCache = imagePipeline != null ? imagePipeline.prefetchToDiskCache(imageRequestBuildRequest, CALLER_CONTEXT, request.getPriority()) : null;
+                            str2 = null;
+                        }
+                        if (dataSourcePrefetchToDiskCache == null) {
+                            if (str2 == null) {
+                                str2 = "pipeline_unavailable";
+                            }
+                            message = str2;
+                            i4 = i4;
+                            i = size2;
+                            atomicInteger = atomicInteger5;
+                            atomicInteger2 = atomicInteger4;
+                            atomicInteger3 = atomicInteger3;
+                            executor = executorForBackgroundTasks;
+                            arrayList = arrayList;
+                            z = true;
+                            str5 = str5;
+                            z2 = false;
+                        } else {
+                            synchronized (stateLock) {
+                                try {
+                                    if (aVar.getCancelled().get()) {
+                                        str2 = str2;
+                                        i = size2;
+                                        atomicInteger = atomicInteger5;
+                                        atomicInteger2 = atomicInteger4;
+                                        executor = executorForBackgroundTasks;
+                                        z = true;
+                                        z3 = false;
+                                    } else {
+                                        aVar.c().remove(str5);
+                                        HashMap<String, Map<DataSource<Void>, String>> map2 = inFlight;
+                                        Map<DataSource<Void>, String> map3 = map2.get(tag);
+                                        if (map3 == null) {
+                                            HashMap map4 = new HashMap();
+                                            map2.put(tag, map4);
+                                            map3 = map4;
+                                        }
+                                        map3.put(dataSourcePrefetchToDiskCache, str5);
+                                        atomicInteger3.incrementAndGet();
+                                        atomicInteger = atomicInteger5;
+                                        atomicInteger2 = atomicInteger4;
+                                        i = size2;
+                                        executor = executorForBackgroundTasks;
+                                        z = true;
+                                        try {
+                                            dataSourcePrefetchToDiskCache.subscribe(INSTANCE.createSubscriber(aVar, str5, atomicInteger3, atomicInteger2, atomicInteger, i2), executor);
+                                            z3 = true;
+                                        } catch (Throwable th3) {
+                                            th = th3;
+                                            throw th;
+                                        }
+                                    }
+                                    try {
+                                        if (z3) {
+                                            try {
+                                                i.a.j(tag, str5);
+                                                z2 = z;
+                                                message = str2;
+                                            } catch (Throwable th4) {
+                                                th = th4;
+                                                z2 = z;
+                                                message = th.getMessage();
+                                            }
+                                        } else {
+                                            try {
+                                                Result.Companion companion = Result.Companion;
+                                                Result.constructor-impl(Boolean.valueOf(dataSourcePrefetchToDiskCache.close()));
+                                                break;
+                                            } catch (Throwable th5) {
+                                                Result.Companion companion2 = Result.Companion;
+                                                Result.constructor-impl(ResultKt.createFailure(th5));
+                                            }
+                                        }
+                                    } catch (Throwable th6) {
+                                        th = th6;
+                                        z2 = false;
+                                        message = th.getMessage();
+                                        if (!z2) {
+                                            synchronized (stateLock) {
+                                                if (!aVar.getCancelled().get()) {
+                                                    urlCache.c(str5);
+                                                    aVar.c().remove(str5);
+                                                }
+                                                Unit unit2 = Unit.INSTANCE;
+                                                atomicInteger.incrementAndGet();
+                                                i.a.c(tag, str5, message);
+                                            }
+                                        }
+                                        i4++;
+                                        executorForBackgroundTasks = executor;
+                                        atomicInteger5 = atomicInteger;
+                                        atomicInteger4 = atomicInteger2;
+                                        atomicInteger3 = atomicInteger3;
+                                        size2 = i;
+                                        arrayList = arrayList;
+                                        dataSource = null;
+                                    }
+                                } catch (Throwable th7) {
+                                    th = th7;
+                                }
+                            }
+                        }
+                    } catch (Throwable th8) {
+                        th = th8;
+                        i4 = i4;
+                        i = size2;
+                        atomicInteger = atomicInteger5;
+                        atomicInteger2 = atomicInteger4;
+                        atomicInteger3 = atomicInteger3;
+                        executor = executorForBackgroundTasks;
+                        arrayList = arrayList;
+                        z = true;
+                        str5 = str5;
+                    }
+                    if (!z2) {
+                        synchronized (stateLock) {
+                            if (!aVar.getCancelled().get()) {
+                                urlCache.c(str5);
+                                aVar.c().remove(str5);
+                            }
+                            Unit unit3 = Unit.INSTANCE;
+                        }
+                        atomicInteger.incrementAndGet();
+                        i.a.c(tag, str5, message);
+                    }
+                    i4++;
+                    executorForBackgroundTasks = executor;
+                    atomicInteger5 = atomicInteger;
+                    atomicInteger4 = atomicInteger2;
+                    atomicInteger3 = atomicInteger3;
+                    size2 = i;
+                    arrayList = arrayList;
+                    dataSource = null;
+                }
+            }
+            atomicInteger = atomicInteger5;
+            atomicInteger2 = atomicInteger4;
+            atomicInteger3 = atomicInteger3;
+            break;
+        }
+        if (atomicInteger3.decrementAndGet() == 0) {
+            notifyComplete(aVar, atomicInteger2.get(), atomicInteger.get(), i2);
+        }
+    }

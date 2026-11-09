@@ -1,0 +1,27 @@
+{
+  "handoffDate": "2026-11-06",
+  "sourceProject": "D:/AnLi",
+  "handoffDocument": "D:/AnLi/HANDOFF-SESSION-2026-11-06-SODA-RESEARCH-TO-NEW-CHAT.md",
+  "snapshot": "D:/AnLi/.codex-artifacts/2026-11-06-soda-session-handoff/after.json",
+  "threadId": "01a1ae1a-832e-7491-8599-173a3a62066d",
+  "hostId": "local",
+  "requestedTitle": "Mesting 汽水平台接续：手机号登录与 API 调研",
+  "created": true,
+  "receiptVerified": true,
+  "firstTurn": "read only; verify current hashes and report, then wait",
+  "initialPrompt": "请接收上一会话的Mesting汽水平台调研交接。项目目录为 D:/AnLi；本轮只读接手，完成接收后等待用户下一步，不开始任何产品实施或新调研。\n\n请先依次阅读：\n1. D:/AnLi/HANDOFF-SESSION-2026-11-06-SODA-RESEARCH-TO-NEW-CHAT.md\n2. D:/AnLi/AGENTS.md 的最新交接入口，以及 D:/AnLi/HANDOFF-CURRENT-SESSION-2026-11-05-v1.0.61.md\n3. D:/AnLi/.codex-artifacts/2026-11-06-soda-session-handoff/after.json\n4. 按总交接索引阅读手机号客户端/公共hook、GitHub检索、媒体/奖励/音效的主报告；不用将大REA JSON或全部反编译代码展开到上下文。\n\n最重要的状态：官版内部手机号接口 POST /passport/mobile/send_code/ 和 /passport/mobile/sms_login/ 已从APK定位，但Mesting的真实手机号认证、成功凭据、加密保存及恢复尚未打通。汽水平台尚未加入产品、没有新APK。用户要像网易云/酷狗一样登录自己原有的汽水账号，只做手机号+验证码；不能用扫码、扫码后的短信MFA、抖音App跳转或手动Cookie替代。发现/音乐/我的三页和完整玻璃风格已经确认，不重复询问。\n\n用户明确暂不连接手机；之后另行授权的是公开GitHub API/源码检索，并未授权手机/ADB、真实音乐账号、发送短信、领取福利、公共签名器或后台。活动免费VIP与模块广告时长不同，找到接口/配置/测试夹具不等于服务端接受或实际音效。\n\n首轮请仅只读核对after.json中的2357项文件摘要、1889产品输入、63项清理后冻结物、8个GitHub固定commit/19选定文件及branch/HEAD/暂存和Git状态。可用内联Python/PowerShell计算摘要，Git读取设置GIT_OPTIONAL_LOCKS=0；不要重跑会重写结果的build_snapshot.py或旧研究验证脚本。Git状态清单在同目录git-status-after.txt。产品仍1.0.61/code82，beta/b6bcd542；大量历史脏改动有意保留，旧51个release APK已授权回收，禁止按清理前112基线恢复。不要pull/reset/clean、跑测试/构建、访问设备或联网刷新/调用服务，也不要提交推送上传发布；签名/锁/定制引擎/完整玻璃与冻结物保留。\n\n完成后用简洁中文报告：已读材料和核对结果、本会话完成项、未完成任务及注意点，然后明确等待用户下一步。此首轮不要修改任何文件（包括交接文档或AGENTS），不要创建另一个对话。",
+  "receiverStatus": "idle",
+  "receiverTurnStatus": "completed",
+  "receiverTurnId": "01a1ae1a-8a6c-74c3-8ff7-83e14b3adea2",
+  "receiverDurationMs": 76575,
+  "receiverReadOnlyChecks": {
+    "snapshotFiles": 2357,
+    "productInputs": 1889,
+    "frozenArtifacts": 63,
+    "repositories": 8,
+    "selectedSourceFiles": 19,
+    "issues": []
+  },
+  "receiverConclusion": "已完成只读接收；手机号内部接口已找到，但Mesting真实登录和会话恢复未打通；产品仍1.0.61/code82，无新APK，等待用户下一步。",
+  "receiptSource": "mcp__codex_app__wait_threads cursor 7bf1d7aa-fda2-451b-936f-15a6c8194b49:3; turnCompleted; final_answer received"
+}

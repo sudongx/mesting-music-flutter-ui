@@ -1,0 +1,5046 @@
+[
+  {
+    "class_def_index": 4269,
+    "descriptor": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+    "access_flags": 1,
+    "super": "Ljava/lang/Object;",
+    "interfaces": [
+      "Lcom/luna/biz/entitlement/core/commerceinfo/api/ICommerceInfoEntity;",
+      "Lcom/luna/common/tea/json/KeepElement;"
+    ],
+    "class_data_offset": 11570595,
+    "static_values_offset": 0,
+    "fields": [
+      {
+        "dex_field_index": 12808,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "coolDownInfo",
+        "type": "Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11005734,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "cool_down_info"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12809,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "dailyRewardTasks",
+        "type": "Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11005696,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "daily_reward_tasks"
+            }
+          },
+          {
+            "annotation_item_offset": 11005706,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "Ljava/util/List<",
+                "Lcom/luna/common/arch/net/entity/commerce/DailyRewardTask;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12810,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "expireAt",
+        "type": "Ljava/lang/Long;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10999864,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "expire_at"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12811,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "needRefreshRewardTime",
+        "type": "Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11005686,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "need_refresh_reward_time"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12812,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "originalDailyRewardTasks",
+        "type": "Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11005724,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "original_daily_reward_tasks"
+            }
+          },
+          {
+            "annotation_item_offset": 11005706,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "Ljava/util/List<",
+                "Lcom/luna/common/arch/net/entity/commerce/DailyRewardTask;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12813,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "rewardFinishedTaskInfo",
+        "type": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/RewardFinishedTaskInfo;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11005648,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "reward_finished_task_info"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12814,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "rewardTaskGuideList",
+        "type": "Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11005658,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "reward_task_guides"
+            }
+          },
+          {
+            "annotation_item_offset": 11005668,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "Ljava/util/List<",
+                "Lcom/luna/biz/entitlement/entity/RewardTaskGuideInfo;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12815,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "rewardTasksFinished",
+        "type": "Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11005618,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "reward_tasks_finished"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12816,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "rewardTasksTimeMs",
+        "type": "Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11005628,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "reward_tasks_time_ms"
+            }
+          },
+          {
+            "annotation_item_offset": 10959903,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "Ljava/util/List<",
+                "Ljava/lang/Long;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12818,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "videoCompleteAcquiredTimeMs",
+        "type": "Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11005638,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "video_complete_acquired_time_ms"
+            }
+          },
+          {
+            "annotation_item_offset": 10959903,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "Ljava/util/List<",
+                "Ljava/lang/Long;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "dex_method_index": 25203,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/Long;Ljava/lang/Integer;Ljava/util/List;Ljava/util/List;Lcom/luna/biz/entitlement/core/commerceinfo/entity/RewardFinishedTaskInfo;Ljava/util/List;Ljava/lang/Boolean;Ljava/util/List;Ljava/util/List;Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;)V",
+        "annotations": [
+          {
+            "annotation_item_offset": 11005402,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "(",
+                "Ljava/lang/Long;",
+                "Ljava/lang/Integer;",
+                "Ljava/util/List<",
+                "Ljava/lang/Long;",
+                ">;",
+                "Ljava/util/List<",
+                "Ljava/lang/Long;",
+                ">;",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/RewardFinishedTaskInfo;",
+                "Ljava/util/List<",
+                "Lcom/luna/biz/entitlement/entity/RewardTaskGuideInfo;",
+                ">;",
+                "Ljava/lang/Boolean;",
+                "Ljava/util/List<",
+                "Lcom/luna/common/arch/net/entity/commerce/DailyRewardTask;",
+                ">;",
+                "Ljava/util/List<",
+                "Lcom/luna/common/arch/net/entity/commerce/DailyRewardTask;",
+                ">;",
+                "Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;",
+                ")V"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25205,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "component1",
+        "descriptor": "()Ljava/lang/Long;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25206,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "component10",
+        "descriptor": "()Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25207,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "component2",
+        "descriptor": "()Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25208,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "component3",
+        "descriptor": "()Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10792072,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/List<",
+                "Ljava/lang/Long;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25209,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "component4",
+        "descriptor": "()Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10792072,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/List<",
+                "Ljava/lang/Long;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25210,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "component5",
+        "descriptor": "()Lcom/luna/biz/entitlement/core/commerceinfo/entity/RewardFinishedTaskInfo;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25211,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "component6",
+        "descriptor": "()Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11005477,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/List<",
+                "Lcom/luna/biz/entitlement/entity/RewardTaskGuideInfo;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25212,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "component7",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25213,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "component8",
+        "descriptor": "()Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11005498,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/List<",
+                "Lcom/luna/common/arch/net/entity/commerce/DailyRewardTask;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25214,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "component9",
+        "descriptor": "()Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11005498,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/List<",
+                "Lcom/luna/common/arch/net/entity/commerce/DailyRewardTask;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25215,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "copy",
+        "descriptor": "(Ljava/lang/Long;Ljava/lang/Integer;Ljava/util/List;Ljava/util/List;Lcom/luna/biz/entitlement/core/commerceinfo/entity/RewardFinishedTaskInfo;Ljava/util/List;Ljava/lang/Boolean;Ljava/util/List;Ljava/util/List;Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;)Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11005540,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "(",
+                "Ljava/lang/Long;",
+                "Ljava/lang/Integer;",
+                "Ljava/util/List<",
+                "Ljava/lang/Long;",
+                ">;",
+                "Ljava/util/List<",
+                "Ljava/lang/Long;",
+                ">;",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/RewardFinishedTaskInfo;",
+                "Ljava/util/List<",
+                "Lcom/luna/biz/entitlement/entity/RewardTaskGuideInfo;",
+                ">;",
+                "Ljava/lang/Boolean;",
+                "Ljava/util/List<",
+                "Lcom/luna/common/arch/net/entity/commerce/DailyRewardTask;",
+                ">;",
+                "Ljava/util/List<",
+                "Lcom/luna/common/arch/net/entity/commerce/DailyRewardTask;",
+                ">;",
+                "Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;",
+                ")",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25218,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "getCoolDownInfo",
+        "descriptor": "()Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25219,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "getDailyRewardTasks",
+        "descriptor": "()Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11005498,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/List<",
+                "Lcom/luna/common/arch/net/entity/commerce/DailyRewardTask;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25220,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "getExpireAt",
+        "descriptor": "()Ljava/lang/Long;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25221,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "getNeedRefreshRewardTime",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25222,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "getOriginalDailyRewardTasks",
+        "descriptor": "()Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11005498,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/List<",
+                "Lcom/luna/common/arch/net/entity/commerce/DailyRewardTask;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25223,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "getRewardFinishedTaskInfo",
+        "descriptor": "()Lcom/luna/biz/entitlement/core/commerceinfo/entity/RewardFinishedTaskInfo;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25224,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "getRewardTaskGuideList",
+        "descriptor": "()Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11005477,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/List<",
+                "Lcom/luna/biz/entitlement/entity/RewardTaskGuideInfo;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25225,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "getRewardTasksFinished",
+        "descriptor": "()Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25226,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "getRewardTasksTimeMs",
+        "descriptor": "()Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10792072,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/List<",
+                "Ljava/lang/Long;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25227,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "getVideoCompleteAcquiredTimeMs",
+        "descriptor": "()Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10792072,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/List<",
+                "Ljava/lang/Long;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25230,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "setOriginalDailyRewardTasks",
+        "descriptor": "(Ljava/util/List;)V",
+        "annotations": [
+          {
+            "annotation_item_offset": 11005519,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "(",
+                "Ljava/util/List<",
+                "Lcom/luna/common/arch/net/entity/commerce/DailyRewardTask;",
+                ">;)V"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25231,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "toString",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "declared_fields": [
+      {
+        "dex_field_index": 12807,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "changeQuickRedirect",
+        "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+        "access_flags": 9
+      },
+      {
+        "dex_field_index": 12808,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "coolDownInfo",
+        "type": "Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12809,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "dailyRewardTasks",
+        "type": "Ljava/util/List;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12810,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "expireAt",
+        "type": "Ljava/lang/Long;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12811,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "needRefreshRewardTime",
+        "type": "Ljava/lang/Boolean;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12812,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "originalDailyRewardTasks",
+        "type": "Ljava/util/List;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12813,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "rewardFinishedTaskInfo",
+        "type": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/RewardFinishedTaskInfo;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12814,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "rewardTaskGuideList",
+        "type": "Ljava/util/List;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12815,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "rewardTasksFinished",
+        "type": "Ljava/lang/Integer;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12816,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "rewardTasksTimeMs",
+        "type": "Ljava/util/List;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12817,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "robustFieldMap",
+        "type": "Ljava/lang/Object;",
+        "access_flags": 193
+      },
+      {
+        "dex_field_index": 12818,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "videoCompleteAcquiredTimeMs",
+        "type": "Ljava/util/List;",
+        "access_flags": 1
+      }
+    ],
+    "declared_methods": [
+      {
+        "dex_method_index": 25202,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "<init>",
+        "descriptor": "()V",
+        "access_flags": 65537,
+        "code_item_offset": 3907356
+      },
+      {
+        "dex_method_index": 25203,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/Long;Ljava/lang/Integer;Ljava/util/List;Ljava/util/List;Lcom/luna/biz/entitlement/core/commerceinfo/entity/RewardFinishedTaskInfo;Ljava/util/List;Ljava/lang/Boolean;Ljava/util/List;Ljava/util/List;Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;)V",
+        "access_flags": 65537,
+        "code_item_offset": 3907436
+      },
+      {
+        "dex_method_index": 25204,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/Long;Ljava/lang/Integer;Ljava/util/List;Ljava/util/List;Lcom/luna/biz/entitlement/core/commerceinfo/entity/RewardFinishedTaskInfo;Ljava/util/List;Ljava/lang/Boolean;Ljava/util/List;Ljava/util/List;Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;ILkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "access_flags": 69633,
+        "code_item_offset": 3907620
+      },
+      {
+        "dex_method_index": 25216,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "copy$default",
+        "descriptor": "(Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;Ljava/lang/Long;Ljava/lang/Integer;Ljava/util/List;Ljava/util/List;Lcom/luna/biz/entitlement/core/commerceinfo/entity/RewardFinishedTaskInfo;Ljava/util/List;Ljava/lang/Boolean;Ljava/util/List;Ljava/util/List;Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;ILjava/lang/Object;)Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "access_flags": 4105,
+        "code_item_offset": 3905892
+      },
+      {
+        "dex_method_index": 25205,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "component1",
+        "descriptor": "()Ljava/lang/Long;",
+        "access_flags": 17,
+        "code_item_offset": 3906780
+      },
+      {
+        "dex_method_index": 25206,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "component10",
+        "descriptor": "()Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;",
+        "access_flags": 17,
+        "code_item_offset": 3906328
+      },
+      {
+        "dex_method_index": 25207,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "component2",
+        "descriptor": "()Ljava/lang/Integer;",
+        "access_flags": 17,
+        "code_item_offset": 3906732
+      },
+      {
+        "dex_method_index": 25208,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "component3",
+        "descriptor": "()Ljava/util/List;",
+        "access_flags": 17,
+        "code_item_offset": 3907116
+      },
+      {
+        "dex_method_index": 25209,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "component4",
+        "descriptor": "()Ljava/util/List;",
+        "access_flags": 17,
+        "code_item_offset": 3907140
+      },
+      {
+        "dex_method_index": 25210,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "component5",
+        "descriptor": "()Lcom/luna/biz/entitlement/core/commerceinfo/entity/RewardFinishedTaskInfo;",
+        "access_flags": 17,
+        "code_item_offset": 3906280
+      },
+      {
+        "dex_method_index": 25211,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "component6",
+        "descriptor": "()Ljava/util/List;",
+        "access_flags": 17,
+        "code_item_offset": 3907164
+      },
+      {
+        "dex_method_index": 25212,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "component7",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "access_flags": 17,
+        "code_item_offset": 3906684
+      },
+      {
+        "dex_method_index": 25213,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "component8",
+        "descriptor": "()Ljava/util/List;",
+        "access_flags": 17,
+        "code_item_offset": 3907188
+      },
+      {
+        "dex_method_index": 25214,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "component9",
+        "descriptor": "()Ljava/util/List;",
+        "access_flags": 17,
+        "code_item_offset": 3907212
+      },
+      {
+        "dex_method_index": 25215,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "copy",
+        "descriptor": "(Ljava/lang/Long;Ljava/lang/Integer;Ljava/util/List;Ljava/util/List;Lcom/luna/biz/entitlement/core/commerceinfo/entity/RewardFinishedTaskInfo;Ljava/util/List;Ljava/lang/Boolean;Ljava/util/List;Ljava/util/List;Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;)Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "access_flags": 17,
+        "code_item_offset": 3906128
+      },
+      {
+        "dex_method_index": 25217,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "equals",
+        "descriptor": "(Ljava/lang/Object;)Z",
+        "access_flags": 1,
+        "code_item_offset": 3905592
+      },
+      {
+        "dex_method_index": 25218,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "getCoolDownInfo",
+        "descriptor": "()Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;",
+        "access_flags": 17,
+        "code_item_offset": 3906352
+      },
+      {
+        "dex_method_index": 25219,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "getDailyRewardTasks",
+        "descriptor": "()Ljava/util/List;",
+        "access_flags": 17,
+        "code_item_offset": 3907236
+      },
+      {
+        "dex_method_index": 25220,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "getExpireAt",
+        "descriptor": "()Ljava/lang/Long;",
+        "access_flags": 17,
+        "code_item_offset": 3906804
+      },
+      {
+        "dex_method_index": 25221,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "getNeedRefreshRewardTime",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "access_flags": 17,
+        "code_item_offset": 3906708
+      },
+      {
+        "dex_method_index": 25222,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "getOriginalDailyRewardTasks",
+        "descriptor": "()Ljava/util/List;",
+        "access_flags": 17,
+        "code_item_offset": 3907260
+      },
+      {
+        "dex_method_index": 25223,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "getRewardFinishedTaskInfo",
+        "descriptor": "()Lcom/luna/biz/entitlement/core/commerceinfo/entity/RewardFinishedTaskInfo;",
+        "access_flags": 17,
+        "code_item_offset": 3906304
+      },
+      {
+        "dex_method_index": 25224,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "getRewardTaskGuideList",
+        "descriptor": "()Ljava/util/List;",
+        "access_flags": 17,
+        "code_item_offset": 3907284
+      },
+      {
+        "dex_method_index": 25225,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "getRewardTasksFinished",
+        "descriptor": "()Ljava/lang/Integer;",
+        "access_flags": 17,
+        "code_item_offset": 3906756
+      },
+      {
+        "dex_method_index": 25226,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "getRewardTasksTimeMs",
+        "descriptor": "()Ljava/util/List;",
+        "access_flags": 17,
+        "code_item_offset": 3907308
+      },
+      {
+        "dex_method_index": 25227,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "getVideoCompleteAcquiredTimeMs",
+        "descriptor": "()Ljava/util/List;",
+        "access_flags": 17,
+        "code_item_offset": 3907332
+      },
+      {
+        "dex_method_index": 25228,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "hashCode",
+        "descriptor": "()I",
+        "access_flags": 1,
+        "code_item_offset": 3906376
+      },
+      {
+        "dex_method_index": 25229,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "setCoolDownInfo",
+        "descriptor": "(Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;)V",
+        "access_flags": 17,
+        "code_item_offset": 3907872
+      },
+      {
+        "dex_method_index": 25230,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "setOriginalDailyRewardTasks",
+        "descriptor": "(Ljava/util/List;)V",
+        "access_flags": 17,
+        "code_item_offset": 3907896
+      },
+      {
+        "dex_method_index": 25231,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "toString",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 1,
+        "code_item_offset": 3906828
+      }
+    ],
+    "annotations": [
+      {
+        "annotation_item_offset": 11005744,
+        "visibility": 1,
+        "type": "Lkotlin/Metadata;",
+        "elements": {
+          "d1": [
+            "��R\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n��\n\u0002\u0010\t\n��\n\u0002\u0010\b\n��\n\u0002\u0010 \n\u0002\b\u0002\n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n��\n\u0002\u0010\u000b\n��\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b'\n\u0002\u0010��\n\u0002\b\u0002\n\u0002\u0010\u000e\n��\b\b\u0018��2\u00020\u00012\u00020\u0002B\u0001\u0012\n\b\u0002\u0010\u0003\u001a\u0004\u0018\u00010\u0004\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\u0010\b\u0002\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\b\u0012\u0010\b\u0002\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\b\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\u0010\b\u0002\u0010\f\u001a\n\u0012\u0004\u0012\u00020\r\u0018\u00010\b\u0012\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u0012\u0010\b\u0002\u0010\u0010\u001a\n\u0012\u0004\u0012\u00020\u0011\u0018\u00010\b\u0012\u0010\b\u0002\u0010\u0012\u001a\n\u0012\u0004\u0012\u00020\u0011\u0018\u00010\b\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0014¢\u0006\u0004\b\u0015\u0010\u0016J\u0010\u0010.\u001a\u0004\u0018\u00010\u0004HÆ\u0003¢\u0006\u0002\u0010\u0018J\u0010\u0010/\u001a\u0004\u0018\u00010\u0006HÆ\u0003¢\u0006\u0002\u0010\u001bJ\u0011\u00100\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\bHÆ\u0003J\u0011\u00101\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\bHÆ\u0003J\u000b\u00102\u001a\u0004\u0018\u00010\u000bHÆ\u0003J\u0011\u00103\u001a\n\u0012\u0004\u0012\u00020\r\u0018\u00010\bHÆ\u0003J\u0010\u00104\u001a\u0004\u0018\u00010\u000fHÆ\u0003¢\u0006\u0002\u0010$J\u0011\u00105\u001a\n\u0012\u0004\u0012\u00020\u0011\u0018\u00010\bHÆ\u0003J\u0011\u00106\u001a\n\u0012\u0004\u0012\u00020\u0011\u0018\u00010\bHÆ\u0003J\u000b\u00107\u001a\u0004\u0018\u00010\u0014HÆ\u0003J¤\u0001\u00108\u001a\u00020��2\n\b\u0002\u0010\u0003\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00062\u0010\b\u0002\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\b2\u0010\b\u0002\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\b2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b2\u0010\b\u0002\u0010\f\u001a\n\u0012\u0004\u0012\u00020\r\u0018\u00010\b2\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000f2\u0010\b\u0002\u0010\u0010\u001a\n\u0012\u0004\u0012\u00020\u0011\u0018\u00010\b2\u0010\b\u0002\u0010\u0012\u001a\n\u0012\u0004\u0012\u00020\u0011\u0018\u00010\b2\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0014HÆ\u0001¢\u0006\u0002\u00109J\u0013\u0010:\u001a\u00020\u000f2\b\u0010;\u001a\u0004\u0018\u00010<HÖ\u0003J\t\u0010=\u001a\u00020\u0006HÖ\u0001J\t\u0010>\u001a\u00020?HÖ\u0001R\u001a\u0010\u0003\u001a\u0004\u0018\u00010\u00048\u0006X\u0004¢\u0006\n\n\u0002\u0010\u0019\u001a\u0004\b\u0017\u0010\u0018R\u001a\u0010\u0005\u001a\u0004\u0018\u00010\u00068\u0006X\u0004¢\u0006\n\n\u0002\u0010\u001c\u001a\u0004\b\u001a\u0010\u001bR\u001e\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\b8\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b\u001d\u0010\u001eR\u001e\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\b8\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b\u001f\u0010\u001eR\u0018\u0010\n\u001a\u0004\u0018\u00010\u000b8\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b \u0010!R\u001e\u0010\f\u001a\n\u0012\u0004\u0012\u00020\r\u0018\u00010\b8\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b\"\u0010\u001eR\u001a\u0010\u000e\u001a\u0004\u0018\u00010\u000f8\u0006X\u0004¢\u0006\n\n\u0002\u0010%\u001a\u0004\b#\u0010$R\u001e\u0010\u0010\u001a\n\u0012\u0004\u0012\u00020\u0011\u0018\u00010\b8\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b&\u0010\u001eR&\u0010\u0012\u001a\n\u0012\u0004\u0012\u00020\u0011\u0018\u00010\b8\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b'\u0010\u001e\"\u0004\b(\u0010)R \u0010\u0013\u001a\u0004\u0018\u00010\u00148\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b*\u0010+\"\u0004\b,\u0010-¨\u0006@"
+          ],
+          "d2": [
+            "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+            "Lcom/luna/biz/entitlement/core/commerceinfo/api/ICommerceInfoEntity;",
+            "Lcom/luna/common/tea/json/KeepElement;",
+            "expireAt",
+            "",
+            "rewardTasksFinished",
+            "",
+            "rewardTasksTimeMs",
+            "",
+            "videoCompleteAcquiredTimeMs",
+            "rewardFinishedTaskInfo",
+            "Lcom/luna/biz/entitlement/core/commerceinfo/entity/RewardFinishedTaskInfo;",
+            "rewardTaskGuideList",
+            "Lcom/luna/biz/entitlement/entity/RewardTaskGuideInfo;",
+            "needRefreshRewardTime",
+            "",
+            "dailyRewardTasks",
+            "Lcom/luna/common/arch/net/entity/commerce/DailyRewardTask;",
+            "originalDailyRewardTasks",
+            "coolDownInfo",
+            "Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;",
+            "<init>",
+            "(Ljava/lang/Long;Ljava/lang/Integer;Ljava/util/List;Ljava/util/List;Lcom/luna/biz/entitlement/core/commerceinfo/entity/RewardFinishedTaskInfo;Ljava/util/List;Ljava/lang/Boolean;Ljava/util/List;Ljava/util/List;Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;)V",
+            "getExpireAt",
+            "()Ljava/lang/Long;",
+            "Ljava/lang/Long;",
+            "getRewardTasksFinished",
+            "()Ljava/lang/Integer;",
+            "Ljava/lang/Integer;",
+            "getRewardTasksTimeMs",
+            "()Ljava/util/List;",
+            "getVideoCompleteAcquiredTimeMs",
+            "getRewardFinishedTaskInfo",
+            "()Lcom/luna/biz/entitlement/core/commerceinfo/entity/RewardFinishedTaskInfo;",
+            "getRewardTaskGuideList",
+            "getNeedRefreshRewardTime",
+            "()Ljava/lang/Boolean;",
+            "Ljava/lang/Boolean;",
+            "getDailyRewardTasks",
+            "getOriginalDailyRewardTasks",
+            "setOriginalDailyRewardTasks",
+            "(Ljava/util/List;)V",
+            "getCoolDownInfo",
+            "()Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;",
+            "setCoolDownInfo",
+            "(Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;)V",
+            "component1",
+            "component2",
+            "component3",
+            "component4",
+            "component5",
+            "component6",
+            "component7",
+            "component8",
+            "component9",
+            "component10",
+            "copy",
+            "(Ljava/lang/Long;Ljava/lang/Integer;Ljava/util/List;Ljava/util/List;Lcom/luna/biz/entitlement/core/commerceinfo/entity/RewardFinishedTaskInfo;Ljava/util/List;Ljava/lang/Boolean;Ljava/util/List;Ljava/util/List;Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;)Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+            "equals",
+            "other",
+            "",
+            "hashCode",
+            "toString",
+            "",
+            "biz-entitlement-impl_release"
+          ],
+          "k": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "01",
+            "unsigned_value": 1
+          },
+          "mv": [
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "02",
+              "unsigned_value": 2
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "01",
+              "unsigned_value": 1
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            }
+          ],
+          "xi": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "30",
+            "unsigned_value": 48
+          }
+        }
+      }
+    ],
+    "parameter_annotations": [
+      {
+        "dex_method_index": 25203,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/Long;Ljava/lang/Integer;Ljava/util/List;Ljava/util/List;Lcom/luna/biz/entitlement/core/commerceinfo/entity/RewardFinishedTaskInfo;Ljava/util/List;Ljava/lang/Boolean;Ljava/util/List;Ljava/util/List;Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 25215,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "copy",
+        "descriptor": "(Ljava/lang/Long;Ljava/lang/Integer;Ljava/util/List;Ljava/util/List;Lcom/luna/biz/entitlement/core/commerceinfo/entity/RewardFinishedTaskInfo;Ljava/util/List;Ljava/lang/Boolean;Ljava/util/List;Ljava/util/List;Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;)Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 25217,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "equals",
+        "descriptor": "(Ljava/lang/Object;)Z",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 25229,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "setCoolDownInfo",
+        "descriptor": "(Lcom/luna/common/arch/net/entity/commerce/CoolDownInfo;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 25230,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoPlayEntitlementEntity;",
+        "name": "setOriginalDailyRewardTasks",
+        "descriptor": "(Ljava/util/List;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "class_def_index": 4265,
+    "descriptor": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+    "access_flags": 1,
+    "super": "Ljava/lang/Object;",
+    "interfaces": [
+      "Lcom/luna/common/tea/json/KeepElement;",
+      "Lcom/luna/biz/entitlement/core/commerceinfo/api/ICommerceInfoEntity;"
+    ],
+    "class_data_offset": 11569712,
+    "static_values_offset": 0,
+    "fields": [
+      {
+        "dex_field_index": 12752,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "available",
+        "type": "Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003713,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "available"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12753,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "cacheExpireTime",
+        "type": "Ljava/lang/Long;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003761,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "cache_expire_time"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12755,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "containerPopups",
+        "type": "Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003781,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "container_popups"
+            }
+          },
+          {
+            "annotation_item_offset": 11003791,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/luna/biz/entitlement/entity/IncentivePopup;",
+                ">;>;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12756,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "cooldownEndTime",
+        "type": "Ljava/lang/Long;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003771,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "cooldown_end_time"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12757,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "eventTrackingParams",
+        "type": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/EventTrackingParams;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003936,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "event_tracking_params"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12758,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "expireTime",
+        "type": "Ljava/lang/Long;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10776712,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "expire_time"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12759,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "expireTimes",
+        "type": "Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003852,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "expire_times"
+            }
+          },
+          {
+            "annotation_item_offset": 10713613,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/lang/Long;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12760,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "maxReleaseDays",
+        "type": "Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003723,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "max_release_days"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12761,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "questContainerPopups",
+        "type": "Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003862,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "quest_container_popups"
+            }
+          },
+          {
+            "annotation_item_offset": 11003872,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/luna/biz/entitlement/entity/IncentivePopup;",
+                ">;>;>;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12762,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "rewardDetails",
+        "type": "Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003905,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "reward_details"
+            }
+          },
+          {
+            "annotation_item_offset": 11003915,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "Ljava/util/Map<",
+                "Ljava/lang/Integer;",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/IncentiveRewardDetail;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12764,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "sideQuests",
+        "type": "Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003818,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "side_quests"
+            }
+          },
+          {
+            "annotation_item_offset": 11003828,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/util/List<",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/IncentiveTask;",
+                ">;>;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12765,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "tasks",
+        "type": "Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003733,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "tasks"
+            }
+          },
+          {
+            "annotation_item_offset": 11003743,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "Ljava/util/List<",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/IncentiveTask;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "dex_method_index": 25084,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/Integer;Ljava/util/List;Ljava/lang/Long;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Lcom/luna/biz/entitlement/core/commerceinfo/entity/EventTrackingParams;)V",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003278,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "(",
+                "Ljava/lang/Boolean;",
+                "Ljava/lang/Long;",
+                "Ljava/lang/Integer;",
+                "Ljava/util/List<",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/IncentiveTask;",
+                ">;",
+                "Ljava/lang/Long;",
+                "Ljava/lang/Long;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "+",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/luna/biz/entitlement/entity/IncentivePopup;",
+                ">;>;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "+",
+                "Ljava/util/List<",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/IncentiveTask;",
+                ">;>;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/lang/Long;",
+                ">;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "+",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "+",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/luna/biz/entitlement/entity/IncentivePopup;",
+                ">;>;>;",
+                "Ljava/util/Map<",
+                "Ljava/lang/Integer;",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/IncentiveRewardDetail;",
+                ">;",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/EventTrackingParams;",
+                ")V"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25086,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component1",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25087,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component10",
+        "descriptor": "()Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003515,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/luna/biz/entitlement/entity/IncentivePopup;",
+                ">;>;>;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25088,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component11",
+        "descriptor": "()Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003551,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/Map<",
+                "Ljava/lang/Integer;",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/IncentiveRewardDetail;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25089,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component12",
+        "descriptor": "()Lcom/luna/biz/entitlement/core/commerceinfo/entity/EventTrackingParams;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25090,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component2",
+        "descriptor": "()Ljava/lang/Long;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25091,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component3",
+        "descriptor": "()Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25092,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component4",
+        "descriptor": "()Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003413,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/List<",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/IncentiveTask;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25093,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component5",
+        "descriptor": "()Ljava/lang/Long;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25094,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component6",
+        "descriptor": "()Ljava/lang/Long;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25095,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component7",
+        "descriptor": "()Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003434,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/luna/biz/entitlement/entity/IncentivePopup;",
+                ">;>;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25096,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component8",
+        "descriptor": "()Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003464,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/util/List<",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/IncentiveTask;",
+                ">;>;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25097,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component9",
+        "descriptor": "()Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003491,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/lang/Long;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25098,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "copy",
+        "descriptor": "(Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/Integer;Ljava/util/List;Ljava/lang/Long;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Lcom/luna/biz/entitlement/core/commerceinfo/entity/EventTrackingParams;)Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003575,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "(",
+                "Ljava/lang/Boolean;",
+                "Ljava/lang/Long;",
+                "Ljava/lang/Integer;",
+                "Ljava/util/List<",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/IncentiveTask;",
+                ">;",
+                "Ljava/lang/Long;",
+                "Ljava/lang/Long;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "+",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/luna/biz/entitlement/entity/IncentivePopup;",
+                ">;>;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "+",
+                "Ljava/util/List<",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/IncentiveTask;",
+                ">;>;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/lang/Long;",
+                ">;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "+",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "+",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/luna/biz/entitlement/entity/IncentivePopup;",
+                ">;>;>;",
+                "Ljava/util/Map<",
+                "Ljava/lang/Integer;",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/IncentiveRewardDetail;",
+                ">;",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/EventTrackingParams;",
+                ")",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25101,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getAvailable",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25102,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getCacheExpireTime",
+        "descriptor": "()Ljava/lang/Long;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25103,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getContainerPopups",
+        "descriptor": "()Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003434,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/luna/biz/entitlement/entity/IncentivePopup;",
+                ">;>;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25104,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getCooldownEndTime",
+        "descriptor": "()Ljava/lang/Long;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25105,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getEventTrackingParams",
+        "descriptor": "()Lcom/luna/biz/entitlement/core/commerceinfo/entity/EventTrackingParams;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25106,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getExpireTime",
+        "descriptor": "()Ljava/lang/Long;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25107,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getExpireTimes",
+        "descriptor": "()Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003491,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/lang/Long;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25108,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getMaxReleaseDays",
+        "descriptor": "()Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25109,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getQuestContainerPopups",
+        "descriptor": "()Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003515,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/luna/biz/entitlement/entity/IncentivePopup;",
+                ">;>;>;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25110,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getRewardDetails",
+        "descriptor": "()Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003551,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/Map<",
+                "Ljava/lang/Integer;",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/IncentiveRewardDetail;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25111,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getSideQuests",
+        "descriptor": "()Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003464,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/util/List<",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/IncentiveTask;",
+                ">;>;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25112,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getTasks",
+        "descriptor": "()Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11003413,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/List<",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/IncentiveTask;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25114,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "toString",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "declared_fields": [
+      {
+        "dex_field_index": 12754,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "changeQuickRedirect",
+        "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+        "access_flags": 9
+      },
+      {
+        "dex_field_index": 12752,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "available",
+        "type": "Ljava/lang/Boolean;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12753,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "cacheExpireTime",
+        "type": "Ljava/lang/Long;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12755,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "containerPopups",
+        "type": "Ljava/util/Map;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12756,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "cooldownEndTime",
+        "type": "Ljava/lang/Long;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12757,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "eventTrackingParams",
+        "type": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/EventTrackingParams;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12758,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "expireTime",
+        "type": "Ljava/lang/Long;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12759,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "expireTimes",
+        "type": "Ljava/util/Map;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12760,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "maxReleaseDays",
+        "type": "Ljava/lang/Integer;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12761,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "questContainerPopups",
+        "type": "Ljava/util/Map;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12762,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "rewardDetails",
+        "type": "Ljava/util/Map;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12763,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "robustFieldMap",
+        "type": "Ljava/lang/Object;",
+        "access_flags": 193
+      },
+      {
+        "dex_field_index": 12764,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "sideQuests",
+        "type": "Ljava/util/Map;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12765,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "tasks",
+        "type": "Ljava/util/List;",
+        "access_flags": 1
+      }
+    ],
+    "declared_methods": [
+      {
+        "dex_method_index": 25084,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/Integer;Ljava/util/List;Ljava/lang/Long;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Lcom/luna/biz/entitlement/core/commerceinfo/entity/EventTrackingParams;)V",
+        "access_flags": 65537,
+        "code_item_offset": 3897444
+      },
+      {
+        "dex_method_index": 25085,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/Integer;Ljava/util/List;Ljava/lang/Long;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Lcom/luna/biz/entitlement/core/commerceinfo/entity/EventTrackingParams;ILkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "access_flags": 69633,
+        "code_item_offset": 3897708
+      },
+      {
+        "dex_method_index": 25099,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "copy$default",
+        "descriptor": "(Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/Integer;Ljava/util/List;Ljava/lang/Long;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Lcom/luna/biz/entitlement/core/commerceinfo/entity/EventTrackingParams;ILjava/lang/Object;)Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "access_flags": 4105,
+        "code_item_offset": 3895716
+      },
+      {
+        "dex_method_index": 25086,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component1",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "access_flags": 17,
+        "code_item_offset": 3896588
+      },
+      {
+        "dex_method_index": 25087,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component10",
+        "descriptor": "()Ljava/util/Map;",
+        "access_flags": 17,
+        "code_item_offset": 3897204
+      },
+      {
+        "dex_method_index": 25088,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component11",
+        "descriptor": "()Ljava/util/Map;",
+        "access_flags": 17,
+        "code_item_offset": 3897228
+      },
+      {
+        "dex_method_index": 25089,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component12",
+        "descriptor": "()Lcom/luna/biz/entitlement/core/commerceinfo/entity/EventTrackingParams;",
+        "access_flags": 17,
+        "code_item_offset": 3896220
+      },
+      {
+        "dex_method_index": 25090,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component2",
+        "descriptor": "()Ljava/lang/Long;",
+        "access_flags": 17,
+        "code_item_offset": 3896684
+      },
+      {
+        "dex_method_index": 25091,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component3",
+        "descriptor": "()Ljava/lang/Integer;",
+        "access_flags": 17,
+        "code_item_offset": 3896636
+      },
+      {
+        "dex_method_index": 25092,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component4",
+        "descriptor": "()Ljava/util/List;",
+        "access_flags": 17,
+        "code_item_offset": 3897156
+      },
+      {
+        "dex_method_index": 25093,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component5",
+        "descriptor": "()Ljava/lang/Long;",
+        "access_flags": 17,
+        "code_item_offset": 3896708
+      },
+      {
+        "dex_method_index": 25094,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component6",
+        "descriptor": "()Ljava/lang/Long;",
+        "access_flags": 17,
+        "code_item_offset": 3896732
+      },
+      {
+        "dex_method_index": 25095,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component7",
+        "descriptor": "()Ljava/util/Map;",
+        "access_flags": 17,
+        "code_item_offset": 3897252
+      },
+      {
+        "dex_method_index": 25096,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component8",
+        "descriptor": "()Ljava/util/Map;",
+        "access_flags": 17,
+        "code_item_offset": 3897276
+      },
+      {
+        "dex_method_index": 25097,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "component9",
+        "descriptor": "()Ljava/util/Map;",
+        "access_flags": 17,
+        "code_item_offset": 3897300
+      },
+      {
+        "dex_method_index": 25098,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "copy",
+        "descriptor": "(Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/Integer;Ljava/util/List;Ljava/lang/Long;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Lcom/luna/biz/entitlement/core/commerceinfo/entity/EventTrackingParams;)Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "access_flags": 17,
+        "code_item_offset": 3896004
+      },
+      {
+        "dex_method_index": 25100,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "equals",
+        "descriptor": "(Ljava/lang/Object;)Z",
+        "access_flags": 1,
+        "code_item_offset": 3895372
+      },
+      {
+        "dex_method_index": 25101,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getAvailable",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "access_flags": 17,
+        "code_item_offset": 3896612
+      },
+      {
+        "dex_method_index": 25102,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getCacheExpireTime",
+        "descriptor": "()Ljava/lang/Long;",
+        "access_flags": 17,
+        "code_item_offset": 3896756
+      },
+      {
+        "dex_method_index": 25103,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getContainerPopups",
+        "descriptor": "()Ljava/util/Map;",
+        "access_flags": 17,
+        "code_item_offset": 3897324
+      },
+      {
+        "dex_method_index": 25104,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getCooldownEndTime",
+        "descriptor": "()Ljava/lang/Long;",
+        "access_flags": 17,
+        "code_item_offset": 3896780
+      },
+      {
+        "dex_method_index": 25105,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getEventTrackingParams",
+        "descriptor": "()Lcom/luna/biz/entitlement/core/commerceinfo/entity/EventTrackingParams;",
+        "access_flags": 17,
+        "code_item_offset": 3896244
+      },
+      {
+        "dex_method_index": 25106,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getExpireTime",
+        "descriptor": "()Ljava/lang/Long;",
+        "access_flags": 17,
+        "code_item_offset": 3896804
+      },
+      {
+        "dex_method_index": 25107,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getExpireTimes",
+        "descriptor": "()Ljava/util/Map;",
+        "access_flags": 17,
+        "code_item_offset": 3897348
+      },
+      {
+        "dex_method_index": 25108,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getMaxReleaseDays",
+        "descriptor": "()Ljava/lang/Integer;",
+        "access_flags": 17,
+        "code_item_offset": 3896660
+      },
+      {
+        "dex_method_index": 25109,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getQuestContainerPopups",
+        "descriptor": "()Ljava/util/Map;",
+        "access_flags": 17,
+        "code_item_offset": 3897372
+      },
+      {
+        "dex_method_index": 25110,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getRewardDetails",
+        "descriptor": "()Ljava/util/Map;",
+        "access_flags": 17,
+        "code_item_offset": 3897396
+      },
+      {
+        "dex_method_index": 25111,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getSideQuests",
+        "descriptor": "()Ljava/util/Map;",
+        "access_flags": 17,
+        "code_item_offset": 3897420
+      },
+      {
+        "dex_method_index": 25112,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "getTasks",
+        "descriptor": "()Ljava/util/List;",
+        "access_flags": 17,
+        "code_item_offset": 3897180
+      },
+      {
+        "dex_method_index": 25113,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "hashCode",
+        "descriptor": "()I",
+        "access_flags": 1,
+        "code_item_offset": 3896268
+      },
+      {
+        "dex_method_index": 25114,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "toString",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 1,
+        "code_item_offset": 3896828
+      }
+    ],
+    "annotations": [
+      {
+        "annotation_item_offset": 11003946,
+        "visibility": 1,
+        "type": "Lkotlin/Metadata;",
+        "elements": {
+          "d1": [
+            "��R\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n��\n\u0002\u0010\u000b\n��\n\u0002\u0010\t\n��\n\u0002\u0010\b\n��\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n\u0002\b'\n\u0002\u0010��\n\u0002\b\u0003\b\b\u0018��2\u00020\u00012\u00020\u0002Bí\u0001\u0012\b\u0010\u0003\u001a\u0004\u0018\u00010\u0004\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\u000e\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\n\u0012\b\u0010\f\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u0006\u0012 \b\u0002\u0010\u000e\u001a\u001a\u0012\u0004\u0012\u00020\u0010\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u00110\u000f0\u000f\u0012\u001a\b\u0002\u0010\u0012\u001a\u0014\u0012\u0004\u0012\u00020\u0010\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u000b0\n0\u000f\u0012\u0014\b\u0002\u0010\u0013\u001a\u000e\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u00060\u000f\u0012,\b\u0002\u0010\u0014\u001a&\u0012\u0004\u0012\u00020\u0010\u0012\u001c\u0012\u001a\u0012\u0004\u0012\u00020\u0010\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u00110\u000f0\u000f0\u000f\u0012\u0014\b\u0002\u0010\u0015\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\u00160\u000f\u0012\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u0018¢\u0006\u0004\b\u0019\u0010\u001aJ\u0010\u00100\u001a\u0004\u0018\u00010\u0004HÆ\u0003¢\u0006\u0002\u0010\u001cJ\u0010\u00101\u001a\u0004\u0018\u00010\u0006HÆ\u0003¢\u0006\u0002\u0010\u001fJ\u0010\u00102\u001a\u0004\u0018\u00010\bHÆ\u0003¢\u0006\u0002\u0010\"J\u0011\u00103\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\nHÆ\u0003J\u0010\u00104\u001a\u0004\u0018\u00010\u0006HÆ\u0003¢\u0006\u0002\u0010\u001fJ\u0010\u00105\u001a\u0004\u0018\u00010\u0006HÆ\u0003¢\u0006\u0002\u0010\u001fJ!\u00106\u001a\u001a\u0012\u0004\u0012\u00020\u0010\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u00110\u000f0\u000fHÆ\u0003J\u001b\u00107\u001a\u0014\u0012\u0004\u0012\u00020\u0010\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u000b0\n0\u000fHÆ\u0003J\u0015\u00108\u001a\u000e\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u00060\u000fHÆ\u0003J-\u00109\u001a&\u0012\u0004\u0012\u00020\u0010\u0012\u001c\u0012\u001a\u0012\u0004\u0012\u00020\u0010\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u00110\u000f0\u000f0\u000fHÆ\u0003J\u0015\u0010:\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\u00160\u000fHÆ\u0003J\u000b\u0010;\u001a\u0004\u0018\u00010\u0018HÆ\u0003J\u0002\u0010<\u001a\u00020��2\n\b\u0002\u0010\u0003\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b2\u0010\b\u0002\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\n2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u00062 \b\u0002\u0010\u000e\u001a\u001a\u0012\u0004\u0012\u00020\u0010\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u00110\u000f0\u000f2\u001a\b\u0002\u0010\u0012\u001a\u0014\u0012\u0004\u0012\u00020\u0010\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u000b0\n0\u000f2\u0014\b\u0002\u0010\u0013\u001a\u000e\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u00060\u000f2,\b\u0002\u0010\u0014\u001a&\u0012\u0004\u0012\u00020\u0010\u0012\u001c\u0012\u001a\u0012\u0004\u0012\u00020\u0010\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u00110\u000f0\u000f0\u000f2\u0014\b\u0002\u0010\u0015\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\u00160\u000f2\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u0018HÆ\u0001¢\u0006\u0002\u0010=J\u0013\u0010>\u001a\u00020\u00042\b\u0010?\u001a\u0004\u0018\u00010@HÖ\u0003J\t\u0010A\u001a\u00020\bHÖ\u0001J\t\u0010B\u001a\u00020\u0010HÖ\u0001R\u001a\u0010\u0003\u001a\u0004\u0018\u00010\u00048\u0006X\u0004¢\u0006\n\n\u0002\u0010\u001d\u001a\u0004\b\u001b\u0010\u001cR\u001a\u0010\u0005\u001a\u0004\u0018\u00010\u00068\u0006X\u0004¢\u0006\n\n\u0002\u0010 \u001a\u0004\b\u001e\u0010\u001fR\u001a\u0010\u0007\u001a\u0004\u0018\u00010\b8\u0006X\u0004¢\u0006\n\n\u0002\u0010#\u001a\u0004\b!\u0010\"R\u001e\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\n8\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b$\u0010%R\u001a\u0010\f\u001a\u0004\u0018\u00010\u00068\u0006X\u0004¢\u0006\n\n\u0002\u0010 \u001a\u0004\b&\u0010\u001fR\u001a\u0010\r\u001a\u0004\u0018\u00010\u00068\u0006X\u0004¢\u0006\n\n\u0002\u0010 \u001a\u0004\b'\u0010\u001fR.\u0010\u000e\u001a\u001a\u0012\u0004\u0012\u00020\u0010\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u00110\u000f0\u000f8\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b(\u0010)R(\u0010\u0012\u001a\u0014\u0012\u0004\u0012\u00020\u0010\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u000b0\n0\u000f8\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b*\u0010)R\"\u0010\u0013\u001a\u000e\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u00060\u000f8\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b+\u0010)R:\u0010\u0014\u001a&\u0012\u0004\u0012\u00020\u0010\u0012\u001c\u0012\u001a\u0012\u0004\u0012\u00020\u0010\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u00110\u000f0\u000f0\u000f8\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b,\u0010)R\"\u0010\u0015\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\u00160\u000f8\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b-\u0010)R\u0018\u0010\u0017\u001a\u0004\u0018\u00010\u00188\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b.\u0010/¨\u0006C"
+          ],
+          "d2": [
+            "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+            "Lcom/luna/common/tea/json/KeepElement;",
+            "Lcom/luna/biz/entitlement/core/commerceinfo/api/ICommerceInfoEntity;",
+            "available",
+            "",
+            "expireTime",
+            "",
+            "maxReleaseDays",
+            "",
+            "tasks",
+            "",
+            "Lcom/luna/biz/entitlement/core/commerceinfo/entity/IncentiveTask;",
+            "cacheExpireTime",
+            "cooldownEndTime",
+            "containerPopups",
+            "",
+            "",
+            "Lcom/luna/biz/entitlement/entity/IncentivePopup;",
+            "sideQuests",
+            "expireTimes",
+            "questContainerPopups",
+            "rewardDetails",
+            "Lcom/luna/biz/entitlement/core/commerceinfo/entity/IncentiveRewardDetail;",
+            "eventTrackingParams",
+            "Lcom/luna/biz/entitlement/core/commerceinfo/entity/EventTrackingParams;",
+            "<init>",
+            "(Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/Integer;Ljava/util/List;Ljava/lang/Long;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Lcom/luna/biz/entitlement/core/commerceinfo/entity/EventTrackingParams;)V",
+            "getAvailable",
+            "()Ljava/lang/Boolean;",
+            "Ljava/lang/Boolean;",
+            "getExpireTime",
+            "()Ljava/lang/Long;",
+            "Ljava/lang/Long;",
+            "getMaxReleaseDays",
+            "()Ljava/lang/Integer;",
+            "Ljava/lang/Integer;",
+            "getTasks",
+            "()Ljava/util/List;",
+            "getCacheExpireTime",
+            "getCooldownEndTime",
+            "getContainerPopups",
+            "()Ljava/util/Map;",
+            "getSideQuests",
+            "getExpireTimes",
+            "getQuestContainerPopups",
+            "getRewardDetails",
+            "getEventTrackingParams",
+            "()Lcom/luna/biz/entitlement/core/commerceinfo/entity/EventTrackingParams;",
+            "component1",
+            "component2",
+            "component3",
+            "component4",
+            "component5",
+            "component6",
+            "component7",
+            "component8",
+            "component9",
+            "component10",
+            "component11",
+            "component12",
+            "copy",
+            "(Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/Integer;Ljava/util/List;Ljava/lang/Long;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Lcom/luna/biz/entitlement/core/commerceinfo/entity/EventTrackingParams;)Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+            "equals",
+            "other",
+            "",
+            "hashCode",
+            "toString",
+            "biz-entitlement-impl_release"
+          ],
+          "k": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "01",
+            "unsigned_value": 1
+          },
+          "mv": [
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "02",
+              "unsigned_value": 2
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "01",
+              "unsigned_value": 1
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            }
+          ],
+          "xi": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "30",
+            "unsigned_value": 48
+          }
+        }
+      }
+    ],
+    "parameter_annotations": [
+      {
+        "dex_method_index": 25084,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/Integer;Ljava/util/List;Ljava/lang/Long;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Lcom/luna/biz/entitlement/core/commerceinfo/entity/EventTrackingParams;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679022,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679022,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679022,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679022,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679022,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 25098,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "copy",
+        "descriptor": "(Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/Integer;Ljava/util/List;Ljava/lang/Long;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Lcom/luna/biz/entitlement/core/commerceinfo/entity/EventTrackingParams;)Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679022,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679022,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679022,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679022,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679022,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 25100,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoIncentiveEntity;",
+        "name": "equals",
+        "descriptor": "(Ljava/lang/Object;)Z",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "class_def_index": 4267,
+    "descriptor": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+    "access_flags": 1,
+    "super": "Ljava/lang/Object;",
+    "interfaces": [
+      "Lcom/luna/biz/entitlement/core/commerceinfo/api/ICommerceInfoEntity;",
+      "Lcom/luna/common/tea/json/KeepElement;"
+    ],
+    "class_data_offset": 11569979,
+    "static_values_offset": 0,
+    "fields": [
+      {
+        "dex_field_index": 12770,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "defaultVipEntrance",
+        "type": "Lcom/luna/biz/entitlement/entity/VipEntrance;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11004585,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "default_svip_entrance"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12771,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "expireDate",
+        "type": "Ljava/lang/Long;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10776712,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "expire_time"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12772,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "expireTimeMax",
+        "type": "Ljava/lang/Long;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11004514,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "expire_time_max"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12773,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "inGracePeriod",
+        "type": "Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11004444,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "in_grace_period"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12774,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "isAboutToExpired",
+        "type": "Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11004494,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "is_about_to_expire"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12775,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "isPayingUser",
+        "type": "Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11004454,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "is_paying_user"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12776,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "isVip",
+        "type": "Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11004464,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "is_membership"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12777,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "lastMemberShipType",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11004484,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "last_membership_type"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12778,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "membershipDetailMap",
+        "type": "Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11004524,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "membership_detail_map"
+            }
+          },
+          {
+            "annotation_item_offset": 11004534,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/MembershipDetail;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12779,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "membershipDetailMapV2",
+        "type": "Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11004555,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "membership_detail_map_v2"
+            }
+          },
+          {
+            "annotation_item_offset": 11004534,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/MembershipDetail;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12780,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "membershipLandingPage",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11004595,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "membership_landing_page"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12781,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "modifierVipLabelSuffix",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11004504,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "modifier_vip_label_suffix"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12783,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "sideBarVipEntrance",
+        "type": "Lcom/luna/biz/entitlement/entity/VipEntrance;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11004575,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "side_bar_vip_entrance"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12784,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "vipEntranceLabel",
+        "type": "Lcom/luna/biz/entitlement/entity/VipEntrance;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11004565,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "me_tab_vip_entrance"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12785,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "vipLabelSuffix",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11004474,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "vip_label_suffix"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 12786,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "vipStage",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10779996,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "membership_type"
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "dex_method_index": 25119,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lcom/luna/biz/entitlement/entity/VipEntrance;Lcom/luna/biz/entitlement/entity/VipEntrance;Lcom/luna/biz/entitlement/entity/VipEntrance;Ljava/lang/String;)V",
+        "annotations": [
+          {
+            "annotation_item_offset": 11004255,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "(",
+                "Ljava/lang/Long;",
+                "Ljava/lang/Boolean;",
+                "Ljava/lang/Boolean;",
+                "Ljava/lang/Boolean;",
+                "Ljava/lang/String;",
+                "Ljava/lang/String;",
+                "Ljava/lang/String;",
+                "Ljava/lang/Boolean;",
+                "Ljava/lang/String;",
+                "Ljava/lang/Long;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/MembershipDetail;",
+                ">;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/MembershipDetail;",
+                ">;",
+                "Lcom/luna/biz/entitlement/entity/VipEntrance;",
+                "Lcom/luna/biz/entitlement/entity/VipEntrance;",
+                "Lcom/luna/biz/entitlement/entity/VipEntrance;",
+                "Ljava/lang/String;",
+                ")V"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25121,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component1",
+        "descriptor": "()Ljava/lang/Long;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25122,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component10",
+        "descriptor": "()Ljava/lang/Long;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25123,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component11",
+        "descriptor": "()Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11004336,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/MembershipDetail;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25124,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component12",
+        "descriptor": "()Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11004336,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/MembershipDetail;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25125,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component13",
+        "descriptor": "()Lcom/luna/biz/entitlement/entity/VipEntrance;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25126,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component14",
+        "descriptor": "()Lcom/luna/biz/entitlement/entity/VipEntrance;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25127,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component15",
+        "descriptor": "()Lcom/luna/biz/entitlement/entity/VipEntrance;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25128,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component16",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25129,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component2",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25130,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component3",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25131,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component4",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25132,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component5",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25133,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component6",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25134,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component7",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25135,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component8",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25136,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component9",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25137,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "copy",
+        "descriptor": "(Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lcom/luna/biz/entitlement/entity/VipEntrance;Lcom/luna/biz/entitlement/entity/VipEntrance;Lcom/luna/biz/entitlement/entity/VipEntrance;Ljava/lang/String;)Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11004360,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "(",
+                "Ljava/lang/Long;",
+                "Ljava/lang/Boolean;",
+                "Ljava/lang/Boolean;",
+                "Ljava/lang/Boolean;",
+                "Ljava/lang/String;",
+                "Ljava/lang/String;",
+                "Ljava/lang/String;",
+                "Ljava/lang/Boolean;",
+                "Ljava/lang/String;",
+                "Ljava/lang/Long;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/MembershipDetail;",
+                ">;",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/MembershipDetail;",
+                ">;",
+                "Lcom/luna/biz/entitlement/entity/VipEntrance;",
+                "Lcom/luna/biz/entitlement/entity/VipEntrance;",
+                "Lcom/luna/biz/entitlement/entity/VipEntrance;",
+                "Ljava/lang/String;",
+                ")",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25140,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getDefaultVipEntrance",
+        "descriptor": "()Lcom/luna/biz/entitlement/entity/VipEntrance;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25141,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getExpireDate",
+        "descriptor": "()Ljava/lang/Long;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25142,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getExpireTimeMax",
+        "descriptor": "()Ljava/lang/Long;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25143,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getInGracePeriod",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25144,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getLastMemberShipType",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25145,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getMembershipDetailMap",
+        "descriptor": "()Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11004336,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/MembershipDetail;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25146,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getMembershipDetailMapV2",
+        "descriptor": "()Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 11004336,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Lcom/luna/biz/entitlement/core/commerceinfo/entity/MembershipDetail;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25147,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getMembershipLandingPage",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25148,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getModifierVipLabelSuffix",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25149,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getSideBarVipEntrance",
+        "descriptor": "()Lcom/luna/biz/entitlement/entity/VipEntrance;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25150,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getVipEntranceLabel",
+        "descriptor": "()Lcom/luna/biz/entitlement/entity/VipEntrance;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25151,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getVipLabelSuffix",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25152,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getVipStage",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25154,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "isAboutToExpired",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25155,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "isPayingUser",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25156,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "isVip",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679620,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 25157,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "toString",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10679022,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "declared_fields": [
+      {
+        "dex_field_index": 12769,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "changeQuickRedirect",
+        "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+        "access_flags": 9
+      },
+      {
+        "dex_field_index": 12770,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "defaultVipEntrance",
+        "type": "Lcom/luna/biz/entitlement/entity/VipEntrance;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12771,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "expireDate",
+        "type": "Ljava/lang/Long;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12772,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "expireTimeMax",
+        "type": "Ljava/lang/Long;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12773,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "inGracePeriod",
+        "type": "Ljava/lang/Boolean;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12774,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "isAboutToExpired",
+        "type": "Ljava/lang/Boolean;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12775,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "isPayingUser",
+        "type": "Ljava/lang/Boolean;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12776,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "isVip",
+        "type": "Ljava/lang/Boolean;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12777,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "lastMemberShipType",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12778,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "membershipDetailMap",
+        "type": "Ljava/util/Map;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12779,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "membershipDetailMapV2",
+        "type": "Ljava/util/Map;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12780,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "membershipLandingPage",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12781,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "modifierVipLabelSuffix",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12782,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "robustFieldMap",
+        "type": "Ljava/lang/Object;",
+        "access_flags": 193
+      },
+      {
+        "dex_field_index": 12783,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "sideBarVipEntrance",
+        "type": "Lcom/luna/biz/entitlement/entity/VipEntrance;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12784,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "vipEntranceLabel",
+        "type": "Lcom/luna/biz/entitlement/entity/VipEntrance;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12785,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "vipLabelSuffix",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 12786,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "vipStage",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      }
+    ],
+    "declared_methods": [
+      {
+        "dex_method_index": 25118,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "<init>",
+        "descriptor": "()V",
+        "access_flags": 65537,
+        "code_item_offset": 3900728
+      },
+      {
+        "dex_method_index": 25119,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lcom/luna/biz/entitlement/entity/VipEntrance;Lcom/luna/biz/entitlement/entity/VipEntrance;Lcom/luna/biz/entitlement/entity/VipEntrance;Ljava/lang/String;)V",
+        "access_flags": 65537,
+        "code_item_offset": 3900840
+      },
+      {
+        "dex_method_index": 25120,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lcom/luna/biz/entitlement/entity/VipEntrance;Lcom/luna/biz/entitlement/entity/VipEntrance;Lcom/luna/biz/entitlement/entity/VipEntrance;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "access_flags": 69633,
+        "code_item_offset": 3901208
+      },
+      {
+        "dex_method_index": 25138,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "copy$default",
+        "descriptor": "(Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lcom/luna/biz/entitlement/entity/VipEntrance;Lcom/luna/biz/entitlement/entity/VipEntrance;Lcom/luna/biz/entitlement/entity/VipEntrance;Ljava/lang/String;ILjava/lang/Object;)Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "access_flags": 4105,
+        "code_item_offset": 3898432
+      },
+      {
+        "dex_method_index": 25121,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component1",
+        "descriptor": "()Ljava/lang/Long;",
+        "access_flags": 17,
+        "code_item_offset": 3899888
+      },
+      {
+        "dex_method_index": 25122,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component10",
+        "descriptor": "()Ljava/lang/Long;",
+        "access_flags": 17,
+        "code_item_offset": 3899912
+      },
+      {
+        "dex_method_index": 25123,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component11",
+        "descriptor": "()Ljava/util/Map;",
+        "access_flags": 17,
+        "code_item_offset": 3900632
+      },
+      {
+        "dex_method_index": 25124,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component12",
+        "descriptor": "()Ljava/util/Map;",
+        "access_flags": 17,
+        "code_item_offset": 3900656
+      },
+      {
+        "dex_method_index": 25125,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component13",
+        "descriptor": "()Lcom/luna/biz/entitlement/entity/VipEntrance;",
+        "access_flags": 17,
+        "code_item_offset": 3899088
+      },
+      {
+        "dex_method_index": 25126,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component14",
+        "descriptor": "()Lcom/luna/biz/entitlement/entity/VipEntrance;",
+        "access_flags": 17,
+        "code_item_offset": 3899112
+      },
+      {
+        "dex_method_index": 25127,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component15",
+        "descriptor": "()Lcom/luna/biz/entitlement/entity/VipEntrance;",
+        "access_flags": 17,
+        "code_item_offset": 3899136
+      },
+      {
+        "dex_method_index": 25128,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component16",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 3899984
+      },
+      {
+        "dex_method_index": 25129,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component2",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "access_flags": 17,
+        "code_item_offset": 3899696
+      },
+      {
+        "dex_method_index": 25130,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component3",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "access_flags": 17,
+        "code_item_offset": 3899720
+      },
+      {
+        "dex_method_index": 25131,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component4",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "access_flags": 17,
+        "code_item_offset": 3899744
+      },
+      {
+        "dex_method_index": 25132,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component5",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 3900008
+      },
+      {
+        "dex_method_index": 25133,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component6",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 3900032
+      },
+      {
+        "dex_method_index": 25134,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component7",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 3900056
+      },
+      {
+        "dex_method_index": 25135,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component8",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "access_flags": 17,
+        "code_item_offset": 3899768
+      },
+      {
+        "dex_method_index": 25136,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "component9",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 3900080
+      },
+      {
+        "dex_method_index": 25137,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "copy",
+        "descriptor": "(Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lcom/luna/biz/entitlement/entity/VipEntrance;Lcom/luna/biz/entitlement/entity/VipEntrance;Lcom/luna/biz/entitlement/entity/VipEntrance;Ljava/lang/String;)Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "access_flags": 17,
+        "code_item_offset": 3898824
+      },
+      {
+        "dex_method_index": 25139,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "equals",
+        "descriptor": "(Ljava/lang/Object;)Z",
+        "access_flags": 1,
+        "code_item_offset": 3898000
+      },
+      {
+        "dex_method_index": 25140,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getDefaultVipEntrance",
+        "descriptor": "()Lcom/luna/biz/entitlement/entity/VipEntrance;",
+        "access_flags": 17,
+        "code_item_offset": 3899160
+      },
+      {
+        "dex_method_index": 25141,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getExpireDate",
+        "descriptor": "()Ljava/lang/Long;",
+        "access_flags": 17,
+        "code_item_offset": 3899936
+      },
+      {
+        "dex_method_index": 25142,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getExpireTimeMax",
+        "descriptor": "()Ljava/lang/Long;",
+        "access_flags": 17,
+        "code_item_offset": 3899960
+      },
+      {
+        "dex_method_index": 25143,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getInGracePeriod",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "access_flags": 17,
+        "code_item_offset": 3899792
+      },
+      {
+        "dex_method_index": 25144,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getLastMemberShipType",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 3900104
+      },
+      {
+        "dex_method_index": 25145,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getMembershipDetailMap",
+        "descriptor": "()Ljava/util/Map;",
+        "access_flags": 17,
+        "code_item_offset": 3900680
+      },
+      {
+        "dex_method_index": 25146,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getMembershipDetailMapV2",
+        "descriptor": "()Ljava/util/Map;",
+        "access_flags": 17,
+        "code_item_offset": 3900704
+      },
+      {
+        "dex_method_index": 25147,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getMembershipLandingPage",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 3900128
+      },
+      {
+        "dex_method_index": 25148,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getModifierVipLabelSuffix",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 3900152
+      },
+      {
+        "dex_method_index": 25149,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getSideBarVipEntrance",
+        "descriptor": "()Lcom/luna/biz/entitlement/entity/VipEntrance;",
+        "access_flags": 17,
+        "code_item_offset": 3899184
+      },
+      {
+        "dex_method_index": 25150,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getVipEntranceLabel",
+        "descriptor": "()Lcom/luna/biz/entitlement/entity/VipEntrance;",
+        "access_flags": 17,
+        "code_item_offset": 3899208
+      },
+      {
+        "dex_method_index": 25151,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getVipLabelSuffix",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 3900176
+      },
+      {
+        "dex_method_index": 25152,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "getVipStage",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 3900200
+      },
+      {
+        "dex_method_index": 25153,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "hashCode",
+        "descriptor": "()I",
+        "access_flags": 1,
+        "code_item_offset": 3899232
+      },
+      {
+        "dex_method_index": 25154,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "isAboutToExpired",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "access_flags": 17,
+        "code_item_offset": 3899816
+      },
+      {
+        "dex_method_index": 25155,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "isPayingUser",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "access_flags": 17,
+        "code_item_offset": 3899840
+      },
+      {
+        "dex_method_index": 25156,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "isVip",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "access_flags": 17,
+        "code_item_offset": 3899864
+      },
+      {
+        "dex_method_index": 25157,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "toString",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 1,
+        "code_item_offset": 3900224
+      }
+    ],
+    "annotations": [
+      {
+        "annotation_item_offset": 11004605,
+        "visibility": 1,
+        "type": "Lkotlin/Metadata;",
+        "elements": {
+          "d1": [
+            "��F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n��\n\u0002\u0010\t\n��\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b-\n\u0002\u0010��\n��\n\u0002\u0010\b\n\u0002\b\u0002\b\b\u0018��2\u00020\u00012\u00020\u0002Bß\u0001\u0012\n\b\u0002\u0010\u0003\u001a\u0004\u0018\u00010\u0004\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u0006\u0012\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u0004\u0012\u0016\b\u0002\u0010\u0010\u001a\u0010\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u0012\u0018\u00010\u0011\u0012\u0016\b\u0002\u0010\u0013\u001a\u0010\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u0012\u0018\u00010\u0011\u0012\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u0015\u0012\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\u0015\u0012\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u0015\u0012\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\n¢\u0006\u0004\b\u0019\u0010\u001aJ\u0010\u0010/\u001a\u0004\u0018\u00010\u0004HÆ\u0003¢\u0006\u0002\u0010\u001cJ\u0010\u00100\u001a\u0004\u0018\u00010\u0006HÆ\u0003¢\u0006\u0002\u0010\u001fJ\u0010\u00101\u001a\u0004\u0018\u00010\u0006HÆ\u0003¢\u0006\u0002\u0010\u001fJ\u0010\u00102\u001a\u0004\u0018\u00010\u0006HÆ\u0003¢\u0006\u0002\u0010\u001fJ\u000b\u00103\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u00104\u001a\u0004\u0018\u00010\nHÆ\u0003J\u000b\u00105\u001a\u0004\u0018\u00010\nHÆ\u0003J\u0010\u00106\u001a\u0004\u0018\u00010\u0006HÆ\u0003¢\u0006\u0002\u0010\u001fJ\u000b\u00107\u001a\u0004\u0018\u00010\nHÆ\u0003J\u0010\u00108\u001a\u0004\u0018\u00010\u0004HÆ\u0003¢\u0006\u0002\u0010\u001cJ\u0017\u00109\u001a\u0010\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u0012\u0018\u00010\u0011HÆ\u0003J\u0017\u0010:\u001a\u0010\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u0012\u0018\u00010\u0011HÆ\u0003J\u000b\u0010;\u001a\u0004\u0018\u00010\u0015HÆ\u0003J\u000b\u0010<\u001a\u0004\u0018\u00010\u0015HÆ\u0003J\u000b\u0010=\u001a\u0004\u0018\u00010\u0015HÆ\u0003J\u000b\u0010>\u001a\u0004\u0018\u00010\nHÆ\u0003Jæ\u0001\u0010?\u001a\u00020��2\n\b\u0002\u0010\u0003\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\n2\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00042\u0016\b\u0002\u0010\u0010\u001a\u0010\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u0012\u0018\u00010\u00112\u0016\b\u0002\u0010\u0013\u001a\u0010\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u0012\u0018\u00010\u00112\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u00152\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\u00152\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u00152\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\nHÆ\u0001¢\u0006\u0002\u0010@J\u0013\u0010A\u001a\u00020\u00062\b\u0010B\u001a\u0004\u0018\u00010CHÖ\u0003J\t\u0010D\u001a\u00020EHÖ\u0001J\t\u0010F\u001a\u00020\nHÖ\u0001R\u001a\u0010\u0003\u001a\u0004\u0018\u00010\u00048\u0006X\u0004¢\u0006\n\n\u0002\u0010\u001d\u001a\u0004\b\u001b\u0010\u001cR\u001a\u0010\u0005\u001a\u0004\u0018\u00010\u00068\u0006X\u0004¢\u0006\n\n\u0002\u0010 \u001a\u0004\b\u001e\u0010\u001fR\u001a\u0010\u0007\u001a\u0004\u0018\u00010\u00068\u0006X\u0004¢\u0006\n\n\u0002\u0010 \u001a\u0004\b\u0007\u0010\u001fR\u001a\u0010\b\u001a\u0004\u0018\u00010\u00068\u0006X\u0004¢\u0006\n\n\u0002\u0010 \u001a\u0004\b\b\u0010\u001fR\u0018\u0010\t\u001a\u0004\u0018\u00010\n8\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b!\u0010\"R\u0018\u0010\u000b\u001a\u0004\u0018\u00010\n8\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b#\u0010\"R\u0018\u0010\f\u001a\u0004\u0018\u00010\n8\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b$\u0010\"R\u001a\u0010\r\u001a\u0004\u0018\u00010\u00068\u0006X\u0004¢\u0006\n\n\u0002\u0010 \u001a\u0004\b\r\u0010\u001fR\u0018\u0010\u000e\u001a\u0004\u0018\u00010\n8\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b%\u0010\"R\u001a\u0010\u000f\u001a\u0004\u0018\u00010\u00048\u0006X\u0004¢\u0006\n\n\u0002\u0010\u001d\u001a\u0004\b&\u0010\u001cR$\u0010\u0010\u001a\u0010\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u0012\u0018\u00010\u00118\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b'\u0010(R$\u0010\u0013\u001a\u0010\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u0012\u0018\u00010\u00118\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b)\u0010(R\u0018\u0010\u0014\u001a\u0004\u0018\u00010\u00158\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b*\u0010+R\u0018\u0010\u0016\u001a\u0004\u0018\u00010\u00158\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b,\u0010+R\u0018\u0010\u0017\u001a\u0004\u0018\u00010\u00158\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b-\u0010+R\u0018\u0010\u0018\u001a\u0004\u0018\u00010\n8\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b.\u0010\"¨\u0006G"
+          ],
+          "d2": [
+            "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+            "Lcom/luna/biz/entitlement/core/commerceinfo/api/ICommerceInfoEntity;",
+            "Lcom/luna/common/tea/json/KeepElement;",
+            "expireDate",
+            "",
+            "inGracePeriod",
+            "",
+            "isPayingUser",
+            "isVip",
+            "vipLabelSuffix",
+            "",
+            "vipStage",
+            "lastMemberShipType",
+            "isAboutToExpired",
+            "modifierVipLabelSuffix",
+            "expireTimeMax",
+            "membershipDetailMap",
+            "",
+            "Lcom/luna/biz/entitlement/core/commerceinfo/entity/MembershipDetail;",
+            "membershipDetailMapV2",
+            "vipEntranceLabel",
+            "Lcom/luna/biz/entitlement/entity/VipEntrance;",
+            "sideBarVipEntrance",
+            "defaultVipEntrance",
+            "membershipLandingPage",
+            "<init>",
+            "(Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lcom/luna/biz/entitlement/entity/VipEntrance;Lcom/luna/biz/entitlement/entity/VipEntrance;Lcom/luna/biz/entitlement/entity/VipEntrance;Ljava/lang/String;)V",
+            "getExpireDate",
+            "()Ljava/lang/Long;",
+            "Ljava/lang/Long;",
+            "getInGracePeriod",
+            "()Ljava/lang/Boolean;",
+            "Ljava/lang/Boolean;",
+            "getVipLabelSuffix",
+            "()Ljava/lang/String;",
+            "getVipStage",
+            "getLastMemberShipType",
+            "getModifierVipLabelSuffix",
+            "getExpireTimeMax",
+            "getMembershipDetailMap",
+            "()Ljava/util/Map;",
+            "getMembershipDetailMapV2",
+            "getVipEntranceLabel",
+            "()Lcom/luna/biz/entitlement/entity/VipEntrance;",
+            "getSideBarVipEntrance",
+            "getDefaultVipEntrance",
+            "getMembershipLandingPage",
+            "component1",
+            "component2",
+            "component3",
+            "component4",
+            "component5",
+            "component6",
+            "component7",
+            "component8",
+            "component9",
+            "component10",
+            "component11",
+            "component12",
+            "component13",
+            "component14",
+            "component15",
+            "component16",
+            "copy",
+            "(Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lcom/luna/biz/entitlement/entity/VipEntrance;Lcom/luna/biz/entitlement/entity/VipEntrance;Lcom/luna/biz/entitlement/entity/VipEntrance;Ljava/lang/String;)Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+            "equals",
+            "other",
+            "",
+            "hashCode",
+            "",
+            "toString",
+            "biz-entitlement-impl_release"
+          ],
+          "k": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "01",
+            "unsigned_value": 1
+          },
+          "mv": [
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "02",
+              "unsigned_value": 2
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "01",
+              "unsigned_value": 1
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            }
+          ],
+          "xi": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "30",
+            "unsigned_value": 48
+          }
+        }
+      }
+    ],
+    "parameter_annotations": [
+      {
+        "dex_method_index": 25119,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lcom/luna/biz/entitlement/entity/VipEntrance;Lcom/luna/biz/entitlement/entity/VipEntrance;Lcom/luna/biz/entitlement/entity/VipEntrance;Ljava/lang/String;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 25137,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "copy",
+        "descriptor": "(Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Long;Ljava/util/Map;Ljava/util/Map;Lcom/luna/biz/entitlement/entity/VipEntrance;Lcom/luna/biz/entitlement/entity/VipEntrance;Lcom/luna/biz/entitlement/entity/VipEntrance;Ljava/lang/String;)Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 25139,
+        "owner": "Lcom/luna/biz/entitlement/core/commerceinfo/entity/CommerceInfoMemberShipEntity;",
+        "name": "equals",
+        "descriptor": "(Ljava/lang/Object;)Z",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 10679620,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

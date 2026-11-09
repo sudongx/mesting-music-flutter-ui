@@ -1,0 +1,63 @@
+{"protocolVersion":"0.1.1","runnerVersion":"1.30.0","pid":327048,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"D:/AnLi/test/release_156_storage_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading D:/AnLi/test/release_156_storage_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":2}
+{"count":3,"time":11,"type":"allSuites"}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":20340}
+{"group":{"id":2,"suiteID":0,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":8,"line":null,"column":null,"url":null},"type":"group","time":20433}
+{"test":{"id":3,"name":"NetEase restore failure does not replace a healthy multi-account Kugou store","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":82,"column":3,"url":"file:///D:/AnLi/test/release_156_storage_test.dart"},"type":"testStart","time":20434}
+{"testID":3,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20809}
+{"test":{"id":4,"name":"Kugou restore failure leaves a healthy NetEase login on its original store","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":115,"column":3,"url":"file:///D:/AnLi/test/release_156_storage_test.dart"},"type":"testStart","time":20810}
+{"testID":4,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20847}
+{"test":{"id":5,"name":"empty archive with broken old key leaves the 50/51 primary path usable","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":138,"column":3,"url":"file:///D:/AnLi/test/release_156_storage_test.dart"},"type":"testStart","time":20848}
+{"testID":5,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20858}
+{"test":{"id":6,"name":"two unreadable old stores cannot block a verified replacement or require data clear","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":154,"column":3,"url":"file:///D:/AnLi/test/release_156_storage_test.dart"},"type":"testStart","time":20859}
+{"testID":6,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20872}
+{"test":{"id":7,"name":"reopen failure leaves the old pointer and credentials untouched","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":185,"column":3,"url":"file:///D:/AnLi/test/release_156_storage_test.dart"},"type":"testStart","time":20873}
+{"testID":7,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20879}
+{"test":{"id":8,"name":"existing 54/55 envelope and logout tombstone remain authoritative","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":200,"column":3,"url":"file:///D:/AnLi/test/release_156_storage_test.dart"},"type":"testStart","time":20879}
+{"testID":8,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20889}
+{"test":{"id":9,"name":"first write resolves an existing archive instead of shadowing it in legacy","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":220,"column":3,"url":"file:///D:/AnLi/test/release_156_storage_test.dart"},"type":"testStart","time":20889}
+{"testID":9,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20895}
+{"test":{"id":10,"name":"cancelled local publication rolls back the opaque pointer","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":236,"column":3,"url":"file:///D:/AnLi/test/release_156_storage_test.dart"},"type":"testStart","time":20896}
+{"testID":10,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20903}
+{"suite":{"id":11,"platform":"vm","path":"D:/AnLi/test/release_154_storage_test.dart"},"type":"suite","time":21054}
+{"test":{"id":12,"name":"loading D:/AnLi/test/release_154_storage_test.dart","suiteID":11,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":21054}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":12,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":28001}
+{"group":{"id":13,"suiteID":11,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":6,"line":null,"column":null,"url":null},"type":"group","time":28003}
+{"test":{"id":14,"name":"timed-out callers reuse one native read and receive its late completion","suiteID":11,"groupIDs":[13],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":134,"root_column":3,"root_url":"file:///D:/AnLi/test/release_154_storage_test.dart"},"type":"testStart","time":28008}
+{"testID":14,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":28822}
+{"test":{"id":15,"name":"failed Kugou cold restore -> verified login -> new-store restore, without touching old bytes","suiteID":11,"groupIDs":[13],"metadata":{"skip":false,"skipReason":null},"line":160,"column":3,"url":"file:///D:/AnLi/test/release_154_storage_test.dart"},"type":"testStart","time":28823}
+{"testID":15,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":32691}
+{"test":{"id":16,"name":"malformed legacy snapshot is retained and only explicit verified login writes recovery","suiteID":11,"groupIDs":[13],"metadata":{"skip":false,"skipReason":null},"line":206,"column":3,"url":"file:///D:/AnLi/test/release_154_storage_test.dart"},"type":"testStart","time":32692}
+{"testID":16,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":32697}
+{"test":{"id":17,"name":"failed recovery write cannot publish a login or reset the old namespace","suiteID":11,"groupIDs":[13],"metadata":{"skip":false,"skipReason":null},"line":229,"column":3,"url":"file:///D:/AnLi/test/release_154_storage_test.dart"},"type":"testStart","time":32697}
+{"testID":17,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":32703}
+{"test":{"id":18,"name":"incomplete HTTP-success credentials report remote validation, not local storage","suiteID":11,"groupIDs":[13],"metadata":{"skip":false,"skipReason":null},"line":259,"column":3,"url":"file:///D:/AnLi/test/release_154_storage_test.dart"},"type":"testStart","time":32704}
+{"testID":18,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":32710}
+{"test":{"id":19,"name":"NetEase recovery survives new-store creation and logout tombstone prevents old-login resurrection","suiteID":11,"groupIDs":[13],"metadata":{"skip":false,"skipReason":null},"line":289,"column":3,"url":"file:///D:/AnLi/test/release_154_storage_test.dart"},"type":"testStart","time":32710}
+{"testID":19,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33262}
+{"suite":{"id":20,"platform":"vm","path":"D:/AnLi/test/release_155_storage_test.dart"},"type":"suite","time":34143}
+{"test":{"id":21,"name":"loading D:/AnLi/test/release_155_storage_test.dart","suiteID":20,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":34144}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":21,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":55395}
+{"group":{"id":22,"suiteID":20,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":7,"line":null,"column":null,"url":null},"type":"group","time":55395}
+{"test":{"id":23,"name":"readable pre-upgrade kugou credentials restore and switch without login or replacement","suiteID":20,"groupIDs":[22],"metadata":{"skip":false,"skipReason":null},"line":75,"column":5,"url":"file:///D:/AnLi/test/release_155_storage_test.dart"},"type":"testStart","time":55396}
+{"testID":23,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":55768}
+{"test":{"id":24,"name":"readable pre-upgrade netease credentials restore and switch without login or replacement","suiteID":20,"groupIDs":[22],"metadata":{"skip":false,"skipReason":null},"line":75,"column":5,"url":"file:///D:/AnLi/test/release_155_storage_test.dart"},"type":"testStart","time":55768}
+{"testID":24,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":55798}
+{"test":{"id":25,"name":"invalid old NetEase key leaves Kugou selected; verified recovery survives a new store","suiteID":20,"groupIDs":[22],"metadata":{"skip":false,"skipReason":null},"line":97,"column":3,"url":"file:///D:/AnLi/test/release_155_storage_test.dart"},"type":"testStart","time":55799}
+{"testID":25,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":55882}
+{"test":{"id":26,"name":"invalid Kugou target can be reauthenticated while NetEase remains usable","suiteID":20,"groupIDs":[22],"metadata":{"skip":false,"skipReason":null},"line":151,"column":3,"url":"file:///D:/AnLi/test/release_155_storage_test.dart"},"type":"testStart","time":55883}
+{"testID":26,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":55910}
+{"test":{"id":27,"name":"failed recovery save cannot replace the healthy active platform","suiteID":20,"groupIDs":[22],"metadata":{"skip":false,"skipReason":null},"line":190,"column":3,"url":"file:///D:/AnLi/test/release_155_storage_test.dart"},"type":"testStart","time":55911}
+{"testID":27,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":55942}
+{"test":{"id":28,"name":"incomplete fresh authentication cannot open a recovery overlay","suiteID":20,"groupIDs":[22],"metadata":{"skip":false,"skipReason":null},"line":214,"column":3,"url":"file:///D:/AnLi/test/release_155_storage_test.dart"},"type":"testStart","time":55943}
+{"testID":28,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":55959}
+{"test":{"id":29,"name":"recovered platform logout tombstone does not resurrect old credentials or remove the other platform","suiteID":20,"groupIDs":[22],"metadata":{"skip":false,"skipReason":null},"line":243,"column":3,"url":"file:///D:/AnLi/test/release_155_storage_test.dart"},"type":"testStart","time":55960}
+{"testID":29,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":55991}
+{"success":true,"type":"done","time":56095}

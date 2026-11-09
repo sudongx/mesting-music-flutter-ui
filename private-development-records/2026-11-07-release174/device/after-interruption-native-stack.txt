@@ -1,0 +1,62 @@
+11-07 12:09:35.262 28348 28348 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+11-07 12:09:35.262 28348 28348 F DEBUG   : Build fingerprint: 'Xiaomi/shennong/shennong:16/BP2A.250605.031.A3/OS3.0.309.0.WNBCNXM:user/release-keys'
+11-07 12:09:35.262 28348 28348 F DEBUG   : Revision: '0'
+11-07 12:09:35.262 28348 28348 F DEBUG   : ABI: 'arm64'
+11-07 12:09:35.262 28348 28348 F DEBUG   : Timestamp: 2026-11-07 12:09:34.344285640+0800
+11-07 12:09:35.262 28348 28348 F DEBUG   : Process uptime: 2236s
+11-07 12:09:35.262 28348 28348 F DEBUG   : Cmdline: com.mesting.music
+11-07 12:09:35.262 28348 28348 F DEBUG   : pid: 1770, tid: 18463, name: 1.raster  >>> com.mesting.music <<<
+11-07 12:09:35.262 28348 28348 F DEBUG   : uid: 10529
+11-07 12:09:35.262 28348 28348 F DEBUG   : tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+11-07 12:09:35.262 28348 28348 F DEBUG   : pac_enabled_keys: 000000000000000f (PR_PAC_APIAKEY, PR_PAC_APIBKEY, PR_PAC_APDAKEY, PR_PAC_APDBKEY)
+11-07 12:09:35.262 28348 28348 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x000000000000001c
+11-07 12:09:35.262 28348 28348 F DEBUG   : Cause: null pointer dereference
+11-07 12:09:35.262 28348 28348 F DEBUG   :     x0  00000000ffffffff  x1  0000000000000000  x2  00000070bddc2444  x3  0000006d88c02148
+11-07 12:09:35.262 28348 28348 F DEBUG   :     x4  0000000000000248  x5  00000000153b2e6e  x6  0000000000000000  x7  7f7f7f7f7f7f7f7f
+11-07 12:09:35.262 28348 28348 F DEBUG   :     x8  00000000ffffffff  x9  000000017ef87820  x10 00000070bddc2c10  x11 00000000ac585d52
+11-07 12:09:35.262 28348 28348 F DEBUG   :     x12 000000000024800f  x13 0000006d7340ab74  x14 0000000000004000  x15 0000000000000000
+11-07 12:09:35.262 28348 28348 F DEBUG   :     x16 0000000000000000  x17 00000070bdd1a570  x18 0000006d88964000  x19 b400006f68daa670
+11-07 12:09:35.262 28348 28348 F DEBUG   :     x20 0000000000000004  x21 0000000040ab0a02  x22 0000000000000004  x23 00000000ffffffff
+11-07 12:09:35.262 28348 28348 F DEBUG   :     x24 0000000000000000  x25 0000000000000001  x26 0000006ba237970c  x27 0000000000000004
+11-07 12:09:35.262 28348 28348 F DEBUG   :     x28 0000006d88c02460  x29 0000006d88c02250
+11-07 12:09:35.262 28348 28348 F DEBUG   :     lr  0000006d733a030c  sp  0000006d88c02240  pc  0000006d733a024c  pst 0000000080001000
+11-07 12:09:35.262 28348 28348 F DEBUG   : 38 total frames
+11-07 12:09:35.262 28348 28348 F DEBUG   : backtrace:
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #00 pc 00000000000d524c  /vendor/lib64/hw/vulkan.adreno.so (!!!0000!65bb4f16e1c4caf7a56f18c58bd23d!a0053eb399!+252) (BuildId: 33f69a5b3c5ea87c251952c3e0b7a7a2)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #01 pc 00000000000d68ec  /vendor/lib64/hw/vulkan.adreno.so (!!!0000!e44b417ad7dd37c41dc35350d53258!a0053eb399!+3900) (BuildId: 33f69a5b3c5ea87c251952c3e0b7a7a2)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #02 pc 00000000001f21e8  /vendor/lib64/hw/vulkan.adreno.so (!!!0000!d0b635c8563f6c0e6cf2954422725a!a0053eb399!+392) (BuildId: 33f69a5b3c5ea87c251952c3e0b7a7a2)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #03 pc 00000000001ccc80  /vendor/lib64/hw/vulkan.adreno.so (qglinternal::vkCmdDraw(VkCommandBuffer_T*, unsigned int, unsigned int, unsigned int, unsigned int)+48) (BuildId: 33f69a5b3c5ea87c251952c3e0b7a7a2)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #04 pc 00000000009be2d0  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #05 pc 0000000000966c18  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #06 pc 0000000000945a20  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #07 pc 0000000000945950  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #08 pc 0000000000965b84  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #09 pc 0000000000964074  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #10 pc 0000000000963f58  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #11 pc 0000000000978908  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #12 pc 000000000093075c  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #13 pc 0000000000936c68  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #14 pc 00000000005c78e0  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #15 pc 00000000009390bc  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #16 pc 0000000000a5889c  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #17 pc 0000000000891248  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #18 pc 0000000000891128  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #19 pc 00000000008911b0  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #20 pc 00000000009dec30  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.262 28348 28348 F DEBUG   :       #21 pc 00000000009de6f0  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.263 28348 28348 F DEBUG   :       #22 pc 00000000009dd4cc  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.263 28348 28348 F DEBUG   :       #23 pc 00000000009ddf5c  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.263 28348 28348 F DEBUG   :       #24 pc 00000000009dfd64  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.263 28348 28348 F DEBUG   :       #25 pc 00000000009dd93c  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.263 28348 28348 F DEBUG   :       #26 pc 00000000009dd6d8  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.263 28348 28348 F DEBUG   :       #27 pc 00000000009ece68  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.263 28348 28348 F DEBUG   :       #28 pc 000000000055f3b0  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.263 28348 28348 F DEBUG   :       #29 pc 000000000056550c  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.263 28348 28348 F DEBUG   :       #30 pc 0000000000035b54  /system/lib64/libutils.so (android::Looper::pollOnce(int, int*, int*, void**)+660) (BuildId: 939c3227e6641bbd85bde658a0cedbdb)
+11-07 12:09:35.263 28348 28348 F DEBUG   :       #31 pc 0000000000029ab0  /system/lib64/libandroid.so (ALooper_pollOnce+104) (BuildId: 7131adaa40e723232915b2d3d82ce3c6)
+11-07 12:09:35.263 28348 28348 F DEBUG   :       #32 pc 0000000000565498  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.263 28348 28348 F DEBUG   :       #33 pc 000000000055f308  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.263 28348 28348 F DEBUG   :       #34 pc 000000000056333c  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.263 28348 28348 F DEBUG   :       #35 pc 00000000005631ac  /data/app/~~Tdlx8jEU_etKyWaaLKrOCQ==/com.mesting.music-wKgKOPyO4qENDqLIFT-Khg==/base.apk!libflutter.so (offset 0x17a8000) (BuildId: 7f9d8a668f14166c413851535d650d072dc0053e)
+11-07 12:09:35.263 28348 28348 F DEBUG   :       #36 pc 0000000000082d74  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+184) (BuildId: 223a572c9f034c6a9337d8b3bedc75f3)
+11-07 12:09:35.263 28348 28348 F DEBUG   :       #37 pc 00000000000751f0  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: 223a572c9f034c6a9337d8b3bedc75f3)

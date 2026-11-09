@@ -1,0 +1,81 @@
+{
+  "actualApk": "release\\Mesting-Music-v1.0.54.apk",
+  "jniClassesDefinedInDex": {
+    "Lcom/mesting/music/MusicHttpReply;": "classes.dex",
+    "Lcom/mesting/music/MusicNativeTransport;": "classes.dex",
+    "Lcom/mesting/music/MusicStreamReply;": "classes.dex"
+  },
+  "jniMethodSignaturesAndFlagsChecked": [
+    {
+      "name": "nativeInstall",
+      "descriptor": "()Z"
+    },
+    {
+      "name": "exchange",
+      "descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[BJZ)Lcom/mesting/music/MusicHttpReply;"
+    },
+    {
+      "name": "openStream",
+      "descriptor": "(Ljava/lang/String;)Lcom/mesting/music/MusicStreamReply;"
+    },
+    {
+      "name": "readStream",
+      "descriptor": "(JI)[B"
+    },
+    {
+      "name": "closeStream",
+      "descriptor": "(J)V"
+    }
+  ],
+  "jniPublicDtoFieldTypesVerified": {
+    "Lcom/mesting/music/MusicHttpReply;": {
+      "status": "I",
+      "body": "[B",
+      "cookies": "[REDACTED]",
+      "finalUrl": "Ljava/lang/String;",
+      "location": "Ljava/lang/String;",
+      "ssaCode": "Ljava/lang/String;",
+      "error": "Ljava/lang/String;"
+    },
+    "Lcom/mesting/music/MusicStreamReply;": {
+      "id": "J",
+      "status": "I",
+      "length": "J",
+      "contentType": "Ljava/lang/String;",
+      "error": "Ljava/lang/String;"
+    }
+  },
+  "rebuiltRustLibraries": [
+    {
+      "abi": "arm64-v8a",
+      "apkSha256": "63b2b1ba786f4788191ba8c799258c9c22b68c81db366e003513928afe4801fd",
+      "buildInputSha256": "65ec54c56650d719201143c19c0d96ef7e670ad405f1b66890cdc868ef5b8544",
+      "exactNdkStrippedInputMatch": true,
+      "jniInstallAndExistingCAbiExported": true
+    },
+    {
+      "abi": "armeabi-v7a",
+      "apkSha256": "5d4efeb09b9d560dcbd1d9ee4bfe8e77d2b64bbab39cbc8c06149c8a5b09e284",
+      "buildInputSha256": "686db42a51ca7fbeadda46fad30073d5aafccdb00899367d65cf841424e034d8",
+      "exactNdkStrippedInputMatch": true,
+      "jniInstallAndExistingCAbiExported": true
+    }
+  ],
+  "storageFamilyScenariosPassed": 6,
+  "storageFamilyInputs": [
+    {
+      "path": "third_party\\flutter_secure_storage\\package\\android\\src\\main\\java\\com\\it_nomads\\fluttersecurestorage\\StorageErrorFamily.java",
+      "sha256": "2750fe96bb1b318372fa5c2331c92c3955f956654a7db179f902a20af2fc50ca"
+    },
+    {
+      "path": "third_party\\flutter_secure_storage\\package\\android\\src\\main\\java\\com\\it_nomads\\fluttersecurestorage\\SecureCommitException.java",
+      "sha256": "60f63dd709c9e806cdeb31bf44732c6037574ee5568a726ac489042bd2c51d28"
+    },
+    {
+      "path": "test\\native\\Release154StorageFamilyTest.java",
+      "sha256": "33df3cb11200cdd4c6f21be7090c804f67b9544ee674b2940be21e857055fa2e"
+    }
+  ],
+  "androidRuntimeExecuted": false,
+  "deviceAccess": false
+}

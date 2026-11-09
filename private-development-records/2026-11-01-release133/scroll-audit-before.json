@@ -1,0 +1,767 @@
+[
+  {
+    "path": "lib/shared/widgets/beta_choice_field.dart",
+    "line": 49,
+    "snippet": "                               child: SingleChildScrollView(\n                                 child: Column(\n                                   mainAxisSize: MainAxisSize.min,\n                                   children: [\n                                     for (final item in items)\n                                       ListTile(\n                                         enabled: item.enabled,\n                                         title: item.child,\n                                         trailing: item.value == field.value\n                                             ? const Icon(\n                                                 CupertinoIcons.check_mark,\n                                                 size: 18,\n                                               )\n                                             : null,\n                                         onTap: item.enabled"
+  },
+  {
+    "path": "lib/shared/widgets/beta_glass_scroll_body.dart",
+    "line": 23,
+    "snippet": "    builder: (context, viewport) => ListView(\n      controller: controller,\n      keyboardDismissBehavior: keyboardDismissBehavior,\n      padding: EdgeInsets.zero,\n      children: [\n        ConstrainedBox(\n          constraints: BoxConstraints(minHeight: viewport.maxHeight),\n          child: ColoredBox(\n            key: const ValueKey('glass-scroll-backing-surface'),\n            color: Theme.of(context).colorScheme.surface,\n            child: Padding(\n              padding: padding\n                  .resolve(Directionality.of(context))\n                  .copyWith(\n                    bottom: BetaContentInsets.bottomOf("
+  },
+  {
+    "path": "lib/shared/widgets/beta_text_editing.dart",
+    "line": 258,
+    "snippet": "            child: SingleChildScrollView(\n              scrollDirection: _expanded ? Axis.vertical : Axis.horizontal,\n              child: _expanded\n                  ? Column(\n                      mainAxisSize: MainAxisSize.min,\n                      children: [\n                        Align(\n                          alignment: Alignment.centerRight,\n                          child: CupertinoButton(\n                            onPressed: () => setState(() => _expanded = false),\n                            child: const Icon(\n                              CupertinoIcons.chevron_down,\n                              semanticLabel: '收回编辑菜单',\n                              size: 19,\n                            ),"
+  },
+  {
+    "path": "lib/features/audiobooks/audiobooks_page.dart",
+    "line": 189,
+    "snippet": "        child: CustomScrollView(\n          controller: _scroll,\n          slivers: [\n            SliverPadding(\n              padding: const EdgeInsets.fromLTRB(22, 16, 22, 22),\n              sliver: SliverToBoxAdapter(\n                child: Column(\n                  crossAxisAlignment: CrossAxisAlignment.start,\n                  children: [\n                    ListenableBuilder(\n                      listenable: store,\n                      builder: (context, _) {\n                        final entries = store.entries.take(3).toList();\n                        if (entries.isEmpty) return const SizedBox.shrink();\n                        return Column("
+  },
+  {
+    "path": "lib/features/audiobooks/audiobooks_page.dart",
+    "line": 278,
+    "snippet": "                        child: ListView.separated(\n                          scrollDirection: Axis.horizontal,\n                          itemCount: _categories.length,\n                          separatorBuilder: (_, _) => const SizedBox(width: 8),\n                          itemBuilder: (context, index) {\n                            final category = _categories[index];\n                            return ChoiceChip(\n                              label: Text(category.name),\n                              selected:\n                                  _query.isEmpty && _category == category.id,\n                              onSelected: (_) {\n                                FocusScope.of(context).unfocus();\n                                _search.clear();\n                                _query = '';\n                                _bottomSearch.hasResults = false;"
+  },
+  {
+    "path": "lib/features/audiobooks/audiobooks_page.dart",
+    "line": 579,
+    "snippet": "      child: CustomScrollView(\n        controller: _scroll,\n        slivers: [\n          SliverPadding(\n            padding: const EdgeInsets.fromLTRB(22, 22, 22, 20),\n            sliver: SliverToBoxAdapter(\n              child: Column(\n                crossAxisAlignment: CrossAxisAlignment.start,\n                children: [\n                  Row(\n                    crossAxisAlignment: CrossAxisAlignment.start,\n                    children: [\n                      _BookCover(\n                        album: _album,\n                        size: MediaQuery.sizeOf(context).width < 350 ? 90 : 112,"
+  },
+  {
+    "path": "lib/features/downloads/audio_downloads_page.dart",
+    "line": 235,
+    "snippet": "  }) => CustomScrollView(\n    key: PageStorageKey('audio-downloads-$downloaded'),\n    slivers: [\n      SliverToBoxAdapter(\n        child: Padding(\n          padding: const EdgeInsets.fromLTRB(22, 8, 22, 20),\n          child: Column(\n            crossAxisAlignment: CrossAxisAlignment.stretch,\n            children: [\n              Row(\n                key: downloaded ? const ValueKey('download-actions-row') : null,\n                children: [\n                  Expanded(\n                    child: BetaGlassButton(\n                      key: downloaded"
+  },
+  {
+    "path": "lib/features/downloads/audio_download_quality.dart",
+    "line": 95,
+    "snippet": "      child: SingleChildScrollView(\n        padding: const EdgeInsets.all(20),\n        child: Column(\n          crossAxisAlignment: CrossAxisAlignment.stretch,\n          mainAxisSize: MainAxisSize.min,\n          children: [\n            const Text(\n              '选择下载音质',\n              style: TextStyle(fontSize: 21, fontWeight: FontWeight.w600),\n            ),\n            const SizedBox(height: 8),\n            Text(\n              widget.tracks.length == 1\n                  ? widget.tracks.first.title\n                  : '${widget.tracks.length} 首歌曲 · 共同支持的音质',"
+  },
+  {
+    "path": "lib/features/kugou_together/together_page.dart",
+    "line": 57,
+    "snippet": "            : CustomScrollView(\n                slivers: [\n                  SliverPadding(\n                    padding: const EdgeInsets.fromLTRB(22, 18, 22, 16),\n                    sliver: SliverToBoxAdapter(\n                      child: Column(\n                        crossAxisAlignment: CrossAxisAlignment.start,\n                        children: [\n                          if (controller.active)\n                            _roomHeader(context, controller)\n                          else\n                            _lobbyHeader(context, controller),\n                          if (controller.error != null)\n                            Padding(\n                              padding: const EdgeInsets.only(top: 16),"
+  },
+  {
+    "path": "lib/features/kugou_together/together_page.dart",
+    "line": 336,
+    "snippet": "            child: ListView.separated(\n              scrollDirection: Axis.horizontal,\n              itemCount: controller.members.length,\n              separatorBuilder: (_, _) => const SizedBox(width: 18),\n              itemBuilder: (context, index) {\n                final member = controller.members[index];\n                return SizedBox(\n                  width: 60,\n                  child: Column(\n                    children: [\n                      ClipOval(\n                        child: member.avatar.isEmpty\n                            ? Container(\n                                width: 48,\n                                height: 48,"
+  },
+  {
+    "path": "lib/features/music_platform/listening_sync_page.dart",
+    "line": 17,
+    "snippet": "      child: ListView(\n        padding: const EdgeInsets.fromLTRB(24, 20, 24, 210),\n        children: [\n          SwitchListTile.adaptive(\n            contentPadding: EdgeInsets.zero,\n            title: const Text('同步播放历史与听歌时长'),\n            subtitle: const Text('使用当前登录的酷狗账号'),\n            value: enabled,\n            onChanged: (value) async {\n              try {\n                await ref\n                    .read(platformListeningSyncEnabledProvider.notifier)\n                    .setEnabled(value);\n              } on Object {\n                if (context.mounted) {"
+  },
+  {
+    "path": "lib/features/recognition/song_recognition_page.dart",
+    "line": 191,
+    "snippet": "      child: ListView(\n        padding: const EdgeInsets.fromLTRB(24, 30, 24, 210),\n        children: [\n          const Text(\n            '让音乐告诉你答案',\n            textAlign: TextAlign.center,\n            style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700),\n          ),\n          const SizedBox(height: 12),\n          Text(\n            _active\n                ? (_matching ? '正在识别第 $_attempt 段录音…' : '正在聆听周围的音乐…')\n                : '轻点开始，识别正在播放的歌曲',\n            textAlign: TextAlign.center,\n            style: TextStyle(color: scheme.onSurfaceVariant),"
+  },
+  {
+    "path": "lib/features/themes/theme_gallery_page.dart",
+    "line": 198,
+    "snippet": "            child: CustomScrollView(\n              physics: const BouncingScrollPhysics(),\n              slivers: [\n                SliverPadding(\n                  padding: const EdgeInsets.fromLTRB(20, 22, 20, 18),\n                  sliver: SliverList.list(\n                    children: [\n                      const _PanelHeader(),\n                      const SizedBox(height: 16),\n                      if (DistributionChannel.isBeta) ...[\n                        const _SettingsHeading(\n                          title: '启动页',\n                          description: '下次冷启动时展示，视频保留原声；后台切回不会重播。',\n                        ),\n                        const SizedBox(height: 11),"
+  },
+  {
+    "path": "lib/features/themes/theme_gallery_page.dart",
+    "line": 261,
+    "snippet": "                        GridView.builder(\n                          shrinkWrap: true,\n                          physics: const NeverScrollableScrollPhysics(),\n                          itemCount: DistributionChannel.isBeta\n                              ? 1\n                              : MusicThemeIp.values.length,\n                          gridDelegate:\n                              const SliverGridDelegateWithFixedCrossAxisCount(\n                                crossAxisCount: 2,\n                                crossAxisSpacing: 9,\n                                mainAxisSpacing: 9,\n                                mainAxisExtent: 70,\n                              ),\n                          itemBuilder: (context, index) {\n                            final ip = MusicThemeIp.values[index];"
+  },
+  {
+    "path": "lib/features/themes/theme_gallery_page.dart",
+    "line": 801,
+    "snippet": "      child: SingleChildScrollView(\n        scrollDirection: Axis.horizontal,\n        physics: const BouncingScrollPhysics(),\n        child: Row(\n          children: [\n            for (final style in AppBrandStyle.values) ...[\n              _BrandStyleCard(\n                style: style,\n                selected: selected == style,\n                applying: applying == style,\n                enabled: applying == null,\n                onTap: () => onSelected(style),\n              ),\n              if (style != AppBrandStyle.values.last) const SizedBox(width: 10),\n            ],"
+  },
+  {
+    "path": "lib/features/themes/theme_gallery_page.dart",
+    "line": 956,
+    "snippet": "      child: SingleChildScrollView(\n        scrollDirection: Axis.horizontal,\n        physics: const BouncingScrollPhysics(),\n        child: Row(\n          children: [\n            for (final style in PlayerVisualStyle.values) ...[\n              _PlayerStyleCard(\n                style: style,\n                selected: style == selected,\n                onTap: () => onSelected(style),\n              ),\n              if (style != PlayerVisualStyle.values.last)\n                const SizedBox(width: 10),\n            ],\n          ],"
+  },
+  {
+    "path": "lib/features/themes/theme_gallery_page.dart",
+    "line": 1376,
+    "snippet": "          GridView.builder(\n            shrinkWrap: true,\n            physics: const NeverScrollableScrollPhysics(),\n            padding: EdgeInsets.zero,\n            itemCount: presets.length,\n            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(\n              crossAxisCount: 2,\n              crossAxisSpacing: 9,\n              mainAxisSpacing: 9,\n              mainAxisExtent: 112,\n            ),\n            itemBuilder: (context, index) {\n              final preset = presets[index];\n              return _IllustratedPresetCard(\n                preset: preset,"
+  },
+  {
+    "path": "lib/features/themes/theme_gallery_page.dart",
+    "line": 1674,
+    "snippet": "    return GridView.builder(\n      shrinkWrap: true,\n      physics: const NeverScrollableScrollPhysics(),\n      padding: EdgeInsets.zero,\n      itemCount: DistributionChannel.isBeta\n          ? ProgressDecoration.values.length - 1\n          : ProgressDecoration.values.length,\n      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(\n        crossAxisCount: 2,\n        crossAxisSpacing: 9,\n        mainAxisSpacing: 9,\n        mainAxisExtent: 48,\n      ),\n      itemBuilder: (context, index) {\n        final value = ProgressDecoration"
+  },
+  {
+    "path": "lib/features/social/presentation/chat_page.dart",
+    "line": 362,
+    "snippet": "      return ListView(\n        padding: const EdgeInsets.all(16),\n        children: [SocialErrorCard(error: _error!, onRetry: _loadMessages)],\n      );\n    }\n    if (_messages.isEmpty) {\n      return const Center(\n        child: Padding(\n          padding: EdgeInsets.all(28),\n          child: Text('打个招呼吧，也可以分享文字、图片、视频和语音。'),\n        ),\n      );\n    }\n    final currentUser = ref.watch(currentUserProvider);\n    final currentUid = currentUser?.uid;"
+  },
+  {
+    "path": "lib/features/social/presentation/chat_page.dart",
+    "line": 393,
+    "snippet": "          child: ListView.builder(\n            key: const ValueKey('chat-message-list'),\n            controller: _scrollController,\n            padding: const EdgeInsets.fromLTRB(14, 18, 14, 18),\n            itemCount: _messages.length,\n            itemBuilder: (context, index) {\n              final entry = _messages[index];\n              final message = entry.message;\n              final mine = message.senderUid == currentUid;\n              final previousMessage = index > 0\n                  ? _messages[index - 1].message\n                  : null;\n              return Column(\n                mainAxisSize: MainAxisSize.min,\n                children: ["
+  },
+  {
+    "path": "lib/features/social/presentation/chat_page.dart",
+    "line": 2690,
+    "snippet": "                      child: GridView.builder(\n                        physics: const NeverScrollableScrollPhysics(),\n                        padding: const EdgeInsets.symmetric(\n                          horizontal: 8,\n                          vertical: 6,\n                        ),\n                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(\n                          crossAxisCount: columns,\n                          mainAxisExtent: 66,\n                        ),\n                        itemCount: actions.length,\n                        itemBuilder: (context, index) {\n                          final action = actions[index];\n                          return _ChatMessageActionButton(\n                            action: action,"
+  },
+  {
+    "path": "lib/features/social/presentation/chat_page.dart",
+    "line": 4223,
+    "snippet": "            child: GridView.builder(\n              padding: const EdgeInsets.symmetric(horizontal: 2),\n              itemCount: category.items.length,\n              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(\n                crossAxisCount: 7,\n                mainAxisSpacing: 2,\n                crossAxisSpacing: 2,\n              ),\n              itemBuilder: (context, index) {\n                final emoji = category.items[index];\n                return InkWell(\n                  key: ValueKey('chat-emoji-$emoji'),\n                  onTap: () => widget.onSelected(emoji),\n                  borderRadius: BorderRadius.circular(14),\n                  child: Center("
+  },
+  {
+    "path": "lib/features/social/presentation/listen_together_sheet.dart",
+    "line": 164,
+    "snippet": "              error: (error, stackTrace) => ListView(\n                padding: const EdgeInsets.fromLTRB(20, 4, 20, 24),\n                children: [\n                  SocialErrorCard(\n                    error: error,\n                    onRetry: () => ref.invalidate(\n                      socialConnectionsProvider(SocialConnectionKind.following),\n                    ),\n                  ),\n                ],\n              ),\n              data: (connections) {\n                final friends = connections\n                    .where((connection) => connection.isFriend)\n                    .toList(growable: false);"
+  },
+  {
+    "path": "lib/features/social/presentation/listen_together_sheet.dart",
+    "line": 180,
+    "snippet": "                  return ListView(\n                    padding: const EdgeInsets.fromLTRB(20, 4, 20, 24),\n                    children: const [\n                      SocialEmptyState(\n                        icon: Icons.people_outline_rounded,\n                        title: '还没有可以一起听的好友',\n                        message: '与对方互相关注后，就能邀请对方进入一起听。',\n                      ),\n                    ],\n                  );\n                }\n                return ListView.separated(\n                  padding: const EdgeInsets.fromLTRB(14, 0, 14, 24),\n                  itemCount: friends.length,\n                  separatorBuilder: (context, index) =>"
+  },
+  {
+    "path": "lib/features/social/presentation/listen_together_sheet.dart",
+    "line": 191,
+    "snippet": "                return ListView.separated(\n                  padding: const EdgeInsets.fromLTRB(14, 0, 14, 24),\n                  itemCount: friends.length,\n                  separatorBuilder: (context, index) =>\n                      const SizedBox(height: 4),\n                  itemBuilder: (context, index) {\n                    final friend = friends[index];\n                    return InkWell(\n                      key: ValueKey('listen-together-friend-${friend.uid}'),\n                      onTap: () => Navigator.pop(context, friend),\n                      borderRadius: BorderRadius.circular(18),\n                      child: Padding(\n                        padding: const EdgeInsets.symmetric(\n                          horizontal: 8,\n                          vertical: 8,"
+  },
+  {
+    "path": "lib/features/social/presentation/listen_together_sheet.dart",
+    "line": 329,
+    "snippet": "                  return ListView(\n                    padding: const EdgeInsets.fromLTRB(20, 0, 20, 12),\n                    children: [\n                      SocialErrorCard(\n                        error: snapshot.error!,\n                        onRetry: () {\n                          setState(() => _records = null);\n                        },\n                      ),\n                    ],\n                  );\n                }\n                final values = snapshot.data ?? const [];\n                if (values.isEmpty) {\n                  return const Center(child: Text('一起听过的音乐会记录在这里'));"
+  },
+  {
+    "path": "lib/features/social/presentation/listen_together_sheet.dart",
+    "line": 345,
+    "snippet": "                return ListView.separated(\n                  padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),\n                  itemCount: values.length,\n                  separatorBuilder: (context, index) =>\n                      const SizedBox(height: 6),\n                  itemBuilder: (context, index) {\n                    final record = values[index];\n                    return ListTile(\n                      key: ValueKey(\n                        'listen-together-record-${record.track.id}',\n                      ),\n                      contentPadding: const EdgeInsets.symmetric(horizontal: 4),\n                      leading: ClipRRect(\n                        borderRadius: BorderRadius.circular(12),\n                        child: ArtworkImage("
+  },
+  {
+    "path": "lib/features/social/presentation/public_profile_page.dart",
+    "line": 41,
+    "snippet": "      error: (error, stackTrace) => ListView(\n        padding: EdgeInsets.fromLTRB(16, top + 12, 16, 170),\n        children: [\n          const SocialPageHeader(title: '用户主页'),\n          const SizedBox(height: 22),\n          SocialErrorCard(\n            error: error,\n            onRetry: () => ref.invalidate(socialUserProvider(widget.uid)),\n          ),\n        ],\n      ),\n      data: (profile) => CustomScrollView(\n        physics: const BouncingScrollPhysics(),\n        slivers: [\n          SliverPadding("
+  },
+  {
+    "path": "lib/features/social/presentation/public_profile_page.dart",
+    "line": 52,
+    "snippet": "      data: (profile) => CustomScrollView(\n        physics: const BouncingScrollPhysics(),\n        slivers: [\n          SliverPadding(\n            padding: EdgeInsets.fromLTRB(16, top + 12, 16, 170),\n            sliver: SliverList.list(\n              children: [\n                Row(\n                  children: [\n                    SocialHeaderButton(\n                      label: '返回',\n                      icon: Icons.arrow_back_rounded,\n                      onTap: () => Navigator.maybePop(context),\n                    ),\n                    const Spacer(),"
+  },
+  {
+    "path": "lib/features/social/presentation/saved_messages_page.dart",
+    "line": 155,
+    "snippet": "              ? ListView(\n                  padding: const EdgeInsets.fromLTRB(16, 8, 16, 170),\n                  children: const [\n                    SocialEmptyState(\n                      icon: Icons.bookmark_outline_rounded,\n                      title: '还没有收藏消息',\n                      message: '在好友聊天中长按一条消息，选择“收藏”后就会出现在这里。',\n                    ),\n                  ],\n                )\n              : ListView.separated(\n                  key: const ValueKey('saved-messages-list'),\n                  padding: const EdgeInsets.fromLTRB(16, 2, 16, 170),\n                  itemCount: messages.length,\n                  separatorBuilder: (context, index) =>"
+  },
+  {
+    "path": "lib/features/social/presentation/saved_messages_page.dart",
+    "line": 165,
+    "snippet": "              : ListView.separated(\n                  key: const ValueKey('saved-messages-list'),\n                  padding: const EdgeInsets.fromLTRB(16, 2, 16, 170),\n                  itemCount: messages.length,\n                  separatorBuilder: (context, index) =>\n                      const SizedBox(height: 9),\n                  itemBuilder: (context, index) => _SavedMessageRow(\n                    message: messages[index],\n                    onLongPress: () =>\n                        _showSavedMessageActions(messages[index]),\n                  ),\n                ),\n        ),\n      ],\n    );"
+  },
+  {
+    "path": "lib/features/social/presentation/saved_messages_page.dart",
+    "line": 249,
+    "snippet": "              ? ListView(\n                  padding: const EdgeInsets.fromLTRB(16, 8, 16, 170),\n                  children: const [\n                    SocialEmptyState(\n                      icon: Icons.bookmark_remove_outlined,\n                      title: '收藏内容不可用',\n                      message: '这条收藏可能已被移除，请返回收藏消息查看其他内容。',\n                    ),\n                  ],\n                )\n              : ListView(\n                  key: const ValueKey('saved-message-detail'),\n                  padding: const EdgeInsets.fromLTRB(16, 2, 16, 170),\n                  children: [\n                    Semantics("
+  },
+  {
+    "path": "lib/features/social/presentation/saved_messages_page.dart",
+    "line": 259,
+    "snippet": "              : ListView(\n                  key: const ValueKey('saved-message-detail'),\n                  padding: const EdgeInsets.fromLTRB(16, 2, 16, 170),\n                  children: [\n                    Semantics(\n                      label:\n                          '收藏详情：${message.authorName}的${_savedMessageKindLabel(message.kind)}',\n                      child: SocialGlass(\n                        radius: 22,\n                        child: Padding(\n                          padding: const EdgeInsets.fromLTRB(20, 19, 20, 22),\n                          child: Column(\n                            crossAxisAlignment: CrossAxisAlignment.start,\n                            children: [\n                              _SavedMessageDetailMeta(message: message),"
+  },
+  {
+    "path": "lib/features/social/presentation/social_connections_page.dart",
+    "line": 175,
+    "snippet": "      error: (error, stackTrace) => ListView(\n        padding: const EdgeInsets.fromLTRB(16, 10, 16, 170),\n        children: [\n          SocialErrorCard(\n            error: error,\n            onRetry: () => ref.invalidate(socialConnectionsProvider(kind)),\n          ),\n        ],\n      ),\n      data: (items) {\n        if (items.isEmpty) {\n          return ListView(\n            padding: const EdgeInsets.fromLTRB(16, 12, 16, 170),\n            children: [\n              SocialEmptyState("
+  },
+  {
+    "path": "lib/features/social/presentation/social_connections_page.dart",
+    "line": 186,
+    "snippet": "          return ListView(\n            padding: const EdgeInsets.fromLTRB(16, 12, 16, 170),\n            children: [\n              SocialEmptyState(\n                icon: switch (kind) {\n                  SocialConnectionKind.following =>\n                    Icons.person_add_alt_1_rounded,\n                  SocialConnectionKind.followers =>\n                    Icons.people_outline_rounded,\n                  SocialConnectionKind.recommended =>\n                    Icons.person_add_alt_1_rounded,\n                },\n                title: switch (kind) {\n                  SocialConnectionKind.following => '还没有关注任何人',\n                  SocialConnectionKind.followers => '还没有新的听友',"
+  },
+  {
+    "path": "lib/features/social/presentation/social_connections_page.dart",
+    "line": 215,
+    "snippet": "          child: ListView.separated(\n            padding: const EdgeInsets.fromLTRB(16, 4, 16, 170),\n            itemCount: items.length,\n            separatorBuilder: (context, index) => const SizedBox(height: 9),\n            itemBuilder: (context, index) => _UserRow(\n              user: items[index],\n              followerMenu: kind == SocialConnectionKind.followers,\n            ),\n          ),\n        );\n      },\n    );\n  }\n}\n"
+  },
+  {
+    "path": "lib/features/social/presentation/social_messages_page.dart",
+    "line": 39,
+    "snippet": "            error: (error, stackTrace) => ListView(\n              padding: const EdgeInsets.fromLTRB(16, 8, 16, 170),\n              children: [\n                SocialErrorCard(\n                  error: error,\n                  onRetry: () => ref.invalidate(socialConversationsProvider),\n                ),\n              ],\n            ),\n            data: (items) => items.isEmpty\n                ? ListView(\n                    padding: const EdgeInsets.fromLTRB(16, 8, 16, 170),\n                    children: const [\n                      SocialEmptyState(\n                        icon: Icons.forum_outlined,"
+  },
+  {
+    "path": "lib/features/social/presentation/social_messages_page.dart",
+    "line": 49,
+    "snippet": "                ? ListView(\n                    padding: const EdgeInsets.fromLTRB(16, 8, 16, 170),\n                    children: const [\n                      SocialEmptyState(\n                        icon: Icons.forum_outlined,\n                        title: '还没有消息',\n                        message: '和互相关注的好友聊聊最近循环的歌吧。',\n                      ),\n                    ],\n                  )\n                : MusicRefreshIndicator(\n                    onRefresh: () async {\n                      ref.invalidate(socialConversationsProvider);\n                      await ref.read(socialConversationsProvider.future);\n                    },"
+  },
+  {
+    "path": "lib/features/social/presentation/social_messages_page.dart",
+    "line": 64,
+    "snippet": "                    child: ListView.separated(\n                      padding: const EdgeInsets.fromLTRB(16, 2, 16, 170),\n                      itemCount: items.length,\n                      separatorBuilder: (context, index) =>\n                          const SizedBox(height: 9),\n                      itemBuilder: (context, index) =>\n                          _ConversationRow(conversation: items[index]),\n                    ),\n                  ),\n          ),\n        ),\n      ],\n    );\n  }\n}"
+  },
+  {
+    "path": "lib/features/social/presentation/track_share_sheet.dart",
+    "line": 88,
+    "snippet": "              error: (error, stackTrace) => ListView(\n                padding: const EdgeInsets.fromLTRB(20, 4, 20, 24),\n                children: [\n                  SocialErrorCard(\n                    error: error,\n                    onRetry: () => ref.invalidate(\n                      socialConnectionsProvider(SocialConnectionKind.following),\n                    ),\n                  ),\n                ],\n              ),\n              data: (connections) {\n                final friends = connections\n                    .where((connection) => connection.isFriend)\n                    .toList(growable: false);"
+  },
+  {
+    "path": "lib/features/social/presentation/track_share_sheet.dart",
+    "line": 104,
+    "snippet": "                  return ListView(\n                    padding: const EdgeInsets.fromLTRB(20, 4, 20, 24),\n                    children: const [\n                      SocialEmptyState(\n                        icon: Icons.people_outline_rounded,\n                        title: '还没有可以分享的好友',\n                        message: '与对方互相关注后，就能把正在听的音乐分享过去。',\n                      ),\n                    ],\n                  );\n                }\n                return ListView.separated(\n                  padding: const EdgeInsets.fromLTRB(14, 0, 14, 24),\n                  itemCount: friends.length,\n                  separatorBuilder: (context, index) =>"
+  },
+  {
+    "path": "lib/features/social/presentation/track_share_sheet.dart",
+    "line": 115,
+    "snippet": "                return ListView.separated(\n                  padding: const EdgeInsets.fromLTRB(14, 0, 14, 24),\n                  itemCount: friends.length,\n                  separatorBuilder: (context, index) =>\n                      const SizedBox(height: 4),\n                  itemBuilder: (context, index) {\n                    final friend = friends[index];\n                    return _FriendShareRow(friend: friend);\n                  },\n                );\n              },\n            ),\n          ),\n        ],\n      ),"
+  },
+  {
+    "path": "lib/features/settings/presentation/frame_diagnostics_page.dart",
+    "line": 171,
+    "snippet": "              return ListView(\n                padding: const EdgeInsets.fromLTRB(24, 24, 24, 210),\n                children: [\n                  Text(\n                    '双平台连续巡检',\n                    style: Theme.of(context).textTheme.headlineSmall,\n                  ),\n                  const SizedBox(height: 12),\n                  Text(\n                    '当前显示刷新率：${View.of(context).display.refreshRate.toStringAsFixed(0)} Hz',\n                  ),\n                  const SizedBox(height: 12),\n                  const Text(\n                    '一键运行网易云、酷狗与公共页面的正常滚动、超快速反向滚动、页面左右滑动及主 Tab 快速切换。使用真实页面和本机已有数据，未登录或缺少数据会记录跳过；单页失败后继续。',\n                  ),"
+  },
+  {
+    "path": "lib/features/settings/presentation/music_sleep_timer_sheet.dart",
+    "line": 99,
+    "snippet": "          child: SingleChildScrollView(\n            padding: EdgeInsets.fromLTRB(\n              24,\n              20,\n              24,\n              24 + MediaQuery.viewPaddingOf(context).bottom,\n            ),\n            child: Column(\n              crossAxisAlignment: CrossAxisAlignment.stretch,\n              mainAxisSize: MainAxisSize.min,\n              children: [\n                Row(\n                  children: [\n                    const Expanded(\n                      child: Text("
+  },
+  {
+    "path": "lib/features/settings/presentation/settings_page.dart",
+    "line": 51,
+    "snippet": "    return CustomScrollView(\n      physics: const BouncingScrollPhysics(),\n      slivers: [\n        SliverPadding(\n          padding: EdgeInsets.fromLTRB(\n            16,\n            topInset + 12,\n            16,\n            DistributionChannel.isBeta\n                ? 210 +\n                      MediaQuery.viewPaddingOf(context).bottom +\n                      2 *\n                          (MediaQuery.textScalerOf(context).scale(24) - 24)\n                              .clamp(0, 28)\n                : 42,"
+  },
+  {
+    "path": "lib/features/search/presentation/apple_search_results.dart",
+    "line": 51,
+    "snippet": "      child: CustomScrollView(\n        key: PageStorageKey('search-results-${state.query}'),\n        controller: controller,\n        physics: const BouncingScrollPhysics(),\n        slivers: [\n          if (state.errorMessage != null)\n            SliverToBoxAdapter(\n              child: Padding(\n                padding: const EdgeInsets.all(22),\n                child: Column(\n                  children: [\n                    Text(state.errorMessage!),\n                    TextButton(\n                      onPressed: ref\n                          .read(musicSearchControllerProvider.notifier)"
+  },
+  {
+    "path": "lib/features/search/presentation/beta_category_search_results.dart",
+    "line": 203,
+    "snippet": "      child: CustomScrollView(\n        controller: _scroll,\n        key: PageStorageKey('category-$query-${widget.kind.name}'),\n        physics: const BouncingScrollPhysics(),\n        slivers: [\n          if (slice.total != null)\n            SliverToBoxAdapter(\n              child: Padding(\n                padding: const EdgeInsets.fromLTRB(22, 14, 22, 6),\n                child: Text(\n                  '共 ${slice.total} ${widget.kind == PlatformSearchKind.artists || widget.kind == PlatformSearchKind.users\n                      ? '位'\n                      : widget.kind == PlatformSearchKind.lyrics\n                      ? '首'\n                      : '张'}',"
+  },
+  {
+    "path": "lib/features/search/presentation/music_search_page.dart",
+    "line": 480,
+    "snippet": "    return ListView(\n      physics: const BouncingScrollPhysics(),\n      padding: const EdgeInsets.fromLTRB(18, 22, 0, 96),\n      children: [\n        Padding(\n          padding: const EdgeInsets.only(right: 18),\n          child: Row(\n            children: [\n              Text(\n                '猜你喜欢',\n                style: TextStyle(\n                  color: tokens.textSecondary,\n                  fontSize: 13,\n                  fontWeight: FontWeight.w700,\n                ),"
+  },
+  {
+    "path": "lib/features/search/presentation/music_search_page.dart",
+    "line": 785,
+    "snippet": "                      : ListView.separated(\n                          primary: false,\n                          padding: EdgeInsets.zero,\n                          physics: const NeverScrollableScrollPhysics(),\n                          itemCount: songs.length.clamp(0, 9),\n                          separatorBuilder: (context, index) =>\n                              const Divider(height: 1),\n                          itemBuilder: (context, index) =>\n                              _RankingSongPressFeedback(\n                                onTap: () => onSong(index),\n                                child: SizedBox(\n                                  height: 52,\n                                  child: Row(\n                                    children: [\n                                      SizedBox("
+  },
+  {
+    "path": "lib/features/search/presentation/music_search_page.dart",
+    "line": 1094,
+    "snippet": "    return SingleChildScrollView(\n      key: const ValueKey('search-input-preview-scroll'),\n      physics: const BouncingScrollPhysics(),\n      padding: const EdgeInsets.fromLTRB(18, 10, 18, 96),\n      child: _NeteaseSearchOverview(\n        query: state.query,\n        users: users.value ?? const <SocialUser>[],\n        tracks: [...state.localTracks, ...state.onlineTracks],\n        onSearch: onSearch,\n      ),\n    );\n  }\n}\n\nenum _SearchResultCategory { tracks, users }"
+  },
+  {
+    "path": "lib/features/search/presentation/music_search_page.dart",
+    "line": 1170,
+    "snippet": "          child: ListView(\n            key: const ValueKey('search-results-scroll'),\n            controller: _scroll,\n            physics: const BouncingScrollPhysics(),\n            padding: const EdgeInsets.fromLTRB(18, 14, 18, 96),\n            children: [\n              if (showTracks && state.errorMessage != null)\n                _MessageCard(\n                  icon: Icons.cloud_off_rounded,\n                  message: state.errorMessage!,\n                  actionLabel: '重试',\n                  onAction: ref\n                      .read(musicSearchControllerProvider.notifier)\n                      .retry,\n                ),"
+  },
+  {
+    "path": "lib/features/search/presentation/music_search_page.dart",
+    "line": 1777,
+    "snippet": "      child: ListView.separated(\n        shrinkWrap: true,\n        physics: const NeverScrollableScrollPhysics(),\n        padding: EdgeInsets.zero,\n        itemCount: users.length,\n        separatorBuilder: (context, index) =>\n            const Divider(height: 1, indent: 76),\n        itemBuilder: (context, index) =>\n            _SearchUserRow(user: users[index], query: query),\n      ),\n    );\n  }\n}\n\nclass _SearchUserRow extends ConsumerStatefulWidget {"
+  },
+  {
+    "path": "lib/features/search/presentation/music_search_page.dart",
+    "line": 1884,
+    "snippet": "      child: ListView.separated(\n        key: const ValueKey('search-track-list'),\n        padding: EdgeInsets.zero,\n        shrinkWrap: true,\n        physics: const NeverScrollableScrollPhysics(),\n        itemCount: tracks.length,\n        separatorBuilder: (context, index) =>\n            const Divider(height: 1, indent: 70),\n        itemBuilder: (context, index) {\n          final track = tracks[index];\n          final active = currentId == track.id;\n          return ListTile(\n            onTap: () async {\n              if (!track.isPlayable) {\n                showMusicNotice("
+  },
+  {
+    "path": "lib/features/recommendation/presentation/recommendation_page.dart",
+    "line": 120,
+    "snippet": "    return CustomScrollView(\n      key: const PageStorageKey('recommendation-page'),\n      physics: const BouncingScrollPhysics(),\n      slivers: [\n        SliverPadding(\n          padding: EdgeInsets.fromLTRB(16, topInset + 12, 16, bottomClearance),\n          sliver: SliverList.list(\n            children: [\n              _RecommendationHeader(now: now),\n              const SizedBox(height: 18),\n              _DailyMixHero(\n                tracks: dailyTracks,\n                accent: theme.accent,\n                onPlay: () => _playQueue(dailyTracks),\n              ),"
+  },
+  {
+    "path": "lib/features/recommendation/presentation/recommendation_page.dart",
+    "line": 1277,
+    "snippet": "      child: ListView.separated(\n        clipBehavior: Clip.none,\n        scrollDirection: Axis.horizontal,\n        physics: const BouncingScrollPhysics(),\n        itemCount: tracks.length,\n        separatorBuilder: (_, _) => const SizedBox(width: 11),\n        itemBuilder: (context, index) {\n          final track = tracks[index];\n          return SizedBox(\n            width: 112,\n            child: InkWell(\n              onTap: () => onPlay(index),\n              borderRadius: BorderRadius.circular(18),\n              child: Column(\n                crossAxisAlignment: CrossAxisAlignment.start,"
+  },
+  {
+    "path": "lib/features/queue/presentation/beta_playback_queue.dart",
+    "line": 168,
+    "snippet": "                : ReorderableListView.builder(\n                    key: const ValueKey('player-inline-queue'),\n                    buildDefaultDragHandles: false,\n                    padding: const EdgeInsets.only(top: 8, bottom: 18),\n                    proxyDecorator: (child, _, animation) => Material(\n                      color: immersive\n                          ? const Color(0xF0242529)\n                          : colors.surfaceContainerHigh,\n                      elevation: 6,\n                      shadowColor: Colors.black26,\n                      borderRadius: BorderRadius.circular(14),\n                      child: child,\n                    ),\n                    onReorderStart: (index) =>\n                        _dragIds = items.map((item) => item.id).toList(),"
+  },
+  {
+    "path": "lib/features/queue/presentation/queue_page.dart",
+    "line": 167,
+    "snippet": "                  : ListView.builder(\n                      padding: const EdgeInsets.fromLTRB(4, 8, 4, 10),\n                      physics: const BouncingScrollPhysics(),\n                      cacheExtent: playbackQueueRowHeight * 4,\n                      itemCount: rows.length + (grouped ? 1 : 0),\n                      itemBuilder: (context, index) {\n                        if (grouped && index == manual.length) {\n                          return Padding(\n                            padding: const EdgeInsets.fromLTRB(8, 14, 8, 10),\n                            child: Text(\n                              '自动推荐',\n                              style: TextStyle(\n                                fontSize: 14,\n                                fontWeight: FontWeight.w600,\n                                color: tokens.textSecondary,"
+  },
+  {
+    "path": "lib/features/profile/presentation/profile_background_page.dart",
+    "line": 333,
+    "snippet": "      child: SingleChildScrollView(\n        padding: EdgeInsets.fromLTRB(18, 12, 18, bottomInset + 24),\n        child: Column(\n          mainAxisSize: MainAxisSize.min,\n          crossAxisAlignment: CrossAxisAlignment.start,\n          children: [\n            Center(\n              child: Container(\n                width: 42,\n                height: 4,\n                decoration: BoxDecoration(\n                  color: const Color(0x4DFFFFFF),\n                  borderRadius: BorderRadius.circular(99),\n                ),\n              ),"
+  },
+  {
+    "path": "lib/features/profile/presentation/profile_background_page.dart",
+    "line": 368,
+    "snippet": "            GridView.builder(\n              shrinkWrap: true,\n              physics: const NeverScrollableScrollPhysics(),\n              itemCount: profileBackgroundPresets.length,\n              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(\n                crossAxisCount: 2,\n                mainAxisSpacing: 12,\n                crossAxisSpacing: 12,\n                childAspectRatio: 1.35,\n              ),\n              itemBuilder: (context, index) {\n                final preset = profileBackgroundPresets[index];\n                final selected = preset.id == selectedId;\n                return Semantics(\n                  button: true,"
+  },
+  {
+    "path": "lib/features/profile/presentation/profile_edit_page.dart",
+    "line": 87,
+    "snippet": "        child: SingleChildScrollView(\n          physics: const BouncingScrollPhysics(),\n          padding: EdgeInsets.fromLTRB(16, topInset + 12, 16, 170),\n          child: Form(\n            key: _formKey,\n            child: Column(\n              crossAxisAlignment: CrossAxisAlignment.stretch,\n              children: [\n                Row(\n                  children: [\n                    IconButton.filledTonal(\n                      onPressed: () => context.pop(),\n                      icon: const Icon(Icons.arrow_back_rounded),\n                    ),\n                    const SizedBox(width: 10),"
+  },
+  {
+    "path": "lib/features/profile/presentation/profile_edit_page.dart",
+    "line": 788,
+    "snippet": "      child: SingleChildScrollView(\n        padding: EdgeInsets.fromLTRB(18, 18, 18, bottom + 18),\n        child: Column(\n          mainAxisSize: MainAxisSize.min,\n          children: [\n            const Text(\n              '选择星座',\n              style: TextStyle(fontSize: 21, fontWeight: FontWeight.w900),\n            ),\n            const SizedBox(height: 5),\n            Text(\n              '选择后会展示在好友主页',\n              style: TextStyle(color: scheme.onSurfaceVariant, fontSize: 11),\n            ),\n            const SizedBox(height: 18),"
+  },
+  {
+    "path": "lib/features/profile/presentation/profile_edit_page.dart",
+    "line": 803,
+    "snippet": "            GridView.builder(\n              shrinkWrap: true,\n              physics: const NeverScrollableScrollPhysics(),\n              itemCount: socialZodiacSigns.length,\n              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(\n                crossAxisCount: 3,\n                mainAxisSpacing: 8,\n                crossAxisSpacing: 8,\n                childAspectRatio: 2.35,\n              ),\n              itemBuilder: (context, index) {\n                final zodiac = socialZodiacSigns[index];\n                final active = zodiac == selected;\n                return InkWell(\n                  key: ValueKey('profile-zodiac-$zodiac'),"
+  },
+  {
+    "path": "lib/features/profile/presentation/profile_page.dart",
+    "line": 174,
+    "snippet": "    return CustomScrollView(\n      key: const PageStorageKey('profile-page'),\n      physics: const BouncingScrollPhysics(),\n      slivers: [\n        SliverToBoxAdapter(\n          child: user == null\n              ? Padding(\n                  padding: EdgeInsets.fromLTRB(\n                    14,\n                    topInset + 14,\n                    14,\n                    bottomClearance,\n                  ),\n                  child: Column(\n                    children: ["
+  },
+  {
+    "path": "lib/features/profile/presentation/social_status_sheet.dart",
+    "line": 121,
+    "snippet": "            child: ListView(\n              physics: const BouncingScrollPhysics(),\n              padding: EdgeInsets.fromLTRB(\n                18,\n                16,\n                18,\n                MediaQuery.viewPaddingOf(context).bottom + 28,\n              ),\n              children: [\n                _CustomStatusTile(\n                  selected: !_isPreset(_selected) && _selected.isNotEmpty,\n                  status: _selected,\n                  onTap: _editCustomStatus,\n                ),\n                const SizedBox(height: 18),"
+  },
+  {
+    "path": "lib/features/profile/presentation/social_status_sheet.dart",
+    "line": 145,
+    "snippet": "                GridView.builder(\n                  shrinkWrap: true,\n                  physics: const NeverScrollableScrollPhysics(),\n                  itemCount: socialStatusPresets.length,\n                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(\n                    crossAxisCount: 2,\n                    mainAxisExtent: 58,\n                    mainAxisSpacing: 10,\n                    crossAxisSpacing: 10,\n                  ),\n                  itemBuilder: (context, index) {\n                    final status = socialStatusPresets[index];\n                    final selected = status == _selected;\n                    return _PresetStatusTile(\n                      status: status,"
+  },
+  {
+    "path": "lib/features/profile/presentation/social_status_sheet.dart",
+    "line": 362,
+    "snippet": "          child: SingleChildScrollView(\n            padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),\n            child: Column(\n              mainAxisSize: MainAxisSize.min,\n              crossAxisAlignment: CrossAxisAlignment.stretch,\n              children: [\n                const Text(\n                  '自定义状态',\n                  style: TextStyle(fontSize: 21, fontWeight: FontWeight.w900),\n                ),\n                const SizedBox(height: 6),\n                Text(\n                  '好友会在你的主页看到这条状态。',\n                  style: TextStyle(\n                    fontSize: 11,"
+  },
+  {
+    "path": "lib/features/playlists/presentation/add_to_playlist_sheet.dart",
+    "line": 151,
+    "snippet": "                  child: ListView.separated(\n                    shrinkWrap: true,\n                    itemCount: items.length,\n                    separatorBuilder: (context, index) =>\n                        const SizedBox(height: 6),\n                    itemBuilder: (context, index) {\n                      final playlist = items[index];\n                      final tracks = cloud\n                          ? const <Track>[]\n                          : ref\n                                    .watch(playlistTracksProvider(playlist.id))\n                                    .value ??\n                                const <Track>[];\n                      final cover =\n                          playlist.coverAsset ??"
+  },
+  {
+    "path": "lib/features/playlists/presentation/playlist_detail_page.dart",
+    "line": 327,
+    "snippet": "                    : ReorderableListView.builder(\n                        padding: const EdgeInsets.only(top: 2, bottom: 12),\n                        physics: const BouncingScrollPhysics(),\n                        buildDefaultDragHandles: false,\n                        itemCount: trackItems.length,\n                        onReorder: (oldIndex, newIndex) =>\n                            onReorder(trackItems, oldIndex, newIndex),\n                        itemBuilder: (context, index) {\n                          final track = trackItems[index];\n                          return _PlaylistTrackRow(\n                            key: ValueKey(track.id),\n                            track: track,\n                            index: index,\n                            onTap: () => onPlayTrack(track),\n                            onAdd: () => onAddTrack(track),"
+  },
+  {
+    "path": "lib/features/playlists/presentation/playlist_detail_page.dart",
+    "line": 1451,
+    "snippet": "                      : ListView.separated(\n                          shrinkWrap: true,\n                          padding: const EdgeInsets.fromLTRB(16, 12, 16, 14),\n                          itemCount: orderedTracks.length,\n                          separatorBuilder: (context, index) =>\n                              const SizedBox(height: 8),\n                          itemBuilder: (context, index) {\n                            final track = orderedTracks[index];\n                            final included = selectedIds.contains(track.id);\n                            return _TrackPickerRow(\n                              track: track,\n                              included: included,\n                              onTap: () => onToggle(track),\n                            );\n                          },"
+  },
+  {
+    "path": "lib/features/playlists/presentation/playlist_editor_dialog.dart",
+    "line": 237,
+    "snippet": "                      child: SingleChildScrollView(\n                        child: Padding(\n                          padding: const EdgeInsets.fromLTRB(18, 0, 18, 26),\n                          child: Column(\n                            mainAxisSize: MainAxisSize.min,\n                            children: [\n                              const SizedBox(height: 28),\n                              SizedBox(\n                                height: 226,\n                                child: PageView.builder(\n                                  controller: _covers,\n                                  physics: _saving\n                                      ? const NeverScrollableScrollPhysics()\n                                      : null,\n                                  onPageChanged: (index) => setState(() {"
+  },
+  {
+    "path": "lib/features/player/presentation/music_hub_top_bar.dart",
+    "line": 381,
+    "snippet": "                  child: SingleChildScrollView(\n                    physics: const BouncingScrollPhysics(),\n                    padding: const EdgeInsets.fromLTRB(16, 0, 16, 18),\n                    child: Column(\n                      crossAxisAlignment: CrossAxisAlignment.start,\n                      children: [\n                        if (ref.watch(showMestingFeaturesProvider)) ...[\n                          const _PanelLabel('好友与消息'),\n                          _PanelSection(\n                            children: [\n                              _PanelTile(\n                                key: const ValueKey('music-hub-my-messages'),\n                                icon: Icons.mail_outline_rounded,\n                                title: '我的消息',\n                                subtitle: '互相关注好友的私信与会话',"
+  },
+  {
+    "path": "lib/features/music_platform/netease/netease_account_overview.dart",
+    "line": 128,
+    "snippet": "            return ListView(\n              padding: const EdgeInsets.fromLTRB(22, 20, 22, 40),\n              children: [\n                Center(\n                  child: PlatformAvatar(\n                    url: '${value.profile['avatarUrl'] ?? ''}',\n                    size: 80,\n                  ),\n                ),\n                const SizedBox(height: 14),\n                Text(\n                  '${value.profile['nickname'] ?? '网易云账号'}',\n                  textAlign: TextAlign.center,\n                  style: Theme.of(context).textTheme.titleLarge,\n                ),"
+  },
+  {
+    "path": "lib/features/music_platform/netease/netease_comment_hugs_page.dart",
+    "line": 108,
+    "snippet": "          : ListView(\n              padding: const EdgeInsets.all(22),\n              children: [\n                Text(\n                  widget.comment.nickname,\n                  style: Theme.of(context).textTheme.titleMedium,\n                ),\n                const SizedBox(height: 10),\n                SelectableText(widget.comment.content),\n                const SizedBox(height: 20),\n                BetaGlassButton(\n                  blue: true,\n                  loading: _busy,\n                  onPressed: _sent ? null : _hug,\n                  child: Text(_sent ? '已送出拥抱' : '送一个拥抱'),"
+  },
+  {
+    "path": "lib/features/music_platform/netease/netease_features_page.dart",
+    "line": 413,
+    "snippet": "                child: ListView.builder(\n                  padding: const EdgeInsets.only(\n                    bottom: editorialBottomClearance,\n                  ),\n                  physics: const AlwaysScrollableScrollPhysics(),\n                  itemCount: _items.length + 2,\n                  itemBuilder: (context, index) {\n                    if (index == 0) {\n                      return Padding(\n                        padding: const EdgeInsets.fromLTRB(22, 8, 22, 16),\n                        child: Column(\n                          crossAxisAlignment: CrossAxisAlignment.stretch,\n                          children: [\n                            if (widget.feed == NeteaseFeed.podcasts)\n                              Wrap("
+  },
+  {
+    "path": "lib/features/music_platform/netease/netease_membership_page.dart",
+    "line": 96,
+    "snippet": "      child: ListView(\n        padding: const EdgeInsets.fromLTRB(22, 12, 22, 180),\n        children: [\n          PlatformPanel(\n            child: Column(\n              crossAxisAlignment: CrossAxisAlignment.start,\n              children: [\n                Icon(\n                  enabled\n                      ? Icons.workspace_premium_outlined\n                      : Icons.person_outline,\n                  size: 36,\n                ),\n                const SizedBox(height: 14),\n                Text("
+  },
+  {
+    "path": "lib/features/music_platform/netease/netease_playback_settings_page.dart",
+    "line": 44,
+    "snippet": "      child: ListView(\n        padding: const EdgeInsets.fromLTRB(22, 12, 22, 190),\n        children: [\n          SwitchListTile.adaptive(\n            title: const Text('备用音源'),\n            subtitle: const Text('原曲不可播放或仅可试听时尝试补源，严格匹配同一录音版本'),\n            value: ref.watch(neteaseFallbackEnabledProvider),\n            onChanged: (value) async {\n              try {\n                await ref\n                    .read(neteaseFallbackEnabledProvider.notifier)\n                    .setEnabled(value);\n              } catch (e) {\n                if (context.mounted) showPlatformFailure(context, e);\n              }"
+  },
+  {
+    "path": "lib/features/music_platform/netease/netease_playlist_import_page.dart",
+    "line": 103,
+    "snippet": "          : ListView(\n              padding: const EdgeInsets.fromLTRB(22, 16, 22, 190),\n              children: [\n                const Text('每行填写一首歌曲，可写成“歌名 - 歌手”。网易云会识别并导入到当前账号。'),\n                const SizedBox(height: 20),\n                TextField(\n                  controller: _name,\n                  enabled: !_busy && _task == null,\n                  maxLength: 40,\n                  decoration: const InputDecoration(labelText: '歌单名称'),\n                ),\n                const SizedBox(height: 12),\n                TextField(\n                  controller: _songs,\n                  enabled: !_busy && _task == null,"
+  },
+  {
+    "path": "lib/features/music_platform/netease/netease_user_page.dart",
+    "line": 245,
+    "snippet": "      child: ListView(\n        padding: const EdgeInsets.fromLTRB(20, 18, 20, 180),\n        children: [\n          Row(\n            children: [\n              _Avatar(user: user, size: 80),\n              const SizedBox(width: 18),\n              Expanded(\n                child: Column(\n                  crossAxisAlignment: CrossAxisAlignment.start,\n                  children: [\n                    Text(\n                      user.nickname,\n                      style: const TextStyle(\n                        fontSize: 24,"
+  },
+  {
+    "path": "lib/features/music_platform/netease/netease_user_page.dart",
+    "line": 441,
+    "snippet": "              child: ListView.builder(\n                padding: const EdgeInsets.only(top: 8, bottom: 180),\n                itemCount: _users.length + 1,\n                itemBuilder: (context, index) {\n                  if (index < _users.length) {\n                    return NeteaseSearchUserRow(user: _users[index]);\n                  }\n                  if (_busy) {\n                    return const Padding(\n                      padding: EdgeInsets.all(24),\n                      child: ArtworkPendingContent(\n                        child: Center(child: BetaActivityIndicator()),\n                      ),\n                    );\n                  }"
+  },
+  {
+    "path": "lib/features/music_platform/presentation/apple_hot_search.dart",
+    "line": 31,
+    "snippet": "        SingleChildScrollView(\n          scrollDirection: Axis.horizontal,\n          child: Row(\n            children: [\n              for (var i = 0; i < widget.boards.length; i++)\n                Padding(\n                  padding: const EdgeInsets.only(right: 7, bottom: 12),\n                  child: Semantics(\n                    selected: index == i,\n                    child: CupertinoButton(\n                      padding: const EdgeInsets.symmetric(\n                        horizontal: 14,\n                        vertical: 9,\n                      ),\n                      minimumSize: const Size(44, 44),"
+  },
+  {
+    "path": "lib/features/music_platform/presentation/beta_personal_profile.dart",
+    "line": 93,
+    "snippet": "      child: CustomScrollView(\n        key: PageStorageKey('personal-profile:${session?.ownerId ?? 'guest'}'),\n        slivers: [\n          _ProfilePart(\n            key: const ValueKey('profile-heading-sliver'),\n            child: _PersonalHeading(\n              signedIn: session != null,\n              onAccount: _account,\n            ),\n          ),\n          _ProfilePart(\n            key: const ValueKey('profile-identity-sliver'),\n            child: session == null\n                ? const Padding(\n                    padding: EdgeInsets.all(22),"
+  },
+  {
+    "path": "lib/features/music_platform/presentation/music_effects_page.dart",
+    "line": 210,
+    "snippet": "            child: ListView(\n              padding: const EdgeInsets.all(20),\n              children: [\n                const Padding(\n                  padding: EdgeInsets.only(bottom: 18),\n                  child: Text(\n                    '耳机品牌',\n                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w700),\n                  ),\n                ),\n                ListTile(\n                  title: const Text('当前设备匹配'),\n                  onTap: () => Navigator.pop(\n                    context,\n                    const MusicEffectBrand('', '当前设备匹配'),"
+  },
+  {
+    "path": "lib/features/music_platform/presentation/platform_account_page.dart",
+    "line": 259,
+    "snippet": "            child: ListView(\n              shrinkWrap: true,\n              children: [\n                const ListTile(title: Text('选择音乐平台账号')),\n                for (final row in rows.whereType<Map>())\n                  ListTile(\n                    title: Text(\n                      '${row['nickname'] ?? row['userid'] ?? '酷狗账号'}',\n                    ),\n                    onTap: () =>\n                        Navigator.pop(context, '${row['userid'] ?? ''}'),\n                  ),\n              ],\n            ),\n          ),"
+  },
+  {
+    "path": "lib/features/music_platform/presentation/platform_catalog_detail_page.dart",
+    "line": 171,
+    "snippet": "        child: ListView.builder(\n          key: PageStorageKey(\n            'catalog-${widget.hit.kind.name}-${widget.hit.id}',\n          ),\n          padding: const EdgeInsets.only(bottom: 190),\n          itemCount: _tracks.length + 2,\n          itemBuilder: (context, index) {\n            if (index == 0) {\n              return Padding(\n                padding: const EdgeInsets.all(22),\n                child: Column(\n                  children: [\n                    Row(\n                      children: [\n                        ClipRRect("
+  },
+  {
+    "path": "lib/features/music_platform/presentation/platform_comments_page.dart",
+    "line": 513,
+    "snippet": "                          child: ListView(\n                            controller: _scroll,\n                            physics: const AlwaysScrollableScrollPhysics(),\n                            padding: const EdgeInsets.fromLTRB(18, 8, 18, 170),\n                            children: [\n                              if (widget.thread != null)\n                                PlatformPanel(\n                                  child: Column(\n                                    crossAxisAlignment:\n                                        CrossAxisAlignment.start,\n                                    children: [\n                                      Text(\n                                        widget.thread!.nickname,\n                                        style: const TextStyle(\n                                          fontWeight: FontWeight.w800,"
+  },
+  {
+    "path": "lib/features/music_platform/presentation/platform_discovery_page.dart",
+    "line": 52,
+    "snippet": "        child: ListView(\n          physics: const AlwaysScrollableScrollPhysics(),\n          padding: EdgeInsets.fromLTRB(\n            16,\n            MediaQuery.paddingOf(context).top + 12,\n            16,\n            140,\n          ),\n          children: [\n            MusicHubTopBar(\n              title: dailyOnly ? '每日推荐' : '发现音乐',\n              subtitle: signedIn ? '酷狗概念版 · 为你推荐' : '酷狗概念版 · 公共推荐',\n              showBack: dailyOnly,\n              onBack: dailyOnly\n                  ? () => context.canPop()"
+  },
+  {
+    "path": "lib/features/music_platform/presentation/platform_discovery_page.dart",
+    "line": 338,
+    "snippet": "    child: CustomScrollView(\n      slivers: [\n        SliverToBoxAdapter(\n          child: ref\n              .watch(platformPublicPlaylistProvider(id))\n              .when(\n                loading: () => const SizedBox.shrink(),\n                error: (_, _) => const SizedBox.shrink(),\n                data: (tracks) =>\n                    EditorialCollectionHero(cover: cover, tracks: tracks),\n              ),\n        ),\n        PlatformSongs(\n          sliver: true,\n          value: ref.watch(platformPublicPlaylistProvider(id)),"
+  },
+  {
+    "path": "lib/features/music_platform/presentation/platform_library_page.dart",
+    "line": 39,
+    "snippet": "        child: ListView(\n          physics: const AlwaysScrollableScrollPhysics(),\n          padding: EdgeInsets.fromLTRB(\n            16,\n            MediaQuery.paddingOf(context).top + 12,\n            16,\n            140,\n          ),\n          children: [\n            MusicHubTopBar(\n              title: favorites ? '我的喜欢' : '我的歌单',\n              subtitle:\n                  '${ref.watch(platformAccountProvider).value?.platformLabel ?? '音乐'}云端曲库',\n              showBack: true,\n              onBack: () =>"
+  },
+  {
+    "path": "lib/features/music_platform/presentation/platform_library_page.dart",
+    "line": 178,
+    "snippet": "        child: CustomScrollView(\n          physics: const AlwaysScrollableScrollPhysics(),\n          slivers: [\n            if (playlist.hasValue)\n              SliverToBoxAdapter(\n                child: EditorialCollectionHero(\n                  cover: playlist.value?.coverAsset ?? '',\n                  description: playlist.value?.description ?? '',\n                  tracks:\n                      ref.watch(playlistTracksProvider(id)).value ?? const [],\n                ),\n              ),\n            PlatformSongs(\n              sliver: true,\n              value: ref.watch(playlistTracksProvider(id)),"
+  },
+  {
+    "path": "lib/features/music_platform/presentation/platform_quality_button.dart",
+    "line": 91,
+    "snippet": "          child: SingleChildScrollView(\n            padding: const EdgeInsets.all(22),\n            child: Column(\n              mainAxisSize: MainAxisSize.min,\n              crossAxisAlignment: CrossAxisAlignment.stretch,\n              children: [\n                Text(\n                  '音质选择',\n                  style: TextStyle(\n                    color: ink,\n                    fontSize: 22,\n                    fontWeight: FontWeight.w700,\n                  ),\n                ),\n                const SizedBox(height: 18),"
+  },
+  {
+    "path": "lib/features/music_platform/presentation/platform_recommendations_page.dart",
+    "line": 403,
+    "snippet": "              child: ListView.builder(\n                padding: const EdgeInsets.only(bottom: 180),\n                itemCount: tracks.length + 1,\n                itemBuilder: (context, index) {\n                  if (index < tracks.length) {\n                    return EditorialTrackRow(\n                      track: tracks[index],\n                      contextTracks: tracks,\n                      onPlay: () =>\n                          _play(context, ref, tracks, index, widget.kind),\n                    );\n                  }\n                  if (_loading) {\n                    return const _RecommendationLoading();\n                  }"
+  },
+  {
+    "path": "lib/features/music_platform/presentation/platform_reward_calendar.dart",
+    "line": 147,
+    "snippet": "              child: ListView(\n                physics: const AlwaysScrollableScrollPhysics(),\n                padding: EdgeInsets.fromLTRB(22, 20, 22, embedded ? 180 : 40),\n                children: [\n                  // Material 3 stretch composites the scroll contents into an\n                  // isolated ImageFilter pass. Paint the real page surface in\n                  // that pass before the glass buttons sample their backdrop;\n                  // the Scaffold's surface lives outside it and is unavailable\n                  // during overscroll. This retains the same optical material.\n                  Container(\n                    color: scheme.surface,\n                    alignment: Alignment.center,\n                    child: ConstrainedBox(\n                      constraints: const BoxConstraints(maxWidth: 520),\n                      child: Column("
+  },
+  {
+    "path": "lib/features/music_platform/presentation/platform_reward_calendar.dart",
+    "line": 296,
+    "snippet": "                          GridView.builder(\n                            shrinkWrap: true,\n                            physics: const NeverScrollableScrollPhysics(),\n                            itemCount: ((leading + days + 6) ~/ 7) * 7,\n                            gridDelegate:\n                                const SliverGridDelegateWithFixedCrossAxisCount(\n                                  crossAxisCount: 7,\n                                  mainAxisExtent: 58,\n                                ),\n                            itemBuilder: (context, index) {\n                              final number = index - leading + 1;\n                              if (number < 1 || number > days) {\n                                return const SizedBox.shrink();\n                              }\n                              final date = DateTime("
+  },
+  {
+    "path": "lib/features/music_platform/presentation/platform_search_landing.dart",
+    "line": 96,
+    "snippet": "    return ListView(\n      padding: const EdgeInsets.fromLTRB(22, 20, 22, 190),\n      children: [\n        if (history.isNotEmpty) ...[\n          Row(\n            children: [\n              Text('搜索历史', style: Theme.of(context).textTheme.titleMedium),\n              const Spacer(),\n              TextButton(\n                onPressed: () => ref\n                    .read(musicSearchControllerProvider.notifier)\n                    .clearRecentSearches(),\n                child: const Text('清空'),\n              ),\n            ],"
+  },
+  {
+    "path": "lib/features/music_platform/presentation/platform_search_landing.dart",
+    "line": 218,
+    "snippet": "                        child: ListView.separated(\n                          scrollDirection: Axis.horizontal,\n                          itemCount: items.length,\n                          separatorBuilder: (_, _) => const SizedBox(width: 14),\n                          itemBuilder: (context, index) {\n                            final item = items[index];\n                            return SizedBox(\n                              width: 132,\n                              child: InkWell(\n                                onTap:\n                                    kind == PlatformExploreKind.theme ||\n                                        item.id.isEmpty\n                                    ? null\n                                    : () => Navigator.of(context).push(\n                                        MaterialPageRoute<void>("
+  },
+  {
+    "path": "lib/features/music_platform/presentation/platform_search_landing.dart",
+    "line": 419,
+    "snippet": "        child: ListView.builder(\n          padding: const EdgeInsets.only(bottom: 190),\n          itemCount:\n              (collectionScene ? _collections.length : _tracks.length) + 2,\n          itemBuilder: (context, index) {\n            if (index == 0) {\n              if (!ref.watch(usesNeteaseProvider)) {\n                return const SizedBox.shrink();\n              }\n              return Column(\n                children: [\n                  NeteaseResourceActions(\n                    item: NeteaseItem(\n                      id: widget.item.id,\n                      name: widget.item.title,"
+  },
+  {
+    "path": "lib/features/music_platform/presentation/unified_reward_page.dart",
+    "line": 147,
+    "snippet": "              : ListView(\n                  key: const PageStorageKey('netease-reward-scroll'),\n                  padding: const EdgeInsets.fromLTRB(22, 22, 22, 180),\n                  children: [\n                    const Text(\n                      '网易云每日签到',\n                      style: TextStyle(\n                        fontSize: 24,\n                        fontWeight: FontWeight.w600,\n                      ),\n                    ),\n                    const SizedBox(height: 12),\n                    const Text('使用本机保存的网易云账号，平台确认后显示签到结果。'),\n                    const SizedBox(height: 24),\n                    BetaGlassButton("
+  },
+  {
+    "path": "lib/features/music_platform/netease/fallback/netease_source_picker.dart",
+    "line": 167,
+    "snippet": "      child: SingleChildScrollView(\n        child: Padding(\n          padding: const EdgeInsets.fromLTRB(12, 18, 12, 30),\n          child: Column(\n            mainAxisSize: MainAxisSize.min,\n            children: [\n              ListTile(\n                title: const Text(\n                  '选择音乐来源',\n                  style: TextStyle(fontSize: 21, fontWeight: FontWeight.w700),\n                ),\n                subtitle: Text(\n                  widget.track.title,\n                  maxLines: 1,\n                  overflow: TextOverflow.ellipsis,"
+  },
+  {
+    "path": "lib/features/music_platform/netease/full/netease_comment_entry_page.dart",
+    "line": 96,
+    "snippet": "      child: ListView(\n        padding: const EdgeInsets.all(24),\n        children: [\n          const Text('选择想查看的内容，即可阅读、点赞、回复和发布评论。'),\n          const SizedBox(height: 22),\n          RadioGroup<PlatformCommentKind>(\n            groupValue: _kind,\n            onChanged: (kind) {\n              if (kind != null) setState(() => _kind = kind);\n            },\n            child: Column(\n              children: [\n                for (final kind in PlatformCommentKind.values)\n                  RadioListTile<PlatformCommentKind>(\n                    title: Text("
+  },
+  {
+    "path": "lib/features/music_platform/netease/full/netease_entity_picker.dart",
+    "line": 296,
+    "snippet": "                    child: ListView.builder(\n                      padding: const EdgeInsets.only(bottom: 30),\n                      itemCount: visible.length + 1,\n                      itemBuilder: (context, index) {\n                        if (index == visible.length) {\n                          return _more\n                              ? Padding(\n                                  padding: const EdgeInsets.all(22),\n                                  child: BetaGlassButton(\n                                    onPressed: _busy\n                                        ? null\n                                        : () => _load(next: true),\n                                    child: const Text('加载更多'),\n                                  ),\n                                )"
+  },
+  {
+    "path": "lib/features/music_platform/netease/full/netease_full_page.dart",
+    "line": 293,
+    "snippet": "                  return ListView.builder(\n                    padding: EdgeInsets.only(\n                      bottom: BetaContentInsets.bottomOf(context, 40),\n                    ),\n                    itemCount: entries.length,\n                    itemBuilder: (context, index) {\n                      final endpoint = entries[index];\n                      return ListTile(\n                        contentPadding: const EdgeInsets.symmetric(\n                          horizontal: 24,\n                          vertical: 5,\n                        ),\n                        leading: Icon(_categoryIcon(endpoint.category)),\n                        title: Text(\n                          neteaseWorkflowTitle(endpoint) ??"
+  },
+  {
+    "path": "lib/features/music_platform/netease/full/netease_full_page.dart",
+    "line": 823,
+    "snippet": "        child: ListView(\n          padding: EdgeInsets.fromLTRB(\n            22,\n            10,\n            22,\n            BetaContentInsets.bottomOf(context, 40),\n          ),\n          children: [\n            if (!e.write &&\n                _params.any(\n                  (p) =>\n                      !p.required &&\n                      p.key != _searchKey &&\n                      !widget.seed.containsKey(p.key) &&\n                      !{'uid', 'userId'}.contains(p.key),"
+  },
+  {
+    "path": "lib/features/music_platform/netease/full/netease_full_page.dart",
+    "line": 1406,
+    "snippet": "      child: ListView(\n        padding: const EdgeInsets.all(24),\n        children: [\n          Text(row.title, style: Theme.of(context).textTheme.titleLarge),\n          const SizedBox(height: 14),\n          SelectableText(row.subtitle),\n          for (final fact in details.facts.entries)\n            Padding(\n              padding: const EdgeInsets.symmetric(vertical: 10),\n              child: Text('${fact.key}：${fact.value}'),\n            ),\n          for (final item in details.rows)\n            ListTile(\n              title: Text(item.title),\n              subtitle: item.subtitle.isEmpty ? null : Text(item.subtitle),"
+  },
+  {
+    "path": "lib/features/music_platform/netease/messages/netease_messages_page.dart",
+    "line": 230,
+    "snippet": "          child: ListView(\n            physics: const AlwaysScrollableScrollPhysics(),\n            children: [\n              if (_filter.isEmpty) ...[\n                _category(\n                  '新增粉丝',\n                  '关注你的朋友',\n                  CupertinoIcons.person_fill,\n                  const Color(0xFFFF4D63),\n                  counts['newFollowerCount'] ?? 0,\n                  NeteaseNoticeKind.fans,\n                ),\n                _category(\n                  '评论和@提及',\n                  '查看评论、回复和提及',"
+  },
+  {
+    "path": "lib/features/music_platform/netease/messages/netease_messages_page.dart",
+    "line": 492,
+    "snippet": "        child: ListView(\n          children: [\n            if (_error != null) _MessageFeedback(_error!, retry: _load),\n            if (_busy)\n              const Center(\n                child: Padding(\n                  padding: EdgeInsets.all(24),\n                  child: BetaActivityIndicator(),\n                ),\n              ),\n            for (final person in people)\n              ListTile(\n                leading: NeteasePersonAvatar(person),\n                title: Text(person.name),\n                contentPadding: const EdgeInsets.symmetric("
+  },
+  {
+    "path": "lib/features/music_platform/netease/messages/netease_messages_page.dart",
+    "line": 761,
+    "snippet": "              child: ListView.builder(\n                controller: _scroll,\n                reverse: true,\n                padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),\n                itemCount: _messages.length + 1,\n                itemBuilder: (context, index) {\n                  if (index == _messages.length) {\n                    return Column(\n                      children: [\n                        if (_loading)\n                          const Padding(\n                            padding: EdgeInsets.all(16),\n                            child: BetaActivityIndicator(),\n                          ),\n                        if (_more)"
+  },
+  {
+    "path": "lib/features/music_platform/netease/messages/netease_messages_page.dart",
+    "line": 1310,
+    "snippet": "        child: ListView(\n          padding: const EdgeInsets.all(24),\n          children: [\n            Text(neteaseMessageTime(row.time)),\n            const SizedBox(height: 18),\n            SelectableText(row.text, style: const TextStyle(fontSize: 17)),\n            if (row.person.id.isNotEmpty)\n              Padding(\n                padding: const EdgeInsets.only(top: 24),\n                child: BetaGlassButton(\n                  onPressed: () =>\n                      _open<void>(context, NeteaseChatPage(peer: row.person)),\n                  child: const Text('发送私信'),\n                ),\n              ),"
+  },
+  {
+    "path": "lib/features/music_platform/netease/messages/netease_messages_page.dart",
+    "line": 1344,
+    "snippet": "      child: ListView(\n        key: PageStorageKey('notices-${_kind.name}'),\n        padding: const EdgeInsets.only(bottom: 190),\n        physics: const AlwaysScrollableScrollPhysics(),\n        children: [\n          if (_error != null) _MessageFeedback(_error!, retry: _load),\n          if (_busy)\n            const MusicLoadingPlaceholder(\n              child: Padding(\n                padding: EdgeInsets.all(24),\n                child: Center(child: BetaActivityIndicator()),\n              ),\n            ),\n          for (final row in _rows)\n            ListTile("
+  },
+  {
+    "path": "lib/features/music_platform/netease/messages/netease_message_card_view.dart",
+    "line": 103,
+    "snippet": "      child: ListView(\n        padding: const EdgeInsets.fromLTRB(22, 16, 22, 40),\n        children: [\n          if (card.cover.isNotEmpty) ...[\n            ClipRRect(\n              borderRadius: BorderRadius.circular(18),\n              child: ArtworkImage(\n                uri: card.cover,\n                height: 200,\n                fit: BoxFit.cover,\n              ),\n            ),\n            const SizedBox(height: 20),\n          ],\n          Text(card.title, style: Theme.of(context).textTheme.headlineSmall),"
+  },
+  {
+    "path": "lib/features/music_platform/netease/messages/netease_message_diagnostic_action.dart",
+    "line": 27,
+    "snippet": "          child: SingleChildScrollView(\n            child: Column(\n              mainAxisSize: MainAxisSize.min,\n              crossAxisAlignment: CrossAxisAlignment.start,\n              children: [\n                const Text(\n                  '仅包含消息字段结构和类型，不包含聊天正文、账号、头像或链接内容。复制后可手动发给开发者，不会自动上传。',\n                ),\n                const SizedBox(height: 16),\n                SelectableText(\n                  report.json,\n                  style: const TextStyle(fontSize: 12),\n                ),\n              ],\n            ),"
+  },
+  {
+    "path": "lib/features/music_platform/netease/together/netease_together_panel.dart",
+    "line": 118,
+    "snippet": "        child: ListView(\n          padding: const EdgeInsets.fromLTRB(22, 12, 22, 32),\n          children: [\n            if (track.source == TrackSource.netease)\n              EditorialTrackRow(track: track, contextTracks: [track]),\n            if (controller.active) ...[\n              const SizedBox(height: 16),\n              PlatformPanel(\n                child: Column(\n                  crossAxisAlignment: CrossAxisAlignment.start,\n                  children: [\n                    const Text(\n                      '正在一起听',\n                      style: TextStyle(\n                        fontSize: 20,"
+  },
+  {
+    "path": "lib/features/lyrics/presentation/lyrics_panel.dart",
+    "line": 95,
+    "snippet": "          return ListView.builder(\n            controller: _scrollController,\n            physics: const BouncingScrollPhysics(),\n            padding: const EdgeInsets.symmetric(vertical: 225, horizontal: 12),\n            itemExtent: 48,\n            itemCount: document.lines.length,\n            itemBuilder: (context, index) {\n              final line = document.lines[index];\n              final active = index == activeIndex;\n              final completed = index < activeIndex;\n              return GestureDetector(\n                behavior: HitTestBehavior.opaque,\n                onTap: document.isSynced\n                    ? () => ref.read(audioHandlerProvider).seek(line.time)\n                    : null,"
+  },
+  {
+    "path": "lib/features/lyrics/presentation/lyrics_panel.dart",
+    "line": 171,
+    "snippet": "              child: ListView.builder(\n                controller: _scrollController,\n                padding: const EdgeInsets.symmetric(\n                  vertical: 90,\n                  horizontal: 18,\n                ),\n                itemExtent: 58,\n                itemCount: document.lines.length,\n                itemBuilder: (context, index) {\n                  final line = document.lines[index];\n                  final active = index == activeIndex;\n                  return InkWell(\n                    borderRadius: BorderRadius.circular(14),\n                    onTap: document.isSynced\n                        ? () => ref.read(audioHandlerProvider).seek(line.time)"
+  },
+  {
+    "path": "lib/features/local_music/presentation/local_music_page.dart",
+    "line": 268,
+    "snippet": "                  return CustomScrollView(\n                    key: PageStorageKey('local-music-scroll-$index'),\n                    slivers: [\n                      SliverPadding(\n                        padding: const EdgeInsets.fromLTRB(20, 14, 20, 12),\n                        sliver: SliverToBoxAdapter(\n                          child: Column(\n                            crossAxisAlignment: CrossAxisAlignment.stretch,\n                            children: [\n                              // Keep related imports beside each other. Normal phone\n                              // widths fit all three; narrow/large-text layouts can scroll\n                              // this row without wrapping folder import onto a new line.\n                              SingleChildScrollView(\n                                key: const ValueKey('local-import-actions'),\n                                scrollDirection: Axis.horizontal,"
+  },
+  {
+    "path": "lib/features/local_music/presentation/local_music_page.dart",
+    "line": 280,
+    "snippet": "                              SingleChildScrollView(\n                                key: const ValueKey('local-import-actions'),\n                                scrollDirection: Axis.horizontal,\n                                child: Padding(\n                                  padding: const EdgeInsets.symmetric(\n                                    vertical: 6,\n                                  ),\n                                  child: Row(\n                                    children: [\n                                      _ImportButton(\n                                        label: '扫描手机',\n                                        icon: CupertinoIcons.search_circle,\n                                        onPressed: busy\n                                            ? null\n                                            : controller.scan,"
+  },
+  {
+    "path": "lib/features/library/presentation/music_home_page.dart",
+    "line": 136,
+    "snippet": "        CustomScrollView(\n          physics: const BouncingScrollPhysics(),\n          slivers: [\n            SliverPadding(\n              padding: EdgeInsets.fromLTRB(\n                12,\n                topInset + 12,\n                12,\n                bottomClearance,\n              ),\n              sliver: SliverList.list(\n                children: [\n                  _Entrance(\n                    animation: _entrance,\n                    interval: const Interval("
+  },
+  {
+    "path": "lib/features/library/presentation/music_home_page.dart",
+    "line": 346,
+    "snippet": "              child: ListView.separated(\n                key: ValueKey('playlist-rail-$title'),\n                scrollDirection: Axis.horizontal,\n                primary: false,\n                clipBehavior: Clip.none,\n                physics: const BouncingScrollPhysics(),\n                padding: const EdgeInsets.only(right: 18),\n                itemCount: playlists.length,\n                separatorBuilder: (_, _) => const SizedBox(width: 10),\n                itemBuilder: (context, index) {\n                  final playlist = playlists[index];\n                  return SizedBox(\n                    key: ValueKey('playlist-rail-card-${playlist.id}'),\n                    width: cardWidth,\n                    child: _Entrance("
+  },
+  {
+    "path": "lib/features/library/presentation/music_home_page.dart",
+    "line": 497,
+    "snippet": "                child: ListView.separated(\n                  key: const ValueKey('popular-music-column-rail'),\n                  scrollDirection: Axis.horizontal,\n                  primary: false,\n                  clipBehavior: Clip.none,\n                  physics: const BouncingScrollPhysics(),\n                  padding: const EdgeInsets.only(right: 18),\n                  itemCount: columnCount,\n                  separatorBuilder: (_, _) => const SizedBox(width: 12),\n                  itemBuilder: (context, columnIndex) {\n                    final start = columnIndex * 3;\n                    final end = (start + 3).clamp(0, tracks.length);\n                    final columnTracks = tracks.sublist(start, end);\n                    return SizedBox(\n                      key: ValueKey('popular-music-column-$columnIndex'),"
+  },
+  {
+    "path": "lib/features/legal/presentation/disclaimer_dialog.dart",
+    "line": 243,
+    "snippet": "              child: SingleChildScrollView(\n                physics: BouncingScrollPhysics(),\n                padding: EdgeInsets.fromLTRB(18, 16, 18, 12),\n                child: Column(\n                  crossAxisAlignment: CrossAxisAlignment.start,\n                  children: [\n                    Text(\n                      '继续前，请分别查看以下文件。阅读后返回本页确认即可；不同意时可关闭并停止登录或注册。',\n                      style: TextStyle(\n                        color: tokens.textSecondary,\n                        fontSize: 12,\n                        height: 1.6,\n                      ),\n                    ),\n                    const SizedBox(height: 12),"
+  },
+  {
+    "path": "lib/features/legal/presentation/disclaimer_dialog.dart",
+    "line": 486,
+    "snippet": "          child: SingleChildScrollView(\n            physics: const BouncingScrollPhysics(),\n            padding: const EdgeInsets.fromLTRB(18, 18, 18, 12),\n            child: Column(\n              crossAxisAlignment: CrossAxisAlignment.start,\n              children: [\n                Text(\n                  '为提供账号、音乐同步与社交服务，我们需要按《隐私政策》处理必要的信息；使用服务还应遵守《用户协议》。不同意时，你可以退出应用。',\n                  style: TextStyle(\n                    color: tokens.textSecondary,\n                    fontSize: 12,\n                    height: 1.6,\n                  ),\n                ),\n                const SizedBox(height: 17),"
+  },
+  {
+    "path": "lib/features/legal/presentation/disclaimer_dialog.dart",
+    "line": 591,
+    "snippet": "          child: SingleChildScrollView(\n            physics: const BouncingScrollPhysics(),\n            padding: const EdgeInsets.fromLTRB(20, 18, 20, 16),\n            child: LegalDocumentContent(document: document),\n          ),\n        ),\n      ],\n    );\n  }\n}\n\nclass _TimedLegalDocumentLink extends StatelessWidget {\n  const _TimedLegalDocumentLink({required this.document, required this.onTap});\n\n  final LegalDocument document;"
+  },
+  {
+    "path": "lib/features/legal/presentation/disclaimer_dialog.dart",
+    "line": 825,
+    "snippet": "                child: SingleChildScrollView(\n                  physics: const BouncingScrollPhysics(),\n                  padding: const EdgeInsets.fromLTRB(18, 16, 18, 13),\n                  child: Column(\n                    children: const [\n                      _DisclaimerIntro(),\n                      SizedBox(height: 12),\n                      _DisclaimerItem(\n                        number: '01',\n                        title: '项目性质',\n                        content:\n                            'Mesting Music 是个人学习与作品展示项目，并非任何音乐平台的官方客户端，不提供破解会员、规避付费或版权限制的服务。',\n                      ),\n                      _DisclaimerItem(\n                        number: '02',"
+  },
+  {
+    "path": "lib/features/legal/presentation/legal_documents_page.dart",
+    "line": 14,
+    "snippet": "    return CustomScrollView(\n      physics: const BouncingScrollPhysics(),\n      slivers: [\n        SliverPadding(\n          padding: EdgeInsets.fromLTRB(20, top + 14, 20, 42),\n          sliver: SliverList.list(\n            children: [\n              _LegalPageHeader(\n                title: '隐私与协议',\n                subtitle: '清楚了解服务规则与数据处理方式',\n                onBack: () => _goBack(context),\n              ),\n              const SizedBox(height: 30),\n              Text(\n                '你有权知道自己的信息如何被处理，也可以随时回到这里查看最新版本。',"
+  },
+  {
+    "path": "lib/features/legal/presentation/legal_documents_page.dart",
+    "line": 83,
+    "snippet": "    return CustomScrollView(\n      physics: const BouncingScrollPhysics(),\n      slivers: [\n        SliverPadding(\n          padding: EdgeInsets.fromLTRB(20, top + 14, 20, 48),\n          sliver: SliverList.list(\n            children: [\n              _LegalPageHeader(\n                title: document.title,\n                subtitle: document.effectiveDate,\n                onBack: () => _goBack(context),\n              ),\n              const SizedBox(height: 28),\n              Text(\n                document.summary,"
+  },
+  {
+    "path": "lib/features/history/presentation/listening_history_page.dart",
+    "line": 224,
+    "snippet": "    return ListView.separated(\n      key: ValueKey(\n        ranking ? 'listening-ranking-list' : 'recent-playback-list',\n      ),\n      physics: const BouncingScrollPhysics(),\n      padding: const EdgeInsets.fromLTRB(16, 6, 16, 170),\n      itemCount: items.length,\n      separatorBuilder: (_, _) => const SizedBox(height: 9),\n      itemBuilder: (context, index) {\n        final item = items[index];\n        return _HistoryTrackRow(\n          item: item,\n          rank: ranking ? index + 1 : null,\n          onTap: () => DistributionChannel.isBeta\n              ? playBetaSelection(context, ref, item.track)"
+  },
+  {
+    "path": "lib/features/history/presentation/listening_history_page.dart",
+    "line": 459,
+    "snippet": "    return ListView(\n      padding: const EdgeInsets.fromLTRB(22, 52, 22, 170),\n      children: [\n        _HistoryGlassCard(\n          key: const ValueKey('history-empty-glass-card'),\n          child: Padding(\n            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 34),\n            child: Column(\n              children: [\n                Icon(icon, size: 38, color: const Color(0xFF745CC7)),\n                const SizedBox(height: 14),\n                Text(\n                  title,\n                  style: const TextStyle(\n                    fontSize: 17,"
+  },
+  {
+    "path": "lib/features/experience/presentation/beta_now_playing_page.dart",
+    "line": 447,
+    "snippet": "                            ? SingleChildScrollView(\n                                child: SizedBox(\n                                  height: minimum,\n                                  child: content,\n                                ),\n                              )\n                            : content;\n                      },\n                    ),\n                  ),\n                ],\n              ),\n            ),\n          ),\n        ),"
+  },
+  {
+    "path": "lib/features/experience/presentation/cover_player_page.dart",
+    "line": 489,
+    "snippet": "                      return SingleChildScrollView(\n                        child: SizedBox(\n                          height: minimumHeight,\n                          child: Center(\n                            child: SizedBox(\n                              width: wide ? 600 : double.infinity,\n                              child: content,\n                            ),\n                          ),\n                        ),\n                      );\n                    }\n                    return Center(\n                      child: SizedBox(\n                        width: wide ? 600 : double.infinity,"
+  },
+  {
+    "path": "lib/features/experience/presentation/editorial_widgets.dart",
+    "line": 43,
+    "snippet": "    final scroll = ListView(\n      physics: const AlwaysScrollableScrollPhysics(\n        parent: BouncingScrollPhysics(),\n      ),\n      padding: EdgeInsets.only(\n        top: MediaQuery.paddingOf(context).top + 14,\n        bottom: editorialBottomClearance,\n      ),\n      children: children,\n    );\n    return onRefresh == null\n        ? scroll\n        : MusicRefreshIndicator(onRefresh: onRefresh!, child: scroll);\n  }\n}"
+  },
+  {
+    "path": "lib/features/experience/presentation/editorial_widgets.dart",
+    "line": 331,
+    "snippet": "    child: ListView.separated(\n      scrollDirection: Axis.horizontal,\n      padding: const EdgeInsets.symmetric(horizontal: 22),\n      itemCount: children.length,\n      separatorBuilder: (_, _) => const SizedBox(width: 14),\n      itemBuilder: (_, index) => children[index],\n    ),\n  );\n}\n\nclass EditorialTrackRow extends ConsumerWidget {\n  const EditorialTrackRow({\n    required this.track,\n    required this.contextTracks,\n    this.rank,"
+  },
+  {
+    "path": "lib/features/experience/presentation/immersive_lyrics.dart",
+    "line": 143,
+    "snippet": "                  child: ListView.builder(\n                    key: ValueKey(track.id),\n                    controller: _scroll,\n                    padding: EdgeInsets.fromLTRB(\n                      24,\n                      constraints.maxHeight * .2,\n                      24,\n                      constraints.maxHeight * .7,\n                    ),\n                    physics: const BouncingScrollPhysics(),\n                    itemCount: document.lines.length,\n                    itemBuilder: (context, index) => GestureDetector(\n                      behavior: HitTestBehavior.opaque,\n                      onTap: document.isSynced\n                          ? () => ref"
+  },
+  {
+    "path": "lib/features/experience/presentation/listening_replay_page.dart",
+    "line": 106,
+    "snippet": "              child: SingleChildScrollView(\n                scrollDirection: Axis.horizontal,\n                padding: const EdgeInsets.symmetric(horizontal: 22),\n                child: Row(\n                  children: [\n                    for (final month in replayMonthsForYear(_year, today))\n                      Padding(\n                        padding: const EdgeInsets.only(right: 8),\n                        child: ChoiceChip(\n                          label: Text(month == null ? '全年' : '$month 月'),\n                          selected: _month == month,\n                          key: _month == month ? _selectedMonth : null,\n                          onSelected: (_) => setState(() {\n                            _month = month;\n                            _revealPending = true;"
+  },
+  {
+    "path": "lib/features/experience/presentation/music_functions_page.dart",
+    "line": 181,
+    "snippet": "      child: GridView.builder(\n        shrinkWrap: true,\n        physics: const NeverScrollableScrollPhysics(),\n        padding: EdgeInsets.zero,\n        itemCount: entries.length,\n        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(\n          crossAxisCount: 3,\n          crossAxisSpacing: 12,\n          mainAxisSpacing: 12,\n          mainAxisExtent: 116 + (scale - 1).clamp(0, 2) * 48,\n        ),\n        itemBuilder: (context, i) {\n          final item = entries[i];\n          return CupertinoButton(\n            key: ValueKey('function-${item.title}'),"
+  },
+  {
+    "path": "lib/features/experience/presentation/music_home_catalogues.dart",
+    "line": 214,
+    "snippet": "              child: ListView.builder(\n                padding: const EdgeInsets.only(\n                  bottom: editorialBottomClearance,\n                ),\n                itemCount: _items.length + 1,\n                itemBuilder: (context, index) {\n                  if (index == _items.length) {\n                    if (_busy) {\n                      return const PlatformFeedbackState(loading: true);\n                    }\n                    if (_error != null) {\n                      return EditorialEmpty(_error!, onRetry: _load);\n                    }\n                    return _items.isEmpty\n                        ? const EditorialEmpty('平台暂未返回音乐内容')"
+  },
+  {
+    "path": "lib/features/experience/presentation/music_landing_page.dart",
+    "line": 377,
+    "snippet": "                child: ListView.builder(\n                  scrollDirection: Axis.horizontal,\n                  itemCount: (tracks.length / 4).ceil().clamp(1, 5),\n                  itemBuilder: (context, page) => SizedBox(\n                    width: (constraints.maxWidth * .94).clamp(290.0, 560.0),\n                    child: Column(\n                      children: [\n                        for (final track in tracks.skip(page * 4).take(4))\n                          EditorialTrackRow(\n                            track: track,\n                            contextTracks: tracks,\n                          ),\n                      ],\n                    ),\n                  ),"
+  },
+  {
+    "path": "lib/features/experience/presentation/music_library_page.dart",
+    "line": 49,
+    "snippet": "            child: ListView.builder(\n              padding: EdgeInsets.only(\n                top: MediaQuery.paddingOf(context).top + 14,\n                bottom: editorialBottomClearance,\n              ),\n              physics: const AlwaysScrollableScrollPhysics(\n                parent: BouncingScrollPhysics(),\n              ),\n              itemCount: tracks.length + 2,\n              itemBuilder: (context, index) {\n                if (index == 0) {\n                  return EditorialHeader(\n                    view == 'favorites' ? '我的喜欢' : '最近播放',\n                    back: true,\n                    trailing: IconButton("
+  },
+  {
+    "path": "lib/features/experience/presentation/playback_pill_menu.dart",
+    "line": 85,
+    "snippet": "      return SingleChildScrollView(\n        padding: const EdgeInsets.symmetric(vertical: 8),\n        child: Column(\n          mainAxisSize: MainAxisSize.min,\n          children: [\n            Row(\n              crossAxisAlignment: CrossAxisAlignment.start,\n              children: [\n                Expanded(\n                  child: action(\n                    'favorite',\n                    favorite ? '取消喜欢' : '喜欢',\n                    favorite ? CupertinoIcons.heart_fill : CupertinoIcons.heart,\n                    quick: true,\n                  ),"
+  },
+  {
+    "path": "lib/features/experience/presentation/player_more_menu.dart",
+    "line": 75,
+    "snippet": "          builder: (context, update) => SingleChildScrollView(\n            padding: const EdgeInsets.symmetric(vertical: 6),\n            child: Column(\n              mainAxisSize: MainAxisSize.min,\n              children: [\n                for (\n                  var group = 0;\n                  group <\n                      widget.groups.length +\n                          (widget.disclosure == null ? 0 : 1);\n                  group++\n                ) ...[\n                  if (group > 0)\n                    Divider(\n                      height: 13,"
+  },
+  {
+    "path": "lib/features/experience/presentation/player_output_dialog.dart",
+    "line": 67,
+    "snippet": "                child: SingleChildScrollView(\n                  padding: const EdgeInsets.fromLTRB(22, 22, 22, 8),\n                  child: Column(\n                    mainAxisSize: MainAxisSize.min,\n                    crossAxisAlignment: CrossAxisAlignment.stretch,\n                    children: [\n                      Row(\n                        children: [\n                          Expanded(\n                            child: Text(\n                              _devices ? '播放设备' : '音频输出',\n                              style: TextStyle(\n                                fontSize: 23,\n                                fontWeight: FontWeight.w700,\n                                color: ink,"
+  },
+  {
+    "path": "lib/features/discover/presentation/curated_playlist_page.dart",
+    "line": 51,
+    "snippet": "        child: ListView(\n          padding: const EdgeInsets.fromLTRB(18, 10, 18, 112),\n          children: [\n            Row(\n              children: [\n                IconButton(\n                  tooltip: '返回发现歌单',\n                  onPressed: () => _returnFromPlaylist(context),\n                  icon: const Icon(Icons.arrow_back_ios_new_rounded),\n                ),\n                const Spacer(),\n                Text(\n                  loaded?.isUnavailable == true\n                      ? '在线曲库暂不可用'\n                      : loaded?.isLocal == true"
+  },
+  {
+    "path": "lib/features/discover/presentation/curated_playlist_page.dart",
+    "line": 346,
+    "snippet": "      child: ListView.separated(\n        shrinkWrap: true,\n        physics: const NeverScrollableScrollPhysics(),\n        itemCount: tracks.length,\n        separatorBuilder: (context, index) =>\n            Divider(height: 8, indent: 70, color: tokens.border),\n        itemBuilder: (context, index) {\n          final track = tracks[index];\n          final active = currentId == track.id;\n          return ListTile(\n            onTap: () =>\n                handler.playSingleTrack(track, playbackContext: tracks),\n            tileColor: active ? favoriteAccent.withValues(alpha: 0.085) : null,\n            shape: RoundedRectangleBorder(\n              borderRadius: BorderRadius.circular(16),"
+  },
+  {
+    "path": "lib/features/discover/presentation/discover_page.dart",
+    "line": 29,
+    "snippet": "      child: CustomScrollView(\n        physics: const BouncingScrollPhysics(),\n        slivers: [\n          SliverPadding(\n            padding: const EdgeInsets.fromLTRB(18, 12, 18, 18),\n            sliver: SliverToBoxAdapter(\n              child: Row(\n                children: [\n                  IconButton(\n                    tooltip: '返回上一页',\n                    onPressed: () {\n                      if (context.canPop()) {\n                        context.pop();\n                      } else {\n                        context.go('/music');"
+  },
+  {
+    "path": "lib/features/auth/presentation/account_bindings_page.dart",
+    "line": 60,
+    "snippet": "        body: ListView(\n          physics: const BouncingScrollPhysics(),\n          padding: EdgeInsets.fromLTRB(16, topInset + 12, 16, 150),\n          children: [\n            _SecurityHeader(\n              onBack: () =>\n                  context.canPop() ? context.pop() : context.go('/profile'),\n            ),\n            const SizedBox(height: 22),\n            const Text(\n              '登录方式',\n              style: TextStyle(fontSize: 25, fontWeight: FontWeight.w900),\n            ),\n            const SizedBox(height: 7),\n            Text("
+  },
+  {
+    "path": "lib/features/auth/presentation/account_bindings_page.dart",
+    "line": 237,
+    "snippet": "          child: SingleChildScrollView(\n            key: const ValueKey('account-binding-flow-sheet'),\n            padding: const EdgeInsets.fromLTRB(18, 14, 18, 10),\n            physics: const BouncingScrollPhysics(),\n            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,\n            child: Column(\n              crossAxisAlignment: CrossAxisAlignment.stretch,\n              children: [\n                const SizedBox(height: 8),\n                Text(\n                  _step == 0\n                      ? '先确认是你本人'\n                      : '${existing ? '更换' : '绑定'}${widget.method.label}',\n                  style: const TextStyle(\n                    fontSize: 22,"
+  },
+  {
+    "path": "lib/features/auth/presentation/account_deletion_page.dart",
+    "line": 77,
+    "snippet": "          child: ListView(\n            physics: const BouncingScrollPhysics(),\n            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,\n            padding: EdgeInsets.fromLTRB(16, topInset + 8, 16, 164),\n            children: [\n              _Header(\n                onBack: () => context.canPop()\n                    ? context.pop()\n                    : context.go('/music/settings'),\n              ),\n              const SizedBox(height: 24),\n              const Icon(\n                Icons.delete_forever_rounded,\n                color: Color(0xFFC24A34),\n                size: 34,"
+  },
+  {
+    "path": "lib/features/auth/presentation/auth_page.dart",
+    "line": 195,
+    "snippet": "                    child: SingleChildScrollView(\n                      physics: const BouncingScrollPhysics(),\n                      padding: EdgeInsets.fromLTRB(20, topInset + 12, 20, 28),\n                      child: Form(\n                        key: _formKey,\n                        child: Column(\n                          crossAxisAlignment: CrossAxisAlignment.stretch,\n                          children: [\n                            _TopActions(\n                              firstLaunch: widget.firstLaunch,\n                              onBack: _leaveAuth,\n                              onExperience: _experienceNow,\n                            ),\n                            SizedBox(height: widget.firstLaunch ? 54 : 24),\n                            const _AuthBrand(),"
+  },
+  {
+    "path": "lib/features/auth/presentation/beta_onboarding_page.dart",
+    "line": 319,
+    "snippet": "      builder: (context, bounds) => SingleChildScrollView(\n        padding: const EdgeInsets.fromLTRB(28, 8, 28, 14),\n        child: ConstrainedBox(\n          constraints: BoxConstraints(\n            minHeight: (bounds.maxHeight - 22).clamp(0, double.infinity),\n          ),\n          child: Column(\n            mainAxisAlignment: MainAxisAlignment.center,\n            children: [\n              if (index == 7)\n                const MestingMusicCompanions(height: 225)\n              else if (index == 6)\n                const SizedBox(\n                  width: double.infinity,\n                  child: BetaPlayerStylePreviews(),"
+  },
+  {
+    "path": "lib/features/auth/presentation/beta_welcome_page.dart",
+    "line": 90,
+    "snippet": "                child: SingleChildScrollView(\n                  padding: EdgeInsets.zero,\n                  child: ColoredBox(\n                    // Backdrop sampling must see the welcome surface inside\n                    // the scroll pass as well as behind the Scaffold.\n                    color: dark\n                        ? const Color(0xFF0C0D0F)\n                        : const Color(0xFFF5F5F7),\n                    child: Padding(\n                      padding: const EdgeInsets.fromLTRB(28, 16, 28, 24),\n                      child: ConstrainedBox(\n                        constraints: BoxConstraints(\n                          minHeight: (bounds.maxHeight - 40).clamp(\n                            0,\n                            double.infinity,"
+  },
+  {
+    "path": "lib/features/auth/presentation/forgot_password_page.dart",
+    "line": 65,
+    "snippet": "                child: SingleChildScrollView(\n                  physics: const BouncingScrollPhysics(),\n                  padding: EdgeInsets.fromLTRB(18, topInset + 12, 18, 28),\n                  child: Column(\n                    crossAxisAlignment: CrossAxisAlignment.stretch,\n                    children: [\n                      const Icon(\n                        Icons.lock_reset_rounded,\n                        size: 42,\n                        color: Color(0xFFC24A34),\n                      ),\n                      const SizedBox(height: 12),\n                      Text(\n                        _step == 2 ? '密码已经更新' : '安全找回密码',\n                        textAlign: TextAlign.center,"
+  },
+  {
+    "path": "lib/features/app_update/presentation/app_update_sheet.dart",
+    "line": 107,
+    "snippet": "          child: SingleChildScrollView(\n            physics: const BouncingScrollPhysics(),\n            padding: EdgeInsets.fromLTRB(20, 14, 20, bottomInset + 20),\n            child: Column(\n              crossAxisAlignment: CrossAxisAlignment.stretch,\n              children: [\n                Center(\n                  child: Container(\n                    width: 44,\n                    height: 4,\n                    decoration: BoxDecoration(\n                      color: tokens.textMuted.withValues(alpha: .26),\n                      borderRadius: BorderRadius.circular(99),\n                    ),\n                  ),"
+  },
+  {
+    "path": "lib/features/app_update/presentation/beta_app_update_sheet.dart",
+    "line": 149,
+    "snippet": "          child: SingleChildScrollView(\n            padding: EdgeInsets.fromLTRB(\n              24,\n              10,\n              24,\n              24 + MediaQuery.viewPaddingOf(context).bottom,\n            ),\n            child: Column(\n              mainAxisSize: MainAxisSize.min,\n              crossAxisAlignment: CrossAxisAlignment.stretch,\n              children: [\n                Center(\n                  child: Container(\n                    width: 36,\n                    height: 5,"
+  },
+  {
+    "path": "lib/features/app_update/presentation/release_history_page.dart",
+    "line": 21,
+    "snippet": "        builder: (contentContext) => ListView.separated(\n          key: const PageStorageKey('music-release-history'),\n          // Read from inside the secondary glass layout so the final historical\n          // note can scroll above its player/navigation accessories as well.\n          padding: EdgeInsets.fromLTRB(\n            22,\n            16,\n            22,\n            BetaContentInsets.bottomOf(contentContext, 28),\n          ),\n          itemCount: versions.length,\n          separatorBuilder: (_, _) => const Divider(height: 25),\n          itemBuilder: (context, index) {\n            final entry = versions[index];\n            final current = installed?.versionName == entry.key;"
+  },
+  {
+    "path": "lib/features/app_update/presentation/release_notes_sheet.dart",
+    "line": 25,
+    "snippet": "      child: SingleChildScrollView(\n        padding: EdgeInsets.fromLTRB(\n          24,\n          24,\n          24,\n          24 + MediaQuery.viewPaddingOf(context).bottom,\n        ),\n        child: Column(\n          crossAxisAlignment: CrossAxisAlignment.stretch,\n          mainAxisSize: MainAxisSize.min,\n          children: [\n            Row(\n              children: [\n                const Expanded(\n                  child: Text("
+  }
+]

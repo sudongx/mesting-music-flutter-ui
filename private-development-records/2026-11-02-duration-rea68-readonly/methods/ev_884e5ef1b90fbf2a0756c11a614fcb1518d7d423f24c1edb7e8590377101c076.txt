@@ -1,0 +1,8 @@
+    private void V3(@Nullable MusicEndConfig musicEndConfig, @Nullable com.alibaba.fastjson.JSONObject jSONObject) {
+        int iT2;
+        if (jSONObject == null || musicEndConfig == null || !musicEndConfig.getByFakeCompletion() || (iT2 = T2()) <= 0) {
+            return;
+        }
+        jSONObject.put("fade", Integer.valueOf(iT2));
+        jSONObject.put(MusicGiftModel.GIFT_MODE_TIME, Long.valueOf(jSONObject.getLongValue(MusicGiftModel.GIFT_MODE_TIME) + ((long) iT2)));
+    }

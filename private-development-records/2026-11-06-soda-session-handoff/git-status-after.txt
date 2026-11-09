@@ -1,0 +1,1144 @@
+ M .gitignore
+ M .impeccable/surfaces/features-search-presentation-beta-category-search-results-dart.md
+ M AGENTS.md
+ M CHANGELOG.md
+ M DESIGN.md
+ M PRODUCT.md
+ M analysis_options.yaml
+ M android/app/build.gradle.kts
+ M android/app/src/beta/jniLibs/arm64-v8a/libkugou_server.so
+ M android/app/src/beta/jniLibs/armeabi-v7a/libkugou_server.so
+ M android/app/src/main/AndroidManifest.xml
+ M android/app/src/main/kotlin/com/mesting/mesting_music/MainActivity.kt
+ M android/app/src/main/kotlin/com/mesting/mesting_music/RendererCompatibility.kt
+ M assets/data/release-notes.json
+ M docs/BETA-CONTROL-CONVENTIONS.md
+ M lib/app/mesting_music_app.dart
+ M lib/app/router/app_router.dart
+ M lib/core/audio/actual_listening_counter.dart
+ M lib/core/audio/mesting_audio_handler.dart
+ M lib/core/audio/playback_providers.dart
+ M lib/core/cloud/cloudbase_user_media_storage.dart
+ M lib/core/database/app_database.dart
+ M lib/core/persistence/playback_persistence_controller.dart
+ M lib/core/platform/distribution_channel.dart
+ M lib/features/app_update/app_update_providers.dart
+ M lib/features/app_update/domain/release_history.dart
+ M lib/features/app_update/presentation/app_update_coordinator.dart
+ M lib/features/app_update/presentation/app_update_sheet.dart
+ M lib/features/app_update/presentation/java_mysql_test_channel_sheet.dart
+ M lib/features/app_update/presentation/release_notes_sheet.dart
+ M lib/features/audiobooks/audiobooks_page.dart
+ M lib/features/auth/data/auth_repository.dart
+ M lib/features/auth/data/cloudbase_auth_repository.dart
+ M lib/features/auth/presentation/account_bindings_page.dart
+ M lib/features/auth/presentation/account_deletion_page.dart
+ M lib/features/auth/presentation/auth_page.dart
+ M lib/features/auth/presentation/beta_companion_stage.dart
+ M lib/features/auth/presentation/beta_entry_coordinator.dart
+ M lib/features/auth/presentation/beta_welcome_page.dart
+ M lib/features/auth/presentation/forgot_password_page.dart
+ M lib/features/discover/presentation/curated_playlist_page.dart
+ M lib/features/discover/presentation/discover_page.dart
+ M lib/features/downloads/audio_download_quality.dart
+ M lib/features/downloads/audio_downloads.dart
+ M lib/features/downloads/audio_downloads_page.dart
+ M lib/features/experience/presentation/apple_audio_glyphs.dart
+ M lib/features/experience/presentation/beta_bottom_bar.dart
+ M lib/features/experience/presentation/beta_music_shell.dart
+ M lib/features/experience/presentation/beta_now_playing_page.dart
+ M lib/features/experience/presentation/editorial_widgets.dart
+ M lib/features/experience/presentation/floating_playback_pill.dart
+ M lib/features/experience/presentation/immersive_lyrics.dart
+ M lib/features/experience/presentation/music_functions_page.dart
+ M lib/features/experience/presentation/music_home_catalogues.dart
+ M lib/features/experience/presentation/music_landing_page.dart
+ M lib/features/experience/presentation/music_library_page.dart
+ M lib/features/experience/presentation/player_chrome_reveal.dart
+ M lib/features/experience/presentation/player_more_menu.dart
+ M lib/features/experience/presentation/player_output_dialog.dart
+ M lib/features/history/listening_history_providers.dart
+ M lib/features/history/listening_replay.dart
+ M lib/features/history/presentation/listening_history_page.dart
+ M lib/features/kugou_together/together_page.dart
+ M lib/features/legal/presentation/disclaimer_dialog.dart
+ M lib/features/legal/presentation/legal_documents_page.dart
+ M lib/features/library/data/library_repository.dart
+ M lib/features/library/data/library_sync_api.dart
+ M lib/features/library/library_providers.dart
+ M lib/features/library/presentation/music_home_page.dart
+ M lib/features/local_music/data/local_music_repository.dart
+ M lib/features/local_music/domain/local_music.dart
+ M lib/features/local_music/presentation/local_music_page.dart
+ M lib/features/lyrics/presentation/lyrics_panel.dart
+ M lib/features/music_platform/data/embedded_music_server.dart
+ M lib/features/music_platform/data/music_platform_api.dart
+ M lib/features/music_platform/data/platform_artwork.dart
+ M lib/features/music_platform/data/platform_catalog.dart
+ M lib/features/music_platform/data/platform_category_search.dart
+ M lib/features/music_platform/data/platform_explore.dart
+ M lib/features/music_platform/data/platform_library_repository.dart
+ M lib/features/music_platform/data/platform_playback_resolver.dart
+ M lib/features/music_platform/data/platform_session_store.dart
+ M lib/features/music_platform/domain/platform_regions.dart
+ M lib/features/music_platform/domain/platform_session.dart
+ M lib/features/music_platform/listening_sync/listening_sync_coordinator.dart
+ M lib/features/music_platform/listening_sync/listening_sync_models.dart
+ M lib/features/music_platform/listening_sync/listening_sync_providers.dart
+ M lib/features/music_platform/listening_sync/listening_sync_repository.dart
+ M lib/features/music_platform/listening_sync/listening_sync_store.dart
+ M lib/features/music_platform/listening_sync/listening_sync_worker.dart
+ M lib/features/music_platform/listening_sync_page.dart
+ M lib/features/music_platform/music_platform_providers.dart
+ M lib/features/music_platform/netease/fallback/netease_audio_probe.dart
+ M lib/features/music_platform/netease/fallback/netease_source_picker.dart
+ M lib/features/music_platform/netease/fallback/netease_source_transport.dart
+ M lib/features/music_platform/netease/full/netease_comment_entry_page.dart
+ M lib/features/music_platform/netease/full/netease_entity_picker.dart
+ M lib/features/music_platform/netease/full/netease_full_page.dart
+ M lib/features/music_platform/netease/full/netease_full_repository.dart
+ M lib/features/music_platform/netease/messages/netease_messages_page.dart
+ M lib/features/music_platform/netease/messages/netease_messages_repository.dart
+ M lib/features/music_platform/netease/messages/netease_unread.dart
+ M lib/features/music_platform/netease/netease_account_overview.dart
+ M lib/features/music_platform/netease/netease_api.dart
+ M lib/features/music_platform/netease/netease_catalog_adapters.dart
+ M lib/features/music_platform/netease/netease_comment_hugs_page.dart
+ M lib/features/music_platform/netease/netease_comments_repository.dart
+ M lib/features/music_platform/netease/netease_fallback.dart
+ M lib/features/music_platform/netease/netease_features_page.dart
+ M lib/features/music_platform/netease/netease_features_repository.dart
+ M lib/features/music_platform/netease/netease_library_repository.dart
+ M lib/features/music_platform/netease/netease_listening_reporter.dart
+ M lib/features/music_platform/netease/netease_login.dart
+ M lib/features/music_platform/netease/netease_membership_page.dart
+ M lib/features/music_platform/netease/netease_music_repository.dart
+ M lib/features/music_platform/netease/netease_playback_options.dart
+ M lib/features/music_platform/netease/netease_playback_settings_page.dart
+ M lib/features/music_platform/netease/netease_playlist_import_page.dart
+ M lib/features/music_platform/netease/netease_providers.dart
+ M lib/features/music_platform/netease/netease_session.dart
+ M lib/features/music_platform/netease/netease_source_settings_panel.dart
+ M lib/features/music_platform/netease/netease_supplement_routes.dart
+ M lib/features/music_platform/netease/netease_track_sources.dart
+ M lib/features/music_platform/netease/together/netease_together_controller.dart
+ M lib/features/music_platform/netease/together/netease_together_panel.dart
+ M lib/features/music_platform/netease/together/netease_together_player_header.dart
+ M lib/features/music_platform/netease/together/together_presence.dart
+ M lib/features/music_platform/platform_artist_portrait.dart
+ M lib/features/music_platform/platform_artwork_providers.dart
+ M lib/features/music_platform/platform_catalog_providers.dart
+ M lib/features/music_platform/platform_category_search_providers.dart
+ M lib/features/music_platform/platform_explore_providers.dart
+ M lib/features/music_platform/platform_profile_provider.dart
+ M lib/features/music_platform/platform_quality_providers.dart
+ M lib/features/music_platform/platform_recommendation_providers.dart
+ M lib/features/music_platform/platform_rewards_provider.dart
+ M lib/features/music_platform/presentation/beta_personal_profile.dart
+ M lib/features/music_platform/presentation/music_effects_page.dart
+ M lib/features/music_platform/presentation/platform_account_page.dart
+ M lib/features/music_platform/presentation/platform_catalog_detail_page.dart
+ M lib/features/music_platform/presentation/platform_comment_composer.dart
+ M lib/features/music_platform/presentation/platform_comments_page.dart
+ M lib/features/music_platform/presentation/platform_design.dart
+ M lib/features/music_platform/presentation/platform_discovery_page.dart
+ M lib/features/music_platform/presentation/platform_feedback.dart
+ M lib/features/music_platform/presentation/platform_library_page.dart
+ M lib/features/music_platform/presentation/platform_login_options_page.dart
+ M lib/features/music_platform/presentation/platform_profile.dart
+ M lib/features/music_platform/presentation/platform_profile_edit_page.dart
+ M lib/features/music_platform/presentation/platform_quality_button.dart
+ M lib/features/music_platform/presentation/platform_recommendations_page.dart
+ M lib/features/music_platform/presentation/platform_region_picker.dart
+ M lib/features/music_platform/presentation/platform_reward_calendar.dart
+ M lib/features/music_platform/presentation/platform_reward_day.dart
+ M lib/features/music_platform/presentation/platform_search_landing.dart
+ M lib/features/music_platform/presentation/unified_reward_page.dart
+ M lib/features/music_platform/retained_kugou_scope.dart
+ M lib/features/player/presentation/beta_playback_actions.dart
+ M lib/features/player/presentation/music_hub_top_bar.dart
+ M lib/features/player/presentation/music_navigation.dart
+ M lib/features/player/presentation/music_page_transition.dart
+ M lib/features/player/presentation/vinyl_disc.dart
+ M lib/features/playlists/presentation/add_to_playlist_sheet.dart
+ M lib/features/playlists/presentation/playlist_detail_page.dart
+ M lib/features/playlists/presentation/playlist_editor_dialog.dart
+ M lib/features/profile/data/profile_background_sync_api.dart
+ M lib/features/profile/presentation/profile_background_page.dart
+ M lib/features/profile/presentation/profile_edit_page.dart
+ M lib/features/profile/presentation/profile_page.dart
+ M lib/features/profile/presentation/social_status_sheet.dart
+ M lib/features/queue/presentation/beta_playback_queue.dart
+ M lib/features/queue/presentation/queue_page.dart
+ M lib/features/recognition/song_recognition_page.dart
+ M lib/features/recommendation/presentation/recommendation_page.dart
+ M lib/features/search/presentation/apple_search_results.dart
+ M lib/features/search/presentation/beta_category_search_results.dart
+ M lib/features/search/presentation/music_search_page.dart
+ M lib/features/search/search_providers.dart
+ M lib/features/settings/presentation/frame_diagnostics_page.dart
+ M lib/features/settings/presentation/production_diagnostic_driver.dart
+ M lib/features/settings/presentation/settings_page.dart
+ M lib/features/social/data/cloudbase_social_repository.dart
+ M lib/features/social/domain/chat_message_actions.dart
+ M lib/features/social/presentation/chat_page.dart
+ M lib/features/social/presentation/public_profile_page.dart
+ M lib/features/social/presentation/saved_messages_page.dart
+ M lib/features/social/presentation/social_connections_page.dart
+ M lib/features/social/presentation/social_messages_page.dart
+ M lib/features/social/social_providers.dart
+ M lib/features/themes/beta_appearance.dart
+ M lib/features/themes/theme_gallery_page.dart
+ M lib/main.dart
+ M lib/shared/media/artwork_network_image.dart
+ M lib/shared/media/persistent_network_image_cache.dart
+ M lib/shared/models/track.dart
+ M lib/shared/utils/media_uri.dart
+ M lib/shared/widgets/artwork_image.dart
+ M lib/shared/widgets/audio_resolving_wave.dart
+ M lib/shared/widgets/automatic_song_paging.dart
+ M lib/shared/widgets/beta_activity_indicator.dart
+ M lib/shared/widgets/beta_anchored_menu.dart
+ M lib/shared/widgets/beta_bottom_search.dart
+ M lib/shared/widgets/beta_content_insets.dart
+ M lib/shared/widgets/beta_edge_back.dart
+ M lib/shared/widgets/beta_glass_controls.dart
+ M lib/shared/widgets/beta_glass_popover.dart
+ M lib/shared/widgets/beta_page_motion.dart
+ M lib/shared/widgets/beta_secondary_music_layout.dart
+ M lib/shared/widgets/beta_swipe_pages.dart
+ M lib/shared/widgets/beta_tab_navigation.dart
+ M lib/shared/widgets/beta_text_editing.dart
+ M lib/shared/widgets/keyboard_visibility_builder.dart
+ M lib/shared/widgets/liquid_glass_sheet.dart
+ M lib/shared/widgets/mesting_loading_indicator.dart
+ M lib/shared/widgets/route_settled_content.dart
+ M lib/shared/widgets/track_artwork.dart
+ M pubspec.lock
+ M pubspec.yaml
+ M test/artwork_image_test.dart
+ M test/beta17_player_ui_test.dart
+ M test/beta18_refinements_test.dart
+ M test/beta21_refinements_test.dart
+ M test/beta5_ui_test.dart
+ M test/beta9_interactions_test.dart
+ M test/beta_login_entry_test.dart
+ M test/beta_update_isolation_test.dart
+ M test/chat_page_test.dart
+ M test/netease_full_ui_test.dart
+ M test/netease_v112_fallback_download_test.dart
+ M test/netease_v115_sources_test.dart
+ M test/netease_v115_ui_test.dart
+ M test/netease_v118_ui_test.dart
+ M test/netease_v119_data_test.dart
+ M test/netease_v119_ui_test.dart
+ M test/persistent_network_image_cache_test.dart
+ M test/playback_progress_thumb_test.dart
+ M test/playlist_detail_ui_test.dart
+ M test/release_103_ui_test.dart
+ M test/release_107_ui_test.dart
+ M test/release_121_navigation_test.dart
+ M test/release_122_profile_test.dart
+ M test/release_123_player_ui_test.dart
+ M test/release_123_together_test.dart
+ M test/release_124_diagnostics_test.dart
+ M test/release_124_pages_test.dart
+ M test/support/personal_profile_fixture.dart
+ M third_party/audio_glyphs/NOTICE.md
+ M third_party/just_audio/package/lib/just_audio.dart
+ M third_party/liquid_glass_widgets/package/lib/src/widgets/surfaces/tab_bar_searchable_internal.dart
+ M third_party/md3music/rust/src/lib.rs
+ M third_party/md3music/rust/src/request.rs
+ M third_party/netease_protocol/NOTICE.md
+ M third_party/ring_download_sdk.SOURCE.md
+ M third_party/ring_download_sdk/.gitignore
+ M third_party/ring_download_sdk/CHANGELOG.md
+ M third_party/ring_download_sdk/README.md
+ M third_party/ring_download_sdk/analysis_options.yaml
+ M third_party/ring_download_sdk/android/build.gradle
+ M third_party/ring_download_sdk/android/src/main/AndroidManifest.xml
+ M third_party/ring_download_sdk/android/src/main/java/asia/csnas/ringdownload/RingDownloadPlugin.java
+ M third_party/ring_download_sdk/docs/BUILD_ENVIRONMENT.md
+ M third_party/ring_download_sdk/docs/ENTERPRISE.md
+ M third_party/ring_download_sdk/docs/LifeRing-backend-external-source.patch
+ M third_party/ring_download_sdk/docs/RELEASE_GATE.md
+ M third_party/ring_download_sdk/example/.gitignore
+ M third_party/ring_download_sdk/example/.metadata
+ M third_party/ring_download_sdk/example/README.md
+ M third_party/ring_download_sdk/example/analysis_options.yaml
+ M third_party/ring_download_sdk/example/android/.gitignore
+ M third_party/ring_download_sdk/example/android/app/build.gradle.kts
+ M third_party/ring_download_sdk/example/android/app/src/debug/AndroidManifest.xml
+ M third_party/ring_download_sdk/example/android/app/src/main/AndroidManifest.xml
+ M third_party/ring_download_sdk/example/android/app/src/main/kotlin/asia/csnas/ring_sdk_example/MainActivity.kt
+ M third_party/ring_download_sdk/example/android/app/src/main/res/drawable-v21/launch_background.xml
+ M third_party/ring_download_sdk/example/android/app/src/main/res/drawable/launch_background.xml
+ M third_party/ring_download_sdk/example/android/app/src/main/res/values-night/styles.xml
+ M third_party/ring_download_sdk/example/android/app/src/main/res/values/styles.xml
+ M third_party/ring_download_sdk/example/android/app/src/profile/AndroidManifest.xml
+ M third_party/ring_download_sdk/example/android/build.gradle.kts
+ M third_party/ring_download_sdk/example/android/gradle.properties
+ M third_party/ring_download_sdk/example/android/gradle/wrapper/gradle-wrapper.properties
+ M third_party/ring_download_sdk/example/android/settings.gradle.kts
+ M third_party/ring_download_sdk/example/lib/main.dart
+ M third_party/ring_download_sdk/example/lib/p8p_android_lifecycle_probe.dart
+ M third_party/ring_download_sdk/example/package.cmd
+ M third_party/ring_download_sdk/example/pubspec.lock
+ M third_party/ring_download_sdk/example/pubspec.yaml
+ M third_party/ring_download_sdk/example/release.example.json
+ M third_party/ring_download_sdk/example/release.latest.example.json
+ M third_party/ring_download_sdk/example/test/template_widget_test.txt
+ M third_party/ring_download_sdk/example/test/widget_test.dart
+ M third_party/ring_download_sdk/lib/compat.dart
+ M third_party/ring_download_sdk/lib/ring_download_sdk.dart
+ M third_party/ring_download_sdk/lib/src/core/models/app_upgrade_models.dart
+ M third_party/ring_download_sdk/lib/src/core/services/app_upgrade_file_io.dart
+ M third_party/ring_download_sdk/lib/src/core/services/app_upgrade_health_client.dart
+ M third_party/ring_download_sdk/lib/src/core/services/app_upgrade_p2p_diagnostics.dart
+ M third_party/ring_download_sdk/lib/src/core/services/app_upgrade_p2p_identity.dart
+ M third_party/ring_download_sdk/lib/src/core/services/app_upgrade_p2p_piece_receiver.dart
+ M third_party/ring_download_sdk/lib/src/core/services/app_upgrade_p2p_piece_store.dart
+ M third_party/ring_download_sdk/lib/src/core/services/app_upgrade_p2p_protocol.dart
+ M third_party/ring_download_sdk/lib/src/core/services/app_upgrade_p2p_timeouts.dart
+ M third_party/ring_download_sdk/lib/src/core/services/app_upgrade_service_events.dart
+ M third_party/ring_download_sdk/lib/src/core/services/app_upgrade_v40_download_client.dart
+ M third_party/ring_download_sdk/lib/src/core/services/app_upgrade_v40_p2p_client.dart
+ M third_party/ring_download_sdk/lib/src/p8p/coordinator.dart
+ M third_party/ring_download_sdk/lib/src/p8p/leases.dart
+ M third_party/ring_download_sdk/lib/src/p8p/ordered_writer.dart
+ M third_party/ring_download_sdk/lib/src/p8p/sources.dart
+ M third_party/ring_download_sdk/lib/src/p8p/transfer_protocol.dart
+ M third_party/ring_download_sdk/lib/src/p8p/transfer_receiver.dart
+ M third_party/ring_download_sdk/lib/src/p8p/window.dart
+ M third_party/ring_download_sdk/lib/src/sdk/client.dart
+ M third_party/ring_download_sdk/lib/src/sdk/direct_https.dart
+ M third_party/ring_download_sdk/lib/src/sdk/engine.dart
+ M third_party/ring_download_sdk/lib/src/sdk/models.dart
+ M third_party/ring_download_sdk/lib/src/sdk/network.dart
+ M third_party/ring_download_sdk/lib/src/sdk/release_source.dart
+ M third_party/ring_download_sdk/provenance.json
+ M third_party/ring_download_sdk/pubspec.lock
+ M third_party/ring_download_sdk/pubspec.yaml
+ M third_party/ring_download_sdk/test/app_upgrade_download_recovery_test.dart
+ M third_party/ring_download_sdk/test/app_upgrade_file_io_test.dart
+ M third_party/ring_download_sdk/test/app_upgrade_hybrid_flow_test.dart
+ M third_party/ring_download_sdk/test/app_upgrade_p2p_flow_test.dart
+ M third_party/ring_download_sdk/test/app_upgrade_upload_diagnostics_test.dart
+ M third_party/ring_download_sdk/test/app_upgrade_v40_contract_test.dart
+ M third_party/ring_download_sdk/test/fixtures/p8p-transfer-v1.json
+ M third_party/ring_download_sdk/test/fixtures/p8p-window-v1.json
+ M third_party/ring_download_sdk/test/p8p_coordinator_test.dart
+ M third_party/ring_download_sdk/test/p8p_leases_test.dart
+ M third_party/ring_download_sdk/test/p8p_lifecycle_file_io_test.dart
+ M third_party/ring_download_sdk/test/p8p_ordered_writer_test.dart
+ M third_party/ring_download_sdk/test/p8p_receiver_test.dart
+ M third_party/ring_download_sdk/test/p8p_transfer_protocol_test.dart
+ M third_party/ring_download_sdk/test/p8p_transfer_receiver_test.dart
+ M third_party/ring_download_sdk/test/p8p_window_test.dart
+ M third_party/ring_download_sdk/test/sdk_contract_test.dart
+ M third_party/ring_download_sdk/test/sdk_external_https_test.dart
+ M third_party/ring_download_sdk/test/sdk_installation_events_test.dart
+ M third_party/ring_download_sdk/test/sdk_release_test.dart
+ M third_party/ring_download_sdk/test/sdk_verified_piece_test.dart
+ M third_party/ring_download_sdk/tool/p8p_multisource_benchmark.dart
+ M third_party/ring_download_sdk/tool/p8p_receive_transcript.dart
+ M third_party/ring_download_sdk/tool/p8p_window_benchmark.dart
+ M third_party/ring_download_sdk/tool/verify.ps1
+ M third_party/ring_download_sdk/validation/history/1.0.3-source-sha256.json
+ M third_party/ring_download_sdk/validation/history/1.0.3-summary.json
+ M third_party/ring_download_sdk/validation/release-1.1.0.json
+ M third_party/ring_download_sdk/validation/source-sha256.json
+ M third_party/ring_download_sdk/validation/summary.json
+ M tool/build_android_md3_beta_apk.ps1
+ M tool/build_android_release_apk.ps1
+?? .impeccable/surfaces/clearance-region-together-133.md
+?? .impeccable/surfaces/music-library-refresh-tab-131.md
+?? .impeccable/surfaces/search-swipe-release-notes-132.md
+?? HANDOFF-CURRENT-SESSION-2026-10-31-v1.0.25.md
+?? HANDOFF-CURRENT-SESSION-2026-10-31-v1.0.26.md
+?? HANDOFF-CURRENT-SESSION-2026-10-31-v1.0.27.md
+?? HANDOFF-CURRENT-SESSION-2026-10-31-v1.0.28.md
+?? HANDOFF-CURRENT-SESSION-2026-11-01-v1.0.29.md
+?? HANDOFF-CURRENT-SESSION-2026-11-01-v1.0.30.md
+?? HANDOFF-CURRENT-SESSION-2026-11-01-v1.0.31.md
+?? HANDOFF-CURRENT-SESSION-2026-11-01-v1.0.32.md
+?? HANDOFF-CURRENT-SESSION-2026-11-01-v1.0.33.md
+?? HANDOFF-CURRENT-SESSION-2026-11-01-v1.0.34.md
+?? HANDOFF-CURRENT-SESSION-2026-11-01-v1.0.35.md
+?? HANDOFF-CURRENT-SESSION-2026-11-01-v1.0.36.md
+?? HANDOFF-CURRENT-SESSION-2026-11-02-NATIVE-DURATION-CANDIDATE.md
+?? HANDOFF-CURRENT-SESSION-2026-11-02-UI-REFRESH.md
+?? HANDOFF-CURRENT-SESSION-2026-11-02-v1.0.37.md
+?? HANDOFF-CURRENT-SESSION-2026-11-02-v1.0.39.md
+?? HANDOFF-CURRENT-SESSION-2026-11-02-v1.0.40.md
+?? HANDOFF-CURRENT-SESSION-2026-11-02-v1.0.41.md
+?? HANDOFF-CURRENT-SESSION-2026-11-02-v1.0.42.md
+?? HANDOFF-CURRENT-SESSION-2026-11-03-v1.0.43.md
+?? HANDOFF-CURRENT-SESSION-2026-11-03-v1.0.44.md
+?? HANDOFF-CURRENT-SESSION-2026-11-03-v1.0.45-CANDIDATE.md
+?? HANDOFF-CURRENT-SESSION-2026-11-03-v1.0.45-DUAL-APP-R3.md
+?? HANDOFF-CURRENT-SESSION-2026-11-03-v1.0.45-MEDIA-OWNER-R4.md
+?? HANDOFF-CURRENT-SESSION-2026-11-03-v1.0.45-SYNC-SNAPSHOT-R2.md
+?? HANDOFF-CURRENT-SESSION-2026-11-03-v1.0.45.md
+?? HANDOFF-CURRENT-SESSION-2026-11-03-v1.0.46.md
+?? HANDOFF-CURRENT-SESSION-2026-11-03-v1.0.47.md
+?? HANDOFF-CURRENT-SESSION-2026-11-04-v1.0.48.md
+?? HANDOFF-CURRENT-SESSION-2026-11-04-v1.0.49.md
+?? HANDOFF-CURRENT-SESSION-2026-11-04-v1.0.50.md
+?? HANDOFF-CURRENT-SESSION-2026-11-04-v1.0.51.md
+?? HANDOFF-CURRENT-SESSION-2026-11-04-v1.0.52.md
+?? HANDOFF-CURRENT-SESSION-2026-11-04-v1.0.53.md
+?? HANDOFF-CURRENT-SESSION-2026-11-05-v1.0.54.md
+?? HANDOFF-CURRENT-SESSION-2026-11-05-v1.0.55.md
+?? HANDOFF-CURRENT-SESSION-2026-11-05-v1.0.56.md
+?? HANDOFF-CURRENT-SESSION-2026-11-05-v1.0.57.md
+?? HANDOFF-CURRENT-SESSION-2026-11-05-v1.0.58.md
+?? HANDOFF-CURRENT-SESSION-2026-11-05-v1.0.59.md
+?? HANDOFF-CURRENT-SESSION-2026-11-05-v1.0.60.md
+?? HANDOFF-CURRENT-SESSION-2026-11-05-v1.0.61.md
+?? HANDOFF-GITEE-BACKUP-2026-11-04.md
+?? HANDOFF-GITHUB-ARCHIVE-2026-11-04-v1.0.49-COMPLETED.md
+?? HANDOFF-GITHUB-GITEE-2026-11-05-v1.0.60.md
+?? HANDOFF-SESSION-2026-11-01-v1.0.28-TO-NEW-CHAT.md
+?? HANDOFF-SESSION-2026-11-01-v1.0.32-TO-NEW-CHAT.md
+?? HANDOFF-SESSION-2026-11-02-v1.0.37-AND-DISK-CLEANUP.md
+?? HANDOFF-SESSION-2026-11-02-v1.0.39-DURATION-TO-NEW-CHAT.md
+?? HANDOFF-SESSION-2026-11-03-v1.0.43-TO-NEW-CHAT.md
+?? HANDOFF-SESSION-2026-11-04-v1.0.47-TO-NEW-CHAT.md
+?? HANDOFF-SESSION-2026-11-04-v1.0.49-AND-GITHUB-TO-NEW-CHAT.md
+?? HANDOFF-SESSION-2026-11-04-v1.0.52-TO-NEW-CHAT.md
+?? HANDOFF-SESSION-2026-11-05-v1.0.54-TO-NEW-CHAT.md
+?? HANDOFF-SESSION-2026-11-05-v1.0.56-TO-NEW-CHAT.md
+?? HANDOFF-SESSION-2026-11-05-v1.0.58-TO-NEW-CHAT.md
+?? HANDOFF-SESSION-2026-11-05-v1.0.60-TO-NEW-CHAT.md
+?? HANDOFF-SESSION-2026-11-06-SODA-RESEARCH-TO-NEW-CHAT.md
+?? android/app/src/main/java/com/ryanheise/audioservice/MestingTogetherMediaLease.java
+?? android/app/src/main/kotlin/com/mesting/mesting_music/MusicHttpExchange.kt
+?? android/app/src/main/kotlin/com/mesting/mesting_music/MusicHttpPlugin.kt
+?? android/app/src/main/kotlin/com/mesting/mesting_music/MusicNativeTransport.kt
+?? android/app/src/main/kotlin/com/mesting/mesting_music/MusicNetworkState.kt
+?? android/app/src/main/kotlin/com/mesting/mesting_music/TogetherBackgroundPlugin.kt
+?? android/app/src/main/kotlin/com/mesting/mesting_music/TogetherMediaLeaseCoordinator.kt
+?? android/app/src/main/kotlin/com/mesting/mesting_music/TogetherPulseScheduler.kt
+?? android/app/src/main/res/drawable/ic_stat_together.xml
+?? android/build/reports/problems/problems-report.html
+?? docs/INSTALL-v1.0.25.md
+?? docs/INSTALL-v1.0.26.md
+?? docs/INSTALL-v1.0.27.md
+?? docs/INSTALL-v1.0.28.md
+?? docs/INSTALL-v1.0.29.md
+?? docs/INSTALL-v1.0.30.md
+?? docs/INSTALL-v1.0.31.md
+?? docs/INSTALL-v1.0.32.md
+?? docs/INSTALL-v1.0.33.md
+?? docs/INSTALL-v1.0.34.md
+?? docs/INSTALL-v1.0.35.md
+?? docs/INSTALL-v1.0.36.md
+?? docs/INSTALL-v1.0.37.md
+?? docs/INSTALL-v1.0.39.md
+?? docs/INSTALL-v1.0.40.md
+?? docs/INSTALL-v1.0.41.md
+?? docs/INSTALL-v1.0.42.md
+?? docs/INSTALL-v1.0.43.md
+?? docs/INSTALL-v1.0.44.md
+?? docs/INSTALL-v1.0.45-CANDIDATE.md
+?? docs/INSTALL-v1.0.45.md
+?? docs/INSTALL-v1.0.46.md
+?? docs/INSTALL-v1.0.47.md
+?? docs/INSTALL-v1.0.48.md
+?? docs/INSTALL-v1.0.49.md
+?? docs/INSTALL-v1.0.50.md
+?? docs/INSTALL-v1.0.51.md
+?? docs/INSTALL-v1.0.52.md
+?? docs/INSTALL-v1.0.53.md
+?? docs/INSTALL-v1.0.54.md
+?? docs/INSTALL-v1.0.55.md
+?? docs/INSTALL-v1.0.56.md
+?? docs/INSTALL-v1.0.57.md
+?? docs/INSTALL-v1.0.58.md
+?? docs/INSTALL-v1.0.59.md
+?? docs/INSTALL-v1.0.60.md
+?? docs/INSTALL-v1.0.61.md
+?? docs/LONG-LISTS-2026-11-03-v1.0.47.md
+?? docs/NETEASE-TOTAL-DURATION-2026-11-02-INVESTIGATION.md
+?? docs/SYNC-DUAL-APP-2026-11-03-v1.0.45.md
+?? docs/SYNC-MEDIA-OWNER-R4-2026-11-03-v1.0.45.md
+?? docs/SYNC-SNAPSHOT-FIX-2026-11-03-v1.0.45.md
+?? docs/UI-AND-SYNC-2026-11-03-v1.0.45.md
+?? docs/UI-REFRESH-2026-11-02.md
+?? docs/fixes-2026-10-31-v1.0.25.md
+?? docs/fixes-2026-10-31-v1.0.26.md
+?? docs/fixes-2026-10-31-v1.0.27.md
+?? docs/fixes-2026-10-31-v1.0.28.md
+?? docs/fixes-2026-11-01-v1.0.29.md
+?? docs/fixes-2026-11-01-v1.0.30.md
+?? docs/fixes-2026-11-01-v1.0.31.md
+?? docs/fixes-2026-11-01-v1.0.32.md
+?? docs/fixes-2026-11-01-v1.0.33.md
+?? docs/fixes-2026-11-01-v1.0.34.md
+?? docs/fixes-2026-11-01-v1.0.35.md
+?? docs/fixes-2026-11-01-v1.0.36.md
+?? docs/fixes-2026-11-02-v1.0.37.md
+?? docs/fixes-2026-11-02-v1.0.40.md
+?? docs/fixes-2026-11-02-v1.0.41.md
+?? docs/fixes-2026-11-02-v1.0.42.md
+?? docs/fixes-2026-11-03-v1.0.43.md
+?? docs/fixes-2026-11-03-v1.0.44.md
+?? docs/fixes-2026-11-03-v1.0.45.md
+?? docs/fixes-2026-11-03-v1.0.46.md
+?? docs/fixes-2026-11-03-v1.0.47.md
+?? docs/fixes-2026-11-04-v1.0.48.md
+?? docs/fixes-2026-11-04-v1.0.49.md
+?? docs/fixes-2026-11-04-v1.0.50.md
+?? docs/fixes-2026-11-04-v1.0.51.md
+?? docs/fixes-2026-11-04-v1.0.52.md
+?? docs/fixes-2026-11-04-v1.0.53.md
+?? docs/fixes-2026-11-05-v1.0.54.md
+?? docs/fixes-2026-11-05-v1.0.55.md
+?? docs/fixes-2026-11-05-v1.0.56.md
+?? docs/fixes-2026-11-05-v1.0.57.md
+?? docs/fixes-2026-11-05-v1.0.58.md
+?? docs/fixes-2026-11-05-v1.0.59.md
+?? docs/fixes-2026-11-05-v1.0.60.md
+?? docs/fixes-2026-11-05-v1.0.61.md
+?? docs/followup-2026-10-31-v1.0.24.md
+?? docs/kugou-standard-2086-contract-2026-11-04.md
+?? docs/layout-clearance-audit-2026-11-01-v1.0.33.md
+?? docs/list-loading-and-footprint-2026-11-01-v1.0.35.md
+?? docs/official-footprint-2026-11-02-v1.0.37.md
+?? docs/together-cumulative-protocol-2026-11-01.md
+?? docs/validation-2026-10-31-v1.0.24-followup.json
+?? docs/validation-2026-10-31-v1.0.25.json
+?? docs/validation-2026-10-31-v1.0.26.json
+?? docs/validation-2026-10-31-v1.0.27.json
+?? docs/validation-2026-10-31-v1.0.28.json
+?? docs/validation-2026-11-01-v1.0.29.json
+?? docs/validation-2026-11-01-v1.0.30.json
+?? docs/validation-2026-11-01-v1.0.31.json
+?? docs/validation-2026-11-01-v1.0.32.json
+?? docs/validation-2026-11-01-v1.0.33.json
+?? docs/validation-2026-11-01-v1.0.34.json
+?? docs/validation-2026-11-01-v1.0.35.json
+?? docs/validation-2026-11-01-v1.0.36.json
+?? docs/validation-2026-11-02-v1.0.37.json
+?? docs/validation-2026-11-02-v1.0.39.json
+?? docs/validation-2026-11-02-v1.0.40.json
+?? docs/validation-2026-11-02-v1.0.41.json
+?? docs/validation-2026-11-02-v1.0.42.json
+?? docs/validation-2026-11-03-v1.0.43.json
+?? docs/validation-2026-11-03-v1.0.44.json
+?? docs/validation-2026-11-03-v1.0.45-CANDIDATE.json
+?? docs/validation-2026-11-03-v1.0.45-MEDIA-OWNER-R4.json
+?? docs/validation-2026-11-03-v1.0.45-SYNC-SNAPSHOT-R2.json
+?? docs/validation-2026-11-03-v1.0.45.json
+?? docs/validation-2026-11-03-v1.0.46.json
+?? docs/validation-2026-11-03-v1.0.47.json
+?? docs/validation-2026-11-04-v1.0.48.json
+?? docs/validation-2026-11-04-v1.0.49.json
+?? docs/validation-2026-11-04-v1.0.50.json
+?? docs/validation-2026-11-04-v1.0.51.json
+?? docs/validation-2026-11-04-v1.0.52.json
+?? docs/validation-2026-11-04-v1.0.53.json
+?? docs/validation-2026-11-05-v1.0.54.json
+?? docs/validation-2026-11-05-v1.0.55.json
+?? docs/validation-2026-11-05-v1.0.56.json
+?? docs/validation-2026-11-05-v1.0.57.json
+?? docs/validation-2026-11-05-v1.0.58.json
+?? docs/validation-2026-11-05-v1.0.59.json
+?? docs/validation-2026-11-05-v1.0.60.json
+?? docs/validation-2026-11-05-v1.0.61.json
+?? lib/app/router/beta_tab_shell.dart
+?? lib/core/cache/browse_cache_routes.dart
+?? lib/core/cache/browse_response_cache.dart
+?? lib/core/cache/cached_browse_loader.dart
+?? lib/core/cache/cached_browse_provider.dart
+?? lib/core/network/music_http_client.dart
+?? lib/core/network/music_network_diagnostics.dart
+?? lib/core/network/system_music_io_client.dart
+?? lib/core/performance/background_json.dart
+?? lib/core/performance/track_snapshots.dart
+?? lib/core/security/android_credential_archive.dart
+?? lib/core/security/credential_failure.dart
+?? lib/core/security/retained_credential_vault.dart
+?? lib/core/security/retained_secure_read.dart
+?? lib/features/app_update/data/release_notes_receipt.dart
+?? lib/features/app_update/presentation/release_history_page.dart
+?? lib/features/auth/presentation/companion_motion.dart
+?? lib/features/downloads/audio_download_resume.dart
+?? lib/features/downloads/download_source_coordinator.dart
+?? lib/features/downloads/downloaded_track_subtitle.dart
+?? lib/features/downloads/netease_download_resolver.dart
+?? lib/features/downloads/netease_download_source_picker.dart
+?? lib/features/experience/presentation/airpods_pro_glyph.dart
+?? lib/features/experience/presentation/favorite_tracks_search.dart
+?? lib/features/experience/presentation/music_discovery_sections.dart
+?? lib/features/experience/presentation/playback_pill_artwork.dart
+?? lib/features/experience/presentation/player_artwork_transition.dart
+?? lib/features/library/data/favorite_pins.dart
+?? lib/features/library/data/favorite_track_window.dart
+?? lib/features/library/data/playlist_directory_window.dart
+?? lib/features/library/favorite_pins_provider.dart
+?? lib/features/music_platform/data/kugou_account_store.dart
+?? lib/features/music_platform/data/kugou_favorite_index.dart
+?? lib/features/music_platform/data/kugou_favorite_playlist.dart
+?? lib/features/music_platform/data/kugou_listening_profile_repository.dart
+?? lib/features/music_platform/data/kugou_medal_repository.dart
+?? lib/features/music_platform/data/kugou_official_api.dart
+?? lib/features/music_platform/data/kugou_official_web_contract.dart
+?? lib/features/music_platform/data/kugou_playlist_paging.dart
+?? lib/features/music_platform/data/kugou_standard_login.dart
+?? lib/features/music_platform/data/kugou_v4_grade_protocol.dart
+?? lib/features/music_platform/data/kugou_v4_grade_repository.dart
+?? lib/features/music_platform/data/platform_public_playlist.dart
+?? lib/features/music_platform/data/platform_ranking.dart
+?? lib/features/music_platform/data/playback_quality_catalog.dart
+?? lib/features/music_platform/data/song_menu_details.dart
+?? lib/features/music_platform/data/track_page_utils.dart
+?? lib/features/music_platform/discovery_startup_cache.dart
+?? lib/features/music_platform/domain/kugou_listening_profile.dart
+?? lib/features/music_platform/domain/kugou_medal_catalog.dart
+?? lib/features/music_platform/domain/platform_search_user.dart
+?? lib/features/music_platform/kugou_listening_profile_providers.dart
+?? lib/features/music_platform/listening_sync/listening_daily_readback.dart
+?? lib/features/music_platform/netease/diagnostics/netease_listening_audit.dart
+?? lib/features/music_platform/netease/diagnostics/netease_listening_audit_page.dart
+?? lib/features/music_platform/netease/diagnostics/netease_listening_audit_provider.dart
+?? lib/features/music_platform/netease/fallback/lx_anonymous_transport.dart
+?? lib/features/music_platform/netease/fallback/lx_netease_source.dart
+?? lib/features/music_platform/netease/fallback/lx_script_engine.dart
+?? lib/features/music_platform/netease/fallback/lx_source_catalog.dart
+?? lib/features/music_platform/netease/footprint/listening_footprint_chart.dart
+?? lib/features/music_platform/netease/footprint/listening_footprint_models.dart
+?? lib/features/music_platform/netease/footprint/listening_footprint_page.dart
+?? lib/features/music_platform/netease/footprint/listening_footprint_providers.dart
+?? lib/features/music_platform/netease/footprint/listening_footprint_reader.dart
+?? lib/features/music_platform/netease/footprint/official_footprint.dart
+?? lib/features/music_platform/netease/footprint/official_footprint_page.dart
+?? lib/features/music_platform/netease/footprint/official_footprint_providers.dart
+?? lib/features/music_platform/netease/footprint/official_footprint_reader.dart
+?? lib/features/music_platform/netease/footprint/official_footprint_repository.dart
+?? lib/features/music_platform/netease/messages/netease_message_card.dart
+?? lib/features/music_platform/netease/messages/netease_message_card_view.dart
+?? lib/features/music_platform/netease/messages/netease_message_diagnostic_action.dart
+?? lib/features/music_platform/netease/messages/netease_message_diagnostics.dart
+?? lib/features/music_platform/netease/messages/netease_message_protocol.dart
+?? lib/features/music_platform/netease/netease_account_source_info.dart
+?? lib/features/music_platform/netease/netease_connection_models.dart
+?? lib/features/music_platform/netease/netease_connections_controller.dart
+?? lib/features/music_platform/netease/netease_footprint.dart
+?? lib/features/music_platform/netease/netease_free_listen_entry.dart
+?? lib/features/music_platform/netease/netease_item_artwork.dart
+?? lib/features/music_platform/netease/netease_library_sections.dart
+?? lib/features/music_platform/netease/netease_native_journal.dart
+?? lib/features/music_platform/netease/netease_native_log.dart
+?? lib/features/music_platform/netease/netease_native_transport.dart
+?? lib/features/music_platform/netease/netease_personal_connections_page.dart
+?? lib/features/music_platform/netease/netease_playback_log.dart
+?? lib/features/music_platform/netease/netease_request_exception.dart
+?? lib/features/music_platform/netease/netease_reward_journal.dart
+?? lib/features/music_platform/netease/netease_reward_requests.dart
+?? lib/features/music_platform/netease/netease_rewards.dart
+?? lib/features/music_platform/netease/netease_rewards_provider.dart
+?? lib/features/music_platform/netease/netease_rewards_repository.dart
+?? lib/features/music_platform/netease/netease_song_metadata.dart
+?? lib/features/music_platform/netease/netease_user_page.dart
+?? lib/features/music_platform/netease/netease_user_providers.dart
+?? lib/features/music_platform/netease/netease_user_repository.dart
+?? lib/features/music_platform/netease/together/netease_together_exit.dart
+?? lib/features/music_platform/netease/together/together_background_binding.dart
+?? lib/features/music_platform/netease/together/together_cumulative.dart
+?? lib/features/music_platform/netease/together/together_playback_command.dart
+?? lib/features/music_platform/netease/together/together_record.dart
+?? lib/features/music_platform/netease/together/together_records_page.dart
+?? lib/features/music_platform/netease/together/together_records_repository.dart
+?? lib/features/music_platform/netease/together/together_room_members.dart
+?? lib/features/music_platform/netease/together/together_shared_playlist.dart
+?? lib/features/music_platform/netease/together/together_sync_diagnostics.dart
+?? lib/features/music_platform/netease/together/together_sync_diagnostics_page.dart
+?? lib/features/music_platform/platform_browse_cache.dart
+?? lib/features/music_platform/presentation/kugou_accounts_page.dart
+?? lib/features/music_platform/presentation/kugou_listening_profile_pages.dart
+?? lib/features/music_platform/presentation/kugou_medals_page.dart
+?? lib/features/music_platform/presentation/kugou_official_page.dart
+?? lib/features/music_platform/presentation/kugou_standard_authorization_page.dart
+?? lib/features/music_platform/presentation/netease_personal_statistics.dart
+?? lib/features/music_platform/presentation/netease_reward_calendar.dart
+?? lib/features/music_platform/presentation/platform_collection_play.dart
+?? lib/features/music_platform/presentation/platform_lazy_list.dart
+?? lib/features/music_platform/presentation/platform_mode_play.dart
+?? lib/features/music_platform/presentation/platform_play_all_button.dart
+?? lib/features/music_platform/presentation/platform_public_playlist_header.dart
+?? lib/features/music_platform/presentation/platform_ranking_header.dart
+?? lib/features/music_platform/presentation/retained_platform_snapshot.dart
+?? lib/features/music_platform/presentation/song_actions_sheet.dart
+?? lib/features/music_platform/presentation/song_list_tools_host.dart
+?? lib/features/settings/presentation/music_network_diagnostics_page.dart
+?? lib/features/themes/music_application_theme.dart
+?? lib/shared/media/artwork_refresh_coordinator.dart
+?? lib/shared/models/audio_origin.dart
+?? lib/shared/models/song_list_memory.dart
+?? lib/shared/models/track_page.dart
+?? lib/shared/widgets/artwork_reveal_boundary.dart
+?? lib/shared/widgets/artwork_scroll_frontier.dart
+?? lib/shared/widgets/beta_entrance_readiness.dart
+?? lib/shared/widgets/beta_music_chrome_scope.dart
+?? lib/shared/widgets/beta_page_route_observer.dart
+?? lib/shared/widgets/beta_root_tab_viewport.dart
+?? lib/shared/widgets/keyboard_overlay_layout.dart
+?? lib/shared/widgets/music_activity_indicator.dart
+?? lib/shared/widgets/music_list_footer.dart
+?? lib/shared/widgets/music_loading_geometry.dart
+?? lib/shared/widgets/music_loading_scope.dart
+?? lib/shared/widgets/music_refresh_indicator.dart
+?? lib/shared/widgets/retained_artwork_frame.dart
+?? lib/shared/widgets/song_list_bookmark_capsule.dart
+?? lib/shared/widgets/song_list_scroll_motion.dart
+?? lib/shared/widgets/song_list_tools.dart
+?? release/Mesting-Music-v1.0.25-SHA256.txt
+?? release/Mesting-Music-v1.0.25-source-verification.json
+?? release/Mesting-Music-v1.0.25-source.sha256
+?? release/Mesting-Music-v1.0.25-verification.json
+?? release/Mesting-Music-v1.0.25.apk.sha256
+?? release/Mesting-Music-v1.0.26-SHA256.txt
+?? release/Mesting-Music-v1.0.26-source-verification.json
+?? release/Mesting-Music-v1.0.26-source.sha256
+?? release/Mesting-Music-v1.0.26-verification.json
+?? release/Mesting-Music-v1.0.26.apk.sha256
+?? release/Mesting-Music-v1.0.27-SHA256.txt
+?? release/Mesting-Music-v1.0.27-source-verification.json
+?? release/Mesting-Music-v1.0.27-source.sha256
+?? release/Mesting-Music-v1.0.27-verification.json
+?? release/Mesting-Music-v1.0.27.apk.sha256
+?? release/Mesting-Music-v1.0.28-SHA256.txt
+?? release/Mesting-Music-v1.0.28-source-verification.json
+?? release/Mesting-Music-v1.0.28-source.sha256
+?? release/Mesting-Music-v1.0.28-verification.json
+?? release/Mesting-Music-v1.0.28.apk.sha256
+?? release/Mesting-Music-v1.0.29-SHA256.txt
+?? release/Mesting-Music-v1.0.29-source-verification.json
+?? release/Mesting-Music-v1.0.29-source.sha256
+?? release/Mesting-Music-v1.0.29-verification.json
+?? release/Mesting-Music-v1.0.29.apk.sha256
+?? release/Mesting-Music-v1.0.30-SHA256.txt
+?? release/Mesting-Music-v1.0.30-source-verification.json
+?? release/Mesting-Music-v1.0.30-source.sha256
+?? release/Mesting-Music-v1.0.30-verification.json
+?? release/Mesting-Music-v1.0.30.apk.sha256
+?? release/Mesting-Music-v1.0.31-SHA256.txt
+?? release/Mesting-Music-v1.0.31-source-verification.json
+?? release/Mesting-Music-v1.0.31-source.sha256
+?? release/Mesting-Music-v1.0.31-verification.json
+?? release/Mesting-Music-v1.0.31.apk.sha256
+?? release/Mesting-Music-v1.0.32-SHA256.txt
+?? release/Mesting-Music-v1.0.32-source-verification.json
+?? release/Mesting-Music-v1.0.32-source.sha256
+?? release/Mesting-Music-v1.0.32-verification.json
+?? release/Mesting-Music-v1.0.32.apk.sha256
+?? release/Mesting-Music-v1.0.33-SHA256.txt
+?? release/Mesting-Music-v1.0.33-source-verification.json
+?? release/Mesting-Music-v1.0.33-source.sha256
+?? release/Mesting-Music-v1.0.33-verification.json
+?? release/Mesting-Music-v1.0.33.apk.sha256
+?? release/Mesting-Music-v1.0.34-SHA256.txt
+?? release/Mesting-Music-v1.0.34-source-verification.json
+?? release/Mesting-Music-v1.0.34-source.sha256
+?? release/Mesting-Music-v1.0.34-verification.json
+?? release/Mesting-Music-v1.0.34.apk.sha256
+?? release/Mesting-Music-v1.0.35-SHA256.txt
+?? release/Mesting-Music-v1.0.35-source-verification.json
+?? release/Mesting-Music-v1.0.35-source.sha256
+?? release/Mesting-Music-v1.0.35-verification.json
+?? release/Mesting-Music-v1.0.35.apk.sha256
+?? release/Mesting-Music-v1.0.36-SHA256.txt
+?? release/Mesting-Music-v1.0.36-source-verification.json
+?? release/Mesting-Music-v1.0.36-source.sha256
+?? release/Mesting-Music-v1.0.36-verification.json
+?? release/Mesting-Music-v1.0.36.apk.sha256
+?? release/Mesting-Music-v1.0.37-SHA256.txt
+?? release/Mesting-Music-v1.0.37-source-verification.json
+?? release/Mesting-Music-v1.0.37-source.sha256
+?? release/Mesting-Music-v1.0.37-verification.json
+?? release/Mesting-Music-v1.0.37.apk.sha256
+?? release/Mesting-Music-v1.0.39-SHA256.txt
+?? release/Mesting-Music-v1.0.39-source-verification.json
+?? release/Mesting-Music-v1.0.39-source.sha256
+?? release/Mesting-Music-v1.0.39-verification.json
+?? release/Mesting-Music-v1.0.39.apk.sha256
+?? release/Mesting-Music-v1.0.40-SHA256.txt
+?? release/Mesting-Music-v1.0.40-source-verification.json
+?? release/Mesting-Music-v1.0.40-source.sha256
+?? release/Mesting-Music-v1.0.40-verification.json
+?? release/Mesting-Music-v1.0.40.apk.sha256
+?? release/Mesting-Music-v1.0.41-SHA256.txt
+?? release/Mesting-Music-v1.0.41-source-verification.json
+?? release/Mesting-Music-v1.0.41-source.sha256
+?? release/Mesting-Music-v1.0.41-verification.json
+?? release/Mesting-Music-v1.0.41.apk.sha256
+?? release/Mesting-Music-v1.0.42-SHA256.txt
+?? release/Mesting-Music-v1.0.42-source-verification.json
+?? release/Mesting-Music-v1.0.42-source.sha256
+?? release/Mesting-Music-v1.0.42-verification.json
+?? release/Mesting-Music-v1.0.42.apk.sha256
+?? release/Mesting-Music-v1.0.43-SHA256.txt
+?? release/Mesting-Music-v1.0.43-source-verification.json
+?? release/Mesting-Music-v1.0.43-source.sha256
+?? release/Mesting-Music-v1.0.43-verification.json
+?? release/Mesting-Music-v1.0.43.apk.sha256
+?? release/Mesting-Music-v1.0.44-SHA256.txt
+?? release/Mesting-Music-v1.0.44-source-verification.json
+?? release/Mesting-Music-v1.0.44-source.sha256
+?? release/Mesting-Music-v1.0.44-verification.json
+?? release/Mesting-Music-v1.0.44.apk.sha256
+?? release/Mesting-Music-v1.0.45-SHA256.txt
+?? release/Mesting-Music-v1.0.45-source-verification.json
+?? release/Mesting-Music-v1.0.45-source.sha256
+?? release/Mesting-Music-v1.0.45-verification.json
+?? release/Mesting-Music-v1.0.45.apk.sha256
+?? release/Mesting-Music-v1.0.46-SHA256.txt
+?? release/Mesting-Music-v1.0.46-source-verification.json
+?? release/Mesting-Music-v1.0.46-source.sha256
+?? release/Mesting-Music-v1.0.46-verification.json
+?? release/Mesting-Music-v1.0.46.apk.sha256
+?? release/Mesting-Music-v1.0.47-SHA256.txt
+?? release/Mesting-Music-v1.0.47-source-verification.json
+?? release/Mesting-Music-v1.0.47-source.sha256
+?? release/Mesting-Music-v1.0.47-verification.json
+?? release/Mesting-Music-v1.0.47.apk.sha256
+?? release/Mesting-Music-v1.0.48-SHA256.txt
+?? release/Mesting-Music-v1.0.48-source-verification.json
+?? release/Mesting-Music-v1.0.48-source.sha256
+?? release/Mesting-Music-v1.0.48-verification.json
+?? release/Mesting-Music-v1.0.48.apk.sha256
+?? release/Mesting-Music-v1.0.49-SHA256.txt
+?? release/Mesting-Music-v1.0.49-source-verification.json
+?? release/Mesting-Music-v1.0.49-source.sha256
+?? release/Mesting-Music-v1.0.49-verification.json
+?? release/Mesting-Music-v1.0.49.apk.sha256
+?? release/Mesting-Music-v1.0.50-SHA256.txt
+?? release/Mesting-Music-v1.0.50-source-verification.json
+?? release/Mesting-Music-v1.0.50-source.sha256
+?? release/Mesting-Music-v1.0.50-verification.json
+?? release/Mesting-Music-v1.0.50.apk.sha256
+?? release/Mesting-Music-v1.0.51-SHA256.txt
+?? release/Mesting-Music-v1.0.51-source-verification.json
+?? release/Mesting-Music-v1.0.51-source.sha256
+?? release/Mesting-Music-v1.0.51-verification.json
+?? release/Mesting-Music-v1.0.51.apk.sha256
+?? release/Mesting-Music-v1.0.52-SHA256.txt
+?? release/Mesting-Music-v1.0.52-source-verification.json
+?? release/Mesting-Music-v1.0.52-source.sha256
+?? release/Mesting-Music-v1.0.52-verification.json
+?? release/Mesting-Music-v1.0.52.apk.sha256
+?? release/Mesting-Music-v1.0.53-SHA256.txt
+?? release/Mesting-Music-v1.0.53-source-verification.json
+?? release/Mesting-Music-v1.0.53-source.sha256
+?? release/Mesting-Music-v1.0.53-verification.json
+?? release/Mesting-Music-v1.0.53.apk.sha256
+?? release/Mesting-Music-v1.0.54-SHA256.txt
+?? release/Mesting-Music-v1.0.54-source-verification.json
+?? release/Mesting-Music-v1.0.54-source.sha256
+?? release/Mesting-Music-v1.0.54-verification.json
+?? release/Mesting-Music-v1.0.54.apk.sha256
+?? release/Mesting-Music-v1.0.55-SHA256.txt
+?? release/Mesting-Music-v1.0.55-source-verification.json
+?? release/Mesting-Music-v1.0.55-source.sha256
+?? release/Mesting-Music-v1.0.55-verification.json
+?? release/Mesting-Music-v1.0.55.apk.sha256
+?? release/Mesting-Music-v1.0.56-SHA256.txt
+?? release/Mesting-Music-v1.0.56-source-verification.json
+?? release/Mesting-Music-v1.0.56-source.sha256
+?? release/Mesting-Music-v1.0.56-verification.json
+?? release/Mesting-Music-v1.0.56.apk.sha256
+?? release/Mesting-Music-v1.0.57-SHA256.txt
+?? release/Mesting-Music-v1.0.57-source-verification.json
+?? release/Mesting-Music-v1.0.57-source.sha256
+?? release/Mesting-Music-v1.0.57-verification.json
+?? release/Mesting-Music-v1.0.57.apk.sha256
+?? release/Mesting-Music-v1.0.58-SHA256.txt
+?? release/Mesting-Music-v1.0.58-source-verification.json
+?? release/Mesting-Music-v1.0.58-source.sha256
+?? release/Mesting-Music-v1.0.58-verification.json
+?? release/Mesting-Music-v1.0.58.apk.sha256
+?? release/Mesting-Music-v1.0.59-SHA256.txt
+?? release/Mesting-Music-v1.0.59-source-verification.json
+?? release/Mesting-Music-v1.0.59-source.sha256
+?? release/Mesting-Music-v1.0.59-verification.json
+?? release/Mesting-Music-v1.0.59.apk.sha256
+?? release/Mesting-Music-v1.0.60-SHA256.txt
+?? release/Mesting-Music-v1.0.60-source-verification.json
+?? release/Mesting-Music-v1.0.60-source.sha256
+?? release/Mesting-Music-v1.0.60-verification.json
+?? release/Mesting-Music-v1.0.60.apk.sha256
+?? release/Mesting-Music-v1.0.61-SHA256.txt
+?? release/Mesting-Music-v1.0.61-source-verification.json
+?? release/Mesting-Music-v1.0.61-source.sha256
+?? release/Mesting-Music-v1.0.61-verification.json
+?? release/Mesting-Music-v1.0.61.apk.sha256
+?? test/fixtures/chat-portrait.png
+?? test/fixtures/kugou_v4_grade_wire.json
+?? test/login_artwork_test.dart
+?? test/native/Release154StorageFamilyTest.java
+?? test/native/release_144_background_scheduler_test.kt
+?? test/native/release_145_background_diagnostics_test.kt
+?? test/native/release_145_background_media_lease_test.kt
+?? test/native/release_154_http_test.kt
+?? test/netease_message_card_test.dart
+?? test/netease_message_card_ui_test.dart
+?? test/release_126_browse_cache_test.dart
+?? test/release_126_cache_integration_test.dart
+?? test/release_126_message_protocol_test.dart
+?? test/release_126_tab_motion_test.dart
+?? test/release_127_message_test.dart
+?? test/release_128_presentation_test.dart
+?? test/release_129_artwork_test.dart
+?? test/release_129_discovery_test.dart
+?? test/release_129_user_ui_test.dart
+?? test/release_129_users_test.dart
+?? test/release_130_artwork_reveal_test.dart
+?? test/release_131_library_test.dart
+?? test/release_131_refresh_test.dart
+?? test/release_131_tab_input_test.dart
+?? test/release_132_notes_test.dart
+?? test/release_132_search_swipe_test.dart
+?? test/release_133_clearance_test.dart
+?? test/release_133_region_test.dart
+?? test/release_133_together_totals_test.dart
+?? test/release_134_together_history_test.dart
+?? test/release_135_listening_report_test.dart
+?? test/release_135_scroll_frontier_test.dart
+?? test/release_136_listening_audit_test.dart
+?? test/release_136_listening_audit_ui_test.dart
+?? test/release_137_footprint_test.dart
+?? test/release_137_footprint_ui_test.dart
+?? test/release_138_footprint_units_test.dart
+?? test/release_138_listening_safety_test.dart
+?? test/release_138_native_log_test.dart
+?? test/release_138_native_transport_test.dart
+?? test/release_138_ui_refresh_test.dart
+?? test/release_139_listening_rollback_test.dart
+?? test/release_140_shell_search_test.dart
+?? test/release_140_together_records_test.dart
+?? test/release_140_together_records_ui_test.dart
+?? test/release_140_users_badge_test.dart
+?? test/release_141_type51_message_test.dart
+?? test/release_142_player_chrome_test.dart
+?? test/release_142_together_sync_test.dart
+?? test/release_143_background_sync_test.dart
+?? test/release_143_ui_test.dart
+?? test/release_144_background_sync_test.dart
+?? test/release_144_discovery_refresh_test.dart
+?? test/release_144_kugou_favorites_test.dart
+?? test/release_144_navigation_test.dart
+?? test/release_144_player_menu_motion_test.dart
+?? test/release_144_room_theme_test.dart
+?? test/release_145_background_diagnostics_test.dart
+?? test/release_145_connections_test.dart
+?? test/release_145_connections_ui_test.dart
+?? test/release_145_footprint_test.dart
+?? test/release_145_footprint_ui_test.dart
+?? test/release_145_loading_geometry_test.dart
+?? test/release_145_messages_back_test.dart
+?? test/release_145_profile_actions_test.dart
+?? test/release_145_snapshot_poll_test.dart
+?? test/release_146_download_resume_test.dart
+?? test/release_146_ui_test.dart
+?? test/release_147_collection_ui_test.dart
+?? test/release_147_collection_window_test.dart
+?? test/release_147_footprint_ui_test.dart
+?? test/release_147_lazy_social_ui_test.dart
+?? test/release_147_local_history_performance_test.dart
+?? test/release_147_platform_paging_test.dart
+?? test/release_148_data_test.dart
+?? test/release_148_playback_test.dart
+?? test/release_148_ui_test.dart
+?? test/release_149_bookmarks_test.dart
+?? test/release_149_regressions_test.dart
+?? test/release_149_ui_test.dart
+?? test/release_150_data_test.dart
+?? test/release_150_navigation_test.dart
+?? test/release_150_package_test.dart
+?? test/release_150_queue_test.dart
+?? test/release_150_ui_test.dart
+?? test/release_151_loading_test.dart
+?? test/release_151_login_test.dart
+?? test/release_151_navigation_test.dart
+?? test/release_151_scroll_test.dart
+?? test/release_152_accounts_test.dart
+?? test/release_152_accounts_ui_test.dart
+?? test/release_152_kugou_profile_test.dart
+?? test/release_152_kugou_standard_login_test.dart
+?? test/release_152_kugou_v4_protocol_test.dart
+?? test/release_152_medals_test.dart
+?? test/release_152_official_listening_readback_test.dart
+?? test/release_152_official_web_test.dart
+?? test/release_152_scroll_test.dart
+?? test/release_152_song_details_test.dart
+?? test/release_152_standard_grade_reporting_test.dart
+?? test/release_153_audio_test.dart
+?? test/release_153_motion_test.dart
+?? test/release_153_network_test.dart
+?? test/release_153_storage_test.dart
+?? test/release_153_ui_test.dart
+?? test/release_154_network_test.dart
+?? test/release_154_storage_test.dart
+?? test/release_155_artwork_test.dart
+?? test/release_155_authorization_test.dart
+?? test/release_155_network_test.dart
+?? test/release_155_official_test.dart
+?? test/release_155_storage_test.dart
+?? test/release_155_ui_test.dart
+?? test/release_156_storage_test.dart
+?? test/release_157_ranking_test.dart
+?? test/release_157_statistics_test.dart
+?? test/release_157_ui_test.dart
+?? test/release_158_collections_test.dart
+?? test/release_158_ui_test.dart
+?? test/release_159_play_ui_test.dart
+?? test/release_159_reward_controller_test.dart
+?? test/release_159_reward_repository_test.dart
+?? test/release_159_reward_ui_test.dart
+?? test/release_160_free_listen_entry_test.dart
+?? test/release_160_reward_diagnostics_test.dart
+?? test/release_160_reward_repository_test.dart
+?? test/release_160_reward_request_stages_test.dart
+?? test/release_161_download_policy_test.dart
+?? test/release_161_lx_sources_test.dart
+?? test/release_161_playback_policy_test.dart
+?? test/release_161_sources_ui_test.dart
+?? test/support/pump_artwork_ready.dart
+?? test/support/release_132_qa.dart
+?? test/support/release_133_qa.dart
+?? test/support/release_143_qa.dart
+?? test/support/release_144_qa.dart
+?? test/support/release_145_qa.dart
+?? test/support/release_147_qa.dart
+?? test/support/release_151_qa.dart
+?? test/support/release_152_qa.dart
+?? test/support/release_155_storage_fixture.dart
+?? test/support/tls155/README.md
+?? test/support/tls155/certificate.pem
+?? test/support/tls155/public-test-key.pem
+?? third_party/audio_glyphs/LICENSE-COMPOSE-CUPERTINO.txt
+?? third_party/audio_glyphs/airpodspro.provenance.json
+?? third_party/audio_glyphs/airpodspro.svg
+?? third_party/flutter_secure_storage/NOTICE.md
+?? third_party/flutter_secure_storage/package/CHANGELOG.md
+?? third_party/flutter_secure_storage/package/LICENSE
+?? third_party/flutter_secure_storage/package/README.md
+?? third_party/flutter_secure_storage/package/analysis_options.yaml
+?? third_party/flutter_secure_storage/package/android/build.gradle
+?? third_party/flutter_secure_storage/package/android/gradle.properties
+?? third_party/flutter_secure_storage/package/android/gradle/wrapper/gradle-wrapper.properties
+?? third_party/flutter_secure_storage/package/android/settings.gradle
+?? third_party/flutter_secure_storage/package/android/src/main/AndroidManifest.xml
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/FlutterSecureStorage.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/FlutterSecureStorageConfig.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/FlutterSecureStoragePlugin.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/MigrationBackup.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/NamespacedConfigSource.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/SecureCommitException.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/SecurePreferencesCallback.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/StorageErrorFamily.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/VerifiedCredentialSlots.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/ciphers/KeyCipher.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/ciphers/KeyCipherAlgorithm.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/ciphers/KeyCipherFunction.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/ciphers/KeyCipherImplementationAES23.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/ciphers/KeyCipherImplementationRSA18.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/ciphers/KeyCipherImplementationRSAOAEP.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/ciphers/StorageCipher.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/ciphers/StorageCipherAlgorithm.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/ciphers/StorageCipherFactory.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/ciphers/StorageCipherFunction.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/ciphers/StorageCipherImplementationAES18.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/ciphers/StorageCipherImplementationAES23.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/ciphers/StorageCipherImplementationGCM.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/crypto/EncryptedSharedPreferences.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/crypto/MasterKey.java
+?? third_party/flutter_secure_storage/package/android/src/main/java/com/it_nomads/fluttersecurestorage/crypto/MasterKeys.java
+?? third_party/flutter_secure_storage/package/android/src/test/java/com/it_nomads/fluttersecurestorage/FlutterSecureStorageConfigAndroidTest.java
+?? third_party/flutter_secure_storage/package/android/src/test/java/com/it_nomads/fluttersecurestorage/FlutterSecureStorageConfigTest.java
+?? third_party/flutter_secure_storage/package/android/src/test/java/com/it_nomads/fluttersecurestorage/MigrationBackupTest.java
+?? third_party/flutter_secure_storage/package/android/src/test/java/com/it_nomads/fluttersecurestorage/NamespacedConfigSourceTest.java
+?? third_party/flutter_secure_storage/package/android/src/test/java/com/it_nomads/fluttersecurestorage/VerifiedCredentialSlotsTest.java
+?? third_party/flutter_secure_storage/package/android/src/test/java/com/it_nomads/fluttersecurestorage/ciphers/CipherAlgorithmTest.java
+?? third_party/flutter_secure_storage/package/android/src/test/java/com/it_nomads/fluttersecurestorage/ciphers/StorageCipherFactoryTest.java
+?? third_party/flutter_secure_storage/package/android/src/test/java/com/it_nomads/fluttersecurestorage/ciphers/StorageCipherTest.java
+?? third_party/flutter_secure_storage/package/lib/flutter_secure_storage.dart
+?? third_party/flutter_secure_storage/package/lib/options/android_options.dart
+?? third_party/flutter_secure_storage/package/lib/options/apple_options.dart
+?? third_party/flutter_secure_storage/package/lib/options/ios_options.dart
+?? third_party/flutter_secure_storage/package/lib/options/linux_options.dart
+?? third_party/flutter_secure_storage/package/lib/options/macos_options.dart
+?? third_party/flutter_secure_storage/package/lib/options/web_options.dart
+?? third_party/flutter_secure_storage/package/lib/options/windows_options.dart
+?? third_party/flutter_secure_storage/package/lib/test/test_flutter_secure_storage_platform.dart
+?? third_party/flutter_secure_storage/package/pubspec.yaml
+?? third_party/flutter_secure_storage/package/test/flutter_secure_storage_test.dart
+?? third_party/lx_music_source/NOTICE.md
+?? third_party/lx_music_source/bridge.js
+?? third_party/lx_music_source/crypto-js/LICENSE
+?? third_party/lx_music_source/crypto-js/crypto-js.js
+?? third_party/lx_music_source/host.js
+?? third_party/lx_music_source/scripts/changqing.js
+?? third_party/lx_music_source/scripts/fish.js
+?? third_party/lx_music_source/scripts/helloworld.js
+?? third_party/lx_music_source/scripts/huanyin.js
+?? third_party/lx_music_source/scripts/huibq.js
+?? third_party/lx_music_source/scripts/hyw.js
+?? third_party/lx_music_source/scripts/jiexiang.js
+?? third_party/lx_music_source/scripts/lx.js
+?? third_party/lx_music_source/scripts/qdy.js
+?? third_party/lx_music_source/scripts/xinghai.js
+?? third_party/lx_music_source/scripts/yuningxi.js
+?? third_party/lx_music_source/upstream.json
+?? third_party/md3music/rust/src/android_transport.rs
+?? third_party/okhttp/LICENSE
+?? third_party/okhttp/NOTICE.md
+?? third_party/ring_download_sdk/android/consumer-rules.pro
+?? third_party/ring_download_sdk/android/receive-buffer-native.json
+?? third_party/ring_download_sdk/android/src/main/c/ring_receive_buffer.c
+?? third_party/ring_download_sdk/android/src/main/java/asia/csnas/ringdownload/RingRtcReceiveBuffer.java
+?? third_party/ring_download_sdk/android/src/main/java/asia/csnas/ringdownload/RingSharingResources.java
+?? third_party/ring_download_sdk/android/src/main/jniLibs/arm64-v8a/libring_receive_buffer.so
+?? third_party/ring_download_sdk/android/src/main/jniLibs/armeabi-v7a/libring_receive_buffer.so
+?? third_party/ring_download_sdk/android/src/main/jniLibs/x86/libring_receive_buffer.so
+?? third_party/ring_download_sdk/android/src/main/jniLibs/x86_64/libring_receive_buffer.so
+?? third_party/ring_download_sdk/lib/src/core/services/app_upgrade_cache_verifier.dart
+?? third_party/ring_download_sdk/lib/src/core/services/app_upgrade_receive_buffer.dart
+?? third_party/ring_download_sdk/lib/src/core/services/app_upgrade_upload_budget.dart
+?? third_party/ring_download_sdk/lib/src/p8p/diagnostics.dart
+?? third_party/ring_download_sdk/lib/src/p8p/transfer_sender.dart
+?? third_party/ring_download_sdk/lib/src/sdk/receive_buffer.dart
+?? third_party/ring_download_sdk/lib/src/sdk/sharing_resources.dart
+?? third_party/ring_download_sdk/test/cache_verifier_test.dart
+?? third_party/ring_download_sdk/test/mobile_upload_budget_test.dart
+?? third_party/ring_download_sdk/test/p8p_transfer_sender_test.dart
+?? third_party/ring_download_sdk/test/receive_buffer_test.dart
+?? third_party/ring_download_sdk/test/sdk_cache_sharing_test.dart
+?? third_party/ring_download_sdk/test/sharing_resources_test.dart
+?? third_party/ring_download_sdk/tool/p8p_native_competition.dart
+?? third_party/ring_download_sdk/tool/profile_http_range_slots.dart
+?? third_party/ring_download_sdk/validation/candidate-1.1.1-dev.1-late-peers.json
+?? third_party/ring_download_sdk/validation/candidate-1.1.1-dev.1-late-peers/analysis-r2.txt
+?? third_party/ring_download_sdk/validation/candidate-1.1.1-dev.1-late-peers/baseline-final-case.txt
+?? third_party/ring_download_sdk/validation/candidate-1.1.1-dev.1-late-peers/regression-r1.txt
+?? third_party/ring_download_sdk/validation/candidate-1.1.2-dev.1-cancellation.json
+?? third_party/ring_download_sdk/validation/candidate-1.1.2-dev.2-first-payload.json
+?? third_party/ring_download_sdk/validation/candidate-1.1.2-dev.3-scoped-buffer.json
+?? third_party/ring_download_sdk/validation/candidate-1.1.2-dev.4-source-stop.json
+?? third_party/ring_download_sdk/validation/candidate-1.1.2-dev.5-throughput.json
+?? third_party/ring_download_sdk/validation/history/1.1.1-source-sha256.json
+?? third_party/ring_download_sdk/validation/history/1.1.2-dev.1-source-sha256.json
+?? third_party/ring_download_sdk/validation/history/1.1.2-dev.3-source-sha256.json
+?? third_party/ring_download_sdk/validation/history/1.1.2-dev.4-source-sha256.json
+?? third_party/ring_download_sdk/validation/history/1.1.2-dev.5-source-sha256.json
+?? third_party/ring_download_sdk/validation/history/1.1.2-dev.6-source-sha256.json
+?? third_party/ring_download_sdk/validation/release-1.1.1.json
+?? third_party/ring_download_sdk/validation/release-1.1.1/formal-contract.txt
+?? third_party/ring_download_sdk/validation/release-1.1.1/version-stamp-proof.json
+?? third_party/ring_download_sdk/validation/release-1.1.2.json
+?? third_party/ring_download_sdk/validation/release-1.1.2/formal-contract.txt
+?? third_party/ring_download_sdk/validation/release-1.1.2/native-acceptance.json
+?? third_party/ring_download_sdk/validation/release-1.1.2/version-stamp-proof.json
+?? tool/verify_lx_source_bridge.cjs

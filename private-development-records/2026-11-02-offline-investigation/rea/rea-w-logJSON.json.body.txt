@@ -1,0 +1,6 @@
+    @Override // com.netease.cloudmusic.core.statistic.c0
+    public void logJSON(@NotNull String action, @NotNull JSONObject json) {
+        Intrinsics.checkNotNullParameter(action, "action");
+        Intrinsics.checkNotNullParameter(json, "json");
+        h(new b(action, json));
+    }

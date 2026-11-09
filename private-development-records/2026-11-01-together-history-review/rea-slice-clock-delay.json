@@ -1,0 +1,136 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_15aaef289e022f22304a7133b1a9af892bf5a678fceca4ca2a9e1c2bc1cafc3f\",\"subject\":{\"name\":\"D:\\\\AnLi\\\\.codex-artifacts\\\\2026-11-01-together-history-review\\\\cloudmusic-9.6.15-classes17-analysis-only.apk\",\"digest\":{\"sha256\":\"1c4ed46a4e2ef16f052afb37e9aa074934f4beb0d1b324eb18381dc10b316498\"},\"format\":\"apk\",\"architecture\":null,\"local_path\":\"D:\\\\AnLi\\\\.codex-artifacts\\\\2026-11-01-together-history-review\\\\cloudmusic-9.6.15-classes17-analysis-only.apk\"},\"provider\":{\"id\":\"jadx\",\"name\":\"JADX headless\",\"version\":\"0.7.1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"inspect_android_method\",\"parameters\":{\"path\":\"D:\\\\AnLi\\\\.codex-artifacts\\\\2026-11-01-together-history-review\\\\cloudmusic-9.6.15-classes17-analysis-only.apk\",\"class_name\":\"com.netease.cloudmusic.module.listentogether.playpage.r\",\"method_name\":\"b\"},\"raw_result\":{\"server\":{\"name\":\"rea-jadx-bridge\",\"version\":\"1\"},\"bridge_sha256\":\"5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1\",\"jar_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"loaded\":{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\zyt\\\\AppData\\\\Local\\\\Temp\\\\rea-android-7b153bd7554cedcabe2c7c9ac34cd7a8\\\\target.apk\",\"class_count\":2777,\"resource_count\":2,\"threads\":1,\"resources\":\"full\"},\"calls\":[{\"operation\":\"rea_jvm_status\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"metadata_scope\\\":\\\"parsed_members\\\",\\\"max_heap_bytes\\\":3221225472,\\\"java_version\\\":\\\"17.0.20.1\\\",\\\"available_processors\\\":8,\\\"engine_reported_version\\\":\\\"0.7.1\\\"}\"}],\"isError\":false}},{\"operation\":\"get_class_summary\",\"input\":{\"class_name\":\"com.netease.cloudmusic.module.listentogether.playpage.r\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"field_count\\\":5,\\\"fields\\\":[{\\\"name\\\":\\\"a\\\",\\\"type\\\":\\\"kotlin.jvm.functions.Function0\\\\u003ckotlin.Unit\\\\u003e\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"b\\\",\\\"type\\\":\\\"long\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"c\\\",\\\"type\\\":\\\"boolean\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"d\\\",\\\"type\\\":\\\"android.os.Handler\\\",\\\"def_pos\\\":0},{\\\"name\\\":\\\"e\\\",\\\"type\\\":\\\"java.lang.Runnable\\\",\\\"def_pos\\\":0}],\\\"methods\\\":[{\\\"name\\\":\\\"\\\\u003cinit\\\\u003e\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"\\\\u003cinit\\\\u003e(kotlin.jvm.functions.Function0\\\\u003ckotlin.Unit\\\\u003e): void\\\",\\\"is_constructor\\\":true},{\\\"name\\\":\\\"a\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"a(com.netease.cloudmusic.module.listentogether.playpage.r): void\\\",\\\"is_constructor\\\":false},{\\\"name\\\":\\\"b\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"b(): long\\\",\\\"is_constructor\\\":false},{\\\"name\\\":\\\"c\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"c(): void\\\",\\\"is_constructor\\\":false},{\\\"name\\\":\\\"d\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"d(com.netease.cloudmusic.module.listentogether.playpage.r): void\\\",\\\"is_constructor\\\":false},{\\\"name\\\":\\\"e\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"e(): void\\\",\\\"is_constructor\\\":false},{\\\"name\\\":\\\"f\\\",\\\"def_pos\\\":0,\\\"signature\\\":\\\"f(): void\\\",\\\"is_constructor\\\":false}],\\\"method_count\\\":7,\\\"inner_class_count\\\":0,\\\"inner_classes\\\":[],\\\"name\\\":\\\"r\\\",\\\"full_name\\\":\\\"com.netease.cloudmusic.module.listentogether.playpage.r\\\"}\"}],\"isError\":false}},{\"operation\":\"get_method_body\",\"input\":{\"class_name\":\"com.netease.cloudmusic.module.listentogether.playpage.r\",\"method_name\":\"b\",\"overload_index\":0,\"smali_fallback\":true},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"body\\\":\\\"    private final long b() {\\\\r\\\\n        StatisticsChangeMsgData msgData;\\\\r\\\\n        long j;\\\\r\\\\n        long totalConnectionTime;\\\\r\\\\n        qx0.z zVarE \\\\u003d k4.a.e();\\\\r\\\\n        if (zVarE \\\\u003d\\\\u003d null || (msgData \\\\u003d zVarE.getMsgData()) \\\\u003d\\\\u003d null) {\\\\r\\\\n            return this.minuteIns;\\\\r\\\\n        }\\\\r\\\\n        if (kotlin.z0.K()) {\\\\r\\\\n            j \\\\u003d this.minuteIns;\\\\r\\\\n            totalConnectionTime \\\\u003d msgData.getCurrentConnectionTime() % this.minuteIns;\\\\r\\\\n        } else {\\\\r\\\\n            j \\\\u003d this.minuteIns;\\\\r\\\\n            totalConnectionTime \\\\u003d msgData.getTotalConnectionTime() % this.minuteIns;\\\\r\\\\n        }\\\\r\\\\n        return j - totalConnectionTime;\\\\r\\\\n    }\\\",\\\"overload_count\\\":1,\\\"method_name\\\":\\\"b\\\",\\\"markers\\\":[],\\\"mode\\\":\\\"java\\\",\\\"full_name\\\":\\\"com.netease.cloudmusic.module.listentogether.playpage.r.b\\\",\\\"class_name\\\":\\\"com.netease.cloudmusic.module.listentogether.playpage.r\\\",\\\"overload_index\\\":0,\\\"fell_back\\\":false}\"}],\"isError\":false}}]},\"normalized_result\":{\"engine\":{\"name\":\"jadx-headless-mcp\",\"version\":\"0.7.1\",\"artifact_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"source_revision\":\"5844800a486d2248fa949b74c9896285f5b54de2\",\"worker_count\":1,\"heap_limit_mib\":3072},\"class_name\":\"com.netease.cloudmusic.module.listentogether.playpage.r\",\"method\":{\"name\":\"b\",\"reported_signature\":\"b(): long\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":null},\"overload_count\":1,\"representation\":\"java\",\"body_status\":\"available\",\"fell_back\":false,\"markers\":[],\"source\":{\"status\":\"complete\",\"text\":\"    private final long b() {\\r\\n        StatisticsChangeMsgData msgData;\\r\\n        long j;\\r\\n        long totalConnectionTime;\\r\\n        qx0.z zVarE = k4.a.e();\\r\\n        if (zVarE == null || (msgData = zVarE.getMsgData()) == null) {\\r\\n            return this.minuteIns;\\r\\n        }\\r\\n        if (kotlin.z0.K()) {\\r\\n            j = this.minuteIns;\\r\\n            totalConnectionTime = msgData.getCurrentConnectionTime() % this.minuteIns;\\r\\n        } else {\\r\\n            j = this.minuteIns;\\r\\n            totalConnectionTime = msgData.getTotalConnectionTime() % this.minuteIns;\\r\\n        }\\r\\n        return j - totalConnectionTime;\\r\\n    }\",\"reported_total_bytes\":null}},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static decompiler observations do not establish runtime behavior; the APK is never executed.\",\"Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.\",\"Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.\",\"Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider.\"],\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_15aaef289e022f22304a7133b1a9af892bf5a678fceca4ca2a9e1c2bc1cafc3f",
+    "subject": {
+      "name": "D:\\AnLi\\.codex-artifacts\\2026-11-01-together-history-review\\cloudmusic-9.6.15-classes17-analysis-only.apk",
+      "digest": {
+        "sha256": "1c4ed46a4e2ef16f052afb37e9aa074934f4beb0d1b324eb18381dc10b316498"
+      },
+      "format": "apk",
+      "architecture": null,
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-01-together-history-review\\cloudmusic-9.6.15-classes17-analysis-only.apk"
+    },
+    "provider": {
+      "id": "jadx",
+      "name": "JADX headless",
+      "version": "0.7.1"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-01-together-history-review\\cloudmusic-9.6.15-classes17-analysis-only.apk",
+      "class_name": "com.netease.cloudmusic.module.listentogether.playpage.r",
+      "method_name": "b"
+    },
+    "raw_result": {
+      "server": {
+        "name": "rea-jadx-bridge",
+        "version": "1"
+      },
+      "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+      "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "loaded": {
+        "state": "LOADED",
+        "apk_path": "C:\\Users\\zyt\\AppData\\Local\\Temp\\rea-android-7b153bd7554cedcabe2c7c9ac34cd7a8\\target.apk",
+        "class_count": 2777,
+        "resource_count": 2,
+        "threads": 1,
+        "resources": "full"
+      },
+      "calls": [
+        {
+          "operation": "rea_jvm_status",
+          "input": {},
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":3221225472,\"java_version\":\"17.0.20.1\",\"available_processors\":8,\"engine_reported_version\":\"0.7.1\"}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "get_class_summary",
+          "input": {
+            "class_name": "com.netease.cloudmusic.module.listentogether.playpage.r"
+          },
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"field_count\":5,\"fields\":[{\"name\":\"a\",\"type\":\"kotlin.jvm.functions.Function0\\u003ckotlin.Unit\\u003e\",\"def_pos\":0},{\"name\":\"b\",\"type\":\"long\",\"def_pos\":0},{\"name\":\"c\",\"type\":\"boolean\",\"def_pos\":0},{\"name\":\"d\",\"type\":\"android.os.Handler\",\"def_pos\":0},{\"name\":\"e\",\"type\":\"java.lang.Runnable\",\"def_pos\":0}],\"methods\":[{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(kotlin.jvm.functions.Function0\\u003ckotlin.Unit\\u003e): void\",\"is_constructor\":true},{\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(com.netease.cloudmusic.module.listentogether.playpage.r): void\",\"is_constructor\":false},{\"name\":\"b\",\"def_pos\":0,\"signature\":\"b(): long\",\"is_constructor\":false},{\"name\":\"c\",\"def_pos\":0,\"signature\":\"c(): void\",\"is_constructor\":false},{\"name\":\"d\",\"def_pos\":0,\"signature\":\"d(com.netease.cloudmusic.module.listentogether.playpage.r): void\",\"is_constructor\":false},{\"name\":\"e\",\"def_pos\":0,\"signature\":\"e(): void\",\"is_constructor\":false},{\"name\":\"f\",\"def_pos\":0,\"signature\":\"f(): void\",\"is_constructor\":false}],\"method_count\":7,\"inner_class_count\":0,\"inner_classes\":[],\"name\":\"r\",\"full_name\":\"com.netease.cloudmusic.module.listentogether.playpage.r\"}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "get_method_body",
+          "input": {
+            "class_name": "com.netease.cloudmusic.module.listentogether.playpage.r",
+            "method_name": "b",
+            "overload_index": 0,
+            "smali_fallback": true
+          },
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"body\":\"    private final long b() {\\r\\n        StatisticsChangeMsgData msgData;\\r\\n        long j;\\r\\n        long totalConnectionTime;\\r\\n        qx0.z zVarE \\u003d k4.a.e();\\r\\n        if (zVarE \\u003d\\u003d null || (msgData \\u003d zVarE.getMsgData()) \\u003d\\u003d null) {\\r\\n            return this.minuteIns;\\r\\n        }\\r\\n        if (kotlin.z0.K()) {\\r\\n            j \\u003d this.minuteIns;\\r\\n            totalConnectionTime \\u003d msgData.getCurrentConnectionTime() % this.minuteIns;\\r\\n        } else {\\r\\n            j \\u003d this.minuteIns;\\r\\n            totalConnectionTime \\u003d msgData.getTotalConnectionTime() % this.minuteIns;\\r\\n        }\\r\\n        return j - totalConnectionTime;\\r\\n    }\",\"overload_count\":1,\"method_name\":\"b\",\"markers\":[],\"mode\":\"java\",\"full_name\":\"com.netease.cloudmusic.module.listentogether.playpage.r.b\",\"class_name\":\"com.netease.cloudmusic.module.listentogether.playpage.r\",\"overload_index\":0,\"fell_back\":false}"
+              }
+            ],
+            "isError": false
+          }
+        }
+      ]
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 3072
+      },
+      "class_name": "com.netease.cloudmusic.module.listentogether.playpage.r",
+      "method": {
+        "name": "b",
+        "reported_signature": "b(): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    private final long b() {\r\n        StatisticsChangeMsgData msgData;\r\n        long j;\r\n        long totalConnectionTime;\r\n        qx0.z zVarE = k4.a.e();\r\n        if (zVarE == null || (msgData = zVarE.getMsgData()) == null) {\r\n            return this.minuteIns;\r\n        }\r\n        if (kotlin.z0.K()) {\r\n            j = this.minuteIns;\r\n            totalConnectionTime = msgData.getCurrentConnectionTime() % this.minuteIns;\r\n        } else {\r\n            j = this.minuteIns;\r\n            totalConnectionTime = msgData.getTotalConnectionTime() % this.minuteIns;\r\n        }\r\n        return j - totalConnectionTime;\r\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "confidence": "derived",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "locations": [],
+    "evidence_links": []
+  }
+}

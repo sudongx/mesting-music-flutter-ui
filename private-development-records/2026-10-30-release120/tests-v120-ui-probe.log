@@ -1,0 +1,67 @@
+00:00 +0: loading D:/AnLi/test/netease_v120_ui_test.dart
+test/release_120_render_test.dart:69:43: Error: Property 'size' cannot be accessed on 'Rect?' because it is potentially null.
+ - 'Rect' is from 'dart:ui'.
+Try accessing using ?. instead.
+      expect(render.emittedClip!.clipRect.size, const Size(100, 40));
+                                          ^^^^
+00:00 +0 -1: loading D:/AnLi/test/release_120_render_test.dart [E]
+  Failed to load "D:/AnLi/test/release_120_render_test.dart":
+  Compilation failed for testPath=D:/AnLi/test/release_120_render_test.dart: test/release_120_render_test.dart:69:43: Error: Property 'size' cannot be accessed on 'Rect?' because it is potentially null.
+   - 'Rect' is from 'dart:ui'.
+  Try accessing using ?. instead.
+        expect(render.emittedClip!.clipRect.size, const Size(100, 40));
+                                            ^^^^
+  .
+00:00 +0 -1: D:/AnLi/test/netease_v120_ui_test.dart: a cached file with a valid header but broken decoder recovers to the network image
+00:00 +0 -2: loading D:/AnLi/test/netease_v120_ui_test.dart [E]
+  Error: The Dart compiler exited unexpectedly.
+  package:flutter_tools/src/base/common.dart 34:3  throwToolExit
+  package:flutter_tools/src/compile.dart 939:11    DefaultResidentCompiler._compile.<fn>
+  dart:async/zone_root.dart 48:47                  _rootRunUnary
+  dart:async/zone.dart 733:19                      _CustomZone.runUnary
+  dart:async/future_impl.dart 948:45               Future._propagateToListeners.handleValueCallback
+  dart:async/future_impl.dart 977:13               Future._propagateToListeners
+  dart:async/future_impl.dart 862:9                Future._propagateToListeners
+  dart:async/future_impl.dart 720:5                Future._completeWithValue
+  dart:async/future_impl.dart 804:7                Future._asyncCompleteWithValue.<fn>
+  dart:async/zone_root.dart 35:13                  _rootRun
+  dart:async/zone.dart 726:19                      _CustomZone.run
+  dart:async/zone.dart 625:7                       _CustomZone.runGuarded
+  dart:async/zone.dart 666:23                      _CustomZone.bindCallbackGuarded.<fn>
+  dart:async/schedule_microtask.dart 40:35         _microtaskLoop
+  dart:async/schedule_microtask.dart 49:5          _startMicrotaskLoop
+  dart:isolate-patch/isolate_patch.dart 127:13     _runPendingImmediateCallback
+  dart:isolate-patch/isolate_patch.dart 194:5      _RawReceivePort._handleMessage
+  
+00:01 +0 -2: D:/AnLi/test/netease_v120_ui_test.dart: a cached file with a valid header but broken decoder recovers to the network image
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: a value greater than <0>
+  Actual: <0>
+   Which: is not a value greater than <0>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/netease_v120_ui_test.dart:118:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/netease_v120_ui_test.dart line 118
+The test description was:
+  a cached file with a valid header but broken decoder recovers to the network image
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:01 +0 -3: D:/AnLi/test/netease_v120_ui_test.dart: a cached file with a valid header but broken decoder recovers to the network image [E]
+  Test failed. See exception logs above.
+  The test description was: a cached file with a valid header but broken decoder recovers to the network image
+  
+Warning: At least one test in this suite creates an HttpClient. When running a test suite that uses
+TestWidgetsFlutterBinding, all HTTP requests will return status code 400, and no network request
+will actually be made. Any test expecting a real network connection and status code will fail.
+To test code that needs an HttpClient, provide your own HttpClient implementation to the code under
+test, so that your test can consistently provide a testable response to the code under test.
+00:01 +0 -3: Some tests failed.

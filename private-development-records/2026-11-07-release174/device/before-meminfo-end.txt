@@ -1,0 +1,78 @@
+Applications Memory Usage (in Kilobytes):
+Uptime: 753841858 Realtime: 851283156
+
+** MEMINFO in pid 5242 [com.mesting.music] **
+                   Pss  Private  Private  SwapPss      Rss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty    Total     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------   ------
+  Native Heap   127035   107840    19168    37282   128568   401892   152458   244681
+  Dalvik Heap    18270    16824     1328      114    24092    32981     8246    24735
+ Dalvik Other     2656     1684      336      106     4032                           
+        Stack     2120     2088       32      680     2128                           
+       Ashmem    14178    12800        0        0    17140                           
+      Gfx dev    26592    25872      720        0    26596                           
+    Other dev       93        4       52        0      884                           
+     .so mmap     6770      152     2404      637    68828                           
+    .jar mmap     1719        0      416        0    37424                           
+    .apk mmap    23599       28    23500      124    24736                           
+    .ttf mmap     6559        0     5208        0    21628                           
+    .dex mmap     3874        0     3808        4     5124                           
+    .oat mmap      231        0        4        0    16460                           
+    .art mmap     1216      552      464       13    20944                           
+   Other mmap       51        4        0        0     1340                           
+   EGL mtrack    71932    71932        0        0    71932                           
+    GL mtrack      592      592        0        0      592                           
+      Unknown    55380    53304     2068    11501    56128                           
+        TOTAL   413328   293676    59508    50461   528576   434873   160704   269416
+ 
+ App Summary
+                       Pss(KB)                        Rss(KB)
+                        ------                         ------
+           Java Heap:    17840                          45036
+         Native Heap:   107840                         128568
+                Code:    35536                         175464
+               Stack:     2088                           2128
+            Graphics:    99116                          99120
+       Private Other:    90764
+              System:    60144
+             Unknown:                                   78260
+ 
+           TOTAL PSS:   413328            TOTAL RSS:   528576       TOTAL SWAP PSS:    50461
+ 
+ Objects
+               Views:        6         ViewRootImpl:        1
+         AppContexts:        6           Activities:        1
+              Assets:       42        AssetManagers:        0
+       Local Binders:       64        Proxy Binders:      116
+       Parcel memory:       21         Parcel count:       83
+    Death Recipients:        4             WebViews:        0
+ 
+ Native Allocations
+                         Count                       Total(kB)
+                        ------                         ------
+    Other (malloced):      649                             60
+ Other (nonmalloced):      203                            141
+   Bitmap (malloced):       83                          35166
+Bitmap (nonmalloced):        2                          12800
+ 
+ SQL
+         MEMORY_USED:      161
+  PAGECACHE_OVERFLOW:      101          MALLOC_SIZE:       46
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b) cache hits cache misses cache size  Dbname
+PER CONNECTION STATS
+         4       88             94   104    25     7  /data/user/0/com.mesting.music/files/libCachedImageData.db
+POOL STATS
+     cache hits  cache misses    cache size  Dbname
+            104            26           130  /data/user/0/com.mesting.music/files/libCachedImageData.db
+ 
+ Asset Allocations
+    : 55K
+    : 32K
+    : 14K
+    : 1210K
+    : 131K
+    : 32K
+    : 21K
+    : 21K

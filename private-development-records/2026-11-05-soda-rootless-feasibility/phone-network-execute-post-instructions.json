@@ -1,0 +1,158 @@
+{
+  "source_apk_sha256": "b639e67c13e03377f0f9d8068c5e0419b1acd42c7d529362f11ae704b3838741",
+  "dex_entry": "classes21.dex",
+  "dex_sha256": "d28a15c360d503b20d064987620d1a3167e8ad84e3d08b0d12dcf9da18dd265b",
+  "selected_owner": "Lcom/bytedance/sdk/account/utils/NetworkUtils;",
+  "scope": "Original DEX instructions, not runtime/data-flow proof.",
+  "methods": [
+    {
+      "method_index": 55810,
+      "owner": "Lcom/bytedance/sdk/account/utils/NetworkUtils;",
+      "name": "executePost",
+      "proto_index": 5060,
+      "prototype": "(ILjava/lang/String;Ljava/util/Map;Ljava/util/List;I)Lcom/ss/android/TTResponse;",
+      "code_offset": 5134040,
+      "registers": 12,
+      "incoming_words": 5,
+      "outgoing_words": 6,
+      "code_unit_count": 22,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x71",
+          "units": [
+            113,
+            62635,
+            0
+          ],
+          "method": {
+            "method_index": 62635,
+            "owner": "Lcom/ss/android/account/TTAccountInit;",
+            "name": "getConfig",
+            "proto_index": 5054,
+            "prototype": "()Lcom/ss/android/TTAccountConfig;"
+          }
+        },
+        {
+          "code_unit_offset": 3,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            62598,
+            0
+          ],
+          "method": {
+            "method_index": 62598,
+            "owner": "Lcom/ss/android/TTAccountConfig;",
+            "name": "getNetwork",
+            "proto_index": 3771,
+            "prototype": "()Lcom/bytedance/sdk/account/INetWork;"
+          }
+        },
+        {
+          "code_unit_offset": 7,
+          "opcode": "0xc",
+          "units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 8,
+          "opcode": "0x38",
+          "units": [
+            312,
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 10,
+          "opcode": "0x1",
+          "units": [
+            29185
+          ]
+        },
+        {
+          "code_unit_offset": 11,
+          "opcode": "0x7",
+          "units": [
+            33543
+          ]
+        },
+        {
+          "code_unit_offset": 12,
+          "opcode": "0x7",
+          "units": [
+            37895
+          ]
+        },
+        {
+          "code_unit_offset": 13,
+          "opcode": "0x7",
+          "units": [
+            42247
+          ]
+        },
+        {
+          "code_unit_offset": 14,
+          "opcode": "0x1",
+          "units": [
+            46593
+          ]
+        },
+        {
+          "code_unit_offset": 15,
+          "opcode": "0x78",
+          "units": [
+            1656,
+            49072,
+            1
+          ],
+          "method": {
+            "method_index": 49072,
+            "owner": "Lcom/bytedance/sdk/account/INetWork;",
+            "name": "executePost",
+            "proto_index": 5060,
+            "prototype": "(ILjava/lang/String;Ljava/util/Map;Ljava/util/List;I)Lcom/ss/android/TTResponse;"
+          }
+        },
+        {
+          "code_unit_offset": 18,
+          "opcode": "0xc",
+          "units": [
+            1804
+          ]
+        },
+        {
+          "code_unit_offset": 19,
+          "opcode": "0x11",
+          "units": [
+            1809
+          ]
+        },
+        {
+          "code_unit_offset": 20,
+          "opcode": "0x12",
+          "units": [
+            1810
+          ],
+          "const": 0,
+          "dest_register": 7
+        },
+        {
+          "code_unit_offset": 21,
+          "opcode": "0x11",
+          "units": [
+            1809
+          ]
+        }
+      ]
+    }
+  ]
+}

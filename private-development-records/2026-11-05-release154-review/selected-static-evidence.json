@@ -1,0 +1,1291 @@
+[
+  {
+    "key": "ne_cookie_class",
+    "id": "ev_5d83f91aa3786a3d21315d442084a2eed7225444c5cdcc200ccb368e8fa159a4",
+    "parent": "ev_3276eab30ba9d83c3625269b125f2dbe6882fdcab42841a7bdc66df5782e92c2",
+    "artifact": {
+      "name": "official-classes4-analysis-only.apk",
+      "digest": {
+        "sha256": "93b15b71a779be0e0eb98b478256dcba11cb38eb3f4cec29746e1efd99fbd86c"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-02-total-duration-investigation\\transport\\official-classes4-analysis-only.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "summary": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 3072
+      },
+      "class_name": "com.netease.cloudmusic.network.cookie.store.CloudMusicCookieStore",
+      "methods": [
+        {
+          "name": "<clinit>",
+          "reported_signature": "<clinit>(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(): void",
+          "overload_index": 0,
+          "is_constructor": true,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "appKey",
+          "reported_signature": "appKey(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "buildOaidCookies",
+          "reported_signature": "buildOaidCookies(java.lang.String, java.lang.String, java.lang.String): java.util.List<okhttp3.Cookie>",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;"
+        },
+        {
+          "name": "canSkipDevicesCookieBuild",
+          "reported_signature": "canSkipDevicesCookieBuild(): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Z"
+        },
+        {
+          "name": "checkValue",
+          "reported_signature": "checkValue(java.lang.String): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)Ljava/lang/String;"
+        },
+        {
+          "name": "decodeCookie",
+          "reported_signature": "decodeCookie(java.lang.String): okhttp3.Cookie",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)Lokhttp3/Cookie;"
+        },
+        {
+          "name": "encodeCookie",
+          "reported_signature": "encodeCookie(okhttp3.Cookie): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Cookie;)Ljava/lang/String;"
+        },
+        {
+          "name": "fastCookieExist",
+          "reported_signature": "fastCookieExist(java.lang.String): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)Z"
+        },
+        {
+          "name": "fastGetAllCookies",
+          "reported_signature": "fastGetAllCookies(): java.util.List<okhttp3.Cookie>",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/util/List;"
+        },
+        {
+          "name": "getAppVer",
+          "reported_signature": "getAppVer(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getCookie",
+          "reported_signature": "getCookie(java.lang.String): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)Ljava/lang/String;"
+        },
+        {
+          "name": "getCookieDomain",
+          "reported_signature": "getCookieDomain(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getCookieExpire",
+          "reported_signature": "getCookieExpire(java.lang.String): long",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)J"
+        },
+        {
+          "name": "getCookieFileName",
+          "reported_signature": "getCookieFileName(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getCookiePref",
+          "reported_signature": "getCookiePref(java.lang.String): android.content.SharedPreferences",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)Landroid/content/SharedPreferences;"
+        },
+        {
+          "name": "getCookieToken",
+          "reported_signature": "getCookieToken(okhttp3.Cookie): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Cookie;)Ljava/lang/String;"
+        },
+        {
+          "name": "getInstance",
+          "reported_signature": "getInstance(): com.netease.cloudmusic.network.cookie.store.CloudMusicCookieStore",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Lcom/netease/cloudmusic/network/cookie/store/CloudMusicCookieStore;"
+        },
+        {
+          "name": "getLoginCookieValue",
+          "reported_signature": "getLoginCookieValue(java.lang.String): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)Ljava/lang/String;"
+        },
+        {
+          "name": "initCustomCookie",
+          "reported_signature": "initCustomCookie(java.lang.String): java.util.List<okhttp3.Cookie>",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)Ljava/util/List;"
+        },
+        {
+          "name": "isCookieStartupOptEnabled",
+          "reported_signature": "isCookieStartupOptEnabled(): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Z"
+        },
+        {
+          "name": "isCookieStoreOptLockDebugOpen",
+          "reported_signature": "isCookieStoreOptLockDebugOpen(): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Z"
+        },
+        {
+          "name": "loadCookie",
+          "reported_signature": "loadCookie(okhttp3.HttpUrl): java.util.List<okhttp3.Cookie>",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/HttpUrl;)Ljava/util/List;"
+        },
+        {
+          "name": "oaidMatchesLoginPath",
+          "reported_signature": "oaidMatchesLoginPath(java.lang.String, java.lang.String): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;)Z"
+        },
+        {
+          "name": "removeAllCookie",
+          "reported_signature": "removeAllCookie(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "removeCookie",
+          "reported_signature": "removeCookie(okhttp3.Cookie): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Cookie;)Z"
+        },
+        {
+          "name": "reportOaidCookiesCheckError",
+          "reported_signature": "reportOaidCookiesCheckError(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "saveCookies",
+          "reported_signature": "saveCookies(java.util.List<okhttp3.Cookie>): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/util/List;)V"
+        },
+        {
+          "name": "saveLoginCookie",
+          "reported_signature": "saveLoginCookie(java.lang.String, java.lang.String, java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "name": "setOaid",
+          "reported_signature": "setOaid(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setOaidForHome",
+          "reported_signature": "setOaidForHome(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "storedValueEquals",
+          "reported_signature": "storedValueEquals(java.lang.String, java.lang.String, java.lang.String): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z"
+        },
+        {
+          "name": "validateAndEncode",
+          "reported_signature": "validateAndEncode(java.lang.String): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)Ljava/lang/String;"
+        }
+      ],
+      "fields": [
+        {
+          "name": "DEFAULT_PREFERENCE_NAME",
+          "reported_type": "java.lang.String",
+          "dex_static_value": {
+            "type": "string",
+            "value": "cm_cookie_storage"
+          }
+        },
+        {
+          "name": "sInstance",
+          "reported_type": "com.netease.cloudmusic.network.cookie.store.CloudMusicCookieStore",
+          "dex_static_value": null
+        }
+      ],
+      "inner_classes": []
+    }
+  },
+  {
+    "key": "ne_abs_cookie_class",
+    "id": "ev_2a5d391ffcc56310069868c0fa8f2d1e2895d539cad6617392a81ee488416467",
+    "parent": "ev_65de325505e6dc7c619a1f29f9037e27c9712845cf5337de6365920b0d500150",
+    "artifact": {
+      "name": "official-classes4-analysis-only.apk",
+      "digest": {
+        "sha256": "93b15b71a779be0e0eb98b478256dcba11cb38eb3f4cec29746e1efd99fbd86c"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-02-total-duration-investigation\\transport\\official-classes4-analysis-only.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "summary": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 3072
+      },
+      "class_name": "com.netease.cloudmusic.network.cookie.store.AbsCookieStore",
+      "methods": [
+        {
+          "name": "<clinit>",
+          "reported_signature": "<clinit>(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(): void",
+          "overload_index": 0,
+          "is_constructor": true,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "appHost",
+          "reported_signature": "appHost(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "appKey",
+          "reported_signature": "appKey(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "buildCookie",
+          "reported_signature": "buildCookie(java.lang.String, java.lang.String): okhttp3.Cookie",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Cookie;"
+        },
+        {
+          "name": "buildMockAnonimousNameCookie",
+          "reported_signature": "buildMockAnonimousNameCookie(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "canSkipDevicesCookieBuild",
+          "reported_signature": "canSkipDevicesCookieBuild(): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Z"
+        },
+        {
+          "name": "checkCookieValid",
+          "reported_signature": "checkCookieValid(okhttp3.Cookie): okhttp3.Cookie",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Cookie;)Lokhttp3/Cookie;"
+        },
+        {
+          "name": "cleanDeviceIdInfo",
+          "reported_signature": "cleanDeviceIdInfo(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "clearAndInitCookie",
+          "reported_signature": "clearAndInitCookie(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "cookieExists",
+          "reported_signature": "cookieExists(java.lang.String): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)Z"
+        },
+        {
+          "name": "copyCookieWithDomain",
+          "reported_signature": "copyCookieWithDomain(okhttp3.Cookie, java.lang.String): okhttp3.Cookie",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Cookie;Ljava/lang/String;)Lokhttp3/Cookie;"
+        },
+        {
+          "name": "decodeCookie",
+          "reported_signature": "decodeCookie(java.lang.String): okhttp3.Cookie",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)Lokhttp3/Cookie;"
+        },
+        {
+          "name": "enableCookieStoreGetAllCookiesLockOpt",
+          "reported_signature": "enableCookieStoreGetAllCookiesLockOpt(): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Z"
+        },
+        {
+          "name": "encodeCookie",
+          "reported_signature": "encodeCookie(okhttp3.Cookie): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Cookie;)Ljava/lang/String;"
+        },
+        {
+          "name": "expireCookie",
+          "reported_signature": "expireCookie(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "generateCookiesForAllDomain",
+          "reported_signature": "generateCookiesForAllDomain(okhttp3.Cookie): java.util.List<okhttp3.Cookie>",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Cookie;)Ljava/util/List;"
+        },
+        {
+          "name": "getAllCookies",
+          "reported_signature": "getAllCookies(): java.util.List<okhttp3.Cookie>",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/util/List;"
+        },
+        {
+          "name": "getAllLoginCookie",
+          "reported_signature": "getAllLoginCookie(): java.util.List<okhttp3.Cookie>",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/util/List;"
+        },
+        {
+          "name": "getAllLoginCookieFromMemory",
+          "reported_signature": "getAllLoginCookieFromMemory(): java.util.List<okhttp3.Cookie>",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/util/List;"
+        },
+        {
+          "name": "getAllMusicUWithDomain",
+          "reported_signature": "getAllMusicUWithDomain(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getAppVer",
+          "reported_signature": "getAppVer(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getCookieDomain",
+          "reported_signature": "getCookieDomain(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getCookieFileName",
+          "reported_signature": "getCookieFileName(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getCookiePref",
+          "reported_signature": "getCookiePref(java.lang.String): android.content.SharedPreferences",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)Landroid/content/SharedPreferences;"
+        },
+        {
+          "name": "getCookieSubDomainList",
+          "reported_signature": "getCookieSubDomainList(): java.util.List<java.lang.String>",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/util/List;"
+        },
+        {
+          "name": "getCookieToken",
+          "reported_signature": "getCookieToken(okhttp3.Cookie): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Cookie;)Ljava/lang/String;"
+        },
+        {
+          "name": "getDeviceIdInfo",
+          "reported_signature": "getDeviceIdInfo(): java.lang.String[]",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()[Ljava/lang/String;"
+        },
+        {
+          "name": "getDomains",
+          "reported_signature": "getDomains(): java.util.ArrayList<java.lang.String>",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/util/ArrayList;"
+        },
+        {
+          "name": "getLoginCookie",
+          "reported_signature": "getLoginCookie(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getOS",
+          "reported_signature": "getOS(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getUserLoginCookie",
+          "reported_signature": "getUserLoginCookie(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "hasFileChangedUnexpectedly",
+          "reported_signature": "hasFileChangedUnexpectedly(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "initCustomCookie",
+          "reported_signature": "initCustomCookie(java.lang.String): java.util.List<okhttp3.Cookie>",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)Ljava/util/List;"
+        },
+        {
+          "name": "initDevicesCookie",
+          "reported_signature": "initDevicesCookie(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "initMemoryCookieAndSyncLoadFromFile",
+          "reported_signature": "initMemoryCookieAndSyncLoadFromFile(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "isCookieExpired",
+          "reported_signature": "isCookieExpired(okhttp3.Cookie): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Cookie;)Z"
+        },
+        {
+          "name": "isCookieStoreOptLockDebugOpen",
+          "reported_signature": "isCookieStoreOptLockDebugOpen(): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Z"
+        },
+        {
+          "name": "isLoginCookie",
+          "reported_signature": "isLoginCookie(okhttp3.Cookie): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Cookie;)Z"
+        },
+        {
+          "name": "loadCookie",
+          "reported_signature": "loadCookie(okhttp3.HttpUrl): java.util.List<okhttp3.Cookie>",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/HttpUrl;)Ljava/util/List;"
+        },
+        {
+          "name": "loadForRequest",
+          "reported_signature": "loadForRequest(okhttp3.HttpUrl): java.util.List<okhttp3.Cookie>",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/HttpUrl;)Ljava/util/List;"
+        },
+        {
+          "name": "log",
+          "reported_signature": "log(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "loginAboutCookie",
+          "reported_signature": "loginAboutCookie(okhttp3.Cookie): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Cookie;)Z"
+        },
+        {
+          "name": "os",
+          "reported_signature": "os(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "removeAllCookie",
+          "reported_signature": "removeAllCookie(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "removeCookie",
+          "reported_signature": "removeCookie(okhttp3.Cookie): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Cookie;)Z"
+        },
+        {
+          "name": "save2LookSubDomain",
+          "reported_signature": "save2LookSubDomain(java.util.List<okhttp3.Cookie>): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/util/List;)V"
+        },
+        {
+          "name": "saveCookie",
+          "reported_signature": "saveCookie(okhttp3.Cookie): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Cookie;)V"
+        },
+        {
+          "name": "saveCookies",
+          "reported_signature": "saveCookies(java.util.List<okhttp3.Cookie>): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/util/List;)V"
+        },
+        {
+          "name": "saveCookiesAllDomain",
+          "reported_signature": "saveCookiesAllDomain(java.util.List<okhttp3.Cookie>): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/util/List;)V"
+        },
+        {
+          "name": "saveFromResponse",
+          "reported_signature": "saveFromResponse(okhttp3.HttpUrl, java.util.List<okhttp3.Cookie>): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/HttpUrl;Ljava/util/List;)V"
+        },
+        {
+          "name": "setNewAndOldDeviceId",
+          "reported_signature": "setNewAndOldDeviceId(java.lang.String, java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "name": "validateAndEncode",
+          "reported_signature": "validateAndEncode(java.lang.String): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)Ljava/lang/String;"
+        }
+      ],
+      "fields": [
+        {
+          "name": "APP_HOST",
+          "reported_type": "java.lang.String",
+          "dex_static_value": {
+            "type": "string",
+            "value": "apphost"
+          }
+        },
+        {
+          "name": "APP_KEY",
+          "reported_type": "java.lang.String",
+          "dex_static_value": {
+            "type": "string",
+            "value": "appkey"
+          }
+        },
+        {
+          "name": "COOKIE_APPVER",
+          "reported_type": "java.lang.String",
+          "dex_static_value": {
+            "type": "string",
+            "value": "appver"
+          }
+        },
+        {
+          "name": "COOKIE_DOMAIN",
+          "reported_type": "java.lang.String",
+          "dex_static_value": {
+            "type": "string",
+            "value": "domain"
+          }
+        },
+        {
+          "name": "COOKIE_EXPIRE",
+          "reported_type": "java.lang.String",
+          "dex_static_value": {
+            "type": "string",
+            "value": "expire"
+          }
+        },
+        {
+          "name": "COOKIE_NAME",
+          "reported_type": "java.lang.String",
+          "dex_static_value": {
+            "type": "string",
+            "value": "name"
+          }
+        },
+        {
+          "name": "COOKIE_PATH",
+          "reported_type": "java.lang.String",
+          "dex_static_value": {
+            "type": "string",
+            "value": "path"
+          }
+        },
+        {
+          "name": "COOKIE_SECURE",
+          "reported_type": "java.lang.String",
+          "dex_static_value": {
+            "type": "string",
+            "value": "secure"
+          }
+        },
+        {
+          "name": "COOKIE_VALUE",
+          "reported_type": "java.lang.String",
+          "dex_static_value": {
+            "type": "string",
+            "value": "value"
+          }
+        },
+        {
+          "name": "DEFAULT_OS",
+          "reported_type": "java.lang.String",
+          "dex_static_value": {
+            "type": "string",
+            "value": "android"
+          }
+        },
+        {
+          "name": "DEVICE_ID",
+          "reported_type": "java.lang.String",
+          "dex_static_value": {
+            "type": "string",
+            "value": "deviceId"
+          }
+        },
+        {
+          "name": "PREF_KEY_MODIFY_TIME",
+          "reported_type": "java.lang.String",
+          "dex_static_value": {
+            "type": "string",
+            "value": "lastModifyTime"
+          }
+        },
+        {
+          "name": "TAG",
+          "reported_type": "java.lang.String",
+          "dex_static_value": {
+            "type": "string",
+            "value": "AbsCookieStore"
+          }
+        },
+        {
+          "name": "logReportRate",
+          "reported_type": "double",
+          "dex_static_value": null
+        },
+        {
+          "name": "mCookies",
+          "reported_type": "java.util.concurrent.ConcurrentHashMap<java.lang.String, okhttp3.Cookie>",
+          "dex_static_value": null
+        },
+        {
+          "name": "mCookiesPref",
+          "reported_type": "android.content.SharedPreferences",
+          "dex_static_value": null
+        },
+        {
+          "name": "mPreferenceLastModifyTime",
+          "reported_type": "long",
+          "dex_static_value": null
+        },
+        {
+          "name": "newDeviceId",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "oldDeviceId",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        }
+      ],
+      "inner_classes": []
+    }
+  },
+  {
+    "key": "ne_cookie_init",
+    "id": "ev_17b086e49063c23d0cdfc041b3631a48b40420cba30b90bdbff51627914e8cf1",
+    "parent": "ev_a0f71302aece6f8405c41341605a13611d0639bac067ff5fea67835fab183e04",
+    "artifact": {
+      "name": "official-classes4-analysis-only.apk",
+      "digest": {
+        "sha256": "93b15b71a779be0e0eb98b478256dcba11cb38eb3f4cec29746e1efd99fbd86c"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-02-total-duration-investigation\\transport\\official-classes4-analysis-only.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "summary": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 3072
+      },
+      "class_name": "com.netease.cloudmusic.network.cookie.store.AbsCookieStore",
+      "method": {
+        "name": "initMemoryCookieAndSyncLoadFromFile",
+        "reported_signature": "initMemoryCookieAndSyncLoadFromFile(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    protected synchronized void initMemoryCookieAndSyncLoadFromFile() {\r\n        Map<String, ?> all = this.mCookiesPref.getAll();\r\n        this.mCookies = new ConcurrentHashMap<>();\r\n        for (Map.Entry<String, ?> entry : all.entrySet()) {\r\n            if (PREF_KEY_MODIFY_TIME.equals(entry.getKey())) {\r\n                this.mPreferenceLastModifyTime = this.mCookiesPref.getLong(PREF_KEY_MODIFY_TIME, -1L);\r\n            } else {\r\n                Cookie cookieDecodeCookie = decodeCookie(entry.getValue().toString());\r\n                if (cookieDecodeCookie != null) {\r\n                    this.mCookies.put(getCookieToken(cookieDecodeCookie), cookieDecodeCookie);\r\n                }\r\n            }\r\n        }\r\n    }",
+        "reported_total_bytes": null
+      }
+    }
+  },
+  {
+    "key": "kg_request_network",
+    "id": "ev_8e776f022709fd6ba9a848eba24b767e34fa12523466e2c07f9952a9441471af",
+    "parent": "ev_d01fac259d0a1c87fb261d65fc9a8a9c288bc32f9997008b615e14a8efe87ab5",
+    "artifact": {
+      "name": "classes8-focus.apk",
+      "digest": {
+        "sha256": "5494fe1a601dcf0edad26cc823127add176f39678f4c3301925f33e7f5d5f7a3"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes8-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "summary": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 3072
+      },
+      "class_name": "com.kugou.common.network.AbsHttpClient",
+      "method": {
+        "name": "H",
+        "reported_signature": "H(org.apache.http.client.methods.HttpUriRequest, com.kugou.common.network.proxy.KGHttpProxy, com.kugou.common.network.retry.IHttpRetryMode): org.apache.http.HttpResponse",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lorg/apache/http/client/methods/HttpUriRequest;Lcom/kugou/common/network/proxy/KGHttpProxy;Lcom/kugou/common/network/retry/IHttpRetryMode;)Lorg/apache/http/HttpResponse;"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    /* JADX WARN: Code duplicated, block: B:24:0x0053  */\r\n    /* JADX WARN: Code duplicated, block: B:26:0x0056  */\r\n    /* JADX WARN: Code duplicated, block: B:28:0x0059  */\r\n    /* JADX WARN: Code duplicated, block: B:31:0x006a  */\r\n    /* JADX WARN: Code duplicated, block: B:34:0x0076  */\r\n    /* JADX WARN: Code duplicated, block: B:37:0x0084  */\r\n    /* JADX WARN: Code duplicated, block: B:39:0x008c  */\r\n    /* JADX WARN: Code duplicated, block: B:41:0x0092  */\r\n    /* JADX WARN: Code duplicated, block: B:42:0x00a9  */\r\n    /* JADX WARN: Code duplicated, block: B:44:0x00ad  */\r\n    /* JADX WARN: Code duplicated, block: B:70:0x0132 A[DONT_INVERT] */\r\n    /* JADX WARN: Code duplicated, block: B:71:0x0134  */\r\n    /* JADX WARN: Code duplicated, block: B:78:0x019b  */\r\n    /* JADX WARN: Code duplicated, block: B:82:? A[ADDED_TO_REGION, RETURN, SYNTHETIC] */\r\n    private HttpResponse H(@NonNull HttpUriRequest httpUriRequest, KGHttpProxy kGHttpProxy, IHttpRetryMode iHttpRetryMode) throws IOException {\r\n        boolean zD;\r\n        int iO;\r\n        boolean z;\r\n        int i2;\r\n        String host;\r\n        boolean zEqualsIgnoreCase;\r\n        HttpResponse httpResponseC;\r\n        ProtocolVersion protocolVersion;\r\n        if (SwordSwitches.switches19 != null) {\r\n            SwordProxyResult swordProxyResultProxy3Arg = SwordProxy.proxy3Arg(httpUriRequest, kGHttpProxy, iHttpRetryMode, this, 1954377624878750L);\r\n            if (swordProxyResultProxy3Arg.isSupported) {\r\n                return (HttpResponse) swordProxyResultProxy3Arg.result;\r\n            }\r\n        }\r\n        byte[] bArr = iHttpRetryMode == null ? null : iHttpRetryMode.a().l;\r\n        if (httpUriRequest.getURI() != null) {\r\n            zD = this.e.D(httpUriRequest.getURI().getHost());\r\n            if (zD) {\r\n                iO = this.e.m();\r\n                z = iO > 0;\r\n                i2 = this.o;\r\n                if (i2 == 1) {\r\n                    return this.d.execute(httpUriRequest);\r\n                }\r\n                if (i2 != 2) {\r\n                    if (i2 != 4) {\r\n                        throw new UnsupportedOperationException(\"not support this network mode now!\");\r\n                    }\r\n                    jm3.b.d().a(this.B, true);\r\n                    jm3.a aVar = new jm3.a();\r\n                    if (!z) {\r\n                        iO = O();\r\n                    }\r\n                    httpResponseC = aVar.c(iO, this.g, httpUriRequest, zD);\r\n                    if (httpResponseC != null || (protocolVersion = httpResponseC.getProtocolVersion()) == null) {\r\n                        return httpResponseC;\r\n                    }\r\n                    this.F = protocolVersion.getProtocol();\r\n                    return httpResponseC;\r\n                }\r\n                if (httpUriRequest.getURI() != null) {\r\n                    zEqualsIgnoreCase = \"https\".equalsIgnoreCase(httpUriRequest.getURI().getScheme());\r\n                    host = httpUriRequest.getURI().getHost();\r\n                } else {\r\n                    host = null;\r\n                    zEqualsIgnoreCase = false;\r\n                }\r\n                if (kGHttpProxy == null && kGHttpProxy.k() != null) {\r\n                    im3.g gVarK = kGHttpProxy.k();\r\n                    Header[] allHeaders = gVarK.h.getAllHeaders();\r\n                    if (allHeaders != null && allHeaders.length > 0) {\r\n                        Header[] headers = httpUriRequest.getHeaders(\"Host\");\r\n                        if (headers == null || headers.length <= 0) {\r\n                            httpUriRequest.addHeader(\"X-Real-Host\", gVarK.f);\r\n                        } else {\r\n                            httpUriRequest.addHeader(\"X-Real-Host\", headers[0].getValue());\r\n                        }\r\n                        Header[] allHeaders2 = httpUriRequest.getAllHeaders();\r\n                        URI uri = httpUriRequest.getURI();\r\n                        String str = TextUtils.isEmpty(gVarK.c) ? gVarK.g : gVarK.c;\r\n                        String strC = dm3.c.c(uri.toString(), gVarK.c(zEqualsIgnoreCase), str);\r\n                        if (httpUriRequest instanceof HttpGet) {\r\n                            httpUriRequest = new HttpGet(strC);\r\n                        } else if (httpUriRequest instanceof HttpPost) {\r\n                            HttpPost httpPost = new HttpPost(strC);\r\n                            httpPost.setEntity(((HttpPost) httpUriRequest).getEntity());\r\n                            httpUriRequest = httpPost;\r\n                        }\r\n                        httpUriRequest.setHeaders((Header[]) fm3.c.b(allHeaders, allHeaders2));\r\n                        if (iHttpRetryMode != null) {\r\n                            iHttpRetryMode.a().m.l(str);\r\n                        }\r\n                    }\r\n                    kGHttpProxy = null;\r\n                } else if (iHttpRetryMode != null) {\r\n                    iHttpRetryMode.a().m.l(host);\r\n                }\r\n                OkHttpClient okHttpClientL = u.l(host);\r\n                try {\r\n                    C();\r\n                    B(this.x, kGHttpProxy);\r\n                    return new v(okHttpClientL).e(this.f, httpUriRequest, bArr);\r\n                } finally {\r\n                    this.C = u.e.get();\r\n                    this.D = TextUtils.equals(u.f.get(), \"1\");\r\n                    this.E = u.g.get();\r\n                }\r\n            }\r\n            i2 = this.o;\r\n            if (i2 == 1) {\r\n                return this.d.execute(httpUriRequest);\r\n            }\r\n            if (i2 != 2) {\r\n                if (i2 != 4) {\r\n                    throw new UnsupportedOperationException(\"not support this network mode now!\");\r\n                }\r\n                jm3.b.d().a(this.B, true);\r\n                jm3.a aVar2 = new jm3.a();\r\n                if (!z) {\r\n                    iO = O();\r\n                }\r\n                httpResponseC = aVar2.c(iO, this.g, httpUriRequest, zD);\r\n                if (httpResponseC != null) {\r\n                    return httpResponseC;\r\n                }\r\n                return httpResponseC;\r\n            }\r\n            if (httpUriRequest.getURI() != null) {\r\n                zEqualsIgnoreCase = \"https\".equalsIgnoreCase(httpUriRequest.getURI().getScheme());\r\n                host = httpUriRequest.getURI().getHost();\r\n            } else {\r\n                host = null;\r\n                zEqualsIgnoreCase = false;\r\n            }\r\n            if (kGHttpProxy == null) {\r\n                if (iHttpRetryMode != null) {\r\n                    iHttpRetryMode.a().m.l(host);\r\n                }\r\n            } else if (iHttpRetryMode != null) {\r\n                iHttpRetryMode.a().m.l(host);\r\n            }\r\n            OkHttpClient okHttpClientL2 = u.l(host);\r\n            C();\r\n            B(this.x, kGHttpProxy);\r\n            return new v(okHttpClientL2).e(this.f, httpUriRequest, bArr);\r\n        }\r\n        zD = false;\r\n        iO = 0;\r\n        i2 = this.o;\r\n        if (i2 == 1) {\r\n            return this.d.execute(httpUriRequest);\r\n        }\r\n        if (i2 != 2) {\r\n            if (i2 != 4) {\r\n                throw new UnsupportedOperationException(\"not support this network mode now!\");\r\n            }\r\n            jm3.b.d().a(this.B, true);\r\n            jm3.a aVar3 = new jm3.a();\r\n            if (!z) {\r\n                iO = O();\r\n            }\r\n            httpResponseC = aVar3.c(iO, this.g, httpUriRequest, zD);\r\n            if (httpResponseC != null) {\r\n                return httpResponseC;\r\n            }\r\n            return httpResponseC;\r\n        }\r\n        if (httpUriRequest.getURI() != null) {\r\n            zEqualsIgnoreCase = \"https\".equalsIgnoreCase(httpUriRequest.getURI().getScheme());\r\n            host = httpUriRequest.getURI().getHost();\r\n        } else {\r\n            host = null;\r\n            zEqualsIgnoreCase = false;\r\n        }\r\n        if (kGHttpProxy == null) {\r\n            if (iHttpRetryMode != null) {\r\n                iHttpRetryMode.a().m.l(host);\r\n            }\r\n        } else if (iHttpRetryMode != null) {\r\n            iHttpRetryMode.a().m.l(host);\r\n        }\r\n        OkHttpClient okHttpClientL3 = u.l(host);\r\n        C();\r\n        B(this.x, kGHttpProxy);\r\n        return new v(okHttpClientL3).e(this.f, httpUriRequest, bArr);\r\n    }",
+        "reported_total_bytes": null
+      }
+    }
+  },
+  {
+    "key": "kg_default_network_client",
+    "id": "ev_222bc7982a8f24944a4ce39f08da2b060b6b20da35ff7975676b4599d128bf40",
+    "parent": "ev_a52648fde8abd8fda4539b12dc8e1ced47b90a5ef18dcbaff7915922a64bd415",
+    "artifact": {
+      "name": "classes8-focus.apk",
+      "digest": {
+        "sha256": "5494fe1a601dcf0edad26cc823127add176f39678f4c3301925f33e7f5d5f7a3"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes8-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "summary": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 3072
+      },
+      "class_name": "com.kugou.common.network.u",
+      "method": {
+        "name": "p",
+        "reported_signature": "p(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    private static void p() {\r\n        if (SwordSwitches.switches19 == null || !SwordProxy.proxy0Arg((Object) null, 1955305337828510L).isSupported) {\r\n            OkHttpClient.Builder builderOnlyCallByKGHttpClient2 = KGOKHttpClientExt.onlyCallByKGHttpClient2();\r\n            builderOnlyCallByKGHttpClient2.dns(k.c().a());\r\n            builderOnlyCallByKGHttpClient2.eventListener(f.a().d());\r\n            builderOnlyCallByKGHttpClient2.connectIpv6Timeout(500L, TimeUnit.MILLISECONDS);\r\n            g(builderOnlyCallByKGHttpClient2);\r\n            a = NetOkHttpMonitor.inspectOkHttp(builderOnlyCallByKGHttpClient2.connectionPool(c).addInterceptor(new WeakNetworkInterceptor()).addInterceptor(new am3.e()).addInterceptor(k()));\r\n        }\r\n    }",
+        "reported_total_bytes": null
+      }
+    }
+  },
+  {
+    "key": "kg_accept_login",
+    "id": "ev_e93cbcc81a36c0ea654a14f338229fb94d0a5a8e1bdff262e5f2e54508a7d875",
+    "parent": "ev_1bcef573d41fa430bf002285930ccec451d3a0026ea38f2fb4093f537a672353",
+    "artifact": {
+      "name": "classes20-focus.apk",
+      "digest": {
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "summary": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 3072
+      },
+      "class_name": "com.kugou.common.useraccount.protocol.UserLogin",
+      "method": {
+        "name": "Y",
+        "reported_signature": "Y(long, java.lang.String, com.kugou.common.useraccount.entity.UserData): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(JLjava/lang/String;Lcom/kugou/common/useraccount/entity/UserData;)V"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    private void Y(@IntRange(from = 0) long j, String str, UserData userData) {\r\n        if ((SwordSwitches.switches18 == null || !SwordProxy.proxy3Arg(Long.valueOf(j), str, userData, this, 1775986157117079L).isSupported) && !TextUtils.isEmpty(str) && j > 0) {\r\n            com.kugou.framework.setting.operator.l.a.i(userData.getUserid(), userData.q1(), userData.s1(), userData.t1());\r\n        }\r\n    }",
+        "reported_total_bytes": null
+      }
+    }
+  },
+  {
+    "key": "kg_okhttp_class",
+    "id": "ev_12f8157df045478a7c1cbddd76c10048698ce44d4f615f90a1ca586bf3e85547",
+    "parent": "ev_7a1436d2d78b0b2e37c31b808e21c31be35d1b0c806248efa30b9f2350b3b64e",
+    "artifact": {
+      "name": "classes8-focus.apk",
+      "digest": {
+        "sha256": "5494fe1a601dcf0edad26cc823127add176f39678f4c3301925f33e7f5d5f7a3"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes8-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "summary": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 3072
+      },
+      "class_name": "com.kugou.common.network.u",
+      "methods": [
+        {
+          "name": "<clinit>",
+          "reported_signature": "<clinit>(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "a",
+          "reported_signature": "a(): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Z"
+        },
+        {
+          "name": "b",
+          "reported_signature": "b(boolean): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Z)Z"
+        },
+        {
+          "name": "c",
+          "reported_signature": "c(okhttp3.Request, com.kugou.common.network.AbsHttpVars): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Request;Lcom/kugou/common/network/AbsHttpVars;)Z"
+        },
+        {
+          "name": "d",
+          "reported_signature": "d(okhttp3.Request, com.kugou.common.network.AbsHttpVars, boolean): okhttp3.Request",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Request;Lcom/kugou/common/network/AbsHttpVars;Z)Lokhttp3/Request;"
+        },
+        {
+          "name": "e",
+          "reported_signature": "e(okhttp3.Request, okhttp3.Response): okhttp3.Response",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Request;Lokhttp3/Response;)Lokhttp3/Response;"
+        },
+        {
+          "name": "f",
+          "reported_signature": "f(java.lang.String, okhttp3.Request, am3.b, long, long, boolean, okhttp3.Response, java.lang.Exception, km3.k): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;Lokhttp3/Request;Lam3/b;JJZLokhttp3/Response;Ljava/lang/Exception;Lkm3/k;)V"
+        },
+        {
+          "name": "g",
+          "reported_signature": "g(okhttp3.OkHttpClient$Builder): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/OkHttpClient$Builder;)V"
+        },
+        {
+          "name": "h",
+          "reported_signature": "h(okhttp3.Request, com.kugou.common.network.AbsHttpVars): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Request;Lcom/kugou/common/network/AbsHttpVars;)Z"
+        },
+        {
+          "name": "i",
+          "reported_signature": "i(okhttp3.HttpUrl, okhttp3.HttpUrl): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/HttpUrl;Lokhttp3/HttpUrl;)V"
+        },
+        {
+          "name": "j",
+          "reported_signature": "j(okhttp3.Request): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Request;)Ljava/lang/String;"
+        },
+        {
+          "name": "k",
+          "reported_signature": "k(): okhttp3.Interceptor",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Lokhttp3/Interceptor;"
+        },
+        {
+          "name": "l",
+          "reported_signature": "l(java.lang.String): okhttp3.OkHttpClient",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)Lokhttp3/OkHttpClient;"
+        },
+        {
+          "name": "m",
+          "reported_signature": "m(java.lang.String): okhttp3.OkHttpClient",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)Lokhttp3/OkHttpClient;"
+        },
+        {
+          "name": "n",
+          "reported_signature": "n(com.kugou.common.network.AbsHttpVars): okhttp3.Interceptor",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lcom/kugou/common/network/AbsHttpVars;)Lokhttp3/Interceptor;"
+        },
+        {
+          "name": "o",
+          "reported_signature": "o(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "p",
+          "reported_signature": "p(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "q",
+          "reported_signature": "q(okhttp3.Request, com.kugou.common.network.AbsHttpVars, boolean): okhttp3.Request",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Request;Lcom/kugou/common/network/AbsHttpVars;Z)Lokhttp3/Request;"
+        },
+        {
+          "name": "r",
+          "reported_signature": "r(okhttp3.Request, okhttp3.Response): okhttp3.Response",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Request;Lokhttp3/Response;)Lokhttp3/Response;"
+        },
+        {
+          "name": "s",
+          "reported_signature": "s(okhttp3.Interceptor$Chain, okhttp3.Request, com.kugou.common.network.AbsHttpVars, km3.k): okhttp3.Response",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Interceptor$Chain;Lokhttp3/Request;Lcom/kugou/common/network/AbsHttpVars;Lkm3/k;)Lokhttp3/Response;"
+        },
+        {
+          "name": "t",
+          "reported_signature": "t(java.lang.String, okhttp3.Request, am3.b, long, long, boolean, okhttp3.Response, java.lang.Exception, km3.k): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;Lokhttp3/Request;Lam3/b;JJZLokhttp3/Response;Ljava/lang/Exception;Lkm3/k;)V"
+        }
+      ],
+      "fields": [
+        {
+          "name": "a",
+          "reported_type": "okhttp3.OkHttpClient",
+          "dex_static_value": null
+        },
+        {
+          "name": "b",
+          "reported_type": "okhttp3.OkHttpClient",
+          "dex_static_value": null
+        },
+        {
+          "name": "c",
+          "reported_type": "okhttp3.ConnectionPool",
+          "dex_static_value": null
+        },
+        {
+          "name": "d",
+          "reported_type": "okhttp3.ConnectionPool",
+          "dex_static_value": null
+        },
+        {
+          "name": "e",
+          "reported_type": "java.lang.ThreadLocal<java.lang.String>",
+          "dex_static_value": null
+        },
+        {
+          "name": "f",
+          "reported_type": "java.lang.ThreadLocal<java.lang.String>",
+          "dex_static_value": null
+        },
+        {
+          "name": "g",
+          "reported_type": "java.lang.ThreadLocal<java.lang.String>",
+          "dex_static_value": null
+        },
+        {
+          "name": "h",
+          "reported_type": "boolean",
+          "dex_static_value": null
+        }
+      ],
+      "inner_classes": [
+        "com.kugou.common.network.u.a",
+        "com.kugou.common.network.u.b",
+        "com.kugou.common.network.u.c",
+        "com.kugou.common.network.u.d"
+      ]
+    }
+  },
+  {
+    "key": "kg_dns_class",
+    "id": "ev_32fefa20ccabd22dde300ebb2738ed06b344b022671cd2f3a97241cba53cda33",
+    "parent": "ev_c7881496e381821eaaf16b0f0150de99cf940a680c00f370cd4f459b6d97f7c9",
+    "artifact": {
+      "name": "classes8-focus.apk",
+      "digest": {
+        "sha256": "5494fe1a601dcf0edad26cc823127add176f39678f4c3301925f33e7f5d5f7a3"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes8-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "summary": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 3072
+      },
+      "class_name": "com.kugou.common.network.k",
+      "methods": [
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(): void",
+          "overload_index": 0,
+          "is_constructor": true,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "a",
+          "reported_signature": "a(): okhttp3.Dns",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Lokhttp3/Dns;"
+        },
+        {
+          "name": "b",
+          "reported_signature": "b(): okhttp3.EventListener",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Lokhttp3/EventListener;"
+        },
+        {
+          "name": "c",
+          "reported_signature": "c(): com.kugou.common.network.k",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Lcom/kugou/common/network/k;"
+        },
+        {
+          "name": "d",
+          "reported_signature": "d(okhttp3.Dns): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/Dns;)V"
+        },
+        {
+          "name": "e",
+          "reported_signature": "e(okhttp3.EventListener): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lokhttp3/EventListener;)V"
+        }
+      ],
+      "fields": [
+        {
+          "name": "a",
+          "reported_type": "okhttp3.Dns",
+          "dex_static_value": null
+        },
+        {
+          "name": "b",
+          "reported_type": "okhttp3.EventListener",
+          "dex_static_value": null
+        },
+        {
+          "name": "c",
+          "reported_type": "com.kugou.common.network.k",
+          "dex_static_value": null
+        }
+      ],
+      "inner_classes": [
+        "com.kugou.common.network.k.a",
+        "com.kugou.common.network.k.b"
+      ]
+    }
+  }
+]

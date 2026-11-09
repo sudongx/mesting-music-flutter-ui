@@ -1,0 +1,136 @@
+00:00 +0: loading D:/AnLi/test/beta5_ui_test.dart
+00:00 +0: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: beta13 search keeps real results until return motion finishes
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  StatefulElement#62024(DEFUNCT)
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _ArtworkImageState.didChangeDependencies.<anonymous closure> (package:mesting_music/shared/widgets/artwork_image.dart:116:32)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:226:26)
+#4      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:258:20)
+#5      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#6      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#7      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#8      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#9      PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#10     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#11     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#13     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#17     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#20     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#21     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#22     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#25     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#26     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#27     main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:3054:20)
+<asynchronous suspension>
+#28     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#29     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#2fe0a DISPOSED:
+  needs compositing
+  creator: MultiChildRenderObjectElement#e2ca5(DEFUNCT) ←
+    _NotificationElement<ScrollNotification>#1a095(DEFUNCT) ←
+    _NotificationElement<ScrollMetricsNotification>#5e2e5(DEFUNCT) ← InheritedElement#edf8b(DEFUNCT) ←
+    StatefulElement#25d00(DEFUNCT) ← SingleChildRenderObjectElement#e7daa(DEFUNCT) ←
+    InheritedElement#a868e(DEFUNCT) ← StatefulElement#64c63(DEFUNCT) ← _OffstageElement#8ce43(DEFUNCT)
+    ← MultiChildRenderObjectElement#c34d2(DEFUNCT) ← SingleChildRenderObjectElement#042c1(DEFUNCT) ←
+    ConsumerStatefulElement#3dfec(DEFUNCT) ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(w=390.0, h=844.0)
+  size: Size(390.0, 844.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#c3f62 DISPOSED
+      child: RenderTransform#e66a1 DISPOSED
+        child: _RenderScrollSemantics#d7bb7 DISPOSED
+          child: RenderPointerListener#5368a DISPOSED
+            child: RenderSemanticsGestureHandler#f8e57 DISPOSED
+    child 2: RenderConstrainedBox#91ba8 DISPOSED
+      child: RenderPositionedBox#80a67 DISPOSED
+        child: RenderSemanticsAnnotations#9a998 DISPOSED
+          child: RenderConstrainedBox#4a676 DISPOSED
+            child: RenderCustomPaint#478ce DISPOSED
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +0 -1: beta13 search keeps real results until return motion finishes [E]
+  Test failed. See exception logs above.
+  The test description was: beta13 search keeps real results until return motion finishes
+  
+Warning: At least one test in this suite creates an HttpClient. When running a test suite that uses
+TestWidgetsFlutterBinding, all HTTP requests will return status code 400, and no network request
+will actually be made. Any test expecting a real network connection and status code will fail.
+To test code that needs an HttpClient, provide your own HttpClient implementation to the code under
+test, so that your test can consistently provide a testable response to the code under test.
+══╡ EXCEPTION CAUGHT BY WIDGET INSPECTOR ╞══════════════════════════════════════════════════════════
+The following assertion was thrown:
+Looking up a deactivated widget's ancestor is unsafe.
+At this point the state of the widget's element tree is no longer stable.
+To safely refer to a widget's ancestor in its dispose() method, save a reference to the ancestor by
+calling dependOnInheritedWidgetOfExactType() in the widget's didChangeDependencies() method.
+
+When the exception was thrown, this was the stack:
+#0      Element._debugCheckStateIsActiveForAncestorLookup.<anonymous closure> (package:flutter/src/widgets/framework.dart:5049:9)
+#1      Element._debugCheckStateIsActiveForAncestorLookup (package:flutter/src/widgets/framework.dart:5063:6)
+#2      Element.visitAncestorElements (package:flutter/src/widgets/framework.dart:5174:12)
+#3      _describeRelevantUserCode (package:flutter/src/widgets/widget_inspector.dart:4236:13)
+#4      _parseDiagnosticsNode (package:flutter/src/widgets/widget_inspector.dart:4155:12)
+#5      debugTransformDebugCreator (package:flutter/src/widgets/widget_inspector.dart:4134:21)
+#6      _FlutterErrorDetailsNode.builder (package:flutter/src/foundation/assertions.dart:1310:31)
+#7      DiagnosticableNode.getProperties (package:flutter/src/foundation/diagnostics.dart:2943:68)
+#8      TextTreeRenderer._debugRender (package:flutter/src/foundation/diagnostics.dart:1270:63)
+#9      TextTreeRenderer.render (package:flutter/src/foundation/diagnostics.dart:1137:14)
+#10     FlutterError.dumpErrorToConsole (package:flutter/src/foundation/assertions.dart:1040:13)
+#11     _defaultTestExceptionReporter (package:flutter_test/src/test_exception_reporter.dart:29:16)
+#12     TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1444:28)
+<asynchronous suspension>
+(elided 8 frames from dart:async and package:stack_trace)
+
+This exception was caught while trying to describe the user-relevant code of another error.
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY WIDGET INSPECTOR ╞══════════════════════════════════════════════════════════
+The following assertion was thrown:
+Looking up a deactivated widget's ancestor is unsafe.
+At this point the state of the widget's element tree is no longer stable.
+To safely refer to a widget's ancestor in its dispose() method, save a reference to the ancestor by
+calling dependOnInheritedWidgetOfExactType() in the widget's didChangeDependencies() method.
+
+When the exception was thrown, this was the stack:
+#0      Element._debugCheckStateIsActiveForAncestorLookup.<anonymous closure> (package:flutter/src/widgets/framework.dart:5049:9)
+#1      Element._debugCheckStateIsActiveForAncestorLookup (package:flutter/src/widgets/framework.dart:5063:6)
+#2      Element.visitAncestorElements (package:flutter/src/widgets/framework.dart:5174:12)
+#3      _describeRelevantUserCode (package:flutter/src/widgets/widget_inspector.dart:4236:13)
+#4      _parseDiagnosticsNode (package:flutter/src/widgets/widget_inspector.dart:4155:12)
+#5      debugTransformDebugCreator (package:flutter/src/widgets/widget_inspector.dart:4134:21)
+#6      _FlutterErrorDetailsNode.builder (package:flutter/src/foundation/assertions.dart:1310:31)
+#7      DiagnosticableNode.emptyBodyDescription (package:flutter/src/foundation/diagnostics.dart:2939:45)
+#8      TextTreeRenderer._debugRender (package:flutter/src/foundation/diagnostics.dart:1307:14)
+#9      TextTreeRenderer.render (package:flutter/src/foundation/diagnostics.dart:1137:14)
+#10     FlutterError.dumpErrorToConsole (package:flutter/src/foundation/assertions.dart:1040:13)
+#11     _defaultTestExceptionReporter (package:flutter_test/src/test_exception_reporter.dart:29:16)
+#12     TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1444:28)
+<asynchronous suspension>
+(elided 8 frames from dart:async and package:stack_trace)
+
+This exception was caught while trying to describe the user-relevant code of another error.
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +0 -1: (tearDownAll)
+00:02 +0 -1: Some tests failed.

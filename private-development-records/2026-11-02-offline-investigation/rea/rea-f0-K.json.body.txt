@@ -1,0 +1,23 @@
+    /* JADX INFO: Access modifiers changed from: private */
+    public void K() {
+        I();
+        String[] list = new File(z()).list();
+        if (list == null || list.length <= 0) {
+            return;
+        }
+        HashMap map = new HashMap();
+        for (String str : list) {
+            if (!str.equals(String.valueOf(this.j)) && str.endsWith(".comp")) {
+                String str2 = str.substring(0, str.lastIndexOf(".comp")).split("_")[0];
+                if (!map.containsKey(str2)) {
+                    map.put(str2, new ArrayList());
+                }
+                ((List) map.get(str2)).add(str);
+            }
+        }
+        t(map);
+        p1 p1Var = this.c.h;
+        if (p1Var == null || !p1Var.intercept()) {
+            J(map);
+        }
+    }

@@ -1,0 +1,94 @@
+967            -
+  Class descriptor  : 'Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;)
+      name          : 'contentType'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0001 (PUBLIC)
+    #1              : (in Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;)
+      name          : 'file'
+      type          : 'Ljava/io/File;'
+      access        : 0x0001 (PUBLIC)
+    #2              : (in Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;)
+      name          : 'name'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0001 (PUBLIC)
+    #3              : (in Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;)
+      name          : 'type'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0001 (PUBLIC)
+  Direct methods    -
+    #0              : (in Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+2f0de4:                                        |[2f0de4] com.netease.cloudmusic.network.model.MultipleUploadEntity$UploadFile.<init>:()V
+2f0df4: 7010 80c2 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@c280
+2f0dfa: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;
+
+    #1              : (in Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;)
+      name          : 'create'
+      type          : '(Ljava/io/File;Ljava/lang/String;)Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 1
+      insns size    : 20 16-bit code units
+2f0dac:                                        |[2f0dac] com.netease.cloudmusic.network.model.MultipleUploadEntity$UploadFile.create:(Ljava/io/File;Ljava/lang/String;)Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;
+2f0dbc: 2200 5c15                              |0000: new-instance v0, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile; // type@155c
+2f0dc0: 7010 d96a 0000                         |0002: invoke-direct {v0}, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;.<init>:()V // method@6ad9
+2f0dc6: 5b01 7e2a                              |0005: iput-object v1, v0, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;.file:Ljava/io/File; // field@2a7e
+2f0dca: 5b02 7d2a                              |0007: iput-object v2, v0, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;.contentType:Ljava/lang/String; // field@2a7d
+2f0dce: 1a02 6884                              |0009: const-string v2, "file" // string@8468
+2f0dd2: 5b02 802a                              |000b: iput-object v2, v0, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;.type:Ljava/lang/String; // field@2a80
+2f0dd6: 6e10 eac1 0100                         |000d: invoke-virtual {v1}, Ljava/io/File;.getName:()Ljava/lang/String; // method@c1ea
+2f0ddc: 0c01                                   |0010: move-result-object v1
+2f0dde: 5b01 7f2a                              |0011: iput-object v1, v0, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;.name:Ljava/lang/String; // field@2a7f
+2f0de2: 1100                                   |0013: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+        0x0013 line=20
+      locals        :
+        0x0000 - 0x0014 reg=1 (null) Ljava/io/File;
+        0x0000 - 0x0014 reg=2 (null) Ljava/lang/String;
+
+  Virtual methods   -
+  source_file_idx   : 25392 (ProGuard)
+

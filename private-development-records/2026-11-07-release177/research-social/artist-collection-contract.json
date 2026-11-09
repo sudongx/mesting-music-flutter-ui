@@ -1,0 +1,1856 @@
+[
+  {
+    "class_def_index": 1680,
+    "descriptor": "Lcom/luna/common/arch/sync/net/ArtistCollectApi;",
+    "access_flags": 1537,
+    "super": "Ljava/lang/Object;",
+    "interfaces": [],
+    "class_data_offset": 10673804,
+    "static_values_offset": 0,
+    "fields": [],
+    "methods": [
+      {
+        "dex_method_index": 33046,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi;",
+        "name": "collectArtists",
+        "descriptor": "(Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;)Lio/reactivex/Observable;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9989884,
+            "visibility": 1,
+            "type": "Lcom/bytedance/retrofit2/http/POST;",
+            "elements": {
+              "value": "/luna/me/collection/artist"
+            }
+          },
+          {
+            "annotation_item_offset": 9989894,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "(",
+                "Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;",
+                ")",
+                "Lio/reactivex/Observable<",
+                "Lcom/luna/common/arch/sync/net/CollectArtistResponse;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 9837174,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 33047,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi;",
+        "name": "deleteCollectArtists",
+        "descriptor": "(Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;)Lio/reactivex/Observable;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9989921,
+            "visibility": 1,
+            "type": "Lcom/bytedance/retrofit2/http/POST;",
+            "elements": {
+              "value": "/luna/me/collection/artist/delete"
+            }
+          },
+          {
+            "annotation_item_offset": 9989931,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "(",
+                "Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;",
+                ")",
+                "Lio/reactivex/Observable<",
+                "Lcom/luna/common/arch/sync/net/DeleteCollectArtistResponse;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 9837174,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 33048,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi;",
+        "name": "getMyCollectArtists",
+        "descriptor": "(Ljava/lang/String;I)Lio/reactivex/Observable;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9989958,
+            "visibility": 1,
+            "type": "Lcom/bytedance/retrofit2/http/GET;",
+            "elements": {
+              "value": "/luna/me/collection/artist"
+            }
+          },
+          {
+            "annotation_item_offset": 9989968,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "(",
+                "Ljava/lang/String;",
+                "I)",
+                "Lio/reactivex/Observable<",
+                "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 9837174,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 33049,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi;",
+        "name": "getUserCollectArtists",
+        "descriptor": "(Ljava/lang/String;Ljava/lang/String;I)Lio/reactivex/Observable;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9989995,
+            "visibility": 1,
+            "type": "Lcom/bytedance/retrofit2/http/GET;",
+            "elements": {
+              "value": "/luna/user/collection/artist"
+            }
+          },
+          {
+            "annotation_item_offset": 9990005,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "(",
+                "Ljava/lang/String;",
+                "Ljava/lang/String;",
+                "I)",
+                "Lio/reactivex/Observable<",
+                "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 9837174,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "declared_fields": [],
+    "declared_methods": [
+      {
+        "dex_method_index": 33046,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi;",
+        "name": "collectArtists",
+        "descriptor": "(Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;)Lio/reactivex/Observable;",
+        "access_flags": 1025,
+        "code_item_offset": 0
+      },
+      {
+        "dex_method_index": 33047,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi;",
+        "name": "deleteCollectArtists",
+        "descriptor": "(Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;)Lio/reactivex/Observable;",
+        "access_flags": 1025,
+        "code_item_offset": 0
+      },
+      {
+        "dex_method_index": 33048,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi;",
+        "name": "getMyCollectArtists",
+        "descriptor": "(Ljava/lang/String;I)Lio/reactivex/Observable;",
+        "access_flags": 1025,
+        "code_item_offset": 0
+      },
+      {
+        "dex_method_index": 33049,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi;",
+        "name": "getUserCollectArtists",
+        "descriptor": "(Ljava/lang/String;Ljava/lang/String;I)Lio/reactivex/Observable;",
+        "access_flags": 1025,
+        "code_item_offset": 0
+      }
+    ],
+    "annotations": [
+      {
+        "annotation_item_offset": 9990045,
+        "visibility": 2,
+        "type": "Ldalvik/annotation/MemberClasses;",
+        "elements": {
+          "value": [
+            {
+              "type_descriptor": "Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;"
+            },
+            {
+              "type_descriptor": "Lcom/luna/common/arch/sync/net/ArtistCollectApi$Companion;"
+            }
+          ]
+        }
+      },
+      {
+        "annotation_item_offset": 9990060,
+        "visibility": 1,
+        "type": "Lkotlin/Metadata;",
+        "elements": {
+          "d1": [
+            "��4\n\u0002\u0018\u0002\n\u0002\u0010��\n��\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n��\n\u0002\u0010\u000e\n��\n\u0002\u0010\b\n\u0002\b\u0005\bf\u0018�� \u00112\u00020\u0001:\u0002\u0011\u0012J\u0018\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0001\u0010\u0005\u001a\u00020\u0006H'J\u0018\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\b0\u00032\b\b\u0001\u0010\u0005\u001a\u00020\u0006H'J$\u0010\t\u001a\b\u0012\u0004\u0012\u00020\n0\u00032\n\b\u0001\u0010\u000b\u001a\u0004\u0018\u00010\f2\b\b\u0001\u0010\r\u001a\u00020\u000eH'J.\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\n0\u00032\b\b\u0001\u0010\u0010\u001a\u00020\f2\n\b\u0001\u0010\u000b\u001a\u0004\u0018\u00010\f2\b\b\u0001\u0010\r\u001a\u00020\u000eH'¨\u0006\u0013"
+          ],
+          "d2": [
+            "Lcom/luna/common/arch/sync/net/ArtistCollectApi;",
+            "",
+            "collectArtists",
+            "Lio/reactivex/Observable;",
+            "Lcom/luna/common/arch/sync/net/CollectArtistResponse;",
+            "data",
+            "Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;",
+            "deleteCollectArtists",
+            "Lcom/luna/common/arch/sync/net/DeleteCollectArtistResponse;",
+            "getMyCollectArtists",
+            "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+            "cursor",
+            "",
+            "count",
+            "",
+            "getUserCollectArtists",
+            "userId",
+            "Companion",
+            "ArtistsParam",
+            "common-arch_release"
+          ],
+          "k": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "01",
+            "unsigned_value": 1
+          },
+          "mv": [
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "02",
+              "unsigned_value": 2
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            }
+          ],
+          "xi": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "30",
+            "unsigned_value": 48
+          }
+        }
+      }
+    ],
+    "parameter_annotations": [
+      {
+        "dex_method_index": 33046,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi;",
+        "name": "collectArtists",
+        "descriptor": "(Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;)Lio/reactivex/Observable;",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9845805,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/Body;",
+              "elements": {}
+            },
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 33047,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi;",
+        "name": "deleteCollectArtists",
+        "descriptor": "(Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;)Lio/reactivex/Observable;",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9845805,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/Body;",
+              "elements": {}
+            },
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 33048,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi;",
+        "name": "getMyCollectArtists",
+        "descriptor": "(Ljava/lang/String;I)Lio/reactivex/Observable;",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9844997,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/Query;",
+              "elements": {
+                "value": "cursor"
+              }
+            },
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 9844987,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/Query;",
+              "elements": {
+                "value": "count"
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 33049,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi;",
+        "name": "getUserCollectArtists",
+        "descriptor": "(Ljava/lang/String;Ljava/lang/String;I)Lio/reactivex/Observable;",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9990035,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/Query;",
+              "elements": {
+                "value": "user_id"
+              }
+            },
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 9844997,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/Query;",
+              "elements": {
+                "value": "cursor"
+              }
+            },
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 9844987,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/Query;",
+              "elements": {
+                "value": "count"
+              }
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "class_def_index": 5736,
+    "descriptor": "Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;",
+    "access_flags": 1,
+    "super": "Ljava/lang/Object;",
+    "interfaces": [
+      "Lcom/luna/common/tea/json/KeepElement;"
+    ],
+    "class_data_offset": 10890501,
+    "static_values_offset": 0,
+    "fields": [
+      {
+        "dex_field_index": 14907,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;",
+        "name": "artistIds",
+        "type": "Ljava/util/Collection;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10161202,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "Ljava/util/Collection<",
+                "Ljava/lang/String;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 9837174,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "dex_method_index": 33042,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;",
+        "name": "<init>",
+        "descriptor": "(Ljava/util/Collection;)V",
+        "annotations": [
+          {
+            "annotation_item_offset": 10161136,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "(",
+                "Ljava/util/Collection<",
+                "Ljava/lang/String;",
+                ">;)V"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "dex_method_index": 33043,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;",
+        "name": "getArtistIds",
+        "descriptor": "()Ljava/util/Collection;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10161181,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/Collection<",
+                "Ljava/lang/String;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 9837174,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "declared_fields": [
+      {
+        "dex_field_index": 14908,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;",
+        "name": "changeQuickRedirect",
+        "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+        "access_flags": 9
+      },
+      {
+        "dex_field_index": 14907,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;",
+        "name": "artistIds",
+        "type": "Ljava/util/Collection;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 14909,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;",
+        "name": "robustFieldMap",
+        "type": "Ljava/lang/Object;",
+        "access_flags": 193
+      }
+    ],
+    "declared_methods": [
+      {
+        "dex_method_index": 33042,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;",
+        "name": "<init>",
+        "descriptor": "(Ljava/util/Collection;)V",
+        "access_flags": 65537,
+        "code_item_offset": 3656460
+      },
+      {
+        "dex_method_index": 33043,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;",
+        "name": "getArtistIds",
+        "descriptor": "()Ljava/util/Collection;",
+        "access_flags": 17,
+        "code_item_offset": 3656436
+      }
+    ],
+    "annotations": [
+      {
+        "annotation_item_offset": 9989808,
+        "visibility": 2,
+        "type": "Ldalvik/annotation/EnclosingClass;",
+        "elements": {
+          "value": {
+            "type_descriptor": "Lcom/luna/common/arch/sync/net/ArtistCollectApi;"
+          }
+        }
+      },
+      {
+        "annotation_item_offset": 10310457,
+        "visibility": 2,
+        "type": "Ldalvik/annotation/InnerClass;",
+        "elements": {
+          "accessFlags": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "19",
+            "unsigned_value": 25
+          },
+          "name": "ArtistsParam"
+        }
+      },
+      {
+        "annotation_item_offset": 10310472,
+        "visibility": 1,
+        "type": "Lkotlin/Metadata;",
+        "elements": {
+          "d1": [
+            "��\u0016\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n��\n\u0002\u0010\u001e\n\u0002\u0010\u000e\n\u0002\b\u0005\u0018��2\u00020\u0001B\u0015\u0012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\u0004\b\u0005\u0010\u0006R\u0017\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\b\n��\u001a\u0004\b\u0007\u0010\b¨\u0006\t"
+          ],
+          "d2": [
+            "Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;",
+            "Lcom/luna/common/tea/json/KeepElement;",
+            "artistIds",
+            "",
+            "",
+            "<init>",
+            "(Ljava/util/Collection;)V",
+            "getArtistIds",
+            "()Ljava/util/Collection;",
+            "common-arch_release"
+          ],
+          "k": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "01",
+            "unsigned_value": 1
+          },
+          "mv": [
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "02",
+              "unsigned_value": 2
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            }
+          ],
+          "xi": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "30",
+            "unsigned_value": 48
+          }
+        }
+      }
+    ],
+    "parameter_annotations": [
+      {
+        "dex_method_index": 33042,
+        "owner": "Lcom/luna/common/arch/sync/net/ArtistCollectApi$ArtistsParam;",
+        "name": "<init>",
+        "descriptor": "(Ljava/util/Collection;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "class_def_index": 9128,
+    "descriptor": "Lcom/luna/common/arch/sync/net/CollectArtistResponse;",
+    "access_flags": 1,
+    "super": "Lcom/luna/common/arch/net/BaseResponse;",
+    "interfaces": [],
+    "class_data_offset": 11089028,
+    "static_values_offset": 0,
+    "fields": [
+      {
+        "dex_field_index": 14923,
+        "owner": "Lcom/luna/common/arch/sync/net/CollectArtistResponse;",
+        "name": "artistIds",
+        "type": "Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9988381,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "artist_ids"
+            }
+          },
+          {
+            "annotation_item_offset": 9869930,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "Ljava/util/List<",
+                "Ljava/lang/String;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 9837382,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 14924,
+        "owner": "Lcom/luna/common/arch/sync/net/CollectArtistResponse;",
+        "name": "artistStatusMap",
+        "type": "Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10538766,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "collect_artist_status"
+            }
+          },
+          {
+            "annotation_item_offset": 10014723,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/lang/Integer;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 9837382,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "dex_method_index": 33064,
+        "owner": "Lcom/luna/common/arch/sync/net/CollectArtistResponse;",
+        "name": "getArtistIds",
+        "descriptor": "()Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9869869,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/List<",
+                "Ljava/lang/String;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 9837382,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 33065,
+        "owner": "Lcom/luna/common/arch/sync/net/CollectArtistResponse;",
+        "name": "getArtistStatusMap",
+        "descriptor": "()Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10023354,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/lang/Integer;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 9837382,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "declared_fields": [
+      {
+        "dex_field_index": 14925,
+        "owner": "Lcom/luna/common/arch/sync/net/CollectArtistResponse;",
+        "name": "changeQuickRedirect",
+        "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+        "access_flags": 9
+      },
+      {
+        "dex_field_index": 14923,
+        "owner": "Lcom/luna/common/arch/sync/net/CollectArtistResponse;",
+        "name": "artistIds",
+        "type": "Ljava/util/List;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 14924,
+        "owner": "Lcom/luna/common/arch/sync/net/CollectArtistResponse;",
+        "name": "artistStatusMap",
+        "type": "Ljava/util/Map;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 14926,
+        "owner": "Lcom/luna/common/arch/sync/net/CollectArtistResponse;",
+        "name": "robustFieldMap",
+        "type": "Ljava/lang/Object;",
+        "access_flags": 193
+      }
+    ],
+    "declared_methods": [
+      {
+        "dex_method_index": 33063,
+        "owner": "Lcom/luna/common/arch/sync/net/CollectArtistResponse;",
+        "name": "<init>",
+        "descriptor": "()V",
+        "access_flags": 65537,
+        "code_item_offset": 3657096
+      },
+      {
+        "dex_method_index": 33064,
+        "owner": "Lcom/luna/common/arch/sync/net/CollectArtistResponse;",
+        "name": "getArtistIds",
+        "descriptor": "()Ljava/util/List;",
+        "access_flags": 17,
+        "code_item_offset": 3657048
+      },
+      {
+        "dex_method_index": 33065,
+        "owner": "Lcom/luna/common/arch/sync/net/CollectArtistResponse;",
+        "name": "getArtistStatusMap",
+        "descriptor": "()Ljava/util/Map;",
+        "access_flags": 17,
+        "code_item_offset": 3657072
+      }
+    ],
+    "annotations": [
+      {
+        "annotation_item_offset": 10538776,
+        "visibility": 1,
+        "type": "Lkotlin/Metadata;",
+        "elements": {
+          "d1": [
+            "��$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010$\n\u0002\u0010\b\n\u0002\b\u0003\u0018��2\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003R\u001e\u0010\u0004\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u00058\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b\u0007\u0010\bR$\u0010\t\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u000b\u0018\u00010\n8\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b\f\u0010\r¨\u0006\u000e"
+          ],
+          "d2": [
+            "Lcom/luna/common/arch/sync/net/CollectArtistResponse;",
+            "Lcom/luna/common/arch/net/BaseResponse;",
+            "<init>",
+            "()V",
+            "artistIds",
+            "",
+            "",
+            "getArtistIds",
+            "()Ljava/util/List;",
+            "artistStatusMap",
+            "",
+            "",
+            "getArtistStatusMap",
+            "()Ljava/util/Map;",
+            "common-arch_release"
+          ],
+          "k": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "01",
+            "unsigned_value": 1
+          },
+          "mv": [
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "02",
+              "unsigned_value": 2
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            }
+          ],
+          "xi": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "30",
+            "unsigned_value": 48
+          }
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class_def_index": 9132,
+    "descriptor": "Lcom/luna/common/arch/sync/net/DeleteCollectArtistResponse;",
+    "access_flags": 1,
+    "super": "Lcom/luna/common/arch/net/BaseResponse;",
+    "interfaces": [],
+    "class_data_offset": 11089168,
+    "static_values_offset": 0,
+    "fields": [
+      {
+        "dex_field_index": 14937,
+        "owner": "Lcom/luna/common/arch/sync/net/DeleteCollectArtistResponse;",
+        "name": "artistIds",
+        "type": "Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10539063,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "deleted_artists"
+            }
+          },
+          {
+            "annotation_item_offset": 9869930,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "Ljava/util/List<",
+                "Ljava/lang/String;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 9837382,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 14938,
+        "owner": "Lcom/luna/common/arch/sync/net/DeleteCollectArtistResponse;",
+        "name": "artistStatusMap",
+        "type": "Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10539073,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "deleted_artist_status"
+            }
+          },
+          {
+            "annotation_item_offset": 10014723,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/lang/Integer;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 9837382,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "dex_method_index": 33074,
+        "owner": "Lcom/luna/common/arch/sync/net/DeleteCollectArtistResponse;",
+        "name": "getArtistIds",
+        "descriptor": "()Ljava/util/List;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9869869,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/List<",
+                "Ljava/lang/String;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 9837382,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 33075,
+        "owner": "Lcom/luna/common/arch/sync/net/DeleteCollectArtistResponse;",
+        "name": "getArtistStatusMap",
+        "descriptor": "()Ljava/util/Map;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10023354,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/Map<",
+                "Ljava/lang/String;",
+                "Ljava/lang/Integer;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 9837382,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "declared_fields": [
+      {
+        "dex_field_index": 14939,
+        "owner": "Lcom/luna/common/arch/sync/net/DeleteCollectArtistResponse;",
+        "name": "changeQuickRedirect",
+        "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+        "access_flags": 9
+      },
+      {
+        "dex_field_index": 14937,
+        "owner": "Lcom/luna/common/arch/sync/net/DeleteCollectArtistResponse;",
+        "name": "artistIds",
+        "type": "Ljava/util/List;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 14938,
+        "owner": "Lcom/luna/common/arch/sync/net/DeleteCollectArtistResponse;",
+        "name": "artistStatusMap",
+        "type": "Ljava/util/Map;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 14940,
+        "owner": "Lcom/luna/common/arch/sync/net/DeleteCollectArtistResponse;",
+        "name": "robustFieldMap",
+        "type": "Ljava/lang/Object;",
+        "access_flags": 193
+      }
+    ],
+    "declared_methods": [
+      {
+        "dex_method_index": 33073,
+        "owner": "Lcom/luna/common/arch/sync/net/DeleteCollectArtistResponse;",
+        "name": "<init>",
+        "descriptor": "()V",
+        "access_flags": 65537,
+        "code_item_offset": 3657448
+      },
+      {
+        "dex_method_index": 33074,
+        "owner": "Lcom/luna/common/arch/sync/net/DeleteCollectArtistResponse;",
+        "name": "getArtistIds",
+        "descriptor": "()Ljava/util/List;",
+        "access_flags": 17,
+        "code_item_offset": 3657400
+      },
+      {
+        "dex_method_index": 33075,
+        "owner": "Lcom/luna/common/arch/sync/net/DeleteCollectArtistResponse;",
+        "name": "getArtistStatusMap",
+        "descriptor": "()Ljava/util/Map;",
+        "access_flags": 17,
+        "code_item_offset": 3657424
+      }
+    ],
+    "annotations": [
+      {
+        "annotation_item_offset": 10539083,
+        "visibility": 1,
+        "type": "Lkotlin/Metadata;",
+        "elements": {
+          "d1": [
+            "��$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010$\n\u0002\u0010\b\n\u0002\b\u0003\u0018��2\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003R\u001e\u0010\u0004\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u00058\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b\u0007\u0010\bR$\u0010\t\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u000b\u0018\u00010\n8\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b\f\u0010\r¨\u0006\u000e"
+          ],
+          "d2": [
+            "Lcom/luna/common/arch/sync/net/DeleteCollectArtistResponse;",
+            "Lcom/luna/common/arch/net/BaseResponse;",
+            "<init>",
+            "()V",
+            "artistIds",
+            "",
+            "",
+            "getArtistIds",
+            "()Ljava/util/List;",
+            "artistStatusMap",
+            "",
+            "",
+            "getArtistStatusMap",
+            "()Ljava/util/Map;",
+            "common-arch_release"
+          ],
+          "k": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "01",
+            "unsigned_value": 1
+          },
+          "mv": [
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "02",
+              "unsigned_value": 2
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            }
+          ],
+          "xi": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "30",
+            "unsigned_value": 48
+          }
+        }
+      }
+    ],
+    "parameter_annotations": []
+  },
+  {
+    "class_def_index": 9135,
+    "descriptor": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+    "access_flags": 1,
+    "super": "Lcom/luna/common/arch/net/BaseResponse;",
+    "interfaces": [],
+    "class_data_offset": 11089277,
+    "static_values_offset": 0,
+    "fields": [
+      {
+        "dex_field_index": 14958,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "artists",
+        "type": "Ljava/util/ArrayList;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10539349,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "Ljava/util/ArrayList<",
+                "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 9837174,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 14961,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "nextCursor",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9837174,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "dex_method_index": 33091,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "getArtists",
+        "descriptor": "()Ljava/util/ArrayList;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10539307,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Ljava/util/ArrayList<",
+                "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 9837174,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 33093,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "getNextCursor",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9837174,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 33095,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "setArtists",
+        "descriptor": "(Ljava/util/ArrayList;)V",
+        "annotations": [
+          {
+            "annotation_item_offset": 10539328,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "(",
+                "Ljava/util/ArrayList<",
+                "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+                ">;)V"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "declared_fields": [
+      {
+        "dex_field_index": 14959,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "changeQuickRedirect",
+        "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+        "access_flags": 9
+      },
+      {
+        "dex_field_index": 14958,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "artists",
+        "type": "Ljava/util/ArrayList;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 14960,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "hasMore",
+        "type": "Z",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 14961,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "nextCursor",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 14962,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "robustFieldMap",
+        "type": "Ljava/lang/Object;",
+        "access_flags": 193
+      },
+      {
+        "dex_field_index": 14963,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "totalNum",
+        "type": "I",
+        "access_flags": 1
+      }
+    ],
+    "declared_methods": [
+      {
+        "dex_method_index": 33090,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "<init>",
+        "descriptor": "()V",
+        "access_flags": 65537,
+        "code_item_offset": 3658336
+      },
+      {
+        "dex_method_index": 33091,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "getArtists",
+        "descriptor": "()Ljava/util/ArrayList;",
+        "access_flags": 17,
+        "code_item_offset": 3658312
+      },
+      {
+        "dex_method_index": 33092,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "getHasMore",
+        "descriptor": "()Z",
+        "access_flags": 17,
+        "code_item_offset": 3658240
+      },
+      {
+        "dex_method_index": 33093,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "getNextCursor",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 3658288
+      },
+      {
+        "dex_method_index": 33094,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "getTotalNum",
+        "descriptor": "()I",
+        "access_flags": 17,
+        "code_item_offset": 3658264
+      },
+      {
+        "dex_method_index": 33095,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "setArtists",
+        "descriptor": "(Ljava/util/ArrayList;)V",
+        "access_flags": 17,
+        "code_item_offset": 3658416
+      },
+      {
+        "dex_method_index": 33096,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "setNextCursor",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_item_offset": 3658472
+      },
+      {
+        "dex_method_index": 33097,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "setTotalNum",
+        "descriptor": "(I)V",
+        "access_flags": 17,
+        "code_item_offset": 3658528
+      }
+    ],
+    "annotations": [
+      {
+        "annotation_item_offset": 10539367,
+        "visibility": 1,
+        "type": "Lkotlin/Metadata;",
+        "elements": {
+          "d1": [
+            "��4\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0003\u0018��2\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003R*\u0010\u0004\u001a\u0012\u0012\u0004\u0012\u00020\u00060\u0005j\b\u0012\u0004\u0012\u00020\u0006`\u0007X\u000e¢\u0006\u000e\n��\u001a\u0004\b\b\u0010\t\"\u0004\b\n\u0010\u000bR\u001a\u0010\f\u001a\u00020\rX\u000e¢\u0006\u000e\n��\u001a\u0004\b\u000e\u0010\u000f\"\u0004\b\u0010\u0010\u0011R\u001a\u0010\u0012\u001a\u00020\u0013X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0014\u0010\u0015\"\u0004\b\u0016\u0010\u0017R\u0014\u0010\u0018\u001a\u00020\u0019XD¢\u0006\b\n��\u001a\u0004\b\u001a\u0010\u001b¨\u0006\u001c"
+          ],
+          "d2": [
+            "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+            "Lcom/luna/common/arch/net/BaseResponse;",
+            "<init>",
+            "()V",
+            "artists",
+            "Ljava/util/ArrayList;",
+            "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+            "Lkotlin/collections/ArrayList;",
+            "getArtists",
+            "()Ljava/util/ArrayList;",
+            "setArtists",
+            "(Ljava/util/ArrayList;)V",
+            "nextCursor",
+            "",
+            "getNextCursor",
+            "()Ljava/lang/String;",
+            "setNextCursor",
+            "(Ljava/lang/String;)V",
+            "totalNum",
+            "",
+            "getTotalNum",
+            "()I",
+            "setTotalNum",
+            "(I)V",
+            "hasMore",
+            "",
+            "getHasMore",
+            "()Z",
+            "common-arch_release"
+          ],
+          "k": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "01",
+            "unsigned_value": 1
+          },
+          "mv": [
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "02",
+              "unsigned_value": 2
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            }
+          ],
+          "xi": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "30",
+            "unsigned_value": 48
+          }
+        }
+      }
+    ],
+    "parameter_annotations": [
+      {
+        "dex_method_index": 33095,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "setArtists",
+        "descriptor": "(Ljava/util/ArrayList;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 33096,
+        "owner": "Lcom/luna/common/arch/sync/net/GetCollectArtistsResponse;",
+        "name": "setNextCursor",
+        "descriptor": "(Ljava/lang/String;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "class_def_index": 5437,
+    "descriptor": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+    "access_flags": 1,
+    "super": "Ljava/lang/Object;",
+    "interfaces": [
+      "Lcom/luna/common/tea/json/KeepElement;",
+      "Landroid/os/Parcelable;"
+    ],
+    "class_data_offset": 10862511,
+    "static_values_offset": 0,
+    "fields": [
+      {
+        "dex_field_index": 11348,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "CREATOR",
+        "type": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState$CREATOR;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9837174,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 11349,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "blockedByMe",
+        "type": "Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10265529,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "blocked_by_me"
+            }
+          },
+          {
+            "annotation_item_offset": 9837382,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 11351,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "followStatus",
+        "type": "I",
+        "annotations": [
+          {
+            "annotation_item_offset": 10265519,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "follow_status"
+            }
+          }
+        ]
+      },
+      {
+        "dex_field_index": 11352,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "isCollected",
+        "type": "Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 10265509,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "is_collected"
+            }
+          },
+          {
+            "annotation_item_offset": 9837382,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "dex_method_index": 24077,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "getBlockedByMe",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9837382,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 24079,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "isCollected",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9837382,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "declared_fields": [
+      {
+        "dex_field_index": 11348,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "CREATOR",
+        "type": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState$CREATOR;",
+        "access_flags": 25
+      },
+      {
+        "dex_field_index": 11350,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "changeQuickRedirect",
+        "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+        "access_flags": 9
+      },
+      {
+        "dex_field_index": 11349,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "blockedByMe",
+        "type": "Ljava/lang/Boolean;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 11351,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "followStatus",
+        "type": "I",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 11352,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "isCollected",
+        "type": "Ljava/lang/Boolean;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 11353,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "robustFieldMap",
+        "type": "Ljava/lang/Object;",
+        "access_flags": 193
+      }
+    ],
+    "declared_methods": [
+      {
+        "dex_method_index": 24073,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "access_flags": 65544,
+        "code_item_offset": 3115280
+      },
+      {
+        "dex_method_index": 24074,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "<init>",
+        "descriptor": "()V",
+        "access_flags": 65537,
+        "code_item_offset": 3115348
+      },
+      {
+        "dex_method_index": 24075,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "<init>",
+        "descriptor": "(Landroid/os/Parcel;)V",
+        "access_flags": 65537,
+        "code_item_offset": 3115424
+      },
+      {
+        "dex_method_index": 24076,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "describeContents",
+        "descriptor": "()I",
+        "access_flags": 1,
+        "code_item_offset": 3115188
+      },
+      {
+        "dex_method_index": 24077,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "getBlockedByMe",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "access_flags": 17,
+        "code_item_offset": 3115232
+      },
+      {
+        "dex_method_index": 24078,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "getFollowStatus",
+        "descriptor": "()I",
+        "access_flags": 17,
+        "code_item_offset": 3115208
+      },
+      {
+        "dex_method_index": 24079,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "isCollected",
+        "descriptor": "()Ljava/lang/Boolean;",
+        "access_flags": 17,
+        "code_item_offset": 3115256
+      },
+      {
+        "dex_method_index": 24080,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "setBlockedByMe",
+        "descriptor": "(Ljava/lang/Boolean;)V",
+        "access_flags": 17,
+        "code_item_offset": 3115536
+      },
+      {
+        "dex_method_index": 24081,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "setCollected",
+        "descriptor": "(Ljava/lang/Boolean;)V",
+        "access_flags": 17,
+        "code_item_offset": 3115560
+      },
+      {
+        "dex_method_index": 24082,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "setFollowStatus",
+        "descriptor": "(I)V",
+        "access_flags": 17,
+        "code_item_offset": 3115584
+      },
+      {
+        "dex_method_index": 24083,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "writeToParcel",
+        "descriptor": "(Landroid/os/Parcel;I)V",
+        "access_flags": 1,
+        "code_item_offset": 3115608
+      }
+    ],
+    "annotations": [
+      {
+        "annotation_item_offset": 10265539,
+        "visibility": 2,
+        "type": "Ldalvik/annotation/MemberClasses;",
+        "elements": {
+          "value": [
+            {
+              "type_descriptor": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState$CREATOR;"
+            }
+          ]
+        }
+      },
+      {
+        "annotation_item_offset": 10265551,
+        "visibility": 1,
+        "type": "Lkotlin/Metadata;",
+        "elements": {
+          "d1": [
+            "��0\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\b\n\u0002\u0010\u0002\n\u0002\b\u0004\u0018�� \u001b2\u00020\u00012\u00020\u0002:\u0001\u001bB\u0007¢\u0006\u0004\b\u0003\u0010\u0004B\u0011\b\u0016\u0012\u0006\u0010\u0005\u001a\u00020\u0006¢\u0006\u0004\b\u0003\u0010\u0007J\u0018\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0019\u001a\u00020\u000fH\u0016J\b\u0010\u001a\u001a\u00020\u000fH\u0016R\"\u0010\b\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u000e¢\u0006\u0010\n\u0002\u0010\r\u001a\u0004\b\b\u0010\n\"\u0004\b\u000b\u0010\fR\u001e\u0010\u000e\u001a\u00020\u000f8\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0010\u0010\u0011\"\u0004\b\u0012\u0010\u0013R\"\u0010\u0014\u001a\u0004\u0018\u00010\t8\u0006@\u0006X\u000e¢\u0006\u0010\n\u0002\u0010\r\u001a\u0004\b\u0015\u0010\n\"\u0004\b\u0016\u0010\f¨\u0006\u001c"
+          ],
+          "d2": [
+            "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+            "Lcom/luna/common/tea/json/KeepElement;",
+            "Landroid/os/Parcelable;",
+            "<init>",
+            "()V",
+            "parcel",
+            "Landroid/os/Parcel;",
+            "(Landroid/os/Parcel;)V",
+            "isCollected",
+            "",
+            "()Ljava/lang/Boolean;",
+            "setCollected",
+            "(Ljava/lang/Boolean;)V",
+            "Ljava/lang/Boolean;",
+            "followStatus",
+            "",
+            "getFollowStatus",
+            "()I",
+            "setFollowStatus",
+            "(I)V",
+            "blockedByMe",
+            "getBlockedByMe",
+            "setBlockedByMe",
+            "writeToParcel",
+            "",
+            "flags",
+            "describeContents",
+            "CREATOR",
+            "common-arch_release"
+          ],
+          "k": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "01",
+            "unsigned_value": 1
+          },
+          "mv": [
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "02",
+              "unsigned_value": 2
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            }
+          ],
+          "xi": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "30",
+            "unsigned_value": 48
+          }
+        }
+      }
+    ],
+    "parameter_annotations": [
+      {
+        "dex_method_index": 24075,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "<init>",
+        "descriptor": "(Landroid/os/Parcel;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 24080,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "setBlockedByMe",
+        "descriptor": "(Ljava/lang/Boolean;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 24081,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "setCollected",
+        "descriptor": "(Ljava/lang/Boolean;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 24083,
+        "owner": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+        "name": "writeToParcel",
+        "descriptor": "(Landroid/os/Parcel;I)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ],
+          []
+        ]
+      }
+    ]
+  }
+]

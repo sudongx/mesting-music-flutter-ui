@@ -1,0 +1,92 @@
+{
+  "actualApk": "release\\Mesting-Music-v1.0.65.apk",
+  "jniClassesDefinedInDex": {
+    "Lcom/luna/audio/effect/AudioEffectBridge;": "classes.dex",
+    "Lcom/mesting/music/MusicHttpReply;": "classes.dex",
+    "Lcom/mesting/music/MusicNativeTransport;": "classes.dex",
+    "Lcom/mesting/music/MusicStreamReply;": "classes.dex"
+  },
+  "jniMethodSignaturesAndFlagsChecked": [
+    {
+      "name": "nativeInstall",
+      "descriptor": "()Z"
+    },
+    {
+      "name": "exchange",
+      "descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[BJZ)Lcom/mesting/music/MusicHttpReply;"
+    },
+    {
+      "name": "openStream",
+      "descriptor": "(Ljava/lang/String;)Lcom/mesting/music/MusicStreamReply;"
+    },
+    {
+      "name": "readStream",
+      "descriptor": "(JI)[B"
+    },
+    {
+      "name": "closeStream",
+      "descriptor": "(J)V"
+    }
+  ],
+  "jniPublicDtoFieldTypesVerified": {
+    "Lcom/mesting/music/MusicHttpReply;": {
+      "status": "I",
+      "body": "[B",
+      "cookies": "[REDACTED]",
+      "finalUrl": "Ljava/lang/String;",
+      "location": "Ljava/lang/String;",
+      "ssaCode": "Ljava/lang/String;",
+      "error": "Ljava/lang/String;"
+    },
+    "Lcom/mesting/music/MusicStreamReply;": {
+      "id": "J",
+      "status": "I",
+      "length": "J",
+      "contentType": "Ljava/lang/String;",
+      "error": "Ljava/lang/String;"
+    }
+  },
+  "preservedRustLibrariesFrom54": [
+    {
+      "abi": "arm64-v8a",
+      "apkSha256": "63b2b1ba786f4788191ba8c799258c9c22b68c81db366e003513928afe4801fd",
+      "buildInputSha256": "65ec54c56650d719201143c19c0d96ef7e670ad405f1b66890cdc868ef5b8544",
+      "exactNdkStrippedInputMatch": true,
+      "jniInstallAndExistingCAbiExported": true
+    },
+    {
+      "abi": "armeabi-v7a",
+      "apkSha256": "5d4efeb09b9d560dcbd1d9ee4bfe8e77d2b64bbab39cbc8c06149c8a5b09e284",
+      "buildInputSha256": "686db42a51ca7fbeadda46fad30073d5aafccdb00899367d65cf841424e034d8",
+      "exactNdkStrippedInputMatch": true,
+      "jniInstallAndExistingCAbiExported": true
+    }
+  ],
+  "rustRebuiltFor165": false,
+  "fssJavaChangedIn165": false,
+  "verifiedSlotClassPresent": true,
+  "sodaOfficialJniSignaturesChecked": [
+    {
+      "name": "createEffectHandleByConfig",
+      "descriptor": "(IIILjava/lang/String;)J"
+    },
+    {
+      "name": "createAudioBuffer",
+      "descriptor": "(JIII)J"
+    },
+    {
+      "name": "isValidConfigJson",
+      "descriptor": "(Ljava/lang/String;)I"
+    },
+    {
+      "name": "processAudio",
+      "descriptor": "([Ljava/nio/ByteBuffer;JJIIII)I"
+    },
+    {
+      "name": "release",
+      "descriptor": "(J)V"
+    }
+  ],
+  "androidRuntimeExecuted": false,
+  "deviceAccess": false
+}

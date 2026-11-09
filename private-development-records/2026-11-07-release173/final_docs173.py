@@ -1,0 +1,42 @@
+from pathlib import Path
+import json,hashlib
+root=Path('D:/AnLi');out=Path(__file__).resolve().parent
+host=json.loads((out/'host-check-summary.json').read_text('utf-8'))
+apk=json.loads((root/'release/Mesting-Music-v1.0.73-verification.json').read_text('utf-8'))
+package={n:json.loads((out/n).read_text('utf-8')) for n in ['native-packaging-verification.json','qr-javascript-interface-verification.json','audio-bridge-packaging-verification.json']}
+validation={'version':'1.0.73','androidVersionCode':94,'date':'2026-11-07','localDeliveryOnly':True,'apk':apk,'hostChecks':host,'packagingChecks':package,
+'knownLimits':{'physical73InstallationOrUpgradeAccepted':False,'currentNasHashOrNewRoutesVerified':False,'imageXAndPcCookieSessionServerAcceptance':False,'officialVipFullPlaybackAccepted':False,'actual301RootCauseConfirmed':False,'cloudHistoryAndCoverAccepted':False,'prior71BasicPlaybackUserConfirmed':True,'prior72OptInActuallyUsedAndHttp400Reported':True,'prior66QrAndNetEaseFullPlaybackUserAccepted':True,'oldLogsReplayed':False},
+'authorization':{'localImplementationValidationBuild':True,'phoneAdbRealAccountNasHelperDeploymentPublish':False},'beforeReceipt':'.codex-artifacts/2026-11-07-release173/before.json','afterReceipt':'.codex-artifacts/2026-11-07-release173/after.json'}
+(root/'docs/validation-2026-11-07-v1.0.73.json').write_text(json.dumps(validation,ensure_ascii=False,indent=2)+'\n','utf-8')
+beta=host['beta'];stable=host['stable'];nav=host['navigation']
+text=f"""# 当前本地交接：1.0.73/code94（2026-11-07）
+
+先读本文、[实现与边界](docs/fixes-2026-11-07-v1.0.73.md)、[安装核对](docs/INSTALL-v1.0.73.md)、[验证](docs/validation-2026-11-07-v1.0.73.json)与[新增助手契约](docs/qishui-helper-contract-v1.0.73.md)，按`.codex-artifacts/2026-11-07-release173/after.json`只读核对，不重建或回填冻结物。
+
+## 已完成
+
+用户确认后本地修复六项：歌曲/歌手搜索及作品分页、搜索/歌词二级返回、云端自建歌单封面上传更新与读回、实际开播历史同步与分页、同曲备用媒体有界回退和最近跳过列表、实际进度条及歌词按钮整理。模块解耦、所有权/取消/未知写入保护保留。
+
+主机验证：Beta{beta['files']}文件{beta['passed']}通过/{beta['skipped']}条件跳过；Stable{stable['passed']}；导航{nav['passed']}；分析0。12张本轮主机图已实际查看（320px/1.4字号，含深浅页面与真实壳）；QA字体与资料不进入APK。重复运行按完整文件替换，不叠加。原生71 CENC10+准备19及64 Media3 14仅同输入历史继承，不记73新跑。
+
+实际APK核对原证书v2/v3、非debug、原包名双ARM、固定定制Flutter引擎、7shader、12旧非app原生库、对齐、JNI/DSP与R8回调。原72及84旧冻结物保护，新APK与完整源码另存；完整源码内容/CRC/条目哈希见源码验证收据。
+
+APK：release/Mesting-Music-v1.0.73.apk，{apk['fileSize']}字节，SHA256 `{apk['sha256']}`。完整源码：Mesting-Music-v1.0.73-source.zip。校验说明另存release/Mesting-Music-v1.0.73-SHA256.txt。
+
+## 未完成与边界
+
+没有连接/安装手机、读取真实账号或NAS令牌、发起实际签名、更新独立助手或NAS、发布或远端备份。云封面、双向历史与搜索在当前官方扫码会话下的接受、本人VIP整曲、升级/恢复、DSP/GPU仍需真实验收。新图片授权GET /luna/video/uploader和历史POST可能需要原助手精确白名单适配，电脑改代码不自动更新NAS；本会话未接管或发消息给助手会话。
+
+静态ImageX链和AWS4/CRC合成协议检查不是当前官方上传成功；空region/imagex作用域与实际返回形状仍需服务器确认。失败明确提示，不假装云封面保存。
+
+71基本播放已由用户确认。72新增账号签名开关已实际开启保存后用户报HTTP400，精确安装code未独立读回，不能再称72完全未使用。旧助手拒Cookie与400吻合，但当前NAS部署hash/真实错误JSON未取。400不等于更早301根因；0候选没有进nativeDecode。本轮备用CDN修复不能证明用户所有跳歌均解决，也不能判为无版权；《这么久没见》—薛之谦在本人29天免费听下的整曲仍未通过。
+
+66扫码原账号、完全重开保持及网易云自动补源整曲验收保持；手机号路线停止。未修改下载资格、奖励/applog或重放旧日志；check_download当前NAS仍未复核。63源码ZIP不补、旧51回收APK不恢复。
+
+beta/HEAD b6bcd5425e0df3e03febdd460b56d0ed42004c52、空暂存、原签名和pubspec.lock保持，历史脏改未reset/clean/stash/换分支/同步。未Git提交推送上传发布。新的接续先核对收据与用户最新反馈，再遵守一次一问与确认后实施，不外推本次本地授权。
+"""
+(root/'HANDOFF-CURRENT-SESSION-2026-11-07-v1.0.73.md').write_text(text,'utf-8')
+agents=root/'AGENTS.md';old=agents.read_bytes();(out/'AGENTS-before.bin').write_bytes(old)
+prefix=f"**2026-11-07 当前本地1.0.73/code94：先读[73交接](HANDOFF-CURRENT-SESSION-2026-11-07-v1.0.73.md)、[实现](docs/fixes-2026-11-07-v1.0.73.md)、[安装](docs/INSTALL-v1.0.73.md)、[验证](docs/validation-2026-11-07-v1.0.73.json)和[助手契约](docs/qishui-helper-contract-v1.0.73.md)，按release173/after.json只读核对。用户确认六项本地修复已实现：搜索歌曲/歌手及作品、二级返回、云歌单封面、实际开播历史、备用媒体及跳过列表、实际进度与歌词布局。Beta{beta['passed']}/{beta['skipped']}条件跳过、Stable{stable['passed']}、导航{nav['passed']}、分析0及12新主机图；原生29/14仅同输入历史，不相加。原签名双ARM/定制引擎/7shader/旧非app库/JNI/DSP/R8另验。未设备/真实账号/NAS/实际签名/部署/发布；云封面与历史、搜索服务器接受、本人VIP整曲/301根因/升级恢复/GPU/DSP待验；ImageX作用域及新助手路径真实兼容未证明。不接管独立助手，NAS需原会话适配并另获部署授权。71基本播放和72开关实际使用后400反馈优先，400不等于301，0候选不达nativeDecode。84旧冻结物、原签名/锁/历史脏树、beta/b6bcd542与空暂存保持，73另存不回填72；66已验扫码/重开/网易云整曲保持，手机号停止，63 ZIP不补、旧51回收APK不恢复、旧日志不重放。未提交推送上传发布备份。下方均历史时点。**\n\n"
+agents.write_bytes(prefix.encode('utf-8')+old);assert agents.read_bytes().endswith(old)
+print(json.dumps({'version':'1.0.73','code':94,'beta':beta,'stable':stable,'navigation':nav,'docsWritten':True},ensure_ascii=False))

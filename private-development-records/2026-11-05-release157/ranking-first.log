@@ -1,0 +1,17 @@
+00:00 +0: loading D:/AnLi/test/release_157_ranking_test.dart
+00:00 +0: Play All walks the whole chart in order and preserves the selected edition
+00:00 +1: repeated pages fail rather than presenting a partial chart as complete
+00:00 +2: account change rejects a late complete chart before a caller can play it
+00:00 +3: NetEase chart uses its real playlist identifier, counts and subscription route
+00:00 +3 -1: NetEase chart uses its real playlist identifier, counts and subscription route [E]
+  Expected: (String, _Map<String, Object>):<(/playlist/subscribe, {id: 8888, subscribe: false})>
+    Actual: (String, _Map<String, Object?>):<(/playlist/subscribe, {id: 8888, subscribe: false})>
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test\release_157_ranking_test.dart 179:7            main.<fn>
+  
+00:00 +3 -1: Kugou metadata preserves edition without guessing a playlist or comment ID
+00:00 +4 -1: cloud chart snapshot saves complete content and never duplicates a retry
+00:00 +5 -1: cloud chart snapshot reconciles a lost reply without repeating it
+00:00 +6 -1: Some tests failed.

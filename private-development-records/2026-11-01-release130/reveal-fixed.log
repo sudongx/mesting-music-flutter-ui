@@ -1,0 +1,60 @@
+00:00 +0: loading D:/AnLi/test/release_130_artwork_reveal_test.dart
+00:00 +0: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: common page reveals first-screen text only with decoded artwork, semantics and taps
+00:01 +1: scroll keeps old rows and reveals a new visible batch together
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown while running async test code:
+'package:flutter/src/rendering/proxy_box.dart': Failed assertion: line 3553 pos 12:
+'!debugNeedsPaint': is not true.
+
+When the exception was thrown, this was the stack:
+#2      RenderRepaintBoundary.toImage (package:flutter/src/rendering/proxy_box.dart:3553:12)
+#3      coloredPixels.<anonymous closure> (file:///D:/AnLi/test/release_130_artwork_reveal_test.dart:26:34)
+#4      AutomatedTestWidgetsFlutterBinding.runAsync.<anonymous closure> (package:flutter_test/src/binding.dart:2007:17)
+#7      AutomatedTestWidgetsFlutterBinding.runAsync (package:flutter_test/src/binding.dart:2003:26)
+#8      WidgetTester.runAsync (package:flutter_test/src/widget_tester.dart:838:17)
+#9      coloredPixels (file:///D:/AnLi/test/release_130_artwork_reveal_test.dart:22:24)
+#10     main.<anonymous closure> (file:///D:/AnLi/test/release_130_artwork_reveal_test.dart:233:20)
+<asynchronous suspension>
+#11     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#12     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from class _AssertionError, dart:async, and package:stack_trace)
+
+The exception was caught asynchronously.
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following _TypeError was thrown running a test:
+Null check operator used on a null value
+
+When the exception was thrown, this was the stack:
+#0      coloredPixels (file:///D:/AnLi/test/release_130_artwork_reveal_test.dart:37:6)
+<asynchronous suspension>
+#1      main.<anonymous closure> (file:///D:/AnLi/test/release_130_artwork_reveal_test.dart:233:14)
+<asynchronous suspension>
+#2      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  scroll keeps old rows and reveals a new visible batch together
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following message was thrown:
+Multiple exceptions (2) were detected during the running of the current test, and at least one was
+unexpected.
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +1 -1: scroll keeps old rows and reveals a new visible batch together [E]
+  Test failed. See exception logs above.
+  The test description was: scroll keeps old rows and reveals a new visible batch together
+  
+00:02 +1 -1: one failed cover offers retry without holding successful rows
+00:04 +2 -1: prepared thumbnail paints immediately while a larger request waits

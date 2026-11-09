@@ -1,0 +1,28 @@
+{
+  "engine": {
+    "name": "jadx-headless-mcp",
+    "version": "0.7.1",
+    "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+    "worker_count": 1,
+    "heap_limit_mib": 3072
+  },
+  "class_name": "com.netease.cloudmusic.core.statistic.f0",
+  "method": {
+    "name": "w",
+    "reported_signature": "w(java.lang.String, com.alibaba.fastjson.JSONObject, long): java.lang.String",
+    "overload_index": 0,
+    "is_constructor": false,
+    "dex_descriptor": null
+  },
+  "overload_count": 1,
+  "representation": "java",
+  "body_status": "available",
+  "fell_back": false,
+  "markers": [],
+  "source": {
+    "status": "complete",
+    "text": "    private String w(String str, JSONObject jSONObject, long j) {\r\n        if (jSONObject == null) {\r\n            jSONObject = new JSONObject();\r\n        }\r\n        JSONObject jSONObject2 = jSONObject;\r\n        e0.b bVar = this.c.g;\r\n        return bVar != null ? bVar.b(str, jSONObject2, this.n, j) : \"\";\r\n    }",
+    "reported_total_bytes": null
+  }
+}

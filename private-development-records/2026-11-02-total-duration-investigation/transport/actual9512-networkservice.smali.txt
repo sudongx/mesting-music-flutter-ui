@@ -1,0 +1,1517 @@
+.class public Lcom/netease/cloudmusic/network/implement/NetworkServiceImpl;
+.super Ljava/lang/Object;
+.source "ProGuard"
+
+# interfaces
+.implements Lcom/netease/cloudmusic/network/INetworkService;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method private buildUploadEntityForLog(Ljava/lang/String;Ljava/io/File;[B)Lcom/netease/cloudmusic/network/model/UploadEntity;
+    .registers 5
+
+    .line 1
+    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Landroid/net/Uri;->isAbsolute()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    if-eqz v0, :cond_32
+
+    .line 10
+    .line 11
+    new-instance v0, Lcom/netease/cloudmusic/network/model/UploadEntity$Builder;
+
+    .line 12
+    .line 13
+    invoke-direct {v0}, Lcom/netease/cloudmusic/network/model/UploadEntity$Builder;-><init>()V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual {v0, p1}, Lcom/netease/cloudmusic/network/model/UploadEntity$Builder;->url(Ljava/lang/String;)Lcom/netease/cloudmusic/network/model/UploadEntity$Builder;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p1
+
+    .line 20
+    invoke-virtual {p1, p3}, Lcom/netease/cloudmusic/network/model/UploadEntity$Builder;->data([B)Lcom/netease/cloudmusic/network/model/UploadEntity$Builder;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    invoke-virtual {p1, p2}, Lcom/netease/cloudmusic/network/model/UploadEntity$Builder;->file(Ljava/io/File;)Lcom/netease/cloudmusic/network/model/UploadEntity$Builder;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p1
+
+    .line 28
+    const-string p2, "attach"
+
+    .line 29
+    .line 30
+    invoke-virtual {p1, p2}, Lcom/netease/cloudmusic/network/model/UploadEntity$Builder;->type(Ljava/lang/String;)Lcom/netease/cloudmusic/network/model/UploadEntity$Builder;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object p1
+
+    .line 34
+    const-string p2, "log"
+
+    .line 35
+    .line 36
+    invoke-virtual {p1, p2}, Lcom/netease/cloudmusic/network/model/UploadEntity$Builder;->name(Ljava/lang/String;)Lcom/netease/cloudmusic/network/model/UploadEntity$Builder;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object p1
+
+    .line 40
+    const-string p2, "application/zip"
+
+    .line 41
+    .line 42
+    invoke-virtual {p1, p2}, Lcom/netease/cloudmusic/network/model/UploadEntity$Builder;->contentType(Ljava/lang/String;)Lcom/netease/cloudmusic/network/model/UploadEntity$Builder;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p1
+
+    .line 46
+    invoke-virtual {p1}, Lcom/netease/cloudmusic/network/model/UploadEntity$Builder;->build()Lcom/netease/cloudmusic/network/model/UploadEntity;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object p1
+
+    .line 50
+    return-object p1
+
+    .line 51
+    :cond_32
+    new-instance p1, Ljava/lang/RuntimeException;
+
+    .line 52
+    .line 53
+    const-string p2, "uploadUrl must be absolute"
+
+    .line 54
+    .line 55
+    invoke-direct {p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    .line 56
+    .line 57
+    .line 58
+    throw p1
+.end method
+
+
+# virtual methods
+.method public api(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;)",
+            "Ljava/lang/String;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/netease/cloudmusic/network/exception/CMNetworkIOException;
+        }
+    .end annotation
+
+    .line 1
+    :try_start_0
+    invoke-static {p1, p2}, Ls52/e;->c(Ljava/lang/String;Ljava/util/Map;)Ls62/a;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    invoke-virtual {p1}, Ls62/a;->s()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+    :try_end_8
+    .catchall {:try_start_0 .. :try_end_8} :catchall_9
+
+    .line 9
+    return-object p1
+
+    .line 10
+    :catchall_9
+    move-exception p1
+
+    .line 11
+    new-instance p2, Lcom/netease/cloudmusic/network/exception/CMNetworkIOException;
+
+    .line 12
+    .line 13
+    invoke-direct {p2, p1}, Lcom/netease/cloudmusic/network/exception/CMNetworkIOException;-><init>(Ljava/lang/Throwable;)V
+
+    .line 14
+    .line 15
+    .line 16
+    throw p2
+.end method
+
+.method public batch(Ljava/util/Map;)Ljava/lang/String;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;)",
+            "Ljava/lang/String;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/netease/cloudmusic/network/exception/CMNetworkIOException;
+        }
+    .end annotation
+
+    .line 1
+    :try_start_0
+    invoke-static {}, Ls52/e;->d()Ls62/a;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0, p1}, Ls62/f;->s0(Ljava/util/Map;)Ls62/f;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    check-cast p1, Ls62/a;
+
+    .line 10
+    .line 11
+    invoke-virtual {p1}, Ls62/a;->s()Ljava/lang/String;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+    :try_end_e
+    .catchall {:try_start_0 .. :try_end_e} :catchall_f
+
+    .line 15
+    return-object p1
+
+    .line 16
+    :catchall_f
+    move-exception p1
+
+    .line 17
+    new-instance v0, Lcom/netease/cloudmusic/network/exception/CMNetworkIOException;
+
+    .line 18
+    .line 19
+    invoke-direct {v0, p1}, Lcom/netease/cloudmusic/network/exception/CMNetworkIOException;-><init>(Ljava/lang/Throwable;)V
+
+    .line 20
+    .line 21
+    .line 22
+    throw v0
+.end method
+
+.method public cookieExists(Ljava/lang/String;)Z
+    .registers 3
+
+    .line 1
+    invoke-static {}, Ls52/u;->f()Ls52/u;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Ls52/u;->d()Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-virtual {v0, p1}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->cookieExists(Ljava/lang/String;)Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result p1
+
+    .line 13
+    return p1
+.end method
+
+.method public download(Ljava/lang/String;Ljava/io/File;)Z
+    .registers 11
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    const/4 v1, 0x0
+
+    .line 3
+    :try_start_2
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 4
+    .line 5
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {p2}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v3
+
+    .line 12
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 13
+    .line 14
+    .line 15
+    const-string v3, "temp"
+
+    .line 16
+    .line 17
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v2
+
+    .line 24
+    const-string v3, ".tmp"
+
+    .line 25
+    .line 26
+    invoke-virtual {p2}, Ljava/io/File;->getParentFile()Ljava/io/File;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v4
+
+    .line 30
+    invoke-static {v2, v3, v4}, Ljava/io/File;->createTempFile(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)Ljava/io/File;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v2
+
+    .line 34
+    new-instance v3, Ljava/io/FileOutputStream;
+
+    .line 35
+    .line 36
+    invoke-direct {v3, v2}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+    :try_end_26
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_26} :catch_81
+    .catchall {:try_start_2 .. :try_end_26} :catchall_7e
+
+    .line 37
+    .line 38
+    .line 39
+    :try_start_26
+    invoke-virtual {v3}, Ljava/io/FileOutputStream;->getFD()Ljava/io/FileDescriptor;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object v4
+
+    .line 43
+    invoke-static {p1}, Ls52/e;->j(Ljava/lang/String;)Ls62/g;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object p1
+
+    .line 47
+    invoke-virtual {p1}, Ls62/g;->q1()Lt62/a;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object v1
+
+    .line 51
+    invoke-virtual {v1}, Lt62/a;->i()Ljava/lang/String;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object p1
+
+    .line 55
+    if-eqz p1, :cond_4d
+
+    .line 56
+    .line 57
+    invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object p1
+
+    .line 61
+    const-string v5, "text"
+
+    .line 62
+    .line 63
+    invoke-virtual {p1, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    .line 64
+    .line 65
+    .line 66
+    move-result p1
+
+    .line 67
+    if-nez p1, :cond_45
+
+    .line 68
+    .line 69
+    goto :goto_4d
+
+    .line 70
+    :cond_45
+    new-instance p1, Ljava/lang/RuntimeException;
+
+    .line 71
+    .line 72
+    const-string p2, "Invalid content-type for image request"
+
+    .line 73
+    .line 74
+    invoke-direct {p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    .line 75
+    .line 76
+    .line 77
+    throw p1
+
+    .line 78
+    :cond_4d
+    :goto_4d
+    invoke-virtual {v1}, Lt62/a;->b()Ljava/lang/Object;
+
+    .line 79
+    .line 80
+    .line 81
+    move-result-object p1
+
+    .line 82
+    check-cast p1, Ljava/io/InputStream;
+
+    .line 83
+    .line 84
+    const/16 v5, 0x2000
+
+    .line 85
+    .line 86
+    new-array v5, v5, [B
+
+    .line 87
+    .line 88
+    :goto_57
+    invoke-virtual {p1, v5}, Ljava/io/InputStream;->read([B)I
+
+    .line 89
+    .line 90
+    .line 91
+    move-result v6
+
+    .line 92
+    const/4 v7, -0x1
+
+    .line 93
+    if-eq v6, v7, :cond_62
+
+    .line 94
+    .line 95
+    invoke-virtual {v3, v5, v0, v6}, Ljava/io/FileOutputStream;->write([BII)V
+
+    .line 96
+    .line 97
+    .line 98
+    goto :goto_57
+
+    .line 99
+    :cond_62
+    invoke-virtual {v3}, Ljava/io/OutputStream;->flush()V
+
+    .line 100
+    .line 101
+    .line 102
+    invoke-virtual {v4}, Ljava/io/FileDescriptor;->sync()V
+
+    .line 103
+    .line 104
+    .line 105
+    invoke-virtual {v3}, Ljava/io/FileOutputStream;->close()V
+
+    .line 106
+    .line 107
+    .line 108
+    invoke-virtual {v2, p2}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
+    :try_end_6e
+    .catch Ljava/lang/Exception; {:try_start_26 .. :try_end_6e} :catch_7a
+    .catchall {:try_start_26 .. :try_end_6e} :catchall_76
+
+    .line 109
+    .line 110
+    .line 111
+    invoke-static {v3}, Lcom/netease/cloudmusic/utils/a8;->a(Ljava/io/Closeable;)V
+
+    .line 112
+    .line 113
+    .line 114
+    invoke-virtual {v1}, Lt62/a;->c()V
+
+    .line 115
+    .line 116
+    .line 117
+    const/4 p1, 0x1
+
+    .line 118
+    return p1
+
+    .line 119
+    :catchall_76
+    move-exception p1
+
+    .line 120
+    move-object p2, v1
+
+    .line 121
+    move-object v1, v3
+
+    .line 122
+    goto :goto_90
+
+    .line 123
+    :catch_7a
+    move-exception p1
+
+    .line 124
+    move-object p2, v1
+
+    .line 125
+    move-object v1, v3
+
+    .line 126
+    goto :goto_83
+
+    .line 127
+    :catchall_7e
+    move-exception p1
+
+    .line 128
+    move-object p2, v1
+
+    .line 129
+    goto :goto_90
+
+    .line 130
+    :catch_81
+    move-exception p1
+
+    .line 131
+    move-object p2, v1
+
+    .line 132
+    :goto_83
+    :try_start_83
+    invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
+    :try_end_86
+    .catchall {:try_start_83 .. :try_end_86} :catchall_8f
+
+    .line 133
+    .line 134
+    .line 135
+    invoke-static {v1}, Lcom/netease/cloudmusic/utils/a8;->a(Ljava/io/Closeable;)V
+
+    .line 136
+    .line 137
+    .line 138
+    if-eqz p2, :cond_8e
+
+    .line 139
+    .line 140
+    invoke-virtual {p2}, Lt62/a;->c()V
+
+    .line 141
+    .line 142
+    .line 143
+    :cond_8e
+    return v0
+
+    .line 144
+    :catchall_8f
+    move-exception p1
+
+    .line 145
+    :goto_90
+    invoke-static {v1}, Lcom/netease/cloudmusic/utils/a8;->a(Ljava/io/Closeable;)V
+
+    .line 146
+    .line 147
+    .line 148
+    if-eqz p2, :cond_98
+
+    .line 149
+    .line 150
+    invoke-virtual {p2}, Lt62/a;->c()V
+
+    .line 151
+    .line 152
+    .line 153
+    :cond_98
+    throw p1
+.end method
+
+.method public expireCookie(Ljava/lang/String;)V
+    .registers 3
+
+    .line 1
+    invoke-static {}, Ls52/u;->f()Ls52/u;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Ls52/u;->d()Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-virtual {v0, p1}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->expireCookie(Ljava/lang/String;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public get(Ljava/lang/String;)Lokhttp3/Response;
+    .registers 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/netease/cloudmusic/network/exception/CMNetworkIOException;
+        }
+    .end annotation
+
+    .line 1
+    :try_start_0
+    invoke-static {p1}, Ls52/e;->l(Ljava/lang/String;)Ls62/j;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    invoke-virtual {p1}, Ls62/f;->n()Lt62/a;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    invoke-virtual {p1}, Lt62/a;->m()Lokhttp3/Response;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p1
+    :try_end_c
+    .catchall {:try_start_0 .. :try_end_c} :catchall_d
+
+    .line 13
+    return-object p1
+
+    .line 14
+    :catchall_d
+    move-exception p1
+
+    .line 15
+    new-instance v0, Lcom/netease/cloudmusic/network/exception/CMNetworkIOException;
+
+    .line 16
+    .line 17
+    invoke-direct {v0, p1}, Lcom/netease/cloudmusic/network/exception/CMNetworkIOException;-><init>(Ljava/lang/Throwable;)V
+
+    .line 18
+    .line 19
+    .line 20
+    throw v0
+.end method
+
+.method public getAllCookies()Ljava/util/List;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lokhttp3/Cookie;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {}, Ls52/u;->f()Ls52/u;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Ls52/u;->d()Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-virtual {v0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->getAllCookies()Ljava/util/List;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    return-object v0
+.end method
+
+.method public getApiRetrofit()Lretrofit2/h0;
+    .registers 2
+
+    .line 1
+    invoke-static {}, Ls52/u;->f()Ls52/u;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Ls52/u;->a()Lretrofit2/h0;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getApiRetrofitWithoutHttpDNS()Lretrofit2/h0;
+    .registers 2
+
+    .line 1
+    invoke-static {}, Ls52/u;->f()Ls52/u;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Ls52/u;->b()Lretrofit2/h0;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getAvailableDataPackageType()I
+    .registers 2
+
+    .line 1
+    invoke-static {}, Lcom/netease/cloudmusic/network/datapackage/a;->s()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+.end method
+
+.method public getImageCall(Ljava/lang/String;)Lokhttp3/Call;
+    .registers 2
+
+    .line 1
+    invoke-static {p1}, Ls62/i;->q1(Ljava/lang/String;)Lokhttp3/Call;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public getLoginCookie()Ljava/lang/String;
+    .registers 2
+
+    .line 1
+    invoke-static {}, Ls52/u;->f()Ls52/u;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Ls52/u;->d()Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-virtual {v0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->getLoginCookie()Ljava/lang/String;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    return-object v0
+.end method
+
+.method public getMoshi()Lcom/squareup/moshi/Moshi;
+    .registers 2
+
+    .line 1
+    invoke-static {}, Ls52/u;->f()Ls52/u;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Ls52/u;->g()Lcom/squareup/moshi/Moshi;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getOkHttpClient()Lokhttp3/OkHttpClient;
+    .registers 2
+
+    .line 1
+    invoke-static {}, Ls52/u;->f()Ls52/u;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Ls52/u;->i()Lokhttp3/OkHttpClient;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getYdDeviceToken()Ljava/lang/String;
+    .registers 2
+
+    .line 1
+    sget-object v0, Lp72/b;->a:Lp72/b;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lp72/b;->m()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public isDataPackageAvailableAndInMobile()Z
+    .registers 2
+
+    .line 1
+    invoke-static {}, Lcom/netease/cloudmusic/network/datapackage/a;->J()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+.end method
+
+.method public logout()V
+    .registers 2
+
+    .line 1
+    const-string v0, "MUSIC_U"
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Lcom/netease/cloudmusic/network/implement/NetworkServiceImpl;->expireCookie(Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public post(Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lokhttp3/Response;
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;",
+            "Ljava/lang/String;",
+            ")",
+            "Lokhttp3/Response;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/netease/cloudmusic/network/exception/CMNetworkIOException;
+        }
+    .end annotation
+
+    .line 1
+    :try_start_0
+    invoke-static {p1}, Ls52/e;->p(Ljava/lang/String;)Ls62/p;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    invoke-virtual {p1, p3}, Ls62/e;->W0(Ljava/lang/String;)Ls62/f;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    new-instance p3, Lp62/a;
+
+    .line 10
+    .line 11
+    invoke-direct {p3, p2}, Lp62/a;-><init>(Ljava/util/Map;)V
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-virtual {p1, p3}, Ls62/f;->V(Lp62/a;)Ls62/f;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p1
+
+    .line 18
+    invoke-virtual {p1}, Ls62/f;->n()Lt62/a;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p1
+
+    .line 22
+    invoke-virtual {p1}, Lt62/a;->m()Lokhttp3/Response;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p1
+    :try_end_19
+    .catchall {:try_start_0 .. :try_end_19} :catchall_1a
+
+    .line 26
+    return-object p1
+
+    .line 27
+    :catchall_1a
+    move-exception p1
+
+    .line 28
+    new-instance p2, Lcom/netease/cloudmusic/network/exception/CMNetworkIOException;
+
+    .line 29
+    .line 30
+    invoke-direct {p2, p1}, Lcom/netease/cloudmusic/network/exception/CMNetworkIOException;-><init>(Ljava/lang/Throwable;)V
+
+    .line 31
+    .line 32
+    .line 33
+    throw p2
+.end method
+
+.method public saveCookie(Ljava/lang/String;Ljava/lang/String;)V
+    .registers 5
+
+    .line 1
+    invoke-static {}, Ls52/u;->f()Ls52/u;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Ls52/u;->d()Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-static {}, Ls52/u;->f()Ls52/u;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    invoke-virtual {v1}, Ls52/u;->d()Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v1
+
+    .line 17
+    invoke-virtual {v1, p1, p2}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->buildCookie(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Cookie;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object p1
+
+    .line 21
+    invoke-virtual {v0, p1}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->saveCookie(Lokhttp3/Cookie;)V
+
+    .line 22
+    .line 23
+    .line 24
+    return-void
+.end method
+
+.method public upload(Ljava/lang/String;[B)Lokhttp3/Response;
+    .registers 4
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/netease/cloudmusic/network/exception/CMNetworkIOException;
+        }
+    .end annotation
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-direct {p0, p1, v0, p2}, Lcom/netease/cloudmusic/network/implement/NetworkServiceImpl;->buildUploadEntityForLog(Ljava/lang/String;Ljava/io/File;[B)Lcom/netease/cloudmusic/network/model/UploadEntity;
+
+    .line 3
+    .line 4
+    .line 5
+    move-result-object p1
+
+    .line 6
+    invoke-static {p1}, Ls52/e;->q(Lcom/netease/cloudmusic/network/model/UploadEntity;)Ls62/s;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    const/16 p2, 0x4e20
+
+    .line 11
+    .line 12
+    invoke-virtual {p1, p2}, Ls62/f;->N0(I)Ls62/f;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    check-cast p1, Ls62/s;
+
+    .line 17
+    .line 18
+    :try_start_11
+    invoke-virtual {p1}, Ls62/f;->n()Lt62/a;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p1
+
+    .line 22
+    invoke-virtual {p1}, Lt62/a;->m()Lokhttp3/Response;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p1
+    :try_end_19
+    .catchall {:try_start_11 .. :try_end_19} :catchall_1a
+
+    .line 26
+    return-object p1
+
+    .line 27
+    :catchall_1a
+    move-exception p1
+
+    .line 28
+    new-instance p2, Lcom/netease/cloudmusic/network/exception/CMNetworkIOException;
+
+    .line 29
+    .line 30
+    invoke-direct {p2, p1}, Lcom/netease/cloudmusic/network/exception/CMNetworkIOException;-><init>(Ljava/lang/Throwable;)V
+
+    .line 31
+    .line 32
+    .line 33
+    throw p2
+.end method
+
+.method public uploadFeedBackLog(Ljava/io/File;[BI)Z
+    .registers 8
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-nez p1, :cond_6
+
+    .line 3
+    .line 4
+    if-nez p2, :cond_6
+
+    .line 5
+    .line 6
+    return v0
+
+    .line 7
+    :cond_6
+    invoke-static {}, Ls52/u;->f()Ls52/u;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v1
+
+    .line 11
+    invoke-virtual {v1}, Ls52/u;->e()Lj62/a;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v1
+
+    .line 15
+    const-string v2, "feedback/log/android"
+
+    .line 16
+    .line 17
+    const/4 v3, 0x1
+
+    .line 18
+    invoke-virtual {v1, v3, v0, v2}, Lj62/a;->k(ZZLjava/lang/String;)Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v1
+
+    .line 22
+    invoke-direct {p0, v1, p1, p2}, Lcom/netease/cloudmusic/network/implement/NetworkServiceImpl;->buildUploadEntityForLog(Ljava/lang/String;Ljava/io/File;[B)Lcom/netease/cloudmusic/network/model/UploadEntity;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p1
+
+    .line 26
+    invoke-static {p1}, Ls52/e;->q(Lcom/netease/cloudmusic/network/model/UploadEntity;)Ls62/s;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    const-string p2, "Referer"
+
+    .line 31
+    .line 32
+    sget-object v1, Lcom/netease/cloudmusic/utils/kt;->f:Ljava/lang/String;
+
+    .line 33
+    .line 34
+    invoke-virtual {p1, p2, v1}, Ls62/f;->U(Ljava/lang/String;Ljava/lang/String;)Ls62/f;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object p1
+
+    .line 38
+    check-cast p1, Ls62/s;
+
+    .line 39
+    .line 40
+    const/16 p2, 0x4e20
+
+    .line 41
+    .line 42
+    invoke-virtual {p1, p2}, Ls62/f;->N0(I)Ls62/f;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p1
+
+    .line 46
+    check-cast p1, Ls62/s;
+
+    .line 47
+    .line 48
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    .line 49
+    .line 50
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 51
+    .line 52
+    .line 53
+    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 54
+    .line 55
+    .line 56
+    const-string p3, ""
+
+    .line 57
+    .line 58
+    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 59
+    .line 60
+    .line 61
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 62
+    .line 63
+    .line 64
+    move-result-object p2
+
+    .line 65
+    const-string p3, "type"
+
+    .line 66
+    .line 67
+    invoke-virtual {p1, p3, p2}, Ls62/f;->r0(Ljava/lang/String;Ljava/lang/String;)Ls62/f;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object p1
+
+    .line 71
+    check-cast p1, Ls62/s;
+
+    .line 72
+    .line 73
+    :try_start_48
+    invoke-virtual {p1}, Ls62/f;->p()Lorg/json/JSONObject;
+
+    .line 74
+    .line 75
+    .line 76
+    move-result-object p1
+
+    .line 77
+    const-string p2, "code"
+
+    .line 78
+    .line 79
+    invoke-virtual {p1, p2}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
+
+    .line 80
+    .line 81
+    .line 82
+    move-result p1
+    :try_end_52
+    .catch Ljava/lang/Exception; {:try_start_48 .. :try_end_52} :catch_58
+
+    .line 83
+    const/16 p2, 0xc8
+
+    .line 84
+    .line 85
+    if-ne p1, p2, :cond_57
+
+    .line 86
+    .line 87
+    move v0, v3
+
+    .line 88
+    :cond_57
+    return v0
+
+    .line 89
+    :catch_58
+    move-exception p1
+
+    .line 90
+    invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 91
+    .line 92
+    .line 93
+    return v0
+.end method
+
+.method public uploadStatisticLog(Ljava/lang/String;[B)Z
+    .registers 5
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-eqz p2, :cond_2f
+
+    .line 3
+    .line 4
+    array-length v1, p2
+
+    .line 5
+    if-nez v1, :cond_7
+
+    .line 6
+    .line 7
+    goto :goto_2f
+
+    .line 8
+    :cond_7
+    const/4 v1, 0x0
+
+    .line 9
+    invoke-direct {p0, p1, v1, p2}, Lcom/netease/cloudmusic/network/implement/NetworkServiceImpl;->buildUploadEntityForLog(Ljava/lang/String;Ljava/io/File;[B)Lcom/netease/cloudmusic/network/model/UploadEntity;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p1
+
+    .line 13
+    invoke-static {p1}, Ls52/e;->q(Lcom/netease/cloudmusic/network/model/UploadEntity;)Ls62/s;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p1
+
+    .line 17
+    const/16 p2, 0x4e20
+
+    .line 18
+    .line 19
+    invoke-virtual {p1, p2}, Ls62/f;->N0(I)Ls62/f;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p1
+
+    .line 23
+    check-cast p1, Ls62/s;
+
+    .line 24
+    .line 25
+    const/4 p2, 0x0
+
+    .line 26
+    :try_start_19
+    invoke-virtual {p1}, Ls62/f;->p()Lorg/json/JSONObject;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    const-string v1, "code"
+
+    .line 31
+    .line 32
+    invoke-virtual {p1, v1, p2}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
+
+    .line 33
+    .line 34
+    .line 35
+    move-result p1
+    :try_end_23
+    .catch Ljava/lang/Exception; {:try_start_19 .. :try_end_23} :catch_2a
+
+    .line 36
+    const/16 v1, 0xc8
+
+    .line 37
+    .line 38
+    if-ne p1, v1, :cond_28
+
+    .line 39
+    .line 40
+    goto :goto_29
+
+    .line 41
+    :cond_28
+    move v0, p2
+
+    .line 42
+    :goto_29
+    return v0
+
+    .line 43
+    :catch_2a
+    move-exception p1
+
+    .line 44
+    invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 45
+    .line 46
+    .line 47
+    return p2
+
+    .line 48
+    :cond_2f
+    :goto_2f
+    return v0
+.end method
+

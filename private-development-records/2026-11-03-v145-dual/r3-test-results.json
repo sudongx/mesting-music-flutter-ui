@@ -1,0 +1,218 @@
+{
+  "candidate": "room-lease-r3",
+  "installation": {
+    "candidate": "room-lease-r3",
+    "version": "1.0.45",
+    "code": 66,
+    "sha256": "1f5791354600dae23e43abdbe4c939a4682a82a5bb58a3d6110520edacdc7753",
+    "hostAndDeviceHashMatched": true,
+    "bothProfilesUseSameApk": true,
+    "replaceSucceeded": true,
+    "clearedData": false
+  },
+  "result": "REJECTED",
+  "coldBackgroundTrackSyncPassed": false,
+  "observations": [
+    {
+      "label": "r3-cold-both-open",
+      "utc": "2026-11-03T07:49:21.609716+00:00",
+      "monotonicSeconds": 3721627.8853392,
+      "data": {
+        "utc": "2026-11-03T07:49:21.609694+00:00",
+        "monotonicSeconds": 3721627.8853288,
+        "processes": {
+          "28939": 0,
+          "29217": 999
+        },
+        "focusKnown": true,
+        "mestingFocusedUsers": [
+          999
+        ],
+        "sessions": [
+          {
+            "pid": 29217,
+            "user": 999,
+            "metadataPresent": true,
+            "metadataFingerprint": "db07d1920a015196",
+            "playState": "NONE",
+            "playStateCode": 0,
+            "positionMs": 0
+          },
+          {
+            "pid": 28939,
+            "user": 0,
+            "metadataPresent": true,
+            "metadataFingerprint": "db07d1920a015196",
+            "playState": "PAUSED",
+            "playStateCode": 2,
+            "positionMs": 0
+          }
+        ]
+      }
+    },
+    {
+      "label": "r3-before-first-next-background",
+      "utc": "2026-11-03T07:49:34.036278+00:00",
+      "monotonicSeconds": 3721640.3119015,
+      "data": {
+        "utc": "2026-11-03T07:49:34.036253+00:00",
+        "monotonicSeconds": 3721640.3118887,
+        "processes": {
+          "28939": 0,
+          "29217": 999
+        },
+        "focusKnown": true,
+        "mestingFocusedUsers": [
+          0
+        ],
+        "sessions": [
+          {
+            "pid": 29217,
+            "user": 999,
+            "metadataPresent": true,
+            "metadataFingerprint": "db07d1920a015196",
+            "playState": "NONE",
+            "playStateCode": 0,
+            "positionMs": 0
+          },
+          {
+            "pid": 28939,
+            "user": 0,
+            "metadataPresent": true,
+            "metadataFingerprint": "db07d1920a015196",
+            "playState": "PAUSED",
+            "playStateCode": 2,
+            "positionMs": 0
+          }
+        ]
+      }
+    },
+    {
+      "label": "r3-cold-next1-before-receiver-resume",
+      "utc": "2026-11-03T07:49:55.066967+00:00",
+      "monotonicSeconds": 3721661.3425903,
+      "data": {
+        "utc": "2026-11-03T07:49:55.066935+00:00",
+        "monotonicSeconds": 3721661.3425795,
+        "processes": {
+          "28939": 0,
+          "29217": 999
+        },
+        "focusKnown": true,
+        "mestingFocusedUsers": [
+          0
+        ],
+        "sessions": [
+          {
+            "pid": 28939,
+            "user": 0,
+            "metadataPresent": true,
+            "metadataFingerprint": "3ffb0a6994d881a1",
+            "playState": "PLAYING",
+            "playStateCode": 3,
+            "positionMs": 2886
+          },
+          {
+            "pid": 29217,
+            "user": 999,
+            "metadataPresent": true,
+            "metadataFingerprint": "db07d1920a015196",
+            "playState": "NONE",
+            "playStateCode": 0,
+            "positionMs": 0
+          }
+        ]
+      }
+    },
+    {
+      "label": "r3-cold-extended-before-resume",
+      "utc": "2026-11-03T07:52:16.780753+00:00",
+      "monotonicSeconds": 3721803.0563762,
+      "data": {
+        "utc": "2026-11-03T07:52:16.780731+00:00",
+        "monotonicSeconds": 3721803.0563649,
+        "processes": {
+          "28939": 0,
+          "29217": 999
+        },
+        "focusKnown": true,
+        "mestingFocusedUsers": [
+          0
+        ],
+        "sessions": [
+          {
+            "pid": 28939,
+            "user": 0,
+            "metadataPresent": true,
+            "metadataFingerprint": "3ffb0a6994d881a1",
+            "playState": "PLAYING",
+            "playStateCode": 3,
+            "positionMs": 133985
+          },
+          {
+            "pid": 29217,
+            "user": 999,
+            "metadataPresent": true,
+            "metadataFingerprint": "db07d1920a015196",
+            "playState": "NONE",
+            "playStateCode": 0,
+            "positionMs": 0
+          }
+        ]
+      }
+    }
+  ],
+  "boundedCaptureState": {
+    "state": "complete",
+    "startedUtc": "2026-11-03T07:49:24.677696+00:00",
+    "maximumSeconds": 175,
+    "processes": {
+      "28939": 0,
+      "29217": 999
+    },
+    "rawLogcatPersisted": false,
+    "observerControlsPlayback": false,
+    "phaseCounts": {
+      "0.dart.pollEntered": 35,
+      "0.dart.pollSkipped": 1,
+      "999.dart.lifecycle": 3,
+      "999.dart.configurationSent": 1,
+      "999.native.configuration": 1,
+      "999.dart.configurationAccepted": 1,
+      "999.native.mediaServiceMissing": 1,
+      "999.native.wakeAcquired": 1,
+      "999.native.pulseScheduled": 2,
+      "999.native.pulseSent": 2,
+      "999.dart.pulseReceived": 2,
+      "999.dart.pollEntered": 3,
+      "999.dart.pollSkipped": 2,
+      "999.dart.pulsePollCompleted": 2,
+      "0.dart.lifecycle": 3,
+      "999.native.acknowledged": 2,
+      "0.dart.configurationSent": 1,
+      "0.dart.httpStarted": 153,
+      "0.native.configuration": 1,
+      "0.native.wakeReleased": 1,
+      "0.dart.configurationAccepted": 1,
+      "0.dart.httpCompleted": 153,
+      "0.dart.commandSkipped": 145,
+      "0.dart.commandReceived": 36,
+      "999.dart.tickStarted": 1,
+      "999.dart.httpStarted": 4,
+      "999.dart.httpCompleted": 4,
+      "999.dart.commandSkipped": 4,
+      "999.dart.commandReceived": 1,
+      "999.dart.tickCompleted": 1,
+      "0.dart.tickStarted": 34,
+      "0.dart.tickCompleted": 34
+    },
+    "samples": 74,
+    "elapsedSeconds": 174.15
+  },
+  "receiverNativeWakeAcquiredEvents": 1,
+  "receiverLastObservedPhaseSeconds": 5.954,
+  "receiverAppliedCommands": 0,
+  "diagnosisLimit": "Wake acquisition alone did not establish continued background execution; no claim of OS freezer root cause.",
+  "playPauseAccepted": false,
+  "rawLogcatPersisted": false
+}

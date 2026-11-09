@@ -1,0 +1,239 @@
+00:00 +0: loading D:/AnLi/test/release_137_footprint_test.dart
+test/release_137_footprint_test.dart:96:96: Error: Can't find '}' to match '{'.
+  test('report reader uses exact official types/endTime and no playback-write route', () async {
+                                                                                          ^
+test/release_137_footprint_test.dart:120:4: Error: Expected a declaration, but got ')'.
+  });
+   ^
+test/release_137_footprint_test.dart:120:5: Error: Unexpected token ';'.
+  });
+    ^
+test/release_137_footprint_test.dart:121:8: Error: Expected an identifier, but got ''reader coalesces clicks, handles independent failures and retains success timestamps''.
+Try inserting an identifier before ''reader coalesces clicks, handles independent failures and retains success timestamps''.
+  test('reader coalesces clicks, handles independent failures and retains success timestamps', () async {
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/release_137_footprint_test.dart:121:96: Error: Expected an identifier, but got '('.
+Try inserting an identifier before '('.
+  test('reader coalesces clicks, handles independent failures and retains success timestamps', () async {
+                                                                                          ^
+test/release_137_footprint_test.dart:121:99: Error: Expected ')' before this.
+  test('reader coalesces clicks, handles independent failures and retains success timestamps', () async {
+                                                                                          ^^^^^
+test/release_137_footprint_test.dart:141:5: Error: Expected a function body or '=>'.
+Try adding {}.
+  });
+    ^
+test/release_137_footprint_test.dart:142:8: Error: Expected an identifier, but got ''new date refresh wins over late previous-day requests and does not relabel old data''.
+Try inserting an identifier before ''new date refresh wins over late previous-day requests and does not relabel old data''.
+  test('new date refresh wins over late previous-day requests and does not relabel old data', () async {
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/release_137_footprint_test.dart:142:95: Error: Expected an identifier, but got '('.
+Try inserting an identifier before '('.
+  test('new date refresh wins over late previous-day requests and does not relabel old data', () async {
+                                                                                          ^
+test/release_137_footprint_test.dart:142:98: Error: Expected ')' before this.
+  test('new date refresh wins over late previous-day requests and does not relabel old data', () async {
+                                                                                          ^^^^^
+test/release_137_footprint_test.dart:153:5: Error: Expected a function body or '=>'.
+Try adding {}.
+  });
+    ^
+test/release_137_footprint_test.dart:154:8: Error: Expected an identifier, but got ''account/dispose invalidation prevents old responses and later requests''.
+Try inserting an identifier before ''account/dispose invalidation prevents old responses and later requests''.
+  test('account/dispose invalidation prevents old responses and later requests', () async {
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/release_137_footprint_test.dart:154:82: Error: Expected an identifier, but got '('.
+Try inserting an identifier before '('.
+  test('account/dispose invalidation prevents old responses and later requests', () async {
+                                                                                 ^
+test/release_137_footprint_test.dart:154:85: Error: Expected ')' before this.
+  test('account/dispose invalidation prevents old responses and later requests', () async {
+                                                                                    ^^^^^
+test/release_137_footprint_test.dart:163:5: Error: Expected a function body or '=>'.
+Try adding {}.
+  });
+    ^
+test/release_137_footprint_test.dart:164:8: Error: Expected an identifier, but got ''fast historical month changes discard earlier completion and failed refresh keeps same-month result''.
+Try inserting an identifier before ''fast historical month changes discard earlier completion and failed refresh keeps same-month result''.
+  test('fast historical month changes discard earlier completion and failed refresh keeps same-month result', () async {
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/release_137_footprint_test.dart:164:111: Error: Expected an identifier, but got '('.
+Try inserting an identifier before '('.
+  test('fast historical month changes discard earlier completion and failed refresh keeps same-month result', () async {
+                                                                                          ^
+test/release_137_footprint_test.dart:164:114: Error: Expected ')' before this.
+  test('fast historical month changes discard earlier completion and failed refresh keeps same-month result', () async {
+                                                                                          ^^^^^
+test/release_137_footprint_test.dart:177:5: Error: Expected a function body or '=>'.
+Try adding {}.
+  });
+    ^
+test/release_137_footprint_test.dart:178:1: Error: Expected a declaration, but got '}'.
+}
+^
+test/release_137_footprint_test.dart:142:3: Error: 'test' is already declared in this scope.
+  test('new date refresh wins over late previous-day requests and does not relabel old data', () async {
+  ^^^^
+test/release_137_footprint_test.dart:121:3: Context: Previous declaration of 'test'.
+  test('reader coalesces clicks, handles independent failures and retains success timestamps', () async {
+  ^^^^
+test/release_137_footprint_test.dart:154:3: Error: 'test' is already declared in this scope.
+  test('account/dispose invalidation prevents old responses and later requests', () async {
+  ^^^^
+test/release_137_footprint_test.dart:121:3: Context: Previous declaration of 'test'.
+  test('reader coalesces clicks, handles independent failures and retains success timestamps', () async {
+  ^^^^
+test/release_137_footprint_test.dart:164:3: Error: 'test' is already declared in this scope.
+  test('fast historical month changes discard earlier completion and failed refresh keeps same-month result', () async {
+  ^^^^
+test/release_137_footprint_test.dart:121:3: Context: Previous declaration of 'test'.
+  test('reader coalesces clicks, handles independent failures and retains success timestamps', () async {
+  ^^^^
+test/release_137_footprint_test.dart:106:7: Error: Expected ';' after this.
+    })))..configure(session);
+      ^
+test/release_137_footprint_test.dart:107:48: Error: Undefined name 'api'.
+    final source = OfficialFootprintRepository(api);
+                                               ^^^
+test/release_137_footprint_test.dart:108:5: Error: 'await' can only be used in 'async' or 'async*' methods.
+    await source.currentWeek(); await source.currentMonth();
+    ^^^^^
+test/release_137_footprint_test.dart:108:33: Error: 'await' can only be used in 'async' or 'async*' methods.
+    await source.currentWeek(); await source.currentMonth();
+                                ^^^^^
+test/release_137_footprint_test.dart:109:12: Error: 'await' can only be used in 'async' or 'async*' methods.
+    expect(await source.totalSeconds(), 20193360);
+           ^^^^^
+test/release_137_footprint_test.dart:110:13: Error: 'await' can only be used in 'async' or 'async*' methods.
+    expect((await source.history('2026-10')).seconds, 4680);
+            ^^^^^
+test/release_137_footprint_test.dart:111:12: Error: Undefined name 'requests'.
+    expect(requests.keys, containsAll([
+           ^^^^^^^^
+test/release_137_footprint_test.dart:117:21: Error: Undefined name 'requests'.
+    final history = requests['/eapi/content/activity/listen/data/report:month']!;
+                    ^^^^^^^^
+test/release_137_footprint_test.dart:119:12: Error: Undefined name 'requests'.
+    expect(requests.values.every((q) => !q.containsKey('logs') && !q.containsKey('realtime')), isTrue);
+           ^^^^^^^^
+00:00 +0 -1: loading D:/AnLi/test/release_137_footprint_test.dart [E]
+  Failed to load "D:/AnLi/test/release_137_footprint_test.dart":
+  Compilation failed for testPath=D:/AnLi/test/release_137_footprint_test.dart: test/release_137_footprint_test.dart:96:96: Error: Can't find '}' to match '{'.
+    test('report reader uses exact official types/endTime and no playback-write route', () async {
+                                                                                                 ^
+  test/release_137_footprint_test.dart:120:4: Error: Expected a declaration, but got ')'.
+    });
+     ^
+  test/release_137_footprint_test.dart:120:5: Error: Unexpected token ';'.
+    });
+      ^
+  test/release_137_footprint_test.dart:121:8: Error: Expected an identifier, but got ''reader coalesces clicks, handles independent failures and retains success timestamps''.
+  Try inserting an identifier before ''reader coalesces clicks, handles independent failures and retains success timestamps''.
+    test('reader coalesces clicks, handles independent failures and retains success timestamps', () async {
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  test/release_137_footprint_test.dart:121:96: Error: Expected an identifier, but got '('.
+  Try inserting an identifier before '('.
+    test('reader coalesces clicks, handles independent failures and retains success timestamps', () async {
+                                                                                                 ^
+  test/release_137_footprint_test.dart:121:99: Error: Expected ')' before this.
+    test('reader coalesces clicks, handles independent failures and retains success timestamps', () async {
+                                                                                                    ^^^^^
+  test/release_137_footprint_test.dart:141:5: Error: Expected a function body or '=>'.
+  Try adding {}.
+    });
+      ^
+  test/release_137_footprint_test.dart:142:8: Error: Expected an identifier, but got ''new date refresh wins over late previous-day requests and does not relabel old data''.
+  Try inserting an identifier before ''new date refresh wins over late previous-day requests and does not relabel old data''.
+    test('new date refresh wins over late previous-day requests and does not relabel old data', () async {
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  test/release_137_footprint_test.dart:142:95: Error: Expected an identifier, but got '('.
+  Try inserting an identifier before '('.
+    test('new date refresh wins over late previous-day requests and does not relabel old data', () async {
+                                                                                                ^
+  test/release_137_footprint_test.dart:142:98: Error: Expected ')' before this.
+    test('new date refresh wins over late previous-day requests and does not relabel old data', () async {
+                                                                                                   ^^^^^
+  test/release_137_footprint_test.dart:153:5: Error: Expected a function body or '=>'.
+  Try adding {}.
+    });
+      ^
+  test/release_137_footprint_test.dart:154:8: Error: Expected an identifier, but got ''account/dispose invalidation prevents old responses and later requests''.
+  Try inserting an identifier before ''account/dispose invalidation prevents old responses and later requests''.
+    test('account/dispose invalidation prevents old responses and later requests', () async {
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  test/release_137_footprint_test.dart:154:82: Error: Expected an identifier, but got '('.
+  Try inserting an identifier before '('.
+    test('account/dispose invalidation prevents old responses and later requests', () async {
+                                                                                   ^
+  test/release_137_footprint_test.dart:154:85: Error: Expected ')' before this.
+    test('account/dispose invalidation prevents old responses and later requests', () async {
+                                                                                      ^^^^^
+  test/release_137_footprint_test.dart:163:5: Error: Expected a function body or '=>'.
+  Try adding {}.
+    });
+      ^
+  test/release_137_footprint_test.dart:164:8: Error: Expected an identifier, but got ''fast historical month changes discard earlier completion and failed refresh keeps same-month result''.
+  Try inserting an identifier before ''fast historical month changes discard earlier completion and failed refresh keeps same-month result''.
+    test('fast historical month changes discard earlier completion and failed refresh keeps same-month result', () async {
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  test/release_137_footprint_test.dart:164:111: Error: Expected an identifier, but got '('.
+  Try inserting an identifier before '('.
+    test('fast historical month changes discard earlier completion and failed refresh keeps same-month result', () async {
+                                                                                                                ^
+  test/release_137_footprint_test.dart:164:114: Error: Expected ')' before this.
+    test('fast historical month changes discard earlier completion and failed refresh keeps same-month result', () async {
+                                                                                                                   ^^^^^
+  test/release_137_footprint_test.dart:177:5: Error: Expected a function body or '=>'.
+  Try adding {}.
+    });
+      ^
+  test/release_137_footprint_test.dart:178:1: Error: Expected a declaration, but got '}'.
+  }
+  ^
+  test/release_137_footprint_test.dart:142:3: Error: 'test' is already declared in this scope.
+    test('new date refresh wins over late previous-day requests and does not relabel old data', () async {
+    ^^^^
+  test/release_137_footprint_test.dart:121:3: Context: Previous declaration of 'test'.
+    test('reader coalesces clicks, handles independent failures and retains success timestamps', () async {
+    ^^^^
+  test/release_137_footprint_test.dart:154:3: Error: 'test' is already declared in this scope.
+    test('account/dispose invalidation prevents old responses and later requests', () async {
+    ^^^^
+  test/release_137_footprint_test.dart:121:3: Context: Previous declaration of 'test'.
+    test('reader coalesces clicks, handles independent failures and retains success timestamps', () async {
+    ^^^^
+  test/release_137_footprint_test.dart:164:3: Error: 'test' is already declared in this scope.
+    test('fast historical month changes discard earlier completion and failed refresh keeps same-month result', () async {
+    ^^^^
+  test/release_137_footprint_test.dart:121:3: Context: Previous declaration of 'test'.
+    test('reader coalesces clicks, handles independent failures and retains success timestamps', () async {
+    ^^^^
+  test/release_137_footprint_test.dart:106:7: Error: Expected ';' after this.
+      })))..configure(session);
+        ^
+  test/release_137_footprint_test.dart:107:48: Error: Undefined name 'api'.
+      final source = OfficialFootprintRepository(api);
+                                                 ^^^
+  test/release_137_footprint_test.dart:108:5: Error: 'await' can only be used in 'async' or 'async*' methods.
+      await source.currentWeek(); await source.currentMonth();
+      ^^^^^
+  test/release_137_footprint_test.dart:108:33: Error: 'await' can only be used in 'async' or 'async*' methods.
+      await source.currentWeek(); await source.currentMonth();
+                                  ^^^^^
+  test/release_137_footprint_test.dart:109:12: Error: 'await' can only be used in 'async' or 'async*' methods.
+      expect(await source.totalSeconds(), 20193360);
+             ^^^^^
+  test/release_137_footprint_test.dart:110:13: Error: 'await' can only be used in 'async' or 'async*' methods.
+      expect((await source.history('2026-10')).seconds, 4680);
+              ^^^^^
+  test/release_137_footprint_test.dart:111:12: Error: Undefined name 'requests'.
+      expect(requests.keys, containsAll([
+             ^^^^^^^^
+  test/release_137_footprint_test.dart:117:21: Error: Undefined name 'requests'.
+      final history = requests['/eapi/content/activity/listen/data/report:month']!;
+                      ^^^^^^^^
+  test/release_137_footprint_test.dart:119:12: Error: Undefined name 'requests'.
+      expect(requests.values.every((q) => !q.containsKey('logs') && !q.containsKey('realtime')), isTrue);
+             ^^^^^^^^
+  .
+00:00 +0 -1: Some tests failed.

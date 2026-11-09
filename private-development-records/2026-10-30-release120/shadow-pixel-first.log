@@ -1,0 +1,14 @@
+00:00 +0: loading D:/AnLi/test/release_120_shadow_test.dart
+00:00 +0: width-only capsule shadow retains original Gaussian corners and reuses one raster
+00:00 +0 -1: width-only capsule shadow retains original Gaussian corners and reuses one raster [E]
+  Expected: a value less than or equal to <2>
+    Actual: <30>
+     Which: is not a value less than or equal to <2>
+  A stretched middle must preserve the Gaussian corner pixels.
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test\release_120_shadow_test.dart 90:9              main.<fn>
+  
+00:00 +0 -1: narrow capsules and changed silhouettes keep the live shadow path
+00:00 +1 -1: Some tests failed.

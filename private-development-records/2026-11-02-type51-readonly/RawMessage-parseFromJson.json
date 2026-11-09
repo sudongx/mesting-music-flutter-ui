@@ -1,0 +1,106 @@
+{
+  "evidence_id": "ev_15ba67a862b96744e5302aee16b400c06563d817d331438b98869823004f69e1",
+  "subject": {
+    "name": "official-current-classes19-analysis-only.apk",
+    "digest": {
+      "sha256": "e8850c1cbc0e7f3551357d5226f151c199963944370c41088b77272cbbaa2f23"
+    },
+    "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-02-duration-phone139\\official-current-classes19-analysis-only.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-analysis-view",
+    "name": "REA analysis view projection",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis-view",
+  "operation": "inspect_analysis_view",
+  "parameters": {
+    "parent_evidence_id": "ev_0d9b63ffdd8fbd03edf370210b198ce6329a313af8b732a0d7efe35cba515118",
+    "view": {
+      "kind": "summary"
+    }
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "kind": "summary",
+    "view": {
+      "kind": "summary"
+    },
+    "parent_evidence_id": "ev_0d9b63ffdd8fbd03edf370210b198ce6329a313af8b732a0d7efe35cba515118",
+    "parent_operation": "inspect_android_method",
+    "parent_digest": "0d9b63ffdd8fbd03edf370210b198ce6329a313af8b732a0d7efe35cba515118",
+    "view_digest": "d61b4a4e86434d9a56ef9348f7f8af5b1aebc42788be9f22abdb2ef0ac2388f7",
+    "artifact": {
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-02-duration-phone139\\official-current-classes19-analysis-only.apk",
+      "sha256": "e8850c1cbc0e7f3551357d5226f151c199963944370c41088b77272cbbaa2f23"
+    },
+    "coverage": {
+      "status": "complete-within-view",
+      "examined": 1,
+      "total": 1,
+      "next_offset": null,
+      "exhausted": true
+    },
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ],
+    "unknowns": [
+      "Static class and method analysis does not establish runtime behavior or APK authenticity."
+    ],
+    "summary": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 3072
+      },
+      "class_name": "com.netease.cloudmusic.music.biz.chat.meta.RawMessage",
+      "method": {
+        "name": "parseFromJson",
+        "reported_signature": "parseFromJson(com.netease.cloudmusic.im.h, org.json.JSONObject): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/netease/cloudmusic/im/h;Lorg/json/JSONObject;)V"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    public void parseFromJson(@NotNull h raw, @NotNull JSONObject content) {\r\n        Intrinsics.checkNotNullParameter(raw, \"raw\");\r\n        Intrinsics.checkNotNullParameter(content, \"content\");\r\n        r0.d(content.toString());\r\n        RawMessage fromJson$default = Companion.parseFromJson$default(INSTANCE, content, false, 2, null);\r\n        this.channelId = fromJson$default.channelId;\r\n        this.msgBody = fromJson$default.msgBody;\r\n        this.refMsgBody = fromJson$default.refMsgBody;\r\n        this.symphonyId = fromJson$default.symphonyId;\r\n        this.targetUserList = fromJson$default.targetUserList;\r\n        this.filterVersions = fromJson$default.filterVersions;\r\n    }",
+        "reported_total_bytes": null
+      }
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-02-duration-phone139\\official-current-classes19-analysis-only.apk"
+    }
+  ],
+  "evidence_links": [
+    "ev_0d9b63ffdd8fbd03edf370210b198ce6329a313af8b732a0d7efe35cba515118"
+  ]
+}

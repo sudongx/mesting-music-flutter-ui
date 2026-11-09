@@ -1,0 +1,96 @@
+{
+  "reportedInstalledVersion": "1.0.21 / code42 original-signed formal APK",
+  "installedVersionEvidence": "user report; not device-verified this turn",
+  "phoneAccessThisTurn": false,
+  "phoneAuthorization": "[REDACTED]",
+  "repro": [
+    "relaunch app",
+    "brief library scrolling",
+    "open My",
+    "normal or fast scrolling",
+    "content stops responding then app exits"
+  ],
+  "videoObserved": {
+    "durationSeconds": 24,
+    "resolution": [
+      540,
+      1200
+    ],
+    "recordingFps": 30,
+    "appFpsMeasured": false,
+    "libraryScrollingApproxSeconds": [
+      6,
+      11
+    ],
+    "myPageApproxSeconds": [
+      12,
+      23
+    ],
+    "contentStopsBeforeExitApproxSeconds": [
+      21,
+      23
+    ],
+    "desktopVisibleAroundSeconds": 23
+  },
+  "codeConfirmed": {
+    "myPage": "lib/features/music_platform/presentation/beta_personal_profile.dart",
+    "independentPremiumGlassButtonsWhenSignedIn": 6,
+    "headerAndQuickActionsShareOneSliverAdapter": true,
+    "playlistsUseLazySliverListAlready": true,
+    "unreadBadgeHasSeparateConsumerAlready": true,
+    "priorNativeBenchmarkUsedGuestAccount": true,
+    "priorNativeBenchmarkHadNoDedicatedSignedInMyScrollScene": true,
+    "likedCoverDisplayLogicalSize": 64,
+    "likedCoverWidgetOmitsWidthHeightAndDecodeSize": true,
+    "neteaseLikedCoverDefaultThumbnailRequestPixels": 768,
+    "topLevelProfileWatchers": [
+      "platformAccountProvider",
+      "platformProfileProvider",
+      "playlistsProvider",
+      "favoriteTracksProvider",
+      "libraryRepositoryProvider",
+      "neteaseAccountOverviewProvider"
+    ]
+  },
+  "hypothesesNotYetProven": [
+    "cost of independent scrolling glass surfaces",
+    "off-viewport retained glass rendering",
+    "resource disposal or GPU pressure on repeated entry"
+  ],
+  "newCrashReasonKnown": true,
+  "sameAdrenoCrashAsPreviousProven": false,
+  "productCodeChanged": false,
+  "frozenArtifactsChanged": false,
+  "nextEvidenceNeeded": "native crashing thread and backtrace, exportable through ApplicationExitInfo traces on supported Android when retained; proposed candidate implementation requires user plan confirmation",
+  "limitations": [
+    "Recorded video is 30 fps, not a measurement of app frame rate",
+    "No application source edits or new release build authorized yet",
+    "System exit summaries now confirm native crashes; no native stack has been supplied",
+    "Zero memory values are unavailable measurements, not proof of zero memory or OOM",
+    "Android exit history does not identify each record version; 1.0.21 context is user-reported"
+  ],
+  "crashReason": "native_crash",
+  "crashStatus": 11,
+  "rawUserExitHistoryFile": "user-exit-history-2026-10-30.json",
+  "exactVersionForEachSystemExitKnown": false,
+  "exitSummary": [
+    {
+      "localTime": "2026-10-30T20:04:57.696000+08:00",
+      "status": 11,
+      "pssMiB": null,
+      "rssMiB": null
+    },
+    {
+      "localTime": "2026-10-30T20:02:57.147000+08:00",
+      "status": 11,
+      "pssMiB": 571.44,
+      "rssMiB": 887.31
+    },
+    {
+      "localTime": "2026-10-30T19:58:05.735000+08:00",
+      "status": 11,
+      "pssMiB": null,
+      "rssMiB": null
+    }
+  ]
+}

@@ -1,0 +1,7127 @@
+.class public abstract Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;
+.super Ljava/lang/Object;
+.source "ProGuard"
+
+# interfaces
+.implements Lcom/netease/cloudmusic/network/cookie/store/ICookieStore;
+
+
+# static fields
+.field protected static final APP_HOST:Ljava/lang/String; = "apphost"
+
+.field protected static final APP_KEY:Ljava/lang/String; = "appkey"
+
+.field private static final COOKIE_DOMAIN:Ljava/lang/String; = "domain"
+
+.field private static final COOKIE_EXPIRE:Ljava/lang/String; = "expire"
+
+.field private static final COOKIE_NAME:Ljava/lang/String; = "name"
+
+.field private static final COOKIE_PATH:Ljava/lang/String; = "path"
+
+.field private static final COOKIE_SECURE:Ljava/lang/String; = "secure"
+
+.field private static final COOKIE_VALUE:Ljava/lang/String; = "value"
+
+.field private static final DEFAULT_OS:Ljava/lang/String; = "android"
+
+.field protected static final DEVICE_ID:Ljava/lang/String; = "deviceId"
+
+.field protected static final PREF_KEY_MODIFY_TIME:Ljava/lang/String; = "lastModifyTime"
+
+.field protected static final TAG:Ljava/lang/String; = "AbsCookieStore"
+
+.field private static newDeviceId:Ljava/lang/String; = ""
+
+.field private static oldDeviceId:Ljava/lang/String; = ""
+
+
+# instance fields
+.field private logReportRate:D
+
+.field protected mCookies:Ljava/util/concurrent/ConcurrentHashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/ConcurrentHashMap<",
+            "Ljava/lang/String;",
+            "Lokhttp3/Cookie;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field protected final mCookiesPref:Landroid/content/SharedPreferences;
+
+.field protected volatile mPreferenceLastModifyTime:J
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 0
+
+    .line 1
+    return-void
+.end method
+
+.method protected constructor <init>()V
+    .registers 4
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->getCookieFileName()Ljava/lang/String;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    invoke-virtual {p0, v0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->getCookiePref(Ljava/lang/String;)Landroid/content/SharedPreferences;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    iput-object v0, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mCookiesPref:Landroid/content/SharedPreferences;
+
+    .line 13
+    .line 14
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->initMemoryCookieAndSyncLoadFromFile()V
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->initDevicesCookie()V
+
+    .line 18
+    .line 19
+    .line 20
+    const-class v0, Lcom/netease/cloudmusic/core/icustomconfig/ICustomConfig;
+
+    .line 21
+    .line 22
+    invoke-static {v0}, Lcom/netease/cloudmusic/common/ServiceFacade;->get(Ljava/lang/Class;)Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v0
+
+    .line 26
+    check-cast v0, Lcom/netease/cloudmusic/core/icustomconfig/ICustomConfig;
+
+    .line 27
+    .line 28
+    const-wide/high16 v1, 0x3ff0000000000000L    # 1.0
+
+    .line 29
+    .line 30
+    if-eqz v0, :cond_36
+
+    .line 31
+    .line 32
+    invoke-static {v1, v2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v1
+
+    .line 36
+    const-string v2, "login#cookieExpireLogRate"
+
+    .line 37
+    .line 38
+    filled-new-array {v2}, [Ljava/lang/String;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v2
+
+    .line 42
+    invoke-interface {v0, v1, v2}, Lcom/netease/cloudmusic/core/icustomconfig/ICustomConfig;->getMainAppCustomConfig(Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v0
+
+    .line 46
+    check-cast v0, Ljava/lang/Double;
+
+    .line 47
+    .line 48
+    invoke-virtual {v0}, Ljava/lang/Double;->doubleValue()D
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-wide v0
+
+    .line 52
+    iput-wide v0, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->logReportRate:D
+
+    .line 53
+    .line 54
+    goto :goto_38
+
+    .line 55
+    :cond_36
+    iput-wide v1, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->logReportRate:D
+
+    .line 56
+    .line 57
+    :goto_38
+    iget-wide v0, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mPreferenceLastModifyTime:J
+
+    .line 58
+    .line 59
+    invoke-static {p0, v0, v1}, Lb62/a;->h(Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;J)V
+
+    .line 60
+    .line 61
+    .line 62
+    return-void
+.end method
+
+.method public static cleanDeviceIdInfo()V
+    .registers 1
+
+    .line 1
+    const-string v0, ""
+
+    .line 2
+    .line 3
+    sput-object v0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->newDeviceId:Ljava/lang/String;
+
+    .line 4
+    .line 5
+    sput-object v0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->oldDeviceId:Ljava/lang/String;
+
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method private enableCookieStoreGetAllCookiesLockOpt()Z
+    .registers 5
+
+    .line 1
+    invoke-static {}, Lcom/netease/cloudmusic/utils/e0;->g()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const/4 v1, 0x1
+
+    .line 6
+    if-eqz v0, :cond_e
+
+    .line 7
+    .line 8
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->isCookieStoreOptLockDebugOpen()Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v0
+
+    .line 12
+    if-eqz v0, :cond_e
+
+    .line 13
+    .line 14
+    return v1
+
+    .line 15
+    :cond_e
+    const-class v0, Lcom/netease/cloudmusic/abtest2/IABTestManager;
+
+    .line 16
+    .line 17
+    invoke-static {v0}, Lcom/netease/cloudmusic/common/ServiceFacade;->get(Ljava/lang/Class;)Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v0
+
+    .line 21
+    check-cast v0, Lcom/netease/cloudmusic/abtest2/IABTestManager;
+
+    .line 22
+    .line 23
+    const/4 v2, 0x0
+
+    .line 24
+    if-eqz v0, :cond_22
+
+    .line 25
+    .line 26
+    const-string v3, "enableCookieStoreGetAllCookiesLockOpt"
+
+    .line 27
+    .line 28
+    invoke-interface {v0, v3, v2}, Lcom/netease/cloudmusic/abtest2/IABTestManager;->checkBelongGroupT(Ljava/lang/String;Z)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v0
+
+    .line 32
+    if-eqz v0, :cond_22
+
+    .line 33
+    .line 34
+    goto :goto_23
+
+    .line 35
+    :cond_22
+    move v1, v2
+
+    .line 36
+    :goto_23
+    return v1
+.end method
+
+.method private getAllMusicUWithDomain()Ljava/lang/String;
+    .registers 6
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->getAllCookies()Ljava/util/List;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v1
+
+    .line 10
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v1
+
+    .line 14
+    :cond_d
+    :goto_d
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v2
+
+    .line 18
+    if-eqz v2, :cond_3e
+
+    .line 19
+    .line 20
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v2
+
+    .line 24
+    check-cast v2, Lokhttp3/Cookie;
+
+    .line 25
+    .line 26
+    invoke-virtual {v2}, Lokhttp3/Cookie;->name()Ljava/lang/String;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v3
+
+    .line 30
+    const-string v4, "MUSIC_U"
+
+    .line 31
+    .line 32
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v3
+
+    .line 36
+    if-eqz v3, :cond_d
+
+    .line 37
+    .line 38
+    invoke-virtual {v2}, Lokhttp3/Cookie;->value()Ljava/lang/String;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v3
+
+    .line 42
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 43
+    .line 44
+    .line 45
+    const-string v3, "@"
+
+    .line 46
+    .line 47
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 48
+    .line 49
+    .line 50
+    invoke-virtual {v2}, Lokhttp3/Cookie;->domain()Ljava/lang/String;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v2
+
+    .line 54
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 55
+    .line 56
+    .line 57
+    const-string v2, "##"
+
+    .line 58
+    .line 59
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 60
+    .line 61
+    .line 62
+    goto :goto_d
+
+    .line 63
+    :cond_3e
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object v0
+
+    .line 67
+    return-object v0
+.end method
+
+.method public static getDeviceIdInfo()[Ljava/lang/String;
+    .registers 3
+
+    .line 1
+    const/4 v0, 0x2
+
+    .line 2
+    new-array v0, v0, [Ljava/lang/String;
+
+    .line 3
+    .line 4
+    const/4 v1, 0x0
+
+    .line 5
+    sget-object v2, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->newDeviceId:Ljava/lang/String;
+
+    .line 6
+    .line 7
+    aput-object v2, v0, v1
+
+    .line 8
+    .line 9
+    const/4 v1, 0x1
+
+    .line 10
+    sget-object v2, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->oldDeviceId:Ljava/lang/String;
+
+    .line 11
+    .line 12
+    aput-object v2, v0, v1
+
+    .line 13
+    .line 14
+    return-object v0
+.end method
+
+.method protected static validateAndEncode(Ljava/lang/String;)Ljava/lang/String;
+    .registers 5
+
+    .line 1
+    if-eqz p0, :cond_46
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v0
+
+    .line 11
+    if-nez v0, :cond_d
+
+    .line 12
+    .line 13
+    goto :goto_46
+
+    .line 14
+    :cond_d
+    new-instance v0, Ljava/lang/StringBuffer;
+
+    .line 15
+    .line 16
+    invoke-direct {v0}, Ljava/lang/StringBuffer;-><init>()V
+
+    .line 17
+    .line 18
+    .line 19
+    const/4 v1, 0x0
+
+    .line 20
+    :goto_13
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v2
+
+    .line 24
+    if-ge v1, v2, :cond_32
+
+    .line 25
+    .line 26
+    invoke-virtual {p0, v1}, Ljava/lang/String;->codePointAt(I)I
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v2
+
+    .line 30
+    if-ltz v2, :cond_28
+
+    .line 31
+    .line 32
+    invoke-virtual {p0, v1}, Ljava/lang/String;->codePointAt(I)I
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v2
+
+    .line 36
+    const/16 v3, 0x20
+
+    .line 37
+    .line 38
+    if-gt v2, v3, :cond_28
+
+    .line 39
+    .line 40
+    goto :goto_2f
+
+    .line 41
+    :cond_28
+    invoke-virtual {p0, v1}, Ljava/lang/String;->charAt(I)C
+
+    .line 42
+    .line 43
+    .line 44
+    move-result v2
+
+    .line 45
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
+
+    .line 46
+    .line 47
+    .line 48
+    :goto_2f
+    add-int/lit8 v1, v1, 0x1
+
+    .line 49
+    .line 50
+    goto :goto_13
+
+    .line 51
+    :cond_32
+    :try_start_32
+    invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object p0
+
+    .line 55
+    const-string v1, "utf-8"
+
+    .line 56
+    .line 57
+    invoke-static {p0, v1}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object p0
+    :try_end_3c
+    .catch Ljava/io/UnsupportedEncodingException; {:try_start_32 .. :try_end_3c} :catch_3d
+
+    .line 61
+    return-object p0
+
+    .line 62
+    :catch_3d
+    move-exception p0
+
+    .line 63
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 64
+    .line 65
+    .line 66
+    invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-object p0
+
+    .line 70
+    return-object p0
+
+    .line 71
+    :cond_46
+    :goto_46
+    const-string p0, "unknown"
+
+    .line 72
+    .line 73
+    return-object p0
+.end method
+
+
+# virtual methods
+.method protected appHost()Ljava/lang/String;
+    .registers 2
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return-object v0
+.end method
+
+.method protected appKey()Ljava/lang/String;
+    .registers 2
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return-object v0
+.end method
+
+.method public buildCookie(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Cookie;
+    .registers 5
+
+    .line 1
+    new-instance v0, Lokhttp3/Cookie$Builder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->getCookieDomain()Ljava/lang/String;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v1
+
+    .line 10
+    invoke-virtual {v0, v1}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    invoke-virtual {v0, p1}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p1
+
+    .line 18
+    invoke-virtual {p1, p2}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p1
+
+    .line 22
+    const-string p2, "/"
+
+    .line 23
+    .line 24
+    invoke-virtual {p1, p2}, Lokhttp3/Cookie$Builder;->path(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p1
+
+    .line 28
+    const-wide v0, 0x7fffffffffffffffL
+
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    invoke-virtual {p1, v0, v1}, Lokhttp3/Cookie$Builder;->expiresAt(J)Lokhttp3/Cookie$Builder;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object p1
+
+    .line 37
+    invoke-virtual {p1}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p1
+
+    .line 41
+    return-object p1
+.end method
+
+.method public buildMockAnonimousNameCookie()V
+    .registers 3
+
+    .line 1
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-wide v0
+
+    .line 5
+    invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    const-string v1, "MUSIC_A"
+
+    .line 10
+    .line 11
+    invoke-virtual {p0, v1, v0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->buildCookie(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Cookie;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    invoke-virtual {p0, v0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->saveCookie(Lokhttp3/Cookie;)V
+
+    .line 16
+    .line 17
+    .line 18
+    return-void
+.end method
+
+.method protected checkCookieValid(Lokhttp3/Cookie;)Lokhttp3/Cookie;
+    .registers 9
+    .param p1    # Lokhttp3/Cookie;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-virtual {p1}, Lokhttp3/Cookie;->value()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-static {v0}, Lp62/a;->b(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
+
+    .line 9
+    invoke-static {v1, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v2
+
+    .line 13
+    if-nez v2, :cond_80
+
+    .line 14
+    .line 15
+    const-class v2, Lcom/netease/cloudmusic/monitor/Monitor;
+
+    .line 16
+    .line 17
+    invoke-static {v2}, Lcom/netease/cloudmusic/common/ServiceFacade;->get(Ljava/lang/Class;)Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v2
+
+    .line 21
+    check-cast v2, Lcom/netease/cloudmusic/monitor/Monitor;
+
+    .line 22
+    .line 23
+    if-eqz v2, :cond_30
+
+    .line 24
+    .line 25
+    const-wide/high16 v3, 0x3ff0000000000000L    # 1.0
+
+    .line 26
+    .line 27
+    invoke-static {v3, v4}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v3
+
+    .line 31
+    const/4 v4, 0x2
+
+    .line 32
+    new-array v4, v4, [Ljava/lang/Object;
+
+    .line 33
+    .line 34
+    const/4 v5, 0x0
+
+    .line 35
+    const-string v6, "illegalCookie"
+
+    .line 36
+    .line 37
+    aput-object v6, v4, v5
+
+    .line 38
+    .line 39
+    const/4 v5, 0x1
+
+    .line 40
+    aput-object v0, v4, v5
+
+    .line 41
+    .line 42
+    const-string v0, "netCookieError"
+
+    .line 43
+    .line 44
+    const-string v5, "error"
+
+    .line 45
+    .line 46
+    invoke-interface {v2, v0, v3, v5, v4}, Lcom/netease/cloudmusic/monitor/Monitor;->logActiveReport(Ljava/lang/String;Ljava/lang/Double;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 47
+    .line 48
+    .line 49
+    :cond_30
+    new-instance v0, Lokhttp3/Cookie$Builder;
+
+    .line 50
+    .line 51
+    invoke-direct {v0}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 52
+    .line 53
+    .line 54
+    invoke-virtual {p1}, Lokhttp3/Cookie;->name()Ljava/lang/String;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object v2
+
+    .line 58
+    invoke-virtual {v0, v2}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-object v2
+
+    .line 62
+    invoke-virtual {v2, v1}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object v1
+
+    .line 66
+    invoke-virtual {p1}, Lokhttp3/Cookie;->path()Ljava/lang/String;
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-object v2
+
+    .line 70
+    invoke-virtual {v1, v2}, Lokhttp3/Cookie$Builder;->path(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 71
+    .line 72
+    .line 73
+    invoke-virtual {p1}, Lokhttp3/Cookie;->hostOnly()Z
+
+    .line 74
+    .line 75
+    .line 76
+    move-result v1
+
+    .line 77
+    if-eqz v1, :cond_56
+
+    .line 78
+    .line 79
+    invoke-virtual {p1}, Lokhttp3/Cookie;->domain()Ljava/lang/String;
+
+    .line 80
+    .line 81
+    .line 82
+    move-result-object v1
+
+    .line 83
+    invoke-virtual {v0, v1}, Lokhttp3/Cookie$Builder;->hostOnlyDomain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 84
+    .line 85
+    .line 86
+    goto :goto_5d
+
+    .line 87
+    :cond_56
+    invoke-virtual {p1}, Lokhttp3/Cookie;->domain()Ljava/lang/String;
+
+    .line 88
+    .line 89
+    .line 90
+    move-result-object v1
+
+    .line 91
+    invoke-virtual {v0, v1}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 92
+    .line 93
+    .line 94
+    :goto_5d
+    invoke-virtual {p1}, Lokhttp3/Cookie;->secure()Z
+
+    .line 95
+    .line 96
+    .line 97
+    move-result v1
+
+    .line 98
+    if-eqz v1, :cond_66
+
+    .line 99
+    .line 100
+    invoke-virtual {v0}, Lokhttp3/Cookie$Builder;->secure()Lokhttp3/Cookie$Builder;
+
+    .line 101
+    .line 102
+    .line 103
+    :cond_66
+    invoke-virtual {p1}, Lokhttp3/Cookie;->httpOnly()Z
+
+    .line 104
+    .line 105
+    .line 106
+    move-result v1
+
+    .line 107
+    if-eqz v1, :cond_6f
+
+    .line 108
+    .line 109
+    invoke-virtual {v0}, Lokhttp3/Cookie$Builder;->httpOnly()Lokhttp3/Cookie$Builder;
+
+    .line 110
+    .line 111
+    .line 112
+    :cond_6f
+    invoke-virtual {p1}, Lokhttp3/Cookie;->persistent()Z
+
+    .line 113
+    .line 114
+    .line 115
+    move-result v1
+
+    .line 116
+    if-eqz v1, :cond_7c
+
+    .line 117
+    .line 118
+    invoke-virtual {p1}, Lokhttp3/Cookie;->expiresAt()J
+
+    .line 119
+    .line 120
+    .line 121
+    move-result-wide v1
+
+    .line 122
+    invoke-virtual {v0, v1, v2}, Lokhttp3/Cookie$Builder;->expiresAt(J)Lokhttp3/Cookie$Builder;
+
+    .line 123
+    .line 124
+    .line 125
+    :cond_7c
+    invoke-virtual {v0}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 126
+    .line 127
+    .line 128
+    move-result-object p1
+
+    .line 129
+    :cond_80
+    return-object p1
+.end method
+
+.method public declared-synchronized clearAndInitCookie()V
+    .registers 2
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_1
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->removeAllCookie()V
+
+    .line 3
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->initDevicesCookie()V
+    :try_end_7
+    .catchall {:try_start_1 .. :try_end_7} :catchall_9
+
+    .line 6
+    .line 7
+    .line 8
+    monitor-exit p0
+
+    .line 9
+    return-void
+
+    .line 10
+    :catchall_9
+    move-exception v0
+
+    .line 11
+    monitor-exit p0
+
+    .line 12
+    throw v0
+.end method
+
+.method public cookieExists(Ljava/lang/String;)Z
+    .registers 4
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->getAllCookies()Ljava/util/List;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    :cond_b
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v1
+
+    .line 16
+    if-eqz v1, :cond_23
+
+    .line 17
+    .line 18
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v1
+
+    .line 22
+    check-cast v1, Lokhttp3/Cookie;
+
+    .line 23
+    .line 24
+    invoke-virtual {v1}, Lokhttp3/Cookie;->name()Ljava/lang/String;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v1
+
+    .line 28
+    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v1
+
+    .line 32
+    if-eqz v1, :cond_b
+
+    .line 33
+    .line 34
+    const/4 p1, 0x1
+
+    .line 35
+    return p1
+
+    .line 36
+    :cond_23
+    const/4 p1, 0x0
+
+    .line 37
+    return p1
+.end method
+
+.method public copyCookieWithDomain(Lokhttp3/Cookie;Ljava/lang/String;)Lokhttp3/Cookie;
+    .registers 6
+
+    .line 1
+    new-instance v0, Lokhttp3/Cookie$Builder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p1}, Lokhttp3/Cookie;->name()Ljava/lang/String;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v1
+
+    .line 10
+    invoke-virtual {v0, v1}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    invoke-virtual {p1}, Lokhttp3/Cookie;->value()Ljava/lang/String;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v1
+
+    .line 18
+    invoke-virtual {v0, v1}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v0
+
+    .line 22
+    invoke-virtual {p1}, Lokhttp3/Cookie;->expiresAt()J
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-wide v1
+
+    .line 26
+    invoke-virtual {v0, v1, v2}, Lokhttp3/Cookie$Builder;->expiresAt(J)Lokhttp3/Cookie$Builder;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v0
+
+    .line 30
+    invoke-virtual {p1}, Lokhttp3/Cookie;->path()Ljava/lang/String;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v1
+
+    .line 34
+    invoke-virtual {v0, v1}, Lokhttp3/Cookie$Builder;->path(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v0
+
+    .line 38
+    invoke-virtual {p1}, Lokhttp3/Cookie;->hostOnly()Z
+
+    .line 39
+    .line 40
+    .line 41
+    move-result v1
+
+    .line 42
+    if-eqz v1, :cond_2f
+
+    .line 43
+    .line 44
+    invoke-virtual {v0, p2}, Lokhttp3/Cookie$Builder;->hostOnlyDomain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 45
+    .line 46
+    .line 47
+    goto :goto_32
+
+    .line 48
+    :cond_2f
+    invoke-virtual {v0, p2}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 49
+    .line 50
+    .line 51
+    :goto_32
+    invoke-virtual {p1}, Lokhttp3/Cookie;->secure()Z
+
+    .line 52
+    .line 53
+    .line 54
+    move-result p2
+
+    .line 55
+    if-eqz p2, :cond_3b
+
+    .line 56
+    .line 57
+    invoke-virtual {v0}, Lokhttp3/Cookie$Builder;->secure()Lokhttp3/Cookie$Builder;
+
+    .line 58
+    .line 59
+    .line 60
+    :cond_3b
+    invoke-virtual {p1}, Lokhttp3/Cookie;->httpOnly()Z
+
+    .line 61
+    .line 62
+    .line 63
+    move-result p1
+
+    .line 64
+    if-eqz p1, :cond_44
+
+    .line 65
+    .line 66
+    invoke-virtual {v0}, Lokhttp3/Cookie$Builder;->httpOnly()Lokhttp3/Cookie$Builder;
+
+    .line 67
+    .line 68
+    .line 69
+    :cond_44
+    invoke-virtual {v0}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 70
+    .line 71
+    .line 72
+    move-result-object p1
+
+    .line 73
+    return-object p1
+.end method
+
+.method protected decodeCookie(Ljava/lang/String;)Lokhttp3/Cookie;
+    .registers 5
+
+    .line 1
+    invoke-static {p1}, Lcom/alibaba/fastjson/JSON;->parseObject(Ljava/lang/String;)Lcom/alibaba/fastjson/JSONObject;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    if-nez p1, :cond_8
+
+    .line 6
+    .line 7
+    const/4 p1, 0x0
+
+    .line 8
+    return-object p1
+
+    .line 9
+    :cond_8
+    new-instance v0, Lokhttp3/Cookie$Builder;
+
+    .line 10
+    .line 11
+    invoke-direct {v0}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 12
+    .line 13
+    .line 14
+    const-string v1, "name"
+
+    .line 15
+    .line 16
+    invoke-virtual {p1, v1}, Lcom/alibaba/fastjson/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v1
+
+    .line 20
+    invoke-virtual {v0, v1}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v0
+
+    .line 24
+    const-string v1, "value"
+
+    .line 25
+    .line 26
+    invoke-virtual {p1, v1}, Lcom/alibaba/fastjson/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v1
+
+    .line 30
+    invoke-virtual {v0, v1}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v0
+
+    .line 34
+    const-string v1, "expire"
+
+    .line 35
+    .line 36
+    invoke-virtual {p1, v1}, Lcom/alibaba/fastjson/JSONObject;->getLong(Ljava/lang/String;)Ljava/lang/Long;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v1
+
+    .line 40
+    invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-wide v1
+
+    .line 44
+    invoke-virtual {v0, v1, v2}, Lokhttp3/Cookie$Builder;->expiresAt(J)Lokhttp3/Cookie$Builder;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v0
+
+    .line 48
+    const-string v1, "domain"
+
+    .line 49
+    .line 50
+    invoke-virtual {p1, v1}, Lcom/alibaba/fastjson/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v1
+
+    .line 54
+    invoke-virtual {v0, v1}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object v0
+
+    .line 58
+    const-string v1, "path"
+
+    .line 59
+    .line 60
+    invoke-virtual {p1, v1}, Lcom/alibaba/fastjson/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v1
+
+    .line 64
+    invoke-virtual {v0, v1}, Lokhttp3/Cookie$Builder;->path(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-object v0
+
+    .line 68
+    const-string v1, "secure"
+
+    .line 69
+    .line 70
+    invoke-virtual {p1, v1}, Lcom/alibaba/fastjson/JSONObject;->getBoolean(Ljava/lang/String;)Ljava/lang/Boolean;
+
+    .line 71
+    .line 72
+    .line 73
+    move-result-object p1
+
+    .line 74
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 75
+    .line 76
+    .line 77
+    move-result p1
+
+    .line 78
+    if-eqz p1, :cond_52
+
+    .line 79
+    .line 80
+    invoke-virtual {v0}, Lokhttp3/Cookie$Builder;->secure()Lokhttp3/Cookie$Builder;
+
+    .line 81
+    .line 82
+    .line 83
+    :cond_52
+    invoke-virtual {v0}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 84
+    .line 85
+    .line 86
+    move-result-object p1
+
+    .line 87
+    return-object p1
+.end method
+
+.method protected encodeCookie(Lokhttp3/Cookie;)Ljava/lang/String;
+    .registers 5
+
+    .line 1
+    new-instance v0, Lcom/alibaba/fastjson/JSONObject;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lcom/alibaba/fastjson/JSONObject;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p1}, Lokhttp3/Cookie;->name()Ljava/lang/String;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v1
+
+    .line 10
+    const-string v2, "name"
+
+    .line 11
+    .line 12
+    invoke-virtual {v0, v2, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    const-string v1, "value"
+
+    .line 16
+    .line 17
+    invoke-virtual {p1}, Lokhttp3/Cookie;->value()Ljava/lang/String;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v2
+
+    .line 21
+    invoke-virtual {v0, v1, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-virtual {p1}, Lokhttp3/Cookie;->expiresAt()J
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-wide v1
+
+    .line 28
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v1
+
+    .line 32
+    const-string v2, "expire"
+
+    .line 33
+    .line 34
+    invoke-virtual {v0, v2, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 35
+    .line 36
+    .line 37
+    const-string v1, "domain"
+
+    .line 38
+    .line 39
+    invoke-virtual {p1}, Lokhttp3/Cookie;->domain()Ljava/lang/String;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object v2
+
+    .line 43
+    invoke-virtual {v0, v1, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 44
+    .line 45
+    .line 46
+    const-string v1, "path"
+
+    .line 47
+    .line 48
+    invoke-virtual {p1}, Lokhttp3/Cookie;->path()Ljava/lang/String;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v2
+
+    .line 52
+    invoke-virtual {v0, v1, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-virtual {p1}, Lokhttp3/Cookie;->secure()Z
+
+    .line 56
+    .line 57
+    .line 58
+    move-result p1
+
+    .line 59
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object p1
+
+    .line 63
+    const-string v1, "secure"
+
+    .line 64
+    .line 65
+    invoke-virtual {v0, v1, p1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 66
+    .line 67
+    .line 68
+    invoke-virtual {v0}, Lcom/alibaba/fastjson/JSON;->toString()Ljava/lang/String;
+
+    .line 69
+    .line 70
+    .line 71
+    move-result-object p1
+
+    .line 72
+    return-object p1
+.end method
+
+.method public expireCookie(Ljava/lang/String;)V
+    .registers 15
+
+    .line 1
+    invoke-static {}, Ls52/u;->f()Ls52/u;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Ls52/u;->e()Lj62/a;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    if-nez v0, :cond_b
+
+    .line 10
+    .line 11
+    return-void
+
+    .line 12
+    :cond_b
+    invoke-static {}, Lcom/netease/cloudmusic/utils/e0;->g()Z
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v1
+
+    .line 16
+    const-wide/32 v2, 0x12ee6ad
+
+    .line 17
+    .line 18
+    .line 19
+    const-string v4, ""
+
+    .line 20
+    .line 21
+    const-string v5, "/"
+
+    .line 22
+    .line 23
+    if-nez v1, :cond_126
+
+    .line 24
+    .line 25
+    invoke-virtual {v0}, Lj62/a;->m()Ljava/lang/String;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v1
+
+    .line 29
+    const-string v6, "music.163.com"
+
+    .line 30
+    .line 31
+    invoke-virtual {v1, v6}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v1
+
+    .line 35
+    if-nez v1, :cond_26
+
+    .line 36
+    .line 37
+    goto/16 :goto_126
+
+    .line 38
+    .line 39
+    :cond_26
+    new-instance v1, Lokhttp3/Cookie$Builder;
+
+    .line 40
+    .line 41
+    invoke-direct {v1}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 42
+    .line 43
+    .line 44
+    invoke-virtual {v0}, Lj62/a;->l()Ljava/lang/String;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v6
+
+    .line 48
+    invoke-virtual {v1, v6}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v1
+
+    .line 52
+    invoke-virtual {v1, p1}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object v1
+
+    .line 56
+    invoke-virtual {v1, v5}, Lokhttp3/Cookie$Builder;->path(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-object v1
+
+    .line 60
+    invoke-virtual {v1, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v1
+
+    .line 64
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-wide v6
+
+    .line 68
+    sub-long/2addr v6, v2
+
+    .line 69
+    invoke-virtual {v1, v6, v7}, Lokhttp3/Cookie$Builder;->expiresAt(J)Lokhttp3/Cookie$Builder;
+
+    .line 70
+    .line 71
+    .line 72
+    move-result-object v1
+
+    .line 73
+    invoke-virtual {v1}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 74
+    .line 75
+    .line 76
+    move-result-object v1
+
+    .line 77
+    new-instance v6, Lokhttp3/Cookie$Builder;
+
+    .line 78
+    .line 79
+    invoke-direct {v6}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 80
+    .line 81
+    .line 82
+    invoke-virtual {v0}, Lj62/a;->C()Ljava/lang/String;
+
+    .line 83
+    .line 84
+    .line 85
+    move-result-object v7
+
+    .line 86
+    invoke-virtual {v6, v7}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 87
+    .line 88
+    .line 89
+    move-result-object v6
+
+    .line 90
+    invoke-virtual {v6, p1}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 91
+    .line 92
+    .line 93
+    move-result-object v6
+
+    .line 94
+    invoke-virtual {v6, v5}, Lokhttp3/Cookie$Builder;->path(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 95
+    .line 96
+    .line 97
+    move-result-object v6
+
+    .line 98
+    invoke-virtual {v6, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 99
+    .line 100
+    .line 101
+    move-result-object v6
+
+    .line 102
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 103
+    .line 104
+    .line 105
+    move-result-wide v7
+
+    .line 106
+    sub-long/2addr v7, v2
+
+    .line 107
+    invoke-virtual {v6, v7, v8}, Lokhttp3/Cookie$Builder;->expiresAt(J)Lokhttp3/Cookie$Builder;
+
+    .line 108
+    .line 109
+    .line 110
+    move-result-object v6
+
+    .line 111
+    invoke-virtual {v6}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 112
+    .line 113
+    .line 114
+    move-result-object v6
+
+    .line 115
+    new-instance v7, Lokhttp3/Cookie$Builder;
+
+    .line 116
+    .line 117
+    invoke-direct {v7}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 118
+    .line 119
+    .line 120
+    invoke-virtual {v0}, Lj62/a;->A()Ljava/lang/String;
+
+    .line 121
+    .line 122
+    .line 123
+    move-result-object v8
+
+    .line 124
+    invoke-virtual {v7, v8}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 125
+    .line 126
+    .line 127
+    move-result-object v7
+
+    .line 128
+    invoke-virtual {v7, p1}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 129
+    .line 130
+    .line 131
+    move-result-object v7
+
+    .line 132
+    invoke-virtual {v7, v5}, Lokhttp3/Cookie$Builder;->path(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 133
+    .line 134
+    .line 135
+    move-result-object v7
+
+    .line 136
+    invoke-virtual {v7, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 137
+    .line 138
+    .line 139
+    move-result-object v7
+
+    .line 140
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 141
+    .line 142
+    .line 143
+    move-result-wide v8
+
+    .line 144
+    sub-long/2addr v8, v2
+
+    .line 145
+    invoke-virtual {v7, v8, v9}, Lokhttp3/Cookie$Builder;->expiresAt(J)Lokhttp3/Cookie$Builder;
+
+    .line 146
+    .line 147
+    .line 148
+    move-result-object v7
+
+    .line 149
+    invoke-virtual {v7}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 150
+    .line 151
+    .line 152
+    move-result-object v7
+
+    .line 153
+    new-instance v8, Lokhttp3/Cookie$Builder;
+
+    .line 154
+    .line 155
+    invoke-direct {v8}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 156
+    .line 157
+    .line 158
+    invoke-virtual {v0}, Lj62/a;->d()Ljava/lang/String;
+
+    .line 159
+    .line 160
+    .line 161
+    move-result-object v9
+
+    .line 162
+    invoke-virtual {v8, v9}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 163
+    .line 164
+    .line 165
+    move-result-object v8
+
+    .line 166
+    invoke-virtual {v8, p1}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 167
+    .line 168
+    .line 169
+    move-result-object v8
+
+    .line 170
+    invoke-virtual {v8, v5}, Lokhttp3/Cookie$Builder;->path(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 171
+    .line 172
+    .line 173
+    move-result-object v8
+
+    .line 174
+    invoke-virtual {v8, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 175
+    .line 176
+    .line 177
+    move-result-object v8
+
+    .line 178
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 179
+    .line 180
+    .line 181
+    move-result-wide v9
+
+    .line 182
+    sub-long/2addr v9, v2
+
+    .line 183
+    invoke-virtual {v8, v9, v10}, Lokhttp3/Cookie$Builder;->expiresAt(J)Lokhttp3/Cookie$Builder;
+
+    .line 184
+    .line 185
+    .line 186
+    move-result-object v8
+
+    .line 187
+    invoke-virtual {v8}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 188
+    .line 189
+    .line 190
+    move-result-object v8
+
+    .line 191
+    new-instance v9, Lokhttp3/Cookie$Builder;
+
+    .line 192
+    .line 193
+    invoke-direct {v9}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 194
+    .line 195
+    .line 196
+    invoke-virtual {v0}, Lj62/a;->D()Ljava/lang/String;
+
+    .line 197
+    .line 198
+    .line 199
+    move-result-object v10
+
+    .line 200
+    invoke-virtual {v9, v10}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 201
+    .line 202
+    .line 203
+    move-result-object v9
+
+    .line 204
+    invoke-virtual {v9, p1}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 205
+    .line 206
+    .line 207
+    move-result-object v9
+
+    .line 208
+    invoke-virtual {v9, v5}, Lokhttp3/Cookie$Builder;->path(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 209
+    .line 210
+    .line 211
+    move-result-object v9
+
+    .line 212
+    invoke-virtual {v9, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 213
+    .line 214
+    .line 215
+    move-result-object v9
+
+    .line 216
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 217
+    .line 218
+    .line 219
+    move-result-wide v10
+
+    .line 220
+    sub-long/2addr v10, v2
+
+    .line 221
+    invoke-virtual {v9, v10, v11}, Lokhttp3/Cookie$Builder;->expiresAt(J)Lokhttp3/Cookie$Builder;
+
+    .line 222
+    .line 223
+    .line 224
+    move-result-object v9
+
+    .line 225
+    invoke-virtual {v9}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 226
+    .line 227
+    .line 228
+    move-result-object v9
+
+    .line 229
+    new-instance v10, Lokhttp3/Cookie$Builder;
+
+    .line 230
+    .line 231
+    invoke-direct {v10}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 232
+    .line 233
+    .line 234
+    invoke-virtual {v0}, Lj62/a;->z()Ljava/lang/String;
+
+    .line 235
+    .line 236
+    .line 237
+    move-result-object v0
+
+    .line 238
+    invoke-virtual {v10, v0}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 239
+    .line 240
+    .line 241
+    move-result-object v0
+
+    .line 242
+    invoke-virtual {v0, p1}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 243
+    .line 244
+    .line 245
+    move-result-object p1
+
+    .line 246
+    invoke-virtual {p1, v5}, Lokhttp3/Cookie$Builder;->path(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 247
+    .line 248
+    .line 249
+    move-result-object p1
+
+    .line 250
+    invoke-virtual {p1, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 251
+    .line 252
+    .line 253
+    move-result-object p1
+
+    .line 254
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 255
+    .line 256
+    .line 257
+    move-result-wide v4
+
+    .line 258
+    sub-long/2addr v4, v2
+
+    .line 259
+    invoke-virtual {p1, v4, v5}, Lokhttp3/Cookie$Builder;->expiresAt(J)Lokhttp3/Cookie$Builder;
+
+    .line 260
+    .line 261
+    .line 262
+    move-result-object p1
+
+    .line 263
+    invoke-virtual {p1}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 264
+    .line 265
+    .line 266
+    move-result-object p1
+
+    .line 267
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 268
+    .line 269
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 270
+    .line 271
+    .line 272
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 273
+    .line 274
+    .line 275
+    invoke-interface {v0, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 276
+    .line 277
+    .line 278
+    invoke-interface {v0, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 279
+    .line 280
+    .line 281
+    invoke-interface {v0, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 282
+    .line 283
+    .line 284
+    invoke-interface {v0, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 285
+    .line 286
+    .line 287
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 288
+    .line 289
+    .line 290
+    invoke-virtual {p0, v0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->saveCookies(Ljava/util/List;)V
+
+    .line 291
+    .line 292
+    .line 293
+    goto/16 :goto_255
+
+    .line 294
+    .line 295
+    :cond_126
+    :goto_126
+    new-instance v1, Ljava/util/ArrayList;
+
+    .line 296
+    .line 297
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    .line 298
+    .line 299
+    .line 300
+    invoke-virtual {v0}, Lj62/a;->G()Ljava/lang/String;
+
+    .line 301
+    .line 302
+    .line 303
+    move-result-object v6
+
+    .line 304
+    new-instance v7, Lokhttp3/Cookie$Builder;
+
+    .line 305
+    .line 306
+    invoke-direct {v7}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 307
+    .line 308
+    .line 309
+    invoke-virtual {v7, v6}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 310
+    .line 311
+    .line 312
+    move-result-object v6
+
+    .line 313
+    invoke-virtual {v6, p1}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 314
+    .line 315
+    .line 316
+    move-result-object v6
+
+    .line 317
+    invoke-virtual {v6, v5}, Lokhttp3/Cookie$Builder;->path(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 318
+    .line 319
+    .line 320
+    move-result-object v6
+
+    .line 321
+    invoke-virtual {v6, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 322
+    .line 323
+    .line 324
+    move-result-object v6
+
+    .line 325
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 326
+    .line 327
+    .line 328
+    move-result-wide v7
+
+    .line 329
+    sub-long/2addr v7, v2
+
+    .line 330
+    invoke-virtual {v6, v7, v8}, Lokhttp3/Cookie$Builder;->expiresAt(J)Lokhttp3/Cookie$Builder;
+
+    .line 331
+    .line 332
+    .line 333
+    move-result-object v6
+
+    .line 334
+    invoke-virtual {v6}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 335
+    .line 336
+    .line 337
+    move-result-object v6
+
+    .line 338
+    invoke-virtual {v0}, Lj62/a;->l()Ljava/lang/String;
+
+    .line 339
+    .line 340
+    .line 341
+    move-result-object v7
+
+    .line 342
+    new-instance v8, Lokhttp3/Cookie$Builder;
+
+    .line 343
+    .line 344
+    invoke-direct {v8}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 345
+    .line 346
+    .line 347
+    invoke-virtual {v8, v7}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 348
+    .line 349
+    .line 350
+    move-result-object v7
+
+    .line 351
+    invoke-virtual {v7, p1}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 352
+    .line 353
+    .line 354
+    move-result-object v7
+
+    .line 355
+    invoke-virtual {v7, v5}, Lokhttp3/Cookie$Builder;->path(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 356
+    .line 357
+    .line 358
+    move-result-object v7
+
+    .line 359
+    invoke-virtual {v7, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 360
+    .line 361
+    .line 362
+    move-result-object v7
+
+    .line 363
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 364
+    .line 365
+    .line 366
+    move-result-wide v8
+
+    .line 367
+    sub-long/2addr v8, v2
+
+    .line 368
+    invoke-virtual {v7, v8, v9}, Lokhttp3/Cookie$Builder;->expiresAt(J)Lokhttp3/Cookie$Builder;
+
+    .line 369
+    .line 370
+    .line 371
+    move-result-object v7
+
+    .line 372
+    invoke-virtual {v7}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 373
+    .line 374
+    .line 375
+    move-result-object v7
+
+    .line 376
+    invoke-virtual {v0}, Lj62/a;->m()Ljava/lang/String;
+
+    .line 377
+    .line 378
+    .line 379
+    move-result-object v8
+
+    .line 380
+    new-instance v9, Lokhttp3/Cookie$Builder;
+
+    .line 381
+    .line 382
+    invoke-direct {v9}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 383
+    .line 384
+    .line 385
+    invoke-virtual {v9, v8}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 386
+    .line 387
+    .line 388
+    move-result-object v8
+
+    .line 389
+    invoke-virtual {v8, p1}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 390
+    .line 391
+    .line 392
+    move-result-object v8
+
+    .line 393
+    invoke-virtual {v8, v5}, Lokhttp3/Cookie$Builder;->path(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 394
+    .line 395
+    .line 396
+    move-result-object v8
+
+    .line 397
+    invoke-virtual {v8, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 398
+    .line 399
+    .line 400
+    move-result-object v8
+
+    .line 401
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 402
+    .line 403
+    .line 404
+    move-result-wide v9
+
+    .line 405
+    sub-long/2addr v9, v2
+
+    .line 406
+    invoke-virtual {v8, v9, v10}, Lokhttp3/Cookie$Builder;->expiresAt(J)Lokhttp3/Cookie$Builder;
+
+    .line 407
+    .line 408
+    .line 409
+    move-result-object v8
+
+    .line 410
+    invoke-virtual {v8}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 411
+    .line 412
+    .line 413
+    move-result-object v8
+
+    .line 414
+    invoke-virtual {v0}, Lj62/a;->C()Ljava/lang/String;
+
+    .line 415
+    .line 416
+    .line 417
+    move-result-object v9
+
+    .line 418
+    if-eqz v9, :cond_1c8
+
+    .line 419
+    .line 420
+    new-instance v10, Lokhttp3/Cookie$Builder;
+
+    .line 421
+    .line 422
+    invoke-direct {v10}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 423
+    .line 424
+    .line 425
+    invoke-virtual {v10, v9}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 426
+    .line 427
+    .line 428
+    move-result-object v10
+
+    .line 429
+    invoke-virtual {v10, p1}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 430
+    .line 431
+    .line 432
+    move-result-object v10
+
+    .line 433
+    invoke-virtual {v10, v5}, Lokhttp3/Cookie$Builder;->path(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 434
+    .line 435
+    .line 436
+    move-result-object v10
+
+    .line 437
+    invoke-virtual {v10, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 438
+    .line 439
+    .line 440
+    move-result-object v10
+
+    .line 441
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 442
+    .line 443
+    .line 444
+    move-result-wide v11
+
+    .line 445
+    sub-long/2addr v11, v2
+
+    .line 446
+    invoke-virtual {v10, v11, v12}, Lokhttp3/Cookie$Builder;->expiresAt(J)Lokhttp3/Cookie$Builder;
+
+    .line 447
+    .line 448
+    .line 449
+    move-result-object v10
+
+    .line 450
+    invoke-virtual {v10}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 451
+    .line 452
+    .line 453
+    move-result-object v10
+
+    .line 454
+    invoke-interface {v1, v10}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 455
+    .line 456
+    .line 457
+    :cond_1c8
+    if-eqz v9, :cond_1f3
+
+    .line 458
+    .line 459
+    invoke-virtual {v0}, Lj62/a;->A()Ljava/lang/String;
+
+    .line 460
+    .line 461
+    .line 462
+    move-result-object v9
+
+    .line 463
+    new-instance v10, Lokhttp3/Cookie$Builder;
+
+    .line 464
+    .line 465
+    invoke-direct {v10}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 466
+    .line 467
+    .line 468
+    invoke-virtual {v10, v9}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 469
+    .line 470
+    .line 471
+    move-result-object v9
+
+    .line 472
+    invoke-virtual {v9, p1}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 473
+    .line 474
+    .line 475
+    move-result-object v9
+
+    .line 476
+    invoke-virtual {v9, v5}, Lokhttp3/Cookie$Builder;->path(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 477
+    .line 478
+    .line 479
+    move-result-object v9
+
+    .line 480
+    invoke-virtual {v9, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 481
+    .line 482
+    .line 483
+    move-result-object v9
+
+    .line 484
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 485
+    .line 486
+    .line 487
+    move-result-wide v10
+
+    .line 488
+    sub-long/2addr v10, v2
+
+    .line 489
+    invoke-virtual {v9, v10, v11}, Lokhttp3/Cookie$Builder;->expiresAt(J)Lokhttp3/Cookie$Builder;
+
+    .line 490
+    .line 491
+    .line 492
+    move-result-object v9
+
+    .line 493
+    invoke-virtual {v9}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 494
+    .line 495
+    .line 496
+    move-result-object v9
+
+    .line 497
+    invoke-interface {v1, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 498
+    .line 499
+    .line 500
+    :cond_1f3
+    invoke-virtual {v0}, Lj62/a;->D()Ljava/lang/String;
+
+    .line 501
+    .line 502
+    .line 503
+    move-result-object v9
+
+    .line 504
+    if-eqz v9, :cond_21e
+
+    .line 505
+    .line 506
+    new-instance v10, Lokhttp3/Cookie$Builder;
+
+    .line 507
+    .line 508
+    invoke-direct {v10}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 509
+    .line 510
+    .line 511
+    invoke-virtual {v10, v9}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 512
+    .line 513
+    .line 514
+    move-result-object v9
+
+    .line 515
+    invoke-virtual {v9, p1}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 516
+    .line 517
+    .line 518
+    move-result-object v9
+
+    .line 519
+    invoke-virtual {v9, v5}, Lokhttp3/Cookie$Builder;->path(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 520
+    .line 521
+    .line 522
+    move-result-object v9
+
+    .line 523
+    invoke-virtual {v9, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 524
+    .line 525
+    .line 526
+    move-result-object v9
+
+    .line 527
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 528
+    .line 529
+    .line 530
+    move-result-wide v10
+
+    .line 531
+    sub-long/2addr v10, v2
+
+    .line 532
+    invoke-virtual {v9, v10, v11}, Lokhttp3/Cookie$Builder;->expiresAt(J)Lokhttp3/Cookie$Builder;
+
+    .line 533
+    .line 534
+    .line 535
+    move-result-object v9
+
+    .line 536
+    invoke-virtual {v9}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 537
+    .line 538
+    .line 539
+    move-result-object v9
+
+    .line 540
+    invoke-interface {v1, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 541
+    .line 542
+    .line 543
+    :cond_21e
+    invoke-virtual {v0}, Lj62/a;->z()Ljava/lang/String;
+
+    .line 544
+    .line 545
+    .line 546
+    move-result-object v0
+
+    .line 547
+    if-eqz v0, :cond_249
+
+    .line 548
+    .line 549
+    new-instance v9, Lokhttp3/Cookie$Builder;
+
+    .line 550
+    .line 551
+    invoke-direct {v9}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 552
+    .line 553
+    .line 554
+    invoke-virtual {v9, v0}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 555
+    .line 556
+    .line 557
+    move-result-object v0
+
+    .line 558
+    invoke-virtual {v0, p1}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 559
+    .line 560
+    .line 561
+    move-result-object p1
+
+    .line 562
+    invoke-virtual {p1, v5}, Lokhttp3/Cookie$Builder;->path(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 563
+    .line 564
+    .line 565
+    move-result-object p1
+
+    .line 566
+    invoke-virtual {p1, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 567
+    .line 568
+    .line 569
+    move-result-object p1
+
+    .line 570
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 571
+    .line 572
+    .line 573
+    move-result-wide v4
+
+    .line 574
+    sub-long/2addr v4, v2
+
+    .line 575
+    invoke-virtual {p1, v4, v5}, Lokhttp3/Cookie$Builder;->expiresAt(J)Lokhttp3/Cookie$Builder;
+
+    .line 576
+    .line 577
+    .line 578
+    move-result-object p1
+
+    .line 579
+    invoke-virtual {p1}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 580
+    .line 581
+    .line 582
+    move-result-object p1
+
+    .line 583
+    invoke-interface {v1, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 584
+    .line 585
+    .line 586
+    :cond_249
+    invoke-interface {v1, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 587
+    .line 588
+    .line 589
+    invoke-interface {v1, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 590
+    .line 591
+    .line 592
+    invoke-interface {v1, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 593
+    .line 594
+    .line 595
+    invoke-virtual {p0, v1}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->saveCookies(Ljava/util/List;)V
+
+    .line 596
+    .line 597
+    .line 598
+    :goto_255
+    return-void
+.end method
+
+.method public generateCookiesForAllDomain(Lokhttp3/Cookie;)Ljava/util/List;
+    .registers 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lokhttp3/Cookie;",
+            ")",
+            "Ljava/util/List<",
+            "Lokhttp3/Cookie;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    if-eqz p1, :cond_31
+
+    .line 7
+    .line 8
+    invoke-static {}, Ls52/u;->f()Ls52/u;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    if-nez v1, :cond_e
+
+    .line 13
+    .line 14
+    goto :goto_31
+
+    .line 15
+    :cond_e
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-static {}, Ls52/u;->f()Ls52/u;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v1
+
+    .line 22
+    invoke-virtual {v1}, Ls52/u;->e()Lj62/a;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v1
+
+    .line 26
+    if-eqz v1, :cond_31
+
+    .line 27
+    .line 28
+    invoke-virtual {v1}, Lj62/a;->D()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v2
+
+    .line 32
+    invoke-virtual {p0, p1, v2}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->copyCookieWithDomain(Lokhttp3/Cookie;Ljava/lang/String;)Lokhttp3/Cookie;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v2
+
+    .line 36
+    invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-virtual {v1}, Lj62/a;->z()Ljava/lang/String;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object v1
+
+    .line 43
+    invoke-virtual {p0, p1, v1}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->copyCookieWithDomain(Lokhttp3/Cookie;Ljava/lang/String;)Lokhttp3/Cookie;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object p1
+
+    .line 47
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 48
+    .line 49
+    .line 50
+    :cond_31
+    :goto_31
+    return-object v0
+.end method
+
+.method public getAllCookies()Ljava/util/List;
+    .registers 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lokhttp3/Cookie;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    :try_start_0
+    invoke-direct {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->enableCookieStoreGetAllCookiesLockOpt()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_35
+
+    .line 6
+    .line 7
+    iget-object v0, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mCookiesPref:Landroid/content/SharedPreferences;
+
+    .line 8
+    .line 9
+    const-string v1, "lastModifyTime"
+
+    .line 10
+    .line 11
+    const-wide/16 v2, -0x1
+
+    .line 12
+    .line 13
+    invoke-interface {v0, v1, v2, v3}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-wide v0
+
+    .line 17
+    iget-wide v2, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mPreferenceLastModifyTime:J
+
+    .line 18
+    .line 19
+    cmp-long v2, v0, v2
+
+    .line 20
+    .line 21
+    if-nez v2, :cond_35
+
+    .line 22
+    .line 23
+    iget-object v2, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mCookies:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 24
+    .line 25
+    if-eqz v2, :cond_35
+
+    .line 26
+    .line 27
+    new-instance v3, Ljava/util/ArrayList;
+
+    .line 28
+    .line 29
+    invoke-virtual {v2}, Ljava/util/concurrent/ConcurrentHashMap;->values()Ljava/util/Collection;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v2
+
+    .line 33
+    invoke-direct {v3, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    .line 34
+    .line 35
+    .line 36
+    iget-wide v4, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mPreferenceLastModifyTime:J
+
+    .line 37
+    .line 38
+    cmp-long v0, v0, v4
+
+    .line 39
+    .line 40
+    if-nez v0, :cond_35
+
+    .line 41
+    .line 42
+    invoke-static {v3}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v0
+    :try_end_2d
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_2d} :catch_2e
+
+    .line 46
+    return-object v0
+
+    .line 47
+    :catch_2e
+    const-string v0, "AbsCookieStore"
+
+    .line 48
+    .line 49
+    const-string v1, "Fast path concurrent exception, fallback to synchronized"
+
+    .line 50
+    .line 51
+    invoke-static {v0, v1}, Ls72/k;->b(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 52
+    .line 53
+    .line 54
+    :cond_35
+    monitor-enter p0
+
+    .line 55
+    :try_start_36
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->hasFileChangedUnexpectedly()V
+
+    .line 56
+    .line 57
+    .line 58
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 59
+    .line 60
+    iget-object v1, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mCookies:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 61
+    .line 62
+    invoke-virtual {v1}, Ljava/util/concurrent/ConcurrentHashMap;->values()Ljava/util/Collection;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object v1
+
+    .line 66
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    .line 67
+    .line 68
+    .line 69
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    .line 70
+    .line 71
+    .line 72
+    move-result-object v0
+
+    .line 73
+    monitor-exit p0
+
+    .line 74
+    return-object v0
+
+    .line 75
+    :catchall_4a
+    move-exception v0
+
+    .line 76
+    monitor-exit p0
+    :try_end_4c
+    .catchall {:try_start_36 .. :try_end_4c} :catchall_4a
+
+    .line 77
+    throw v0
+.end method
+
+.method public getAllLoginCookie()Ljava/util/List;
+    .registers 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lokhttp3/Cookie;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->getAllCookies()Ljava/util/List;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v1
+
+    .line 10
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v1
+
+    .line 14
+    :cond_d
+    :goto_d
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v2
+
+    .line 18
+    if-eqz v2, :cond_23
+
+    .line 19
+    .line 20
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v2
+
+    .line 24
+    check-cast v2, Lokhttp3/Cookie;
+
+    .line 25
+    .line 26
+    invoke-virtual {p0, v2}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->loginAboutCookie(Lokhttp3/Cookie;)Z
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v3
+
+    .line 30
+    if-eqz v3, :cond_d
+
+    .line 31
+    .line 32
+    invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 33
+    .line 34
+    .line 35
+    goto :goto_d
+
+    .line 36
+    :cond_23
+    return-object v0
+.end method
+
+.method public getAllLoginCookieFromMemory()Ljava/util/List;
+    .registers 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lokhttp3/Cookie;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v1, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mCookies:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 7
+    .line 8
+    invoke-virtual {v1}, Ljava/util/concurrent/ConcurrentHashMap;->entrySet()Ljava/util/Set;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v1
+
+    .line 16
+    :cond_f
+    :goto_f
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v2
+
+    .line 20
+    if-eqz v2, :cond_2b
+
+    .line 21
+    .line 22
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v2
+
+    .line 26
+    check-cast v2, Ljava/util/Map$Entry;
+
+    .line 27
+    .line 28
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v2
+
+    .line 32
+    check-cast v2, Lokhttp3/Cookie;
+
+    .line 33
+    .line 34
+    invoke-virtual {p0, v2}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->loginAboutCookie(Lokhttp3/Cookie;)Z
+
+    .line 35
+    .line 36
+    .line 37
+    move-result v3
+
+    .line 38
+    if-eqz v3, :cond_f
+
+    .line 39
+    .line 40
+    invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 41
+    .line 42
+    .line 43
+    goto :goto_f
+
+    .line 44
+    :cond_2b
+    return-object v0
+.end method
+
+.method protected getAppVer()Ljava/lang/String;
+    .registers 2
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "ForbidDeprecatedUsageError"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {}, Lcom/netease/cloudmusic/common/ApplicationWrapper;->getInstance()Lcom/netease/cloudmusic/common/ApplicationWrapper;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-static {v0}, Lcom/netease/cloudmusic/utils/NeteaseMusicUtils;->I(Landroid/content/Context;)Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public abstract getCookieDomain()Ljava/lang/String;
+.end method
+
+.method public abstract getCookieFileName()Ljava/lang/String;
+.end method
+
+.method protected getCookiePref(Ljava/lang/String;)Landroid/content/SharedPreferences;
+    .registers 2
+
+    .line 1
+    invoke-static {p1}, Lcom/netease/cloudmusic/utils/n3;->k(Ljava/lang/String;)Landroid/content/SharedPreferences;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method protected getCookieSubDomainList()Ljava/util/List;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return-object v0
+.end method
+
+.method protected getCookieToken(Lokhttp3/Cookie;)Ljava/lang/String;
+    .registers 5
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p1}, Lokhttp3/Cookie;->name()Ljava/lang/String;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v1
+
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, "_"
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {p1}, Lokhttp3/Cookie;->domain()Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v2
+
+    .line 22
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {p1}, Lokhttp3/Cookie;->path()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object p1
+
+    .line 32
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object p1
+
+    .line 39
+    return-object p1
+.end method
+
+.method public getDomains()Ljava/util/ArrayList;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->getCookieDomain()Ljava/lang/String;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v1
+
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->getCookieSubDomainList()Ljava/util/List;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v1
+
+    .line 17
+    if-eqz v1, :cond_23
+
+    .line 18
+    .line 19
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->getCookieSubDomainList()Ljava/util/List;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v1
+
+    .line 23
+    invoke-interface {v1}, Ljava/util/List;->isEmpty()Z
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v1
+
+    .line 27
+    if-nez v1, :cond_23
+
+    .line 28
+    .line 29
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->getCookieSubDomainList()Ljava/util/List;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v1
+
+    .line 33
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
+
+    .line 34
+    .line 35
+    .line 36
+    :cond_23
+    return-object v0
+.end method
+
+.method public getLoginCookie()Ljava/lang/String;
+    .registers 6
+
+    .line 1
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->getAllCookies()Ljava/util/List;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    const/4 v1, 0x0
+
+    .line 10
+    :cond_9
+    :goto_9
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v2
+
+    .line 14
+    if-eqz v2, :cond_37
+
+    .line 15
+    .line 16
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v2
+
+    .line 20
+    check-cast v2, Lokhttp3/Cookie;
+
+    .line 21
+    .line 22
+    invoke-virtual {v2}, Lokhttp3/Cookie;->name()Ljava/lang/String;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v3
+
+    .line 26
+    const-string v4, "MUSIC_U"
+
+    .line 27
+    .line 28
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v3
+
+    .line 32
+    if-eqz v3, :cond_26
+
+    .line 33
+    .line 34
+    invoke-virtual {v2}, Lokhttp3/Cookie;->value()Ljava/lang/String;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v1
+
+    .line 38
+    goto :goto_37
+
+    .line 39
+    :cond_26
+    const-string v3, "MUSIC_A"
+
+    .line 40
+    .line 41
+    invoke-virtual {v2}, Lokhttp3/Cookie;->name()Ljava/lang/String;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v4
+
+    .line 45
+    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 46
+    .line 47
+    .line 48
+    move-result v3
+
+    .line 49
+    if-eqz v3, :cond_9
+
+    .line 50
+    .line 51
+    invoke-virtual {v2}, Lokhttp3/Cookie;->value()Ljava/lang/String;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object v1
+
+    .line 55
+    goto :goto_9
+
+    .line 56
+    :cond_37
+    :goto_37
+    return-object v1
+.end method
+
+.method public getOS()Ljava/lang/String;
+    .registers 2
+
+    .line 1
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->os()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public getUserLoginCookie()Ljava/lang/String;
+    .registers 5
+
+    .line 1
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->getAllCookies()Ljava/util/List;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    :cond_8
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v1
+
+    .line 13
+    if-eqz v1, :cond_25
+
+    .line 14
+    .line 15
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v1
+
+    .line 19
+    check-cast v1, Lokhttp3/Cookie;
+
+    .line 20
+    .line 21
+    invoke-virtual {v1}, Lokhttp3/Cookie;->name()Ljava/lang/String;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v2
+
+    .line 25
+    const-string v3, "MUSIC_U"
+
+    .line 26
+    .line 27
+    invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 28
+    .line 29
+    .line 30
+    move-result v2
+
+    .line 31
+    if-eqz v2, :cond_8
+
+    .line 32
+    .line 33
+    invoke-virtual {v1}, Lokhttp3/Cookie;->value()Ljava/lang/String;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v0
+
+    .line 37
+    goto :goto_26
+
+    .line 38
+    :cond_25
+    const/4 v0, 0x0
+
+    .line 39
+    :goto_26
+    return-object v0
+.end method
+
+.method protected hasFileChangedUnexpectedly()V
+    .registers 5
+
+    .line 1
+    iget-object v0, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mCookiesPref:Landroid/content/SharedPreferences;
+
+    .line 2
+    .line 3
+    const-string v1, "lastModifyTime"
+
+    .line 4
+    .line 5
+    const-wide/16 v2, -0x1
+
+    .line 6
+    .line 7
+    invoke-interface {v0, v1, v2, v3}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-wide v0
+
+    .line 11
+    iget-wide v2, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mPreferenceLastModifyTime:J
+
+    .line 12
+    .line 13
+    cmp-long v0, v0, v2
+
+    .line 14
+    .line 15
+    if-eqz v0, :cond_31
+
+    .line 16
+    .line 17
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 18
+    .line 19
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 20
+    .line 21
+    .line 22
+    const-string v1, "hasFileChangedUnexpectedly , from process"
+
+    .line 23
+    .line 24
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 25
+    .line 26
+    .line 27
+    invoke-static {}, Lcom/netease/cloudmusic/common/ApplicationWrapper;->getInstance()Lcom/netease/cloudmusic/common/ApplicationWrapper;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v1
+
+    .line 31
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/common/ApplicationWrapper;->getProcess()I
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v1
+
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    .line 38
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v0
+
+    .line 42
+    const-string v1, "AbsCookieStore"
+
+    .line 43
+    .line 44
+    invoke-static {v1, v0}, Ls72/k;->b(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 45
+    .line 46
+    .line 47
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->initMemoryCookieAndSyncLoadFromFile()V
+
+    .line 48
+    .line 49
+    .line 50
+    :cond_31
+    return-void
+.end method
+
+.method protected initCustomCookie(Ljava/lang/String;)Ljava/util/List;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Ljava/util/List<",
+            "Lokhttp3/Cookie;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    return-object p1
+.end method
+
+.method protected declared-synchronized initDevicesCookie()V
+    .registers 10
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_1
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 3
+    .line 4
+    const/16 v1, 0xd
+
+    .line 5
+    .line 6
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->getDomains()Ljava/util/ArrayList;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v1
+
+    .line 17
+    :goto_10
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v2
+
+    .line 21
+    if-eqz v2, :cond_1e9
+
+    .line 22
+    .line 23
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v2
+
+    .line 27
+    check-cast v2, Ljava/lang/String;
+
+    .line 28
+    .line 29
+    new-instance v3, Lokhttp3/Cookie$Builder;
+
+    .line 30
+    .line 31
+    invoke-direct {v3}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 32
+    .line 33
+    .line 34
+    invoke-virtual {v3, v2}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v3
+
+    .line 38
+    const-string v4, "fortest"
+
+    .line 39
+    .line 40
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v3
+
+    .line 44
+    sget-object v4, Lcom/netease/cloudmusic/common/BuildInfo;->b:Ljava/lang/String;
+
+    .line 45
+    .line 46
+    invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    .line 47
+    .line 48
+    .line 49
+    move-result v4
+
+    .line 50
+    if-eqz v4, :cond_36
+
+    .line 51
+    .line 52
+    const-string v4, ""
+
+    .line 53
+    .line 54
+    goto :goto_38
+
+    .line 55
+    :cond_36
+    sget-object v4, Lcom/netease/cloudmusic/common/BuildInfo;->b:Ljava/lang/String;
+
+    .line 56
+    .line 57
+    :goto_38
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object v3
+
+    .line 61
+    sget-object v4, Lcom/netease/cloudmusic/common/BuildInfo;->b:Ljava/lang/String;
+
+    .line 62
+    .line 63
+    invoke-static {v4}, Lcom/netease/cloudmusic/utils/vr;->e(Ljava/lang/CharSequence;)Z
+
+    .line 64
+    .line 65
+    .line 66
+    move-result v4
+
+    .line 67
+    if-eqz v4, :cond_58
+
+    .line 68
+    .line 69
+    new-instance v4, Ljava/util/Date;
+
+    .line 70
+    .line 71
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-wide v5
+
+    .line 75
+    const-wide/32 v7, 0x12ee6ad
+
+    .line 76
+    .line 77
+    .line 78
+    sub-long/2addr v5, v7
+
+    .line 79
+    invoke-direct {v4, v5, v6}, Ljava/util/Date;-><init>(J)V
+
+    .line 80
+    .line 81
+    .line 82
+    invoke-virtual {v4}, Ljava/util/Date;->getTime()J
+
+    .line 83
+    .line 84
+    .line 85
+    move-result-wide v4
+
+    .line 86
+    invoke-virtual {v3, v4, v5}, Lokhttp3/Cookie$Builder;->expiresAt(J)Lokhttp3/Cookie$Builder;
+
+    .line 87
+    .line 88
+    .line 89
+    :cond_58
+    invoke-virtual {v3}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 90
+    .line 91
+    .line 92
+    move-result-object v3
+
+    .line 93
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 94
+    .line 95
+    .line 96
+    new-instance v3, Lokhttp3/Cookie$Builder;
+
+    .line 97
+    .line 98
+    invoke-direct {v3}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 99
+    .line 100
+    .line 101
+    invoke-virtual {v3, v2}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 102
+    .line 103
+    .line 104
+    move-result-object v3
+
+    .line 105
+    const-string v4, "buildver"
+
+    .line 106
+    .line 107
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 108
+    .line 109
+    .line 110
+    move-result-object v3
+
+    .line 111
+    sget-object v4, Lcom/netease/cloudmusic/common/BuildInfo;->a:Ljava/lang/String;
+
+    .line 112
+    .line 113
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 114
+    .line 115
+    .line 116
+    move-result-object v3
+
+    .line 117
+    invoke-virtual {v3}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 118
+    .line 119
+    .line 120
+    move-result-object v3
+
+    .line 121
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 122
+    .line 123
+    .line 124
+    new-instance v3, Lokhttp3/Cookie$Builder;
+
+    .line 125
+    .line 126
+    invoke-direct {v3}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 127
+    .line 128
+    .line 129
+    invoke-virtual {v3, v2}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 130
+    .line 131
+    .line 132
+    move-result-object v3
+
+    .line 133
+    const-string v4, "deviceId"
+
+    .line 134
+    .line 135
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 136
+    .line 137
+    .line 138
+    move-result-object v3
+
+    .line 139
+    invoke-static {}, Lcom/netease/cloudmusic/utils/k4;->e()Ljava/lang/String;
+
+    .line 140
+    .line 141
+    .line 142
+    move-result-object v4
+
+    .line 143
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 144
+    .line 145
+    .line 146
+    move-result-object v3
+
+    .line 147
+    invoke-virtual {v3}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 148
+    .line 149
+    .line 150
+    move-result-object v3
+
+    .line 151
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 152
+    .line 153
+    .line 154
+    new-instance v3, Lokhttp3/Cookie$Builder;
+
+    .line 155
+    .line 156
+    invoke-direct {v3}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 157
+    .line 158
+    .line 159
+    invoke-virtual {v3, v2}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 160
+    .line 161
+    .line 162
+    move-result-object v3
+
+    .line 163
+    const-string v4, "appver"
+
+    .line 164
+    .line 165
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 166
+    .line 167
+    .line 168
+    move-result-object v3
+
+    .line 169
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->getAppVer()Ljava/lang/String;
+
+    .line 170
+    .line 171
+    .line 172
+    move-result-object v4
+
+    .line 173
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 174
+    .line 175
+    .line 176
+    move-result-object v3
+
+    .line 177
+    invoke-virtual {v3}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 178
+    .line 179
+    .line 180
+    move-result-object v3
+
+    .line 181
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 182
+    .line 183
+    .line 184
+    new-instance v3, Lokhttp3/Cookie$Builder;
+
+    .line 185
+    .line 186
+    invoke-direct {v3}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 187
+    .line 188
+    .line 189
+    invoke-virtual {v3, v2}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 190
+    .line 191
+    .line 192
+    move-result-object v3
+
+    .line 193
+    const-string v4, "os"
+
+    .line 194
+    .line 195
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 196
+    .line 197
+    .line 198
+    move-result-object v3
+
+    .line 199
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->os()Ljava/lang/String;
+
+    .line 200
+    .line 201
+    .line 202
+    move-result-object v4
+
+    .line 203
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 204
+    .line 205
+    .line 206
+    move-result-object v3
+
+    .line 207
+    invoke-virtual {v3}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 208
+    .line 209
+    .line 210
+    move-result-object v3
+
+    .line 211
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 212
+    .line 213
+    .line 214
+    new-instance v3, Lokhttp3/Cookie$Builder;
+
+    .line 215
+    .line 216
+    invoke-direct {v3}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 217
+    .line 218
+    .line 219
+    invoke-virtual {v3, v2}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 220
+    .line 221
+    .line 222
+    move-result-object v3
+
+    .line 223
+    const-string v4, "osver"
+
+    .line 224
+    .line 225
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 226
+    .line 227
+    .line 228
+    move-result-object v3
+
+    .line 229
+    invoke-static {}, Lcom/netease/cloudmusic/utils/NeteaseMusicUtils;->q0()Ljava/lang/String;
+
+    .line 230
+    .line 231
+    .line 232
+    move-result-object v4
+
+    .line 233
+    invoke-static {v4}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->validateAndEncode(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 234
+    .line 235
+    .line 236
+    move-result-object v4
+
+    .line 237
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 238
+    .line 239
+    .line 240
+    move-result-object v3
+
+    .line 241
+    invoke-virtual {v3}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 242
+    .line 243
+    .line 244
+    move-result-object v3
+
+    .line 245
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 246
+    .line 247
+    .line 248
+    new-instance v3, Lokhttp3/Cookie$Builder;
+
+    .line 249
+    .line 250
+    invoke-direct {v3}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 251
+    .line 252
+    .line 253
+    invoke-virtual {v3, v2}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 254
+    .line 255
+    .line 256
+    move-result-object v3
+
+    .line 257
+    const-string v4, "mobilename"
+
+    .line 258
+    .line 259
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 260
+    .line 261
+    .line 262
+    move-result-object v3
+
+    .line 263
+    invoke-static {}, Lcom/netease/cloudmusic/utils/NeteaseMusicUtils;->b0()Ljava/lang/String;
+
+    .line 264
+    .line 265
+    .line 266
+    move-result-object v4
+
+    .line 267
+    invoke-static {v4}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->validateAndEncode(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 268
+    .line 269
+    .line 270
+    move-result-object v4
+
+    .line 271
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 272
+    .line 273
+    .line 274
+    move-result-object v3
+
+    .line 275
+    invoke-virtual {v3}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 276
+    .line 277
+    .line 278
+    move-result-object v3
+
+    .line 279
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 280
+    .line 281
+    .line 282
+    new-instance v3, Lokhttp3/Cookie$Builder;
+
+    .line 283
+    .line 284
+    invoke-direct {v3}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 285
+    .line 286
+    .line 287
+    invoke-virtual {v3, v2}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 288
+    .line 289
+    .line 290
+    move-result-object v3
+
+    .line 291
+    const-string v4, "brand"
+
+    .line 292
+    .line 293
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 294
+    .line 295
+    .line 296
+    move-result-object v3
+
+    .line 297
+    invoke-static {}, Lcom/netease/cloudmusic/utils/NeteaseMusicUtils;->a0()Ljava/lang/String;
+
+    .line 298
+    .line 299
+    .line 300
+    move-result-object v4
+
+    .line 301
+    invoke-static {v4}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->validateAndEncode(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 302
+    .line 303
+    .line 304
+    move-result-object v4
+
+    .line 305
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 306
+    .line 307
+    .line 308
+    move-result-object v3
+
+    .line 309
+    invoke-virtual {v3}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 310
+    .line 311
+    .line 312
+    move-result-object v3
+
+    .line 313
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 314
+    .line 315
+    .line 316
+    new-instance v3, Lokhttp3/Cookie$Builder;
+
+    .line 317
+    .line 318
+    invoke-direct {v3}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 319
+    .line 320
+    .line 321
+    invoke-virtual {v3, v2}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 322
+    .line 323
+    .line 324
+    move-result-object v3
+
+    .line 325
+    const-string v4, "resolution"
+
+    .line 326
+    .line 327
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 328
+    .line 329
+    .line 330
+    move-result-object v3
+
+    .line 331
+    invoke-static {}, Lcom/netease/cloudmusic/utils/wp;->a()Ljava/lang/String;
+
+    .line 332
+    .line 333
+    .line 334
+    move-result-object v4
+
+    .line 335
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 336
+    .line 337
+    .line 338
+    move-result-object v3
+
+    .line 339
+    invoke-virtual {v3}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 340
+    .line 341
+    .line 342
+    move-result-object v3
+
+    .line 343
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 344
+    .line 345
+    .line 346
+    new-instance v3, Lokhttp3/Cookie$Builder;
+
+    .line 347
+    .line 348
+    invoke-direct {v3}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 349
+    .line 350
+    .line 351
+    invoke-virtual {v3, v2}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 352
+    .line 353
+    .line 354
+    move-result-object v3
+
+    .line 355
+    const-string v4, "channel"
+
+    .line 356
+    .line 357
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 358
+    .line 359
+    .line 360
+    move-result-object v3
+
+    .line 361
+    sget-object v4, Lcom/netease/cloudmusic/utils/b2;->c:Ljava/lang/String;
+
+    .line 362
+    .line 363
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 364
+    .line 365
+    .line 366
+    move-result-object v3
+
+    .line 367
+    invoke-virtual {v3}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 368
+    .line 369
+    .line 370
+    move-result-object v3
+
+    .line 371
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 372
+    .line 373
+    .line 374
+    new-instance v3, Lokhttp3/Cookie$Builder;
+
+    .line 375
+    .line 376
+    invoke-direct {v3}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 377
+    .line 378
+    .line 379
+    invoke-virtual {v3, v2}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 380
+    .line 381
+    .line 382
+    move-result-object v3
+
+    .line 383
+    const-string v4, "versioncode"
+
+    .line 384
+    .line 385
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 386
+    .line 387
+    .line 388
+    move-result-object v3
+
+    .line 389
+    invoke-static {}, Lcom/netease/cloudmusic/common/ApplicationWrapper;->getInstance()Lcom/netease/cloudmusic/common/ApplicationWrapper;
+
+    .line 390
+    .line 391
+    .line 392
+    move-result-object v4
+
+    .line 393
+    invoke-static {v4}, Lcom/netease/cloudmusic/utils/rt;->a(Landroid/content/Context;)I
+
+    .line 394
+    .line 395
+    .line 396
+    move-result v4
+
+    .line 397
+    invoke-static {v4}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    .line 398
+    .line 399
+    .line 400
+    move-result-object v4
+
+    .line 401
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 402
+    .line 403
+    .line 404
+    move-result-object v3
+
+    .line 405
+    invoke-virtual {v3}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 406
+    .line 407
+    .line 408
+    move-result-object v3
+
+    .line 409
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 410
+    .line 411
+    .line 412
+    new-instance v3, Lokhttp3/Cookie$Builder;
+
+    .line 413
+    .line 414
+    invoke-direct {v3}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 415
+    .line 416
+    .line 417
+    invoke-virtual {v3, v2}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 418
+    .line 419
+    .line 420
+    move-result-object v3
+
+    .line 421
+    const-string v4, "packageType"
+
+    .line 422
+    .line 423
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 424
+    .line 425
+    .line 426
+    move-result-object v3
+
+    .line 427
+    sget-object v4, Lcom/netease/cloudmusic/common/BuildInfo;->i:Ljava/lang/String;
+
+    .line 428
+    .line 429
+    invoke-virtual {v3, v4}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 430
+    .line 431
+    .line 432
+    move-result-object v3
+
+    .line 433
+    invoke-virtual {v3}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 434
+    .line 435
+    .line 436
+    move-result-object v3
+
+    .line 437
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 438
+    .line 439
+    .line 440
+    invoke-virtual {p0, v2}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->initCustomCookie(Ljava/lang/String;)Ljava/util/List;
+
+    .line 441
+    .line 442
+    .line 443
+    move-result-object v3
+
+    .line 444
+    if-eqz v3, :cond_1c0
+
+    .line 445
+    .line 446
+    invoke-interface {v0, v3}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+
+    .line 447
+    .line 448
+    .line 449
+    :cond_1c0
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->appKey()Ljava/lang/String;
+
+    .line 450
+    .line 451
+    .line 452
+    move-result-object v3
+
+    .line 453
+    invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    .line 454
+    .line 455
+    .line 456
+    move-result v4
+
+    .line 457
+    if-nez v4, :cond_1e4
+
+    .line 458
+    .line 459
+    new-instance v4, Lokhttp3/Cookie$Builder;
+
+    .line 460
+    .line 461
+    invoke-direct {v4}, Lokhttp3/Cookie$Builder;-><init>()V
+
+    .line 462
+    .line 463
+    .line 464
+    invoke-virtual {v4, v2}, Lokhttp3/Cookie$Builder;->domain(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 465
+    .line 466
+    .line 467
+    move-result-object v2
+
+    .line 468
+    const-string v4, "appkey"
+
+    .line 469
+    .line 470
+    invoke-virtual {v2, v4}, Lokhttp3/Cookie$Builder;->name(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 471
+    .line 472
+    .line 473
+    move-result-object v2
+
+    .line 474
+    invoke-virtual {v2, v3}, Lokhttp3/Cookie$Builder;->value(Ljava/lang/String;)Lokhttp3/Cookie$Builder;
+
+    .line 475
+    .line 476
+    .line 477
+    move-result-object v2
+
+    .line 478
+    invoke-virtual {v2}, Lokhttp3/Cookie$Builder;->build()Lokhttp3/Cookie;
+
+    .line 479
+    .line 480
+    .line 481
+    move-result-object v2
+
+    .line 482
+    invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 483
+    .line 484
+    .line 485
+    :cond_1e4
+    invoke-virtual {p0, v0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->saveCookies(Ljava/util/List;)V
+
+    .line 486
+    .line 487
+    .line 488
+    goto/16 :goto_10
+
+    .line 489
+    .line 490
+    :cond_1e9
+    sget-object v0, Lp72/b;->a:Lp72/b;
+
+    .line 491
+    .line 492
+    invoke-virtual {v0, p0}, Lp72/b;->r(Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;)V
+    :try_end_1ee
+    .catchall {:try_start_1 .. :try_end_1ee} :catchall_1f0
+
+    .line 493
+    .line 494
+    .line 495
+    monitor-exit p0
+
+    .line 496
+    return-void
+
+    .line 497
+    :catchall_1f0
+    move-exception v0
+
+    .line 498
+    monitor-exit p0
+
+    .line 499
+    throw v0
+.end method
+
+.method protected declared-synchronized initMemoryCookieAndSyncLoadFromFile()V
+    .registers 6
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_1
+    iget-object v0, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mCookiesPref:Landroid/content/SharedPreferences;
+
+    .line 3
+    .line 4
+    invoke-interface {v0}, Landroid/content/SharedPreferences;->getAll()Ljava/util/Map;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    new-instance v1, Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 9
+    .line 10
+    invoke-direct {v1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
+
+    .line 11
+    .line 12
+    .line 13
+    iput-object v1, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mCookies:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 14
+    .line 15
+    invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v0
+
+    .line 23
+    :goto_16
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v1
+
+    .line 27
+    if-eqz v1, :cond_54
+
+    .line 28
+    .line 29
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v1
+
+    .line 33
+    check-cast v1, Ljava/util/Map$Entry;
+
+    .line 34
+    .line 35
+    const-string v2, "lastModifyTime"
+
+    .line 36
+    .line 37
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v3
+
+    .line 41
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 42
+    .line 43
+    .line 44
+    move-result v2
+
+    .line 45
+    if-eqz v2, :cond_3b
+
+    .line 46
+    .line 47
+    iget-object v1, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mCookiesPref:Landroid/content/SharedPreferences;
+
+    .line 48
+    .line 49
+    const-string v2, "lastModifyTime"
+
+    .line 50
+    .line 51
+    const-wide/16 v3, -0x1
+
+    .line 52
+    .line 53
+    invoke-interface {v1, v2, v3, v4}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-wide v1
+
+    .line 57
+    iput-wide v1, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mPreferenceLastModifyTime:J
+
+    .line 58
+    .line 59
+    goto :goto_16
+
+    .line 60
+    :cond_3b
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v1
+
+    .line 64
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-object v1
+
+    .line 68
+    invoke-virtual {p0, v1}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->decodeCookie(Ljava/lang/String;)Lokhttp3/Cookie;
+
+    .line 69
+    .line 70
+    .line 71
+    move-result-object v1
+
+    .line 72
+    if-nez v1, :cond_4a
+
+    .line 73
+    .line 74
+    goto :goto_16
+
+    .line 75
+    :cond_4a
+    iget-object v2, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mCookies:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 76
+    .line 77
+    invoke-virtual {p0, v1}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->getCookieToken(Lokhttp3/Cookie;)Ljava/lang/String;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object v3
+
+    .line 81
+    invoke-virtual {v2, v3, v1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_53
+    .catchall {:try_start_1 .. :try_end_53} :catchall_56
+
+    .line 82
+    .line 83
+    .line 84
+    goto :goto_16
+
+    .line 85
+    :cond_54
+    monitor-exit p0
+
+    .line 86
+    return-void
+
+    .line 87
+    :catchall_56
+    move-exception v0
+
+    .line 88
+    monitor-exit p0
+
+    .line 89
+    throw v0
+.end method
+
+.method protected isCookieExpired(Lokhttp3/Cookie;)Z
+    .registers 6
+
+    .line 1
+    invoke-virtual {p1}, Lokhttp3/Cookie;->expiresAt()J
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-wide v0
+
+    .line 5
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-wide v2
+
+    .line 9
+    cmp-long p1, v0, v2
+
+    .line 10
+    .line 11
+    if-gez p1, :cond_e
+
+    .line 12
+    .line 13
+    const/4 p1, 0x1
+
+    .line 14
+    goto :goto_f
+
+    .line 15
+    :cond_e
+    const/4 p1, 0x0
+
+    .line 16
+    :goto_f
+    return p1
+.end method
+
+.method protected isCookieStoreOptLockDebugOpen()Z
+    .registers 2
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method public isLoginCookie(Lokhttp3/Cookie;)Z
+    .registers 5
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-eqz p1, :cond_1c
+
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Lokhttp3/Cookie;->name()Ljava/lang/String;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v1
+
+    .line 8
+    const-string v2, "MUSIC_U"
+
+    .line 9
+    .line 10
+    invoke-virtual {v1, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v1
+
+    .line 14
+    if-nez v1, :cond_1b
+
+    .line 15
+    .line 16
+    invoke-virtual {p1}, Lokhttp3/Cookie;->name()Ljava/lang/String;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p1
+
+    .line 20
+    const-string v1, "MUSIC_A"
+
+    .line 21
+    .line 22
+    invoke-virtual {p1, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 23
+    .line 24
+    .line 25
+    move-result p1
+
+    .line 26
+    if-eqz p1, :cond_1c
+
+    .line 27
+    .line 28
+    :cond_1b
+    const/4 v0, 0x1
+
+    .line 29
+    :cond_1c
+    return v0
+.end method
+
+.method public declared-synchronized loadCookie(Lokhttp3/HttpUrl;)Ljava/util/List;
+    .registers 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lokhttp3/HttpUrl;",
+            ")",
+            "Ljava/util/List<",
+            "Lokhttp3/Cookie;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_1
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->hasFileChangedUnexpectedly()V
+
+    .line 3
+    .line 4
+    .line 5
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 6
+    .line 7
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 8
+    .line 9
+    .line 10
+    iget-object v1, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mCookies:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 11
+    .line 12
+    invoke-virtual {v1}, Ljava/util/concurrent/ConcurrentHashMap;->entrySet()Ljava/util/Set;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v1
+
+    .line 16
+    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v1
+
+    .line 20
+    :cond_13
+    :goto_13
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v2
+
+    .line 24
+    if-eqz v2, :cond_39
+
+    .line 25
+    .line 26
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v2
+
+    .line 30
+    check-cast v2, Ljava/util/Map$Entry;
+
+    .line 31
+    .line 32
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v2
+
+    .line 36
+    check-cast v2, Lokhttp3/Cookie;
+
+    .line 37
+    .line 38
+    invoke-virtual {p0, v2}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->isCookieExpired(Lokhttp3/Cookie;)Z
+
+    .line 39
+    .line 40
+    .line 41
+    move-result v3
+
+    .line 42
+    if-eqz v3, :cond_2f
+
+    .line 43
+    .line 44
+    invoke-virtual {p0, v2}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->removeCookie(Lokhttp3/Cookie;)Z
+
+    .line 45
+    .line 46
+    .line 47
+    goto :goto_13
+
+    .line 48
+    :cond_2f
+    invoke-virtual {v2, p1}, Lokhttp3/Cookie;->matches(Lokhttp3/HttpUrl;)Z
+
+    .line 49
+    .line 50
+    .line 51
+    move-result v3
+
+    .line 52
+    if-eqz v3, :cond_13
+
+    .line 53
+    .line 54
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 55
+    .line 56
+    .line 57
+    goto :goto_13
+
+    .line 58
+    :cond_39
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-object p1
+    :try_end_3d
+    .catchall {:try_start_1 .. :try_end_3d} :catchall_3f
+
+    .line 62
+    monitor-exit p0
+
+    .line 63
+    return-object p1
+
+    .line 64
+    :catchall_3f
+    move-exception p1
+
+    .line 65
+    monitor-exit p0
+
+    .line 66
+    throw p1
+.end method
+
+.method public loadForRequest(Lokhttp3/HttpUrl;)Ljava/util/List;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lokhttp3/HttpUrl;",
+            ")",
+            "Ljava/util/List<",
+            "Lokhttp3/Cookie;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0, p1}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->loadCookie(Lokhttp3/HttpUrl;)Ljava/util/List;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method protected log(Ljava/lang/String;)V
+    .registers 6
+
+    .line 1
+    const-class v0, Lcom/netease/cloudmusic/core/statistic/IStatistic;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/netease/cloudmusic/common/ServiceFacade;->get(Ljava/lang/Class;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Lcom/netease/cloudmusic/core/statistic/IStatistic;
+
+    .line 8
+    .line 9
+    if-eqz v0, :cond_1a
+
+    .line 10
+    .line 11
+    const/4 v1, 0x2
+
+    .line 12
+    new-array v1, v1, [Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    const/4 v2, 0x0
+
+    .line 15
+    const-string v3, "message"
+
+    .line 16
+    .line 17
+    aput-object v3, v1, v2
+
+    .line 18
+    .line 19
+    const/4 v2, 0x1
+
+    .line 20
+    aput-object p1, v1, v2
+
+    .line 21
+    .line 22
+    const-string p1, "cookie_debug"
+
+    .line 23
+    .line 24
+    invoke-interface {v0, p1, v1}, Lcom/netease/cloudmusic/core/statistic/IStatistic;->logDevBI(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 25
+    .line 26
+    .line 27
+    :cond_1a
+    return-void
+.end method
+
+.method public loginAboutCookie(Lokhttp3/Cookie;)Z
+    .registers 4
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-eqz p1, :cond_20
+
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Lokhttp3/Cookie;->name()Ljava/lang/String;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    const-string v1, "MUSIC_U"
+
+    .line 9
+    .line 10
+    invoke-virtual {p1, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v1
+
+    .line 14
+    if-nez v1, :cond_1f
+
+    .line 15
+    .line 16
+    const-string v1, "MUSIC_A"
+
+    .line 17
+    .line 18
+    invoke-virtual {p1, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v1
+
+    .line 22
+    if-nez v1, :cond_1f
+
+    .line 23
+    .line 24
+    const-string v1, "MUSIC_TU"
+
+    .line 25
+    .line 26
+    invoke-virtual {p1, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 27
+    .line 28
+    .line 29
+    move-result p1
+
+    .line 30
+    if-eqz p1, :cond_20
+
+    .line 31
+    .line 32
+    :cond_1f
+    const/4 v0, 0x1
+
+    .line 33
+    :cond_20
+    return v0
+.end method
+
+.method protected os()Ljava/lang/String;
+    .registers 2
+
+    .line 1
+    const-string v0, "android"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public declared-synchronized removeAllCookie()V
+    .registers 5
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "ApplySharedPref"
+        }
+    .end annotation
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_1
+    iget-object v0, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mCookies:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 3
+    .line 4
+    invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentHashMap;->clear()V
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-wide v0
+
+    .line 11
+    iget-object v2, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mCookiesPref:Landroid/content/SharedPreferences;
+
+    .line 12
+    .line 13
+    invoke-interface {v2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v2
+
+    .line 17
+    invoke-interface {v2}, Landroid/content/SharedPreferences$Editor;->clear()Landroid/content/SharedPreferences$Editor;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v2
+
+    .line 21
+    const-string v3, "lastModifyTime"
+
+    .line 22
+    .line 23
+    invoke-interface {v2, v3, v0, v1}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v2
+
+    .line 27
+    invoke-interface {v2}, Landroid/content/SharedPreferences$Editor;->commit()Z
+
+    .line 28
+    .line 29
+    .line 30
+    iput-wide v0, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mPreferenceLastModifyTime:J
+
+    .line 31
+    .line 32
+    invoke-static {p0, v0, v1}, Lb62/a;->k(Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;J)V
+
+    .line 33
+    .line 34
+    .line 35
+    const-string v0, "AbsCookieStore"
+
+    .line 36
+    .line 37
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 38
+    .line 39
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 40
+    .line 41
+    .line 42
+    const-string v2, "removeAllCookies, from process"
+
+    .line 43
+    .line 44
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 45
+    .line 46
+    .line 47
+    invoke-static {}, Lcom/netease/cloudmusic/common/ApplicationWrapper;->getInstance()Lcom/netease/cloudmusic/common/ApplicationWrapper;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object v2
+
+    .line 51
+    invoke-virtual {v2}, Lcom/netease/cloudmusic/common/ApplicationWrapper;->getProcess()I
+
+    .line 52
+    .line 53
+    .line 54
+    move-result v2
+
+    .line 55
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 56
+    .line 57
+    .line 58
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-object v1
+
+    .line 62
+    invoke-static {v0, v1}, Ls72/k;->b(Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_40
+    .catchall {:try_start_1 .. :try_end_40} :catchall_42
+
+    .line 63
+    .line 64
+    .line 65
+    monitor-exit p0
+
+    .line 66
+    return-void
+
+    .line 67
+    :catchall_42
+    move-exception v0
+
+    .line 68
+    monitor-exit p0
+
+    .line 69
+    throw v0
+.end method
+
+.method public declared-synchronized removeCookie(Lokhttp3/Cookie;)Z
+    .registers 12
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_1
+    invoke-virtual {p0, p1}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->getCookieToken(Lokhttp3/Cookie;)Ljava/lang/String;
+
+    .line 3
+    .line 4
+    .line 5
+    move-result-object v0
+
+    .line 6
+    iget-object v1, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mCookies:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 7
+    .line 8
+    invoke-virtual {v1, v0}, Ljava/util/concurrent/ConcurrentHashMap;->containsKey(Ljava/lang/Object;)Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v1
+
+    .line 12
+    const/4 v2, 0x0
+
+    .line 13
+    if-eqz v1, :cond_97
+
+    .line 14
+    .line 15
+    invoke-virtual {p0, p1}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->isLoginCookie(Lokhttp3/Cookie;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v1
+
+    .line 19
+    const/4 v3, 0x1
+
+    .line 20
+    if-eqz v1, :cond_56
+
+    .line 21
+    .line 22
+    const-class v1, Lcom/netease/cloudmusic/monitor/Monitor;
+
+    .line 23
+    .line 24
+    invoke-static {v1}, Lcom/netease/cloudmusic/common/ServiceFacade;->get(Ljava/lang/Class;)Ljava/lang/Object;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v1
+
+    .line 28
+    check-cast v1, Lcom/netease/cloudmusic/monitor/Monitor;
+
+    .line 29
+    .line 30
+    if-eqz v1, :cond_56
+
+    .line 31
+    .line 32
+    const-string v4, "cookie-removed"
+
+    .line 33
+    .line 34
+    iget-wide v5, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->logReportRate:D
+
+    .line 35
+    .line 36
+    invoke-static {v5, v6}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v5
+
+    .line 40
+    const-string v6, "info"
+
+    .line 41
+    .line 42
+    const/4 v7, 0x6
+
+    .line 43
+    new-array v7, v7, [Ljava/lang/Object;
+
+    .line 44
+    .line 45
+    const-string v8, "currentTime"
+
+    .line 46
+    .line 47
+    aput-object v8, v7, v2
+
+    .line 48
+    .line 49
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-wide v8
+
+    .line 53
+    invoke-static {v8, v9}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v2
+
+    .line 57
+    aput-object v2, v7, v3
+
+    .line 58
+    .line 59
+    const-string v2, "cookie"
+
+    .line 60
+    .line 61
+    const/4 v8, 0x2
+
+    .line 62
+    aput-object v2, v7, v8
+
+    .line 63
+    .line 64
+    const/4 v2, 0x3
+
+    .line 65
+    aput-object p1, v7, v2
+
+    .line 66
+    .line 67
+    const-string v2, "stackTrace"
+
+    .line 68
+    .line 69
+    const/4 v8, 0x4
+
+    .line 70
+    aput-object v2, v7, v8
+
+    .line 71
+    .line 72
+    new-instance v2, Ljava/lang/Throwable;
+
+    .line 73
+    .line 74
+    invoke-direct {v2}, Ljava/lang/Throwable;-><init>()V
+
+    .line 75
+    .line 76
+    .line 77
+    invoke-static {v2}, Landroid/util/Log;->getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object v2
+
+    .line 81
+    const/4 v8, 0x5
+
+    .line 82
+    aput-object v2, v7, v8
+
+    .line 83
+    .line 84
+    invoke-interface {v1, v4, v5, v6, v7}, Lcom/netease/cloudmusic/monitor/Monitor;->logActiveReport(Ljava/lang/String;Ljava/lang/Double;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 85
+    .line 86
+    .line 87
+    :cond_56
+    iget-object v1, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mCookies:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 88
+    .line 89
+    invoke-virtual {v1, v0}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 90
+    .line 91
+    .line 92
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 93
+    .line 94
+    .line 95
+    move-result-wide v1
+
+    .line 96
+    iget-object v4, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mCookiesPref:Landroid/content/SharedPreferences;
+
+    .line 97
+    .line 98
+    invoke-interface {v4}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    .line 99
+    .line 100
+    .line 101
+    move-result-object v4
+
+    .line 102
+    invoke-interface {v4, v0}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    .line 103
+    .line 104
+    .line 105
+    move-result-object v0
+
+    .line 106
+    const-string v4, "lastModifyTime"
+
+    .line 107
+    .line 108
+    invoke-interface {v0, v4, v1, v2}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
+
+    .line 109
+    .line 110
+    .line 111
+    move-result-object v0
+
+    .line 112
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+
+    .line 113
+    .line 114
+    .line 115
+    iput-wide v1, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mPreferenceLastModifyTime:J
+
+    .line 116
+    .line 117
+    invoke-static {p0, p1, v1, v2}, Lb62/a;->i(Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;Lokhttp3/Cookie;J)V
+
+    .line 118
+    .line 119
+    .line 120
+    const-string p1, "AbsCookieStore"
+
+    .line 121
+    .line 122
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 123
+    .line 124
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 125
+    .line 126
+    .line 127
+    const-string v1, "removeCookie, from process"
+
+    .line 128
+    .line 129
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 130
+    .line 131
+    .line 132
+    invoke-static {}, Lcom/netease/cloudmusic/common/ApplicationWrapper;->getInstance()Lcom/netease/cloudmusic/common/ApplicationWrapper;
+
+    .line 133
+    .line 134
+    .line 135
+    move-result-object v1
+
+    .line 136
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/common/ApplicationWrapper;->getProcess()I
+
+    .line 137
+    .line 138
+    .line 139
+    move-result v1
+
+    .line 140
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 141
+    .line 142
+    .line 143
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 144
+    .line 145
+    .line 146
+    move-result-object v0
+
+    .line 147
+    invoke-static {p1, v0}, Ls72/k;->b(Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_95
+    .catchall {:try_start_1 .. :try_end_95} :catchall_99
+
+    .line 148
+    .line 149
+    .line 150
+    monitor-exit p0
+
+    .line 151
+    return v3
+
+    .line 152
+    :cond_97
+    monitor-exit p0
+
+    .line 153
+    return v2
+
+    .line 154
+    :catchall_99
+    move-exception p1
+
+    .line 155
+    monitor-exit p0
+
+    .line 156
+    throw p1
+.end method
+
+.method save2LookSubDomain(Ljava/util/List;)V
+    .registers 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lokhttp3/Cookie;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {}, Ls52/u;->f()Ls52/u;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v1
+
+    .line 10
+    invoke-virtual {v1}, Ls52/u;->e()Lj62/a;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v1
+
+    .line 14
+    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p1
+
+    .line 18
+    :goto_11
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v2
+
+    .line 22
+    if-eqz v2, :cond_34
+
+    .line 23
+    .line 24
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v2
+
+    .line 28
+    check-cast v2, Lokhttp3/Cookie;
+
+    .line 29
+    .line 30
+    invoke-virtual {v1}, Lj62/a;->D()Ljava/lang/String;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v3
+
+    .line 34
+    invoke-virtual {p0, v2, v3}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->copyCookieWithDomain(Lokhttp3/Cookie;Ljava/lang/String;)Lokhttp3/Cookie;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v3
+
+    .line 38
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 39
+    .line 40
+    .line 41
+    invoke-virtual {v1}, Lj62/a;->z()Ljava/lang/String;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v3
+
+    .line 45
+    invoke-virtual {p0, v2, v3}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->copyCookieWithDomain(Lokhttp3/Cookie;Ljava/lang/String;)Lokhttp3/Cookie;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v2
+
+    .line 49
+    invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 50
+    .line 51
+    .line 52
+    goto :goto_11
+
+    .line 53
+    :cond_34
+    invoke-virtual {p0, v0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->saveCookies(Ljava/util/List;)V
+
+    .line 54
+    .line 55
+    .line 56
+    return-void
+.end method
+
+.method public declared-synchronized saveCookie(Lokhttp3/Cookie;)V
+    .registers 4
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_1
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 3
+    .line 4
+    const/4 v1, 0x1
+
+    .line 5
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {p0, v0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->saveCookies(Ljava/util/List;)V
+    :try_end_d
+    .catchall {:try_start_1 .. :try_end_d} :catchall_f
+
+    .line 12
+    .line 13
+    .line 14
+    monitor-exit p0
+
+    .line 15
+    return-void
+
+    .line 16
+    :catchall_f
+    move-exception p1
+
+    .line 17
+    monitor-exit p0
+
+    .line 18
+    throw p1
+.end method
+
+.method public declared-synchronized saveCookies(Ljava/util/List;)V
+    .registers 9
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lokhttp3/Cookie;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    if-eqz p1, :cond_eb
+
+    .line 3
+    .line 4
+    :try_start_3
+    invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v0
+
+    .line 8
+    if-eqz v0, :cond_b
+
+    .line 9
+    .line 10
+    goto/16 :goto_eb
+
+    .line 11
+    .line 12
+    :cond_b
+    iget-object v0, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mCookiesPref:Landroid/content/SharedPreferences;
+
+    .line 13
+    .line 14
+    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p1
+
+    .line 22
+    const/4 v1, 0x0
+
+    .line 23
+    :goto_16
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v2
+
+    .line 27
+    if-eqz v2, :cond_b5
+
+    .line 28
+    .line 29
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v2
+
+    .line 33
+    check-cast v2, Lokhttp3/Cookie;
+
+    .line 34
+    .line 35
+    invoke-virtual {p0, v2}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->isLoginCookie(Lokhttp3/Cookie;)Z
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v3
+
+    .line 39
+    if-eqz v3, :cond_29
+
+    .line 40
+    .line 41
+    const/4 v1, 0x1
+
+    .line 42
+    :cond_29
+    invoke-virtual {p0, v2}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->isCookieExpired(Lokhttp3/Cookie;)Z
+
+    .line 43
+    .line 44
+    .line 45
+    move-result v3
+
+    .line 46
+    if-eqz v3, :cond_4d
+
+    .line 47
+    .line 48
+    invoke-virtual {p0, v2}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->removeCookie(Lokhttp3/Cookie;)Z
+
+    .line 49
+    .line 50
+    .line 51
+    const-string v3, "AbsCookieStore"
+
+    .line 52
+    .line 53
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    .line 54
+    .line 55
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 56
+    .line 57
+    .line 58
+    const-string v5, "remove cookie:"
+
+    .line 59
+    .line 60
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 61
+    .line 62
+    .line 63
+    invoke-virtual {v2}, Lokhttp3/Cookie;->toString()Ljava/lang/String;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object v2
+
+    .line 67
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 68
+    .line 69
+    .line 70
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 71
+    .line 72
+    .line 73
+    move-result-object v2
+
+    .line 74
+    invoke-static {v3, v2}, Ls72/k;->b(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 75
+    .line 76
+    .line 77
+    goto :goto_16
+
+    .line 78
+    :cond_4d
+    invoke-virtual {p0, v2}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->checkCookieValid(Lokhttp3/Cookie;)Lokhttp3/Cookie;
+
+    .line 79
+    .line 80
+    .line 81
+    move-result-object v2
+
+    .line 82
+    const-string v3, "AbsCookieStore"
+
+    .line 83
+    .line 84
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    .line 85
+    .line 86
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 87
+    .line 88
+    .line 89
+    const-string v5, "add cookie:"
+
+    .line 90
+    .line 91
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 92
+    .line 93
+    .line 94
+    invoke-virtual {v2}, Lokhttp3/Cookie;->toString()Ljava/lang/String;
+
+    .line 95
+    .line 96
+    .line 97
+    move-result-object v5
+
+    .line 98
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 99
+    .line 100
+    .line 101
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 102
+    .line 103
+    .line 104
+    move-result-object v4
+
+    .line 105
+    invoke-static {v3, v4}, Ls72/k;->b(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 106
+    .line 107
+    .line 108
+    const-string v3, "deviceId"
+
+    .line 109
+    .line 110
+    invoke-virtual {v2}, Lokhttp3/Cookie;->name()Ljava/lang/String;
+
+    .line 111
+    .line 112
+    .line 113
+    move-result-object v4
+
+    .line 114
+    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 115
+    .line 116
+    .line 117
+    move-result v3
+
+    .line 118
+    if-eqz v3, :cond_a3
+
+    .line 119
+    .line 120
+    invoke-virtual {p0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->getAllCookies()Ljava/util/List;
+
+    .line 121
+    .line 122
+    .line 123
+    move-result-object v3
+
+    .line 124
+    invoke-interface {v3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 125
+    .line 126
+    .line 127
+    move-result-object v3
+
+    .line 128
+    :cond_7f
+    :goto_7f
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 129
+    .line 130
+    .line 131
+    move-result v4
+
+    .line 132
+    if-eqz v4, :cond_a3
+
+    .line 133
+    .line 134
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 135
+    .line 136
+    .line 137
+    move-result-object v4
+
+    .line 138
+    check-cast v4, Lokhttp3/Cookie;
+
+    .line 139
+    .line 140
+    const-string v5, "deviceId"
+
+    .line 141
+    .line 142
+    invoke-virtual {v4}, Lokhttp3/Cookie;->name()Ljava/lang/String;
+
+    .line 143
+    .line 144
+    .line 145
+    move-result-object v6
+
+    .line 146
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 147
+    .line 148
+    .line 149
+    move-result v5
+
+    .line 150
+    if-eqz v5, :cond_7f
+
+    .line 151
+    .line 152
+    invoke-virtual {v2}, Lokhttp3/Cookie;->value()Ljava/lang/String;
+
+    .line 153
+    .line 154
+    .line 155
+    move-result-object v5
+
+    .line 156
+    invoke-virtual {v4}, Lokhttp3/Cookie;->value()Ljava/lang/String;
+
+    .line 157
+    .line 158
+    .line 159
+    move-result-object v4
+
+    .line 160
+    invoke-virtual {p0, v5, v4}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->setNewAndOldDeviceId(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 161
+    .line 162
+    .line 163
+    goto :goto_7f
+
+    .line 164
+    :cond_a3
+    invoke-virtual {p0, v2}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->getCookieToken(Lokhttp3/Cookie;)Ljava/lang/String;
+
+    .line 165
+    .line 166
+    .line 167
+    move-result-object v3
+
+    .line 168
+    iget-object v4, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mCookies:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 169
+    .line 170
+    invoke-virtual {v4, v3, v2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 171
+    .line 172
+    .line 173
+    invoke-virtual {p0, v2}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->encodeCookie(Lokhttp3/Cookie;)Ljava/lang/String;
+
+    .line 174
+    .line 175
+    .line 176
+    move-result-object v2
+
+    .line 177
+    invoke-interface {v0, v3, v2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    .line 178
+    .line 179
+    .line 180
+    goto/16 :goto_16
+
+    .line 181
+    .line 182
+    :cond_b5
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 183
+    .line 184
+    .line 185
+    move-result-wide v2
+
+    .line 186
+    const-string p1, "lastModifyTime"
+
+    .line 187
+    .line 188
+    invoke-interface {v0, p1, v2, v3}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
+
+    .line 189
+    .line 190
+    .line 191
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+
+    .line 192
+    .line 193
+    .line 194
+    iput-wide v2, p0, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->mPreferenceLastModifyTime:J
+
+    .line 195
+    .line 196
+    if-eqz v1, :cond_c8
+
+    .line 197
+    .line 198
+    invoke-static {p0, v2, v3}, Lb62/a;->j(Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;J)V
+
+    .line 199
+    .line 200
+    .line 201
+    :cond_c8
+    const-string p1, "AbsCookieStore"
+
+    .line 202
+    .line 203
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 204
+    .line 205
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 206
+    .line 207
+    .line 208
+    const-string v1, "saveCookies, from process"
+
+    .line 209
+    .line 210
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 211
+    .line 212
+    .line 213
+    invoke-static {}, Lcom/netease/cloudmusic/common/ApplicationWrapper;->getInstance()Lcom/netease/cloudmusic/common/ApplicationWrapper;
+
+    .line 214
+    .line 215
+    .line 216
+    move-result-object v1
+
+    .line 217
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/common/ApplicationWrapper;->getProcess()I
+
+    .line 218
+    .line 219
+    .line 220
+    move-result v1
+
+    .line 221
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 222
+    .line 223
+    .line 224
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 225
+    .line 226
+    .line 227
+    move-result-object v0
+
+    .line 228
+    invoke-static {p1, v0}, Ls72/k;->b(Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_e6
+    .catchall {:try_start_3 .. :try_end_e6} :catchall_e8
+
+    .line 229
+    .line 230
+    .line 231
+    monitor-exit p0
+
+    .line 232
+    return-void
+
+    .line 233
+    :catchall_e8
+    move-exception p1
+
+    .line 234
+    monitor-exit p0
+
+    .line 235
+    throw p1
+
+    .line 236
+    :cond_eb
+    :goto_eb
+    monitor-exit p0
+
+    .line 237
+    return-void
+.end method
+
+.method public saveCookiesAllDomain(Ljava/util/List;)V
+    .registers 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lokhttp3/Cookie;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    if-eqz p1, :cond_4a
+
+    .line 2
+    .line 3
+    invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-nez v0, :cond_4a
+
+    .line 8
+    .line 9
+    invoke-static {}, Ls52/u;->f()Ls52/u;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    if-nez v0, :cond_f
+
+    .line 14
+    .line 15
+    goto :goto_4a
+
+    .line 16
+    :cond_f
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 17
+    .line 18
+    invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-static {}, Ls52/u;->f()Ls52/u;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v1
+
+    .line 25
+    invoke-virtual {v1}, Ls52/u;->e()Lj62/a;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v1
+
+    .line 29
+    if-eqz v1, :cond_47
+
+    .line 30
+    .line 31
+    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object p1
+
+    .line 35
+    :cond_22
+    :goto_22
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v2
+
+    .line 39
+    if-eqz v2, :cond_47
+
+    .line 40
+    .line 41
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v2
+
+    .line 45
+    check-cast v2, Lokhttp3/Cookie;
+
+    .line 46
+    .line 47
+    if-eqz v2, :cond_22
+
+    .line 48
+    .line 49
+    invoke-virtual {v1}, Lj62/a;->D()Ljava/lang/String;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object v3
+
+    .line 53
+    invoke-virtual {p0, v2, v3}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->copyCookieWithDomain(Lokhttp3/Cookie;Ljava/lang/String;)Lokhttp3/Cookie;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v3
+
+    .line 57
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 58
+    .line 59
+    .line 60
+    invoke-virtual {v1}, Lj62/a;->z()Ljava/lang/String;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v3
+
+    .line 64
+    invoke-virtual {p0, v2, v3}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->copyCookieWithDomain(Lokhttp3/Cookie;Ljava/lang/String;)Lokhttp3/Cookie;
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-object v2
+
+    .line 68
+    invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 69
+    .line 70
+    .line 71
+    goto :goto_22
+
+    .line 72
+    :cond_47
+    invoke-virtual {p0, v0}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->saveCookies(Ljava/util/List;)V
+
+    .line 73
+    .line 74
+    .line 75
+    :cond_4a
+    :goto_4a
+    return-void
+.end method
+
+.method public saveFromResponse(Lokhttp3/HttpUrl;Ljava/util/List;)V
+    .registers 12
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lokhttp3/HttpUrl;",
+            "Ljava/util/List<",
+            "Lokhttp3/Cookie;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    move v1, v0
+
+    .line 3
+    move v2, v1
+
+    .line 4
+    :goto_3
+    invoke-interface {p2}, Ljava/util/List;->size()I
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v3
+
+    .line 8
+    if-ge v1, v3, :cond_58
+
+    .line 9
+    .line 10
+    invoke-interface {p2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v3
+
+    .line 14
+    check-cast v3, Lokhttp3/Cookie;
+
+    .line 15
+    .line 16
+    invoke-virtual {p0, v3}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->loginAboutCookie(Lokhttp3/Cookie;)Z
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v4
+
+    .line 20
+    const/4 v5, 0x1
+
+    .line 21
+    if-eqz v4, :cond_17
+
+    .line 22
+    .line 23
+    move v2, v5
+
+    .line 24
+    :cond_17
+    invoke-virtual {v3}, Lokhttp3/Cookie;->toString()Ljava/lang/String;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v4
+
+    .line 28
+    invoke-virtual {p0, v3}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->isCookieExpired(Lokhttp3/Cookie;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v6
+
+    .line 32
+    if-eqz v6, :cond_55
+
+    .line 33
+    .line 34
+    invoke-virtual {v3}, Lokhttp3/Cookie;->name()Ljava/lang/String;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v3
+
+    .line 38
+    const-string v6, "MUSIC_U"
+
+    .line 39
+    .line 40
+    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 41
+    .line 42
+    .line 43
+    move-result v3
+
+    .line 44
+    if-eqz v3, :cond_55
+
+    .line 45
+    .line 46
+    const-class v3, Lcom/netease/cloudmusic/monitor/Monitor;
+
+    .line 47
+    .line 48
+    invoke-static {v3}, Lcom/netease/cloudmusic/common/ServiceFacade;->get(Ljava/lang/Class;)Ljava/lang/Object;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v3
+
+    .line 52
+    check-cast v3, Lcom/netease/cloudmusic/monitor/Monitor;
+
+    .line 53
+    .line 54
+    if-eqz v3, :cond_55
+
+    .line 55
+    .line 56
+    const-wide/high16 v6, 0x3ff0000000000000L    # 1.0
+
+    .line 57
+    .line 58
+    invoke-static {v6, v7}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-object v6
+
+    .line 62
+    const/4 v7, 0x4
+
+    .line 63
+    new-array v7, v7, [Ljava/lang/Object;
+
+    .line 64
+    .line 65
+    const-string v8, "url"
+
+    .line 66
+    .line 67
+    aput-object v8, v7, v0
+
+    .line 68
+    .line 69
+    aput-object p1, v7, v5
+
+    .line 70
+    .line 71
+    const/4 v5, 0x2
+
+    .line 72
+    const-string v8, "cookie"
+
+    .line 73
+    .line 74
+    aput-object v8, v7, v5
+
+    .line 75
+    .line 76
+    const/4 v5, 0x3
+
+    .line 77
+    aput-object v4, v7, v5
+
+    .line 78
+    .line 79
+    const-string v4, "server-logout"
+
+    .line 80
+    .line 81
+    const-string v5, "info"
+
+    .line 82
+    .line 83
+    invoke-interface {v3, v4, v6, v5, v7}, Lcom/netease/cloudmusic/monitor/Monitor;->logActiveReport(Ljava/lang/String;Ljava/lang/Double;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 84
+    .line 85
+    .line 86
+    :cond_55
+    add-int/lit8 v1, v1, 0x1
+
+    .line 87
+    .line 88
+    goto :goto_3
+
+    .line 89
+    :cond_58
+    if-eqz v2, :cond_5d
+
+    .line 90
+    .line 91
+    invoke-static {p0, p1, p2}, Lb62/a;->l(Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;Lokhttp3/HttpUrl;Ljava/util/List;)V
+
+    .line 92
+    .line 93
+    .line 94
+    :cond_5d
+    invoke-virtual {p0, p2}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->saveCookies(Ljava/util/List;)V
+
+    .line 95
+    .line 96
+    .line 97
+    invoke-virtual {p0, p2}, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->save2LookSubDomain(Ljava/util/List;)V
+
+    .line 98
+    .line 99
+    .line 100
+    return-void
+.end method
+
+.method protected setNewAndOldDeviceId(Ljava/lang/String;Ljava/lang/String;)V
+    .registers 4
+    .param p1    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-nez v0, :cond_16
+
+    .line 6
+    .line 7
+    invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v0
+
+    .line 11
+    if-nez v0, :cond_16
+
+    .line 12
+    .line 13
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v0
+
+    .line 17
+    if-nez v0, :cond_16
+
+    .line 18
+    .line 19
+    sput-object p1, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->newDeviceId:Ljava/lang/String;
+
+    .line 20
+    .line 21
+    sput-object p2, Lcom/netease/cloudmusic/network/cookie/store/AbsCookieStore;->oldDeviceId:Ljava/lang/String;
+
+    .line 22
+    .line 23
+    :cond_16
+    return-void
+.end method
+

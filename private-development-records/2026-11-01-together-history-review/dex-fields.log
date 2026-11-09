@@ -1,0 +1,1708 @@
+{
+  "artifactSha256": "e6427bcb35ccd9e8858ee55c46ec3db56b2f09871adcd8e897244d96cfcf7894",
+  "method": "DEX header/string_ids/type_ids/field_ids/class_data definitions; static only, no target execution",
+  "classes": [
+    {
+      "dex": "classes13.dex",
+      "class": "com.facebook.imagepipeline.core.ImagePipelineConfig$Builder",
+      "fields": [
+        {
+          "name": "mBitmapConfig",
+          "type": "Landroid/graphics/Bitmap$Config;"
+        },
+        {
+          "name": "mBitmapMemoryCache",
+          "type": "Lcom/facebook/imagepipeline/cache/MemoryCache;"
+        },
+        {
+          "name": "mBitmapMemoryCacheEntryStateObserver",
+          "type": "Lcom/facebook/imagepipeline/cache/CountingMemoryCache$EntryStateObserver;"
+        },
+        {
+          "name": "mBitmapMemoryCacheFactory",
+          "type": "Lcom/facebook/imagepipeline/cache/BitmapMemoryCacheFactory;"
+        },
+        {
+          "name": "mBitmapMemoryCacheParamsSupplier",
+          "type": "Lcom/facebook/common/internal/Supplier;"
+        },
+        {
+          "name": "mBitmapMemoryCacheTrimStrategy",
+          "type": "Lcom/facebook/imagepipeline/cache/MemoryCache$CacheTrimStrategy;"
+        },
+        {
+          "name": "mCacheKeyFactory",
+          "type": "Lcom/facebook/imagepipeline/cache/CacheKeyFactory;"
+        },
+        {
+          "name": "mCallerContextVerifier",
+          "type": "Lcom/facebook/callercontext/CallerContextVerifier;"
+        },
+        {
+          "name": "mCloseableReferenceLeakTracker",
+          "type": "Lcom/facebook/imagepipeline/debug/CloseableReferenceLeakTracker;"
+        },
+        {
+          "name": "mContext",
+          "type": "Landroid/content/Context;"
+        },
+        {
+          "name": "mDiskCacheEnabled",
+          "type": "Z"
+        },
+        {
+          "name": "mDownsampleEnabled",
+          "type": "Z"
+        },
+        {
+          "name": "mEncodedMemoryCache",
+          "type": "Lcom/facebook/imagepipeline/cache/MemoryCache;"
+        },
+        {
+          "name": "mEncodedMemoryCacheParamsSupplier",
+          "type": "Lcom/facebook/common/internal/Supplier;"
+        },
+        {
+          "name": "mExecutorSupplier",
+          "type": "Lcom/facebook/imagepipeline/core/ExecutorSupplier;"
+        },
+        {
+          "name": "mExperimentsBuilder",
+          "type": "Lcom/facebook/imagepipeline/core/ImagePipelineExperiments$Builder;"
+        },
+        {
+          "name": "mFileCacheFactory",
+          "type": "Lcom/facebook/imagepipeline/core/FileCacheFactory;"
+        },
+        {
+          "name": "mHttpConnectionTimeout",
+          "type": "I"
+        },
+        {
+          "name": "mImageCacheStatsTracker",
+          "type": "Lcom/facebook/imagepipeline/cache/ImageCacheStatsTracker;"
+        },
+        {
+          "name": "mImageDecoder",
+          "type": "Lcom/facebook/imagepipeline/decoder/ImageDecoder;"
+        },
+        {
+          "name": "mImageDecoderConfig",
+          "type": "Lcom/facebook/imagepipeline/decoder/ImageDecoderConfig;"
+        },
+        {
+          "name": "mImageTranscoderFactory",
+          "type": "Lcom/facebook/imagepipeline/transcoder/ImageTranscoderFactory;"
+        },
+        {
+          "name": "mImageTranscoderType",
+          "type": "Ljava/lang/Integer;"
+        },
+        {
+          "name": "mIsPrefetchEnabledSupplier",
+          "type": "Lcom/facebook/common/internal/Supplier;"
+        },
+        {
+          "name": "mMainDiskCacheConfig",
+          "type": "Lcom/facebook/cache/disk/DiskCacheConfig;"
+        },
+        {
+          "name": "mMemoryChunkType",
+          "type": "Ljava/lang/Integer;"
+        },
+        {
+          "name": "mMemoryTrimmableRegistry",
+          "type": "Lcom/facebook/common/memory/MemoryTrimmableRegistry;"
+        },
+        {
+          "name": "mNetworkFetcher",
+          "type": "Lcom/facebook/imagepipeline/producers/NetworkFetcher;"
+        },
+        {
+          "name": "mPlatformBitmapFactory",
+          "type": "Lcom/facebook/imagepipeline/bitmaps/PlatformBitmapFactory;"
+        },
+        {
+          "name": "mPoolFactory",
+          "type": "Lcom/facebook/imagepipeline/memory/PoolFactory;"
+        },
+        {
+          "name": "mProgressiveJpegConfig",
+          "type": "Lcom/facebook/imagepipeline/decoder/ProgressiveJpegConfig;"
+        },
+        {
+          "name": "mRequestListener2s",
+          "type": "Ljava/util/Set;"
+        },
+        {
+          "name": "mRequestListeners",
+          "type": "Ljava/util/Set;"
+        },
+        {
+          "name": "mResizeAndRotateEnabledForNetwork",
+          "type": "Z"
+        },
+        {
+          "name": "mSmallImageDiskCacheConfig",
+          "type": "Lcom/facebook/cache/disk/DiskCacheConfig;"
+        }
+      ]
+    },
+    {
+      "dex": "classes13.dex",
+      "class": "com.facebook.imagepipeline.producers.HttpUrlConnectionNetworkFetcher",
+      "fields": [
+        {
+          "name": "FETCH_TIME",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "HTTP_DEFAULT_TIMEOUT",
+          "type": "I"
+        },
+        {
+          "name": "HTTP_PERMANENT_REDIRECT",
+          "type": "I"
+        },
+        {
+          "name": "HTTP_TEMPORARY_REDIRECT",
+          "type": "I"
+        },
+        {
+          "name": "IMAGE_SIZE",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "MAX_REDIRECTS",
+          "type": "I"
+        },
+        {
+          "name": "NUM_NETWORK_THREADS",
+          "type": "I"
+        },
+        {
+          "name": "QUEUE_TIME",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "TOTAL_TIME",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mExecutorService",
+          "type": "Ljava/util/concurrent/ExecutorService;"
+        },
+        {
+          "name": "mHttpConnectionTimeout",
+          "type": "I"
+        },
+        {
+          "name": "mMonotonicClock",
+          "type": "Lcom/facebook/common/time/MonotonicClock;"
+        },
+        {
+          "name": "mRequestHeaders",
+          "type": "Ljava/util/Map;"
+        },
+        {
+          "name": "mUserAgent",
+          "type": "Ljava/lang/String;"
+        }
+      ]
+    },
+    {
+      "dex": "classes14.dex",
+      "class": "com.netease.cloud.nos.yidun.core.AcceleratorConf",
+      "fields": [
+        {
+          "name": "LOGTAG",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "charset",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "chunkRetryCount",
+          "type": "I"
+        },
+        {
+          "name": "chunkSize",
+          "type": "I"
+        },
+        {
+          "name": "connectionTimeout",
+          "type": "I"
+        },
+        {
+          "name": "httpClient",
+          "type": "Lokhttp3/OkHttpClient;"
+        },
+        {
+          "name": "isPipelineEnabled",
+          "type": "Z"
+        },
+        {
+          "name": "lbsConnectionTimeout",
+          "type": "I"
+        },
+        {
+          "name": "lbsHost",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "lbsIP",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "lbsSoTimeout",
+          "type": "I"
+        },
+        {
+          "name": "md5FileMaxSize",
+          "type": "I"
+        },
+        {
+          "name": "monitorHost",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "monitorInterval",
+          "type": "J"
+        },
+        {
+          "name": "monitorThreadEnable",
+          "type": "Z"
+        },
+        {
+          "name": "pipelineFailoverPeriod",
+          "type": "J"
+        },
+        {
+          "name": "queryRetryCount",
+          "type": "I"
+        },
+        {
+          "name": "refreshInterval",
+          "type": "J"
+        },
+        {
+          "name": "soTimeout",
+          "type": "I"
+        }
+      ]
+    },
+    {
+      "dex": "classes14.dex",
+      "class": "com.netease.cloud.nos.yidun.monitor.MonitorConfig",
+      "fields": [
+        {
+          "name": "CREATOR",
+          "type": "Landroid/os/Parcelable$Creator;"
+        },
+        {
+          "name": "LOGTAG",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "connectionTimeout",
+          "type": "I"
+        },
+        {
+          "name": "monitorHost",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "monitorInterval",
+          "type": "J"
+        },
+        {
+          "name": "soTimeout",
+          "type": "I"
+        }
+      ]
+    },
+    {
+      "dex": "classes17.dex",
+      "class": "com.netease.cloudmusic.module.listentogether.meta.LTRelationStatistics",
+      "fields": [
+        {
+          "name": "serialVersionUID",
+          "type": "J"
+        },
+        {
+          "name": "currentConnectionTime",
+          "type": "J"
+        },
+        {
+          "name": "duration",
+          "type": "J"
+        },
+        {
+          "name": "listenCount",
+          "type": "J"
+        },
+        {
+          "name": "totalConnectionTime",
+          "type": "J"
+        }
+      ]
+    },
+    {
+      "dex": "classes17.dex",
+      "class": "com.netease.cloudmusic.module.listentogether.meta.StatisticsChangeMsgData",
+      "fields": [
+        {
+          "name": "Companion",
+          "type": "Lcom/netease/cloudmusic/module/listentogether/meta/StatisticsChangeMsgData$Companion;"
+        },
+        {
+          "name": "serialVersionUID",
+          "type": "J"
+        },
+        {
+          "name": "currentConnectionTime",
+          "type": "J"
+        },
+        {
+          "name": "duration",
+          "type": "J"
+        },
+        {
+          "name": "listenCount",
+          "type": "J"
+        },
+        {
+          "name": "totalConnectionTime",
+          "type": "J"
+        }
+      ]
+    },
+    {
+      "dex": "classes2.dex",
+      "class": "com.alibaba.sdk.android.oss.ClientConfiguration",
+      "fields": [
+        {
+          "name": "DEFAULT_MAX_RETRIES",
+          "type": "I"
+        },
+        {
+          "name": "checkCRC64",
+          "type": "Z"
+        },
+        {
+          "name": "connectionTimeout",
+          "type": "I"
+        },
+        {
+          "name": "customCnameExcludeList",
+          "type": "Ljava/util/List;"
+        },
+        {
+          "name": "customPathPrefixEnable",
+          "type": "Z"
+        },
+        {
+          "name": "eventListener",
+          "type": "Lokhttp3/EventListener;"
+        },
+        {
+          "name": "httpDnsEnable",
+          "type": "Z"
+        },
+        {
+          "name": "ipWithHeader",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mUserAgentMark",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "maxConcurrentRequest",
+          "type": "I"
+        },
+        {
+          "name": "maxErrorRetry",
+          "type": "I"
+        },
+        {
+          "name": "max_log_size",
+          "type": "J"
+        },
+        {
+          "name": "okHttpClient",
+          "type": "Lokhttp3/OkHttpClient;"
+        },
+        {
+          "name": "pathStyleAccessEnable",
+          "type": "Z"
+        },
+        {
+          "name": "proxyHost",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "proxyPort",
+          "type": "I"
+        },
+        {
+          "name": "socketTimeout",
+          "type": "I"
+        }
+      ]
+    },
+    {
+      "dex": "classes5.dex",
+      "class": "com.netease.lava.api.model.RTCICEConnectionStatus",
+      "fields": [
+        {
+          "name": "kRtcICEConnectionForceFailOver",
+          "type": "I"
+        },
+        {
+          "name": "kRtcICEConnectionMediaFailOver",
+          "type": "I"
+        },
+        {
+          "name": "kRtcICEConnectionTimeout",
+          "type": "I"
+        }
+      ]
+    },
+    {
+      "dex": "classes5.dex",
+      "class": "com.netease.lava.nertc.impl.NERtcImpl",
+      "fields": [
+        {
+          "name": "AUDIO_DUMP_NAME",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "BEAUTY_EFFECT_REPORT_INTERVAL",
+          "type": "I"
+        },
+        {
+          "name": "FPS_REPORT_INTERVAL",
+          "type": "J"
+        },
+        {
+          "name": "LOG_NAME",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "MIN_RETRY_JOIN_COUNT",
+          "type": "I"
+        },
+        {
+          "name": "STATS_INTERVAL",
+          "type": "I"
+        },
+        {
+          "name": "STATUS_JOINED",
+          "type": "I"
+        },
+        {
+          "name": "STATUS_JOINING",
+          "type": "I"
+        },
+        {
+          "name": "STATUS_LEAVEING",
+          "type": "I"
+        },
+        {
+          "name": "STATUS_NONE",
+          "type": "I"
+        },
+        {
+          "name": "STATUS_REJOING",
+          "type": "I"
+        },
+        {
+          "name": "STATUS_SWITCHING",
+          "type": "I"
+        },
+        {
+          "name": "TAG",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "VOICE_BAND_GAIN_COUNT",
+          "type": "I"
+        },
+        {
+          "name": "kMaxNtpUpdateCount",
+          "type": "I"
+        },
+        {
+          "name": "kNtpUpdateTimerDelay",
+          "type": "I"
+        },
+        {
+          "name": "kNtpUpdateTimerPeriod",
+          "type": "I"
+        },
+        {
+          "name": "audienceKeepRecording",
+          "type": "Z"
+        },
+        {
+          "name": "audioAPIConfig",
+          "type": "Lcom/netease/lava/api/model/RTCAudioSDKAPIConfig;"
+        },
+        {
+          "name": "byteBuffer",
+          "type": "Ljava/nio/ByteBuffer;"
+        },
+        {
+          "name": "currentAudioDevice",
+          "type": "I"
+        },
+        {
+          "name": "currentICEMessage",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "dumpCapturedYUVInterval",
+          "type": "I"
+        },
+        {
+          "name": "dumpDecodedYUVInterval",
+          "type": "I"
+        },
+        {
+          "name": "dumpEncodeYUVInterval",
+          "type": "I"
+        },
+        {
+          "name": "dumpPostProcessedYUVInterval",
+          "type": "I"
+        },
+        {
+          "name": "enableDumpCapturedYUV",
+          "type": "I"
+        },
+        {
+          "name": "enableDumpDecodeVideo",
+          "type": "I"
+        },
+        {
+          "name": "enableDumpDecodedYUV",
+          "type": "I"
+        },
+        {
+          "name": "enableDumpEncodeYUV",
+          "type": "I"
+        },
+        {
+          "name": "enableDumpEncodedVideo",
+          "type": "I"
+        },
+        {
+          "name": "enableDumpPostProcessedYUV",
+          "type": "I"
+        },
+        {
+          "name": "enableNtpUpdater",
+          "type": "Z"
+        },
+        {
+          "name": "externalAudioSourceConfig",
+          "type": "Lcom/netease/lava/nertc/impl/audio/ExternalAudioSourceConfig;"
+        },
+        {
+          "name": "externalSubAudioSourceConfig",
+          "type": "Lcom/netease/lava/nertc/impl/audio/ExternalAudioSourceConfig;"
+        },
+        {
+          "name": "foregroundOb",
+          "type": "Lcom/netease/lava/webrtc/ForegroundMonitor$Observer;"
+        },
+        {
+          "name": "forwardIP",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "joinChannelTask",
+          "type": "Lcom/netease/lava/base/thread/CancelableTask;"
+        },
+        {
+          "name": "lastNtpTimeOffset",
+          "type": "J"
+        },
+        {
+          "name": "mASLEnable",
+          "type": "Z"
+        },
+        {
+          "name": "mAppkey",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mAudioEarBackTask",
+          "type": "Lcom/netease/lava/nertc/impl/audio/RtcAudioTask;"
+        },
+        {
+          "name": "mAudioEffectTasks",
+          "type": "Landroid/util/LongSparseArray;"
+        },
+        {
+          "name": "mAudioFrameObserver",
+          "type": "Lcom/netease/lava/nertc/sdk/audio/NERtcAudioFrameObserver;"
+        },
+        {
+          "name": "mAudioMixingTask",
+          "type": "Lcom/netease/lava/nertc/impl/audio/RtcAudioTask;"
+        },
+        {
+          "name": "mAudioProcessObserver",
+          "type": "Lcom/netease/lava/nertc/impl/audio/NERtcLavaAudioProcessAdapter$NERtcAudioProcessObserverWrapper;"
+        },
+        {
+          "name": "mAudioProfile",
+          "type": "Lcom/netease/lava/api/model/RTCAudioProfileParam;"
+        },
+        {
+          "name": "mAudioProfileInt",
+          "type": "I"
+        },
+        {
+          "name": "mAudioProfileWhitChannelProfile",
+          "type": "Lcom/netease/lava/api/model/RTCAudioProfileParam;"
+        },
+        {
+          "name": "mAudioScenarioInt",
+          "type": "I"
+        },
+        {
+          "name": "mAudioScenarioWhitChannelProfile",
+          "type": "I"
+        },
+        {
+          "name": "mAutoStartAudio",
+          "type": "Z"
+        },
+        {
+          "name": "mAutoStartVideo",
+          "type": "Z"
+        },
+        {
+          "name": "mAutoSubscribeAllAudio",
+          "type": "Ljava/lang/Boolean;"
+        },
+        {
+          "name": "mAutoSubscribeAudio",
+          "type": "Z"
+        },
+        {
+          "name": "mAutoSubscribeVideo",
+          "type": "Z"
+        },
+        {
+          "name": "mBeautyEffectValues",
+          "type": "Ljava/util/HashMap;"
+        },
+        {
+          "name": "mCallJoinTimeMs",
+          "type": "J"
+        },
+        {
+          "name": "mCallback",
+          "type": "Lcom/netease/lava/nertc/sdk/NERtcCallback;"
+        },
+        {
+          "name": "mCallbackStatus",
+          "type": "I"
+        },
+        {
+          "name": "mCalledAudioDump",
+          "type": "Z"
+        },
+        {
+          "name": "mCameraParam",
+          "type": "Lcom/netease/lava/nertc/impl/RtcCameraParam;"
+        },
+        {
+          "name": "mCameraType",
+          "type": "I"
+        },
+        {
+          "name": "mChannelProfile",
+          "type": "I"
+        },
+        {
+          "name": "mCompatAPMParams",
+          "type": "Lcom/netease/lava/api/model/RTCAudioProcessingParam;"
+        },
+        {
+          "name": "mCompatParam",
+          "type": "Lcom/netease/lava/api/model/RTCCompatParam;"
+        },
+        {
+          "name": "mDecodeMode",
+          "type": "I"
+        },
+        {
+          "name": "mDumpPath",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mEglBase",
+          "type": "Lcom/netease/lava/webrtc/EglBase;"
+        },
+        {
+          "name": "mEglHandler",
+          "type": "Landroid/os/Handler;"
+        },
+        {
+          "name": "mEnableDualStream",
+          "type": "Z"
+        },
+        {
+          "name": "mEncodeMode",
+          "type": "I"
+        },
+        {
+          "name": "mEncryptEnabled",
+          "type": "Z"
+        },
+        {
+          "name": "mExternalCapturer",
+          "type": "Lcom/netease/lava/api/IVideoCapturer;"
+        },
+        {
+          "name": "mExternalI420Buffer",
+          "type": "[B"
+        },
+        {
+          "name": "mExternalLock",
+          "type": "Ljava/lang/Object;"
+        },
+        {
+          "name": "mFailOverLeave",
+          "type": "Z"
+        },
+        {
+          "name": "mForceMediaServer",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mForceQuicServer",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mFrontCamera",
+          "type": "Z"
+        },
+        {
+          "name": "mH265Enabled",
+          "type": "Z"
+        },
+        {
+          "name": "mHWDecode",
+          "type": "Z"
+        },
+        {
+          "name": "mHWEncode",
+          "type": "Z"
+        },
+        {
+          "name": "mHardwareEarback",
+          "type": "Lcom/netease/lava/webrtc/voiceengine/IHardwareEarback;"
+        },
+        {
+          "name": "mIsAudioLevelCallback",
+          "type": "Z"
+        },
+        {
+          "name": "mIsExternalVideoSource",
+          "type": "Z"
+        },
+        {
+          "name": "mIsExternalVideoSourceSetFormat",
+          "type": "Z"
+        },
+        {
+          "name": "mLiveMode",
+          "type": "Z"
+        },
+        {
+          "name": "mLocalFrontPreviewMirror",
+          "type": "Z"
+        },
+        {
+          "name": "mMediaRelayInfo",
+          "type": "Ljava/util/ArrayList;"
+        },
+        {
+          "name": "mMediaServer",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mNEVCEnabled",
+          "type": "Z"
+        },
+        {
+          "name": "mNetworkProxy",
+          "type": "Lcom/netease/lava/nertc/sdk/NERtcNetworkProxy;"
+        },
+        {
+          "name": "mOption",
+          "type": "Lcom/netease/lava/nertc/sdk/NERtcOption;"
+        },
+        {
+          "name": "mPhoneState",
+          "type": "I"
+        },
+        {
+          "name": "mPlayoutMute",
+          "type": "Z"
+        },
+        {
+          "name": "mPreConnectionTimeMs",
+          "type": "J"
+        },
+        {
+          "name": "mReconnectRunnable",
+          "type": "Lcom/netease/lava/base/thread/CancelableTask;"
+        },
+        {
+          "name": "mReconnectStartTime",
+          "type": "J"
+        },
+        {
+          "name": "mRecordMute",
+          "type": "Z"
+        },
+        {
+          "name": "mRecordParam",
+          "type": "Lcom/netease/lava/api/model/RTCRecordParam;"
+        },
+        {
+          "name": "mRoomServerToken",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mRtcEngine",
+          "type": "Lcom/netease/lava/api/ILavaRtcEngine;"
+        },
+        {
+          "name": "mRtcLogTrace",
+          "type": "Lcom/netease/lava/nertc/interact/RtcLogTrace;"
+        },
+        {
+          "name": "mRtcParameters",
+          "type": "Lcom/netease/lava/nertc/impl/RtcParameters;"
+        },
+        {
+          "name": "mServerAddress",
+          "type": "Lcom/netease/lava/nertc/sdk/NERtcServerAddresses;"
+        },
+        {
+          "name": "mServerRecordAudio",
+          "type": "Z"
+        },
+        {
+          "name": "mServerRecordMode",
+          "type": "I"
+        },
+        {
+          "name": "mServerRecordSpeaker",
+          "type": "Z"
+        },
+        {
+          "name": "mServerRecordVideo",
+          "type": "Z"
+        },
+        {
+          "name": "mSessionId",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mSignalTimeElapsed",
+          "type": "J"
+        },
+        {
+          "name": "mStatisticCur",
+          "type": "Lcom/netease/lava/nertc/reporter/statistic/StatisticBean;"
+        },
+        {
+          "name": "mStatsObserver",
+          "type": "Lcom/netease/lava/nertc/sdk/stats/NERtcStatsObserver;"
+        },
+        {
+          "name": "mStatus",
+          "type": "I"
+        },
+        {
+          "name": "mSwitchChannelName",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mTelephonyManager",
+          "type": "Landroid/telephony/TelephonyManager;"
+        },
+        {
+          "name": "mUIHandler",
+          "type": "Landroid/os/Handler;"
+        },
+        {
+          "name": "mUserLeaveOnP2P",
+          "type": "Z"
+        },
+        {
+          "name": "mUserSelf",
+          "type": "Lcom/netease/lava/nertc/impl/RtcUserInfo;"
+        },
+        {
+          "name": "mUserSparseArray",
+          "type": "Landroid/util/LongSparseArray;"
+        },
+        {
+          "name": "mVP8Mode",
+          "type": "I"
+        },
+        {
+          "name": "mVideoPubMode",
+          "type": "I"
+        },
+        {
+          "name": "maxSpaceForDumpCapturedYUVMB",
+          "type": "I"
+        },
+        {
+          "name": "maxSpaceForDumpDecodeVideoMB",
+          "type": "I"
+        },
+        {
+          "name": "maxSpaceForDumpDecodedYUVMB",
+          "type": "I"
+        },
+        {
+          "name": "maxSpaceForDumpEncodeYUVMB",
+          "type": "I"
+        },
+        {
+          "name": "maxSpaceForDumpEncodedVideoMB",
+          "type": "I"
+        },
+        {
+          "name": "maxSpaceForDumpPostProcessedYUVMB",
+          "type": "I"
+        },
+        {
+          "name": "myPhoneStateListener",
+          "type": "Lcom/netease/lava/nertc/impl/NERtcImpl$MyPhoneStateListener;"
+        },
+        {
+          "name": "ntpTimeOffset",
+          "type": "J"
+        },
+        {
+          "name": "ntpTimeOffsetFactors",
+          "type": "[Ljava/lang/Long;"
+        },
+        {
+          "name": "ntpUpdateCount",
+          "type": "I"
+        },
+        {
+          "name": "oldRole",
+          "type": "I"
+        },
+        {
+          "name": "pendingStopRecording",
+          "type": "Z"
+        },
+        {
+          "name": "rawI420",
+          "type": "[B"
+        },
+        {
+          "name": "rejoinReason",
+          "type": "I"
+        },
+        {
+          "name": "reportAudioInputDevice",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "reportAudioOutputDevice",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "rtcAudioOutputRoute",
+          "type": "I"
+        },
+        {
+          "name": "rtcConfig",
+          "type": "Lcom/netease/lava/nertc/interact/RtcConfig;"
+        },
+        {
+          "name": "rtcLoginParam",
+          "type": "Lcom/netease/lava/api/model/RTCLoginParam;"
+        },
+        {
+          "name": "serverType",
+          "type": "I"
+        },
+        {
+          "name": "setupTimeCostStatist",
+          "type": "Lorg/json/JSONObject;"
+        },
+        {
+          "name": "startMediaRelayTask",
+          "type": "Lcom/netease/lava/base/thread/CancelableTask;"
+        },
+        {
+          "name": "switchChannelTask",
+          "type": "Lcom/netease/lava/base/thread/CancelableTask;"
+        },
+        {
+          "name": "tryCount",
+          "type": "I"
+        },
+        {
+          "name": "tryServerIndex",
+          "type": "I"
+        },
+        {
+          "name": "updateMediaRelayTask",
+          "type": "Lcom/netease/lava/base/thread/CancelableTask;"
+        },
+        {
+          "name": "updateNtpTimeTask",
+          "type": "Lcom/netease/lava/base/thread/TimerCancelableTask;"
+        },
+        {
+          "name": "updateNtpTimer",
+          "type": "Ljava/util/Timer;"
+        },
+        {
+          "name": "useGlFinish",
+          "type": "Z"
+        },
+        {
+          "name": "useQuicConfig",
+          "type": "Z"
+        },
+        {
+          "name": "userCustomExtraInfo",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "userEnable1V1Mode",
+          "type": "Z"
+        },
+        {
+          "name": "voiceBandGains",
+          "type": "[I"
+        },
+        {
+          "name": "yuvConverter",
+          "type": "Lcom/netease/lava/webrtc/YuvConverter;"
+        }
+      ]
+    },
+    {
+      "dex": "classes6.dex",
+      "class": "com.netease.epay.lib.sentry.SentryOptions",
+      "fields": [
+        {
+          "name": "connectionTimeoutMillis",
+          "type": "I"
+        },
+        {
+          "name": "deviceInfoPopulate",
+          "type": "Lcom/netease/epay/lib/sentry/IDeviceInfoPopulate;"
+        },
+        {
+          "name": "dsn",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "hostnameVerifier",
+          "type": "Ljavax/net/ssl/HostnameVerifier;"
+        },
+        {
+          "name": "isDebug",
+          "type": "Z"
+        },
+        {
+          "name": "readTimeoutMillis",
+          "type": "I"
+        },
+        {
+          "name": "serializer",
+          "type": "Lcom/netease/epay/lib/sentry/ISerializer;"
+        },
+        {
+          "name": "sslSocketFactory",
+          "type": "Ljavax/net/ssl/SSLSocketFactory;"
+        },
+        {
+          "name": "transportFactory",
+          "type": "Lcom/netease/epay/lib/sentry/ITransportFactory;"
+        },
+        {
+          "name": "userInfo",
+          "type": "Ljava/util/HashMap;"
+        }
+      ]
+    },
+    {
+      "dex": "classes7.dex",
+      "class": "com.netease.nesrsdk.NESRConfigParser",
+      "fields": [
+        {
+          "name": "INVALID_FLOAT",
+          "type": "F"
+        },
+        {
+          "name": "INVALID_INT",
+          "type": "I"
+        },
+        {
+          "name": "kAFPOptsKey",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "kAFPUrlKey",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "kApiKey",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "kAudioRatioKey",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "kConnectTimeoutKey",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "kHFPOptsKey",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "kHFPUrlKey",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "kHotTimesKey",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "kLyricOptsKey",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "kLyricUrlKey",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "kMusicRatioKey",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "kNameKey",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "kRecorderMethodKey",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "kSNRKey",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "kSingRatioKey",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "kThresholdOptsKey",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "kUrlKey",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mAFPTimeDuration",
+          "type": "[F"
+        },
+        {
+          "name": "mAudioReportThreshold",
+          "type": "F"
+        },
+        {
+          "name": "mAudioThreshold",
+          "type": "F"
+        },
+        {
+          "name": "mConfigFileFlag",
+          "type": "Z"
+        },
+        {
+          "name": "mConfigJson",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mConnectionTimeout",
+          "type": "I"
+        },
+        {
+          "name": "mHFPTimeDuration",
+          "type": "[F"
+        },
+        {
+          "name": "mLyricsTimeDuration",
+          "type": "[F"
+        },
+        {
+          "name": "mMusicRatioThreshold",
+          "type": "F"
+        },
+        {
+          "name": "mRecorderMethod",
+          "type": "I"
+        },
+        {
+          "name": "mSNRThreshold",
+          "type": "F"
+        },
+        {
+          "name": "mSingRatioThreshold",
+          "type": "F"
+        },
+        {
+          "name": "mUnifyAFPUrlAddress",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mUnifyHFPUrlAddress",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mUnifyLyricUrlAddress",
+          "type": "Ljava/lang/String;"
+        }
+      ]
+    },
+    {
+      "dex": "classes7.dex",
+      "class": "com.netease.nesrsdk.NeSongRecognitionClient",
+      "fields": [
+        {
+          "name": "AUDIO_SOURCE_EXTERNAL",
+          "type": "I"
+        },
+        {
+          "name": "AUDIO_SOURCE_INTERNAL",
+          "type": "I"
+        },
+        {
+          "name": "REC_INTERNAL_SILENT_DATA",
+          "type": "I"
+        },
+        {
+          "name": "REC_METHOD_AUDIO_RECORDER",
+          "type": "I"
+        },
+        {
+          "name": "REC_METHOD_OPENSL",
+          "type": "I"
+        },
+        {
+          "name": "REC_UNIT_TYPE_AFP",
+          "type": "I"
+        },
+        {
+          "name": "REC_UNIT_TYPE_ASR",
+          "type": "I"
+        },
+        {
+          "name": "REC_UNIT_TYPE_CFP",
+          "type": "I"
+        },
+        {
+          "name": "REC_UNIT_TYPE_Delay",
+          "type": "I"
+        },
+        {
+          "name": "REC_UNIT_TYPE_Failure",
+          "type": "I"
+        },
+        {
+          "name": "REC_UNIT_TYPE_HFP",
+          "type": "I"
+        },
+        {
+          "name": "REC_UNIT_TYPE_Pcm",
+          "type": "I"
+        },
+        {
+          "name": "TAG",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mMediaProjection",
+          "type": "Landroid/media/projection/MediaProjection;"
+        },
+        {
+          "name": "isNewAudioManager",
+          "type": "Z"
+        },
+        {
+          "name": "mAFPTimeDuration",
+          "type": "[F"
+        },
+        {
+          "name": "mASRCallbackData",
+          "type": "Lcom/netease/nesrsdk/NEAudioFPCallbackData;"
+        },
+        {
+          "name": "mAudioCaptureThread",
+          "type": "Lcom/netease/nesrsdk/NeSongRecognitionClient$AudioCaptureThread;"
+        },
+        {
+          "name": "mAudioFPArray",
+          "type": "Ljava/util/List;"
+        },
+        {
+          "name": "mAudioFingerprintCallback",
+          "type": "Lcom/netease/nesrsdk/audiofingerprint/AudioFingerprintClient$AudioFingerprintCallback;"
+        },
+        {
+          "name": "mAudioFingerprintClient",
+          "type": "Lcom/netease/nesrsdk/audiofingerprint/AudioFingerprintClient;"
+        },
+        {
+          "name": "mAudioManager",
+          "type": "Landroid/media/AudioManager;"
+        },
+        {
+          "name": "mAudioRecClient",
+          "type": "Lcom/netease/nesrsdk/audiorecord/AudioRecClient;"
+        },
+        {
+          "name": "mAudioRecEvent",
+          "type": "Lcom/netease/nesrsdk/audiorecord/AudioRecEvent;"
+        },
+        {
+          "name": "mAudioRecordSource",
+          "type": "I"
+        },
+        {
+          "name": "mAudioReportThreshold",
+          "type": "F"
+        },
+        {
+          "name": "mAudioSourceType",
+          "type": "I"
+        },
+        {
+          "name": "mAudioThreshold",
+          "type": "F"
+        },
+        {
+          "name": "mCallback",
+          "type": "Lcom/netease/nesrsdk/NeSongRecognitionCallback;"
+        },
+        {
+          "name": "mChannel",
+          "type": "I"
+        },
+        {
+          "name": "mConfigFileFlag",
+          "type": "Z"
+        },
+        {
+          "name": "mConfigJson",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mConnectionTimeout",
+          "type": "I"
+        },
+        {
+          "name": "mContext",
+          "type": "Landroid/content/Context;"
+        },
+        {
+          "name": "mCurrentAudioSource",
+          "type": "I"
+        },
+        {
+          "name": "mDeviceType",
+          "type": "I"
+        },
+        {
+          "name": "mDiagnostics",
+          "type": "Lcom/netease/nesrsdk/diagnostics/RecognitionDiagnostics;"
+        },
+        {
+          "name": "mDummyMicReaderThread",
+          "type": "Ljava/lang/Thread;"
+        },
+        {
+          "name": "mDummyMicRecord",
+          "type": "Landroid/media/AudioRecord;"
+        },
+        {
+          "name": "mEnableAudioEncoding",
+          "type": "Z"
+        },
+        {
+          "name": "mEnableAudioTrackSampleRate",
+          "type": "Z"
+        },
+        {
+          "name": "mEnableHighSampleRate",
+          "type": "Z"
+        },
+        {
+          "name": "mEnableLogger",
+          "type": "Z"
+        },
+        {
+          "name": "mEnableNetworkRequest",
+          "type": "Z"
+        },
+        {
+          "name": "mEnableRealAudioEncoding",
+          "type": "Z"
+        },
+        {
+          "name": "mHFPTimeDuration",
+          "type": "[F"
+        },
+        {
+          "name": "mHotTimeCounter",
+          "type": "I"
+        },
+        {
+          "name": "mHttpHandler",
+          "type": "Landroid/os/Handler;"
+        },
+        {
+          "name": "mHttpRequest",
+          "type": "Lcom/netease/nesrsdk/NESRHttpRequest;"
+        },
+        {
+          "name": "mHttpThread",
+          "type": "Landroid/os/HandlerThread;"
+        },
+        {
+          "name": "mIsRunning",
+          "type": "Z"
+        },
+        {
+          "name": "mIsScreenRecord",
+          "type": "Z"
+        },
+        {
+          "name": "mLock",
+          "type": "Ljava/lang/Object;"
+        },
+        {
+          "name": "mLogger",
+          "type": "Lcom/netease/nesrsdk/NeSongRecAudioManager$INeSongRecAudioManagerLogger;"
+        },
+        {
+          "name": "mLyricsTimeDuration",
+          "type": "[F"
+        },
+        {
+          "name": "mMediaProjectionCallback",
+          "type": "Landroid/media/projection/MediaProjection$Callback;"
+        },
+        {
+          "name": "mMusicRatioThreshold",
+          "type": "F"
+        },
+        {
+          "name": "mOffloadBypassEnabled",
+          "type": "Z"
+        },
+        {
+          "name": "mOutputFile",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mOutputSampleRate",
+          "type": "I"
+        },
+        {
+          "name": "mPrefixDomain",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mRecAsrtionTimes",
+          "type": "I"
+        },
+        {
+          "name": "mRecHfpTimes",
+          "type": "I"
+        },
+        {
+          "name": "mRecType",
+          "type": "I"
+        },
+        {
+          "name": "mRecognitionTimes",
+          "type": "I"
+        },
+        {
+          "name": "mRecognitionUrl",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mRecorderMethod",
+          "type": "I"
+        },
+        {
+          "name": "mRequestCallback",
+          "type": "Lcom/netease/nesrsdk/NESRHttpRequest$NESRRequestCallback;"
+        },
+        {
+          "name": "mSNRThreshold",
+          "type": "F"
+        },
+        {
+          "name": "mSRAudioManager",
+          "type": "Lcom/netease/nesrsdk/NeSongRecAudioManager;"
+        },
+        {
+          "name": "mSRAudioManagerV2",
+          "type": "Lcom/netease/nesrsdk/NeSongRecAudioManagerV2;"
+        },
+        {
+          "name": "mSampleRate",
+          "type": "I"
+        },
+        {
+          "name": "mSelfRecordingClient",
+          "type": "Lcom/netease/nesrsdk/audiofingerprint/AudioSelfRecordingFingerprintClient;"
+        },
+        {
+          "name": "mSessionId",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mSingRatioThreshold",
+          "type": "F"
+        },
+        {
+          "name": "mSkipRecordSamples",
+          "type": "I"
+        },
+        {
+          "name": "mStateListener",
+          "type": "Lcom/netease/nesrsdk/audiorecord/AudioRecEvent$OnNotifyEventListener;"
+        },
+        {
+          "name": "mUnifyAFPCookie",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mUnifyAFPUrl",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mUnifyAFPUrlAddress",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mUnifyHFPCookie",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mUnifyHFPUrl",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mUnifyHFPUrlAddress",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mUnifyLyricCookie",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mUnifyLyricUrl",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mUnifyLyricUrlAddress",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mUnifyRecognitionFlag",
+          "type": "Z"
+        },
+        {
+          "name": "mUsageType",
+          "type": "I"
+        },
+        {
+          "name": "mUserCookie",
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "name": "mVoiceDuration",
+          "type": "J"
+        }
+      ]
+    }
+  ],
+  "matchingFieldStrings": [
+    ", connectionTime=",
+    ", currentConnectionTime=",
+    ", disconnectionTime=",
+    ", reconnectionTime=",
+    ", totalConnectionTime=",
+    "Common_HttpConnectionTimeout",
+    "Common_SocketConnectionTimeout",
+    "Invalid ConnectionTimeout:",
+    "Invalid lbsConnectionTimeout:",
+    "connectionTime",
+    "connectionTimeout",
+    "connectionTimeoutMillis",
+    "currentConnectionTime",
+    "ensurePreConnectionTime",
+    "getConnectionTimeout",
+    "getConnectionTimeoutMillis",
+    "getCurrentConnectionTime",
+    "getLbsConnectionTimeout",
+    "getTotalConnectionTime",
+    "kRtcICEConnectionTimeout",
+    "lbsConnectionTimeout",
+    "mConnectionTimeout",
+    "mHttpConnectionTimeout",
+    "mPreConnectionTimeMs",
+    "onConnectUpdate in kRtcICEConnectionTimeout , but server up",
+    "onConnectUpdate in kRtcICEConnectionTimeout but networkType is: ",
+    "onConnectUpdate in kRtcICEConnectionTimeout but stats not joined so ignore \uff0c stats : ",
+    "onConnectUpdate in kRtcICEConnectionTimeout so so clear relay and reconnect",
+    "rtcConnectionTimeOut",
+    "setConnectionTimeout",
+    "setConnectionTimeoutMillis",
+    "setCurrentConnectionTime",
+    "setHttpConnectionTimeout",
+    "setLbsConnectionTimeout",
+    "setTotalConnectionTime",
+    "totalConnectionTime",
+    "withConnectionTimeout"
+  ],
+  "endpointStrings": [
+    "/api/listen/together/friend/online/guide/v2",
+    "/listen/together/privilege/change/report",
+    "/listen/together/query/exit/info",
+    "/listen/together/song/match/identity/unlock",
+    "community/listen/together/playlist/experiment/group"
+  ]
+}

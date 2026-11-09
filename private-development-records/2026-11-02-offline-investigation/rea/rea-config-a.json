@@ -1,0 +1,136 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_545e8d98a914cf97b34b8793b0cd2ddb0ef633f2e22d76274daf4632a3cf473e\",\"subject\":{\"name\":\"D:\\\\AnLi\\\\.codex-artifacts\\\\2026-11-02-offline-investigation\\\\transport\\\\official-classes5-analysis-only.apk\",\"digest\":{\"sha256\":\"0ecbffe14e990de4fc1f8564011b28244f33f65c479e06450515511710885bcb\"},\"format\":\"apk\",\"architecture\":null,\"local_path\":\"D:\\\\AnLi\\\\.codex-artifacts\\\\2026-11-02-offline-investigation\\\\transport\\\\official-classes5-analysis-only.apk\"},\"provider\":{\"id\":\"jadx\",\"name\":\"JADX headless\",\"version\":\"0.7.1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"inspect_android_method\",\"parameters\":{\"path\":\".codex-artifacts\\\\2026-11-02-offline-investigation\\\\transport\\\\official-classes5-analysis-only.apk\",\"class_name\":\"bd2.b\",\"method_name\":\"a\"},\"raw_result\":{\"server\":{\"name\":\"rea-jadx-bridge\",\"version\":\"1\"},\"bridge_sha256\":\"5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1\",\"jar_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"loaded\":{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\zyt\\\\AppData\\\\Local\\\\Temp\\\\rea-android-b9ee6aebdaf6aca145f13e324efc7bb4\\\\target.apk\",\"class_count\":3229,\"resource_count\":2,\"threads\":1,\"resources\":\"full\"},\"calls\":[{\"operation\":\"rea_jvm_status\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"max_heap_bytes\\\":3221225472,\\\"metadata_scope\\\":\\\"parsed_members\\\",\\\"engine_reported_version\\\":\\\"0.7.1\\\",\\\"available_processors\\\":8,\\\"java_version\\\":\\\"17.0.20.1\\\"}\"}],\"isError\":false}},{\"operation\":\"get_class_summary\",\"input\":{\"class_name\":\"bd2.b\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"methods\\\":[{\\\"def_pos\\\":0,\\\"name\\\":\\\"a\\\",\\\"is_constructor\\\":false,\\\"signature\\\":\\\"a(int): com.netease.cloudmusic.core.statistic.e0\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"b\\\",\\\"is_constructor\\\":false,\\\"signature\\\":\\\"b(int): long\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"c\\\",\\\"is_constructor\\\":false,\\\"signature\\\":\\\"c(int): java.lang.String\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"d\\\",\\\"is_constructor\\\":false,\\\"signature\\\":\\\"d(int): java.lang.String\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"e\\\",\\\"is_constructor\\\":false,\\\"signature\\\":\\\"e(int): java.lang.String\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"f\\\",\\\"is_constructor\\\":false,\\\"signature\\\":\\\"f(int, java.lang.String, java.lang.String): com.netease.cloudmusic.core.statistic.e0$b\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"g\\\",\\\"is_constructor\\\":false,\\\"signature\\\":\\\"g(int): com.netease.cloudmusic.core.statistic.p1\\\"},{\\\"def_pos\\\":0,\\\"name\\\":\\\"h\\\",\\\"is_constructor\\\":false,\\\"signature\\\":\\\"h(int): java.lang.String\\\"}],\\\"fields\\\":[],\\\"field_count\\\":0,\\\"full_name\\\":\\\"bd2.b\\\",\\\"name\\\":\\\"b\\\",\\\"inner_classes\\\":[],\\\"inner_class_count\\\":0,\\\"method_count\\\":8}\"}],\"isError\":false}},{\"operation\":\"get_method_body\",\"input\":{\"class_name\":\"bd2.b\",\"method_name\":\"a\",\"overload_index\":0,\"smali_fallback\":true},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"mode\\\":\\\"java\\\",\\\"markers\\\":[],\\\"method_name\\\":\\\"a\\\",\\\"overload_count\\\":1,\\\"body\\\":\\\"/* JADX INFO: compiled from: ProGuard */\\\\r\\\\n/* JADX INFO: loaded from: classes5.dex */\\\\r\\\\npublic class b {\\\\r\\\\n    public static e0 a(int i) {\\\\r\\\\n        String strC \\\\u003d c(i);\\\\r\\\\n        String strH \\\\u003d h(i);\\\\r\\\\n        String strE \\\\u003d e(i);\\\\r\\\\n        String strD \\\\u003d d(i);\\\\r\\\\n        long jB \\\\u003d b(i);\\\\r\\\\n        e0.a aVar \\\\u003d new e0.a();\\\\r\\\\n        aVar.l(strC).p(strE).r(strH).n(jB).o(strD).k(f(i, strH, strE)).q(g(i));\\\\r\\\\n        if (i \\\\u003d\\\\u003d 2003) {\\\\r\\\\n            aVar.m(\\\\\\\"RealTimeStatistic\\\\\\\");\\\\r\\\\n        }\\\\r\\\\n        return aVar.j();\\\\r\\\\n    }\\\",\\\"fell_back\\\":false,\\\"overload_index\\\":0,\\\"class_name\\\":\\\"bd2.b\\\",\\\"full_name\\\":\\\"bd2.b.a\\\"}\"}],\"isError\":false}}]},\"normalized_result\":{\"engine\":{\"name\":\"jadx-headless-mcp\",\"version\":\"0.7.1\",\"artifact_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"source_revision\":\"5844800a486d2248fa949b74c9896285f5b54de2\",\"worker_count\":1,\"heap_limit_mib\":3072},\"class_name\":\"bd2.b\",\"method\":{\"name\":\"a\",\"reported_signature\":\"a(int): com.netease.cloudmusic.core.statistic.e0\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":null},\"overload_count\":1,\"representation\":\"java\",\"body_status\":\"available\",\"fell_back\":false,\"markers\":[],\"source\":{\"status\":\"complete\",\"text\":\"/* JADX INFO: compiled from: ProGuard */\\r\\n/* JADX INFO: loaded from: classes5.dex */\\r\\npublic class b {\\r\\n    public static e0 a(int i) {\\r\\n        String strC = c(i);\\r\\n        String strH = h(i);\\r\\n        String strE = e(i);\\r\\n        String strD = d(i);\\r\\n        long jB = b(i);\\r\\n        e0.a aVar = new e0.a();\\r\\n        aVar.l(strC).p(strE).r(strH).n(jB).o(strD).k(f(i, strH, strE)).q(g(i));\\r\\n        if (i == 2003) {\\r\\n            aVar.m(\\\"RealTimeStatistic\\\");\\r\\n        }\\r\\n        return aVar.j();\\r\\n    }\",\"reported_total_bytes\":null}},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static decompiler observations do not establish runtime behavior; the APK is never executed.\",\"Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.\",\"Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.\",\"Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider.\"],\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_545e8d98a914cf97b34b8793b0cd2ddb0ef633f2e22d76274daf4632a3cf473e",
+    "subject": {
+      "name": "D:\\AnLi\\.codex-artifacts\\2026-11-02-offline-investigation\\transport\\official-classes5-analysis-only.apk",
+      "digest": {
+        "sha256": "0ecbffe14e990de4fc1f8564011b28244f33f65c479e06450515511710885bcb"
+      },
+      "format": "apk",
+      "architecture": null,
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-02-offline-investigation\\transport\\official-classes5-analysis-only.apk"
+    },
+    "provider": {
+      "id": "jadx",
+      "name": "JADX headless",
+      "version": "0.7.1"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": ".codex-artifacts\\2026-11-02-offline-investigation\\transport\\official-classes5-analysis-only.apk",
+      "class_name": "bd2.b",
+      "method_name": "a"
+    },
+    "raw_result": {
+      "server": {
+        "name": "rea-jadx-bridge",
+        "version": "1"
+      },
+      "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+      "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "loaded": {
+        "state": "LOADED",
+        "apk_path": "C:\\Users\\zyt\\AppData\\Local\\Temp\\rea-android-b9ee6aebdaf6aca145f13e324efc7bb4\\target.apk",
+        "class_count": 3229,
+        "resource_count": 2,
+        "threads": 1,
+        "resources": "full"
+      },
+      "calls": [
+        {
+          "operation": "rea_jvm_status",
+          "input": {},
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"max_heap_bytes\":3221225472,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":8,\"java_version\":\"17.0.20.1\"}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "get_class_summary",
+          "input": {
+            "class_name": "bd2.b"
+          },
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"methods\":[{\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"signature\":\"a(int): com.netease.cloudmusic.core.statistic.e0\"},{\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"signature\":\"b(int): long\"},{\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"signature\":\"c(int): java.lang.String\"},{\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"signature\":\"d(int): java.lang.String\"},{\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false,\"signature\":\"e(int): java.lang.String\"},{\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false,\"signature\":\"f(int, java.lang.String, java.lang.String): com.netease.cloudmusic.core.statistic.e0$b\"},{\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false,\"signature\":\"g(int): com.netease.cloudmusic.core.statistic.p1\"},{\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false,\"signature\":\"h(int): java.lang.String\"}],\"fields\":[],\"field_count\":0,\"full_name\":\"bd2.b\",\"name\":\"b\",\"inner_classes\":[],\"inner_class_count\":0,\"method_count\":8}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "get_method_body",
+          "input": {
+            "class_name": "bd2.b",
+            "method_name": "a",
+            "overload_index": 0,
+            "smali_fallback": true
+          },
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"mode\":\"java\",\"markers\":[],\"method_name\":\"a\",\"overload_count\":1,\"body\":\"/* JADX INFO: compiled from: ProGuard */\\r\\n/* JADX INFO: loaded from: classes5.dex */\\r\\npublic class b {\\r\\n    public static e0 a(int i) {\\r\\n        String strC \\u003d c(i);\\r\\n        String strH \\u003d h(i);\\r\\n        String strE \\u003d e(i);\\r\\n        String strD \\u003d d(i);\\r\\n        long jB \\u003d b(i);\\r\\n        e0.a aVar \\u003d new e0.a();\\r\\n        aVar.l(strC).p(strE).r(strH).n(jB).o(strD).k(f(i, strH, strE)).q(g(i));\\r\\n        if (i \\u003d\\u003d 2003) {\\r\\n            aVar.m(\\\"RealTimeStatistic\\\");\\r\\n        }\\r\\n        return aVar.j();\\r\\n    }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"bd2.b\",\"full_name\":\"bd2.b.a\"}"
+              }
+            ],
+            "isError": false
+          }
+        }
+      ]
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 3072
+      },
+      "class_name": "bd2.b",
+      "method": {
+        "name": "a",
+        "reported_signature": "a(int): com.netease.cloudmusic.core.statistic.e0",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "/* JADX INFO: compiled from: ProGuard */\r\n/* JADX INFO: loaded from: classes5.dex */\r\npublic class b {\r\n    public static e0 a(int i) {\r\n        String strC = c(i);\r\n        String strH = h(i);\r\n        String strE = e(i);\r\n        String strD = d(i);\r\n        long jB = b(i);\r\n        e0.a aVar = new e0.a();\r\n        aVar.l(strC).p(strE).r(strH).n(jB).o(strD).k(f(i, strH, strE)).q(g(i));\r\n        if (i == 2003) {\r\n            aVar.m(\"RealTimeStatistic\");\r\n        }\r\n        return aVar.j();\r\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "confidence": "derived",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "locations": [],
+    "evidence_links": []
+  }
+}

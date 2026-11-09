@@ -1,0 +1,66 @@
+{
+  "scope": "Together background diagnostic candidate, host validation only",
+  "status": "Instrumentation complete; real-device stop phase and repair remain unresolved",
+  "sourceEvidence": [
+    {
+      "source": ".codex-artifacts/2026-11-03-v145-readonly/READONLY-CAPTURE-SUMMARY.json",
+      "finding": "Installed 1.0.44 still follows the peer only in foreground; 52 samples over 183.47 seconds retained the same process and foreground media service. Existing capture cannot observe HTTP or audio-application phases.",
+      "type": "Previously captured read-only device evidence, not repeated by this worker"
+    },
+    {
+      "source": ".codex-artifacts/2026-11-03-v145-readonly/official-background-static-evidence.json",
+      "evidenceIds": [
+        "ev_aaa82d17e94c3b61e5908fa99b135b5e54afce0a2e0b275349d77f7a7abad51f",
+        "ev_d532a27d1e1d615f26e0f5b903f98475062bf3085742e933da5ff0a3a2ddabbc",
+        "ev_64661786ba834a0a5f53cb7699f695dc1bab4d253ea15382a20dbba32ffbe6a4"
+      ],
+      "finding": "Official ua0.b0 constructs ListenTogetherPlayerMessageThread, routes work through IPlayService.runOnPlayerHandler, and has an im.v0 playback-service adapter. This is architectural static evidence only; it does not establish the Flutter failure phase or an interoperable replacement IM implementation.",
+      "type": "Saved REA member-level static evidence, compact selected-field reads"
+    },
+    {
+      "source": "android/app/src/main/kotlin/com/mesting/mesting_music/TogetherBackgroundPlugin.kt and lib/features/music_platform/netease/together/together_background_binding.dart",
+      "finding": "The existing worker schedules a MethodChannel poll into the same Dart engine. Its immediate ACK confirms delivery, independently of asynchronous HTTP and audio application.",
+      "type": "Current local source inspection"
+    }
+  ],
+  "implemented": {
+    "dartTimelineCapacity": 768,
+    "nativeTimelineCapacity": 256,
+    "phases": "Native configuration/schedule/send/ACK/timeout/lease/media/wake; Dart lifecycle/receive/configuration/poll skip/HTTP start-complete-timeout-failure/sequence ordering/audio queued-start-complete-cancel-timeout-failure",
+    "privacy": "Typed event enums and numeric/boolean metadata only; native map export is independently whitelisted. No account, room, friend, song, title, URL, cookie, raw token, payload or exception text is exported.",
+    "manualPage": "TogetherSyncDiagnosticsPage(controller: controller), in together_sync_diagnostics_page.dart; parent owns panel integration",
+    "candidateFlag": "--dart-define=TOGETHER_SYNC_DIAGNOSTICS=true",
+    "ordinaryBuildDefaultLogging": false,
+    "logcatTag": "MestingTogetherSync",
+    "dartLogFilter": "JSON tag=MestingTogetherSync, source=dart (Android outer tag may be flutter)",
+    "nativeLogFilter": "Android tag=MestingTogetherSync, JSON source=native",
+    "flagReportFields": ["diagnosticLoggingEnabled", "dart.loggingEnabled", "native.loggingEnabled"],
+    "nativeFlagTransport": "Existing configure channel adds diagnosticLogging boolean with a local revision guard; no new channel, service, permission or SDK change"
+  },
+  "verification": {
+    "flutterFocusedFiles": 4,
+    "flutterFocusedPassed": 30,
+    "newFlutterTests": 8,
+    "flutterErrors": 0,
+    "nativeHostScenariosPassed": 10,
+    "nativeProductionPluginTypeChecked": true,
+    "nativeAndroidRuntimeExecuted": false,
+    "focusedStaticAnalysisIssues": 0,
+    "uiChecks": "320dp, 1.6 text scale, light/dark local preview and actual clipboard command; no device screenshot or GPU acceptance",
+    "reports": ["focused-test-summary.json", "focused-tests.jsonl", "native-background-verification.json"]
+  },
+  "boundaries": {
+    "deviceAccess": false,
+    "adbAccess": false,
+    "accountRequests": false,
+    "installed": false,
+    "releaseBuild": false,
+    "gitMutation": false,
+    "published": false
+  },
+  "unknowns": [
+    "Whether the installed-device failure occurs before Dart receipt, during HTTP, during command ordering or during audio application",
+    "Whether the private candidate emits the expected phases while the actual Android activity is backgrounded or locked",
+    "The root cause and a verified real-device background synchronization repair"
+  ]
+}

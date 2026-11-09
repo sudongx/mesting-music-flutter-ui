@@ -1,0 +1,24 @@
+{
+  "authority": "Official public listen-home source, statically inspected; no account/backend/mobile runtime acceptance",
+  "baseSource": ".codex-artifacts/2026-11-02-offline-investigation/today/public/public-source-provenance.json",
+  "annualSource": ".codex-artifacts/2026-11-03-release145/footprint/public/provenance.json",
+  "annualREAEvidence": "ev_5b058bdd1fff6a8d3da1bc75d039597b149caf1981777ab569840c69f0738397",
+  "contracts": [
+    {"path": "/api/content/activity/listen/data/realtime/report", "query": ["type=week|month"], "sourceModules": [6882, 87869]},
+    {"path": "/api/content/activity/listen/data/report", "query": ["type=week|month", "endTime=endOf(period)-oneHour"], "sourceModules": [6882, 82796, 87869]},
+    {"path": "/api/content/activity/listen/data/year/report", "query": [], "fields": ["data.yearItems[].year", "data.yearItems[].playNum", "data.yearItems[].playDuration"], "sourceModules": [6882, 46504, 11461]},
+    {"path": "/api/content/activity/listen/data/today/song/play/rank", "query": [], "fields": ["data.songDTOs[].songId", "songName", "aliasName", "picUrl", "artists[].artistName", "redStar", "lastPlayTime"], "limit": "first100", "sourceModules": [6882, 68829]}
+  ],
+  "units": {
+    "report.listenTimeDistributionBlock.playDuration": "minutes, module69650.dp",
+    "report.durationDetails.duration|podcastDuration|audiobookDuration": "minutes, summed in module84513",
+    "total.totalDuration": "seconds, module69650.r8",
+    "yearItems.playDuration": "seconds, lazy11461 uses69650.r8; 2024 uses69650.Ew whose input also seconds and whose displayed hours round upward",
+    "today.songDTOs.lastPlayTime": "seconds, module68829 multiplies1000 before formatting",
+    "report.startTime|endTime": "milliseconds"
+  },
+  "additionalFields": ["listenTimeDistributionBlock.listenDays", "weekTodayListenBlock.songCount", "weekTodayListenBlock.coverUrls"],
+  "calendar": "China civil timezone; public startOf(week) begins Sunday; historical response must match selected actual interval",
+  "annualBoundary": "The official annual lazy chunk renders yearItems as yearly aggregates and report links; no monthly series is supplied. UI displays actual returned years and does not fabricate monthly values.",
+  "todayBoundary": "Today-list endpoint has no historical date argument. The UI labels it today separately from any historical chart; prior-day cached rows retain their own visible date."
+}

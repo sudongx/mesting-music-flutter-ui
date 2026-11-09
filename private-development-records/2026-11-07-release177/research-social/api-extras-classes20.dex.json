@@ -1,0 +1,320 @@
+[
+  {
+    "class_def_index": 1511,
+    "descriptor": "Lcom/luna/biz/profile/impl/account/me/MeApi;",
+    "access_flags": 1537,
+    "super": "Ljava/lang/Object;",
+    "interfaces": [],
+    "class_data_offset": 9827586,
+    "static_values_offset": 0,
+    "fields": [],
+    "methods": [
+      {
+        "dex_method_index": 45348,
+        "owner": "Lcom/luna/biz/profile/impl/account/me/MeApi;",
+        "name": "getMeCancel",
+        "descriptor": "()Lio/reactivex/Observable;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9327059,
+            "visibility": 1,
+            "type": "Lcom/bytedance/retrofit2/http/GET;",
+            "elements": {
+              "value": "/luna/me/cancel"
+            }
+          },
+          {
+            "annotation_item_offset": 9327069,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Lio/reactivex/Observable<",
+                "Lcom/luna/biz/profile/impl/account/me/CancelAccountResponse;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 9212805,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 45349,
+        "owner": "Lcom/luna/biz/profile/impl/account/me/MeApi;",
+        "name": "getMeInfo",
+        "descriptor": "(Ljava/util/List;)Lio/reactivex/Observable;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9326941,
+            "visibility": 1,
+            "type": "Lcom/bytedance/retrofit2/http/GET;",
+            "elements": {
+              "value": "/luna/me"
+            }
+          },
+          {
+            "annotation_item_offset": 9326951,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "(",
+                "Ljava/util/List<",
+                "Ljava/lang/String;",
+                ">;)",
+                "Lio/reactivex/Observable<",
+                "Lcom/luna/biz/profile/impl/account/me/GetMeResponse;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 9212805,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 45350,
+        "owner": "Lcom/luna/biz/profile/impl/account/me/MeApi;",
+        "name": "getPrivacySetting",
+        "descriptor": "()Lio/reactivex/Observable;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9326991,
+            "visibility": 1,
+            "type": "Lcom/bytedance/retrofit2/http/GET;",
+            "elements": {
+              "value": "/luna/me/privacy/setting"
+            }
+          },
+          {
+            "annotation_item_offset": 9327001,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "()",
+                "Lio/reactivex/Observable<",
+                "Lcom/luna/biz/profile/impl/account/me/GetPrivacySettingResponse;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 9212805,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 45351,
+        "owner": "Lcom/luna/biz/profile/impl/account/me/MeApi;",
+        "name": "updatePrivacySetting",
+        "descriptor": "(Lcom/luna/biz/profile/impl/account/me/MeApi$UpdateSettingParams;)Lio/reactivex/Observable;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9327022,
+            "visibility": 1,
+            "type": "Lcom/bytedance/retrofit2/http/POST;",
+            "elements": {
+              "value": "/luna/user/me/privacy/setting"
+            }
+          },
+          {
+            "annotation_item_offset": 9327032,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "(",
+                "Lcom/luna/biz/profile/impl/account/me/MeApi$UpdateSettingParams;",
+                ")",
+                "Lio/reactivex/Observable<",
+                "Lcom/luna/common/arch/net/EmptyResponse;",
+                ">;"
+              ]
+            }
+          },
+          {
+            "annotation_item_offset": 9212805,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "declared_fields": [],
+    "declared_methods": [
+      {
+        "dex_method_index": 45348,
+        "owner": "Lcom/luna/biz/profile/impl/account/me/MeApi;",
+        "name": "getMeCancel",
+        "descriptor": "()Lio/reactivex/Observable;",
+        "access_flags": 1025,
+        "code_item_offset": 0
+      },
+      {
+        "dex_method_index": 45349,
+        "owner": "Lcom/luna/biz/profile/impl/account/me/MeApi;",
+        "name": "getMeInfo",
+        "descriptor": "(Ljava/util/List;)Lio/reactivex/Observable;",
+        "access_flags": 1025,
+        "code_item_offset": 0
+      },
+      {
+        "dex_method_index": 45350,
+        "owner": "Lcom/luna/biz/profile/impl/account/me/MeApi;",
+        "name": "getPrivacySetting",
+        "descriptor": "()Lio/reactivex/Observable;",
+        "access_flags": 1025,
+        "code_item_offset": 0
+      },
+      {
+        "dex_method_index": 45351,
+        "owner": "Lcom/luna/biz/profile/impl/account/me/MeApi;",
+        "name": "updatePrivacySetting",
+        "descriptor": "(Lcom/luna/biz/profile/impl/account/me/MeApi$UpdateSettingParams;)Lio/reactivex/Observable;",
+        "access_flags": 1025,
+        "code_item_offset": 0
+      }
+    ],
+    "annotations": [
+      {
+        "annotation_item_offset": 9327090,
+        "visibility": 2,
+        "type": "Ldalvik/annotation/MemberClasses;",
+        "elements": {
+          "value": [
+            {
+              "type_descriptor": "Lcom/luna/biz/profile/impl/account/me/MeApi$Companion;"
+            },
+            {
+              "type_descriptor": "Lcom/luna/biz/profile/impl/account/me/MeApi$DefaultImpls;"
+            },
+            {
+              "type_descriptor": "Lcom/luna/biz/profile/impl/account/me/MeApi$UpdateSettingParams;"
+            }
+          ]
+        }
+      },
+      {
+        "annotation_item_offset": 9327108,
+        "visibility": 1,
+        "type": "Lkotlin/Metadata;",
+        "elements": {
+          "d1": [
+            "��8\n\u0002\u0018\u0002\n\u0002\u0010��\n��\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n��\n\u0002\u0010 \n\u0002\u0010\u000e\n��\n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n\u0002\b\u0003\bf\u0018�� \u00102\u00020\u0001:\u0002\u0010\u0011J \u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\u0010\b\u0003\u0010\u0005\u001a\n\u0012\u0004\u0012\u00020\u0007\u0018\u00010\u0006H'J\u000e\u0010\b\u001a\b\u0012\u0004\u0012\u00020\t0\u0003H'J\u0018\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u000b0\u00032\b\b\u0001\u0010\f\u001a\u00020\rH'J\u000e\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\u000f0\u0003H'¨\u0006\u0012"
+          ],
+          "d2": [
+            "Lcom/luna/biz/profile/impl/account/me/MeApi;",
+            "",
+            "getMeInfo",
+            "Lio/reactivex/Observable;",
+            "Lcom/luna/biz/profile/impl/account/me/GetMeResponse;",
+            "includes",
+            "",
+            "",
+            "getPrivacySetting",
+            "Lcom/luna/biz/profile/impl/account/me/GetPrivacySettingResponse;",
+            "updatePrivacySetting",
+            "Lcom/luna/common/arch/net/EmptyResponse;",
+            "params",
+            "Lcom/luna/biz/profile/impl/account/me/MeApi$UpdateSettingParams;",
+            "getMeCancel",
+            "Lcom/luna/biz/profile/impl/account/me/CancelAccountResponse;",
+            "Companion",
+            "UpdateSettingParams",
+            "biz-profile-impl_release"
+          ],
+          "k": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "01",
+            "unsigned_value": 1
+          },
+          "mv": [
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "02",
+              "unsigned_value": 2
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            }
+          ],
+          "xi": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "30",
+            "unsigned_value": 48
+          }
+        }
+      }
+    ],
+    "parameter_annotations": [
+      {
+        "dex_method_index": 45349,
+        "owner": "Lcom/luna/biz/profile/impl/account/me/MeApi;",
+        "name": "getMeInfo",
+        "descriptor": "(Ljava/util/List;)Lio/reactivex/Observable;",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9326981,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/Query;",
+              "elements": {
+                "value": "includes"
+              }
+            },
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 45351,
+        "owner": "Lcom/luna/biz/profile/impl/account/me/MeApi;",
+        "name": "updatePrivacySetting",
+        "descriptor": "(Lcom/luna/biz/profile/impl/account/me/MeApi$UpdateSettingParams;)Lio/reactivex/Observable;",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9217971,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/Body;",
+              "elements": {}
+            },
+            {
+              "annotation_item_offset": 9212805,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

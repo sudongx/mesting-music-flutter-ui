@@ -1,0 +1,446 @@
+5750            -
+  Class descriptor  : 'Lwf2/b;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Lcom/netease/cloudmusic/core/statistic/c0;'
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lwf2/b;)
+      name          : 'a'
+      type          : 'Lcom/netease/cloudmusic/core/statistic/c0;'
+      access        : 0x0012 (PRIVATE FINAL)
+    #1              : (in Lwf2/b;)
+      name          : 'b'
+      type          : 'Lcom/netease/cloudmusic/core/statistic/c0;'
+      access        : 0x0012 (PRIVATE FINAL)
+  Direct methods    -
+    #0              : (in Lwf2/b;)
+      name          : '<init>'
+      type          : '(Lcom/netease/cloudmusic/core/statistic/c0;Lcom/netease/cloudmusic/core/statistic/c0;)V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 4
+      ins           : 3
+      outs          : 2
+      insns size    : 13 16-bit code units
+4f1030:                                        |[4f1030] wf2.b.<init>:(Lcom/netease/cloudmusic/core/statistic/c0;Lcom/netease/cloudmusic/core/statistic/c0;)V
+4f1040: 1a00 c478                              |0000: const-string v0, "biStub" // string@78c4
+4f1044: 7120 b4c7 0200                         |0002: invoke-static {v2, v0}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@c7b4
+4f104a: 7010 e2bf 0100                         |0005: invoke-direct {v1}, Ljava/lang/Object;.<init>:()V // method@bfe2
+4f1050: 5b12 1f70                              |0008: iput-object v2, v1, Lwf2/b;.a:Lcom/netease/cloudmusic/core/statistic/c0; // field@701f
+4f1054: 5b13 2070                              |000a: iput-object v3, v1, Lwf2/b;.b:Lcom/netease/cloudmusic/core/statistic/c0; // field@7020
+4f1058: 0e00                                   |000c: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+      locals        :
+        0x0000 - 0x000d reg=1 this Lwf2/b;
+        0x0000 - 0x000d reg=2 (null) Lcom/netease/cloudmusic/core/statistic/c0;
+        0x0000 - 0x000d reg=3 (null) Lcom/netease/cloudmusic/core/statistic/c0;
+
+    #1              : (in Lwf2/b;)
+      name          : 'c'
+      type          : '()Z'
+      access        : 0x0012 (PRIVATE FINAL)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 5 16-bit code units
+4f1014:                                        |[4f1014] wf2.b.c:()Z
+4f1024: 7100 b89c 0000                         |0000: invoke-static {}, Lcom/netease/cloudmusic/utils/e0;.g:()Z // method@9cb8
+4f102a: 0a00                                   |0003: move-result v0
+4f102c: 0f00                                   |0004: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+      locals        :
+        0x0000 - 0x0005 reg=1 this Lwf2/b;
+
+  Virtual methods   -
+    #0              : (in Lwf2/b;)
+      name          : 'a'
+      type          : '(Ljava/lang/String;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 2
+      insns size    : 19 16-bit code units
+4f11a4:                                        |[4f11a4] wf2.b.a:(Ljava/lang/String;)V
+4f11b4: 5410 1f70                              |0000: iget-object v0, v1, Lwf2/b;.a:Lcom/netease/cloudmusic/core/statistic/c0; // field@701f
+4f11b8: 7220 d512 2000                         |0002: invoke-interface {v0, v2}, Lcom/netease/cloudmusic/core/statistic/c0;.a:(Ljava/lang/String;)V // method@12d5
+4f11be: 7010 32ec 0100                         |0005: invoke-direct {v1}, Lwf2/b;.c:()Z // method@ec32
+4f11c4: 0a00                                   |0008: move-result v0
+4f11c6: 3800 0900                              |0009: if-eqz v0, 0012 // +0009
+4f11ca: 5410 2070                              |000b: iget-object v0, v1, Lwf2/b;.b:Lcom/netease/cloudmusic/core/statistic/c0; // field@7020
+4f11ce: 3800 0500                              |000d: if-eqz v0, 0012 // +0005
+4f11d2: 7220 d512 2000                         |000f: invoke-interface {v0, v2}, Lcom/netease/cloudmusic/core/statistic/c0;.a:(Ljava/lang/String;)V // method@12d5
+4f11d8: 0e00                                   |0012: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+      locals        :
+        0x0000 - 0x0013 reg=1 this Lwf2/b;
+        0x0000 - 0x0013 reg=2 (null) Ljava/lang/String;
+
+    #1              : (in Lwf2/b;)
+      name          : 'b'
+      type          : '()V'
+      access        : 0x1001 (PUBLIC SYNTHETIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+4f11dc:                                        |[4f11dc] wf2.b.b:()V
+4f11ec: 7110 d412 0000                         |0000: invoke-static {v0}, Lcom/netease/cloudmusic/core/statistic/b0;.a:(Lcom/netease/cloudmusic/core/statistic/c0;)V // method@12d4
+4f11f2: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lwf2/b;
+
+    #2              : (in Lwf2/b;)
+      name          : 'forceUpload'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 19 16-bit code units
+4f105c:                                        |[4f105c] wf2.b.forceUpload:()V
+4f106c: 5410 1f70                              |0000: iget-object v0, v1, Lwf2/b;.a:Lcom/netease/cloudmusic/core/statistic/c0; // field@701f
+4f1070: 7210 d612 0000                         |0002: invoke-interface {v0}, Lcom/netease/cloudmusic/core/statistic/c0;.forceUpload:()V // method@12d6
+4f1076: 7010 32ec 0100                         |0005: invoke-direct {v1}, Lwf2/b;.c:()Z // method@ec32
+4f107c: 0a00                                   |0008: move-result v0
+4f107e: 3800 0900                              |0009: if-eqz v0, 0012 // +0009
+4f1082: 5410 2070                              |000b: iget-object v0, v1, Lwf2/b;.b:Lcom/netease/cloudmusic/core/statistic/c0; // field@7020
+4f1086: 3800 0500                              |000d: if-eqz v0, 0012 // +0005
+4f108a: 7210 d612 0000                         |000f: invoke-interface {v0}, Lcom/netease/cloudmusic/core/statistic/c0;.forceUpload:()V // method@12d6
+4f1090: 0e00                                   |0012: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+      locals        :
+        0x0000 - 0x0013 reg=1 this Lwf2/b;
+
+    #3              : (in Lwf2/b;)
+      name          : 'log'
+      type          : '(Ljava/lang/String;[Ljava/lang/Object;)V'
+      access        : 0x0081 (PUBLIC VARARGS)
+      code          -
+      registers     : 5
+      ins           : 3
+      outs          : 3
+      insns size    : 34 16-bit code units
+4f1094:                                        |[4f1094] wf2.b.log:(Ljava/lang/String;[Ljava/lang/Object;)V
+4f10a4: 1a00 e7d6                              |0000: const-string v0, "values" // string@d6e7
+4f10a8: 7120 b4c7 0400                         |0002: invoke-static {v4, v0}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@c7b4
+4f10ae: 5420 1f70                              |0005: iget-object v0, v2, Lwf2/b;.a:Lcom/netease/cloudmusic/core/statistic/c0; // field@701f
+4f10b2: 2141                                   |0007: array-length v1, v4
+4f10b4: 7120 c3c0 1400                         |0008: invoke-static {v4, v1}, Ljava/util/Arrays;.copyOf:([Ljava/lang/Object;I)[Ljava/lang/Object; // method@c0c3
+4f10ba: 0c01                                   |000b: move-result-object v1
+4f10bc: 7230 d712 3001                         |000c: invoke-interface {v0, v3, v1}, Lcom/netease/cloudmusic/core/statistic/c0;.log:(Ljava/lang/String;[Ljava/lang/Object;)V // method@12d7
+4f10c2: 7010 32ec 0200                         |000f: invoke-direct {v2}, Lwf2/b;.c:()Z // method@ec32
+4f10c8: 0a00                                   |0012: move-result v0
+4f10ca: 3800 0e00                              |0013: if-eqz v0, 0021 // +000e
+4f10ce: 5420 2070                              |0015: iget-object v0, v2, Lwf2/b;.b:Lcom/netease/cloudmusic/core/statistic/c0; // field@7020
+4f10d2: 3800 0a00                              |0017: if-eqz v0, 0021 // +000a
+4f10d6: 2141                                   |0019: array-length v1, v4
+4f10d8: 7120 c3c0 1400                         |001a: invoke-static {v4, v1}, Ljava/util/Arrays;.copyOf:([Ljava/lang/Object;I)[Ljava/lang/Object; // method@c0c3
+4f10de: 0c04                                   |001d: move-result-object v4
+4f10e0: 7230 d712 3004                         |001e: invoke-interface {v0, v3, v4}, Lcom/netease/cloudmusic/core/statistic/c0;.log:(Ljava/lang/String;[Ljava/lang/Object;)V // method@12d7
+4f10e6: 0e00                                   |0021: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+        0x0013 line=20
+        0x0014 line=21
+        0x0015 line=22
+        0x0016 line=23
+        0x0017 line=24
+        0x0018 line=25
+        0x0019 line=26
+        0x001a line=27
+        0x001b line=28
+        0x001c line=29
+        0x001d line=30
+        0x001e line=31
+        0x001f line=32
+        0x0020 line=33
+        0x0021 line=34
+      locals        :
+        0x0000 - 0x0022 reg=2 this Lwf2/b;
+        0x0000 - 0x0022 reg=3 (null) Ljava/lang/String;
+        0x0000 - 0x0022 reg=4 (null) [Ljava/lang/Object;
+
+    #4              : (in Lwf2/b;)
+      name          : 'logJSON'
+      type          : '(Ljava/lang/String;Lcom/alibaba/fastjson/JSONObject;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 5
+      ins           : 3
+      outs          : 3
+      insns size    : 29 16-bit code units
+4f10e8:                                        |[4f10e8] wf2.b.logJSON:(Ljava/lang/String;Lcom/alibaba/fastjson/JSONObject;)V
+4f10f8: 2200 9803                              |0000: new-instance v0, Lcom/alibaba/fastjson/JSONObject; // type@0398
+4f10fc: 7010 6e0d 0000                         |0002: invoke-direct {v0}, Lcom/alibaba/fastjson/JSONObject;.<init>:()V // method@0d6e
+4f1102: 3804 0500                              |0005: if-eqz v4, 000a // +0005
+4f1106: 6e20 820d 4000                         |0007: invoke-virtual {v0, v4}, Lcom/alibaba/fastjson/JSONObject;.putAll:(Ljava/util/Map;)V // method@0d82
+4f110c: 5421 1f70                              |000a: iget-object v1, v2, Lwf2/b;.a:Lcom/netease/cloudmusic/core/statistic/c0; // field@701f
+4f1110: 7230 d812 3104                         |000c: invoke-interface {v1, v3, v4}, Lcom/netease/cloudmusic/core/statistic/c0;.logJSON:(Ljava/lang/String;Lcom/alibaba/fastjson/JSONObject;)V // method@12d8
+4f1116: 7010 32ec 0200                         |000f: invoke-direct {v2}, Lwf2/b;.c:()Z // method@ec32
+4f111c: 0a04                                   |0012: move-result v4
+4f111e: 3804 0900                              |0013: if-eqz v4, 001c // +0009
+4f1122: 5424 2070                              |0015: iget-object v4, v2, Lwf2/b;.b:Lcom/netease/cloudmusic/core/statistic/c0; // field@7020
+4f1126: 3804 0500                              |0017: if-eqz v4, 001c // +0005
+4f112a: 7230 d812 3400                         |0019: invoke-interface {v4, v3, v0}, Lcom/netease/cloudmusic/core/statistic/c0;.logJSON:(Ljava/lang/String;Lcom/alibaba/fastjson/JSONObject;)V // method@12d8
+4f1130: 0e00                                   |001c: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+        0x0013 line=20
+        0x0014 line=21
+        0x0015 line=22
+        0x0016 line=23
+        0x0017 line=24
+        0x0018 line=25
+        0x0019 line=26
+        0x001a line=27
+        0x001b line=28
+        0x001c line=29
+      locals        :
+        0x0000 - 0x001d reg=2 this Lwf2/b;
+        0x0000 - 0x001d reg=3 (null) Ljava/lang/String;
+        0x0000 - 0x001d reg=4 (null) Lcom/alibaba/fastjson/JSONObject;
+
+    #5              : (in Lwf2/b;)
+      name          : 'putOtherAppendLogInfo'
+      type          : '(Ljava/lang/String;Ljava/io/Serializable;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 3
+      outs          : 3
+      insns size    : 19 16-bit code units
+4f1134:                                        |[4f1134] wf2.b.putOtherAppendLogInfo:(Ljava/lang/String;Ljava/io/Serializable;)V
+4f1144: 5410 1f70                              |0000: iget-object v0, v1, Lwf2/b;.a:Lcom/netease/cloudmusic/core/statistic/c0; // field@701f
+4f1148: 7230 d912 2003                         |0002: invoke-interface {v0, v2, v3}, Lcom/netease/cloudmusic/core/statistic/c0;.putOtherAppendLogInfo:(Ljava/lang/String;Ljava/io/Serializable;)V // method@12d9
+4f114e: 7010 32ec 0100                         |0005: invoke-direct {v1}, Lwf2/b;.c:()Z // method@ec32
+4f1154: 0a00                                   |0008: move-result v0
+4f1156: 3800 0900                              |0009: if-eqz v0, 0012 // +0009
+4f115a: 5410 2070                              |000b: iget-object v0, v1, Lwf2/b;.b:Lcom/netease/cloudmusic/core/statistic/c0; // field@7020
+4f115e: 3800 0500                              |000d: if-eqz v0, 0012 // +0005
+4f1162: 7230 d912 2003                         |000f: invoke-interface {v0, v2, v3}, Lcom/netease/cloudmusic/core/statistic/c0;.putOtherAppendLogInfo:(Ljava/lang/String;Ljava/io/Serializable;)V // method@12d9
+4f1168: 0e00                                   |0012: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+      locals        :
+        0x0000 - 0x0013 reg=1 this Lwf2/b;
+        0x0000 - 0x0013 reg=2 (null) Ljava/lang/String;
+        0x0000 - 0x0013 reg=3 (null) Ljava/io/Serializable;
+
+    #6              : (in Lwf2/b;)
+      name          : 'removeOtherAppendLogInfo'
+      type          : '(Ljava/lang/String;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 2
+      insns size    : 19 16-bit code units
+4f116c:                                        |[4f116c] wf2.b.removeOtherAppendLogInfo:(Ljava/lang/String;)V
+4f117c: 5410 1f70                              |0000: iget-object v0, v1, Lwf2/b;.a:Lcom/netease/cloudmusic/core/statistic/c0; // field@701f
+4f1180: 7220 da12 2000                         |0002: invoke-interface {v0, v2}, Lcom/netease/cloudmusic/core/statistic/c0;.removeOtherAppendLogInfo:(Ljava/lang/String;)V // method@12da
+4f1186: 7010 32ec 0100                         |0005: invoke-direct {v1}, Lwf2/b;.c:()Z // method@ec32
+4f118c: 0a00                                   |0008: move-result v0
+4f118e: 3800 0900                              |0009: if-eqz v0, 0012 // +0009
+4f1192: 5410 2070                              |000b: iget-object v0, v1, Lwf2/b;.b:Lcom/netease/cloudmusic/core/statistic/c0; // field@7020
+4f1196: 3800 0500                              |000d: if-eqz v0, 0012 // +0005
+4f119a: 7220 da12 2000                         |000f: invoke-interface {v0, v2}, Lcom/netease/cloudmusic/core/statistic/c0;.removeOtherAppendLogInfo:(Ljava/lang/String;)V // method@12da
+4f11a0: 0e00                                   |0012: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+      locals        :
+        0x0000 - 0x0013 reg=1 this Lwf2/b;
+        0x0000 - 0x0013 reg=2 (null) Ljava/lang/String;
+
+    #7              : (in Lwf2/b;)
+      name          : 'shutdown'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 19 16-bit code units
+4f11f4:                                        |[4f11f4] wf2.b.shutdown:()V
+4f1204: 5410 1f70                              |0000: iget-object v0, v1, Lwf2/b;.a:Lcom/netease/cloudmusic/core/statistic/c0; // field@701f
+4f1208: 7210 db12 0000                         |0002: invoke-interface {v0}, Lcom/netease/cloudmusic/core/statistic/c0;.shutdown:()V // method@12db
+4f120e: 7010 32ec 0100                         |0005: invoke-direct {v1}, Lwf2/b;.c:()Z // method@ec32
+4f1214: 0a00                                   |0008: move-result v0
+4f1216: 3800 0900                              |0009: if-eqz v0, 0012 // +0009
+4f121a: 5410 2070                              |000b: iget-object v0, v1, Lwf2/b;.b:Lcom/netease/cloudmusic/core/statistic/c0; // field@7020
+4f121e: 3800 0500                              |000d: if-eqz v0, 0012 // +0005
+4f1222: 7210 db12 0000                         |000f: invoke-interface {v0}, Lcom/netease/cloudmusic/core/statistic/c0;.shutdown:()V // method@12db
+4f1228: 0e00                                   |0012: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+      locals        :
+        0x0000 - 0x0013 reg=1 this Lwf2/b;
+
+  source_file_idx   : 25996 (ProGuard)
+

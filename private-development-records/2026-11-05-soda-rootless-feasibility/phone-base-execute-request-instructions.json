@@ -1,0 +1,1447 @@
+{
+  "source_apk_sha256": "b639e67c13e03377f0f9d8068c5e0419b1acd42c7d529362f11ae704b3838741",
+  "dex_entry": "classes21.dex",
+  "dex_sha256": "d28a15c360d503b20d064987620d1a3167e8ad84e3d08b0d12dcf9da18dd265b",
+  "selected_owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+  "scope": "Original DEX instructions, not runtime/data-flow proof.",
+  "methods": [
+    {
+      "method_index": 51212,
+      "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+      "name": "executeRequest",
+      "proto_index": 13349,
+      "prototype": "()Z",
+      "code_offset": 4853184,
+      "registers": 12,
+      "incoming_words": 1,
+      "outgoing_words": 6,
+      "code_unit_count": 237,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x54",
+          "units": [
+            45140,
+            20316
+          ],
+          "field": {
+            "field_index": 20316,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Landroid/content/Context;",
+            "name": "mContext"
+          }
+        },
+        {
+          "code_unit_offset": 2,
+          "opcode": "0x12",
+          "units": [
+            274
+          ],
+          "const": 0,
+          "dest_register": 1
+        },
+        {
+          "code_unit_offset": 3,
+          "opcode": "0x39",
+          "units": [
+            57,
+            13
+          ]
+        },
+        {
+          "code_unit_offset": 5,
+          "opcode": "0x54",
+          "units": [
+            45140,
+            20312
+          ],
+          "field": {
+            "field_index": 20312,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/bytedance/sdk/account/execute/ApiResponse;",
+            "name": "apiResponse"
+          }
+        },
+        {
+          "code_unit_offset": 7,
+          "opcode": "0x13",
+          "units": [
+            531,
+            65512
+          ],
+          "const": -24,
+          "dest_register": 2
+        },
+        {
+          "code_unit_offset": 9,
+          "opcode": "0x59",
+          "units": [
+            601,
+            19739
+          ],
+          "field": {
+            "field_index": 19739,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiResponse;",
+            "type": "I",
+            "name": "mError"
+          }
+        },
+        {
+          "code_unit_offset": 11,
+          "opcode": "0x1a",
+          "units": [
+            538,
+            37038
+          ],
+          "string_index": 37038,
+          "string": "context_is_null"
+        },
+        {
+          "code_unit_offset": 13,
+          "opcode": "0x5b",
+          "units": [
+            603,
+            19738
+          ],
+          "field": {
+            "field_index": 19738,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiResponse;",
+            "type": "Ljava/lang/String;",
+            "name": "mDetailErrorMsg"
+          }
+        },
+        {
+          "code_unit_offset": 15,
+          "opcode": "0xf",
+          "units": [
+            271
+          ]
+        },
+        {
+          "code_unit_offset": 16,
+          "opcode": "0x54",
+          "units": [
+            45140,
+            20311
+          ],
+          "field": {
+            "field_index": 20311,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "name": "apiRequest"
+          }
+        },
+        {
+          "code_unit_offset": 18,
+          "opcode": "0x54",
+          "units": [
+            84,
+            19730
+          ],
+          "field": {
+            "field_index": 19730,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Ljava/util/Map;",
+            "name": "parms"
+          }
+        },
+        {
+          "code_unit_offset": 20,
+          "opcode": "0x38",
+          "units": [
+            56,
+            18
+          ]
+        },
+        {
+          "code_unit_offset": 22,
+          "opcode": "0x1a",
+          "units": [
+            538,
+            46904
+          ],
+          "string_index": 46904,
+          "string": "local_account_sdk_skip_network_check"
+        },
+        {
+          "code_unit_offset": 24,
+          "opcode": "0x72",
+          "units": [
+            8306,
+            64322,
+            32
+          ],
+          "method": {
+            "method_index": 64322,
+            "owner": "Ljava/util/Map;",
+            "name": "remove",
+            "proto_index": 5500,
+            "prototype": "(Ljava/lang/Object;)Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 27,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 28,
+          "opcode": "0x1a",
+          "units": [
+            538,
+            6968
+          ],
+          "string_index": 6968,
+          "string": "1"
+        },
+        {
+          "code_unit_offset": 30,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            63655,
+            2
+          ],
+          "method": {
+            "method_index": 63655,
+            "owner": "Ljava/lang/String;",
+            "name": "equals",
+            "proto_index": 13872,
+            "prototype": "(Ljava/lang/Object;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 33,
+          "opcode": "0xa",
+          "units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 34,
+          "opcode": "0x38",
+          "units": [
+            56,
+            4
+          ]
+        },
+        {
+          "code_unit_offset": 36,
+          "opcode": "0x12",
+          "units": [
+            18
+          ],
+          "const": 0,
+          "dest_register": 0
+        },
+        {
+          "code_unit_offset": 37,
+          "opcode": "0x28",
+          "units": [
+            552
+          ]
+        },
+        {
+          "code_unit_offset": 38,
+          "opcode": "0x12",
+          "units": [
+            4114
+          ],
+          "const": 1,
+          "dest_register": 0
+        },
+        {
+          "code_unit_offset": 39,
+          "opcode": "0x38",
+          "units": [
+            56,
+            21
+          ]
+        },
+        {
+          "code_unit_offset": 41,
+          "opcode": "0x54",
+          "units": [
+            45140,
+            20316
+          ],
+          "field": {
+            "field_index": 20316,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Landroid/content/Context;",
+            "name": "mContext"
+          }
+        },
+        {
+          "code_unit_offset": 43,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            55800,
+            0
+          ],
+          "method": {
+            "method_index": 55800,
+            "owner": "Lcom/bytedance/sdk/account/utils/NetUtils;",
+            "name": "isNetworkAvailable",
+            "proto_index": 13426,
+            "prototype": "(Landroid/content/Context;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 46,
+          "opcode": "0xa",
+          "units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 47,
+          "opcode": "0x39",
+          "units": [
+            57,
+            13
+          ]
+        },
+        {
+          "code_unit_offset": 49,
+          "opcode": "0x54",
+          "units": [
+            45140,
+            20312
+          ],
+          "field": {
+            "field_index": 20312,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/bytedance/sdk/account/execute/ApiResponse;",
+            "name": "apiResponse"
+          }
+        },
+        {
+          "code_unit_offset": 51,
+          "opcode": "0x13",
+          "units": [
+            531,
+            65524
+          ],
+          "const": -12,
+          "dest_register": 2
+        },
+        {
+          "code_unit_offset": 53,
+          "opcode": "0x59",
+          "units": [
+            601,
+            19739
+          ],
+          "field": {
+            "field_index": 19739,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiResponse;",
+            "type": "I",
+            "name": "mError"
+          }
+        },
+        {
+          "code_unit_offset": 55,
+          "opcode": "0x1a",
+          "units": [
+            538,
+            49188
+          ],
+          "string_index": 49188,
+          "string": "no net work"
+        },
+        {
+          "code_unit_offset": 57,
+          "opcode": "0x5b",
+          "units": [
+            603,
+            19738
+          ],
+          "field": {
+            "field_index": 19738,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiResponse;",
+            "type": "Ljava/lang/String;",
+            "name": "mDetailErrorMsg"
+          }
+        },
+        {
+          "code_unit_offset": 59,
+          "opcode": "0xf",
+          "units": [
+            271
+          ]
+        },
+        {
+          "code_unit_offset": 60,
+          "opcode": "0x54",
+          "units": [
+            45140,
+            20311
+          ],
+          "field": {
+            "field_index": 20311,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "name": "apiRequest"
+          }
+        },
+        {
+          "code_unit_offset": 62,
+          "opcode": "0x54",
+          "units": [
+            596,
+            19730
+          ],
+          "field": {
+            "field_index": 19730,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Ljava/util/Map;",
+            "name": "parms"
+          }
+        },
+        {
+          "code_unit_offset": 64,
+          "opcode": "0x55",
+          "units": [
+            85,
+            19733
+          ],
+          "field": {
+            "field_index": 19733,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Z",
+            "name": "valueNullable"
+          }
+        },
+        {
+          "code_unit_offset": 66,
+          "opcode": "0x70",
+          "units": [
+            12400,
+            51213,
+            43
+          ],
+          "method": {
+            "method_index": 51213,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "name": "filterParams",
+            "proto_index": 6473,
+            "prototype": "(Ljava/util/Map;Z)Ljava/util/Map;"
+          }
+        },
+        {
+          "code_unit_offset": 69,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 70,
+          "opcode": "0x39",
+          "units": [
+            57,
+            7
+          ]
+        },
+        {
+          "code_unit_offset": 72,
+          "opcode": "0x22",
+          "units": [
+            34,
+            12361
+          ],
+          "type": "Ljava/util/HashMap;"
+        },
+        {
+          "code_unit_offset": 74,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            64200,
+            0
+          ],
+          "method": {
+            "method_index": 64200,
+            "owner": "Ljava/util/HashMap;",
+            "name": "<init>",
+            "proto_index": 6867,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 77,
+          "opcode": "0x7",
+          "units": [
+            1031
+          ]
+        },
+        {
+          "code_unit_offset": 78,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            55808,
+            4
+          ],
+          "method": {
+            "method_index": 55808,
+            "owner": "Lcom/bytedance/sdk/account/utils/NetworkUtils;",
+            "name": "addCommonParams",
+            "proto_index": 12907,
+            "prototype": "(Ljava/util/Map;)V"
+          }
+        },
+        {
+          "code_unit_offset": 81,
+          "opcode": "0x54",
+          "units": [
+            45140,
+            20311
+          ],
+          "field": {
+            "field_index": 20311,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "name": "apiRequest"
+          }
+        },
+        {
+          "code_unit_offset": 83,
+          "opcode": "0x70",
+          "units": [
+            8304,
+            51230,
+            11
+          ],
+          "method": {
+            "method_index": 51230,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "name": "processApiRequest",
+            "proto_index": 3882,
+            "prototype": "(Lcom/bytedance/sdk/account/execute/ApiRequest;)Lcom/bytedance/sdk/account/execute/ApiRequest;"
+          }
+        },
+        {
+          "code_unit_offset": 86,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 87,
+          "opcode": "0x5b",
+          "units": [
+            45147,
+            20311
+          ],
+          "field": {
+            "field_index": 20311,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "name": "apiRequest"
+          }
+        },
+        {
+          "code_unit_offset": 89,
+          "opcode": "0x71",
+          "units": [
+            113,
+            63733,
+            0
+          ],
+          "method": {
+            "method_index": 63733,
+            "owner": "Ljava/lang/System;",
+            "name": "currentTimeMillis",
+            "proto_index": 409,
+            "prototype": "()J"
+          }
+        },
+        {
+          "code_unit_offset": 92,
+          "opcode": "0xb",
+          "units": [
+            2315
+          ]
+        },
+        {
+          "code_unit_offset": 93,
+          "opcode": "0x71",
+          "units": [
+            113,
+            54691,
+            0
+          ],
+          "method": {
+            "method_index": 54691,
+            "owner": "Lcom/bytedance/sdk/account/settings/common/CommonConfigManager;",
+            "name": "getRequestUseCellularConfig",
+            "proto_index": 4252,
+            "prototype": "()Lcom/bytedance/sdk/account/settings/bean/RequestUseCellularConfig;"
+          }
+        },
+        {
+          "code_unit_offset": 96,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 97,
+          "opcode": "0x54",
+          "units": [
+            45652,
+            20311
+          ],
+          "field": {
+            "field_index": 20311,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "name": "apiRequest"
+          }
+        },
+        {
+          "code_unit_offset": 99,
+          "opcode": "0x54",
+          "units": [
+            8788,
+            19728
+          ],
+          "field": {
+            "field_index": 19728,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Ljava/lang/String;",
+            "name": "method"
+          }
+        },
+        {
+          "code_unit_offset": 101,
+          "opcode": "0x1a",
+          "units": [
+            794,
+            40291
+          ],
+          "string_index": 40291,
+          "string": "get"
+        },
+        {
+          "code_unit_offset": 103,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            63655,
+            35
+          ],
+          "method": {
+            "method_index": 63655,
+            "owner": "Ljava/lang/String;",
+            "name": "equals",
+            "proto_index": 13872,
+            "prototype": "(Ljava/lang/Object;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 106,
+          "opcode": "0xa",
+          "units": [
+            522
+          ]
+        },
+        {
+          "code_unit_offset": 107,
+          "opcode": "0x38",
+          "units": [
+            568,
+            15
+          ]
+        },
+        {
+          "code_unit_offset": 109,
+          "opcode": "0x54",
+          "units": [
+            45652,
+            20311
+          ],
+          "field": {
+            "field_index": 20311,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "name": "apiRequest"
+          }
+        },
+        {
+          "code_unit_offset": 111,
+          "opcode": "0x54",
+          "units": [
+            9044,
+            19732
+          ],
+          "field": {
+            "field_index": 19732,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Ljava/lang/String;",
+            "name": "url"
+          }
+        },
+        {
+          "code_unit_offset": 113,
+          "opcode": "0x54",
+          "units": [
+            8788,
+            19726
+          ],
+          "field": {
+            "field_index": 19726,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Ljava/util/List;",
+            "name": "headers"
+          }
+        },
+        {
+          "code_unit_offset": 115,
+          "opcode": "0x70",
+          "units": [
+            16496,
+            51210,
+            9275
+          ],
+          "method": {
+            "method_index": 51210,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "name": "executeGet",
+            "proto_index": 5061,
+            "prototype": "(Ljava/lang/String;Ljava/util/Map;Ljava/util/List;)Lcom/ss/android/TTResponse;"
+          }
+        },
+        {
+          "code_unit_offset": 118,
+          "opcode": "0xc",
+          "units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 119,
+          "opcode": "0x5b",
+          "units": [
+            45659,
+            20320
+          ],
+          "field": {
+            "field_index": 20320,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/ss/android/TTResponse;",
+            "name": "response"
+          }
+        },
+        {
+          "code_unit_offset": 121,
+          "opcode": "0x28",
+          "units": [
+            14120
+          ]
+        },
+        {
+          "code_unit_offset": 122,
+          "opcode": "0x54",
+          "units": [
+            45652,
+            20311
+          ],
+          "field": {
+            "field_index": 20311,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "name": "apiRequest"
+          }
+        },
+        {
+          "code_unit_offset": 124,
+          "opcode": "0x54",
+          "units": [
+            8788,
+            19728
+          ],
+          "field": {
+            "field_index": 19728,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Ljava/lang/String;",
+            "name": "method"
+          }
+        },
+        {
+          "code_unit_offset": 126,
+          "opcode": "0x1a",
+          "units": [
+            794,
+            51560
+          ],
+          "string_index": 51560,
+          "string": "post"
+        },
+        {
+          "code_unit_offset": 128,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            63655,
+            35
+          ],
+          "method": {
+            "method_index": 63655,
+            "owner": "Ljava/lang/String;",
+            "name": "equals",
+            "proto_index": 13872,
+            "prototype": "(Ljava/lang/Object;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 131,
+          "opcode": "0xa",
+          "units": [
+            522
+          ]
+        },
+        {
+          "code_unit_offset": 132,
+          "opcode": "0x38",
+          "units": [
+            568,
+            15
+          ]
+        },
+        {
+          "code_unit_offset": 134,
+          "opcode": "0x54",
+          "units": [
+            45652,
+            20311
+          ],
+          "field": {
+            "field_index": 20311,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "name": "apiRequest"
+          }
+        },
+        {
+          "code_unit_offset": 136,
+          "opcode": "0x54",
+          "units": [
+            9044,
+            19732
+          ],
+          "field": {
+            "field_index": 19732,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Ljava/lang/String;",
+            "name": "url"
+          }
+        },
+        {
+          "code_unit_offset": 138,
+          "opcode": "0x54",
+          "units": [
+            8788,
+            19726
+          ],
+          "field": {
+            "field_index": 19726,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Ljava/util/List;",
+            "name": "headers"
+          }
+        },
+        {
+          "code_unit_offset": 140,
+          "opcode": "0x70",
+          "units": [
+            16496,
+            51211,
+            9275
+          ],
+          "method": {
+            "method_index": 51211,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "name": "executePost",
+            "proto_index": 5061,
+            "prototype": "(Ljava/lang/String;Ljava/util/Map;Ljava/util/List;)Lcom/ss/android/TTResponse;"
+          }
+        },
+        {
+          "code_unit_offset": 143,
+          "opcode": "0xc",
+          "units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 144,
+          "opcode": "0x5b",
+          "units": [
+            45659,
+            20320
+          ],
+          "field": {
+            "field_index": 20320,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/ss/android/TTResponse;",
+            "name": "response"
+          }
+        },
+        {
+          "code_unit_offset": 146,
+          "opcode": "0x28",
+          "units": [
+            7720
+          ]
+        },
+        {
+          "code_unit_offset": 147,
+          "opcode": "0x54",
+          "units": [
+            45652,
+            20311
+          ],
+          "field": {
+            "field_index": 20311,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "name": "apiRequest"
+          }
+        },
+        {
+          "code_unit_offset": 149,
+          "opcode": "0x54",
+          "units": [
+            8788,
+            19728
+          ],
+          "field": {
+            "field_index": 19728,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Ljava/lang/String;",
+            "name": "method"
+          }
+        },
+        {
+          "code_unit_offset": 151,
+          "opcode": "0x1a",
+          "units": [
+            794,
+            51614
+          ],
+          "string_index": 51614,
+          "string": "post_file"
+        },
+        {
+          "code_unit_offset": 153,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            63655,
+            35
+          ],
+          "method": {
+            "method_index": 63655,
+            "owner": "Ljava/lang/String;",
+            "name": "equals",
+            "proto_index": 13872,
+            "prototype": "(Ljava/lang/Object;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 156,
+          "opcode": "0xa",
+          "units": [
+            522
+          ]
+        },
+        {
+          "code_unit_offset": 157,
+          "opcode": "0x38",
+          "units": [
+            568,
+            19
+          ]
+        },
+        {
+          "code_unit_offset": 159,
+          "opcode": "0x54",
+          "units": [
+            45652,
+            20311
+          ],
+          "field": {
+            "field_index": 20311,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "name": "apiRequest"
+          }
+        },
+        {
+          "code_unit_offset": 161,
+          "opcode": "0x54",
+          "units": [
+            9044,
+            19732
+          ],
+          "field": {
+            "field_index": 19732,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Ljava/lang/String;",
+            "name": "url"
+          }
+        },
+        {
+          "code_unit_offset": 163,
+          "opcode": "0x54",
+          "units": [
+            9556,
+            19726
+          ],
+          "field": {
+            "field_index": 19726,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Ljava/util/List;",
+            "name": "headers"
+          }
+        },
+        {
+          "code_unit_offset": 165,
+          "opcode": "0x54",
+          "units": [
+            9812,
+            19729
+          ],
+          "field": {
+            "field_index": 19729,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Ljava/lang/String;",
+            "name": "paramName"
+          }
+        },
+        {
+          "code_unit_offset": 167,
+          "opcode": "0x54",
+          "units": [
+            10068,
+            19725
+          ],
+          "field": {
+            "field_index": 19725,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Ljava/lang/String;",
+            "name": "filePath"
+          }
+        },
+        {
+          "code_unit_offset": 169,
+          "opcode": "0x7",
+          "units": [
+            45575
+          ]
+        },
+        {
+          "code_unit_offset": 170,
+          "opcode": "0x76",
+          "units": [
+            1654,
+            51229,
+            2
+          ],
+          "method": {
+            "method_index": 51229,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "name": "postFile",
+            "proto_index": 5062,
+            "prototype": "(Ljava/lang/String;Ljava/util/Map;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)Lcom/ss/android/TTResponse;"
+          }
+        },
+        {
+          "code_unit_offset": 173,
+          "opcode": "0xc",
+          "units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 174,
+          "opcode": "0x5b",
+          "units": [
+            45659,
+            20320
+          ],
+          "field": {
+            "field_index": 20320,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/ss/android/TTResponse;",
+            "name": "response"
+          }
+        },
+        {
+          "code_unit_offset": 176,
+          "opcode": "0x71",
+          "units": [
+            113,
+            63733,
+            0
+          ],
+          "method": {
+            "method_index": 63733,
+            "owner": "Ljava/lang/System;",
+            "name": "currentTimeMillis",
+            "proto_index": 409,
+            "prototype": "()J"
+          }
+        },
+        {
+          "code_unit_offset": 179,
+          "opcode": "0xb",
+          "units": [
+            523
+          ]
+        },
+        {
+          "code_unit_offset": 180,
+          "opcode": "0x9c",
+          "units": [
+            1692,
+            2306
+          ]
+        },
+        {
+          "code_unit_offset": 182,
+          "opcode": "0x54",
+          "units": [
+            45652,
+            20320
+          ],
+          "field": {
+            "field_index": 20320,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/ss/android/TTResponse;",
+            "name": "response"
+          }
+        },
+        {
+          "code_unit_offset": 184,
+          "opcode": "0x70",
+          "units": [
+            12400,
+            51227,
+            43
+          ],
+          "method": {
+            "method_index": 51227,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "name": "parseHeaders",
+            "proto_index": 11665,
+            "prototype": "(Lcom/ss/android/TTResponse;Lcom/bytedance/sdk/account/settings/bean/RequestUseCellularConfig;)V"
+          }
+        },
+        {
+          "code_unit_offset": 187,
+          "opcode": "0x54",
+          "units": [
+            45140,
+            20320
+          ],
+          "field": {
+            "field_index": 20320,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/ss/android/TTResponse;",
+            "name": "response"
+          }
+        },
+        {
+          "code_unit_offset": 189,
+          "opcode": "0x38",
+          "units": [
+            56,
+            37
+          ]
+        },
+        {
+          "code_unit_offset": 191,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            62614,
+            0
+          ],
+          "method": {
+            "method_index": 62614,
+            "owner": "Lcom/ss/android/TTResponse;",
+            "name": "getBody",
+            "proto_index": 5609,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 194,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 195,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            1281,
+            0
+          ],
+          "method": {
+            "method_index": 1281,
+            "owner": "Landroid/text/TextUtils;",
+            "name": "isEmpty",
+            "proto_index": 13857,
+            "prototype": "(Ljava/lang/CharSequence;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 198,
+          "opcode": "0xa",
+          "units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 199,
+          "opcode": "0x38",
+          "units": [
+            56,
+            3
+          ]
+        },
+        {
+          "code_unit_offset": 201,
+          "opcode": "0x28",
+          "units": [
+            6440
+          ]
+        },
+        {
+          "code_unit_offset": 202,
+          "opcode": "0x22",
+          "units": [
+            34,
+            12722
+          ],
+          "type": "Lorg/json/JSONObject;"
+        },
+        {
+          "code_unit_offset": 204,
+          "opcode": "0x54",
+          "units": [
+            45396,
+            20320
+          ],
+          "field": {
+            "field_index": 20320,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/ss/android/TTResponse;",
+            "name": "response"
+          }
+        },
+        {
+          "code_unit_offset": 206,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            62614,
+            1
+          ],
+          "method": {
+            "method_index": 62614,
+            "owner": "Lcom/ss/android/TTResponse;",
+            "name": "getBody",
+            "proto_index": 5609,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 209,
+          "opcode": "0xc",
+          "units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 210,
+          "opcode": "0x70",
+          "units": [
+            8304,
+            65174,
+            16
+          ],
+          "method": {
+            "method_index": 65174,
+            "owner": "Lorg/json/JSONObject;",
+            "name": "<init>",
+            "proto_index": 11943,
+            "prototype": "(Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 213,
+          "opcode": "0x70",
+          "units": [
+            8304,
+            51224,
+            11
+          ],
+          "method": {
+            "method_index": 51224,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "name": "parseBody",
+            "proto_index": 14060,
+            "prototype": "(Lorg/json/JSONObject;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 216,
+          "opcode": "0xa",
+          "units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 217,
+          "opcode": "0x54",
+          "units": [
+            45396,
+            20312
+          ],
+          "field": {
+            "field_index": 20312,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/bytedance/sdk/account/execute/ApiResponse;",
+            "name": "apiResponse"
+          }
+        },
+        {
+          "code_unit_offset": 219,
+          "opcode": "0x54",
+          "units": [
+            6228,
+            19737
+          ],
+          "field": {
+            "field_index": 19737,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiResponse;",
+            "type": "Ljava/lang/String;",
+            "name": "logId"
+          }
+        },
+        {
+          "code_unit_offset": 221,
+          "opcode": "0x7",
+          "units": [
+            46343
+          ]
+        },
+        {
+          "code_unit_offset": 222,
+          "opcode": "0x76",
+          "units": [
+            1654,
+            51218,
+            5
+          ],
+          "method": {
+            "method_index": 51218,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "name": "monitorNetRequest",
+            "proto_index": 7345,
+            "prototype": "(JLjava/lang/String;J)V"
+          }
+        },
+        {
+          "code_unit_offset": 225,
+          "opcode": "0xf",
+          "units": [
+            15
+          ]
+        },
+        {
+          "code_unit_offset": 226,
+          "opcode": "0x54",
+          "units": [
+            45140,
+            20312
+          ],
+          "field": {
+            "field_index": 20312,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/bytedance/sdk/account/execute/ApiResponse;",
+            "name": "apiResponse"
+          }
+        },
+        {
+          "code_unit_offset": 228,
+          "opcode": "0x13",
+          "units": [
+            531,
+            65511
+          ],
+          "const": -25,
+          "dest_register": 2
+        },
+        {
+          "code_unit_offset": 230,
+          "opcode": "0x59",
+          "units": [
+            601,
+            19739
+          ],
+          "field": {
+            "field_index": 19739,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiResponse;",
+            "type": "I",
+            "name": "mError"
+          }
+        },
+        {
+          "code_unit_offset": 232,
+          "opcode": "0x1a",
+          "units": [
+            538,
+            53337
+          ],
+          "string_index": 53337,
+          "string": "response null"
+        },
+        {
+          "code_unit_offset": 234,
+          "opcode": "0x5b",
+          "units": [
+            603,
+            19738
+          ],
+          "field": {
+            "field_index": 19738,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiResponse;",
+            "type": "Ljava/lang/String;",
+            "name": "mDetailErrorMsg"
+          }
+        },
+        {
+          "code_unit_offset": 236,
+          "opcode": "0xf",
+          "units": [
+            271
+          ]
+        }
+      ]
+    }
+  ]
+}

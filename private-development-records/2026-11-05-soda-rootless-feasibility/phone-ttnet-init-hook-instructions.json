@@ -1,0 +1,1224 @@
+{
+  "source_apk_sha256": "b639e67c13e03377f0f9d8068c5e0419b1acd42c7d529362f11ae704b3838741",
+  "dex_entry": "classes2.dex",
+  "dex_sha256": "96d07882e05e5806c36ffdb3158a3642aa76b0a7f12f29bb4f74ef8e6b23c462",
+  "selected_owner": "Lcom/bytedance/ttnet/TTNetInit;",
+  "scope": "Original DEX instructions, not runtime/data-flow proof.",
+  "methods": [
+    {
+      "method_index": 57543,
+      "owner": "Lcom/bytedance/ttnet/TTNetInit;",
+      "name": "tryInitTTNet",
+      "proto_index": 7495,
+      "prototype": "(Landroid/content/Context;Landroid/app/Application;Lcom/bytedance/frameworks/baselib/network/http/NetworkParams$ApiProcessHook;Lcom/bytedance/frameworks/baselib/network/http/NetworkParams$MonitorProcessHook;Lcom/bytedance/frameworks/baselib/network/http/NetworkParams$CommandListener;Z[Z)V",
+      "code_offset": 5105816,
+      "registers": 10,
+      "incoming_words": 7,
+      "outgoing_words": 5,
+      "code_unit_count": 217,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x71",
+          "units": [
+            113,
+            3569,
+            0
+          ],
+          "method": {
+            "method_index": 3569,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/TTNetInitMetrics;",
+            "name": "inst",
+            "proto_index": 1662,
+            "prototype": "()Lcom/bytedance/frameworks/baselib/network/TTNetInitMetrics;"
+          }
+        },
+        {
+          "code_unit_offset": 3,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "opcode": "0x71",
+          "units": [
+            113,
+            64035,
+            0
+          ],
+          "method": {
+            "method_index": 64035,
+            "owner": "Ljava/lang/System;",
+            "name": "currentTimeMillis",
+            "proto_index": 433,
+            "prototype": "()J"
+          }
+        },
+        {
+          "code_unit_offset": 7,
+          "opcode": "0xb",
+          "units": [
+            267
+          ]
+        },
+        {
+          "code_unit_offset": 8,
+          "opcode": "0x5a",
+          "units": [
+            346,
+            374
+          ],
+          "field": {
+            "field_index": 374,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/TTNetInitMetrics;",
+            "type": "J",
+            "name": "initTTNetStartTime"
+          }
+        },
+        {
+          "code_unit_offset": 10,
+          "opcode": "0x71",
+          "units": [
+            113,
+            3569,
+            0
+          ],
+          "method": {
+            "method_index": 3569,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/TTNetInitMetrics;",
+            "name": "inst",
+            "proto_index": 1662,
+            "prototype": "()Lcom/bytedance/frameworks/baselib/network/TTNetInitMetrics;"
+          }
+        },
+        {
+          "code_unit_offset": 13,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 14,
+          "opcode": "0x71",
+          "units": [
+            113,
+            64042,
+            0
+          ],
+          "method": {
+            "method_index": 64042,
+            "owner": "Ljava/lang/System;",
+            "name": "nanoTime",
+            "proto_index": 433,
+            "prototype": "()J"
+          }
+        },
+        {
+          "code_unit_offset": 17,
+          "opcode": "0xb",
+          "units": [
+            267
+          ]
+        },
+        {
+          "code_unit_offset": 18,
+          "opcode": "0x5a",
+          "units": [
+            346,
+            373
+          ],
+          "field": {
+            "field_index": 373,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/TTNetInitMetrics;",
+            "type": "J",
+            "name": "initTTNetStart"
+          }
+        },
+        {
+          "code_unit_offset": 20,
+          "opcode": "0x38",
+          "units": [
+            824,
+            189
+          ]
+        },
+        {
+          "code_unit_offset": 22,
+          "opcode": "0x71",
+          "units": [
+            113,
+            57720,
+            0
+          ],
+          "method": {
+            "method_index": 57720,
+            "owner": "Lcom/bytedance/ttnet/config/SDKConfig;",
+            "name": "a",
+            "proto_index": 6941,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 25,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            57947,
+            3
+          ],
+          "method": {
+            "method_index": 57947,
+            "owner": "Lcom/bytedance/ttnet/debug/DebugMode;",
+            "name": "b",
+            "proto_index": 7472,
+            "prototype": "(Landroid/content/Context;)V"
+          }
+        },
+        {
+          "code_unit_offset": 28,
+          "opcode": "0x71",
+          "units": [
+            113,
+            3469,
+            0
+          ],
+          "method": {
+            "method_index": 3469,
+            "owner": "Lcom/bytedance/common/utility/Logger;",
+            "name": "getLogLevel",
+            "proto_index": 71,
+            "prototype": "()I"
+          }
+        },
+        {
+          "code_unit_offset": 31,
+          "opcode": "0xa",
+          "units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 32,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            4809,
+            0
+          ],
+          "method": {
+            "method_index": 4809,
+            "owner": "Lcom/bytedance/retrofit2/RetrofitLogger;",
+            "name": "b",
+            "proto_index": 6973,
+            "prototype": "(I)V"
+          }
+        },
+        {
+          "code_unit_offset": 35,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            3600,
+            5
+          ],
+          "method": {
+            "method_index": 3600,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/http/NetworkParams;",
+            "name": "setApiProcessHook",
+            "proto_index": 8387,
+            "prototype": "(Lcom/bytedance/frameworks/baselib/network/http/NetworkParams$ApiProcessHook;)V"
+          }
+        },
+        {
+          "code_unit_offset": 38,
+          "opcode": "0x71",
+          "units": [
+            113,
+            57998,
+            0
+          ],
+          "method": {
+            "method_index": 57998,
+            "owner": "Lcom/bytedance/ttnet/http/HttpRequestInfo;",
+            "name": "injectCreate",
+            "proto_index": 6941,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 41,
+          "opcode": "0x71",
+          "units": [
+            113,
+            4265,
+            0
+          ],
+          "method": {
+            "method_index": 4265,
+            "owner": "Lcom/bytedance/keva/KevaBuilder;",
+            "name": "getInstance",
+            "proto_index": 1788,
+            "prototype": "()Lcom/bytedance/keva/KevaBuilder;"
+          }
+        },
+        {
+          "code_unit_offset": 44,
+          "opcode": "0xc",
+          "units": [
+            1292
+          ]
+        },
+        {
+          "code_unit_offset": 45,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            4266,
+            53
+          ],
+          "method": {
+            "method_index": 4266,
+            "owner": "Lcom/bytedance/keva/KevaBuilder;",
+            "name": "setContext",
+            "proto_index": 1789,
+            "prototype": "(Landroid/content/Context;)Lcom/bytedance/keva/KevaBuilder;"
+          }
+        },
+        {
+          "code_unit_offset": 48,
+          "opcode": "0x12",
+          "units": [
+            1298
+          ],
+          "const": 0,
+          "dest_register": 5
+        },
+        {
+          "code_unit_offset": 49,
+          "opcode": "0x38",
+          "units": [
+            2360,
+            8
+          ]
+        },
+        {
+          "code_unit_offset": 51,
+          "opcode": "0x21",
+          "units": [
+            36897
+          ]
+        },
+        {
+          "code_unit_offset": 52,
+          "opcode": "0x3d",
+          "units": [
+            61,
+            5
+          ]
+        },
+        {
+          "code_unit_offset": 54,
+          "opcode": "0x47",
+          "units": [
+            2375,
+            1289
+          ]
+        },
+        {
+          "code_unit_offset": 56,
+          "opcode": "0x28",
+          "units": [
+            552
+          ]
+        },
+        {
+          "code_unit_offset": 57,
+          "opcode": "0x12",
+          "units": [
+            2322
+          ],
+          "const": 0,
+          "dest_register": 9
+        },
+        {
+          "code_unit_offset": 58,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            3761,
+            3
+          ],
+          "method": {
+            "method_index": 3761,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/http/util/ProcessUtils;",
+            "name": "isMainProcessByProcessFlag",
+            "proto_index": 13506,
+            "prototype": "(Landroid/content/Context;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 61,
+          "opcode": "0xa",
+          "units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 62,
+          "opcode": "0x38",
+          "units": [
+            56,
+            13
+          ]
+        },
+        {
+          "code_unit_offset": 64,
+          "opcode": "0x22",
+          "units": [
+            2338,
+            10174
+          ],
+          "type": "Lcom/bytedance/ttnet/TTNetInit$1;"
+        },
+        {
+          "code_unit_offset": 66,
+          "opcode": "0x1a",
+          "units": [
+            282,
+            21994
+          ],
+          "string_index": 21994,
+          "string": "NetWork-AsyncInit"
+        },
+        {
+          "code_unit_offset": 68,
+          "opcode": "0x70",
+          "units": [
+            16496,
+            57437,
+            33561
+          ],
+          "method": {
+            "method_index": 57437,
+            "owner": "Lcom/bytedance/ttnet/TTNetInit$1;",
+            "name": "<init>",
+            "proto_index": 12417,
+            "prototype": "(Ljava/lang/String;Landroid/content/Context;Z)V"
+          }
+        },
+        {
+          "code_unit_offset": 71,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            3494,
+            9
+          ],
+          "method": {
+            "method_index": 3494,
+            "owner": "Lcom/bytedance/common/utility/concurrent/ThreadPlus;",
+            "name": "start",
+            "proto_index": 6941,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 74,
+          "opcode": "0x28",
+          "units": [
+            5928
+          ]
+        },
+        {
+          "code_unit_offset": 75,
+          "opcode": "0x39",
+          "units": [
+            2361,
+            11
+          ]
+        },
+        {
+          "code_unit_offset": 77,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            3762,
+            3
+          ],
+          "method": {
+            "method_index": 3762,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/http/util/ProcessUtils;",
+            "name": "isMessageProcess",
+            "proto_index": 13506,
+            "prototype": "(Landroid/content/Context;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 80,
+          "opcode": "0xa",
+          "units": [
+            2314
+          ]
+        },
+        {
+          "code_unit_offset": 81,
+          "opcode": "0x38",
+          "units": [
+            2360,
+            3
+          ]
+        },
+        {
+          "code_unit_offset": 83,
+          "opcode": "0x28",
+          "units": [
+            808
+          ]
+        },
+        {
+          "code_unit_offset": 84,
+          "opcode": "0x12",
+          "units": [
+            2322
+          ],
+          "const": 0,
+          "dest_register": 9
+        },
+        {
+          "code_unit_offset": 85,
+          "opcode": "0x28",
+          "units": [
+            552
+          ]
+        },
+        {
+          "code_unit_offset": 86,
+          "opcode": "0x12",
+          "units": [
+            6418
+          ],
+          "const": 1,
+          "dest_register": 9
+        },
+        {
+          "code_unit_offset": 87,
+          "opcode": "0x22",
+          "units": [
+            290,
+            10175
+          ],
+          "type": "Lcom/bytedance/ttnet/TTNetInit$2;"
+        },
+        {
+          "code_unit_offset": 89,
+          "opcode": "0x1a",
+          "units": [
+            538,
+            21995
+          ],
+          "string_index": 21995,
+          "string": "NetWork-AsyncInit-other"
+        },
+        {
+          "code_unit_offset": 91,
+          "opcode": "0x70",
+          "units": [
+            22640,
+            57439,
+            37665
+          ],
+          "method": {
+            "method_index": 57439,
+            "owner": "Lcom/bytedance/ttnet/TTNetInit$2;",
+            "name": "<init>",
+            "proto_index": 12418,
+            "prototype": "(Ljava/lang/String;Landroid/content/Context;ZZ)V"
+          }
+        },
+        {
+          "code_unit_offset": 94,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            3494,
+            1
+          ],
+          "method": {
+            "method_index": 3494,
+            "owner": "Lcom/bytedance/common/utility/concurrent/ThreadPlus;",
+            "name": "start",
+            "proto_index": 6941,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 97,
+          "opcode": "0x71",
+          "units": [
+            113,
+            57413,
+            0
+          ],
+          "method": {
+            "method_index": 57413,
+            "owner": "Lcom/bytedance/ttnet/TNCRequestFlagHandler;",
+            "name": "d",
+            "proto_index": 4819,
+            "prototype": "()Lcom/bytedance/ttnet/TNCRequestFlagHandler;"
+          }
+        },
+        {
+          "code_unit_offset": 100,
+          "opcode": "0x71",
+          "units": [
+            113,
+            58184,
+            0
+          ],
+          "method": {
+            "method_index": 58184,
+            "owner": "Lcom/bytedance/ttnet/tnc/TNCManager;",
+            "name": "getInstance",
+            "proto_index": 4857,
+            "prototype": "()Lcom/bytedance/ttnet/tnc/TNCManager;"
+          }
+        },
+        {
+          "code_unit_offset": 103,
+          "opcode": "0xc",
+          "units": [
+            2060
+          ]
+        },
+        {
+          "code_unit_offset": 104,
+          "opcode": "0x6e",
+          "units": [
+            12398,
+            58197,
+            56
+          ],
+          "method": {
+            "method_index": 58197,
+            "owner": "Lcom/bytedance/ttnet/tnc/TNCManager;",
+            "name": "initTnc",
+            "proto_index": 7787,
+            "prototype": "(Landroid/content/Context;Z)V"
+          }
+        },
+        {
+          "code_unit_offset": 107,
+          "opcode": "0x71",
+          "units": [
+            113,
+            3715,
+            0
+          ],
+          "method": {
+            "method_index": 3715,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/http/ok3/impl/urldispatcher/URLDispatcher;",
+            "name": "inst",
+            "proto_index": 1694,
+            "prototype": "()Lcom/bytedance/frameworks/baselib/network/http/ok3/impl/urldispatcher/URLDispatcher;"
+          }
+        },
+        {
+          "code_unit_offset": 110,
+          "opcode": "0xc",
+          "units": [
+            2060
+          ]
+        },
+        {
+          "code_unit_offset": 111,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            3717,
+            56
+          ],
+          "method": {
+            "method_index": 3717,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/http/ok3/impl/urldispatcher/URLDispatcher;",
+            "name": "setContext",
+            "proto_index": 7472,
+            "prototype": "(Landroid/content/Context;)V"
+          }
+        },
+        {
+          "code_unit_offset": 114,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            57615,
+            3
+          ],
+          "method": {
+            "method_index": 57615,
+            "owner": "Lcom/bytedance/ttnet/config/AppConfig;",
+            "name": "getInstance",
+            "proto_index": 4823,
+            "prototype": "(Landroid/content/Context;)Lcom/bytedance/ttnet/config/AppConfig;"
+          }
+        },
+        {
+          "code_unit_offset": 117,
+          "opcode": "0x71",
+          "units": [
+            113,
+            3569,
+            0
+          ],
+          "method": {
+            "method_index": 3569,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/TTNetInitMetrics;",
+            "name": "inst",
+            "proto_index": 1662,
+            "prototype": "()Lcom/bytedance/frameworks/baselib/network/TTNetInitMetrics;"
+          }
+        },
+        {
+          "code_unit_offset": 120,
+          "opcode": "0xc",
+          "units": [
+            2060
+          ]
+        },
+        {
+          "code_unit_offset": 121,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            3568,
+            56
+          ],
+          "method": {
+            "method_index": 3568,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/TTNetInitMetrics;",
+            "name": "initMSSdkFromTTNet",
+            "proto_index": 7472,
+            "prototype": "(Landroid/content/Context;)V"
+          }
+        },
+        {
+          "code_unit_offset": 124,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            3610,
+            6
+          ],
+          "method": {
+            "method_index": 3610,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/http/NetworkParams;",
+            "name": "setMonitorProcessHook",
+            "proto_index": 8393,
+            "prototype": "(Lcom/bytedance/frameworks/baselib/network/http/NetworkParams$MonitorProcessHook;)V"
+          }
+        },
+        {
+          "code_unit_offset": 127,
+          "opcode": "0x71",
+          "units": [
+            113,
+            57472,
+            0
+          ],
+          "method": {
+            "method_index": 57472,
+            "owner": "Lcom/bytedance/ttnet/TTNetInit;",
+            "name": "countDownInitCompletedLatch",
+            "proto_index": 6941,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 130,
+          "opcode": "0x39",
+          "units": [
+            57,
+            19
+          ]
+        },
+        {
+          "code_unit_offset": 132,
+          "opcode": "0x71",
+          "units": [
+            113,
+            3569,
+            0
+          ],
+          "method": {
+            "method_index": 3569,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/TTNetInitMetrics;",
+            "name": "inst",
+            "proto_index": 1662,
+            "prototype": "()Lcom/bytedance/frameworks/baselib/network/TTNetInitMetrics;"
+          }
+        },
+        {
+          "code_unit_offset": 135,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 136,
+          "opcode": "0x5c",
+          "units": [
+            13660,
+            375
+          ],
+          "field": {
+            "field_index": 375,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/TTNetInitMetrics;",
+            "type": "Z",
+            "name": "isMainProcess"
+          }
+        },
+        {
+          "code_unit_offset": 138,
+          "opcode": "0x71",
+          "units": [
+            113,
+            3569,
+            0
+          ],
+          "method": {
+            "method_index": 3569,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/TTNetInitMetrics;",
+            "name": "inst",
+            "proto_index": 1662,
+            "prototype": "()Lcom/bytedance/frameworks/baselib/network/TTNetInitMetrics;"
+          }
+        },
+        {
+          "code_unit_offset": 141,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 142,
+          "opcode": "0x71",
+          "units": [
+            113,
+            64042,
+            0
+          ],
+          "method": {
+            "method_index": 64042,
+            "owner": "Ljava/lang/System;",
+            "name": "nanoTime",
+            "proto_index": 433,
+            "prototype": "()J"
+          }
+        },
+        {
+          "code_unit_offset": 145,
+          "opcode": "0xb",
+          "units": [
+            1035
+          ]
+        },
+        {
+          "code_unit_offset": 146,
+          "opcode": "0x5a",
+          "units": [
+            13402,
+            372
+          ],
+          "field": {
+            "field_index": 372,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/TTNetInitMetrics;",
+            "type": "J",
+            "name": "initTTNetEnd"
+          }
+        },
+        {
+          "code_unit_offset": 148,
+          "opcode": "0xe",
+          "units": [
+            14
+          ]
+        },
+        {
+          "code_unit_offset": 149,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            3603,
+            7
+          ],
+          "method": {
+            "method_index": 3603,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/http/NetworkParams;",
+            "name": "setCommandListener",
+            "proto_index": 8390,
+            "prototype": "(Lcom/bytedance/frameworks/baselib/network/http/NetworkParams$CommandListener;)V"
+          }
+        },
+        {
+          "code_unit_offset": 152,
+          "opcode": "0x71",
+          "units": [
+            113,
+            58240,
+            0
+          ],
+          "method": {
+            "method_index": 58240,
+            "owner": "Lcom/bytedance/ttnet/utils/RequestTicketUtil;",
+            "name": "getRequestTicketProcessor",
+            "proto_index": 4860,
+            "prototype": "()Lcom/bytedance/ttnet/utils/RequestTicketUtil$IRequestTicketProcessor;"
+          }
+        },
+        {
+          "code_unit_offset": 155,
+          "opcode": "0xc",
+          "units": [
+            1292
+          ]
+        },
+        {
+          "code_unit_offset": 156,
+          "opcode": "0x39",
+          "units": [
+            1337,
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 158,
+          "opcode": "0x22",
+          "units": [
+            1314,
+            10176
+          ],
+          "type": "Lcom/bytedance/ttnet/TTNetInit$3;"
+        },
+        {
+          "code_unit_offset": 160,
+          "opcode": "0x70",
+          "units": [
+            8304,
+            57441,
+            53
+          ],
+          "method": {
+            "method_index": 57441,
+            "owner": "Lcom/bytedance/ttnet/TTNetInit$3;",
+            "name": "<init>",
+            "proto_index": 7472,
+            "prototype": "(Landroid/content/Context;)V"
+          }
+        },
+        {
+          "code_unit_offset": 163,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            58244,
+            5
+          ],
+          "method": {
+            "method_index": 58244,
+            "owner": "Lcom/bytedance/ttnet/utils/RequestTicketUtil;",
+            "name": "setRequestTicketProcessor",
+            "proto_index": 11885,
+            "prototype": "(Lcom/bytedance/ttnet/utils/RequestTicketUtil$IRequestTicketProcessor;)V"
+          }
+        },
+        {
+          "code_unit_offset": 166,
+          "opcode": "0x62",
+          "units": [
+            866,
+            24882
+          ],
+          "field": {
+            "field_index": 24882,
+            "owner": "Lcom/bytedance/ttnet/TTNetInit;",
+            "type": "Lcom/bytedance/frameworks/baselib/network/LifeCycleMonitor;",
+            "name": "sLifeCycleMonitor"
+          }
+        },
+        {
+          "code_unit_offset": 168,
+          "opcode": "0x71",
+          "units": [
+            113,
+            3778,
+            0
+          ],
+          "method": {
+            "method_index": 3778,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/queryfilter/QueryFilterStateListener;",
+            "name": "getInstance",
+            "proto_index": 1698,
+            "prototype": "()Lcom/bytedance/frameworks/baselib/network/queryfilter/QueryFilterStateListener;"
+          }
+        },
+        {
+          "code_unit_offset": 171,
+          "opcode": "0xc",
+          "units": [
+            1292
+          ]
+        },
+        {
+          "code_unit_offset": 172,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            3566,
+            83
+          ],
+          "method": {
+            "method_index": 3566,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/LifeCycleMonitor;",
+            "name": "addListener",
+            "proto_index": 8382,
+            "prototype": "(Lcom/bytedance/frameworks/baselib/network/LifeCycleMonitor$NetworkAppStateListener;)V"
+          }
+        },
+        {
+          "code_unit_offset": 175,
+          "opcode": "0x38",
+          "units": [
+            1080,
+            7
+          ]
+        },
+        {
+          "code_unit_offset": 177,
+          "opcode": "0x62",
+          "units": [
+            866,
+            24882
+          ],
+          "field": {
+            "field_index": 24882,
+            "owner": "Lcom/bytedance/ttnet/TTNetInit;",
+            "type": "Lcom/bytedance/frameworks/baselib/network/LifeCycleMonitor;",
+            "name": "sLifeCycleMonitor"
+          }
+        },
+        {
+          "code_unit_offset": 179,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            191,
+            52
+          ],
+          "method": {
+            "method_index": 191,
+            "owner": "Landroid/app/Application;",
+            "name": "registerActivityLifecycleCallbacks",
+            "proto_index": 7438,
+            "prototype": "(Landroid/app/Application$ActivityLifecycleCallbacks;)V"
+          }
+        },
+        {
+          "code_unit_offset": 182,
+          "opcode": "0x71",
+          "units": [
+            113,
+            57367,
+            0
+          ],
+          "method": {
+            "method_index": 57367,
+            "owner": "Lcom/bytedance/ttnet/HttpClient;",
+            "name": "isCronetClientEnable",
+            "proto_index": 13392,
+            "prototype": "()Z"
+          }
+        },
+        {
+          "code_unit_offset": 185,
+          "opcode": "0xa",
+          "units": [
+            778
+          ]
+        },
+        {
+          "code_unit_offset": 186,
+          "opcode": "0x39",
+          "units": [
+            825,
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 188,
+          "opcode": "0x1a",
+          "units": [
+            794,
+            24335
+          ],
+          "string_index": 24335,
+          "string": "TTNetInit"
+        },
+        {
+          "code_unit_offset": 190,
+          "opcode": "0x1a",
+          "units": [
+            1050,
+            31399
+          ],
+          "string_index": 31399,
+          "string": "cronet disable"
+        },
+        {
+          "code_unit_offset": 192,
+          "opcode": "0x71",
+          "units": [
+            8305,
+            1332,
+            67
+          ],
+          "method": {
+            "method_index": 1332,
+            "owner": "Landroid/util/Log;",
+            "name": "d",
+            "proto_index": 385,
+            "prototype": "(Ljava/lang/String;Ljava/lang/String;)I"
+          }
+        },
+        {
+          "code_unit_offset": 195,
+          "opcode": "0x71",
+          "units": [
+            113,
+            57507,
+            0
+          ],
+          "method": {
+            "method_index": 57507,
+            "owner": "Lcom/bytedance/ttnet/TTNetInit;",
+            "name": "notifyColdStartFinish",
+            "proto_index": 6941,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 198,
+          "opcode": "0x71",
+          "units": [
+            113,
+            3569,
+            0
+          ],
+          "method": {
+            "method_index": 3569,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/TTNetInitMetrics;",
+            "name": "inst",
+            "proto_index": 1662,
+            "prototype": "()Lcom/bytedance/frameworks/baselib/network/TTNetInitMetrics;"
+          }
+        },
+        {
+          "code_unit_offset": 201,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 202,
+          "opcode": "0x71",
+          "units": [
+            113,
+            64042,
+            0
+          ],
+          "method": {
+            "method_index": 64042,
+            "owner": "Ljava/lang/System;",
+            "name": "nanoTime",
+            "proto_index": 433,
+            "prototype": "()J"
+          }
+        },
+        {
+          "code_unit_offset": 205,
+          "opcode": "0xb",
+          "units": [
+            1035
+          ]
+        },
+        {
+          "code_unit_offset": 206,
+          "opcode": "0x5a",
+          "units": [
+            13402,
+            372
+          ],
+          "field": {
+            "field_index": 372,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/TTNetInitMetrics;",
+            "type": "J",
+            "name": "initTTNetEnd"
+          }
+        },
+        {
+          "code_unit_offset": 208,
+          "opcode": "0xe",
+          "units": [
+            14
+          ]
+        },
+        {
+          "code_unit_offset": 209,
+          "opcode": "0x22",
+          "units": [
+            802,
+            11446
+          ],
+          "type": "Ljava/lang/IllegalArgumentException;"
+        },
+        {
+          "code_unit_offset": 211,
+          "opcode": "0x1a",
+          "units": [
+            1050,
+            49661
+          ],
+          "string_index": 49661,
+          "string": "tryInitTTNet context is null"
+        },
+        {
+          "code_unit_offset": 213,
+          "opcode": "0x70",
+          "units": [
+            8304,
+            63809,
+            67
+          ],
+          "method": {
+            "method_index": 63809,
+            "owner": "Ljava/lang/IllegalArgumentException;",
+            "name": "<init>",
+            "proto_index": 12315,
+            "prototype": "(Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 216,
+          "opcode": "0x27",
+          "units": [
+            807
+          ]
+        }
+      ]
+    }
+  ]
+}

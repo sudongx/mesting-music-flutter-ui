@@ -1,0 +1,379 @@
+[
+  {
+    "dex": "classes21.dex",
+    "qrClasses": [
+      "Lcom/luna/common/account/AuthorizeQRCodeCallback;",
+      "Lcom/luna/common/account/AuthorizeQRCodeLoginCallback;",
+      "Lcom/luna/common/account/AuthorizeQRCodeResponse;",
+      "Lcom/luna/common/arch/qrcode/QRCodeHandleResult;",
+      "Lcom/luna/common/arch/qrcode/QRCodeHandler;",
+      "Lcom/luna/common/arch/qrcode/QRCodeType;",
+      "Lcom/luna/common/arch/qrcode/QRCodeHandleDelegate;"
+    ],
+    "sites": [
+      {
+        "owner": "Lcom/luna/common/arch/qrcode/QRCodeType;",
+        "method": {
+          "method_index": 32112,
+          "owner": "Lcom/luna/common/arch/qrcode/QRCodeType;",
+          "name": "<clinit>",
+          "proto_index": 6432
+        },
+        "literals": [
+          {
+            "code_unit_offset": 20,
+            "opcode": "const-string",
+            "string_index": 27999,
+            "value": "PC_LOGIN_CODE"
+          }
+        ]
+      },
+      {
+        "owner": "Lcom/luna/common/tea/ContentType$Companion;",
+        "method": {
+          "method_index": 47414,
+          "owner": "Lcom/luna/common/tea/ContentType$Companion;",
+          "name": "W",
+          "proto_index": 3912
+        },
+        "literals": [
+          {
+            "code_unit_offset": 224,
+            "opcode": "const-string",
+            "string_index": 56218,
+            "value": "pc_login_guide"
+          }
+        ]
+      },
+      {
+        "owner": "Lcom/luna/common/tea/ContentType;",
+        "method": {
+          "method_index": 47441,
+          "owner": "Lcom/luna/common/tea/ContentType;",
+          "name": "<clinit>",
+          "proto_index": 6432
+        },
+        "literals": [
+          {
+            "code_unit_offset": 342,
+            "opcode": "const-string",
+            "string_index": 56218,
+            "value": "pc_login_guide"
+          }
+        ]
+      },
+      {
+        "owner": "Lcom/luna/common/tea/FromAction$Companion;",
+        "method": {
+          "method_index": 47720,
+          "owner": "Lcom/luna/common/tea/FromAction$Companion;",
+          "name": "p0",
+          "proto_index": 3942
+        },
+        "literals": [
+          {
+            "code_unit_offset": 192,
+            "opcode": "const-string",
+            "string_index": 56220,
+            "value": "pc_login_scan"
+          }
+        ]
+      },
+      {
+        "owner": "Lcom/luna/common/tea/FromAction;",
+        "method": {
+          "method_index": 47731,
+          "owner": "Lcom/luna/common/tea/FromAction;",
+          "name": "<clinit>",
+          "proto_index": 6432
+        },
+        "literals": [
+          {
+            "code_unit_offset": 333,
+            "opcode": "const-string",
+            "string_index": 56220,
+            "value": "pc_login_scan"
+          }
+        ]
+      },
+      {
+        "owner": "Lcom/luna/common/arch/tea/event/ViewClickEvent$Type;",
+        "method": {
+          "method_index": 35321,
+          "owner": "Lcom/luna/common/arch/tea/event/ViewClickEvent$Type;",
+          "name": "<clinit>",
+          "proto_index": 6432
+        },
+        "literals": [
+          {
+            "code_unit_offset": 1240,
+            "opcode": "const-string",
+            "string_index": 56216,
+            "value": "pc_login_agreement"
+          },
+          {
+            "code_unit_offset": 1258,
+            "opcode": "const-string",
+            "string_index": 56221,
+            "value": "pc_login_submit"
+          },
+          {
+            "code_unit_offset": 1276,
+            "opcode": "const-string",
+            "string_index": 56217,
+            "value": "pc_login_cancel"
+          },
+          {
+            "code_unit_offset": 1294,
+            "opcode": "const-string",
+            "string_index": 56219,
+            "value": "pc_login_re_scan"
+          }
+        ]
+      },
+      {
+        "owner": "Lcom/luna/common/arch/config/EnableScanLoginConfig;",
+        "method": {
+          "method_index": 13837,
+          "owner": "Lcom/luna/common/arch/config/EnableScanLoginConfig;",
+          "name": "<init>",
+          "proto_index": 6432
+        },
+        "literals": [
+          {
+            "code_unit_offset": 2,
+            "opcode": "const-string",
+            "string_index": 58675,
+            "value": "scan_login"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes20.dex",
+    "qrClasses": [
+      "Lcom/luna/biz/profile/impl/account/qrcode/IQROpenSdkLoadController;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/IQRScanLoadStateController;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/OpenThirdAppQRCodeHandler$Companion;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/PCLoginQRCodeHandler$Companion;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/PCLoginQRCodeHandler$QRCodeLoginPlatform;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/QRCodeLoginConfirmFragment$Companion;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/QRCodeLoginConfirmViewModel$Companion;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/QRCodeLoginManager;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/QRCodeLoginParams;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/QRCodeScanFragment$Companion;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/ScanReportData;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/UnknownHostQRCodeHandler$Companion;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/VipRedemptionQRCodeHandler$Companion;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/ZXingWithDataScannerView$Companion;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/ZXingWithDataScannerView$RawDataProcessCallback$DefaultImpls;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/ZXingWithDataScannerView$RawDataProcessCallback;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/event/PcLoginStatus;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/event/ScanQRCodeSubPage;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/ext/QRCodeLoginExtKt;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/interceptor/ScanQRCodeLinkInterceptor$Companion;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/net/QrCodeSubmitApi$Companion;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/net/QrCodeSubmitApi;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/net/QrCodeSubmitUtils;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/LuckyQRCodeHandler;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/OnlineMinixQRCodeHandler;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/OpenThirdAppQRCodeHandler$performLynxAuth$2;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/OpenThirdAppQRCodeHandler;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/PCLoginQRCodeHandler;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/QRCodeLoginConfirmFragment$observeLiveData$$inlined$observeNotNul$1;",
+      "Lcom/luna/biz/profile/impl/account/qrcode/QRCodeLoginConfirmFragment$observeLiveData$$inlined$observeNotNul$2;"
+    ],
+    "sites": [
+      {
+        "owner": "Lcom/luna/biz/profile/impl/account/qrcode/event/PcLoginResultEvent;",
+        "method": {
+          "method_index": 45753,
+          "owner": "Lcom/luna/biz/profile/impl/account/qrcode/event/PcLoginResultEvent;",
+          "name": "<init>",
+          "proto_index": 8574
+        },
+        "literals": [
+          {
+            "code_unit_offset": 0,
+            "opcode": "const-string",
+            "string_index": 42626,
+            "value": "pc_login_confirm_result"
+          }
+        ]
+      },
+      {
+        "owner": "Lcom/luna/biz/profile/impl/account/qrcode/interceptor/ScanQRCodeLinkInterceptor;",
+        "method": {
+          "method_index": 45788,
+          "owner": "Lcom/luna/biz/profile/impl/account/qrcode/interceptor/ScanQRCodeLinkInterceptor;",
+          "name": "e",
+          "proto_index": 5627
+        },
+        "literals": [
+          {
+            "code_unit_offset": 26,
+            "opcode": "const-string",
+            "string_index": 42627,
+            "value": "pc_login_scan"
+          }
+        ]
+      },
+      {
+        "owner": "Lcom/luna/biz/profile/impl/account/qrcode/interceptor/ScanQRCodeLinkInterceptor;",
+        "method": {
+          "method_index": 45785,
+          "owner": "Lcom/luna/biz/profile/impl/account/qrcode/interceptor/ScanQRCodeLinkInterceptor;",
+          "name": "b",
+          "proto_index": 11405
+        },
+        "literals": [
+          {
+            "code_unit_offset": 108,
+            "opcode": "const-string",
+            "string_index": 42627,
+            "value": "pc_login_scan"
+          }
+        ]
+      },
+      {
+        "owner": "Lcom/luna/biz/search/searchbar/QRScanDelegate;",
+        "method": {
+          "method_index": 52896,
+          "owner": "Lcom/luna/biz/search/searchbar/QRScanDelegate;",
+          "name": "h",
+          "proto_index": 5474
+        },
+        "literals": [
+          {
+            "code_unit_offset": 47,
+            "opcode": "const-string",
+            "string_index": 42627,
+            "value": "pc_login_scan"
+          }
+        ]
+      },
+      {
+        "owner": "Lcom/luna/biz/search/searchbar/QRScanDelegate;",
+        "method": {
+          "method_index": 52901,
+          "owner": "Lcom/luna/biz/search/searchbar/QRScanDelegate;",
+          "name": "m",
+          "proto_index": 5802
+        },
+        "literals": [
+          {
+            "code_unit_offset": 50,
+            "opcode": "const-string",
+            "string_index": 42627,
+            "value": "pc_login_scan"
+          }
+        ]
+      },
+      {
+        "owner": "Lcom/luna/biz/profile/impl/account/qrcode/QRCodeLoginConfirmFragment;",
+        "method": {
+          "method_index": 45518,
+          "owner": "Lcom/luna/biz/profile/impl/account/qrcode/QRCodeLoginConfirmFragment;",
+          "name": "<init>",
+          "proto_index": 5802
+        },
+        "literals": [
+          {
+            "code_unit_offset": 2,
+            "opcode": "const-string",
+            "string_index": 42625,
+            "value": "pc_login_confirm"
+          }
+        ]
+      },
+      {
+        "owner": "Lcom/luna/biz/profile/impl/account/qrcode/QRCodeLoginConfirmFragment;",
+        "method": {
+          "method_index": 45541,
+          "owner": "Lcom/luna/biz/profile/impl/account/qrcode/QRCodeLoginConfirmFragment;",
+          "name": "ak",
+          "proto_index": 5802
+        },
+        "literals": [
+          {
+            "code_unit_offset": 36,
+            "opcode": "const-string",
+            "string_index": 42625,
+            "value": "pc_login_confirm"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes24.dex",
+    "qrClasses": [],
+    "sites": [
+      {
+        "owner": "Lcom/ss/android/ugc/aweme/gsonopt/GsonOptTypeAdapterFactory1;",
+        "method": {
+          "method_index": 21194,
+          "owner": "Lcom/ss/android/ugc/aweme/gsonopt/GsonOptTypeAdapterFactory1;",
+          "name": "createTypeAdapter",
+          "proto_index": 2778
+        },
+        "literals": [
+          {
+            "code_unit_offset": 4777,
+            "opcode": "const-string",
+            "string_index": 49039,
+            "value": "com/luna/biz/profile/impl/account/qrcode/event/PcLoginResultEvent"
+          }
+        ]
+      },
+      {
+        "owner": "Lcom/ss/android/ugc/aweme/gsonopt/OptJsonAdapterFor$com$luna$common$arch$config$ExploreSearchStyleAB$DiscoveryConfig;",
+        "method": {
+          "method_index": 25482,
+          "owner": "Lcom/ss/android/ugc/aweme/gsonopt/OptJsonAdapterFor$com$luna$common$arch$config$ExploreSearchStyleAB$DiscoveryConfig;",
+          "name": "setFieldValue",
+          "proto_index": 12516
+        },
+        "literals": [
+          {
+            "code_unit_offset": 105,
+            "opcode": "const-string/jumbo",
+            "string_index": 81337,
+            "value": "search_bar_scan_login"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dex": "classes19.dex",
+    "qrClasses": [
+      "Lcom/luna/biz/share/QRCodeGenerator;"
+    ],
+    "sites": []
+  },
+  {
+    "dex": "classes12.dex",
+    "qrClasses": [],
+    "sites": [
+      {
+        "owner": "Lcom/bytedance/android/gamecp/common/setting/config/CGTxPCLynxConfig;",
+        "method": {
+          "method_index": 53387,
+          "owner": "Lcom/bytedance/android/gamecp/common/setting/config/CGTxPCLynxConfig;",
+          "name": "<init>",
+          "proto_index": 6731
+        },
+        "literals": [
+          {
+            "code_unit_offset": 3,
+            "opcode": "const-string",
+            "string_index": 64311,
+            "value": "sslocal://webcast_lynxview?url=https%3A%2F%2Flf-webcast-gr-sourcecdn.bytegecko.com%2Fobj%2Fbyte-gurd-source-gr%2Fwebcast%2Fmono%2Flynx%2Finstant_play_douyin%2Fpages%2Ftx_pc_login_panel%2Ftemplate.js%3Fbusiness_type%3Dgamecp_group&bdhm_bid=instant_play&enable_latch=1&mix_container_type=annie"
+          }
+        ]
+      }
+    ]
+  }
+]

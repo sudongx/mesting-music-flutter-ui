@@ -1,0 +1,15 @@
+    @Override // com.netease.cloudmusic.core.statistic.s0.d
+    public void a() {
+        String strD = k.d();
+        String strA = a1.a();
+        if (this.b.equals(strD)) {
+            return;
+        }
+        String.format(Locale.getDefault(), "Account has changed from %s to %s. Reset and do some clean work.", this.c, strA);
+        if (!a1.b(this.c) && !this.c.equals(strA)) {
+            e();
+        }
+        this.b = strD;
+        this.c = strA;
+        d(strD);
+    }

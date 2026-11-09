@@ -1,0 +1,87 @@
+{
+  "scope": "Netease listening footprint only; host-controlled fixtures and public static-source investigation",
+  "newTests": {
+    "command": "flutter test --no-pub --flavor beta --concurrency=1 --dart-define=CAPTURE_145_FOOTPRINT=true test/release_145_footprint_test.dart test/release_145_footprint_ui_test.dart",
+    "passed": 19,
+    "failed": 0
+  },
+  "legacyRegression": {
+    "files": [
+      "test/release_137_footprint_test.dart",
+      "test/release_138_footprint_units_test.dart"
+    ],
+    "passed": 15,
+    "note": "These passed in the preceding targeted run. That run also found a new-page compile error which was fixed before the final19-test run; legacy model and reader code did not change afterward."
+  },
+  "render": {
+    "method": "Flutter host software renderer; bundled synthetic covers; local Chinese and Cupertino icon fonts",
+    "images": [
+      {
+        "file": "collapsed-dark.png",
+        "bytes": 89768,
+        "sha256": "d66e3c8681775daa154743c7c426dc9e1641cd27eb91bd3718b501558ea74e17"
+      },
+      {
+        "file": "collapsed-light.png",
+        "bytes": 90933,
+        "sha256": "1f9dc3bda104b3c9ffbd64ddd4ba374f3815ec399dcd5e15ed55e116e2ae583a"
+      },
+      {
+        "file": "compact-dark.png",
+        "bytes": 54938,
+        "sha256": "908d6f6cce5655fc67cf683e0e22aff6591f22db24bf88d997cf3dfb566c1053"
+      },
+      {
+        "file": "compact-light.png",
+        "bytes": 55756,
+        "sha256": "57d15b2d30bc1e8b5de4d2055cdb4daf0d80d160abfe2aa257a63b5fa4bd1466"
+      },
+      {
+        "file": "retained-error-light.png",
+        "bytes": 54250,
+        "sha256": "3a37e3946b7fa67e2271a7d12ede1309c9f0e6c86e5e9c317464544992b4e6fb"
+      },
+      {
+        "file": "today-filter-light.png",
+        "bytes": 104839,
+        "sha256": "3693ebea0330b322aa8649fcf61e9504b2e3213802c82e12758d4f186c58d283"
+      },
+      {
+        "file": "week-dark.png",
+        "bytes": 48747,
+        "sha256": "5ffae293103eb06bd542eda0ac891a82da427b1bc9393efe68178cda35694201"
+      },
+      {
+        "file": "week-light.png",
+        "bytes": 49821,
+        "sha256": "e8d30d721d72db2fd31cfa188a89ab5942b631b37b9319ef399c1130f9c7dc10"
+      },
+      {
+        "file": "year-dark.png",
+        "bytes": 77083,
+        "sha256": "29e7a05b65be456dbdd93ea4f9f566cee5274c7e3551178e41231d6b369b2528"
+      },
+      {
+        "file": "year-light.png",
+        "bytes": 78437,
+        "sha256": "07cffa521a8d2461f204e6a60c210c66735689b570e1eb9c96bb34c8dbc757bf"
+      }
+    ],
+    "confirmed": [
+      "390dp light/dark",
+      "320dp text1.5 light/dark",
+      "large-title collapse34to17 and pinned segments",
+      "week and year charts",
+      "today cover/list/filter",
+      "retained failure state"
+    ]
+  },
+  "limits": [
+    "No phone/ADB access",
+    "No real account/backend data call",
+    "No actual mobileGPU/gesture/performance acceptance",
+    "No signing/version/build/release/Git changes by this delegated scope",
+    "Annual API supplies yearly aggregates, no monthly series; UI states this clearly",
+    "No claim to repair historicaltotal or recover October683minutes"
+  ]
+}

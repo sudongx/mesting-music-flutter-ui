@@ -1,0 +1,11 @@
+    public w(@NotNull t tVar) {
+        Intrinsics.checkNotNullParameter(tVar, "forwardConfiguration");
+        this.forwardConfiguration = tVar;
+        this.mDispatcher = Executors.newSingleThreadExecutor(new ThreadFactory() { // from class: com.netease.cloudmusic.core.statistic.v
+            @Override // java.util.concurrent.ThreadFactory
+            public final Thread newThread(Runnable runnable) {
+                return w.g(runnable);
+            }
+        });
+        p0.f(tVar.a, "forwardConfiguration.callback == null");
+    }

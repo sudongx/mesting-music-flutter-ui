@@ -1,0 +1,48 @@
+{
+  "scope": "Exact interface declarations and direct DEX invokes at instruction boundaries",
+  "dex": [
+    {
+      "entry": "classes6.dex",
+      "sha256": "3c4ea3713c6aa50f6883f54d87ef667354fd1f9dc6bf8f5154ab0adc9c5bc19c",
+      "implementations": [
+        {
+          "descriptor": "Lcom/luna/biz/main/init/net/ttnet/NetPlugin;",
+          "interfaces": [
+            "Lcom/bytedance/ttnet/ITTNetDepend;",
+            "Lcom/bytedance/frameworks/baselib/network/http/NetworkParams$CommandListener;",
+            "Lcom/bytedance/bdinstall/IExtraParams;",
+            "Lcom/bytedance/frameworks/baselib/network/http/NetworkParams$ApiProcessHook;"
+          ]
+        }
+      ],
+      "callers": [
+        {
+          "method": {
+            "method_index": 7527,
+            "owner": "Lcom/luna/biz/main/init/net/ttnet/NetPlugin;",
+            "name": "p",
+            "proto_index": 7211
+          },
+          "code_offset": 1794936,
+          "sites": [
+            {
+              "code_unit_offset": 103,
+              "opcode": "0x77",
+              "target": {
+                "method_index": 3928,
+                "owner": "Lcom/bytedance/ttnet/TTNetInit;",
+                "name": "tryInitTTNet",
+                "proto_index": 7265
+              },
+              "raw_units": [
+                1911,
+                3928,
+                3
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

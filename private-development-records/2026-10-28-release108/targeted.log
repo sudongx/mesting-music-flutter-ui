@@ -1,0 +1,88 @@
+00:00 +0: loading D:/AnLi/test/release_108_shader_test.dart
+00:00 +0: D:/AnLi/test/release_108_shader_test.dart: dispersion fast path matches reference pixels across footprints, edges and alpha
+00:00 +0 -1: D:/AnLi/test/release_108_shader_test.dart: dispersion fast path matches reference pixels across footprints, edges and alpha [E]
+  Expected: <0>
+    Actual: <1>
+  
+  Spirv file name was empty.
+  Invalid flags specified.
+  
+  ImpellerC is an offline shader processor and reflection engine.
+  ---------------------------------------------------------------
+  Expected invocation is:
+  
+  ./impellerc <One platform or multiple runtime stages> --input=<source_file> --sl=<sl_output_file> <optional arguments>
+  
+  Valid platforms are:
+  
+  One of [ --metal-desktop --metal-ios --opengl-desktop --opengl-es --vulkan ]
+  
+  Valid runtime stages are:
+  
+  At least one of [ --runtime-stage-gles --runtime-stage-gles3 --runtime-stage-metal --runtime-stage-vulkan --sksl ]
+  
+  Optional arguments:
+  
+  [optional]          --spirv=<spirv_output_file> (ignored for --shader-bundle)
+  [optional]          --input-type={comp, frag, vert, }
+  [optional]          --source-language=glsl|hlsl (default: glsl)
+  [optional]          --entry-point=<entry_point_name> (default: main; ignored for glsl)
+  [optional]          --entry-point-prefix=<entry_point_prefix> (default: empty)
+  [optional]          --iplr (causes --sl file to be emitted in iplr format)
+  [optional]          --shader-bundle=<bundle_spec> (causes --sl file to be emitted in Flutter GPU's shader bundle format)
+  [optional]          --reflection-json=<reflection_json_file>
+  [optional]          --reflection-header=<reflection_header_file>
+  [optional]          --reflection-cc=<reflection_cc_file>
+  [optional,multiple] --include=<include_directory>
+  [optional,multiple] --define=<define>
+  [optional]          --depfile=<depfile_path>
+  [optional]          --gles-language-version=<number>
+  [optional]          --json
+  [optional]          --use-half-textures (force openGL semantics when targeting metal)
+  [optional]          --require-framebuffer-fetch
+  
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test\release_108_shader_test.dart 74:9              main.<fn>
+  
+00:00 +0 -1: loading D:/AnLi/test/release_108_render_test.dart
+00:01 +0 -1: D:/AnLi/test/release_108_render_test.dart: stable peers share; gate, press and fade clear retained membership immediately
+00:01 +1 -1: D:/AnLi/test/release_108_render_test.dart: overlap and ordinary opaque Opacity remain isolated
+00:01 +2 -1: D:/AnLi/test/release_108_render_test.dart: diagnostics align raw vsync, drain final batch and exclude outside frames
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: <1>
+  Actual: <0>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_108_render_test.dart:178:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_108_render_test.dart line 178
+The test description was:
+  diagnostics align raw vsync, drain final batch and exclude outside frames
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:01 +2 -2: D:/AnLi/test/release_108_render_test.dart: diagnostics align raw vsync, drain final batch and exclude outside frames [E]
+  Test failed. See exception logs above.
+  The test description was: diagnostics align raw vsync, drain final batch and exclude outside frames
+  
+00:01 +2 -2: D:/AnLi/test/release_108_render_test.dart: disabled renderer diagnostics allocate no rows and exported copies are independent
+00:01 +3 -2: loading D:/AnLi/test/frame_timing_probe_test.dart
+00:02 +3 -2: D:/AnLi/test/frame_timing_probe_test.dart: frame timing summary reports the 120Hz and 60Hz budgets
+00:02 +4 -2: loading D:/AnLi/test/release_106_motion_budget_test.dart
+00:03 +4 -2: D:/AnLi/test/release_106_motion_budget_test.dart: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:03 +4 -2: D:/AnLi/test/release_106_motion_budget_test.dart: bottom bar retains accessory while springs move at 120Hz cadence
+MOTION_METRICS {"frames":336,"cadenceUs":8333,"hostElapsedMs":2895,"totalWidgetBuilds":21438,"searchPillBuilds":104}
+00:07 +5 -2: D:/AnLi/test/release_106_motion_budget_test.dart: (tearDownAll)
+00:07 +5 -2: Some tests failed.

@@ -1,0 +1,168 @@
+    /* JADX WARN: Code duplicated, block: B:100:0x0207  */
+    /* JADX WARN: Code duplicated, block: B:113:0x0222 A[Catch: Exception -> 0x03cf, TryCatch #0 {Exception -> 0x03cf, blocks: (B:5:0x0012, B:7:0x0018, B:9:0x0020, B:11:0x0028, B:13:0x0031, B:15:0x0035, B:17:0x003e, B:19:0x0042, B:29:0x0057, B:30:0x006c, B:32:0x0072, B:37:0x0089, B:38:0x008d, B:39:0x0097, B:41:0x009d, B:42:0x00aa, B:43:0x00b3, B:45:0x00b9, B:47:0x00cd, B:48:0x00d1, B:49:0x00db, B:51:0x00e1, B:52:0x00ee, B:53:0x00f7, B:55:0x00fd, B:57:0x0110, B:62:0x011d, B:63:0x0121, B:65:0x0128, B:68:0x0144, B:74:0x01c6, B:77:0x01d8, B:88:0x01ec, B:90:0x01f4, B:103:0x020c, B:105:0x0212, B:115:0x0228, B:126:0x023c, B:129:0x0249, B:132:0x0256, B:134:0x0261, B:136:0x0267, B:139:0x0278, B:142:0x0289, B:145:0x0296, B:148:0x02a3, B:149:0x02a9, B:151:0x02b3, B:153:0x02bb, B:161:0x02cd, B:165:0x02da, B:167:0x02e0, B:170:0x02ed, B:172:0x02f8, B:175:0x031b, B:179:0x0339, B:180:0x0364, B:182:0x0371, B:187:0x0387, B:190:0x038f, B:194:0x039e, B:196:0x03b3, B:197:0x03c7, B:113:0x0222, B:69:0x014c, B:70:0x015f, B:72:0x0165), top: B:202:0x0012 }] */
+    /* JADX WARN: Code duplicated, block: B:124:0x0239  */
+    /* JADX WARN: Code duplicated, block: B:159:0x02c9  */
+    @JvmStatic
+    public static final void a(@Nullable JSONObject logJson, @Nullable MusicInfo musicInfo, @NotNull Pair<? extends List<PlayerJank>, ? extends List<StageData>> pair) {
+        int i;
+        List listEmptyList;
+        String str;
+        String str2;
+        String strH;
+        String str3;
+        int i2;
+        int intValue;
+        String string;
+        String string2;
+        Intrinsics.checkNotNullParameter(pair, "pair");
+        if (m.I3()) {
+            try {
+                SessionSnapshot sessionSnapshotG = c.g();
+                long intValue2 = ((long) (logJson != null ? logJson.getIntValue("bitrate") : 0)) * 1000;
+                long longValue = (logJson != null ? logJson.getLongValue("resource_time") : 0L) * 1000;
+                long longValue2 = (logJson != null ? logJson.getLongValue("resource_ratio") : 0L) * 1000;
+                int intValue3 = logJson != null ? logJson.getIntValue("file") : -1;
+                boolean z = intValue3 == 0 || intValue3 == 1 || intValue3 == 2;
+                List list = (List) pair.getFirst();
+                List list2 = (List) pair.getSecond();
+                ArrayList arrayList = new ArrayList();
+                for (Object obj : list) {
+                    if (((PlayerJank) obj).getDuring() > 0) {
+                        arrayList.add(obj);
+                    }
+                }
+                int size = arrayList.size();
+                Iterator it = arrayList.iterator();
+                long during = 0;
+                while (it.hasNext()) {
+                    during += ((PlayerJank) it.next()).getDuring();
+                }
+                ArrayList arrayList2 = new ArrayList();
+                for (Object obj2 : arrayList) {
+                    if (Intrinsics.areEqual(((PlayerJank) obj2).getReason(), "seek")) {
+                        arrayList2.add(obj2);
+                    }
+                }
+                int size2 = arrayList2.size();
+                Iterator it2 = arrayList2.iterator();
+                long during2 = 0;
+                while (it2.hasNext()) {
+                    during2 += ((PlayerJank) it2.next()).getDuring();
+                }
+                ArrayList arrayList3 = new ArrayList();
+                for (Object obj3 : list2) {
+                    StageData stageData = (StageData) obj3;
+                    if (stageData.getEndTime() >= stageData.getStartTime() && stageData.getEndTime() > 0) {
+                        arrayList3.add(obj3);
+                    }
+                }
+                long endTime = arrayList3.isEmpty() ^ true ? ((StageData) CollectionsKt.last(arrayList3)).getEndTime() - ((StageData) CollectionsKt.first(arrayList3)).getStartTime() : 0L;
+                if (z) {
+                    listEmptyList = CollectionsKt.emptyList();
+                    i = intValue3;
+                } else {
+                    List<LoadBufferSample> loadBufferSamples = sessionSnapshotG.getLoadBufferSamples();
+                    ArrayList arrayList4 = new ArrayList(CollectionsKt.collectionSizeOrDefault(loadBufferSamples, 10));
+                    for (LoadBufferSample loadBufferSample : loadBufferSamples) {
+                        LoadBufferSample.Features features = loadBufferSample.getFeatures();
+                        ArrayList arrayList5 = arrayList4;
+                        arrayList5.add(LoadBufferSample.copy$default(loadBufferSample, null, null, null, null, features.copy((65400 & 1) != 0 ? features.bitrate : intValue2, (65400 & 2) != 0 ? features.durationMs : longValue, (65400 & 4) != 0 ? features.positionMs : longValue2, (65400 & 8) != 0 ? features.progress : 0.0f, (65400 & 16) != 0 ? features.bufferPercent : 0, (65400 & 32) != 0 ? features.availableBufferingMs : 0L, (65400 & 64) != 0 ? features.netStatus : null, (65400 & 128) != 0 ? features.songCacheComplete : false, (65400 & 256) != 0 ? features.quality : null, (65400 & ImageInfo.threshold) != 0 ? features.netQuality : null, (65400 & 1024) != 0 ? features.backStatus : null, (65400 & 2048) != 0 ? features.changeSongCnt5m : null, (65400 & 4096) != 0 ? features.changeSongCnt30m : null, (65400 & 8192) != 0 ? features.jankCnt5m : null, (65400 & 16384) != 0 ? features.jankCnt30m : null, (65400 & 32768) != 0 ? features.dataSizeBytes : null), null, 47, null));
+                        arrayList4 = arrayList5;
+                        intValue3 = intValue3;
+                    }
+                    i = intValue3;
+                    listEmptyList = arrayList4;
+                }
+                fo0.a aVarF = eo0.b.a.f();
+                String strH2 = aVarF.h("scene");
+                PreloadFrom preloadFrom = null;
+                if (strH2 != null) {
+                    if (!(strH2.length() > 0)) {
+                        strH2 = null;
+                    }
+                    str = strH2 == null ? "unknown" : strH2;
+                }
+                String strH3 = aVarF.h("quality");
+                if (strH3 == null) {
+                    str2 = "unknown";
+                } else {
+                    if (!(strH3.length() > 0)) {
+                        strH3 = null;
+                    }
+                    if (strH3 == null) {
+                        str2 = "unknown";
+                    } else {
+                        str2 = strH3;
+                    }
+                }
+                if (logJson == null || (strH = logJson.getString("audioType")) == null) {
+                    strH = aVarF.h("audioType");
+                } else {
+                    if (!(strH.length() > 0)) {
+                        strH = null;
+                    }
+                    if (strH == null) {
+                        strH = aVarF.h("audioType");
+                    }
+                }
+                if (strH == null) {
+                    strH = "unknown";
+                } else {
+                    if (!(strH.length() > 0)) {
+                        strH = null;
+                    }
+                    if (strH == null) {
+                        strH = "unknown";
+                    }
+                }
+                String string3 = logJson != null ? logJson.getString("source") : null;
+                String string4 = logJson != null ? logJson.getString("sourceId") : null;
+                String string5 = logJson != null ? logJson.getString("status") : null;
+                Integer numValueOf = Integer.valueOf(i);
+                Integer numValueOf2 = logJson != null ? Integer.valueOf(logJson.getIntValue("fee")) : null;
+                Integer numValueOf3 = logJson != null ? Integer.valueOf(logJson.getIntValue("privilege_viptype")) : null;
+                Boolean bool = logJson != null ? logJson.getBoolean("is_heart") : null;
+                String string6 = logJson != null ? logJson.getString("artistName") : null;
+                Long lValueOf = Long.valueOf((logJson != null ? logJson.getLongValue("realtime") : 0L) * 1000);
+                if (logJson == null || (string2 = logJson.getString("end")) == null) {
+                    str3 = null;
+                } else if (string2.length() > 0) {
+                    str3 = string2;
+                } else {
+                    str3 = null;
+                }
+                if (logJson != null) {
+                    intValue = logJson.getIntValue("errorcode");
+                    i2 = -1;
+                } else {
+                    i2 = -1;
+                    intValue = -1;
+                }
+                if (intValue == i2) {
+                    intValue = 0;
+                }
+                SongSnapshot songSnapshot = new SongSnapshot(str, strH, str2, intValue2, longValue, string3, string4, string5, numValueOf, numValueOf2, numValueOf3, bool, string6, lValueOf, str3, Integer.valueOf(intValue), logJson != null ? logJson.getString("mode") : null, logJson != null ? logJson.getString("trialMode") : null);
+                PlayResult playResult = new PlayResult(endTime, size, during, size2, during2);
+                PreloadToItem incomingPreloadItem = sessionSnapshotG.getIncomingPreloadItem();
+                if (incomingPreloadItem != null) {
+                    String str4 = (String) CollectionsKt.getOrNull(StringsKt.split$default(incomingPreloadItem.getTraceId(), new String[]{"_"}, false, 0, 6, (Object) null), 1);
+                    preloadFrom = new PreloadFrom(incomingPreloadItem.getDecisionId(), str4 == null ? VboxScanResult.WIFI_AUTH_OPEN : str4, incomingPreloadItem.getDecision().getPreloadStatus(), incomingPreloadItem.getDecision().getPreloadDurationMs(), incomingPreloadItem.getDecisionTime(), Integer.valueOf(incomingPreloadItem.getQueueDistance()), incomingPreloadItem.getStrategyId());
+                }
+                StrategyReports strategyReports = new StrategyReports(preloadFrom, listEmptyList, sessionSnapshotG.getPreloadToList());
+                String str5 = (logJson == null || (string = Long.valueOf(logJson.getLongValue(RNDatabase.BundleColumns.ID)).toString()) == null) ? VboxScanResult.WIFI_AUTH_OPEN : string;
+                String preloadFromTraceId = sessionSnapshotG.getPreloadFromTraceId();
+                if (preloadFromTraceId == null) {
+                    preloadFromTraceId = "NO_PRELOAD";
+                }
+                String str6 = preloadFromTraceId;
+                String strH4 = e.a.h();
+                SongEndReport songEndReport = new SongEndReport("0.1", strH4 == null ? VboxScanResult.WIFI_AUTH_OPEN : strH4, sessionSnapshotG.getPlaySessionId(), str6, str5, songSnapshot, playResult, strategyReports);
+                if (e0.g()) {
+                    z40.a.g("SongEndReportAssembler", "type=" + songEndReport);
+                }
+                a.a(songEndReport.toMap());
+            } catch (Exception e) {
+                Log.e("SongEndReportAssembler", "assemble failed", e);
+            }
+        }
+    }

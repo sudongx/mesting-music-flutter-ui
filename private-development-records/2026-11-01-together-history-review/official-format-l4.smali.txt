@@ -1,0 +1,1829 @@
+.class public final Lcom/netease/cloudmusic/module/listentogether/playpage/l4;
+.super Ljava/lang/Object;
+.source "ProGuard"
+
+# interfaces
+.implements Lcom/netease/cloudmusic/module/listentogether/im/o;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/netease/cloudmusic/module/listentogether/playpage/l4$a;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\r\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u000c\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\n\u0018\u0000 \u00102\u00020\u0001:\u0001\u0011B\u0019\u0012\u0006\u0010\u001f\u001a\u00020\u001b\u0012\u0008\u0010$\u001a\u0004\u0018\u00010 \u00a2\u0006\u0004\u0008(\u0010)J\u0008\u0010\u0003\u001a\u00020\u0002H\u0002J\u0008\u0010\u0005\u001a\u00020\u0004H\u0002J\u0008\u0010\u0007\u001a\u00020\u0006H\u0002J\u0014\u0010\u000b\u001a\u00020\n2\n\u0008\u0002\u0010\t\u001a\u0004\u0018\u00010\u0008H\u0002J\u0006\u0010\r\u001a\u00020\u000cJ\u000e\u0010\u0010\u001a\u00020\u000c2\u0006\u0010\u000f\u001a\u00020\u000eJ\u0006\u0010\u0011\u001a\u00020\nJ\u0006\u0010\u0012\u001a\u00020\nJ\u0006\u0010\u0013\u001a\u00020\u0004J\u0010\u0010\u0015\u001a\u00020\u00042\u0006\u0010\u0014\u001a\u00020\u0006H\u0016J\u0010\u0010\u0017\u001a\u00020\u00042\u0006\u0010\u0016\u001a\u00020\u0006H\u0016J\u0006\u0010\u0018\u001a\u00020\u0006J\u0006\u0010\u0019\u001a\u00020\u0004J\u0006\u0010\u001a\u001a\u00020\u000eR\u0017\u0010\u001f\u001a\u00020\u001b8\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0011\u0010\u001c\u001a\u0004\u0008\u001d\u0010\u001eR\u0019\u0010$\u001a\u0004\u0018\u00010 8\u0006\u00a2\u0006\u000c\n\u0004\u0008\u000b\u0010!\u001a\u0004\u0008\"\u0010#R\u0014\u0010&\u001a\u00020\u000e8\u0002X\u0082D\u00a2\u0006\u0006\n\u0004\u0008\u0017\u0010%R\u0016\u0010\'\u001a\u00020\u000e8\u0002@\u0002X\u0082\u000e\u00a2\u0006\u0006\n\u0004\u0008\r\u0010%\u00a8\u0006*"
+    }
+    d2 = {
+        "Lcom/netease/cloudmusic/module/listentogether/playpage/l4;",
+        "Lcom/netease/cloudmusic/module/listentogether/im/o;",
+        "Landroid/content/Context;",
+        "h",
+        "",
+        "k",
+        "",
+        "o",
+        "Lqx0/d;",
+        "msg",
+        "",
+        "b",
+        "Landroid/text/SpannableStringBuilder;",
+        "e",
+        "",
+        "type",
+        "f",
+        "a",
+        "c",
+        "n",
+        "show",
+        "g",
+        "isVinylShow",
+        "d",
+        "l",
+        "m",
+        "j",
+        "Lcom/netease/cloudmusic/module/listentogether/playpage/n;",
+        "Lcom/netease/cloudmusic/module/listentogether/playpage/n;",
+        "i",
+        "()Lcom/netease/cloudmusic/module/listentogether/playpage/n;",
+        "textClickAction",
+        "Landroid/os/Handler;",
+        "Landroid/os/Handler;",
+        "getHandler",
+        "()Landroid/os/Handler;",
+        "handler",
+        "I",
+        "INVALID_TYPE",
+        "impressType",
+        "<init>",
+        "(Lcom/netease/cloudmusic/module/listentogether/playpage/n;Landroid/os/Handler;)V",
+        "music_biz_platform_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+.end annotation
+
+
+# static fields
+.field public static final f:Lcom/netease/cloudmusic/module/listentogether/playpage/l4$a;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# instance fields
+.field private final a:Lcom/netease/cloudmusic/module/listentogether/playpage/n;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private final b:Landroid/os/Handler;
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+.end field
+
+.field private final d:I
+
+.field private e:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 2
+
+    .line 1
+    new-instance v0, Lcom/netease/cloudmusic/module/listentogether/playpage/l4$a;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, v1}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4$a;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->f:Lcom/netease/cloudmusic/module/listentogether/playpage/l4$a;
+
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/netease/cloudmusic/module/listentogether/playpage/n;Landroid/os/Handler;)V
+    .registers 4
+    .param p1    # Lcom/netease/cloudmusic/module/listentogether/playpage/n;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/os/Handler;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    const-string v0, "textClickAction"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object p1, p0, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->a:Lcom/netease/cloudmusic/module/listentogether/playpage/n;
+
+    .line 10
+    .line 11
+    iput-object p2, p0, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->b:Landroid/os/Handler;
+
+    .line 12
+    .line 13
+    const/4 p1, -0x1
+
+    .line 14
+    iput p1, p0, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->d:I
+
+    .line 15
+    .line 16
+    iput p1, p0, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->e:I
+
+    .line 17
+    .line 18
+    return-void
+.end method
+
+.method private final b(Lqx0/d;)Ljava/lang/CharSequence;
+    .registers 12
+
+    .line 1
+    new-instance v0, Landroid/text/SpannableStringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Landroid/text/SpannableStringBuilder;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {}, Lpj/a;->m()Lpj/a;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v1
+
+    .line 10
+    invoke-virtual {v1}, Lpj/a;->u()J
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-wide v1
+
+    .line 14
+    invoke-static {}, Lua0/b3;->t1()Z
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v3
+
+    .line 18
+    const/16 v4, 0x21
+
+    .line 19
+    .line 20
+    const/4 v5, 0x0
+
+    .line 21
+    if-eqz v3, :cond_154
+
+    .line 22
+    .line 23
+    const-string v3, "buildLocationText, round1 \u6709\u4f4d\u7f6e\u6743\u9650"
+
+    .line 24
+    .line 25
+    invoke-static {v3}, Lua0/z0;->W(Ljava/lang/String;)V
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-static {}, Lcom/netease/cloudmusic/utils/k2;->e()Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v3
+
+    .line 32
+    invoke-static {}, Lua0/y2;->n()Z
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v6
+
+    .line 36
+    if-nez v3, :cond_55
+
+    .line 37
+    .line 38
+    if-eqz v6, :cond_28
+
+    .line 39
+    .line 40
+    goto :goto_55
+
+    .line 41
+    :cond_28
+    const-string p1, "buildLocationText, round2 gpsEnable=false, isTablet=false\uff0c\u63d0\u793a\u5f00\u542f\u4f4d\u7f6e\u670d\u52a1\u6587\u6848"
+
+    .line 42
+    .line 43
+    invoke-static {p1}, Lua0/z0;->W(Ljava/lang/String;)V
+
+    .line 44
+    .line 45
+    .line 46
+    invoke-direct {p0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->h()Landroid/content/Context;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object p1
+
+    .line 50
+    sget v1, Lmj1/k;->E1:I
+
+    .line 51
+    .line 52
+    invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object p1
+
+    .line 56
+    invoke-virtual {v0, p1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+
+    .line 57
+    .line 58
+    .line 59
+    new-instance p1, Lcom/netease/cloudmusic/module/listentogether/playpage/l4$c;
+
+    .line 60
+    .line 61
+    invoke-direct {p1, p0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4$c;-><init>(Lcom/netease/cloudmusic/module/listentogether/playpage/l4;)V
+
+    .line 62
+    .line 63
+    .line 64
+    invoke-virtual {v0}, Landroid/text/SpannableStringBuilder;->length()I
+
+    .line 65
+    .line 66
+    .line 67
+    move-result v1
+
+    .line 68
+    invoke-virtual {v0, p1, v5, v1, v4}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
+
+    .line 69
+    .line 70
+    .line 71
+    invoke-direct {p0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->h()Landroid/content/Context;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object p1
+
+    .line 75
+    sget v1, Lmj1/k;->Z1:I
+
+    .line 76
+    .line 77
+    invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object p1
+
+    .line 81
+    invoke-virtual {v0, p1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+
+    .line 82
+    .line 83
+    .line 84
+    goto/16 :goto_17f
+
+    .line 85
+    .line 86
+    :cond_55
+    :goto_55
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    .line 87
+    .line 88
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 89
+    .line 90
+    .line 91
+    const-string v8, "buildLocationText, round2 gpsEnable="
+
+    .line 92
+    .line 93
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 94
+    .line 95
+    .line 96
+    invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 97
+    .line 98
+    .line 99
+    const-string v3, ", isTablet="
+
+    .line 100
+    .line 101
+    invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 102
+    .line 103
+    .line 104
+    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 105
+    .line 106
+    .line 107
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 108
+    .line 109
+    .line 110
+    move-result-object v3
+
+    .line 111
+    invoke-static {v3}, Lua0/z0;->W(Ljava/lang/String;)V
+
+    .line 112
+    .line 113
+    .line 114
+    if-eqz p1, :cond_17f
+
+    .line 115
+    .line 116
+    invoke-interface {p1}, Lqx0/d;->getMsgData()Lcom/netease/cloudmusic/module/listentogether/meta/DistanceChangeMsgData;
+
+    .line 117
+    .line 118
+    .line 119
+    move-result-object p1
+
+    .line 120
+    if-eqz p1, :cond_17f
+
+    .line 121
+    .line 122
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    .line 123
+    .line 124
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 125
+    .line 126
+    .line 127
+    const-string v6, "buildLocationText, \u6d88\u606f\u5185\u5bb9 "
+
+    .line 128
+    .line 129
+    invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 130
+    .line 131
+    .line 132
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 133
+    .line 134
+    .line 135
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 136
+    .line 137
+    .line 138
+    move-result-object v3
+
+    .line 139
+    invoke-static {v3}, Lua0/z0;->W(Ljava/lang/String;)V
+
+    .line 140
+    .line 141
+    .line 142
+    invoke-virtual {p1}, Lcom/netease/cloudmusic/module/listentogether/meta/DistanceChangeMsgData;->getDistance()D
+
+    .line 143
+    .line 144
+    .line 145
+    move-result-wide v6
+
+    .line 146
+    const-wide/16 v8, 0x0
+
+    .line 147
+    .line 148
+    cmpl-double v3, v6, v8
+
+    .line 149
+    .line 150
+    const/4 v6, 0x1
+
+    .line 151
+    if-gtz v3, :cond_11a
+
+    .line 152
+    .line 153
+    invoke-virtual {p1}, Lcom/netease/cloudmusic/module/listentogether/meta/DistanceChangeMsgData;->getCopyWriting()Ljava/lang/String;
+
+    .line 154
+    .line 155
+    .line 156
+    move-result-object v3
+
+    .line 157
+    if-eqz v3, :cond_a7
+
+    .line 158
+    .line 159
+    invoke-interface {v3}, Ljava/lang/CharSequence;->length()I
+
+    .line 160
+    .line 161
+    .line 162
+    move-result v3
+
+    .line 163
+    if-nez v3, :cond_a5
+
+    .line 164
+    .line 165
+    goto :goto_a7
+
+    .line 166
+    :cond_a5
+    move v3, v5
+
+    .line 167
+    goto :goto_a8
+
+    .line 168
+    :cond_a7
+    :goto_a7
+    move v3, v6
+
+    .line 169
+    :goto_a8
+    if-nez v3, :cond_ac
+
+    .line 170
+    .line 171
+    goto/16 :goto_11a
+
+    .line 172
+    .line 173
+    :cond_ac
+    invoke-virtual {p1}, Lcom/netease/cloudmusic/module/listentogether/meta/DistanceChangeMsgData;->getUnopenedUserIds()Ljava/util/ArrayList;
+
+    .line 174
+    .line 175
+    .line 176
+    move-result-object p1
+
+    .line 177
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 178
+    .line 179
+    .line 180
+    move-result-object p1
+
+    .line 181
+    :cond_b4
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 182
+    .line 183
+    .line 184
+    move-result v3
+
+    .line 185
+    if-eqz v3, :cond_cf
+
+    .line 186
+    .line 187
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 188
+    .line 189
+    .line 190
+    move-result-object v3
+
+    .line 191
+    move-object v7, v3
+
+    .line 192
+    check-cast v7, Ljava/lang/Number;
+
+    .line 193
+    .line 194
+    invoke-virtual {v7}, Ljava/lang/Number;->longValue()J
+
+    .line 195
+    .line 196
+    .line 197
+    move-result-wide v7
+
+    .line 198
+    cmp-long v7, v7, v1
+
+    .line 199
+    .line 200
+    if-eqz v7, :cond_cb
+
+    .line 201
+    .line 202
+    move v7, v6
+
+    .line 203
+    goto :goto_cc
+
+    .line 204
+    :cond_cb
+    move v7, v5
+
+    .line 205
+    :goto_cc
+    if-eqz v7, :cond_b4
+
+    .line 206
+    .line 207
+    goto :goto_d0
+
+    .line 208
+    :cond_cf
+    const/4 v3, 0x0
+
+    .line 209
+    :goto_d0
+    if-eqz v3, :cond_e6
+
+    .line 210
+    .line 211
+    invoke-direct {p0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->h()Landroid/content/Context;
+
+    .line 212
+    .line 213
+    .line 214
+    move-result-object p1
+
+    .line 215
+    sget v1, Lmj1/k;->c2:I
+
+    .line 216
+    .line 217
+    invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    .line 218
+    .line 219
+    .line 220
+    move-result-object p1
+
+    .line 221
+    invoke-virtual {v0, p1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+
+    .line 222
+    .line 223
+    .line 224
+    const-string p1, "buildLocationText, round3 \u65e0\u4f4d\u8ddd\u79bb\u4fe1\u606f\uff0c\u663e\u793a\u7b49\u5f85\u83b7\u53d6\u5bf9\u65b9\u4f4d\u7f6e\u6587\u6848"
+
+    .line 225
+    .line 226
+    invoke-static {p1}, Lua0/z0;->W(Ljava/lang/String;)V
+
+    .line 227
+    .line 228
+    .line 229
+    goto/16 :goto_17f
+
+    .line 230
+    .line 231
+    :cond_e6
+    invoke-static {}, Lcom/netease/cloudmusic/module/listentogether/playpage/c0;->c()Z
+
+    .line 232
+    .line 233
+    .line 234
+    move-result p1
+
+    .line 235
+    if-eqz p1, :cond_fb
+
+    .line 236
+    .line 237
+    invoke-static {v6}, Lcom/netease/cloudmusic/module/listentogether/playpage/c0;->d(Z)V
+
+    .line 238
+    .line 239
+    .line 240
+    const-string p1, "buildLocationText, round3 retryUploadLocation"
+
+    .line 241
+    .line 242
+    invoke-static {p1}, Lua0/z0;->W(Ljava/lang/String;)V
+
+    .line 243
+    .line 244
+    .line 245
+    sget-object p1, Lcom/netease/cloudmusic/module/listentogether/playpage/p2;->a:Lcom/netease/cloudmusic/module/listentogether/playpage/p2;
+
+    .line 246
+    .line 247
+    invoke-virtual {p1, v6}, Lcom/netease/cloudmusic/module/listentogether/playpage/p2;->v(Z)V
+
+    .line 248
+    .line 249
+    .line 250
+    goto/16 :goto_17f
+
+    .line 251
+    .line 252
+    :cond_fb
+    const-string p1, "buildLocationText, round3 \u63d0\u793a \u4f4d\u7f6e\u66f4\u65b0 \u6587\u6848"
+
+    .line 253
+    .line 254
+    invoke-static {p1}, Lua0/z0;->W(Ljava/lang/String;)V
+
+    .line 255
+    .line 256
+    .line 257
+    invoke-direct {p0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->h()Landroid/content/Context;
+
+    .line 258
+    .line 259
+    .line 260
+    move-result-object p1
+
+    .line 261
+    sget v1, Lmj1/k;->V1:I
+
+    .line 262
+    .line 263
+    invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    .line 264
+    .line 265
+    .line 266
+    move-result-object p1
+
+    .line 267
+    invoke-virtual {v0, p1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+
+    .line 268
+    .line 269
+    .line 270
+    new-instance p1, Lcom/netease/cloudmusic/module/listentogether/playpage/l4$b;
+
+    .line 271
+    .line 272
+    invoke-direct {p1, p0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4$b;-><init>(Lcom/netease/cloudmusic/module/listentogether/playpage/l4;)V
+
+    .line 273
+    .line 274
+    .line 275
+    invoke-virtual {v0}, Landroid/text/SpannableStringBuilder;->length()I
+
+    .line 276
+    .line 277
+    .line 278
+    move-result v1
+
+    .line 279
+    invoke-virtual {v0, p1, v5, v1, v4}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
+
+    .line 280
+    .line 281
+    .line 282
+    goto :goto_17f
+
+    .line 283
+    :cond_11a
+    :goto_11a
+    invoke-virtual {p1}, Lcom/netease/cloudmusic/module/listentogether/meta/DistanceChangeMsgData;->getCopyWriting()Ljava/lang/String;
+
+    .line 284
+    .line 285
+    .line 286
+    move-result-object v1
+
+    .line 287
+    if-nez v1, :cond_14b
+
+    .line 288
+    .line 289
+    sget-object v1, Lkotlin/jvm/internal/StringCompanionObject;->INSTANCE:Lkotlin/jvm/internal/StringCompanionObject;
+
+    .line 290
+    .line 291
+    new-array v1, v6, [Ljava/lang/Object;
+
+    .line 292
+    .line 293
+    invoke-virtual {p1}, Lcom/netease/cloudmusic/module/listentogether/meta/DistanceChangeMsgData;->getDistance()D
+
+    .line 294
+    .line 295
+    .line 296
+    move-result-wide v2
+
+    .line 297
+    const-wide v7, 0x3f847ae147ae147bL    # 0.01
+
+    .line 298
+    .line 299
+    .line 300
+    .line 301
+    .line 302
+    cmpg-double v2, v2, v7
+
+    .line 303
+    .line 304
+    if-gez v2, :cond_132
+
+    .line 305
+    .line 306
+    goto :goto_136
+
+    .line 307
+    :cond_132
+    invoke-virtual {p1}, Lcom/netease/cloudmusic/module/listentogether/meta/DistanceChangeMsgData;->getDistance()D
+
+    .line 308
+    .line 309
+    .line 310
+    move-result-wide v7
+
+    .line 311
+    :goto_136
+    invoke-static {v7, v8}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 312
+    .line 313
+    .line 314
+    move-result-object p1
+
+    .line 315
+    aput-object p1, v1, v5
+
+    .line 316
+    .line 317
+    invoke-static {v1, v6}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    .line 318
+    .line 319
+    .line 320
+    move-result-object p1
+
+    .line 321
+    const-string v1, "\u76f8\u8ddd%#.2f\u516c\u91cc"
+
+    .line 322
+    .line 323
+    invoke-static {v1, p1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 324
+    .line 325
+    .line 326
+    move-result-object v1
+
+    .line 327
+    const-string p1, "format(format, *args)"
+
+    .line 328
+    .line 329
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 330
+    .line 331
+    .line 332
+    :cond_14b
+    invoke-virtual {v0, v1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+
+    .line 333
+    .line 334
+    .line 335
+    const-string p1, "buildLocationText, round3 \u6709\u8ddd\u79bb\u4fe1\u606f\uff0c\u663e\u793a\u8ddd\u79bb\u6587\u6848"
+
+    .line 336
+    .line 337
+    invoke-static {p1}, Lua0/z0;->W(Ljava/lang/String;)V
+
+    .line 338
+    .line 339
+    .line 340
+    goto :goto_17f
+
+    .line 341
+    :cond_154
+    const-string p1, "buildLocationText, round1 \u65e0\u4f4d\u7f6e\u6743\u9650\uff0c\u63d0\u793a\u5f00\u542f\u4f4d\u7f6e\u6587\u6848"
+
+    .line 342
+    .line 343
+    invoke-static {p1}, Lua0/z0;->W(Ljava/lang/String;)V
+
+    .line 344
+    .line 345
+    .line 346
+    invoke-direct {p0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->h()Landroid/content/Context;
+
+    .line 347
+    .line 348
+    .line 349
+    move-result-object p1
+
+    .line 350
+    sget v1, Lmj1/k;->D1:I
+
+    .line 351
+    .line 352
+    invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    .line 353
+    .line 354
+    .line 355
+    move-result-object p1
+
+    .line 356
+    invoke-virtual {v0, p1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+
+    .line 357
+    .line 358
+    .line 359
+    new-instance p1, Lcom/netease/cloudmusic/module/listentogether/playpage/l4$d;
+
+    .line 360
+    .line 361
+    invoke-direct {p1, p0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4$d;-><init>(Lcom/netease/cloudmusic/module/listentogether/playpage/l4;)V
+
+    .line 362
+    .line 363
+    .line 364
+    invoke-virtual {v0}, Landroid/text/SpannableStringBuilder;->length()I
+
+    .line 365
+    .line 366
+    .line 367
+    move-result v1
+
+    .line 368
+    invoke-virtual {v0, p1, v5, v1, v4}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
+
+    .line 369
+    .line 370
+    .line 371
+    invoke-direct {p0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->h()Landroid/content/Context;
+
+    .line 372
+    .line 373
+    .line 374
+    move-result-object p1
+
+    .line 375
+    sget v1, Lmj1/k;->Z1:I
+
+    .line 376
+    .line 377
+    invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    .line 378
+    .line 379
+    .line 380
+    move-result-object p1
+
+    .line 381
+    invoke-virtual {v0, p1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+
+    .line 382
+    .line 383
+    .line 384
+    :cond_17f
+    :goto_17f
+    return-object v0
+.end method
+
+.method private final h()Landroid/content/Context;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->a:Lcom/netease/cloudmusic/module/listentogether/playpage/n;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lcom/netease/cloudmusic/module/listentogether/playpage/n;->getHostContext()Landroid/content/Context;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method private final k()V
+    .registers 4
+
+    .line 1
+    sget-object v0, Lcom/netease/cloudmusic/module/listentogether/playpage/b1;->a:Lcom/netease/cloudmusic/module/listentogether/playpage/b1$a;
+
+    .line 2
+    .line 3
+    iget v1, p0, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->e:I
+
+    .line 4
+    .line 5
+    invoke-virtual {v0, v1}, Lcom/netease/cloudmusic/module/listentogether/playpage/b1$a;->j0(I)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget v1, p0, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->e:I
+
+    .line 9
+    .line 10
+    const/4 v2, 0x1
+
+    .line 11
+    if-ne v1, v2, :cond_f
+
+    .line 12
+    .line 13
+    invoke-virtual {v0}, Lcom/netease/cloudmusic/module/listentogether/playpage/b1$a;->l0()V
+
+    .line 14
+    .line 15
+    .line 16
+    :cond_f
+    return-void
+.end method
+
+.method private final o()Z
+    .registers 3
+
+    .line 1
+    invoke-direct {p0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->h()Landroid/content/Context;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    instance-of v1, v0, Lbi0/q;
+
+    .line 6
+    .line 7
+    if-eqz v1, :cond_24
+
+    .line 8
+    .line 9
+    check-cast v0, Lbi0/q;
+
+    .line 10
+    .line 11
+    invoke-interface {v0}, Lcom/netease/cloudmusic/module/listentogether/im/h;->q1()Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    if-nez v0, :cond_24
+
+    .line 16
+    .line 17
+    invoke-static {}, Lcom/netease/cloudmusic/appground/f;->h()Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v0
+
+    .line 21
+    if-eqz v0, :cond_24
+
+    .line 22
+    .line 23
+    sget-object v0, Lbi0/u0;->a:Lbi0/u0;
+
+    .line 24
+    .line 25
+    invoke-virtual {v0}, Lbi0/u0;->q()Ljava/lang/String;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v0
+
+    .line 29
+    invoke-static {v0}, Lcom/netease/cloudmusic/utils/lg;->z0(Ljava/lang/String;)Z
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v0
+
+    .line 33
+    if-eqz v0, :cond_24
+
+    .line 34
+    .line 35
+    const/4 v0, 0x1
+
+    .line 36
+    goto :goto_25
+
+    .line 37
+    :cond_24
+    const/4 v0, 0x0
+
+    .line 38
+    :goto_25
+    return v0
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/lang/CharSequence;
+    .registers 4
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->h()Landroid/content/Context;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-static {}, Lua0/z0;->t()Lcom/netease/cloudmusic/module/listentogether/meta/RoomInfo;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
+
+    .line 9
+    if-eqz v1, :cond_f
+
+    .line 10
+    .line 11
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/module/listentogether/meta/RoomInfo;->getListeningRefer()Ljava/lang/String;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v1
+
+    .line 15
+    goto :goto_10
+
+    .line 16
+    :cond_f
+    const/4 v1, 0x0
+
+    .line 17
+    :goto_10
+    const-string v2, "LISTENING"
+
+    .line 18
+    .line 19
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 20
+    .line 21
+    .line 22
+    move-result v1
+
+    .line 23
+    if-eqz v1, :cond_1b
+
+    .line 24
+    .line 25
+    sget v1, Lmj1/k;->q1:I
+
+    .line 26
+    .line 27
+    goto :goto_1d
+
+    .line 28
+    :cond_1b
+    sget v1, Lmj1/k;->p1:I
+
+    .line 29
+    .line 30
+    :goto_1d
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v0
+
+    .line 34
+    const-string v1, "getContext().getString(i\u2026ether_guid_stranger_hint)"
+
+    .line 35
+    .line 36
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 37
+    .line 38
+    .line 39
+    return-object v0
+.end method
+
+.method public final c()Ljava/lang/CharSequence;
+    .registers 7
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    iget v0, p0, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->d:I
+
+    .line 2
+    .line 3
+    iput v0, p0, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->e:I
+
+    .line 4
+    .line 5
+    sget-object v0, Lcom/netease/cloudmusic/module/listentogether/playpage/k4;->a:Lcom/netease/cloudmusic/module/listentogether/playpage/k4;
+
+    .line 6
+    .line 7
+    invoke-virtual {v0}, Lcom/netease/cloudmusic/module/listentogether/playpage/k4;->e()Lqx0/z;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v1
+
+    .line 11
+    const-string v2, ""
+
+    .line 12
+    .line 13
+    if-eqz v1, :cond_22
+
+    .line 14
+    .line 15
+    invoke-interface {v1}, Lqx0/z;->getMsgData()Lcom/netease/cloudmusic/module/listentogether/meta/StatisticsChangeMsgData;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v1
+
+    .line 19
+    if-eqz v1, :cond_22
+
+    .line 20
+    .line 21
+    invoke-direct {p0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->h()Landroid/content/Context;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v3
+
+    .line 25
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/module/listentogether/meta/StatisticsChangeMsgData;->getTotalConnectionTime()J
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-wide v4
+
+    .line 29
+    invoke-static {v3, v4, v5}, Lcom/netease/cloudmusic/module/listentogether/playpage/n4;->a(Landroid/content/Context;J)Ljava/lang/String;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v1
+
+    .line 33
+    if-nez v1, :cond_23
+
+    .line 34
+    .line 35
+    :cond_22
+    move-object v1, v2
+
+    .line 36
+    :cond_23
+    invoke-static {}, Lua0/z0;->t()Lcom/netease/cloudmusic/module/listentogether/meta/RoomInfo;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v3
+
+    .line 40
+    if-eqz v3, :cond_43
+
+    .line 41
+    .line 42
+    invoke-static {}, Lua0/z0;->t()Lcom/netease/cloudmusic/module/listentogether/meta/RoomInfo;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v3
+
+    .line 46
+    const/4 v4, 0x0
+
+    .line 47
+    if-eqz v3, :cond_39
+
+    .line 48
+    .line 49
+    invoke-virtual {v3}, Lcom/netease/cloudmusic/module/listentogether/meta/RoomInfo;->getLtType()I
+
+    .line 50
+    .line 51
+    .line 52
+    move-result v3
+
+    .line 53
+    const/16 v5, 0x8
+
+    .line 54
+    .line 55
+    if-ne v3, v5, :cond_39
+
+    .line 56
+    .line 57
+    const/4 v4, 0x1
+
+    .line 58
+    :cond_39
+    if-nez v4, :cond_43
+
+    .line 59
+    .line 60
+    invoke-virtual {v0}, Lcom/netease/cloudmusic/module/listentogether/playpage/k4;->d()Lqx0/d;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v0
+
+    .line 64
+    invoke-direct {p0, v0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->b(Lqx0/d;)Ljava/lang/CharSequence;
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-object v2
+
+    .line 68
+    :cond_43
+    new-instance v0, Landroid/text/SpannableStringBuilder;
+
+    .line 69
+    .line 70
+    invoke-direct {v0}, Landroid/text/SpannableStringBuilder;-><init>()V
+
+    .line 71
+    .line 72
+    .line 73
+    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    .line 74
+    .line 75
+    .line 76
+    move-result v3
+
+    .line 77
+    if-nez v3, :cond_51
+
+    .line 78
+    .line 79
+    invoke-virtual {v0, v2}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+
+    .line 80
+    .line 81
+    .line 82
+    :cond_51
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    .line 83
+    .line 84
+    .line 85
+    move-result v2
+
+    .line 86
+    if-nez v2, :cond_65
+
+    .line 87
+    .line 88
+    invoke-virtual {v0}, Landroid/text/SpannableStringBuilder;->length()I
+
+    .line 89
+    .line 90
+    .line 91
+    move-result v2
+
+    .line 92
+    if-eqz v2, :cond_62
+
+    .line 93
+    .line 94
+    const-string v2, "\uff0c"
+
+    .line 95
+    .line 96
+    invoke-virtual {v0, v2}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+
+    .line 97
+    .line 98
+    .line 99
+    :cond_62
+    invoke-virtual {v0, v1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+
+    .line 100
+    .line 101
+    .line 102
+    :cond_65
+    return-object v0
+.end method
+
+.method public d(Z)V
+    .registers 3
+
+    .line 1
+    if-eqz p1, :cond_16
+
+    .line 2
+    .line 3
+    iget p1, p0, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->e:I
+
+    .line 4
+    .line 5
+    if-eqz p1, :cond_13
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
+
+    .line 8
+    if-eq p1, v0, :cond_13
+
+    .line 9
+    .line 10
+    const/4 v0, 0x2
+
+    .line 11
+    if-eq p1, v0, :cond_d
+
+    .line 12
+    .line 13
+    goto :goto_16
+
+    .line 14
+    :cond_d
+    sget-object p1, Lcom/netease/cloudmusic/module/listentogether/playpage/b1;->a:Lcom/netease/cloudmusic/module/listentogether/playpage/b1$a;
+
+    .line 15
+    .line 16
+    invoke-virtual {p1}, Lcom/netease/cloudmusic/module/listentogether/playpage/b1$a;->K()V
+
+    .line 17
+    .line 18
+    .line 19
+    goto :goto_16
+
+    .line 20
+    :cond_13
+    invoke-direct {p0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->k()V
+
+    .line 21
+    .line 22
+    .line 23
+    :cond_16
+    :goto_16
+    return-void
+.end method
+
+.method public final e()Landroid/text/SpannableStringBuilder;
+    .registers 4
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    new-instance v0, Landroid/text/SpannableStringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Landroid/text/SpannableStringBuilder;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-direct {p0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->h()Landroid/content/Context;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v1
+
+    .line 10
+    sget v2, Lmj1/k;->v1:I
+
+    .line 11
+    .line 12
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v1
+
+    .line 16
+    invoke-virtual {v0, v1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+
+    .line 17
+    .line 18
+    .line 19
+    return-object v0
+.end method
+
+.method public final f(I)Landroid/text/SpannableStringBuilder;
+    .registers 6
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    iput p1, p0, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->e:I
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->o()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-eqz v0, :cond_b
+
+    .line 8
+    .line 9
+    invoke-direct {p0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->k()V
+
+    .line 10
+    .line 11
+    .line 12
+    :cond_b
+    new-instance v0, Landroid/text/SpannableStringBuilder;
+
+    .line 13
+    .line 14
+    invoke-direct {v0}, Landroid/text/SpannableStringBuilder;-><init>()V
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-direct {p0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->h()Landroid/content/Context;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v1
+
+    .line 21
+    sget v2, Lmj1/k;->w1:I
+
+    .line 22
+    .line 23
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v1
+
+    .line 27
+    invoke-virtual {v0, v1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+
+    .line 28
+    .line 29
+    .line 30
+    new-instance v1, Lcom/netease/cloudmusic/module/listentogether/playpage/l4$e;
+
+    .line 31
+    .line 32
+    invoke-direct {v1, p1, p0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4$e;-><init>(ILcom/netease/cloudmusic/module/listentogether/playpage/l4;)V
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-virtual {v0}, Landroid/text/SpannableStringBuilder;->length()I
+
+    .line 36
+    .line 37
+    .line 38
+    move-result p1
+
+    .line 39
+    const/16 v2, 0x21
+
+    .line 40
+    .line 41
+    const/4 v3, 0x0
+
+    .line 42
+    invoke-virtual {v0, v1, v3, p1, v2}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
+
+    .line 43
+    .line 44
+    .line 45
+    return-object v0
+.end method
+
+.method public g(Z)V
+    .registers 3
+
+    .line 1
+    if-eqz p1, :cond_16
+
+    .line 2
+    .line 3
+    iget p1, p0, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->e:I
+
+    .line 4
+    .line 5
+    if-eqz p1, :cond_13
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
+
+    .line 8
+    if-eq p1, v0, :cond_13
+
+    .line 9
+    .line 10
+    const/4 v0, 0x2
+
+    .line 11
+    if-eq p1, v0, :cond_d
+
+    .line 12
+    .line 13
+    goto :goto_16
+
+    .line 14
+    :cond_d
+    sget-object p1, Lcom/netease/cloudmusic/module/listentogether/playpage/b1;->a:Lcom/netease/cloudmusic/module/listentogether/playpage/b1$a;
+
+    .line 15
+    .line 16
+    invoke-virtual {p1}, Lcom/netease/cloudmusic/module/listentogether/playpage/b1$a;->K()V
+
+    .line 17
+    .line 18
+    .line 19
+    goto :goto_16
+
+    .line 20
+    :cond_13
+    invoke-direct {p0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->k()V
+
+    .line 21
+    .line 22
+    .line 23
+    :cond_16
+    :goto_16
+    return-void
+.end method
+
+.method public final i()Lcom/netease/cloudmusic/module/listentogether/playpage/n;
+    .registers 2
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->a:Lcom/netease/cloudmusic/module/listentogether/playpage/n;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final j()I
+    .registers 3
+
+    .line 1
+    invoke-direct {p0}, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->h()Landroid/content/Context;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    instance-of v1, v0, Lbi0/q;
+
+    .line 6
+    .line 7
+    if-eqz v1, :cond_b
+
+    .line 8
+    .line 9
+    check-cast v0, Lbi0/q;
+
+    .line 10
+    .line 11
+    goto :goto_c
+
+    .line 12
+    :cond_b
+    const/4 v0, 0x0
+
+    .line 13
+    :goto_c
+    invoke-static {v0}, Lbi0/z0;->a0(Lel0/e;)Z
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v0
+
+    .line 17
+    if-eqz v0, :cond_14
+
+    .line 18
+    .line 19
+    const/4 v0, -0x1
+
+    .line 20
+    goto :goto_31
+
+    .line 21
+    :cond_14
+    iget-object v0, p0, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->a:Lcom/netease/cloudmusic/module/listentogether/playpage/n;
+
+    .line 22
+    .line 23
+    invoke-interface {v0}, Lcom/netease/cloudmusic/module/listentogether/playpage/n;->getHostContext()Landroid/content/Context;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v0
+
+    .line 27
+    invoke-static {v0}, Lua0/y2;->v(Landroid/content/Context;)Z
+
+    .line 28
+    .line 29
+    .line 30
+    move-result v0
+
+    .line 31
+    if-eqz v0, :cond_27
+
+    .line 32
+    .line 33
+    sget v0, Lmj1/e;->g:I
+
+    .line 34
+    .line 35
+    invoke-static {v0}, Lyj2/a;->a(I)I
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v0
+
+    .line 39
+    goto :goto_31
+
+    .line 40
+    :cond_27
+    invoke-static {}, Lcom/netease/cloudmusic/theme/core/ResourceRouter;->getInstance()Lcom/netease/cloudmusic/theme/core/ResourceRouter;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v0
+
+    .line 44
+    sget v1, Lcom/netease/cloudmusic/h;->l:I
+
+    .line 45
+    .line 46
+    invoke-virtual {v0, v1}, Lcom/netease/cloudmusic/theme/core/ResourceRouter;->getColorByDefaultColorJustNight(I)I
+
+    .line 47
+    .line 48
+    .line 49
+    move-result v0
+
+    .line 50
+    :goto_31
+    return v0
+.end method
+
+.method public final l()Z
+    .registers 3
+
+    .line 1
+    iget v0, p0, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->e:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    if-ne v0, v1, :cond_6
+
+    .line 5
+    .line 6
+    goto :goto_7
+
+    .line 7
+    :cond_6
+    const/4 v1, 0x0
+
+    .line 8
+    :goto_7
+    return v1
+.end method
+
+.method public final m()V
+    .registers 2
+
+    .line 1
+    iget v0, p0, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->d:I
+
+    .line 2
+    .line 3
+    iput v0, p0, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->e:I
+
+    .line 4
+    .line 5
+    return-void
+.end method
+
+.method public final n()V
+    .registers 2
+
+    .line 1
+    const/4 v0, 0x2
+
+    .line 2
+    iput v0, p0, Lcom/netease/cloudmusic/module/listentogether/playpage/l4;->e:I
+
+    .line 3
+    .line 4
+    return-void
+.end method
+

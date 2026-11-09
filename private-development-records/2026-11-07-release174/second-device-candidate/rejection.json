@@ -1,0 +1,14 @@
+{
+  "version": "1.0.74",
+  "code": 95,
+  "sha256": "29723aa8a2d16c53e11f223e54f1452d3bc38a363dcd2223d428a6b59f68ee70",
+  "finalizedOrDelivered": false,
+  "sourceZipFrozen": false,
+  "physicalInitialMissBannerFixed": true,
+  "physicalHistoryReadDisplayed": true,
+  "additionalSourceAuditFinding": "Riverpod dependency reload preserves previous AsyncData; a newly keyed account page could unwrap the previous owner catalog.",
+  "proof": "owner-probe-r7b.jsonl failed old-owner visibility assertion",
+  "fix": "Ignore retained provider values/errors during dependency reload; own refreshed Future/local data only. Same-owner invalidations preserve current content.",
+  "regression": "owner-final-r7.jsonl all passed",
+  "olderFrozenDeliveriesUnchanged": true
+}

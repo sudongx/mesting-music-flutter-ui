@@ -1,0 +1,607 @@
+[
+  {
+    "evidence_id": "ev_16fb5b115d6f3f306a72cebde7d0ea62a859d16a0f3453614aab262672352299",
+    "parameters": {
+      "class_name": "com.luna.audio.effect.AudioEffectBridge",
+      "method_name": "createEffectHandleByConfig",
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-05-soda-rootless-feasibility\\analysis-only-dex4.apk"
+    },
+    "normalized_result": {
+      "body_status": "not_available",
+      "class_name": "com.luna.audio.effect.AudioEffectBridge",
+      "engine": {
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "heap_limit_mib": 3072,
+        "name": "jadx-headless-mcp",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "version": "0.7.1",
+        "worker_count": 1
+      },
+      "fell_back": false,
+      "markers": [
+        "native_method"
+      ],
+      "method": {
+        "dex_descriptor": "(IIILjava/lang/String;)J",
+        "is_constructor": false,
+        "name": "createEffectHandleByConfig",
+        "overload_index": 0,
+        "reported_signature": "createEffectHandleByConfig(int, int, int, java.lang.String): long"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "source": {
+        "reported_total_bytes": null,
+        "status": "complete",
+        "text": ""
+      }
+    }
+  },
+  {
+    "evidence_id": "ev_34e2bce914953eac8e46553a8fb9d5347b970c50baab77d767d397a1c08cd35c",
+    "parameters": {
+      "class_name": "com.luna.audio.effect.AudioEffectBridge",
+      "method_name": "<clinit>",
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-05-soda-rootless-feasibility\\analysis-only-dex4.apk"
+    },
+    "normalized_result": {
+      "body_status": "available",
+      "class_name": "com.luna.audio.effect.AudioEffectBridge",
+      "engine": {
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "heap_limit_mib": 3072,
+        "name": "jadx-headless-mcp",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "version": "0.7.1",
+        "worker_count": 1
+      },
+      "fell_back": true,
+      "markers": [
+        "static_initializer_disassembly"
+      ],
+      "method": {
+        "dex_descriptor": "()V",
+        "is_constructor": false,
+        "name": "<clinit>",
+        "overload_index": 0,
+        "reported_signature": "<clinit>(): void"
+      },
+      "overload_count": 1,
+      "representation": "smali",
+      "source": {
+        "reported_total_bytes": null,
+        "status": "complete",
+        "text": ".method static constructor <clinit>()V\n    .registers 4\n\n    sget-object v0, Lcom/luna/audio/effect/AudioEffectBridge;->b:Lcom/bytedance/hotfix/base/ChangeQuickRedirect;\n\n    const/4 v1, 0x0\n\n    if-eqz v0, :cond_11\n\n    const/4 v2, 0x1\n\n    const/16 v3, 0x277\n\n    invoke-static {v1, v0, v2, v3}, Lcom/bytedance/hotfix/PatchProxy;->proxy(Ljava/lang/Object;Lcom/bytedance/hotfix/base/ChangeQuickRedirect;ZI)Lcom/bytedance/hotfix/PatchProxyResult;\n\n    move-result-object v0\n\n    iget-boolean v0, v0, Lcom/bytedance/hotfix/PatchProxyResult;->isSupported:Z\n\n    if-eqz v0, :cond_11\n\n    return-void\n\n    :cond_11\n    new-instance v0, Lcom/luna/audio/effect/AudioEffectBridge$Companion;\n\n    invoke-direct {v0, v1}, Lcom/luna/audio/effect/AudioEffectBridge$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V\n\n    sput-object v0, Lcom/luna/audio/effect/AudioEffectBridge;->a:Lcom/luna/audio/effect/AudioEffectBridge$Companion;\n\n    const-string v0, \"audio_effect_bridge\"\n\n    .line 16\n    invoke-static {v0}, Lcom/luna/audio/effect/AudioEffectBridge;->a(Ljava/lang/String;)V\n\n    return-void\n.end method"
+      }
+    }
+  },
+  {
+    "evidence_id": "ev_666f5470d56aea737140b565eec2576c3041c907226f2609fb153d2d75c1dbce",
+    "parameters": {
+      "class_name": "com.luna.audio.effect.AudioEffectBridge",
+      "method_name": "a",
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-05-soda-rootless-feasibility\\analysis-only-dex4.apk"
+    },
+    "normalized_result": {
+      "body_status": "available",
+      "class_name": "com.luna.audio.effect.AudioEffectBridge",
+      "engine": {
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "heap_limit_mib": 3072,
+        "name": "jadx-headless-mcp",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "version": "0.7.1",
+        "worker_count": 1
+      },
+      "fell_back": false,
+      "markers": [],
+      "method": {
+        "dex_descriptor": "(Ljava/lang/String;)V",
+        "is_constructor": false,
+        "name": "a",
+        "overload_index": 0,
+        "reported_signature": "a(java.lang.String): void"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "source": {
+        "reported_total_bytes": null,
+        "status": "complete",
+        "text": "    @Proxy(\"loadLibrary\")\r\n    @TargetClass(\"java.lang.System\")\r\n    public static void a(String str) {\r\n        ChangeQuickRedirect changeQuickRedirect = SoLoadHookerLancet.changeQuickRedirect;\r\n        if (changeQuickRedirect == null || !PatchProxy.proxy(str, (Object) null, changeQuickRedirect, true, 60429).isSupported) {\r\n            LaunchOptUtil.INSTANCE.loadLibraryOpt(str);\r\n            LunaLibrarian.loadLibrary(str);\r\n        }\r\n    }"
+      }
+    }
+  },
+  {
+    "evidence_id": "ev_8d72fb44ea832f6adcd74853a689a8c832a1a865358704eb418bfb30f145352e",
+    "parameters": {
+      "class_name": "com.luna.audio.effect.AudioEffectProcessor",
+      "method_name": "audioProcess",
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-05-soda-rootless-feasibility\\analysis-only-dex4.apk"
+    },
+    "normalized_result": {
+      "body_status": "available",
+      "class_name": "com.luna.audio.effect.AudioEffectProcessor",
+      "engine": {
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "heap_limit_mib": 3072,
+        "name": "jadx-headless-mcp",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "version": "0.7.1",
+        "worker_count": 1
+      },
+      "fell_back": false,
+      "markers": [],
+      "method": {
+        "dex_descriptor": "([Ljava/nio/ByteBuffer;IJ)V",
+        "is_constructor": false,
+        "name": "audioProcess",
+        "overload_index": 0,
+        "reported_signature": "audioProcess(java.nio.ByteBuffer[], int, long): void"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "source": {
+        "reported_total_bytes": null,
+        "status": "complete",
+        "text": "    public void audioProcess(@Nullable ByteBuffer[] inout, int samples, long timestamp) {\r\n        Long l;\r\n        int iProcessAudio;\r\n        ChangeQuickRedirect changeQuickRedirect = w;\r\n        if ((changeQuickRedirect == null || !PatchProxy.proxy(inout, samples, timestamp, this, changeQuickRedirect, false, 639).isSupported) && inout != null) {\r\n            if (this.needForceReset) {\r\n                m();\r\n                this.needForceReset = false;\r\n            }\r\n            Long lC = null;\r\n            if (this.enableProcessor && this.hasEffect) {\r\n                Long lD = d(samples);\r\n                if (lD != null && (lC = c(lD.longValue(), this.mSampleRate, samples, this.mChannels)) != null && (iProcessAudio = this.mAudioEffectBridge.processAudio(inout, lD.longValue(), lC.longValue(), this.mSampleRate, samples, this.mChannels, this.mFormat)) != 0) {\r\n                    l(iProcessAudio);\r\n                }\r\n                l = lC;\r\n                lC = lD;\r\n            } else {\r\n                l = null;\r\n            }\r\n            k(inout, lC != null ? lC.longValue() : 0L, l != null ? l.longValue() : 0L, samples);\r\n        }\r\n    }"
+      }
+    }
+  },
+  {
+    "evidence_id": "ev_ba5f8ee2e2300836d629343b6ea7cbbc22ef72230ae493c659e9d96fa2fd67bc",
+    "parameters": {
+      "class_name": "com.luna.audio.effect.AudioEffectProcessor",
+      "method_name": "e",
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-05-soda-rootless-feasibility\\analysis-only-dex4.apk"
+    },
+    "normalized_result": {
+      "body_status": "available",
+      "class_name": "com.luna.audio.effect.AudioEffectProcessor",
+      "engine": {
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "heap_limit_mib": 3072,
+        "name": "jadx-headless-mcp",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "version": "0.7.1",
+        "worker_count": 1
+      },
+      "fell_back": false,
+      "markers": [],
+      "method": {
+        "dex_descriptor": "(Ljava/lang/String;)V",
+        "is_constructor": false,
+        "name": "e",
+        "overload_index": 0,
+        "reported_signature": "e(java.lang.String): void"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "source": {
+        "reported_total_bytes": null,
+        "status": "complete",
+        "text": "    private final void e(String logStr) {\r\n        IAudioEffectReport iAudioEffectReport;\r\n        ChangeQuickRedirect changeQuickRedirect = w;\r\n        if ((changeQuickRedirect == null || !PatchProxy.proxy(logStr, this, changeQuickRedirect, false, 638).isSupported) && (iAudioEffectReport = this.businessReport) != null) {\r\n            iAudioEffectReport.a(\"AudioEffectProcessor:\" + logStr);\r\n        }\r\n    }"
+      }
+    }
+  },
+  {
+    "evidence_id": "ev_da3b5dac40e3d278439e966a9b53e32381cda23f428b752a363810c08f050eb5",
+    "parameters": {
+      "class_name": "com.luna.audio.effect.AudioEffectProcessor",
+      "method_name": "n",
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-05-soda-rootless-feasibility\\analysis-only-dex4.apk"
+    },
+    "normalized_result": {
+      "body_status": "available",
+      "class_name": "com.luna.audio.effect.AudioEffectProcessor",
+      "engine": {
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "heap_limit_mib": 3072,
+        "name": "jadx-headless-mcp",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "version": "0.7.1",
+        "worker_count": 1
+      },
+      "fell_back": false,
+      "markers": [],
+      "method": {
+        "dex_descriptor": "(Ljava/lang/String;)Z",
+        "is_constructor": false,
+        "name": "n",
+        "overload_index": 0,
+        "reported_signature": "n(java.lang.String): boolean"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "source": {
+        "reported_total_bytes": null,
+        "status": "complete",
+        "text": "    public final boolean n(@Nullable String effectConfig) {\r\n        ChangeQuickRedirect changeQuickRedirect = w;\r\n        if (changeQuickRedirect != null) {\r\n            PatchProxyResult patchProxyResultProxy = PatchProxy.proxy(effectConfig, this, changeQuickRedirect, false, 644);\r\n            if (patchProxyResultProxy.isSupported) {\r\n                return patchProxyResultProxy.resultZ;\r\n            }\r\n        }\r\n        if (Intrinsics.areEqual(effectConfig, this.mEffectConfigData)) {\r\n            return true;\r\n        }\r\n        if (!(effectConfig == null || effectConfig.length() == 0) && this.mAudioEffectBridge.isValidConfigJson(effectConfig) != 0) {\r\n            return false;\r\n        }\r\n        this.mEffectConfigData = effectConfig;\r\n        e(\"updateEffectConfig: \" + this.mEffectConfigData);\r\n        if (this.allowFadeInOut) {\r\n            this.enableFadeOut = true;\r\n        } else {\r\n            this.needForceReset = true;\r\n        }\r\n        return true;\r\n    }"
+      }
+    }
+  },
+  {
+    "evidence_id": "ev_f556ccd764dd9ca9e468205af901ad1fb7b113980a28f2065d60cf9c929875c6",
+    "parameters": {
+      "class_name": "com.luna.audio.effect.AudioEffectProcessor",
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-05-soda-rootless-feasibility\\analysis-only-dex4.apk"
+    },
+    "normalized_result": {
+      "class_name": "com.luna.audio.effect.AudioEffectProcessor",
+      "engine": {
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "heap_limit_mib": 3072,
+        "name": "jadx-headless-mcp",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "version": "0.7.1",
+        "worker_count": 1
+      },
+      "fields": [
+        {
+          "dex_static_value": null,
+          "name": "a",
+          "reported_type": "java.lang.Long"
+        },
+        {
+          "dex_static_value": null,
+          "name": "b",
+          "reported_type": "com.luna.audio.effect.AudioEffectBridge"
+        },
+        {
+          "dex_static_value": null,
+          "name": "c",
+          "reported_type": "int"
+        },
+        {
+          "dex_static_value": null,
+          "name": "d",
+          "reported_type": "int"
+        },
+        {
+          "dex_static_value": null,
+          "name": "e",
+          "reported_type": "int"
+        },
+        {
+          "dex_static_value": null,
+          "name": "f",
+          "reported_type": "int"
+        },
+        {
+          "dex_static_value": null,
+          "name": "g",
+          "reported_type": "java.lang.Long"
+        },
+        {
+          "dex_static_value": null,
+          "name": "h",
+          "reported_type": "java.lang.String"
+        },
+        {
+          "dex_static_value": null,
+          "name": "i",
+          "reported_type": "boolean"
+        },
+        {
+          "dex_static_value": null,
+          "name": "j",
+          "reported_type": "com.luna.audio.effect.IAudioEffectReport"
+        },
+        {
+          "dex_static_value": null,
+          "name": "k",
+          "reported_type": "boolean"
+        },
+        {
+          "dex_static_value": null,
+          "name": "l",
+          "reported_type": "float"
+        },
+        {
+          "dex_static_value": null,
+          "name": "m",
+          "reported_type": "float"
+        },
+        {
+          "dex_static_value": null,
+          "name": "n",
+          "reported_type": "float"
+        },
+        {
+          "dex_static_value": null,
+          "name": "o",
+          "reported_type": "boolean"
+        },
+        {
+          "dex_static_value": null,
+          "name": "p",
+          "reported_type": "boolean"
+        },
+        {
+          "dex_static_value": null,
+          "name": "q",
+          "reported_type": "boolean"
+        },
+        {
+          "dex_static_value": null,
+          "name": "r",
+          "reported_type": "float"
+        },
+        {
+          "dex_static_value": null,
+          "name": "s",
+          "reported_type": "boolean"
+        },
+        {
+          "dex_static_value": null,
+          "name": "t",
+          "reported_type": "float"
+        },
+        {
+          "dex_static_value": null,
+          "name": "u",
+          "reported_type": "boolean"
+        },
+        {
+          "dex_static_value": null,
+          "name": "v",
+          "reported_type": "com.luna.audio.effect.AudioEffectProcessor$Companion"
+        },
+        {
+          "dex_static_value": null,
+          "name": "w",
+          "reported_type": "com.bytedance.hotfix.base.ChangeQuickRedirect"
+        }
+      ],
+      "inner_classes": [
+        "com.luna.audio.effect.AudioEffectProcessor.Companion"
+      ],
+      "methods": [
+        {
+          "dex_descriptor": "()V",
+          "is_constructor": false,
+          "name": "<clinit>",
+          "overload_index": 0,
+          "reported_signature": "<clinit>(): void"
+        },
+        {
+          "dex_descriptor": "()V",
+          "is_constructor": true,
+          "name": "<init>",
+          "overload_index": 0,
+          "reported_signature": "<init>(): void"
+        },
+        {
+          "dex_descriptor": "()V",
+          "is_constructor": false,
+          "name": "a",
+          "overload_index": 0,
+          "reported_signature": "a(): void"
+        },
+        {
+          "dex_descriptor": "()V",
+          "is_constructor": false,
+          "name": "audioClose",
+          "overload_index": 0,
+          "reported_signature": "audioClose(): void"
+        },
+        {
+          "dex_descriptor": "(IIII)V",
+          "is_constructor": false,
+          "name": "audioOpen",
+          "overload_index": 0,
+          "reported_signature": "audioOpen(int, int, int, int): void"
+        },
+        {
+          "dex_descriptor": "([Ljava/nio/ByteBuffer;IJ)V",
+          "is_constructor": false,
+          "name": "audioProcess",
+          "overload_index": 0,
+          "reported_signature": "audioProcess(java.nio.ByteBuffer[], int, long): void"
+        },
+        {
+          "dex_descriptor": "(I)V",
+          "is_constructor": false,
+          "name": "audioRelease",
+          "overload_index": 0,
+          "reported_signature": "audioRelease(int): void"
+        },
+        {
+          "dex_descriptor": "(Z)V",
+          "is_constructor": false,
+          "name": "b",
+          "overload_index": 0,
+          "reported_signature": "b(boolean): void"
+        },
+        {
+          "dex_descriptor": "(JIII)Ljava/lang/Long;",
+          "is_constructor": false,
+          "name": "c",
+          "overload_index": 0,
+          "reported_signature": "c(long, int, int, int): java.lang.Long"
+        },
+        {
+          "dex_descriptor": "(I)Ljava/lang/Long;",
+          "is_constructor": false,
+          "name": "d",
+          "overload_index": 0,
+          "reported_signature": "d(int): java.lang.Long"
+        },
+        {
+          "dex_descriptor": "(Ljava/lang/String;)V",
+          "is_constructor": false,
+          "name": "e",
+          "overload_index": 0,
+          "reported_signature": "e(java.lang.String): void"
+        },
+        {
+          "dex_descriptor": "(Z)V",
+          "is_constructor": false,
+          "name": "f",
+          "overload_index": 0,
+          "reported_signature": "f(boolean): void"
+        },
+        {
+          "dex_descriptor": "(Lcom/luna/audio/effect/IAudioEffectReport;)V",
+          "is_constructor": false,
+          "name": "g",
+          "overload_index": 0,
+          "reported_signature": "g(com.luna.audio.effect.IAudioEffectReport): void"
+        },
+        {
+          "dex_descriptor": "(F)V",
+          "is_constructor": false,
+          "name": "h",
+          "overload_index": 0,
+          "reported_signature": "h(float): void"
+        },
+        {
+          "dex_descriptor": "(F)V",
+          "is_constructor": false,
+          "name": "i",
+          "overload_index": 0,
+          "reported_signature": "i(float): void"
+        },
+        {
+          "dex_descriptor": "(F)V",
+          "is_constructor": false,
+          "name": "j",
+          "overload_index": 0,
+          "reported_signature": "j(float): void"
+        },
+        {
+          "dex_descriptor": "([Ljava/nio/ByteBuffer;JJI)V",
+          "is_constructor": false,
+          "name": "k",
+          "overload_index": 0,
+          "reported_signature": "k(java.nio.ByteBuffer[], long, long, int): void"
+        },
+        {
+          "dex_descriptor": "(I)V",
+          "is_constructor": false,
+          "name": "l",
+          "overload_index": 0,
+          "reported_signature": "l(int): void"
+        },
+        {
+          "dex_descriptor": "()V",
+          "is_constructor": false,
+          "name": "m",
+          "overload_index": 0,
+          "reported_signature": "m(): void"
+        },
+        {
+          "dex_descriptor": "(Ljava/lang/String;)Z",
+          "is_constructor": false,
+          "name": "n",
+          "overload_index": 0,
+          "reported_signature": "n(java.lang.String): boolean"
+        }
+      ]
+    }
+  },
+  {
+    "evidence_id": "ev_fb3b73837d49e28723a3b5bff5d086bec05426fc924b1d1d18fc6dc8851a4e2e",
+    "parameters": {
+      "class_name": "com.luna.audio.effect.AudioEffectBridge",
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-05-soda-rootless-feasibility\\analysis-only-dex4.apk"
+    },
+    "normalized_result": {
+      "class_name": "com.luna.audio.effect.AudioEffectBridge",
+      "engine": {
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "heap_limit_mib": 3072,
+        "name": "jadx-headless-mcp",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "version": "0.7.1",
+        "worker_count": 1
+      },
+      "fields": [
+        {
+          "dex_static_value": null,
+          "name": "a",
+          "reported_type": "com.luna.audio.effect.AudioEffectBridge$Companion"
+        },
+        {
+          "dex_static_value": null,
+          "name": "b",
+          "reported_type": "com.bytedance.hotfix.base.ChangeQuickRedirect"
+        }
+      ],
+      "inner_classes": [
+        "com.luna.audio.effect.AudioEffectBridge.Companion"
+      ],
+      "methods": [
+        {
+          "dex_descriptor": "()V",
+          "is_constructor": false,
+          "name": "<clinit>",
+          "overload_index": 0,
+          "reported_signature": "<clinit>(): void"
+        },
+        {
+          "dex_descriptor": "()V",
+          "is_constructor": true,
+          "name": "<init>",
+          "overload_index": 0,
+          "reported_signature": "<init>(): void"
+        },
+        {
+          "dex_descriptor": "(Ljava/lang/String;)V",
+          "is_constructor": false,
+          "name": "a",
+          "overload_index": 0,
+          "reported_signature": "a(java.lang.String): void"
+        },
+        {
+          "dex_descriptor": "(JIII)J",
+          "is_constructor": false,
+          "name": "createAudioBuffer",
+          "overload_index": 0,
+          "reported_signature": "createAudioBuffer(long, int, int, int): long"
+        },
+        {
+          "dex_descriptor": "(IIILjava/lang/String;)J",
+          "is_constructor": false,
+          "name": "createEffectHandleByConfig",
+          "overload_index": 0,
+          "reported_signature": "createEffectHandleByConfig(int, int, int, java.lang.String): long"
+        },
+        {
+          "dex_descriptor": "(Ljava/lang/String;)I",
+          "is_constructor": false,
+          "name": "isValidConfigJson",
+          "overload_index": 0,
+          "reported_signature": "isValidConfigJson(java.lang.String): int"
+        },
+        {
+          "dex_descriptor": "([Ljava/nio/ByteBuffer;JJIIIFFLcom/luna/audio/effect/model/OperateFadeInOption;)V",
+          "is_constructor": false,
+          "name": "operateFadeIn",
+          "overload_index": 0,
+          "reported_signature": "operateFadeIn(java.nio.ByteBuffer[], long, long, int, int, int, float, float, com.luna.audio.effect.model.OperateFadeInOption): void"
+        },
+        {
+          "dex_descriptor": "([Ljava/nio/ByteBuffer;JJIIIFFLcom/luna/audio/effect/model/OperateFadeOutOption;)V",
+          "is_constructor": false,
+          "name": "operateFadeOut",
+          "overload_index": 0,
+          "reported_signature": "operateFadeOut(java.nio.ByteBuffer[], long, long, int, int, int, float, float, com.luna.audio.effect.model.OperateFadeOutOption): void"
+        },
+        {
+          "dex_descriptor": "([Ljava/nio/ByteBuffer;JJIIII)I",
+          "is_constructor": false,
+          "name": "processAudio",
+          "overload_index": 0,
+          "reported_signature": "processAudio(java.nio.ByteBuffer[], long, long, int, int, int, int): int"
+        },
+        {
+          "dex_descriptor": "(J)V",
+          "is_constructor": false,
+          "name": "release",
+          "overload_index": 0,
+          "reported_signature": "release(long): void"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,11 @@
+# 空值序列化补充核对
+
+此文件汇总已保留的本轮静态Evidence，不执行官版或提取库代码。
+
+`null-evidence-final.json`保留26条REA记录；`null-json-instance-serialize.java`（ev_718e2f9b16249df3cf73822d94ba36bbad9f658a3ca48adef5d0f67666b286ce）显示JSONObject继承的实例序列化以DEFAULT_GENERATE_FEATURE及EMPTY创建SerializeWriter。`null-default-features.smali`显示默认特性不含WriteMapNullValue，`null-map-serializer.java`（ev_e5999157616979d81796fe69bfe667d5509147892b1a66fde70bf2c0a5b505e1）显示Map值为null时按该特性省略键。
+
+`null-default-feature-write-candidates.json`对原20个DEX扫描静态写入候选，仅发现JSON静态初始化一处，并已静态核对；这不能排除反射、native或动态修改配置。
+
+因此资格reqParam JSON在边界省略backupUrl等null Map项，同时内存中的Bundle事实可保留null。`null-ext-jsonutils-evidence.json`实际方法显示JSONUtils.t（raw com.netease.cloudmusic.utils.i8）调用JSON.toJSONString(obj)，支持在ext序列化前对其中Map使用相同默认null省略规则，数组null元素保留。外层遇到已序列化ext字符串不会重新解析它，服务端rightsExtJson也不重写。
+
+这不证明当前平台实际接受，不宣称键顺序、动态配置或可选entranceComponent已全部一致；后者仍不猜默认值。

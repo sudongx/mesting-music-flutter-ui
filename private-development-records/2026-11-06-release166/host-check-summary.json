@@ -1,0 +1,88 @@
+{
+  "version": "1.0.66",
+  "androidVersionCode": 87,
+  "passed": true,
+  "analysisIssues": 0,
+  "analysisLog": "analyze-final-r2.log",
+  "beta": {
+    "files": 210,
+    "passed": 2417,
+    "skipped": 2,
+    "complete": true
+  },
+  "stable": {
+    "files": 6,
+    "passed": 63,
+    "skipped": 0,
+    "complete": true
+  },
+  "navigation": {
+    "files": 1,
+    "passed": 55,
+    "skipped": 0,
+    "complete": true
+  },
+  "counting": "Real test cases only; setup/teardown excluded; targeted/capture reruns not added",
+  "targeted": {
+    "initialFailure": "one retired no-web-identity expectation",
+    "secondFailure": "new scanner tap fixture lacked shared preferences",
+    "finalAffectedUiFilePassed": true,
+    "allCasesIncludedInFinalBetaCohort": true,
+    "initialFullBeta": {
+      "success": 2416,
+      "skipped": 2
+    },
+    "wholeFileReplacements": 7,
+    "finalPassed": 87,
+    "notAddedToBetaTotal": true
+  },
+  "nativeAudio": {
+    "passed": 14,
+    "historicalOnly": true,
+    "notRerunOrAddedThisRelease": true,
+    "inheritedFrom": "1.0.64 Media3 regression; exact production/runner inputs rechecked",
+    "nativeProductionAndRunnerSha256Match64": [
+      {
+        "path": "third_party/just_audio/package/android/src/main/java/com/ryanheise/just_audio/SodaAudioProcessor.java",
+        "sha256": "ccf0e183da2eafe21270fc73f5d0d240144d2eedc05cda97f77953361d781481",
+        "matches64": true,
+        "recheckedFor66": true
+      },
+      {
+        "path": "tool/test_soda_audio_processor.py",
+        "sha256": "7a943de0182c880ba38020331365443193497a1aae6766a804acf6ef03c6e06c",
+        "matches64": true,
+        "recheckedFor66": true
+      }
+    ]
+  },
+  "ui": {
+    "finalReviewedImages": 8,
+    "physicalDevice": false,
+    "fixtureOnly": true,
+    "captureCasesPassed": 9,
+    "images": [
+      "expired.png",
+      "generating.png",
+      "host-login-320-1.8.png",
+      "host-login-390-1.0.png",
+      "verification.png",
+      "waiting-320.png",
+      "waiting-390.png",
+      "waiting-768.png"
+    ],
+    "largeTextBoundary": "320dp at 1.8x retains scrollable content; first viewport need not show all controls"
+  },
+  "phoneLoginRemoved": true,
+  "smsInvestigationStoppedByUser": true,
+  "sms2156Resolved": false,
+  "realQrAccountAccepted": false,
+  "oldLogsReplayed": false,
+  "published": false,
+  "deviceDiagnostics": {
+    "independentAnonymousWebViewProbeCompleted": true,
+    "diagnosticUninstalled": true,
+    "noSmsOrAccountCredentialRead": true,
+    "anonymousWaitStateIsNotAccountAcceptance": true
+  }
+}

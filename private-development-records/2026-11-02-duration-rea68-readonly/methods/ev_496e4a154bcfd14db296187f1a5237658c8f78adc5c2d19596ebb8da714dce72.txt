@@ -1,0 +1,41 @@
+    @WorkerThread
+    public final void addAuditionSongList() {
+        int intValue;
+        long longValue;
+        List<Long> list;
+        if (this.auditionSongList == null) {
+            this.auditionSongList = new ArrayList();
+        }
+        JSONObject jSONObject = (JSONObject) ((ICustomConfig) ServiceFacade.get(ICustomConfig.class)).getAppCustomConfig("IuRPVVmc3WWul9fT", (Object) null, new String[]{"membership#my_page_play_record_limit"});
+        if (jSONObject != null) {
+            longValue = jSONObject.containsKey("time_interval") ? jSONObject.getLongValue("time_interval") : 0L;
+            intValue = jSONObject.containsKey("song_number_limit") ? jSONObject.getIntValue("song_number_limit") : 0;
+        } else {
+            intValue = 0;
+            longValue = 0;
+        }
+        if (longValue == 0) {
+            longValue = 172800000;
+        }
+        if (intValue == 0) {
+            intValue = 300;
+        }
+        List<PlayRecordEntity> listU8 = vo.e.R7().u8(0, System.currentTimeMillis() - longValue, 30, intValue);
+        Intrinsics.checkNotNullExpressionValue(listU8, "getInstance()\n          …tartTime, 30, songNumber)");
+        ArrayList arrayList = new ArrayList(CollectionsKt.collectionSizeOrDefault(listU8, 10));
+        for (PlayRecordEntity playRecordEntity : listU8) {
+            String extInfoJson = playRecordEntity != null ? playRecordEntity.getExtInfoJson() : null;
+            Long resourceId = playRecordEntity != null ? playRecordEntity.getResourceId() : null;
+            if (!(extInfoJson == null || extInfoJson.length() == 0) && resourceId != null) {
+                try {
+                    org.json.JSONObject jSONObject2 = new org.json.JSONObject(extInfoJson);
+                    if (!jSONObject2.isNull("is_audition") && jSONObject2.optInt("is_audition") > 0 && (list = this.auditionSongList) != null) {
+                        list.add(resourceId);
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+            arrayList.add(Unit.INSTANCE);
+        }
+    }

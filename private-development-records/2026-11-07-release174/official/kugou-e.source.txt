@@ -1,0 +1,34 @@
+    public static DailyBillCacheModel e(String str) {
+        DailyBillCacheModel dailyBillCacheModel = new DailyBillCacheModel();
+        try {
+            JSONObject jSONObject = new JSONObject(str);
+            if (jSONObject.optInt("version", 0) != 1) {
+                return null;
+            }
+            dailyBillCacheModel.g = jSONObject.optInt("rawSize");
+            dailyBillCacheModel.f = jSONObject.optInt("curPage");
+            dailyBillCacheModel.e = jSONObject.optString("key");
+            dailyBillCacheModel.q = jSONObject.optBoolean("isMultiPage");
+            dailyBillCacheModel.r = jSONObject.optBoolean("hotRec");
+            dailyBillCacheModel.s = jSONObject.optBoolean("isClose");
+            dailyBillCacheModel.v = jSONObject.optString("recDataStr");
+            dailyBillCacheModel.i = jSONObject.optString("coverImgUrl");
+            dailyBillCacheModel.j = jSONObject.optString("subTitle");
+            dailyBillCacheModel.n = jSONObject.optString("shortCpw");
+            dailyBillCacheModel.o = jSONObject.optString("longCpwTitle");
+            dailyBillCacheModel.p = jSONObject.optString("longCpwContent");
+            dailyBillCacheModel.t = jSONObject.optBoolean("isPart");
+            dailyBillCacheModel.u = jSONObject.optString("biBiz");
+            ArrayList arrayList = new ArrayList();
+            JSONArray jSONArrayOptJSONArray = jSONObject.optJSONArray("pageArray");
+            if (jSONArrayOptJSONArray != null) {
+                for (int i = 0; i < jSONArrayOptJSONArray.length(); i++) {
+                    arrayList.add(DailyBillPage.b(jSONArrayOptJSONArray.getJSONObject(i)));
+                }
+            }
+            dailyBillCacheModel.w = arrayList;
+            return dailyBillCacheModel;
+        } catch (JSONException unused) {
+            return null;
+        }
+    }

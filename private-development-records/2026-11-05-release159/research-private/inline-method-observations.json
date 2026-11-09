@@ -1,0 +1,189 @@
+{
+  "retention": "Copied from previously returned visible inline REA observations; not a complete raw producer Evidence bundle.",
+  "reason": "Older REA ledger records were lost across agent/tool resume; no analysis re-run was performed for this reconstruction.",
+  "normalization": "Line endings normalized to LF; selected excerpts and fields are explicitly labeled.",
+  "authority": "shipped-artifact static observations",
+  "limitations": [
+    "No APK execution, account read, advertisement playback, reward receipt or service behavior was observed.",
+    "Original full producer envelopes, raw metadata and original Evidence digests cannot be revalidated from this copied inline subset.",
+    "Use original carrier byte hashes and methods to re-check when a future task authorizes renewed inspection."
+  ],
+  "apkSha256": "e6427bcb35ccd9e8858ee55c46ec3db56b2f09871adcd8e897244d96cfcf7894",
+  "observations": [
+    {
+      "evidence_id": "ev_3297b6e00ea92891c08500d4abd8298bbcf32ba4de8efac2911341a2b32b8f2f",
+      "kind": "method-source",
+      "carrier": "classes14-analysis-only.apk",
+      "class_name": "com.netease.cloudmusic.api.impl.NeteaseMusicApiImpl",
+      "method": "u6",
+      "descriptor": "(IJ)I",
+      "source_status": "complete-visible-inline",
+      "source": "    /* JADX INFO: Thrown type has an unknown type hierarchy: j32.a */\n    @Override // w6.l\n    public int u6(int i2, long j2) throws j32.a {\n        try {\n            HashMap map = new HashMap();\n            map.put(\"type\", i2 + \"\");\n            map.put(\"adid\", j2 + \"\");\n            JSONObject jSONObject = new JSONObject(o22.e.c(\"point/dailyTask\", map).s());\n            int i3 = jSONObject.getInt(IAPMTracker.KEY_CODE);\n            if (i3 == 200) {\n                return jSONObject.optInt(\"point\");\n            }\n            if (i3 == -2) {\n                return -2;\n            }\n            qa(i3);\n            return -3;\n        } catch (JSONException e3) {\n            e3.printStackTrace();\n            throw new j32.a(1, e3);\n        }\n    }"
+    },
+    {
+      "evidence_id": "ev_26407e6c70a71d0a05032f5e3fe74ac1c35669e4d80018509db6676290e804b4",
+      "kind": "method-source",
+      "carrier": "classes14-analysis-only.apk",
+      "class_name": "com.netease.cloudmusic.api.impl.NeteaseMusicApiImpl",
+      "method": "n3",
+      "descriptor": "(IJ)I",
+      "source_status": "complete-visible-inline",
+      "source": "    @Override // w6.l\n    public int n3(int i2, long j2) {\n        return ((Integer) o22.e.b(\"point/dailyTask\").r0(\"type\", i2 + \"\").r0(\"adid\", j2 + \"\").c1(new a1(), new int[0])).intValue();\n    }"
+    },
+    {
+      "evidence_id": "ev_d9082ce148f79d259baa4de6655ac86ad45c90ad03d171bbb7597a03a9f17ec9",
+      "kind": "method-source",
+      "carrier": "classes14-analysis-only.apk",
+      "class_name": "com.netease.cloudmusic.api.impl.NeteaseMusicApiImpl",
+      "method": "L9",
+      "source_status": "complete-visible-inline",
+      "source": "    private void L9(Profile profile, JSONObject jSONObject) throws JSONException {\n        profile.setLevel(jSONObject.optInt(\"level\", 0));\n        profile.setMobileSign(jSONObject.optBoolean(\"mobileSign\", false));\n        if (jSONObject.isNull(\"userPoint\")) {\n            return;\n        }\n        JSONObject jSONObject2 = jSONObject.getJSONObject(\"userPoint\");\n        UserPoint userPoint = new UserPoint();\n        userPoint.setBalance(jSONObject2.optLong(\"balance\", 0L));\n        userPoint.setUserId(jSONObject2.optLong(\"userId\", 0L));\n        userPoint.setUpdateTime(jSONObject2.optLong(\"updateTime\", 0L));\n        userPoint.setVersion(jSONObject2.optInt(\"version\", 0));\n        userPoint.setStatus(jSONObject2.optInt(\"status\", 0));\n        userPoint.setBlockBalance(jSONObject2.optLong(\"blockBalance\", 0L));\n        profile.setUserPoint(userPoint);\n    }"
+    },
+    {
+      "evidence_id": "ev_85fbb807dfecbf5cb2599596ccd7d225a3fd8cebeab4d19335329d1b39a93ea4",
+      "kind": "method-source",
+      "carrier": "classes16-analysis-only.apk",
+      "class_name": "o30.q0.c",
+      "raw_selector": "o30.q0$c",
+      "method": "invokeSuspend",
+      "descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;",
+      "source_status": "complete-visible-inline",
+      "source": "        @Nullable\n        public final Object invokeSuspend(@NotNull Object obj) {\n            IntrinsicsKt.getCOROUTINE_SUSPENDED();\n            if (this.a != 0) {\n                throw new IllegalStateException(\"call to 'resume' before 'invoke' with coroutine\");\n            }\n            ResultKt.throwOnFailure(obj);\n            try {\n                Object objJ1 = o22.e.b(\"ad/listening/rights/qualification\").s0(MapsKt.mapOf(TuplesKt.to(\"reqParam\", this.b))).j1(ListeningRightHintInfo.class);\n                Intrinsics.checkNotNullExpressionValue(objJ1, \"api(\\\"ad/listening/rights…ightHintInfo::class.java)\");\n                return new ListeningRightHintInfoWrapper((ListeningRightHintInfo) objJ1);\n            } catch (j32.h e) {\n                e.printStackTrace();\n                return null;\n            } catch (JSONException e2) {\n                e2.printStackTrace();\n                return null;\n            } catch (org.json.JSONException e3) {\n                e3.printStackTrace();\n                return null;\n            }\n        }"
+    },
+    {
+      "evidence_id": "ev_2b033e3bc741ddc2c1abfc4c25fa910f21636822eec19e74dd31f6f8d9894c37",
+      "kind": "method-source",
+      "carrier": "classes16-analysis-only.apk",
+      "class_name": "com.netease.cloudmusic.module.ad.motivation.GainRightTask",
+      "method": "g",
+      "descriptor": "(Ljava/lang/String;)Z",
+      "source_status": "complete-visible-inline",
+      "source": "    /* JADX INFO: Access modifiers changed from: private */\n    @SuppressLint({\"GlobalBroadcastWarning\"})\n    public final boolean g(String data) {\n        boolean gainFlag = false;\n        try {\n            Result.Companion companion = Result.Companion;\n            ListeningRightsGainResult listeningRightsGainResult = (ListeningRightsGainResult) o22.e.b(\"ad/listening/rights/gain\").r0(\"reqParam\", data).m1(new h(new d(), ListeningRightsGainResult.class));\n            if (listeningRightsGainResult != null) {\n                gainFlag = listeningRightsGainResult.getGainFlag();\n                c cVar = new c(listeningRightsGainResult, new org.json.JSONObject(data), data, this);\n                n6.a.c(cVar, \"action_webview_activity_close\", true);\n                this.mPendingUnregisterBroadcasts.add(cVar);\n            }\n            Result.constructor-impl(Unit.INSTANCE);\n        } catch (Throwable th) {\n            Result.Companion companion2 = Result.Companion;\n            Result.constructor-impl(ResultKt.createFailure(th));\n        }\n        return gainFlag;\n    }"
+    },
+    {
+      "evidence_id": "ev_368921b06f53b69f404d944a1c3504296e9324bd75e178f599c23eb27a6850e5",
+      "kind": "method-source",
+      "carrier": "classes16-analysis-only.apk",
+      "class_name": "com.netease.cloudmusic.module.ad.motivation.ListeningRightRequestParams",
+      "method": "<init>",
+      "overload_index": 19,
+      "source_status": "body-assignment-visible-inline",
+      "source": "        this.reqUid = str;\n        this.exposureTime = j;\n        this.userId = j2;\n        this.clickTime = l;\n        this.extraRightsType = num;\n        this.playContinuously = z;\n        this.source = i;\n        this.creativeType = num2;\n        this.rightsGainMethod = num3;\n        this.extraRightsGainMethod = num4;\n        this.extraRightsGainDuration = num5;\n        this.sniffTime = l2;\n        this.rightsGainDuration = num6;\n        this.nextRightsGainDuration = num7;\n        this.rightsGainType = num8;\n        this.rightsExtJson = str2;\n        this.appInfo = str3;\n        this.installed = num9;\n        this.generalRightsInfo = str4;\n        this.contextInfo = str5;\n        this.gainMethodStep = num10;"
+    },
+    {
+      "evidence_id": "ev_871a7302fa8b9610e68271d42489734b72d2331470f5a3de1a0bf515f6a7857a",
+      "kind": "class-metadata-selected-fields",
+      "carrier": "classes16-analysis-only.apk",
+      "class_name": "com.netease.cloudmusic.meta.ad.ListeningRightHintInfo",
+      "fields": {
+        "qualified": "boolean",
+        "source": "int",
+        "rightType": "int",
+        "rightsGainMethod": "int",
+        "rightsGainType": "int",
+        "rightsGainDuration": "long",
+        "nextRightsGainDuration": "int",
+        "rightsEndTime": "long",
+        "validVideoInterval": "long",
+        "rightsUpperLimit": "boolean",
+        "rightsExtJson": "java.lang.String",
+        "adReqUrl": "java.lang.String",
+        "autoJumpUrl": "java.lang.String"
+      },
+      "source_status": "selected-fields-from-complete-visible-inline"
+    },
+    {
+      "evidence_id": "ev_bd1a1ebfa13138a58deb182b2a2711cf65d90e43166fa8f24ac91cf4a1f5f331",
+      "kind": "class-metadata-selected-fields",
+      "carrier": "classes16-analysis-only.apk",
+      "class_name": "com.netease.cloudmusic.module.ad.motivation.ListeningRightsGainResult",
+      "fields": {
+        "gainFlag": "boolean",
+        "rightsUpperLimit": "boolean",
+        "canPlayContinuously": "boolean",
+        "needLink": "boolean",
+        "gainRightsDuration": "java.lang.Integer",
+        "rightsDurationUnit": "java.lang.String",
+        "rightsEndDialogTitle": "java.lang.String",
+        "showContent": "java.lang.String"
+      },
+      "source_status": "selected-fields-from-complete-visible-inline"
+    },
+    {
+      "evidence_id": "ev_56201dc47b39829d01200c7a4e9e467a9880e2dc8a821dc11b982ef2d97d5a04",
+      "kind": "method-source-excerpt",
+      "carrier": "D:/AnLi/.codex-artifacts/2026-11-05-release157/netease-classes17-analysis-only.apk",
+      "class_name": "com.netease.cloudmusic.module.player.meta.PlayerIncentiveAdView",
+      "raw_selector": "com.netease.cloudmusic.module.hint.view.PlayerIncentiveAdView",
+      "method": "parseDataAndShowView",
+      "source_status": "selected-exact-visible-excerpts",
+      "source": "            this.countDownTimeMills = jSONObjectOptJSONObject3.optLong(\"rightsRemainingTime\");\n        long jOptLong = jSONObjectOptJSONObject2.optLong(\"rightsRemainingTime\");\n        this.countDownTimeMills = jOptLong;\n        if (jOptLong > 0) {\n            showCountDownStyle();\n        } else {\n            showRightsOutDatedStyle();\n        }"
+    },
+    {
+      "evidence_id": "ev_c1bbe45e9cfc24375bfce735a8d106ee0b3ca7c581acf8fbb9d101c74dc15fae",
+      "kind": "method-source",
+      "carrier": "D:/AnLi/.codex-artifacts/2026-11-05-release157/netease-classes17-analysis-only.apk",
+      "class_name": "y90.a",
+      "method": "c",
+      "source_status": "complete-visible-inline",
+      "source": "    @SuppressLint({\"ForbidDeprecatedUsageError\"})\n    public final void c(@Nullable Integer giveSource) {\n        a(\"ad/right/direct/gain/req\", giveSource);\n    }"
+    },
+    {
+      "evidence_id": "ev_5171ec07608a1b5504771e381452e0ececa4f5a2c63d95b199239b54ec3616fa",
+      "kind": "method-source",
+      "carrier": "D:/AnLi/.codex-artifacts/2026-11-05-release157/netease-classes17-analysis-only.apk",
+      "class_name": "y90.a",
+      "method": "a",
+      "source_status": "complete-visible-inline",
+      "source": "    @SuppressLint({\"ForbidDeprecatedUsageError\"})\n    private final void a(String endpoint, Integer source) {\n        if (source != null) {\n            if (!(source.intValue() > 0)) {\n                source = null;\n            }\n            if (source != null) {\n                kotlinx.coroutines.j.d(s1.a, kotlinx.coroutines.d1.b(), (kotlinx.coroutines.p0) null, new C0422a(endpoint, tg.b.d.a().w(\"source\", source.intValue()).toString(), null), 2, (Object) null);\n            }\n        }\n    }"
+    },
+    {
+      "evidence_id": "ev_91e44bdbf47dce0ae8922e5a9195676a3ba7b0de46f8102a1490581914f99406",
+      "kind": "method-source",
+      "carrier": "D:/AnLi/.codex-artifacts/2026-11-05-release157/netease-classes17-analysis-only.apk",
+      "class_name": "y90.a.C0422a",
+      "raw_selector": "y90.a$a",
+      "method": "invokeSuspend",
+      "source_status": "complete-visible-inline",
+      "source": "        @Nullable\n        public final Object invokeSuspend(@NotNull Object obj) {\n            IntrinsicsKt.getCOROUTINE_SUSPENDED();\n            if (this.a != 0) {\n                throw new IllegalStateException(\"call to 'resume' before 'invoke' with coroutine\");\n            }\n            ResultKt.throwOnFailure(obj);\n            String str = this.b;\n            try {\n                o22.e.b(str).r0(\"reqParam\", this.d).n();\n            } catch (Throwable th) {\n                b2.a(\"AdTopBubbleHelper\", th, false);\n            }\n            return Unit.INSTANCE;\n        }"
+    },
+    {
+      "evidence_id": "ev_d24a7ba43e5547e902c1e4514b01bc9e04e9ecb3f44ef7bb4ab6e1ef43e4b878",
+      "kind": "method-source-excerpt",
+      "carrier": "classes14-analysis-only.apk",
+      "class_name": "com.netease.cloudmusic.api.impl.NeteaseMusicApiImpl",
+      "method": "z1",
+      "source_status": "selected-exact-visible-excerpts",
+      "source": "            cVarF.H1(BatchChildRequest.newRequest(\"/api/usertool/sign/config\"));\n                    JSONObject jSONObject13 = jSONObjectE1.getJSONObject(\"/api/usertool/sign/config\");\n                    if (jSONObject13.getInt(IAPMTracker.KEY_CODE) != 200 || (jSONObjectOptJSONObject5 = jSONObject13.optJSONObject(\"data\")) == null) {\n                        mq.I(\"\", \"\", false, \"\");\n                    } else {\n                        mq.I(jSONObjectOptJSONObject5.optString(\"rnUrl\"), jSONObjectOptJSONObject5.optString(\"webviewUrl\"), jSONObjectOptJSONObject5.optBoolean(\"openYunBei\"), jSONObjectOptJSONObject5.optString(\"yunBeiUrl\"));\n                    }"
+    },
+    {
+      "evidence_id": "ev_d7d75f620a22b3660ddd3c4a5927a051dcb47f404d0f99619269770ec7d73af4",
+      "kind": "method-source-excerpt",
+      "carrier": "classes16-analysis-only.apk",
+      "class_name": "f30.a",
+      "method": "k",
+      "source_status": "selected-exact-visible-excerpt",
+      "source": "            ListeningRightsGainResult listeningRightsGainResult = (ListeningRightsGainResult) e.b(\"ad/listening/rights/gain\").r0(\"reqParam\", ks.c(data)).m1(new h(new c(), ListeningRightsGainResult.class));"
+    },
+    {
+      "evidence_id": "ev_235a9fad0bb45274f09f1676a3c7fb61747be534f99582fca5642c2910a0dac5",
+      "kind": "method-source-excerpt",
+      "carrier": "classes16-analysis-only.apk",
+      "class_name": "com.netease.cloudmusic.module.ad.motivation.ListeningRightRequestParams",
+      "method": "<init>",
+      "overload_index": 20,
+      "source_status": "complete-constructor-expression-visible-inline",
+      "source": "        this((i2 & 1) != 0 ? \"\" : str, (i2 & 2) != 0 ? 0L : j, (i2 & 4) != 0 ? 0L : j2, (i2 & 8) != 0 ? null : l, (i2 & 16) != 0 ? null : num, (i2 & 32) != 0 ? false : z, i, num2, (i2 & 256) != 0 ? null : num3, (i2 & ResourcePrivilege.FLAG_MASK.PRE_SELL) != 0 ? null : num4, (i2 & ResourcePrivilege.FLAG_MASK.AUDITION) != 0 ? null : num5, (i2 & ResourcePrivilege.FLAG_MASK.CAN_DOWNLOAD_CANNOT_PLAY) != 0 ? null : l2, (i2 & ResourcePrivilege.FLAG_MASK.HI_RES) != 0 ? null : num6, (i2 & ResourcePrivilege.FLAG_MASK.ALBUM_VIP_BUY) != 0 ? null : num7, (i2 & ResourcePrivilege.FLAG_MASK.DOLBY_PLAY) != 0 ? null : num8, (32768 & i2) != 0 ? null : str2, (65536 & i2) != 0 ? null : str3, (131072 & i2) != 0 ? null : num9, (262144 & i2) != 0 ? null : str4, (524288 & i2) != 0 ? null : str5, (i2 & 1048576) != 0 ? null : num10);"
+    },
+    {
+      "evidence_id": "ev_b7d62be217ba51fc397f8334051b6a3ea7f5bdbfea268ccf5abfd1e1423adb52",
+      "kind": "method-source-excerpt",
+      "carrier": "D:/AnLi/.codex-artifacts/2026-11-05-release157/netease-classes17-analysis-only.apk",
+      "class_name": "com.netease.cloudmusic.module.player.meta.PlayerRightTopDSLBubbleHintView",
+      "raw_selector": "com.netease.cloudmusic.module.hint.view.PlayerRightTopDSLBubbleHintView",
+      "method": "updateContainer",
+      "source_status": "selected-exact-visible-excerpts",
+      "source": "        HintData data = hintData.getData();\n        JSONObject extraJSON = data != null ? data.getExtraJSON() : null;\n        TopTabDSLBubbleHintView.a aVarA = TopTabDSLBubbleHintView.a.e.a(extraJSON);\n            a aVar = a.a;\n            aVar.c(aVarA.d());\n            aVar.b(aVarA.c());"
+    }
+  ]
+}

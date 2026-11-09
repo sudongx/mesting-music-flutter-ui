@@ -1,0 +1,136 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_c2a9beac6a9694624b941a3e486c7b1ffd16e57312b7371e4d052450b36df066\",\"subject\":{\"name\":\"D:\\\\AnLi\\\\.codex-artifacts\\\\2026-11-02-offline-investigation\\\\transport\\\\official-classes14-analysis-only.apk\",\"digest\":{\"sha256\":\"93c05fe5241b542f0c426d0b83b060fe7162a2c7e2438b2de62e092721288c27\"},\"format\":\"apk\",\"architecture\":null,\"local_path\":\"D:\\\\AnLi\\\\.codex-artifacts\\\\2026-11-02-offline-investigation\\\\transport\\\\official-classes14-analysis-only.apk\"},\"provider\":{\"id\":\"jadx\",\"name\":\"JADX headless\",\"version\":\"0.7.1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"inspect_android_method\",\"parameters\":{\"path\":\"D:\\\\AnLi\\\\.codex-artifacts\\\\2026-11-02-offline-investigation\\\\transport\\\\official-classes14-analysis-only.apk\",\"class_name\":\"pi.b\",\"method_name\":\"b\"},\"raw_result\":{\"server\":{\"name\":\"rea-jadx-bridge\",\"version\":\"1\"},\"bridge_sha256\":\"5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1\",\"jar_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"loaded\":{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\zyt\\\\AppData\\\\Local\\\\Temp\\\\rea-android-7615f9df0ebdc0fa2b38068fa688ba75\\\\target.apk\",\"class_count\":3329,\"resource_count\":2,\"threads\":1,\"resources\":\"full\"},\"calls\":[{\"operation\":\"rea_jvm_status\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"metadata_scope\\\":\\\"parsed_members\\\",\\\"max_heap_bytes\\\":3221225472,\\\"java_version\\\":\\\"17.0.20.1\\\",\\\"available_processors\\\":8,\\\"engine_reported_version\\\":\\\"0.7.1\\\"}\"}],\"isError\":false}},{\"operation\":\"get_class_summary\",\"input\":{\"class_name\":\"pi.b\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"methods\\\":[{\\\"def_pos\\\":0,\\\"signature\\\":\\\"\\\\u003cinit\\\\u003e(java.lang.String, java.lang.String): void\\\",\\\"is_constructor\\\":true,\\\"name\\\":\\\"\\\\u003cinit\\\\u003e\\\"},{\\\"def_pos\\\":0,\\\"signature\\\":\\\"a(): java.lang.String\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"a\\\"},{\\\"def_pos\\\":0,\\\"signature\\\":\\\"b(java.lang.String, com.alibaba.fastjson.JSONObject, java.util.Map\\\\u003cjava.lang.String, java.lang.Object\\\\u003e, long): java.lang.String\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"b\\\"},{\\\"def_pos\\\":0,\\\"signature\\\":\\\"c(byte[], java.lang.String): boolean\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"c\\\"},{\\\"def_pos\\\":0,\\\"signature\\\":\\\"onReceiveNetworkState(int, int, android.net.NetworkInfo): void\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"onReceiveNetworkState\\\"}],\\\"method_count\\\":5,\\\"inner_class_count\\\":0,\\\"inner_classes\\\":[],\\\"name\\\":\\\"b\\\",\\\"full_name\\\":\\\"pi.b\\\",\\\"field_count\\\":5,\\\"fields\\\":[{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"a\\\"},{\\\"type\\\":\\\"int\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"b\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"d\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"e\\\"},{\\\"type\\\":\\\"int\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"f\\\"}]}\"}],\"isError\":false}},{\"operation\":\"get_method_body\",\"input\":{\"class_name\":\"pi.b\",\"method_name\":\"b\",\"overload_index\":0,\"smali_fallback\":true},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"markers\\\":[],\\\"mode\\\":\\\"java\\\",\\\"full_name\\\":\\\"pi.b.b\\\",\\\"class_name\\\":\\\"pi.b\\\",\\\"overload_index\\\":0,\\\"fell_back\\\":false,\\\"body\\\":\\\"    @Override // com.netease.cloudmusic.core.statistic.e0.b\\\\r\\\\n    public String b(String str, JSONObject jSONObject, Map\\\\u003cString, Object\\\\u003e map, long j) {\\\\r\\\\n        int iQ;\\\\r\\\\n        String strA \\\\u003d a();\\\\r\\\\n        long j2 \\\\u003d n3.c(strA).getLong(\\\\\\\"logSeq\\\\\\\", 1L);\\\\r\\\\n        n3.c(strA).edit().putLong(\\\\\\\"logSeq\\\\\\\", j2 !\\\\u003d Long.MAX_VALUE ? 1 + j2 : 1L).commit();\\\\r\\\\n        jSONObject.put(\\\\\\\"seq\\\\\\\", Long.valueOf(j2));\\\\r\\\\n        jSONObject.put(\\\\\\\"pid\\\\\\\", Integer.valueOf(Process.myPid()));\\\\r\\\\n        jSONObject.put(\\\\\\\"lca\\\\\\\", Integer.valueOf(this.f));\\\\r\\\\n        jSONObject.put(\\\\\\\"netstatus\\\\\\\", this.a);\\\\r\\\\n        IABTestService iABTestService \\\\u003d (IABTestService) ServiceFacade.get(\\\\\\\"abtest\\\\\\\", IABTestService.class);\\\\r\\\\n        String aBTestLog \\\\u003d iABTestService !\\\\u003d null ? iABTestService.getABTestLog() : null;\\\\r\\\\n        if (aBTestLog !\\\\u003d null) {\\\\r\\\\n            jSONObject.put(\\\\\\\"abtest\\\\\\\", aBTestLog);\\\\r\\\\n        }\\\\r\\\\n        IABTestManager iABTestManager \\\\u003d (IABTestManager) ServiceFacade.get(IABTestManager.class);\\\\r\\\\n        if (iABTestManager !\\\\u003d null) {\\\\r\\\\n            jSONObject.put(\\\\\\\"libra_abt\\\\\\\", iABTestManager.getLibraLogStr());\\\\r\\\\n        }\\\\r\\\\n        ICustomConfig iCustomConfig \\\\u003d (ICustomConfig) ServiceFacade.get(ICustomConfig.class);\\\\r\\\\n        if (iCustomConfig !\\\\u003d null) {\\\\r\\\\n            Boolean bool \\\\u003d Boolean.TRUE;\\\\r\\\\n            if (bool.equals(iCustomConfig.getMainAppCustomConfig(bool, \\\\\\\"statistic#enable_config_ver_in_log\\\\\\\"))) {\\\\r\\\\n                jSONObject.put(\\\\\\\"config_ver\\\\\\\", Integer.valueOf(iCustomConfig.getMainAppConfigVersionInMemory()));\\\\r\\\\n            }\\\\r\\\\n        }\\\\r\\\\n        if (((IAppGroundManager) ServiceFacade.get(IAppGroundManager.class)).isBackground()) {\\\\r\\\\n            jSONObject.put(\\\\\\\"_ib\\\\\\\", 1);\\\\r\\\\n        }\\\\r\\\\n        String str2 \\\\u003d BuildInfo.i;\\\\r\\\\n        if (str2 !\\\\u003d null) {\\\\r\\\\n            jSONObject.put(\\\\\\\"buildType\\\\\\\", str2);\\\\r\\\\n        }\\\\r\\\\n        if (this.b \\\\u003d\\\\u003d 1 \\\\u0026\\\\u0026 (iQ \\\\u003d com.netease.cloudmusic.network.datapackage.a.q()) !\\\\u003d -1) {\\\\r\\\\n            jSONObject.put(\\\\\\\"_card\\\\\\\", Integer.valueOf(iQ));\\\\r\\\\n        }\\\\r\\\\n        try {\\\\r\\\\n            String strJ \\\\u003d c1.i().j();\\\\r\\\\n            String strH \\\\u003d c1.i().h();\\\\r\\\\n            jSONObject.put(\\\\\\\"net_wn\\\\\\\", strJ);\\\\r\\\\n            jSONObject.put(\\\\\\\"net_wbid\\\\\\\", strH);\\\\r\\\\n        } catch (Exception e) {\\\\r\\\\n            e.printStackTrace();\\\\r\\\\n        }\\\\r\\\\n        for (Map.Entry\\\\u003cString, Object\\\\u003e entry : map.entrySet()) {\\\\r\\\\n            jSONObject.put(entry.getKey(), entry.getValue());\\\\r\\\\n        }\\\\r\\\\n        StringBuilder sb2 \\\\u003d new StringBuilder();\\\\r\\\\n        sb2.append((j / 1000) + \\\\\\\"\\\\\\\\u0001\\\\\\\");\\\\r\\\\n        StringBuilder sb3 \\\\u003d new StringBuilder();\\\\r\\\\n        sb3.append(str);\\\\r\\\\n        sb3.append((char) 1);\\\\r\\\\n        sb2.append(sb3.toString());\\\\r\\\\n        sb2.append(jSONObject.toString());\\\\r\\\\n        sb2.append(\\\\\\\"\\\\\\\\n\\\\\\\");\\\\r\\\\n        return sb2.toString();\\\\r\\\\n    }\\\",\\\"overload_count\\\":1,\\\"method_name\\\":\\\"b\\\"}\"}],\"isError\":false}}]},\"normalized_result\":{\"engine\":{\"name\":\"jadx-headless-mcp\",\"version\":\"0.7.1\",\"artifact_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"source_revision\":\"5844800a486d2248fa949b74c9896285f5b54de2\",\"worker_count\":1,\"heap_limit_mib\":3072},\"class_name\":\"pi.b\",\"method\":{\"name\":\"b\",\"reported_signature\":\"b(java.lang.String, com.alibaba.fastjson.JSONObject, java.util.Map<java.lang.String, java.lang.Object>, long): java.lang.String\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":null},\"overload_count\":1,\"representation\":\"java\",\"body_status\":\"available\",\"fell_back\":false,\"markers\":[],\"source\":{\"status\":\"complete\",\"text\":\"    @Override // com.netease.cloudmusic.core.statistic.e0.b\\r\\n    public String b(String str, JSONObject jSONObject, Map<String, Object> map, long j) {\\r\\n        int iQ;\\r\\n        String strA = a();\\r\\n        long j2 = n3.c(strA).getLong(\\\"logSeq\\\", 1L);\\r\\n        n3.c(strA).edit().putLong(\\\"logSeq\\\", j2 != Long.MAX_VALUE ? 1 + j2 : 1L).commit();\\r\\n        jSONObject.put(\\\"seq\\\", Long.valueOf(j2));\\r\\n        jSONObject.put(\\\"pid\\\", Integer.valueOf(Process.myPid()));\\r\\n        jSONObject.put(\\\"lca\\\", Integer.valueOf(this.f));\\r\\n        jSONObject.put(\\\"netstatus\\\", this.a);\\r\\n        IABTestService iABTestService = (IABTestService) ServiceFacade.get(\\\"abtest\\\", IABTestService.class);\\r\\n        String aBTestLog = iABTestService != null ? iABTestService.getABTestLog() : null;\\r\\n        if (aBTestLog != null) {\\r\\n            jSONObject.put(\\\"abtest\\\", aBTestLog);\\r\\n        }\\r\\n        IABTestManager iABTestManager = (IABTestManager) ServiceFacade.get(IABTestManager.class);\\r\\n        if (iABTestManager != null) {\\r\\n            jSONObject.put(\\\"libra_abt\\\", iABTestManager.getLibraLogStr());\\r\\n        }\\r\\n        ICustomConfig iCustomConfig = (ICustomConfig) ServiceFacade.get(ICustomConfig.class);\\r\\n        if (iCustomConfig != null) {\\r\\n            Boolean bool = Boolean.TRUE;\\r\\n            if (bool.equals(iCustomConfig.getMainAppCustomConfig(bool, \\\"statistic#enable_config_ver_in_log\\\"))) {\\r\\n                jSONObject.put(\\\"config_ver\\\", Integer.valueOf(iCustomConfig.getMainAppConfigVersionInMemory()));\\r\\n            }\\r\\n        }\\r\\n        if (((IAppGroundManager) ServiceFacade.get(IAppGroundManager.class)).isBackground()) {\\r\\n            jSONObject.put(\\\"_ib\\\", 1);\\r\\n        }\\r\\n        String str2 = BuildInfo.i;\\r\\n        if (str2 != null) {\\r\\n            jSONObject.put(\\\"buildType\\\", str2);\\r\\n        }\\r\\n        if (this.b == 1 && (iQ = com.netease.cloudmusic.network.datapackage.a.q()) != -1) {\\r\\n            jSONObject.put(\\\"_card\\\", Integer.valueOf(iQ));\\r\\n        }\\r\\n        try {\\r\\n            String strJ = c1.i().j();\\r\\n            String strH = c1.i().h();\\r\\n            jSONObject.put(\\\"net_wn\\\", strJ);\\r\\n            jSONObject.put(\\\"net_wbid\\\", strH);\\r\\n        } catch (Exception e) {\\r\\n            e.printStackTrace();\\r\\n        }\\r\\n        for (Map.Entry<String, Object> entry : map.entrySet()) {\\r\\n            jSONObject.put(entry.getKey(), entry.getValue());\\r\\n        }\\r\\n        StringBuilder sb2 = new StringBuilder();\\r\\n        sb2.append((j / 1000) + \\\"\\\\u0001\\\");\\r\\n        StringBuilder sb3 = new StringBuilder();\\r\\n        sb3.append(str);\\r\\n        sb3.append((char) 1);\\r\\n        sb2.append(sb3.toString());\\r\\n        sb2.append(jSONObject.toString());\\r\\n        sb2.append(\\\"\\\\n\\\");\\r\\n        return sb2.toString();\\r\\n    }\",\"reported_total_bytes\":null}},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static decompiler observations do not establish runtime behavior; the APK is never executed.\",\"Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.\",\"Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.\",\"Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider.\"],\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_c2a9beac6a9694624b941a3e486c7b1ffd16e57312b7371e4d052450b36df066",
+    "subject": {
+      "name": "D:\\AnLi\\.codex-artifacts\\2026-11-02-offline-investigation\\transport\\official-classes14-analysis-only.apk",
+      "digest": {
+        "sha256": "93c05fe5241b542f0c426d0b83b060fe7162a2c7e2438b2de62e092721288c27"
+      },
+      "format": "apk",
+      "architecture": null,
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-02-offline-investigation\\transport\\official-classes14-analysis-only.apk"
+    },
+    "provider": {
+      "id": "jadx",
+      "name": "JADX headless",
+      "version": "0.7.1"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-02-offline-investigation\\transport\\official-classes14-analysis-only.apk",
+      "class_name": "pi.b",
+      "method_name": "b"
+    },
+    "raw_result": {
+      "server": {
+        "name": "rea-jadx-bridge",
+        "version": "1"
+      },
+      "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+      "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "loaded": {
+        "state": "LOADED",
+        "apk_path": "C:\\Users\\zyt\\AppData\\Local\\Temp\\rea-android-7615f9df0ebdc0fa2b38068fa688ba75\\target.apk",
+        "class_count": 3329,
+        "resource_count": 2,
+        "threads": 1,
+        "resources": "full"
+      },
+      "calls": [
+        {
+          "operation": "rea_jvm_status",
+          "input": {},
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":3221225472,\"java_version\":\"17.0.20.1\",\"available_processors\":8,\"engine_reported_version\":\"0.7.1\"}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "get_class_summary",
+          "input": {
+            "class_name": "pi.b"
+          },
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"methods\":[{\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String): void\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\"},{\"def_pos\":0,\"signature\":\"a(): java.lang.String\",\"is_constructor\":false,\"name\":\"a\"},{\"def_pos\":0,\"signature\":\"b(java.lang.String, com.alibaba.fastjson.JSONObject, java.util.Map\\u003cjava.lang.String, java.lang.Object\\u003e, long): java.lang.String\",\"is_constructor\":false,\"name\":\"b\"},{\"def_pos\":0,\"signature\":\"c(byte[], java.lang.String): boolean\",\"is_constructor\":false,\"name\":\"c\"},{\"def_pos\":0,\"signature\":\"onReceiveNetworkState(int, int, android.net.NetworkInfo): void\",\"is_constructor\":false,\"name\":\"onReceiveNetworkState\"}],\"method_count\":5,\"inner_class_count\":0,\"inner_classes\":[],\"name\":\"b\",\"full_name\":\"pi.b\",\"field_count\":5,\"fields\":[{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"a\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"b\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"d\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"e\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f\"}]}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "get_method_body",
+          "input": {
+            "class_name": "pi.b",
+            "method_name": "b",
+            "overload_index": 0,
+            "smali_fallback": true
+          },
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"markers\":[],\"mode\":\"java\",\"full_name\":\"pi.b.b\",\"class_name\":\"pi.b\",\"overload_index\":0,\"fell_back\":false,\"body\":\"    @Override // com.netease.cloudmusic.core.statistic.e0.b\\r\\n    public String b(String str, JSONObject jSONObject, Map\\u003cString, Object\\u003e map, long j) {\\r\\n        int iQ;\\r\\n        String strA \\u003d a();\\r\\n        long j2 \\u003d n3.c(strA).getLong(\\\"logSeq\\\", 1L);\\r\\n        n3.c(strA).edit().putLong(\\\"logSeq\\\", j2 !\\u003d Long.MAX_VALUE ? 1 + j2 : 1L).commit();\\r\\n        jSONObject.put(\\\"seq\\\", Long.valueOf(j2));\\r\\n        jSONObject.put(\\\"pid\\\", Integer.valueOf(Process.myPid()));\\r\\n        jSONObject.put(\\\"lca\\\", Integer.valueOf(this.f));\\r\\n        jSONObject.put(\\\"netstatus\\\", this.a);\\r\\n        IABTestService iABTestService \\u003d (IABTestService) ServiceFacade.get(\\\"abtest\\\", IABTestService.class);\\r\\n        String aBTestLog \\u003d iABTestService !\\u003d null ? iABTestService.getABTestLog() : null;\\r\\n        if (aBTestLog !\\u003d null) {\\r\\n            jSONObject.put(\\\"abtest\\\", aBTestLog);\\r\\n        }\\r\\n        IABTestManager iABTestManager \\u003d (IABTestManager) ServiceFacade.get(IABTestManager.class);\\r\\n        if (iABTestManager !\\u003d null) {\\r\\n            jSONObject.put(\\\"libra_abt\\\", iABTestManager.getLibraLogStr());\\r\\n        }\\r\\n        ICustomConfig iCustomConfig \\u003d (ICustomConfig) ServiceFacade.get(ICustomConfig.class);\\r\\n        if (iCustomConfig !\\u003d null) {\\r\\n            Boolean bool \\u003d Boolean.TRUE;\\r\\n            if (bool.equals(iCustomConfig.getMainAppCustomConfig(bool, \\\"statistic#enable_config_ver_in_log\\\"))) {\\r\\n                jSONObject.put(\\\"config_ver\\\", Integer.valueOf(iCustomConfig.getMainAppConfigVersionInMemory()));\\r\\n            }\\r\\n        }\\r\\n        if (((IAppGroundManager) ServiceFacade.get(IAppGroundManager.class)).isBackground()) {\\r\\n            jSONObject.put(\\\"_ib\\\", 1);\\r\\n        }\\r\\n        String str2 \\u003d BuildInfo.i;\\r\\n        if (str2 !\\u003d null) {\\r\\n            jSONObject.put(\\\"buildType\\\", str2);\\r\\n        }\\r\\n        if (this.b \\u003d\\u003d 1 \\u0026\\u0026 (iQ \\u003d com.netease.cloudmusic.network.datapackage.a.q()) !\\u003d -1) {\\r\\n            jSONObject.put(\\\"_card\\\", Integer.valueOf(iQ));\\r\\n        }\\r\\n        try {\\r\\n            String strJ \\u003d c1.i().j();\\r\\n            String strH \\u003d c1.i().h();\\r\\n            jSONObject.put(\\\"net_wn\\\", strJ);\\r\\n            jSONObject.put(\\\"net_wbid\\\", strH);\\r\\n        } catch (Exception e) {\\r\\n            e.printStackTrace();\\r\\n        }\\r\\n        for (Map.Entry\\u003cString, Object\\u003e entry : map.entrySet()) {\\r\\n            jSONObject.put(entry.getKey(), entry.getValue());\\r\\n        }\\r\\n        StringBuilder sb2 \\u003d new StringBuilder();\\r\\n        sb2.append((j / 1000) + \\\"\\\\u0001\\\");\\r\\n        StringBuilder sb3 \\u003d new StringBuilder();\\r\\n        sb3.append(str);\\r\\n        sb3.append((char) 1);\\r\\n        sb2.append(sb3.toString());\\r\\n        sb2.append(jSONObject.toString());\\r\\n        sb2.append(\\\"\\\\n\\\");\\r\\n        return sb2.toString();\\r\\n    }\",\"overload_count\":1,\"method_name\":\"b\"}"
+              }
+            ],
+            "isError": false
+          }
+        }
+      ]
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 3072
+      },
+      "class_name": "pi.b",
+      "method": {
+        "name": "b",
+        "reported_signature": "b(java.lang.String, com.alibaba.fastjson.JSONObject, java.util.Map<java.lang.String, java.lang.Object>, long): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    @Override // com.netease.cloudmusic.core.statistic.e0.b\r\n    public String b(String str, JSONObject jSONObject, Map<String, Object> map, long j) {\r\n        int iQ;\r\n        String strA = a();\r\n        long j2 = n3.c(strA).getLong(\"logSeq\", 1L);\r\n        n3.c(strA).edit().putLong(\"logSeq\", j2 != Long.MAX_VALUE ? 1 + j2 : 1L).commit();\r\n        jSONObject.put(\"seq\", Long.valueOf(j2));\r\n        jSONObject.put(\"pid\", Integer.valueOf(Process.myPid()));\r\n        jSONObject.put(\"lca\", Integer.valueOf(this.f));\r\n        jSONObject.put(\"netstatus\", this.a);\r\n        IABTestService iABTestService = (IABTestService) ServiceFacade.get(\"abtest\", IABTestService.class);\r\n        String aBTestLog = iABTestService != null ? iABTestService.getABTestLog() : null;\r\n        if (aBTestLog != null) {\r\n            jSONObject.put(\"abtest\", aBTestLog);\r\n        }\r\n        IABTestManager iABTestManager = (IABTestManager) ServiceFacade.get(IABTestManager.class);\r\n        if (iABTestManager != null) {\r\n            jSONObject.put(\"libra_abt\", iABTestManager.getLibraLogStr());\r\n        }\r\n        ICustomConfig iCustomConfig = (ICustomConfig) ServiceFacade.get(ICustomConfig.class);\r\n        if (iCustomConfig != null) {\r\n            Boolean bool = Boolean.TRUE;\r\n            if (bool.equals(iCustomConfig.getMainAppCustomConfig(bool, \"statistic#enable_config_ver_in_log\"))) {\r\n                jSONObject.put(\"config_ver\", Integer.valueOf(iCustomConfig.getMainAppConfigVersionInMemory()));\r\n            }\r\n        }\r\n        if (((IAppGroundManager) ServiceFacade.get(IAppGroundManager.class)).isBackground()) {\r\n            jSONObject.put(\"_ib\", 1);\r\n        }\r\n        String str2 = BuildInfo.i;\r\n        if (str2 != null) {\r\n            jSONObject.put(\"buildType\", str2);\r\n        }\r\n        if (this.b == 1 && (iQ = com.netease.cloudmusic.network.datapackage.a.q()) != -1) {\r\n            jSONObject.put(\"_card\", Integer.valueOf(iQ));\r\n        }\r\n        try {\r\n            String strJ = c1.i().j();\r\n            String strH = c1.i().h();\r\n            jSONObject.put(\"net_wn\", strJ);\r\n            jSONObject.put(\"net_wbid\", strH);\r\n        } catch (Exception e) {\r\n            e.printStackTrace();\r\n        }\r\n        for (Map.Entry<String, Object> entry : map.entrySet()) {\r\n            jSONObject.put(entry.getKey(), entry.getValue());\r\n        }\r\n        StringBuilder sb2 = new StringBuilder();\r\n        sb2.append((j / 1000) + \"\\u0001\");\r\n        StringBuilder sb3 = new StringBuilder();\r\n        sb3.append(str);\r\n        sb3.append((char) 1);\r\n        sb2.append(sb3.toString());\r\n        sb2.append(jSONObject.toString());\r\n        sb2.append(\"\\n\");\r\n        return sb2.toString();\r\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "confidence": "derived",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "locations": [],
+    "evidence_links": []
+  }
+}

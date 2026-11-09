@@ -1,0 +1,22 @@
+    Blocking waiting for file lock on package cache
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+error: linking with `x86_64-w64-mingw32-gcc` failed: exit code: 1
+  |
+  = note: "x86_64-w64-mingw32-gcc" "-fno-use-linker-plugin" "-Wl,--dynamicbase" "-Wl,--disable-auto-image-base" "-m64" "-Wl,--high-entropy-va" "<sysroot>\\lib\\rustlib\\x86_64-pc-windows-gnu\\lib\\rsbegin.o" "C:\\Users\\zyt\\AppData\\Local\\Temp\\rustcek7Tr1\\symbols.o" "<2 object files omitted>" "-Wl,-Bstatic" "<sysroot>\\lib\\rustlib\\x86_64-pc-windows-gnu\\lib/{libstd-*,libpanic_unwind-*,libobject-*,libmemchr-*,libaddr2line-*,libgimli-*,libwindows_targets-*,librustc_demangle-*,libstd_detect-*,libhashbrown-*,librustc_std_workspace_alloc-*,libminiz_oxide-*,libadler2-*,libunwind-*,libcfg_if-*,liblibc-*,librustc_std_workspace_core-*,liballoc-*,libcore-*,libcompiler_builtins-*}.rlib" "-Wl,-Bdynamic" "-lkernel32" "-lkernel32" "-lkernel32" "-lntdll" "-luserenv" "-lws2_32" "-ldbghelp" "-lgcc_eh" "-l:libpthread.a" "-lmsvcrt" "-lmingwex" "-lmingw32" "-lgcc" "-lmsvcrt" "-lmingwex" "-luser32" "-lkernel32" "-Wl,--nxcompat" "-o" "D:\\AnLi\\build\\md3-host154\\debug\\build\\quote-f4689a5df1d97a41\\build_script_build-f4689a5df1d97a41.exe" "-Wl,--gc-sections" "-no-pie" "-nodefaultlibs" "<sysroot>\\lib\\rustlib\\x86_64-pc-windows-gnu\\lib\\rsend.o"
+  = note: some arguments are omitted. use `--verbose` to show all linker arguments
+  = note: D:\CodexCache\mesting-rust\gcc-1230\w64devkit\bin/ld.exe: cannot find -lgcc_eh: No such file or directory␍
+          collect2.exe: error: ld returned 1 exit status
+          
+
+error: linking with `x86_64-w64-mingw32-gcc` failed: exit code: 1
+  |
+  = note: "x86_64-w64-mingw32-gcc" "-fno-use-linker-plugin" "-Wl,--dynamicbase" "-Wl,--disable-auto-image-base" "-m64" "-Wl,--high-entropy-va" "<sysroot>\\lib\\rustlib\\x86_64-pc-windows-gnu\\lib\\rsbegin.o" "C:\\Users\\zyt\\AppData\\Local\\Temp\\rustc6sEH4u\\symbols.o" "<3 object files omitted>" "-Wl,-Bstatic" "<sysroot>\\lib\\rustlib\\x86_64-pc-windows-gnu\\lib/{libstd-*,libpanic_unwind-*,libobject-*,libmemchr-*,libaddr2line-*,libgimli-*,libwindows_targets-*,librustc_demangle-*,libstd_detect-*,libhashbrown-*,librustc_std_workspace_alloc-*,libminiz_oxide-*,libadler2-*,libunwind-*,libcfg_if-*,liblibc-*,librustc_std_workspace_core-*,liballoc-*,libcore-*,libcompiler_builtins-*}.rlib" "-Wl,-Bdynamic" "-lkernel32" "-lkernel32" "-lkernel32" "-lntdll" "-luserenv" "-lws2_32" "-ldbghelp" "-lgcc_eh" "-l:libpthread.a" "-lmsvcrt" "-lmingwex" "-lmingw32" "-lgcc" "-lmsvcrt" "-lmingwex" "-luser32" "-lkernel32" "-Wl,--nxcompat" "-o" "D:\\AnLi\\build\\md3-host154\\debug\\build\\proc-macro2-0244c4992e368052\\build_script_build-0244c4992e368052.exe" "-Wl,--gc-sections" "-no-pie" "-nodefaultlibs" "<sysroot>\\lib\\rustlib\\x86_64-pc-windows-gnu\\lib\\rsend.o"
+  = note: some arguments are omitted. use `--verbose` to show all linker arguments
+  = note: D:\CodexCache\mesting-rust\gcc-1230\w64devkit\bin/ld.exe: cannot find -lgcc_eh: No such file or directory␍
+          collect2.exe: error: ld returned 1 exit status
+          
+
+error: could not compile `quote` (build script) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `proc-macro2` (build script) due to 1 previous error

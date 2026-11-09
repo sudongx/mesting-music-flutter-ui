@@ -1,0 +1,5714 @@
+.method protected varargs x3([Ljava/lang/Object;)Lcom/alibaba/fastjson/JSONObject;
+    .registers 28
+
+    .line 1
+    move-object/from16 v0, p0
+
+    .line 2
+    .line 3
+    move-object/from16 v1, p1
+
+    .line 4
+    .line 5
+    invoke-virtual/range {p0 .. p0}, Lqn0/z0;->getCurrentMusic()Lcom/netease/cloudmusic/meta/MusicInfo;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v10
+
+    .line 9
+    const/4 v2, 0x0
+
+    .line 10
+    if-nez v10, :cond_c
+
+    .line 11
+    .line 12
+    return-object v2
+
+    .line 13
+    :cond_c
+    invoke-virtual/range {p0 .. p0}, Lqn0/f;->getCurrentIndex()I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v3
+
+    .line 17
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getFilterMusicId()J
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-wide v4
+
+    .line 21
+    invoke-static {v4, v5}, Lcom/netease/cloudmusic/utils/sc;->F(J)Z
+
+    .line 22
+    .line 23
+    .line 24
+    move-result v4
+
+    .line 25
+    if-eqz v4, :cond_1d
+
+    .line 26
+    .line 27
+    const-string v4, "1"
+
+    .line 28
+    .line 29
+    goto :goto_1f
+
+    .line 30
+    :cond_1d
+    const-string v4, "0"
+
+    .line 31
+    .line 32
+    :goto_1f
+    invoke-virtual/range {p0 .. p0}, Lqn0/f;->W1()Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v11
+
+    .line 36
+    invoke-virtual {v0, v11}, Lqn0/z0;->K3(Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;)Ljava/lang/String;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v5
+
+    .line 40
+    array-length v6, v1
+
+    .line 41
+    const-string v7, "end"
+
+    .line 42
+    .line 43
+    const/4 v8, 0x1
+
+    .line 44
+    const/4 v14, 0x0
+
+    .line 45
+    if-lez v6, :cond_40
+
+    .line 46
+    .line 47
+    aget-object v6, v1, v14
+
+    .line 48
+    .line 49
+    invoke-virtual {v6}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object v6
+
+    .line 53
+    invoke-virtual {v6}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v6
+
+    .line 57
+    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 58
+    .line 59
+    .line 60
+    move-result v6
+
+    .line 61
+    if-eqz v6, :cond_40
+
+    .line 62
+    .line 63
+    move v6, v8
+
+    .line 64
+    goto :goto_41
+
+    .line 65
+    :cond_40
+    move v6, v14
+
+    .line 66
+    :goto_41
+    invoke-static {v11}, Lqn0/z0;->U3(Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;)Z
+
+    .line 67
+    .line 68
+    .line 69
+    move-result v9
+
+    .line 70
+    if-eqz v9, :cond_49
+
+    .line 71
+    .line 72
+    const-string v5, "MlogVideoDetailPage"
+
+    .line 73
+    .line 74
+    :cond_49
+    invoke-static {v5}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    .line 75
+    .line 76
+    .line 77
+    move-result v9
+
+    .line 78
+    if-eqz v9, :cond_51
+
+    .line 79
+    .line 80
+    const-string v5, "other"
+
+    .line 81
+    .line 82
+    :cond_51
+    invoke-virtual {v0, v10}, Lqn0/z0;->F3(Lcom/netease/cloudmusic/meta/MusicInfo;)I
+
+    .line 83
+    .line 84
+    .line 85
+    move-result v9
+
+    .line 86
+    invoke-static {v11, v5}, Lcom/netease/cloudmusic/utils/bj;->m(Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 87
+    .line 88
+    .line 89
+    move-result-object v12
+
+    .line 90
+    move v15, v3
+
+    .line 91
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getFilterMusicId()J
+
+    .line 92
+    .line 93
+    .line 94
+    move-result-wide v2
+
+    .line 95
+    if-eqz v6, :cond_75
+
+    .line 96
+    .line 97
+    invoke-static {v2, v3}, Ljm0/z1;->A(J)Lcom/netease/cloudmusic/module/player/utils/SongPlayedTime;
+
+    .line 98
+    .line 99
+    .line 100
+    move-result-object v16
+
+    .line 101
+    if-eqz v16, :cond_75
+
+    .line 102
+    .line 103
+    invoke-static {}, Ljm0/m;->P2()Z
+
+    .line 104
+    .line 105
+    .line 106
+    move-result v17
+
+    .line 107
+    if-eqz v17, :cond_75
+
+    .line 108
+    .line 109
+    invoke-virtual/range {v16 .. v16}, Lcom/netease/cloudmusic/module/player/utils/SongPlayedTime;->getTime()I
+
+    .line 110
+    .line 111
+    .line 112
+    move-result v17
+
+    .line 113
+    invoke-virtual/range {v16 .. v16}, Lcom/netease/cloudmusic/module/player/utils/SongPlayedTime;->getRealTime()I
+
+    .line 114
+    .line 115
+    .line 116
+    move-result v16
+
+    .line 117
+    goto :goto_79
+
+    .line 118
+    :cond_75
+    move/from16 v16, v14
+
+    .line 119
+    .line 120
+    move/from16 v17, v16
+
+    .line 121
+    .line 122
+    :goto_79
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->isRawBizTypeProgram()Z
+
+    .line 123
+    .line 124
+    .line 125
+    move-result v18
+
+    .line 126
+    if-eqz v18, :cond_e3
+
+    .line 127
+    .line 128
+    sget-object v4, Llg0/c;->a:Llg0/c;
+
+    .line 129
+    .line 130
+    invoke-virtual/range {p0 .. p0}, Lqn0/j;->j0()I
+
+    .line 131
+    .line 132
+    .line 133
+    move-result v5
+
+    .line 134
+    div-int/lit16 v5, v5, 0x3e8
+
+    .line 135
+    .line 136
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 137
+    .line 138
+    .line 139
+    move-result-object v5
+
+    .line 140
+    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 141
+    .line 142
+    .line 143
+    move-result-object v6
+
+    .line 144
+    invoke-virtual {v0, v2, v3}, Lqn0/j;->q0(J)I
+
+    .line 145
+    .line 146
+    .line 147
+    move-result v2
+
+    .line 148
+    add-int v2, v17, v2
+
+    .line 149
+    .line 150
+    int-to-float v2, v2
+
+    .line 151
+    const/high16 v3, 0x447a0000    # 1000.0f
+
+    .line 152
+    .line 153
+    div-float/2addr v2, v3
+
+    .line 154
+    invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 155
+    .line 156
+    .line 157
+    move-result-object v7
+
+    .line 158
+    invoke-static {v10}, Lqn0/j;->G0(Lcom/netease/cloudmusic/meta/MusicInfo;)Z
+
+    .line 159
+    .line 160
+    .line 161
+    move-result v2
+
+    .line 162
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 163
+    .line 164
+    .line 165
+    move-result-object v9
+
+    .line 166
+    sget-object v2, Lbi0/p0;->a:Lbi0/p0;
+
+    .line 167
+    .line 168
+    invoke-virtual {v2}, Lbi0/p0;->E1()Lwk0/a0;
+
+    .line 169
+    .line 170
+    .line 171
+    move-result-object v2
+
+    .line 172
+    invoke-interface {v2}, Lwk0/a0;->x()Ljava/lang/String;
+
+    .line 173
+    .line 174
+    .line 175
+    move-result-object v12
+
+    .line 176
+    invoke-virtual {v0, v8}, Lqn0/j;->G1(Z)Ljava/lang/String;
+
+    .line 177
+    .line 178
+    .line 179
+    move-result-object v13
+
+    .line 180
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getProgram()Lcom/netease/cloudmusic/meta/Program;
+
+    .line 181
+    .line 182
+    .line 183
+    move-result-object v15
+
+    .line 184
+    iget-object v3, v0, Lqn0/j;->a:Lcom/netease/cloudmusic/service/IPlayService;
+
+    .line 185
+    .line 186
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 187
+    .line 188
+    .line 189
+    move-result-object v16
+
+    .line 190
+    move-object v2, v4
+
+    .line 191
+    move-object/from16 v17, v3
+
+    .line 192
+    .line 193
+    move-object v3, v5
+
+    .line 194
+    move-object v4, v6
+
+    .line 195
+    move-object v5, v7
+
+    .line 196
+    move-object v6, v9
+
+    .line 197
+    move-object v7, v12
+
+    .line 198
+    move-object v8, v13
+
+    .line 199
+    move-object v9, v15
+
+    .line 200
+    move-object/from16 v12, v17
+
+    .line 201
+    .line 202
+    move-object/from16 v13, v16
+
+    .line 203
+    .line 204
+    invoke-virtual/range {v2 .. v13}, Llg0/c;->b(Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Float;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Lcom/netease/cloudmusic/meta/metainterface/IProgram;Lcom/netease/cloudmusic/meta/MusicInfo;Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;Lcom/netease/cloudmusic/service/IPlayService;Ljava/lang/Integer;)Lcom/alibaba/fastjson/JSONObject;
+
+    .line 205
+    .line 206
+    .line 207
+    move-result-object v2
+
+    .line 208
+    :goto_cf
+    array-length v3, v1
+
+    .line 209
+    if-ge v14, v3, :cond_e2
+
+    .line 210
+    .line 211
+    aget-object v3, v1, v14
+
+    .line 212
+    .line 213
+    invoke-virtual {v3}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 214
+    .line 215
+    .line 216
+    move-result-object v3
+
+    .line 217
+    add-int/lit8 v4, v14, 0x1
+
+    .line 218
+    .line 219
+    aget-object v4, v1, v4
+
+    .line 220
+    .line 221
+    invoke-virtual {v2, v3, v4}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 222
+    .line 223
+    .line 224
+    add-int/lit8 v14, v14, 0x2
+
+    .line 225
+    .line 226
+    goto :goto_cf
+
+    .line 227
+    :cond_e2
+    return-object v2
+
+    .line 228
+    :cond_e3
+    const/16 v13, 0x38
+
+    .line 229
+    .line 230
+    new-array v13, v13, [Ljava/lang/Object;
+
+    .line 231
+    .line 232
+    const-string v19, "type"
+
+    .line 233
+    .line 234
+    aput-object v19, v13, v14
+
+    .line 235
+    .line 236
+    invoke-virtual/range {p0 .. p0}, Lqn0/z0;->s4()Ljava/lang/String;
+
+    .line 237
+    .line 238
+    .line 239
+    move-result-object v19
+
+    .line 240
+    aput-object v19, v13, v8
+
+    .line 241
+    .line 242
+    const-string v19, "id"
+
+    .line 243
+    .line 244
+    const/4 v14, 0x2
+
+    .line 245
+    aput-object v19, v13, v14
+
+    .line 246
+    .line 247
+    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 248
+    .line 249
+    .line 250
+    move-result-object v19
+
+    .line 251
+    const/4 v14, 0x3
+
+    .line 252
+    aput-object v19, v13, v14
+
+    .line 253
+    .line 254
+    const-string v19, "wifi"
+
+    .line 255
+    .line 256
+    const/4 v14, 0x4
+
+    .line 257
+    aput-object v19, v13, v14
+
+    .line 258
+    .line 259
+    invoke-static {}, Lcom/netease/cloudmusic/utils/m4;->v()Z
+
+    .line 260
+    .line 261
+    .line 262
+    move-result v19
+
+    .line 263
+    invoke-static/range {v19 .. v19}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 264
+    .line 265
+    .line 266
+    move-result-object v19
+
+    .line 267
+    const/16 v20, 0x5
+
+    .line 268
+    .line 269
+    aput-object v19, v13, v20
+
+    .line 270
+    .line 271
+    const-string v19, "realtime"
+
+    .line 272
+    .line 273
+    const/4 v14, 0x6
+
+    .line 274
+    aput-object v19, v13, v14
+
+    .line 275
+    .line 276
+    invoke-virtual {v0, v2, v3}, Lqn0/j;->q0(J)I
+
+    .line 277
+    .line 278
+    .line 279
+    move-result v19
+
+    .line 280
+    add-int v14, v19, v16
+
+    .line 281
+    .line 282
+    div-int/lit16 v14, v14, 0x3e8
+
+    .line 283
+    .line 284
+    invoke-static {v14}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 285
+    .line 286
+    .line 287
+    move-result-object v14
+
+    .line 288
+    const/4 v8, 0x7
+
+    .line 289
+    aput-object v14, v13, v8
+
+    .line 290
+    .line 291
+    const-string v14, "lags"
+
+    .line 292
+    .line 293
+    const/16 v8, 0x8
+
+    .line 294
+    .line 295
+    aput-object v14, v13, v8
+
+    .line 296
+    .line 297
+    sget-object v14, Lbi0/p0;->a:Lbi0/p0;
+
+    .line 298
+    .line 299
+    invoke-virtual {v14}, Lbi0/p0;->E1()Lwk0/a0;
+
+    .line 300
+    .line 301
+    .line 302
+    move-result-object v14
+
+    .line 303
+    invoke-interface {v14}, Lwk0/a0;->x()Ljava/lang/String;
+
+    .line 304
+    .line 305
+    .line 306
+    move-result-object v14
+
+    .line 307
+    const/16 v8, 0x9
+
+    .line 308
+    .line 309
+    aput-object v14, v13, v8
+
+    .line 310
+    .line 311
+    const-string v14, "source"
+
+    .line 312
+    .line 313
+    const/16 v8, 0xa
+
+    .line 314
+    .line 315
+    aput-object v14, v13, v8
+
+    .line 316
+    .line 317
+    const/16 v14, 0xb
+
+    .line 318
+    .line 319
+    aput-object v5, v13, v14
+
+    .line 320
+    .line 321
+    const/16 v5, 0xc
+
+    .line 322
+    .line 323
+    const-string v23, "sourceId"
+
+    .line 324
+    .line 325
+    aput-object v23, v13, v5
+
+    .line 326
+    .line 327
+    const/16 v5, 0xd
+
+    .line 328
+    .line 329
+    invoke-static {v11}, Lqn0/z0;->O3(Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;)Ljava/lang/String;
+
+    .line 330
+    .line 331
+    .line 332
+    move-result-object v23
+
+    .line 333
+    aput-object v23, v13, v5
+
+    .line 334
+    .line 335
+    const-string v5, "mode"
+
+    .line 336
+    .line 337
+    const/16 v14, 0xe
+
+    .line 338
+    .line 339
+    aput-object v5, v13, v14
+
+    .line 340
+    .line 341
+    invoke-virtual/range {p0 .. p0}, Lqn0/j;->p0()I
+
+    .line 342
+    .line 343
+    .line 344
+    move-result v5
+
+    .line 345
+    invoke-static {v5}, Ljm0/n2;->f(I)Ljava/lang/String;
+
+    .line 346
+    .line 347
+    .line 348
+    move-result-object v5
+
+    .line 349
+    const/16 v24, 0xf
+
+    .line 350
+    .line 351
+    aput-object v5, v13, v24
+
+    .line 352
+    .line 353
+    const/16 v5, 0x10
+
+    .line 354
+    .line 355
+    const-string v24, "download"
+
+    .line 356
+    .line 357
+    aput-object v24, v13, v5
+
+    .line 358
+    .line 359
+    if-nez v9, :cond_16a
+
+    .line 360
+    .line 361
+    const/4 v5, 0x1
+
+    .line 362
+    goto :goto_16b
+
+    .line 363
+    :cond_16a
+    const/4 v5, 0x0
+
+    .line 364
+    :goto_16b
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 365
+    .line 366
+    .line 367
+    move-result-object v5
+
+    .line 368
+    const/16 v24, 0x11
+
+    .line 369
+    .line 370
+    aput-object v5, v13, v24
+
+    .line 371
+    .line 372
+    const/16 v5, 0x12
+
+    .line 373
+    .line 374
+    const-string v24, "bitrate"
+
+    .line 375
+    .line 376
+    aput-object v24, v13, v5
+
+    .line 377
+    .line 378
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getCurrentBitRate()I
+
+    .line 379
+    .line 380
+    .line 381
+    move-result v5
+
+    .line 382
+    invoke-static {v10, v5}, Ljm0/i0;->e(Lcom/netease/cloudmusic/module/player/datasource/MusicMeta;I)I
+
+    .line 383
+    .line 384
+    .line 385
+    move-result v5
+
+    .line 386
+    div-int/lit16 v5, v5, 0x3e8
+
+    .line 387
+    .line 388
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 389
+    .line 390
+    .line 391
+    move-result-object v5
+
+    .line 392
+    const/16 v24, 0x13
+
+    .line 393
+    .line 394
+    aput-object v5, v13, v24
+
+    .line 395
+    .line 396
+    const/16 v5, 0x14
+
+    .line 397
+    .line 398
+    const-string v24, "npu_bitrate"
+
+    .line 399
+    .line 400
+    aput-object v24, v13, v5
+
+    .line 401
+    .line 402
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getRealBitrate()I
+
+    .line 403
+    .line 404
+    .line 405
+    move-result v5
+
+    .line 406
+    div-int/lit16 v5, v5, 0x3e8
+
+    .line 407
+    .line 408
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 409
+    .line 410
+    .line 411
+    move-result-object v5
+
+    .line 412
+    const/16 v24, 0x15
+
+    .line 413
+    .line 414
+    aput-object v5, v13, v24
+
+    .line 415
+    .line 416
+    const/16 v5, 0x16
+
+    .line 417
+    .line 418
+    const-string v24, "status"
+
+    .line 419
+    .line 420
+    aput-object v24, v13, v5
+
+    .line 421
+    .line 422
+    invoke-virtual/range {p0 .. p0}, Lqn0/j;->A0()Z
+
+    .line 423
+    .line 424
+    .line 425
+    move-result v5
+
+    .line 426
+    if-eqz v5, :cond_1ae
+
+    .line 427
+    .line 428
+    const-string v5, "back"
+
+    .line 429
+    .line 430
+    goto :goto_1b0
+
+    .line 431
+    :cond_1ae
+    const-string v5, "front"
+
+    .line 432
+    .line 433
+    :goto_1b0
+    const/16 v24, 0x17
+
+    .line 434
+    .line 435
+    aput-object v5, v13, v24
+
+    .line 436
+    .line 437
+    const/16 v5, 0x18
+
+    .line 438
+    .line 439
+    const-string v24, "fee"
+
+    .line 440
+    .line 441
+    aput-object v24, v13, v5
+
+    .line 442
+    .line 443
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSp()Lcom/netease/cloudmusic/meta/virtual/SongPrivilege;
+
+    .line 444
+    .line 445
+    .line 446
+    move-result-object v5
+
+    .line 447
+    invoke-virtual {v5}, Lcom/netease/cloudmusic/meta/virtual/ResourcePrivilege;->getFee()I
+
+    .line 448
+    .line 449
+    .line 450
+    move-result v5
+
+    .line 451
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 452
+    .line 453
+    .line 454
+    move-result-object v5
+
+    .line 455
+    const/16 v24, 0x19
+
+    .line 456
+    .line 457
+    aput-object v5, v13, v24
+
+    .line 458
+    .line 459
+    const/16 v5, 0x1a
+
+    .line 460
+    .line 461
+    const-string v24, "sp_flag"
+
+    .line 462
+    .line 463
+    aput-object v24, v13, v5
+
+    .line 464
+    .line 465
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSp()Lcom/netease/cloudmusic/meta/virtual/SongPrivilege;
+
+    .line 466
+    .line 467
+    .line 468
+    move-result-object v5
+
+    .line 469
+    invoke-virtual {v5}, Lcom/netease/cloudmusic/meta/virtual/ResourcePrivilege;->getFlag()I
+
+    .line 470
+    .line 471
+    .line 472
+    move-result v5
+
+    .line 473
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 474
+    .line 475
+    .line 476
+    move-result-object v5
+
+    .line 477
+    const/16 v24, 0x1b
+
+    .line 478
+    .line 479
+    aput-object v5, v13, v24
+
+    .line 480
+    .line 481
+    const/16 v5, 0x1c
+
+    .line 482
+    .line 483
+    const-string v24, "sp_pay"
+
+    .line 484
+    .line 485
+    aput-object v24, v13, v5
+
+    .line 486
+    .line 487
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSp()Lcom/netease/cloudmusic/meta/virtual/SongPrivilege;
+
+    .line 488
+    .line 489
+    .line 490
+    move-result-object v5
+
+    .line 491
+    invoke-virtual {v5}, Lcom/netease/cloudmusic/meta/virtual/SongPrivilege;->getPayed()I
+
+    .line 492
+    .line 493
+    .line 494
+    move-result v5
+
+    .line 495
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 496
+    .line 497
+    .line 498
+    move-result-object v5
+
+    .line 499
+    const/16 v24, 0x1d
+
+    .line 500
+    .line 501
+    aput-object v5, v13, v24
+
+    .line 502
+    .line 503
+    const/16 v5, 0x1e
+
+    .line 504
+    .line 505
+    const-string v24, "sp_playMaxbr"
+
+    .line 506
+    .line 507
+    aput-object v24, v13, v5
+
+    .line 508
+    .line 509
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSp()Lcom/netease/cloudmusic/meta/virtual/SongPrivilege;
+
+    .line 510
+    .line 511
+    .line 512
+    move-result-object v5
+
+    .line 513
+    invoke-virtual {v5}, Lcom/netease/cloudmusic/meta/virtual/SongPrivilege;->getPlayMaxbr()I
+
+    .line 514
+    .line 515
+    .line 516
+    move-result v5
+
+    .line 517
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 518
+    .line 519
+    .line 520
+    move-result-object v5
+
+    .line 521
+    const/16 v24, 0x1f
+
+    .line 522
+    .line 523
+    aput-object v5, v13, v24
+
+    .line 524
+    .line 525
+    const/16 v5, 0x20
+
+    .line 526
+    .line 527
+    const-string v24, "sp_pl"
+
+    .line 528
+    .line 529
+    aput-object v24, v13, v5
+
+    .line 530
+    .line 531
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSp()Lcom/netease/cloudmusic/meta/virtual/SongPrivilege;
+
+    .line 532
+    .line 533
+    .line 534
+    move-result-object v5
+
+    .line 535
+    invoke-virtual {v5}, Lcom/netease/cloudmusic/meta/virtual/ResourcePrivilege;->getPlayMaxLevel()I
+
+    .line 536
+    .line 537
+    .line 538
+    move-result v5
+
+    .line 539
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 540
+    .line 541
+    .line 542
+    move-result-object v5
+
+    .line 543
+    const/16 v24, 0x21
+
+    .line 544
+    .line 545
+    aput-object v5, v13, v24
+
+    .line 546
+    .line 547
+    const/16 v5, 0x22
+
+    .line 548
+    .line 549
+    const-string v24, "sp_fl"
+
+    .line 550
+    .line 551
+    aput-object v24, v13, v5
+
+    .line 552
+    .line 553
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSp()Lcom/netease/cloudmusic/meta/virtual/SongPrivilege;
+
+    .line 554
+    .line 555
+    .line 556
+    move-result-object v5
+
+    .line 557
+    invoke-virtual {v5}, Lcom/netease/cloudmusic/meta/virtual/SongPrivilege;->getFreeLevel()I
+
+    .line 558
+    .line 559
+    .line 560
+    move-result v5
+
+    .line 561
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 562
+    .line 563
+    .line 564
+    move-result-object v5
+
+    .line 565
+    const/16 v24, 0x23
+
+    .line 566
+    .line 567
+    aput-object v5, v13, v24
+
+    .line 568
+    .line 569
+    const/16 v5, 0x24
+
+    .line 570
+    .line 571
+    const-string v24, "sp_source"
+
+    .line 572
+    .line 573
+    aput-object v24, v13, v5
+
+    .line 574
+    .line 575
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSp()Lcom/netease/cloudmusic/meta/virtual/SongPrivilege;
+
+    .line 576
+    .line 577
+    .line 578
+    move-result-object v5
+
+    .line 579
+    invoke-virtual {v5}, Lcom/netease/cloudmusic/meta/virtual/SongPrivilege;->getSpTypeForLog()Ljava/lang/String;
+
+    .line 580
+    .line 581
+    .line 582
+    move-result-object v5
+
+    .line 583
+    const/16 v24, 0x25
+
+    .line 584
+    .line 585
+    aput-object v5, v13, v24
+
+    .line 586
+    .line 587
+    const/16 v5, 0x26
+
+    .line 588
+    .line 589
+    const-string v24, "startlogtime"
+
+    .line 590
+    .line 591
+    aput-object v24, v13, v5
+
+    .line 592
+    .line 593
+    iget-object v5, v0, Lqn0/j;->a:Lcom/netease/cloudmusic/service/IPlayService;
+
+    .line 594
+    .line 595
+    invoke-interface {v5}, Lcom/netease/cloudmusic/service/IPlayService;->getMusicStartLogTime()J
+
+    .line 596
+    .line 597
+    .line 598
+    move-result-wide v24
+
+    .line 599
+    invoke-static/range {v24 .. v25}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 600
+    .line 601
+    .line 602
+    move-result-object v5
+
+    .line 603
+    const/16 v24, 0x27
+
+    .line 604
+    .line 605
+    aput-object v5, v13, v24
+
+    .line 606
+    .line 607
+    const/16 v5, 0x28
+
+    .line 608
+    .line 609
+    const-string v24, "file"
+
+    .line 610
+    .line 611
+    aput-object v24, v13, v5
+
+    .line 612
+    .line 613
+    const/16 v5, 0x29
+
+    .line 614
+    .line 615
+    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 616
+    .line 617
+    .line 618
+    move-result-object v9
+
+    .line 619
+    aput-object v9, v13, v5
+
+    .line 620
+    .line 621
+    const/16 v5, 0x2a
+
+    .line 622
+    .line 623
+    const-string v9, "copyright"
+
+    .line 624
+    .line 625
+    aput-object v9, v13, v5
+
+    .line 626
+    .line 627
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->isOffLineMusic()Z
+
+    .line 628
+    .line 629
+    .line 630
+    move-result v5
+
+    .line 631
+    const/4 v9, 0x1
+
+    .line 632
+    xor-int/2addr v5, v9
+
+    .line 633
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 634
+    .line 635
+    .line 636
+    move-result-object v5
+
+    .line 637
+    const/16 v9, 0x2b
+
+    .line 638
+    .line 639
+    aput-object v5, v13, v9
+
+    .line 640
+    .line 641
+    const/16 v5, 0x2c
+
+    .line 642
+    .line 643
+    const-string v9, "preferrefer"
+
+    .line 644
+    .line 645
+    aput-object v9, v13, v5
+
+    .line 646
+    .line 647
+    const/16 v5, 0x2d
+
+    .line 648
+    .line 649
+    aput-object v12, v13, v5
+
+    .line 650
+    .line 651
+    const/16 v5, 0x2e
+
+    .line 652
+    .line 653
+    const-string v9, "time"
+
+    .line 654
+    .line 655
+    aput-object v9, v13, v5
+
+    .line 656
+    .line 657
+    invoke-static {v2, v3}, Lbi0/p0;->Y(J)Ljava/lang/Integer;
+
+    .line 658
+    .line 659
+    .line 660
+    move-result-object v5
+
+    .line 661
+    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
+
+    .line 662
+    .line 663
+    .line 664
+    move-result v5
+
+    .line 665
+    add-int v5, v5, v17
+
+    .line 666
+    .line 667
+    div-int/lit16 v5, v5, 0x3e8
+
+    .line 668
+    .line 669
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 670
+    .line 671
+    .line 672
+    move-result-object v5
+
+    .line 673
+    const/16 v9, 0x2f
+
+    .line 674
+    .line 675
+    aput-object v5, v13, v9
+
+    .line 676
+    .line 677
+    const/16 v5, 0x30
+
+    .line 678
+    .line 679
+    const-string v9, "is_heart"
+
+    .line 680
+    .line 681
+    aput-object v9, v13, v5
+
+    .line 682
+    .line 683
+    const/16 v5, 0x31
+
+    .line 684
+    .line 685
+    aput-object v4, v13, v5
+
+    .line 686
+    .line 687
+    const/16 v4, 0x32
+
+    .line 688
+    .line 689
+    const-string v5, "isMergeProcess"
+
+    .line 690
+    .line 691
+    aput-object v5, v13, v4
+
+    .line 692
+    .line 693
+    const/16 v4, 0x33
+
+    .line 694
+    .line 695
+    const/4 v5, 0x1
+
+    .line 696
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 697
+    .line 698
+    .line 699
+    move-result-object v9
+
+    .line 700
+    aput-object v9, v13, v4
+
+    .line 701
+    .line 702
+    const/16 v4, 0x34
+
+    .line 703
+    .line 704
+    const-string v5, "isQuickListenFramework"
+
+    .line 705
+    .line 706
+    aput-object v5, v13, v4
+
+    .line 707
+    .line 708
+    invoke-static {}, Ljm0/m;->N1()Z
+
+    .line 709
+    .line 710
+    .line 711
+    move-result v4
+
+    .line 712
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 713
+    .line 714
+    .line 715
+    move-result-object v4
+
+    .line 716
+    const/16 v5, 0x35
+
+    .line 717
+    .line 718
+    aput-object v4, v13, v5
+
+    .line 719
+    .line 720
+    const/16 v4, 0x36
+
+    .line 721
+    .line 722
+    const-string v5, "currentProcessName"
+
+    .line 723
+    .line 724
+    aput-object v5, v13, v4
+
+    .line 725
+    .line 726
+    invoke-static {}, Lcom/netease/cloudmusic/common/ApplicationWrapper;->getInstance()Lcom/netease/cloudmusic/common/ApplicationWrapper;
+
+    .line 727
+    .line 728
+    .line 729
+    move-result-object v4
+
+    .line 730
+    invoke-virtual {v4}, Lcom/netease/cloudmusic/common/ApplicationWrapper;->appProcessName()Ljava/lang/String;
+
+    .line 731
+    .line 732
+    .line 733
+    move-result-object v4
+
+    .line 734
+    const/16 v5, 0x37
+
+    .line 735
+    .line 736
+    aput-object v4, v13, v5
+
+    .line 737
+    .line 738
+    invoke-static {v13}, Lcom/netease/cloudmusic/utils/i8;->a([Ljava/lang/Object;)Lcom/alibaba/fastjson/JSONObject;
+
+    .line 739
+    .line 740
+    .line 741
+    move-result-object v4
+
+    .line 742
+    if-eqz v6, :cond_32a
+
+    .line 743
+    .line 744
+    if-lez v17, :cond_313
+
+    .line 745
+    .line 746
+    if-lez v16, :cond_313
+
+    .line 747
+    .line 748
+    invoke-static {}, Ljm0/m;->P2()Z
+
+    .line 749
+    .line 750
+    .line 751
+    move-result v5
+
+    .line 752
+    if-eqz v5, :cond_313
+
+    .line 753
+    .line 754
+    invoke-static {v2, v3}, Lbi0/p0;->Y(J)Ljava/lang/Integer;
+
+    .line 755
+    .line 756
+    .line 757
+    move-result-object v5
+
+    .line 758
+    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
+
+    .line 759
+    .line 760
+    .line 761
+    move-result v5
+
+    .line 762
+    div-int/lit16 v5, v5, 0x3e8
+
+    .line 763
+    .line 764
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 765
+    .line 766
+    .line 767
+    move-result-object v5
+
+    .line 768
+    const-string v9, "oldtime"
+
+    .line 769
+    .line 770
+    invoke-virtual {v4, v9, v5}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 771
+    .line 772
+    .line 773
+    invoke-virtual {v0, v2, v3}, Lqn0/j;->q0(J)I
+
+    .line 774
+    .line 775
+    .line 776
+    move-result v2
+
+    .line 777
+    div-int/lit16 v2, v2, 0x3e8
+
+    .line 778
+    .line 779
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 780
+    .line 781
+    .line 782
+    move-result-object v2
+
+    .line 783
+    const-string v3, "oldrealtime"
+
+    .line 784
+    .line 785
+    invoke-virtual {v4, v3, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 786
+    .line 787
+    .line 788
+    :cond_313
+    instance-of v2, v10, Lcom/netease/cloudmusic/meta/virtual/LocalMusicInfo;
+
+    .line 789
+    .line 790
+    if-eqz v2, :cond_32a
+
+    .line 791
+    .line 792
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getFilePath()Ljava/lang/String;
+
+    .line 793
+    .line 794
+    .line 795
+    move-result-object v2
+
+    .line 796
+    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    .line 797
+    .line 798
+    .line 799
+    move-result v2
+
+    .line 800
+    if-nez v2, :cond_32a
+
+    .line 801
+    .line 802
+    const-string v2, "localPath"
+
+    .line 803
+    .line 804
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getFilePath()Ljava/lang/String;
+
+    .line 805
+    .line 806
+    .line 807
+    move-result-object v3
+
+    .line 808
+    invoke-virtual {v4, v2, v3}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 809
+    .line 810
+    .line 811
+    :cond_32a
+    invoke-direct/range {p0 .. p0}, Lqn0/z0;->W3()Z
+
+    .line 812
+    .line 813
+    .line 814
+    move-result v2
+
+    .line 815
+    if-eqz v2, :cond_339
+
+    .line 816
+    .line 817
+    const-string v2, "audioType"
+
+    .line 818
+    .line 819
+    invoke-static {}, Lcom/netease/cloudmusic/module/peripheral/g;->g()Ljava/lang/String;
+
+    .line 820
+    .line 821
+    .line 822
+    move-result-object v3
+
+    .line 823
+    invoke-virtual {v4, v2, v3}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 824
+    .line 825
+    .line 826
+    :cond_339
+    invoke-static {}, Lzx0/c;->k()Ljava/lang/String;
+
+    .line 827
+    .line 828
+    .line 829
+    move-result-object v2
+
+    .line 830
+    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    .line 831
+    .line 832
+    .line 833
+    move-result v3
+
+    .line 834
+    if-nez v3, :cond_348
+
+    .line 835
+    .line 836
+    const-string v3, "playedBluetoothName"
+
+    .line 837
+    .line 838
+    invoke-virtual {v4, v3, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 839
+    .line 840
+    .line 841
+    :cond_348
+    sget v2, Ljm0/d;->a:I
+
+    .line 842
+    .line 843
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 844
+    .line 845
+    .line 846
+    move-result-object v2
+
+    .line 847
+    const-string v3, "process_id"
+
+    .line 848
+    .line 849
+    invoke-virtual {v4, v3, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 850
+    .line 851
+    .line 852
+    const-string v2, "audioLevel"
+
+    .line 853
+    .line 854
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getCurrentAudioLevel()Ljava/lang/String;
+
+    .line 855
+    .line 856
+    .line 857
+    move-result-object v3
+
+    .line 858
+    invoke-virtual {v4, v2, v3}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 859
+    .line 860
+    .line 861
+    invoke-virtual/range {p0 .. p0}, Lqn0/j;->j0()I
+
+    .line 862
+    .line 863
+    .line 864
+    move-result v2
+
+    .line 865
+    div-int/lit16 v2, v2, 0x3e8
+
+    .line 866
+    .line 867
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 868
+    .line 869
+    .line 870
+    move-result-object v2
+
+    .line 871
+    const-string v3, "resource_ratio"
+
+    .line 872
+    .line 873
+    invoke-virtual {v4, v3, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 874
+    .line 875
+    .line 876
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getDuration()I
+
+    .line 877
+    .line 878
+    .line 879
+    move-result v2
+
+    .line 880
+    div-int/lit16 v2, v2, 0x3e8
+
+    .line 881
+    .line 882
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 883
+    .line 884
+    .line 885
+    move-result-object v2
+
+    .line 886
+    const-string v3, "resource_time"
+
+    .line 887
+    .line 888
+    invoke-virtual {v4, v3, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 889
+    .line 890
+    .line 891
+    const-string v2, "songName"
+
+    .line 892
+    .line 893
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getMusicName()Ljava/lang/String;
+
+    .line 894
+    .line 895
+    .line 896
+    move-result-object v3
+
+    .line 897
+    invoke-virtual {v4, v2, v3}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 898
+    .line 899
+    .line 900
+    const-string v2, "artistName"
+
+    .line 901
+    .line 902
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getArtistsName()Ljava/lang/CharSequence;
+
+    .line 903
+    .line 904
+    .line 905
+    move-result-object v3
+
+    .line 906
+    invoke-virtual {v4, v2, v3}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 907
+    .line 908
+    .line 909
+    invoke-static {v10}, Lcom/netease/cloudmusic/utils/i6;->l(Lcom/netease/cloudmusic/meta/MusicInfo;)I
+
+    .line 910
+    .line 911
+    .line 912
+    move-result v2
+
+    .line 913
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 914
+    .line 915
+    .line 916
+    move-result-object v2
+
+    .line 917
+    const-string v3, "trialMode"
+
+    .line 918
+    .line 919
+    invoke-virtual {v4, v3, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 920
+    .line 921
+    .line 922
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->isVipMusicButNotQQ()Z
+
+    .line 923
+    .line 924
+    .line 925
+    move-result v2
+
+    .line 926
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 927
+    .line 928
+    .line 929
+    move-result-object v2
+
+    .line 930
+    const-string v3, "isVipSong"
+
+    .line 931
+    .line 932
+    invoke-virtual {v4, v3, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 933
+    .line 934
+    .line 935
+    sget-object v2, Lbi0/z0;->a:Lbi0/z0;
+
+    .line 936
+    .line 937
+    const/4 v3, 0x0
+
+    .line 938
+    invoke-virtual {v2, v3}, Lbi0/z0;->c0(Ljava/lang/Object;)Z
+
+    .line 939
+    .line 940
+    .line 941
+    move-result v2
+
+    .line 942
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 943
+    .line 944
+    .line 945
+    move-result-object v2
+
+    .line 946
+    const-string v5, "is_horizontal"
+
+    .line 947
+    .line 948
+    invoke-virtual {v4, v5, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 949
+    .line 950
+    .line 951
+    if-ltz v15, :cond_3c1
+
+    .line 952
+    .line 953
+    const-string v2, "songInd"
+
+    .line 954
+    .line 955
+    invoke-static {v15}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 956
+    .line 957
+    .line 958
+    move-result-object v5
+
+    .line 959
+    invoke-virtual {v4, v2, v5}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 960
+    .line 961
+    .line 962
+    :cond_3c1
+    invoke-static {v11}, Lqn0/z0;->U3(Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;)Z
+
+    .line 963
+    .line 964
+    .line 965
+    move-result v2
+
+    .line 966
+    if-eqz v2, :cond_3d0
+
+    .line 967
+    .line 968
+    const-string v2, "sourcetype"
+
+    .line 969
+    .line 970
+    invoke-virtual {v0, v11}, Lqn0/z0;->K3(Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;)Ljava/lang/String;
+
+    .line 971
+    .line 972
+    .line 973
+    move-result-object v5
+
+    .line 974
+    invoke-virtual {v4, v2, v5}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 975
+    .line 976
+    .line 977
+    :cond_3d0
+    const/4 v2, 0x0
+
+    .line 978
+    :goto_3d1
+    array-length v5, v1
+
+    .line 979
+    if-ge v2, v5, :cond_3e4
+
+    .line 980
+    .line 981
+    aget-object v5, v1, v2
+
+    .line 982
+    .line 983
+    invoke-virtual {v5}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 984
+    .line 985
+    .line 986
+    move-result-object v5
+
+    .line 987
+    add-int/lit8 v9, v2, 0x1
+
+    .line 988
+    .line 989
+    aget-object v9, v1, v9
+
+    .line 990
+    .line 991
+    invoke-virtual {v4, v5, v9}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 992
+    .line 993
+    .line 994
+    add-int/lit8 v2, v2, 0x2
+
+    .line 995
+    .line 996
+    goto :goto_3d1
+
+    .line 997
+    :cond_3e4
+    const-string v2, "alg"
+
+    .line 998
+    .line 999
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getAlg()Ljava/lang/String;
+
+    .line 1000
+    .line 1001
+    .line 1002
+    move-result-object v5
+
+    .line 1003
+    invoke-virtual {v4, v2, v5}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1004
+    .line 1005
+    .line 1006
+    :try_start_3ed
+    invoke-static {}, Lpy0/a;->k()Z
+
+    .line 1007
+    .line 1008
+    .line 1009
+    move-result v2
+
+    .line 1010
+    if-eqz v2, :cond_405
+
+    .line 1011
+    .line 1012
+    const-string v2, "auto_continue"
+
+    .line 1013
+    .line 1014
+    invoke-static {}, Lpy0/a;->m()Z
+
+    .line 1015
+    .line 1016
+    .line 1017
+    move-result v5
+
+    .line 1018
+    if-eqz v5, :cond_3fd
+
+    .line 1019
+    .line 1020
+    const/4 v5, 0x1
+
+    .line 1021
+    goto :goto_3fe
+
+    .line 1022
+    :cond_3fd
+    const/4 v5, 0x0
+
+    .line 1023
+    :goto_3fe
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 1024
+    .line 1025
+    .line 1026
+    move-result-object v5
+
+    .line 1027
+    invoke-virtual {v4, v2, v5}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_405
+    .catch Ljava/lang/Exception; {:try_start_3ed .. :try_end_405} :catch_405
+
+    .line 1028
+    .line 1029
+    .line 1030
+    :catch_405
+    :cond_405
+    if-eqz v11, :cond_495
+
+    .line 1031
+    .line 1032
+    invoke-virtual {v11}, Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;->getSourceType()I
+
+    .line 1033
+    .line 1034
+    .line 1035
+    move-result v2
+
+    .line 1036
+    const-string v5, "sub_source"
+
+    .line 1037
+    .line 1038
+    const/4 v9, 0x6
+
+    .line 1039
+    if-ne v2, v9, :cond_416
+
+    .line 1040
+    .line 1041
+    const-string v2, "search"
+
+    .line 1042
+    .line 1043
+    invoke-virtual {v4, v5, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1044
+    .line 1045
+    .line 1046
+    goto :goto_43b
+
+    .line 1047
+    :cond_416
+    invoke-virtual {v11}, Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;->getSourceType()I
+
+    .line 1048
+    .line 1049
+    .line 1050
+    move-result v2
+
+    .line 1051
+    const/16 v9, 0x72
+
+    .line 1052
+    .line 1053
+    if-ne v2, v9, :cond_424
+
+    .line 1054
+    .line 1055
+    const-string v2, "relatedrcmmd"
+
+    .line 1056
+    .line 1057
+    invoke-virtual {v4, v5, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1058
+    .line 1059
+    .line 1060
+    goto :goto_43b
+
+    .line 1061
+    :cond_424
+    invoke-static {v11}, Lqn0/z0;->U3(Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;)Z
+
+    .line 1062
+    .line 1063
+    .line 1064
+    move-result v2
+
+    .line 1065
+    if-eqz v2, :cond_43b
+
+    .line 1066
+    .line 1067
+    invoke-virtual {v11}, Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;->getExtraSource()Ljava/io/Serializable;
+
+    .line 1068
+    .line 1069
+    .line 1070
+    move-result-object v2
+
+    .line 1071
+    instance-of v9, v2, Lcom/netease/cloudmusic/module/social/detail/video/vm/BIPMlogPlayExtraSource;
+
+    .line 1072
+    .line 1073
+    if-eqz v9, :cond_43b
+
+    .line 1074
+    .line 1075
+    check-cast v2, Lcom/netease/cloudmusic/module/social/detail/video/vm/BIPMlogPlayExtraSource;
+
+    .line 1076
+    .line 1077
+    invoke-virtual {v2}, Lcom/netease/cloudmusic/module/social/detail/video/vm/BIPMlogPlayExtraSource;->getSub_source()Ljava/lang/String;
+
+    .line 1078
+    .line 1079
+    .line 1080
+    move-result-object v2
+
+    .line 1081
+    invoke-virtual {v4, v5, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1082
+    .line 1083
+    .line 1084
+    :cond_43b
+    :goto_43b
+    invoke-virtual {v11}, Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;->getExtraMap()Ljava/util/Map;
+
+    .line 1085
+    .line 1086
+    .line 1087
+    move-result-object v2
+
+    .line 1088
+    const-string v5, "extra_style_recommend_tag_id"
+
+    .line 1089
+    .line 1090
+    invoke-interface {v2, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1091
+    .line 1092
+    .line 1093
+    move-result-object v2
+
+    .line 1094
+    check-cast v2, Ljava/io/Serializable;
+
+    .line 1095
+    .line 1096
+    instance-of v5, v2, Ljava/lang/String;
+
+    .line 1097
+    .line 1098
+    if-eqz v5, :cond_459
+
+    .line 1099
+    .line 1100
+    move-object v5, v2
+
+    .line 1101
+    check-cast v5, Ljava/lang/String;
+
+    .line 1102
+    .line 1103
+    invoke-static {v5}, Lcom/netease/cloudmusic/utils/js;->h(Ljava/lang/String;)Z
+
+    .line 1104
+    .line 1105
+    .line 1106
+    move-result v5
+
+    .line 1107
+    if-eqz v5, :cond_459
+
+    .line 1108
+    .line 1109
+    const-string v5, "tagid"
+
+    .line 1110
+    .line 1111
+    invoke-virtual {v4, v5, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1112
+    .line 1113
+    .line 1114
+    :cond_459
+    invoke-virtual {v11}, Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;->getExtraMap()Ljava/util/Map;
+
+    .line 1115
+    .line 1116
+    .line 1117
+    move-result-object v2
+
+    .line 1118
+    const-string v5, "extra_style_recommend_category_id"
+
+    .line 1119
+    .line 1120
+    invoke-interface {v2, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1121
+    .line 1122
+    .line 1123
+    move-result-object v2
+
+    .line 1124
+    check-cast v2, Ljava/io/Serializable;
+
+    .line 1125
+    .line 1126
+    instance-of v5, v2, Ljava/lang/String;
+
+    .line 1127
+    .line 1128
+    if-eqz v5, :cond_477
+
+    .line 1129
+    .line 1130
+    move-object v5, v2
+
+    .line 1131
+    check-cast v5, Ljava/lang/String;
+
+    .line 1132
+    .line 1133
+    invoke-static {v5}, Lcom/netease/cloudmusic/utils/js;->h(Ljava/lang/String;)Z
+
+    .line 1134
+    .line 1135
+    .line 1136
+    move-result v5
+
+    .line 1137
+    if-eqz v5, :cond_477
+
+    .line 1138
+    .line 1139
+    const-string v5, "categoryid"
+
+    .line 1140
+    .line 1141
+    invoke-virtual {v4, v5, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1142
+    .line 1143
+    .line 1144
+    :cond_477
+    invoke-virtual {v11}, Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;->getRcmdPlayType()Ljava/lang/String;
+
+    .line 1145
+    .line 1146
+    .line 1147
+    move-result-object v2
+
+    .line 1148
+    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    .line 1149
+    .line 1150
+    .line 1151
+    move-result v5
+
+    .line 1152
+    if-nez v5, :cond_486
+
+    .line 1153
+    .line 1154
+    const-string v5, "rcmdPlayType"
+
+    .line 1155
+    .line 1156
+    invoke-virtual {v4, v5, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1157
+    .line 1158
+    .line 1159
+    :cond_486
+    invoke-virtual {v11}, Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;->getRcmdOriginSongId()Ljava/lang/String;
+
+    .line 1160
+    .line 1161
+    .line 1162
+    move-result-object v2
+
+    .line 1163
+    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    .line 1164
+    .line 1165
+    .line 1166
+    move-result v5
+
+    .line 1167
+    if-nez v5, :cond_495
+
+    .line 1168
+    .line 1169
+    const-string v5, "rcmdOriginSongId"
+
+    .line 1170
+    .line 1171
+    invoke-virtual {v4, v5, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1172
+    .line 1173
+    .line 1174
+    :cond_495
+    invoke-virtual/range {p0 .. p0}, Lqn0/z0;->getPlayType()I
+
+    .line 1175
+    .line 1176
+    .line 1177
+    move-result v2
+
+    .line 1178
+    const/4 v5, 0x2
+
+    .line 1179
+    if-ne v2, v5, :cond_742
+
+    .line 1180
+    .line 1181
+    array-length v2, v1
+
+    .line 1182
+    if-lez v2, :cond_4cb
+
+    .line 1183
+    .line 1184
+    sget-object v2, Lsm0/t;->a:Lsm0/t$a;
+
+    .line 1185
+    .line 1186
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getId()J
+
+    .line 1187
+    .line 1188
+    .line 1189
+    move-result-wide v12
+
+    .line 1190
+    invoke-virtual {v2, v12, v13}, Lsm0/t$a;->a(J)Lorg/json/JSONObject;
+
+    .line 1191
+    .line 1192
+    .line 1193
+    move-result-object v2
+
+    .line 1194
+    if-eqz v2, :cond_4cb
+
+    .line 1195
+    .line 1196
+    invoke-virtual {v2}, Lorg/json/JSONObject;->length()I
+
+    .line 1197
+    .line 1198
+    .line 1199
+    move-result v5
+
+    .line 1200
+    if-lez v5, :cond_4cb
+
+    .line 1201
+    .line 1202
+    :try_start_4b1
+    const-string v5, "resource_jar_info"
+
+    .line 1203
+    .line 1204
+    const-string v9, "resource_jar_info"
+
+    .line 1205
+    .line 1206
+    invoke-virtual {v2, v9}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    .line 1207
+    .line 1208
+    .line 1209
+    move-result-object v9
+
+    .line 1210
+    invoke-virtual {v9}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+
+    .line 1211
+    .line 1212
+    .line 1213
+    move-result-object v9
+
+    .line 1214
+    invoke-virtual {v4, v5, v9}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1215
+    .line 1216
+    .line 1217
+    const-string v5, "jar_anonymous"
+
+    .line 1218
+    .line 1219
+    const-string v9, "jar_anonymous"
+
+    .line 1220
+    .line 1221
+    invoke-virtual {v2, v9}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 1222
+    .line 1223
+    .line 1224
+    move-result-object v2
+
+    .line 1225
+    invoke-virtual {v4, v5, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_4cb
+    .catch Lorg/json/JSONException; {:try_start_4b1 .. :try_end_4cb} :catch_4cb
+
+    .line 1226
+    .line 1227
+    .line 1228
+    :catch_4cb
+    :cond_4cb
+    :try_start_4cb
+    const-class v2, Lcom/netease/cloudmusic/core/icustomconfig/ICustomConfig;
+
+    .line 1229
+    .line 1230
+    invoke-static {v2}, Lcom/netease/cloudmusic/common/ServiceFacade;->get(Ljava/lang/Class;)Ljava/lang/Object;
+
+    .line 1231
+    .line 1232
+    .line 1233
+    move-result-object v2
+
+    .line 1234
+    check-cast v2, Lcom/netease/cloudmusic/core/icustomconfig/ICustomConfig;
+
+    .line 1235
+    .line 1236
+    const-string v5, "IuRPVVmc3WWul9fT"
+
+    .line 1237
+    .line 1238
+    new-instance v9, Lcom/alibaba/fastjson/JSONObject;
+
+    .line 1239
+    .line 1240
+    invoke-direct {v9}, Lcom/alibaba/fastjson/JSONObject;-><init>()V
+
+    .line 1241
+    .line 1242
+    .line 1243
+    const-string v12, "membership#audioEffectVipInfo"
+
+    .line 1244
+    .line 1245
+    filled-new-array {v12}, [Ljava/lang/String;
+
+    .line 1246
+    .line 1247
+    .line 1248
+    move-result-object v12
+
+    .line 1249
+    invoke-interface {v2, v5, v9, v12}, Lcom/netease/cloudmusic/core/icustomconfig/ICustomConfig;->getAppCustomConfig(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 1250
+    .line 1251
+    .line 1252
+    move-result-object v2
+
+    .line 1253
+    check-cast v2, Lcom/alibaba/fastjson/JSONObject;
+
+    .line 1254
+    .line 1255
+    invoke-static {}, Lsi0/b;->m()I
+
+    .line 1256
+    .line 1257
+    .line 1258
+    move-result v5
+
+    .line 1259
+    new-instance v9, Lorg/json/JSONObject;
+
+    .line 1260
+    .line 1261
+    invoke-direct {v9}, Lorg/json/JSONObject;-><init>()V
+    :try_end_4ef
+    .catch Lorg/json/JSONException; {:try_start_4cb .. :try_end_4ef} :catch_70b
+
+    .line 1262
+    .line 1263
+    .line 1264
+    const/4 v12, -0x1
+
+    .line 1265
+    if-eq v5, v12, :cond_6a0
+
+    .line 1266
+    .line 1267
+    const/16 v12, 0x63
+
+    .line 1268
+    .line 1269
+    const-string v13, "DEVICE_AE"
+
+    .line 1270
+    .line 1271
+    const-string v15, "CUSTOM_EQ"
+
+    .line 1272
+    .line 1273
+    const-string v3, "musiceffect_id"
+
+    .line 1274
+    .line 1275
+    const-string v14, "is_device"
+
+    .line 1276
+    .line 1277
+    if-ne v5, v12, :cond_59b
+
+    .line 1278
+    .line 1279
+    :try_start_4fe
+    invoke-static {}, Lsi0/b;->n()Ljava/util/List;
+
+    .line 1280
+    .line 1281
+    .line 1282
+    move-result-object v5
+
+    .line 1283
+    invoke-interface {v5}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 1284
+    .line 1285
+    .line 1286
+    move-result-object v5
+
+    .line 1287
+    const/4 v8, 0x0
+
+    .line 1288
+    :goto_507
+    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 1289
+    .line 1290
+    .line 1291
+    move-result v12
+
+    .line 1292
+    if-eqz v12, :cond_596
+
+    .line 1293
+    .line 1294
+    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 1295
+    .line 1296
+    .line 1297
+    move-result-object v12
+
+    .line 1298
+    check-cast v12, Ljava/lang/Integer;
+
+    .line 1299
+    .line 1300
+    invoke-virtual {v12}, Ljava/lang/Integer;->intValue()I
+
+    .line 1301
+    .line 1302
+    .line 1303
+    move-result v12
+
+    .line 1304
+    const/4 v0, 0x2
+
+    .line 1305
+    move-object/from16 v17, v5
+
+    .line 1306
+    .line 1307
+    if-ne v12, v0, :cond_540
+
+    .line 1308
+    .line 1309
+    const/4 v0, 0x1
+
+    .line 1310
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 1311
+    .line 1312
+    .line 1313
+    move-result-object v5
+
+    .line 1314
+    invoke-virtual {v4, v14, v5}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1315
+    .line 1316
+    .line 1317
+    invoke-static {}, Lzx0/c;->h()J
+
+    .line 1318
+    .line 1319
+    .line 1320
+    move-result-wide v22
+
+    .line 1321
+    invoke-static/range {v22 .. v23}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 1322
+    .line 1323
+    .line 1324
+    move-result-object v0
+
+    .line 1325
+    invoke-virtual {v4, v3, v0}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_52f
+    .catch Lorg/json/JSONException; {:try_start_4fe .. :try_end_52f} :catch_70b
+
+    .line 1326
+    .line 1327
+    .line 1328
+    move v0, v6
+
+    .line 1329
+    :try_start_530
+    invoke-static {}, Lzx0/c;->h()J
+
+    .line 1330
+    .line 1331
+    .line 1332
+    move-result-wide v5
+
+    .line 1333
+    invoke-virtual {v9, v13, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
+
+    .line 1334
+    .line 1335
+    .line 1336
+    invoke-virtual {v2, v13}, Lcom/alibaba/fastjson/JSONObject;->getIntValue(Ljava/lang/String;)I
+
+    .line 1337
+    .line 1338
+    .line 1339
+    move-result v5
+
+    .line 1340
+    invoke-static {v5, v8}, Ljava/lang/Math;->max(II)I
+
+    .line 1341
+    .line 1342
+    .line 1343
+    move-result v8
+
+    .line 1344
+    goto :goto_541
+
+    .line 1345
+    :cond_540
+    move v0, v6
+
+    .line 1346
+    :goto_541
+    const/4 v5, 0x4
+
+    .line 1347
+    if-ne v12, v5, :cond_55d
+
+    .line 1348
+    .line 1349
+    const-string v5, "content"
+
+    .line 1350
+    .line 1351
+    const-string v6, "EQ"
+
+    .line 1352
+    .line 1353
+    invoke-virtual {v4, v5, v6}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1354
+    .line 1355
+    .line 1356
+    const-wide/16 v5, -0x3e8
+
+    .line 1357
+    .line 1358
+    invoke-virtual {v9, v15, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
+
+    .line 1359
+    .line 1360
+    .line 1361
+    invoke-virtual {v2, v15}, Lcom/alibaba/fastjson/JSONObject;->getIntValue(Ljava/lang/String;)I
+
+    .line 1362
+    .line 1363
+    .line 1364
+    move-result v5
+
+    .line 1365
+    invoke-static {v5, v8}, Ljava/lang/Math;->max(II)I
+
+    .line 1366
+    .line 1367
+    .line 1368
+    move-result v8
+
+    .line 1369
+    goto :goto_55d
+
+    .line 1370
+    :catch_559
+    move/from16 v21, v0
+
+    .line 1371
+    .line 1372
+    goto/16 :goto_70d
+
+    .line 1373
+    .line 1374
+    :cond_55d
+    :goto_55d
+    const/4 v5, 0x7
+
+    .line 1375
+    if-ne v12, v5, :cond_574
+
+    .line 1376
+    .line 1377
+    const-string v6, "EAR_FINGER"
+    :try_end_562
+    .catch Lorg/json/JSONException; {:try_start_530 .. :try_end_562} :catch_559
+
+    .line 1378
+    .line 1379
+    move/from16 v21, v0
+
+    .line 1380
+    .line 1381
+    const-wide/16 v0, -0x3e9
+
+    .line 1382
+    .line 1383
+    :try_start_566
+    invoke-virtual {v9, v6, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
+
+    .line 1384
+    .line 1385
+    .line 1386
+    const-string v0, "EAR_FINGER"
+
+    .line 1387
+    .line 1388
+    invoke-virtual {v2, v0}, Lcom/alibaba/fastjson/JSONObject;->getIntValue(Ljava/lang/String;)I
+
+    .line 1389
+    .line 1390
+    .line 1391
+    move-result v0
+
+    .line 1392
+    invoke-static {v0, v8}, Ljava/lang/Math;->max(II)I
+
+    .line 1393
+    .line 1394
+    .line 1395
+    move-result v8
+
+    .line 1396
+    goto :goto_576
+
+    .line 1397
+    :cond_574
+    move/from16 v21, v0
+
+    .line 1398
+    .line 1399
+    :goto_576
+    const/16 v0, 0x8
+
+    .line 1400
+    .line 1401
+    if-ne v12, v0, :cond_58c
+
+    .line 1402
+    .line 1403
+    const-string v1, "HEAR_REPAIR"
+
+    .line 1404
+    .line 1405
+    const-wide/16 v5, -0x3ea
+
+    .line 1406
+    .line 1407
+    invoke-virtual {v9, v1, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
+
+    .line 1408
+    .line 1409
+    .line 1410
+    const-string v1, "HEAR_REPAIR"
+
+    .line 1411
+    .line 1412
+    invoke-virtual {v2, v1}, Lcom/alibaba/fastjson/JSONObject;->getIntValue(Ljava/lang/String;)I
+
+    .line 1413
+    .line 1414
+    .line 1415
+    move-result v1
+
+    .line 1416
+    invoke-static {v1, v8}, Ljava/lang/Math;->max(II)I
+
+    .line 1417
+    .line 1418
+    .line 1419
+    move-result v1
+
+    .line 1420
+    move v8, v1
+
+    .line 1421
+    :cond_58c
+    move-object/from16 v0, p0
+
+    .line 1422
+    .line 1423
+    move-object/from16 v1, p1
+
+    .line 1424
+    .line 1425
+    move-object/from16 v5, v17
+
+    .line 1426
+    .line 1427
+    move/from16 v6, v21
+
+    .line 1428
+    .line 1429
+    goto/16 :goto_507
+
+    .line 1430
+    .line 1431
+    :cond_596
+    move/from16 v21, v6
+
+    .line 1432
+    .line 1433
+    move v0, v8
+
+    .line 1434
+    goto/16 :goto_6a3
+
+    .line 1435
+    .line 1436
+    :cond_59b
+    move/from16 v21, v6
+
+    .line 1437
+    .line 1438
+    const/4 v0, 0x1
+
+    .line 1439
+    if-ne v5, v0, :cond_5dc
+
+    .line 1440
+    .line 1441
+    const/4 v0, 0x0
+
+    .line 1442
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 1443
+    .line 1444
+    .line 1445
+    move-result-object v1
+
+    .line 1446
+    invoke-virtual {v4, v14, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1447
+    .line 1448
+    .line 1449
+    invoke-static {}, Lzx0/c;->g()J
+
+    .line 1450
+    .line 1451
+    .line 1452
+    move-result-wide v0
+
+    .line 1453
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 1454
+    .line 1455
+    .line 1456
+    move-result-object v0
+
+    .line 1457
+    invoke-virtual {v4, v3, v0}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1458
+    .line 1459
+    .line 1460
+    const-string v0, "CLOUDMUSIC_AE"
+
+    .line 1461
+    .line 1462
+    invoke-static {}, Lzx0/c;->g()J
+
+    .line 1463
+    .line 1464
+    .line 1465
+    move-result-wide v5
+
+    .line 1466
+    invoke-virtual {v9, v0, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
+
+    .line 1467
+    .line 1468
+    .line 1469
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 1470
+    .line 1471
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 1472
+    .line 1473
+    .line 1474
+    const-string v1, "CLOUDMUSIC_AE_"
+
+    .line 1475
+    .line 1476
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 1477
+    .line 1478
+    .line 1479
+    invoke-static {}, Lzx0/c;->g()J
+
+    .line 1480
+    .line 1481
+    .line 1482
+    move-result-wide v5
+
+    .line 1483
+    invoke-virtual {v0, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 1484
+    .line 1485
+    .line 1486
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 1487
+    .line 1488
+    .line 1489
+    move-result-object v0
+
+    .line 1490
+    invoke-virtual {v2, v0}, Lcom/alibaba/fastjson/JSONObject;->getIntValue(Ljava/lang/String;)I
+
+    .line 1491
+    .line 1492
+    .line 1493
+    move-result v0
+
+    .line 1494
+    const/4 v1, 0x0
+
+    .line 1495
+    invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
+
+    .line 1496
+    .line 1497
+    .line 1498
+    move-result v0
+
+    .line 1499
+    goto/16 :goto_6a3
+
+    .line 1500
+    .line 1501
+    :cond_5dc
+    const/4 v0, 0x2
+
+    .line 1502
+    if-ne v5, v0, :cond_604
+
+    .line 1503
+    .line 1504
+    const/4 v0, 0x1
+
+    .line 1505
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 1506
+    .line 1507
+    .line 1508
+    move-result-object v1
+
+    .line 1509
+    invoke-virtual {v4, v14, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1510
+    .line 1511
+    .line 1512
+    invoke-static {}, Lzx0/c;->h()J
+
+    .line 1513
+    .line 1514
+    .line 1515
+    move-result-wide v0
+
+    .line 1516
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 1517
+    .line 1518
+    .line 1519
+    move-result-object v0
+
+    .line 1520
+    invoke-virtual {v4, v3, v0}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1521
+    .line 1522
+    .line 1523
+    invoke-static {}, Lzx0/c;->h()J
+
+    .line 1524
+    .line 1525
+    .line 1526
+    move-result-wide v0
+
+    .line 1527
+    invoke-virtual {v9, v13, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
+
+    .line 1528
+    .line 1529
+    .line 1530
+    invoke-virtual {v2, v13}, Lcom/alibaba/fastjson/JSONObject;->getIntValue(Ljava/lang/String;)I
+
+    .line 1531
+    .line 1532
+    .line 1533
+    move-result v0
+
+    .line 1534
+    const/4 v1, 0x0
+
+    .line 1535
+    invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
+
+    .line 1536
+    .line 1537
+    .line 1538
+    move-result v0
+
+    .line 1539
+    goto/16 :goto_6a3
+
+    .line 1540
+    .line 1541
+    :cond_604
+    const/4 v0, 0x4
+
+    .line 1542
+    if-ne v5, v0, :cond_61e
+
+    .line 1543
+    .line 1544
+    const-string v0, "content"
+
+    .line 1545
+    .line 1546
+    const-string v1, "EQ"
+
+    .line 1547
+    .line 1548
+    invoke-virtual {v4, v0, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1549
+    .line 1550
+    .line 1551
+    const-wide/16 v0, -0x3e8
+
+    .line 1552
+    .line 1553
+    invoke-virtual {v9, v15, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
+
+    .line 1554
+    .line 1555
+    .line 1556
+    invoke-virtual {v2, v15}, Lcom/alibaba/fastjson/JSONObject;->getIntValue(Ljava/lang/String;)I
+
+    .line 1557
+    .line 1558
+    .line 1559
+    move-result v0
+
+    .line 1560
+    const/4 v1, 0x0
+
+    .line 1561
+    invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
+
+    .line 1562
+    .line 1563
+    .line 1564
+    move-result v0
+
+    .line 1565
+    goto/16 :goto_6a3
+
+    .line 1566
+    .line 1567
+    :cond_61e
+    const/4 v0, 0x6
+
+    .line 1568
+    if-ne v5, v0, :cond_634
+
+    .line 1569
+    .line 1570
+    const-string v0, "SMART_AE"
+
+    .line 1571
+    .line 1572
+    const-wide/16 v5, -0x6e
+
+    .line 1573
+    .line 1574
+    invoke-virtual {v9, v0, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
+
+    .line 1575
+    .line 1576
+    .line 1577
+    const-string v0, "SMART_AE"
+
+    .line 1578
+    .line 1579
+    invoke-virtual {v2, v0}, Lcom/alibaba/fastjson/JSONObject;->getIntValue(Ljava/lang/String;)I
+
+    .line 1580
+    .line 1581
+    .line 1582
+    move-result v0
+
+    .line 1583
+    const/4 v1, 0x0
+
+    .line 1584
+    invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
+
+    .line 1585
+    .line 1586
+    .line 1587
+    move-result v0
+
+    .line 1588
+    goto :goto_6a3
+
+    .line 1589
+    :cond_634
+    const/4 v0, 0x3
+
+    .line 1590
+    if-ne v5, v0, :cond_64a
+
+    .line 1591
+    .line 1592
+    const-string v0, "EQUALIZER"
+
+    .line 1593
+    .line 1594
+    const-wide/16 v5, -0x3ed
+
+    .line 1595
+    .line 1596
+    invoke-virtual {v9, v0, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
+
+    .line 1597
+    .line 1598
+    .line 1599
+    const-string v0, "EQUALIZER"
+
+    .line 1600
+    .line 1601
+    invoke-virtual {v2, v0}, Lcom/alibaba/fastjson/JSONObject;->getIntValue(Ljava/lang/String;)I
+
+    .line 1602
+    .line 1603
+    .line 1604
+    move-result v0
+
+    .line 1605
+    const/4 v1, 0x0
+
+    .line 1606
+    invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
+
+    .line 1607
+    .line 1608
+    .line 1609
+    move-result v0
+
+    .line 1610
+    goto :goto_6a3
+
+    .line 1611
+    :cond_64a
+    const/16 v0, 0x9
+
+    .line 1612
+    .line 1613
+    if-ne v5, v0, :cond_661
+
+    .line 1614
+    .line 1615
+    const-string v0, "AI_MODEL"
+
+    .line 1616
+    .line 1617
+    const-wide/16 v5, -0x3ee
+
+    .line 1618
+    .line 1619
+    invoke-virtual {v9, v0, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
+
+    .line 1620
+    .line 1621
+    .line 1622
+    const-string v0, "AI_MODEL"
+
+    .line 1623
+    .line 1624
+    invoke-virtual {v2, v0}, Lcom/alibaba/fastjson/JSONObject;->getIntValue(Ljava/lang/String;)I
+
+    .line 1625
+    .line 1626
+    .line 1627
+    move-result v0
+
+    .line 1628
+    const/4 v1, 0x2
+
+    .line 1629
+    invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
+
+    .line 1630
+    .line 1631
+    .line 1632
+    move-result v0
+
+    .line 1633
+    goto :goto_6a3
+
+    .line 1634
+    :cond_661
+    if-ne v5, v8, :cond_689
+
+    .line 1635
+    .line 1636
+    const/4 v0, 0x0
+
+    .line 1637
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 1638
+    .line 1639
+    .line 1640
+    move-result-object v1
+
+    .line 1641
+    invoke-virtual {v4, v14, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1642
+    .line 1643
+    .line 1644
+    invoke-static {}, Lzx0/c;->i()J
+
+    .line 1645
+    .line 1646
+    .line 1647
+    move-result-wide v0
+
+    .line 1648
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 1649
+    .line 1650
+    .line 1651
+    move-result-object v0
+
+    .line 1652
+    invoke-virtual {v4, v3, v0}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1653
+    .line 1654
+    .line 1655
+    const-string v0, "OUTSIDE_AE"
+
+    .line 1656
+    .line 1657
+    const-wide/16 v5, -0x3ef
+
+    .line 1658
+    .line 1659
+    invoke-virtual {v9, v0, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
+
+    .line 1660
+    .line 1661
+    .line 1662
+    const-string v0, "OUTSIDE_AE"
+
+    .line 1663
+    .line 1664
+    invoke-virtual {v2, v0}, Lcom/alibaba/fastjson/JSONObject;->getIntValue(Ljava/lang/String;)I
+
+    .line 1665
+    .line 1666
+    .line 1667
+    move-result v0
+
+    .line 1668
+    const/4 v1, 0x2
+
+    .line 1669
+    invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
+
+    .line 1670
+    .line 1671
+    .line 1672
+    move-result v0
+
+    .line 1673
+    goto :goto_6a3
+
+    .line 1674
+    :cond_689
+    const/16 v0, 0xb
+
+    .line 1675
+    .line 1676
+    if-ne v5, v0, :cond_6a2
+
+    .line 1677
+    .line 1678
+    const-string v0, "VIBE_AE"
+
+    .line 1679
+    .line 1680
+    const-wide/16 v5, -0x3f0
+
+    .line 1681
+    .line 1682
+    invoke-virtual {v9, v0, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
+
+    .line 1683
+    .line 1684
+    .line 1685
+    const-string v0, "VIBE_AE"
+
+    .line 1686
+    .line 1687
+    invoke-virtual {v2, v0}, Lcom/alibaba/fastjson/JSONObject;->getIntValue(Ljava/lang/String;)I
+
+    .line 1688
+    .line 1689
+    .line 1690
+    move-result v0
+
+    .line 1691
+    const/4 v1, 0x2
+
+    .line 1692
+    invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
+
+    .line 1693
+    .line 1694
+    .line 1695
+    move-result v0
+
+    .line 1696
+    goto :goto_6a3
+
+    .line 1697
+    :cond_6a0
+    move/from16 v21, v6
+
+    .line 1698
+    .line 1699
+    :cond_6a2
+    const/4 v0, 0x0
+
+    .line 1700
+    :goto_6a3
+    const-string v1, "ACTION_MEMBER_IS_TWINKLE_FLASH_ON"
+
+    .line 1701
+    .line 1702
+    const/4 v3, 0x0
+
+    .line 1703
+    new-array v5, v3, [Ljava/lang/Object;
+
+    .line 1704
+    .line 1705
+    invoke-static {v1, v5}, Lzx0/c;->r(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1706
+    .line 1707
+    .line 1708
+    move-result-object v1
+
+    .line 1709
+    check-cast v1, Ljava/lang/Boolean;
+
+    .line 1710
+    .line 1711
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 1712
+    .line 1713
+    .line 1714
+    move-result v1
+
+    .line 1715
+    if-eqz v1, :cond_6c5
+
+    .line 1716
+    .line 1717
+    const-string v1, "TWINKLE_FLASH"
+
+    .line 1718
+    .line 1719
+    const-wide/16 v5, -0x3ec
+
+    .line 1720
+    .line 1721
+    invoke-virtual {v9, v1, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
+
+    .line 1722
+    .line 1723
+    .line 1724
+    const-string v1, "TWINKLE_FLASH"
+
+    .line 1725
+    .line 1726
+    invoke-virtual {v2, v1}, Lcom/alibaba/fastjson/JSONObject;->getIntValue(Ljava/lang/String;)I
+
+    .line 1727
+    .line 1728
+    .line 1729
+    move-result v1
+
+    .line 1730
+    invoke-static {v1, v0}, Ljava/lang/Math;->max(II)I
+
+    .line 1731
+    .line 1732
+    .line 1733
+    move-result v0
+
+    .line 1734
+    :cond_6c5
+    const-string v1, "ACTION_MEMBER_IS_TWINKLE_SHAKE_ON"
+
+    .line 1735
+    .line 1736
+    const/4 v3, 0x0
+
+    .line 1737
+    new-array v5, v3, [Ljava/lang/Object;
+
+    .line 1738
+    .line 1739
+    invoke-static {v1, v5}, Lzx0/c;->r(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1740
+    .line 1741
+    .line 1742
+    move-result-object v1
+
+    .line 1743
+    check-cast v1, Ljava/lang/Boolean;
+
+    .line 1744
+    .line 1745
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 1746
+    .line 1747
+    .line 1748
+    move-result v1
+
+    .line 1749
+    if-eqz v1, :cond_6e7
+
+    .line 1750
+    .line 1751
+    const-string v1, "TWINKLE_SHAKE"
+
+    .line 1752
+    .line 1753
+    const-wide/16 v5, -0x3eb
+
+    .line 1754
+    .line 1755
+    invoke-virtual {v9, v1, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
+
+    .line 1756
+    .line 1757
+    .line 1758
+    const-string v1, "TWINKLE_SHAKE"
+
+    .line 1759
+    .line 1760
+    invoke-virtual {v2, v1}, Lcom/alibaba/fastjson/JSONObject;->getIntValue(Ljava/lang/String;)I
+
+    .line 1761
+    .line 1762
+    .line 1763
+    move-result v1
+
+    .line 1764
+    invoke-static {v1, v0}, Ljava/lang/Math;->max(II)I
+
+    .line 1765
+    .line 1766
+    .line 1767
+    move-result v0
+
+    .line 1768
+    :cond_6e7
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSu()Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;
+
+    .line 1769
+    .line 1770
+    .line 1771
+    move-result-object v1
+
+    .line 1772
+    if-eqz v1, :cond_6f8
+
+    .line 1773
+    .line 1774
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;->getAuEff()I
+
+    .line 1775
+    .line 1776
+    .line 1777
+    move-result v1
+
+    .line 1778
+    if-lez v1, :cond_6f8
+
+    .line 1779
+    .line 1780
+    const-string v2, "AUDITION_AE"
+
+    .line 1781
+    .line 1782
+    invoke-virtual {v9, v2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    .line 1783
+    .line 1784
+    .line 1785
+    :cond_6f8
+    const-string v1, "sound_effect_id"
+
+    .line 1786
+    .line 1787
+    invoke-virtual {v9}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+
+    .line 1788
+    .line 1789
+    .line 1790
+    move-result-object v2
+
+    .line 1791
+    invoke-virtual {v4, v1, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1792
+    .line 1793
+    .line 1794
+    const-string v1, "privilege_viptype"
+
+    .line 1795
+    .line 1796
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 1797
+    .line 1798
+    .line 1799
+    move-result-object v0
+
+    .line 1800
+    invoke-virtual {v4, v1, v0}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_70a
+    .catch Lorg/json/JSONException; {:try_start_566 .. :try_end_70a} :catch_70d
+
+    .line 1801
+    .line 1802
+    .line 1803
+    goto :goto_70d
+
+    .line 1804
+    :catch_70b
+    move/from16 v21, v6
+
+    .line 1805
+    .line 1806
+    :catch_70d
+    :goto_70d
+    invoke-static {}, Lzx0/c;->f()J
+
+    .line 1807
+    .line 1808
+    .line 1809
+    move-result-wide v0
+
+    .line 1810
+    const-wide/16 v2, -0x1
+
+    .line 1811
+    .line 1812
+    cmp-long v2, v0, v2
+
+    .line 1813
+    .line 1814
+    if-eqz v2, :cond_720
+
+    .line 1815
+    .line 1816
+    const-string v2, "visual_id"
+
+    .line 1817
+    .line 1818
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 1819
+    .line 1820
+    .line 1821
+    move-result-object v0
+
+    .line 1822
+    invoke-virtual {v4, v2, v0}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1823
+    .line 1824
+    .line 1825
+    :cond_720
+    invoke-static {}, Lzx0/c;->j()J
+
+    .line 1826
+    .line 1827
+    .line 1828
+    move-result-wide v0
+
+    .line 1829
+    const-wide/16 v2, -0x1
+
+    .line 1830
+    .line 1831
+    cmp-long v2, v0, v2
+
+    .line 1832
+    .line 1833
+    if-eqz v2, :cond_733
+
+    .line 1834
+    .line 1835
+    const-string v2, "theme_id"
+
+    .line 1836
+    .line 1837
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 1838
+    .line 1839
+    .line 1840
+    move-result-object v0
+
+    .line 1841
+    invoke-virtual {v4, v2, v0}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1842
+    .line 1843
+    .line 1844
+    :cond_733
+    const/4 v0, 0x1
+
+    .line 1845
+    new-array v1, v0, [Ljava/lang/Object;
+
+    .line 1846
+    .line 1847
+    const/4 v0, 0x0
+
+    .line 1848
+    aput-object v4, v1, v0
+
+    .line 1849
+    .line 1850
+    const-string v0, "ACTION_TWINKLE_genTwinkLog"
+
+    .line 1851
+    .line 1852
+    invoke-static {v0, v1}, Lzx0/c;->r(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1853
+    .line 1854
+    .line 1855
+    invoke-static {v4, v10}, Lmx0/b;->b0(Lcom/alibaba/fastjson/JSONObject;Lcom/netease/cloudmusic/meta/MusicInfo;)V
+
+    .line 1856
+    .line 1857
+    .line 1858
+    goto :goto_744
+
+    .line 1859
+    :cond_742
+    move/from16 v21, v6
+
+    .line 1860
+    .line 1861
+    :goto_744
+    const-string v0, "viptype"
+
+    .line 1862
+    .line 1863
+    invoke-static {}, Lcom/netease/cloudmusic/meta/virtual/UserPrivilege;->getLogVipType()Ljava/lang/String;
+
+    .line 1864
+    .line 1865
+    .line 1866
+    move-result-object v1
+
+    .line 1867
+    invoke-virtual {v4, v0, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1868
+    .line 1869
+    .line 1870
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSu()Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;
+
+    .line 1871
+    .line 1872
+    .line 1873
+    move-result-object v0
+
+    .line 1874
+    if-eqz v0, :cond_75f
+
+    .line 1875
+    .line 1876
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSu()Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;
+
+    .line 1877
+    .line 1878
+    .line 1879
+    move-result-object v0
+
+    .line 1880
+    invoke-virtual {v0}, Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;->getFreeTrialInfo()Lcom/netease/cloudmusic/meta/virtual/freetrial/FreeTrialInfo;
+
+    .line 1881
+    .line 1882
+    .line 1883
+    move-result-object v0
+
+    .line 1884
+    if-eqz v0, :cond_75f
+
+    .line 1885
+    .line 1886
+    const/4 v9, 0x1
+
+    .line 1887
+    goto :goto_760
+
+    .line 1888
+    :cond_75f
+    const/4 v9, 0x0
+
+    .line 1889
+    :goto_760
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 1890
+    .line 1891
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 1892
+    .line 1893
+    .line 1894
+    const-string v1, "\u662f\u5426\u8bd5\u542c: "
+
+    .line 1895
+    .line 1896
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 1897
+    .line 1898
+    .line 1899
+    invoke-virtual {v0, v9}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 1900
+    .line 1901
+    .line 1902
+    invoke-static {}, Lpj/a;->m()Lpj/a;
+
+    .line 1903
+    .line 1904
+    .line 1905
+    move-result-object v0
+
+    .line 1906
+    invoke-virtual {v0}, Lpj/a;->S()Z
+
+    .line 1907
+    .line 1908
+    .line 1909
+    move-result v0
+
+    .line 1910
+    if-eqz v0, :cond_77f
+
+    .line 1911
+    .line 1912
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->isAlbumFeeMusic()Z
+
+    .line 1913
+    .line 1914
+    .line 1915
+    move-result v0
+
+    .line 1916
+    if-nez v0, :cond_77f
+
+    .line 1917
+    .line 1918
+    const/4 v0, 0x1
+
+    .line 1919
+    goto :goto_780
+
+    .line 1920
+    :cond_77f
+    const/4 v0, 0x0
+
+    .line 1921
+    :goto_780
+    if-eqz v9, :cond_811
+
+    .line 1922
+    .line 1923
+    if-eqz v0, :cond_785
+
+    .line 1924
+    .line 1925
+    goto :goto_7ad
+
+    .line 1926
+    :cond_785
+    const-string v1, "is_audition"
+
+    .line 1927
+    .line 1928
+    const/4 v2, 0x1
+
+    .line 1929
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 1930
+    .line 1931
+    .line 1932
+    move-result-object v3
+
+    .line 1933
+    invoke-virtual {v4, v1, v3}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1934
+    .line 1935
+    .line 1936
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getAuditionStartPosition()I
+
+    .line 1937
+    .line 1938
+    .line 1939
+    move-result v1
+
+    .line 1940
+    div-int/lit16 v1, v1, 0x3e8
+
+    .line 1941
+    .line 1942
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 1943
+    .line 1944
+    .line 1945
+    move-result-object v1
+
+    .line 1946
+    const-string v2, "audition_start"
+
+    .line 1947
+    .line 1948
+    invoke-virtual {v4, v2, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1949
+    .line 1950
+    .line 1951
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getAuditionEndPosition()I
+
+    .line 1952
+    .line 1953
+    .line 1954
+    move-result v1
+
+    .line 1955
+    div-int/lit16 v1, v1, 0x3e8
+
+    .line 1956
+    .line 1957
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 1958
+    .line 1959
+    .line 1960
+    move-result-object v1
+
+    .line 1961
+    const-string v2, "audition_end"
+
+    .line 1962
+    .line 1963
+    invoke-virtual {v4, v2, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1964
+    .line 1965
+    .line 1966
+    :goto_7ad
+    const-string v1, "is_audition_type"
+
+    .line 1967
+    .line 1968
+    const/4 v2, 0x1
+
+    .line 1969
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 1970
+    .line 1971
+    .line 1972
+    move-result-object v3
+
+    .line 1973
+    invoke-virtual {v4, v1, v3}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1974
+    .line 1975
+    .line 1976
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getAuditionStartPosition()I
+
+    .line 1977
+    .line 1978
+    .line 1979
+    move-result v1
+
+    .line 1980
+    div-int/lit16 v1, v1, 0x3e8
+
+    .line 1981
+    .line 1982
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 1983
+    .line 1984
+    .line 1985
+    move-result-object v1
+
+    .line 1986
+    const-string v3, "original_audition_start"
+
+    .line 1987
+    .line 1988
+    invoke-virtual {v4, v3, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1989
+    .line 1990
+    .line 1991
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getAuditionEndPosition()I
+
+    .line 1992
+    .line 1993
+    .line 1994
+    move-result v1
+
+    .line 1995
+    div-int/lit16 v1, v1, 0x3e8
+
+    .line 1996
+    .line 1997
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 1998
+    .line 1999
+    .line 2000
+    move-result-object v1
+
+    .line 2001
+    const-string v3, "original_audition_end"
+
+    .line 2002
+    .line 2003
+    invoke-virtual {v4, v3, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2004
+    .line 2005
+    .line 2006
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 2007
+    .line 2008
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 2009
+    .line 2010
+    .line 2011
+    const-string v3, "\u589e\u52a0\u8bd5\u542c\u7247\u6bb5id: "
+
+    .line 2012
+    .line 2013
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 2014
+    .line 2015
+    .line 2016
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSu()Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;
+
+    .line 2017
+    .line 2018
+    .line 2019
+    move-result-object v3
+
+    .line 2020
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 2021
+    .line 2022
+    .line 2023
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSu()Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;
+
+    .line 2024
+    .line 2025
+    .line 2026
+    move-result-object v1
+
+    .line 2027
+    if-eqz v1, :cond_812
+
+    .line 2028
+    .line 2029
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;->getAuditionFragmentId()I
+
+    .line 2030
+    .line 2031
+    .line 2032
+    move-result v3
+
+    .line 2033
+    const/16 v5, -0x2766
+
+    .line 2034
+    .line 2035
+    if-eq v3, v5, :cond_801
+
+    .line 2036
+    .line 2037
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;->getAuditionFragmentId()I
+
+    .line 2038
+    .line 2039
+    .line 2040
+    move-result v3
+
+    .line 2041
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 2042
+    .line 2043
+    .line 2044
+    move-result-object v3
+
+    .line 2045
+    const-string v5, "fragment_id"
+
+    .line 2046
+    .line 2047
+    invoke-virtual {v4, v5, v3}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2048
+    .line 2049
+    .line 2050
+    :cond_801
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;->getFreeTrialInfo()Lcom/netease/cloudmusic/meta/virtual/freetrial/FreeTrialInfo;
+
+    .line 2051
+    .line 2052
+    .line 2053
+    move-result-object v1
+
+    .line 2054
+    if-eqz v1, :cond_812
+
+    .line 2055
+    .line 2056
+    const-string v3, "fragSource"
+
+    .line 2057
+    .line 2058
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/meta/virtual/freetrial/FreeTrialInfo;->getFragSource()Ljava/lang/String;
+
+    .line 2059
+    .line 2060
+    .line 2061
+    move-result-object v1
+
+    .line 2062
+    invoke-virtual {v4, v3, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2063
+    .line 2064
+    .line 2065
+    goto :goto_812
+
+    .line 2066
+    :cond_811
+    const/4 v2, 0x1
+
+    .line 2067
+    :cond_812
+    :goto_812
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSu()Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;
+
+    .line 2068
+    .line 2069
+    .line 2070
+    move-result-object v1
+
+    .line 2071
+    if-eqz v1, :cond_836
+
+    .line 2072
+    .line 2073
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSu()Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;
+
+    .line 2074
+    .line 2075
+    .line 2076
+    move-result-object v1
+
+    .line 2077
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;->getFreeTrialPrivilege()Lcom/netease/cloudmusic/meta/virtual/freetrial/FreeTrialPrivilege;
+
+    .line 2078
+    .line 2079
+    .line 2080
+    move-result-object v1
+
+    .line 2081
+    if-eqz v1, :cond_836
+
+    .line 2082
+    .line 2083
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSu()Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;
+
+    .line 2084
+    .line 2085
+    .line 2086
+    move-result-object v1
+
+    .line 2087
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;->getFreeTrialPrivilege()Lcom/netease/cloudmusic/meta/virtual/freetrial/FreeTrialPrivilege;
+
+    .line 2088
+    .line 2089
+    .line 2090
+    move-result-object v1
+
+    .line 2091
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSu()Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;
+
+    .line 2092
+    .line 2093
+    .line 2094
+    move-result-object v3
+
+    .line 2095
+    invoke-virtual {v1, v3}, Lcom/netease/cloudmusic/meta/virtual/freetrial/FreeTrialPrivilege;->isPlayingFullFreeTrail(Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;)Z
+
+    .line 2096
+    .line 2097
+    .line 2098
+    move-result v1
+
+    .line 2099
+    if-eqz v1, :cond_836
+
+    .line 2100
+    .line 2101
+    move v1, v2
+
+    .line 2102
+    goto :goto_837
+
+    .line 2103
+    :cond_836
+    const/4 v1, 0x0
+
+    .line 2104
+    :goto_837
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    .line 2105
+    .line 2106
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 2107
+    .line 2108
+    .line 2109
+    const-string v5, "\u662f\u5426\u5168\u66f2\u8bd5\u542c: "
+
+    .line 2110
+    .line 2111
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 2112
+    .line 2113
+    .line 2114
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 2115
+    .line 2116
+    .line 2117
+    if-eqz v1, :cond_85d
+
+    .line 2118
+    .line 2119
+    if-eqz v0, :cond_84a
+
+    .line 2120
+    .line 2121
+    const/4 v3, 0x2
+
+    .line 2122
+    goto :goto_854
+
+    .line 2123
+    :cond_84a
+    const-string v0, "is_audition"
+
+    .line 2124
+    .line 2125
+    const/4 v3, 0x2
+
+    .line 2126
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 2127
+    .line 2128
+    .line 2129
+    move-result-object v5
+
+    .line 2130
+    invoke-virtual {v4, v0, v5}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2131
+    .line 2132
+    .line 2133
+    :goto_854
+    const-string v0, "is_audition_type"
+
+    .line 2134
+    .line 2135
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 2136
+    .line 2137
+    .line 2138
+    move-result-object v3
+
+    .line 2139
+    invoke-virtual {v4, v0, v3}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2140
+    .line 2141
+    .line 2142
+    :cond_85d
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2143
+    .line 2144
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 2145
+    .line 2146
+    .line 2147
+    const-string v3, "\u662f\u5426\u8bd5\u542c isFreeTrial: "
+
+    .line 2148
+    .line 2149
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 2150
+    .line 2151
+    .line 2152
+    invoke-virtual {v0, v9}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 2153
+    .line 2154
+    .line 2155
+    const-string v3, "-isPlayingFullFreeTrial:"
+
+    .line 2156
+    .line 2157
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 2158
+    .line 2159
+    .line 2160
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 2161
+    .line 2162
+    .line 2163
+    move-object/from16 v0, p1
+
+    .line 2164
+    .line 2165
+    array-length v3, v0
+
+    .line 2166
+    if-lez v3, :cond_92f
+
+    .line 2167
+    .line 2168
+    const/4 v3, 0x0
+
+    .line 2169
+    aget-object v5, v0, v3
+
+    .line 2170
+    .line 2171
+    invoke-virtual {v5}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 2172
+    .line 2173
+    .line 2174
+    move-result-object v5
+
+    .line 2175
+    invoke-virtual {v5}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    .line 2176
+    .line 2177
+    .line 2178
+    move-result-object v5
+
+    .line 2179
+    invoke-virtual {v5, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 2180
+    .line 2181
+    .line 2182
+    move-result v5
+
+    .line 2183
+    if-eqz v5, :cond_930
+
+    .line 2184
+    .line 2185
+    const-wide/16 v5, 0x4
+
+    .line 2186
+    .line 2187
+    if-nez v1, :cond_8be
+
+    .line 2188
+    .line 2189
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSu()Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;
+
+    .line 2190
+    .line 2191
+    .line 2192
+    move-result-object v1
+
+    .line 2193
+    if-eqz v1, :cond_89e
+
+    .line 2194
+    .line 2195
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSu()Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;
+
+    .line 2196
+    .line 2197
+    .line 2198
+    move-result-object v1
+
+    .line 2199
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;->getRightSource()J
+
+    .line 2200
+    .line 2201
+    .line 2202
+    move-result-wide v7
+
+    .line 2203
+    cmp-long v1, v5, v7
+
+    .line 2204
+    .line 2205
+    if-eqz v1, :cond_8be
+
+    .line 2206
+    .line 2207
+    :cond_89e
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSp()Lcom/netease/cloudmusic/meta/virtual/SongPrivilege;
+
+    .line 2208
+    .line 2209
+    .line 2210
+    move-result-object v1
+
+    .line 2211
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/meta/virtual/ResourcePrivilege;->getPlayMaxLevel()I
+
+    .line 2212
+    .line 2213
+    .line 2214
+    move-result v1
+
+    .line 2215
+    if-lez v1, :cond_930
+
+    .line 2216
+    .line 2217
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->isAuditionSongBitrate()Z
+
+    .line 2218
+    .line 2219
+    .line 2220
+    move-result v1
+
+    .line 2221
+    if-nez v1, :cond_930
+
+    .line 2222
+    .line 2223
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->isTsOrAlbumMusic()Z
+
+    .line 2224
+    .line 2225
+    .line 2226
+    move-result v1
+
+    .line 2227
+    if-eqz v1, :cond_930
+
+    .line 2228
+    .line 2229
+    invoke-static {}, Lpj/a;->m()Lpj/a;
+
+    .line 2230
+    .line 2231
+    .line 2232
+    move-result-object v1
+
+    .line 2233
+    invoke-virtual {v1}, Lpj/a;->S()Z
+
+    .line 2234
+    .line 2235
+    .line 2236
+    move-result v1
+
+    .line 2237
+    if-nez v1, :cond_930
+
+    .line 2238
+    .line 2239
+    :cond_8be
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSu()Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;
+
+    .line 2240
+    .line 2241
+    .line 2242
+    move-result-object v1
+
+    .line 2243
+    if-eqz v1, :cond_8db
+
+    .line 2244
+    .line 2245
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSu()Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;
+
+    .line 2246
+    .line 2247
+    .line 2248
+    move-result-object v1
+
+    .line 2249
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;->getFreeTrialPrivilege()Lcom/netease/cloudmusic/meta/virtual/freetrial/FreeTrialPrivilege;
+
+    .line 2250
+    .line 2251
+    .line 2252
+    move-result-object v1
+
+    .line 2253
+    if-eqz v1, :cond_8db
+
+    .line 2254
+    .line 2255
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSu()Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;
+
+    .line 2256
+    .line 2257
+    .line 2258
+    move-result-object v1
+
+    .line 2259
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;->getFreeTrialPrivilege()Lcom/netease/cloudmusic/meta/virtual/freetrial/FreeTrialPrivilege;
+
+    .line 2260
+    .line 2261
+    .line 2262
+    move-result-object v1
+
+    .line 2263
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/meta/virtual/freetrial/FreeTrialPrivilege;->getPlayReason()Ljava/util/List;
+
+    .line 2264
+    .line 2265
+    .line 2266
+    move-result-object v1
+
+    .line 2267
+    goto :goto_8dc
+
+    .line 2268
+    :cond_8db
+    const/4 v1, 0x0
+
+    .line 2269
+    :goto_8dc
+    if-nez v1, :cond_8e3
+
+    .line 2270
+    .line 2271
+    new-instance v1, Ljava/util/ArrayList;
+
+    .line 2272
+    .line 2273
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    .line 2274
+    .line 2275
+    .line 2276
+    :cond_8e3
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    .line 2277
+    .line 2278
+    .line 2279
+    move-result v7
+
+    .line 2280
+    const-string v8, "Plat"
+
+    .line 2281
+    .line 2282
+    if-nez v7, :cond_908
+
+    .line 2283
+    .line 2284
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSu()Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;
+
+    .line 2285
+    .line 2286
+    .line 2287
+    move-result-object v7
+
+    .line 2288
+    if-eqz v7, :cond_902
+
+    .line 2289
+    .line 2290
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSu()Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;
+
+    .line 2291
+    .line 2292
+    .line 2293
+    move-result-object v7
+
+    .line 2294
+    invoke-virtual {v7}, Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;->getRightSource()J
+
+    .line 2295
+    .line 2296
+    .line 2297
+    move-result-wide v12
+
+    .line 2298
+    cmp-long v5, v5, v12
+
+    .line 2299
+    .line 2300
+    if-eqz v5, :cond_8fe
+
+    .line 2301
+    .line 2302
+    goto :goto_902
+
+    .line 2303
+    :cond_8fe
+    invoke-interface {v1, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 2304
+    .line 2305
+    .line 2306
+    goto :goto_925
+
+    .line 2307
+    :cond_902
+    :goto_902
+    const-string v5, "Other"
+
+    .line 2308
+    .line 2309
+    invoke-interface {v1, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 2310
+    .line 2311
+    .line 2312
+    goto :goto_925
+
+    .line 2313
+    :cond_908
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSu()Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;
+
+    .line 2314
+    .line 2315
+    .line 2316
+    move-result-object v7
+
+    .line 2317
+    invoke-virtual {v7}, Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;->getRightSource()J
+
+    .line 2318
+    .line 2319
+    .line 2320
+    move-result-wide v12
+
+    .line 2321
+    cmp-long v5, v5, v12
+
+    .line 2322
+    .line 2323
+    if-nez v5, :cond_925
+
+    .line 2324
+    .line 2325
+    invoke-interface {v1, v8}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    .line 2326
+    .line 2327
+    .line 2328
+    move-result v5
+
+    .line 2329
+    if-nez v5, :cond_925
+
+    .line 2330
+    .line 2331
+    const-string v5, "plat"
+
+    .line 2332
+    .line 2333
+    invoke-interface {v1, v5}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    .line 2334
+    .line 2335
+    .line 2336
+    move-result v5
+
+    .line 2337
+    if-nez v5, :cond_925
+
+    .line 2338
+    .line 2339
+    invoke-interface {v1, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 2340
+    .line 2341
+    .line 2342
+    :cond_925
+    :goto_925
+    const-string v5, "strategy_id"
+
+    .line 2343
+    .line 2344
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 2345
+    .line 2346
+    .line 2347
+    move-result-object v1
+
+    .line 2348
+    invoke-virtual {v4, v5, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2349
+    .line 2350
+    .line 2351
+    goto :goto_930
+
+    .line 2352
+    :cond_92f
+    const/4 v3, 0x0
+
+    .line 2353
+    :cond_930
+    :goto_930
+    if-eqz v11, :cond_947
+
+    .line 2354
+    .line 2355
+    invoke-virtual {v11}, Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;->isSupportSmartPlayMode()Z
+
+    .line 2356
+    .line 2357
+    .line 2358
+    move-result v1
+
+    .line 2359
+    if-eqz v1, :cond_947
+
+    .line 2360
+    .line 2361
+    sget-object v1, Ldm0/i;->a:Ldm0/i$a;
+
+    .line 2362
+    .line 2363
+    invoke-virtual {v1}, Ldm0/i$a;->e()Z
+
+    .line 2364
+    .line 2365
+    .line 2366
+    move-result v1
+
+    .line 2367
+    if-eqz v1, :cond_947
+
+    .line 2368
+    .line 2369
+    const-string v1, "play_scene"
+
+    .line 2370
+    .line 2371
+    const-string v5, "heartbeat"
+
+    .line 2372
+    .line 2373
+    invoke-virtual {v4, v1, v5}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2374
+    .line 2375
+    .line 2376
+    :cond_947
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getAddRefer()Ljava/lang/String;
+
+    .line 2377
+    .line 2378
+    .line 2379
+    move-result-object v1
+
+    .line 2380
+    if-eqz v1, :cond_966
+
+    .line 2381
+    .line 2382
+    invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
+
+    .line 2383
+    .line 2384
+    .line 2385
+    move-result v5
+
+    .line 2386
+    if-nez v5, :cond_966
+
+    .line 2387
+    .line 2388
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    .line 2389
+    .line 2390
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 2391
+    .line 2392
+    .line 2393
+    const-string v6, "\u57cb\u70b9\u5373\u5c06\u4e0a\u62a5\uff0c\u51c6\u786e\u7684addrefer: "
+
+    .line 2394
+    .line 2395
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 2396
+    .line 2397
+    .line 2398
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 2399
+    .line 2400
+    .line 2401
+    const-string v5, "_addrefer"
+
+    .line 2402
+    .line 2403
+    invoke-virtual {v4, v5, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2404
+    .line 2405
+    .line 2406
+    goto :goto_984
+
+    .line 2407
+    :cond_966
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 2408
+    .line 2409
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 2410
+    .line 2411
+    .line 2412
+    const-string v5, "no_addrefer#"
+
+    .line 2413
+    .line 2414
+    invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 2415
+    .line 2416
+    .line 2417
+    invoke-static {}, Lzj/a;->s0()Lzj/a;
+
+    .line 2418
+    .line 2419
+    .line 2420
+    move-result-object v5
+
+    .line 2421
+    invoke-virtual {v5}, Lzj/a;->D()Ljava/lang/String;
+
+    .line 2422
+    .line 2423
+    .line 2424
+    move-result-object v5
+
+    .line 2425
+    invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 2426
+    .line 2427
+    .line 2428
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 2429
+    .line 2430
+    .line 2431
+    move-result-object v1
+
+    .line 2432
+    const-string v5, "_addrefer"
+
+    .line 2433
+    .line 2434
+    invoke-virtual {v4, v5, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2435
+    .line 2436
+    .line 2437
+    :goto_984
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getUndefineAddRefer()Ljava/lang/String;
+
+    .line 2438
+    .line 2439
+    .line 2440
+    move-result-object v1
+
+    .line 2441
+    if-eqz v1, :cond_995
+
+    .line 2442
+    .line 2443
+    invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
+
+    .line 2444
+    .line 2445
+    .line 2446
+    move-result v5
+
+    .line 2447
+    if-nez v5, :cond_995
+
+    .line 2448
+    .line 2449
+    const-string v5, "_addUndefineRefer"
+
+    .line 2450
+    .line 2451
+    invoke-virtual {v4, v5, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2452
+    .line 2453
+    .line 2454
+    :cond_995
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getMutliRefer()Ljava/lang/String;
+
+    .line 2455
+    .line 2456
+    .line 2457
+    move-result-object v1
+
+    .line 2458
+    if-eqz v1, :cond_9a6
+
+    .line 2459
+    .line 2460
+    invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
+
+    .line 2461
+    .line 2462
+    .line 2463
+    move-result v5
+
+    .line 2464
+    if-nez v5, :cond_9a6
+
+    .line 2465
+    .line 2466
+    const-string v5, "_multirefers"
+
+    .line 2467
+    .line 2468
+    invoke-virtual {v4, v5, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2469
+    .line 2470
+    .line 2471
+    :cond_9a6
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getHsRefer()Ljava/lang/String;
+
+    .line 2472
+    .line 2473
+    .line 2474
+    move-result-object v1
+
+    .line 2475
+    if-eqz v1, :cond_9b7
+
+    .line 2476
+    .line 2477
+    invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
+
+    .line 2478
+    .line 2479
+    .line 2480
+    move-result v5
+
+    .line 2481
+    if-nez v5, :cond_9b7
+
+    .line 2482
+    .line 2483
+    const-string v5, "_hsrefer"
+
+    .line 2484
+    .line 2485
+    invoke-virtual {v4, v5, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2486
+    .line 2487
+    .line 2488
+    :cond_9b7
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getScTrp()Ljava/lang/String;
+
+    .line 2489
+    .line 2490
+    .line 2491
+    move-result-object v1
+
+    .line 2492
+    if-eqz v1, :cond_9c8
+
+    .line 2493
+    .line 2494
+    invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
+
+    .line 2495
+    .line 2496
+    .line 2497
+    move-result v5
+
+    .line 2498
+    if-nez v5, :cond_9c8
+
+    .line 2499
+    .line 2500
+    const-string v5, "s_ctrp"
+
+    .line 2501
+    .line 2502
+    invoke-virtual {v4, v5, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2503
+    .line 2504
+    .line 2505
+    :cond_9c8
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSu()Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;
+
+    .line 2506
+    .line 2507
+    .line 2508
+    move-result-object v1
+
+    .line 2509
+    if-eqz v1, :cond_9df
+
+    .line 2510
+    .line 2511
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSu()Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;
+
+    .line 2512
+    .line 2513
+    .line 2514
+    move-result-object v1
+
+    .line 2515
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/meta/virtual/SongUrlInfo;->getRightSource()J
+
+    .line 2516
+    .line 2517
+    .line 2518
+    move-result-wide v5
+
+    .line 2519
+    invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 2520
+    .line 2521
+    .line 2522
+    move-result-object v1
+
+    .line 2523
+    const-string v5, "rightSource"
+
+    .line 2524
+    .line 2525
+    invoke-virtual {v4, v5, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2526
+    .line 2527
+    .line 2528
+    :cond_9df
+    invoke-virtual/range {p0 .. p0}, Lqn0/z0;->getPlayType()I
+
+    .line 2529
+    .line 2530
+    .line 2531
+    move-result v1
+
+    .line 2532
+    invoke-static {v11, v1, v4}, Lqn0/h1;->c(Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;ILcom/alibaba/fastjson/JSONObject;)V
+
+    .line 2533
+    .line 2534
+    .line 2535
+    const-string v1, "playermodel_id"
+
+    .line 2536
+    .line 2537
+    invoke-static {}, Lbi0/z0;->o()Ljava/lang/String;
+
+    .line 2538
+    .line 2539
+    .line 2540
+    move-result-object v5
+
+    .line 2541
+    invoke-virtual {v4, v1, v5}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2542
+    .line 2543
+    .line 2544
+    const-string v1, "sleeping_resid"
+
+    .line 2545
+    .line 2546
+    invoke-static {}, Lzq0/y;->f()Ljava/lang/String;
+
+    .line 2547
+    .line 2548
+    .line 2549
+    move-result-object v5
+
+    .line 2550
+    invoke-virtual {v4, v1, v5}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2551
+    .line 2552
+    .line 2553
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getFMAutoPlay()Z
+
+    .line 2554
+    .line 2555
+    .line 2556
+    move-result v1
+
+    .line 2557
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 2558
+    .line 2559
+    .line 2560
+    move-result-object v1
+
+    .line 2561
+    const-string v5, "is_autoplay"
+
+    .line 2562
+    .line 2563
+    invoke-virtual {v4, v5, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2564
+    .line 2565
+    .line 2566
+    if-eqz v11, :cond_a5c
+
+    .line 2567
+    .line 2568
+    invoke-virtual {v11}, Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;->getSourceType()I
+
+    .line 2569
+    .line 2570
+    .line 2571
+    move-result v1
+
+    .line 2572
+    const/16 v5, 0xe
+
+    .line 2573
+    .line 2574
+    if-eq v1, v5, :cond_a30
+
+    .line 2575
+    .line 2576
+    invoke-virtual {v11}, Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;->getSourceType()I
+
+    .line 2577
+    .line 2578
+    .line 2579
+    move-result v1
+
+    .line 2580
+    const/16 v5, 0x29
+
+    .line 2581
+    .line 2582
+    if-ne v1, v5, :cond_a18
+
+    .line 2583
+    .line 2584
+    goto :goto_a30
+
+    .line 2585
+    :cond_a18
+    invoke-virtual {v11}, Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;->getSourceType()I
+
+    .line 2586
+    .line 2587
+    .line 2588
+    move-result v0
+
+    .line 2589
+    const/16 v1, 0x80
+
+    .line 2590
+    .line 2591
+    if-ne v0, v1, :cond_a5c
+
+    .line 2592
+    .line 2593
+    invoke-virtual {v11}, Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;->getMusicPlayAbsoluteOrder()I
+
+    .line 2594
+    .line 2595
+    .line 2596
+    move-result v0
+
+    .line 2597
+    if-ltz v0, :cond_a5c
+
+    .line 2598
+    .line 2599
+    const-string v1, "play_idx"
+
+    .line 2600
+    .line 2601
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 2602
+    .line 2603
+    .line 2604
+    move-result-object v0
+
+    .line 2605
+    invoke-virtual {v4, v1, v0}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2606
+    .line 2607
+    .line 2608
+    goto :goto_a5c
+
+    .line 2609
+    :cond_a30
+    :goto_a30
+    invoke-virtual {v11}, Lcom/netease/cloudmusic/meta/virtual/PlayExtraInfo;->getDailyRecommendFirstSongId()J
+
+    .line 2610
+    .line 2611
+    .line 2612
+    move-result-wide v5
+
+    .line 2613
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 2614
+    .line 2615
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 2616
+    .line 2617
+    .line 2618
+    const-string v7, "genLog: "
+
+    .line 2619
+    .line 2620
+    invoke-virtual {v1, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 2621
+    .line 2622
+    .line 2623
+    invoke-static/range {p1 .. p1}, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 2624
+    .line 2625
+    .line 2626
+    move-result-object v0
+
+    .line 2627
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 2628
+    .line 2629
+    .line 2630
+    const-string v0, " firstId:"
+
+    .line 2631
+    .line 2632
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 2633
+    .line 2634
+    .line 2635
+    invoke-virtual {v1, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 2636
+    .line 2637
+    .line 2638
+    const-wide/16 v0, 0x0
+
+    .line 2639
+    .line 2640
+    cmp-long v0, v5, v0
+
+    .line 2641
+    .line 2642
+    if-lez v0, :cond_a5c
+
+    .line 2643
+    .line 2644
+    const-string v0, "source_cover_id"
+
+    .line 2645
+    .line 2646
+    invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 2647
+    .line 2648
+    .line 2649
+    move-result-object v1
+
+    .line 2650
+    invoke-virtual {v4, v0, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2651
+    .line 2652
+    .line 2653
+    :cond_a5c
+    :goto_a5c
+    invoke-virtual {v10}, Lcom/netease/cloudmusic/meta/MusicInfo;->getSourceRefer()Ljava/lang/String;
+
+    .line 2654
+    .line 2655
+    .line 2656
+    move-result-object v0
+
+    .line 2657
+    if-eqz v0, :cond_a6d
+
+    .line 2658
+    .line 2659
+    invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
+
+    .line 2660
+    .line 2661
+    .line 2662
+    move-result v1
+
+    .line 2663
+    if-nez v1, :cond_a6d
+
+    .line 2664
+    .line 2665
+    const-string v1, "source_refer"
+
+    .line 2666
+    .line 2667
+    invoke-virtual {v4, v1, v0}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2668
+    .line 2669
+    .line 2670
+    :cond_a6d
+    if-eqz v21, :cond_ad7
+
+    .line 2671
+    .line 2672
+    sget-object v0, Ljm0/y;->a:Ljm0/y$a;
+
+    .line 2673
+    .line 2674
+    invoke-virtual {v0}, Ljm0/y$a;->a()Z
+
+    .line 2675
+    .line 2676
+    .line 2677
+    move-result v0
+
+    .line 2678
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 2679
+    .line 2680
+    .line 2681
+    move-result-object v0
+
+    .line 2682
+    const-string v1, "isForegroundService"
+
+    .line 2683
+    .line 2684
+    invoke-virtual {v4, v1, v0}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2685
+    .line 2686
+    .line 2687
+    sget-object v0, Lik0/f;->a:Lik0/f;
+
+    .line 2688
+    .line 2689
+    invoke-virtual {v0}, Lik0/f;->p()Z
+
+    .line 2690
+    .line 2691
+    .line 2692
+    move-result v0
+
+    .line 2693
+    if-eqz v0, :cond_a90
+
+    .line 2694
+    .line 2695
+    invoke-static {}, Lik0/f;->q()Lcom/netease/cloudmusic/module/player/meta/SepTrackRunMode;
+
+    .line 2696
+    .line 2697
+    .line 2698
+    move-result-object v0
+
+    .line 2699
+    sget-object v1, Lcom/netease/cloudmusic/module/player/meta/SepTrackRunMode;->MODEL:Lcom/netease/cloudmusic/module/player/meta/SepTrackRunMode;
+
+    .line 2700
+    .line 2701
+    if-ne v0, v1, :cond_a90
+
+    .line 2702
+    .line 2703
+    move v8, v2
+
+    .line 2704
+    goto :goto_a91
+
+    .line 2705
+    :cond_a90
+    move v8, v3
+
+    .line 2706
+    :goto_a91
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 2707
+    .line 2708
+    .line 2709
+    move-result-object v0
+
+    .line 2710
+    const-string v1, "enableSepTrack"
+
+    .line 2711
+    .line 2712
+    invoke-virtual {v4, v1, v0}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2713
+    .line 2714
+    .line 2715
+    invoke-static {}, Ljk0/f;->f()Z
+
+    .line 2716
+    .line 2717
+    .line 2718
+    move-result v0
+
+    .line 2719
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 2720
+    .line 2721
+    .line 2722
+    move-result-object v0
+
+    .line 2723
+    const-string v1, "ignoreBatteryOpt"
+
+    .line 2724
+    .line 2725
+    invoke-virtual {v4, v1, v0}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2726
+    .line 2727
+    .line 2728
+    invoke-static {}, Lik0/a;->l()Landroid/util/Pair;
+
+    .line 2729
+    .line 2730
+    .line 2731
+    move-result-object v0
+
+    .line 2732
+    iget-object v1, v0, Landroid/util/Pair;->first:Ljava/lang/Object;
+
+    .line 2733
+    .line 2734
+    check-cast v1, Ljava/lang/Float;
+
+    .line 2735
+    .line 2736
+    invoke-virtual {v1}, Ljava/lang/Float;->floatValue()F
+
+    .line 2737
+    .line 2738
+    .line 2739
+    move-result v1
+
+    .line 2740
+    const/4 v2, 0x0
+
+    .line 2741
+    cmpl-float v2, v1, v2
+
+    .line 2742
+    .line 2743
+    if-ltz v2, :cond_ac1
+
+    .line 2744
+    .line 2745
+    const-string v2, "appVol"
+
+    .line 2746
+    .line 2747
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 2748
+    .line 2749
+    .line 2750
+    move-result-object v1
+
+    .line 2751
+    invoke-virtual {v4, v2, v1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2752
+    .line 2753
+    .line 2754
+    :cond_ac1
+    iget-object v0, v0, Landroid/util/Pair;->second:Ljava/lang/Object;
+
+    .line 2755
+    .line 2756
+    check-cast v0, Ljava/lang/Float;
+
+    .line 2757
+    .line 2758
+    invoke-virtual {v0}, Ljava/lang/Float;->floatValue()F
+
+    .line 2759
+    .line 2760
+    .line 2761
+    move-result v0
+
+    .line 2762
+    const/4 v1, 0x0
+
+    .line 2763
+    cmpl-float v1, v0, v1
+
+    .line 2764
+    .line 2765
+    if-ltz v1, :cond_ad7
+
+    .line 2766
+    .line 2767
+    const-string v1, "finalVol"
+
+    .line 2768
+    .line 2769
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 2770
+    .line 2771
+    .line 2772
+    move-result-object v0
+
+    .line 2773
+    invoke-virtual {v4, v1, v0}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2774
+    .line 2775
+    .line 2776
+    :cond_ad7
+    invoke-static {}, Lik0/f;->w()Z
+
+    .line 2777
+    .line 2778
+    .line 2779
+    move-result v0
+
+    .line 2780
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 2781
+    .line 2782
+    .line 2783
+    move-result-object v0
+
+    .line 2784
+    const-string v1, "supportSepTrack"
+
+    .line 2785
+    .line 2786
+    invoke-virtual {v4, v1, v0}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2787
+    .line 2788
+    .line 2789
+    return-object v4
+.end method

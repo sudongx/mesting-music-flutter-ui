@@ -1,0 +1,46 @@
+00:00 +0: loading D:/AnLi/test/release_147_lazy_social_ui_test.dart
+00:00 +0: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: 10000 retained rows create only the first and next viewports
+release147 lazy rows: old=10000 first=12 afterScroll=20 retained=10000
+00:01 +1: all rows and footer remain reachable in a complete collection
+00:01 +2: append retains focused editor and scroll controller
+00:02 +3: 3000 comments remain lazy and reply does not sort them again
+00:03 +4: 3000 conversations cache matches and refresh unread revision
+00:05 +5: 3000 friends stay lazy over successive viewports
+00:05 +6: 3000 notices keep successive viewports bounded
+00:06 +7: 3000 hugs keep header actions and bounded viewports
+00:07 +8: 3000 together records retain lazy date groups
+00:07 +9: 3000 general results keep viewports bounded
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+pumpAndSettle timed out
+
+When the exception was thrown, this was the stack:
+#0      WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:717:11)
+<asynchronous suspension>
+#1      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#2      main.mount (file:///D:/AnLi/test/release_147_lazy_social_ui_test.dart:206:5)
+<asynchronous suspension>
+#3      main.<anonymous closure> (file:///D:/AnLi/test/release_147_lazy_social_ui_test.dart:429:5)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  3000 general results keep viewports bounded
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:19 +9 -1: 3000 general results keep viewports bounded [E]
+  Test failed. See exception logs above.
+  The test description was: 3000 general results keep viewports bounded
+  
+00:19 +9 -1: 3000 detail rows keep viewports bounded
+00:20 +10 -1: (tearDownAll)
+00:20 +10 -1: Some tests failed.

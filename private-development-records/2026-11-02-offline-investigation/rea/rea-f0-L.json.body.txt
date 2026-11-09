@@ -1,0 +1,15 @@
+    private void L(String str) throws IOException {
+        this.h.write(str.getBytes());
+        if (com.netease.cloudmusic.utils.e0.g()) {
+            Log.d(this.m, str);
+        }
+        int i = this.p;
+        if (i < 300) {
+            this.p = i + 1;
+            return;
+        }
+        if (new File(y(D())).length() > t) {
+            forceUpload();
+        }
+        this.p = 0;
+    }

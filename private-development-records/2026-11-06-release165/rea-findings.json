@@ -1,0 +1,34 @@
+{
+  "scope": "Public shipped APK code, not live request interception",
+  "officialInstalledVersion": "19.0.0/code100190050",
+  "officialApkSha256": "68bd9ab99e45875527959ec6e2a6bf48bcd43e817b503e4870d83c65d4bf5fa8",
+  "privateDataRead": false,
+  "officialAppStarted": false,
+  "smsTriggeredByAgent": false,
+  "retainedBundle": "rea-evidence-final.json",
+  "evidenceRecords": 108,
+  "anchors": {
+    "actual19DefaultSend": "ev_94aa35ece10cc61d095d2a2e236b42778945b38e8d17a03f18749f6d3597c5bf",
+    "actual19CommonApiSend": "ev_278eab564552b4fd019dcefaa2c88e254b5288bca6589e7fda6e3f8cfb0bd3c0",
+    "actual19SendThreadParams": "ev_97256dbb9904af0b1cb56eb0ba5e1526e4ad40a2d536156e8b54e8658828c3c9",
+    "actual19QuerySdk601397": "ev_4d037aa4b03fa03cadad8b92eb65b42f4962fb1c2db9c6f13bf6780321d27353",
+    "actual19QuickLoginParams": "ev_378a137460d458f3a6d3edaee2eaccdc4183693fd9c1359918cfecb24707b13a",
+    "actual19RegisterPayload": "ev_0b66bd74c91de4598a7ab70af89058695497f2f5308a7403428dfbb77e38ba57",
+    "actual19RegisterTransport": "ev_6af847e3df31e2ab0e2039c67c341a0a2e220df1b22a3cff49cc3d9a30712eb5",
+    "actual19SecurityCallback": "ev_07d6835c23e9b759fb480b1a75b19b93751cbe4b7d30c28227d5f9223194e99f",
+    "actual19NativeBoundary": "ev_8921b446e7212e6b7e72d2e218b8af77ae448c55bce54d99de2baead09b4ee1d"
+  },
+  "corrections": [
+    "Do not infer runtime branch from coexisting SaaS classes",
+    "19 uses mixed mobile; 21.5 SaaS DTO retains raw mobile",
+    "64 mixed a legacy mobile field with SaaS marker and wrong SDK version",
+    "19 SendCode builder defaults checkRegister=-1, so check_register is omitted",
+    "19 native security boundary is ms.bd.c.m.a; old sample used different obfuscation"
+  ],
+  "unresolved": [
+    "Real BDInstall registration and persisted installation context not implemented",
+    "Native security initialization and request-dependent factors not implemented",
+    "Static Java decompilation has control-flow reconstruction warnings",
+    "2156 has not been proved fixed by a real user-triggered SMS"
+  ]
+}

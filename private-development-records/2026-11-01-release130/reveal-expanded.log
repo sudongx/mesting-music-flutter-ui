@@ -1,0 +1,69 @@
+00:00 +0: loading D:/AnLi/test/release_130_artwork_reveal_test.dart
+00:00 +0: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: common page reveals first-screen text only with decoded artwork, semantics and taps
+00:01 +1: scroll keeps old rows and reveals a new visible batch together
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: a value greater than <0>
+  Actual: <0>
+   Which: is not a value greater than <0>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_130_artwork_reveal_test.dart:225:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_130_artwork_reveal_test.dart line 225
+The test description was:
+  scroll keeps old rows and reveals a new visible batch together
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +1 -1: scroll keeps old rows and reveals a new visible batch together [E]
+  Test failed. See exception logs above.
+  The test description was: scroll keeps old rows and reveals a new visible batch together
+  
+00:02 +1 -1: one failed cover offers retry without holding successful rows
+00:04 +2 -1: prepared thumbnail paints immediately while a larger request waits
+Pending timers:
+Timer (duration: 0:00:18.000000, periodic: false), created:
+#0      new FakeTimer._ (package:fake_async/fake_async.dart:342:62)
+#1      FakeAsync._createTimer (package:fake_async/fake_async.dart:260:29)
+#2      FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:185:15)
+#6      PersistentNetworkImageCache._load (package:mesting_music/shared/media/persistent_network_image_cache.dart:366:12)
+<asynchronous suspension>
+#7      PersistentNetworkImageCache.resolve.<anonymous closure> (package:mesting_music/shared/media/persistent_network_image_cache.dart:265:54)
+<asynchronous suspension>
+#8      _ArtworkImageState._loadPersistentNetworkImage.<anonymous closure> (package:mesting_music/shared/widgets/artwork_image.dart:516:75)
+<asynchronous suspension>
+(elided 3 frames from dart:async)
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+A Timer is still pending even after the widget tree was disposed.
+'package:flutter_test/src/binding.dart':
+Failed assertion: line 2242 pos 12: '!timersPending'
+
+When the exception was thrown, this was the stack:
+#2      AutomatedTestWidgetsFlutterBinding._verifyInvariants (package:flutter_test/src/binding.dart:2242:12)
+#3      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1703:7)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 3 frames from class _AssertionError and package:stack_trace)
+
+The test description was:
+  prepared thumbnail paints immediately while a larger request waits
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:04 +2 -2: prepared thumbnail paints immediately while a larger request waits [E]
+  Test failed. See exception logs above.
+  The test description was: prepared thumbnail paints immediately while a larger request waits
+  
+00:04 +2 -2: (tearDownAll)
+00:04 +2 -2: Some tests failed.

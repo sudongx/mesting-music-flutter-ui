@@ -1,0 +1,53 @@
+{
+  "utc": "2026-10-28T10:35:24.947537+00:00",
+  "tests": [
+    {
+      "name": "qishui_discover_mix",
+      "authenticated": false,
+      "scope": "anonymous upstream read, not deployed proxy or authenticated account test",
+      "http_status": 200,
+      "body_code": null,
+      "message": "",
+      "top_level_keys": [
+        "status_info",
+        "has_more",
+        "inner_block"
+      ],
+      "nonempty_arrays": [
+        {
+          "path": ".inner_block",
+          "length": 10
+        },
+        {
+          "path": ".inner_block[0].resources",
+          "length": 1
+        }
+      ]
+    },
+    {
+      "name": "qishui_pc_track_search",
+      "authenticated": false,
+      "scope": "anonymous upstream read, not deployed proxy or authenticated account test",
+      "http_status": 200,
+      "non_json_response": true,
+      "response_bytes": 0
+    },
+    {
+      "name": "netease_public_search",
+      "authenticated": false,
+      "scope": "anonymous upstream read, not deployed proxy or authenticated account test",
+      "http_status": 200,
+      "body_code": 200,
+      "message": "",
+      "top_level_keys": [
+        "result",
+        "abroad",
+        "code",
+        "trp"
+      ],
+      "result_type": "str",
+      "usable_search_result": false
+    }
+  ],
+  "limits": "No QR generation, SMS, real account authentication, audio fetching, SDK install or product source changes."
+}

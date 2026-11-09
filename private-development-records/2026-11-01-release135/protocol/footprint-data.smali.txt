@@ -1,0 +1,1356 @@
+.class public final La21/f;
+.super Ljava/lang/Object;
+.source "ProGuard"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u0015\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0008\u00c6\u0002\u0018\u00002\u00020\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u001b\u0010\u001cJ(\u0010\u000b\u001a\u00020\n2\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u00062\u0006\u0010\t\u001a\u00020\u0008H\u0002J(\u0010\u0011\u001a\u00020\n2\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\r\u001a\u00020\u000c2\u0006\u0010\u000f\u001a\u00020\u000e2\u0006\u0010\u0010\u001a\u00020\u0006H\u0002J*\u0010\u0014\u001a\u00020\n2\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0010\u001a\u00020\u00062\n\u0008\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0012J\u0016\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u000f\u001a\u00020\u000e2\u0006\u0010\u0010\u001a\u00020\u0006R\u0014\u0010\u001a\u001a\u00020\u00178\u0002X\u0082\u0004\u00a2\u0006\u0006\n\u0004\u0008\u0018\u0010\u0019\u00a8\u0006\u001d"
+    }
+    d2 = {
+        "La21/f;",
+        "",
+        "Landroid/content/Context;",
+        "context",
+        "Landroid/appwidget/AppWidgetManager;",
+        "appWidgetManager",
+        "",
+        "appWidgetType",
+        "",
+        "ids",
+        "",
+        "i",
+        "Landroid/widget/RemoteViews;",
+        "remoteViews",
+        "",
+        "url",
+        "type",
+        "e",
+        "Landroid/content/BroadcastReceiver;",
+        "provider",
+        "f",
+        "Landroid/content/Intent;",
+        "d",
+        "Landroid/os/Handler;",
+        "b",
+        "Landroid/os/Handler;",
+        "handler",
+        "<init>",
+        "()V",
+        "music_biz_appwidgets_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+.end annotation
+
+
+# static fields
+.field public static final a:La21/f;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private static final b:Landroid/os/Handler;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 2
+
+    .line 1
+    new-instance v0, La21/f;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, La21/f;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, La21/f;->a:La21/f;
+
+    .line 7
+    .line 8
+    new-instance v0, Landroid/os/Handler;
+
+    .line 9
+    .line 10
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v1
+
+    .line 14
+    invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    .line 15
+    .line 16
+    .line 17
+    sput-object v0, La21/f;->b:Landroid/os/Handler;
+
+    .line 18
+    .line 19
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .registers 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static synthetic a(Landroid/appwidget/AppWidgetManager;I)V
+    .registers 2
+
+    .line 1
+    invoke-static {p0, p1}, La21/f;->j(Landroid/appwidget/AppWidgetManager;I)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static synthetic b(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;I[I)V
+    .registers 4
+
+    .line 1
+    invoke-static {p0, p1, p2, p3}, La21/f;->h(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;I[I)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static final synthetic c(La21/f;Landroid/content/Context;Landroid/appwidget/AppWidgetManager;I[I)V
+    .registers 5
+
+    .line 1
+    invoke-direct {p0, p1, p2, p3, p4}, La21/f;->i(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;I[I)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method private final e(Landroid/content/Context;Landroid/widget/RemoteViews;Ljava/lang/String;I)V
+    .registers 6
+
+    .line 1
+    invoke-virtual {p0, p3, p4}, La21/f;->d(Ljava/lang/String;I)Landroid/content/Intent;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p3
+
+    .line 5
+    const/16 p4, 0x2711
+
+    .line 6
+    .line 7
+    const/high16 v0, 0xc000000
+
+    .line 8
+    .line 9
+    invoke-static {p1, p4, p3, v0}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p1
+
+    .line 13
+    const/high16 p3, 0x1020000
+
+    .line 14
+    .line 15
+    invoke-virtual {p2, p3, p1}, Landroid/widget/RemoteViews;->setOnClickPendingIntent(ILandroid/app/PendingIntent;)V
+
+    .line 16
+    .line 17
+    .line 18
+    return-void
+.end method
+
+.method public static synthetic g(La21/f;Landroid/content/Context;Landroid/appwidget/AppWidgetManager;ILandroid/content/BroadcastReceiver;ILjava/lang/Object;)V
+    .registers 7
+
+    .line 1
+    and-int/lit8 p5, p5, 0x8
+
+    .line 2
+    .line 3
+    if-eqz p5, :cond_5
+
+    .line 4
+    .line 5
+    const/4 p4, 0x0
+
+    .line 6
+    :cond_5
+    invoke-virtual {p0, p1, p2, p3, p4}, La21/f;->f(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;ILandroid/content/BroadcastReceiver;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method private static final h(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;I[I)V
+    .registers 6
+
+    .line 1
+    const-string v0, "$context"
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "$appWidgetManager"
+
+    .line 7
+    .line 8
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    sget-object v0, La21/f;->a:La21/f;
+
+    .line 12
+    .line 13
+    const-string v1, "appWidgetIds"
+
+    .line 14
+    .line 15
+    invoke-static {p3, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-direct {v0, p0, p1, p2, p3}, La21/f;->i(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;I[I)V
+
+    .line 19
+    .line 20
+    .line 21
+    return-void
+.end method
+
+.method private final i(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;I[I)V
+    .registers 24
+
+    .line 1
+    move-object/from16 v1, p1
+
+    .line 2
+    .line 3
+    move-object/from16 v2, p2
+
+    .line 4
+    .line 5
+    move-object/from16 v3, p4
+
+    .line 6
+    .line 7
+    const-string v0, "updateInBackground: "
+
+    .line 8
+    .line 9
+    const-string v4, "FootPrintCalendar"
+
+    .line 10
+    .line 11
+    invoke-static {v4, v0}, Lt11/a;->o(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 12
+    .line 13
+    .line 14
+    const/4 v5, 0x0
+
+    .line 15
+    const/4 v6, 0x1
+
+    .line 16
+    :try_start_f
+    sget-object v0, Ls11/i;->a:Ls11/i;
+
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Ls11/i;->p()Lcom/netease/cloudmusic/music/biz/appwidgets/view/appwidget/footprint/FootPrintCalendarData;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v0
+
+    .line 22
+    if-nez v0, :cond_3c
+
+    .line 23
+    .line 24
+    invoke-static {v5, v6, v5}, La21/g;->c(Ljava/lang/String;ILjava/lang/Object;)Lcom/netease/cloudmusic/music/biz/appwidgets/view/appwidget/footprint/FootPrintCalendarData;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v0
+    :try_end_1b
+    .catch Lj32/h; {:try_start_f .. :try_end_1b} :catch_1c
+
+    .line 28
+    goto :goto_3c
+
+    .line 29
+    :catch_1c
+    move-exception v0
+
+    .line 30
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 31
+    .line 32
+    .line 33
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v0
+
+    .line 37
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    .line 38
+    .line 39
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 40
+    .line 41
+    .line 42
+    const-string v8, "getFootPrintWidgetData: error: "
+
+    .line 43
+    .line 44
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 45
+    .line 46
+    .line 47
+    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 48
+    .line 49
+    .line 50
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v0
+
+    .line 54
+    invoke-static {v4, v0}, Lt11/a;->o(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 55
+    .line 56
+    .line 57
+    invoke-static {v5, v6, v5}, La21/g;->c(Ljava/lang/String;ILjava/lang/Object;)Lcom/netease/cloudmusic/music/biz/appwidgets/view/appwidget/footprint/FootPrintCalendarData;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object v0
+
+    .line 61
+    :cond_3c
+    :goto_3c
+    array-length v4, v3
+
+    .line 62
+    const/4 v5, 0x0
+
+    .line 63
+    move v7, v5
+
+    .line 64
+    :goto_3f
+    if-ge v7, v4, :cond_163
+
+    .line 65
+    .line 66
+    aget v8, v3, v7
+
+    .line 67
+    .line 68
+    new-instance v9, Landroid/content/Intent;
+
+    .line 69
+    .line 70
+    const-class v10, Lcom/netease/cloudmusic/music/biz/appwidgets/view/appwidget/footprint/FootPrintWidgetService;
+
+    .line 71
+    .line 72
+    invoke-direct {v9, v1, v10}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 73
+    .line 74
+    .line 75
+    const-string v10, "appWidgetId"
+
+    .line 76
+    .line 77
+    invoke-virtual {v9, v10, v8}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    .line 78
+    .line 79
+    .line 80
+    invoke-virtual {v9, v6}, Landroid/content/Intent;->toUri(I)Ljava/lang/String;
+
+    .line 81
+    .line 82
+    .line 83
+    move-result-object v11
+
+    .line 84
+    invoke-static {v11}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    .line 85
+    .line 86
+    .line 87
+    move-result-object v11
+
+    .line 88
+    invoke-virtual {v9, v11}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+
+    .line 89
+    .line 90
+    .line 91
+    new-instance v11, Landroid/widget/RemoteViews;
+
+    .line 92
+    .line 93
+    invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    .line 94
+    .line 95
+    .line 96
+    move-result-object v12
+
+    .line 97
+    sget v13, Lq11/e;->o:I
+
+    .line 98
+    .line 99
+    invoke-direct {v11, v12, v13}, Landroid/widget/RemoteViews;-><init>(Ljava/lang/String;I)V
+
+    .line 100
+    .line 101
+    .line 102
+    sget v12, Lq11/d;->E0:I
+
+    .line 103
+    .line 104
+    invoke-virtual {v0}, Lcom/netease/cloudmusic/music/biz/appwidgets/view/appwidget/footprint/FootPrintCalendarData;->getTitle()Ljava/lang/String;
+
+    .line 105
+    .line 106
+    .line 107
+    move-result-object v13
+
+    .line 108
+    invoke-virtual {v11, v12, v13}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
+
+    .line 109
+    .line 110
+    .line 111
+    invoke-virtual {v0}, Lcom/netease/cloudmusic/music/biz/appwidgets/view/appwidget/footprint/FootPrintCalendarData;->getHourDuration()I
+
+    .line 112
+    .line 113
+    .line 114
+    move-result v12
+
+    .line 115
+    if-lez v12, :cond_89
+
+    .line 116
+    .line 117
+    sget v12, Lq11/d;->H0:I
+
+    .line 118
+    .line 119
+    invoke-virtual {v0}, Lcom/netease/cloudmusic/music/biz/appwidgets/view/appwidget/footprint/FootPrintCalendarData;->getHourDuration()I
+
+    .line 120
+    .line 121
+    .line 122
+    move-result v13
+
+    .line 123
+    invoke-static {v13}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    .line 124
+    .line 125
+    .line 126
+    move-result-object v13
+
+    .line 127
+    invoke-virtual {v11, v12, v13}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
+
+    .line 128
+    .line 129
+    .line 130
+    sget v12, Lq11/d;->G0:I
+
+    .line 131
+    .line 132
+    const-string v13, "\u5c0f\u65f6"
+
+    .line 133
+    .line 134
+    invoke-virtual {v11, v12, v13}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
+
+    .line 135
+    .line 136
+    .line 137
+    goto :goto_9d
+
+    .line 138
+    :cond_89
+    sget v12, Lq11/d;->H0:I
+
+    .line 139
+    .line 140
+    invoke-virtual {v0}, Lcom/netease/cloudmusic/music/biz/appwidgets/view/appwidget/footprint/FootPrintCalendarData;->getMinuteDuration()I
+
+    .line 141
+    .line 142
+    .line 143
+    move-result v13
+
+    .line 144
+    invoke-static {v13}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    .line 145
+    .line 146
+    .line 147
+    move-result-object v13
+
+    .line 148
+    invoke-virtual {v11, v12, v13}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
+
+    .line 149
+    .line 150
+    .line 151
+    sget v12, Lq11/d;->G0:I
+
+    .line 152
+    .line 153
+    const-string v13, "\u5206\u949f"
+
+    .line 154
+    .line 155
+    invoke-virtual {v11, v12, v13}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
+
+    .line 156
+    .line 157
+    .line 158
+    :goto_9d
+    sget v12, Lq11/d;->F0:I
+
+    .line 159
+    .line 160
+    invoke-virtual {v0}, Lcom/netease/cloudmusic/music/biz/appwidgets/view/appwidget/footprint/FootPrintCalendarData;->getListenDay()Ljava/lang/String;
+
+    .line 161
+    .line 162
+    .line 163
+    move-result-object v13
+
+    .line 164
+    invoke-virtual {v11, v12, v13}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
+
+    .line 165
+    .line 166
+    .line 167
+    sget v12, Lq11/d;->m:I
+
+    .line 168
+    .line 169
+    invoke-virtual {v0}, Lcom/netease/cloudmusic/music/biz/appwidgets/view/appwidget/footprint/FootPrintCalendarData;->getMonthDate()Ljava/lang/String;
+
+    .line 170
+    .line 171
+    .line 172
+    move-result-object v13
+
+    .line 173
+    invoke-virtual {v11, v12, v13}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
+
+    .line 174
+    .line 175
+    .line 176
+    sget v15, Lq11/d;->g:I
+
+    .line 177
+    .line 178
+    invoke-virtual {v11, v15, v9}, Landroid/widget/RemoteViews;->setRemoteAdapter(ILandroid/content/Intent;)V
+
+    .line 179
+    .line 180
+    .line 181
+    sget v9, Lq11/d;->s:I
+
+    .line 182
+    .line 183
+    invoke-virtual {v11, v15, v9}, Landroid/widget/RemoteViews;->setEmptyView(II)V
+
+    .line 184
+    .line 185
+    .line 186
+    invoke-virtual {v0}, Lcom/netease/cloudmusic/music/biz/appwidgets/view/appwidget/footprint/FootPrintCalendarData;->getTodayContent()Ljava/lang/String;
+
+    .line 187
+    .line 188
+    .line 189
+    move-result-object v9
+
+    .line 190
+    if-eqz v9, :cond_c8
+
+    .line 191
+    .line 192
+    invoke-interface {v9}, Ljava/lang/CharSequence;->length()I
+
+    .line 193
+    .line 194
+    .line 195
+    move-result v9
+
+    .line 196
+    if-nez v9, :cond_c6
+
+    .line 197
+    .line 198
+    goto :goto_c8
+
+    .line 199
+    :cond_c6
+    move v9, v5
+
+    .line 200
+    goto :goto_c9
+
+    .line 201
+    :cond_c8
+    :goto_c8
+    move v9, v6
+
+    .line 202
+    :goto_c9
+    if-nez v9, :cond_101
+
+    .line 203
+    .line 204
+    invoke-static {}, La21/g;->a()Z
+
+    .line 205
+    .line 206
+    .line 207
+    move-result v9
+
+    .line 208
+    if-eqz v9, :cond_101
+
+    .line 209
+    .line 210
+    sget v13, Lq11/d;->d:I
+
+    .line 211
+    .line 212
+    invoke-virtual {v11, v13, v5}, Landroid/widget/RemoteViews;->setViewVisibility(II)V
+
+    .line 213
+    .line 214
+    .line 215
+    sget v9, Lq11/d;->e:I
+
+    .line 216
+    .line 217
+    invoke-virtual {v0}, Lcom/netease/cloudmusic/music/biz/appwidgets/view/appwidget/footprint/FootPrintCalendarData;->getTodayContent()Ljava/lang/String;
+
+    .line 218
+    .line 219
+    .line 220
+    move-result-object v12
+
+    .line 221
+    invoke-virtual {v11, v9, v12}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
+
+    .line 222
+    .line 223
+    .line 224
+    invoke-virtual {v0}, Lcom/netease/cloudmusic/music/biz/appwidgets/view/appwidget/footprint/FootPrintCalendarData;->getDurationDetails()Ljava/util/List;
+
+    .line 225
+    .line 226
+    .line 227
+    move-result-object v9
+
+    .line 228
+    invoke-static {v9}, La21/g;->f(Ljava/util/List;)La21/b;
+
+    .line 229
+    .line 230
+    .line 231
+    move-result-object v9
+
+    .line 232
+    sget v12, Lq11/d;->c:I
+
+    .line 233
+    .line 234
+    invoke-static {v9}, La21/g;->d(La21/b;)I
+
+    .line 235
+    .line 236
+    .line 237
+    move-result v14
+
+    .line 238
+    invoke-virtual {v11, v12, v14}, Landroid/widget/RemoteViews;->setImageViewResource(II)V
+
+    .line 239
+    .line 240
+    .line 241
+    const/4 v14, 0x0
+
+    .line 242
+    invoke-static {v9}, La21/g;->e(La21/b;)I
+
+    .line 243
+    .line 244
+    .line 245
+    move-result v9
+
+    .line 246
+    const/16 v16, 0x0
+
+    .line 247
+    .line 248
+    const/16 v17, 0x0
+
+    .line 249
+    .line 250
+    move-object v12, v11
+
+    .line 251
+    move/from16 v18, v15
+
+    .line 252
+    .line 253
+    move v15, v9
+
+    .line 254
+    invoke-virtual/range {v12 .. v17}, Landroid/widget/RemoteViews;->setViewPadding(IIIII)V
+
+    .line 255
+    .line 256
+    .line 257
+    goto :goto_109
+
+    .line 258
+    :cond_101
+    move/from16 v18, v15
+
+    .line 259
+    .line 260
+    sget v9, Lq11/d;->d:I
+
+    .line 261
+    .line 262
+    const/4 v12, 0x4
+
+    .line 263
+    invoke-virtual {v11, v9, v12}, Landroid/widget/RemoteViews;->setViewVisibility(II)V
+
+    .line 264
+    .line 265
+    .line 266
+    :goto_109
+    invoke-virtual {v0}, Lcom/netease/cloudmusic/music/biz/appwidgets/view/appwidget/footprint/FootPrintCalendarData;->getUrl()Ljava/lang/String;
+
+    .line 267
+    .line 268
+    .line 269
+    move-result-object v9
+
+    .line 270
+    if-eqz v9, :cond_118
+
+    .line 271
+    .line 272
+    invoke-interface {v9}, Ljava/lang/CharSequence;->length()I
+
+    .line 273
+    .line 274
+    .line 275
+    move-result v9
+
+    .line 276
+    if-nez v9, :cond_116
+
+    .line 277
+    .line 278
+    goto :goto_118
+
+    .line 279
+    :cond_116
+    move v9, v5
+
+    .line 280
+    goto :goto_119
+
+    .line 281
+    :cond_118
+    :goto_118
+    move v9, v6
+
+    .line 282
+    :goto_119
+    if-nez v9, :cond_126
+
+    .line 283
+    .line 284
+    invoke-virtual {v0}, Lcom/netease/cloudmusic/music/biz/appwidgets/view/appwidget/footprint/FootPrintCalendarData;->getUrl()Ljava/lang/String;
+
+    .line 285
+    .line 286
+    .line 287
+    move-result-object v9
+
+    .line 288
+    sget-object v12, La21/f;->a:La21/f;
+
+    .line 289
+    .line 290
+    const/16 v13, 0x26
+
+    .line 291
+    .line 292
+    invoke-direct {v12, v1, v11, v9, v13}, La21/f;->e(Landroid/content/Context;Landroid/widget/RemoteViews;Ljava/lang/String;I)V
+
+    .line 293
+    .line 294
+    .line 295
+    :cond_126
+    new-instance v9, Landroid/content/Intent;
+
+    .line 296
+    .line 297
+    const-class v12, Lcom/netease/cloudmusic/music/biz/appwidgets/view/appwidget/footprint/FootPrintCalendar42AppWidgetProvider;
+
+    .line 298
+    .line 299
+    invoke-direct {v9, v1, v12}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 300
+    .line 301
+    .line 302
+    const-string v12, "com.netease.cloudmusic.footprint.touch.day"
+
+    .line 303
+    .line 304
+    invoke-virtual {v9, v12}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 305
+    .line 306
+    .line 307
+    invoke-virtual {v9, v10, v8}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    .line 308
+    .line 309
+    .line 310
+    invoke-virtual {v9, v6}, Landroid/content/Intent;->toUri(I)Ljava/lang/String;
+
+    .line 311
+    .line 312
+    .line 313
+    move-result-object v10
+
+    .line 314
+    invoke-static {v10}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    .line 315
+    .line 316
+    .line 317
+    move-result-object v10
+
+    .line 318
+    invoke-virtual {v9, v10}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+
+    .line 319
+    .line 320
+    .line 321
+    const/high16 v10, 0xa000000
+
+    .line 322
+    .line 323
+    invoke-static {v1, v5, v9, v10}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
+    .line 324
+    .line 325
+    .line 326
+    move-result-object v9
+
+    .line 327
+    const-string v10, "Intent(\n                \u2026AG_MUTABLE)\n            }"
+
+    .line 328
+    .line 329
+    invoke-static {v9, v10}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 330
+    .line 331
+    .line 332
+    move/from16 v10, v18
+
+    .line 333
+    .line 334
+    invoke-virtual {v11, v10, v9}, Landroid/widget/RemoteViews;->setPendingIntentTemplate(ILandroid/app/PendingIntent;)V
+
+    .line 335
+    .line 336
+    .line 337
+    invoke-virtual {v2, v8, v11}, Landroid/appwidget/AppWidgetManager;->updateAppWidget(ILandroid/widget/RemoteViews;)V
+
+    .line 338
+    .line 339
+    .line 340
+    sget-object v9, La21/f;->b:Landroid/os/Handler;
+
+    .line 341
+    .line 342
+    new-instance v10, La21/e;
+
+    .line 343
+    .line 344
+    invoke-direct {v10, v2, v8}, La21/e;-><init>(Landroid/appwidget/AppWidgetManager;I)V
+
+    .line 345
+    .line 346
+    .line 347
+    const-wide/16 v11, 0x3e8
+
+    .line 348
+    .line 349
+    invoke-virtual {v9, v10, v11, v12}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    .line 350
+    .line 351
+    .line 352
+    add-int/lit8 v7, v7, 0x1
+
+    .line 353
+    .line 354
+    goto/16 :goto_3f
+
+    .line 355
+    .line 356
+    :cond_163
+    return-void
+.end method
+
+.method private static final j(Landroid/appwidget/AppWidgetManager;I)V
+    .registers 3
+
+    .line 1
+    const-string v0, "$appWidgetManager"
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    sget v0, Lq11/d;->g:I
+
+    .line 7
+    .line 8
+    invoke-virtual {p0, p1, v0}, Landroid/appwidget/AppWidgetManager;->notifyAppWidgetViewDataChanged(II)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method
+
+
+# virtual methods
+.method public final d(Ljava/lang/String;I)Landroid/content/Intent;
+    .registers 6
+    .param p1    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    const-string v0, "url"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    sget-object v0, Lcom/netease/cloudmusic/music/base/bridge/ad/d;->a:Lcom/netease/cloudmusic/music/base/bridge/ad/d;
+
+    .line 11
+    .line 12
+    const-string v1, "uri"
+
+    .line 13
+    .line 14
+    invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 15
+    .line 16
+    .line 17
+    const/4 v1, 0x1
+
+    .line 18
+    invoke-virtual {v0, p1, v1}, Lcom/netease/cloudmusic/music/base/bridge/ad/d;->b(Landroid/net/Uri;Z)Landroid/net/Uri;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p1
+
+    .line 22
+    new-instance v0, Landroid/content/Intent;
+
+    .line 23
+    .line 24
+    const-string v2, "android.intent.action.VIEW"
+
+    .line 25
+    .line 26
+    invoke-direct {v0, v2, p1}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+
+    .line 27
+    .line 28
+    .line 29
+    const/high16 p1, 0x10000000
+
+    .line 30
+    .line 31
+    invoke-virtual {v0, p1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    .line 32
+    .line 33
+    .line 34
+    const-string p1, "key_source"
+
+    .line 35
+    .line 36
+    const-string v2, "MUSIC_LOCAL"
+
+    .line 37
+    .line 38
+    invoke-virtual {v0, p1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 39
+    .line 40
+    .line 41
+    const-string p1, "param_from_source"
+
+    .line 42
+    .line 43
+    invoke-virtual {v0, p1, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    .line 44
+    .line 45
+    .line 46
+    const-string p1, "param_code"
+
+    .line 47
+    .line 48
+    const-string v1, "FootPrintCalendar"
+
+    .line 49
+    .line 50
+    invoke-virtual {v0, p1, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 51
+    .line 52
+    .line 53
+    const-string p1, "param_size"
+
+    .line 54
+    .line 55
+    invoke-virtual {v0, p1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    .line 56
+    .line 57
+    .line 58
+    return-object v0
+.end method
+
+.method public final f(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;ILandroid/content/BroadcastReceiver;)V
+    .registers 15
+    .param p1    # Landroid/content/Context;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/appwidget/AppWidgetManager;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p4    # Landroid/content/BroadcastReceiver;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    const-string v0, "context"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "appWidgetManager"
+
+    .line 7
+    .line 8
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    const-string v0, "FootPrintCalendar"
+
+    .line 12
+    .line 13
+    const-string v1, "update: "
+
+    .line 14
+    .line 15
+    invoke-static {v0, v1}, Lt11/a;->o(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-static {}, Lcom/netease/cloudmusic/utils/m4;->u()Z
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v0
+
+    .line 22
+    if-nez v0, :cond_1f
+
+    .line 23
+    .line 24
+    const-string p1, "AbsNMAppWidgetProvider"
+
+    .line 25
+    .line 26
+    const-string p2, "update abort, network not connected!"
+
+    .line 27
+    .line 28
+    invoke-static {p1, p2}, Lt11/a;->o(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 29
+    .line 30
+    .line 31
+    return-void
+
+    .line 32
+    :cond_1f
+    invoke-static {p1, p3}, Ls21/e;->e(Landroid/content/Context;I)Landroid/content/ComponentName;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v0
+
+    .line 36
+    invoke-virtual {p2, v0}, Landroid/appwidget/AppWidgetManager;->getAppWidgetIds(Landroid/content/ComponentName;)[I
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v7
+
+    .line 40
+    invoke-static {}, Lcom/netease/cloudmusic/utils/o3;->t0()Z
+
+    .line 41
+    .line 42
+    .line 43
+    move-result v0
+
+    .line 44
+    if-eqz v0, :cond_33
+
+    .line 45
+    .line 46
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 47
+    .line 48
+    const/16 v1, 0x1d
+
+    .line 49
+    .line 50
+    if-gt v0, v1, :cond_35
+
+    .line 51
+    .line 52
+    :cond_33
+    if-nez p4, :cond_44
+
+    .line 53
+    .line 54
+    :cond_35
+    new-instance p4, La21/d;
+
+    .line 55
+    .line 56
+    invoke-direct {p4, p1, p2, p3, v7}, La21/d;-><init>(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;I[I)V
+
+    .line 57
+    .line 58
+    .line 59
+    invoke-static {p4}, Lcom/netease/cloudmusic/asynctask/f0;->submitTask(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object p1
+
+    .line 63
+    if-eqz p1, :cond_61
+
+    .line 64
+    .line 65
+    invoke-interface {p1}, Ljava/util/concurrent/Future;->isDone()Z
+
+    .line 66
+    .line 67
+    .line 68
+    goto :goto_61
+
+    .line 69
+    :cond_44
+    sget-object v0, Lkotlinx/coroutines/s1;->a:Lkotlinx/coroutines/s1;
+
+    .line 70
+    .line 71
+    invoke-virtual {p4}, Landroid/content/BroadcastReceiver;->goAsync()Landroid/content/BroadcastReceiver$PendingResult;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object v2
+
+    .line 75
+    invoke-static {}, Lkotlinx/coroutines/d1;->b()Lkotlinx/coroutines/k0;
+
+    .line 76
+    .line 77
+    .line 78
+    move-result-object p4
+
+    .line 79
+    const/4 v8, 0x0
+
+    .line 80
+    new-instance v9, La21/f$a;
+
+    .line 81
+    .line 82
+    const/4 v3, 0x0
+
+    .line 83
+    move-object v1, v9
+
+    .line 84
+    move-object v4, p1
+
+    .line 85
+    move-object v5, p2
+
+    .line 86
+    move v6, p3
+
+    .line 87
+    invoke-direct/range {v1 .. v7}, La21/f$a;-><init>(Landroid/content/BroadcastReceiver$PendingResult;Lkotlin/coroutines/Continuation;Landroid/content/Context;Landroid/appwidget/AppWidgetManager;I[I)V
+
+    .line 88
+    .line 89
+    .line 90
+    const/4 v4, 0x2
+
+    .line 91
+    const/4 v5, 0x0
+
+    .line 92
+    move-object v1, p4
+
+    .line 93
+    move-object v2, v8
+
+    .line 94
+    move-object v3, v9
+
+    .line 95
+    invoke-static/range {v0 .. v5}, Lkotlinx/coroutines/j;->d(Lkotlinx/coroutines/n0;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/p0;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/a2;
+
+    .line 96
+    .line 97
+    .line 98
+    :cond_61
+    :goto_61
+    return-void
+.end method
+

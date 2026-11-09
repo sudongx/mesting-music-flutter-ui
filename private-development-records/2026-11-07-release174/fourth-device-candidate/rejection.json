@@ -1,0 +1,11 @@
+{
+  "apkSha256": "e476ceee98762ca2cf7370c08e4f128d258f89ee5ca5a6ee45d70292de57f6ac",
+  "finalizedOrDelivered": false,
+  "sourceZipFrozen": false,
+  "reason": "Physical cold refresh retained old Soda grid then published fresh DTOs before all replacement images had decoded; visible placeholders at5794ms.",
+  "screenshots": "device/after-soda-final-cold1",
+  "fix": "Presentation-only preferred artwork projection uses exact Soda DTO URI/template resolution; core readiness consumes that normalized projection and retains raw fallback candidates.",
+  "tests": "artwork-projection-r9:29 cases, including projected-ready/failure/cancellation plus baseline generic paths",
+  "olderFrozenDeliveriesUnchanged": true,
+  "observationQualification": "The phone could still be operated by the user before the final exclusive sampling notice; viewport scrolling versus data refresh was not independently separated in that screenshot. The DTO URI/readiness gap was independently confirmed and covered by controlled decoder/network regression."
+}

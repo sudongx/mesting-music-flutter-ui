@@ -1,0 +1,234 @@
+--------- beginning of crash
+11-02 14:52:44.318  5211  5211 F DEBUG   :       #03 pc 000000000041c778  /data/adb/ksud
+11-02 14:52:44.318  5211  5211 F DEBUG   :       #04 pc 00000000003d8ca8  /data/adb/ksud
+11-02 14:52:44.318  5211  5211 F DEBUG   :       #05 pc 00000000003fd894  /data/adb/ksud
+11-02 14:52:44.318  5211  5211 F DEBUG   :       #06 pc 00000000003fd348  /data/adb/ksud
+11-02 14:52:44.318  5211  5211 F DEBUG   :       #07 pc 000000000041c328  /data/adb/ksud
+11-02 14:52:44.318  5211  5211 F DEBUG   :       #08 pc 000000000041c2e4  /data/adb/ksud
+11-02 14:52:44.318  5211  5211 F DEBUG   :       #09 pc 000000000041c798  /data/adb/ksud
+11-02 14:52:44.318  5211  5211 F DEBUG   :       #10 pc 000000000039faa8  /data/adb/ksud
+11-02 14:52:44.318  5211  5211 F DEBUG   :       #11 pc 00000000004261fc  /data/adb/ksud
+11-02 14:52:44.318  5211  5211 F DEBUG   :       #12 pc 000000000033afd0  /data/adb/ksud
+11-02 14:52:44.318  5211  5211 F DEBUG   :       #13 pc 00000000003210f8  /data/adb/ksud
+11-02 14:52:44.318  5211  5211 F DEBUG   :       #14 pc 000000000036f99c  /data/adb/ksud
+11-02 14:52:44.318  5211  5211 F DEBUG   :       #15 pc 000000000006acd0  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+124) (BuildId: 223a572c9f034c6a9337d8b3bedc75f3)
+11-02 14:52:58.953  5686  5686 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 5686 (ksud), pid 5686 (ksud)
+11-02 14:52:58.987  5692  5692 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+11-02 14:52:58.987  5692  5692 F DEBUG   : Build fingerprint: 'Xiaomi/shennong/shennong:16/BP2A.250605.031.A3/OS3.0.309.0.WNBCNXM:user/release-keys'
+11-02 14:52:58.988  5692  5692 F DEBUG   : Revision: '0'
+11-02 14:52:58.988  5692  5692 F DEBUG   : ABI: 'arm64'
+11-02 14:52:58.988  5692  5692 F DEBUG   : Timestamp: 2026-11-02 14:52:58.975941801+0800
+11-02 14:52:58.988  5692  5692 F DEBUG   : Process uptime: 0s
+11-02 14:52:58.988  5692  5692 F DEBUG   : Cmdline: ksud debug info
+11-02 14:52:58.988  5692  5692 F DEBUG   : pid: 5686, tid: 5686, name: ksud  >>> ksud <<<
+11-02 14:52:58.988  5692  5692 F DEBUG   : uid: 0
+11-02 14:52:58.988  5692  5692 F DEBUG   : tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+11-02 14:52:58.989  5692  5692 F DEBUG   : pac_enabled_keys: 000000000000000f (PR_PAC_APIAKEY, PR_PAC_APIBKEY, PR_PAC_APDAKEY, PR_PAC_APDBKEY)
+11-02 14:52:58.989  5692  5692 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+11-02 14:52:58.989  5692  5692 F DEBUG   : Abort message: 'failed printing to stdout: Broken pipe (os error 32)'
+11-02 14:52:58.989  5692  5692 F DEBUG   :     x0  0000000000000000  x1  0000000000001636  x2  0000000000000006  x3  0000007fdd0fd410
+11-02 14:52:58.989  5692  5692 F DEBUG   :     x4  646a6e71411f3973  x5  646a6e71411f3973  x6  646a6e71411f3973  x7  7f7f7f7f7f7f7f7f
+11-02 14:52:58.989  5692  5692 F DEBUG   :     x8  00000000000000f0  x9  e40ebfb3752650aa  x10 000000ff00000020  x11 0200007c38ff0960
+11-02 14:52:58.989  5692  5692 F DEBUG   :     x12 0000000000000000  x13 0000007e0a8cee30  x14 0000000000000018  x15 0000000000000064
+11-02 14:52:58.989  5692  5692 F DEBUG   :     x16 0000007e0a9b5130  x17 0000007e0a99cb80  x18 0000007e0b470000  x19 0000000000001636
+11-02 14:52:58.990  5692  5692 F DEBUG   :     x20 0000000000001636  x21 00000000ffffffff  x22 0000000000000002  x23 0000007fdd0fd5d0
+11-02 14:52:58.990  5692  5692 F DEBUG   :     x24 0000005da2014298  x25 0000005da201d478  x26 0000005da2013820  x27 0000005da2013690
+11-02 14:52:58.990  5692  5692 F DEBUG   :     x28 0000005da1de12c9  x29 0000007fdd0fd490
+11-02 14:52:58.990  5692  5692 F DEBUG   :     lr  0000007e0a937828  sp  0000007fdd0fd410  pc  0000007e0a93784c  pst 0000000000001000
+11-02 14:52:58.990  5692  5692 F DEBUG   : 16 total frames
+11-02 14:52:58.990  5692  5692 F DEBUG   : backtrace:
+11-02 14:52:58.990  5692  5692 F DEBUG   :       #00 pc 000000000007184c  /apex/com.android.runtime/lib64/bionic/libc.so (abort+160) (BuildId: 223a572c9f034c6a9337d8b3bedc75f3)
+11-02 14:52:58.991  5692  5692 F DEBUG   :       #01 pc 000000000041b794  /data/adb/ksud
+11-02 14:52:58.991  5692  5692 F DEBUG   :       #02 pc 00000000003fd850  /data/adb/ksud
+11-02 14:52:58.991  5692  5692 F DEBUG   :       #03 pc 000000000041c778  /data/adb/ksud
+11-02 14:52:58.991  5692  5692 F DEBUG   :       #04 pc 00000000003d8ca8  /data/adb/ksud
+11-02 14:52:58.991  5692  5692 F DEBUG   :       #05 pc 00000000003fd894  /data/adb/ksud
+11-02 14:52:58.991  5692  5692 F DEBUG   :       #06 pc 00000000003fd348  /data/adb/ksud
+11-02 14:52:58.991  5692  5692 F DEBUG   :       #07 pc 000000000041c328  /data/adb/ksud
+11-02 14:52:58.991  5692  5692 F DEBUG   :       #08 pc 000000000041c2e4  /data/adb/ksud
+11-02 14:52:58.991  5692  5692 F DEBUG   :       #09 pc 000000000041c798  /data/adb/ksud
+11-02 14:52:58.991  5692  5692 F DEBUG   :       #10 pc 000000000039faa8  /data/adb/ksud
+11-02 14:52:58.991  5692  5692 F DEBUG   :       #11 pc 00000000004261fc  /data/adb/ksud
+11-02 14:52:58.991  5692  5692 F DEBUG   :       #12 pc 000000000033afd0  /data/adb/ksud
+11-02 14:52:58.991  5692  5692 F DEBUG   :       #13 pc 00000000003210f8  /data/adb/ksud
+11-02 14:52:58.991  5692  5692 F DEBUG   :       #14 pc 000000000036f99c  /data/adb/ksud
+11-02 14:52:58.992  5692  5692 F DEBUG   :       #15 pc 000000000006acd0  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+124) (BuildId: 223a572c9f034c6a9337d8b3bedc75f3)
+11-02 14:52:59.027  5696  5696 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 5696 (ksud), pid 5696 (ksud)
+11-02 14:52:59.069  5700  5700 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+11-02 14:52:59.069  5700  5700 F DEBUG   : Build fingerprint: 'Xiaomi/shennong/shennong:16/BP2A.250605.031.A3/OS3.0.309.0.WNBCNXM:user/release-keys'
+11-02 14:52:59.069  5700  5700 F DEBUG   : Revision: '0'
+11-02 14:52:59.069  5700  5700 F DEBUG   : ABI: 'arm64'
+11-02 14:52:59.069  5700  5700 F DEBUG   : Timestamp: 2026-11-02 14:52:59.057673416+0800
+11-02 14:52:59.069  5700  5700 F DEBUG   : Process uptime: 0s
+11-02 14:52:59.069  5700  5700 F DEBUG   : Cmdline: ksud debug info
+11-02 14:52:59.070  5700  5700 F DEBUG   : pid: 5696, tid: 5696, name: ksud  >>> ksud <<<
+11-02 14:52:59.070  5700  5700 F DEBUG   : uid: 0
+11-02 14:52:59.070  5700  5700 F DEBUG   : tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+11-02 14:52:59.070  5700  5700 F DEBUG   : pac_enabled_keys: 000000000000000f (PR_PAC_APIAKEY, PR_PAC_APIBKEY, PR_PAC_APDAKEY, PR_PAC_APDBKEY)
+11-02 14:52:59.070  5700  5700 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+11-02 14:52:59.070  5700  5700 F DEBUG   : Abort message: 'failed printing to stdout: Broken pipe (os error 32)'
+11-02 14:52:59.070  5700  5700 F DEBUG   :     x0  0000000000000000  x1  0000000000001640  x2  0000000000000006  x3  0000007fdcb07f30
+11-02 14:52:59.070  5700  5700 F DEBUG   :     x4  646a6e71411f3973  x5  646a6e71411f3973  x6  646a6e71411f3973  x7  7f7f7f7f7f7f7f7f
+11-02 14:52:59.070  5700  5700 F DEBUG   :     x8  00000000000000f0  x9  7df24b0764cb7dd6  x10 000000ff00000020  x11 0200007df86895a0
+11-02 14:52:59.070  5700  5700 F DEBUG   :     x12 0000000000000000  x13 0000007f986e0e30  x14 0000000000000018  x15 0000000000000064
+11-02 14:52:59.070  5700  5700 F DEBUG   :     x16 0000007f987c7130  x17 0000007f987aeb80  x18 0000007f9913c000  x19 0000000000001640
+11-02 14:52:59.070  5700  5700 F DEBUG   :     x20 0000000000001640  x21 00000000ffffffff  x22 0000000000000002  x23 0000007fdcb080f0
+11-02 14:52:59.070  5700  5700 F DEBUG   :     x24 0000005a58c84298  x25 0000005a58c8d478  x26 0000005a58c83820  x27 0000005a58c83690
+11-02 14:52:59.070  5700  5700 F DEBUG   :     x28 0000005a58a512c9  x29 0000007fdcb07fb0
+11-02 14:52:59.070  5700  5700 F DEBUG   :     lr  0000007f98749828  sp  0000007fdcb07f30  pc  0000007f9874984c  pst 0000000000001000
+11-02 14:52:59.070  5700  5700 F DEBUG   : 16 total frames
+11-02 14:52:59.070  5700  5700 F DEBUG   : backtrace:
+11-02 14:52:59.070  5700  5700 F DEBUG   :       #00 pc 000000000007184c  /apex/com.android.runtime/lib64/bionic/libc.so (abort+160) (BuildId: 223a572c9f034c6a9337d8b3bedc75f3)
+11-02 14:52:59.070  5700  5700 F DEBUG   :       #01 pc 000000000041b794  /data/adb/ksud
+11-02 14:52:59.070  5700  5700 F DEBUG   :       #02 pc 00000000003fd850  /data/adb/ksud
+11-02 14:52:59.070  5700  5700 F DEBUG   :       #03 pc 000000000041c778  /data/adb/ksud
+11-02 14:52:59.070  5700  5700 F DEBUG   :       #04 pc 00000000003d8ca8  /data/adb/ksud
+11-02 14:52:59.070  5700  5700 F DEBUG   :       #05 pc 00000000003fd894  /data/adb/ksud
+11-02 14:52:59.070  5700  5700 F DEBUG   :       #06 pc 00000000003fd348  /data/adb/ksud
+11-02 14:52:59.070  5700  5700 F DEBUG   :       #07 pc 000000000041c328  /data/adb/ksud
+11-02 14:52:59.070  5700  5700 F DEBUG   :       #08 pc 000000000041c2e4  /data/adb/ksud
+11-02 14:52:59.070  5700  5700 F DEBUG   :       #09 pc 000000000041c798  /data/adb/ksud
+11-02 14:52:59.070  5700  5700 F DEBUG   :       #10 pc 000000000039faa8  /data/adb/ksud
+11-02 14:52:59.071  5700  5700 F DEBUG   :       #11 pc 00000000004261fc  /data/adb/ksud
+11-02 14:52:59.071  5700  5700 F DEBUG   :       #12 pc 000000000033afd0  /data/adb/ksud
+11-02 14:52:59.071  5700  5700 F DEBUG   :       #13 pc 00000000003210f8  /data/adb/ksud
+11-02 14:52:59.071  5700  5700 F DEBUG   :       #14 pc 000000000036f99c  /data/adb/ksud
+11-02 14:52:59.071  5700  5700 F DEBUG   :       #15 pc 000000000006acd0  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+124) (BuildId: 223a572c9f034c6a9337d8b3bedc75f3)
+11-02 14:54:23.753  8497  8497 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 8497 (ksud), pid 8497 (ksud)
+11-02 14:54:23.781  8504  8504 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+11-02 14:54:23.781  8504  8504 F DEBUG   : Build fingerprint: 'Xiaomi/shennong/shennong:16/BP2A.250605.031.A3/OS3.0.309.0.WNBCNXM:user/release-keys'
+11-02 14:54:23.781  8504  8504 F DEBUG   : Revision: '0'
+11-02 14:54:23.781  8504  8504 F DEBUG   : ABI: 'arm64'
+11-02 14:54:23.781  8504  8504 F DEBUG   : Timestamp: 2026-11-02 14:54:23.772437081+0800
+11-02 14:54:23.781  8504  8504 F DEBUG   : Process uptime: 0s
+11-02 14:54:23.781  8504  8504 F DEBUG   : Cmdline: ksud debug info
+11-02 14:54:23.781  8504  8504 F DEBUG   : pid: 8497, tid: 8497, name: ksud  >>> ksud <<<
+11-02 14:54:23.781  8504  8504 F DEBUG   : uid: 0
+11-02 14:54:23.781  8504  8504 F DEBUG   : tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+11-02 14:54:23.781  8504  8504 F DEBUG   : pac_enabled_keys: 000000000000000f (PR_PAC_APIAKEY, PR_PAC_APIBKEY, PR_PAC_APDAKEY, PR_PAC_APDBKEY)
+11-02 14:54:23.781  8504  8504 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+11-02 14:54:23.781  8504  8504 F DEBUG   : Abort message: 'failed printing to stdout: Broken pipe (os error 32)'
+11-02 14:54:23.781  8504  8504 F DEBUG   :     x0  0000000000000000  x1  0000000000002131  x2  0000000000000006  x3  0000007fdc7578b0
+11-02 14:54:23.781  8504  8504 F DEBUG   :     x4  646a6e71411f3973  x5  646a6e71411f3973  x6  646a6e71411f3973  x7  7f7f7f7f7f7f7f7f
+11-02 14:54:23.781  8504  8504 F DEBUG   :     x8  00000000000000f0  x9  103ef08b88cfe259  x10 000000ff00000020  x11 0200007b25e49d20
+11-02 14:54:23.781  8504  8504 F DEBUG   :     x12 0000000000000000  x13 0000007c46ee1e30  x14 0000000000000018  x15 0000000000000064
+11-02 14:54:23.781  8504  8504 F DEBUG   :     x16 0000007c46fc8130  x17 0000007c46fafb80  x18 0000007c48238000  x19 0000000000002131
+11-02 14:54:23.781  8504  8504 F DEBUG   :     x20 0000000000002131  x21 00000000ffffffff  x22 0000000000000002  x23 0000007fdc757a70
+11-02 14:54:23.781  8504  8504 F DEBUG   :     x24 0000005fcc4a0298  x25 0000005fcc4a9478  x26 0000005fcc49f820  x27 0000005fcc49f690
+11-02 14:54:23.781  8504  8504 F DEBUG   :     x28 0000005fcc26d2c9  x29 0000007fdc757930
+11-02 14:54:23.781  8504  8504 F DEBUG   :     lr  0000007c46f4a828  sp  0000007fdc7578b0  pc  0000007c46f4a84c  pst 0000000000001000
+11-02 14:54:23.781  8504  8504 F DEBUG   : 16 total frames
+11-02 14:54:23.781  8504  8504 F DEBUG   : backtrace:
+11-02 14:54:23.781  8504  8504 F DEBUG   :       #00 pc 000000000007184c  /apex/com.android.runtime/lib64/bionic/libc.so (abort+160) (BuildId: 223a572c9f034c6a9337d8b3bedc75f3)
+11-02 14:54:23.781  8504  8504 F DEBUG   :       #01 pc 000000000041b794  /data/adb/ksud
+11-02 14:54:23.781  8504  8504 F DEBUG   :       #02 pc 00000000003fd850  /data/adb/ksud
+11-02 14:54:23.781  8504  8504 F DEBUG   :       #03 pc 000000000041c778  /data/adb/ksud
+11-02 14:54:23.781  8504  8504 F DEBUG   :       #04 pc 00000000003d8ca8  /data/adb/ksud
+11-02 14:54:23.781  8504  8504 F DEBUG   :       #05 pc 00000000003fd894  /data/adb/ksud
+11-02 14:54:23.781  8504  8504 F DEBUG   :       #06 pc 00000000003fd348  /data/adb/ksud
+11-02 14:54:23.781  8504  8504 F DEBUG   :       #07 pc 000000000041c328  /data/adb/ksud
+11-02 14:54:23.781  8504  8504 F DEBUG   :       #08 pc 000000000041c2e4  /data/adb/ksud
+11-02 14:54:23.781  8504  8504 F DEBUG   :       #09 pc 000000000041c798  /data/adb/ksud
+11-02 14:54:23.781  8504  8504 F DEBUG   :       #10 pc 000000000039faa8  /data/adb/ksud
+11-02 14:54:23.781  8504  8504 F DEBUG   :       #11 pc 00000000004261fc  /data/adb/ksud
+11-02 14:54:23.781  8504  8504 F DEBUG   :       #12 pc 000000000033afd0  /data/adb/ksud
+11-02 14:54:23.781  8504  8504 F DEBUG   :       #13 pc 00000000003210f8  /data/adb/ksud
+11-02 14:54:23.781  8504  8504 F DEBUG   :       #14 pc 000000000036f99c  /data/adb/ksud
+11-02 14:54:23.781  8504  8504 F DEBUG   :       #15 pc 000000000006acd0  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+124) (BuildId: 223a572c9f034c6a9337d8b3bedc75f3)
+11-02 14:54:23.811  8508  8508 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 8508 (ksud), pid 8508 (ksud)
+11-02 14:54:23.829  8511  8511 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+11-02 14:54:23.829  8511  8511 F DEBUG   : Build fingerprint: 'Xiaomi/shennong/shennong:16/BP2A.250605.031.A3/OS3.0.309.0.WNBCNXM:user/release-keys'
+11-02 14:54:23.829  8511  8511 F DEBUG   : Revision: '0'
+11-02 14:54:23.829  8511  8511 F DEBUG   : ABI: 'arm64'
+11-02 14:54:23.829  8511  8511 F DEBUG   : Timestamp: 2026-11-02 14:54:23.824575050+0800
+11-02 14:54:23.829  8511  8511 F DEBUG   : Process uptime: 0s
+11-02 14:54:23.829  8511  8511 F DEBUG   : Cmdline: ksud debug info
+11-02 14:54:23.829  8511  8511 F DEBUG   : pid: 8508, tid: 8508, name: ksud  >>> ksud <<<
+11-02 14:54:23.829  8511  8511 F DEBUG   : uid: 0
+11-02 14:54:23.829  8511  8511 F DEBUG   : tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+11-02 14:54:23.829  8511  8511 F DEBUG   : pac_enabled_keys: 000000000000000f (PR_PAC_APIAKEY, PR_PAC_APIBKEY, PR_PAC_APDAKEY, PR_PAC_APDBKEY)
+11-02 14:54:23.829  8511  8511 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+11-02 14:54:23.829  8511  8511 F DEBUG   : Abort message: 'failed printing to stdout: Broken pipe (os error 32)'
+11-02 14:54:23.829  8511  8511 F DEBUG   :     x0  0000000000000000  x1  000000000000213c  x2  0000000000000006  x3  0000007fd296af40
+11-02 14:54:23.829  8511  8511 F DEBUG   :     x4  646a6e71411f3973  x5  646a6e71411f3973  x6  646a6e71411f3973  x7  7f7f7f7f7f7f7f7f
+11-02 14:54:23.829  8511  8511 F DEBUG   :     x8  00000000000000f0  x9  412c6dc9d419d88d  x10 000000ff00000020  x11 0200007070fc7780
+11-02 14:54:23.829  8511  8511 F DEBUG   :     x12 0000000000000000  x13 0000007201028e30  x14 0000000000000018  x15 0000000000000064
+11-02 14:54:23.829  8511  8511 F DEBUG   :     x16 000000720110f130  x17 00000072010f6b80  x18 000000720223c000  x19 000000000000213c
+11-02 14:54:23.829  8511  8511 F DEBUG   :     x20 000000000000213c  x21 00000000ffffffff  x22 0000000000000002  x23 0000007fd296b100
+11-02 14:54:23.829  8511  8511 F DEBUG   :     x24 0000005aaa20c298  x25 0000005aaa215478  x26 0000005aaa20b820  x27 0000005aaa20b690
+11-02 14:54:23.829  8511  8511 F DEBUG   :     x28 0000005aa9fd92c9  x29 0000007fd296afc0
+11-02 14:54:23.829  8511  8511 F DEBUG   :     lr  0000007201091828  sp  0000007fd296af40  pc  000000720109184c  pst 0000000000001000
+11-02 14:54:23.829  8511  8511 F DEBUG   : 16 total frames
+11-02 14:54:23.829  8511  8511 F DEBUG   : backtrace:
+11-02 14:54:23.829  8511  8511 F DEBUG   :       #00 pc 000000000007184c  /apex/com.android.runtime/lib64/bionic/libc.so (abort+160) (BuildId: 223a572c9f034c6a9337d8b3bedc75f3)
+11-02 14:54:23.829  8511  8511 F DEBUG   :       #01 pc 000000000041b794  /data/adb/ksud
+11-02 14:54:23.829  8511  8511 F DEBUG   :       #02 pc 00000000003fd850  /data/adb/ksud
+11-02 14:54:23.829  8511  8511 F DEBUG   :       #03 pc 000000000041c778  /data/adb/ksud
+11-02 14:54:23.829  8511  8511 F DEBUG   :       #04 pc 00000000003d8ca8  /data/adb/ksud
+11-02 14:54:23.829  8511  8511 F DEBUG   :       #05 pc 00000000003fd894  /data/adb/ksud
+11-02 14:54:23.829  8511  8511 F DEBUG   :       #06 pc 00000000003fd348  /data/adb/ksud
+11-02 14:54:23.829  8511  8511 F DEBUG   :       #07 pc 000000000041c328  /data/adb/ksud
+11-02 14:54:23.829  8511  8511 F DEBUG   :       #08 pc 000000000041c2e4  /data/adb/ksud
+11-02 14:54:23.829  8511  8511 F DEBUG   :       #09 pc 000000000041c798  /data/adb/ksud
+11-02 14:54:23.829  8511  8511 F DEBUG   :       #10 pc 000000000039faa8  /data/adb/ksud
+11-02 14:54:23.829  8511  8511 F DEBUG   :       #11 pc 00000000004261fc  /data/adb/ksud
+11-02 14:54:23.829  8511  8511 F DEBUG   :       #12 pc 000000000033afd0  /data/adb/ksud
+11-02 14:54:23.829  8511  8511 F DEBUG   :       #13 pc 00000000003210f8  /data/adb/ksud
+11-02 14:54:23.829  8511  8511 F DEBUG   :       #14 pc 000000000036f99c  /data/adb/ksud
+11-02 14:54:23.829  8511  8511 F DEBUG   :       #15 pc 000000000006acd0  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+124) (BuildId: 223a572c9f034c6a9337d8b3bedc75f3)
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: FATAL EXCEPTION: main
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: PID: 21407
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: java.lang.IllegalStateException: UiAutomationService android.accessibilityservice.IAccessibilityServiceClient$Stub$Proxy@b9f6f03already registered!
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3369)
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:3345)
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3328)
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3270)
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: 	at android.view.accessibility.IAccessibilityManager$Stub$Proxy.registerUiTestAutomationService(IAccessibilityManager.java:1154)
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: 	at android.app.UiAutomationConnection.registerUiTestAutomationServiceLocked(UiAutomationConnection.java:688)
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: 	at android.app.UiAutomationConnection.connect(UiAutomationConnection.java:117)
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: 	at android.app.UiAutomation.connectWithTimeout(UiAutomation.java:386)
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: 	at android.app.UiAutomation.connect(UiAutomation.java:331)
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: 	at com.android.uiautomator.core.UiAutomationShellWrapper.connect(UiAutomationShellWrapper.java:36)
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: 	at com.android.commands.uiautomator.DumpCommand.run(DumpCommand.java:78)
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: 	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:394)
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: 	at com.android.server.accessibility.UiAutomationManager.registerUiTestAutomationServiceLocked(UiAutomationManager.java:109)
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: 	at com.android.server.accessibility.AccessibilityManagerService.registerUiTestAutomationService(AccessibilityManagerService.java:1668)
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: 	at android.view.accessibility.IAccessibilityManager$Stub.onTransact(IAccessibilityManager.java:571)
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: 	at android.os.Binder.execTransactInternal(Binder.java:1428)
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: 	at android.os.Binder.execTransact(Binder.java:1372)
+11-02 15:08:13.928 21407 21407 E AndroidRuntime: 
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: Couldn't report crash. Here's the crash:
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: java.lang.IllegalStateException: UiAutomationService android.accessibilityservice.IAccessibilityServiceClient$Stub$Proxy@b9f6f03already registered!
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3369)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:3345)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3328)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3270)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at android.view.accessibility.IAccessibilityManager$Stub$Proxy.registerUiTestAutomationService(IAccessibilityManager.java:1154)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at android.app.UiAutomationConnection.registerUiTestAutomationServiceLocked(UiAutomationConnection.java:688)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at android.app.UiAutomationConnection.connect(UiAutomationConnection.java:117)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at android.app.UiAutomation.connectWithTimeout(UiAutomation.java:386)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at android.app.UiAutomation.connect(UiAutomation.java:331)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at com.android.uiautomator.core.UiAutomationShellWrapper.connect(UiAutomationShellWrapper.java:36)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at com.android.commands.uiautomator.DumpCommand.run(DumpCommand.java:78)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:394)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at com.android.server.accessibility.UiAutomationManager.registerUiTestAutomationServiceLocked(UiAutomationManager.java:109)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at com.android.server.accessibility.AccessibilityManagerService.registerUiTestAutomationService(AccessibilityManagerService.java:1668)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at android.view.accessibility.IAccessibilityManager$Stub.onTransact(IAccessibilityManager.java:571)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at android.os.Binder.execTransactInternal(Binder.java:1428)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at android.os.Binder.execTransact(Binder.java:1372)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: Error reporting crash. Here's the error:
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: java.lang.RuntimeException: Bad file descriptor
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at android.os.BinderProxy.transactNative(Native Method)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at android.os.BinderProxy.transact(BinderProxy.java:736)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at android.app.IActivityManager$Stub$Proxy.handleApplicationCrash(IActivityManager.java:6564)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$KillApplicationHandler.uncaughtException(RuntimeInit.java:189)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1071)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1066)
+11-02 15:08:13.965 21407 21407 E AndroidRuntime: 	at java.lang.Thread.dispatchUncaughtException(Thread.java:2442)

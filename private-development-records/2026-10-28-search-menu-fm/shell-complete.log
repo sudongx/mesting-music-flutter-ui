@@ -1,0 +1,483 @@
+00:00 +0: loading D:/AnLi/test/beta5_ui_test.dart
+00:00 +0: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: music refinement home shelves and single appearance entry
+00:03 +1: music refinement toolbar and catalogue details remain connected
+00:04 +2: beta5 cover-led pages render in both themes and wide layouts
+00:08 +3: small windows and larger text retain transport and editor actions
+00:09 +4: playlist editor keeps fixed confirmation and cover controls
+00:09 +5: beta7 official bottom morph, embedded search and quality dialog
+00:09 +6: beta7 quality dialog and every player appearance share the entry
+00:10 +7: beta7 dress-up keeps progress characters and removes retired controls
+00:10 +8: beta8 standard-only song hides unsupported tiers and permission hints
+00:11 +9: beta8 unknown quality metadata exposes retry instead of fabricated options
+00:11 +10: beta7 shared status HUD replaces stale actions at the top
+00:11 +11: beta7 standalone search also excludes local recommendation scoring
+00:11 +12: beta8 search builds a viewport of 480 rows and retains actions
+BETA8_SEARCH_BENCH catalogue=480 visibleArtworkWidgets=11
+BETA8_SEARCH_BENCH catalogue=480 visibleArtworkWidgets=11
+00:11 +13: beta8 anchored more menu stays grouped at phone and large-text widths
+00:11 +14: beta8 detail navigation keeps the tab that opened it
+00:12 +15: beta15 settings controls work after player reveal and guide covers chrome
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following StateError was thrown running a test:
+Bad state: No element
+
+When the exception was thrown, this was the stack:
+#0      Iterable.first (dart:core/iterable.dart:663:7)
+#1      _FirstFinderMixin.filter (package:flutter_test/src/finders.dart:1340:28)
+#3      _AncestorFinderMixin.allCandidates (package:flutter_test/src/finders.dart:1814:49)
+#4      FinderBase.evaluate (package:flutter_test/src/finders.dart:987:76)
+#5      WidgetController.widgetList (package:flutter_test/src/controller.dart:843:19)
+#6      WidgetController._maybeViewOf (package:flutter_test/src/controller.dart:790:34)
+#7      WidgetController.tap (package:flutter_test/src/controller.dart:1073:31)
+#8      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:1529:24)
+<asynchronous suspension>
+#9      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#10     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 2 frames from dart:async-patch and package:stack_trace)
+
+The test description was:
+  beta15 settings controls work after player reveal and guide covers chrome
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:12 +15 -1: beta15 settings controls work after player reveal and guide covers chrome [E]
+  Test failed. See exception logs above.
+  The test description was: beta15 settings controls work after player reveal and guide covers chrome
+  
+00:12 +15 -1: beta15 player footer keeps icon centers aligned without inline quality text
+00:12 +16 -1: beta15 hot refresh keeps ranking and reports pending, unchanged, failure and recovery
+00:12 +17 -1: beta15 replay excludes future months in the current year
+00:12 +18 -1: beta8 playing vinyl stays on grooves and year menu is rounded
+00:13 +19 -1: beta9 both search edges and Router system Back follow result, landing, origin
+00:14 +20 -1: beta9 comment filters share one row and composer uses sibling liquid glass
+00:14 +21 -1: beta9 playback pill position events do not rebuild the glass control
+BETA9_PILL_BENCH positionEvents=100 glassControlRebuilds=0
+00:14 +22 -1: beta9 narrow comment keyboard and long title remain usable
+00:14 +23 -1: beta10 search and production routes keep opaque middle frames in both themes
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:1960:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:1988:13)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+00:15 +24 -1: beta10 real player keeps transport through paired content transitions
+00:15 +25 -1: beta11 five categories retain results and destination navigation ends search
+00:16 +26 -1: beta11 guest writes are blocked while playback remains available
+00:16 +27 -1: beta11 result offsets survive categories/details but never a new same-query session
+00:17 +28 -1: beta12 embedded search advertises and consumes real system back history for every category
+00:18 +29 -1: beta14 Android back registration survives retained-engine resume and follows every page level
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: <false>
+  Actual: <true>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2470:11)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/beta5_ui_test.dart line 2470
+The test description was:
+  beta14 Android back registration survives retained-engine resume and follows every page level
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:20 +29 -2: beta14 Android back registration survives retained-engine resume and follows every page level [E]
+  Test failed. See exception logs above.
+  The test description was: beta14 Android back registration survives retained-engine resume and follows every page level
+  
+00:20 +29 -2: beta12 handle drives one real route exit and a cancelled drag rebounds without popping
+00:20 +30 -2: beta12 glass background and compact matrix plus responsive startup and edit controls
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2576:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2576:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2576:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2576:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2629:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2645:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2629:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2645:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+00:21 +31 -2: beta12 rendered comment action stays saturated blue across scrolling backdrops
+BETA12_BLUE_SAMPLE light 0 [13, 107, 218]
+BETA12_BLUE_SAMPLE light 1 [13, 107, 218]
+BETA12_BLUE_SAMPLE light 2 [13, 107, 218]
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2681:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+BETA12_BLUE_SAMPLE dark 0 [1, 95, 206]
+BETA12_BLUE_SAMPLE dark 1 [13, 107, 218]
+BETA12_BLUE_SAMPLE dark 2 [1, 95, 206]
+00:21 +32 -2: beta15 morph retains its optical layer between geometry frames
+BETA15_MORPH_BENCH {FloatingPlaybackPill: 1, TrackArtwork: 1, AdaptiveLiquidGlassLayer: 1} stableOptics=true
+00:21 +33 -2: beta11 playing-scroll compact rebuild benchmark
+BETA11_COMPACT_BENCH {BetaMusicBottomBar: 120, FloatingPlaybackPill: 120}
+00:23 +34 -2: beta9 capsule uses the shared live toggle for rapid taps
+00:23 +35 -2: beta13 capsule long press opens anchored premium glass and reverses on outside tap (false)
+00:24 +36 -2: beta13 editing menu preserves selection and field formatters (false/false)
+00:24 +37 -2: beta13 editing menu preserves selection and field formatters (false/true)
+00:24 +38 -2: beta13 capsule long press opens anchored premium glass and reverses on outside tap (true)
+00:24 +39 -2: beta13 editing menu preserves selection and field formatters (true/false)
+00:24 +40 -2: beta13 editing menu preserves selection and field formatters (true/true)
+00:24 +41 -2: beta13 search keeps real results until return motion finishes
+00:24 +42 -2: beta13 player entrance never reveals bottom chrome; reverse and drag do
+00:25 +43 -2: beta13 cold greeting waits for entry, expires once and does not replay on remount
+00:25 +44 -2: beta13 reviewed companions stay centered and below song text at start middle end
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:3126:17)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:3126:17)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:3126:17)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:3126:17)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:3126:17)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:3126:17)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:3126:17)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:3126:17)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+00:26 +45 -2: beta16 reference lyrics and inline queue Size(390.0, 844.0) text 1.0
+00:27 +46 -2: beta16 reference lyrics and inline queue Size(320.0, 640.0) text 1.6
+00:27 +47 -2: beta16 reference lyrics and inline queue Size(844.0, 390.0) text 1.0
+00:27 +48 -2: beta16 next lyric crossfades focus without replacing the player transition
+00:27 +49 -2: beta16 player glass opening and closing keep bounded real geometry
+00:27 +50 -2: beta20 comments from a nested library cover shell chrome through replies
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:3312:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+00:28 +51 -2: (tearDownAll)
+00:28 +51 -2: Some tests failed.

@@ -1,0 +1,97 @@
+{
+  "root": "D:\\CodexCache",
+  "auditOnly": true,
+  "filesDeleted": 0,
+  "allSharedSdksRetained": true,
+  "totalBytes": [PHONE REDACTED],
+  "candidateBytes": 8150535029,
+  "priorityCandidateBytes": 1093667055,
+  "groups": [
+    {
+      "label": "重复解压副本和安装压缩包",
+      "paths": [
+        "android-build/command-line-staging",
+        "android-build/commandlinetools-win-16111833_latest.zip",
+        "android-build/gradle-8.14-all.zip",
+        "android-build/jdk/OpenJDK17U-jdk_x64_windows_hotspot_17.0.20.1_1.zip"
+      ],
+      "bytes": 749016729,
+      "effect": "保留实际 SDK/JDK 及 wrapper 内的 Gradle 运行文件；候选均已核对安装副本或重复包。",
+      "priority": "优先"
+    },
+    {
+      "label": "迁移旧缓存备份",
+      "paths": [
+        "migration-backups"
+      ],
+      "bytes": 344650326,
+      "effect": "2026-09-23 迁移前的浏览器/插件目录缓存；当前缓存使用独立现行路径。",
+      "priority": "优先"
+    },
+    {
+      "label": "Gradle 转换缓存",
+      "paths": [
+        "android-build/gradle/caches/8.14/transforms"
+      ],
+      "bytes": 3973655607,
+      "effect": "下次 Android 构建重新转换依赖，首次会更慢；保留 modules-2 下载缓存与 Gradle 运行文件。",
+      "priority": "可重建"
+    },
+    {
+      "label": "npm/npx 临时工具缓存",
+      "paths": [
+        "npm-npx"
+      ],
+      "bytes": 2055336666,
+      "effect": "包含 32 组临时工具安装；下次使用 npx 工具可能需要联网重新下载。退出相关工具后清理。",
+      "priority": "可重建"
+    },
+    {
+      "label": "UI 技能临时缓存",
+      "paths": [
+        "ui-skills-task-cache"
+      ],
+      "bytes": 889270965,
+      "effect": "npm 下载及 npx 展开缓存；下次使用相关 UI 工具会重新下载/生成。",
+      "priority": "可重建"
+    },
+    {
+      "label": "Node 编译缓存",
+      "paths": [
+        "node-compile-cache"
+      ],
+      "bytes": 138604736,
+      "effect": "由 Node 重建；首次工具启动可能变慢。退出相关工具后清理。",
+      "priority": "可重建"
+    }
+  ],
+  "optionalOnly": [
+    {
+      "label": "PyCharm 索引和缓存",
+      "paths": [
+        "JetBrains/PyCharm2024.1/index",
+        "JetBrains/PyCharm2024.1/caches",
+        "JetBrains/PyCharm2024.1/icon-cache"
+      ],
+      "bytes": 723067950,
+      "effect": "退出 PyCharm 后可重建，但后续项目需要重新索引；不纳入优先合计。"
+    },
+    {
+      "label": "当前 Codex/浏览器缓存",
+      "paths": [
+        "codex-home/cache",
+        "codex-browser"
+      ],
+      "bytes": 1160461923,
+      "effect": "当前 Codex 会话正在使用相关组件；本次建议保留，另行退出应用后再考虑清理。"
+    }
+  ],
+  "preserveInstalledRoots": [
+    "flutter-3.41.9",
+    "android-build/sdk",
+    "android-build/jdk/jdk-17.0.20.1+1",
+    "android-build/gradle/wrapper",
+    "ms-playwright"
+  ],
+  "currentProjectGitClean": true
+}

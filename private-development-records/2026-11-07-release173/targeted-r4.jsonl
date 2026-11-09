@@ -1,0 +1,165 @@
+{"protocolVersion":"0.1.1","runnerVersion":"1.30.0","pid":108896,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"D:/AnLi/test/qishui_player173_ui_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading D:/AnLi/test/qishui_player173_ui_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":1}
+{"suite":{"id":2,"platform":"vm","path":"D:/AnLi/test/qishui_history173_test.dart"},"type":"suite","time":6}
+{"test":{"id":3,"name":"loading D:/AnLi/test/qishui_history173_test.dart","suiteID":2,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":6}
+{"count":6,"time":7,"type":"allSuites"}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":4794}
+{"group":{"id":4,"suiteID":0,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":9,"line":null,"column":null,"url":null},"type":"group","time":4797}
+{"test":{"id":5,"name":"(setUpAll)","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":95,"column":3,"url":"file:///D:/AnLi/test/qishui_player173_ui_test.dart"},"type":"testStart","time":4798}
+{"testID":5,"messageType":"print","message":"[LiquidGlass] Initializing library...","type":"print","time":4868}
+{"testID":5,"messageType":"print","message":"[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)","type":"print","time":4868}
+{"testID":5,"messageType":"print","message":"[LiquidGlass] Initialization complete.","type":"print","time":4869}
+{"testID":5,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":4869}
+{"test":{"id":6,"name":"preview progress uses media length and seeks only on release","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":195,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_player173_ui_test.dart"},"type":"testStart","time":4870}
+{"testID":3,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":5155}
+{"group":{"id":7,"suiteID":2,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":14,"line":null,"column":null,"url":null},"type":"group","time":5156}
+{"test":{"id":8,"name":"remote history reads every page in server order and deduplicates boundaries","suiteID":2,"groupIDs":[7],"metadata":{"skip":false,"skipReason":null},"line":127,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":5156}
+{"testID":8,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5188}
+{"test":{"id":9,"name":"looping pagination fails instead of returning a partial full history","suiteID":2,"groupIDs":[7],"metadata":{"skip":false,"skipReason":null},"line":149,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":5188}
+{"testID":9,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5196}
+{"test":{"id":10,"name":"more without a cursor fails and a malformed response is not an empty history","suiteID":2,"groupIDs":[7],"metadata":{"skip":false,"skipReason":null},"line":163,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":5197}
+{"testID":10,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5200}
+{"test":{"id":11,"name":"account changes while reading discard the prior account response","suiteID":2,"groupIDs":[7],"metadata":{"skip":false,"skipReason":null},"line":179,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":5200}
+{"testID":11,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5203}
+{"test":{"id":12,"name":"confirmed playback sends only recent-media body then checks newest cloud item","suiteID":2,"groupIDs":[7],"metadata":{"skip":false,"skipReason":null},"line":192,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":5203}
+{"testID":12,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5212}
+{"test":{"id":13,"name":"a later real replay may reorder history after a confirmed earlier write","suiteID":2,"groupIDs":[7],"metadata":{"skip":false,"skipReason":null},"line":213,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":5212}
+{"testID":13,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5217}
+{"test":{"id":14,"name":"unknown write persists across a new reporter and does not replay when item is merely present","suiteID":2,"groupIDs":[7],"metadata":{"skip":false,"skipReason":null},"line":228,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":5217}
+{"testID":14,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5225}
+{"test":{"id":15,"name":"pending history can be reconciled by top-position readback without another write","suiteID":2,"groupIDs":[7],"metadata":{"skip":false,"skipReason":null},"line":256,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":5226}
+{"testID":15,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5230}
+{"test":{"id":16,"name":"successful dispatch with unreadable readback remains unknown and is not automatically replayed","suiteID":2,"groupIDs":[7],"metadata":{"skip":false,"skipReason":null},"line":274,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":5230}
+{"testID":16,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5234}
+{"test":{"id":17,"name":"definite refusal releases journal for a later explicit playback event","suiteID":2,"groupIDs":[7],"metadata":{"skip":false,"skipReason":null},"line":291,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":5234}
+{"testID":17,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5238}
+{"test":{"id":18,"name":"reporter ignores other platforms and duplicate deliveries but allows a new playback revision","suiteID":2,"groupIDs":[7],"metadata":{"skip":false,"skipReason":null},"line":310,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":5239}
+{"testID":18,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5246}
+{"test":{"id":19,"name":"disposal cancels queued account work and suppresses late statuses","suiteID":2,"groupIDs":[7],"metadata":{"skip":false,"skipReason":null},"line":337,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":5246}
+{"testID":19,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5251}
+{"test":{"id":20,"name":"unknown sync is reported separately without throwing into playback","suiteID":2,"groupIDs":[7],"metadata":{"skip":false,"skipReason":null},"line":360,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":5252}
+{"testID":20,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5255}
+{"test":{"id":21,"name":"actual player restore and failed resolution do not report; confirmed audible play does","suiteID":2,"groupIDs":[7],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":378,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":5255}
+{"testID":6,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6050}
+{"test":{"id":22,"name":"unknown media duration disables seeking despite catalog length","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":213,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_player173_ui_test.dart"},"type":"testStart","time":6050}
+{"testID":22,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6103}
+{"test":{"id":23,"name":"new track cancels old drag and delayed seek","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":228,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_player173_ui_test.dart"},"type":"testStart","time":6103}
+{"testID":23,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6162}
+{"test":{"id":24,"name":"loading cannot seek and position is clamped to actual media","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":263,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_player173_ui_test.dart"},"type":"testStart","time":6163}
+{"testID":24,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6199}
+{"test":{"id":25,"name":"cover progress remains usable at 320px with large text","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":282,"root_column":5,"root_url":"file:///D:/AnLi/test/qishui_player173_ui_test.dart"},"type":"testStart","time":6199}
+{"testID":25,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6467}
+{"test":{"id":26,"name":"lyrics progress remains usable at 320px with large text","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":282,"root_column":5,"root_url":"file:///D:/AnLi/test/qishui_player173_ui_test.dart"},"type":"testStart","time":6467}
+{"testID":26,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6738}
+{"test":{"id":27,"name":"production router advertises lyrics and both search entries to Android: system","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":311,"root_column":5,"root_url":"file:///D:/AnLi/test/qishui_player173_ui_test.dart"},"type":"testStart","time":6739}
+{"testID":27,"messageType":"print","message":"══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════\nThe following TestFailure was thrown running a test:\nExpected: false\n  Actual: <true>\n\nWhen the exception was thrown, this was the stack:\n#4      main.<anonymous closure> (file:///D:/AnLi/test/qishui_player173_ui_test.dart:380:9)\n<asynchronous suspension>\n#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)\n<asynchronous suspension>\n#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)\n<asynchronous suspension>\n<asynchronous suspension>\n(elided one frame from package:stack_trace)\n\nThis was caught by the test expectation on the following line:\n  file:///D:/AnLi/test/qishui_player173_ui_test.dart line 380\nThe test description was:\n  production router advertises lyrics and both search entries to Android: system\n════════════════════════════════════════════════════════════════════════════════════════════════════","type":"print","time":8867}
+{"testID":27,"error":"Test failed. See exception logs above.\nThe test description was: production router advertises lyrics and both search entries to Android: system","stackTrace":"","isFailure":false,"type":"error","time":8868}
+{"testID":27,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":8869}
+{"test":{"id":28,"name":"production router advertises lyrics and both search entries to Android: left","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":311,"root_column":5,"root_url":"file:///D:/AnLi/test/qishui_player173_ui_test.dart"},"type":"testStart","time":8869}
+{"testID":28,"messageType":"print","message":"══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════\nThe following TestFailure was thrown running a test:\nExpected: false\n  Actual: <true>\n\nWhen the exception was thrown, this was the stack:\n#4      main.<anonymous closure> (file:///D:/AnLi/test/qishui_player173_ui_test.dart:380:9)\n<asynchronous suspension>\n#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)\n<asynchronous suspension>\n#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)\n<asynchronous suspension>\n<asynchronous suspension>\n(elided one frame from package:stack_trace)\n\nThis was caught by the test expectation on the following line:\n  file:///D:/AnLi/test/qishui_player173_ui_test.dart line 380\nThe test description was:\n  production router advertises lyrics and both search entries to Android: left\n════════════════════════════════════════════════════════════════════════════════════════════════════","type":"print","time":10061}
+{"testID":28,"error":"Test failed. See exception logs above.\nThe test description was: production router advertises lyrics and both search entries to Android: left","stackTrace":"","isFailure":false,"type":"error","time":10084}
+{"testID":28,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":10084}
+{"test":{"id":29,"name":"production router advertises lyrics and both search entries to Android: right","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":311,"root_column":5,"root_url":"file:///D:/AnLi/test/qishui_player173_ui_test.dart"},"type":"testStart","time":10084}
+{"testID":29,"messageType":"print","message":"══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════\nThe following TestFailure was thrown running a test:\nExpected: false\n  Actual: <true>\n\nWhen the exception was thrown, this was the stack:\n#4      main.<anonymous closure> (file:///D:/AnLi/test/qishui_player173_ui_test.dart:380:9)\n<asynchronous suspension>\n#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)\n<asynchronous suspension>\n#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)\n<asynchronous suspension>\n<asynchronous suspension>\n(elided one frame from package:stack_trace)\n\nThis was caught by the test expectation on the following line:\n  file:///D:/AnLi/test/qishui_player173_ui_test.dart line 380\nThe test description was:\n  production router advertises lyrics and both search entries to Android: right\n════════════════════════════════════════════════════════════════════════════════════════════════════","type":"print","time":11140}
+{"testID":29,"error":"Test failed. See exception logs above.\nThe test description was: production router advertises lyrics and both search entries to Android: right","stackTrace":"","isFailure":false,"type":"error","time":11141}
+{"testID":29,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":11141}
+{"test":{"id":30,"name":"(tearDownAll)","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":11142}
+{"testID":30,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":11145}
+{"suite":{"id":31,"platform":"vm","path":"D:/AnLi/test/qishui_search173_test.dart"},"type":"suite","time":11196}
+{"test":{"id":32,"name":"loading D:/AnLi/test/qishui_search173_test.dart","suiteID":31,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":11196}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":32,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":12070}
+{"group":{"id":33,"suiteID":31,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":19,"line":null,"column":null,"url":null},"type":"group","time":12070}
+{"test":{"id":34,"name":"search parses grouped track-wrapper and direct track entities","suiteID":31,"groupIDs":[33],"metadata":{"skip":false,"skipReason":null},"line":33,"column":3,"url":"file:///D:/AnLi/test/qishui_search173_test.dart"},"type":"testStart","time":12070}
+{"testID":34,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12097}
+{"test":{"id":35,"name":"search keeps requested entity kind separate from mixed groups","suiteID":31,"groupIDs":[33],"metadata":{"skip":false,"skipReason":null},"line":61,"column":3,"url":"file:///D:/AnLi/test/qishui_search173_test.dart"},"type":"testStart","time":12098}
+{"testID":35,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12104}
+{"test":{"id":36,"name":"artist parser preserves zero and unknown totals without song inference","suiteID":31,"groupIDs":[33],"metadata":{"skip":false,"skipReason":null},"line":89,"column":3,"url":"file:///D:/AnLi/test/qishui_search173_test.dart"},"type":"testStart","time":12104}
+{"testID":36,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12106}
+{"test":{"id":37,"name":"named groups of another type do not enter legacy flat parsing","suiteID":31,"groupIDs":[33],"metadata":{"skip":false,"skipReason":null},"line":120,"column":3,"url":"file:///D:/AnLi/test/qishui_search173_test.dart"},"type":"testStart","time":12107}
+{"testID":37,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12109}
+{"test":{"id":38,"name":"unnamed official nullable group supports known requested entities","suiteID":31,"groupIDs":[33],"metadata":{"skip":false,"skipReason":null},"line":138,"column":3,"url":"file:///D:/AnLi/test/qishui_search173_test.dart"},"type":"testStart","time":12109}
+{"testID":38,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12113}
+{"test":{"id":39,"name":"duplicate requested groups fail instead of mixing pagination","suiteID":31,"groupIDs":[33],"metadata":{"skip":false,"skipReason":null},"line":153,"column":3,"url":"file:///D:/AnLi/test/qishui_search173_test.dart"},"type":"testStart","time":12113}
+{"testID":39,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12116}
+{"test":{"id":40,"name":"flat legacy rows still parse with data wrapper","suiteID":31,"groupIDs":[33],"metadata":{"skip":false,"skipReason":null},"line":165,"column":3,"url":"file:///D:/AnLi/test/qishui_search173_test.dart"},"type":"testStart","time":12117}
+{"testID":40,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12119}
+{"test":{"id":41,"name":"request forwards stable search ID, exact keyword, cursor and cancellation","suiteID":31,"groupIDs":[33],"metadata":{"skip":false,"skipReason":null},"line":174,"column":3,"url":"file:///D:/AnLi/test/qishui_search173_test.dart"},"type":"testStart","time":12119}
+{"testID":41,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12124}
+{"test":{"id":42,"name":"query validation happens before transport","suiteID":31,"groupIDs":[33],"metadata":{"skip":false,"skipReason":null},"line":225,"column":3,"url":"file:///D:/AnLi/test/qishui_search173_test.dart"},"type":"testStart","time":12124}
+{"testID":42,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12131}
+{"test":{"id":43,"name":"search IDs are per-operation UUIDs instead of account identifiers","suiteID":31,"groupIDs":[33],"metadata":{"skip":false,"skipReason":null},"line":249,"column":3,"url":"file:///D:/AnLi/test/qishui_search173_test.dart"},"type":"testStart","time":12132}
+{"testID":43,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12136}
+{"test":{"id":44,"name":"empty middle page continues and duplicate rows preserve stable order","suiteID":31,"groupIDs":[33],"metadata":{"skip":false,"skipReason":null},"line":262,"column":3,"url":"file:///D:/AnLi/test/qishui_search173_test.dart"},"type":"testStart","time":12136}
+{"testID":44,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12139}
+{"test":{"id":45,"name":"repeated cursor stops while retaining newly received usable rows","suiteID":31,"groupIDs":[33],"metadata":{"skip":false,"skipReason":null},"line":290,"column":3,"url":"file:///D:/AnLi/test/qishui_search173_test.dart"},"type":"testStart","time":12140}
+{"testID":45,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12142}
+{"test":{"id":46,"name":"missing continuation is explicit and does not claim all rows were loaded","suiteID":31,"groupIDs":[33],"metadata":{"skip":false,"skipReason":null},"line":313,"column":3,"url":"file:///D:/AnLi/test/qishui_search173_test.dart"},"type":"testStart","time":12142}
+{"testID":46,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12145}
+{"test":{"id":47,"name":"wrong page cannot replace a current accumulator","suiteID":31,"groupIDs":[33],"metadata":{"skip":false,"skipReason":null},"line":335,"column":3,"url":"file:///D:/AnLi/test/qishui_search173_test.dart"},"type":"testStart","time":12146}
+{"testID":47,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12148}
+{"test":{"id":48,"name":"bounded page count stops duplicate-only pages with fresh cursors","suiteID":31,"groupIDs":[33],"metadata":{"skip":false,"skipReason":null},"line":344,"column":3,"url":"file:///D:/AnLi/test/qishui_search173_test.dart"},"type":"testStart","time":12148}
+{"testID":48,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12154}
+{"test":{"id":49,"name":"artist details verify ID and keep explicit count semantics","suiteID":31,"groupIDs":[33],"metadata":{"skip":false,"skipReason":null},"line":362,"column":3,"url":"file:///D:/AnLi/test/qishui_search173_test.dart"},"type":"testStart","time":12154}
+{"testID":49,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12157}
+{"test":{"id":50,"name":"artist ID cannot inject another route","suiteID":31,"groupIDs":[33],"metadata":{"skip":false,"skipReason":null},"line":389,"column":3,"url":"file:///D:/AnLi/test/qishui_search173_test.dart"},"type":"testStart","time":12157}
+{"testID":50,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12159}
+{"test":{"id":51,"name":"PC artist works use exact GET and fixed page offsets","suiteID":31,"groupIDs":[33],"metadata":{"skip":false,"skipReason":null},"line":415,"column":3,"url":"file:///D:/AnLi/test/qishui_search173_test.dart"},"type":"testStart","time":12159}
+{"testID":51,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12162}
+{"test":{"id":52,"name":"artist metadata merge rejects a different artist and preserves missing values","suiteID":31,"groupIDs":[33],"metadata":{"skip":false,"skipReason":null},"line":441,"column":3,"url":"file:///D:/AnLi/test/qishui_search173_test.dart"},"type":"testStart","time":12162}
+{"testID":52,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12164}
+{"suite":{"id":53,"platform":"vm","path":"D:/AnLi/test/qishui_search173_ui_test.dart"},"type":"suite","time":12217}
+{"test":{"id":54,"name":"loading D:/AnLi/test/qishui_search173_ui_test.dart","suiteID":53,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":12217}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":54,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":13440}
+{"group":{"id":55,"suiteID":53,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":6,"line":null,"column":null,"url":null},"type":"group","time":13440}
+{"test":{"id":56,"name":"(setUpAll)","suiteID":53,"groupIDs":[55],"metadata":{"skip":false,"skipReason":null},"line":25,"column":3,"url":"file:///D:/AnLi/test/qishui_search173_ui_test.dart"},"type":"testStart","time":13441}
+{"testID":56,"messageType":"print","message":"[LiquidGlass] Initializing library...","type":"print","time":13496}
+{"testID":56,"messageType":"print","message":"[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)","type":"print","time":13497}
+{"testID":56,"messageType":"print","message":"[LiquidGlass] Initialization complete.","type":"print","time":13497}
+{"testID":56,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":13497}
+{"test":{"id":57,"name":"new keyword cancels old request and ignores its late result","suiteID":53,"groupIDs":[55],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":94,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_search173_ui_test.dart"},"type":"testStart","time":13497}
+{"testID":57,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14822}
+{"test":{"id":58,"name":"artist tab has independent results and opens paged works","suiteID":53,"groupIDs":[55],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":142,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_search173_ui_test.dart"},"type":"testStart","time":14823}
+{"testID":58,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":15297}
+{"test":{"id":59,"name":"later page error keeps first rows and retries without duplicates","suiteID":53,"groupIDs":[55],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":197,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_search173_ui_test.dart"},"type":"testStart","time":15297}
+{"testID":59,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":15562}
+{"test":{"id":60,"name":"account change hides pending and loaded search data","suiteID":53,"groupIDs":[55],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":245,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_search173_ui_test.dart"},"type":"testStart","time":15563}
+{"testID":60,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":15690}
+{"test":{"id":61,"name":"search artists remains usable at narrow large text dark=false","suiteID":53,"groupIDs":[55],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":274,"root_column":5,"root_url":"file:///D:/AnLi/test/qishui_search173_ui_test.dart"},"type":"testStart","time":15690}
+{"testID":61,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":15835}
+{"test":{"id":62,"name":"search artists remains usable at narrow large text dark=true","suiteID":53,"groupIDs":[55],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":274,"root_column":5,"root_url":"file:///D:/AnLi/test/qishui_search173_ui_test.dart"},"type":"testStart","time":15835}
+{"testID":62,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":15966}
+{"test":{"id":63,"name":"(tearDownAll)","suiteID":53,"groupIDs":[55],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":15966}
+{"testID":63,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":15968}
+{"suite":{"id":64,"platform":"vm","path":"D:/AnLi/test/qishui_media173_test.dart"},"type":"suite","time":16240}
+{"test":{"id":65,"name":"loading D:/AnLi/test/qishui_media173_test.dart","suiteID":64,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":16240}
+test/qishui_media173_test.dart:95:68: Error: No named parameter with the name 'title'.
+      expect(qishuiCanSkipPlaybackFailure(sodaRecording().copyWith(title: '歌曲 $i'),
+                                                                   ^^^^^
+{"testID":65,"error":"Failed to load \"D:/AnLi/test/qishui_media173_test.dart\":\nCompilation failed for testPath=D:/AnLi/test/qishui_media173_test.dart: test/qishui_media173_test.dart:95:68: Error: No named parameter with the name 'title'.\n      expect(qishuiCanSkipPlaybackFailure(sodaRecording().copyWith(title: '歌曲 $i'),\n                                                                   ^^^^^\n.","stackTrace":"","isFailure":false,"type":"error","time":21254}
+{"testID":65,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":21254}
+{"suite":{"id":66,"platform":"vm","path":"D:/AnLi/test/qishui_cover173_test.dart"},"type":"suite","time":21255}
+{"test":{"id":67,"name":"loading D:/AnLi/test/qishui_cover173_test.dart","suiteID":66,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":21255}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":67,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":31758}
+{"group":{"id":68,"suiteID":66,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":null,"column":null,"url":null},"type":"group","time":31758}
+{"test":{"id":69,"name":"CRC32 matches standard check vector","suiteID":66,"groupIDs":[68],"metadata":{"skip":false,"skipReason":null},"line":25,"column":3,"url":"file:///D:/AnLi/test/qishui_cover173_test.dart"},"type":"testStart","time":31758}
+{"testID":69,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":31776}
+{"test":{"id":70,"name":"grant refuses IP, HTTP, credentials and unrelated storage domains","suiteID":66,"groupIDs":[68],"metadata":{"skip":false,"skipReason":null},"line":28,"column":3,"url":"file:///D:/AnLi/test/qishui_cover173_test.dart"},"type":"testStart","time":31776}
+{"testID":70,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":31783}
+{"test":{"id":71,"name":"ImageX apply/upload/commit sends no music identity and requires matching URI","suiteID":66,"groupIDs":[68],"metadata":{"skip":false,"skipReason":null},"line":35,"column":3,"url":"file:///D:/AnLi/test/qishui_cover173_test.dart"},"type":"testStart","time":31783}
+{"testID":71,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33047}
+{"test":{"id":72,"name":"unknown playlist cover update is journaled and never uploaded again","suiteID":66,"groupIDs":[68],"metadata":{"skip":false,"skipReason":null},"line":69,"column":3,"url":"file:///D:/AnLi/test/qishui_cover173_test.dart"},"type":"testStart","time":33048}
+{"testID":72,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33111}
+{"test":{"id":73,"name":"official readback confirms cover identity and unauthorized owner never uploads","suiteID":66,"groupIDs":[68],"metadata":{"skip":false,"skipReason":null},"line":87,"column":3,"url":"file:///D:/AnLi/test/qishui_cover173_test.dart"},"type":"testStart","time":33112}
+{"testID":73,"error":"汽水返回了空数据，请稍后重试","stackTrace":"package:mesting_music/features/music_platform/qishui/qishui_api.dart 459:9  QishuiApi.request\n","isFailure":false,"type":"error","time":33127}
+{"testID":73,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":33127}

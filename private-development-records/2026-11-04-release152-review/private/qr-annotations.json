@@ -1,0 +1,112 @@
+[
+  {
+    "class": "Lcom/kugou/common/useraccount/protocol/KGQRCodeApi$KGQRCodeSevice;",
+    "annotations": [
+      {
+        "annotation": "Ldalvik/annotation/EnclosingClass;",
+        "value": "Lcom/kugou/common/useraccount/protocol/KGQRCodeApi;"
+      },
+      {
+        "annotation": "Ldalvik/annotation/InnerClass;",
+        "accessFlags": {
+          "type": 4,
+          "value": 1544
+        },
+        "name": "KGQRCodeSevice"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/kugou/common/useraccount/protocol/KGQRCodeApi$KGQRCodeSevice;",
+    "method": "getQRCode",
+    "annotations": [
+      {
+        "annotation": "Ldalvik/annotation/Signature;",
+        "value": [
+          "(",
+          "Ljava/util/Map<",
+          "Ljava/lang/String;",
+          "Ljava/lang/String;",
+          ">;)",
+          "Lrx/Observable<",
+          "Lcom/kugou/common/useraccount/entity/LoginResponse<",
+          "Lcom/kugou/common/useraccount/entity/QRCode;",
+          ">;>;"
+        ]
+      },
+      {
+        "annotation": "Lretrofit2/http/GET;",
+        "value": "v2/qrcode"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/kugou/common/useraccount/protocol/KGQRCodeApi$KGQRCodeSevice;",
+    "method": "getQRCodeUserInfo",
+    "annotations": [
+      {
+        "annotation": "Ldalvik/annotation/Signature;",
+        "value": [
+          "(",
+          "Ljava/util/Map<",
+          "Ljava/lang/String;",
+          "Ljava/lang/String;",
+          ">;)",
+          "Lrx/Observable<",
+          "Lcom/kugou/common/useraccount/entity/LoginResponse<",
+          "Lcom/kugou/common/useraccount/entity/QRCodeStatus;",
+          ">;>;"
+        ]
+      },
+      {
+        "annotation": "Lretrofit2/http/GET;",
+        "value": "v2/get_userinfo_qrcode"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/kugou/common/useraccount/protocol/KGQRCodeApi;",
+    "annotations": [
+      {
+        "annotation": "Ldalvik/annotation/MemberClasses;",
+        "value": [
+          "Lcom/kugou/common/useraccount/protocol/KGQRCodeApi$KGQRCodeSevice;"
+        ]
+      }
+    ]
+  },
+  {
+    "class": "Lcom/kugou/common/useraccount/protocol/KGQRCodeApi;",
+    "method": "b",
+    "annotations": [
+      {
+        "annotation": "Ldalvik/annotation/Signature;",
+        "value": [
+          "()",
+          "Lrx/Observable<",
+          "Lcom/kugou/common/useraccount/entity/LoginResponse<",
+          "Lcom/kugou/common/useraccount/entity/QRCode;",
+          ">;>;"
+        ]
+      }
+    ]
+  },
+  {
+    "class": "Lcom/kugou/common/useraccount/protocol/KGQRCodeApi;",
+    "method": "c",
+    "annotations": [
+      {
+        "annotation": "Ldalvik/annotation/Signature;",
+        "value": [
+          "(",
+          "Ljava/lang/String;",
+          ")",
+          "Lrx/Observable<",
+          "Lcom/kugou/common/useraccount/entity/LoginResponse<",
+          "Lcom/kugou/common/useraccount/entity/QRCodeStatus;",
+          ">;>;"
+        ]
+      }
+    ]
+  }
+]

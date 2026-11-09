@@ -1,0 +1,221 @@
+{
+  "source_apk_sha256": "b639e67c13e03377f0f9d8068c5e0419b1acd42c7d529362f11ae704b3838741",
+  "dex_entry": "classes21.dex",
+  "dex_sha256": "d28a15c360d503b20d064987620d1a3167e8ad84e3d08b0d12dcf9da18dd265b",
+  "selected_owner": "Lcom/bytedance/sdk/account/utils/NetworkUtils;",
+  "scope": "Original DEX instructions, not runtime/data-flow proof.",
+  "methods": [
+    {
+      "method_index": 55813,
+      "owner": "Lcom/bytedance/sdk/account/utils/NetworkUtils;",
+      "name": "getPathWithCommonQuery",
+      "proto_index": 4223,
+      "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/safety/ParamLimitUrlBuilder;",
+      "code_offset": 5133620,
+      "registers": 3,
+      "incoming_words": 1,
+      "outgoing_words": 3,
+      "code_unit_count": 39,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x22",
+          "units": [
+            34,
+            10022
+          ],
+          "type": "Lcom/bytedance/sdk/account/safety/ParamLimitUrlBuilder;"
+        },
+        {
+          "code_unit_offset": 2,
+          "opcode": "0x70",
+          "units": [
+            8304,
+            54297,
+            32
+          ],
+          "method": {
+            "method_index": 54297,
+            "owner": "Lcom/bytedance/sdk/account/safety/ParamLimitUrlBuilder;",
+            "name": "<init>",
+            "proto_index": 11943,
+            "prototype": "(Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 5,
+          "opcode": "0x1a",
+          "units": [
+            538,
+            50967
+          ],
+          "string_index": 50967,
+          "string": "passport-sdk-version"
+        },
+        {
+          "code_unit_offset": 7,
+          "opcode": "0x14",
+          "units": [
+            276,
+            60651,
+            0
+          ],
+          "const": 60651,
+          "dest_register": 1
+        },
+        {
+          "code_unit_offset": 10,
+          "opcode": "0x6e",
+          "units": [
+            12398,
+            54300,
+            288
+          ],
+          "method": {
+            "method_index": 54300,
+            "owner": "Lcom/bytedance/sdk/account/safety/ParamLimitUrlBuilder;",
+            "name": "addParam",
+            "proto_index": 11949,
+            "prototype": "(Ljava/lang/String;I)V"
+          }
+        },
+        {
+          "code_unit_offset": 13,
+          "opcode": "0x71",
+          "units": [
+            113,
+            54557,
+            0
+          ],
+          "method": {
+            "method_index": 54557,
+            "owner": "Lcom/bytedance/sdk/account/settings/AuthExpirationConfigManager;",
+            "name": "isEnable",
+            "proto_index": 13349,
+            "prototype": "()Z"
+          }
+        },
+        {
+          "code_unit_offset": 16,
+          "opcode": "0xa",
+          "units": [
+            522
+          ]
+        },
+        {
+          "code_unit_offset": 17,
+          "opcode": "0x38",
+          "units": [
+            568,
+            9
+          ]
+        },
+        {
+          "code_unit_offset": 19,
+          "opcode": "0x1a",
+          "units": [
+            538,
+            59492
+          ],
+          "string_index": 59492,
+          "string": "use_new_token_expire_rule"
+        },
+        {
+          "code_unit_offset": 21,
+          "opcode": "0x1a",
+          "units": [
+            282,
+            58721
+          ],
+          "string_index": 58721,
+          "string": "true"
+        },
+        {
+          "code_unit_offset": 23,
+          "opcode": "0x6e",
+          "units": [
+            12398,
+            54302,
+            288
+          ],
+          "method": {
+            "method_index": 54302,
+            "owner": "Lcom/bytedance/sdk/account/safety/ParamLimitUrlBuilder;",
+            "name": "addParam",
+            "proto_index": 12298,
+            "prototype": "(Ljava/lang/String;Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 26,
+          "opcode": "0x1a",
+          "units": [
+            538,
+            53148
+          ],
+          "string_index": 53148,
+          "string": "request_from_account_sdk"
+        },
+        {
+          "code_unit_offset": 28,
+          "opcode": "0x1a",
+          "units": [
+            282,
+            6968
+          ],
+          "string_index": 6968,
+          "string": "1"
+        },
+        {
+          "code_unit_offset": 30,
+          "opcode": "0x6e",
+          "units": [
+            12398,
+            54302,
+            288
+          ],
+          "method": {
+            "method_index": 54302,
+            "owner": "Lcom/bytedance/sdk/account/safety/ParamLimitUrlBuilder;",
+            "name": "addParam",
+            "proto_index": 12298,
+            "prototype": "(Ljava/lang/String;Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 33,
+          "opcode": "0x1a",
+          "units": [
+            538,
+            46016
+          ],
+          "string_index": 46016,
+          "string": "is_from_ttaccountsdk"
+        },
+        {
+          "code_unit_offset": 35,
+          "opcode": "0x6e",
+          "units": [
+            12398,
+            54302,
+            288
+          ],
+          "method": {
+            "method_index": 54302,
+            "owner": "Lcom/bytedance/sdk/account/safety/ParamLimitUrlBuilder;",
+            "name": "addParam",
+            "proto_index": 12298,
+            "prototype": "(Ljava/lang/String;Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 38,
+          "opcode": "0x11",
+          "units": [
+            17
+          ]
+        }
+      ]
+    }
+  ]
+}

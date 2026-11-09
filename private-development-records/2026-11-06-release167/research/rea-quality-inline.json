@@ -1,0 +1,247 @@
+{
+  "evidence_id": "ev_2ed45f8cbf8a44dbf76e4a9ccb49d3f0c4f735f1dc9b4763780d4c2ba7a1fc10",
+  "subject": {
+    "name": "official19-classes21.apk",
+    "digest": {
+      "sha256": "5dc6a0e5db50dfad3c38a520ff356379f0272d1d289f3961f1e73dc7bf661467"
+    },
+    "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-06-release167\\research\\official19-classes21.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-analysis-view",
+    "name": "REA analysis view projection",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis-view",
+  "operation": "inspect_analysis_view",
+  "parameters": {
+    "parent_evidence_id": "ev_30eade50857c72741e857b04765cb285a3d45638b31c2f11829a5cd57dc01911",
+    "view": {
+      "kind": "summary"
+    }
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "kind": "summary",
+    "view": {
+      "kind": "summary"
+    },
+    "parent_evidence_id": "ev_30eade50857c72741e857b04765cb285a3d45638b31c2f11829a5cd57dc01911",
+    "parent_operation": "inspect_android_class",
+    "parent_digest": "30eade50857c72741e857b04765cb285a3d45638b31c2f11829a5cd57dc01911",
+    "view_digest": "429ee2df30c09f1a7f8cb5f378ccbf1ba52eb9ffb4957aea0bb6204b88d6b68b",
+    "artifact": {
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-06-release167\\research\\official19-classes21.apk",
+      "sha256": "5dc6a0e5db50dfad3c38a520ff356379f0272d1d289f3961f1e73dc7bf661467"
+    },
+    "coverage": {
+      "status": "complete-within-view",
+      "examined": 1,
+      "total": 1,
+      "next_offset": null,
+      "exhausted": true
+    },
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ],
+    "unknowns": [
+      "Static class and method analysis does not establish runtime behavior or APK authenticity."
+    ],
+    "summary": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 3072
+      },
+      "class_name": "com.luna.common.player.quality.Quality",
+      "methods": [
+        {
+          "name": "$values",
+          "reported_signature": "$values(): com.luna.common.player.quality.Quality[]",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()[Lcom/luna/common/player/quality/Quality;"
+        },
+        {
+          "name": "<clinit>",
+          "reported_signature": "<clinit>(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(java.lang.String, int, int, java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": true,
+          "dex_descriptor": "(Ljava/lang/String;IILjava/lang/String;)V"
+        },
+        {
+          "name": "getEntries",
+          "reported_signature": "getEntries(): kotlin.enums.EnumEntries<com.luna.common.player.quality.Quality>",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Lkotlin/enums/EnumEntries;"
+        },
+        {
+          "name": "getServerKey",
+          "reported_signature": "getServerKey(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getValue",
+          "reported_signature": "getValue(): int",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()I"
+        },
+        {
+          "name": "valueOf",
+          "reported_signature": "valueOf(java.lang.String): com.luna.common.player.quality.Quality",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)Lcom/luna/common/player/quality/Quality;"
+        },
+        {
+          "name": "values",
+          "reported_signature": "values(): com.luna.common.player.quality.Quality[]",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()[Lcom/luna/common/player/quality/Quality;"
+        }
+      ],
+      "fields": [
+        {
+          "name": "$ENTRIES",
+          "reported_type": "kotlin.enums.EnumEntries",
+          "dex_static_value": null
+        },
+        {
+          "name": "$VALUES",
+          "reported_type": "com.luna.common.player.quality.Quality[]",
+          "dex_static_value": null
+        },
+        {
+          "name": "Companion",
+          "reported_type": "com.luna.common.player.quality.Quality$Companion",
+          "dex_static_value": null
+        },
+        {
+          "name": "HIGHER",
+          "reported_type": "com.luna.common.player.quality.Quality",
+          "dex_static_value": null
+        },
+        {
+          "name": "HIGHERER",
+          "reported_type": "com.luna.common.player.quality.Quality",
+          "dex_static_value": null
+        },
+        {
+          "name": "HIGHEST",
+          "reported_type": "com.luna.common.player.quality.Quality",
+          "dex_static_value": null
+        },
+        {
+          "name": "HIRES",
+          "reported_type": "com.luna.common.player.quality.Quality",
+          "dex_static_value": null
+        },
+        {
+          "name": "LOSSLESS",
+          "reported_type": "com.luna.common.player.quality.Quality",
+          "dex_static_value": null
+        },
+        {
+          "name": "LOW",
+          "reported_type": "com.luna.common.player.quality.Quality",
+          "dex_static_value": null
+        },
+        {
+          "name": "LOWER",
+          "reported_type": "com.luna.common.player.quality.Quality",
+          "dex_static_value": null
+        },
+        {
+          "name": "LOWEST",
+          "reported_type": "com.luna.common.player.quality.Quality",
+          "dex_static_value": null
+        },
+        {
+          "name": "MEDIUM",
+          "reported_type": "com.luna.common.player.quality.Quality",
+          "dex_static_value": null
+        },
+        {
+          "name": "ORIGINAL",
+          "reported_type": "com.luna.common.player.quality.Quality",
+          "dex_static_value": null
+        },
+        {
+          "name": "SPATIAL",
+          "reported_type": "com.luna.common.player.quality.Quality",
+          "dex_static_value": null
+        },
+        {
+          "name": "UNKNOWN",
+          "reported_type": "com.luna.common.player.quality.Quality",
+          "dex_static_value": null
+        },
+        {
+          "name": "changeQuickRedirect",
+          "reported_type": "com.bytedance.hotfix.base.ChangeQuickRedirect",
+          "dex_static_value": null
+        },
+        {
+          "name": "robustFieldMap",
+          "reported_type": "java.lang.Object",
+          "dex_static_value": null
+        },
+        {
+          "name": "serverKey",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "value",
+          "reported_type": "int",
+          "dex_static_value": null
+        }
+      ],
+      "inner_classes": [
+        "com.luna.common.player.quality.Quality.Companion"
+      ]
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-06-release167\\research\\official19-classes21.apk"
+    }
+  ],
+  "evidence_links": [
+    "ev_30eade50857c72741e857b04765cb285a3d45638b31c2f11829a5cd57dc01911"
+  ]
+}

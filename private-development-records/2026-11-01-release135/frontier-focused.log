@@ -1,0 +1,1836 @@
+00:00 +0: loading D:/AnLi/test/release_135_scroll_frontier_test.dart
+00:00 +0: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: fast fling stops at prepared songs, releases on readiness, and allows upward scrolling bouncing=false
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  StatefulElement#21686(DEFUNCT)
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#df0e7 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#edff4] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#a3bed relayoutBoundary=up3
+      child: RenderTransform#95b1f relayoutBoundary=up4
+        child: _RenderScrollSemantics#7685b relayoutBoundary=up5
+          child: RenderPointerListener#f2879 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#599ef relayoutBoundary=up7
+    child 2: RenderConstrainedBox#4f724 relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#7d9d9 NEEDS-PAINT
+        child: RenderSemanticsAnnotations#82add relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#33c67 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#d2e4d NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#df0e7 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#edff4] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#a3bed relayoutBoundary=up3
+      child: RenderTransform#95b1f relayoutBoundary=up4
+        child: _RenderScrollSemantics#7685b relayoutBoundary=up5
+          child: RenderPointerListener#f2879 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#599ef relayoutBoundary=up7
+    child 2: RenderConstrainedBox#4f724 relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#7d9d9 NEEDS-PAINT
+        child: RenderSemanticsAnnotations#82add relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#33c67 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#d2e4d NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#df0e7 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#edff4] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#a3bed relayoutBoundary=up3
+      child: RenderTransform#95b1f relayoutBoundary=up4
+        child: _RenderScrollSemantics#7685b relayoutBoundary=up5
+          child: RenderPointerListener#f2879 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#599ef relayoutBoundary=up7
+    child 2: RenderConstrainedBox#4f724 relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#7d9d9 NEEDS-PAINT
+        child: RenderSemanticsAnnotations#82add relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#33c67 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#d2e4d NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#df0e7 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#edff4] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#a3bed relayoutBoundary=up3
+      child: RenderTransform#95b1f relayoutBoundary=up4
+        child: _RenderScrollSemantics#7685b relayoutBoundary=up5
+          child: RenderPointerListener#f2879 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#599ef relayoutBoundary=up7
+    child 2: RenderConstrainedBox#4f724 relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#7d9d9 NEEDS-PAINT
+        child: RenderSemanticsAnnotations#82add relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#33c67 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#d2e4d NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#df0e7 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#edff4] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#a3bed relayoutBoundary=up3
+      child: RenderTransform#95b1f relayoutBoundary=up4
+        child: _RenderScrollSemantics#7685b relayoutBoundary=up5
+          child: RenderPointerListener#f2879 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#599ef relayoutBoundary=up7
+    child 2: RenderConstrainedBox#4f724 relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#7d9d9 NEEDS-PAINT
+        child: RenderSemanticsAnnotations#82add relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#33c67 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#d2e4d NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#df0e7 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#edff4] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#a3bed relayoutBoundary=up3
+      child: RenderTransform#95b1f relayoutBoundary=up4
+        child: _RenderScrollSemantics#7685b relayoutBoundary=up5
+          child: RenderPointerListener#f2879 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#599ef relayoutBoundary=up7
+    child 2: RenderConstrainedBox#4f724 relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#7d9d9 NEEDS-PAINT
+        child: RenderSemanticsAnnotations#82add relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#33c67 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#d2e4d NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#df0e7 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#edff4] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#a3bed relayoutBoundary=up3
+      child: RenderTransform#95b1f relayoutBoundary=up4
+        child: _RenderScrollSemantics#7685b relayoutBoundary=up5
+          child: RenderPointerListener#f2879 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#599ef relayoutBoundary=up7
+    child 2: RenderConstrainedBox#4f724 relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#7d9d9 NEEDS-PAINT
+        child: RenderSemanticsAnnotations#82add relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#33c67 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#d2e4d NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#df0e7 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#edff4] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#a3bed relayoutBoundary=up3
+      child: RenderTransform#95b1f relayoutBoundary=up4
+        child: _RenderScrollSemantics#7685b relayoutBoundary=up5
+          child: RenderPointerListener#f2879 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#599ef relayoutBoundary=up7
+    child 2: RenderConstrainedBox#4f724 relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#7d9d9 NEEDS-PAINT
+        child: RenderSemanticsAnnotations#82add relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#33c67 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#d2e4d NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#df0e7 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#edff4] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#a3bed relayoutBoundary=up3
+      child: RenderTransform#95b1f relayoutBoundary=up4
+        child: _RenderScrollSemantics#7685b relayoutBoundary=up5
+          child: RenderPointerListener#f2879 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#599ef relayoutBoundary=up7
+    child 2: RenderConstrainedBox#4f724 relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#7d9d9 NEEDS-PAINT
+        child: RenderSemanticsAnnotations#82add relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#33c67 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#d2e4d NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#df0e7 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#edff4] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#a3bed relayoutBoundary=up3
+      child: RenderTransform#95b1f relayoutBoundary=up4
+        child: _RenderScrollSemantics#7685b relayoutBoundary=up5
+          child: RenderPointerListener#f2879 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#599ef relayoutBoundary=up7
+    child 2: RenderConstrainedBox#4f724 relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#7d9d9 NEEDS-PAINT
+        child: RenderSemanticsAnnotations#82add relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#33c67 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#d2e4d NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#df0e7 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#edff4] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#a3bed relayoutBoundary=up3
+      child: RenderTransform#95b1f relayoutBoundary=up4
+        child: _RenderScrollSemantics#7685b relayoutBoundary=up5
+          child: RenderPointerListener#f2879 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#599ef relayoutBoundary=up7
+    child 2: RenderConstrainedBox#4f724 relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#7d9d9 NEEDS-PAINT
+        child: RenderSemanticsAnnotations#82add relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#33c67 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#d2e4d NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:120:22)
+<asynchronous suspension>
+#29     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#30     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#df0e7 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#edff4] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#a3bed relayoutBoundary=up3
+      child: RenderTransform#95b1f relayoutBoundary=up4
+        child: _RenderScrollSemantics#7685b relayoutBoundary=up5
+          child: RenderPointerListener#f2879 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#599ef relayoutBoundary=up7
+    child 2: RenderConstrainedBox#4f724 relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#7d9d9 NEEDS-PAINT
+        child: RenderSemanticsAnnotations#82add relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#33c67 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#d2e4d NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: a value less than or equal to <225>
+  Actual: <2500.0>
+   Which: is not a value less than or equal to <225>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:121:9)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_135_scroll_frontier_test.dart line 121
+The test description was:
+  fast fling stops at prepared songs, releases on readiness, and allows upward scrolling
+  bouncing=false
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following message was thrown:
+Multiple exceptions (13) were detected during the running of the current test, and at least one was
+unexpected.
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:01 +0 -1: fast fling stops at prepared songs, releases on readiness, and allows upward scrolling bouncing=false [E]
+  Test failed. See exception logs above.
+  The test description was: fast fling stops at prepared songs, releases on readiness, and allows upward scrolling bouncing=false
+  
+00:01 +0 -1: fast fling stops at prepared songs, releases on readiness, and allows upward scrolling bouncing=true
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  StatefulElement#5780c(DEFUNCT)
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#1e2e6 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#2b8e6] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#31872 relayoutBoundary=up3
+      child: RenderTransform#d3052 relayoutBoundary=up4
+        child: _RenderScrollSemantics#c45ed relayoutBoundary=up5
+          child: RenderPointerListener#62d40 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#ccdc4 relayoutBoundary=up7
+    child 2: RenderConstrainedBox#5060e relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#df8eb NEEDS-PAINT
+        child: RenderSemanticsAnnotations#d5539 relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#4ba55 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#a9a0f NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#1e2e6 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#2b8e6] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#31872 relayoutBoundary=up3
+      child: RenderTransform#d3052 relayoutBoundary=up4
+        child: _RenderScrollSemantics#c45ed relayoutBoundary=up5
+          child: RenderPointerListener#62d40 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#ccdc4 relayoutBoundary=up7
+    child 2: RenderConstrainedBox#5060e relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#df8eb NEEDS-PAINT
+        child: RenderSemanticsAnnotations#d5539 relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#4ba55 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#a9a0f NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#1e2e6 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#2b8e6] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#31872 relayoutBoundary=up3
+      child: RenderTransform#d3052 relayoutBoundary=up4
+        child: _RenderScrollSemantics#c45ed relayoutBoundary=up5
+          child: RenderPointerListener#62d40 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#ccdc4 relayoutBoundary=up7
+    child 2: RenderConstrainedBox#5060e relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#df8eb NEEDS-PAINT
+        child: RenderSemanticsAnnotations#d5539 relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#4ba55 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#a9a0f NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#1e2e6 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#2b8e6] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#31872 relayoutBoundary=up3
+      child: RenderTransform#d3052 relayoutBoundary=up4
+        child: _RenderScrollSemantics#c45ed relayoutBoundary=up5
+          child: RenderPointerListener#62d40 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#ccdc4 relayoutBoundary=up7
+    child 2: RenderConstrainedBox#5060e relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#df8eb NEEDS-PAINT
+        child: RenderSemanticsAnnotations#d5539 relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#4ba55 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#a9a0f NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#1e2e6 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#2b8e6] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#31872 relayoutBoundary=up3
+      child: RenderTransform#d3052 relayoutBoundary=up4
+        child: _RenderScrollSemantics#c45ed relayoutBoundary=up5
+          child: RenderPointerListener#62d40 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#ccdc4 relayoutBoundary=up7
+    child 2: RenderConstrainedBox#5060e relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#df8eb NEEDS-PAINT
+        child: RenderSemanticsAnnotations#d5539 relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#4ba55 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#a9a0f NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#1e2e6 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#2b8e6] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#31872 relayoutBoundary=up3
+      child: RenderTransform#d3052 relayoutBoundary=up4
+        child: _RenderScrollSemantics#c45ed relayoutBoundary=up5
+          child: RenderPointerListener#62d40 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#ccdc4 relayoutBoundary=up7
+    child 2: RenderConstrainedBox#5060e relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#df8eb NEEDS-PAINT
+        child: RenderSemanticsAnnotations#d5539 relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#4ba55 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#a9a0f NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#1e2e6 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#2b8e6] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#31872 relayoutBoundary=up3
+      child: RenderTransform#d3052 relayoutBoundary=up4
+        child: _RenderScrollSemantics#c45ed relayoutBoundary=up5
+          child: RenderPointerListener#62d40 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#ccdc4 relayoutBoundary=up7
+    child 2: RenderConstrainedBox#5060e relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#df8eb NEEDS-PAINT
+        child: RenderSemanticsAnnotations#d5539 relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#4ba55 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#a9a0f NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#1e2e6 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#2b8e6] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#31872 relayoutBoundary=up3
+      child: RenderTransform#d3052 relayoutBoundary=up4
+        child: _RenderScrollSemantics#c45ed relayoutBoundary=up5
+          child: RenderPointerListener#62d40 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#ccdc4 relayoutBoundary=up7
+    child 2: RenderConstrainedBox#5060e relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#df8eb NEEDS-PAINT
+        child: RenderSemanticsAnnotations#d5539 relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#4ba55 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#a9a0f NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#1e2e6 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#2b8e6] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#31872 relayoutBoundary=up3
+      child: RenderTransform#d3052 relayoutBoundary=up4
+        child: _RenderScrollSemantics#c45ed relayoutBoundary=up5
+          child: RenderPointerListener#62d40 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#ccdc4 relayoutBoundary=up7
+    child 2: RenderConstrainedBox#5060e relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#df8eb NEEDS-PAINT
+        child: RenderSemanticsAnnotations#d5539 relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#4ba55 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#a9a0f NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#1e2e6 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#2b8e6] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#31872 relayoutBoundary=up3
+      child: RenderTransform#d3052 relayoutBoundary=up4
+        child: _RenderScrollSemantics#c45ed relayoutBoundary=up5
+          child: RenderPointerListener#62d40 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#ccdc4 relayoutBoundary=up7
+    child 2: RenderConstrainedBox#5060e relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#df8eb NEEDS-PAINT
+        child: RenderSemanticsAnnotations#d5539 relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#4ba55 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#a9a0f NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     WidgetController.flingFrom.<anonymous closure> (package:flutter_test/src/controller.dart:1367:17)
+<asynchronous suspension>
+#29     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#30     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:115:9)
+<asynchronous suspension>
+#31     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#32     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#1e2e6 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#2b8e6] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#31872 relayoutBoundary=up3
+      child: RenderTransform#d3052 relayoutBoundary=up4
+        child: _RenderScrollSemantics#c45ed relayoutBoundary=up5
+          child: RenderPointerListener#62d40 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#ccdc4 relayoutBoundary=up7
+    child 2: RenderConstrainedBox#5060e relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#df8eb NEEDS-PAINT
+        child: RenderSemanticsAnnotations#d5539 relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#4ba55 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#a9a0f NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Cannot get renderObject of inactive element.
+In order for an element to have a valid renderObject, it must be active, which means it is part of
+the tree.
+Instead, this element is in the _ElementLifecycle.inactive state.
+If you called this method from a State object, consider guarding it with State.mounted.
+The findRenderObject() method was called for the following element:
+  _Row
+
+The relevant error-causing widget was:
+  _ArtworkViewport
+  _ArtworkViewport:file:///D:/AnLi/lib/shared/widgets/artwork_reveal_boundary.dart:51:18
+
+When the exception was thrown, this was the stack:
+#0      Element.findRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4899:9)
+#1      Element.findRenderObject (package:flutter/src/widgets/framework.dart:4912:6)
+#2      _RowState.didChangeDependencies.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:32:33)
+#3      _RenderArtworkViewport._visibleRow (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:337:26)
+#4      _RenderArtworkViewport._updateFrontiers (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:371:20)
+#5      _RenderArtworkViewport.paint (package:mesting_music/shared/widgets/artwork_reveal_boundary.dart:428:5)
+#6      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#7      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#8      RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#9      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#10     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#11     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#12     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#13     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#14     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#15     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#16     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#17     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#18     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#23     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#27     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#28     main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:120:22)
+<asynchronous suspension>
+#29     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#30     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _RenderArtworkViewport#1e2e6 relayoutBoundary=up2:
+  needs compositing
+  creator: _ArtworkViewport ← NotificationListener<ScrollNotification> ←
+    NotificationListener<ScrollMetricsNotification> ← _ArtworkRevealScope ← ArtworkRevealBoundary ←
+    RepaintBoundary-[<'frontier135'>] ← KeyedSubtree-[GlobalKey#2b8e6] ← _BodyBuilder ← MediaQuery ←
+    LayoutId-[<_ScaffoldSlot.body>] ← CustomMultiChildLayout ← _ActionsScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(0.0<=w<=390.0, 0.0<=h<=480.0)
+  size: Size(390.0, 480.0)
+This RenderObject had the following descendants (showing up to depth 5):
+    child 1: RenderClipRect#31872 relayoutBoundary=up3
+      child: RenderTransform#d3052 relayoutBoundary=up4
+        child: _RenderScrollSemantics#c45ed relayoutBoundary=up5
+          child: RenderPointerListener#62d40 relayoutBoundary=up6
+            child: RenderSemanticsGestureHandler#ccdc4 relayoutBoundary=up7
+    child 2: RenderConstrainedBox#5060e relayoutBoundary=up3 NEEDS-PAINT
+      child: RenderPositionedBox#df8eb NEEDS-PAINT
+        child: RenderSemanticsAnnotations#d5539 relayoutBoundary=up1 NEEDS-PAINT
+          child: RenderConstrainedBox#4ba55 relayoutBoundary=up2 NEEDS-PAINT
+            child: RenderCustomPaint#a9a0f NEEDS-PAINT
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: a value less than or equal to <225>
+  Actual: <2500.0>
+   Which: is not a value less than or equal to <225>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:121:9)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_135_scroll_frontier_test.dart line 121
+The test description was:
+  fast fling stops at prepared songs, releases on readiness, and allows upward scrolling
+  bouncing=true
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following message was thrown:
+Multiple exceptions (13) were detected during the running of the current test, and at least one was
+unexpected.
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:01 +0 -2: fast fling stops at prepared songs, releases on readiness, and allows upward scrolling bouncing=true [E]
+  Test failed. See exception logs above.
+  The test description was: fast fling stops at prepared songs, releases on readiness, and allows upward scrolling bouncing=true
+  
+00:01 +0 -2: data-page footer has one visible loader and replaces it with retry
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+A SemanticsHandle was active at the end of the test.
+All SemanticsHandle instances must be disposed by calling dispose() on the SemanticsHandle.
+
+When the exception was thrown, this was the stack:
+#0      WidgetTester._verifySemanticsHandlesWereDisposed (package:flutter_test/src/widget_tester.dart:1074:7)
+#1      WidgetTester._endOfTestVerifications (package:flutter_test/src/widget_tester.dart:1063:5)
+#2      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1698:22)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  data-page footer has one visible loader and replaces it with retry
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:01 +0 -3: data-page footer has one visible loader and replaces it with retry [E]
+  Test failed. See exception logs above.
+  The test description was: data-page footer has one visible loader and replaces it with retry
+  
+00:01 +0 -3: (tearDownAll)
+00:01 +0 -3: Some tests failed.

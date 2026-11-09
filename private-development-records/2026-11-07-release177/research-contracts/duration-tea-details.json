@@ -1,0 +1,3429 @@
+[
+  {
+    "class_def_index": 8274,
+    "descriptor": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+    "access_flags": 1025,
+    "super": "Lcom/luna/biz/playing/common/tea/BasePlayingBizEvent;",
+    "interfaces": [],
+    "class_data_offset": 10214306,
+    "static_values_offset": 10251067,
+    "fields": [
+      {
+        "dex_field_index": 4221,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "Companion",
+        "type": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent$Companion;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212805,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 4222,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "DURATION",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212805,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 4223,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "DURATION_PCT",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212805,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 4225,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "cachedDuration",
+        "type": "Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 4227,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "duration",
+        "type": "J",
+        "annotations": [
+          {
+            "annotation_item_offset": 9715576,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "duration"
+            }
+          }
+        ]
+      },
+      {
+        "dex_field_index": 4229,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "durationPct",
+        "type": "F",
+        "annotations": [
+          {
+            "annotation_item_offset": 9715842,
+            "visibility": 1,
+            "type": "Lcom/google/gson/annotations/SerializedName;",
+            "elements": {
+              "value": "duration_pct"
+            }
+          }
+        ]
+      },
+      {
+        "dex_field_index": 4236,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "hasSkippedHeadFragment",
+        "type": "Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 4237,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "hasSkippedTailFragment",
+        "type": "Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 4238,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "headMuteDuration",
+        "type": "Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 4240,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "name",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212805,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 4241,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "needSkipMuteFragment",
+        "type": "Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 4242,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "preRiskResult",
+        "type": "Lcom/luna/common/arch/security/NetSharkStatus;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 4243,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "queueType",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 4244,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "riskResult",
+        "type": "Lcom/luna/common/arch/security/NetSharkStatus;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 4246,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "tailMuteDuration",
+        "type": "Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "dex_method_index": 16632,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "fillPlayDuration",
+        "descriptor": "(Lcom/luna/biz/playing/player/tea/base/PlayDuration;Lkotlin/jvm/functions/Function1;)V",
+        "annotations": [
+          {
+            "annotation_item_offset": 9715812,
+            "visibility": 2,
+            "type": "Ldalvik/annotation/Signature;",
+            "elements": {
+              "value": [
+                "(",
+                "Lcom/luna/biz/playing/player/tea/base/PlayDuration;",
+                "Lkotlin/jvm/functions/Function1<",
+                "-",
+                "Ljava/lang/Float;",
+                "Ljava/lang/Float;",
+                ">;)V"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "dex_method_index": 16634,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getCachedDuration",
+        "descriptor": "()Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 16644,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getHasSkippedHeadFragment",
+        "descriptor": "()Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 16645,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getHasSkippedTailFragment",
+        "descriptor": "()Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 16646,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getHeadMuteDuration",
+        "descriptor": "()Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 16647,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getName",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212805,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 16648,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getNeedSkipMuteFragment",
+        "descriptor": "()Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 16649,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getPreRiskResult",
+        "descriptor": "()Lcom/luna/common/arch/security/NetSharkStatus;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 16650,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getQueueType",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 16651,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getRiskResult",
+        "descriptor": "()Lcom/luna/common/arch/security/NetSharkStatus;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 16652,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getTailMuteDuration",
+        "descriptor": "()Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "declared_fields": [
+      {
+        "dex_field_index": 4221,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "Companion",
+        "type": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent$Companion;",
+        "access_flags": 25
+      },
+      {
+        "dex_field_index": 4222,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "DURATION",
+        "type": "Ljava/lang/String;",
+        "access_flags": 25
+      },
+      {
+        "dex_field_index": 4223,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "DURATION_PCT",
+        "type": "Ljava/lang/String;",
+        "access_flags": 25
+      },
+      {
+        "dex_field_index": 4226,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "changeQuickRedirect",
+        "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+        "access_flags": 9
+      },
+      {
+        "dex_field_index": 4224,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "backgroundDur",
+        "type": "J",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 4225,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "cachedDuration",
+        "type": "Ljava/lang/Integer;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 4227,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "duration",
+        "type": "J",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 4228,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "durationGap",
+        "type": "J",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 4229,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "durationPct",
+        "type": "F",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 4230,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "durationV2",
+        "type": "J",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 4231,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "foregroundDur",
+        "type": "J",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 4232,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "groupBackgroundDur",
+        "type": "J",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 4233,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "groupDuration",
+        "type": "J",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 4234,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "groupDurationPct",
+        "type": "F",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 4235,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "groupForegroundDur",
+        "type": "J",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 4236,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "hasSkippedHeadFragment",
+        "type": "Ljava/lang/Integer;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 4237,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "hasSkippedTailFragment",
+        "type": "Ljava/lang/Integer;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 4238,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "headMuteDuration",
+        "type": "Ljava/lang/Integer;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 4239,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "isGetDid",
+        "type": "I",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 4240,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "name",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 4241,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "needSkipMuteFragment",
+        "type": "Ljava/lang/Integer;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 4242,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "preRiskResult",
+        "type": "Lcom/luna/common/arch/security/NetSharkStatus;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 4243,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "queueType",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 4244,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "riskResult",
+        "type": "Lcom/luna/common/arch/security/NetSharkStatus;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 4245,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "robustFieldMap",
+        "type": "Ljava/lang/Object;",
+        "access_flags": 193
+      },
+      {
+        "dex_field_index": 4246,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "tailMuteDuration",
+        "type": "Ljava/lang/Integer;",
+        "access_flags": 1
+      }
+    ],
+    "declared_methods": [
+      {
+        "dex_method_index": 16628,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "access_flags": 65544,
+        "code_item_offset": 2519828
+      },
+      {
+        "dex_method_index": 16629,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;Lcom/luna/common/arch/playable/AudioQuality;Lcom/luna/common/player/quality/Quality;Ljava/lang/Integer;Ljava/lang/String;)V",
+        "access_flags": 65537,
+        "code_item_offset": 2519896
+      },
+      {
+        "dex_method_index": 16630,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;Lcom/luna/common/arch/playable/AudioQuality;Lcom/luna/common/player/quality/Quality;Ljava/lang/Integer;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "access_flags": 69633,
+        "code_item_offset": 2520048
+      },
+      {
+        "dex_method_index": 16631,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "fillMuteFragmentInfo",
+        "descriptor": "(Lcom/luna/common/player/queue/api/IPlayable;)V",
+        "access_flags": 17,
+        "code_item_offset": 2520136
+      },
+      {
+        "dex_method_index": 16632,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "fillPlayDuration",
+        "descriptor": "(Lcom/luna/biz/playing/player/tea/base/PlayDuration;Lkotlin/jvm/functions/Function1;)V",
+        "access_flags": 17,
+        "code_item_offset": 2520396
+      },
+      {
+        "dex_method_index": 16633,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getBackgroundDur",
+        "descriptor": "()J",
+        "access_flags": 17,
+        "code_item_offset": 2519636
+      },
+      {
+        "dex_method_index": 16634,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getCachedDuration",
+        "descriptor": "()Ljava/lang/Integer;",
+        "access_flags": 17,
+        "code_item_offset": 2519444
+      },
+      {
+        "dex_method_index": 16635,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getDuration",
+        "descriptor": "()J",
+        "access_flags": 17,
+        "code_item_offset": 2519660
+      },
+      {
+        "dex_method_index": 16636,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getDurationGap",
+        "descriptor": "()J",
+        "access_flags": 17,
+        "code_item_offset": 2519684
+      },
+      {
+        "dex_method_index": 16637,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getDurationPct",
+        "descriptor": "()F",
+        "access_flags": 17,
+        "code_item_offset": 2519372
+      },
+      {
+        "dex_method_index": 16638,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getDurationV2",
+        "descriptor": "()J",
+        "access_flags": 17,
+        "code_item_offset": 2519708
+      },
+      {
+        "dex_method_index": 16639,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getForegroundDur",
+        "descriptor": "()J",
+        "access_flags": 17,
+        "code_item_offset": 2519732
+      },
+      {
+        "dex_method_index": 16640,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getGroupBackgroundDur",
+        "descriptor": "()J",
+        "access_flags": 17,
+        "code_item_offset": 2519756
+      },
+      {
+        "dex_method_index": 16641,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getGroupDuration",
+        "descriptor": "()J",
+        "access_flags": 17,
+        "code_item_offset": 2519780
+      },
+      {
+        "dex_method_index": 16642,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getGroupDurationPct",
+        "descriptor": "()F",
+        "access_flags": 17,
+        "code_item_offset": 2519396
+      },
+      {
+        "dex_method_index": 16643,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getGroupForegroundDur",
+        "descriptor": "()J",
+        "access_flags": 17,
+        "code_item_offset": 2519804
+      },
+      {
+        "dex_method_index": 16644,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getHasSkippedHeadFragment",
+        "descriptor": "()Ljava/lang/Integer;",
+        "access_flags": 17,
+        "code_item_offset": 2519468
+      },
+      {
+        "dex_method_index": 16645,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getHasSkippedTailFragment",
+        "descriptor": "()Ljava/lang/Integer;",
+        "access_flags": 17,
+        "code_item_offset": 2519492
+      },
+      {
+        "dex_method_index": 16646,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getHeadMuteDuration",
+        "descriptor": "()Ljava/lang/Integer;",
+        "access_flags": 17,
+        "code_item_offset": 2519516
+      },
+      {
+        "dex_method_index": 16647,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getName",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 2519588
+      },
+      {
+        "dex_method_index": 16648,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getNeedSkipMuteFragment",
+        "descriptor": "()Ljava/lang/Integer;",
+        "access_flags": 17,
+        "code_item_offset": 2519540
+      },
+      {
+        "dex_method_index": 16649,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getPreRiskResult",
+        "descriptor": "()Lcom/luna/common/arch/security/NetSharkStatus;",
+        "access_flags": 17,
+        "code_item_offset": 2519324
+      },
+      {
+        "dex_method_index": 16650,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getQueueType",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 2519612
+      },
+      {
+        "dex_method_index": 16651,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getRiskResult",
+        "descriptor": "()Lcom/luna/common/arch/security/NetSharkStatus;",
+        "access_flags": 17,
+        "code_item_offset": 2519348
+      },
+      {
+        "dex_method_index": 16652,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "getTailMuteDuration",
+        "descriptor": "()Ljava/lang/Integer;",
+        "access_flags": 17,
+        "code_item_offset": 2519564
+      },
+      {
+        "dex_method_index": 16653,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "isGetDid",
+        "descriptor": "()I",
+        "access_flags": 17,
+        "code_item_offset": 2519420
+      },
+      {
+        "dex_method_index": 16654,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setBackgroundDur",
+        "descriptor": "(J)V",
+        "access_flags": 17,
+        "code_item_offset": 2520644
+      },
+      {
+        "dex_method_index": 16655,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setCachedDuration",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "access_flags": 17,
+        "code_item_offset": 2520668
+      },
+      {
+        "dex_method_index": 16656,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setDuration",
+        "descriptor": "(J)V",
+        "access_flags": 17,
+        "code_item_offset": 2520692
+      },
+      {
+        "dex_method_index": 16657,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setDurationGap",
+        "descriptor": "(J)V",
+        "access_flags": 17,
+        "code_item_offset": 2520716
+      },
+      {
+        "dex_method_index": 16658,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setDurationPct",
+        "descriptor": "(F)V",
+        "access_flags": 17,
+        "code_item_offset": 2520740
+      },
+      {
+        "dex_method_index": 16659,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setDurationV2",
+        "descriptor": "(J)V",
+        "access_flags": 17,
+        "code_item_offset": 2520764
+      },
+      {
+        "dex_method_index": 16660,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setForegroundDur",
+        "descriptor": "(J)V",
+        "access_flags": 17,
+        "code_item_offset": 2520788
+      },
+      {
+        "dex_method_index": 16661,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setGroupBackgroundDur",
+        "descriptor": "(J)V",
+        "access_flags": 17,
+        "code_item_offset": 2520812
+      },
+      {
+        "dex_method_index": 16662,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setGroupDuration",
+        "descriptor": "(J)V",
+        "access_flags": 17,
+        "code_item_offset": 2520836
+      },
+      {
+        "dex_method_index": 16663,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setGroupDurationPct",
+        "descriptor": "(F)V",
+        "access_flags": 17,
+        "code_item_offset": 2520860
+      },
+      {
+        "dex_method_index": 16664,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setGroupForegroundDur",
+        "descriptor": "(J)V",
+        "access_flags": 17,
+        "code_item_offset": 2520884
+      },
+      {
+        "dex_method_index": 16665,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setHasSkippedHeadFragment",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "access_flags": 17,
+        "code_item_offset": 2520908
+      },
+      {
+        "dex_method_index": 16666,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setHasSkippedTailFragment",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "access_flags": 17,
+        "code_item_offset": 2520932
+      },
+      {
+        "dex_method_index": 16667,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setHeadMuteDuration",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "access_flags": 17,
+        "code_item_offset": 2520956
+      },
+      {
+        "dex_method_index": 16668,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setNeedSkipMuteFragment",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "access_flags": 17,
+        "code_item_offset": 2520980
+      },
+      {
+        "dex_method_index": 16669,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setPreRiskResult",
+        "descriptor": "(Lcom/luna/common/arch/security/NetSharkStatus;)V",
+        "access_flags": 17,
+        "code_item_offset": 2521004
+      },
+      {
+        "dex_method_index": 16670,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setQueueType",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_item_offset": 2521028
+      },
+      {
+        "dex_method_index": 16671,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setRiskResult",
+        "descriptor": "(Lcom/luna/common/arch/security/NetSharkStatus;)V",
+        "access_flags": 17,
+        "code_item_offset": 2521052
+      },
+      {
+        "dex_method_index": 16672,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setTailMuteDuration",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "access_flags": 17,
+        "code_item_offset": 2521076
+      }
+    ],
+    "annotations": [
+      {
+        "annotation_item_offset": 9715852,
+        "visibility": 2,
+        "type": "Ldalvik/annotation/MemberClasses;",
+        "elements": {
+          "value": [
+            {
+              "type_descriptor": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent$Companion;"
+            }
+          ]
+        }
+      },
+      {
+        "annotation_item_offset": 9715864,
+        "visibility": 1,
+        "type": "Lkotlin/Metadata;",
+        "elements": {
+          "d1": [
+            "��V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n��\n\u0002\u0010\u000e\n��\n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n��\n\u0002\u0010\b\n\u0002\b\n\n\u0002\u0010\t\n\u0002\b\u000b\n\u0002\u0010\u0007\n\u0002\b\u0019\n\u0002\u0018\u0002\n\u0002\b\u001d\n\u0002\u0010\u0002\n��\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b&\u0018�� _2\u00020\u0001:\u0001_B?\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0003¢\u0006\u0004\b\u000b\u0010\fJ\"\u0010W\u001a\u00020X2\u0006\u0010Y\u001a\u00020Z2\u0012\u0010!\u001a\u000e\u0012\u0004\u0012\u00020 \u0012\u0004\u0012\u00020 0[J\u0010\u0010\\\u001a\u00020X2\b\u0010]\u001a\u0004\u0018\u00010^R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n��\u001a\u0004\b\r\u0010\u000eR\u001c\u0010\u000f\u001a\u0004\u0018\u00010\u0003X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0010\u0010\u000e\"\u0004\b\u0011\u0010\u0012R\u001e\u0010\u0013\u001a\u00020\u00148\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0015\u0010\u0016\"\u0004\b\u0017\u0010\u0018R\u001a\u0010\u0019\u001a\u00020\u0014X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u001a\u0010\u0016\"\u0004\b\u001b\u0010\u0018R\u001a\u0010\u001c\u001a\u00020\u0014X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u001d\u0010\u0016\"\u0004\b\u001e\u0010\u0018R\u001e\u0010\u001f\u001a\u00020 8\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b!\u0010\"\"\u0004\b#\u0010$R\u001a\u0010%\u001a\u00020\u0014X\u000e¢\u0006\u000e\n��\u001a\u0004\b&\u0010\u0016\"\u0004\b'\u0010\u0018R\u001a\u0010(\u001a\u00020 X\u000e¢\u0006\u000e\n��\u001a\u0004\b)\u0010\"\"\u0004\b*\u0010$R\u001a\u0010+\u001a\u00020\u0014X\u000e¢\u0006\u000e\n��\u001a\u0004\b,\u0010\u0016\"\u0004\b-\u0010\u0018R\u001a\u0010.\u001a\u00020\u0014X\u000e¢\u0006\u000e\n��\u001a\u0004\b/\u0010\u0016\"\u0004\b0\u0010\u0018R\u001a\u00101\u001a\u00020\u0014X\u000e¢\u0006\u000e\n��\u001a\u0004\b2\u0010\u0016\"\u0004\b3\u0010\u0018R\u001a\u00104\u001a\u00020\u0014X\u000e¢\u0006\u000e\n��\u001a\u0004\b5\u0010\u0016\"\u0004\b6\u0010\u0018R\u0011\u00107\u001a\u00020\t¢\u0006\b\n��\u001a\u0004\b7\u00108R\u001c\u00109\u001a\u0004\u0018\u00010:X\u000e¢\u0006\u000e\n��\u001a\u0004\b;\u0010<\"\u0004\b=\u0010>R\u001c\u0010?\u001a\u0004\u0018\u00010:X\u000e¢\u0006\u000e\n��\u001a\u0004\b@\u0010<\"\u0004\bA\u0010>R\u001e\u0010B\u001a\u0004\u0018\u00010\tX\u000e¢\u0006\u0010\n\u0002\u0010G\u001a\u0004\bC\u0010D\"\u0004\bE\u0010FR\u001e\u0010H\u001a\u0004\u0018\u00010\tX\u000e¢\u0006\u0010\n\u0002\u0010G\u001a\u0004\bI\u0010D\"\u0004\bJ\u0010FR\u001e\u0010K\u001a\u0004\u0018\u00010\tX\u000e¢\u0006\u0010\n\u0002\u0010G\u001a\u0004\bL\u0010D\"\u0004\bM\u0010FR\u001e\u0010N\u001a\u0004\u0018\u00010\tX\u000e¢\u0006\u0010\n\u0002\u0010G\u001a\u0004\bO\u0010D\"\u0004\bP\u0010FR\u001e\u0010Q\u001a\u0004\u0018\u00010\tX\u000e¢\u0006\u0010\n\u0002\u0010G\u001a\u0004\bR\u0010D\"\u0004\bS\u0010FR\u001e\u0010T\u001a\u0004\u0018\u00010\tX\u000e¢\u0006\u0010\n\u0002\u0010G\u001a\u0004\bU\u0010D\"\u0004\bV\u0010F¨\u0006`"
+          ],
+          "d2": [
+            "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+            "Lcom/luna/biz/playing/common/tea/BasePlayingBizEvent;",
+            "name",
+            "",
+            "userSelectedQuality",
+            "Lcom/luna/common/arch/playable/AudioQuality;",
+            "playQuality",
+            "Lcom/luna/common/player/quality/Quality;",
+            "playBitrate",
+            "",
+            "groupId",
+            "<init>",
+            "(Ljava/lang/String;Lcom/luna/common/arch/playable/AudioQuality;Lcom/luna/common/player/quality/Quality;Ljava/lang/Integer;Ljava/lang/String;)V",
+            "getName",
+            "()Ljava/lang/String;",
+            "queueType",
+            "getQueueType",
+            "setQueueType",
+            "(Ljava/lang/String;)V",
+            "duration",
+            "",
+            "getDuration",
+            "()J",
+            "setDuration",
+            "(J)V",
+            "durationV2",
+            "getDurationV2",
+            "setDurationV2",
+            "durationGap",
+            "getDurationGap",
+            "setDurationGap",
+            "durationPct",
+            "",
+            "getDurationPct",
+            "()F",
+            "setDurationPct",
+            "(F)V",
+            "groupDuration",
+            "getGroupDuration",
+            "setGroupDuration",
+            "groupDurationPct",
+            "getGroupDurationPct",
+            "setGroupDurationPct",
+            "backgroundDur",
+            "getBackgroundDur",
+            "setBackgroundDur",
+            "foregroundDur",
+            "getForegroundDur",
+            "setForegroundDur",
+            "groupBackgroundDur",
+            "getGroupBackgroundDur",
+            "setGroupBackgroundDur",
+            "groupForegroundDur",
+            "getGroupForegroundDur",
+            "setGroupForegroundDur",
+            "isGetDid",
+            "()I",
+            "preRiskResult",
+            "Lcom/luna/common/arch/security/NetSharkStatus;",
+            "getPreRiskResult",
+            "()Lcom/luna/common/arch/security/NetSharkStatus;",
+            "setPreRiskResult",
+            "(Lcom/luna/common/arch/security/NetSharkStatus;)V",
+            "riskResult",
+            "getRiskResult",
+            "setRiskResult",
+            "cachedDuration",
+            "getCachedDuration",
+            "()Ljava/lang/Integer;",
+            "setCachedDuration",
+            "(Ljava/lang/Integer;)V",
+            "Ljava/lang/Integer;",
+            "headMuteDuration",
+            "getHeadMuteDuration",
+            "setHeadMuteDuration",
+            "tailMuteDuration",
+            "getTailMuteDuration",
+            "setTailMuteDuration",
+            "needSkipMuteFragment",
+            "getNeedSkipMuteFragment",
+            "setNeedSkipMuteFragment",
+            "hasSkippedHeadFragment",
+            "getHasSkippedHeadFragment",
+            "setHasSkippedHeadFragment",
+            "hasSkippedTailFragment",
+            "getHasSkippedTailFragment",
+            "setHasSkippedTailFragment",
+            "fillPlayDuration",
+            "",
+            "playDuration",
+            "Lcom/luna/biz/playing/player/tea/base/PlayDuration;",
+            "Lkotlin/Function1;",
+            "fillMuteFragmentInfo",
+            "playable",
+            "Lcom/luna/common/player/queue/api/IPlayable;",
+            "Companion",
+            "biz-playing-impl_release"
+          ],
+          "k": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "01",
+            "unsigned_value": 1
+          },
+          "mv": [
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "02",
+              "unsigned_value": 2
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            }
+          ],
+          "xi": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "30",
+            "unsigned_value": 48
+          }
+        }
+      }
+    ],
+    "parameter_annotations": [
+      {
+        "dex_method_index": 16629,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;Lcom/luna/common/arch/playable/AudioQuality;Lcom/luna/common/player/quality/Quality;Ljava/lang/Integer;Ljava/lang/String;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212805,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 16631,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "fillMuteFragmentInfo",
+        "descriptor": "(Lcom/luna/common/player/queue/api/IPlayable;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 16632,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "fillPlayDuration",
+        "descriptor": "(Lcom/luna/biz/playing/player/tea/base/PlayDuration;Lkotlin/jvm/functions/Function1;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212805,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 9212805,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 16655,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setCachedDuration",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 16665,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setHasSkippedHeadFragment",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 16666,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setHasSkippedTailFragment",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 16667,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setHeadMuteDuration",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 16668,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setNeedSkipMuteFragment",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 16669,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setPreRiskResult",
+        "descriptor": "(Lcom/luna/common/arch/security/NetSharkStatus;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 16670,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setQueueType",
+        "descriptor": "(Ljava/lang/String;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 16671,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setRiskResult",
+        "descriptor": "(Lcom/luna/common/arch/security/NetSharkStatus;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 16672,
+        "owner": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+        "name": "setTailMuteDuration",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "class_def_index": 8447,
+    "descriptor": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+    "access_flags": 1,
+    "super": "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+    "interfaces": [
+      "Lcom/luna/common/arch/ai/IHarAwareEvent;"
+    ],
+    "class_data_offset": 10229852,
+    "static_values_offset": 10251099,
+    "fields": [
+      {
+        "dex_field_index": 3926,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "Companion",
+        "type": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent$Companion;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212805,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3927,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "EVENT_NAME",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212805,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3928,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "artistId",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3929,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "audioFinishStatus",
+        "type": "Lcom/luna/common/arch/tea/FinishStatus;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3930,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "botEffectiveOption",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3932,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "commentId",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3933,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "commentShowType",
+        "type": "Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3934,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "groupPaymentLevel",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3935,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "hasSongMakerInfo",
+        "type": "Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3936,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "hashtagId",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3938,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isLimit",
+        "type": "Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3939,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isPreview",
+        "type": "Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3940,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isPreviousBlock",
+        "type": "Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3941,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isReward",
+        "type": "Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3942,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isSupportDownload",
+        "type": "Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3943,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isSupportShare",
+        "type": "Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3944,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "lyricType",
+        "type": "Lcom/luna/common/arch/db/entity/lyrics/NetLyricType;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3945,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "mcheckLogId",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3946,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "playFromType",
+        "type": "Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3947,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "preMcheckLogId",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3948,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "preludeLength",
+        "type": "Ljava/lang/Long;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3950,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "songReleaseDays",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3951,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "trackMusicEffect",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3952,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "userSelectedMusicEffect",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3953,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "videoId",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3954,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "warnContent",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3955,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "warnSubType",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3956,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "warnType",
+        "type": "Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_field_index": 3957,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "withTranslation",
+        "type": "Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "dex_method_index": 15789,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getArtistId",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15790,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getAudioFinishStatus",
+        "descriptor": "()Lcom/luna/common/arch/tea/FinishStatus;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15791,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getBotEffectiveOption",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15792,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getCommentId",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15793,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getCommentShowType",
+        "descriptor": "()Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15794,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getGroupPaymentLevel",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15795,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getHasSongMakerInfo",
+        "descriptor": "()Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15796,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getHashtagId",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15797,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getLyricType",
+        "descriptor": "()Lcom/luna/common/arch/db/entity/lyrics/NetLyricType;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15798,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getMcheckLogId",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15799,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getPlayFromType",
+        "descriptor": "()Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15800,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getPreMcheckLogId",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15801,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getPreludeLength",
+        "descriptor": "()Ljava/lang/Long;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15802,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getSongReleaseDays",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15803,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getTrackMusicEffect",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15804,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getUserSelectedMusicEffect",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15805,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getVideoId",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15806,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getWarnContent",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15807,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getWarnSubType",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15808,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getWarnType",
+        "descriptor": "()Ljava/lang/String;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15809,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getWithTranslation",
+        "descriptor": "()Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15811,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isLimit",
+        "descriptor": "()Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15812,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isPreview",
+        "descriptor": "()Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15813,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isPreviousBlock",
+        "descriptor": "()Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15814,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isReward",
+        "descriptor": "()Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15815,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isSupportDownload",
+        "descriptor": "()Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      },
+      {
+        "dex_method_index": 15816,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isSupportShare",
+        "descriptor": "()Ljava/lang/Integer;",
+        "annotations": [
+          {
+            "annotation_item_offset": 9212801,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      }
+    ],
+    "declared_fields": [
+      {
+        "dex_field_index": 3926,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "Companion",
+        "type": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent$Companion;",
+        "access_flags": 25
+      },
+      {
+        "dex_field_index": 3927,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "EVENT_NAME",
+        "type": "Ljava/lang/String;",
+        "access_flags": 25
+      },
+      {
+        "dex_field_index": 3931,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "changeQuickRedirect",
+        "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+        "access_flags": 9
+      },
+      {
+        "dex_field_index": 3928,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "artistId",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3929,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "audioFinishStatus",
+        "type": "Lcom/luna/common/arch/tea/FinishStatus;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3930,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "botEffectiveOption",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3932,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "commentId",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3933,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "commentShowType",
+        "type": "Ljava/lang/Integer;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3934,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "groupPaymentLevel",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3935,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "hasSongMakerInfo",
+        "type": "Ljava/lang/Integer;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3936,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "hashtagId",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3937,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isFirstRequest",
+        "type": "I",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3938,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isLimit",
+        "type": "Ljava/lang/Integer;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3939,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isPreview",
+        "type": "Ljava/lang/Integer;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3940,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isPreviousBlock",
+        "type": "Ljava/lang/Integer;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3941,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isReward",
+        "type": "Ljava/lang/Integer;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3942,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isSupportDownload",
+        "type": "Ljava/lang/Integer;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3943,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isSupportShare",
+        "type": "Ljava/lang/Integer;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3944,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "lyricType",
+        "type": "Lcom/luna/common/arch/db/entity/lyrics/NetLyricType;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3945,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "mcheckLogId",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3946,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "playFromType",
+        "type": "Ljava/lang/Integer;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3947,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "preMcheckLogId",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3948,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "preludeLength",
+        "type": "Ljava/lang/Long;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3949,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "robustFieldMap",
+        "type": "Ljava/lang/Object;",
+        "access_flags": 193
+      },
+      {
+        "dex_field_index": 3950,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "songReleaseDays",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3951,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "trackMusicEffect",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3952,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "userSelectedMusicEffect",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3953,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "videoId",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3954,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "warnContent",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3955,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "warnSubType",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3956,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "warnType",
+        "type": "Ljava/lang/String;",
+        "access_flags": 1
+      },
+      {
+        "dex_field_index": 3957,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "withTranslation",
+        "type": "Ljava/lang/Integer;",
+        "access_flags": 1
+      }
+    ],
+    "declared_methods": [
+      {
+        "dex_method_index": 15786,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "access_flags": 65544,
+        "code_item_offset": 2465044
+      },
+      {
+        "dex_method_index": 15787,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/Integer;Lcom/luna/common/arch/playable/AudioQuality;Lcom/luna/common/player/quality/Quality;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Lcom/luna/common/arch/db/entity/lyrics/NetLyricType;)V",
+        "access_flags": 65537,
+        "code_item_offset": 2465112
+      },
+      {
+        "dex_method_index": 15788,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/Integer;Lcom/luna/common/arch/playable/AudioQuality;Lcom/luna/common/player/quality/Quality;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Lcom/luna/common/arch/db/entity/lyrics/NetLyricType;ILkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "access_flags": 69633,
+        "code_item_offset": 2465296
+      },
+      {
+        "dex_method_index": 15789,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getArtistId",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 2464708
+      },
+      {
+        "dex_method_index": 15790,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getAudioFinishStatus",
+        "descriptor": "()Lcom/luna/common/arch/tea/FinishStatus;",
+        "access_flags": 17,
+        "code_item_offset": 2464396
+      },
+      {
+        "dex_method_index": 15791,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getBotEffectiveOption",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 2464732
+      },
+      {
+        "dex_method_index": 15792,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getCommentId",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 2464756
+      },
+      {
+        "dex_method_index": 15793,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getCommentShowType",
+        "descriptor": "()Ljava/lang/Integer;",
+        "access_flags": 17,
+        "code_item_offset": 2464444
+      },
+      {
+        "dex_method_index": 15794,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getGroupPaymentLevel",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 2464780
+      },
+      {
+        "dex_method_index": 15795,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getHasSongMakerInfo",
+        "descriptor": "()Ljava/lang/Integer;",
+        "access_flags": 17,
+        "code_item_offset": 2464468
+      },
+      {
+        "dex_method_index": 15796,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getHashtagId",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 2464804
+      },
+      {
+        "dex_method_index": 15797,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getLyricType",
+        "descriptor": "()Lcom/luna/common/arch/db/entity/lyrics/NetLyricType;",
+        "access_flags": 17,
+        "code_item_offset": 2464372
+      },
+      {
+        "dex_method_index": 15798,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getMcheckLogId",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 2464828
+      },
+      {
+        "dex_method_index": 15799,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getPlayFromType",
+        "descriptor": "()Ljava/lang/Integer;",
+        "access_flags": 17,
+        "code_item_offset": 2464492
+      },
+      {
+        "dex_method_index": 15800,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getPreMcheckLogId",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 2464852
+      },
+      {
+        "dex_method_index": 15801,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getPreludeLength",
+        "descriptor": "()Ljava/lang/Long;",
+        "access_flags": 17,
+        "code_item_offset": 2464684
+      },
+      {
+        "dex_method_index": 15802,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getSongReleaseDays",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 2464876
+      },
+      {
+        "dex_method_index": 15803,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getTrackMusicEffect",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 2464900
+      },
+      {
+        "dex_method_index": 15804,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getUserSelectedMusicEffect",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 2464924
+      },
+      {
+        "dex_method_index": 15805,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getVideoId",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 2464948
+      },
+      {
+        "dex_method_index": 15806,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getWarnContent",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 2464972
+      },
+      {
+        "dex_method_index": 15807,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getWarnSubType",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 2464996
+      },
+      {
+        "dex_method_index": 15808,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getWarnType",
+        "descriptor": "()Ljava/lang/String;",
+        "access_flags": 17,
+        "code_item_offset": 2465020
+      },
+      {
+        "dex_method_index": 15809,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "getWithTranslation",
+        "descriptor": "()Ljava/lang/Integer;",
+        "access_flags": 17,
+        "code_item_offset": 2464516
+      },
+      {
+        "dex_method_index": 15810,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isFirstRequest",
+        "descriptor": "()I",
+        "access_flags": 17,
+        "code_item_offset": 2464420
+      },
+      {
+        "dex_method_index": 15811,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isLimit",
+        "descriptor": "()Ljava/lang/Integer;",
+        "access_flags": 17,
+        "code_item_offset": 2464540
+      },
+      {
+        "dex_method_index": 15812,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isPreview",
+        "descriptor": "()Ljava/lang/Integer;",
+        "access_flags": 17,
+        "code_item_offset": 2464564
+      },
+      {
+        "dex_method_index": 15813,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isPreviousBlock",
+        "descriptor": "()Ljava/lang/Integer;",
+        "access_flags": 17,
+        "code_item_offset": 2464588
+      },
+      {
+        "dex_method_index": 15814,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isReward",
+        "descriptor": "()Ljava/lang/Integer;",
+        "access_flags": 17,
+        "code_item_offset": 2464612
+      },
+      {
+        "dex_method_index": 15815,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isSupportDownload",
+        "descriptor": "()Ljava/lang/Integer;",
+        "access_flags": 17,
+        "code_item_offset": 2464636
+      },
+      {
+        "dex_method_index": 15816,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "isSupportShare",
+        "descriptor": "()Ljava/lang/Integer;",
+        "access_flags": 17,
+        "code_item_offset": 2464660
+      },
+      {
+        "dex_method_index": 15817,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setAudioFinishStatus",
+        "descriptor": "(Lcom/luna/common/arch/tea/FinishStatus;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465408
+      },
+      {
+        "dex_method_index": 15818,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setBotEffectiveOption",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465432
+      },
+      {
+        "dex_method_index": 15819,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setCommentId",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465456
+      },
+      {
+        "dex_method_index": 15820,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setCommentShowType",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465480
+      },
+      {
+        "dex_method_index": 15821,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setFirstRequest",
+        "descriptor": "(I)V",
+        "access_flags": 17,
+        "code_item_offset": 2465504
+      },
+      {
+        "dex_method_index": 15822,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setGroupPaymentLevel",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465528
+      },
+      {
+        "dex_method_index": 15823,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setHasSongMakerInfo",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465552
+      },
+      {
+        "dex_method_index": 15824,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setHashtagId",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465576
+      },
+      {
+        "dex_method_index": 15825,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setLimit",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465600
+      },
+      {
+        "dex_method_index": 15826,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setMcheckLogId",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465624
+      },
+      {
+        "dex_method_index": 15827,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setPlayFromType",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465648
+      },
+      {
+        "dex_method_index": 15828,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setPreMcheckLogId",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465672
+      },
+      {
+        "dex_method_index": 15829,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setPreludeLength",
+        "descriptor": "(Ljava/lang/Long;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465696
+      },
+      {
+        "dex_method_index": 15830,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setPreview",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465720
+      },
+      {
+        "dex_method_index": 15831,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setPreviousBlock",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465744
+      },
+      {
+        "dex_method_index": 15832,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setReward",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465768
+      },
+      {
+        "dex_method_index": 15833,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setSongReleaseDays",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465792
+      },
+      {
+        "dex_method_index": 15834,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setSupportDownload",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465816
+      },
+      {
+        "dex_method_index": 15835,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setSupportShare",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465840
+      },
+      {
+        "dex_method_index": 15836,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setTrackMusicEffect",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465864
+      },
+      {
+        "dex_method_index": 15837,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setUserSelectedMusicEffect",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465888
+      },
+      {
+        "dex_method_index": 15838,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setVideoId",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465912
+      },
+      {
+        "dex_method_index": 15839,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setWarnContent",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465936
+      },
+      {
+        "dex_method_index": 15840,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setWarnSubType",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465960
+      },
+      {
+        "dex_method_index": 15841,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setWarnType",
+        "descriptor": "(Ljava/lang/String;)V",
+        "access_flags": 17,
+        "code_item_offset": 2465984
+      }
+    ],
+    "annotations": [
+      {
+        "annotation_item_offset": 9740889,
+        "visibility": 2,
+        "type": "Ldalvik/annotation/MemberClasses;",
+        "elements": {
+          "value": [
+            {
+              "type_descriptor": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent$Companion;"
+            }
+          ]
+        }
+      },
+      {
+        "annotation_item_offset": 9740901,
+        "visibility": 1,
+        "type": "Lkotlin/Metadata;",
+        "elements": {
+          "d1": [
+            "��@\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n��\n\u0002\u0010\b\n��\n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n��\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0014\n\u0002\u0018\u0002\n\u0002\b)\n\u0002\u0010\t\n\u0002\b\u0017\u0018�� f2\u00020\u00012\u00020\u0002:\u0001fBs\u0012\b\u0010\u0003\u001a\u0004\u0018\u00010\u0004\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\n\u0012\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u0004\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\n\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\n\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0004\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u0011¢\u0006\u0004\b\u0012\u0010\u0013R\u001c\u0010\t\u001a\u0004\u0018\u00010\nX\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0014\u0010\u0015\"\u0004\b\u0016\u0010\u0017R\u001c\u0010\u000b\u001a\u0004\u0018\u00010\nX\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0018\u0010\u0015\"\u0004\b\u0019\u0010\u0017R\u001e\u0010\f\u001a\u0004\u0018\u00010\u0004X\u000e¢\u0006\u0010\n\u0002\u0010\u001e\u001a\u0004\b\u001a\u0010\u001b\"\u0004\b\u001c\u0010\u001dR\u001c\u0010\r\u001a\u0004\u0018\u00010\nX\u000e¢\u0006\u000e\n��\u001a\u0004\b\u001f\u0010\u0015\"\u0004\b \u0010\u0017R\u0013\u0010\u000e\u001a\u0004\u0018\u00010\n¢\u0006\b\n��\u001a\u0004\b!\u0010\u0015R\u0015\u0010\u000f\u001a\u0004\u0018\u00010\u0004¢\u0006\n\n\u0002\u0010\u001e\u001a\u0004\b\"\u0010\u001bR\u0013\u0010\u0010\u001a\u0004\u0018\u00010\u0011¢\u0006\b\n��\u001a\u0004\b#\u0010$R\u001c\u0010%\u001a\u0004\u0018\u00010&X\u000e¢\u0006\u000e\n��\u001a\u0004\b'\u0010(\"\u0004\b)\u0010*R\u001c\u0010+\u001a\u0004\u0018\u00010\nX\u000e¢\u0006\u000e\n��\u001a\u0004\b,\u0010\u0015\"\u0004\b-\u0010\u0017R\u001c\u0010.\u001a\u0004\u0018\u00010\nX\u000e¢\u0006\u000e\n��\u001a\u0004\b/\u0010\u0015\"\u0004\b0\u0010\u0017R\u001e\u00101\u001a\u0004\u0018\u00010\u0004X\u000e¢\u0006\u0010\n\u0002\u0010\u001e\u001a\u0004\b1\u0010\u001b\"\u0004\b2\u0010\u001dR\u001e\u00103\u001a\u0004\u0018\u00010\u0004X\u000e¢\u0006\u0010\n\u0002\u0010\u001e\u001a\u0004\b3\u0010\u001b\"\u0004\b4\u0010\u001dR\u001c\u00105\u001a\u0004\u0018\u00010\nX\u000e¢\u0006\u000e\n��\u001a\u0004\b6\u0010\u0015\"\u0004\b7\u0010\u0017R\u001c\u00108\u001a\u0004\u0018\u00010\nX\u000e¢\u0006\u000e\n��\u001a\u0004\b9\u0010\u0015\"\u0004\b:\u0010\u0017R\u001e\u0010;\u001a\u0004\u0018\u00010\u0004X\u000e¢\u0006\u0010\n\u0002\u0010\u001e\u001a\u0004\b;\u0010\u001b\"\u0004\b<\u0010\u001dR\u001e\u0010=\u001a\u0004\u0018\u00010\u0004X\u000e¢\u0006\u0010\n\u0002\u0010\u001e\u001a\u0004\b=\u0010\u001b\"\u0004\b>\u0010\u001dR\u001e\u0010?\u001a\u0004\u0018\u00010\u0004X\u000e¢\u0006\u0010\n\u0002\u0010\u001e\u001a\u0004\b?\u0010\u001b\"\u0004\b@\u0010\u001dR\u001e\u0010A\u001a\u0004\u0018\u00010\u0004X\u000e¢\u0006\u0010\n\u0002\u0010\u001e\u001a\u0004\bA\u0010\u001b\"\u0004\bB\u0010\u001dR\u001c\u0010C\u001a\u0004\u0018\u00010\nX\u000e¢\u0006\u000e\n��\u001a\u0004\bD\u0010\u0015\"\u0004\bE\u0010\u0017R\u001c\u0010F\u001a\u0004\u0018\u00010\nX\u000e¢\u0006\u000e\n��\u001a\u0004\bG\u0010\u0015\"\u0004\bH\u0010\u0017R\u001c\u0010I\u001a\u0004\u0018\u00010\nX\u000e¢\u0006\u000e\n��\u001a\u0004\bJ\u0010\u0015\"\u0004\bK\u0010\u0017R\u001e\u0010L\u001a\u0004\u0018\u00010\u0004X\u000e¢\u0006\u0010\n\u0002\u0010\u001e\u001a\u0004\bM\u0010\u001b\"\u0004\bN\u0010\u001dR\u001e\u0010O\u001a\u0004\u0018\u00010PX\u000e¢\u0006\u0010\n\u0002\u0010U\u001a\u0004\bQ\u0010R\"\u0004\bS\u0010TR\u001a\u0010V\u001a\u00020\u0004X\u000e¢\u0006\u000e\n��\u001a\u0004\bV\u0010W\"\u0004\bX\u0010YR\u001c\u0010Z\u001a\u0004\u0018\u00010\nX\u000e¢\u0006\u000e\n��\u001a\u0004\b[\u0010\u0015\"\u0004\b\\\u0010\u0017R\u001c\u0010]\u001a\u0004\u0018\u00010\nX\u000e¢\u0006\u000e\n��\u001a\u0004\b^\u0010\u0015\"\u0004\b_\u0010\u0017R\u001c\u0010`\u001a\u0004\u0018\u00010\nX\u000e¢\u0006\u000e\n��\u001a\u0004\ba\u0010\u0015\"\u0004\bb\u0010\u0017R\u001e\u0010c\u001a\u0004\u0018\u00010\u0004X\u000e¢\u0006\u0010\n\u0002\u0010\u001e\u001a\u0004\bd\u0010\u001b\"\u0004\be\u0010\u001d¨\u0006g"
+          ],
+          "d2": [
+            "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+            "Lcom/luna/biz/playing/player/tea/base/finish/BaseAudioVideoFinishEvent;",
+            "Lcom/luna/common/arch/ai/IHarAwareEvent;",
+            "playBitrate",
+            "",
+            "userSelectedQuality",
+            "Lcom/luna/common/arch/playable/AudioQuality;",
+            "playQuality",
+            "Lcom/luna/common/player/quality/Quality;",
+            "commentId",
+            "",
+            "hashtagId",
+            "commentShowType",
+            "videoId",
+            "artistId",
+            "withTranslation",
+            "lyricType",
+            "Lcom/luna/common/arch/db/entity/lyrics/NetLyricType;",
+            "<init>",
+            "(Ljava/lang/Integer;Lcom/luna/common/arch/playable/AudioQuality;Lcom/luna/common/player/quality/Quality;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Lcom/luna/common/arch/db/entity/lyrics/NetLyricType;)V",
+            "getCommentId",
+            "()Ljava/lang/String;",
+            "setCommentId",
+            "(Ljava/lang/String;)V",
+            "getHashtagId",
+            "setHashtagId",
+            "getCommentShowType",
+            "()Ljava/lang/Integer;",
+            "setCommentShowType",
+            "(Ljava/lang/Integer;)V",
+            "Ljava/lang/Integer;",
+            "getVideoId",
+            "setVideoId",
+            "getArtistId",
+            "getWithTranslation",
+            "getLyricType",
+            "()Lcom/luna/common/arch/db/entity/lyrics/NetLyricType;",
+            "audioFinishStatus",
+            "Lcom/luna/common/arch/tea/FinishStatus;",
+            "getAudioFinishStatus",
+            "()Lcom/luna/common/arch/tea/FinishStatus;",
+            "setAudioFinishStatus",
+            "(Lcom/luna/common/arch/tea/FinishStatus;)V",
+            "mcheckLogId",
+            "getMcheckLogId",
+            "setMcheckLogId",
+            "preMcheckLogId",
+            "getPreMcheckLogId",
+            "setPreMcheckLogId",
+            "isPreview",
+            "setPreview",
+            "isLimit",
+            "setLimit",
+            "groupPaymentLevel",
+            "getGroupPaymentLevel",
+            "setGroupPaymentLevel",
+            "songReleaseDays",
+            "getSongReleaseDays",
+            "setSongReleaseDays",
+            "isReward",
+            "setReward",
+            "isSupportDownload",
+            "setSupportDownload",
+            "isSupportShare",
+            "setSupportShare",
+            "isPreviousBlock",
+            "setPreviousBlock",
+            "userSelectedMusicEffect",
+            "getUserSelectedMusicEffect",
+            "setUserSelectedMusicEffect",
+            "trackMusicEffect",
+            "getTrackMusicEffect",
+            "setTrackMusicEffect",
+            "botEffectiveOption",
+            "getBotEffectiveOption",
+            "setBotEffectiveOption",
+            "hasSongMakerInfo",
+            "getHasSongMakerInfo",
+            "setHasSongMakerInfo",
+            "preludeLength",
+            "",
+            "getPreludeLength",
+            "()Ljava/lang/Long;",
+            "setPreludeLength",
+            "(Ljava/lang/Long;)V",
+            "Ljava/lang/Long;",
+            "isFirstRequest",
+            "()I",
+            "setFirstRequest",
+            "(I)V",
+            "warnType",
+            "getWarnType",
+            "setWarnType",
+            "warnContent",
+            "getWarnContent",
+            "setWarnContent",
+            "warnSubType",
+            "getWarnSubType",
+            "setWarnSubType",
+            "playFromType",
+            "getPlayFromType",
+            "setPlayFromType",
+            "Companion",
+            "biz-playing-impl_release"
+          ],
+          "k": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "01",
+            "unsigned_value": 1
+          },
+          "mv": [
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "02",
+              "unsigned_value": 2
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            },
+            {
+              "encoded_kind": 4,
+              "bytes_le_hex": "00",
+              "unsigned_value": 0
+            }
+          ],
+          "xi": {
+            "encoded_kind": 4,
+            "bytes_le_hex": "30",
+            "unsigned_value": 48
+          }
+        }
+      }
+    ],
+    "parameter_annotations": [
+      {
+        "dex_method_index": 15787,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/Integer;Lcom/luna/common/arch/playable/AudioQuality;Lcom/luna/common/player/quality/Quality;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Lcom/luna/common/arch/db/entity/lyrics/NetLyricType;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ],
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15817,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setAudioFinishStatus",
+        "descriptor": "(Lcom/luna/common/arch/tea/FinishStatus;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15818,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setBotEffectiveOption",
+        "descriptor": "(Ljava/lang/String;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15819,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setCommentId",
+        "descriptor": "(Ljava/lang/String;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15820,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setCommentShowType",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15822,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setGroupPaymentLevel",
+        "descriptor": "(Ljava/lang/String;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15823,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setHasSongMakerInfo",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15824,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setHashtagId",
+        "descriptor": "(Ljava/lang/String;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15825,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setLimit",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15826,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setMcheckLogId",
+        "descriptor": "(Ljava/lang/String;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15827,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setPlayFromType",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15828,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setPreMcheckLogId",
+        "descriptor": "(Ljava/lang/String;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15829,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setPreludeLength",
+        "descriptor": "(Ljava/lang/Long;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15830,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setPreview",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15831,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setPreviousBlock",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15832,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setReward",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15833,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setSongReleaseDays",
+        "descriptor": "(Ljava/lang/String;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15834,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setSupportDownload",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15835,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setSupportShare",
+        "descriptor": "(Ljava/lang/Integer;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15836,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setTrackMusicEffect",
+        "descriptor": "(Ljava/lang/String;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15837,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setUserSelectedMusicEffect",
+        "descriptor": "(Ljava/lang/String;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15838,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setVideoId",
+        "descriptor": "(Ljava/lang/String;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15839,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setWarnContent",
+        "descriptor": "(Ljava/lang/String;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15840,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setWarnSubType",
+        "descriptor": "(Ljava/lang/String;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      },
+      {
+        "dex_method_index": 15841,
+        "owner": "Lcom/luna/biz/playing/player/tea/audio/finish/AudioFinishEvent;",
+        "name": "setWarnType",
+        "descriptor": "(Ljava/lang/String;)V",
+        "parameters": [
+          [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        ]
+      }
+    ]
+  }
+]

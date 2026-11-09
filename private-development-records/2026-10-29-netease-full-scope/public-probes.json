@@ -1,0 +1,444 @@
+{
+  "anonymous": true,
+  "writes": false,
+  "accountAccess": false,
+  "results": [
+    {
+      "route": "/artist/list",
+      "status": "response",
+      "code": 200,
+      "keys": [
+        "artists",
+        "more",
+        "code"
+      ],
+      "dataType": "Null",
+      "parsedRows": 3,
+      "factCount": 0,
+      "shape": {
+        "artists": [
+          3,
+          {
+            "albumSize": "int",
+            "alias": [
+              2
+            ],
+            "briefDesc": "String",
+            "followed": "bool",
+            "id": "int",
+            "img1v1Id": "int",
+            "img1v1Id_str": "String",
+            "img1v1Url": "String",
+            "musicSize": "int",
+            "name": "String",
+            "picId": "int",
+            "picId_str": "String",
+            "picUrl": "String",
+            "topicPerson": "int",
+            "trans": "String"
+          }
+        ],
+        "more": "bool",
+        "code": "int"
+      }
+    },
+    {
+      "route": "/playlist/hot",
+      "status": "response",
+      "code": 200,
+      "keys": [
+        "tags",
+        "code"
+      ],
+      "dataType": "Null",
+      "parsedRows": 10,
+      "factCount": 0,
+      "shape": {
+        "tags": [
+          10,
+          {
+            "playlistTag": "_Map<String, dynamic>",
+            "activity": "bool",
+            "name": "String",
+            "id": "int",
+            "type": "int",
+            "usedCount": "int",
+            "hot": "bool",
+            "category": "int",
+            "position": "int",
+            "createTime": "int"
+          }
+        ],
+        "code": "int"
+      }
+    },
+    {
+      "route": "/toplist/detail",
+      "status": "response",
+      "code": 200,
+      "keys": [
+        "code",
+        "list",
+        "artistToplist",
+        "rewardToplist"
+      ],
+      "dataType": "Null",
+      "parsedRows": 68,
+      "factCount": 2,
+      "shape": {
+        "code": "int",
+        "list": [
+          65,
+          {
+            "subscribers": [
+              0
+            ],
+            "subscribed": "Null",
+            "creator": "Null",
+            "artists": "Null",
+            "tracks": [
+              3
+            ],
+            "updateFrequency": "String",
+            "backgroundCoverId": "int",
+            "backgroundCoverUrl": "Null",
+            "titleImage": "int",
+            "coverText": "Null",
+            "titleImageUrl": "Null",
+            "coverImageUrl": "Null",
+            "iconImageUrl": "Null",
+            "englishTitle": "Null",
+            "opRecommend": "bool",
+            "recommendInfo": "Null"
+          }
+        ],
+        "artistToplist": {
+          "coverUrl": "String",
+          "artists": [
+            3,
+            "_Map<String, dynamic>"
+          ],
+          "name": "String",
+          "upateFrequency": "String",
+          "position": "int",
+          "updateFrequency": "String"
+        },
+        "rewardToplist": {
+          "coverUrl": "String",
+          "songs": [
+            3,
+            "_Map<String, dynamic>"
+          ],
+          "name": "String",
+          "position": "int"
+        }
+      }
+    },
+    {
+      "route": "/album/newest",
+      "status": "response",
+      "code": 200,
+      "keys": [
+        "code",
+        "albums"
+      ],
+      "dataType": "Null",
+      "parsedRows": 12,
+      "factCount": 0,
+      "shape": {
+        "code": "int",
+        "albums": [
+          12,
+          {
+            "name": "String",
+            "id": "int",
+            "type": "String",
+            "size": "int",
+            "picId": "int",
+            "blurPicUrl": "String",
+            "companyId": "int",
+            "pic": "int",
+            "picUrl": "String",
+            "publishTime": "int",
+            "description": "String",
+            "tags": "String",
+            "company": "String",
+            "briefDesc": "String",
+            "artist": "_Map<String, dynamic>",
+            "songs": "Null"
+          }
+        ]
+      }
+    },
+    {
+      "route": "/search/suggest",
+      "status": "response",
+      "code": 200,
+      "keys": [
+        "result",
+        "code"
+      ],
+      "dataType": "Null",
+      "parsedRows": 13,
+      "factCount": 0,
+      "shape": {
+        "result": {
+          "albums": [
+            2,
+            "_Map<String, dynamic>"
+          ],
+          "artists": [
+            1,
+            "_Map<String, dynamic>"
+          ],
+          "songs": [
+            4,
+            "_Map<String, dynamic>"
+          ],
+          "playlists": [
+            2,
+            "_Map<String, dynamic>"
+          ],
+          "order": [
+            4,
+            "String"
+          ]
+        },
+        "code": "int"
+      }
+    },
+    {
+      "route": "/style/list",
+      "status": "response",
+      "code": 200,
+      "keys": [
+        "data",
+        "code"
+      ],
+      "dataType": "List<dynamic>",
+      "parsedRows": 28,
+      "factCount": 0,
+      "shape": {
+        "data": [
+          28,
+          {
+            "tagId": "int",
+            "tagName": "String",
+            "enName": "String",
+            "level": "int",
+            "childrenTags": [
+              27
+            ],
+            "picUrl": "String",
+            "colorDeep": "String",
+            "colorShallow": "String",
+            "link": "String",
+            "showText": "String",
+            "tabs": [
+              1
+            ]
+          }
+        ],
+        "code": "int"
+      }
+    },
+    {
+      "route": "/style/detail",
+      "status": "response",
+      "code": 200,
+      "keys": [
+        "data",
+        "code"
+      ],
+      "dataType": "_Map<String, dynamic>",
+      "parsedRows": 2,
+      "factCount": 5,
+      "shape": {
+        "data": {
+          "tagId": "int",
+          "name": "String",
+          "level": "int",
+          "parentNames": "String",
+          "enName": "String",
+          "desc": "String",
+          "cover": [
+            1,
+            "String"
+          ],
+          "colorDeep": "String",
+          "colorShallow": "String",
+          "songNum": "String",
+          "artistNum": "String",
+          "playRate": "Null",
+          "professionalReviews": "Null",
+          "favouriteSong": "Null",
+          "tagPortrait": "Null",
+          "tabs": [
+            1,
+            "String"
+          ]
+        },
+        "code": "int"
+      }
+    },
+    {
+      "route": "/sheet/list",
+      "status": "response",
+      "code": 200,
+      "keys": [
+        "code",
+        "data",
+        "message"
+      ],
+      "dataType": "_Map<String, dynamic>",
+      "parsedRows": 14,
+      "factCount": 0,
+      "shape": {
+        "code": "int",
+        "data": {
+          "sheetInstrumentTypeVOList": [
+            4,
+            "_Map<String, dynamic>"
+          ],
+          "musicSheetSimpleInfoVOS": [
+            10,
+            "_Map<String, dynamic>"
+          ],
+          "errorCode": "Null",
+          "findSheet": "int",
+          "uploadSheet": "int"
+        },
+        "message": "String"
+      }
+    },
+    {
+      "route": "/mv/first",
+      "status": "response",
+      "code": 200,
+      "keys": [
+        "data",
+        "code"
+      ],
+      "dataType": "List<dynamic>",
+      "parsedRows": 3,
+      "factCount": 0,
+      "shape": {
+        "data": [
+          3,
+          {
+            "id": "int",
+            "cover": "String",
+            "name": "String",
+            "playCount": "int",
+            "briefDesc": "Null",
+            "desc": "Null",
+            "artistName": "String",
+            "artistId": "int",
+            "duration": "int",
+            "mark": "int",
+            "subed": "bool",
+            "artists": [
+              1
+            ],
+            "alias": [
+              1
+            ]
+          }
+        ],
+        "code": "int"
+      }
+    },
+    {
+      "route": "/dj/toplist",
+      "status": "response",
+      "code": 200,
+      "keys": [
+        "updateTime",
+        "toplist",
+        "code"
+      ],
+      "dataType": "Null",
+      "parsedRows": 2,
+      "factCount": 0,
+      "shape": {
+        "updateTime": "int",
+        "toplist": [
+          2,
+          {
+            "id": "int",
+            "name": "String",
+            "picUrl": "String",
+            "programCount": "int",
+            "subCount": "int",
+            "createTime": "int",
+            "categoryId": "int",
+            "category": "String",
+            "rcmdtext": "String",
+            "radioFeeType": "int",
+            "feeScope": "int",
+            "playCount": "int",
+            "lastRank": "int",
+            "score": "int",
+            "dj": "_Map<String, dynamic>",
+            "creatorName": "String"
+          }
+        ],
+        "code": "int"
+      }
+    },
+    {
+      "route": "/video/group/list",
+      "status": "response",
+      "code": 200,
+      "keys": [
+        "code",
+        "message",
+        "data"
+      ],
+      "dataType": "List<dynamic>",
+      "parsedRows": 107,
+      "factCount": 1,
+      "shape": {
+        "code": "int",
+        "message": "String",
+        "data": [
+          107,
+          {
+            "id": "int",
+            "name": "String",
+            "url": "Null",
+            "relatedVideoType": "Null",
+            "selectTab": "bool",
+            "abExtInfo": "Null"
+          }
+        ]
+      }
+    },
+    {
+      "route": "/countries/code/list",
+      "status": "response",
+      "code": 200,
+      "keys": [
+        "code",
+        "message",
+        "data"
+      ],
+      "dataType": "List<dynamic>",
+      "parsedRows": 22,
+      "factCount": 1,
+      "shape": {
+        "code": "int",
+        "message": "String",
+        "data": [
+          22,
+          {
+            "label": "String",
+            "countryList": [
+              4
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

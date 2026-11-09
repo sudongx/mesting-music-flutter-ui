@@ -1,0 +1,1246 @@
+{
+  "scope": "Selected official APK static inspection only; no phone/account runtime.",
+  "records": [
+    {
+      "key": "home158-kg-tabs",
+      "evidence": {
+        "evidence_id": "ev_b3d1a72e097d04bec716e07c1897f28ad2b650fdc5a69a5d93ff397128da05ec",
+        "subject": {
+          "name": "kugou-classes21-analysis-only.apk",
+          "digest": {
+            "sha256": "ebda5a4306ccbd642a9541960ea525814d83ba2e8f9eb931b02e9880516a63e1"
+          },
+          "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-05-release158\\kugou-classes21-analysis-only.apk",
+          "format": "apk",
+          "architecture": null
+        },
+        "provider": {
+          "id": "jadx",
+          "name": "JADX headless",
+          "version": "0.7.1"
+        },
+        "analysis_profile": null,
+        "predicate_type": "rea.analysis",
+        "operation": "inspect_android_method",
+        "parameters": {
+          "path": "D:/AnLi/.codex-artifacts/2026-11-05-release158/kugou-classes21-analysis-only.apk",
+          "class_name": "com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment",
+          "method_name": "gQ"
+        },
+        "raw_result": {
+          "server": {
+            "name": "rea-jadx-bridge",
+            "version": "10"
+          },
+          "bridge_sha256": "f9d6d68eadd3d51a89e2debda359454c20534560080d4438f9b9cfe5a19f0b2e",
+          "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "loaded": {
+            "state": "LOADED",
+            "apk_path": "C:\\Users\\zyt\\AppData\\Local\\Temp\\rea-android-a854108a5b25674a4b5e495be9be7043\\target.apk",
+            "class_count": 2411,
+            "resource_count": 2,
+            "threads": 1,
+            "resources": "full"
+          },
+          "calls": [
+            {
+              "operation": "rea_jvm_status",
+              "input": {},
+              "response": {
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "{\"max_heap_bytes\":3221225472,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":8,\"java_version\":\"17.0.20.1\"}"
+                  }
+                ],
+                "isError": false
+              }
+            },
+            {
+              "operation": "load_apk",
+              "input": {
+                "path": "C:\\Users\\zyt\\AppData\\Local\\Temp\\rea-android-a854108a5b25674a4b5e495be9be7043\\target.apk",
+                "threads": 1,
+                "resources": "full"
+              },
+              "response": {
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\zyt\\\\AppData\\\\Local\\\\Temp\\\\rea-android-a854108a5b25674a4b5e495be9be7043\\\\target.apk\",\"class_count\":2411,\"raw_class_count\":2411,\"resource_count\":2,\"load_duration_ms\":3269,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+                  }
+                ],
+                "isError": false
+              }
+            },
+            {
+              "operation": "get_class_summary",
+              "input": {
+                "class_name": "com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment"
+              },
+              "response": {
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "{\"full_name\":\"com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment\",\"inner_classes\":[\"com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment.a\",\"com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment.b\",\"com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment.c\",\"com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment.d\",\"com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment.e\",\"com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment.f\",\"com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment.g\",\"com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment.h\"],\"field_count\":22,\"method_count\":60,\"raw_name\":\"com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment\",\"name\":\"DiscoveryMainFragment\",\"inner_class_count\":8,\"inner_class_raw_names\":[\"com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment$a\",\"com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment$b\",\"com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment$c\",\"com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment$d\",\"com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment$e\",\"com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment$f\",\"com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment$g\",\"com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment$h\"],\"fields\":[{\"type\":\"boolean\",\"def_pos\":0,\"dex_type\":\"Z\",\"raw_name\":\"A\",\"name\":\"A\"},{\"type\":\"boolean[]\",\"def_pos\":0,\"dex_type\":\"[Z\",\"raw_name\":\"B\",\"name\":\"B\"},{\"type\":\"int\",\"def_pos\":0,\"dex_type\":\"I\",\"raw_name\":\"d\",\"name\":\"d\"},{\"type\":\"int\",\"def_pos\":0,\"dex_type\":\"I\",\"raw_name\":\"e\",\"name\":\"e\"},{\"type\":\"boolean\",\"def_pos\":0,\"dex_type\":\"Z\",\"raw_name\":\"f\",\"name\":\"f\"},{\"type\":\"boolean\",\"def_pos\":0,\"dex_type\":\"Z\",\"raw_name\":\"g\",\"name\":\"g\"},{\"type\":\"long\",\"def_pos\":0,\"dex_type\":\"J\",\"raw_name\":\"h\",\"name\":\"h\"},{\"type\":\"boolean\",\"def_pos\":0,\"dex_type\":\"Z\",\"raw_name\":\"i\",\"name\":\"i\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"dex_type\":\"Ljava/lang/String;\",\"raw_name\":\"j\",\"name\":\"j\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"dex_type\":\"Ljava/lang/String;\",\"raw_name\":\"n\",\"name\":\"n\"},{\"type\":\"com.kugou.android.app.tabting.x.view.KG11TingMainPageNestedLayout\",\"def_pos\":0,\"dex_type\":\"Lcom/kugou/android/app/tabting/x/view/KG11TingMainPageNestedLayout;\",\"raw_name\":\"o\",\"name\":\"o\"},{\"type\":\"com.kugou.common.swipeTab.SwipeTabView\",\"def_pos\":0,\"dex_type\":\"Lcom/kugou/common/swipeTab/SwipeTabView;\",\"raw_name\":\"p\",\"name\":\"p\"},{\"type\":\"com.kugou.android.common.delegate.w$c\",\"def_pos\":0,\"dex_type\":\"Lcom/kugou/android/common/delegate/w$c;\",\"raw_name\":\"q\",\"name\":\"q\"},{\"type\":\"boolean\",\"def_pos\":0,\"dex_type\":\"Z\",\"raw_name\":\"r\",\"name\":\"r\"},{\"type\":\"boolean\",\"def_pos\":0,\"dex_type\":\"Z\",\"raw_name\":\"s\",\"name\":\"s\"},{\"type\":\"android.animation.ValueAnimator\",\"def_pos\":0,\"dex_type\":\"Landroid/animation/ValueAnimator;\",\"raw_name\":\"t\",\"name\":\"t\"},{\"type\":\"android.animation.ValueAnimator\",\"def_pos\":0,\"dex_type\":\"Landroid/animation/ValueAnimator;\",\"raw_name\":\"u\",\"name\":\"u\"},{\"type\":\"boolean\",\"def_pos\":0,\"dex_type\":\"Z\",\"raw_name\":\"v\",\"name\":\"v\"},{\"type\":\"int[]\",\"def_pos\":0,\"dex_type\":\"[I\",\"raw_name\":\"w\",\"name\":\"w\"},{\"type\":\"com.kugou.framework.statistics.easytrace.d[]\",\"def_pos\":0,\"dex_type\":\"[Lcom/kugou/framework/statistics/easytrace/d;\",\"raw_name\":\"x\",\"name\":\"x\"},{\"type\":\"java.lang.String[]\",\"def_pos\":0,\"dex_type\":\"[Ljava/lang/String;\",\"raw_name\":\"y\",\"name\":\"y\"},{\"type\":\"com.kugou.android.common.delegate.DelegateFragment[]\",\"def_pos\":0,\"dex_type\":\"[Lcom/kugou/android/common/delegate/DelegateFragment;\",\"raw_name\":\"z\",\"name\":\"z\"}],\"methods\":[{\"def_pos\":0,\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"signature\":\"\\u003cinit\\u003e(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"\\u003cinit\\u003e\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"S6\",\"signature\":\"S6(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"S6\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"SP\",\"signature\":\"SP(com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment, java.lang.Integer, java.lang.Integer): vv7.z\",\"dex_descriptor\":\"(Lcom/kugou/android/netmusic/discovery/ui/DiscoveryMainFragment;Ljava/lang/Integer;Ljava/lang/Integer;)Lvv7/z;\",\"raw_name\":\"SP\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"TP\",\"signature\":\"TP(com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment): int\",\"dex_descriptor\":\"(Lcom/kugou/android/netmusic/discovery/ui/DiscoveryMainFragment;)I\",\"raw_name\":\"TP\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"UP\",\"signature\":\"UP(com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment): com.kugou.android.common.delegate.DelegateFragment[]\",\"dex_descriptor\":\"(Lcom/kugou/android/netmusic/discovery/ui/DiscoveryMainFragment;)[Lcom/kugou/android/common/delegate/DelegateFragment;\",\"raw_name\":\"UP\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"VP\",\"signature\":\"VP(com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment): com.kugou.common.swipeTab.SwipeTabView\",\"dex_descriptor\":\"(Lcom/kugou/android/netmusic/discovery/ui/DiscoveryMainFragment;)Lcom/kugou/common/swipeTab/SwipeTabView;\",\"raw_name\":\"VP\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"WP\",\"signature\":\"WP(com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment, boolean): void\",\"dex_descriptor\":\"(Lcom/kugou/android/netmusic/discovery/ui/DiscoveryMainFragment;Z)V\",\"raw_name\":\"WP\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"XP\",\"signature\":\"XP(com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment): void\",\"dex_descriptor\":\"(Lcom/kugou/android/netmusic/discovery/ui/DiscoveryMainFragment;)V\",\"raw_name\":\"XP\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"YP\",\"signature\":\"YP(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"YP\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"ZP\",\"signature\":\"ZP(android.os.Bundle): com.kugou.android.common.delegate.DelegateFragment\",\"dex_descriptor\":\"(Landroid/os/Bundle;)Lcom/kugou/android/common/delegate/DelegateFragment;\",\"raw_name\":\"ZP\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"aQ\",\"signature\":\"aQ(android.os.Bundle): com.kugou.android.common.delegate.DelegateFragment\",\"dex_descriptor\":\"(Landroid/os/Bundle;)Lcom/kugou/android/common/delegate/DelegateFragment;\",\"raw_name\":\"aQ\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"bQ\",\"signature\":\"bQ(android.os.Bundle): com.kugou.android.common.delegate.DelegateFragment\",\"dex_descriptor\":\"(Landroid/os/Bundle;)Lcom/kugou/android/common/delegate/DelegateFragment;\",\"raw_name\":\"bQ\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"cQ\",\"signature\":\"cQ(): com.kugou.android.common.delegate.DelegateFragment\",\"dex_descriptor\":\"()Lcom/kugou/android/common/delegate/DelegateFragment;\",\"raw_name\":\"cQ\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"dQ\",\"signature\":\"dQ(android.os.Bundle): com.kugou.android.common.delegate.DelegateFragment\",\"dex_descriptor\":\"(Landroid/os/Bundle;)Lcom/kugou/android/common/delegate/DelegateFragment;\",\"raw_name\":\"dQ\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"eQ\",\"signature\":\"eQ(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"eQ\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"eg\",\"signature\":\"eg(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"eg\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"fQ\",\"signature\":\"fQ(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"fQ\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"gQ\",\"signature\":\"gQ(android.os.Bundle): void\",\"dex_descriptor\":\"(Landroid/os/Bundle;)V\",\"raw_name\":\"gQ\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"getDelegateFragment\",\"signature\":\"getDelegateFragment(): com.kugou.android.common.delegate.DelegateFragment\",\"dex_descriptor\":\"()Lcom/kugou/android/common/delegate/DelegateFragment;\",\"raw_name\":\"getDelegateFragment\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"getSubPage\",\"signature\":\"getSubPage(): int\",\"dex_descriptor\":\"()I\",\"raw_name\":\"getSubPage\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"getThisPage\",\"signature\":\"getThisPage(): int\",\"dex_descriptor\":\"()I\",\"raw_name\":\"getThisPage\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"hQ\",\"signature\":\"hQ(): boolean\",\"dex_descriptor\":\"()Z\",\"raw_name\":\"hQ\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"hasPlayingBarBlur\",\"signature\":\"hasPlayingBarBlur(): boolean\",\"dex_descriptor\":\"()Z\",\"raw_name\":\"hasPlayingBarBlur\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"iQ\",\"signature\":\"iQ(java.lang.Integer, java.lang.Integer): vv7.z\",\"dex_descriptor\":\"(Ljava/lang/Integer;Ljava/lang/Integer;)Lvv7/z;\",\"raw_name\":\"iQ\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"jQ\",\"signature\":\"jQ(float, float): void\",\"dex_descriptor\":\"(FF)V\",\"raw_name\":\"jQ\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"kQ\",\"signature\":\"kQ(int): void\",\"dex_descriptor\":\"(I)V\",\"raw_name\":\"kQ\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"lQ\",\"signature\":\"lQ(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"lQ\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"mQ\",\"signature\":\"mQ(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"mQ\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"nQ\",\"signature\":\"nQ(int): void\",\"dex_descriptor\":\"(I)V\",\"raw_name\":\"nQ\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"o\",\"signature\":\"o(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"o\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"o5\",\"signature\":\"o5(boolean, boolean): void\",\"dex_descriptor\":\"(ZZ)V\",\"raw_name\":\"o5\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"oQ\",\"signature\":\"oQ(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"oQ\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onActivityCreated\",\"signature\":\"onActivityCreated(android.os.Bundle): void\",\"dex_descriptor\":\"(Landroid/os/Bundle;)V\",\"raw_name\":\"onActivityCreated\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onCreate\",\"signature\":\"onCreate(android.os.Bundle): void\",\"dex_descriptor\":\"(Landroid/os/Bundle;)V\",\"raw_name\":\"onCreate\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onCreateView\",\"signature\":\"onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle): android.view.View\",\"dex_descriptor\":\"(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;\",\"raw_name\":\"onCreateView\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onDestroy\",\"signature\":\"onDestroy(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"onDestroy\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onFragmentPause\",\"signature\":\"onFragmentPause(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"onFragmentPause\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onFragmentRestart\",\"signature\":\"onFragmentRestart(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"onFragmentRestart\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onFragmentResume\",\"signature\":\"onFragmentResume(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"onFragmentResume\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onFragmentStop\",\"signature\":\"onFragmentStop(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"onFragmentStop\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onKeyDown\",\"signature\":\"onKeyDown(int, android.view.KeyEvent): boolean\",\"dex_descriptor\":\"(ILandroid/view/KeyEvent;)Z\",\"raw_name\":\"onKeyDown\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onLayerChange\",\"signature\":\"onLayerChange(): boolean\",\"dex_descriptor\":\"()Z\",\"raw_name\":\"onLayerChange\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onNewBundle\",\"signature\":\"onNewBundle(android.os.Bundle): void\",\"dex_descriptor\":\"(Landroid/os/Bundle;)V\",\"raw_name\":\"onNewBundle\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onPageDisappear\",\"signature\":\"onPageDisappear(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"onPageDisappear\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onPageScrollStateChanged\",\"signature\":\"onPageScrollStateChanged(int): void\",\"dex_descriptor\":\"(I)V\",\"raw_name\":\"onPageScrollStateChanged\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onPageScrolled\",\"signature\":\"onPageScrolled(int, float, int): void\",\"dex_descriptor\":\"(IFI)V\",\"raw_name\":\"onPageScrolled\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onPageSelected\",\"signature\":\"onPageSelected(int): void\",\"dex_descriptor\":\"(I)V\",\"raw_name\":\"onPageSelected\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onPageSelectedAfterAnimation\",\"signature\":\"onPageSelectedAfterAnimation(int): void\",\"dex_descriptor\":\"(I)V\",\"raw_name\":\"onPageSelectedAfterAnimation\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onPause\",\"signature\":\"onPause(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"onPause\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onResume\",\"signature\":\"onResume(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"onResume\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onSkinAllChanged\",\"signature\":\"onSkinAllChanged(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"onSkinAllChanged\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onSkinColorChanged\",\"signature\":\"onSkinColorChanged(): void\",\"dex_descriptor\":\"()V\",\"raw_name\":\"onSkinColorChanged\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"onViewCreated\",\"signature\":\"onViewCreated(android.view.View, android.os.Bundle): void\",\"dex_descriptor\":\"(Landroid/view/View;Landroid/os/Bundle;)V\",\"raw_name\":\"onViewCreated\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"pQ\",\"signature\":\"pQ(): boolean\",\"dex_descriptor\":\"()Z\",\"raw_name\":\"pQ\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"qQ\",\"signature\":\"qQ(): boolean\",\"dex_descriptor\":\"()Z\",\"raw_name\":\"qQ\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"rQ\",\"signature\":\"rQ(com.kugou.android.common.delegate.DelegateFragment): void\",\"dex_descriptor\":\"(Lcom/kugou/android/common/delegate/DelegateFragment;)V\",\"raw_name\":\"rQ\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"sQ\",\"signature\":\"sQ(com.kugou.android.common.delegate.DelegateFragment, int): void\",\"dex_descriptor\":\"(Lcom/kugou/android/common/delegate/DelegateFragment;I)V\",\"raw_name\":\"sQ\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"setUserVisibleHint\",\"signature\":\"setUserVisibleHint(boolean): void\",\"dex_descriptor\":\"(Z)V\",\"raw_name\":\"setUserVisibleHint\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"tQ\",\"signature\":\"tQ(int): void\",\"dex_descriptor\":\"(I)V\",\"raw_name\":\"tQ\"},{\"def_pos\":0,\"is_constructor\":false,\"name\":\"x8\",\"signature\":\"x8(boolean): void\",\"dex_descriptor\":\"(Z)V\",\"raw_name\":\"x8\"}]}"
+                  }
+                ],
+                "isError": false
+              }
+            },
+            {
+              "operation": "get_method_body",
+              "input": {
+                "class_name": "com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment",
+                "method_name": "gQ",
+                "overload_index": 0,
+                "smali_fallback": true
+              },
+              "response": {
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "{\"full_name\":\"com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment.gQ\",\"fell_back\":false,\"markers\":[],\"body\":\"    private void gQ(Bundle bundle) {\\r\\n        getSwipeDelegate().X(true);\\r\\n        getSwipeDelegate().t().setOffscreenPageLimit(this.z.length);\\r\\n        getSwipeDelegate().t().Z(new d());\\r\\n        if (this.r \\u0026\\u0026 !hQ()) {\\r\\n            getSwipeDelegate().t().setDisallowScroll();\\r\\n        }\\r\\n        bQ(bundle);\\r\\n        aQ(bundle);\\r\\n        dQ(bundle);\\r\\n        ZP(bundle);\\r\\n        int i \\u003d 0;\\r\\n        while (true) {\\r\\n            AbsFrameworkFragment[] absFrameworkFragmentArr \\u003d this.z;\\r\\n            if (i \\u003e\\u003d absFrameworkFragmentArr.length) {\\r\\n                getSwipeDelegate().P(this.q, this.d);\\r\\n                getSwipeDelegate().A(this.d, false);\\r\\n                pq2.d.e(\\\"酷狗号\\\");\\r\\n                pq2.d.e(\\\"排行\\\");\\r\\n                pq2.d.e(\\\"歌手\\\");\\r\\n                pq2.d.e(\\\"分类\\\");\\r\\n                return;\\r\\n            }\\r\\n            this.q.a(absFrameworkFragmentArr[i], getString(this.w[i]), this.y[i]);\\r\\n            i++;\\r\\n        }\\r\\n    }\",\"mode\":\"java\",\"class_name\":\"com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment\",\"dex_descriptor\":\"(Landroid/os/Bundle;)V\",\"overload_count\":1,\"method_name\":\"gQ\",\"overload_index\":0}"
+                  }
+                ],
+                "isError": false
+              }
+            }
+          ]
+        },
+        "normalized_result": {
+          "engine": {
+            "name": "jadx-headless-mcp",
+            "version": "0.7.1",
+            "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+            "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+            "worker_count": 1,
+            "heap_limit_mib": 3072
+          },
+          "class_name": "com.kugou.android.netmusic.discovery.ui.DiscoveryMainFragment",
+          "method": {
+            "name": "gQ",
+            "reported_signature": "gQ(android.os.Bundle): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Landroid/os/Bundle;)V"
+          },
+          "overload_count": 1,
+          "representation": "java",
+          "body_status": "available",
+          "fell_back": false,
+          "markers": [],
+          "source": {
+            "status": "complete",
+            "text": "    private void gQ(Bundle bundle) {\r\n        getSwipeDelegate().X(true);\r\n        getSwipeDelegate().t().setOffscreenPageLimit(this.z.length);\r\n        getSwipeDelegate().t().Z(new d());\r\n        if (this.r && !hQ()) {\r\n            getSwipeDelegate().t().setDisallowScroll();\r\n        }\r\n        bQ(bundle);\r\n        aQ(bundle);\r\n        dQ(bundle);\r\n        ZP(bundle);\r\n        int i = 0;\r\n        while (true) {\r\n            AbsFrameworkFragment[] absFrameworkFragmentArr = this.z;\r\n            if (i >= absFrameworkFragmentArr.length) {\r\n                getSwipeDelegate().P(this.q, this.d);\r\n                getSwipeDelegate().A(this.d, false);\r\n                pq2.d.e(\"酷狗号\");\r\n                pq2.d.e(\"排行\");\r\n                pq2.d.e(\"歌手\");\r\n                pq2.d.e(\"分类\");\r\n                return;\r\n            }\r\n            this.q.a(absFrameworkFragmentArr[i], getString(this.w[i]), this.y[i]);\r\n            i++;\r\n        }\r\n    }",
+            "reported_total_bytes": null
+          }
+        },
+        "confidence": "derived",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+          "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+          "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+          "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+          "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture."
+        ],
+        "relationship_coverage": null,
+        "locations": [],
+        "evidence_links": []
+      }
+    },
+    {
+      "key": "home158-ne-block",
+      "evidence": {
+        "evidence_id": "ev_e5c40253856cf9da0651f39cb5e4977f666d52f76ff0cd1659416313c2d2c07f",
+        "subject": {
+          "name": "netease-classes15-analysis-only.apk",
+          "digest": {
+            "sha256": "dd11dea3550165854669bbcd2752a6217f495f4f5cad5a2da1792ce6b5f3e5f0"
+          },
+          "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-05-release157\\netease-classes15-analysis-only.apk",
+          "format": "apk",
+          "architecture": null
+        },
+        "provider": {
+          "id": "jadx",
+          "name": "JADX headless",
+          "version": "0.7.1"
+        },
+        "analysis_profile": null,
+        "predicate_type": "rea.analysis",
+        "operation": "inspect_android_class",
+        "parameters": {
+          "path": "D:/AnLi/.codex-artifacts/2026-11-05-release157/netease-classes15-analysis-only.apk",
+          "class_name": "com.netease.cloudmusic.discovery.data.meta.v3.Block"
+        },
+        "raw_result": {
+          "server": {
+            "name": "rea-jadx-bridge",
+            "version": "10"
+          },
+          "bridge_sha256": "f9d6d68eadd3d51a89e2debda359454c20534560080d4438f9b9cfe5a19f0b2e",
+          "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "loaded": {
+            "state": "LOADED",
+            "apk_path": "C:\\Users\\zyt\\AppData\\Local\\Temp\\rea-android-5b57a3892d065564a663d6b2c1de1bda\\target.apk",
+            "class_count": 2936,
+            "resource_count": 2,
+            "threads": 1,
+            "resources": "full"
+          },
+          "calls": [
+            {
+              "operation": "rea_jvm_status",
+              "input": {},
+              "response": {
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "{\"java_version\":\"17.0.20.1\",\"available_processors\":8,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":3221225472}"
+                  }
+                ],
+                "isError": false
+              }
+            },
+            {
+              "operation": "load_apk",
+              "input": {
+                "path": "C:\\Users\\zyt\\AppData\\Local\\Temp\\rea-android-5b57a3892d065564a663d6b2c1de1bda\\target.apk",
+                "threads": 1,
+                "resources": "full"
+              },
+              "response": {
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\zyt\\\\AppData\\\\Local\\\\Temp\\\\rea-android-5b57a3892d065564a663d6b2c1de1bda\\\\target.apk\",\"class_count\":2936,\"raw_class_count\":2936,\"resource_count\":2,\"load_duration_ms\":4105,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+                  }
+                ],
+                "isError": false
+              }
+            },
+            {
+              "operation": "get_class_summary",
+              "input": {
+                "class_name": "com.netease.cloudmusic.discovery.data.meta.v3.Block",
+                "dex_static_values": true
+              },
+              "response": {
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "{\"inner_classes\":[],\"full_name\":\"com.netease.cloudmusic.discovery.data.meta.v3.Block\",\"methods\":[{\"def_pos\":0,\"raw_name\":\"\\u003cinit\\u003e\",\"dex_descriptor\":\"()V\",\"signature\":\"\\u003cinit\\u003e(): void\",\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true}],\"fields\":[{\"type\":\"java.lang.String\",\"name\":\"action\",\"raw_name\":\"action\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"actionType\",\"raw_name\":\"actionType\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0},{\"type\":\"com.netease.cloudmusic.discovery.data.meta.v3.BlockBackground\",\"name\":\"blockBackground\",\"raw_name\":\"blockBackground\",\"dex_type\":\"Lcom/netease/cloudmusic/discovery/data/meta/v3/BlockBackground;\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"canClose\",\"raw_name\":\"canClose\",\"dex_type\":\"Z\",\"def_pos\":0},{\"type\":\"java.util.ArrayList\\u003cR extends com.netease.cloudmusic.discovery.data.meta.v3.Creative\\u003c?, ?\\u003e\\u003e\",\"name\":\"creatives\",\"raw_name\":\"creatives\",\"dex_type\":\"Ljava/util/ArrayList;\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"dislikeShowType\",\"raw_name\":\"dislikeShowType\",\"dex_type\":\"I\",\"def_pos\":0},{\"type\":\"T\",\"name\":\"extInfo\",\"raw_name\":\"extInfo\",\"dex_type\":\"Ljava/lang/Object;\",\"def_pos\":0},{\"type\":\"com.netease.cloudmusic.discovery.data.meta.v3.UIElement\",\"name\":\"uiElement\",\"raw_name\":\"uiElement\",\"dex_type\":\"Lcom/netease/cloudmusic/discovery/data/meta/v3/UIElement;\",\"def_pos\":0}],\"inner_class_raw_names\":[],\"inner_class_count\":0,\"name\":\"Block\",\"raw_name\":\"com.netease.cloudmusic.discovery.data.meta.v3.Block\",\"method_count\":1,\"field_count\":8}"
+                  }
+                ],
+                "isError": false
+              }
+            }
+          ]
+        },
+        "normalized_result": {
+          "engine": {
+            "name": "jadx-headless-mcp",
+            "version": "0.7.1",
+            "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+            "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+            "worker_count": 1,
+            "heap_limit_mib": 3072
+          },
+          "class_name": "com.netease.cloudmusic.discovery.data.meta.v3.Block",
+          "methods": [
+            {
+              "name": "<init>",
+              "reported_signature": "<init>(): void",
+              "overload_index": 0,
+              "is_constructor": true,
+              "dex_descriptor": "()V"
+            }
+          ],
+          "fields": [
+            {
+              "name": "action",
+              "reported_type": "java.lang.String",
+              "dex_static_value": null
+            },
+            {
+              "name": "actionType",
+              "reported_type": "java.lang.String",
+              "dex_static_value": null
+            },
+            {
+              "name": "blockBackground",
+              "reported_type": "com.netease.cloudmusic.discovery.data.meta.v3.BlockBackground",
+              "dex_static_value": null
+            },
+            {
+              "name": "canClose",
+              "reported_type": "boolean",
+              "dex_static_value": null
+            },
+            {
+              "name": "creatives",
+              "reported_type": "java.util.ArrayList<R extends com.netease.cloudmusic.discovery.data.meta.v3.Creative<?, ?>>",
+              "dex_static_value": null
+            },
+            {
+              "name": "dislikeShowType",
+              "reported_type": "int",
+              "dex_static_value": null
+            },
+            {
+              "name": "extInfo",
+              "reported_type": "T",
+              "dex_static_value": null
+            },
+            {
+              "name": "uiElement",
+              "reported_type": "com.netease.cloudmusic.discovery.data.meta.v3.UIElement",
+              "dex_static_value": null
+            }
+          ],
+          "inner_classes": []
+        },
+        "confidence": "observed",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+          "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+          "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+          "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+          "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture."
+        ],
+        "relationship_coverage": null,
+        "locations": [],
+        "evidence_links": []
+      }
+    },
+    {
+      "key": "home158-ne-discoveryblock",
+      "evidence": {
+        "evidence_id": "ev_5589b43a8ab39492319165201d009b617bb778d29d47b3c43dafe0e5d6717686",
+        "subject": {
+          "name": "netease-classes15-analysis-only.apk",
+          "digest": {
+            "sha256": "dd11dea3550165854669bbcd2752a6217f495f4f5cad5a2da1792ce6b5f3e5f0"
+          },
+          "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-05-release157\\netease-classes15-analysis-only.apk",
+          "format": "apk",
+          "architecture": null
+        },
+        "provider": {
+          "id": "jadx",
+          "name": "JADX headless",
+          "version": "0.7.1"
+        },
+        "analysis_profile": null,
+        "predicate_type": "rea.analysis",
+        "operation": "inspect_android_class",
+        "parameters": {
+          "path": "D:/AnLi/.codex-artifacts/2026-11-05-release157/netease-classes15-analysis-only.apk",
+          "class_name": "com.netease.cloudmusic.discovery.data.meta.block.DiscoveryBlock"
+        },
+        "raw_result": {
+          "server": {
+            "name": "rea-jadx-bridge",
+            "version": "10"
+          },
+          "bridge_sha256": "f9d6d68eadd3d51a89e2debda359454c20534560080d4438f9b9cfe5a19f0b2e",
+          "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "loaded": {
+            "state": "LOADED",
+            "apk_path": "C:\\Users\\zyt\\AppData\\Local\\Temp\\rea-android-5b57a3892d065564a663d6b2c1de1bda\\target.apk",
+            "class_count": 2936,
+            "resource_count": 2,
+            "threads": 1,
+            "resources": "full"
+          },
+          "calls": [
+            {
+              "operation": "rea_jvm_status",
+              "input": {},
+              "response": {
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "{\"java_version\":\"17.0.20.1\",\"available_processors\":8,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":3221225472}"
+                  }
+                ],
+                "isError": false
+              }
+            },
+            {
+              "operation": "get_class_summary",
+              "input": {
+                "class_name": "com.netease.cloudmusic.discovery.data.meta.block.DiscoveryBlock",
+                "dex_static_values": true
+              },
+              "response": {
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "{\"inner_classes\":[],\"full_name\":\"com.netease.cloudmusic.discovery.data.meta.block.DiscoveryBlock\",\"methods\":[{\"def_pos\":0,\"raw_name\":\"\\u003cinit\\u003e\",\"dex_descriptor\":\"()V\",\"signature\":\"\\u003cinit\\u003e(): void\",\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true},{\"def_pos\":0,\"raw_name\":\"getAlg\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"getAlg(): java.lang.String\",\"name\":\"getAlg\",\"is_constructor\":false},{\"def_pos\":0,\"raw_name\":\"getBlockCode\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"getBlockCode(): java.lang.String\",\"name\":\"getBlockCode\",\"is_constructor\":false},{\"def_pos\":0,\"raw_name\":\"getBlockStyle\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"getBlockStyle(): java.lang.String\",\"name\":\"getBlockStyle\",\"is_constructor\":false},{\"def_pos\":0,\"raw_name\":\"getLogInfo\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"getLogInfo(): java.lang.String\",\"name\":\"getLogInfo\",\"is_constructor\":false},{\"def_pos\":0,\"raw_name\":\"getResponseHeaderXTraceId\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"getResponseHeaderXTraceId(): java.lang.String\",\"name\":\"getResponseHeaderXTraceId\",\"is_constructor\":false},{\"def_pos\":0,\"raw_name\":\"getShowType\",\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"getShowType(): java.lang.String\",\"name\":\"getShowType\",\"is_constructor\":false},{\"def_pos\":0,\"raw_name\":\"isBlockDemote\",\"dex_descriptor\":\"()Z\",\"signature\":\"isBlockDemote(): boolean\",\"name\":\"isBlockDemote\",\"is_constructor\":false},{\"def_pos\":0,\"raw_name\":\"isCache\",\"dex_descriptor\":\"()Z\",\"signature\":\"isCache(): boolean\",\"name\":\"isCache\",\"is_constructor\":false},{\"def_pos\":0,\"raw_name\":\"isStyleRcmdBlock\",\"dex_descriptor\":\"()Z\",\"signature\":\"isStyleRcmdBlock(): boolean\",\"name\":\"isStyleRcmdBlock\",\"is_constructor\":false},{\"def_pos\":0,\"raw_name\":\"setAlg\",\"dex_descriptor\":\"(Ljava/lang/String;)V\",\"signature\":\"setAlg(java.lang.String): void\",\"name\":\"setAlg\",\"is_constructor\":false},{\"def_pos\":0,\"raw_name\":\"setBlockCode\",\"dex_descriptor\":\"(Ljava/lang/String;)V\",\"signature\":\"setBlockCode(java.lang.String): void\",\"name\":\"setBlockCode\",\"is_constructor\":false},{\"def_pos\":0,\"raw_name\":\"setBlockDemote\",\"dex_descriptor\":\"(Z)V\",\"signature\":\"setBlockDemote(boolean): void\",\"name\":\"setBlockDemote\",\"is_constructor\":false},{\"def_pos\":0,\"raw_name\":\"setBlockStyle\",\"dex_descriptor\":\"(Ljava/lang/String;)V\",\"signature\":\"setBlockStyle(java.lang.String): void\",\"name\":\"setBlockStyle\",\"is_constructor\":false},{\"def_pos\":0,\"raw_name\":\"setCache\",\"dex_descriptor\":\"(Z)V\",\"signature\":\"setCache(boolean): void\",\"name\":\"setCache\",\"is_constructor\":false},{\"def_pos\":0,\"raw_name\":\"setLogInfo\",\"dex_descriptor\":\"(Ljava/lang/String;)V\",\"signature\":\"setLogInfo(java.lang.String): void\",\"name\":\"setLogInfo\",\"is_constructor\":false},{\"def_pos\":0,\"raw_name\":\"setResponseHeaderXTraceId\",\"dex_descriptor\":\"(Ljava/lang/String;)V\",\"signature\":\"setResponseHeaderXTraceId(java.lang.String): void\",\"name\":\"setResponseHeaderXTraceId\",\"is_constructor\":false},{\"def_pos\":0,\"raw_name\":\"setShowType\",\"dex_descriptor\":\"(Ljava/lang/String;)V\",\"signature\":\"setShowType(java.lang.String): void\",\"name\":\"setShowType\",\"is_constructor\":false}],\"fields\":[{\"type\":\"java.lang.String\",\"name\":\"BLOCK_CODE_HOMEPAGE_BLOCK_SCENE_SONG\",\"raw_name\":\"BLOCK_CODE_HOMEPAGE_BLOCK_SCENE_SONG\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_SCENE_SONG\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_CODE_HOMEPAGE_BLOCK_SCENE_SONG_1\",\"raw_name\":\"BLOCK_CODE_HOMEPAGE_BLOCK_SCENE_SONG_1\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_SCENE_SONG_1\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_CODE_HOMEPAGE_BLOCK_SCENE_SONG_2\",\"raw_name\":\"BLOCK_CODE_HOMEPAGE_BLOCK_SCENE_SONG_2\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_SCENE_SONG_2\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_CODE_HOMEPAGE_BLOCK_SCENE_SONG_3\",\"raw_name\":\"BLOCK_CODE_HOMEPAGE_BLOCK_SCENE_SONG_3\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_SCENE_SONG_3\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_CODE_HOMEPAGE_BLOCK_TODAY_FORTUNE\",\"raw_name\":\"BLOCK_CODE_HOMEPAGE_BLOCK_TODAY_FORTUNE\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_LOOK_DIVINATION\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_CODE_HOMEPAGE_BLOCK_USER_PLAYLIST\",\"raw_name\":\"BLOCK_CODE_HOMEPAGE_BLOCK_USER_PLAYLIST\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_USER_PLAYLIST\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_IDHOMEPAGE_VOICELIST_RCMD\",\"raw_name\":\"BLOCK_IDHOMEPAGE_VOICELIST_RCMD\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_VOICELIST_RCMD\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_ID_HOMEPAGE_BANNER\",\"raw_name\":\"BLOCK_ID_HOMEPAGE_BANNER\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BANNER\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_ID_HOMEPAGE_BLOCK_CLUB_HOUSE\",\"raw_name\":\"BLOCK_ID_HOMEPAGE_BLOCK_CLUB_HOUSE\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_CLUB_HOUSE\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_ID_HOMEPAGE_BLOCK_COMIC_OPERA\",\"raw_name\":\"BLOCK_ID_HOMEPAGE_BLOCK_COMIC_OPERA\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_COMIC_OPERA\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_ID_HOMEPAGE_BLOCK_LISTEN_LIVE\",\"raw_name\":\"BLOCK_ID_HOMEPAGE_BLOCK_LISTEN_LIVE\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_LISTEN_LIVE\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_ID_HOMEPAGE_BLOCK_MLOG\",\"raw_name\":\"BLOCK_ID_HOMEPAGE_BLOCK_MLOG\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_MLOG\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_ID_HOMEPAGE_BLOCK_OFFICIAL_PLAYLIST\",\"raw_name\":\"BLOCK_ID_HOMEPAGE_BLOCK_OFFICIAL_PLAYLIST\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_OFFICIAL_PLAYLIST\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_ID_HOMEPAGE_BLOCK_PLAYLIST_IMPORT_GUIDE\",\"raw_name\":\"BLOCK_ID_HOMEPAGE_BLOCK_PLAYLIST_IMPORT_GUIDE\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_PLAYLIST_IMPORT_GUIDE\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_ID_HOMEPAGE_BLOCK_PLAYLIST_RCMD\",\"raw_name\":\"BLOCK_ID_HOMEPAGE_BLOCK_PLAYLIST_RCMD\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_PLAYLIST_RCMD\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_ID_HOMEPAGE_BLOCK_PORTRAIT_RCMD\",\"raw_name\":\"BLOCK_ID_HOMEPAGE_BLOCK_PORTRAIT_RCMD\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_PORTRAIT_RCMD\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_ID_HOMEPAGE_BLOCK_SLEEPING\",\"raw_name\":\"BLOCK_ID_HOMEPAGE_BLOCK_SLEEPING\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_SLEEPING\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_ID_HOMEPAGE_BLOCK_STYLE_RCMD\",\"raw_name\":\"BLOCK_ID_HOMEPAGE_BLOCK_STYLE_RCMD\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_STYLE_RCMD\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_ID_HOMEPAGE_BLOCK_THEATER\",\"raw_name\":\"BLOCK_ID_HOMEPAGE_BLOCK_THEATER\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_THEATER\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_ID_HOMEPAGE_BLOCK_TOPLIST\",\"raw_name\":\"BLOCK_ID_HOMEPAGE_BLOCK_TOPLIST\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_TOPLIST\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_ID_HOMEPAGE_BLOCK_VIDEO\",\"raw_name\":\"BLOCK_ID_HOMEPAGE_BLOCK_VIDEO\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_MUSIC_MLOG\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_ID_HOMEPAGE_BLOCK_VIDEO_PLAYLIST\",\"raw_name\":\"BLOCK_ID_HOMEPAGE_BLOCK_VIDEO_PLAYLIST\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_VIDEO_PLAYLIST\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_ID_HOMEPAGE_BLOCK_VIP_CARD\",\"raw_name\":\"BLOCK_ID_HOMEPAGE_BLOCK_VIP_CARD\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMPAGE_BLOCK_VIP_RCMD\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_ID_HOMEPAGE_NEW_USER_WELCOME\",\"raw_name\":\"BLOCK_ID_HOMEPAGE_NEW_USER_WELCOME\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_NEW_USER_WELCOME\"}},{\"type\":\"java.lang.String\",\"name\":\"BLOCK_ID_HOMEPAGE_SING_ROOM\",\"raw_name\":\"BLOCK_ID_HOMEPAGE_SING_ROOM\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_FUN_CLUB\"}},{\"type\":\"java.lang.String\",\"name\":\"CREATIVE_TYPE_PLAYABLE_DRAGON_BALL_BROADCAST\",\"raw_name\":\"CREATIVE_TYPE_PLAYABLE_DRAGON_BALL_BROADCAST\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"PLAYABLE_DRAGON_BALL_BROADCAST\"}},{\"type\":\"java.lang.String\",\"name\":\"CREATIVE_TYPE_PLAYABLE_DRAGON_BALL_NEW_BROADCAST\",\"raw_name\":\"CREATIVE_TYPE_PLAYABLE_DRAGON_BALL_NEW_BROADCAST\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"PLAYABLE_DRAGON_BALL_NEW_BROADCAST\"}},{\"type\":\"java.lang.String\",\"name\":\"CREATIVE_TYPE_PLAYABLE_DRAGON_BALL_PODCAST24\",\"raw_name\":\"CREATIVE_TYPE_PLAYABLE_DRAGON_BALL_PODCAST24\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"PLAYABLE_DRAGON_BALL_PODCAST24\"}},{\"type\":\"java.lang.String\",\"name\":\"CREATIVE_TYPE_PLAYABLE_DRAGON_BALL_THEMECHANNEL\",\"raw_name\":\"CREATIVE_TYPE_PLAYABLE_DRAGON_BALL_THEMECHANNEL\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"PLAYABLE_DRAGON_BALL_THEMECHANNEL\"}},{\"type\":\"java.lang.String\",\"name\":\"CREATIVE_TYPE_SCROLL_PLAYLIST\",\"raw_name\":\"CREATIVE_TYPE_SCROLL_PLAYLIST\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"scroll_playlist\"}},{\"type\":\"java.lang.String\",\"name\":\"HOMEPAGE_BLOCK_AIDJ\",\"raw_name\":\"HOMEPAGE_BLOCK_AIDJ\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_AIDJ\"}},{\"type\":\"java.lang.String\",\"name\":\"HOMEPAGE_BLOCK_CIRCLE\",\"raw_name\":\"HOMEPAGE_BLOCK_CIRCLE\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_CIRCLE\"}},{\"type\":\"java.lang.String\",\"name\":\"HOMEPAGE_OCPC_BLOCK\",\"raw_name\":\"HOMEPAGE_OCPC_BLOCK\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_OCPC_BLOCK\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_ARTIST_LIVE\",\"raw_name\":\"SHOW_TYPE_ARTIST_LIVE\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"MUSICIAN_REVISIT\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_DOUBLE_VOICELIST\",\"raw_name\":\"SHOW_TYPE_DOUBLE_VOICELIST\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"DOUBLE_RCMDLIKE_VOICELIST\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_DRAGON_BALL\",\"raw_name\":\"SHOW_TYPE_DRAGON_BALL\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"DRAGON_BALL\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_ESE_VOICE_LIST_RCM\",\"raw_name\":\"SHOW_TYPE_ESE_VOICE_LIST_RCM\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"ESE_NEW_SLIDE_PODCAST_VOICE_MORE_TAB\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_BANNER\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_BANNER\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"BANNER\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_BIG_VIDEO\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_BIG_VIDEO\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"BIG_CARD_MLOG\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_BLOCK_YUNCUN_PRODUCED\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_BLOCK_YUNCUN_PRODUCED\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"YUNCUN_PRODUCED\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_DOUBLE_PLAYLIST\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_DOUBLE_PLAYLIST\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_DOUBLE_PLAYLIST\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_FIXED_ASYMMETRIC_RESOURCE\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_FIXED_ASYMMETRIC_RESOURCE\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_FIXED_ASYMMETRIC_RESOURCE\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_FIXED_CIRCLE\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_FIXED_CIRCLE\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_SLIDE_CIRCLE\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_FIXED_LISTEN_LIVE\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_FIXED_LISTEN_LIVE\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_FIXED_LISTEN_LIVE\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_FIXED_MLOG\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_FIXED_MLOG\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_FIXED_MLOG\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_FIXED_MUSIC_PARTNER\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_FIXED_MUSIC_PARTNER\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"FIXED_MUSIC_PARTNER\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_FIXED_PLAYABLE_RESOURCE\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_FIXED_PLAYABLE_RESOURCE\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_FIXED_PLAYABLE_RESOURCE\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_FIXED_PLAYLIST\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_FIXED_PLAYLIST\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_FIXED_PLAYLIST\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_HOT_TOPIC\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_HOT_TOPIC\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOT_TOPIC\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_IMPORT_GUIDE\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_IMPORT_GUIDE\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_PLAYLIST_IMPORT_GUIDE\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_LOCAL_CUSTOM_RN\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_LOCAL_CUSTOM_RN\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_LOCAL_CUSTOM_RN\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_NEW_SONG_NEW_ALBUM\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_NEW_SONG_NEW_ALBUM\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_NEW_SONG_NEW_ALBUM\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_PODCAST_AND_BOOK\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_PODCAST_AND_BOOK\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"SLIDE_PODCAST_VOICE_MORE_TAB\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_PODCAST_AND_BOOK_LIST_WITH_BANNER\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_PODCAST_AND_BOOK_LIST_WITH_BANNER\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"LIST_WITH_BANNER\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_POD_CAST24\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_POD_CAST24\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"SLIDE_PLAYABLE_DRAGON_BALL_MORE_TAB\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_POD_CAST24_NEW\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_POD_CAST24_NEW\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"SLIDE_PLAYABLE_DRAGON_BALL_NEW_BROADCAST\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_RESEARCH\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_RESEARCH\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_RESEARCH\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_CIRCLE_SMALL\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_CIRCLE_SMALL\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_SLIDE_CIRCLE_SMALL\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_FUN_CLUB\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_FUN_CLUB\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_SLIDE_FUN_CLUB\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_LISTEN_LIVE\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_LISTEN_LIVE\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_SLIDE_LISTEN_LIVE\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_MLOG\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_MLOG\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_SLIDE_MLOG\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_PLAYABLE_MLOG\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_PLAYABLE_MLOG\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_SLIDE_PLAYABLE_MLOG\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_PLAYABLE_RESOURCE\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_PLAYABLE_RESOURCE\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_SLIDE_PLAYABLE_RESOURCE\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_PLAYABLE_RESOURCE_SQUARE\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_PLAYABLE_RESOURCE_SQUARE\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_SLIDE_PLAYABLE_RESOURCE_SQUARE\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_PLAYLIST\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_PLAYLIST\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_SLIDE_PLAYLIST\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_SONGLIST_ALIGN\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_SONGLIST_ALIGN\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_SLIDE_SONGLIST_ALIGN\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_TAB_TOPLIST\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_TAB_TOPLIST\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_SLIDE_TAB_TOPLIST\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_TOPLIST\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_SLIDE_TOPLIST\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_SLIDE_TOPLIST\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_SMALL_COVER_VOICES\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_SMALL_COVER_VOICES\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"SLIDE_VOICE_LIST\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_STAR_PLAYLIST\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_STAR_PLAYLIST\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_STAR_SONG_GUIDE\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_TODAY_FORTUNE\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_TODAY_FORTUNE\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMEPAGE_BLOCK_LOOK_DIVINATION\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_HOMEPAGE_VIP_SONG_RCMD\",\"raw_name\":\"SHOW_TYPE_HOMEPAGE_VIP_SONG_RCMD\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"HOMPAGE_VIP_SONG_RCMD\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_QUICK_FLASH_FM_TAB\",\"raw_name\":\"SHOW_TYPE_QUICK_FLASH_FM_TAB\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"QUICK_FLASH_FM_TAB\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_SHUFFLE_MUSIC_CALENDAR\",\"raw_name\":\"SHOW_TYPE_SHUFFLE_MUSIC_CALENDAR\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"SHUFFLE_MUSIC_CALENDAR\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_SINGLE_PIC\",\"raw_name\":\"SHOW_TYPE_SINGLE_PIC\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"SINGLE_PIC\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_SLIDE_CLUB_HOUSE\",\"raw_name\":\"SHOW_TYPE_SLIDE_CLUB_HOUSE\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"SLIDE_CLUB_HOUSE\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_SLIDE_HOT_VOICE_LIST\",\"raw_name\":\"SHOW_TYPE_SLIDE_HOT_VOICE_LIST\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"SLIDE_HOT_VOICE_LIST\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_SLIDE_MSUICPODCAST_VOICE\",\"raw_name\":\"SHOW_TYPE_SLIDE_MSUICPODCAST_VOICE\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"SLIDE_MUSICPODCAST_VOICE\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_SLIDE_SINGLE_SONG\",\"raw_name\":\"SHOW_TYPE_SLIDE_SINGLE_SONG\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"SLIDE_SINGLE_SONG\"}},{\"type\":\"java.lang.String\",\"name\":\"SHOW_TYPE_SLIDE_VOICELIST\",\"raw_name\":\"SHOW_TYPE_SLIDE_VOICELIST\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0,\"dex_static_value\":{\"type\":\"string\",\"value\":\"SLIDE_RCMDLIKE_VOICELIST\"}},{\"type\":\"java.lang.String\",\"name\":\"alg\",\"raw_name\":\"alg\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"blockCode\",\"raw_name\":\"blockCode\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"blockDemote\",\"raw_name\":\"blockDemote\",\"dex_type\":\"Z\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"blockId\",\"raw_name\":\"blockId\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"blockName\",\"raw_name\":\"blockName\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"blockStyle\",\"raw_name\":\"blockStyle\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"isCache\",\"raw_name\":\"isCache\",\"dex_type\":\"Z\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"logInfo\",\"raw_name\":\"logInfo\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"responseHeaderXTraceId\",\"raw_name\":\"responseHeaderXTraceId\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"scm\",\"raw_name\":\"scm\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"showType\",\"raw_name\":\"showType\",\"dex_type\":\"Ljava/lang/String;\",\"def_pos\":0}],\"inner_class_raw_names\":[],\"inner_class_count\":0,\"name\":\"DiscoveryBlock\",\"raw_name\":\"com.netease.cloudmusic.discovery.data.meta.block.DiscoveryBlock\",\"method_count\":18,\"field_count\":91}"
+                  }
+                ],
+                "isError": false
+              }
+            }
+          ]
+        },
+        "normalized_result": {
+          "engine": {
+            "name": "jadx-headless-mcp",
+            "version": "0.7.1",
+            "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+            "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+            "worker_count": 1,
+            "heap_limit_mib": 3072
+          },
+          "class_name": "com.netease.cloudmusic.discovery.data.meta.block.DiscoveryBlock",
+          "methods": [
+            {
+              "name": "<init>",
+              "reported_signature": "<init>(): void",
+              "overload_index": 0,
+              "is_constructor": true,
+              "dex_descriptor": "()V"
+            },
+            {
+              "name": "getAlg",
+              "reported_signature": "getAlg(): java.lang.String",
+              "overload_index": 0,
+              "is_constructor": false,
+              "dex_descriptor": "()Ljava/lang/String;"
+            },
+            {
+              "name": "getBlockCode",
+              "reported_signature": "getBlockCode(): java.lang.String",
+              "overload_index": 0,
+              "is_constructor": false,
+              "dex_descriptor": "()Ljava/lang/String;"
+            },
+            {
+              "name": "getBlockStyle",
+              "reported_signature": "getBlockStyle(): java.lang.String",
+              "overload_index": 0,
+              "is_constructor": false,
+              "dex_descriptor": "()Ljava/lang/String;"
+            },
+            {
+              "name": "getLogInfo",
+              "reported_signature": "getLogInfo(): java.lang.String",
+              "overload_index": 0,
+              "is_constructor": false,
+              "dex_descriptor": "()Ljava/lang/String;"
+            },
+            {
+              "name": "getResponseHeaderXTraceId",
+              "reported_signature": "getResponseHeaderXTraceId(): java.lang.String",
+              "overload_index": 0,
+              "is_constructor": false,
+              "dex_descriptor": "()Ljava/lang/String;"
+            },
+            {
+              "name": "getShowType",
+              "reported_signature": "getShowType(): java.lang.String",
+              "overload_index": 0,
+              "is_constructor": false,
+              "dex_descriptor": "()Ljava/lang/String;"
+            },
+            {
+              "name": "isBlockDemote",
+              "reported_signature": "isBlockDemote(): boolean",
+              "overload_index": 0,
+              "is_constructor": false,
+              "dex_descriptor": "()Z"
+            },
+            {
+              "name": "isCache",
+              "reported_signature": "isCache(): boolean",
+              "overload_index": 0,
+              "is_constructor": false,
+              "dex_descriptor": "()Z"
+            },
+            {
+              "name": "isStyleRcmdBlock",
+              "reported_signature": "isStyleRcmdBlock(): boolean",
+              "overload_index": 0,
+              "is_constructor": false,
+              "dex_descriptor": "()Z"
+            },
+            {
+              "name": "setAlg",
+              "reported_signature": "setAlg(java.lang.String): void",
+              "overload_index": 0,
+              "is_constructor": false,
+              "dex_descriptor": "(Ljava/lang/String;)V"
+            },
+            {
+              "name": "setBlockCode",
+              "reported_signature": "setBlockCode(java.lang.String): void",
+              "overload_index": 0,
+              "is_constructor": false,
+              "dex_descriptor": "(Ljava/lang/String;)V"
+            },
+            {
+              "name": "setBlockDemote",
+              "reported_signature": "setBlockDemote(boolean): void",
+              "overload_index": 0,
+              "is_constructor": false,
+              "dex_descriptor": "(Z)V"
+            },
+            {
+              "name": "setBlockStyle",
+              "reported_signature": "setBlockStyle(java.lang.String): void",
+              "overload_index": 0,
+              "is_constructor": false,
+              "dex_descriptor": "(Ljava/lang/String;)V"
+            },
+            {
+              "name": "setCache",
+              "reported_signature": "setCache(boolean): void",
+              "overload_index": 0,
+              "is_constructor": false,
+              "dex_descriptor": "(Z)V"
+            },
+            {
+              "name": "setLogInfo",
+              "reported_signature": "setLogInfo(java.lang.String): void",
+              "overload_index": 0,
+              "is_constructor": false,
+              "dex_descriptor": "(Ljava/lang/String;)V"
+            },
+            {
+              "name": "setResponseHeaderXTraceId",
+              "reported_signature": "setResponseHeaderXTraceId(java.lang.String): void",
+              "overload_index": 0,
+              "is_constructor": false,
+              "dex_descriptor": "(Ljava/lang/String;)V"
+            },
+            {
+              "name": "setShowType",
+              "reported_signature": "setShowType(java.lang.String): void",
+              "overload_index": 0,
+              "is_constructor": false,
+              "dex_descriptor": "(Ljava/lang/String;)V"
+            }
+          ],
+          "fields": [
+            {
+              "name": "BLOCK_CODE_HOMEPAGE_BLOCK_SCENE_SONG",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_SCENE_SONG"
+              }
+            },
+            {
+              "name": "BLOCK_CODE_HOMEPAGE_BLOCK_SCENE_SONG_1",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_SCENE_SONG_1"
+              }
+            },
+            {
+              "name": "BLOCK_CODE_HOMEPAGE_BLOCK_SCENE_SONG_2",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_SCENE_SONG_2"
+              }
+            },
+            {
+              "name": "BLOCK_CODE_HOMEPAGE_BLOCK_SCENE_SONG_3",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_SCENE_SONG_3"
+              }
+            },
+            {
+              "name": "BLOCK_CODE_HOMEPAGE_BLOCK_TODAY_FORTUNE",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_LOOK_DIVINATION"
+              }
+            },
+            {
+              "name": "BLOCK_CODE_HOMEPAGE_BLOCK_USER_PLAYLIST",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_USER_PLAYLIST"
+              }
+            },
+            {
+              "name": "BLOCK_IDHOMEPAGE_VOICELIST_RCMD",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_VOICELIST_RCMD"
+              }
+            },
+            {
+              "name": "BLOCK_ID_HOMEPAGE_BANNER",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BANNER"
+              }
+            },
+            {
+              "name": "BLOCK_ID_HOMEPAGE_BLOCK_CLUB_HOUSE",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_CLUB_HOUSE"
+              }
+            },
+            {
+              "name": "BLOCK_ID_HOMEPAGE_BLOCK_COMIC_OPERA",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_COMIC_OPERA"
+              }
+            },
+            {
+              "name": "BLOCK_ID_HOMEPAGE_BLOCK_LISTEN_LIVE",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_LISTEN_LIVE"
+              }
+            },
+            {
+              "name": "BLOCK_ID_HOMEPAGE_BLOCK_MLOG",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_MLOG"
+              }
+            },
+            {
+              "name": "BLOCK_ID_HOMEPAGE_BLOCK_OFFICIAL_PLAYLIST",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_OFFICIAL_PLAYLIST"
+              }
+            },
+            {
+              "name": "BLOCK_ID_HOMEPAGE_BLOCK_PLAYLIST_IMPORT_GUIDE",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_PLAYLIST_IMPORT_GUIDE"
+              }
+            },
+            {
+              "name": "BLOCK_ID_HOMEPAGE_BLOCK_PLAYLIST_RCMD",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_PLAYLIST_RCMD"
+              }
+            },
+            {
+              "name": "BLOCK_ID_HOMEPAGE_BLOCK_PORTRAIT_RCMD",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_PORTRAIT_RCMD"
+              }
+            },
+            {
+              "name": "BLOCK_ID_HOMEPAGE_BLOCK_SLEEPING",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_SLEEPING"
+              }
+            },
+            {
+              "name": "BLOCK_ID_HOMEPAGE_BLOCK_STYLE_RCMD",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_STYLE_RCMD"
+              }
+            },
+            {
+              "name": "BLOCK_ID_HOMEPAGE_BLOCK_THEATER",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_THEATER"
+              }
+            },
+            {
+              "name": "BLOCK_ID_HOMEPAGE_BLOCK_TOPLIST",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_TOPLIST"
+              }
+            },
+            {
+              "name": "BLOCK_ID_HOMEPAGE_BLOCK_VIDEO",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_MUSIC_MLOG"
+              }
+            },
+            {
+              "name": "BLOCK_ID_HOMEPAGE_BLOCK_VIDEO_PLAYLIST",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_VIDEO_PLAYLIST"
+              }
+            },
+            {
+              "name": "BLOCK_ID_HOMEPAGE_BLOCK_VIP_CARD",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMPAGE_BLOCK_VIP_RCMD"
+              }
+            },
+            {
+              "name": "BLOCK_ID_HOMEPAGE_NEW_USER_WELCOME",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_NEW_USER_WELCOME"
+              }
+            },
+            {
+              "name": "BLOCK_ID_HOMEPAGE_SING_ROOM",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_FUN_CLUB"
+              }
+            },
+            {
+              "name": "CREATIVE_TYPE_PLAYABLE_DRAGON_BALL_BROADCAST",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "PLAYABLE_DRAGON_BALL_BROADCAST"
+              }
+            },
+            {
+              "name": "CREATIVE_TYPE_PLAYABLE_DRAGON_BALL_NEW_BROADCAST",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "PLAYABLE_DRAGON_BALL_NEW_BROADCAST"
+              }
+            },
+            {
+              "name": "CREATIVE_TYPE_PLAYABLE_DRAGON_BALL_PODCAST24",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "PLAYABLE_DRAGON_BALL_PODCAST24"
+              }
+            },
+            {
+              "name": "CREATIVE_TYPE_PLAYABLE_DRAGON_BALL_THEMECHANNEL",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "PLAYABLE_DRAGON_BALL_THEMECHANNEL"
+              }
+            },
+            {
+              "name": "CREATIVE_TYPE_SCROLL_PLAYLIST",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "scroll_playlist"
+              }
+            },
+            {
+              "name": "HOMEPAGE_BLOCK_AIDJ",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_AIDJ"
+              }
+            },
+            {
+              "name": "HOMEPAGE_BLOCK_CIRCLE",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_CIRCLE"
+              }
+            },
+            {
+              "name": "HOMEPAGE_OCPC_BLOCK",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_OCPC_BLOCK"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_ARTIST_LIVE",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "MUSICIAN_REVISIT"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_DOUBLE_VOICELIST",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "DOUBLE_RCMDLIKE_VOICELIST"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_DRAGON_BALL",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "DRAGON_BALL"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_ESE_VOICE_LIST_RCM",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "ESE_NEW_SLIDE_PODCAST_VOICE_MORE_TAB"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_BANNER",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "BANNER"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_BIG_VIDEO",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "BIG_CARD_MLOG"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_BLOCK_YUNCUN_PRODUCED",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "YUNCUN_PRODUCED"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_DOUBLE_PLAYLIST",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_DOUBLE_PLAYLIST"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_FIXED_ASYMMETRIC_RESOURCE",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_FIXED_ASYMMETRIC_RESOURCE"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_FIXED_CIRCLE",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_SLIDE_CIRCLE"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_FIXED_LISTEN_LIVE",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_FIXED_LISTEN_LIVE"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_FIXED_MLOG",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_FIXED_MLOG"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_FIXED_MUSIC_PARTNER",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "FIXED_MUSIC_PARTNER"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_FIXED_PLAYABLE_RESOURCE",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_FIXED_PLAYABLE_RESOURCE"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_FIXED_PLAYLIST",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_FIXED_PLAYLIST"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_HOT_TOPIC",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOT_TOPIC"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_IMPORT_GUIDE",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_PLAYLIST_IMPORT_GUIDE"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_LOCAL_CUSTOM_RN",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_LOCAL_CUSTOM_RN"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_NEW_SONG_NEW_ALBUM",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_NEW_SONG_NEW_ALBUM"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_PODCAST_AND_BOOK",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "SLIDE_PODCAST_VOICE_MORE_TAB"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_PODCAST_AND_BOOK_LIST_WITH_BANNER",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "LIST_WITH_BANNER"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_POD_CAST24",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "SLIDE_PLAYABLE_DRAGON_BALL_MORE_TAB"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_POD_CAST24_NEW",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "SLIDE_PLAYABLE_DRAGON_BALL_NEW_BROADCAST"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_RESEARCH",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_RESEARCH"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_SLIDE_CIRCLE_SMALL",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_SLIDE_CIRCLE_SMALL"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_SLIDE_FUN_CLUB",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_SLIDE_FUN_CLUB"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_SLIDE_LISTEN_LIVE",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_SLIDE_LISTEN_LIVE"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_SLIDE_MLOG",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_SLIDE_MLOG"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_SLIDE_PLAYABLE_MLOG",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_SLIDE_PLAYABLE_MLOG"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_SLIDE_PLAYABLE_RESOURCE",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_SLIDE_PLAYABLE_RESOURCE"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_SLIDE_PLAYABLE_RESOURCE_SQUARE",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_SLIDE_PLAYABLE_RESOURCE_SQUARE"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_SLIDE_PLAYLIST",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_SLIDE_PLAYLIST"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_SLIDE_SONGLIST_ALIGN",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_SLIDE_SONGLIST_ALIGN"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_SLIDE_TAB_TOPLIST",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_SLIDE_TAB_TOPLIST"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_SLIDE_TOPLIST",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_SLIDE_TOPLIST"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_SMALL_COVER_VOICES",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "SLIDE_VOICE_LIST"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_STAR_PLAYLIST",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_STAR_SONG_GUIDE"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_TODAY_FORTUNE",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMEPAGE_BLOCK_LOOK_DIVINATION"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_HOMEPAGE_VIP_SONG_RCMD",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "HOMPAGE_VIP_SONG_RCMD"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_QUICK_FLASH_FM_TAB",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "QUICK_FLASH_FM_TAB"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_SHUFFLE_MUSIC_CALENDAR",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "SHUFFLE_MUSIC_CALENDAR"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_SINGLE_PIC",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "SINGLE_PIC"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_SLIDE_CLUB_HOUSE",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "SLIDE_CLUB_HOUSE"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_SLIDE_HOT_VOICE_LIST",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "SLIDE_HOT_VOICE_LIST"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_SLIDE_MSUICPODCAST_VOICE",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "SLIDE_MUSICPODCAST_VOICE"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_SLIDE_SINGLE_SONG",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "SLIDE_SINGLE_SONG"
+              }
+            },
+            {
+              "name": "SHOW_TYPE_SLIDE_VOICELIST",
+              "reported_type": "java.lang.String",
+              "dex_static_value": {
+                "type": "string",
+                "value": "SLIDE_RCMDLIKE_VOICELIST"
+              }
+            },
+            {
+              "name": "alg",
+              "reported_type": "java.lang.String",
+              "dex_static_value": null
+            },
+            {
+              "name": "blockCode",
+              "reported_type": "java.lang.String",
+              "dex_static_value": null
+            },
+            {
+              "name": "blockDemote",
+              "reported_type": "boolean",
+              "dex_static_value": null
+            },
+            {
+              "name": "blockId",
+              "reported_type": "java.lang.String",
+              "dex_static_value": null
+            },
+            {
+              "name": "blockName",
+              "reported_type": "java.lang.String",
+              "dex_static_value": null
+            },
+            {
+              "name": "blockStyle",
+              "reported_type": "java.lang.String",
+              "dex_static_value": null
+            },
+            {
+              "name": "isCache",
+              "reported_type": "boolean",
+              "dex_static_value": null
+            },
+            {
+              "name": "logInfo",
+              "reported_type": "java.lang.String",
+              "dex_static_value": null
+            },
+            {
+              "name": "responseHeaderXTraceId",
+              "reported_type": "java.lang.String",
+              "dex_static_value": null
+            },
+            {
+              "name": "scm",
+              "reported_type": "java.lang.String",
+              "dex_static_value": null
+            },
+            {
+              "name": "showType",
+              "reported_type": "java.lang.String",
+              "dex_static_value": null
+            }
+          ],
+          "inner_classes": []
+        },
+        "confidence": "observed",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+          "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+          "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+          "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+          "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture."
+        ],
+        "relationship_coverage": null,
+        "locations": [],
+        "evidence_links": []
+      }
+    }
+  ]
+}

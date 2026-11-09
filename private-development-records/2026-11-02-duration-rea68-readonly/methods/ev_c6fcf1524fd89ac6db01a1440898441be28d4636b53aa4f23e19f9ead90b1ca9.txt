@@ -1,0 +1,39 @@
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void x(String str, JSONObject jSONObject) {
+        s0 s0Var;
+        x xVar = this.f.r;
+        if (xVar == null || !xVar.b(str, jSONObject)) {
+            d0 d0Var = this.f.t;
+            if (d0Var != null && d0Var.a(str, jSONObject)) {
+                F();
+            }
+            o();
+            if (TextUtils.isEmpty(this.f.k)) {
+                jSONObject.put("_moved_unlogin_log_", 1);
+            }
+            this.f.getClass();
+            long jCurrentTimeMillis = System.currentTimeMillis();
+            if (this.a == null) {
+                H(this.f);
+            }
+            s0 s0Var2 = this.f;
+            x xVar2 = s0Var2.r;
+            if (xVar2 == null || !xVar2.a(str, jSONObject, s0Var2)) {
+                String strR = r(str, jSONObject, this.c, jCurrentTimeMillis);
+                if (strR != null && (s0Var = this.f) != null) {
+                    this.h.a(s0Var.c, strR);
+                }
+                if (this.b != 2) {
+                    if (strR != null) {
+                        this.d.put(strR, strR);
+                    }
+                } else if (this.a != null) {
+                    s0 s0Var3 = this.f;
+                    if (s0Var3 != null) {
+                        s0Var3.getClass();
+                    }
+                    this.a.log(strR);
+                }
+            }
+        }
+    }

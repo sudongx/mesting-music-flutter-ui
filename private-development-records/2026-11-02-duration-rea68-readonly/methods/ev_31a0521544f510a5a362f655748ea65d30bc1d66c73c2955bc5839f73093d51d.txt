@@ -1,0 +1,76 @@
+    /* JADX INFO: Access modifiers changed from: private */
+    public final HashMap<String, Object> e(JSONObject musicEndLogJson) {
+        Object obj = musicEndLogJson.get("end");
+        if (obj == null) {
+            obj = VboxScanResult.WIFI_AUTH_OPEN;
+        }
+        Object obj2 = musicEndLogJson.get("resource_ratio");
+        if (obj2 == null) {
+            obj2 = 0;
+        }
+        Object obj3 = musicEndLogJson.get("resource_time");
+        if (obj3 == null) {
+            obj3 = 0;
+        }
+        Object obj4 = musicEndLogJson.get(MusicGiftModel.GIFT_MODE_TIME);
+        if (obj4 == null) {
+            obj4 = 0;
+        }
+        Object obj5 = musicEndLogJson.get(RNDatabase.BundleColumns.ID);
+        if (obj5 == null) {
+            obj5 = 0L;
+        }
+        Object obj6 = musicEndLogJson.get("songName");
+        if (obj6 == null) {
+            obj6 = VboxScanResult.WIFI_AUTH_OPEN;
+        }
+        Object obj7 = musicEndLogJson.get("is_audition");
+        if (obj7 == null) {
+            obj7 = 0;
+        }
+        Object obj8 = musicEndLogJson.get("source");
+        if (obj8 == null) {
+            obj8 = "unknown";
+        }
+        Object obj9 = musicEndLogJson.get("type");
+        if (obj9 == null) {
+            obj9 = "unknown";
+        }
+        Object obj10 = musicEndLogJson.get("mode");
+        Object obj11 = obj10 != null ? obj10 : "unknown";
+        Object obj12 = musicEndLogJson.get("npu_bitrate");
+        if (obj12 == null) {
+            obj12 = 0;
+        }
+        Object obj13 = musicEndLogJson.get("bitrate");
+        if (obj13 == null) {
+            obj13 = 0;
+        }
+        Object obj14 = musicEndLogJson.get("file");
+        if (obj14 == null) {
+            obj14 = -1;
+        }
+        Object obj15 = obj3;
+        Object obj16 = musicEndLogJson.get("end_source");
+        if (obj16 == null) {
+            obj16 = 0;
+        }
+        Pair[] pairArr = new Pair[15];
+        pairArr[0] = TuplesKt.to("sEndSource", obj16);
+        pairArr[1] = TuplesKt.to("sTime", obj4);
+        List<String> list = abTestData;
+        pairArr[2] = TuplesKt.to("sABData", list.isEmpty() ^ true ? CollectionsKt.joinToString$default(list, ",", (CharSequence) null, (CharSequence) null, 0, (CharSequence) null, (Function1) null, 62, (Object) null) : VboxScanResult.WIFI_AUTH_OPEN);
+        pairArr[3] = TuplesKt.to("sSource", obj8);
+        pairArr[4] = TuplesKt.to("sFile", obj14);
+        pairArr[5] = TuplesKt.to("sBitrate", obj13);
+        pairArr[6] = TuplesKt.to("sNpuBitrate", obj12);
+        pairArr[7] = TuplesKt.to("sMode", obj11);
+        pairArr[8] = TuplesKt.to("sType", obj9);
+        pairArr[9] = TuplesKt.to("sAudition", obj7);
+        pairArr[10] = TuplesKt.to("sId", obj5);
+        pairArr[11] = TuplesKt.to("sName", obj6);
+        pairArr[12] = TuplesKt.to("end", obj);
+        pairArr[13] = TuplesKt.to("resource_ratio", obj2);
+        pairArr[14] = TuplesKt.to("resource_time", obj15);
+        return MapsKt.hashMapOf(pairArr);
+    }

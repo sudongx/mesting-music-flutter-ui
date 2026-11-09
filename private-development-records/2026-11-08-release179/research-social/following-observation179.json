@@ -1,0 +1,118 @@
+{
+  "reportPath": "C:\\Users\\zyt\\Downloads\\mesting-qishui-report.json",
+  "reportSha256": "085214b73455ea8780b245e6a9a88bf7936d180efcff28d44394f3b3cb2f2992",
+  "appVersion": "1.0.78",
+  "eventCount": 44,
+  "followingEvents": [
+    {
+      "at": "2026-11-08T05:04:28.908846Z",
+      "feature": "following",
+      "stage": "helper",
+      "outcome": "success",
+      "httpStatus": 200
+    },
+    {
+      "at": "2026-11-08T05:04:29.243648Z",
+      "feature": "following",
+      "stage": "response",
+      "outcome": "success",
+      "httpStatus": 200,
+      "businessCode": 0,
+      "shape": {
+        "type": "object",
+        "fieldCount": 3,
+        "fields": {
+          "status_info": {
+            "type": "object",
+            "fieldCount": 3
+          },
+          "status_code": {
+            "type": "number"
+          },
+          "next_cursor": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "at": "2026-11-08T05:04:29.243994Z",
+      "feature": "following",
+      "stage": "parse",
+      "outcome": "format",
+      "reason": "responseShape",
+      "shape": {
+        "type": "object",
+        "fieldCount": 3,
+        "fields": {
+          "status_info": {
+            "type": "object",
+            "fieldCount": 3
+          },
+          "status_code": {
+            "type": "number"
+          },
+          "next_cursor": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "at": "2026-11-08T05:04:30.035446Z",
+      "feature": "following",
+      "stage": "helper",
+      "outcome": "success",
+      "httpStatus": 200
+    },
+    {
+      "at": "2026-11-08T05:04:30.447390Z",
+      "feature": "following",
+      "stage": "response",
+      "outcome": "success",
+      "httpStatus": 200,
+      "businessCode": 0,
+      "shape": {
+        "type": "object",
+        "fieldCount": 3,
+        "fields": {
+          "status_info": {
+            "type": "object",
+            "fieldCount": 3
+          },
+          "status_code": {
+            "type": "number"
+          },
+          "next_cursor": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "at": "2026-11-08T05:04:30.447750Z",
+      "feature": "following",
+      "stage": "parse",
+      "outcome": "format",
+      "reason": "responseShape",
+      "shape": {
+        "type": "object",
+        "fieldCount": 3,
+        "fields": {
+          "status_info": {
+            "type": "object",
+            "fieldCount": 3
+          },
+          "status_code": {
+            "type": "number"
+          },
+          "next_cursor": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ],
+  "userConfirmationViaRoot": "Same-account official Qishui following and follower groups are empty; Douyin groups already display in Mesting. Only Qishui empty groups fail format parsing.",
+  "businessAcceptanceOrOfficialCountNotInferredFromHttp200": true
+}

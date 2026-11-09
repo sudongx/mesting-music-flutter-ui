@@ -1,0 +1,20 @@
+PASS real parent alias resolves to same private directory
+PASS clear preparation through alias returns caller path and exact bytes
+PASS canonical caller also works when native root uses alias
+PASS actual CENC preparation through alias produces exact synthetic plaintext
+PASS canonical encrypted caller produces same plaintext
+PASS outside source rejected without touching existing output
+PASS outside output rejected before writing
+PASS parent traversal rejected even if canonical path returns inside
+PASS relative source rejected
+PASS wrong filename rejected
+PASS missing source has fixed path-stage reason
+PASS existing output is preserved on operation collision
+PASS invalid authorization classified before container parse
+PASS invalid container classified separately from valid authorization
+PASS unsupported cipher classified separately from malformed container
+PASS incomplete sample table is a fixed native reason
+PASS cancellation before preparation never publishes plaintext
+PASS cancellation after write removes only this operation output
+PASS unknown native exception text cannot cross bridge
+QISHUI_PREPARATION_HOST_PASSED=19

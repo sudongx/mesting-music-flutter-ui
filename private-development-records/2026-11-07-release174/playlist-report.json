@@ -1,0 +1,58 @@
+{
+  "task": "true Qishui playlist request pagination",
+  "files": [
+    {
+      "path": "lib/features/music_platform/qishui/qishui_repository.dart",
+      "sha256": "506569926eeb72389ecba120314ce84c129e32480ae4ca3d35353092d659a900"
+    },
+    {
+      "path": "lib/features/music_platform/qishui/qishui_playlist_page.dart",
+      "sha256": "a6faa0669cabf8824588cbfed29725b1ea439951e5abea6944747e607d9cb328"
+    },
+    {
+      "path": "lib/features/music_platform/qishui/qishui_playlist_paging.dart",
+      "sha256": "5e2000a2647efde87ad766bae5d3f79162609a9525fb6502743383ff64c4110d"
+    },
+    {
+      "path": "test/qishui_playlist174_test.dart",
+      "sha256": "987de66461cdcc4321dd4a16efb7d7e3b3b3f2478885105e41b58beda426350b"
+    },
+    {
+      "path": "test/qishui_playlist_ui167_test.dart",
+      "sha256": "c49a50fe04bfc7b448a0b819ff80132f759db3e7385387ba46e5a08c51a26cba"
+    },
+    {
+      "path": "test/qishui_appearance172_ui_test.dart",
+      "sha256": "2936b7a2f2b659f09d8521b46bb0174a0575f2044bdfdc912ab43c270b893885"
+    }
+  ],
+  "baseline73InputHashesVerified": true,
+  "testLog": "playlist-tests-final.jsonl",
+  "completeSuccess": true,
+  "testPerFile": {
+    "qishui_playlist174_test.dart:success": 6,
+    "qishui_playlist_ui167_test.dart:success": 12,
+    "qishui_appearance172_ui_test.dart:success": 74,
+    "qishui_signed_api167_test.dart:success": 10
+  },
+  "passed": 102,
+  "counting": "Final four whole files replace earlier runs; do not add r1 or duplicated signing/appearance files.",
+  "behavior": [
+    "Presentation playlistPage reads100 at most once per cursor, not full enumeration on open. Existing playlist() retains complete enumeration/dedup/loop guards for writes and explicit bulk actions.",
+    "Page-owned cache loader watches requested pages, retains old rows during refresh/failure, cancels older generations. A changed continuation removes old tail and ignores obsolete in-flight page publication.",
+    "Actual scroll viewport metrics bound automatic next-page demand to at most one viewport ahead; hidden TickerMode blocks demand.",
+    "PlayAll/random/batch/download/search/sort explicitly complete the full list via BrowseResponseCache.live before acting; single-row actions remain immediate. Partial counts are not labeled all loaded.",
+    "The same-account header/query/scroll remain mounted during cache revalidation. Existing account/page cancellation and mutation readback/unknown-write policy stay separate."
+  ],
+  "verification": [
+    "6 repository/pager cases",
+    "3 additional production-page UI regressions: nextpage demand, full150 PlayAll queue, full150 batch route",
+    "existing167 account/batch/menu safety,172 deep/light/narrow UI and167 signing tests passed"
+  ],
+  "limits": [
+    "No device or cloud requests by this agent.",
+    "Actual-cache shared abort-owner pending identity edge reported to root for API-level fix.",
+    "Host laziness tests do not prove FPS, GPU or actual server acceptance."
+  ],
+  "oldFailures": "Initial transient parse/type issues corrected before final tests; r1 analyzer named nonexistent cache.clear then changed to existing bounded scope invalidation. Existing final-targeted analyze was clean before adding3 UI-only tests; root should run final full analyze."
+}

@@ -1,0 +1,443 @@
+.class final Lva0/u0$p;
+.super Lkotlin/jvm/internal/Lambda;
+.source "ProGuard"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lva0/u0;->t(J)Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lkotlin/jvm/functions/Function0<",
+        "Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0002\u001a\n \u0001*\u0004\u0018\u00010\u00000\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
+    }
+    d2 = {
+        "Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;",
+        "kotlin.jvm.PlatformType",
+        "f",
+        "()Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic a:J
+
+
+# direct methods
+.method constructor <init>(J)V
+    .registers 3
+
+    .line 1
+    iput-wide p1, p0, Lva0/u0$p;->a:J
+
+    .line 2
+    .line 3
+    const/4 p1, 0x0
+
+    .line 4
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method public static synthetic a(Lorg/json/JSONObject;)Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;
+    .registers 1
+
+    .line 1
+    invoke-static {p0}, Lva0/u0$p;->g(Lorg/json/JSONObject;)Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method private static final g(Lorg/json/JSONObject;)Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;
+    .registers 4
+
+    .line 1
+    const-string v0, "data"
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v1
+
+    .line 7
+    if-nez v1, :cond_4e
+
+    .line 8
+    .line 9
+    invoke-virtual {p0, v0}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    new-instance v0, Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;
+
+    .line 14
+    .line 15
+    invoke-direct {v0}, Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;-><init>()V
+
+    .line 16
+    .line 17
+    .line 18
+    const-string v1, "listenCount"
+
+    .line 19
+    .line 20
+    invoke-virtual {p0, v1}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v2
+
+    .line 24
+    if-nez v2, :cond_20
+
+    .line 25
+    .line 26
+    invoke-virtual {p0, v1}, Lorg/json/JSONObject;->getLong(Ljava/lang/String;)J
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-wide v1
+
+    .line 30
+    invoke-virtual {v0, v1, v2}, Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;->setListenCount(J)V
+
+    .line 31
+    .line 32
+    .line 33
+    :cond_20
+    const-string v1, "duration"
+
+    .line 34
+    .line 35
+    invoke-virtual {p0, v1}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v2
+
+    .line 39
+    if-nez v2, :cond_2f
+
+    .line 40
+    .line 41
+    invoke-virtual {p0, v1}, Lorg/json/JSONObject;->getLong(Ljava/lang/String;)J
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-wide v1
+
+    .line 45
+    invoke-virtual {v0, v1, v2}, Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;->setDuration(J)V
+
+    .line 46
+    .line 47
+    .line 48
+    :cond_2f
+    const-string v1, "totalConnectionTime"
+
+    .line 49
+    .line 50
+    invoke-virtual {p0, v1}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
+
+    .line 51
+    .line 52
+    .line 53
+    move-result v2
+
+    .line 54
+    if-nez v2, :cond_3e
+
+    .line 55
+    .line 56
+    invoke-virtual {p0, v1}, Lorg/json/JSONObject;->getLong(Ljava/lang/String;)J
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-wide v1
+
+    .line 60
+    invoke-virtual {v0, v1, v2}, Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;->setTotalConnectionTime(J)V
+
+    .line 61
+    .line 62
+    .line 63
+    :cond_3e
+    const-string v1, "currentConnectionTime"
+
+    .line 64
+    .line 65
+    invoke-virtual {p0, v1}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
+
+    .line 66
+    .line 67
+    .line 68
+    move-result v2
+
+    .line 69
+    if-nez v2, :cond_4f
+
+    .line 70
+    .line 71
+    invoke-virtual {p0, v1}, Lorg/json/JSONObject;->getLong(Ljava/lang/String;)J
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-wide v1
+
+    .line 75
+    invoke-virtual {v0, v1, v2}, Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;->setCurrentConnectionTime(J)V
+
+    .line 76
+    .line 77
+    .line 78
+    goto :goto_4f
+
+    .line 79
+    :cond_4e
+    const/4 v0, 0x0
+
+    .line 80
+    :cond_4f
+    :goto_4f
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final f()Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;
+    .registers 9
+
+    .line 1
+    const-string v0, "listen/together/relation/statistics/get/v2"
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lo22/e;->b(Ljava/lang/String;)Lo32/a;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    const/4 v1, 0x2
+
+    .line 8
+    new-array v2, v1, [Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    const-string v3, "roomId"
+
+    .line 11
+    .line 12
+    const/4 v4, 0x0
+
+    .line 13
+    aput-object v3, v2, v4
+
+    .line 14
+    .line 15
+    invoke-static {}, Lua0/b3;->c1()Ljava/lang/String;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v3
+
+    .line 19
+    const/4 v5, 0x1
+
+    .line 20
+    aput-object v3, v2, v5
+
+    .line 21
+    .line 22
+    invoke-virtual {v0, v2}, Lo32/f;->v0([Ljava/lang/Object;)Lo32/f;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v0
+
+    .line 26
+    check-cast v0, Lo32/a;
+
+    .line 27
+    .line 28
+    new-array v2, v1, [Ljava/lang/Object;
+
+    .line 29
+    .line 30
+    const-string v3, "roomUserIds"
+
+    .line 31
+    .line 32
+    aput-object v3, v2, v4
+
+    .line 33
+    .line 34
+    new-array v1, v1, [Ljava/lang/Long;
+
+    .line 35
+    .line 36
+    iget-wide v6, p0, Lva0/u0$p;->a:J
+
+    .line 37
+    .line 38
+    invoke-static {v6, v7}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v3
+
+    .line 42
+    aput-object v3, v1, v4
+
+    .line 43
+    .line 44
+    invoke-static {}, Lpj/a;->m()Lpj/a;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v3
+
+    .line 48
+    invoke-virtual {v3}, Lpj/a;->u()J
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-wide v6
+
+    .line 52
+    invoke-static {v6, v7}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object v3
+
+    .line 56
+    aput-object v3, v1, v5
+
+    .line 57
+    .line 58
+    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-object v1
+
+    .line 62
+    aput-object v1, v2, v5
+
+    .line 63
+    .line 64
+    invoke-virtual {v0, v2}, Lo32/f;->v0([Ljava/lang/Object;)Lo32/f;
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-object v0
+
+    .line 68
+    check-cast v0, Lo32/a;
+
+    .line 69
+    .line 70
+    new-instance v1, Lva0/x0;
+
+    .line 71
+    .line 72
+    invoke-direct {v1}, Lva0/x0;-><init>()V
+
+    .line 73
+    .line 74
+    .line 75
+    new-array v2, v4, [I
+
+    .line 76
+    .line 77
+    invoke-virtual {v0, v1, v2}, Lo32/a;->c1(Lu22/j;[I)Ljava/lang/Object;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object v0
+
+    .line 81
+    check-cast v0, Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;
+
+    .line 82
+    .line 83
+    return-object v0
+.end method
+
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .registers 2
+
+    .line 1
+    invoke-virtual {p0}, Lva0/u0$p;->f()Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+

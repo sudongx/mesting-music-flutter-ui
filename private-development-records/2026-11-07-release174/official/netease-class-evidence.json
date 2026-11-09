@@ -1,0 +1,474 @@
+{
+  "evidence_id": "ev_c9f24eeaf89ea7ce1020be52648d135450f606c2d74bd0c5fbcf40d4bab10632",
+  "subject": {
+    "name": "netease-classes14-analysis.apk",
+    "digest": {
+      "sha256": "548f08db01b8cbfdb26fd0ddea90f9744c1ca9f3d3fd6de004b07dd2758bee89"
+    },
+    "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-07-release174\\official\\netease-classes14-analysis.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "D:/AnLi/.codex-artifacts/2026-11-07-release174/official/netease-classes14-analysis.apk",
+    "class_name": "com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "10"
+    },
+    "bridge_sha256": "f9d6d68eadd3d51a89e2debda359454c20534560080d4438f9b9cfe5a19f0b2e",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\zyt\\AppData\\Local\\Temp\\rea-android-d7e231ee252c4ef6178cb34f8f49d428\\target.apk",
+      "class_count": 3329,
+      "resource_count": 2,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":3221225472,\"java_version\":\"17.0.20.1\",\"available_processors\":8,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "C:\\Users\\zyt\\AppData\\Local\\Temp\\rea-android-d7e231ee252c4ef6178cb34f8f49d428\\target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\zyt\\\\AppData\\\\Local\\\\Temp\\\\rea-android-d7e231ee252c4ef6178cb34f8f49d428\\\\target.apk\",\"class_count\":3329,\"raw_class_count\":3329,\"resource_count\":2,\"load_duration_ms\":3677,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl",
+          "dex_static_values": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"name\":\"ImagePrefetchImpl\",\"raw_name\":\"com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl\",\"method_count\":40,\"field_count\":13,\"inner_classes\":[\"com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl.a\",\"com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl.b\",\"com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl.c\",\"com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl.d\",\"com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl.e\"],\"full_name\":\"com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl\",\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"\\u003cclinit\\u003e\",\"dex_descriptor\":\"()V\"},{\"signature\":\"\\u003cinit\\u003e(): void\",\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"def_pos\":0,\"raw_name\":\"\\u003cinit\\u003e\",\"dex_descriptor\":\"()V\"},{\"signature\":\"a(): void\",\"name\":\"a\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"a\",\"dex_descriptor\":\"()V\"},{\"signature\":\"access$finishOne(com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl, com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl$a, com.facebook.datasource.DataSource, java.util.concurrent.atomic.AtomicInteger, java.util.concurrent.atomic.AtomicInteger, java.util.concurrent.atomic.AtomicInteger, int): void\",\"name\":\"access$finishOne\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"access$finishOne\",\"dex_descriptor\":\"(Lcom/netease/cloudmusic/core/image/prefetch/ImagePrefetchImpl;Lcom/netease/cloudmusic/core/image/prefetch/ImagePrefetchImpl$a;Lcom/facebook/datasource/DataSource;Ljava/util/concurrent/atomic/AtomicInteger;Ljava/util/concurrent/atomic/AtomicInteger;Ljava/util/concurrent/atomic/AtomicInteger;I)V\"},{\"signature\":\"access$getInFlight$p(): java.util.HashMap\",\"name\":\"access$getInFlight$p\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"access$getInFlight$p\",\"dex_descriptor\":\"()Ljava/util/HashMap;\"},{\"signature\":\"access$getStateLock$p(): java.lang.Object\",\"name\":\"access$getStateLock$p\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"access$getStateLock$p\",\"dex_descriptor\":\"()Ljava/lang/Object;\"},{\"signature\":\"access$getUrlCache$p(): fg.k\",\"name\":\"access$getUrlCache$p\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"access$getUrlCache$p\",\"dex_descriptor\":\"()Lfg/k;\"},{\"signature\":\"access$onNetworkAvailable(com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl, android.net.ConnectivityManager$NetworkCallback): void\",\"name\":\"access$onNetworkAvailable\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"access$onNetworkAvailable\",\"dex_descriptor\":\"(Lcom/netease/cloudmusic/core/image/prefetch/ImagePrefetchImpl;Landroid/net/ConnectivityManager$NetworkCallback;)V\"},{\"signature\":\"b(java.lang.String, com.netease.cloudmusic.core.iimage.IImagePrefetch$a): void\",\"name\":\"b\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"b\",\"dex_descriptor\":\"(Ljava/lang/String;Lcom/netease/cloudmusic/core/iimage/IImagePrefetch$a;)V\"},{\"signature\":\"buildRequest(java.lang.String, com.facebook.imagepipeline.common.Priority): com.facebook.imagepipeline.request.ImageRequest\",\"name\":\"buildRequest\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"buildRequest\",\"dex_descriptor\":\"(Ljava/lang/String;Lcom/facebook/imagepipeline/common/Priority;)Lcom/facebook/imagepipeline/request/ImageRequest;\"},{\"signature\":\"c(java.util.ArrayList): void\",\"name\":\"c\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"c\",\"dex_descriptor\":\"(Ljava/util/ArrayList;)V\"},{\"signature\":\"cancel(java.lang.String): void\",\"name\":\"cancel\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"cancel\",\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"signature\":\"createSubscriber(com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl$a, java.lang.String, java.util.concurrent.atomic.AtomicInteger, java.util.concurrent.atomic.AtomicInteger, java.util.concurrent.atomic.AtomicInteger, int): com.facebook.datasource.BaseDataSubscriber\\u003cjava.lang.Void\\u003e\",\"name\":\"createSubscriber\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"createSubscriber\",\"dex_descriptor\":\"(Lcom/netease/cloudmusic/core/image/prefetch/ImagePrefetchImpl$a;Ljava/lang/String;Ljava/util/concurrent/atomic/AtomicInteger;Ljava/util/concurrent/atomic/AtomicInteger;Ljava/util/concurrent/atomic/AtomicInteger;I)Lcom/facebook/datasource/BaseDataSubscriber;\"},{\"signature\":\"d(com.netease.cloudmusic.core.iimage.IImagePrefetch$a, boolean): void\",\"name\":\"d\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"d\",\"dex_descriptor\":\"(Lcom/netease/cloudmusic/core/iimage/IImagePrefetch$a;Z)V\"},{\"signature\":\"dispatch(java.lang.String, java.util.List\\u003cjava.lang.String\\u003e): void\",\"name\":\"dispatch\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"dispatch\",\"dex_descriptor\":\"(Ljava/lang/String;Ljava/util/List;)V\"},{\"signature\":\"e(com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl$a, int, int, int): void\",\"name\":\"e\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"e\",\"dex_descriptor\":\"(Lcom/netease/cloudmusic/core/image/prefetch/ImagePrefetchImpl$a;III)V\"},{\"signature\":\"ensureNetworkCallback(): void\",\"name\":\"ensureNetworkCallback\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"ensureNetworkCallback\",\"dex_descriptor\":\"()V\"},{\"signature\":\"f(com.netease.cloudmusic.core.iimage.IImagePrefetch$a): void\",\"name\":\"f\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"f\",\"dex_descriptor\":\"(Lcom/netease/cloudmusic/core/iimage/IImagePrefetch$a;)V\"},{\"signature\":\"finishOne(com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl$a, com.facebook.datasource.DataSource\\u003cjava.lang.Void\\u003e, java.util.concurrent.atomic.AtomicInteger, java.util.concurrent.atomic.AtomicInteger, java.util.concurrent.atomic.AtomicInteger, int): void\",\"name\":\"finishOne\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"finishOne\",\"dex_descriptor\":\"(Lcom/netease/cloudmusic/core/image/prefetch/ImagePrefetchImpl$a;Lcom/facebook/datasource/DataSource;Ljava/util/concurrent/atomic/AtomicInteger;Ljava/util/concurrent/atomic/AtomicInteger;Ljava/util/concurrent/atomic/AtomicInteger;I)V\"},{\"signature\":\"g(): boolean\",\"name\":\"g\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"g\",\"dex_descriptor\":\"()Z\"},{\"signature\":\"h(com.netease.cloudmusic.core.iimage.IImagePrefetch$a): void\",\"name\":\"h\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"h\",\"dex_descriptor\":\"(Lcom/netease/cloudmusic/core/iimage/IImagePrefetch$a;)V\"},{\"signature\":\"isPrefetched(java.lang.String, com.netease.cloudmusic.core.iimage.IImagePrefetch$a): void\",\"name\":\"isPrefetched\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"isPrefetched\",\"dex_descriptor\":\"(Ljava/lang/String;Lcom/netease/cloudmusic/core/iimage/IImagePrefetch$a;)V\"},{\"signature\":\"m179isPrefetched$lambda15(com.netease.cloudmusic.core.iimage.IImagePrefetch$a): void\",\"name\":\"m179isPrefetched$lambda15\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"isPrefetched$lambda-15\",\"dex_descriptor\":\"(Lcom/netease/cloudmusic/core/iimage/IImagePrefetch$a;)V\"},{\"signature\":\"m180isPrefetched$lambda16(com.netease.cloudmusic.core.iimage.IImagePrefetch$a): void\",\"name\":\"m180isPrefetched$lambda16\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"isPrefetched$lambda-16\",\"dex_descriptor\":\"(Lcom/netease/cloudmusic/core/iimage/IImagePrefetch$a;)V\"},{\"signature\":\"m181isPrefetched$lambda18(java.lang.String, com.netease.cloudmusic.core.iimage.IImagePrefetch$a): void\",\"name\":\"m181isPrefetched$lambda18\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"isPrefetched$lambda-18\",\"dex_descriptor\":\"(Ljava/lang/String;Lcom/netease/cloudmusic/core/iimage/IImagePrefetch$a;)V\"},{\"signature\":\"m182isPrefetched$lambda18$lambda17(com.netease.cloudmusic.core.iimage.IImagePrefetch$a, boolean): void\",\"name\":\"m182isPrefetched$lambda18$lambda17\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"isPrefetched$lambda-18$lambda-17\",\"dex_descriptor\":\"(Lcom/netease/cloudmusic/core/iimage/IImagePrefetch$a;Z)V\"},{\"signature\":\"m183notifyComplete$lambda33(com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl$a, int, int, int): void\",\"name\":\"m183notifyComplete$lambda33\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"notifyComplete$lambda-33\",\"dex_descriptor\":\"(Lcom/netease/cloudmusic/core/image/prefetch/ImagePrefetchImpl$a;III)V\"},{\"signature\":\"m184onHomeEntered$lambda20(): void\",\"name\":\"m184onHomeEntered$lambda20\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"onHomeEntered$lambda-20\",\"dex_descriptor\":\"()V\"},{\"signature\":\"m185onHomeEntered$lambda20$lambda19(): boolean\",\"name\":\"m185onHomeEntered$lambda20$lambda19\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"onHomeEntered$lambda-20$lambda-19\",\"dex_descriptor\":\"()Z\"},{\"signature\":\"m186onNetworkAvailable$lambda31(java.util.ArrayList): void\",\"name\":\"m186onNetworkAvailable$lambda31\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"onNetworkAvailable$lambda-31\",\"dex_descriptor\":\"(Ljava/util/ArrayList;)V\"},{\"signature\":\"notifyComplete(com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl$a, int, int, int): void\",\"name\":\"notifyComplete\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"notifyComplete\",\"dex_descriptor\":\"(Lcom/netease/cloudmusic/core/image/prefetch/ImagePrefetchImpl$a;III)V\"},{\"signature\":\"onHomeEntered(): void\",\"name\":\"onHomeEntered\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"onHomeEntered\",\"dex_descriptor\":\"()V\"},{\"signature\":\"onIdleTrigger(): void\",\"name\":\"onIdleTrigger\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"onIdleTrigger\",\"dex_descriptor\":\"()V\"},{\"signature\":\"onNetworkAvailable(android.net.ConnectivityManager$NetworkCallback): void\",\"name\":\"onNetworkAvailable\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"onNetworkAvailable\",\"dex_descriptor\":\"(Landroid/net/ConnectivityManager$NetworkCallback;)V\"},{\"signature\":\"prefetch(com.netease.cloudmusic.core.iimage.e): void\",\"name\":\"prefetch\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"prefetch\",\"dex_descriptor\":\"(Lcom/netease/cloudmusic/core/iimage/e;)V\"},{\"signature\":\"prefetch(java.util.List\\u003cjava.lang.String\\u003e): void\",\"name\":\"prefetch\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"prefetch\",\"dex_descriptor\":\"(Ljava/util/List;)V\"},{\"signature\":\"register(com.netease.cloudmusic.core.iimage.a, java.util.List\\u003cjava.lang.String\\u003e): void\",\"name\":\"register\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"register\",\"dex_descriptor\":\"(Lcom/netease/cloudmusic/core/iimage/a;Ljava/util/List;)V\"},{\"signature\":\"registeredTag(com.netease.cloudmusic.core.iimage.a): java.lang.String\",\"name\":\"registeredTag\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"registeredTag\",\"dex_descriptor\":\"(Lcom/netease/cloudmusic/core/iimage/a;)Ljava/lang/String;\"},{\"signature\":\"unregister(com.netease.cloudmusic.core.iimage.a): void\",\"name\":\"unregister\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"unregister\",\"dex_descriptor\":\"(Lcom/netease/cloudmusic/core/iimage/a;)V\"},{\"signature\":\"untrackInFlight(java.lang.String, com.facebook.datasource.DataSource\\u003cjava.lang.Void\\u003e): void\",\"name\":\"untrackInFlight\",\"is_constructor\":false,\"def_pos\":0,\"raw_name\":\"untrackInFlight\",\"dex_descriptor\":\"(Ljava/lang/String;Lcom/facebook/datasource/DataSource;)V\"}],\"fields\":[{\"def_pos\":0,\"type\":\"java.lang.String\",\"name\":\"CALLER_CONTEXT\",\"raw_name\":\"CALLER_CONTEXT\",\"dex_type\":\"Ljava/lang/String;\",\"dex_static_value\":{\"type\":\"string\",\"value\":\"image_prefetch\"}},{\"def_pos\":0,\"type\":\"com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl\",\"name\":\"INSTANCE\",\"raw_name\":\"INSTANCE\",\"dex_type\":\"Lcom/netease/cloudmusic/core/image/prefetch/ImagePrefetchImpl;\"},{\"def_pos\":0,\"type\":\"int\",\"name\":\"MAX_DEDUP_ENTRIES\",\"raw_name\":\"MAX_DEDUP_ENTRIES\",\"dex_type\":\"I\",\"dex_static_value\":{\"type\":\"int\",\"value\":2000}},{\"def_pos\":0,\"type\":\"java.util.HashMap\\u003cjava.lang.String, java.util.Set\\u003ccom.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl$a\\u003e\\u003e\",\"name\":\"activeBatches\",\"raw_name\":\"activeBatches\",\"dex_type\":\"Ljava/util/HashMap;\"},{\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicBoolean\",\"name\":\"anchorSet\",\"raw_name\":\"anchorSet\",\"dex_type\":\"Ljava/util/concurrent/atomic/AtomicBoolean;\"},{\"def_pos\":0,\"type\":\"java.util.HashMap\\u003cjava.lang.String, java.util.Map\\u003ccom.facebook.datasource.DataSource\\u003cjava.lang.Void\\u003e, java.lang.String\\u003e\\u003e\",\"name\":\"inFlight\",\"raw_name\":\"inFlight\",\"dex_type\":\"Ljava/util/HashMap;\"},{\"def_pos\":0,\"type\":\"android.os.Handler\",\"name\":\"mainHandler\",\"raw_name\":\"mainHandler\",\"dex_type\":\"Landroid/os/Handler;\"},{\"def_pos\":0,\"type\":\"android.net.ConnectivityManager$NetworkCallback\",\"name\":\"networkCallback\",\"raw_name\":\"networkCallback\",\"dex_type\":\"Landroid/net/ConnectivityManager$NetworkCallback;\"},{\"def_pos\":0,\"type\":\"java.lang.Object\",\"name\":\"networkLock\",\"raw_name\":\"networkLock\",\"dex_type\":\"Ljava/lang/Object;\"},{\"def_pos\":0,\"type\":\"java.util.ArrayList\\u003ckotlin.Pair\\u003cjava.lang.String, java.util.List\\u003cjava.lang.String\\u003e\\u003e\\u003e\",\"name\":\"pendingNetworkExecutions\",\"raw_name\":\"pendingNetworkExecutions\",\"dex_type\":\"Ljava/util/ArrayList;\"},{\"def_pos\":0,\"type\":\"fg.h\",\"name\":\"registry\",\"raw_name\":\"registry\",\"dex_type\":\"Lfg/h;\"},{\"def_pos\":0,\"type\":\"java.lang.Object\",\"name\":\"stateLock\",\"raw_name\":\"stateLock\",\"dex_type\":\"Ljava/lang/Object;\"},{\"def_pos\":0,\"type\":\"fg.k\",\"name\":\"urlCache\",\"raw_name\":\"urlCache\",\"dex_type\":\"Lfg/k;\"}],\"inner_class_raw_names\":[\"com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl$a\",\"com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl$b\",\"com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl$c\",\"com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl$d\",\"com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl$e\"],\"inner_class_count\":5}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 3072
+    },
+    "class_name": "com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "access$finishOne",
+        "reported_signature": "access$finishOne(com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl, com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl$a, com.facebook.datasource.DataSource, java.util.concurrent.atomic.AtomicInteger, java.util.concurrent.atomic.AtomicInteger, java.util.concurrent.atomic.AtomicInteger, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/netease/cloudmusic/core/image/prefetch/ImagePrefetchImpl;Lcom/netease/cloudmusic/core/image/prefetch/ImagePrefetchImpl$a;Lcom/facebook/datasource/DataSource;Ljava/util/concurrent/atomic/AtomicInteger;Ljava/util/concurrent/atomic/AtomicInteger;Ljava/util/concurrent/atomic/AtomicInteger;I)V"
+      },
+      {
+        "name": "access$getInFlight$p",
+        "reported_signature": "access$getInFlight$p(): java.util.HashMap",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/HashMap;"
+      },
+      {
+        "name": "access$getStateLock$p",
+        "reported_signature": "access$getStateLock$p(): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/Object;"
+      },
+      {
+        "name": "access$getUrlCache$p",
+        "reported_signature": "access$getUrlCache$p(): fg.k",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Lfg/k;"
+      },
+      {
+        "name": "access$onNetworkAvailable",
+        "reported_signature": "access$onNetworkAvailable(com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl, android.net.ConnectivityManager$NetworkCallback): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/netease/cloudmusic/core/image/prefetch/ImagePrefetchImpl;Landroid/net/ConnectivityManager$NetworkCallback;)V"
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(java.lang.String, com.netease.cloudmusic.core.iimage.IImagePrefetch$a): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Lcom/netease/cloudmusic/core/iimage/IImagePrefetch$a;)V"
+      },
+      {
+        "name": "buildRequest",
+        "reported_signature": "buildRequest(java.lang.String, com.facebook.imagepipeline.common.Priority): com.facebook.imagepipeline.request.ImageRequest",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Lcom/facebook/imagepipeline/common/Priority;)Lcom/facebook/imagepipeline/request/ImageRequest;"
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(java.util.ArrayList): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/util/ArrayList;)V"
+      },
+      {
+        "name": "cancel",
+        "reported_signature": "cancel(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;)V"
+      },
+      {
+        "name": "createSubscriber",
+        "reported_signature": "createSubscriber(com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl$a, java.lang.String, java.util.concurrent.atomic.AtomicInteger, java.util.concurrent.atomic.AtomicInteger, java.util.concurrent.atomic.AtomicInteger, int): com.facebook.datasource.BaseDataSubscriber<java.lang.Void>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/netease/cloudmusic/core/image/prefetch/ImagePrefetchImpl$a;Ljava/lang/String;Ljava/util/concurrent/atomic/AtomicInteger;Ljava/util/concurrent/atomic/AtomicInteger;Ljava/util/concurrent/atomic/AtomicInteger;I)Lcom/facebook/datasource/BaseDataSubscriber;"
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(com.netease.cloudmusic.core.iimage.IImagePrefetch$a, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/netease/cloudmusic/core/iimage/IImagePrefetch$a;Z)V"
+      },
+      {
+        "name": "dispatch",
+        "reported_signature": "dispatch(java.lang.String, java.util.List<java.lang.String>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/util/List;)V"
+      },
+      {
+        "name": "e",
+        "reported_signature": "e(com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl$a, int, int, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/netease/cloudmusic/core/image/prefetch/ImagePrefetchImpl$a;III)V"
+      },
+      {
+        "name": "ensureNetworkCallback",
+        "reported_signature": "ensureNetworkCallback(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "f",
+        "reported_signature": "f(com.netease.cloudmusic.core.iimage.IImagePrefetch$a): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/netease/cloudmusic/core/iimage/IImagePrefetch$a;)V"
+      },
+      {
+        "name": "finishOne",
+        "reported_signature": "finishOne(com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl$a, com.facebook.datasource.DataSource<java.lang.Void>, java.util.concurrent.atomic.AtomicInteger, java.util.concurrent.atomic.AtomicInteger, java.util.concurrent.atomic.AtomicInteger, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/netease/cloudmusic/core/image/prefetch/ImagePrefetchImpl$a;Lcom/facebook/datasource/DataSource;Ljava/util/concurrent/atomic/AtomicInteger;Ljava/util/concurrent/atomic/AtomicInteger;Ljava/util/concurrent/atomic/AtomicInteger;I)V"
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "h",
+        "reported_signature": "h(com.netease.cloudmusic.core.iimage.IImagePrefetch$a): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/netease/cloudmusic/core/iimage/IImagePrefetch$a;)V"
+      },
+      {
+        "name": "isPrefetched",
+        "reported_signature": "isPrefetched(java.lang.String, com.netease.cloudmusic.core.iimage.IImagePrefetch$a): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Lcom/netease/cloudmusic/core/iimage/IImagePrefetch$a;)V"
+      },
+      {
+        "name": "m179isPrefetched$lambda15",
+        "reported_signature": "m179isPrefetched$lambda15(com.netease.cloudmusic.core.iimage.IImagePrefetch$a): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/netease/cloudmusic/core/iimage/IImagePrefetch$a;)V"
+      },
+      {
+        "name": "m180isPrefetched$lambda16",
+        "reported_signature": "m180isPrefetched$lambda16(com.netease.cloudmusic.core.iimage.IImagePrefetch$a): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/netease/cloudmusic/core/iimage/IImagePrefetch$a;)V"
+      },
+      {
+        "name": "m181isPrefetched$lambda18",
+        "reported_signature": "m181isPrefetched$lambda18(java.lang.String, com.netease.cloudmusic.core.iimage.IImagePrefetch$a): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Lcom/netease/cloudmusic/core/iimage/IImagePrefetch$a;)V"
+      },
+      {
+        "name": "m182isPrefetched$lambda18$lambda17",
+        "reported_signature": "m182isPrefetched$lambda18$lambda17(com.netease.cloudmusic.core.iimage.IImagePrefetch$a, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/netease/cloudmusic/core/iimage/IImagePrefetch$a;Z)V"
+      },
+      {
+        "name": "m183notifyComplete$lambda33",
+        "reported_signature": "m183notifyComplete$lambda33(com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl$a, int, int, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/netease/cloudmusic/core/image/prefetch/ImagePrefetchImpl$a;III)V"
+      },
+      {
+        "name": "m184onHomeEntered$lambda20",
+        "reported_signature": "m184onHomeEntered$lambda20(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "m185onHomeEntered$lambda20$lambda19",
+        "reported_signature": "m185onHomeEntered$lambda20$lambda19(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "m186onNetworkAvailable$lambda31",
+        "reported_signature": "m186onNetworkAvailable$lambda31(java.util.ArrayList): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/util/ArrayList;)V"
+      },
+      {
+        "name": "notifyComplete",
+        "reported_signature": "notifyComplete(com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl$a, int, int, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/netease/cloudmusic/core/image/prefetch/ImagePrefetchImpl$a;III)V"
+      },
+      {
+        "name": "onHomeEntered",
+        "reported_signature": "onHomeEntered(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "onIdleTrigger",
+        "reported_signature": "onIdleTrigger(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "onNetworkAvailable",
+        "reported_signature": "onNetworkAvailable(android.net.ConnectivityManager$NetworkCallback): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Landroid/net/ConnectivityManager$NetworkCallback;)V"
+      },
+      {
+        "name": "prefetch",
+        "reported_signature": "prefetch(com.netease.cloudmusic.core.iimage.e): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/netease/cloudmusic/core/iimage/e;)V"
+      },
+      {
+        "name": "prefetch",
+        "reported_signature": "prefetch(java.util.List<java.lang.String>): void",
+        "overload_index": 1,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/util/List;)V"
+      },
+      {
+        "name": "register",
+        "reported_signature": "register(com.netease.cloudmusic.core.iimage.a, java.util.List<java.lang.String>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/netease/cloudmusic/core/iimage/a;Ljava/util/List;)V"
+      },
+      {
+        "name": "registeredTag",
+        "reported_signature": "registeredTag(com.netease.cloudmusic.core.iimage.a): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/netease/cloudmusic/core/iimage/a;)Ljava/lang/String;"
+      },
+      {
+        "name": "unregister",
+        "reported_signature": "unregister(com.netease.cloudmusic.core.iimage.a): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/netease/cloudmusic/core/iimage/a;)V"
+      },
+      {
+        "name": "untrackInFlight",
+        "reported_signature": "untrackInFlight(java.lang.String, com.facebook.datasource.DataSource<java.lang.Void>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Lcom/facebook/datasource/DataSource;)V"
+      }
+    ],
+    "fields": [
+      {
+        "name": "CALLER_CONTEXT",
+        "reported_type": "java.lang.String",
+        "dex_static_value": {
+          "type": "string",
+          "value": "image_prefetch"
+        }
+      },
+      {
+        "name": "INSTANCE",
+        "reported_type": "com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl",
+        "dex_static_value": null
+      },
+      {
+        "name": "MAX_DEDUP_ENTRIES",
+        "reported_type": "int",
+        "dex_static_value": {
+          "type": "int",
+          "value": 2000
+        }
+      },
+      {
+        "name": "activeBatches",
+        "reported_type": "java.util.HashMap<java.lang.String, java.util.Set<com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl$a>>",
+        "dex_static_value": null
+      },
+      {
+        "name": "anchorSet",
+        "reported_type": "java.util.concurrent.atomic.AtomicBoolean",
+        "dex_static_value": null
+      },
+      {
+        "name": "inFlight",
+        "reported_type": "java.util.HashMap<java.lang.String, java.util.Map<com.facebook.datasource.DataSource<java.lang.Void>, java.lang.String>>",
+        "dex_static_value": null
+      },
+      {
+        "name": "mainHandler",
+        "reported_type": "android.os.Handler",
+        "dex_static_value": null
+      },
+      {
+        "name": "networkCallback",
+        "reported_type": "android.net.ConnectivityManager$NetworkCallback",
+        "dex_static_value": null
+      },
+      {
+        "name": "networkLock",
+        "reported_type": "java.lang.Object",
+        "dex_static_value": null
+      },
+      {
+        "name": "pendingNetworkExecutions",
+        "reported_type": "java.util.ArrayList<kotlin.Pair<java.lang.String, java.util.List<java.lang.String>>>",
+        "dex_static_value": null
+      },
+      {
+        "name": "registry",
+        "reported_type": "fg.h",
+        "dex_static_value": null
+      },
+      {
+        "name": "stateLock",
+        "reported_type": "java.lang.Object",
+        "dex_static_value": null
+      },
+      {
+        "name": "urlCache",
+        "reported_type": "fg.k",
+        "dex_static_value": null
+      }
+    ],
+    "inner_classes": [
+      "com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl.a",
+      "com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl.b",
+      "com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl.c",
+      "com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl.d",
+      "com.netease.cloudmusic.core.image.prefetch.ImagePrefetchImpl.e"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

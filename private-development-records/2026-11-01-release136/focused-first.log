@@ -1,0 +1,48 @@
+00:00 +0: loading D:/AnLi/test/release_136_listening_audit_test.dart
+test/release_136_listening_audit_ui_test.dart:92:17: Error: Undefined name '_'.
+                _,
+                ^
+test/release_136_listening_audit_ui_test.dart:165:54: Error: The method 'clear' isn't defined for the type 'PlatformAccountController'.
+ - 'PlatformAccountController' is from 'package:mesting_music/features/music_platform/music_platform_providers.dart' ('lib/features/music_platform/music_platform_providers.dart').
+Try correcting the name to the name of an existing method, or defining a method named 'clear'.
+    container.read(platformAccountProvider.notifier).clear();
+                                                     ^^^^^
+00:00 +0: D:/AnLi/test/release_136_listening_audit_test.dart: local 683 minutes does not become fabricated or supposedly cloud-confirmed plays
+00:00 +1: D:/AnLi/test/release_136_listening_audit_test.dart: start receipts, recent matches and duration states remain independent
+00:00 +2: D:/AnLi/test/release_136_listening_audit_test.dart: original start month wins over retry/created date; fallback source is explicit
+00:00 +3: D:/AnLi/test/release_136_listening_audit_test.dart: account filtering, source filtering and duplicate input cannot inflate the report
+00:00 +4: D:/AnLi/test/release_136_listening_audit_test.dart: export whitelist excludes identity, timestamps, song content, cookies and arbitrary fields
+00:00 +5: D:/AnLi/test/release_136_listening_audit_test.dart: detail cap is disclosed and does not truncate totals; media time never substitutes real time
+00:00 +6: D:/AnLi/test/release_136_listening_audit_test.dart: database snapshot is read-only and does not change journal states
+00:00 +6 -1: loading D:/AnLi/test/release_136_listening_audit_ui_test.dart [E]
+  Failed to load "D:/AnLi/test/release_136_listening_audit_ui_test.dart":
+  Compilation failed for testPath=D:/AnLi/test/release_136_listening_audit_ui_test.dart: test/release_136_listening_audit_ui_test.dart:92:17: Error: Undefined name '_'.
+                  _,
+                  ^
+  test/release_136_listening_audit_ui_test.dart:165:54: Error: The method 'clear' isn't defined for the type 'PlatformAccountController'.
+   - 'PlatformAccountController' is from 'package:mesting_music/features/music_platform/music_platform_providers.dart' ('lib/features/music_platform/music_platform_providers.dart').
+  Try correcting the name to the name of an existing method, or defining a method named 'clear'.
+      container.read(platformAccountProvider.notifier).clear();
+                                                       ^^^^^
+  .
+00:00 +6 -2: loading D:/AnLi/test/release_136_listening_audit_test.dart [E]
+  Error: The Dart compiler exited unexpectedly.
+  package:flutter_tools/src/base/common.dart 34:3  throwToolExit
+  package:flutter_tools/src/compile.dart 939:11    DefaultResidentCompiler._compile.<fn>
+  dart:async/zone_root.dart 48:47                  _rootRunUnary
+  dart:async/zone.dart 733:19                      _CustomZone.runUnary
+  dart:async/future_impl.dart 948:45               Future._propagateToListeners.handleValueCallback
+  dart:async/future_impl.dart 977:13               Future._propagateToListeners
+  dart:async/future_impl.dart 862:9                Future._propagateToListeners
+  dart:async/future_impl.dart 720:5                Future._completeWithValue
+  dart:async/future_impl.dart 804:7                Future._asyncCompleteWithValue.<fn>
+  dart:async/zone_root.dart 35:13                  _rootRun
+  dart:async/zone.dart 726:19                      _CustomZone.run
+  dart:async/zone.dart 625:7                       _CustomZone.runGuarded
+  dart:async/zone.dart 666:23                      _CustomZone.bindCallbackGuarded.<fn>
+  dart:async/schedule_microtask.dart 40:35         _microtaskLoop
+  dart:async/schedule_microtask.dart 49:5          _startMicrotaskLoop
+  dart:isolate-patch/isolate_patch.dart 127:13     _runPendingImmediateCallback
+  dart:isolate-patch/isolate_patch.dart 194:5      _RawReceivePort._handleMessage
+  
+00:00 +7 -2: Some tests failed.

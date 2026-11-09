@@ -1,0 +1,489 @@
+    /* JADX WARN: Code duplicated, block: B:173:0x06b4 A[Catch: JSONException -> 0x070d, TryCatch #4 {JSONException -> 0x070d, blocks: (B:139:0x0566, B:143:0x057a, B:171:0x06a3, B:173:0x06b4, B:174:0x06c5, B:176:0x06d6, B:177:0x06e7, B:179:0x06ed, B:181:0x06f3, B:182:0x06f8, B:148:0x05a0, B:151:0x05df, B:154:0x0607, B:157:0x0621, B:160:0x0637, B:163:0x064e, B:165:0x0663, B:168:0x068d), top: B:357:0x04f0 }] */
+    /* JADX WARN: Code duplicated, block: B:176:0x06d6 A[Catch: JSONException -> 0x070d, TryCatch #4 {JSONException -> 0x070d, blocks: (B:139:0x0566, B:143:0x057a, B:171:0x06a3, B:173:0x06b4, B:174:0x06c5, B:176:0x06d6, B:177:0x06e7, B:179:0x06ed, B:181:0x06f3, B:182:0x06f8, B:148:0x05a0, B:151:0x05df, B:154:0x0607, B:157:0x0621, B:160:0x0637, B:163:0x064e, B:165:0x0663, B:168:0x068d), top: B:357:0x04f0 }] */
+    /* JADX WARN: Code duplicated, block: B:187:0x0717  */
+    /* JADX WARN: Code duplicated, block: B:190:0x072a  */
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference failed for: r8v5 */
+    /* JADX WARN: Type inference failed for: r8v6, types: [int] */
+    /* JADX WARN: Type inference failed for: r8v7 */
+    protected com.alibaba.fastjson.JSONObject x3(Object... objArr) {
+        int realTime;
+        int time;
+        boolean z;
+        boolean z2;
+        boolean z3;
+        int musicPlayAbsoluteOrder;
+        int i2;
+        boolean z4;
+        long jF;
+        long j2;
+        boolean z5;
+        int iMax;
+        SongUrlInfo su;
+        int auEff;
+        boolean z6;
+        boolean z7;
+        JSONObject jSONObjectA;
+        SongPlayedTime songPlayedTimeA;
+        MusicInfo currentMusic = getCurrentMusic();
+        if (currentMusic == null) {
+            return null;
+        }
+        int currentIndex = getCurrentIndex();
+        String str = sc.F(currentMusic.getFilterMusicId()) ? SongUrlInfoPara.PARAM_EXT_PLAY_VALUE_MIGU : MultiAudioEffectJsonPackage.DEFAULT_AEID;
+        PlayExtraInfo playExtraInfoW1 = W1();
+        String strK3 = K3(playExtraInfoW1);
+        boolean z8 = objArr.length > 0 && objArr[0].toString().toLowerCase().equals("end");
+        if (U3(playExtraInfoW1)) {
+            strK3 = "MlogVideoDetailPage";
+        }
+        if (TextUtils.isEmpty(strK3)) {
+            strK3 = "other";
+        }
+        int iF3 = F3(currentMusic);
+        String strM = bj.m(playExtraInfoW1, strK3);
+        long filterMusicId = currentMusic.getFilterMusicId();
+        if (z8 && (songPlayedTimeA = z1.A(filterMusicId)) != null && wu0.m.P2()) {
+            time = songPlayedTimeA.getTime();
+            realTime = songPlayedTimeA.getRealTime();
+        } else {
+            realTime = 0;
+            time = 0;
+        }
+        if (currentMusic.isRawBizTypeProgram()) {
+            com.alibaba.fastjson.JSONObject jSONObjectB = lg0.c.a.b(Integer.valueOf(j0() / WifiScanner.SCAN_INTERVAL), Integer.valueOf(iF3), Float.valueOf((time + q0(filterMusicId)) / 1000.0f), Integer.valueOf(qn0.j.G0(currentMusic) ? 1 : 0), n7.p0.a.E1().x(), G1(true), currentMusic.getProgram(), currentMusic, playExtraInfoW1, this.a, 1);
+            for (int i3 = 0; i3 < objArr.length; i3 += 2) {
+                jSONObjectB.put(objArr[i3].toString(), objArr[i3 + 1]);
+            }
+            return jSONObjectB;
+        }
+        Object[] objArr2 = new Object[56];
+        objArr2[0] = "type";
+        objArr2[1] = s4();
+        objArr2[2] = RNDatabase.BundleColumns.ID;
+        objArr2[3] = Long.valueOf(filterMusicId);
+        objArr2[4] = "wifi";
+        objArr2[5] = Integer.valueOf(m4.v() ? 1 : 0);
+        objArr2[6] = "realtime";
+        objArr2[7] = Integer.valueOf((q0(filterMusicId) + realTime) / WifiScanner.SCAN_INTERVAL);
+        objArr2[8] = "lags";
+        objArr2[9] = n7.p0.a.E1().x();
+        objArr2[10] = "source";
+        objArr2[11] = strK3;
+        objArr2[12] = "sourceId";
+        objArr2[13] = O3(playExtraInfoW1);
+        objArr2[14] = "mode";
+        objArr2[15] = n2.f(p0());
+        objArr2[16] = "download";
+        objArr2[17] = Integer.valueOf(iF3 == 0 ? 1 : 0);
+        objArr2[18] = "bitrate";
+        objArr2[19] = Integer.valueOf(wu0.i0.e(currentMusic, currentMusic.getCurrentBitRate()) / WifiScanner.SCAN_INTERVAL);
+        objArr2[20] = "npu_bitrate";
+        objArr2[21] = Integer.valueOf(currentMusic.getRealBitrate() / WifiScanner.SCAN_INTERVAL);
+        objArr2[22] = "status";
+        objArr2[23] = A0() ? "back" : "front";
+        objArr2[24] = "fee";
+        objArr2[25] = Integer.valueOf(currentMusic.getSp().getFee());
+        objArr2[26] = "sp_flag";
+        objArr2[27] = Integer.valueOf(currentMusic.getSp().getFlag());
+        objArr2[28] = "sp_pay";
+        objArr2[29] = Integer.valueOf(currentMusic.getSp().getPayed());
+        objArr2[30] = "sp_playMaxbr";
+        objArr2[31] = Integer.valueOf(currentMusic.getSp().getPlayMaxbr());
+        objArr2[32] = "sp_pl";
+        objArr2[33] = Integer.valueOf(currentMusic.getSp().getPlayMaxLevel());
+        objArr2[34] = "sp_fl";
+        objArr2[35] = Integer.valueOf(currentMusic.getSp().getFreeLevel());
+        objArr2[36] = "sp_source";
+        objArr2[37] = currentMusic.getSp().getSpTypeForLog();
+        objArr2[38] = "startlogtime";
+        objArr2[39] = Long.valueOf(this.a.getMusicStartLogTime());
+        objArr2[40] = "file";
+        objArr2[41] = Integer.valueOf(iF3);
+        objArr2[42] = "copyright";
+        objArr2[43] = Integer.valueOf(!currentMusic.isOffLineMusic() ? 1 : 0);
+        objArr2[44] = "preferrefer";
+        objArr2[45] = strM;
+        objArr2[46] = MusicGiftModel.GIFT_MODE_TIME;
+        objArr2[47] = Integer.valueOf((n7.p0.Y(filterMusicId).intValue() + time) / WifiScanner.SCAN_INTERVAL);
+        objArr2[48] = "is_heart";
+        objArr2[49] = str;
+        objArr2[50] = "isMergeProcess";
+        objArr2[51] = 1;
+        objArr2[52] = "isQuickListenFramework";
+        objArr2[53] = Integer.valueOf(wu0.m.N1() ? 1 : 0);
+        objArr2[54] = "currentProcessName";
+        objArr2[55] = ApplicationWrapper.getInstance().appProcessName();
+        com.alibaba.fastjson.JSONObject jSONObjectA2 = i8.a(objArr2);
+        if (z8) {
+            if (time > 0 && realTime > 0 && wu0.m.P2()) {
+                jSONObjectA2.put("oldtime", Integer.valueOf(n7.p0.Y(filterMusicId).intValue() / WifiScanner.SCAN_INTERVAL));
+                jSONObjectA2.put("oldrealtime", Integer.valueOf(q0(filterMusicId) / WifiScanner.SCAN_INTERVAL));
+            }
+            if ((currentMusic instanceof LocalMusicInfo) && !TextUtils.isEmpty(currentMusic.getFilePath())) {
+                jSONObjectA2.put("localPath", currentMusic.getFilePath());
+            }
+        }
+        if (W3()) {
+            jSONObjectA2.put("audioType", com.netease.cloudmusic.module.peripheral.g.g());
+        }
+        String strK = zx0.c.k();
+        if (!TextUtils.isEmpty(strK)) {
+            jSONObjectA2.put("playedBluetoothName", strK);
+        }
+        jSONObjectA2.put("process_id", Integer.valueOf(wu0.d.a));
+        jSONObjectA2.put("audioLevel", currentMusic.getCurrentAudioLevel());
+        jSONObjectA2.put("resource_ratio", Integer.valueOf(j0() / WifiScanner.SCAN_INTERVAL));
+        jSONObjectA2.put("resource_time", Integer.valueOf(currentMusic.getDuration() / WifiScanner.SCAN_INTERVAL));
+        jSONObjectA2.put("songName", currentMusic.getMusicName());
+        jSONObjectA2.put("artistName", currentMusic.getArtistsName());
+        jSONObjectA2.put("trialMode", Integer.valueOf(i6.l(currentMusic)));
+        jSONObjectA2.put("isVipSong", Integer.valueOf(currentMusic.isVipMusicButNotQQ() ? 1 : 0));
+        jSONObjectA2.put("is_horizontal", Integer.valueOf(n7.z0.a.c0(null) ? 1 : 0));
+        if (currentIndex >= 0) {
+            jSONObjectA2.put("songInd", Integer.valueOf(currentIndex));
+        }
+        if (U3(playExtraInfoW1)) {
+            jSONObjectA2.put("sourcetype", K3(playExtraInfoW1));
+        }
+        for (int i4 = 0; i4 < objArr.length; i4 += 2) {
+            jSONObjectA2.put(objArr[i4].toString(), objArr[i4 + 1]);
+        }
+        jSONObjectA2.put("alg", currentMusic.getAlg());
+        try {
+            if (py0.a.k()) {
+                jSONObjectA2.put("auto_continue", Integer.valueOf(py0.a.m() ? 1 : 0));
+            }
+        } catch (Exception unused) {
+        }
+        if (playExtraInfoW1 != null) {
+            if (playExtraInfoW1.getSourceType() == 6) {
+                jSONObjectA2.put("sub_source", "search");
+            } else if (playExtraInfoW1.getSourceType() == 114) {
+                jSONObjectA2.put("sub_source", "relatedrcmmd");
+            } else if (U3(playExtraInfoW1)) {
+                BIPMlogPlayExtraSource extraSource = playExtraInfoW1.getExtraSource();
+                if (extraSource instanceof BIPMlogPlayExtraSource) {
+                    jSONObjectA2.put("sub_source", extraSource.getSub_source());
+                }
+            }
+            Serializable serializable = (Serializable) playExtraInfoW1.getExtraMap().get("extra_style_recommend_tag_id");
+            if ((serializable instanceof String) && js.h((String) serializable)) {
+                jSONObjectA2.put("tagid", serializable);
+            }
+            Serializable serializable2 = (Serializable) playExtraInfoW1.getExtraMap().get("extra_style_recommend_category_id");
+            if ((serializable2 instanceof String) && js.h((String) serializable2)) {
+                jSONObjectA2.put("categoryid", serializable2);
+            }
+            String rcmdPlayType = playExtraInfoW1.getRcmdPlayType();
+            if (!TextUtils.isEmpty(rcmdPlayType)) {
+                jSONObjectA2.put("rcmdPlayType", rcmdPlayType);
+            }
+            String rcmdOriginSongId = playExtraInfoW1.getRcmdOriginSongId();
+            if (!TextUtils.isEmpty(rcmdOriginSongId)) {
+                jSONObjectA2.put("rcmdOriginSongId", rcmdOriginSongId);
+            }
+        }
+        if (getPlayType() == 2) {
+            if (objArr.length > 0 && (jSONObjectA = sm0.t.INSTANCE.a(currentMusic.getId())) != null && jSONObjectA.length() > 0) {
+                try {
+                    jSONObjectA2.put("resource_jar_info", jSONObjectA.getJSONObject("resource_jar_info").toString());
+                    jSONObjectA2.put("jar_anonymous", jSONObjectA.getString("jar_anonymous"));
+                } catch (JSONException unused2) {
+                }
+            }
+            try {
+                com.alibaba.fastjson.JSONObject jSONObject = (com.alibaba.fastjson.JSONObject) ((ICustomConfig) ServiceFacade.get(ICustomConfig.class)).getAppCustomConfig("IuRPVVmc3WWul9fT", new com.alibaba.fastjson.JSONObject(), new String[]{"membership#audioEffectVipInfo"});
+                int iM = si0.b.m();
+                JSONObject jSONObject2 = new JSONObject();
+                try {
+                    if (iM != -1) {
+                        if (iM == 99) {
+                            Iterator<Integer> it = si0.b.n().iterator();
+                            int iMax2 = 0;
+                            z8 = z8;
+                            while (it.hasNext()) {
+                                int iIntValue = it.next().intValue();
+                                Iterator<Integer> it2 = it;
+                                if (iIntValue == 2) {
+                                    jSONObjectA2.put("is_device", 1);
+                                    jSONObjectA2.put("musiceffect_id", Long.valueOf(zx0.c.h()));
+                                    boolean z9 = z8;
+                                    try {
+                                        jSONObject2.put("DEVICE_AE", zx0.c.h());
+                                        iMax2 = Math.max(jSONObject.getIntValue("DEVICE_AE"), iMax2);
+                                        z7 = z9;
+                                    } catch (JSONException unused3) {
+                                        z4 = z9;
+                                    }
+                                } else {
+                                    z7 = z8;
+                                }
+                                if (iIntValue == 4) {
+                                    jSONObjectA2.put("content", "EQ");
+                                    jSONObject2.put("CUSTOM_EQ", -1000L);
+                                    iMax2 = Math.max(jSONObject.getIntValue("CUSTOM_EQ"), iMax2);
+                                }
+                                if (iIntValue == 7) {
+                                    jSONObject2.put("EAR_FINGER", -1001L);
+                                    iMax2 = Math.max(jSONObject.getIntValue("EAR_FINGER"), iMax2);
+                                }
+                                if (iIntValue == 8) {
+                                    jSONObject2.put("HEAR_REPAIR", -1002L);
+                                    iMax2 = Math.max(jSONObject.getIntValue("HEAR_REPAIR"), iMax2);
+                                }
+                                it = it2;
+                                z8 = z7;
+                            }
+                            z4 = z8;
+                            iMax = iMax2;
+                        } else {
+                            z6 = z8;
+                            if (iM == 1) {
+                                jSONObjectA2.put("is_device", 0);
+                                jSONObjectA2.put("musiceffect_id", Long.valueOf(zx0.c.g()));
+                                jSONObject2.put("CLOUDMUSIC_AE", zx0.c.g());
+                                iMax = Math.max(jSONObject.getIntValue("CLOUDMUSIC_AE_" + zx0.c.g()), 0);
+                                z4 = z6;
+                            } else if (iM == 2) {
+                                jSONObjectA2.put("is_device", 1);
+                                jSONObjectA2.put("musiceffect_id", Long.valueOf(zx0.c.h()));
+                                jSONObject2.put("DEVICE_AE", zx0.c.h());
+                                iMax = Math.max(jSONObject.getIntValue("DEVICE_AE"), 0);
+                                z4 = z6;
+                            } else if (iM == 4) {
+                                jSONObjectA2.put("content", "EQ");
+                                jSONObject2.put("CUSTOM_EQ", -1000L);
+                                iMax = Math.max(jSONObject.getIntValue("CUSTOM_EQ"), 0);
+                                z4 = z6;
+                            } else if (iM == 6) {
+                                jSONObject2.put("SMART_AE", -110L);
+                                iMax = Math.max(jSONObject.getIntValue("SMART_AE"), 0);
+                                z4 = z6;
+                            } else if (iM == 3) {
+                                jSONObject2.put("EQUALIZER", -1005L);
+                                iMax = Math.max(jSONObject.getIntValue("EQUALIZER"), 0);
+                                z4 = z6;
+                            } else if (iM == 9) {
+                                jSONObject2.put("AI_MODEL", -1006L);
+                                iMax = Math.max(jSONObject.getIntValue("AI_MODEL"), 2);
+                                z4 = z6;
+                            } else if (iM == 10) {
+                                jSONObjectA2.put("is_device", 0);
+                                jSONObjectA2.put("musiceffect_id", Long.valueOf(zx0.c.i()));
+                                jSONObject2.put("OUTSIDE_AE", -1007L);
+                                iMax = Math.max(jSONObject.getIntValue("OUTSIDE_AE"), 2);
+                                z4 = z6;
+                            } else if (iM == 11) {
+                                z5 = z6;
+                                jSONObject2.put("VIBE_AE", -1008L);
+                                iMax = Math.max(jSONObject.getIntValue("VIBE_AE"), 2);
+                                z4 = z6;
+                            }
+                        }
+                        if (((Boolean) zx0.c.r("ACTION_MEMBER_IS_TWINKLE_FLASH_ON", new Object[0])).booleanValue()) {
+                            jSONObject2.put("TWINKLE_FLASH", -1004L);
+                            iMax = Math.max(jSONObject.getIntValue("TWINKLE_FLASH"), iMax);
+                        }
+                        if (((Boolean) zx0.c.r("ACTION_MEMBER_IS_TWINKLE_SHAKE_ON", new Object[0])).booleanValue()) {
+                            jSONObject2.put("TWINKLE_SHAKE", -1003L);
+                            iMax = Math.max(jSONObject.getIntValue("TWINKLE_SHAKE"), iMax);
+                        }
+                        su = currentMusic.getSu();
+                        if (su != null && (auEff = su.getAuEff()) > 0) {
+                            jSONObject2.put("AUDITION_AE", auEff);
+                        }
+                        jSONObjectA2.put("sound_effect_id", jSONObject2.toString());
+                        jSONObjectA2.put("privilege_viptype", Integer.valueOf(iMax));
+                        jF = zx0.c.f();
+                        if (jF != -1) {
+                            jSONObjectA2.put("visual_id", Long.valueOf(jF));
+                        }
+                        j2 = zx0.c.j();
+                        if (j2 != -1) {
+                            jSONObjectA2.put("theme_id", Long.valueOf(j2));
+                        }
+                        zx0.c.r("ACTION_TWINKLE_genTwinkLog", new Object[]{jSONObjectA2});
+                        mx0.b.b0(jSONObjectA2, currentMusic);
+                        z = z4;
+                    } else {
+                        z5 = z8;
+                    }
+                    z5 = z6;
+                    iMax = 0;
+                    z4 = z5;
+                    if (((Boolean) zx0.c.r("ACTION_MEMBER_IS_TWINKLE_FLASH_ON", new Object[0])).booleanValue()) {
+                        jSONObject2.put("TWINKLE_FLASH", -1004L);
+                        iMax = Math.max(jSONObject.getIntValue("TWINKLE_FLASH"), iMax);
+                    }
+                    if (((Boolean) zx0.c.r("ACTION_MEMBER_IS_TWINKLE_SHAKE_ON", new Object[0])).booleanValue()) {
+                        jSONObject2.put("TWINKLE_SHAKE", -1003L);
+                        iMax = Math.max(jSONObject.getIntValue("TWINKLE_SHAKE"), iMax);
+                    }
+                    su = currentMusic.getSu();
+                    if (su != null) {
+                        jSONObject2.put("AUDITION_AE", auEff);
+                    }
+                    jSONObjectA2.put("sound_effect_id", jSONObject2.toString());
+                    jSONObjectA2.put("privilege_viptype", Integer.valueOf(iMax));
+                } catch (JSONException unused4) {
+                }
+            } catch (JSONException unused5) {
+                z4 = z8;
+            }
+            jF = zx0.c.f();
+            if (jF != -1) {
+                jSONObjectA2.put("visual_id", Long.valueOf(jF));
+            }
+            j2 = zx0.c.j();
+            if (j2 != -1) {
+                jSONObjectA2.put("theme_id", Long.valueOf(j2));
+            }
+            zx0.c.r("ACTION_TWINKLE_genTwinkLog", new Object[]{jSONObjectA2});
+            mx0.b.b0(jSONObjectA2, currentMusic);
+            z = z4;
+        } else {
+            z = z8;
+        }
+        jSONObjectA2.put("viptype", UserPrivilege.getLogVipType());
+        boolean z10 = (currentMusic.getSu() == null || currentMusic.getSu().getFreeTrialInfo() == null) ? false : true;
+        StringBuilder sb = new StringBuilder();
+        sb.append("是否试听: ");
+        sb.append(z10);
+        boolean z11 = pj.a.m().S() && !currentMusic.isAlbumFeeMusic();
+        if (z10) {
+            if (!z11) {
+                jSONObjectA2.put("is_audition", 1);
+                jSONObjectA2.put("audition_start", Integer.valueOf(currentMusic.getAuditionStartPosition() / WifiScanner.SCAN_INTERVAL));
+                jSONObjectA2.put("audition_end", Integer.valueOf(currentMusic.getAuditionEndPosition() / WifiScanner.SCAN_INTERVAL));
+            }
+            z2 = true;
+            jSONObjectA2.put("is_audition_type", 1);
+            jSONObjectA2.put("original_audition_start", Integer.valueOf(currentMusic.getAuditionStartPosition() / WifiScanner.SCAN_INTERVAL));
+            jSONObjectA2.put("original_audition_end", Integer.valueOf(currentMusic.getAuditionEndPosition() / WifiScanner.SCAN_INTERVAL));
+            StringBuilder sb2 = new StringBuilder();
+            sb2.append("增加试听片段id: ");
+            sb2.append(currentMusic.getSu());
+            SongUrlInfo su2 = currentMusic.getSu();
+            if (su2 != null) {
+                if (su2.getAuditionFragmentId() != -10086) {
+                    jSONObjectA2.put("fragment_id", Integer.valueOf(su2.getAuditionFragmentId()));
+                }
+                FreeTrialInfo freeTrialInfo = su2.getFreeTrialInfo();
+                if (freeTrialInfo != null) {
+                    jSONObjectA2.put("fragSource", freeTrialInfo.getFragSource());
+                }
+            }
+        } else {
+            z2 = true;
+        }
+        boolean z12 = (currentMusic.getSu() == null || currentMusic.getSu().getFreeTrialPrivilege() == null || !currentMusic.getSu().getFreeTrialPrivilege().isPlayingFullFreeTrail(currentMusic.getSu())) ? false : z2;
+        StringBuilder sb3 = new StringBuilder();
+        sb3.append("是否全曲试听: ");
+        sb3.append(z12);
+        if (z12) {
+            if (z11) {
+                i2 = 2;
+            } else {
+                i2 = 2;
+                jSONObjectA2.put("is_audition", 2);
+            }
+            jSONObjectA2.put("is_audition_type", Integer.valueOf(i2));
+        }
+        StringBuilder sb4 = new StringBuilder();
+        sb4.append("是否试听 isFreeTrial: ");
+        sb4.append(z10);
+        sb4.append("-isPlayingFullFreeTrial:");
+        sb4.append(z12);
+        if (objArr.length > 0) {
+            z3 = false;
+            if (objArr[0].toString().toLowerCase().equals("end") && (z12 || ((currentMusic.getSu() != null && 4 == currentMusic.getSu().getRightSource()) || (currentMusic.getSp().getPlayMaxLevel() > 0 && !currentMusic.isAuditionSongBitrate() && currentMusic.isTsOrAlbumMusic() && !pj.a.m().S())))) {
+                List playReason = (currentMusic.getSu() == null || currentMusic.getSu().getFreeTrialPrivilege() == null) ? null : currentMusic.getSu().getFreeTrialPrivilege().getPlayReason();
+                if (playReason == null) {
+                    playReason = new ArrayList();
+                }
+                if (playReason.size() == 0) {
+                    if (currentMusic.getSu() == null || 4 != currentMusic.getSu().getRightSource()) {
+                        playReason.add("Other");
+                    } else {
+                        playReason.add("Plat");
+                    }
+                } else if (4 == currentMusic.getSu().getRightSource() && !playReason.contains("Plat") && !playReason.contains("plat")) {
+                    playReason.add("Plat");
+                }
+                jSONObjectA2.put("strategy_id", playReason.toString());
+            }
+        } else {
+            z3 = false;
+        }
+        if (playExtraInfoW1 != null && playExtraInfoW1.isSupportSmartPlayMode() && dm0.i.INSTANCE.e()) {
+            jSONObjectA2.put("play_scene", "heartbeat");
+        }
+        String addRefer = currentMusic.getAddRefer();
+        if (addRefer == null || addRefer.isEmpty()) {
+            jSONObjectA2.put("_addrefer", "no_addrefer#" + zj.a.s0().D());
+        } else {
+            StringBuilder sb5 = new StringBuilder();
+            sb5.append("埋点即将上报，准确的addrefer: ");
+            sb5.append(addRefer);
+            jSONObjectA2.put("_addrefer", addRefer);
+        }
+        String undefineAddRefer = currentMusic.getUndefineAddRefer();
+        if (undefineAddRefer != null && !undefineAddRefer.isEmpty()) {
+            jSONObjectA2.put("_addUndefineRefer", undefineAddRefer);
+        }
+        String mutliRefer = currentMusic.getMutliRefer();
+        if (mutliRefer != null && !mutliRefer.isEmpty()) {
+            jSONObjectA2.put("_multirefers", mutliRefer);
+        }
+        String hsRefer = currentMusic.getHsRefer();
+        if (hsRefer != null && !hsRefer.isEmpty()) {
+            jSONObjectA2.put("_hsrefer", hsRefer);
+        }
+        String scTrp = currentMusic.getScTrp();
+        if (scTrp != null && !scTrp.isEmpty()) {
+            jSONObjectA2.put("s_ctrp", scTrp);
+        }
+        if (currentMusic.getSu() != null) {
+            jSONObjectA2.put("rightSource", Long.valueOf(currentMusic.getSu().getRightSource()));
+        }
+        h1.c(playExtraInfoW1, getPlayType(), jSONObjectA2);
+        jSONObjectA2.put("playermodel_id", n7.z0.o());
+        jSONObjectA2.put("sleeping_resid", zq0.y.f());
+        jSONObjectA2.put("is_autoplay", Integer.valueOf(currentMusic.getFMAutoPlay() ? 1 : 0));
+        if (playExtraInfoW1 != null) {
+            if (playExtraInfoW1.getSourceType() == 14 || playExtraInfoW1.getSourceType() == 41) {
+                long dailyRecommendFirstSongId = playExtraInfoW1.getDailyRecommendFirstSongId();
+                StringBuilder sb6 = new StringBuilder();
+                sb6.append("genLog: ");
+                sb6.append(Arrays.toString(objArr));
+                sb6.append(" firstId:");
+                sb6.append(dailyRecommendFirstSongId);
+                if (dailyRecommendFirstSongId > 0) {
+                    jSONObjectA2.put("source_cover_id", Long.valueOf(dailyRecommendFirstSongId));
+                }
+            } else if (playExtraInfoW1.getSourceType() == 128 && (musicPlayAbsoluteOrder = playExtraInfoW1.getMusicPlayAbsoluteOrder()) >= 0) {
+                jSONObjectA2.put("play_idx", Integer.valueOf(musicPlayAbsoluteOrder));
+            }
+        }
+        String sourceRefer = currentMusic.getSourceRefer();
+        if (sourceRefer != null && !sourceRefer.isEmpty()) {
+            jSONObjectA2.put("source_refer", sourceRefer);
+        }
+        if (z) {
+            jSONObjectA2.put("isForegroundService", Integer.valueOf(wu0.y.INSTANCE.a() ? 1 : 0));
+            jSONObjectA2.put("enableSepTrack", Integer.valueOf((int) ((ik0.f.a.p() && ik0.f.q() == SepTrackRunMode.MODEL) ? z2 : z3)));
+            jSONObjectA2.put("ignoreBatteryOpt", Integer.valueOf(jk0.f.f() ? 1 : 0));
+            Pair<Float, Float> pairL = ik0.a.l();
+            float fFloatValue = ((Float) pairL.first).floatValue();
+            if (fFloatValue >= 0.0f) {
+                jSONObjectA2.put("appVol", Float.valueOf(fFloatValue));
+            }
+            float fFloatValue2 = ((Float) pairL.second).floatValue();
+            if (fFloatValue2 >= 0.0f) {
+                jSONObjectA2.put("finalVol", Float.valueOf(fFloatValue2));
+            }
+        }
+        jSONObjectA2.put("supportSepTrack", Integer.valueOf(ik0.f.w() ? 1 : 0));
+        return jSONObjectA2;
+    }

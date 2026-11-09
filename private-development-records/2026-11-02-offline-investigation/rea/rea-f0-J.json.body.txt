@@ -1,0 +1,38 @@
+    private synchronized void J(Map<String, List<String>> map) {
+        if (NeteaseMusicUtils.K0()) {
+            if (map.size() == 0) {
+                return;
+            }
+            for (Map.Entry<String, List<String>> entry : map.entrySet()) {
+                try {
+                    String key = entry.getKey();
+                    String string = n3.c(E()).getString(key, "");
+                    for (String str : entry.getValue()) {
+                        if (com.netease.cloudmusic.utils.e0.g()) {
+                            Log.d(this.m, ">>>>>uploadLog:" + str);
+                        }
+                        File file = new File(y(str));
+                        byte[] bArrX = new byte[0];
+                        if (file.length() != 0) {
+                            bArrX = y5.x(file.getAbsolutePath());
+                        }
+                        if (this.o) {
+                            log("sysdebug", IAPMTracker.KEY_COMMON_KEY_MSPM, "StatisticUtilsDoUpload", "obj", getClass().getSimpleName());
+                        }
+                        e0.b bVar = this.c.g;
+                        if (bVar != null && bVar.c(bArrX, string)) {
+                            file.delete();
+                            if (com.netease.cloudmusic.utils.e0.g()) {
+                                Log.d(this.m, ">>>>>deletefiles:" + file.getAbsolutePath());
+                            }
+                            if (!this.j.equals(key) && !D().equals(key)) {
+                                n3.c(E()).edit().remove(key).commit();
+                            }
+                        }
+                    }
+                } catch (CMNetworkIOException | j32.h e2) {
+                    e2.printStackTrace();
+                }
+            }
+        }
+    }

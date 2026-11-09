@@ -1,0 +1,8 @@
+    @Override // com.netease.cloudmusic.core.statistic.e0.b
+    public boolean c(byte[] bArr, String str) {
+        INetworkService iNetworkService = (INetworkService) ServiceFacade.get(INetworkService.class);
+        if (iNetworkService == null) {
+            return false;
+        }
+        return iNetworkService.uploadStatisticLog(o42.e.f(this.d, new String[]{"oc", URLEncoder.encode(str)}), bArr);
+    }

@@ -1,0 +1,54 @@
+11-06 10:34:55.497 32578 26705 W qdgralloc: gralloc failed to allocate buffer for size 0 format 59 AWxAH 1x1 usage 2816
+11-06 10:34:55.497 32578 26705 E Gralloc4: isSupported(1, 1, 59, 1, ...) failed with 7
+11-06 10:34:55.497 32578 26705 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -2), handle=0x0
+11-06 10:34:55.497 32578 26705 W qdgralloc: gralloc failed to allocate buffer for size 0 format 59 AWxAH 1x1 usage 2816
+11-06 10:34:55.497 32578 26705 E Gralloc4: isSupported(1, 1, 59, 1, ...) failed with 7
+11-06 10:34:55.497 32578 26705 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -2), handle=0x0
+11-06 10:34:55.524 32578 32578 E NativeTurboSchedManagerJni: ioctl 10 failed!
+11-06 10:34:55.524 32578 32578 E NativeTurboSchedManagerJni: ioctl 11 failed!
+11-06 10:35:00.785 32578 32578 I ExoPlayerImpl: Init 9d87fde [AndroidXMedia3/1.9.2] [shennong, 23116PN5BC, Xiaomi, 36]
+11-06 10:35:00.832 32578 30791 I CCodecConfig: query failed after returning 9 values (BAD_INDEX)
+11-06 10:35:00.852 32578 30791 D CCodecConfig: config failed => CORRUPTED
+11-06 10:35:00.853 32578 30791 I CCodecConfig: query failed after returning 9 values (BAD_INDEX)
+11-06 10:35:00.905 32578 30786 D AudioTrack: getMinFrameCount(): getMinFrameCount = 3536: afFrameCount = 1920, afSampleRate = 48000, afLatency = 109
+11-06 10:35:00.910 32578 30786 E AudioTrack: Failed to load XML file: /odm/etc/audio/audio_lowpower_app_list.xml
+11-06 10:35:00.910 32578 30786 I AudioTrackImpl: initAudioTrackImpl()
+11-06 10:35:00.910 32578 30786 D AudioTrack: set(): (sessionId=[redacted] mcallback is 1, streamType -1, sampleRate 44100, format 0x1, channelMask 0x3, frameCount 14144, flags 0, notificationFrames 0,transferType 3, mClientAttributionSource AttributionSourceState{pid: 32578, uid: 10529, deviceId: 0, packageName: com.mesting.music, attributionTag: (null), token=[redacted] renouncedPermissions: [], next: []}
+11-06 10:35:00.956 32578 30786 D AudioTrackImpl: [APM]-AT reScheduleCpu() cpuSet=248 tid=30795
+11-06 10:35:00.956 32578 30786 D AudioTrackImpl: audioCpuSched: thread 30795 cpuset to default mode - 0xf8
+11-06 10:35:00.956 32578 30786 E libprocessgroup: set_timerslack_ns write failed: Operation not permitted
+11-06 10:35:00.966 32578 30786 D android.media.AudioTrack: setStereoVolume setParameters is 1.0, rightVolume is 1.0, isMuted is false, mIsLastMute is false, mNeedNotifyedNative is true
+11-06 10:35:00.966 32578 30786 D AudioTrackImpl: setMediaSetMute(10951): Parameter media_set_track_muted is 0 return
+11-06 10:35:00.966 32578 30786 I AudioTrackImpl: before scaleVolumeForVideo L:1.000000 R:1.000000 and the pakage is com.mesting.music
+11-06 10:35:00.966 32578 30786 D AudioTrack: AudioTrack::setVolume L:1.000000 R:1.000000 sessionid=[redacted]
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal: Playback error
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal:   Y.l: Unexpected runtime error
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal:       at Y.L.handleMessage(SourceFile:428)
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal:       at android.os.Handler.dispatchMessage(Handler.java:110)
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal:       at android.os.Looper.loopOnce(Looper.java:274)
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal:       at android.os.Looper.loop(Looper.java:369)
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal:       at android.os.HandlerThread.run(HandlerThread.java:85)
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal:   Caused by: java.lang.IllegalArgumentException: The source buffer is this buffer
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal:       at java.nio.Buffer.createSameBufferException(Buffer.java:277)
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal:       at java.nio.ByteBuffer.put(ByteBuffer.java:1023)
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal:       at java.nio.DirectByteBuffer.put(DirectByteBuffer.java:297)
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal:       at o2.k.e(SourceFile:185)
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal:       at S.k.e(SourceFile:92)
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal:       at a0.P.q(SourceFile:66)
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal:       at a0.P.k(SourceFile:476)
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal:       at a0.S.y0(SourceFile:50)
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal:       at h0.q.X(SourceFile:403)
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal:       at h0.q.d(SourceFile:84)
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal:       at Y.L.h(SourceFile:129)
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal:       at Y.L.handleMessage(SourceFile:378)
+11-06 10:35:00.966 32578 30786 E ExoPlayerImplInternal:       ... 4 more
+11-06 10:35:00.968 32578 30791 I CCodecConfig: query failed after returning 9 values (BAD_INDEX)
+11-06 10:35:00.969 32578 30662 I AudioTrackImpl: before scaleVolumeForVideo L:1.000000 R:1.000000 and the pakage is com.mesting.music
+11-06 10:35:00.970 32578 30662 D AudioTrack: AudioTrack::setVolume L:1.000000 R:1.000000 sessionid=[redacted]
+11-06 10:35:00.986 32578 30797 D AudioTrack: flush(10951): prior state:STATE_STOPPED
+11-06 10:35:00.987 32578 30797 I AudioTrack: stop(sessionID=[redacted] packageName: com.mesting.music
+11-06 10:35:00.987 32578 30797 D AudioTrack: stop(10951): prior state:STATE_FLUSHED
+11-06 10:35:00.987 32578 30797 D AudioTrack: ~AudioTrack(sessionID=[redacted]
+11-06 10:35:00.987 32578 30797 I AudioTrack: stop(sessionID=[redacted] packageName: com.mesting.music
+11-06 10:35:00.987 32578 30797 D AudioTrack: stop(10951): prior state:STATE_FLUSHED
+11-06 10:35:01.285 32578 32578 I ExoPlayerImpl: Release 9d87fde [AndroidXMedia3/1.9.2] [shennong, 23116PN5BC, Xiaomi, 36] [media3.common, media3.exoplayer, media3.decoder, media3.datasource, media3.extractor]

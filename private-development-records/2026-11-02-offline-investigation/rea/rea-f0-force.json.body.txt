@@ -1,0 +1,9 @@
+    @Override // com.netease.cloudmusic.core.statistic.c0
+    public void forceUpload() {
+        if (this.f != 1) {
+            sa.a.f(ApplicationWrapper.getInstance(), new Intent("com.netease.cloudmusic.action.UPLOAD_LOGFILE"), "com/netease/cloudmusic/core/statistic/LegacyStatisticStub.class:forceUpload:()V line-271");
+        } else {
+            this.l.removeMessages(3);
+            this.l.sendEmptyMessage(3);
+        }
+    }

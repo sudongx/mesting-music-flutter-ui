@@ -1,0 +1,113 @@
+{"protocolVersion":"0.1.1","runnerVersion":"1.30.0","pid":158044,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"D:/AnLi/test/release_154_network_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading D:/AnLi/test/release_154_network_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":2}
+{"suite":{"id":2,"platform":"vm","path":"D:/AnLi/test/release_154_storage_test.dart"},"type":"suite","time":9}
+{"test":{"id":3,"name":"loading D:/AnLi/test/release_154_storage_test.dart","suiteID":2,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":9}
+{"suite":{"id":4,"platform":"vm","path":"D:/AnLi/test/release_152_accounts_test.dart"},"type":"suite","time":10}
+{"test":{"id":5,"name":"loading D:/AnLi/test/release_152_accounts_test.dart","suiteID":4,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":10}
+{"suite":{"id":6,"platform":"vm","path":"D:/AnLi/test/release_153_storage_test.dart"},"type":"suite","time":11}
+{"test":{"id":7,"name":"loading D:/AnLi/test/release_153_storage_test.dart","suiteID":6,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":12}
+{"count":6,"time":13,"type":"allSuites"}
+test/release_154_network_test.dart:11:47: Error: Getter not found: 'global'.
+  final originalHttpOverrides = HttpOverrides.global;
+                                              ^^^^^^
+{"testID":1,"error":"Failed to load \"D:/AnLi/test/release_154_network_test.dart\":\nCompilation failed for testPath=D:/AnLi/test/release_154_network_test.dart: test/release_154_network_test.dart:11:47: Error: Getter not found: 'global'.\n  final originalHttpOverrides = HttpOverrides.global;\n                                              ^^^^^^\n.","stackTrace":"","isFailure":false,"type":"error","time":2938}
+{"testID":1,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":2946}
+{"suite":{"id":8,"platform":"vm","path":"D:/AnLi/test/release_153_network_test.dart"},"type":"suite","time":2948}
+{"test":{"id":9,"name":"loading D:/AnLi/test/release_153_network_test.dart","suiteID":8,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":2948}
+{"testID":1,"error":"Error: The Dart compiler exited unexpectedly.","stackTrace":"package:flutter_tools/src/base/common.dart 34:3  throwToolExit\npackage:flutter_tools/src/compile.dart 939:11    DefaultResidentCompiler._compile.<fn>\ndart:async/zone_root.dart 48:47                  _rootRunUnary\ndart:async/zone.dart 733:19                      _CustomZone.runUnary\ndart:async/future_impl.dart 948:45               Future._propagateToListeners.handleValueCallback\ndart:async/future_impl.dart 977:13               Future._propagateToListeners\ndart:async/future_impl.dart 862:9                Future._propagateToListeners\ndart:async/future_impl.dart 720:5                Future._completeWithValue\ndart:async/future_impl.dart 804:7                Future._asyncCompleteWithValue.<fn>\ndart:async/zone_root.dart 35:13                  _rootRun\ndart:async/zone.dart 726:19                      _CustomZone.run\ndart:async/zone.dart 625:7                       _CustomZone.runGuarded\ndart:async/zone.dart 666:23                      _CustomZone.bindCallbackGuarded.<fn>\ndart:async/schedule_microtask.dart 40:35         _microtaskLoop\ndart:async/schedule_microtask.dart 49:5          _startMicrotaskLoop\ndart:isolate-patch/isolate_patch.dart 127:13     _runPendingImmediateCallback\ndart:isolate-patch/isolate_patch.dart 194:5      _RawReceivePort._handleMessage\n","isFailure":false,"type":"error","time":3074}
+{"testID":7,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":8212}
+{"group":{"id":10,"suiteID":6,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":null,"column":null,"url":null},"type":"group","time":8219}
+{"test":{"id":11,"name":"UI timeout releases the account queue while retry shares the pending native read","suiteID":6,"groupIDs":[10],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":41,"root_column":3,"root_url":"file:///D:/AnLi/test/release_153_storage_test.dart"},"type":"testStart","time":8221}
+{"testID":5,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":8251}
+{"group":{"id":12,"suiteID":4,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":13,"line":null,"column":null,"url":null},"type":"group","time":8252}
+{"test":{"id":13,"name":"legacy login migrates only after a durable new snapshot","suiteID":4,"groupIDs":[12],"metadata":{"skip":false,"skipReason":null},"line":95,"column":3,"url":"file:///D:/AnLi/test/release_152_accounts_test.dart"},"type":"testStart","time":8253}
+{"testID":3,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":8268}
+{"group":{"id":14,"suiteID":2,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":6,"line":null,"column":null,"url":null},"type":"group","time":8268}
+{"test":{"id":15,"name":"timed-out callers reuse one native read and receive its late completion","suiteID":2,"groupIDs":[14],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":134,"root_column":3,"root_url":"file:///D:/AnLi/test/release_154_storage_test.dart"},"type":"testStart","time":8269}
+{"testID":13,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":8389}
+{"test":{"id":16,"name":"ambiguous migration write never deletes the old login","suiteID":4,"groupIDs":[12],"metadata":{"skip":false,"skipReason":null},"line":109,"column":3,"url":"file:///D:/AnLi/test/release_152_accounts_test.dart"},"type":"testStart","time":8392}
+{"testID":16,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":8434}
+{"test":{"id":17,"name":"same UID reauthentication replaces secrets and keeps its login method","suiteID":4,"groupIDs":[12],"metadata":{"skip":false,"skipReason":null},"line":119,"column":3,"url":"file:///D:/AnLi/test/release_152_accounts_test.dart"},"type":"testStart","time":8435}
+{"testID":17,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":8455}
+{"test":{"id":18,"name":"sign out removes current credential and never resurrects legacy login","suiteID":4,"groupIDs":[12],"metadata":{"skip":false,"skipReason":null},"line":135,"column":3,"url":"file:///D:/AnLi/test/release_152_accounts_test.dart"},"type":"testStart","time":8456}
+{"testID":18,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":8474}
+{"test":{"id":19,"name":"malformed encrypted snapshot is not treated as an empty list","suiteID":4,"groupIDs":[12],"metadata":{"skip":false,"skipReason":null},"line":151,"column":3,"url":"file:///D:/AnLi/test/release_152_accounts_test.dart"},"type":"testStart","time":8475}
+{"testID":19,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":8486}
+{"test":{"id":20,"name":"failed change restores exact previous encrypted snapshot","suiteID":4,"groupIDs":[12],"metadata":{"skip":false,"skipReason":null},"line":169,"column":3,"url":"file:///D:/AnLi/test/release_152_accounts_test.dart"},"type":"testStart","time":8488}
+{"testID":20,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":8503}
+{"test":{"id":21,"name":"concurrent additions and removal serialize without losing another UID","suiteID":4,"groupIDs":[12],"metadata":{"skip":false,"skipReason":null},"line":181,"column":3,"url":"file:///D:/AnLi/test/release_152_accounts_test.dart"},"type":"testStart","time":8503}
+{"testID":21,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":8524}
+{"test":{"id":22,"name":"standard authorization is retained alongside the same UID Lite login","suiteID":4,"groupIDs":[12],"metadata":{"skip":false,"skipReason":null},"line":194,"column":3,"url":"file:///D:/AnLi/test/release_152_accounts_test.dart"},"type":"testStart","time":8525}
+{"testID":22,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":8545}
+{"test":{"id":23,"name":"switch pauses and saves departing owner before publishing destination","suiteID":4,"groupIDs":[12],"metadata":{"skip":false,"skipReason":null},"line":246,"column":3,"url":"file:///D:/AnLi/test/release_152_accounts_test.dart"},"type":"testStart","time":8545}
+{"testID":23,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":8764}
+{"test":{"id":24,"name":"same UID standard authorization keeps primary token and does not reset playback","suiteID":4,"groupIDs":[12],"metadata":{"skip":false,"skipReason":null},"line":268,"column":3,"url":"file:///D:/AnLi/test/release_152_accounts_test.dart"},"type":"testStart","time":8764}
+{"testID":24,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":8809}
+{"test":{"id":25,"name":"late standard login cannot attach to a different selected account","suiteID":4,"groupIDs":[12],"metadata":{"skip":false,"skipReason":null},"line":299,"column":3,"url":"file:///D:/AnLi/test/release_152_accounts_test.dart"},"type":"testStart","time":8810}
+{"testID":25,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":8837}
+{"test":{"id":26,"name":"cancelled standard authorization rolls back a delayed secure write","suiteID":4,"groupIDs":[12],"metadata":{"skip":false,"skipReason":null},"line":317,"column":3,"url":"file:///D:/AnLi/test/release_152_accounts_test.dart"},"type":"testStart","time":8838}
+{"testID":26,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":8868}
+{"test":{"id":27,"name":"failed account persistence keeps live identity and selected login","suiteID":4,"groupIDs":[12],"metadata":{"skip":false,"skipReason":null},"line":347,"column":3,"url":"file:///D:/AnLi/test/release_152_accounts_test.dart"},"type":"testStart","time":8868}
+{"testID":27,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":8899}
+{"testID":11,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":8941}
+{"test":{"id":28,"name":"read retries do not delete credentials on platform failure","suiteID":6,"groupIDs":[10],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":61,"root_column":3,"root_url":"file:///D:/AnLi/test/release_153_storage_test.dart"},"type":"testStart","time":8943}
+{"suite":{"id":29,"platform":"vm","path":"D:/AnLi/test/release_153_audio_test.dart"},"type":"suite","time":8996}
+{"test":{"id":30,"name":"loading D:/AnLi/test/release_153_audio_test.dart","suiteID":29,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":8997}
+{"testID":28,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":8998}
+{"testID":15,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":9033}
+{"test":{"id":31,"name":"failed Kugou cold restore -> verified login -> new-store restore, without touching old bytes","suiteID":2,"groupIDs":[14],"metadata":{"skip":false,"skipReason":null},"line":160,"column":3,"url":"file:///D:/AnLi/test/release_154_storage_test.dart"},"type":"testStart","time":9034}
+{"testID":31,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":9386}
+{"test":{"id":32,"name":"malformed legacy snapshot is retained and only explicit verified login writes recovery","suiteID":2,"groupIDs":[14],"metadata":{"skip":false,"skipReason":null},"line":206,"column":3,"url":"file:///D:/AnLi/test/release_154_storage_test.dart"},"type":"testStart","time":9387}
+{"testID":32,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":9399}
+{"test":{"id":33,"name":"failed recovery write cannot publish a login or reset the old namespace","suiteID":2,"groupIDs":[14],"metadata":{"skip":false,"skipReason":null},"line":229,"column":3,"url":"file:///D:/AnLi/test/release_154_storage_test.dart"},"type":"testStart","time":9400}
+{"testID":33,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":9421}
+{"test":{"id":34,"name":"incomplete HTTP-success credentials report remote validation, not local storage","suiteID":2,"groupIDs":[14],"metadata":{"skip":false,"skipReason":null},"line":259,"column":3,"url":"file:///D:/AnLi/test/release_154_storage_test.dart"},"type":"testStart","time":9421}
+{"testID":34,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":9439}
+{"test":{"id":35,"name":"NetEase recovery survives new-store creation and logout tombstone prevents old-login resurrection","suiteID":2,"groupIDs":[14],"metadata":{"skip":false,"skipReason":null},"line":289,"column":3,"url":"file:///D:/AnLi/test/release_154_storage_test.dart"},"type":"testStart","time":9440}
+{"testID":35,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":9477}
+{"testID":9,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":9873}
+{"group":{"id":36,"suiteID":8,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":13,"line":null,"column":null,"url":null},"type":"group","time":9873}
+{"test":{"id":37,"name":"deadline cancels a stalled header without replaying SMS","suiteID":8,"groupIDs":[36],"metadata":{"skip":false,"skipReason":null},"line":49,"column":5,"url":"file:///D:/AnLi/test/release_153_network_test.dart"},"type":"testStart","time":9874}
+{"testID":37,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":9994}
+{"test":{"id":38,"name":"deadline cancels a stalled body without replaying SMS","suiteID":8,"groupIDs":[36],"metadata":{"skip":false,"skipReason":null},"line":49,"column":5,"url":"file:///D:/AnLi/test/release_153_network_test.dart"},"type":"testStart","time":9995}
+{"testID":38,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10036}
+{"test":{"id":39,"name":"read retries once, but a write never replays after an uncertain failure","suiteID":8,"groupIDs":[36],"metadata":{"skip":false,"skipReason":null},"line":78,"column":3,"url":"file:///D:/AnLi/test/release_153_network_test.dart"},"type":"testStart","time":10036}
+{"testID":39,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10057}
+{"test":{"id":40,"name":"platform business rejection is not retried","suiteID":8,"groupIDs":[36],"metadata":{"skip":false,"skipReason":null},"line":109,"column":3,"url":"file:///D:/AnLi/test/release_153_network_test.dart"},"type":"testStart","time":10058}
+{"testID":40,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10066}
+{"test":{"id":41,"name":"already cancelled reads never dispatch","suiteID":8,"groupIDs":[36],"metadata":{"skip":false,"skipReason":null},"line":128,"column":3,"url":"file:///D:/AnLi/test/release_153_network_test.dart"},"type":"testStart","time":10067}
+{"testID":41,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10075}
+{"test":{"id":42,"name":"Android sends exact encrypted body and cookies through system transport","suiteID":8,"groupIDs":[36],"metadata":{"skip":false,"skipReason":null},"line":150,"column":3,"url":"file:///D:/AnLi/test/release_153_network_test.dart"},"type":"testStart","time":10077}
+{"testID":42,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10106}
+{"test":{"id":43,"name":"native timeout never falls back and resends a login","suiteID":8,"groupIDs":[36],"metadata":{"skip":false,"skipReason":null},"line":187,"column":3,"url":"file:///D:/AnLi/test/release_153_network_test.dart"},"type":"testStart","time":10107}
+{"testID":43,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10117}
+{"test":{"id":44,"name":"missing native method falls back once without losing request bytes","suiteID":8,"groupIDs":[36],"metadata":{"skip":false,"skipReason":null},"line":210,"column":3,"url":"file:///D:/AnLi/test/release_153_network_test.dart"},"type":"testStart","time":10117}
+{"testID":44,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10140}
+{"test":{"id":45,"name":"a bridge attached after cold bootstrap is used by the next request","suiteID":8,"groupIDs":[36],"metadata":{"skip":false,"skipReason":null},"line":227,"column":3,"url":"file:///D:/AnLi/test/release_153_network_test.dart"},"type":"testStart","time":10141}
+{"testID":45,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10155}
+{"test":{"id":46,"name":"loopback and unapproved HTTPS hosts never go through platform bridge","suiteID":8,"groupIDs":[36],"metadata":{"skip":false,"skipReason":null},"line":259,"column":3,"url":"file:///D:/AnLi/test/release_153_network_test.dart"},"type":"testStart","time":10156}
+{"testID":46,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10167}
+{"test":{"id":47,"name":"NetEase transport failure is readable and SMS is dispatched only once","suiteID":8,"groupIDs":[36],"metadata":{"skip":false,"skipReason":null},"line":272,"column":3,"url":"file:///D:/AnLi/test/release_153_network_test.dart"},"type":"testStart","time":10168}
+{"testID":47,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10485}
+{"test":{"id":48,"name":"SMS requires an explicit successful receipt, not an empty JSON body","suiteID":8,"groupIDs":[36],"metadata":{"skip":false,"skipReason":null},"line":297,"column":3,"url":"file:///D:/AnLi/test/release_153_network_test.dart"},"type":"testStart","time":10486}
+{"testID":48,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10500}
+{"test":{"id":49,"name":"diagnostics are bounded and never contain request/error credentials","suiteID":8,"groupIDs":[36],"metadata":{"skip":false,"skipReason":null},"line":309,"column":3,"url":"file:///D:/AnLi/test/release_153_network_test.dart"},"type":"testStart","time":10501}
+{"testID":49,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10519}
+{"testID":30,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":11621}
+{"group":{"id":50,"suiteID":29,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":7,"line":null,"column":null,"url":null},"type":"group","time":11622}
+{"test":{"id":51,"name":"initial cache preparation failure retries same recording directly without skipping queue","suiteID":29,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":79,"column":3,"url":"file:///D:/AnLi/test/release_153_audio_test.dart"},"type":"testStart","time":11623}
+{"testID":51,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":11899}
+{"test":{"id":52,"name":"a programming failure is surfaced without network replay","suiteID":29,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":99,"column":3,"url":"file:///D:/AnLi/test/release_153_audio_test.dart"},"type":"testStart","time":11900}
+{"testID":52,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":11928}
+{"test":{"id":53,"name":"only platform-supplied alternatives recover without changing recording or quality","suiteID":29,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":111,"column":3,"url":"file:///D:/AnLi/test/release_153_audio_test.dart"},"type":"testStart","time":11929}
+{"testID":53,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":11953}
+{"test":{"id":54,"name":"a superseded cache failure cannot overwrite a newer selection","suiteID":29,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":141,"column":3,"url":"file:///D:/AnLi/test/release_153_audio_test.dart"},"type":"testStart","time":11954}
+{"testID":54,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":11972}
+{"test":{"id":55,"name":"cache header deadline fails its consumer once without unhandled fetch errors","suiteID":29,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":163,"column":3,"url":"file:///D:/AnLi/test/release_153_audio_test.dart"},"type":"testStart","time":11974}
+{"testID":55,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12111}
+{"test":{"id":56,"name":"stalled chunks fail instead of publishing a truncated cache","suiteID":29,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":183,"column":3,"url":"file:///D:/AnLi/test/release_153_audio_test.dart"},"type":"testStart","time":12112}
+{"testID":56,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12688}
+{"test":{"id":57,"name":"complete cache is flushed before it becomes reusable","suiteID":29,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":205,"column":3,"url":"file:///D:/AnLi/test/release_153_audio_test.dart"},"type":"testStart","time":12688}
+{"testID":57,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12732}
+{"success":false,"type":"done","time":12755}

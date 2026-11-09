@@ -1,0 +1,136 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_26ef2d1d627cbbce2f10a6ba4ab9efb8bd3f66e055a585e623a51713b1c5dc7e\",\"subject\":{\"name\":\"D:\\\\AnLi\\\\.codex-artifacts\\\\2026-11-02-offline-investigation\\\\transport\\\\official-classes14-analysis-only.apk\",\"digest\":{\"sha256\":\"93c05fe5241b542f0c426d0b83b060fe7162a2c7e2438b2de62e092721288c27\"},\"format\":\"apk\",\"architecture\":null,\"local_path\":\"D:\\\\AnLi\\\\.codex-artifacts\\\\2026-11-02-offline-investigation\\\\transport\\\\official-classes14-analysis-only.apk\"},\"provider\":{\"id\":\"jadx\",\"name\":\"JADX headless\",\"version\":\"0.7.1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis\",\"operation\":\"inspect_android_method\",\"parameters\":{\"path\":\"D:\\\\AnLi\\\\.codex-artifacts\\\\2026-11-02-offline-investigation\\\\transport\\\\official-classes14-analysis-only.apk\",\"class_name\":\"pi.b\",\"method_name\":\"c\"},\"raw_result\":{\"server\":{\"name\":\"rea-jadx-bridge\",\"version\":\"1\"},\"bridge_sha256\":\"5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1\",\"jar_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"loaded\":{\"state\":\"LOADED\",\"apk_path\":\"C:\\\\Users\\\\zyt\\\\AppData\\\\Local\\\\Temp\\\\rea-android-7615f9df0ebdc0fa2b38068fa688ba75\\\\target.apk\",\"class_count\":3329,\"resource_count\":2,\"threads\":1,\"resources\":\"full\"},\"calls\":[{\"operation\":\"rea_jvm_status\",\"input\":{},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"metadata_scope\\\":\\\"parsed_members\\\",\\\"max_heap_bytes\\\":3221225472,\\\"java_version\\\":\\\"17.0.20.1\\\",\\\"available_processors\\\":8,\\\"engine_reported_version\\\":\\\"0.7.1\\\"}\"}],\"isError\":false}},{\"operation\":\"get_class_summary\",\"input\":{\"class_name\":\"pi.b\"},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"methods\\\":[{\\\"def_pos\\\":0,\\\"signature\\\":\\\"\\\\u003cinit\\\\u003e(java.lang.String, java.lang.String): void\\\",\\\"is_constructor\\\":true,\\\"name\\\":\\\"\\\\u003cinit\\\\u003e\\\"},{\\\"def_pos\\\":0,\\\"signature\\\":\\\"a(): java.lang.String\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"a\\\"},{\\\"def_pos\\\":0,\\\"signature\\\":\\\"b(java.lang.String, com.alibaba.fastjson.JSONObject, java.util.Map\\\\u003cjava.lang.String, java.lang.Object\\\\u003e, long): java.lang.String\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"b\\\"},{\\\"def_pos\\\":0,\\\"signature\\\":\\\"c(byte[], java.lang.String): boolean\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"c\\\"},{\\\"def_pos\\\":0,\\\"signature\\\":\\\"onReceiveNetworkState(int, int, android.net.NetworkInfo): void\\\",\\\"is_constructor\\\":false,\\\"name\\\":\\\"onReceiveNetworkState\\\"}],\\\"method_count\\\":5,\\\"inner_class_count\\\":0,\\\"inner_classes\\\":[],\\\"name\\\":\\\"b\\\",\\\"full_name\\\":\\\"pi.b\\\",\\\"field_count\\\":5,\\\"fields\\\":[{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"a\\\"},{\\\"type\\\":\\\"int\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"b\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"d\\\"},{\\\"type\\\":\\\"java.lang.String\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"e\\\"},{\\\"type\\\":\\\"int\\\",\\\"def_pos\\\":0,\\\"name\\\":\\\"f\\\"}]}\"}],\"isError\":false}},{\"operation\":\"get_method_body\",\"input\":{\"class_name\":\"pi.b\",\"method_name\":\"c\",\"overload_index\":0,\"smali_fallback\":true},\"response\":{\"content\":[{\"type\":\"text\",\"text\":\"{\\\"markers\\\":[],\\\"mode\\\":\\\"java\\\",\\\"full_name\\\":\\\"pi.b.c\\\",\\\"class_name\\\":\\\"pi.b\\\",\\\"overload_index\\\":0,\\\"fell_back\\\":false,\\\"body\\\":\\\"    @Override // com.netease.cloudmusic.core.statistic.e0.b\\\\r\\\\n    public boolean c(byte[] bArr, String str) {\\\\r\\\\n        INetworkService iNetworkService \\\\u003d (INetworkService) ServiceFacade.get(INetworkService.class);\\\\r\\\\n        if (iNetworkService \\\\u003d\\\\u003d null) {\\\\r\\\\n            return false;\\\\r\\\\n        }\\\\r\\\\n        return iNetworkService.uploadStatisticLog(o42.e.f(this.d, new String[]{\\\\\\\"oc\\\\\\\", URLEncoder.encode(str)}), bArr);\\\\r\\\\n    }\\\",\\\"overload_count\\\":1,\\\"method_name\\\":\\\"c\\\"}\"}],\"isError\":false}}]},\"normalized_result\":{\"engine\":{\"name\":\"jadx-headless-mcp\",\"version\":\"0.7.1\",\"artifact_sha256\":\"6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75\",\"source_revision\":\"5844800a486d2248fa949b74c9896285f5b54de2\",\"worker_count\":1,\"heap_limit_mib\":3072},\"class_name\":\"pi.b\",\"method\":{\"name\":\"c\",\"reported_signature\":\"c(byte[], java.lang.String): boolean\",\"overload_index\":0,\"is_constructor\":false,\"dex_descriptor\":null},\"overload_count\":1,\"representation\":\"java\",\"body_status\":\"available\",\"fell_back\":false,\"markers\":[],\"source\":{\"status\":\"complete\",\"text\":\"    @Override // com.netease.cloudmusic.core.statistic.e0.b\\r\\n    public boolean c(byte[] bArr, String str) {\\r\\n        INetworkService iNetworkService = (INetworkService) ServiceFacade.get(INetworkService.class);\\r\\n        if (iNetworkService == null) {\\r\\n            return false;\\r\\n        }\\r\\n        return iNetworkService.uploadStatisticLog(o42.e.f(this.d, new String[]{\\\"oc\\\", URLEncoder.encode(str)}), bArr);\\r\\n    }\",\"reported_total_bytes\":null}},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static decompiler observations do not establish runtime behavior; the APK is never executed.\",\"Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.\",\"Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.\",\"Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider.\"],\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_26ef2d1d627cbbce2f10a6ba4ab9efb8bd3f66e055a585e623a51713b1c5dc7e",
+    "subject": {
+      "name": "D:\\AnLi\\.codex-artifacts\\2026-11-02-offline-investigation\\transport\\official-classes14-analysis-only.apk",
+      "digest": {
+        "sha256": "93c05fe5241b542f0c426d0b83b060fe7162a2c7e2438b2de62e092721288c27"
+      },
+      "format": "apk",
+      "architecture": null,
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-02-offline-investigation\\transport\\official-classes14-analysis-only.apk"
+    },
+    "provider": {
+      "id": "jadx",
+      "name": "JADX headless",
+      "version": "0.7.1"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-02-offline-investigation\\transport\\official-classes14-analysis-only.apk",
+      "class_name": "pi.b",
+      "method_name": "c"
+    },
+    "raw_result": {
+      "server": {
+        "name": "rea-jadx-bridge",
+        "version": "1"
+      },
+      "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+      "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "loaded": {
+        "state": "LOADED",
+        "apk_path": "C:\\Users\\zyt\\AppData\\Local\\Temp\\rea-android-7615f9df0ebdc0fa2b38068fa688ba75\\target.apk",
+        "class_count": 3329,
+        "resource_count": 2,
+        "threads": 1,
+        "resources": "full"
+      },
+      "calls": [
+        {
+          "operation": "rea_jvm_status",
+          "input": {},
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":3221225472,\"java_version\":\"17.0.20.1\",\"available_processors\":8,\"engine_reported_version\":\"0.7.1\"}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "get_class_summary",
+          "input": {
+            "class_name": "pi.b"
+          },
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"methods\":[{\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String): void\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\"},{\"def_pos\":0,\"signature\":\"a(): java.lang.String\",\"is_constructor\":false,\"name\":\"a\"},{\"def_pos\":0,\"signature\":\"b(java.lang.String, com.alibaba.fastjson.JSONObject, java.util.Map\\u003cjava.lang.String, java.lang.Object\\u003e, long): java.lang.String\",\"is_constructor\":false,\"name\":\"b\"},{\"def_pos\":0,\"signature\":\"c(byte[], java.lang.String): boolean\",\"is_constructor\":false,\"name\":\"c\"},{\"def_pos\":0,\"signature\":\"onReceiveNetworkState(int, int, android.net.NetworkInfo): void\",\"is_constructor\":false,\"name\":\"onReceiveNetworkState\"}],\"method_count\":5,\"inner_class_count\":0,\"inner_classes\":[],\"name\":\"b\",\"full_name\":\"pi.b\",\"field_count\":5,\"fields\":[{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"a\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"b\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"d\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"e\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f\"}]}"
+              }
+            ],
+            "isError": false
+          }
+        },
+        {
+          "operation": "get_method_body",
+          "input": {
+            "class_name": "pi.b",
+            "method_name": "c",
+            "overload_index": 0,
+            "smali_fallback": true
+          },
+          "response": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\"markers\":[],\"mode\":\"java\",\"full_name\":\"pi.b.c\",\"class_name\":\"pi.b\",\"overload_index\":0,\"fell_back\":false,\"body\":\"    @Override // com.netease.cloudmusic.core.statistic.e0.b\\r\\n    public boolean c(byte[] bArr, String str) {\\r\\n        INetworkService iNetworkService \\u003d (INetworkService) ServiceFacade.get(INetworkService.class);\\r\\n        if (iNetworkService \\u003d\\u003d null) {\\r\\n            return false;\\r\\n        }\\r\\n        return iNetworkService.uploadStatisticLog(o42.e.f(this.d, new String[]{\\\"oc\\\", URLEncoder.encode(str)}), bArr);\\r\\n    }\",\"overload_count\":1,\"method_name\":\"c\"}"
+              }
+            ],
+            "isError": false
+          }
+        }
+      ]
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 3072
+      },
+      "class_name": "pi.b",
+      "method": {
+        "name": "c",
+        "reported_signature": "c(byte[], java.lang.String): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    @Override // com.netease.cloudmusic.core.statistic.e0.b\r\n    public boolean c(byte[] bArr, String str) {\r\n        INetworkService iNetworkService = (INetworkService) ServiceFacade.get(INetworkService.class);\r\n        if (iNetworkService == null) {\r\n            return false;\r\n        }\r\n        return iNetworkService.uploadStatisticLog(o42.e.f(this.d, new String[]{\"oc\", URLEncoder.encode(str)}), bArr);\r\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "confidence": "derived",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "locations": [],
+    "evidence_links": []
+  }
+}

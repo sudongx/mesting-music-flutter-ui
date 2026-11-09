@@ -1,0 +1,413 @@
+{
+  "source_apk_sha256": "b639e67c13e03377f0f9d8068c5e0419b1acd42c7d529362f11ae704b3838741",
+  "dex_entry": "classes21.dex",
+  "dex_sha256": "d28a15c360d503b20d064987620d1a3167e8ad84e3d08b0d12dcf9da18dd265b",
+  "selected_owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+  "scope": "Original DEX instructions, not runtime/data-flow proof.",
+  "methods": [
+    {
+      "method_index": 51213,
+      "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+      "name": "filterParams",
+      "proto_index": 6473,
+      "prototype": "(Ljava/util/Map;Z)Ljava/util/Map;",
+      "code_offset": 4856344,
+      "registers": 6,
+      "incoming_words": 3,
+      "outgoing_words": 3,
+      "code_unit_count": 73,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x38",
+          "units": [
+            1080,
+            72
+          ]
+        },
+        {
+          "code_unit_offset": 2,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64323,
+            4
+          ],
+          "method": {
+            "method_index": 64323,
+            "owner": "Ljava/util/Map;",
+            "name": "size",
+            "proto_index": 77,
+            "prototype": "()I"
+          }
+        },
+        {
+          "code_unit_offset": 5,
+          "opcode": "0xa",
+          "units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 6,
+          "opcode": "0x3d",
+          "units": [
+            61,
+            66
+          ]
+        },
+        {
+          "code_unit_offset": 8,
+          "opcode": "0x22",
+          "units": [
+            34,
+            12361
+          ],
+          "type": "Ljava/util/HashMap;"
+        },
+        {
+          "code_unit_offset": 10,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            64200,
+            0
+          ],
+          "method": {
+            "method_index": 64200,
+            "owner": "Ljava/util/HashMap;",
+            "name": "<init>",
+            "proto_index": 6867,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 13,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64315,
+            4
+          ],
+          "method": {
+            "method_index": 64315,
+            "owner": "Ljava/util/Map;",
+            "name": "entrySet",
+            "proto_index": 6479,
+            "prototype": "()Ljava/util/Set;"
+          }
+        },
+        {
+          "code_unit_offset": 16,
+          "opcode": "0xc",
+          "units": [
+            1036
+          ]
+        },
+        {
+          "code_unit_offset": 17,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64363,
+            4
+          ],
+          "method": {
+            "method_index": 64363,
+            "owner": "Ljava/util/Set;",
+            "name": "iterator",
+            "proto_index": 6202,
+            "prototype": "()Ljava/util/Iterator;"
+          }
+        },
+        {
+          "code_unit_offset": 20,
+          "opcode": "0xc",
+          "units": [
+            1036
+          ]
+        },
+        {
+          "code_unit_offset": 21,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64229,
+            4
+          ],
+          "method": {
+            "method_index": 64229,
+            "owner": "Ljava/util/Iterator;",
+            "name": "hasNext",
+            "proto_index": 13349,
+            "prototype": "()Z"
+          }
+        },
+        {
+          "code_unit_offset": 24,
+          "opcode": "0xa",
+          "units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 25,
+          "opcode": "0x38",
+          "units": [
+            312,
+            46
+          ]
+        },
+        {
+          "code_unit_offset": 27,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64230,
+            4
+          ],
+          "method": {
+            "method_index": 64230,
+            "owner": "Ljava/util/Iterator;",
+            "name": "next",
+            "proto_index": 5385,
+            "prototype": "()Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 30,
+          "opcode": "0xc",
+          "units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 31,
+          "opcode": "0x1f",
+          "units": [
+            287,
+            12372
+          ],
+          "type": "Ljava/util/Map$Entry;"
+        },
+        {
+          "code_unit_offset": 33,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64310,
+            1
+          ],
+          "method": {
+            "method_index": 64310,
+            "owner": "Ljava/util/Map$Entry;",
+            "name": "getKey",
+            "proto_index": 5385,
+            "prototype": "()Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 36,
+          "opcode": "0xc",
+          "units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 37,
+          "opcode": "0x1f",
+          "units": [
+            543,
+            12187
+          ],
+          "type": "Ljava/lang/CharSequence;"
+        },
+        {
+          "code_unit_offset": 39,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            1281,
+            2
+          ],
+          "method": {
+            "method_index": 1281,
+            "owner": "Landroid/text/TextUtils;",
+            "name": "isEmpty",
+            "proto_index": 13857,
+            "prototype": "(Ljava/lang/CharSequence;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 42,
+          "opcode": "0xa",
+          "units": [
+            522
+          ]
+        },
+        {
+          "code_unit_offset": 43,
+          "opcode": "0x39",
+          "units": [
+            569,
+            65514
+          ]
+        },
+        {
+          "code_unit_offset": 45,
+          "opcode": "0x39",
+          "units": [
+            1337,
+            14
+          ]
+        },
+        {
+          "code_unit_offset": 47,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64311,
+            1
+          ],
+          "method": {
+            "method_index": 64311,
+            "owner": "Ljava/util/Map$Entry;",
+            "name": "getValue",
+            "proto_index": 5385,
+            "prototype": "()Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 50,
+          "opcode": "0xc",
+          "units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 51,
+          "opcode": "0x1f",
+          "units": [
+            543,
+            12187
+          ],
+          "type": "Ljava/lang/CharSequence;"
+        },
+        {
+          "code_unit_offset": 53,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            1281,
+            2
+          ],
+          "method": {
+            "method_index": 1281,
+            "owner": "Landroid/text/TextUtils;",
+            "name": "isEmpty",
+            "proto_index": 13857,
+            "prototype": "(Ljava/lang/CharSequence;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 56,
+          "opcode": "0xa",
+          "units": [
+            522
+          ]
+        },
+        {
+          "code_unit_offset": 57,
+          "opcode": "0x39",
+          "units": [
+            569,
+            65500
+          ]
+        },
+        {
+          "code_unit_offset": 59,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64310,
+            1
+          ],
+          "method": {
+            "method_index": 64310,
+            "owner": "Ljava/util/Map$Entry;",
+            "name": "getKey",
+            "proto_index": 5385,
+            "prototype": "()Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 62,
+          "opcode": "0xc",
+          "units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 63,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64311,
+            1
+          ],
+          "method": {
+            "method_index": 64311,
+            "owner": "Ljava/util/Map$Entry;",
+            "name": "getValue",
+            "proto_index": 5385,
+            "prototype": "()Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 66,
+          "opcode": "0xc",
+          "units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 67,
+          "opcode": "0x72",
+          "units": [
+            12402,
+            64320,
+            288
+          ],
+          "method": {
+            "method_index": 64320,
+            "owner": "Ljava/util/Map;",
+            "name": "put",
+            "proto_index": 5504,
+            "prototype": "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 70,
+          "opcode": "0x28",
+          "units": [
+            53032
+          ]
+        },
+        {
+          "code_unit_offset": 71,
+          "opcode": "0x11",
+          "units": [
+            17
+          ]
+        },
+        {
+          "code_unit_offset": 72,
+          "opcode": "0x11",
+          "units": [
+            1041
+          ]
+        }
+      ]
+    }
+  ]
+}

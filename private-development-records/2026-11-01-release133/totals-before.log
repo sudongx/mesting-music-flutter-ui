@@ -1,0 +1,76 @@
+00:00 +0: loading D:/AnLi/test/release_133_together_totals_test.dart
+00:00 +0: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: current session alone never masquerades as official friend cumulative time
+00:00 +0 -1: current session alone never masquerades as official friend cumulative time [E]
+  Expected: null
+    Actual: Duration:<0:02:00.004075>
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test\release_133_together_totals_test.dart 58:5     main.<fn>
+  
+00:00 +0 -1: official total replaces rather than adds a session or a repeated snapshot
+00:00 +0 -2: official total replaces rather than adds a session or a repeated snapshot [E]
+  Expected: <3>
+    Actual: <1>
+  Explicit refresh bypasses the polling throttle.
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test\release_133_together_totals_test.dart 67:5     main.<fn>
+  
+00:00 +0 -2: all friend identities use their own official history; leaving clears it
+00:00 +0 -3: all friend identities use their own official history; leaving clears it [E]
+  Expected: null
+    Actual: Duration:<0:01:00.001581>
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test\release_133_together_totals_test.dart 77:5     main.<fn>
+  
+00:00 +0 -3: new room and account cannot inherit a delayed official total
+00:00 +0 -4: new room and account cannot inherit a delayed official total [E]
+  Expected: null
+    Actual: Duration:<0:00:30.001367>
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test\release_133_together_totals_test.dart 86:5     main.<fn>
+  
+00:00 +0 -4: invalid cumulative -1 never falls back to session time
+00:00 +1 -4: invalid cumulative bad never falls back to session time
+00:00 +2 -4: invalid cumulative 999999999999 never falls back to session time
+00:00 +3 -4: invalid cumulative 1.5 never falls back to session time
+00:00 +4 -4: invalid cumulative true never falls back to session time
+00:00 +5 -4: player header distinguishes missing and official cumulative available=false
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: exactly one matching candidate
+  Actual: _TextWidgetFinder:<Found 0 widgets with text "累计时长暂未获取": []>
+   Which: means none were found but one was expected
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_133_together_totals_test.dart:111:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_133_together_totals_test.dart line 111
+The test description was:
+  player header distinguishes missing and official cumulative available=false
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:01 +5 -5: player header distinguishes missing and official cumulative available=false [E]
+  Test failed. See exception logs above.
+  The test description was: player header distinguishes missing and official cumulative available=false
+  
+00:01 +5 -5: player header distinguishes missing and official cumulative available=true
+00:01 +6 -5: (tearDownAll)
+00:01 +6 -5: Some tests failed.

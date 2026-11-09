@@ -1,0 +1,1620 @@
+{
+  "source_apk_sha256": "b639e67c13e03377f0f9d8068c5e0419b1acd42c7d529362f11ae704b3838741",
+  "dex_entry": "classes21.dex",
+  "dex_sha256": "d28a15c360d503b20d064987620d1a3167e8ad84e3d08b0d12dcf9da18dd265b",
+  "selected_owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+  "scope": "Original DEX instructions, not runtime/data-flow proof.",
+  "methods": [
+    {
+      "method_index": 51230,
+      "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+      "name": "processApiRequest",
+      "proto_index": 3882,
+      "prototype": "(Lcom/bytedance/sdk/account/execute/ApiRequest;)Lcom/bytedance/sdk/account/execute/ApiRequest;",
+      "code_offset": 4854592,
+      "registers": 9,
+      "incoming_words": 2,
+      "outgoing_words": 2,
+      "code_unit_count": 290,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x70",
+          "units": [
+            8304,
+            51232,
+            135
+          ],
+          "method": {
+            "method_index": 51232,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "name": "replaceApiRequestPathIfNeeded",
+            "proto_index": 3882,
+            "prototype": "(Lcom/bytedance/sdk/account/execute/ApiRequest;)Lcom/bytedance/sdk/account/execute/ApiRequest;"
+          }
+        },
+        {
+          "code_unit_offset": 3,
+          "opcode": "0xc",
+          "units": [
+            2060
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "opcode": "0x54",
+          "units": [
+            32852,
+            19730
+          ],
+          "field": {
+            "field_index": 19730,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Ljava/util/Map;",
+            "name": "parms"
+          }
+        },
+        {
+          "code_unit_offset": 6,
+          "opcode": "0x38",
+          "units": [
+            56,
+            283
+          ]
+        },
+        {
+          "code_unit_offset": 8,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64318,
+            0
+          ],
+          "method": {
+            "method_index": 64318,
+            "owner": "Ljava/util/Map;",
+            "name": "isEmpty",
+            "proto_index": 13349,
+            "prototype": "()Z"
+          }
+        },
+        {
+          "code_unit_offset": 11,
+          "opcode": "0xa",
+          "units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 12,
+          "opcode": "0x38",
+          "units": [
+            56,
+            4
+          ]
+        },
+        {
+          "code_unit_offset": 14,
+          "opcode": "0x29",
+          "units": [
+            41,
+            275
+          ]
+        },
+        {
+          "code_unit_offset": 16,
+          "opcode": "0x71",
+          "units": [
+            113,
+            54691,
+            0
+          ],
+          "method": {
+            "method_index": 54691,
+            "owner": "Lcom/bytedance/sdk/account/settings/common/CommonConfigManager;",
+            "name": "getRequestUseCellularConfig",
+            "proto_index": 4252,
+            "prototype": "()Lcom/bytedance/sdk/account/settings/bean/RequestUseCellularConfig;"
+          }
+        },
+        {
+          "code_unit_offset": 19,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 20,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            54671,
+            0
+          ],
+          "method": {
+            "method_index": 54671,
+            "owner": "Lcom/bytedance/sdk/account/settings/bean/RequestUseCellularConfig;",
+            "name": "isEnable",
+            "proto_index": 13349,
+            "prototype": "()Z"
+          }
+        },
+        {
+          "code_unit_offset": 23,
+          "opcode": "0xa",
+          "units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 24,
+          "opcode": "0x38",
+          "units": [
+            312,
+            265
+          ]
+        },
+        {
+          "code_unit_offset": 26,
+          "opcode": "0x54",
+          "units": [
+            33108,
+            19730
+          ],
+          "field": {
+            "field_index": 19730,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Ljava/util/Map;",
+            "name": "parms"
+          }
+        },
+        {
+          "code_unit_offset": 28,
+          "opcode": "0x1a",
+          "units": [
+            538,
+            40082
+          ],
+          "string_index": 40082,
+          "string": "from"
+        },
+        {
+          "code_unit_offset": 30,
+          "opcode": "0x72",
+          "units": [
+            8306,
+            64316,
+            33
+          ],
+          "method": {
+            "method_index": 64316,
+            "owner": "Ljava/util/Map;",
+            "name": "get",
+            "proto_index": 5500,
+            "prototype": "(Ljava/lang/Object;)Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 33,
+          "opcode": "0xc",
+          "units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 34,
+          "opcode": "0x1f",
+          "units": [
+            287,
+            12234
+          ],
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 36,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            1281,
+            1
+          ],
+          "method": {
+            "method_index": 1281,
+            "owner": "Landroid/text/TextUtils;",
+            "name": "isEmpty",
+            "proto_index": 13857,
+            "prototype": "(Ljava/lang/CharSequence;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 39,
+          "opcode": "0xa",
+          "units": [
+            522
+          ]
+        },
+        {
+          "code_unit_offset": 40,
+          "opcode": "0x39",
+          "units": [
+            569,
+            249
+          ]
+        },
+        {
+          "code_unit_offset": 42,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            54665,
+            0
+          ],
+          "method": {
+            "method_index": 54665,
+            "owner": "Lcom/bytedance/sdk/account/settings/bean/RequestUseCellularConfig;",
+            "name": "getCarriers",
+            "proto_index": 6479,
+            "prototype": "()Ljava/util/Set;"
+          }
+        },
+        {
+          "code_unit_offset": 45,
+          "opcode": "0xc",
+          "units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 46,
+          "opcode": "0x72",
+          "units": [
+            8306,
+            64360,
+            18
+          ],
+          "method": {
+            "method_index": 64360,
+            "owner": "Ljava/util/Set;",
+            "name": "contains",
+            "proto_index": 13872,
+            "prototype": "(Ljava/lang/Object;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 49,
+          "opcode": "0xa",
+          "units": [
+            522
+          ]
+        },
+        {
+          "code_unit_offset": 50,
+          "opcode": "0x39",
+          "units": [
+            569,
+            4
+          ]
+        },
+        {
+          "code_unit_offset": 52,
+          "opcode": "0x29",
+          "units": [
+            41,
+            237
+          ]
+        },
+        {
+          "code_unit_offset": 54,
+          "opcode": "0x54",
+          "units": [
+            33364,
+            19732
+          ],
+          "field": {
+            "field_index": 19732,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Ljava/lang/String;",
+            "name": "url"
+          }
+        },
+        {
+          "code_unit_offset": 56,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            55953,
+            2
+          ],
+          "method": {
+            "method_index": 55953,
+            "owner": "Lcom/bytedance/sdk/account/utils/UrlUtilsKt;",
+            "name": "getPathFast",
+            "proto_index": 5867,
+            "prototype": "(Ljava/lang/String;)Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 59,
+          "opcode": "0xc",
+          "units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 60,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            1281,
+            2
+          ],
+          "method": {
+            "method_index": 1281,
+            "owner": "Landroid/text/TextUtils;",
+            "name": "isEmpty",
+            "proto_index": 13857,
+            "prototype": "(Ljava/lang/CharSequence;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 63,
+          "opcode": "0xa",
+          "units": [
+            778
+          ]
+        },
+        {
+          "code_unit_offset": 64,
+          "opcode": "0x38",
+          "units": [
+            824,
+            3
+          ]
+        },
+        {
+          "code_unit_offset": 66,
+          "opcode": "0x11",
+          "units": [
+            2065
+          ]
+        },
+        {
+          "code_unit_offset": 67,
+          "opcode": "0x54",
+          "units": [
+            33620,
+            19730
+          ],
+          "field": {
+            "field_index": 19730,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Ljava/util/Map;",
+            "name": "parms"
+          }
+        },
+        {
+          "code_unit_offset": 69,
+          "opcode": "0x1a",
+          "units": [
+            1050,
+            58527
+          ],
+          "string_index": 58527,
+          "string": "token"
+        },
+        {
+          "code_unit_offset": 71,
+          "opcode": "0x72",
+          "units": [
+            8306,
+            64316,
+            67
+          ],
+          "method": {
+            "method_index": 64316,
+            "owner": "Ljava/util/Map;",
+            "name": "get",
+            "proto_index": 5500,
+            "prototype": "(Ljava/lang/Object;)Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 74,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 75,
+          "opcode": "0x1f",
+          "units": [
+            799,
+            12234
+          ],
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 77,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            1281,
+            3
+          ],
+          "method": {
+            "method_index": 1281,
+            "owner": "Landroid/text/TextUtils;",
+            "name": "isEmpty",
+            "proto_index": 13857,
+            "prototype": "(Ljava/lang/CharSequence;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 80,
+          "opcode": "0xa",
+          "units": [
+            1034
+          ]
+        },
+        {
+          "code_unit_offset": 81,
+          "opcode": "0x38",
+          "units": [
+            1080,
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 83,
+          "opcode": "0x54",
+          "units": [
+            33620,
+            19730
+          ],
+          "field": {
+            "field_index": 19730,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Ljava/util/Map;",
+            "name": "parms"
+          }
+        },
+        {
+          "code_unit_offset": 85,
+          "opcode": "0x1a",
+          "units": [
+            1050,
+            59747
+          ],
+          "string_index": 59747,
+          "string": "validate_token"
+        },
+        {
+          "code_unit_offset": 87,
+          "opcode": "0x72",
+          "units": [
+            8306,
+            64316,
+            67
+          ],
+          "method": {
+            "method_index": 64316,
+            "owner": "Ljava/util/Map;",
+            "name": "get",
+            "proto_index": 5500,
+            "prototype": "(Ljava/lang/Object;)Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 90,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 91,
+          "opcode": "0x1f",
+          "units": [
+            799,
+            12234
+          ],
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 93,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            1281,
+            3
+          ],
+          "method": {
+            "method_index": 1281,
+            "owner": "Landroid/text/TextUtils;",
+            "name": "isEmpty",
+            "proto_index": 13857,
+            "prototype": "(Ljava/lang/CharSequence;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 96,
+          "opcode": "0xa",
+          "units": [
+            778
+          ]
+        },
+        {
+          "code_unit_offset": 97,
+          "opcode": "0x39",
+          "units": [
+            825,
+            14
+          ]
+        },
+        {
+          "code_unit_offset": 99,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            54669,
+            0
+          ],
+          "method": {
+            "method_index": 54669,
+            "owner": "Lcom/bytedance/sdk/account/settings/bean/RequestUseCellularConfig;",
+            "name": "getPaths",
+            "proto_index": 6479,
+            "prototype": "()Ljava/util/Set;"
+          }
+        },
+        {
+          "code_unit_offset": 102,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 103,
+          "opcode": "0x72",
+          "units": [
+            8306,
+            64360,
+            35
+          ],
+          "method": {
+            "method_index": 64360,
+            "owner": "Ljava/util/Set;",
+            "name": "contains",
+            "proto_index": 13872,
+            "prototype": "(Ljava/lang/Object;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 106,
+          "opcode": "0xa",
+          "units": [
+            778
+          ]
+        },
+        {
+          "code_unit_offset": 107,
+          "opcode": "0x38",
+          "units": [
+            824,
+            4
+          ]
+        },
+        {
+          "code_unit_offset": 109,
+          "opcode": "0x12",
+          "units": [
+            4882
+          ],
+          "const": 1,
+          "dest_register": 3
+        },
+        {
+          "code_unit_offset": 110,
+          "opcode": "0x28",
+          "units": [
+            552
+          ]
+        },
+        {
+          "code_unit_offset": 111,
+          "opcode": "0x12",
+          "units": [
+            786
+          ],
+          "const": 0,
+          "dest_register": 3
+        },
+        {
+          "code_unit_offset": 112,
+          "opcode": "0x39",
+          "units": [
+            825,
+            3
+          ]
+        },
+        {
+          "code_unit_offset": 114,
+          "opcode": "0x11",
+          "units": [
+            2065
+          ]
+        },
+        {
+          "code_unit_offset": 115,
+          "opcode": "0x52",
+          "units": [
+            33618,
+            19731
+          ],
+          "field": {
+            "field_index": 19731,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "I",
+            "name": "requestFlag"
+          }
+        },
+        {
+          "code_unit_offset": 117,
+          "opcode": "0x15",
+          "units": [
+            1045,
+            8192
+          ],
+          "const": 536870912,
+          "dest_register": 4
+        },
+        {
+          "code_unit_offset": 119,
+          "opcode": "0xb6",
+          "units": [
+            17334
+          ]
+        },
+        {
+          "code_unit_offset": 120,
+          "opcode": "0x59",
+          "units": [
+            33625,
+            19731
+          ],
+          "field": {
+            "field_index": 19731,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "I",
+            "name": "requestFlag"
+          }
+        },
+        {
+          "code_unit_offset": 122,
+          "opcode": "0x22",
+          "units": [
+            802,
+            12236
+          ],
+          "type": "Ljava/lang/StringBuilder;"
+        },
+        {
+          "code_unit_offset": 124,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            63704,
+            3
+          ],
+          "method": {
+            "method_index": 63704,
+            "owner": "Ljava/lang/StringBuilder;",
+            "name": "<init>",
+            "proto_index": 6867,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 127,
+          "opcode": "0x1a",
+          "units": [
+            1050,
+            51845
+          ],
+          "string_index": 51845,
+          "string": "processApiRequest(), set requestFlag:"
+        },
+        {
+          "code_unit_offset": 129,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            63715,
+            67
+          ],
+          "method": {
+            "method_index": 63715,
+            "owner": "Ljava/lang/StringBuilder;",
+            "name": "append",
+            "proto_index": 5994,
+            "prototype": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+          }
+        },
+        {
+          "code_unit_offset": 132,
+          "opcode": "0x52",
+          "units": [
+            33874,
+            19731
+          ],
+          "field": {
+            "field_index": 19731,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "I",
+            "name": "requestFlag"
+          }
+        },
+        {
+          "code_unit_offset": 134,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            63710,
+            67
+          ],
+          "method": {
+            "method_index": 63710,
+            "owner": "Ljava/lang/StringBuilder;",
+            "name": "append",
+            "proto_index": 5987,
+            "prototype": "(I)Ljava/lang/StringBuilder;"
+          }
+        },
+        {
+          "code_unit_offset": 137,
+          "opcode": "0x1a",
+          "units": [
+            1050,
+            6070
+          ],
+          "string_index": 6070,
+          "string": ", url="
+        },
+        {
+          "code_unit_offset": 139,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            63715,
+            67
+          ],
+          "method": {
+            "method_index": 63715,
+            "owner": "Ljava/lang/StringBuilder;",
+            "name": "append",
+            "proto_index": 5994,
+            "prototype": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+          }
+        },
+        {
+          "code_unit_offset": 142,
+          "opcode": "0x54",
+          "units": [
+            33876,
+            19732
+          ],
+          "field": {
+            "field_index": 19732,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Ljava/lang/String;",
+            "name": "url"
+          }
+        },
+        {
+          "code_unit_offset": 144,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            63715,
+            67
+          ],
+          "method": {
+            "method_index": 63715,
+            "owner": "Ljava/lang/StringBuilder;",
+            "name": "append",
+            "proto_index": 5994,
+            "prototype": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+          }
+        },
+        {
+          "code_unit_offset": 147,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            63731,
+            3
+          ],
+          "method": {
+            "method_index": 63731,
+            "owner": "Ljava/lang/StringBuilder;",
+            "name": "toString",
+            "proto_index": 5609,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 150,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 151,
+          "opcode": "0x1a",
+          "units": [
+            1050,
+            8342
+          ],
+          "string_index": 8342,
+          "string": "BaseAccountApi"
+        },
+        {
+          "code_unit_offset": 153,
+          "opcode": "0x71",
+          "units": [
+            8305,
+            52200,
+            52
+          ],
+          "method": {
+            "method_index": 52200,
+            "owner": "Lcom/bytedance/sdk/account/log/AccountLog;",
+            "name": "i",
+            "proto_index": 12298,
+            "prototype": "(Ljava/lang/String;Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 156,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            54673,
+            0
+          ],
+          "method": {
+            "method_index": 54673,
+            "owner": "Lcom/bytedance/sdk/account/settings/bean/RequestUseCellularConfig;",
+            "name": "isEnableIpv4Opt",
+            "proto_index": 13349,
+            "prototype": "()Z"
+          }
+        },
+        {
+          "code_unit_offset": 159,
+          "opcode": "0xa",
+          "units": [
+            778
+          ]
+        },
+        {
+          "code_unit_offset": 160,
+          "opcode": "0x38",
+          "units": [
+            824,
+            129
+          ]
+        },
+        {
+          "code_unit_offset": 162,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            54668,
+            0
+          ],
+          "method": {
+            "method_index": 54668,
+            "owner": "Lcom/bytedance/sdk/account/settings/bean/RequestUseCellularConfig;",
+            "name": "getIpv4OptCarriers",
+            "proto_index": 6479,
+            "prototype": "()Ljava/util/Set;"
+          }
+        },
+        {
+          "code_unit_offset": 165,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 166,
+          "opcode": "0x72",
+          "units": [
+            8306,
+            64360,
+            19
+          ],
+          "method": {
+            "method_index": 64360,
+            "owner": "Ljava/util/Set;",
+            "name": "contains",
+            "proto_index": 13872,
+            "prototype": "(Ljava/lang/Object;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 169,
+          "opcode": "0xa",
+          "units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 170,
+          "opcode": "0x38",
+          "units": [
+            312,
+            119
+          ]
+        },
+        {
+          "code_unit_offset": 172,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            54667,
+            0
+          ],
+          "method": {
+            "method_index": 54667,
+            "owner": "Lcom/bytedance/sdk/account/settings/bean/RequestUseCellularConfig;",
+            "name": "getIpv4Host",
+            "proto_index": 5609,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 175,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 176,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            1281,
+            0
+          ],
+          "method": {
+            "method_index": 1281,
+            "owner": "Landroid/text/TextUtils;",
+            "name": "isEmpty",
+            "proto_index": 13857,
+            "prototype": "(Ljava/lang/CharSequence;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 179,
+          "opcode": "0xa",
+          "units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 180,
+          "opcode": "0x38",
+          "units": [
+            312,
+            8
+          ]
+        },
+        {
+          "code_unit_offset": 182,
+          "opcode": "0x1a",
+          "units": [
+            26,
+            51842
+          ],
+          "string_index": 51842,
+          "string": "processApiRequest(), ipv4Host is empty"
+        },
+        {
+          "code_unit_offset": 184,
+          "opcode": "0x71",
+          "units": [
+            8305,
+            52208,
+            4
+          ],
+          "method": {
+            "method_index": 52208,
+            "owner": "Lcom/bytedance/sdk/account/log/AccountLog;",
+            "name": "w",
+            "proto_index": 12298,
+            "prototype": "(Ljava/lang/String;Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 187,
+          "opcode": "0x28",
+          "units": [
+            26152
+          ]
+        },
+        {
+          "code_unit_offset": 188,
+          "opcode": "0x54",
+          "units": [
+            33108,
+            19732
+          ],
+          "field": {
+            "field_index": 19732,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "Ljava/lang/String;",
+            "name": "url"
+          }
+        },
+        {
+          "code_unit_offset": 190,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            1043,
+            1
+          ],
+          "method": {
+            "method_index": 1043,
+            "owner": "Landroid/net/Uri;",
+            "name": "parse",
+            "proto_index": 920,
+            "prototype": "(Ljava/lang/String;)Landroid/net/Uri;"
+          }
+        },
+        {
+          "code_unit_offset": 193,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 194,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            1017,
+            3
+          ],
+          "method": {
+            "method_index": 1017,
+            "owner": "Landroid/net/Uri;",
+            "name": "buildUpon",
+            "proto_index": 898,
+            "prototype": "()Landroid/net/Uri$Builder;"
+          }
+        },
+        {
+          "code_unit_offset": 197,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 198,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            1006,
+            3
+          ],
+          "method": {
+            "method_index": 1006,
+            "owner": "Landroid/net/Uri$Builder;",
+            "name": "authority",
+            "proto_index": 900,
+            "prototype": "(Ljava/lang/String;)Landroid/net/Uri$Builder;"
+          }
+        },
+        {
+          "code_unit_offset": 201,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 202,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            1007,
+            3
+          ],
+          "method": {
+            "method_index": 1007,
+            "owner": "Landroid/net/Uri$Builder;",
+            "name": "build",
+            "proto_index": 902,
+            "prototype": "()Landroid/net/Uri;"
+          }
+        },
+        {
+          "code_unit_offset": 205,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 206,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            1044,
+            3
+          ],
+          "method": {
+            "method_index": 1044,
+            "owner": "Landroid/net/Uri;",
+            "name": "toString",
+            "proto_index": 5609,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 209,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 210,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            50129,
+            8
+          ],
+          "method": {
+            "method_index": 50129,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "name": "newBuilder",
+            "proto_index": 3869,
+            "prototype": "()Lcom/bytedance/sdk/account/execute/ApiRequest$Builder;"
+          }
+        },
+        {
+          "code_unit_offset": 213,
+          "opcode": "0xc",
+          "units": [
+            1292
+          ]
+        },
+        {
+          "code_unit_offset": 214,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            50124,
+            53
+          ],
+          "method": {
+            "method_index": 50124,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest$Builder;",
+            "name": "url",
+            "proto_index": 3874,
+            "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/execute/ApiRequest$Builder;"
+          }
+        },
+        {
+          "code_unit_offset": 217,
+          "opcode": "0xc",
+          "units": [
+            1292
+          ]
+        },
+        {
+          "code_unit_offset": 218,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            50114,
+            5
+          ],
+          "method": {
+            "method_index": 50114,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest$Builder;",
+            "name": "build",
+            "proto_index": 3881,
+            "prototype": "()Lcom/bytedance/sdk/account/execute/ApiRequest;"
+          }
+        },
+        {
+          "code_unit_offset": 221,
+          "opcode": "0xc",
+          "units": [
+            2060
+          ]
+        },
+        {
+          "code_unit_offset": 222,
+          "opcode": "0x22",
+          "units": [
+            1314,
+            12236
+          ],
+          "type": "Ljava/lang/StringBuilder;"
+        },
+        {
+          "code_unit_offset": 224,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            63704,
+            5
+          ],
+          "method": {
+            "method_index": 63704,
+            "owner": "Ljava/lang/StringBuilder;",
+            "name": "<init>",
+            "proto_index": 6867,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 227,
+          "opcode": "0x1a",
+          "units": [
+            1562,
+            51844
+          ],
+          "string_index": 51844,
+          "string": "processApiRequest(), replace host to "
+        },
+        {
+          "code_unit_offset": 229,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            63715,
+            101
+          ],
+          "method": {
+            "method_index": 63715,
+            "owner": "Ljava/lang/StringBuilder;",
+            "name": "append",
+            "proto_index": 5994,
+            "prototype": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+          }
+        },
+        {
+          "code_unit_offset": 232,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            63715,
+            5
+          ],
+          "method": {
+            "method_index": 63715,
+            "owner": "Ljava/lang/StringBuilder;",
+            "name": "append",
+            "proto_index": 5994,
+            "prototype": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+          }
+        },
+        {
+          "code_unit_offset": 235,
+          "opcode": "0x1a",
+          "units": [
+            26,
+            5753
+          ],
+          "string_index": 5753,
+          "string": ", oldUrl="
+        },
+        {
+          "code_unit_offset": 237,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            63715,
+            5
+          ],
+          "method": {
+            "method_index": 63715,
+            "owner": "Ljava/lang/StringBuilder;",
+            "name": "append",
+            "proto_index": 5994,
+            "prototype": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+          }
+        },
+        {
+          "code_unit_offset": 240,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            63715,
+            21
+          ],
+          "method": {
+            "method_index": 63715,
+            "owner": "Ljava/lang/StringBuilder;",
+            "name": "append",
+            "proto_index": 5994,
+            "prototype": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+          }
+        },
+        {
+          "code_unit_offset": 243,
+          "opcode": "0x1a",
+          "units": [
+            26,
+            5736
+          ],
+          "string_index": 5736,
+          "string": ", newUrl="
+        },
+        {
+          "code_unit_offset": 245,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            63715,
+            5
+          ],
+          "method": {
+            "method_index": 63715,
+            "owner": "Ljava/lang/StringBuilder;",
+            "name": "append",
+            "proto_index": 5994,
+            "prototype": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+          }
+        },
+        {
+          "code_unit_offset": 248,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            63715,
+            53
+          ],
+          "method": {
+            "method_index": 63715,
+            "owner": "Ljava/lang/StringBuilder;",
+            "name": "append",
+            "proto_index": 5994,
+            "prototype": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+          }
+        },
+        {
+          "code_unit_offset": 251,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            63731,
+            5
+          ],
+          "method": {
+            "method_index": 63731,
+            "owner": "Ljava/lang/StringBuilder;",
+            "name": "toString",
+            "proto_index": 5609,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 254,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 255,
+          "opcode": "0x71",
+          "units": [
+            8305,
+            52200,
+            4
+          ],
+          "method": {
+            "method_index": 52200,
+            "owner": "Lcom/bytedance/sdk/account/log/AccountLog;",
+            "name": "i",
+            "proto_index": 12298,
+            "prototype": "(Ljava/lang/String;Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 258,
+          "opcode": "0x28",
+          "units": [
+            7976
+          ]
+        },
+        {
+          "code_unit_offset": 259,
+          "opcode": "0xd",
+          "units": [
+            13
+          ]
+        },
+        {
+          "code_unit_offset": 260,
+          "opcode": "0x22",
+          "units": [
+            290,
+            12236
+          ],
+          "type": "Ljava/lang/StringBuilder;"
+        },
+        {
+          "code_unit_offset": 262,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            63704,
+            1
+          ],
+          "method": {
+            "method_index": 63704,
+            "owner": "Ljava/lang/StringBuilder;",
+            "name": "<init>",
+            "proto_index": 6867,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 265,
+          "opcode": "0x1a",
+          "units": [
+            794,
+            51843
+          ],
+          "string_index": 51843,
+          "string": "processApiRequest(), path:"
+        },
+        {
+          "code_unit_offset": 267,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            63715,
+            49
+          ],
+          "method": {
+            "method_index": 63715,
+            "owner": "Ljava/lang/StringBuilder;",
+            "name": "append",
+            "proto_index": 5994,
+            "prototype": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+          }
+        },
+        {
+          "code_unit_offset": 270,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            63715,
+            33
+          ],
+          "method": {
+            "method_index": 63715,
+            "owner": "Ljava/lang/StringBuilder;",
+            "name": "append",
+            "proto_index": 5994,
+            "prototype": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+          }
+        },
+        {
+          "code_unit_offset": 273,
+          "opcode": "0x1a",
+          "units": [
+            538,
+            5858
+          ],
+          "string_index": 5858,
+          "string": ", replace host fail, "
+        },
+        {
+          "code_unit_offset": 275,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            63715,
+            33
+          ],
+          "method": {
+            "method_index": 63715,
+            "owner": "Ljava/lang/StringBuilder;",
+            "name": "append",
+            "proto_index": 5994,
+            "prototype": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+          }
+        },
+        {
+          "code_unit_offset": 278,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            63714,
+            1
+          ],
+          "method": {
+            "method_index": 63714,
+            "owner": "Ljava/lang/StringBuilder;",
+            "name": "append",
+            "proto_index": 5993,
+            "prototype": "(Ljava/lang/Object;)Ljava/lang/StringBuilder;"
+          }
+        },
+        {
+          "code_unit_offset": 281,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            63731,
+            1
+          ],
+          "method": {
+            "method_index": 63731,
+            "owner": "Ljava/lang/StringBuilder;",
+            "name": "toString",
+            "proto_index": 5609,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 284,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 285,
+          "opcode": "0x71",
+          "units": [
+            8305,
+            52208,
+            4
+          ],
+          "method": {
+            "method_index": 52208,
+            "owner": "Lcom/bytedance/sdk/account/log/AccountLog;",
+            "name": "w",
+            "proto_index": 12298,
+            "prototype": "(Ljava/lang/String;Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 288,
+          "opcode": "0x0",
+          "units": [
+            0
+          ]
+        },
+        {
+          "code_unit_offset": 289,
+          "opcode": "0x11",
+          "units": [
+            2065
+          ]
+        }
+      ]
+    }
+  ]
+}

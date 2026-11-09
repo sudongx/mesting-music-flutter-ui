@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\AnLi\.codex-artifacts\2026-11-04-release148\verify_formal_payload.py", line 89, in <module>
+    native = json.loads((OUT / 'native-background-verification.json').read_text('utf-8'))
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\zyt\AppData\Local\Programs\Python\Python314\Lib\pathlib\__init__.py", line 792, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zyt\AppData\Local\Programs\Python\Python314\Lib\pathlib\__init__.py", line 776, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\AnLi\\.codex-artifacts\\2026-11-04-release148\\native-background-verification.json'

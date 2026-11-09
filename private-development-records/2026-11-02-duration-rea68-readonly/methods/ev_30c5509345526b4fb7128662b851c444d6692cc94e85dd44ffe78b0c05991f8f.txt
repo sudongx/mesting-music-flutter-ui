@@ -1,0 +1,83 @@
+    private void I3(int i2, @Nullable MusicEndConfig musicEndConfig, @Nullable com.alibaba.fastjson.JSONObject jSONObject) {
+        int i3;
+        IPlayService iPlayService;
+        if (jSONObject != null) {
+            if (i2 != -1 && (iPlayService = this.a) != null && iPlayService.getPlayBackDataSource() != null && this.a.getPlayBackDataSource().getBizMusicMeta() != null) {
+                long filterMusicId = this.a.getPlayBackDataSource().getBizMusicMeta().getFilterMusicId();
+                long longValue = jSONObject.getLongValue(RNDatabase.BundleColumns.ID);
+                if (jSONObject.getLongValue(MusicGiftModel.GIFT_MODE_TIME) > 0 && longValue != 0 && filterMusicId != longValue && AudioPlayConfigHelper.m().contains(Integer.valueOf(i2))) {
+                    jSONObject.put(MusicGiftModel.GIFT_MODE_TIME, 0);
+                    jSONObject.put("realtime", 0);
+                }
+            }
+            jSONObject.put("volumeBalance", x1(true));
+            long jB = yp.b();
+            if (jB > 0) {
+                jSONObject.put("sing_time", Long.valueOf(jB));
+                yp.a();
+            }
+            final MusicInfo currentMusic = getCurrentMusic();
+            if (currentMusic != null) {
+                if (k3(currentMusic)) {
+                    String string = m3.a().getString("sp_audio_post_id", VboxScanResult.WIFI_AUTH_OPEN);
+                    if (!TextUtils.isEmpty(string)) {
+                        String[] strArrSplit = string.split("_");
+                        if (strArrSplit.length > 1 && Long.valueOf(strArrSplit[0]).longValue() == currentMusic.getFilterMusicId()) {
+                            jSONObject.put("tape_id", strArrSplit[1]);
+                        }
+                    }
+                    String string2 = m3.a().getString("sp_audio_post_type", VboxScanResult.WIFI_AUTH_OPEN);
+                    if (!TextUtils.isEmpty(string2)) {
+                        String[] strArrSplit2 = string2.split("_");
+                        if (strArrSplit2.length > 1 && Long.valueOf(strArrSplit2[0]).longValue() == currentMusic.getFilterMusicId()) {
+                            jSONObject.put("tape_type", strArrSplit2[1]);
+                        }
+                    }
+                }
+                if (this.j > 0 && (i3 = this.i) > 0) {
+                    jSONObject.put(MusicGiftModel.GIFT_MODE_TIME, Integer.valueOf(i3 / WifiScanner.SCAN_INTERVAL));
+                    jSONObject.put("realtime", Integer.valueOf(this.j / WifiScanner.SCAN_INTERVAL));
+                    this.j = 0;
+                    this.i = 0;
+                }
+                jSONObject.put("progressTime", Long.valueOf(np0.a.a.o(currentMusic.getId()) / 1000));
+                V3(musicEndConfig, jSONObject);
+                jSONObject.put("play_speed", Float.valueOf(this.a.getPlaySpeed()));
+            }
+            G2(jSONObject);
+            P2(jSONObject, currentMusic);
+            lo0.a.b(jSONObject, this.a.getPlayback());
+            I2(jSONObject);
+            bo0.b.a(jSONObject, currentMusic, lp0.t.H0());
+            if (com.netease.cloudmusic.k.i()) {
+                ka.d.k.e().e(jSONObject.getInnerMap()).a();
+            }
+            if (ArtistNewSong.PRODUCT_TYPE.SONG.equals(K3())) {
+                sr.p(NetworkStatusDetail.PID_PLAY, "5dce13da9501aecff943b2ca", jSONObject);
+            } else {
+                sr.h(NetworkStatusDetail.PID_PLAY, jSONObject);
+            }
+            try {
+                if (jSONObject.getInteger("end_source").intValue() % 100 == 3) {
+                    lp0.z.d(currentMusic.getFilterMusicId(), jSONObject.getLongValue(MusicGiftModel.GIFT_MODE_TIME));
+                }
+            } catch (Exception unused) {
+            }
+            if (currentMusic != null) {
+                try {
+                    int intValue = jSONObject.getIntValue("file");
+                    final int iR0 = r0();
+                    com.netease.cloudmusic.module.player.nmcache.d.f(currentMusic, iR0, intValue, com.netease.cloudmusic.module.player.nmcache.i.END, this.a, new Function1() { // from class: ms0.r0
+                        public final Object invoke(Object obj) {
+                            return w0.x3(currentMusic, iR0, (String) obj);
+                        }
+                    });
+                } catch (Exception e2) {
+                    e2.printStackTrace();
+                }
+            }
+            this.B.c(jSONObject);
+            a2.n0();
+            ql0.c.INSTANCE.c(jSONObject.getInnerMap());
+        }
+    }

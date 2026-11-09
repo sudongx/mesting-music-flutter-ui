@@ -1,0 +1,1758 @@
+[
+  {
+    "key": "LoginHistory",
+    "evidence_id": "ev_fd4d7089169ec1ac5806294fa5dc42568f4f309b4937f652c44b029cbb80d35c",
+    "subject": {
+      "name": "classes20-focus.apk",
+      "digest": {
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "parameters": {
+      "parent_evidence_id": "ev_72f08fa119dd2fb1d94d5f6697c57b433b5faa6a22ef8bc263c63d527ff0a173",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "normalized": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_72f08fa119dd2fb1d94d5f6697c57b433b5faa6a22ef8bc263c63d527ff0a173",
+      "parent_operation": "inspect_android_class",
+      "parent_digest": "72f08fa119dd2fb1d94d5f6697c57b433b5faa6a22ef8bc263c63d527ff0a173",
+      "view_digest": "fec5355da45c8e2d5e1c21311da07154a27ad94f427f077a0cb7eff5dcd30d84",
+      "artifact": {
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 1,
+        "total": 1,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+      ],
+      "unknowns": [
+        "Static class and method analysis does not establish runtime behavior or APK authenticity."
+      ],
+      "summary": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "com.kugou.common.useraccount.entity.LoginHistoryUserEntity",
+        "methods": [
+          {
+            "name": "<clinit>",
+            "reported_signature": "<clinit>(): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()V"
+          },
+          {
+            "name": "<init>",
+            "reported_signature": "<init>(): void",
+            "overload_index": 0,
+            "is_constructor": true,
+            "dex_descriptor": "()V"
+          },
+          {
+            "name": "getBakLoginTypeList",
+            "reported_signature": "getBakLoginTypeList(): java.util.ArrayList<java.lang.Integer>",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Ljava/util/ArrayList;"
+          },
+          {
+            "name": "getFxData",
+            "reported_signature": "getFxData(): com.kugou.common.useraccount.entity.LoginHistoryUserEntity$FxData",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Lcom/kugou/common/useraccount/entity/LoginHistoryUserEntity$FxData;"
+          },
+          {
+            "name": "getGradeInfo",
+            "reported_signature": "getGradeInfo(): com.kugou.common.useraccount.entity.LoginHistoryUserEntity$GradeInfo",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Lcom/kugou/common/useraccount/entity/LoginHistoryUserEntity$GradeInfo;"
+          },
+          {
+            "name": "getLoginTime",
+            "reported_signature": "getLoginTime(): long",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()J"
+          },
+          {
+            "name": "getLoginType",
+            "reported_signature": "getLoginType(): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Ljava/lang/String;"
+          },
+          {
+            "name": "getLovers_pic",
+            "reported_signature": "getLovers_pic(): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Ljava/lang/String;"
+          },
+          {
+            "name": "getNameplateDataId",
+            "reported_signature": "getNameplateDataId(): int",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()I"
+          },
+          {
+            "name": "getNameplateDataLoversPic",
+            "reported_signature": "getNameplateDataLoversPic(): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Ljava/lang/String;"
+          },
+          {
+            "name": "getNameplateDataType",
+            "reported_signature": "getNameplateDataType(): int",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()I"
+          },
+          {
+            "name": "getNameplateDataUrlV1",
+            "reported_signature": "getNameplateDataUrlV1(): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Ljava/lang/String;"
+          },
+          {
+            "name": "getNameplateDynamic",
+            "reported_signature": "getNameplateDynamic(): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Ljava/lang/String;"
+          },
+          {
+            "name": "getNameplateDynamicDataV1",
+            "reported_signature": "getNameplateDynamicDataV1(): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Ljava/lang/String;"
+          },
+          {
+            "name": "getNameplateId",
+            "reported_signature": "getNameplateId(): int",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()I"
+          },
+          {
+            "name": "getNameplateUrl",
+            "reported_signature": "getNameplateUrl(): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Ljava/lang/String;"
+          },
+          {
+            "name": "getNameplate_dynamic_v1",
+            "reported_signature": "getNameplate_dynamic_v1(): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Ljava/lang/String;"
+          },
+          {
+            "name": "getNameplate_type",
+            "reported_signature": "getNameplate_type(): int",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()I"
+          },
+          {
+            "name": "getNameplate_url_v1",
+            "reported_signature": "getNameplate_url_v1(): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Ljava/lang/String;"
+          },
+          {
+            "name": "getNickname",
+            "reported_signature": "getNickname(): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Ljava/lang/String;"
+          },
+          {
+            "name": "getPhoneMd5",
+            "reported_signature": "getPhoneMd5(): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Ljava/lang/String;"
+          },
+          {
+            "name": "getPhoto",
+            "reported_signature": "getPhoto(): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Ljava/lang/String;"
+          },
+          {
+            "name": "getSvipLevel",
+            "reported_signature": "getSvipLevel(): int",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()I"
+          },
+          {
+            "name": "getSvipScore",
+            "reported_signature": "getSvipScore(): int",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()I"
+          },
+          {
+            "name": "getUserType",
+            "reported_signature": "getUserType(): int",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()I"
+          },
+          {
+            "name": "getUserYType",
+            "reported_signature": "getUserYType(): int",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()I"
+          },
+          {
+            "name": "getUserid",
+            "reported_signature": "getUserid(): long",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()J"
+          },
+          {
+            "name": "getVipStatus",
+            "reported_signature": "getVipStatus(): int",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()I"
+          },
+          {
+            "name": "getVipType",
+            "reported_signature": "getVipType(): int",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()I"
+          },
+          {
+            "name": "setBakLoginTypeList",
+            "reported_signature": "setBakLoginTypeList(java.util.ArrayList<java.lang.Integer>): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/util/ArrayList;)V"
+          },
+          {
+            "name": "setFxData",
+            "reported_signature": "setFxData(com.kugou.common.useraccount.entity.LoginHistoryUserEntity$FxData): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lcom/kugou/common/useraccount/entity/LoginHistoryUserEntity$FxData;)V"
+          },
+          {
+            "name": "setGradeInfo",
+            "reported_signature": "setGradeInfo(com.kugou.common.useraccount.entity.LoginHistoryUserEntity$GradeInfo): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Lcom/kugou/common/useraccount/entity/LoginHistoryUserEntity$GradeInfo;)V"
+          },
+          {
+            "name": "setLoginTime",
+            "reported_signature": "setLoginTime(long): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(J)V"
+          },
+          {
+            "name": "setLoginType",
+            "reported_signature": "setLoginType(java.lang.String): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;)V"
+          },
+          {
+            "name": "setLovers_pic",
+            "reported_signature": "setLovers_pic(java.lang.String): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;)V"
+          },
+          {
+            "name": "setNameplateDynamic",
+            "reported_signature": "setNameplateDynamic(java.lang.String): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;)V"
+          },
+          {
+            "name": "setNameplateId",
+            "reported_signature": "setNameplateId(int): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(I)V"
+          },
+          {
+            "name": "setNameplateUrl",
+            "reported_signature": "setNameplateUrl(java.lang.String): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;)V"
+          },
+          {
+            "name": "setNameplate_dynamic_v1",
+            "reported_signature": "setNameplate_dynamic_v1(java.lang.String): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;)V"
+          },
+          {
+            "name": "setNameplate_type",
+            "reported_signature": "setNameplate_type(int): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(I)V"
+          },
+          {
+            "name": "setNameplate_url_v1",
+            "reported_signature": "setNameplate_url_v1(java.lang.String): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;)V"
+          },
+          {
+            "name": "setNickname",
+            "reported_signature": "setNickname(java.lang.String): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;)V"
+          },
+          {
+            "name": "setPhoneMd5",
+            "reported_signature": "setPhoneMd5(java.lang.String): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;)V"
+          },
+          {
+            "name": "setPhoto",
+            "reported_signature": "setPhoto(java.lang.String): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/String;)V"
+          },
+          {
+            "name": "setSvipLevel",
+            "reported_signature": "setSvipLevel(int): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(I)V"
+          },
+          {
+            "name": "setSvipScore",
+            "reported_signature": "setSvipScore(int): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(I)V"
+          },
+          {
+            "name": "setUserType",
+            "reported_signature": "setUserType(int): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(I)V"
+          },
+          {
+            "name": "setUserYType",
+            "reported_signature": "setUserYType(int): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(I)V"
+          },
+          {
+            "name": "setUserid",
+            "reported_signature": "setUserid(long): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(J)V"
+          },
+          {
+            "name": "setVipStatus",
+            "reported_signature": "setVipStatus(int): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(I)V"
+          },
+          {
+            "name": "setVipType",
+            "reported_signature": "setVipType(int): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(I)V"
+          }
+        ],
+        "fields": [
+          {
+            "name": "Companion",
+            "reported_type": "com.kugou.common.useraccount.entity.LoginHistoryUserEntity$a",
+            "dex_static_value": null
+          },
+          {
+            "name": "TYPE_APPLE",
+            "reported_type": "java.lang.String",
+            "dex_static_value": {
+              "type": "string",
+              "value": "4"
+            }
+          },
+          {
+            "name": "TYPE_PASSWORD",
+            "reported_type": "java.lang.String",
+            "dex_static_value": {
+              "type": "string",
+              "value": "0"
+            }
+          },
+          {
+            "name": "TYPE_PHONE",
+            "reported_type": "java.lang.String",
+            "dex_static_value": {
+              "type": "string",
+              "value": "1"
+            }
+          },
+          {
+            "name": "TYPE_QQ",
+            "reported_type": "java.lang.String",
+            "dex_static_value": {
+              "type": "string",
+              "value": "3"
+            }
+          },
+          {
+            "name": "TYPE_SCAN",
+            "reported_type": "java.lang.String",
+            "dex_static_value": {
+              "type": "string",
+              "value": "6"
+            }
+          },
+          {
+            "name": "TYPE_WECHAT",
+            "reported_type": "java.lang.String",
+            "dex_static_value": {
+              "type": "string",
+              "value": "2"
+            }
+          },
+          {
+            "name": "TYPE_WEIBO",
+            "reported_type": "java.lang.String",
+            "dex_static_value": {
+              "type": "string",
+              "value": "5"
+            }
+          },
+          {
+            "name": "bakLoginTypeList",
+            "reported_type": "java.util.ArrayList<java.lang.Integer>",
+            "dex_static_value": null
+          },
+          {
+            "name": "fxData",
+            "reported_type": "com.kugou.common.useraccount.entity.LoginHistoryUserEntity$FxData",
+            "dex_static_value": null
+          },
+          {
+            "name": "gradeInfo",
+            "reported_type": "com.kugou.common.useraccount.entity.LoginHistoryUserEntity$GradeInfo",
+            "dex_static_value": null
+          },
+          {
+            "name": "loginTime",
+            "reported_type": "long",
+            "dex_static_value": null
+          },
+          {
+            "name": "loginType",
+            "reported_type": "java.lang.String",
+            "dex_static_value": null
+          },
+          {
+            "name": "lovers_pic",
+            "reported_type": "java.lang.String",
+            "dex_static_value": null
+          },
+          {
+            "name": "nameplateDynamic",
+            "reported_type": "java.lang.String",
+            "dex_static_value": null
+          },
+          {
+            "name": "nameplateId",
+            "reported_type": "int",
+            "dex_static_value": null
+          },
+          {
+            "name": "nameplateUrl",
+            "reported_type": "java.lang.String",
+            "dex_static_value": null
+          },
+          {
+            "name": "nameplate_dynamic_v1",
+            "reported_type": "java.lang.String",
+            "dex_static_value": null
+          },
+          {
+            "name": "nameplate_type",
+            "reported_type": "int",
+            "dex_static_value": null
+          },
+          {
+            "name": "nameplate_url_v1",
+            "reported_type": "java.lang.String",
+            "dex_static_value": null
+          },
+          {
+            "name": "nickname",
+            "reported_type": "java.lang.String",
+            "dex_static_value": null
+          },
+          {
+            "name": "phoneMd5",
+            "reported_type": "java.lang.String",
+            "dex_static_value": null
+          },
+          {
+            "name": "photo",
+            "reported_type": "java.lang.String",
+            "dex_static_value": null
+          },
+          {
+            "name": "svipLevel",
+            "reported_type": "int",
+            "dex_static_value": null
+          },
+          {
+            "name": "svipScore",
+            "reported_type": "int",
+            "dex_static_value": null
+          },
+          {
+            "name": "userType",
+            "reported_type": "int",
+            "dex_static_value": null
+          },
+          {
+            "name": "userYType",
+            "reported_type": "int",
+            "dex_static_value": null
+          },
+          {
+            "name": "userid",
+            "reported_type": "long",
+            "dex_static_value": null
+          },
+          {
+            "name": "vipStatus",
+            "reported_type": "int",
+            "dex_static_value": null
+          },
+          {
+            "name": "vipType",
+            "reported_type": "int",
+            "dex_static_value": null
+          }
+        ],
+        "inner_classes": [
+          "com.kugou.common.useraccount.entity.LoginHistoryUserEntity.FxData",
+          "com.kugou.common.useraccount.entity.LoginHistoryUserEntity.GradeInfo",
+          "com.kugou.common.useraccount.entity.LoginHistoryUserEntity.a"
+        ]
+      }
+    },
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ]
+  },
+  {
+    "key": "LoginResponse",
+    "evidence_id": "ev_6344896259b1f9cafe9da8b0f227376ff6b002f73f37d85b144ce231965a83a9",
+    "subject": {
+      "name": "classes20-focus.apk",
+      "digest": {
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "parameters": {
+      "parent_evidence_id": "ev_19aa498ce7e8646ff348917b3e1e491b90af434c2554c28b6f43c5e46732d587",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "normalized": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_19aa498ce7e8646ff348917b3e1e491b90af434c2554c28b6f43c5e46732d587",
+      "parent_operation": "inspect_android_class",
+      "parent_digest": "19aa498ce7e8646ff348917b3e1e491b90af434c2554c28b6f43c5e46732d587",
+      "view_digest": "5910168b4696529f9fc5f346ab6858f45a555dfb4982d3699c8685c5f0dff605",
+      "artifact": {
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 1,
+        "total": 1,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+      ],
+      "unknowns": [
+        "Static class and method analysis does not establish runtime behavior or APK authenticity."
+      ],
+      "summary": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "com.kugou.common.useraccount.entity.LoginResponse",
+        "methods": [
+          {
+            "name": "<init>",
+            "reported_signature": "<init>(): void",
+            "overload_index": 0,
+            "is_constructor": true,
+            "dex_descriptor": "()V"
+          },
+          {
+            "name": "getCode",
+            "reported_signature": "getCode(): int",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()I"
+          },
+          {
+            "name": "getData",
+            "reported_signature": "getData(): T",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Ljava/lang/Object;"
+          },
+          {
+            "name": "setCode",
+            "reported_signature": "setCode(int): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(I)V"
+          },
+          {
+            "name": "setData",
+            "reported_signature": "setData(T): void",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "(Ljava/lang/Object;)V"
+          },
+          {
+            "name": "toString",
+            "reported_signature": "toString(): java.lang.String",
+            "overload_index": 0,
+            "is_constructor": false,
+            "dex_descriptor": "()Ljava/lang/String;"
+          }
+        ],
+        "fields": [
+          {
+            "name": "code",
+            "reported_type": "int",
+            "dex_static_value": null
+          },
+          {
+            "name": "data",
+            "reported_type": "T",
+            "dex_static_value": null
+          }
+        ],
+        "inner_classes": []
+      }
+    },
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ]
+  },
+  {
+    "key": "com.kugou.common.useraccount.entity.QRCode.getFinalQrcodeString",
+    "evidence_id": "ev_ca189913d7618adeef9423268d01b7b8d8d475319651d99c1af2cc3c497342fe",
+    "subject": {
+      "name": "classes20-focus.apk",
+      "digest": {
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "parameters": {
+      "parent_evidence_id": "ev_8802581eb9ff3ad1a32be1ddf429d0dfe596124b9e4532d5e917657b4dab40b4",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "normalized": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_8802581eb9ff3ad1a32be1ddf429d0dfe596124b9e4532d5e917657b4dab40b4",
+      "parent_operation": "inspect_android_method",
+      "parent_digest": "8802581eb9ff3ad1a32be1ddf429d0dfe596124b9e4532d5e917657b4dab40b4",
+      "view_digest": "0e75d10bd54987905e413c231de3b389bbb776002e74fe69ecdebddc4424a0d0",
+      "artifact": {
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 1,
+        "total": 1,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+      ],
+      "unknowns": [
+        "Static class and method analysis does not establish runtime behavior or APK authenticity."
+      ],
+      "summary": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "com.kugou.common.useraccount.entity.QRCode",
+        "method": {
+          "name": "getFinalQrcodeString",
+          "reported_signature": "getFinalQrcodeString(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        "overload_count": 1,
+        "representation": "java",
+        "body_status": "available",
+        "fell_back": false,
+        "markers": [],
+        "source": {
+          "status": "complete",
+          "text": "    public String getFinalQrcodeString() {\r\n        if (SwordSwitches.switches18 != null) {\r\n            SwordProxyResult swordProxyResultProxy0Arg = SwordProxy.proxy0Arg(this, 1764617378515600L);\r\n            if (swordProxyResultProxy0Arg.isSupported) {\r\n                return (String) swordProxyResultProxy0Arg.result;\r\n            }\r\n        }\r\n        if (TextUtils.isEmpty(this.qrcode)) {\r\n            return BuildConfig.FLAVOR;\r\n        }\r\n        return \"https://h5.kugou.com/apps/loginQRCode/html/index.html?qrcode=\" + this.qrcode + \"&appid=\" + o5.m();\r\n    }",
+          "reported_total_bytes": null
+        }
+      }
+    },
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ]
+  },
+  {
+    "key": "com.kugou.common.useraccount.app.QRCodeLoginFragment.e.a",
+    "evidence_id": "ev_fff3748867752878d42430b9ec92d117bac839d7f2ca426ac0137f747c956921",
+    "subject": {
+      "name": "classes20-focus.apk",
+      "digest": {
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "parameters": {
+      "parent_evidence_id": "ev_3b290a20eaba3d6119af9d819ecce10ac823c1f9130acfdf22baaa540881b6fe",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "normalized": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_3b290a20eaba3d6119af9d819ecce10ac823c1f9130acfdf22baaa540881b6fe",
+      "parent_operation": "inspect_android_method",
+      "parent_digest": "3b290a20eaba3d6119af9d819ecce10ac823c1f9130acfdf22baaa540881b6fe",
+      "view_digest": "a81a918f60765b7162be7772bfddfb4a7e508001bd26ce8d384d3b2f16d0458a",
+      "artifact": {
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 1,
+        "total": 1,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+      ],
+      "unknowns": [
+        "Static class and method analysis does not establish runtime behavior or APK authenticity."
+      ],
+      "summary": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "com.kugou.common.useraccount.app.QRCodeLoginFragment.e",
+        "method": {
+          "name": "a",
+          "reported_signature": "a(com.kugou.common.useraccount.entity.LoginResponse<com.kugou.common.useraccount.entity.QRCodeStatus>): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lcom/kugou/common/useraccount/entity/LoginResponse;)V"
+        },
+        "overload_count": 1,
+        "representation": "smali",
+        "body_status": "available",
+        "fell_back": true,
+        "markers": [
+          "java_body_unavailable"
+        ],
+        "source": {
+          "status": "complete",
+          "text": ".method public a(Lcom/kugou/common/useraccount/entity/LoginResponse;)V\n    .registers 11\n    .annotation system Ldalvik/annotation/Signature;\n        value = {\n            \"(\",\n            \"Lcom/kugou/common/useraccount/entity/LoginResponse<\",\n            \"Lcom/kugou/common/useraccount/entity/QRCodeStatus;\",\n            \">;)V\"\n        }\n    .end annotation\n\n    .line 1\n    sget-object v0, Lcom/tencent/qqmusic/sword/SwordSwitches;->switches18:[B\n\n    .line 2\n    .line 3\n    if-eqz v0, :cond_12\n\n    .line 4\n    .line 5\n    const-wide v0, 0x649be0003fe95L\n\n    .line 6\n    .line 7\n    .line 8\n    .line 9\n    .line 10\n    invoke-static {p1, p0, v0, v1}, Lcom/tencent/qqmusic/sword/SwordProxy;->proxy1Arg(Ljava/lang/Object;Ljava/lang/Object;J)Lcom/tencent/qqmusic/sword/SwordProxyResult;\n\n    .line 11\n    .line 12\n    .line 13\n    move-result-object v0\n\n    .line 14\n    iget-boolean v0, v0, Lcom/tencent/qqmusic/sword/SwordProxyResult;->isSupported:Z\n\n    .line 15\n    .line 16\n    if-eqz v0, :cond_12\n\n    .line 17\n    .line 18\n    return-void\n\n    .line 19\n    :cond_12\n    iget-object v0, p0, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment$e;->d:Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;\n\n    .line 20\n    .line 21\n    invoke-virtual {v0}, Lcom/kugou/page/core/KGFrameworkFragment;->isAlive()Z\n\n    .line 22\n    .line 23\n    .line 24\n    move-result v0\n\n    .line 25\n    if-nez v0, :cond_1b\n\n    .line 26\n    .line 27\n    return-void\n\n    .line 28\n    :cond_1b\n    invoke-virtual {p1}, Lcom/kugou/common/useraccount/entity/LoginResponse;->getCode()I\n\n    .line 29\n    .line 30\n    .line 31\n    move-result v0\n\n    .line 32\n    if-nez v0, :cond_d2\n\n    .line 33\n    .line 34\n    invoke-virtual {p1}, Lcom/kugou/common/useraccount/entity/LoginResponse;->getData()Ljava/lang/Object;\n\n    .line 35\n    .line 36\n    .line 37\n    move-result-object v0\n\n    .line 38\n    if-eqz v0, :cond_d2\n\n    .line 39\n    .line 40\n    invoke-virtual {p1}, Lcom/kugou/common/useraccount/entity/LoginResponse;->getData()Ljava/lang/Object;\n\n    .line 41\n    .line 42\n    .line 43\n    move-result-object p1\n\n    .line 44\n    check-cast p1, Lcom/kugou/common/useraccount/entity/QRCodeStatus;\n\n    .line 45\n    .line 46\n    invoke-virtual {p1}, Lcom/kugou/common/useraccount/entity/QRCodeStatus;->getStatus()I\n\n    .line 47\n    .line 48\n    .line 49\n    move-result v0\n\n    .line 50\n    if-eqz v0, :cond_ab\n\n    .line 51\n    .line 52\n    const/4 v1, 0x1\n\n    .line 53\n    if-eq v0, v1, :cond_9f\n\n    .line 54\n    .line 55\n    const/4 v1, 0x2\n\n    .line 56\n    if-eq v0, v1, :cond_9f\n\n    .line 57\n    .line 58\n    const/4 v1, 0x4\n\n    .line 59\n    if-eq v0, v1, :cond_3e\n\n    .line 60\n    .line 61\n    goto/16 :goto_d2\n\n    .line 62\n    .line 63\n    :cond_3e\n    iget-object v0, p0, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment$e;->d:Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;\n\n    .line 64\n    .line 65\n    invoke-static {v0}, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;->ZQ(Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;)Lrx/Subscription;\n\n    .line 66\n    .line 67\n    .line 68\n    move-result-object v0\n\n    .line 69\n    if-eqz v0, :cond_5b\n\n    .line 70\n    .line 71\n    iget-object v0, p0, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment$e;->d:Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;\n\n    .line 72\n    .line 73\n    invoke-static {v0}, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;->ZQ(Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;)Lrx/Subscription;\n\n    .line 74\n    .line 75\n    .line 76\n    move-result-object v0\n\n    .line 77\n    invoke-interface {v0}, Lrx/Subscription;->isUnsubscribed()Z\n\n    .line 78\n    .line 79\n    .line 80\n    move-result v0\n\n    .line 81\n    if-nez v0, :cond_5b\n\n    .line 82\n    .line 83\n    iget-object v0, p0, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment$e;->d:Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;\n\n    .line 84\n    .line 85\n    invoke-static {v0}, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;->ZQ(Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;)Lrx/Subscription;\n\n    .line 86\n    .line 87\n    .line 88\n    move-result-object v0\n\n    .line 89\n    invoke-interface {v0}, Lrx/Subscription;->unsubscribe()V\n\n    .line 90\n    .line 91\n    .line 92\n    :cond_5b\n    iget-object v0, p0, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment$e;->d:Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;\n\n    .line 93\n    .line 94\n    const-string v1, \"\\u6b63\\u5728\\u767b\\u5f55\\u4e2d\"\n\n    .line 95\n    .line 96\n    invoke-virtual {v0, v1}, Lcom/kugou/common/module/deletate/ModuleAbsBaseFragment;->showProgressDialog(Ljava/lang/String;)V\n\n    .line 97\n    .line 98\n    .line 99\n    new-instance v2, Lcom/kugou/common/useraccount/protocol/UserLogin;\n\n    .line 100\n    .line 101\n    iget-object v0, p0, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment$e;->d:Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;\n\n    .line 102\n    .line 103\n    invoke-static {v0}, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;->dR(Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;)Ljava/lang/String;\n\n    .line 104\n    .line 105\n    .line 106\n    move-result-object v0\n\n    .line 107\n    invoke-direct {v2, v0}, Lcom/kugou/common/useraccount/protocol/UserLogin;-><init>(Ljava/lang/String;)V\n\n    .line 108\n    .line 109\n    .line 110\n    iget-object v0, p0, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment$e;->d:Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;\n\n    .line 111\n    .line 112\n    invoke-static {v0}, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;->YQ(Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;)Lcom/kugou/common/useraccount/protocol/h;\n\n    .line 113\n    .line 114\n    .line 115\n    move-result-object v0\n\n    .line 116\n    invoke-virtual {v2, v0}, Lcom/kugou/common/useraccount/protocol/UserLogin;->m0(Lcom/kugou/common/useraccount/protocol/UserLogin$LoginResultHandler;)V\n\n    .line 117\n    .line 118\n    .line 119\n    invoke-virtual {p1}, Lcom/kugou/common/useraccount/entity/QRCodeStatus;->getNickname()Ljava/lang/String;\n\n    .line 120\n    .line 121\n    .line 122\n    move-result-object v5\n\n    .line 123\n    new-instance v0, Ljava/lang/StringBuilder;\n\n    .line 124\n    .line 125\n    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V\n\n    .line 126\n    .line 127\n    .line 128\n    invoke-virtual {p1}, Lcom/kugou/common/useraccount/entity/QRCodeStatus;->getUserid()J\n\n    .line 129\n    .line 130\n    .line 131\n    move-result-wide v3\n\n    .line 132\n    invoke-virtual {v0, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;\n\n    .line 133\n    .line 134\n    .line 135\n    const-string v1, \"\"\n\n    .line 136\n    .line 137\n    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;\n\n    .line 138\n    .line 139\n    .line 140\n    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;\n\n    .line 141\n    .line 142\n    .line 143\n    move-result-object v6\n\n    .line 144\n    invoke-virtual {p1}, Lcom/kugou/common/useraccount/entity/QRCodeStatus;->getToken()Ljava/lang/String;\n\n    .line 145\n    .line 146\n    .line 147\n    move-result-object v7\n\n    .line 148\n    iget-object p1, p0, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment$e;->d:Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;\n\n    .line 149\n    .line 150\n    invoke-virtual {p1}, Lcom/kugou/common/module/deletate/ModuleAbsBaseFragment;->getApplicationContext()Landroid/content/Context;\n\n    .line 151\n    .line 152\n    .line 153\n    move-result-object v8\n\n    .line 154\n    const/4 v3, 0x0\n\n    .line 155\n    const/4 v4, 0x2\n\n    .line 156\n    invoke-virtual/range {v2 .. v8}, Lcom/kugou/common/useraccount/protocol/UserLogin;->H(ZILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V\n\n    .line 157\n    .line 158\n    .line 159\n    goto :goto_d2\n\n    .line 160\n    :cond_9f\n    iget-object p1, p0, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment$e;->d:Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;\n\n    .line 161\n    .line 162\n    invoke-static {p1}, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;->bR(Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;)Landroid/view/View;\n\n    .line 163\n    .line 164\n    .line 165\n    move-result-object p1\n\n    .line 166\n    const/16 v0, 0x8\n\n    .line 167\n    .line 168\n    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V\n\n    .line 169\n    .line 170\n    .line 171\n    goto :goto_d2\n\n    .line 172\n    :cond_ab\n    iget-object p1, p0, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment$e;->d:Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;\n\n    .line 173\n    .line 174\n    invoke-static {p1}, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;->ZQ(Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;)Lrx/Subscription;\n\n    .line 175\n    .line 176\n    .line 177\n    move-result-object p1\n\n    .line 178\n    if-eqz p1, :cond_c8\n\n    .line 179\n    .line 180\n    iget-object p1, p0, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment$e;->d:Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;\n\n    .line 181\n    .line 182\n    invoke-static {p1}, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;->ZQ(Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;)Lrx/Subscription;\n\n    .line 183\n    .line 184\n    .line 185\n    move-result-object p1\n\n    .line 186\n    invoke-interface {p1}, Lrx/Subscription;->isUnsubscribed()Z\n\n    .line 187\n    .line 188\n    .line 189\n    move-result p1\n\n    .line 190\n    if-nez p1, :cond_c8\n\n    .line 191\n    .line 192\n    iget-object p1, p0, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment$e;->d:Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;\n\n    .line 193\n    .line 194\n    invoke-static {p1}, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;->ZQ(Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;)Lrx/Subscription;\n\n    .line 195\n    .line 196\n    .line 197\n    move-result-object p1\n\n    .line 198\n    invoke-interface {p1}, Lrx/Subscription;->unsubscribe()V\n\n    .line 199\n    .line 200\n    .line 201\n    :cond_c8\n    iget-object p1, p0, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment$e;->d:Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;\n\n    .line 202\n    .line 203\n    invoke-static {p1}, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;->bR(Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;)Landroid/view/View;\n\n    .line 204\n    .line 205\n    .line 206\n    move-result-object p1\n\n    .line 207\n    const/4 v0, 0x0\n\n    .line 208\n    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V\n\n    .line 209\n    .line 210\n    .line 211\n    :cond_d2\n    :goto_d2\n    return-void\n.end method",
+          "reported_total_bytes": null
+        }
+      }
+    },
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ]
+  },
+  {
+    "key": "com.kugou.common.useraccount.app.QRCodeLoginFragment.g.a",
+    "evidence_id": "ev_08ca8192453c8c6144e50e6bc5376dd1ad4085ee176746cc19561a1ca961a7e5",
+    "subject": {
+      "name": "classes20-focus.apk",
+      "digest": {
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "parameters": {
+      "parent_evidence_id": "ev_72f37090d84cd2c29d29b1ba48f216f5729cf4141fb5e968fef16c16414c0c69",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "normalized": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_72f37090d84cd2c29d29b1ba48f216f5729cf4141fb5e968fef16c16414c0c69",
+      "parent_operation": "inspect_android_method",
+      "parent_digest": "72f37090d84cd2c29d29b1ba48f216f5729cf4141fb5e968fef16c16414c0c69",
+      "view_digest": "21d2ae80ec6ca27d51dbd7591ae2afe8d03df364c69bb7fea0ab38841abdc9d8",
+      "artifact": {
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 1,
+        "total": 1,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+      ],
+      "unknowns": [
+        "Static class and method analysis does not establish runtime behavior or APK authenticity."
+      ],
+      "summary": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "com.kugou.common.useraccount.app.QRCodeLoginFragment.g",
+        "method": {
+          "name": "a",
+          "reported_signature": "a(java.lang.Long): rx.Observable<com.kugou.common.useraccount.entity.LoginResponse<com.kugou.common.useraccount.entity.QRCodeStatus>>",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Long;)Lrx/Observable;"
+        },
+        "overload_count": 1,
+        "representation": "smali",
+        "body_status": "available",
+        "fell_back": true,
+        "markers": [
+          "java_body_unavailable"
+        ],
+        "source": {
+          "status": "complete",
+          "text": ".method public a(Ljava/lang/Long;)Lrx/Observable;\n    .registers 6\n    .annotation system Ldalvik/annotation/Signature;\n        value = {\n            \"(\",\n            \"Ljava/lang/Long;\",\n            \")\",\n            \"Lrx/Observable<\",\n            \"Lcom/kugou/common/useraccount/entity/LoginResponse<\",\n            \"Lcom/kugou/common/useraccount/entity/QRCodeStatus;\",\n            \">;>;\"\n        }\n    .end annotation\n\n    .line 1\n    sget-object v0, Lcom/tencent/qqmusic/sword/SwordSwitches;->switches18:[B\n\n    .line 2\n    .line 3\n    if-eqz v0, :cond_16\n\n    .line 4\n    .line 5\n    const-wide v0, 0x64a2500041894L\n\n    .line 6\n    .line 7\n    .line 8\n    .line 9\n    .line 10\n    invoke-static {p1, p0, v0, v1}, Lcom/tencent/qqmusic/sword/SwordProxy;->proxy1Arg(Ljava/lang/Object;Ljava/lang/Object;J)Lcom/tencent/qqmusic/sword/SwordProxyResult;\n\n    .line 11\n    .line 12\n    .line 13\n    move-result-object v0\n\n    .line 14\n    iget-boolean v1, v0, Lcom/tencent/qqmusic/sword/SwordProxyResult;->isSupported:Z\n\n    .line 15\n    .line 16\n    if-eqz v1, :cond_16\n\n    .line 17\n    .line 18\n    iget-object p1, v0, Lcom/tencent/qqmusic/sword/SwordProxyResult;->result:Ljava/lang/Object;\n\n    .line 19\n    .line 20\n    check-cast p1, Lrx/Observable;\n\n    .line 21\n    .line 22\n    return-object p1\n\n    .line 23\n    :cond_16\n    invoke-static {}, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;->hR()Ljava/lang/String;\n\n    .line 24\n    .line 25\n    .line 26\n    move-result-object v0\n\n    .line 27\n    new-instance v1, Ljava/lang/StringBuilder;\n\n    .line 28\n    .line 29\n    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V\n\n    .line 30\n    .line 31\n    .line 32\n    const-string v2, \"aLong2: \"\n\n    .line 33\n    .line 34\n    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;\n\n    .line 35\n    .line 36\n    .line 37\n    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;\n\n    .line 38\n    .line 39\n    .line 40\n    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;\n\n    .line 41\n    .line 42\n    .line 43\n    move-result-object v1\n\n    .line 44\n    invoke-static {v0, v1}, Lcom/kugou/common/utils/n2;->f(Ljava/lang/String;Ljava/lang/String;)V\n\n    .line 45\n    .line 46\n    .line 47\n    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J\n\n    .line 48\n    .line 49\n    .line 50\n    move-result-wide v0\n\n    .line 51\n    const-wide/16 v2, 0x12c\n\n    .line 52\n    .line 53\n    cmp-long p1, v0, v2\n\n    .line 54\n    .line 55\n    if-lez p1, :cond_51\n\n    .line 56\n    .line 57\n    new-instance p1, Lcom/kugou/common/useraccount/entity/QRCodeStatus;\n\n    .line 58\n    .line 59\n    invoke-direct {p1}, Lcom/kugou/common/useraccount/entity/QRCodeStatus;-><init>()V\n\n    .line 60\n    .line 61\n    .line 62\n    const/4 v0, 0x0\n\n    .line 63\n    invoke-virtual {p1, v0}, Lcom/kugou/common/useraccount/entity/QRCodeStatus;->setStatus(I)V\n\n    .line 64\n    .line 65\n    .line 66\n    new-instance v1, Lcom/kugou/common/useraccount/entity/LoginResponse;\n\n    .line 67\n    .line 68\n    invoke-direct {v1}, Lcom/kugou/common/useraccount/entity/LoginResponse;-><init>()V\n\n    .line 69\n    .line 70\n    .line 71\n    invoke-virtual {v1, v0}, Lcom/kugou/common/useraccount/entity/LoginResponse;->setCode(I)V\n\n    .line 72\n    .line 73\n    .line 74\n    invoke-virtual {v1, p1}, Lcom/kugou/common/useraccount/entity/LoginResponse;->setData(Ljava/lang/Object;)V\n\n    .line 75\n    .line 76\n    .line 77\n    invoke-static {v1}, Lrx/Observable;->k0(Ljava/lang/Object;)Lrx/Observable;\n\n    .line 78\n    .line 79\n    .line 80\n    move-result-object p1\n\n    .line 81\n    return-object p1\n\n    .line 82\n    :cond_51\n    invoke-static {}, Lcom/kugou/common/useraccount/protocol/KGQRCodeApi;->a()Lcom/kugou/common/useraccount/protocol/KGQRCodeApi;\n\n    .line 83\n    .line 84\n    .line 85\n    move-result-object p1\n\n    .line 86\n    iget-object v0, p0, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment$g;->d:Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;\n\n    .line 87\n    .line 88\n    invoke-static {v0}, Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;->cR(Lcom/kugou/common/useraccount/app/QRCodeLoginFragment;)Ljava/lang/String;\n\n    .line 89\n    .line 90\n    .line 91\n    move-result-object v0\n\n    .line 92\n    invoke-virtual {p1, v0}, Lcom/kugou/common/useraccount/protocol/KGQRCodeApi;->c(Ljava/lang/String;)Lrx/Observable;\n\n    .line 93\n    .line 94\n    .line 95\n    move-result-object p1\n\n    .line 96\n    return-object p1\n.end method",
+          "reported_total_bytes": null
+        }
+      }
+    },
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ]
+  },
+  {
+    "key": "UL.H",
+    "evidence_id": "ev_cfd1ad5e4ced8fbd54f16f411f23020d1593daea46299a38d68d8e814b56eb3b",
+    "subject": {
+      "name": "classes20-focus.apk",
+      "digest": {
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "parameters": {
+      "parent_evidence_id": "ev_833e6aa50ceda877ef5822daa9b85ed384ff547b80f467b72f784ab93c75f7ec",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "normalized": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_833e6aa50ceda877ef5822daa9b85ed384ff547b80f467b72f784ab93c75f7ec",
+      "parent_operation": "inspect_android_method",
+      "parent_digest": "833e6aa50ceda877ef5822daa9b85ed384ff547b80f467b72f784ab93c75f7ec",
+      "view_digest": "19311ebd2967feec0d6a4b9701276144d9b1a9c1b7c359a6ed7014091993e7c9",
+      "artifact": {
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 1,
+        "total": 1,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+      ],
+      "unknowns": [
+        "Static class and method analysis does not establish runtime behavior or APK authenticity."
+      ],
+      "summary": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "com.kugou.common.useraccount.protocol.UserLogin",
+        "method": {
+          "name": "H",
+          "reported_signature": "H(boolean, int, java.lang.String, java.lang.String, java.lang.String, android.content.Context): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(ZILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V"
+        },
+        "overload_count": 1,
+        "representation": "java",
+        "body_status": "available",
+        "fell_back": false,
+        "markers": [],
+        "source": {
+          "status": "complete",
+          "text": "    public void H(boolean z, int i, String str, String str2, String str3, Context context) {\r\n        if (SwordSwitches.switches18 == null || !SwordProxy.proxy6Arg(Boolean.valueOf(z), Integer.valueOf(i), str, str2, str3, context, this, 1775921732607120L).isSupported) {\r\n            I(z, i, str, str2, str3, null, context);\r\n        }\r\n    }",
+          "reported_total_bytes": null
+        }
+      }
+    },
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ]
+  },
+  {
+    "key": "UL.I",
+    "evidence_id": "ev_af50df41dfe50cb48d00d13806a5913b174159717a63d9ebf59292162c3cec18",
+    "subject": {
+      "name": "classes20-focus.apk",
+      "digest": {
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "parameters": {
+      "parent_evidence_id": "ev_fca9e5106861b35d757fed2a8ac483fb55e3e73286724c686b90b10739fe125a",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "normalized": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_fca9e5106861b35d757fed2a8ac483fb55e3e73286724c686b90b10739fe125a",
+      "parent_operation": "inspect_android_method",
+      "parent_digest": "fca9e5106861b35d757fed2a8ac483fb55e3e73286724c686b90b10739fe125a",
+      "view_digest": "1924921cba1692875b380fd8318e99f35b30e827a4480690f28f87b74b08866b",
+      "artifact": {
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 1,
+        "total": 1,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+      ],
+      "unknowns": [
+        "Static class and method analysis does not establish runtime behavior or APK authenticity."
+      ],
+      "summary": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "com.kugou.common.useraccount.protocol.UserLogin",
+        "method": {
+          "name": "I",
+          "reported_signature": "I(boolean, int, java.lang.String, java.lang.String, java.lang.String, tq3.n, android.content.Context): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(ZILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ltq3/n;Landroid/content/Context;)V"
+        },
+        "overload_count": 1,
+        "representation": "java",
+        "body_status": "available",
+        "fell_back": false,
+        "markers": [],
+        "source": {
+          "status": "complete",
+          "text": "    public void I(boolean z, int i, String str, String str2, String str3, tq3.n nVar, Context context) {\r\n        if (SwordSwitches.switches18 == null || !SwordProxy.proxy7Arg(Boolean.valueOf(z), Integer.valueOf(i), str, str2, str3, nVar, context, this, 1775926027574417L).isSupported) {\r\n            J(z, i, str, str2, str3, nVar, context, BuildConfig.FLAVOR);\r\n        }\r\n    }",
+          "reported_total_bytes": null
+        }
+      }
+    },
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ]
+  },
+  {
+    "key": "UL.J",
+    "evidence_id": "ev_588cd36ac42c5af72e06bab38cf4fe27ce8487ca9d3617dcf6efa6a5810a9b88",
+    "subject": {
+      "name": "classes20-focus.apk",
+      "digest": {
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "parameters": {
+      "parent_evidence_id": "ev_b906239e0a5cfb3471bc59a68cb781b710273344d24980daacd23541df7a4135",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "normalized": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_b906239e0a5cfb3471bc59a68cb781b710273344d24980daacd23541df7a4135",
+      "parent_operation": "inspect_android_method",
+      "parent_digest": "b906239e0a5cfb3471bc59a68cb781b710273344d24980daacd23541df7a4135",
+      "view_digest": "f14aa37db58ea29fbd08048519992ad3b53c556a424ba58631f273e85d0d0cf2",
+      "artifact": {
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 1,
+        "total": 1,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+      ],
+      "unknowns": [
+        "Static class and method analysis does not establish runtime behavior or APK authenticity."
+      ],
+      "summary": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "com.kugou.common.useraccount.protocol.UserLogin",
+        "method": {
+          "name": "J",
+          "reported_signature": "J(boolean, int, java.lang.String, java.lang.String, java.lang.String, tq3.n, android.content.Context, java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(ZILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ltq3/n;Landroid/content/Context;Ljava/lang/String;)V"
+        },
+        "overload_count": 1,
+        "representation": "java",
+        "body_status": "available",
+        "fell_back": false,
+        "markers": [],
+        "source": {
+          "status": "complete",
+          "text": "    public void J(boolean z, int i, String str, String str2, String str3, tq3.n nVar, Context context, String str4) {\r\n        if (SwordSwitches.switches18 == null || !SwordProxy.proxyALotArgs(new Object[]{Boolean.valueOf(z), Integer.valueOf(i), str, str2, str3, nVar, context, str4}, this, 1775930322541714L).isSupported) {\r\n            if (!F(i) && th3.a.D2() && !String.valueOf(th3.a.x1()).equals(str2)) {\r\n                LoginHelper.r = Boolean.TRUE;\r\n                LoginHelper.g().B(CommonSettingPrefs.O1().T6());\r\n                com.kugou.android.userCenter.h0.c();\r\n            }\r\n            if (i == 2) {\r\n                pr3.c cVarO1 = th3.a.o1();\r\n                if (TextUtils.equals(str2, String.valueOf(cVarO1.a)) && !TextUtils.isEmpty(cVarO1.c)) {\r\n                    StringBuilder sb = new StringBuilder();\r\n                    sb.append(\"login replace token uid:\");\r\n                    sb.append(cVarO1.a);\r\n                    sb.append(\",changeToken:\");\r\n                    sb.append(!TextUtils.equals(cVarO1.c, str3));\r\n                    kl3.a.g(\"ShortTokenMgr_Login\", sb.toString());\r\n                    str3 = cVarO1.c;\r\n                }\r\n            }\r\n            this.b = context;\r\n            this.j = z;\r\n            this.e = str;\r\n            this.p = str2;\r\n            this.f = str3;\r\n            this.o = i;\r\n            this.t = nVar;\r\n            this.i = str4;\r\n            this.w = new Bundle();\r\n            String str5 = z ? LoginHistoryUserEntity.TYPE_PHONE : LoginHistoryUserEntity.TYPE_WECHAT;\r\n            if (z && LoginHistoryUserManager.v() != null) {\r\n                str5 = LoginHistoryUserEntity.TYPE_APPLE;\r\n            }\r\n            this.w.putString(\"sap\", str5);\r\n            this.x = SystemClock.elapsedRealtime();\r\n            s2.e().a(new b());\r\n        }\r\n    }",
+          "reported_total_bytes": null
+        }
+      }
+    },
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ]
+  },
+  {
+    "key": "UL.C",
+    "evidence_id": "ev_9273516880d923594da5434c4f75cf88d5f9bbb7501560aeae72832b6d17cd95",
+    "subject": {
+      "name": "classes20-focus.apk",
+      "digest": {
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "parameters": {
+      "parent_evidence_id": "ev_dabc8f69554545df91e676239247343e7deabf4b69d47b7aef69c31dac2111ac",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "normalized": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_dabc8f69554545df91e676239247343e7deabf4b69d47b7aef69c31dac2111ac",
+      "parent_operation": "inspect_android_method",
+      "parent_digest": "dabc8f69554545df91e676239247343e7deabf4b69d47b7aef69c31dac2111ac",
+      "view_digest": "afe1cd95e49ada8048ba1fbe5854896ff4bc135f52438db26cda06fc6de83aa3",
+      "artifact": {
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 1,
+        "total": 1,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+      ],
+      "unknowns": [
+        "Static class and method analysis does not establish runtime behavior or APK authenticity."
+      ],
+      "summary": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "com.kugou.common.useraccount.protocol.UserLogin",
+        "method": {
+          "name": "C",
+          "reported_signature": "C(): java.lang.String[]",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()[Ljava/lang/String;"
+        },
+        "overload_count": 1,
+        "representation": "java",
+        "body_status": "available",
+        "fell_back": false,
+        "markers": [],
+        "source": {
+          "status": "complete",
+          "text": "    public String[] C() {\r\n        if (SwordSwitches.switches18 != null) {\r\n            SwordProxyResult swordProxyResultProxy0Arg = SwordProxy.proxy0Arg(this, 1776102121236114L);\r\n            if (swordProxyResultProxy0Arg.isSupported) {\r\n                return (String[]) swordProxyResultProxy0Arg.result;\r\n            }\r\n        }\r\n        int i = this.o;\r\n        if (i == 1) {\r\n            return Utils.m(CommonConfigKeys.Aa1, \"http://login.user.kugou.com/v9/login_by_pwd\");\r\n        }\r\n        if (i == 6) {\r\n            return Utils.m(CommonConfigKeys.R01, \"http://loginservice.kugou.com/v1/login_by_anonymous\");\r\n        }\r\n        if (i == 2) {\r\n            return Utils.m(CommonConfigKeys.Q01, \"http://login.user.kugou.com/v5/login_by_token\");\r\n        }\r\n        if (i == 3) {\r\n            return Utils.m(CommonConfigKeys.T01, \"http://login.user.kugou.com/v6/login_by_openplat\");\r\n        }\r\n        if (i == 4) {\r\n            LoginExtraEntity loginExtraEntity = this.J;\r\n            return (loginExtraEntity == null || !loginExtraEntity.p()) ? Utils.m(CommonConfigKeys.b91, \"http://login.user.kugou.com/v7/login_by_verifycode\") : Utils.m(CommonConfigKeys.d91, \"http://login.user.kugou.com/v4/login_by_mobile\");\r\n        }\r\n        if (i == 5) {\r\n            return Utils.m(CommonConfigKeys.S01, \"https://gateway.kugou.com/loginservice/v1/login_by_quick_token\");\r\n        }\r\n        return null;\r\n    }",
+          "reported_total_bytes": null
+        }
+      }
+    },
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ]
+  },
+  {
+    "key": "UL.h.w",
+    "evidence_id": "ev_a61f8173b22721e8a1b959f6e32df5af5d2e56a243d0efa90854c00a06968489",
+    "subject": {
+      "name": "classes20-focus.apk",
+      "digest": {
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "parameters": {
+      "parent_evidence_id": "ev_36a0853e9626650938f7841712fa810dfe12305b52125e9605e3f0e5a547a58e",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "normalized": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_36a0853e9626650938f7841712fa810dfe12305b52125e9605e3f0e5a547a58e",
+      "parent_operation": "inspect_android_method",
+      "parent_digest": "36a0853e9626650938f7841712fa810dfe12305b52125e9605e3f0e5a547a58e",
+      "view_digest": "dad377fdc76631f3592c7d1e2ede851000beeff955fdba408f136d98f112539a",
+      "artifact": {
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 1,
+        "total": 1,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+      ],
+      "unknowns": [
+        "Static class and method analysis does not establish runtime behavior or APK authenticity."
+      ],
+      "summary": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "com.kugou.common.useraccount.protocol.UserLogin.h",
+        "method": {
+          "name": "w",
+          "reported_signature": "w(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        "overload_count": 1,
+        "representation": "java",
+        "body_status": "available",
+        "fell_back": false,
+        "markers": [],
+        "source": {
+          "status": "complete",
+          "text": "        /* JADX WARN: Code duplicated, block: B:178:0x074c  */\r\n        /* JADX WARN: Code duplicated, block: B:179:0x074f A[Catch: Exception -> 0x0063, TryCatch #0 {Exception -> 0x0063, blocks: (B:8:0x001c, B:13:0x0067, B:16:0x008d, B:176:0x073e, B:180:0x0753, B:182:0x0769, B:183:0x0775, B:185:0x0783, B:187:0x0789, B:189:0x078f, B:191:0x0797, B:193:0x07a3, B:194:0x07ac, B:196:0x07b4, B:197:0x07ca, B:199:0x07f6, B:179:0x074f, B:18:0x00be, B:20:0x00c7, B:22:0x00dd, B:23:0x00e9, B:24:0x0108, B:26:0x0111, B:27:0x0141, B:30:0x0155, B:33:0x0167, B:35:0x0179, B:37:0x0192, B:38:0x01b7, B:41:0x01c3, B:43:0x01d1, B:51:0x0226, B:53:0x022e, B:54:0x026e, B:44:0x01ea, B:46:0x01f2, B:48:0x0200, B:50:0x020e, B:34:0x0174, B:55:0x02a4, B:58:0x02b1, B:61:0x02bc, B:66:0x02db, B:68:0x02e5, B:69:0x02f6, B:71:0x030a, B:73:0x033f, B:75:0x035a, B:76:0x0365, B:78:0x037b, B:80:0x0385, B:81:0x039e, B:83:0x03a6, B:84:0x03b2, B:86:0x03ba, B:87:0x03c6, B:89:0x03cf, B:94:0x03dd, B:96:0x03ec, B:97:0x0401, B:99:0x0407, B:103:0x0435, B:102:0x0421, B:104:0x0439, B:106:0x0445, B:108:0x044a, B:110:0x044e, B:114:0x0457, B:115:0x0463, B:116:0x046f, B:117:0x0481, B:119:0x048f, B:120:0x049b, B:72:0x032b, B:62:0x02c4, B:64:0x02cc, B:65:0x02d4, B:121:0x04a8, B:123:0x04b2, B:125:0x04e7, B:126:0x04f2, B:128:0x04fd, B:130:0x050d, B:131:0x051c, B:133:0x0524, B:134:0x0535, B:136:0x053d, B:137:0x054e, B:139:0x0556, B:141:0x0566, B:142:0x0581, B:144:0x0589, B:146:0x0595, B:147:0x05d3, B:149:0x05db, B:151:0x05e7, B:152:0x05fb, B:154:0x0607, B:156:0x0656, B:158:0x0664, B:159:0x066b, B:161:0x0673, B:163:0x067f, B:165:0x068b, B:166:0x06d7, B:168:0x06e3, B:169:0x06f0, B:171:0x06f8, B:172:0x0709, B:174:0x0711, B:175:0x071b), top: B:203:0x001c }] */\r\n        /* JADX WARN: Code duplicated, block: B:182:0x0769 A[Catch: Exception -> 0x0063, TryCatch #0 {Exception -> 0x0063, blocks: (B:8:0x001c, B:13:0x0067, B:16:0x008d, B:176:0x073e, B:180:0x0753, B:182:0x0769, B:183:0x0775, B:185:0x0783, B:187:0x0789, B:189:0x078f, B:191:0x0797, B:193:0x07a3, B:194:0x07ac, B:196:0x07b4, B:197:0x07ca, B:199:0x07f6, B:179:0x074f, B:18:0x00be, B:20:0x00c7, B:22:0x00dd, B:23:0x00e9, B:24:0x0108, B:26:0x0111, B:27:0x0141, B:30:0x0155, B:33:0x0167, B:35:0x0179, B:37:0x0192, B:38:0x01b7, B:41:0x01c3, B:43:0x01d1, B:51:0x0226, B:53:0x022e, B:54:0x026e, B:44:0x01ea, B:46:0x01f2, B:48:0x0200, B:50:0x020e, B:34:0x0174, B:55:0x02a4, B:58:0x02b1, B:61:0x02bc, B:66:0x02db, B:68:0x02e5, B:69:0x02f6, B:71:0x030a, B:73:0x033f, B:75:0x035a, B:76:0x0365, B:78:0x037b, B:80:0x0385, B:81:0x039e, B:83:0x03a6, B:84:0x03b2, B:86:0x03ba, B:87:0x03c6, B:89:0x03cf, B:94:0x03dd, B:96:0x03ec, B:97:0x0401, B:99:0x0407, B:103:0x0435, B:102:0x0421, B:104:0x0439, B:106:0x0445, B:108:0x044a, B:110:0x044e, B:114:0x0457, B:115:0x0463, B:116:0x046f, B:117:0x0481, B:119:0x048f, B:120:0x049b, B:72:0x032b, B:62:0x02c4, B:64:0x02cc, B:65:0x02d4, B:121:0x04a8, B:123:0x04b2, B:125:0x04e7, B:126:0x04f2, B:128:0x04fd, B:130:0x050d, B:131:0x051c, B:133:0x0524, B:134:0x0535, B:136:0x053d, B:137:0x054e, B:139:0x0556, B:141:0x0566, B:142:0x0581, B:144:0x0589, B:146:0x0595, B:147:0x05d3, B:149:0x05db, B:151:0x05e7, B:152:0x05fb, B:154:0x0607, B:156:0x0656, B:158:0x0664, B:159:0x066b, B:161:0x0673, B:163:0x067f, B:165:0x068b, B:166:0x06d7, B:168:0x06e3, B:169:0x06f0, B:171:0x06f8, B:172:0x0709, B:174:0x0711, B:175:0x071b), top: B:203:0x001c }] */\r\n        /* JADX WARN: Code duplicated, block: B:191:0x0797 A[Catch: Exception -> 0x0063, TryCatch #0 {Exception -> 0x0063, blocks: (B:8:0x001c, B:13:0x0067, B:16:0x008d, B:176:0x073e, B:180:0x0753, B:182:0x0769, B:183:0x0775, B:185:0x0783, B:187:0x0789, B:189:0x078f, B:191:0x0797, B:193:0x07a3, B:194:0x07ac, B:196:0x07b4, B:197:0x07ca, B:199:0x07f6, B:179:0x074f, B:18:0x00be, B:20:0x00c7, B:22:0x00dd, B:23:0x00e9, B:24:0x0108, B:26:0x0111, B:27:0x0141, B:30:0x0155, B:33:0x0167, B:35:0x0179, B:37:0x0192, B:38:0x01b7, B:41:0x01c3, B:43:0x01d1, B:51:0x0226, B:53:0x022e, B:54:0x026e, B:44:0x01ea, B:46:0x01f2, B:48:0x0200, B:50:0x020e, B:34:0x0174, B:55:0x02a4, B:58:0x02b1, B:61:0x02bc, B:66:0x02db, B:68:0x02e5, B:69:0x02f6, B:71:0x030a, B:73:0x033f, B:75:0x035a, B:76:0x0365, B:78:0x037b, B:80:0x0385, B:81:0x039e, B:83:0x03a6, B:84:0x03b2, B:86:0x03ba, B:87:0x03c6, B:89:0x03cf, B:94:0x03dd, B:96:0x03ec, B:97:0x0401, B:99:0x0407, B:103:0x0435, B:102:0x0421, B:104:0x0439, B:106:0x0445, B:108:0x044a, B:110:0x044e, B:114:0x0457, B:115:0x0463, B:116:0x046f, B:117:0x0481, B:119:0x048f, B:120:0x049b, B:72:0x032b, B:62:0x02c4, B:64:0x02cc, B:65:0x02d4, B:121:0x04a8, B:123:0x04b2, B:125:0x04e7, B:126:0x04f2, B:128:0x04fd, B:130:0x050d, B:131:0x051c, B:133:0x0524, B:134:0x0535, B:136:0x053d, B:137:0x054e, B:139:0x0556, B:141:0x0566, B:142:0x0581, B:144:0x0589, B:146:0x0595, B:147:0x05d3, B:149:0x05db, B:151:0x05e7, B:152:0x05fb, B:154:0x0607, B:156:0x0656, B:158:0x0664, B:159:0x066b, B:161:0x0673, B:163:0x067f, B:165:0x068b, B:166:0x06d7, B:168:0x06e3, B:169:0x06f0, B:171:0x06f8, B:172:0x0709, B:174:0x0711, B:175:0x071b), top: B:203:0x001c }] */\r\n        /* JADX WARN: Code duplicated, block: B:192:0x07a2  */\r\n        /* JADX WARN: Code duplicated, block: B:196:0x07b4 A[Catch: Exception -> 0x0063, TryCatch #0 {Exception -> 0x0063, blocks: (B:8:0x001c, B:13:0x0067, B:16:0x008d, B:176:0x073e, B:180:0x0753, B:182:0x0769, B:183:0x0775, B:185:0x0783, B:187:0x0789, B:189:0x078f, B:191:0x0797, B:193:0x07a3, B:194:0x07ac, B:196:0x07b4, B:197:0x07ca, B:199:0x07f6, B:179:0x074f, B:18:0x00be, B:20:0x00c7, B:22:0x00dd, B:23:0x00e9, B:24:0x0108, B:26:0x0111, B:27:0x0141, B:30:0x0155, B:33:0x0167, B:35:0x0179, B:37:0x0192, B:38:0x01b7, B:41:0x01c3, B:43:0x01d1, B:51:0x0226, B:53:0x022e, B:54:0x026e, B:44:0x01ea, B:46:0x01f2, B:48:0x0200, B:50:0x020e, B:34:0x0174, B:55:0x02a4, B:58:0x02b1, B:61:0x02bc, B:66:0x02db, B:68:0x02e5, B:69:0x02f6, B:71:0x030a, B:73:0x033f, B:75:0x035a, B:76:0x0365, B:78:0x037b, B:80:0x0385, B:81:0x039e, B:83:0x03a6, B:84:0x03b2, B:86:0x03ba, B:87:0x03c6, B:89:0x03cf, B:94:0x03dd, B:96:0x03ec, B:97:0x0401, B:99:0x0407, B:103:0x0435, B:102:0x0421, B:104:0x0439, B:106:0x0445, B:108:0x044a, B:110:0x044e, B:114:0x0457, B:115:0x0463, B:116:0x046f, B:117:0x0481, B:119:0x048f, B:120:0x049b, B:72:0x032b, B:62:0x02c4, B:64:0x02cc, B:65:0x02d4, B:121:0x04a8, B:123:0x04b2, B:125:0x04e7, B:126:0x04f2, B:128:0x04fd, B:130:0x050d, B:131:0x051c, B:133:0x0524, B:134:0x0535, B:136:0x053d, B:137:0x054e, B:139:0x0556, B:141:0x0566, B:142:0x0581, B:144:0x0589, B:146:0x0595, B:147:0x05d3, B:149:0x05db, B:151:0x05e7, B:152:0x05fb, B:154:0x0607, B:156:0x0656, B:158:0x0664, B:159:0x066b, B:161:0x0673, B:163:0x067f, B:165:0x068b, B:166:0x06d7, B:168:0x06e3, B:169:0x06f0, B:171:0x06f8, B:172:0x0709, B:174:0x0711, B:175:0x071b), top: B:203:0x001c }] */\r\n        /* JADX WARN: Code duplicated, block: B:199:0x07f6 A[Catch: Exception -> 0x0063, TRY_LEAVE, TryCatch #0 {Exception -> 0x0063, blocks: (B:8:0x001c, B:13:0x0067, B:16:0x008d, B:176:0x073e, B:180:0x0753, B:182:0x0769, B:183:0x0775, B:185:0x0783, B:187:0x0789, B:189:0x078f, B:191:0x0797, B:193:0x07a3, B:194:0x07ac, B:196:0x07b4, B:197:0x07ca, B:199:0x07f6, B:179:0x074f, B:18:0x00be, B:20:0x00c7, B:22:0x00dd, B:23:0x00e9, B:24:0x0108, B:26:0x0111, B:27:0x0141, B:30:0x0155, B:33:0x0167, B:35:0x0179, B:37:0x0192, B:38:0x01b7, B:41:0x01c3, B:43:0x01d1, B:51:0x0226, B:53:0x022e, B:54:0x026e, B:44:0x01ea, B:46:0x01f2, B:48:0x0200, B:50:0x020e, B:34:0x0174, B:55:0x02a4, B:58:0x02b1, B:61:0x02bc, B:66:0x02db, B:68:0x02e5, B:69:0x02f6, B:71:0x030a, B:73:0x033f, B:75:0x035a, B:76:0x0365, B:78:0x037b, B:80:0x0385, B:81:0x039e, B:83:0x03a6, B:84:0x03b2, B:86:0x03ba, B:87:0x03c6, B:89:0x03cf, B:94:0x03dd, B:96:0x03ec, B:97:0x0401, B:99:0x0407, B:103:0x0435, B:102:0x0421, B:104:0x0439, B:106:0x0445, B:108:0x044a, B:110:0x044e, B:114:0x0457, B:115:0x0463, B:116:0x046f, B:117:0x0481, B:119:0x048f, B:120:0x049b, B:72:0x032b, B:62:0x02c4, B:64:0x02cc, B:65:0x02d4, B:121:0x04a8, B:123:0x04b2, B:125:0x04e7, B:126:0x04f2, B:128:0x04fd, B:130:0x050d, B:131:0x051c, B:133:0x0524, B:134:0x0535, B:136:0x053d, B:137:0x054e, B:139:0x0556, B:141:0x0566, B:142:0x0581, B:144:0x0589, B:146:0x0595, B:147:0x05d3, B:149:0x05db, B:151:0x05e7, B:152:0x05fb, B:154:0x0607, B:156:0x0656, B:158:0x0664, B:159:0x066b, B:161:0x0673, B:163:0x067f, B:165:0x068b, B:166:0x06d7, B:168:0x06e3, B:169:0x06f0, B:171:0x06f8, B:172:0x0709, B:174:0x0711, B:175:0x071b), top: B:203:0x001c }] */\r\n        /* JADX WARN: Instruction removed from duplicated block: B:196:0x07b4, please report this as an issue */\r\n        public String w() {\r\n            List<tq3.h> list;\r\n            String strA3;\r\n            String string;\r\n            String strE;\r\n            int iK;\r\n            if (SwordSwitches.switches18 != null) {\r\n                SwordProxyResult swordProxyResultProxy0Arg = SwordProxy.proxy0Arg(this, 1777072783859348L);\r\n                if (swordProxyResultProxy0Arg.isSupported) {\r\n                    return (String) swordProxyResultProxy0Arg.result;\r\n                }\r\n            }\r\n            try {\r\n                f3 f3Var = new f3();\r\n                JSONObject jSONObject = new JSONObject();\r\n                this.e.put(\"dfid\", CommonSettingPrefs.O1().A0());\r\n                this.e.put(\"plat\", 1);\r\n                JSONObject jSONObject2 = new JSONObject();\r\n                jSONObject2.put(\"clienttime_ms\", this.g);\r\n                jSONObject2.put(\"key\", this.s);\r\n                String strG = og3.e.N().g(CommonConfigKeys.I01);\r\n                if (TextUtils.isEmpty(strG)) {\r\n                    strG = \"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDIAG7QOELSYoIJvTFJhMpe1s/gbjDJX51HBNnEl5HXqTW6lQ7LC8jr9fWZTwusknp+sVGzwd40MwP6U5yDE27M/X1+UR4tvOGOqp94TJtQ1EPnWGWXngpeIW5GxoQGao1rmYWAu6oi1z9XkChrsUdC6DJE5E221wf/4WLFxwAtRQIDAQAB\";\r\n                }\r\n                this.e.put(\"pk\", dr3.h0.c(jSONObject2.toString(), strG));\r\n                UserLogin.this.E = false;\r\n                if (UserLogin.this.o == 2) {\r\n                    this.e.put(\"userid\", UserLogin.this.p);\r\n                    HashMap map = new HashMap();\r\n                    map.put(\"clienttime\", Integer.valueOf(this.f));\r\n                    map.put(\"token\", UserLogin.this.f);\r\n                    this.e.put(\"p3\", NativeParams.encryptWithT0(map));\r\n                    s(jSONObject);\r\n                } else if (UserLogin.this.o == 6) {\r\n                    String strI = TokenUidPrefs.g().i();\r\n                    long j = TokenUidPrefs.g().j();\r\n                    if (j > 0) {\r\n                        this.e.put(\"userid\", Long.valueOf(j));\r\n                        jSONObject.put(\"token\", strI);\r\n                    }\r\n                    n2.D(\"testtemp\", \"LOGIN_BY_TEMP a_userid \" + j + \" a_token \" + strI);\r\n                } else if (UserLogin.this.o == 5) {\r\n                    this.e.put(\"userid\", UserLogin.this.p);\r\n                    HashMap map2 = new HashMap();\r\n                    map2.put(\"clienttime\", Integer.valueOf(this.f));\r\n                    map2.put(\"token\", UserLogin.this.f);\r\n                    this.e.put(\"p3\", NativeParams.encryptWithT0(map2));\r\n                    t(jSONObject);\r\n                } else {\r\n                    if (UserLogin.this.o != 1) {\r\n                        if (UserLogin.this.o == 3) {\r\n                            if (UserLogin.this.q != 1 && UserLogin.this.q == 3) {\r\n                                this.e.put(\"m_account\", UserLogin.a0);\r\n                            } else {\r\n                                this.e.put(\"m_account\", UserLogin.Z);\r\n                            }\r\n                            if (UserLogin.this.q == 67) {\r\n                                jSONObject.put(\"biz_seq\", f3.i(CommonSettingPrefs.O1().k6()));\r\n                            }\r\n                            this.e.put(\"clienttime_ms\", this.g);\r\n                            t(jSONObject);\r\n                            if (UserLogin.this.q == 36) {\r\n                                this.e.put(\"third_appid\", \"wx79f2c4418704b4f8\");\r\n                                jSONObject.put(\"third_code\", UserLogin.this.r);\r\n                                this.e.put(\"openid\", \"-\");\r\n                                jSONObject.put(\"access_token\", \"-\");\r\n                            } else {\r\n                                this.e.put(\"openid\", UserLogin.this.r);\r\n                                jSONObject.put(\"access_token\", UserLogin.this.f);\r\n                            }\r\n                            this.e.put(\"partnerid\", Integer.valueOf(UserLogin.this.q));\r\n                            if (!TextUtils.isEmpty(UserLogin.this.s)) {\r\n                                this.e.put(\"userid\", UserLogin.this.s);\r\n                            }\r\n                            this.e.put(\"force_bind\", 1);\r\n                            if (!TextUtils.isEmpty(UserLogin.this.G) && !TextUtils.isEmpty(UserLogin.this.H)) {\r\n                                this.e.put(\"clienttime\", Integer.valueOf(this.f));\r\n                                jSONObject.put(\"mobile\", UserLogin.this.G);\r\n                                jSONObject.put(\"code\", UserLogin.this.H);\r\n                            }\r\n                            if (UserLogin.this.d) {\r\n                                this.e.put(\"force_login\", 2);\r\n                            } else if (UserLogin.this.c) {\r\n                                this.e.put(\"force_login\", 1);\r\n                            } else {\r\n                                boolean z = UserLogin.this.q == 1 || UserLogin.this.q == 36;\r\n                                if (!LoginHelper.g().j(3, -1).isEmpty()) {\r\n                                    String str = BuildConfig.FLAVOR;\r\n                                    HashMap map3 = new HashMap();\r\n                                    for (String str2 : LoginHelper.g().j(5, -1)) {\r\n                                        String strValueOf = String.valueOf(LoginHelper.g().o(str2));\r\n                                        str = l5.u0(str) ? strValueOf : str + \",\" + strValueOf;\r\n                                        map3.put(strValueOf, str2);\r\n                                    }\r\n                                    tq3.g gVarC = new o(map3).c(str, false);\r\n                                    if (gVarC == null) {\r\n                                        this.e.put(\"force_login\", 0);\r\n                                    } else if (gVarC.a != 1 || ((list = gVarC.c) != null && list.size() > 0)) {\r\n                                        this.e.put(\"force_login\", 0);\r\n                                        UserLogin.this.E = true;\r\n                                    } else if (z) {\r\n                                        this.e.put(\"force_login\", 0);\r\n                                    } else {\r\n                                        this.e.put(\"force_login\", 1);\r\n                                    }\r\n                                } else if (z) {\r\n                                    this.e.put(\"force_login\", 0);\r\n                                } else {\r\n                                    this.e.put(\"force_login\", 1);\r\n                                }\r\n                            }\r\n                        } else if (UserLogin.this.o == 4) {\r\n                            jSONObject.put(\"mobile\", UserLogin.this.G);\r\n                            this.e.put(\"clienttime_ms\", this.g);\r\n                            jSONObject.put(\"code\", UserLogin.this.H);\r\n                            this.e.put(\"mobile\", com.kugou.common.useraccount.d0.g(UserLogin.this.G));\r\n                            jSONObject.put(\"mobile\", UserLogin.this.G);\r\n                            if (!TextUtils.isEmpty(UserLogin.this.i)) {\r\n                                jSONObject.put(\"country_code\", UserLogin.this.i);\r\n                            }\r\n                            t(jSONObject);\r\n                            if (UserLogin.this.J != null && !TextUtils.isEmpty(UserLogin.this.J.m())) {\r\n                                this.e.put(\"userid\", UserLogin.this.J.m());\r\n                            }\r\n                            if (UserLogin.this.K > 0) {\r\n                                this.e.put(\"confirm_login\", Integer.valueOf(UserLogin.this.K));\r\n                            }\r\n                            if (UserLogin.this.L > 0) {\r\n                                this.e.put(\"check_old\", Integer.valueOf(UserLogin.this.L));\r\n                            }\r\n                            if (UserLogin.this.J != null && !TextUtils.isEmpty(UserLogin.this.J.o())) {\r\n                                this.e.put(\"to_verify\", 1);\r\n                                this.e.put(\"userid\", UserLogin.this.J.o());\r\n                            }\r\n                            if (UserLogin.this.J != null && UserLogin.this.J.p()) {\r\n                                this.e.put(\"clienttime_ms\", this.g);\r\n                                this.e.put(\"access_id\", UserLogin.this.J.h());\r\n                                this.e.put(\"access_key\", UserLogin.this.J.i());\r\n                                this.e.put(\"comm_oper\", Integer.valueOf(UserLogin.this.J.k()));\r\n                            }\r\n                            if (UserLogin.this.J != null) {\r\n                                if (UserLogin.this.J.p()) {\r\n                                    this.e.put(\"clienttime_ms\", this.g);\r\n                                    jSONObject.put(\"access_token\", UserLogin.this.J.j());\r\n                                }\r\n                                if (UserLogin.this.J.l() != null) {\r\n                                    this.e.put(\"nickname\", UserLogin.this.J.l().c);\r\n                                    this.e.put(\"sex\", Integer.valueOf(UserLogin.this.J.l().b));\r\n                                    this.e.put(\"photo\", UserLogin.this.J.l().a);\r\n                                    this.e.put(\"third\", Integer.valueOf(UserLogin.this.J.l().d ? UserLogin.this.J.l().e : 0));\r\n                                }\r\n                            }\r\n                            if (UserLogin.this.J != null && UserLogin.this.J.p() && UserLogin.this.J.n() != null) {\r\n                                this.e.put(\"atExpiresIn\", UserLogin.this.J.n().e);\r\n                                this.e.put(\"loginMode\", UserLogin.this.J.n().g);\r\n                                this.e.put(\"refreshToken\", UserLogin.this.J.n().f);\r\n                                this.e.put(\"rfExpiresIn\", UserLogin.this.J.n().d);\r\n                            }\r\n                            if (!TextUtils.isEmpty(UserLogin.this.f)) {\r\n                                jSONObject.put(\"pwd\", f3Var.f(UserLogin.this.f));\r\n                            }\r\n                            if (UserLogin.this.g > 0) {\r\n                                this.e.put(\"businessid\", Integer.valueOf(UserLogin.this.g));\r\n                            }\r\n                            if (UserLogin.this.c) {\r\n                                this.e.put(\"force_login\", 1);\r\n                            }\r\n                            this.e.put(\"support_multi\", 1);\r\n                            this.e.put(\"key\", dr3.f.c(this.h, this.i, this.n, String.valueOf(this.g)));\r\n                        }\r\n                        HashMap<String, Object> map4 = this.e;\r\n                        if (TextUtils.isEmpty(SystemUtils.a3())) {\r\n                            strA3 = BuildConfig.FLAVOR;\r\n                        } else {\r\n                            strA3 = SystemUtils.a3();\r\n                        }\r\n                        map4.put(\"dev\", strA3);\r\n                        this.e.put(\"gitversion\", w23.b.f());\r\n                        if (!TextUtils.isEmpty(this.r)) {\r\n                            jSONObject.put(\"data\", new JSONObject(this.r));\r\n                        }\r\n                        if (TextUtils.isEmpty(CommonSettingPrefs.O1().i0()) && (qr3.h.u() || qr3.h.t())) {\r\n                            if (UserLogin.this.J != null) {\r\n                                iK = UserLogin.this.J.k();\r\n                            } else {\r\n                                iK = 0;\r\n                            }\r\n                            jSONObject.put(\"mobile_data\", v(iK));\r\n                        }\r\n                        string = jSONObject.toString();\r\n                        if (n2.f) {\r\n                            n2.D(\"USERLOGIN\", \"aesJsonStr: \" + string);\r\n                        }\r\n                        this.e.put(\"params\", dr3.a.d(string, this.s));\r\n                        this.e.put(\"need_toneinfo\", 1);\r\n                        this.e.put(\"busi_type\", kd3.a.a);\r\n                        strE = dr3.f.e(this.e);\r\n                        if (n2.f) {\r\n                            n2.D(\"USERLOGIN\", strE);\r\n                        }\r\n                        return strE;\r\n                    }\r\n                    String strA = dr3.f.a(UserLogin.this.e);\r\n                    if (com.kugou.common.useraccount.d0.b(strA)) {\r\n                        this.e.put(\"username\", com.kugou.common.useraccount.d0.g(strA));\r\n                        jSONObject.put(\"username\", strA);\r\n                    } else {\r\n                        this.e.put(\"username\", strA);\r\n                    }\r\n                    t(jSONObject);\r\n                    jSONObject.put(\"clienttime_ms\", this.g);\r\n                    jSONObject.put(\"pwd\", UserLogin.this.f);\r\n                    if (UserLogin.this.I != null) {\r\n                        jSONObject.put(\"code\", UserLogin.this.I.b);\r\n                        jSONObject.put(\"mobile\", UserLogin.this.I.a);\r\n                        jSONObject.put(\"force\", UserLogin.this.I.a());\r\n                    }\r\n                    if (UserLogin.this.D() != null && !TextUtils.isEmpty(UserLogin.this.D().c)) {\r\n                        jSONObject.put(\"verifycode\", UserLogin.this.D().c);\r\n                        this.e.put(\"verifykey\", UserLogin.this.D().b);\r\n                    } else if (UserLogin.this.D() != null && !TextUtils.isEmpty(UserLogin.this.D().a) && !TextUtils.isEmpty(UserLogin.this.D().b)) {\r\n                        jSONObject.put(\"verifycode\", UserLogin.this.D().a);\r\n                        this.e.put(\"verifykey\", UserLogin.this.D().b);\r\n                    }\r\n                    if (UserLogin.this.t != null) {\r\n                        HashMap map5 = new HashMap();\r\n                        map5.put(\"clienttime_ms\", this.g);\r\n                        map5.put(\"openid\", UserLogin.this.t.b());\r\n                        map5.put(\"partnerid\", Integer.valueOf(UserLogin.this.t.c()));\r\n                        this.e.put(\"p\", NativeParams.getEncryptText(map5));\r\n                        jSONObject.put(\"access_token\", UserLogin.this.t.a());\r\n                    }\r\n                    this.e.put(\"support_third\", LoginHistoryUserEntity.TYPE_QQ);\r\n                    this.e.put(\"support_multi\", 1);\r\n                    this.e.put(\"support_verify\", 1);\r\n                    this.e.put(\"key\", dr3.f.c(this.h, this.i, this.n, String.valueOf(this.g)));\r\n                }\r\n                HashMap<String, Object> map6 = this.e;\r\n                if (TextUtils.isEmpty(SystemUtils.a3())) {\r\n                    strA3 = BuildConfig.FLAVOR;\r\n                } else {\r\n                    strA3 = SystemUtils.a3();\r\n                }\r\n                map6.put(\"dev\", strA3);\r\n                this.e.put(\"gitversion\", w23.b.f());\r\n                if (!TextUtils.isEmpty(this.r)) {\r\n                    jSONObject.put(\"data\", new JSONObject(this.r));\r\n                }\r\n                if (TextUtils.isEmpty(CommonSettingPrefs.O1().i0())) {\r\n                    if (UserLogin.this.J != null) {\r\n                        iK = UserLogin.this.J.k();\r\n                    } else {\r\n                        iK = 0;\r\n                    }\r\n                    jSONObject.put(\"mobile_data\", v(iK));\r\n                }\r\n                string = jSONObject.toString();\r\n                if (n2.f) {\r\n                    n2.D(\"USERLOGIN\", \"aesJsonStr: \" + string);\r\n                }\r\n                this.e.put(\"params\", dr3.a.d(string, this.s));\r\n                this.e.put(\"need_toneinfo\", 1);\r\n                this.e.put(\"busi_type\", kd3.a.a);\r\n                strE = dr3.f.e(this.e);\r\n                if (n2.f) {\r\n                    n2.D(\"USERLOGIN\", strE);\r\n                }\r\n                return strE;\r\n            } catch (Exception e) {\r\n                n2.n0(e);\r\n                return null;\r\n            }\r\n        }",
+          "reported_total_bytes": null
+        }
+      }
+    },
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ]
+  },
+  {
+    "key": "k.d",
+    "evidence_id": "ev_0b1b9cfe1cba9fbd01871684aa59830732102ded3195fd3b9e36f158b24f5aef",
+    "subject": {
+      "name": "classes20-focus.apk",
+      "digest": {
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "parameters": {
+      "parent_evidence_id": "ev_429fe4b0ba93f93fd4a3554239218c5cb216f8dc3c3b57d4b7655a437fa8ab5c",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "normalized": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_429fe4b0ba93f93fd4a3554239218c5cb216f8dc3c3b57d4b7655a437fa8ab5c",
+      "parent_operation": "inspect_android_method",
+      "parent_digest": "429fe4b0ba93f93fd4a3554239218c5cb216f8dc3c3b57d4b7655a437fa8ab5c",
+      "view_digest": "3dee6efc6c14304b787a5f9946d11122283e35a1319794f05ab34ea315636be0",
+      "artifact": {
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes20-focus.apk",
+        "sha256": "880da787785cac0fe36177a9b14524d3f8c071d34102ded815a857197c3a4fef"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 1,
+        "total": 1,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+      ],
+      "unknowns": [
+        "Static class and method analysis does not establish runtime behavior or APK authenticity."
+      ],
+      "summary": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "com.kugou.common.useraccount.protocol.k",
+        "method": {
+          "name": "d",
+          "reported_signature": "d(com.kugou.common.useraccount.UserGradeInfoNew, java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lcom/kugou/common/useraccount/UserGradeInfoNew;Ljava/lang/String;)V"
+        },
+        "overload_count": 1,
+        "representation": "java",
+        "body_status": "available",
+        "fell_back": false,
+        "markers": [],
+        "source": {
+          "status": "complete",
+          "text": "    /* JADX INFO: Access modifiers changed from: private */\r\n    public static void d(UserGradeInfoNew userGradeInfoNew, String str) {\r\n        if ((SwordSwitches.switches18 == null || !SwordProxy.proxy2Arg(userGradeInfoNew, str, (Object) null, 1776265329995920L).isSupported) && userGradeInfoNew != null) {\r\n            userGradeInfoNew.status = 0;\r\n            if (TextUtils.isEmpty(str)) {\r\n                return;\r\n            }\r\n            try {\r\n                JSONObject jSONObject = new JSONObject(str);\r\n                userGradeInfoNew.status = jSONObject.optInt(\"status\", 0);\r\n                userGradeInfoNew.errorCode = jSONObject.optInt(BindLocalAccountActivity.KEY_ERROR_CODE, 0);\r\n                if (userGradeInfoNew.status != 1) {\r\n                    return;\r\n                }\r\n                JSONObject jSONObject2 = new JSONObject(jSONObject.getString(\"data\"));\r\n                userGradeInfoNew.userID = jSONObject2.optLong(\"userid\", 0L);\r\n                int iOptInt = jSONObject2.optInt(\"p_grade\", 0);\r\n                userGradeInfoNew.currentGrade = iOptInt;\r\n                if (iOptInt < 0) {\r\n                    userGradeInfoNew.currentGrade = 0;\r\n                } else if (iOptInt > 99) {\r\n                    userGradeInfoNew.currentGrade = 99;\r\n                }\r\n                userGradeInfoNew.minPointOfCurrentGrade = jSONObject2.optLong(\"p_grade_point\", 0L);\r\n                userGradeInfoNew.nextGrade = jSONObject2.optInt(\"p_next_grade\", 0);\r\n                userGradeInfoNew.minPointOfNextGrade = jSONObject2.optLong(\"p_next_grade_point\", 0L);\r\n                userGradeInfoNew.currentPoint = jSONObject2.optLong(\"p_current_point\", 0L);\r\n                userGradeInfoNew.speedType = jSONObject2.optInt(\"p_speed_info\", 0);\r\n                userGradeInfoNew.netTotalMinutes = jSONObject2.optLong(\"duration\", 0L);\r\n                userGradeInfoNew.d_sec = jSONObject2.optLong(\"d_sec\", 0L);\r\n                userGradeInfoNew.finish_percent = jSONObject2.optInt(\"finish_percent\", 100);\r\n                if (jSONObject2.has(\"finish_percent\")) {\r\n                    CommonSettingPrefs.O1().xa(userGradeInfoNew.finish_percent);\r\n                }\r\n                userGradeInfoNew.diff_sec = 0L;\r\n                userGradeInfoNew.localMillis += userGradeInfoNew.d_sec * 1000;\r\n                userGradeInfoNew.serverTime = c(jSONObject2.optString(\"servertime\"));\r\n                JSONObject jSONObjectOptJSONObject = jSONObject2.optJSONObject(\"medal_data\");\r\n                if (jSONObjectOptJSONObject != null) {\r\n                    userGradeInfoNew.medal_total = jSONObjectOptJSONObject.optInt(\"medal_total\");\r\n                    userGradeInfoNew.last_big_pic = jSONObjectOptJSONObject.optString(\"last_big_pic\");\r\n                    userGradeInfoNew.medal_index_url = jSONObjectOptJSONObject.optString(\"medal_index_url\");\r\n                    userGradeInfoNew.medal_type = jSONObjectOptJSONObject.optString(\"type\");\r\n                    userGradeInfoNew.singer_avatar = jSONObjectOptJSONObject.optString(\"singer_avatar\");\r\n                }\r\n            } catch (Exception e) {\r\n                if (n2.f) {\r\n                    n2.p(e);\r\n                }\r\n                userGradeInfoNew.status = 0;\r\n            }\r\n        }\r\n    }",
+          "reported_total_bytes": null
+        }
+      }
+    },
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ]
+  },
+  {
+    "key": "com.kugou.android.app.navigation.UserGradeInfoHelper.r",
+    "evidence_id": "ev_161162f7551f7b2083b781533207df6725bdfd32768680ee731d59891c7a91b7",
+    "subject": {
+      "name": "classes25-focus.apk",
+      "digest": {
+        "sha256": "fd7b1d1c34b68be5ad89872832008910f08c47973f87abddad506516cc776d36"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes25-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "parameters": {
+      "parent_evidence_id": "ev_aef83093bcdaf9de096f1b628eb8f7a9dbfd7ac07734ba6c5c5d55f1ed52306b",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "normalized": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_aef83093bcdaf9de096f1b628eb8f7a9dbfd7ac07734ba6c5c5d55f1ed52306b",
+      "parent_operation": "inspect_android_method",
+      "parent_digest": "aef83093bcdaf9de096f1b628eb8f7a9dbfd7ac07734ba6c5c5d55f1ed52306b",
+      "view_digest": "22c868c48a896a19a8a3d43f391c4f36c09b50d0099bc2bc07504187ac624562",
+      "artifact": {
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes25-focus.apk",
+        "sha256": "fd7b1d1c34b68be5ad89872832008910f08c47973f87abddad506516cc776d36"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 1,
+        "total": 1,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+      ],
+      "unknowns": [
+        "Static class and method analysis does not establish runtime behavior or APK authenticity."
+      ],
+      "summary": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "com.kugou.android.app.navigation.UserGradeInfoHelper",
+        "method": {
+          "name": "r",
+          "reported_signature": "r(com.kugou.common.useraccount.UserGradeInfoNew, boolean): com.kugou.common.useraccount.UserGradeInfoNew",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lcom/kugou/common/useraccount/UserGradeInfoNew;Z)Lcom/kugou/common/useraccount/UserGradeInfoNew;"
+        },
+        "overload_count": 1,
+        "representation": "java",
+        "body_status": "available",
+        "fell_back": false,
+        "markers": [],
+        "source": {
+          "status": "complete",
+          "text": "    /* JADX INFO: Access modifiers changed from: private */\r\n    public UserGradeInfoNew r(UserGradeInfoNew userGradeInfoNew, boolean z) {\r\n        if (SwordSwitches.switches9 != null) {\r\n            SwordProxyResult swordProxyResultProxy2Arg = SwordProxy.proxy2Arg(userGradeInfoNew, Boolean.valueOf(z), this, 842964641524299L);\r\n            if (swordProxyResultProxy2Arg.isSupported) {\r\n                return (UserGradeInfoNew) swordProxyResultProxy2Arg.result;\r\n            }\r\n        }\r\n        if (n2.f && userGradeInfoNew != null) {\r\n            n2.D(\"UserGradeInfoHelper\", \"localInfo:\" + userGradeInfoNew);\r\n        }\r\n        UserGradeInfoNew userGradeInfoNewB = new com.kugou.common.useraccount.protocol.k().b(userGradeInfoNew, z);\r\n        if (userGradeInfoNew != null && userGradeInfoNewB != null) {\r\n            userGradeInfoNewB.diff_sec = Math.max((userGradeInfoNew.localMillis / 1000) - userGradeInfoNewB.d_sec, 0L);\r\n        }\r\n        if (UserGradeInfoNew.isSucceed(userGradeInfoNewB)) {\r\n            u.b bVar = new u.b();\r\n            u.c(userGradeInfoNewB.originalData, bVar);\r\n            DefaultPrefs.X0().Bc(th3.a.x1(), bVar.toString());\r\n        }\r\n        return userGradeInfoNewB;\r\n    }",
+          "reported_total_bytes": null
+        }
+      }
+    },
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ]
+  },
+  {
+    "key": "com.kugou.android.app.navigation.UserGradeInfoHelper.G",
+    "evidence_id": "ev_def107e9e2bfd94ba195af5343be2e4688219e75032f17de889a7592e822740d",
+    "subject": {
+      "name": "classes25-focus.apk",
+      "digest": {
+        "sha256": "fd7b1d1c34b68be5ad89872832008910f08c47973f87abddad506516cc776d36"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes25-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "parameters": {
+      "parent_evidence_id": "ev_fcfcdcce4c7f9df33145646209a85a8bb69239496f80f6a1dcb9ddd0cb6243bf",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "normalized": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_fcfcdcce4c7f9df33145646209a85a8bb69239496f80f6a1dcb9ddd0cb6243bf",
+      "parent_operation": "inspect_android_method",
+      "parent_digest": "fcfcdcce4c7f9df33145646209a85a8bb69239496f80f6a1dcb9ddd0cb6243bf",
+      "view_digest": "99e238a564d768aa73c292c656fa6179e208b60742896fa1c93ac8d980df3a3a",
+      "artifact": {
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes25-focus.apk",
+        "sha256": "fd7b1d1c34b68be5ad89872832008910f08c47973f87abddad506516cc776d36"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 1,
+        "total": 1,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+      ],
+      "unknowns": [
+        "Static class and method analysis does not establish runtime behavior or APK authenticity."
+      ],
+      "summary": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "com.kugou.android.app.navigation.UserGradeInfoHelper",
+        "method": {
+          "name": "G",
+          "reported_signature": "G(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        "overload_count": 1,
+        "representation": "java",
+        "body_status": "available",
+        "fell_back": false,
+        "markers": [],
+        "source": {
+          "status": "complete",
+          "text": "    public void G() {\r\n        if ((SwordSwitches.switches9 == null || !SwordProxy.proxy0Arg(this, 842913101915727L).isSupported) && th3.a.D2()) {\r\n            long[] jArrS = CommonSettingPrefs.O1().S();\r\n            UserGradeInfoNew userGradeInfoNew = new UserGradeInfoNew();\r\n            userGradeInfoNew.currentGrade = (int) jArrS[0];\r\n            userGradeInfoNew.localMillis = jArrS[1];\r\n            String string = CommonSettingPrefs.O1().getString(\"cache_medal_info\", \"\");\r\n            if (!string.isEmpty()) {\r\n                String[] strArrSplit = string.split(\"\\\\|\");\r\n                if (strArrSplit.length > 2) {\r\n                    userGradeInfoNew.medal_total = Integer.parseInt(strArrSplit[0]);\r\n                    userGradeInfoNew.last_big_pic = strArrSplit[1];\r\n                    userGradeInfoNew.medal_index_url = strArrSplit[2];\r\n                    if (strArrSplit.length == 5) {\r\n                        userGradeInfoNew.medal_type = strArrSplit[3];\r\n                        userGradeInfoNew.singer_avatar = strArrSplit[4];\r\n                    }\r\n                    if (strArrSplit.length == 6) {\r\n                        userGradeInfoNew.is_show_red = v4.c(strArrSplit[5]);\r\n                    }\r\n                }\r\n            }\r\n            y(userGradeInfoNew);\r\n        }\r\n    }",
+          "reported_total_bytes": null
+        }
+      }
+    },
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ]
+  },
+  {
+    "key": "com.kugou.android.app.navigation.UserGradeInfoHelper.j.a",
+    "evidence_id": "ev_6531990aa5f1ab362347a1ddb5a4c3e91c5b5d287b34d449803b3bbb7fa13af9",
+    "subject": {
+      "name": "classes25-focus.apk",
+      "digest": {
+        "sha256": "fd7b1d1c34b68be5ad89872832008910f08c47973f87abddad506516cc776d36"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes25-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "parameters": {
+      "parent_evidence_id": "ev_b3a28ecdb3202ea550a12289187e5d02a21b41efd7ca8f31adb460e4098ad8c9",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "normalized": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_b3a28ecdb3202ea550a12289187e5d02a21b41efd7ca8f31adb460e4098ad8c9",
+      "parent_operation": "inspect_android_method",
+      "parent_digest": "b3a28ecdb3202ea550a12289187e5d02a21b41efd7ca8f31adb460e4098ad8c9",
+      "view_digest": "88fafc3a22682351527c78a3840eeff41b20a9bda7f915add89a46f970f2a5b0",
+      "artifact": {
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes25-focus.apk",
+        "sha256": "fd7b1d1c34b68be5ad89872832008910f08c47973f87abddad506516cc776d36"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 1,
+        "total": 1,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+      ],
+      "unknowns": [
+        "Static class and method analysis does not establish runtime behavior or APK authenticity."
+      ],
+      "summary": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "com.kugou.android.app.navigation.UserGradeInfoHelper.j",
+        "method": {
+          "name": "a",
+          "reported_signature": "a(com.kugou.common.useraccount.UserGradeInfoNew): com.kugou.common.useraccount.UserGradeInfoNew",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lcom/kugou/common/useraccount/UserGradeInfoNew;)Lcom/kugou/common/useraccount/UserGradeInfoNew;"
+        },
+        "overload_count": 1,
+        "representation": "smali",
+        "body_status": "available",
+        "fell_back": true,
+        "markers": [
+          "java_body_unavailable"
+        ],
+        "source": {
+          "status": "complete",
+          "text": ".method public a(Lcom/kugou/common/useraccount/UserGradeInfoNew;)Lcom/kugou/common/useraccount/UserGradeInfoNew;\n    .registers 19\n\n    .line 1\n    move-object/from16 v0, p0\n\n    .line 2\n    .line 3\n    move-object/from16 v1, p1\n\n    .line 4\n    .line 5\n    sget-object v2, Lcom/tencent/qqmusic/sword/SwordSwitches;->switches9:[B\n\n    .line 6\n    .line 7\n    if-eqz v2, :cond_1a\n\n    .line 8\n    .line 9\n    const-wide v2, 0x2fd4f0003d24eL\n\n    .line 10\n    .line 11\n    .line 12\n    .line 13\n    .line 14\n    invoke-static {v1, v0, v2, v3}, Lcom/tencent/qqmusic/sword/SwordProxy;->proxy1Arg(Ljava/lang/Object;Ljava/lang/Object;J)Lcom/tencent/qqmusic/sword/SwordProxyResult;\n\n    .line 15\n    .line 16\n    .line 17\n    move-result-object v2\n\n    .line 18\n    iget-boolean v3, v2, Lcom/tencent/qqmusic/sword/SwordProxyResult;->isSupported:Z\n\n    .line 19\n    .line 20\n    if-eqz v3, :cond_1a\n\n    .line 21\n    .line 22\n    iget-object v1, v2, Lcom/tencent/qqmusic/sword/SwordProxyResult;->result:Ljava/lang/Object;\n\n    .line 23\n    .line 24\n    check-cast v1, Lcom/kugou/common/useraccount/UserGradeInfoNew;\n\n    .line 25\n    .line 26\n    return-object v1\n\n    .line 27\n    :cond_1a\n    invoke-static {}, Lcom/kugou/common/setting/DefaultPrefs;->X0()Lcom/kugou/common/setting/DefaultPrefs;\n\n    .line 28\n    .line 29\n    .line 30\n    move-result-object v2\n\n    .line 31\n    invoke-virtual {v2}, Lcom/kugou/common/setting/DefaultPrefs;->p1()Z\n\n    .line 32\n    .line 33\n    .line 34\n    move-result v2\n\n    .line 35\n    const-wide/16 v3, 0x0\n\n    .line 36\n    .line 37\n    const-string v5, \"_acache_key_user_grade_info\"\n\n    .line 38\n    .line 39\n    if-nez v2, :cond_6b\n\n    .line 40\n    .line 41\n    iget-object v2, v0, Lcom/kugou/android/app/navigation/UserGradeInfoHelper$j;->d:Lcom/kugou/android/app/navigation/UserGradeInfoHelper;\n\n    .line 42\n    .line 43\n    const-class v6, Ltq3/e0;\n\n    .line 44\n    .line 45\n    invoke-virtual {v2, v5, v6}, Lcom/kugou/android/app/navigation/UserGradeInfoHelper;->l(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;\n\n    .line 46\n    .line 47\n    .line 48\n    move-result-object v2\n\n    .line 49\n    check-cast v2, Ltq3/e0;\n\n    .line 50\n    .line 51\n    if-eqz v2, :cond_6b\n\n    .line 52\n    .line 53\n    invoke-static {v2}, Ltq3/e0;->a(Ltq3/e0;)Z\n\n    .line 54\n    .line 55\n    .line 56\n    move-result v6\n\n    .line 57\n    if-eqz v6, :cond_6b\n\n    .line 58\n    .line 59\n    iget-wide v6, v2, Ltq3/e0;->f:J\n\n    .line 60\n    .line 61\n    invoke-static {}, Lth3/a;->x1()J\n\n    .line 62\n    .line 63\n    .line 64\n    move-result-wide v8\n\n    .line 65\n    cmp-long v10, v6, v8\n\n    .line 66\n    .line 67\n    if-nez v10, :cond_6b\n\n    .line 68\n    .line 69\n    iget-object v6, v0, Lcom/kugou/android/app/navigation/UserGradeInfoHelper$j;->d:Lcom/kugou/android/app/navigation/UserGradeInfoHelper;\n\n    .line 70\n    .line 71\n    const/4 v7, 0x0\n\n    .line 72\n    const/4 v8, 0x0\n\n    .line 73\n    invoke-static {v6, v7, v8}, Lcom/kugou/android/app/navigation/UserGradeInfoHelper;->d(Lcom/kugou/android/app/navigation/UserGradeInfoHelper;Lcom/kugou/common/useraccount/UserGradeInfoNew;Z)Lcom/kugou/common/useraccount/UserGradeInfoNew;\n\n    .line 74\n    .line 75\n    .line 76\n    move-result-object v6\n\n    .line 77\n    if-nez v1, :cond_53\n\n    .line 78\n    .line 79\n    new-instance v1, Lcom/kugou/common/useraccount/UserGradeInfoNew;\n\n    .line 80\n    .line 81\n    invoke-direct {v1}, Lcom/kugou/common/useraccount/UserGradeInfoNew;-><init>()V\n\n    .line 82\n    .line 83\n    .line 84\n    :cond_53\n    iget-wide v7, v2, Ltq3/e0;->r:J\n\n    .line 85\n    .line 86\n    const-wide/16 v9, 0x3e8\n\n    .line 87\n    .line 88\n    div-long v11, v7, v9\n\n    .line 89\n    .line 90\n    iget-wide v13, v6, Lcom/kugou/common/useraccount/UserGradeInfoNew;->d_sec:J\n\n    .line 91\n    .line 92\n    sub-long/2addr v11, v13\n\n    .line 93\n    cmp-long v6, v11, v3\n\n    .line 94\n    .line 95\n    if-lez v6, :cond_65\n\n    .line 96\n    .line 97\n    div-long v9, v7, v9\n\n    .line 98\n    .line 99\n    sub-long/2addr v9, v13\n\n    .line 100\n    iput-wide v9, v1, Lcom/kugou/common/useraccount/UserGradeInfoNew;->diff_sec:J\n\n    .line 101\n    .line 102\n    :cond_65\n    iput-wide v7, v1, Lcom/kugou/common/useraccount/UserGradeInfoNew;->localMillis:J\n\n    .line 103\n    .line 104\n    iget v2, v2, Ltq3/e0;->g:I\n\n    .line 105\n    .line 106\n    iput v2, v1, Lcom/kugou/common/useraccount/UserGradeInfoNew;->currentGrade:I\n\n    .line 107\n    .line 108\n    :cond_6b\n    iget-object v2, v0, Lcom/kugou/android/app/navigation/UserGradeInfoHelper$j;->d:Lcom/kugou/android/app/navigation/UserGradeInfoHelper;\n\n    .line 109\n    .line 110\n    const/4 v6, 0x1\n\n    .line 111\n    invoke-static {v2, v1, v6}, Lcom/kugou/android/app/navigation/UserGradeInfoHelper;->d(Lcom/kugou/android/app/navigation/UserGradeInfoHelper;Lcom/kugou/common/useraccount/UserGradeInfoNew;Z)Lcom/kugou/common/useraccount/UserGradeInfoNew;\n\n    .line 112\n    .line 113\n    .line 114\n    move-result-object v2\n\n    .line 115\n    invoke-static {v2}, Lcom/kugou/common/useraccount/UserGradeInfoNew;->isSucceed(Lcom/kugou/common/useraccount/UserGradeInfoNew;)Z\n\n    .line 116\n    .line 117\n    .line 118\n    move-result v7\n\n    .line 119\n    if-eqz v7, :cond_c4\n\n    .line 120\n    .line 121\n    if-nez v1, :cond_7b\n\n    .line 122\n    .line 123\n    goto :goto_7d\n\n    .line 124\n    :cond_7b\n    iget-wide v3, v1, Lcom/kugou/common/useraccount/UserGradeInfoNew;->localMillis:J\n\n    .line 125\n    .line 126\n    :goto_7d\n    iget-wide v8, v2, Lcom/kugou/common/useraccount/UserGradeInfoNew;->localMillis:J\n\n    .line 127\n    .line 128\n    invoke-static {v3, v4, v8, v9}, Ljava/lang/Math;->max(JJ)J\n\n    .line 129\n    .line 130\n    .line 131\n    move-result-wide v3\n\n    .line 132\n    iput-wide v3, v2, Lcom/kugou/common/useraccount/UserGradeInfoNew;->localMillis:J\n\n    .line 133\n    .line 134\n    iget-object v3, v0, Lcom/kugou/android/app/navigation/UserGradeInfoHelper$j;->d:Lcom/kugou/android/app/navigation/UserGradeInfoHelper;\n\n    .line 135\n    .line 136\n    invoke-static {v3, v2}, Lcom/kugou/android/app/navigation/UserGradeInfoHelper;->f(Lcom/kugou/android/app/navigation/UserGradeInfoHelper;Lcom/kugou/common/useraccount/UserGradeInfoNew;)V\n\n    .line 137\n    .line 138\n    .line 139\n    invoke-static {}, Lcom/kugou/common/setting/CommonSettingPrefs;->O1()Lcom/kugou/common/setting/CommonSettingPrefs;\n\n    .line 140\n    .line 141\n    .line 142\n    move-result-object v3\n\n    .line 143\n    iget v4, v2, Lcom/kugou/common/useraccount/UserGradeInfoNew;->currentGrade:I\n\n    .line 144\n    .line 145\n    iget-wide v8, v2, Lcom/kugou/common/useraccount/UserGradeInfoNew;->localMillis:J\n\n    .line 146\n    .line 147\n    invoke-virtual {v3, v4, v8, v9}, Lcom/kugou/common/setting/CommonSettingPrefs;->ya(IJ)V\n\n    .line 148\n    .line 149\n    .line 150\n    invoke-static {}, Lcom/kugou/common/setting/CommonSettingPrefs;->O1()Lcom/kugou/common/setting/CommonSettingPrefs;\n\n    .line 151\n    .line 152\n    .line 153\n    move-result-object v10\n\n    .line 154\n    iget v11, v2, Lcom/kugou/common/useraccount/UserGradeInfoNew;->medal_total:I\n\n    .line 155\n    .line 156\n    iget-object v12, v2, Lcom/kugou/common/useraccount/UserGradeInfoNew;->last_big_pic:Ljava/lang/String;\n\n    .line 157\n    .line 158\n    iget-object v13, v2, Lcom/kugou/common/useraccount/UserGradeInfoNew;->medal_index_url:Ljava/lang/String;\n\n    .line 159\n    .line 160\n    iget-object v14, v2, Lcom/kugou/common/useraccount/UserGradeInfoNew;->medal_type:Ljava/lang/String;\n\n    .line 161\n    .line 162\n    iget-object v15, v2, Lcom/kugou/common/useraccount/UserGradeInfoNew;->singer_avatar:Ljava/lang/String;\n\n    .line 163\n    .line 164\n    iget v3, v2, Lcom/kugou/common/useraccount/UserGradeInfoNew;->is_show_red:I\n\n    .line 165\n    .line 166\n    move/from16 v16, v3\n\n    .line 167\n    .line 168\n    invoke-virtual/range {v10 .. v16}, Lcom/kugou/common/setting/CommonSettingPrefs;->Aa(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V\n\n    .line 169\n    .line 170\n    .line 171\n    invoke-static {}, Lcom/kugou/common/setting/DefaultPrefs;->X0()Lcom/kugou/common/setting/DefaultPrefs;\n\n    .line 172\n    .line 173\n    .line 174\n    move-result-object v3\n\n    .line 175\n    invoke-virtual {v3}, Lcom/kugou/common/setting/DefaultPrefs;->p1()Z\n\n    .line 176\n    .line 177\n    .line 178\n    move-result v3\n\n    .line 179\n    if-nez v3, :cond_c4\n\n    .line 180\n    .line 181\n    iget-object v3, v0, Lcom/kugou/android/app/navigation/UserGradeInfoHelper$j;->d:Lcom/kugou/android/app/navigation/UserGradeInfoHelper;\n\n    .line 182\n    .line 183\n    invoke-static {v3}, Lcom/kugou/android/app/navigation/UserGradeInfoHelper;->a(Lcom/kugou/android/app/navigation/UserGradeInfoHelper;)Lcom/kugou/common/utils/a;\n\n    .line 184\n    .line 185\n    .line 186\n    move-result-object v3\n\n    .line 187\n    invoke-virtual {v3, v5}, Lcom/kugou/common/utils/a;->G(Ljava/lang/String;)Z\n\n    .line 188\n    .line 189\n    .line 190\n    invoke-static {}, Lcom/kugou/common/setting/DefaultPrefs;->X0()Lcom/kugou/common/setting/DefaultPrefs;\n\n    .line 191\n    .line 192\n    .line 193\n    move-result-object v3\n\n    .line 194\n    invoke-virtual {v3, v6}, Lcom/kugou/common/setting/DefaultPrefs;->G9(Z)V\n\n    .line 195\n    .line 196\n    .line 197\n    :cond_c4\n    if-eqz v7, :cond_c7\n\n    .line 198\n    .line 199\n    move-object v1, v2\n\n    .line 200\n    :cond_c7\n    return-object v1\n.end method",
+          "reported_total_bytes": null
+        }
+      }
+    },
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ]
+  }
+]

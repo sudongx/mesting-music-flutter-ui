@@ -1,0 +1,200 @@
+.class final Lcom/netease/cloudmusic/module/listentogether/playpage/p2$b;
+.super Lkotlin/jvm/internal/Lambda;
+.source "ProGuard"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/netease/cloudmusic/module/listentogether/playpage/p2;->k(Ljava/lang/String;J)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lkotlin/jvm/functions/Function1<",
+        "Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;",
+        "Lkotlin/Unit;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\u0010\u0003\u001a\u00020\u00022\u0008\u0010\u0001\u001a\u0004\u0018\u00010\u0000H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
+    }
+    d2 = {
+        "Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;",
+        "it",
+        "",
+        "a",
+        "(Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;)V"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Ljava/lang/String;
+
+
+# direct methods
+.method constructor <init>(Ljava/lang/String;)V
+    .registers 2
+
+    .line 1
+    iput-object p1, p0, Lcom/netease/cloudmusic/module/listentogether/playpage/p2$b;->a:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    const/4 p1, 0x1
+
+    .line 4
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;)V
+    .registers 6
+    .param p1    # Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    if-eqz p1, :cond_32
+
+    .line 2
+    .line 3
+    iget-object v0, p0, Lcom/netease/cloudmusic/module/listentogether/playpage/p2$b;->a:Ljava/lang/String;
+
+    .line 4
+    .line 5
+    new-instance v1, Lcom/netease/cloudmusic/module/listentogether/im/StatisticsChangeMsg;
+
+    .line 6
+    .line 7
+    invoke-direct {v1, v0}, Lcom/netease/cloudmusic/module/listentogether/im/StatisticsChangeMsg;-><init>(Ljava/lang/String;)V
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/module/listentogether/im/StatisticsChangeMsg;->getMsgData()Lcom/netease/cloudmusic/module/listentogether/meta/StatisticsChangeMsgData;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    invoke-virtual {p1}, Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;->getListenCount()J
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-wide v2
+
+    .line 18
+    invoke-virtual {v0, v2, v3}, Lcom/netease/cloudmusic/module/listentogether/meta/StatisticsChangeMsgData;->setListenCount(J)V
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {p1}, Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;->getDuration()J
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-wide v2
+
+    .line 25
+    invoke-virtual {v0, v2, v3}, Lcom/netease/cloudmusic/module/listentogether/meta/StatisticsChangeMsgData;->setDuration(J)V
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {p1}, Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;->getTotalConnectionTime()J
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-wide v2
+
+    .line 32
+    invoke-virtual {v0, v2, v3}, Lcom/netease/cloudmusic/module/listentogether/meta/StatisticsChangeMsgData;->setTotalConnectionTime(J)V
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-virtual {p1}, Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;->getCurrentConnectionTime()J
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-wide v2
+
+    .line 39
+    invoke-virtual {v0, v2, v3}, Lcom/netease/cloudmusic/module/listentogether/meta/StatisticsChangeMsgData;->setCurrentConnectionTime(J)V
+
+    .line 40
+    .line 41
+    .line 42
+    sget-object p1, Lcom/netease/cloudmusic/module/listentogether/im/r0;->l:Lcom/netease/cloudmusic/module/listentogether/im/r0;
+
+    .line 43
+    .line 44
+    invoke-virtual {p1}, Lcom/netease/cloudmusic/module/listentogether/im/r0;->T()Lcom/netease/cloudmusic/im/l;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object p1
+
+    .line 48
+    invoke-interface {p1, v1}, Lcom/netease/nimlib/sdk/Observer;->onEvent(Ljava/lang/Object;)V
+
+    .line 49
+    .line 50
+    .line 51
+    :cond_32
+    return-void
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 2
+
+    .line 1
+    check-cast p1, Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lcom/netease/cloudmusic/module/listentogether/playpage/p2$b;->a(Lcom/netease/cloudmusic/module/listentogether/meta/LTRelationStatistics;)V
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    .line 7
+    .line 8
+    return-object p1
+.end method
+

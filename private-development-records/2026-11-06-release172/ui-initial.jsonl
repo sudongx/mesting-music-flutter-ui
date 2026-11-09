@@ -1,0 +1,40 @@
+{"protocolVersion":"0.1.1","runnerVersion":"1.30.0","pid":327708,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"D:/AnLi/test/qishui_appearance172_ui_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading D:/AnLi/test/qishui_appearance172_ui_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":2}
+{"count":2,"time":8,"type":"allSuites"}
+test/qishui_appearance172_ui_test.dart:112:23: Error: The method 'AuditMusic172.search' has fewer named arguments than those of overridden method 'QishuiRepository.search'.
+  Future<List<Track>> search(String text, {Future<void>? abortTrigger}) async =>
+                      ^
+lib/features/music_platform/qishui/qishui_repository.dart:277:23: Context: This is the overridden method ('search').
+  Future<List<Track>> search(
+                      ^
+{"testID":1,"error":"Failed to load \"D:/AnLi/test/qishui_appearance172_ui_test.dart\":\nCompilation failed for testPath=D:/AnLi/test/qishui_appearance172_ui_test.dart: test/qishui_appearance172_ui_test.dart:112:23: Error: The method 'AuditMusic172.search' has fewer named arguments than those of overridden method 'QishuiRepository.search'.\n  Future<List<Track>> search(String text, {Future<void>? abortTrigger}) async =>\n                      ^\nlib/features/music_platform/qishui/qishui_repository.dart:277:23: Context: This is the overridden method ('search').\n  Future<List<Track>> search(\n                      ^\n.","stackTrace":"","isFailure":false,"type":"error","time":6712}
+{"testID":1,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":6715}
+{"suite":{"id":2,"platform":"vm","path":"D:/AnLi/test/qishui_artwork172_test.dart"},"type":"suite","time":6717}
+{"test":{"id":3,"name":"loading D:/AnLi/test/qishui_artwork172_test.dart","suiteID":2,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":6717}
+{"testID":1,"error":"Error: The Dart compiler exited unexpectedly.","stackTrace":"package:flutter_tools/src/base/common.dart 34:3  throwToolExit\npackage:flutter_tools/src/compile.dart 939:11    DefaultResidentCompiler._compile.<fn>\ndart:async/zone_root.dart 48:47                  _rootRunUnary\ndart:async/zone.dart 733:19                      _CustomZone.runUnary\ndart:async/future_impl.dart 948:45               Future._propagateToListeners.handleValueCallback\ndart:async/future_impl.dart 977:13               Future._propagateToListeners\ndart:async/future_impl.dart 862:9                Future._propagateToListeners\ndart:async/future_impl.dart 720:5                Future._completeWithValue\ndart:async/future_impl.dart 804:7                Future._asyncCompleteWithValue.<fn>\ndart:async/zone_root.dart 35:13                  _rootRun\ndart:async/zone.dart 726:19                      _CustomZone.run\ndart:async/zone.dart 625:7                       _CustomZone.runGuarded\ndart:async/zone.dart 666:23                      _CustomZone.bindCallbackGuarded.<fn>\ndart:async/schedule_microtask.dart 40:35         _microtaskLoop\ndart:async/schedule_microtask.dart 49:5          _startMicrotaskLoop\ndart:isolate-patch/isolate_patch.dart 127:13     _runPendingImmediateCallback\ndart:isolate-patch/isolate_patch.dart 194:5      _RawReceivePort._handleMessage\n","isFailure":false,"type":"error","time":6808}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":3,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":10663}
+{"group":{"id":4,"suiteID":2,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":10,"line":null,"column":null,"url":null},"type":"group","time":10666}
+{"test":{"id":5,"name":"empty preferred image does not hide a valid album cover","suiteID":2,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":11,"column":3,"url":"file:///D:/AnLi/test/qishui_artwork172_test.dart"},"type":"testStart","time":10667}
+{"testID":5,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10741}
+{"test":{"id":6,"name":"each valid CDN base gets its own URI/template image","suiteID":2,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":37,"column":3,"url":"file:///D:/AnLi/test/qishui_artwork172_test.dart"},"type":"testStart","time":10741}
+{"testID":6,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10750}
+{"test":{"id":7,"name":"complete signed URLs are preserved and list failures fall through","suiteID":2,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":50,"column":3,"url":"file:///D:/AnLi/test/qishui_artwork172_test.dart"},"type":"testStart","time":10751}
+{"testID":7,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10757}
+{"test":{"id":8,"name":"invalid or credential-bearing picture is rejected: file:///image","suiteID":2,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":73,"column":5,"url":"file:///D:/AnLi/test/qishui_artwork172_test.dart"},"type":"testStart","time":10757}
+{"testID":8,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10760}
+{"test":{"id":9,"name":"invalid or credential-bearing picture is rejected: https://[REDACTED]@images.example/c.jpg","suiteID":2,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":73,"column":5,"url":"file:///D:/AnLi/test/qishui_artwork172_test.dart"},"type":"testStart","time":10761}
+{"testID":9,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10765}
+{"test":{"id":10,"name":"invalid or credential-bearing picture is rejected: javascript:alert(1)","suiteID":2,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":73,"column":5,"url":"file:///D:/AnLi/test/qishui_artwork172_test.dart"},"type":"testStart","time":10765}
+{"testID":10,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10770}
+{"test":{"id":11,"name":"invalid or credential-bearing picture is rejected: https://","suiteID":2,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":73,"column":5,"url":"file:///D:/AnLi/test/qishui_artwork172_test.dart"},"type":"testStart","time":10770}
+{"testID":11,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10773}
+{"test":{"id":12,"name":"an unassembled base or traversal is never shown as an image","suiteID":2,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":78,"column":3,"url":"file:///D:/AnLi/test/qishui_artwork172_test.dart"},"type":"testStart","time":10773}
+{"testID":12,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10779}
+{"test":{"id":13,"name":"playlist image aliases also fall through empty values","suiteID":2,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":93,"column":3,"url":"file:///D:/AnLi/test/qishui_artwork172_test.dart"},"type":"testStart","time":10779}
+{"testID":13,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10796}
+{"test":{"id":14,"name":"a failed song picture moves to its supplied backup once","suiteID":2,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":105,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_artwork172_test.dart"},"type":"testStart","time":10797}
+{"testID":14,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":11933}
+{"success":false,"type":"done","time":11962}

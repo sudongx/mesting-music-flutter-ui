@@ -1,0 +1,110 @@
+364            -
+  Class descriptor  : 'Lcom/netease/cloudmusic/core/statistic/w0$a;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/netease/cloudmusic/core/statistic/w0$a;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10002 (PRIVATE CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+1c3ea8:                                        |[1c3ea8] com.netease.cloudmusic.core.statistic.w0$a.<init>:()V
+1c3eb8: 7010 06c2 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@c206
+1c3ebe: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=2
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/netease/cloudmusic/core/statistic/w0$a;
+
+    #1              : (in Lcom/netease/cloudmusic/core/statistic/w0$a;)
+      name          : '<init>'
+      type          : '(Lkotlin/jvm/internal/DefaultConstructorMarker;)V'
+      access        : 0x11001 (PUBLIC SYNTHETIC CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 4 16-bit code units
+1c3ec0:                                        |[1c3ec0] com.netease.cloudmusic.core.statistic.w0$a.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+1c3ed0: 7010 b120 0000                         |0000: invoke-direct {v0}, Lcom/netease/cloudmusic/core/statistic/w0$a;.<init>:()V // method@20b1
+1c3ed6: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/netease/cloudmusic/core/statistic/w0$a;
+        0x0000 - 0x0004 reg=1 (null) Lkotlin/jvm/internal/DefaultConstructorMarker;
+
+  Virtual methods   -
+    #0              : (in Lcom/netease/cloudmusic/core/statistic/w0$a;)
+      name          : 'a'
+      type          : '(Lcom/netease/cloudmusic/core/statistic/c0;Lcom/netease/cloudmusic/core/statistic/c0;Lcom/netease/cloudmusic/core/statistic/c0;Lcom/netease/cloudmusic/core/statistic/c0;Lcom/netease/cloudmusic/core/statistic/c0;Lcom/netease/cloudmusic/core/statistic/c0;Lcom/netease/cloudmusic/core/statistic/c0;)V'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 17
+      ins           : 8
+      outs          : 8
+      insns size    : 25 16-bit code units
+1c3ed8:                                        |[1c3ed8] com.netease.cloudmusic.core.statistic.w0$a.a:(Lcom/netease/cloudmusic/core/statistic/c0;Lcom/netease/cloudmusic/core/statistic/c0;Lcom/netease/cloudmusic/core/statistic/c0;Lcom/netease/cloudmusic/core/statistic/c0;Lcom/netease/cloudmusic/core/statistic/c0;Lcom/netease/cloudmusic/core/statistic/c0;Lcom/netease/cloudmusic/core/statistic/c0;)V
+1c3ee8: 1a00 897d                              |0000: const-string v0, "biStub" // string@7d89
+1c3eec: 07a2                                   |0002: move-object v2, v10
+1c3eee: 7120 c1c9 0a00                         |0003: invoke-static {v10, v0}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@c9c1
+1c3ef4: 2200 4a07                              |0006: new-instance v0, Lcom/netease/cloudmusic/core/statistic/StatisticImpl; // type@074a
+1c3ef8: 0701                                   |0008: move-object v1, v0
+1c3efa: 07b3                                   |0009: move-object v3, v11
+1c3efc: 07c4                                   |000a: move-object v4, v12
+1c3efe: 07d5                                   |000b: move-object v5, v13
+1c3f00: 07e6                                   |000c: move-object v6, v14
+1c3f02: 07f7                                   |000d: move-object v7, v15
+1c3f04: 0808 1000                              |000e: move-object/from16 v8, v16
+1c3f08: 7608 f81d 0100                         |0010: invoke-direct/range {v1, v2, v3, v4, v5, v6, v7, v8}, Lcom/netease/cloudmusic/core/statistic/StatisticImpl;.<init>:(Lcom/netease/cloudmusic/core/statistic/c0;Lcom/netease/cloudmusic/core/statistic/c0;Lcom/netease/cloudmusic/core/statistic/c0;Lcom/netease/cloudmusic/core/statistic/c0;Lcom/netease/cloudmusic/core/statistic/c0;Lcom/netease/cloudmusic/core/statistic/c0;Lcom/netease/cloudmusic/core/statistic/c0;)V // method@1df8
+1c3f0e: 1c01 4707                              |0013: const-class v1, Lcom/netease/cloudmusic/core/statistic/IStatistic; // type@0747
+1c3f12: 7120 d216 0100                         |0015: invoke-static {v1, v0}, Lcom/netease/cloudmusic/common/ServiceFacade;.put:(Ljava/lang/Class;Lcom/netease/cloudmusic/INoProguard;)V // method@16d2
+1c3f18: 0e00                                   |0018: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+        0x0013 line=20
+        0x0014 line=21
+        0x0015 line=22
+        0x0016 line=23
+        0x0017 line=24
+        0x0018 line=25
+      locals        :
+        0x0000 - 0x0019 reg=9 this Lcom/netease/cloudmusic/core/statistic/w0$a;
+        0x0000 - 0x0019 reg=10 (null) Lcom/netease/cloudmusic/core/statistic/c0;
+        0x0000 - 0x0019 reg=11 (null) Lcom/netease/cloudmusic/core/statistic/c0;
+        0x0000 - 0x0019 reg=12 (null) Lcom/netease/cloudmusic/core/statistic/c0;
+        0x0000 - 0x0019 reg=13 (null) Lcom/netease/cloudmusic/core/statistic/c0;
+        0x0000 - 0x0019 reg=14 (null) Lcom/netease/cloudmusic/core/statistic/c0;
+        0x0000 - 0x0019 reg=15 (null) Lcom/netease/cloudmusic/core/statistic/c0;
+        0x0000 - 0x0019 reg=16 (null) Lcom/netease/cloudmusic/core/statistic/c0;
+
+  source_file_idx   : 26617 (ProGuard)
+

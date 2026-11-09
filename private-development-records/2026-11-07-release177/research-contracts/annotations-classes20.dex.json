@@ -1,0 +1,981 @@
+{
+  "original_sha256": "68bd9ab99e45875527959ec6e2a6bf48bcd43e817b503e4870d83c65d4bf5fa8",
+  "dex_entry": "classes20.dex",
+  "dex_sha256": "a854d01e128ce4e7e0353da9c1ab08950c1b40168a9edac627e9e508cd792a18",
+  "classes": [
+    {
+      "class_def_index": 68,
+      "descriptor": "Lcom/luna/biz/playing/player/action/api/ReportActionApi;",
+      "access_flags": 1537,
+      "super": "Ljava/lang/Object;",
+      "interfaces": [],
+      "class_data_offset": 9770900,
+      "static_values_offset": 0,
+      "fields": [],
+      "methods": [
+        {
+          "dex_method_index": 5013,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi;",
+          "name": "getReportActionsResponse",
+          "descriptor": "(Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;)Lio/reactivex/Observable;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9217934,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/POST;",
+              "elements": {
+                "value": "/luna/action"
+              }
+            },
+            {
+              "annotation_item_offset": 9217944,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+                  ")",
+                  "Lio/reactivex/Observable<",
+                  "Lcom/luna/biz/playing/net/action/ReportActionsResponse;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 9212805,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "declared_fields": [],
+      "declared_methods": [
+        {
+          "dex_method_index": 5013,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi;",
+          "name": "getReportActionsResponse",
+          "descriptor": "(Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;)Lio/reactivex/Observable;",
+          "access_flags": 1025,
+          "code_item_offset": 0
+        }
+      ],
+      "annotations": [
+        {
+          "annotation_item_offset": 9217975,
+          "visibility": 2,
+          "type": "Ldalvik/annotation/MemberClasses;",
+          "elements": {
+            "value": [
+              {
+                "type_descriptor": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;"
+              },
+              {
+                "type_descriptor": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$Companion;"
+              },
+              {
+                "type_descriptor": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ReportActionExtra;"
+              }
+            ]
+          }
+        },
+        {
+          "annotation_item_offset": 9217993,
+          "visibility": 1,
+          "type": "Lkotlin/Metadata;",
+          "elements": {
+            "d1": [
+              "��\u001c\n\u0002\u0018\u0002\n\u0002\u0010��\n��\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n\u0002\b\u0004\bf\u0018�� \u00072\u00020\u0001:\u0003\u0007\b\tJ\u0018\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0001\u0010\u0005\u001a\u00020\u0006H'¨\u0006\n"
+            ],
+            "d2": [
+              "Lcom/luna/biz/playing/player/action/api/ReportActionApi;",
+              "",
+              "getReportActionsResponse",
+              "Lio/reactivex/Observable;",
+              "Lcom/luna/biz/playing/net/action/ReportActionsResponse;",
+              "params",
+              "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+              "Companion",
+              "ActionParams",
+              "ReportActionExtra",
+              "biz-playing-impl_release"
+            ],
+            "k": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "01",
+              "unsigned_value": 1
+            },
+            "mv": [
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "02",
+                "unsigned_value": 2
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              }
+            ],
+            "xi": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "30",
+              "unsigned_value": 48
+            }
+          }
+        }
+      ],
+      "parameter_annotations": [
+        {
+          "dex_method_index": 5013,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi;",
+          "name": "getReportActionsResponse",
+          "descriptor": "(Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;)Lio/reactivex/Observable;",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9217971,
+                "visibility": 1,
+                "type": "Lcom/bytedance/retrofit2/http/Body;",
+                "elements": {}
+              },
+              {
+                "annotation_item_offset": 9212805,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "class_def_index": 2661,
+      "descriptor": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+      "access_flags": 1,
+      "super": "Ljava/lang/Object;",
+      "interfaces": [
+        "Lcom/luna/common/tea/json/KeepElement;"
+      ],
+      "class_data_offset": 9870819,
+      "static_values_offset": 0,
+      "fields": [
+        {
+          "dex_field_index": 955,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "actions",
+          "type": "Ljava/util/List;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9375284,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "actions"
+              }
+            },
+            {
+              "annotation_item_offset": 9375294,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "Ljava/util/List<",
+                  "Lcom/luna/biz/playing/player/action/api/NetAction;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 9212805,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 957,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "reportActionExtra",
+          "type": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ReportActionExtra;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9375312,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "report_action_extra"
+              }
+            },
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "dex_method_index": 4988,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "<init>",
+          "descriptor": "(Ljava/util/List;Lcom/luna/biz/playing/player/action/api/ReportActionApi$ReportActionExtra;)V",
+          "annotations": [
+            {
+              "annotation_item_offset": 9375206,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Ljava/util/List<",
+                  "Lcom/luna/biz/playing/player/action/api/NetAction;",
+                  ">;",
+                  "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ReportActionExtra;",
+                  ")V"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "dex_method_index": 4990,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "component1",
+          "descriptor": "()Ljava/util/List;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9375233,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "()",
+                  "Ljava/util/List<",
+                  "Lcom/luna/biz/playing/player/action/api/NetAction;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 9212805,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 4991,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "component2",
+          "descriptor": "()Lcom/luna/biz/playing/player/action/api/ReportActionApi$ReportActionExtra;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 4992,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "copy",
+          "descriptor": "(Ljava/util/List;Lcom/luna/biz/playing/player/action/api/ReportActionApi$ReportActionExtra;)Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9375254,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Ljava/util/List<",
+                  "Lcom/luna/biz/playing/player/action/api/NetAction;",
+                  ">;",
+                  "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ReportActionExtra;",
+                  ")",
+                  "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 9212805,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 4995,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "getActions",
+          "descriptor": "()Ljava/util/List;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9375233,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "()",
+                  "Ljava/util/List<",
+                  "Lcom/luna/biz/playing/player/action/api/NetAction;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 9212805,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 4996,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "getReportActionExtra",
+          "descriptor": "()Lcom/luna/biz/playing/player/action/api/ReportActionApi$ReportActionExtra;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9212801,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 4998,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "toString",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9212805,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "declared_fields": [
+        {
+          "dex_field_index": 956,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "changeQuickRedirect",
+          "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+          "access_flags": 9
+        },
+        {
+          "dex_field_index": 955,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "actions",
+          "type": "Ljava/util/List;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 957,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "reportActionExtra",
+          "type": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ReportActionExtra;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 958,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "robustFieldMap",
+          "type": "Ljava/lang/Object;",
+          "access_flags": 193
+        }
+      ],
+      "declared_methods": [
+        {
+          "dex_method_index": 4987,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "<init>",
+          "descriptor": "()V",
+          "access_flags": 65537,
+          "code_item_offset": 1530876
+        },
+        {
+          "dex_method_index": 4988,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "<init>",
+          "descriptor": "(Ljava/util/List;Lcom/luna/biz/playing/player/action/api/ReportActionApi$ReportActionExtra;)V",
+          "access_flags": 65537,
+          "code_item_offset": 1530932
+        },
+        {
+          "dex_method_index": 4989,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "<init>",
+          "descriptor": "(Ljava/util/List;Lcom/luna/biz/playing/player/action/api/ReportActionApi$ReportActionExtra;ILkotlin/jvm/internal/DefaultConstructorMarker;)V",
+          "access_flags": 69633,
+          "code_item_offset": 1531004
+        },
+        {
+          "dex_method_index": 4993,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "copy$default",
+          "descriptor": "(Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;Ljava/util/List;Lcom/luna/biz/playing/player/action/api/ReportActionApi$ReportActionExtra;ILjava/lang/Object;)Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "access_flags": 4105,
+          "code_item_offset": 1530432
+        },
+        {
+          "dex_method_index": 4990,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "component1",
+          "descriptor": "()Ljava/util/List;",
+          "access_flags": 17,
+          "code_item_offset": 1530828
+        },
+        {
+          "dex_method_index": 4991,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "component2",
+          "descriptor": "()Lcom/luna/biz/playing/player/action/api/ReportActionApi$ReportActionExtra;",
+          "access_flags": 17,
+          "code_item_offset": 1530560
+        },
+        {
+          "dex_method_index": 4992,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "copy",
+          "descriptor": "(Ljava/util/List;Lcom/luna/biz/playing/player/action/api/ReportActionApi$ReportActionExtra;)Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "access_flags": 17,
+          "code_item_offset": 1530484
+        },
+        {
+          "dex_method_index": 4994,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "equals",
+          "descriptor": "(Ljava/lang/Object;)Z",
+          "access_flags": 1,
+          "code_item_offset": 1530308
+        },
+        {
+          "dex_method_index": 4995,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "getActions",
+          "descriptor": "()Ljava/util/List;",
+          "access_flags": 17,
+          "code_item_offset": 1530852
+        },
+        {
+          "dex_method_index": 4996,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "getReportActionExtra",
+          "descriptor": "()Lcom/luna/biz/playing/player/action/api/ReportActionApi$ReportActionExtra;",
+          "access_flags": 17,
+          "code_item_offset": 1530584
+        },
+        {
+          "dex_method_index": 4997,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "hashCode",
+          "descriptor": "()I",
+          "access_flags": 1,
+          "code_item_offset": 1530608
+        },
+        {
+          "dex_method_index": 4998,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "toString",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 1,
+          "code_item_offset": 1530700
+        }
+      ],
+      "annotations": [
+        {
+          "annotation_item_offset": 9217861,
+          "visibility": 2,
+          "type": "Ldalvik/annotation/EnclosingClass;",
+          "elements": {
+            "value": {
+              "type_descriptor": "Lcom/luna/biz/playing/player/action/api/ReportActionApi;"
+            }
+          }
+        },
+        {
+          "annotation_item_offset": 9375322,
+          "visibility": 2,
+          "type": "Ldalvik/annotation/InnerClass;",
+          "elements": {
+            "accessFlags": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "19",
+              "unsigned_value": 25
+            },
+            "name": "ActionParams"
+          }
+        },
+        {
+          "annotation_item_offset": 9375337,
+          "visibility": 1,
+          "type": "Lkotlin/Metadata;",
+          "elements": {
+            "d1": [
+              "��4\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n��\n\u0002\u0010 \n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010\u000b\n��\n\u0002\u0010��\n��\n\u0002\u0010\b\n��\n\u0002\u0010\u000e\n��\b\b\u0018��2\u00020\u0001B#\u0012\u000e\b\u0002\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0006¢\u0006\u0004\b\u0007\u0010\bJ\u000f\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0003J\u000b\u0010\u000e\u001a\u0004\u0018\u00010\u0006HÆ\u0003J%\u0010\u000f\u001a\u00020��2\u000e\b\u0002\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÆ\u0001J\u0013\u0010\u0010\u001a\u00020\u00112\b\u0010\u0012\u001a\u0004\u0018\u00010\u0013HÖ\u0003J\t\u0010\u0014\u001a\u00020\u0015HÖ\u0001J\t\u0010\u0016\u001a\u00020\u0017HÖ\u0001R\u001c\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00038\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b\t\u0010\nR\u0018\u0010\u0005\u001a\u0004\u0018\u00010\u00068\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b\u000b\u0010\f¨\u0006\u0018"
+            ],
+            "d2": [
+              "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+              "Lcom/luna/common/tea/json/KeepElement;",
+              "actions",
+              "",
+              "Lcom/luna/biz/playing/player/action/api/NetAction;",
+              "reportActionExtra",
+              "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ReportActionExtra;",
+              "<init>",
+              "(Ljava/util/List;Lcom/luna/biz/playing/player/action/api/ReportActionApi$ReportActionExtra;)V",
+              "getActions",
+              "()Ljava/util/List;",
+              "getReportActionExtra",
+              "()Lcom/luna/biz/playing/player/action/api/ReportActionApi$ReportActionExtra;",
+              "component1",
+              "component2",
+              "copy",
+              "equals",
+              "",
+              "other",
+              "",
+              "hashCode",
+              "",
+              "toString",
+              "",
+              "biz-playing-impl_release"
+            ],
+            "k": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "01",
+              "unsigned_value": 1
+            },
+            "mv": [
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "02",
+                "unsigned_value": 2
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              }
+            ],
+            "xi": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "30",
+              "unsigned_value": 48
+            }
+          }
+        }
+      ],
+      "parameter_annotations": [
+        {
+          "dex_method_index": 4988,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "<init>",
+          "descriptor": "(Ljava/util/List;Lcom/luna/biz/playing/player/action/api/ReportActionApi$ReportActionExtra;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9212805,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9212801,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 4992,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "copy",
+          "descriptor": "(Ljava/util/List;Lcom/luna/biz/playing/player/action/api/ReportActionApi$ReportActionExtra;)Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9212805,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9212801,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 4994,
+          "owner": "Lcom/luna/biz/playing/player/action/api/ReportActionApi$ActionParams;",
+          "name": "equals",
+          "descriptor": "(Ljava/lang/Object;)Z",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9212801,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "class_def_index": 1419,
+      "descriptor": "Lcom/luna/biz/profile/api/net/profile/UserProfileApi;",
+      "access_flags": 1537,
+      "super": "Ljava/lang/Object;",
+      "interfaces": [],
+      "class_data_offset": 9823667,
+      "static_values_offset": 0,
+      "fields": [],
+      "methods": [
+        {
+          "dex_method_index": 43560,
+          "owner": "Lcom/luna/biz/profile/api/net/profile/UserProfileApi;",
+          "name": "getUserResource",
+          "descriptor": "()Lio/reactivex/Observable;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9320790,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/GET;",
+              "elements": {
+                "value": "/luna/user/resource"
+              }
+            },
+            {
+              "annotation_item_offset": 9320800,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "()",
+                  "Lio/reactivex/Observable<",
+                  "Lcom/luna/common/arch/net/entity/GetUserResource;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 9212805,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 43561,
+          "owner": "Lcom/luna/biz/profile/api/net/profile/UserProfileApi;",
+          "name": "getUserSettings",
+          "descriptor": "()Lio/reactivex/Observable;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9320901,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/GET;",
+              "elements": {
+                "value": "/luna/user/settings"
+              }
+            },
+            {
+              "annotation_item_offset": 9320911,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "()",
+                  "Lio/reactivex/Observable<",
+                  "Lcom/luna/biz/profile/api/net/profile/UserSettingResponse;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 9212805,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 43562,
+          "owner": "Lcom/luna/biz/profile/api/net/profile/UserProfileApi;",
+          "name": "updateMyInfo",
+          "descriptor": "(Lcom/luna/biz/profile/api/net/profile/UserProfileApi$UserInfoParams;)Lio/reactivex/Observable;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9320821,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/POST;",
+              "elements": {
+                "value": "/luna/me"
+              }
+            },
+            {
+              "annotation_item_offset": 9320831,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Lcom/luna/biz/profile/api/net/profile/UserProfileApi$UserInfoParams;",
+                  ")",
+                  "Lio/reactivex/Observable<",
+                  "Lcom/luna/biz/profile/api/net/profile/UpdateMyInfoResponse;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 9212805,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 43563,
+          "owner": "Lcom/luna/biz/profile/api/net/profile/UserProfileApi;",
+          "name": "updateUserSettings",
+          "descriptor": "(Ljava/util/Map;)Lio/reactivex/Observable;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9320858,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/POST;",
+              "elements": {
+                "value": "/luna/user/settings"
+              }
+            },
+            {
+              "annotation_item_offset": 9320868,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Ljava/util/Map<",
+                  "Ljava/lang/String;",
+                  "Ljava/lang/String;",
+                  ">;)",
+                  "Lio/reactivex/Observable<",
+                  "Lcom/luna/common/arch/net/EmptyResponse;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 9212805,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "declared_fields": [],
+      "declared_methods": [
+        {
+          "dex_method_index": 43560,
+          "owner": "Lcom/luna/biz/profile/api/net/profile/UserProfileApi;",
+          "name": "getUserResource",
+          "descriptor": "()Lio/reactivex/Observable;",
+          "access_flags": 1025,
+          "code_item_offset": 0
+        },
+        {
+          "dex_method_index": 43561,
+          "owner": "Lcom/luna/biz/profile/api/net/profile/UserProfileApi;",
+          "name": "getUserSettings",
+          "descriptor": "()Lio/reactivex/Observable;",
+          "access_flags": 1025,
+          "code_item_offset": 0
+        },
+        {
+          "dex_method_index": 43562,
+          "owner": "Lcom/luna/biz/profile/api/net/profile/UserProfileApi;",
+          "name": "updateMyInfo",
+          "descriptor": "(Lcom/luna/biz/profile/api/net/profile/UserProfileApi$UserInfoParams;)Lio/reactivex/Observable;",
+          "access_flags": 1025,
+          "code_item_offset": 0
+        },
+        {
+          "dex_method_index": 43563,
+          "owner": "Lcom/luna/biz/profile/api/net/profile/UserProfileApi;",
+          "name": "updateUserSettings",
+          "descriptor": "(Ljava/util/Map;)Lio/reactivex/Observable;",
+          "access_flags": 1025,
+          "code_item_offset": 0
+        }
+      ],
+      "annotations": [
+        {
+          "annotation_item_offset": 9320932,
+          "visibility": 2,
+          "type": "Ldalvik/annotation/MemberClasses;",
+          "elements": {
+            "value": [
+              {
+                "type_descriptor": "Lcom/luna/biz/profile/api/net/profile/UserProfileApi$Companion;"
+              },
+              {
+                "type_descriptor": "Lcom/luna/biz/profile/api/net/profile/UserProfileApi$UpdateAvatarDecorateRequest;"
+              },
+              {
+                "type_descriptor": "Lcom/luna/biz/profile/api/net/profile/UserProfileApi$UserInfoParams;"
+              }
+            ]
+          }
+        },
+        {
+          "annotation_item_offset": 9320950,
+          "visibility": 1,
+          "type": "Lkotlin/Metadata;",
+          "elements": {
+            "d1": [
+              "��6\n\u0002\u0018\u0002\n\u0002\u0010��\n��\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n\u0002\u0010$\n\u0002\u0010\u000e\n��\n\u0002\u0018\u0002\n\u0002\b\u0004\bf\u0018�� \u000f2\u00020\u0001:\u0003\u000f\u0010\u0011J\u000e\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003H'J\u0018\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00060\u00032\b\b\u0001\u0010\u0007\u001a\u00020\bH'J&\u0010\t\u001a\b\u0012\u0004\u0012\u00020\n0\u00032\u0016\b\u0001\u0010\u0007\u001a\u0010\u0012\u0004\u0012\u00020\f\u0012\u0006\u0012\u0004\u0018\u00010\f0\u000bH'J\u000e\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u000e0\u0003H'¨\u0006\u0012"
+            ],
+            "d2": [
+              "Lcom/luna/biz/profile/api/net/profile/UserProfileApi;",
+              "",
+              "getUserResource",
+              "Lio/reactivex/Observable;",
+              "Lcom/luna/common/arch/net/entity/GetUserResource;",
+              "updateMyInfo",
+              "Lcom/luna/biz/profile/api/net/profile/UpdateMyInfoResponse;",
+              "params",
+              "Lcom/luna/biz/profile/api/net/profile/UserProfileApi$UserInfoParams;",
+              "updateUserSettings",
+              "Lcom/luna/common/arch/net/EmptyResponse;",
+              "",
+              "",
+              "getUserSettings",
+              "Lcom/luna/biz/profile/api/net/profile/UserSettingResponse;",
+              "Companion",
+              "UserInfoParams",
+              "UpdateAvatarDecorateRequest",
+              "biz-profile-api_release"
+            ],
+            "k": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "01",
+              "unsigned_value": 1
+            },
+            "mv": [
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "02",
+                "unsigned_value": 2
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              }
+            ],
+            "xi": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "30",
+              "unsigned_value": 48
+            }
+          }
+        }
+      ],
+      "parameter_annotations": [
+        {
+          "dex_method_index": 43562,
+          "owner": "Lcom/luna/biz/profile/api/net/profile/UserProfileApi;",
+          "name": "updateMyInfo",
+          "descriptor": "(Lcom/luna/biz/profile/api/net/profile/UserProfileApi$UserInfoParams;)Lio/reactivex/Observable;",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9217971,
+                "visibility": 1,
+                "type": "Lcom/bytedance/retrofit2/http/Body;",
+                "elements": {}
+              },
+              {
+                "annotation_item_offset": 9212805,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 43563,
+          "owner": "Lcom/luna/biz/profile/api/net/profile/UserProfileApi;",
+          "name": "updateUserSettings",
+          "descriptor": "(Ljava/util/Map;)Lio/reactivex/Observable;",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9217971,
+                "visibility": 1,
+                "type": "Lcom/bytedance/retrofit2/http/Body;",
+                "elements": {}
+              },
+              {
+                "annotation_item_offset": 9212805,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

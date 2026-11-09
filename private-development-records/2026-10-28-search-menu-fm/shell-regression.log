@@ -1,0 +1,852 @@
+00:00 +0: loading D:/AnLi/test/beta5_ui_test.dart
+00:00 +0: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: beta7 official bottom morph, embedded search and quality dialog
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following StateError was thrown running a test:
+Bad state: No element
+
+When the exception was thrown, this was the stack:
+#0      Iterable.last (dart:core/iterable.dart:679:7)
+#1      _LastFinderMixin.filter (package:flutter_test/src/finders.dart:1367:28)
+#3      Iterable.single (dart:core/iterable.dart:694:13)
+#4      WidgetController.element (package:flutter_test/src/controller.dart:883:30)
+#5      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:1050:38)
+<asynchronous suspension>
+#6      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#7      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 2 frames from dart:async-patch and package:stack_trace)
+
+The test description was:
+  beta7 official bottom morph, embedded search and quality dialog
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +0 -1: beta7 official bottom morph, embedded search and quality dialog [E]
+  Test failed. See exception logs above.
+  The test description was: beta7 official bottom morph, embedded search and quality dialog
+  
+Warning: At least one test in this suite creates an HttpClient. When running a test suite that uses
+TestWidgetsFlutterBinding, all HTTP requests will return status code 400, and no network request
+will actually be made. Any test expecting a real network connection and status code will fail.
+To test code that needs an HttpClient, provide your own HttpClient implementation to the code under
+test, so that your test can consistently provide a testable response to the code under test.
+00:02 +0 -1: beta7 quality dialog and every player appearance share the entry
+00:04 +1 -1: beta8 unknown quality metadata exposes retry instead of fabricated options
+00:04 +2 -1: beta7 standalone search also excludes local recommendation scoring
+00:04 +3 -1: beta8 search builds a viewport of 480 rows and retains actions
+BETA8_SEARCH_BENCH catalogue=480 visibleArtworkWidgets=11
+BETA8_SEARCH_BENCH catalogue=480 visibleArtworkWidgets=11
+00:05 +4 -1: beta8 anchored more menu stays grouped at phone and large-text widths
+00:05 +5 -1: beta8 detail navigation keeps the tab that opened it
+00:06 +6 -1: beta15 player footer keeps icon centers aligned without inline quality text
+00:06 +7 -1: beta8 playing vinyl stays on grooves and year menu is rounded
+00:06 +8 -1: beta9 both search edges and Router system Back follow result, landing, origin
+00:07 +9 -1: beta9 playback pill position events do not rebuild the glass control
+BETA9_PILL_BENCH positionEvents=100 glassControlRebuilds=0
+00:08 +10 -1: beta10 search and production routes keep opaque middle frames in both themes
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:1948:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:1976:13)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+00:09 +11 -1: beta11 five categories retain results and destination navigation ends search
+00:10 +12 -1: beta11 guest writes are blocked while playback remains available
+00:10 +13 -1: beta12 embedded search advertises and consumes real system back history for every category
+00:11 +14 -1: beta14 Android back registration survives retained-engine resume and follows every page level
+══╡ EXCEPTION CAUGHT BY WIDGETS LIBRARY ╞═══════════════════════════════════════════════════════════
+The following assertion was thrown while finalizing the widget tree:
+'package:flutter/src/widgets/navigator.dart': Failed assertion: line 4081 pos 12: '!_debugLocked':
+is not true.
+
+Either the assertion indicates an error in the framework itself, or we should provide substantially
+more information in this error message to help you determine and fix the underlying cause.
+In either case, please report this assertion by filing a bug on GitHub:
+  https://github.com/flutter/flutter/issues/new?template=02_bug.yml
+
+When the exception was thrown, this was the stack:
+#2      NavigatorState.dispose (package:flutter/src/widgets/navigator.dart:4081:12)
+#3      StatefulElement.unmount (package:flutter/src/widgets/framework.dart:6030:11)
+#4      _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2117:13)
+#5      _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#6      ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#7      _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#8      _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#9      ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#10     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#11     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#12     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#13     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#14     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#15     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#16     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#17     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#18     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#19     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#20     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#21     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#22     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#23     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#24     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#25     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#26     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#27     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#28     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#29     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#30     SingleChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7101:14)
+#31     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#32     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#33     SingleChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7101:14)
+#34     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#35     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#36     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#37     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#38     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#39     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#40     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#41     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#42     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#43     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#44     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#45     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#46     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#47     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#48     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#49     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#50     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#51     MultiChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7223:16)
+#52     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#53     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#54     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#55     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#56     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#57     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#58     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#59     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#60     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#61     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#62     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#63     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#64     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#65     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#66     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#67     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#68     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#69     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#70     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#71     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#72     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#73     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#74     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#75     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#76     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#77     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#78     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#79     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#80     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#81     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#82     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#83     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#84     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#85     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#86     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#87     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#88     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#89     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#90     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#91     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#92     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#93     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#94     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#95     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#96     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#97     _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#98     _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#99     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#100    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#101    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#102    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#103    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#104    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#105    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#106    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#107    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#108    SingleChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7101:14)
+#109    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#110    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#111    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#112    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#113    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#114    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#115    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#116    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#117    SingleChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7101:14)
+#118    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#119    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#120    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#121    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#122    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#123    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#124    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#125    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#126    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#127    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#128    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#129    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#130    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#131    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#132    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#133    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#134    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#135    SingleChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7101:14)
+#136    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#137    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#138    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#139    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#140    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#141    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#142    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#143    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#144    SingleChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7101:14)
+#145    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#146    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#147    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#148    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#149    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#150    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#151    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#152    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#153    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#154    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#155    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#156    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#157    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#158    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#159    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#160    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#161    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#162    SingleChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7101:14)
+#163    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#164    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#165    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#166    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#167    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#168    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#169    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#170    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#171    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#172    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#173    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#174    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#175    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#176    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#177    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#178    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#179    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#180    SingleChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7101:14)
+#181    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#182    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#183    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#184    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#185    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#186    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#187    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#188    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#189    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#190    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#191    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#192    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#193    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#194    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#195    SingleChildRenderObjectElement.visitChildren (package:flutter/src/widgets/framework.dart:7101:14)
+#196    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#197    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#198    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#199    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#200    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#201    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#202    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#203    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#204    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#205    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#206    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#207    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#208    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#209    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#210    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#211    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#212    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#213    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#214    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#215    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#216    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#217    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#218    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#219    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#220    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#221    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#222    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#223    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#224    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#225    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#226    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#227    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#228    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#229    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#230    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#231    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#232    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#233    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#234    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#235    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#236    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#237    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#238    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#239    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#240    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#241    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#242    _InactiveElements._unmount.<anonymous closure> (package:flutter/src/widgets/framework.dart:2115:7)
+#243    ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#244    _InactiveElements._unmount (package:flutter/src/widgets/framework.dart:2113:13)
+#245    ListIterable.forEach (dart:_internal/iterable.dart:49:13)
+#246    _InactiveElements._unmountAll (package:flutter/src/widgets/framework.dart:2126:25)
+#247    BuildOwner.lockState (package:flutter/src/widgets/framework.dart:3020:15)
+#248    BuildOwner.finalizeTree (package:flutter/src/widgets/framework.dart:3344:7)
+#249    AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2153:19)
+#250    RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#251    SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#252    SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#253    AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#256    TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#257    AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#258    WidgetTester.pumpWidget.<anonymous closure> (package:flutter_test/src/widget_tester.dart:598:22)
+#261    TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#262    WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#263    main.disposeFixture (file:///D:/AnLi/test/beta5_ui_test.dart:525:18)
+#264    main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2462:15)
+<asynchronous suspension>
+#265    testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#266    TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 7 frames from class _AssertionError, dart:async, and package:stack_trace)
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+'package:flutter/src/widgets/navigator.dart': Failed assertion: line 5591 pos 12: '!_debugLocked':
+is not true.
+
+When the exception was thrown, this was the stack:
+#2      NavigatorState.pop (package:flutter/src/widgets/navigator.dart:5591:12)
+#3      GoRouterDelegate.pop (package:go_router/src/delegate.dart:107:18)
+#4      GoRouter.pop (package:go_router/src/router.dart:587:20)
+#5      GoRouterHelper.pop (package:go_router/src/misc/extensions.dart:73:65)
+#6      _BetaMusicShellState._search (package:mesting_music/features/experience/presentation/beta_music_shell.dart:219:34)
+#7      _BetaMusicShellState._scheduleBackHistory.<anonymous closure>.<anonymous closure> (package:mesting_music/features/experience/presentation/beta_music_shell.dart:257:24)
+#8      BetaSearchBackHistory.synchronize.<anonymous closure> (package:mesting_music/features/experience/presentation/beta_search_back_history.dart:32:34)
+#9      LocalHistoryEntry._notifyRemoved (package:flutter/src/widgets/routes.dart:732:15)
+#10     LocalHistoryRoute.didPop (package:flutter/src/widgets/routes.dart:955:13)
+#11     MaterialRouteTransitionMixin.didPop (package:flutter/src/material/page.dart:132:18)
+#12     GoRouterDelegate._handlePopPageWithRouteMatch (package:go_router/src/delegate.dart:147:33)
+#13     _CustomNavigatorState._handlePopPage (package:go_router/src/builder.dart:446:42)
+#14     NavigatorState.pop (package:flutter/src/widgets/navigator.dart:5598:28)
+#15     GoRouterDelegate.pop (package:go_router/src/delegate.dart:107:18)
+#16     GoRouter.pop (package:go_router/src/router.dart:587:20)
+#17     GoRouterHelper.pop (package:go_router/src/misc/extensions.dart:73:65)
+#18     _BetaMusicShellState._search (package:mesting_music/features/experience/presentation/beta_music_shell.dart:219:34)
+#19     _BetaMusicShellState._backSearch (package:mesting_music/features/experience/presentation/beta_music_shell.dart:147:7)
+#20     _BetaMusicShellState.build.<anonymous closure> (package:mesting_music/features/experience/presentation/beta_music_shell.dart:539:9)
+#21     _CallbackHookProvider.invokeCallback (package:flutter/src/widgets/router.dart:935:31)
+#22     BackButtonDispatcher.invokeCallback (package:flutter/src/widgets/router.dart:1018:18)
+#23     ChildBackButtonDispatcher.notifiedByParent (package:flutter/src/widgets/router.dart:1144:12)
+#24     BackButtonDispatcher.invokeCallback (package:flutter/src/widgets/router.dart:1016:35)
+#25     RootBackButtonDispatcher.didPopRoute (package:flutter/src/widgets/router.dart:1113:33)
+#26     WidgetsBinding.handlePopRoute (package:flutter/src/widgets/binding.dart:985:26)
+<asynchronous suspension>
+#27     main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2452:11)
+<asynchronous suspension>
+#28     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#29     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 3 frames from class _AssertionError and package:stack_trace)
+
+The test description was:
+  beta14 Android back registration survives retained-engine resume and follows every page level
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following message was thrown:
+Multiple exceptions (2) were detected during the running of the current test, and at least one was
+unexpected.
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:13 +14 -2: beta14 Android back registration survives retained-engine resume and follows every page level [E]
+  Test failed. See exception logs above.
+  The test description was: beta14 Android back registration survives retained-engine resume and follows every page level
+  
+00:13 +14 -2: beta12 glass background and compact matrix plus responsive startup and edit controls
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2564:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2564:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2564:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2564:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2617:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2633:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2617:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2633:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+00:14 +15 -2: beta12 rendered comment action stays saturated blue across scrolling backdrops
+BETA12_BLUE_SAMPLE light 0 [13, 107, 218]
+BETA12_BLUE_SAMPLE light 1 [13, 107, 218]
+BETA12_BLUE_SAMPLE light 2 [13, 107, 218]
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      main.prepare (file:///D:/AnLi/test/beta5_ui_test.dart:285:16)
+#6      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:2669:15)
+<asynchronous suspension>
+#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+BETA12_BLUE_SAMPLE dark 0 [1, 95, 206]
+BETA12_BLUE_SAMPLE dark 1 [13, 107, 218]
+BETA12_BLUE_SAMPLE dark 2 [1, 95, 206]
+00:15 +16 -2: beta9 capsule uses the shared live toggle for rapid taps
+00:15 +17 -2: beta13 capsule long press opens anchored premium glass and reverses on outside tap (false)
+00:15 +18 -2: beta13 editing menu preserves selection and field formatters (false/false)
+00:15 +19 -2: beta13 editing menu preserves selection and field formatters (false/true)
+00:15 +20 -2: beta13 capsule long press opens anchored premium glass and reverses on outside tap (true)
+00:16 +21 -2: beta13 editing menu preserves selection and field formatters (true/false)
+00:16 +22 -2: beta13 editing menu preserves selection and field formatters (true/true)
+00:16 +23 -2: beta13 search keeps real results until return motion finishes
+00:16 +24 -2: beta13 player entrance never reveals bottom chrome; reverse and drag do
+══╡ EXCEPTION CAUGHT BY WIDGETS LIBRARY ╞═══════════════════════════════════════════════════════════
+The following assertion was thrown building InheritedGoRouter(goRouter: Instance of 'GoRouter'):
+SingleChildRenderObjectElement unmounted
+'package:flutter/src/widgets/framework.dart':
+Failed assertion: line 6620 pos 12: '_renderObject != null'
+
+Either the assertion indicates an error in the framework itself, or we should provide substantially
+more information in this error message to help you determine and fix the underlying cause.
+In either case, please report this assertion by filing a bug on GitHub:
+  https://github.com/flutter/flutter/issues/new?template=02_bug.yml
+
+The relevant error-causing widget was:
+  InheritedGoRouter
+  InheritedGoRouter:file:///C:/Users/zyt/AppData/Local/Pub/Cache/hosted/pub.dev/go_router-17.3.0/lib/src/router.dart:313:11
+
+When the exception was thrown, this was the stack:
+#2      RenderObjectElement.renderObject (package:flutter/src/widgets/framework.dart:6620:12)
+#3      RenderObjectElement.detachRenderObject (package:flutter/src/widgets/framework.dart:6952:61)
+#4      Element.detachRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4460:13)
+#5      ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#6      Element.detachRenderObject (package:flutter/src/widgets/framework.dart:4459:5)
+#7      Element.detachRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4460:13)
+#8      ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#9      Element.detachRenderObject (package:flutter/src/widgets/framework.dart:4459:5)
+#10     Element.detachRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4460:13)
+#11     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#12     Element.detachRenderObject (package:flutter/src/widgets/framework.dart:4459:5)
+#13     Element.detachRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4460:13)
+#14     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#15     Element.detachRenderObject (package:flutter/src/widgets/framework.dart:4459:5)
+#16     Element.detachRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4460:13)
+#17     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#18     Element.detachRenderObject (package:flutter/src/widgets/framework.dart:4459:5)
+#19     Element.detachRenderObject.<anonymous closure> (package:flutter/src/widgets/framework.dart:4460:13)
+#20     ComponentElement.visitChildren (package:flutter/src/widgets/framework.dart:5871:14)
+#21     Element.detachRenderObject (package:flutter/src/widgets/framework.dart:4459:5)
+#22     Element.deactivateChild (package:flutter/src/widgets/framework.dart:4635:11)
+#23     Element._retakeInactiveElement (package:flutter/src/widgets/framework.dart:4529:14)
+...     Normal element mounting (420 frames)
+#443    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587:20)
+#444    Element.updateChild (package:flutter/src/widgets/framework.dart:4053:20)
+#445    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#446    Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#447    ProxyElement.update (package:flutter/src/widgets/framework.dart:6149:5)
+#448    _InheritedNotifierElement.update (package:flutter/src/widgets/inherited_notifier.dart:108:11)
+#449    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#450    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#451    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#452    Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#453    StatefulElement.update (package:flutter/src/widgets/framework.dart:6007:5)
+#454    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#455    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#456    Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#457    ProxyElement.update (package:flutter/src/widgets/framework.dart:6149:5)
+#458    _InheritedNotifierElement.update (package:flutter/src/widgets/inherited_notifier.dart:108:11)
+#459    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#460    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#461    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#462    Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#463    StatefulElement.update (package:flutter/src/widgets/framework.dart:6007:5)
+#464    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#465    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#466    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#467    Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#468    StatefulElement.update (package:flutter/src/widgets/framework.dart:6007:5)
+#469    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#470    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#471    Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#472    ProxyElement.update (package:flutter/src/widgets/framework.dart:6149:5)
+#473    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#474    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#475    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#476    Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#477    StatefulElement.update (package:flutter/src/widgets/framework.dart:6007:5)
+#478    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#479    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#480    Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#481    ProxyElement.update (package:flutter/src/widgets/framework.dart:6149:5)
+#482    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#483    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#484    Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#485    ProxyElement.update (package:flutter/src/widgets/framework.dart:6149:5)
+#486    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#487    _RawViewElement._updateChild (package:flutter/src/widgets/view.dart:481:16)
+#488    _RawViewElement.update (package:flutter/src/widgets/view.dart:568:5)
+#489    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#490    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#491    Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#492    StatelessElement.update (package:flutter/src/widgets/framework.dart:5895:5)
+#493    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#494    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#495    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#496    Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#497    StatefulElement.update (package:flutter/src/widgets/framework.dart:6007:5)
+#498    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#499    RootElement._rebuild (package:flutter/src/widgets/binding.dart:1822:16)
+#500    RootElement.update (package:flutter/src/widgets/binding.dart:1800:5)
+#501    RootElement.performRebuild (package:flutter/src/widgets/binding.dart:1814:7)
+#502    Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#503    BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750:15)
+#504    BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807:11)
+#505    BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111:18)
+#506    AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2131:19)
+#507    RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#508    SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#509    SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#510    AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#513    TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#514    AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#515    WidgetTester.pumpWidget.<anonymous closure> (package:flutter_test/src/widget_tester.dart:598:22)
+#518    TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#519    WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#520    main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:3049:20)
+<asynchronous suspension>
+#521    testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#522    TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 7 frames from class _AssertionError, dart:async, and package:stack_trace)
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY WIDGETS LIBRARY ╞═══════════════════════════════════════════════════════════
+The following assertion was thrown while finalizing the widget tree:
+Duplicate GlobalKey detected in widget tree.
+The following GlobalKey was specified multiple times in the widget tree. This will lead to parts of
+the widget tree being truncated unexpectedly, because the second time a key is seen, the previous
+instance is moved to the new location. The key was:
+- [GlobalObjectKey int#8c0fe]
+This was determined by noticing that after the widget with the above global key was moved out of its
+previous parent, that previous parent never updated during this frame, meaning that it either did
+not update at all or updated before the widget was moved, in either case implying that it still
+thinks that it should have a child with that global key.
+The specific parent that did not update after having one or more children forcibly removed due to
+GlobalKey reparenting is:
+- InheritedGoRouter(goRouter: Instance of 'GoRouter')
+A GlobalKey can only be specified on one widget at a time in the widget tree.
+
+When the exception was thrown, this was the stack:
+#0      BuildOwner.finalizeTree.<anonymous closure> (package:flutter/src/widgets/framework.dart:3409:15)
+#1      BuildOwner.finalizeTree (package:flutter/src/widgets/framework.dart:3434:8)
+#2      AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2153:19)
+#3      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#4      SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#5      SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#6      AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#9      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#10     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#11     WidgetTester.pumpWidget.<anonymous closure> (package:flutter_test/src/widget_tester.dart:598:22)
+#14     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#15     WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:595:27)
+#16     main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:3049:20)
+<asynchronous suspension>
+#17     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#18     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY WIDGETS LIBRARY ╞═══════════════════════════════════════════════════════════
+The following assertion was thrown building InheritedGoRouter(goRouter: Instance of 'GoRouter'):
+'package:flutter/src/widgets/framework.dart': Failed assertion: line 2168 pos 12:
+'_elements.contains(element)': is not true.
+
+Either the assertion indicates an error in the framework itself, or we should provide substantially
+more information in this error message to help you determine and fix the underlying cause.
+In either case, please report this assertion by filing a bug on GitHub:
+  https://github.com/flutter/flutter/issues/new?template=02_bug.yml
+
+The relevant error-causing widget was:
+  InheritedGoRouter
+  InheritedGoRouter:file:///C:/Users/zyt/AppData/Local/Pub/Cache/hosted/pub.dev/go_router-17.3.0/lib/src/router.dart:313:11
+
+When the exception was thrown, this was the stack:
+#2      _InactiveElements.remove (package:flutter/src/widgets/framework.dart:2168:12)
+#3      Element._retakeInactiveElement (package:flutter/src/widgets/framework.dart:4532:30)
+#4      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4572:13)
+#5      Element.updateChild (package:flutter/src/widgets/framework.dart:4053:20)
+#6      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#7      Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#8      ProxyElement.update (package:flutter/src/widgets/framework.dart:6149:5)
+#9      Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#10     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#11     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#12     StatelessElement.update (package:flutter/src/widgets/framework.dart:5895:5)
+#13     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#14     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#15     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#16     ProxyElement.update (package:flutter/src/widgets/framework.dart:6149:5)
+#17     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#18     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#19     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#20     ProxyElement.update (package:flutter/src/widgets/framework.dart:6149:5)
+#21     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#22     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#23     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#24     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#25     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750:15)
+#26     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807:11)
+#27     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111:18)
+#28     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2131:19)
+#29     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#30     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#31     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#32     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#35     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#36     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#37     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#40     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#41     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#42     main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:3061:20)
+<asynchronous suspension>
+#43     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#44     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 7 frames from class _AssertionError, dart:async, and package:stack_trace)
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following _TypeError was thrown running a test:
+Null check operator used on a null value
+
+When the exception was thrown, this was the stack:
+#0      GoRouterDelegate._findCurrentNavigators (package:go_router/src/delegate.dart:126:43)
+#1      GoRouterDelegate.pop (package:go_router/src/delegate.dart:101:45)
+#2      GoRouter.pop (package:go_router/src/router.dart:587:20)
+#3      main.<anonymous closure> (file:///D:/AnLi/test/beta5_ui_test.dart:3067:28)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  beta13 player entrance never reveals bottom chrome; reverse and drag do
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following message was thrown:
+Multiple exceptions (4) were detected during the running of the current test, and at least one was
+unexpected.
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:16 +24 -3: beta13 player entrance never reveals bottom chrome; reverse and drag do [E]
+  Test failed. See exception logs above.
+  The test description was: beta13 player entrance never reveals bottom chrome; reverse and drag do
+  
+00:16 +24 -3: (tearDownAll)
+00:16 +24 -3: Some tests failed.

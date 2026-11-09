@@ -1,0 +1,78 @@
+Applications Memory Usage (in Kilobytes):
+Uptime: 763023494 Realtime: 860464792
+
+** MEMINFO in pid 11456 [com.mesting.music] **
+                   Pss  Private  Private  SwapPss      Rss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty    Total     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------   ------
+  Native Heap   115873   114856      952     2315   117340   228116   105953   116320
+  Dalvik Heap    22824    22752        4       19    28332    29441     4865    24576
+ Dalvik Other     1940     1344      432      181     2820                           
+        Stack     1792     1768       24      176     1800                           
+       Ashmem     7381     7244        0        0     8768                           
+      Gfx dev    18980    18980        0        0    18984                           
+    Other dev       75       12       60        0      628                           
+     .so mmap     9858      516     3260       85    69488                           
+    .jar mmap     4387        0      568        0    44908                           
+    .apk mmap    53014      140    52448       80    54576                           
+    .ttf mmap     8691        0     6644        0    24812                           
+    .dex mmap     4183       12     4064        0     5480                           
+    .oat mmap      438        0        0        0    15924                           
+    .art mmap      831      668       28       12    20244                           
+   Other mmap     3470        4     3388        0     4708                           
+   EGL mtrack    82208    82208        0        0    82208                           
+    GL mtrack    21960    21960        0        0    21960                           
+      Unknown    68221    67788      388      332    69024                           
+        TOTAL   429326   340252    72260     3200   592004   257557   110818   140896
+ 
+ App Summary
+                       Pss(KB)                        Rss(KB)
+                        ------                         ------
+           Java Heap:    23448                          48576
+         Native Heap:   114856                         117340
+                Code:    67652                         215500
+               Stack:     1768                           1800
+            Graphics:   123148                         123152
+       Private Other:    81640
+              System:    16814
+             Unknown:                                   85636
+ 
+           TOTAL PSS:   429326            TOTAL RSS:   592004       TOTAL SWAP PSS:     3200
+ 
+ Objects
+               Views:        6         ViewRootImpl:        1
+         AppContexts:        6           Activities:        1
+              Assets:       60        AssetManagers:        0
+       Local Binders:       58        Proxy Binders:      140
+       Parcel memory:       18         Parcel count:       72
+    Death Recipients:        2             WebViews:        0
+ 
+ Native Allocations
+                         Count                       Total(kB)
+                        ------                         ------
+    Other (malloced):      455                             41
+ Other (nonmalloced):      214                            146
+   Bitmap (malloced):       81                          10166
+Bitmap (nonmalloced):        2                           7200
+ 
+ SQL
+         MEMORY_USED:      161
+  PAGECACHE_OVERFLOW:      101          MALLOC_SIZE:       46
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b) cache hits cache misses cache size  Dbname
+PER CONNECTION STATS
+         4       92             95    14    22     7  /data/user/0/com.mesting.music/files/libCachedImageData.db
+POOL STATS
+     cache hits  cache misses    cache size  Dbname
+             14            23            37  /data/user/0/com.mesting.music/files/libCachedImageData.db
+ 
+ Asset Allocations
+    : 55K
+    : 32K
+    : 14K
+    : 1210K
+    : 131K
+    : 32K
+    : 21K
+    : 21K

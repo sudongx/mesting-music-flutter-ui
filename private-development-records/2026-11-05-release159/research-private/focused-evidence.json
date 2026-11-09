@@ -1,0 +1,114 @@
+{
+  "scope": "Static official APK observations only; no account, phone, target execution or receipt validation.",
+  "records": [
+    {
+      "key": "q0N1",
+      "evidence": {
+        "evidence_id": "ev_fb265e6393ed4c04c550fc13a58ad62245890149aa96d7c649570501e415f04f",
+        "subject": {
+          "name": "classes16-analysis-only.apk",
+          "digest": {
+            "sha256": "ea7d10e609957c3e55a102309f9efe08438c7fb80bbe264fd21b671f4c42e8fd"
+          },
+          "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-05-release159\\research-private\\classes16-analysis-only.apk",
+          "format": "apk",
+          "architecture": null
+        },
+        "provider": {
+          "id": "rea-analysis-view",
+          "name": "REA analysis view projection",
+          "version": "1"
+        },
+        "analysis_profile": null,
+        "predicate_type": "rea.analysis-view",
+        "operation": "inspect_analysis_view",
+        "parameters": {
+          "parent_evidence_id": "ev_c23b518ce9075b37c9be71f21e5665d4e36095582749e1bbe8e060473935f1cd",
+          "view": {
+            "kind": "summary"
+          }
+        },
+        "raw_result": null,
+        "normalized_result": {
+          "kind": "summary",
+          "view": {
+            "kind": "summary"
+          },
+          "parent_evidence_id": "ev_c23b518ce9075b37c9be71f21e5665d4e36095582749e1bbe8e060473935f1cd",
+          "parent_operation": "inspect_android_method",
+          "parent_digest": "c23b518ce9075b37c9be71f21e5665d4e36095582749e1bbe8e060473935f1cd",
+          "view_digest": "deb508e20b697a269bdbe234bfd30421e2013e033a2a553c5a64e03b7a83bb87",
+          "artifact": {
+            "path": "D:\\AnLi\\.codex-artifacts\\2026-11-05-release159\\research-private\\classes16-analysis-only.apk",
+            "sha256": "ea7d10e609957c3e55a102309f9efe08438c7fb80bbe264fd21b671f4c42e8fd"
+          },
+          "coverage": {
+            "status": "complete-within-view",
+            "examined": 1,
+            "total": 1,
+            "next_offset": null,
+            "exhausted": true
+          },
+          "limitations": [
+            "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+            "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+            "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+            "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+            "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+          ],
+          "unknowns": [
+            "Static class and method analysis does not establish runtime behavior or APK authenticity."
+          ],
+          "summary": {
+            "engine": {
+              "name": "jadx-headless-mcp",
+              "version": "0.7.1",
+              "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+              "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+              "worker_count": 1,
+              "heap_limit_mib": 3072
+            },
+            "class_name": "o30.q0",
+            "method": {
+              "name": "N1",
+              "reported_signature": "N1(java.util.Map<java.lang.String, ? extends java.lang.Object>, kotlin.coroutines.Continuation<? super androidx.lifecycle.LiveData<com.netease.cloudmusic.meta.IMotivationInfo>>): java.lang.Object",
+              "overload_index": 0,
+              "is_constructor": false,
+              "dex_descriptor": "(Ljava/util/Map;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"
+            },
+            "overload_count": 1,
+            "representation": "java",
+            "body_status": "available",
+            "fell_back": false,
+            "markers": [],
+            "source": {
+              "status": "complete",
+              "text": "    /* JADX WARN: Code duplicated, block: B:7:0x0013  */\r\n    @Nullable\r\n    public final Object N1(@NotNull Map<String, ? extends Object> map, @NotNull Continuation<? super LiveData<IMotivationInfo>> continuation) {\r\n        b bVar;\r\n        if (continuation instanceof b) {\r\n            bVar = (b) continuation;\r\n            int i = bVar.d;\r\n            if ((i & RadioCategory.TO_BE_DJ) != 0) {\r\n                bVar.d = i - RadioCategory.TO_BE_DJ;\r\n            } else {\r\n                bVar = new b(continuation);\r\n            }\r\n        } else {\r\n            bVar = new b(continuation);\r\n        }\r\n        Object objG = bVar.a;\r\n        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();\r\n        int i2 = bVar.d;\r\n        if (i2 == 0) {\r\n            ResultKt.throwOnFailure(objG);\r\n            CoroutineContext coroutineContextPlus = ViewModelKt.getViewModelScope(this).getCoroutineContext().plus(kotlinx.coroutines.d1.b());\r\n            c cVar = new c(map, null);\r\n            bVar.d = 1;\r\n            objG = kotlinx.coroutines.j.g(coroutineContextPlus, cVar, bVar);\r\n            if (objG == coroutine_suspended) {\r\n                return coroutine_suspended;\r\n            }\r\n        } else {\r\n            if (i2 != 1) {\r\n                throw new IllegalStateException(\"call to 'resume' before 'invoke' with coroutine\");\r\n            }\r\n            ResultKt.throwOnFailure(objG);\r\n        }\r\n        return new MutableLiveData((ListeningRightHintInfoWrapper) objG);\r\n    }",
+              "reported_total_bytes": null
+            }
+          }
+        },
+        "confidence": "derived",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+          "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+          "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+          "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+          "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+        ],
+        "relationship_coverage": null,
+        "locations": [
+          {
+            "kind": "artifact-path",
+            "path": "D:\\AnLi\\.codex-artifacts\\2026-11-05-release159\\research-private\\classes16-analysis-only.apk"
+          }
+        ],
+        "evidence_links": [
+          "ev_c23b518ce9075b37c9be71f21e5665d4e36095582749e1bbe8e060473935f1cd"
+        ]
+      }
+    }
+  ]
+}

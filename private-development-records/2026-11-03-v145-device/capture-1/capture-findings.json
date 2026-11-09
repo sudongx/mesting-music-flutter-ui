@@ -1,0 +1,109 @@
+{
+  "appVersion": "1.0.45/code66 diagnostic candidate 1",
+  "userConfirmedOutcome": "Background still does not follow peer; returning catches up.",
+  "captureComplete": true,
+  "captureElapsedSeconds": 163.35,
+  "samples": 46,
+  "processAliveAll": true,
+  "foregroundMediaServiceAll": true,
+  "criticalBackgroundIntervalSeconds": [
+    58.799,
+    121.637
+  ],
+  "backgroundCompletedHttp": {
+    "status": 13,
+    "roomCheck": 13,
+    "heartbeat": 13,
+    "statistics": 2
+  },
+  "backgroundPlaylistReads": 0,
+  "backgroundNativeSent": 13,
+  "backgroundDartReceived": 13,
+  "backgroundApplied": 0,
+  "foregroundRecoveryEvents": [
+    {
+      "source": "dart",
+      "phase": "httpCompleted",
+      "captureElapsedSeconds": 121.723,
+      "index": 733,
+      "utcMs": 1793688136755,
+      "elapsedMs": 231534,
+      "operation": "status",
+      "request": 155,
+      "durationMs": 85,
+      "accepted": true
+    },
+    {
+      "source": "dart",
+      "phase": "httpCompleted",
+      "captureElapsedSeconds": 121.759,
+      "index": 735,
+      "utcMs": 1793688136790,
+      "elapsedMs": 231569,
+      "operation": "roomCheck",
+      "request": 156,
+      "durationMs": 35,
+      "accepted": true
+    },
+    {
+      "source": "dart",
+      "phase": "httpCompleted",
+      "captureElapsedSeconds": 121.794,
+      "index": 739,
+      "utcMs": 1793688136828,
+      "elapsedMs": 231607,
+      "operation": "statistics",
+      "request": 157,
+      "durationMs": 37,
+      "accepted": true
+    },
+    {
+      "source": "dart",
+      "phase": "httpCompleted",
+      "captureElapsedSeconds": 121.831,
+      "index": 741,
+      "utcMs": 1793688136865,
+      "elapsedMs": 231644,
+      "operation": "playlistRead",
+      "request": 158,
+      "durationMs": 36,
+      "accepted": true
+    },
+    {
+      "source": "dart",
+      "phase": "httpCompleted",
+      "captureElapsedSeconds": 122.226,
+      "index": 743,
+      "utcMs": 1793688137260,
+      "elapsedMs": 232039,
+      "operation": "songDetail",
+      "request": 159,
+      "durationMs": 394,
+      "accepted": true
+    },
+    {
+      "source": "dart",
+      "phase": "commandReceived",
+      "captureElapsedSeconds": 122.23,
+      "index": 744,
+      "utcMs": 1793688137263,
+      "elapsedMs": 232042,
+      "order": "newer",
+      "numericSequence": true
+    },
+    {
+      "source": "dart",
+      "phase": "applicationCompleted",
+      "captureElapsedSeconds": 122.788,
+      "index": 747,
+      "utcMs": 1793688137816,
+      "elapsedMs": 232595,
+      "durationMs": 553,
+      "application": 5
+    }
+  ],
+  "sourceConclusion": "tick reads status/check/heartbeat but omits shared playback snapshot. restore reads snapshot and immediately applies the newer command. Root cause evidence supports polling the snapshot without UI/resume ownership.",
+  "remainingBoundary": "Proposed repair requires a new device comparison; host tests alone do not establish the fix.",
+  "deviceOrPlaybackDrivenByAgentDuringCapture": false,
+  "rawLogcatPersisted": false
+}

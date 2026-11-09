@@ -1,0 +1,62 @@
+{"protocolVersion":"0.1.1","runnerVersion":"1.30.0","pid":322860,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"D:/AnLi/test/release_149_ui_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading D:/AnLi/test/release_149_ui_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":1}
+{"suite":{"id":2,"platform":"vm","path":"D:/AnLi/test/release_149_regressions_test.dart"},"type":"suite","time":6}
+{"test":{"id":3,"name":"loading D:/AnLi/test/release_149_regressions_test.dart","suiteID":2,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":6}
+{"count":3,"time":7,"type":"allSuites"}
+test/release_149_ui_test.dart:137:35: Error: Constant evaluation error:
+              gate.complete(const TrackPage([], offset: 0, hasMore: false));
+                                  ^
+lib/shared/models/track_page.dart:13:50: Context: The property 'length' can't be accessed on '<Track>[]' in a constant expression.
+ - 'Track' is from 'package:mesting_music/shared/models/track.dart' ('lib/shared/models/track.dart').
+  }) : nextOffset = nextOffset ?? offset + items.length;
+                                                 ^
+{"testID":1,"error":"Failed to load \"D:/AnLi/test/release_149_ui_test.dart\":\nCompilation failed for testPath=D:/AnLi/test/release_149_ui_test.dart: test/release_149_ui_test.dart:137:35: Error: Constant evaluation error:\n              gate.complete(const TrackPage([], offset: 0, hasMore: false));\n                                  ^\nlib/shared/models/track_page.dart:13:50: Context: The property 'length' can't be accessed on '<Track>[]' in a constant expression.\n - 'Track' is from 'package:mesting_music/shared/models/track.dart' ('lib/shared/models/track.dart').\n  }) : nextOffset = nextOffset ?? offset + items.length;\n                                                 ^\n.","stackTrace":"","isFailure":false,"type":"error","time":4798}
+{"testID":1,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":4800}
+{"suite":{"id":4,"platform":"vm","path":"D:/AnLi/test/release_149_bookmarks_test.dart"},"type":"suite","time":4801}
+{"test":{"id":5,"name":"loading D:/AnLi/test/release_149_bookmarks_test.dart","suiteID":4,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":4801}
+{"testID":1,"error":"Error: The Dart compiler exited unexpectedly.","stackTrace":"package:flutter_tools/src/base/common.dart 34:3  throwToolExit\npackage:flutter_tools/src/compile.dart 939:11    DefaultResidentCompiler._compile.<fn>\ndart:async/zone_root.dart 48:47                  _rootRunUnary\ndart:async/zone.dart 733:19                      _CustomZone.runUnary\ndart:async/future_impl.dart 948:45               Future._propagateToListeners.handleValueCallback\ndart:async/future_impl.dart 977:13               Future._propagateToListeners\ndart:async/future_impl.dart 862:9                Future._propagateToListeners\ndart:async/future_impl.dart 720:5                Future._completeWithValue\ndart:async/future_impl.dart 804:7                Future._asyncCompleteWithValue.<fn>\ndart:async/zone_root.dart 35:13                  _rootRun\ndart:async/zone.dart 726:19                      _CustomZone.run\ndart:async/zone.dart 625:7                       _CustomZone.runGuarded\ndart:async/zone.dart 666:23                      _CustomZone.bindCallbackGuarded.<fn>\ndart:async/schedule_microtask.dart 40:35         _microtaskLoop\ndart:async/schedule_microtask.dart 49:5          _startMicrotaskLoop\ndart:isolate-patch/isolate_patch.dart 127:13     _runPendingImmediateCallback\ndart:isolate-patch/isolate_patch.dart 194:5      _RawReceivePort._handleMessage\n","isFailure":false,"type":"error","time":4892}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":3,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":10559}
+{"group":{"id":6,"suiteID":2,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":7,"line":null,"column":null,"url":null},"type":"group","time":10564}
+{"test":{"id":7,"name":"cover retry bypasses observed old responses without changing other queries","suiteID":2,"groupIDs":[6],"metadata":{"skip":false,"skipReason":null},"line":11,"column":3,"url":"file:///D:/AnLi/test/release_149_regressions_test.dart"},"type":"testStart","time":10565}
+{"testID":7,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10639}
+{"test":{"id":8,"name":"empty category cover retrieves its real playlist and album cover","suiteID":2,"groupIDs":[6],"metadata":{"skip":false,"skipReason":null},"line":49,"column":3,"url":"file:///D:/AnLi/test/release_149_regressions_test.dart"},"type":"testStart","time":10640}
+{"testID":8,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10649}
+{"test":{"id":9,"name":"recovery skips rejected thumbnail identities and tries another category playlist","suiteID":2,"groupIDs":[6],"metadata":{"skip":false,"skipReason":null},"line":80,"column":3,"url":"file:///D:/AnLi/test/release_149_regressions_test.dart"},"type":"testStart","time":10649}
+{"testID":9,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10660}
+{"test":{"id":10,"name":"manual category recovery remains bounded to three simultaneous requests","suiteID":2,"groupIDs":[6],"metadata":{"skip":false,"skipReason":null},"line":112,"column":3,"url":"file:///D:/AnLi/test/release_149_regressions_test.dart"},"type":"testStart","time":10660}
+{"testID":10,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10671}
+{"test":{"id":11,"name":"visibility and opacity use the same entry threshold in reverse","suiteID":2,"groupIDs":[6],"metadata":{"skip":false,"skipReason":null},"line":143,"column":3,"url":"file:///D:/AnLi/test/release_149_regressions_test.dart"},"type":"testStart","time":10672}
+{"testID":11,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10684}
+{"test":{"id":12,"name":"live router-page exits along the same path and retains the parent","suiteID":2,"groupIDs":[6],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":166,"root_column":5,"root_url":"file:///D:/AnLi/test/release_149_regressions_test.dart"},"type":"testStart","time":10685}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":12,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12251}
+{"test":{"id":13,"name":"live material exits along the same path and retains the parent","suiteID":2,"groupIDs":[6],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":166,"root_column":5,"root_url":"file:///D:/AnLi/test/release_149_regressions_test.dart"},"type":"testStart","time":12252}
+{"testID":13,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12397}
+{"testID":5,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":13159}
+{"group":{"id":14,"suiteID":4,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":7,"line":null,"column":null,"url":null},"type":"group","time":13160}
+{"test":{"id":15,"name":"(setUpAll)","suiteID":4,"groupIDs":[14],"metadata":{"skip":false,"skipReason":null},"line":13,"column":3,"url":"file:///D:/AnLi/test/release_149_bookmarks_test.dart"},"type":"testStart","time":13160}
+{"testID":15,"messageType":"print","message":"[LiquidGlass] Initializing library...","type":"print","time":13231}
+{"testID":15,"messageType":"print","message":"[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)","type":"print","time":13231}
+{"testID":15,"messageType":"print","message":"[LiquidGlass] Initialization complete.","type":"print","time":13231}
+{"testID":15,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":13231}
+{"test":{"id":16,"name":"last deliberate selection persists per owner and logical list","suiteID":4,"groupIDs":[14],"metadata":{"skip":false,"skipReason":null},"line":19,"column":3,"url":"file:///D:/AnLi/test/release_149_bookmarks_test.dart"},"type":"testStart","time":13232}
+{"testID":16,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13252}
+{"test":{"id":17,"name":"rapid selections persist the newest song without unlimited storage","suiteID":4,"groupIDs":[14],"metadata":{"skip":false,"skipReason":null},"line":43,"column":3,"url":"file:///D:/AnLi/test/release_149_bookmarks_test.dart"},"type":"testStart","time":13252}
+{"testID":17,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13422}
+{"test":{"id":18,"name":"corrupt optional bookmarks do not break opening a list","suiteID":4,"groupIDs":[14],"metadata":{"skip":false,"skipReason":null},"line":65,"column":3,"url":"file:///D:/AnLi/test/release_149_bookmarks_test.dart"},"type":"testStart","time":13422}
+{"testID":18,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13426}
+{"test":{"id":19,"name":"locates an unloaded lazy song without playback and returns to top dark=false","suiteID":4,"groupIDs":[14],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":76,"root_column":5,"root_url":"file:///D:/AnLi/test/release_149_bookmarks_test.dart"},"type":"testStart","time":13427}
+{"testID":19,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":15038}
+{"test":{"id":20,"name":"locates an unloaded lazy song without playback and returns to top dark=true","suiteID":4,"groupIDs":[14],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":76,"root_column":5,"root_url":"file:///D:/AnLi/test/release_149_bookmarks_test.dart"},"type":"testStart","time":15038}
+{"testID":20,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":15504}
+{"test":{"id":21,"name":"owner change during locate stops pagination and hides the old hint","suiteID":4,"groupIDs":[14],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":165,"root_column":3,"root_url":"file:///D:/AnLi/test/release_149_bookmarks_test.dart"},"type":"testStart","time":15504}
+{"testID":21,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":15576}
+{"test":{"id":22,"name":"narrow large text tools fit above chrome and hide while typing","suiteID":4,"groupIDs":[14],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":224,"root_column":3,"root_url":"file:///D:/AnLi/test/release_149_bookmarks_test.dart"},"type":"testStart","time":15577}
+{"testID":22,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":15630}
+{"test":{"id":23,"name":"(tearDownAll)","suiteID":4,"groupIDs":[14],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":15630}
+{"testID":23,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":15633}
+{"success":false,"type":"done","time":15695}

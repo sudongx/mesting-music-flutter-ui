@@ -1,0 +1,118 @@
+{
+  "scope": "Original retained official19/21.5 DEX and pinned public source read only; no phone, APK execution, REA session, account/NAS/MCS/business network request.",
+  "method": "POST",
+  "path": "/luna/me/music_wall",
+  "requestBodyCandidate": {
+    "feed_music_wall_extra": {},
+    "ab_param": "{\"enable_new_music_wall\":1,\"enable_fav_artists\":false,\"enable_fav_playables\":false}"
+  },
+  "abParamType": "JSON string nested inside request JSON, not a nested JSON object",
+  "capabilities": {
+    "enable_new_music_wall": {
+      "type": "integer",
+      "officialStaticValue": 1,
+      "evidence": "ListeningDurationConfigKt.k is exactly const/4 v0,1; return v0 in both APKs; UserRepository.e0/b0 converts Boolean to integer before JSONObject.put(String,int)"
+    },
+    "enable_fav_artists": {
+      "type": "boolean",
+      "officialConfigDefault": false,
+      "source": "FavArtistsAndSongsExp.f -> Config enable_fav_artists; subject to official config/hotfix at runtime; Mesting default capability false is bounded omission of unsupported features"
+    },
+    "enable_fav_playables": {
+      "type": "boolean",
+      "officialConfigDefault": false,
+      "source": "FavArtistsAndSongsExp.g -> Config enable_fav_playables; subject to official config/hotfix at runtime; Mesting default capability false is bounded omission of unsupported features"
+    }
+  },
+  "extra": {
+    "containerRequired": true,
+    "fieldNullable": {
+      "har": "NetHarResult?",
+      "commerce_block_pattern": "NetCommerceBlockPattern?",
+      "reco_session_info": "RecoSessionInfo?",
+      "recent_play_info": "Map<String,RecoSessionMediaPlayInfo>?"
+    },
+    "sources": [
+      "AI HAR controller optional service",
+      "commercial service optional block pattern",
+      "playing service optional reco session",
+      "playing service optional recent play info"
+    ],
+    "emptyObjectEvidenceLevel": "DTO and nullable optional service branches allow all four member values to be absent; default Retrofit Gson builder lacks serializeNulls. This supports {} as a conservative local capability/request, not live server acceptance.",
+    "serverAcceptanceOfEmptyObjectVerified": false
+  },
+  "nullableOmittedFields": [
+    "recent_rankings_version",
+    "schema_extra"
+  ],
+  "officialUserMusicWallAlternative": {
+    "method": "POST",
+    "path": "/luna/user/music_wall",
+    "bodyFields": [
+      "user_id",
+      "feed_music_wall_extra",
+      "ab_param"
+    ],
+    "newAuthenticatedFallbackImplemented": false,
+    "note": "Pinned libresoda GET /luna/users/{id}/music_wall differs from original official contract; no evidence-backed automatic fallback recommended."
+  },
+  "conclusions": {
+    "emptyAbParamIsDifferentFromOfficialRequest": true,
+    "missingCapabilityMayExplainNullDuration": "plausible inference only; server implementation not observed",
+    "pcIdentityOfficialCumulativeAcceptanceVerified": false,
+    "officialDurationCreditingVerified": false,
+    "newMcsOutcomeFromUserReport": "No listeningReport events in the report; no success/failure inference available"
+  },
+  "sources": [
+    {
+      "path": ".codex-artifacts/2026-11-08-release179/research-listening/music-wall-call-index19.json",
+      "bytes": 209831,
+      "sha256": "c943ab094e37be78072c2ecec789584aa819ccc10e36d8c665cd27bd7e1659f7"
+    },
+    {
+      "path": ".codex-artifacts/2026-11-08-release179/research-listening/music-wall-call-index21.json",
+      "bytes": 214360,
+      "sha256": "ca5256d78f9db7eb955eefee9baaa7391e834099f8d95a27e27f7fd4bf4b7c3b"
+    },
+    {
+      "path": ".codex-artifacts/2026-11-08-release179/research-listening/duration-config19.json",
+      "bytes": 537869,
+      "sha256": "dc07a3342a6dae69628d85862ec51b274aa88f04c6c6988b076ebf61f6382137"
+    },
+    {
+      "path": ".codex-artifacts/2026-11-08-release179/research-listening/duration-config21.json",
+      "bytes": 538288,
+      "sha256": "7500bf08bd9850f6a9f40f4ed494e7e3630d7e62031fdf90a7452ea5b9ec1e26"
+    },
+    {
+      "path": ".codex-artifacts/2026-11-08-release179/research-listening/boolean-to-int19.json",
+      "bytes": 14735,
+      "sha256": "a52b467dbf8a6f7fa6e0748372d8c053b0caee667ee705f7ddcecb3ff7614bf8"
+    },
+    {
+      "path": ".codex-artifacts/2026-11-07-release177/research-social/gson-naming-classes21.dex.json",
+      "bytes": 62299,
+      "sha256": "c05a538d1070785f1d28564a287e47945fb531bcf1e54e572e12e027ed0f4886"
+    },
+    {
+      "path": ".codex-artifacts/2026-11-05-soda-github-api-research/repos/libresoda/src/soda/playback.rs",
+      "bytes": 7136,
+      "sha256": "12a0dea07405c5e1f50e2ec61de9b000d31d148503e4d33b5b1201c05bbde31b"
+    },
+    {
+      "path": ".codex-artifacts/2026-11-05-soda-github-api-research/repos/libresoda/src/soda/report.rs",
+      "bytes": 25302,
+      "sha256": "1a3286975c0c45324a6c368a72d0a48737f9279053d98b2aa8a1926c2063131a"
+    },
+    {
+      "path": ".codex-artifacts/2026-11-06-release167/research/libresoda-client-api.md",
+      "bytes": 20043,
+      "sha256": "0c1f362197e42bbe9c80e2c43d4b2128379a4a3567db88439158015bd744d181"
+    },
+    {
+      "path": ".codex-artifacts/2026-11-05-soda-github-api-research/repos/myMusic/app/src/main/java/com/mytv/mymusic/data/native/SodaPlayReport.kt",
+      "bytes": 14251,
+      "sha256": "cef05363d04ae40b8f83b72c08bd074c21ef336e741550d80964cba4af2875a4"
+    }
+  ]
+}

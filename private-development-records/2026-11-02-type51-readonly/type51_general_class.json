@@ -1,0 +1,845 @@
+{
+  "evidence_id": "ev_d100833337198a5107e370c1b12ff9e51798edc26271ebb710e12b1b7a20a600",
+  "subject": {
+    "name": "official-current-classes16-analysis-only.apk",
+    "digest": {
+      "sha256": "a7ee111497ee6314facc16d780243da5f6183f399fa02310190f84b146559a24"
+    },
+    "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-02-duration-phone139\\official-current-classes16-analysis-only.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-analysis-view",
+    "name": "REA analysis view projection",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis-view",
+  "operation": "inspect_analysis_view",
+  "parameters": {
+    "parent_evidence_id": "ev_2da1dd8265419a6f261673f6dbeb0e58187128cb7a3d625840b8ae56bb7618b5",
+    "view": {
+      "kind": "summary"
+    }
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "kind": "summary",
+    "view": {
+      "kind": "summary"
+    },
+    "parent_evidence_id": "ev_2da1dd8265419a6f261673f6dbeb0e58187128cb7a3d625840b8ae56bb7618b5",
+    "parent_operation": "inspect_android_class",
+    "parent_digest": "2da1dd8265419a6f261673f6dbeb0e58187128cb7a3d625840b8ae56bb7618b5",
+    "view_digest": "8da2361a26b198e8b19a9fb29e912c1a3151dbd9c53976c06ec7555b22d8aec5",
+    "artifact": {
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-02-duration-phone139\\official-current-classes16-analysis-only.apk",
+      "sha256": "a7ee111497ee6314facc16d780243da5f6183f399fa02310190f84b146559a24"
+    },
+    "coverage": {
+      "status": "complete-within-view",
+      "examined": 1,
+      "total": 1,
+      "next_offset": null,
+      "exhausted": true
+    },
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ],
+    "unknowns": [
+      "Static class and method analysis does not establish runtime behavior or APK authenticity."
+    ],
+    "summary": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 3072
+      },
+      "class_name": "com.netease.cloudmusic.meta.GeneralResource",
+      "methods": [
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(): void",
+          "overload_index": 0,
+          "is_constructor": true,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(com.netease.cloudmusic.share.framework.e): void",
+          "overload_index": 1,
+          "is_constructor": true,
+          "dex_descriptor": "(Lcom/netease/cloudmusic/share/framework/e;)V"
+        },
+        {
+          "name": "getBoxContent",
+          "reported_signature": "getBoxContent(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getCircleId",
+          "reported_signature": "getCircleId(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getCompatibleInfo",
+          "reported_signature": "getCompatibleInfo(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getContent",
+          "reported_signature": "getContent(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getCopyLink",
+          "reported_signature": "getCopyLink(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getCover",
+          "reported_signature": "getCover(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getCoverDetailInfo",
+          "reported_signature": "getCoverDetailInfo(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getDefaultText",
+          "reported_signature": "getDefaultText(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getExtInfo",
+          "reported_signature": "getExtInfo(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getExtraMap",
+          "reported_signature": "getExtraMap(): java.util.Map<java.lang.String, java.lang.Object>",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/util/Map;"
+        },
+        {
+          "name": "getHeaderSubTitle",
+          "reported_signature": "getHeaderSubTitle(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getHeaderTitle",
+          "reported_signature": "getHeaderTitle(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getMiniProgramId",
+          "reported_signature": "getMiniProgramId(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getMiniProgramPath",
+          "reported_signature": "getMiniProgramPath(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getMiniProgramType",
+          "reported_signature": "getMiniProgramType(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getNativeUrl",
+          "reported_signature": "getNativeUrl(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getPrivacyCOPLInfo",
+          "reported_signature": "getPrivacyCOPLInfo(): com.netease.cloudmusic.meta.PrivacyCOPLInfo",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Lcom/netease/cloudmusic/meta/PrivacyCOPLInfo;"
+        },
+        {
+          "name": "getRedTag",
+          "reported_signature": "getRedTag(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getResName",
+          "reported_signature": "getResName(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getSelectedImageURLs",
+          "reported_signature": "getSelectedImageURLs(): java.util.List<java.lang.String>",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/util/List;"
+        },
+        {
+          "name": "getSerialVersionUID",
+          "reported_signature": "getSerialVersionUID(): long",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()J"
+        },
+        {
+          "name": "getShareSrcResId",
+          "reported_signature": "getShareSrcResId(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getStatus",
+          "reported_signature": "getStatus(): int",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()I"
+        },
+        {
+          "name": "getStatusAlert",
+          "reported_signature": "getStatusAlert(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getSubTitle",
+          "reported_signature": "getSubTitle(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getSubType",
+          "reported_signature": "getSubType(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getTag",
+          "reported_signature": "getTag(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getThreadId",
+          "reported_signature": "getThreadId(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getTitle",
+          "reported_signature": "getTitle(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getWebUrl",
+          "reported_signature": "getWebUrl(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getXhsContent",
+          "reported_signature": "getXhsContent(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getXhsPic",
+          "reported_signature": "getXhsPic(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getXhsTitle",
+          "reported_signature": "getXhsTitle(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "isCanPlay",
+          "reported_signature": "isCanPlay(): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Z"
+        },
+        {
+          "name": "isCoverCardType",
+          "reported_signature": "isCoverCardType(): java.lang.Boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/Boolean;"
+        },
+        {
+          "name": "isInValid",
+          "reported_signature": "isInValid(): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Z"
+        },
+        {
+          "name": "isMiniProgramWithShareTicket",
+          "reported_signature": "isMiniProgramWithShareTicket(): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Z"
+        },
+        {
+          "name": "isShowXhsChannel",
+          "reported_signature": "isShowXhsChannel(): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Z"
+        },
+        {
+          "name": "setBoxContent",
+          "reported_signature": "setBoxContent(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setCanPlay",
+          "reported_signature": "setCanPlay(boolean): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Z)V"
+        },
+        {
+          "name": "setCircleId",
+          "reported_signature": "setCircleId(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setCompatibleInfo",
+          "reported_signature": "setCompatibleInfo(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setContent",
+          "reported_signature": "setContent(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setCopyLink",
+          "reported_signature": "setCopyLink(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setCover",
+          "reported_signature": "setCover(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setCoverDetailInfo",
+          "reported_signature": "setCoverDetailInfo(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setCoverShowType",
+          "reported_signature": "setCoverShowType(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setDefaultText",
+          "reported_signature": "setDefaultText(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setExtInfo",
+          "reported_signature": "setExtInfo(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setExtraMap",
+          "reported_signature": "setExtraMap(java.util.Map<java.lang.String, java.lang.Object>): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/util/Map;)V"
+        },
+        {
+          "name": "setHeaderSubTitle",
+          "reported_signature": "setHeaderSubTitle(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setHeaderTitle",
+          "reported_signature": "setHeaderTitle(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setMiniProgramId",
+          "reported_signature": "setMiniProgramId(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setMiniProgramPath",
+          "reported_signature": "setMiniProgramPath(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setMiniProgramType",
+          "reported_signature": "setMiniProgramType(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setMiniProgramWithShareTicket",
+          "reported_signature": "setMiniProgramWithShareTicket(boolean): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Z)V"
+        },
+        {
+          "name": "setNativeUrl",
+          "reported_signature": "setNativeUrl(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setPrivacyCOPLInfo",
+          "reported_signature": "setPrivacyCOPLInfo(com.netease.cloudmusic.meta.PrivacyCOPLInfo): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lcom/netease/cloudmusic/meta/PrivacyCOPLInfo;)V"
+        },
+        {
+          "name": "setRedTag",
+          "reported_signature": "setRedTag(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setResName",
+          "reported_signature": "setResName(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setSelectedImageURLs",
+          "reported_signature": "setSelectedImageURLs(java.util.List<java.lang.String>): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/util/List;)V"
+        },
+        {
+          "name": "setShareSrcResId",
+          "reported_signature": "setShareSrcResId(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setShowXhsChannel",
+          "reported_signature": "setShowXhsChannel(boolean): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Z)V"
+        },
+        {
+          "name": "setStatus",
+          "reported_signature": "setStatus(int): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(I)V"
+        },
+        {
+          "name": "setStatusAlert",
+          "reported_signature": "setStatusAlert(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setSubTitle",
+          "reported_signature": "setSubTitle(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setSubType",
+          "reported_signature": "setSubType(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setTag",
+          "reported_signature": "setTag(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setThreadId",
+          "reported_signature": "setThreadId(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setTitle",
+          "reported_signature": "setTitle(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setWebUrl",
+          "reported_signature": "setWebUrl(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setXhsContent",
+          "reported_signature": "setXhsContent(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setXhsPic",
+          "reported_signature": "setXhsPic(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "setXhsTitle",
+          "reported_signature": "setXhsTitle(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "toString",
+          "reported_signature": "toString(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        }
+      ],
+      "fields": [
+        {
+          "name": "MINI_PROGRAM_TYPE_PREVIEW",
+          "reported_type": "java.lang.String",
+          "dex_static_value": {
+            "type": "string",
+            "value": "preview"
+          }
+        },
+        {
+          "name": "MINI_PROGRAM_TYPE_RELEASE",
+          "reported_type": "java.lang.String",
+          "dex_static_value": {
+            "type": "string",
+            "value": "release"
+          }
+        },
+        {
+          "name": "MINI_PROGRAM_TYPE_TEST",
+          "reported_type": "java.lang.String",
+          "dex_static_value": {
+            "type": "string",
+            "value": "test"
+          }
+        },
+        {
+          "name": "boxContent",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "canPlay",
+          "reported_type": "boolean",
+          "dex_static_value": null
+        },
+        {
+          "name": "circleId",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "compatibleInfo",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "content",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "copyLink",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "cover",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "coverDetailInfo",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "coverShowType",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "defaultText",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "extInfo",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "extraMap",
+          "reported_type": "java.util.Map<java.lang.String, java.lang.Object>",
+          "dex_static_value": null
+        },
+        {
+          "name": "headerSubTitle",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "headerTitle",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "miniProgramId",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "miniProgramPath",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "miniProgramType",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "miniProgramWithShareTicket",
+          "reported_type": "boolean",
+          "dex_static_value": null
+        },
+        {
+          "name": "nativeUrl",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "privacyCOPLInfo",
+          "reported_type": "com.netease.cloudmusic.meta.PrivacyCOPLInfo",
+          "dex_static_value": null
+        },
+        {
+          "name": "redTag",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "resName",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "selectedImageURLs",
+          "reported_type": "java.util.List<java.lang.String>",
+          "dex_static_value": null
+        },
+        {
+          "name": "serialVersionUID",
+          "reported_type": "long",
+          "dex_static_value": {
+            "type": "long",
+            "value": "-7411410990750422481"
+          }
+        },
+        {
+          "name": "shareSrcResId",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "showXhsChannel",
+          "reported_type": "boolean",
+          "dex_static_value": null
+        },
+        {
+          "name": "status",
+          "reported_type": "int",
+          "dex_static_value": null
+        },
+        {
+          "name": "statusAlert",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "subTitle",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "subType",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "tag",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "threadId",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "title",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "webUrl",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "xhsContent",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "xhsPic",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        },
+        {
+          "name": "xhsTitle",
+          "reported_type": "java.lang.String",
+          "dex_static_value": null
+        }
+      ],
+      "inner_classes": []
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-02-duration-phone139\\official-current-classes16-analysis-only.apk"
+    }
+  ],
+  "evidence_links": [
+    "ev_2da1dd8265419a6f261673f6dbeb0e58187128cb7a3d625840b8ae56bb7618b5"
+  ]
+}

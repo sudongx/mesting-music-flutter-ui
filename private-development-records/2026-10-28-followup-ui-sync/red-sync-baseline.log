@@ -1,0 +1,26 @@
+00:00 +0: loading D:/AnLi/test/release_107_listening_sync_test.dart
+00:00 +0: (setUpAll)
+00:00 +0: actual heard time excludes pause, buffering and seek, ignores 2x media distance
+00:00 +1: durable account journal upgrade imports old songs once, never converts the old 625 minutes into a new delta
+00:00 +2: durable account journal history acceptance stays distinct from official readback and never blindly retries
+00:00 +3: durable account journal CSCC timeout is unknown and never replays; stale starts are not fabricated later
+00:00 +4: durable account journal unchanged official duration is not verified, later deltas wait without repeating an uncertain write
+00:00 +4 -1: durable account journal unchanged official duration is not verified, later deltas wait without repeating an uncertain write [E]
+  Expected: {'baseline': 850, 'delta': 1}
+    Actual: {'baseline': 851, 'delta': 1}
+     Which: at location ['baseline'] is <851> instead of <850>
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test\release_107_listening_sync_test.dart 360:9     main.<fn>.<fn>
+  
+00:00 +4 -1: durable account journal crash recovery allocates only checkpointed milliseconds and is idempotent
+00:00 +5 -1: durable account journal account switch prevents pending writes from reaching the next identity
+00:00 +6 -1: durable account journal explicit verification performs read-back only and never drains queued writes
+00:00 +7 -1: durable account journal coordinator counts actual intervals and excludes a local file from official reporting
+00:00 +8 -1: local persistence and playback use content URI, real seconds and file notification art
+00:00 +9 -1: version 6 migrates additively to 7 and retains old local duration
+00:00 +10 -1: reporting contracts bind expected identity, registered UUID and real device fields
+00:00 +11 -1: business status and duplicate normalization do not imply actual booking
+00:00 +12 -1: (tearDownAll)
+00:00 +12 -1: Some tests failed.

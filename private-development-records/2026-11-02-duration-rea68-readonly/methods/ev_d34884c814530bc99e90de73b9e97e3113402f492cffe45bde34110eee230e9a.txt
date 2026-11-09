@@ -1,0 +1,7 @@
+    @Deprecated
+    public static void h(String str, JSONObject jSONObject) {
+        IStatistic iStatistic = (IStatistic) ServiceFacade.get(IStatistic.class);
+        if (iStatistic != null) {
+            iStatistic.logJSON(str, jSONObject);
+        }
+    }

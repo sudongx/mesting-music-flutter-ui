@@ -1,0 +1,17 @@
+    public void o7(PlayRecordEntity playRecordEntity) {
+        if (w.s()) {
+            try {
+                w wVar = w.b;
+                wVar.l();
+                try {
+                    if (w.r(playRecordEntity)) {
+                        wVar.q();
+                    }
+                } finally {
+                    w.b.n();
+                }
+            } catch (SQLiteException e) {
+                u7(e);
+            }
+        }
+    }

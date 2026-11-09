@@ -1,0 +1,54 @@
+{"protocolVersion":"0.1.1","runnerVersion":"1.30.0","pid":287712,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"D:/AnLi/test/qishui_history173_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading D:/AnLi/test/qishui_history173_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":1}
+{"suite":{"id":2,"platform":"vm","path":"D:/AnLi/test/qishui_cover173_test.dart"},"type":"suite","time":6}
+{"test":{"id":3,"name":"loading D:/AnLi/test/qishui_cover173_test.dart","suiteID":2,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":6}
+{"count":2,"time":6,"type":"allSuites"}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":3580}
+{"group":{"id":4,"suiteID":0,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":14,"line":null,"column":null,"url":null},"type":"group","time":3582}
+{"test":{"id":5,"name":"remote history reads every page in server order and deduplicates boundaries","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":141,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3583}
+{"testID":5,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3615}
+{"test":{"id":6,"name":"looping pagination fails instead of returning a partial full history","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":163,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3615}
+{"testID":6,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3623}
+{"test":{"id":7,"name":"more without a cursor fails and a malformed response is not an empty history","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":177,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3623}
+{"testID":7,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3626}
+{"test":{"id":8,"name":"account changes while reading discard the prior account response","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":193,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3626}
+{"testID":8,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3629}
+{"test":{"id":9,"name":"confirmed playback sends only recent-media body then checks newest cloud item","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":206,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3629}
+{"testID":9,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3639}
+{"test":{"id":10,"name":"a later real replay may reorder history after a confirmed earlier write","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":227,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3639}
+{"testID":10,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3643}
+{"test":{"id":11,"name":"unknown write persists across a new reporter and does not replay when item is merely present","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":242,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3643}
+{"testID":11,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3650}
+{"test":{"id":12,"name":"pending history can be reconciled by top-position readback without another write","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":270,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3650}
+{"testID":12,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3654}
+{"test":{"id":13,"name":"successful dispatch with unreadable readback remains unknown and is not automatically replayed","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":288,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3654}
+{"testID":13,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3658}
+{"test":{"id":14,"name":"definite refusal releases journal for a later explicit playback event","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":305,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3658}
+{"testID":14,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3661}
+{"test":{"id":15,"name":"reporter ignores other platforms and duplicate deliveries but allows a new playback revision","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":324,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3662}
+{"testID":15,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3667}
+{"test":{"id":16,"name":"disposal cancels queued account work and suppresses late statuses","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":351,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3667}
+{"testID":16,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3671}
+{"test":{"id":17,"name":"unknown sync is reported separately without throwing into playback","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":374,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3671}
+{"testID":17,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3675}
+{"test":{"id":18,"name":"actual player restore and failed resolution do not report; confirmed audible play does","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":392,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3675}
+{"testID":3,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":4649}
+{"group":{"id":19,"suiteID":2,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":null,"column":null,"url":null},"type":"group","time":4649}
+{"test":{"id":20,"name":"CRC32 matches standard check vector","suiteID":2,"groupIDs":[19],"metadata":{"skip":false,"skipReason":null},"line":41,"column":3,"url":"file:///D:/AnLi/test/qishui_cover173_test.dart"},"type":"testStart","time":4649}
+{"testID":20,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4666}
+{"test":{"id":21,"name":"grant refuses IP, HTTP, credentials and unrelated storage domains","suiteID":2,"groupIDs":[19],"metadata":{"skip":false,"skipReason":null},"line":44,"column":3,"url":"file:///D:/AnLi/test/qishui_cover173_test.dart"},"type":"testStart","time":4667}
+{"testID":21,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4674}
+{"test":{"id":22,"name":"ImageX apply/upload/commit sends no music identity and requires matching URI","suiteID":2,"groupIDs":[19],"metadata":{"skip":false,"skipReason":null},"line":60,"column":3,"url":"file:///D:/AnLi/test/qishui_cover173_test.dart"},"type":"testStart","time":4674}
+{"testID":22,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4734}
+{"test":{"id":23,"name":"unknown playlist cover update is journaled and never uploaded again","suiteID":2,"groupIDs":[19],"metadata":{"skip":false,"skipReason":null},"line":124,"column":3,"url":"file:///D:/AnLi/test/qishui_cover173_test.dart"},"type":"testStart","time":4734}
+{"testID":23,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4755}
+{"test":{"id":24,"name":"official readback confirms cover identity and unauthorized owner never uploads","suiteID":2,"groupIDs":[19],"metadata":{"skip":false,"skipReason":null},"line":166,"column":3,"url":"file:///D:/AnLi/test/qishui_cover173_test.dart"},"type":"testStart","time":4756}
+{"testID":24,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4765}
+{"testID":18,"error":"Bad state: You cannot close the subject while items are being added from addStream","stackTrace":"package:rxdart/src/subjects/subject.dart 162:7  Subject.close\npackage:just_audio/just_audio.dart 1506:30      AudioPlayer.dispose.<fn>\n===== asynchronous gap ===========================\ndart:async                                      _CustomZone.registerBinaryCallback\ntest\\qishui_history173_test.dart 416:9          main.<fn>.<fn>\n","isFailure":false,"type":"error","time":5000}
+{"testID":18,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":5001}
+{"success":false,"type":"done","time":5027}

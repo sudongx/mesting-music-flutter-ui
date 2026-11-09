@@ -1,0 +1,28 @@
+{
+  "engine": {
+    "name": "jadx-headless-mcp",
+    "version": "0.7.1",
+    "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+    "worker_count": 1,
+    "heap_limit_mib": 3072
+  },
+  "class_name": "com.netease.cloudmusic.core.statistic.f0",
+  "method": {
+    "name": "F",
+    "reported_signature": "F(): void",
+    "overload_index": 0,
+    "is_constructor": false,
+    "dex_descriptor": null
+  },
+  "overload_count": 1,
+  "representation": "java",
+  "body_status": "available",
+  "fell_back": false,
+  "markers": [],
+  "source": {
+    "status": "complete",
+    "text": "    /* JADX INFO: Access modifiers changed from: private */\r\n    public synchronized void F() {\r\n        String strD = D();\r\n        if (this.h != null) {\r\n            if (this.j.equals(strD) && this.k == NeteaseMusicUtils.getFileInode(y(strD))) {\r\n                return;\r\n            }\r\n            v();\r\n            u(new File(y(this.j)));\r\n        }\r\n        try {\r\n            String strY = y(strD);\r\n            File parentFile = new File(strY).getParentFile();\r\n            if (!parentFile.exists()) {\r\n                parentFile.mkdirs();\r\n            }\r\n            this.h = new FileOutputStream(strY, true);\r\n            this.k = NeteaseMusicUtils.getFileInode(strY);\r\n            this.j = strD;\r\n            String loginCookie = (ISession.NO_PROFILE_ID.equals(strD) || o22.u.f() == null) ? null : o22.u.f().d().getLoginCookie();\r\n            if (loginCookie != null) {\r\n                n3.c(E()).edit().putString(strD, loginCookie).commit();\r\n            }\r\n            if (com.netease.cloudmusic.utils.e0.g()) {\r\n                Log.d(this.m, \">>>>init\" + this.j);\r\n            }\r\n        } catch (IOException e2) {\r\n            e2.printStackTrace();\r\n        }\r\n    }",
+    "reported_total_bytes": null
+  }
+}

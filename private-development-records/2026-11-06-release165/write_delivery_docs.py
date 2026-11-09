@@ -1,0 +1,110 @@
+"""Write reviewable delivery metadata, keeping device acceptance separate."""
+import json
+from pathlib import Path
+
+root = Path('D:/AnLi')
+out = Path(__file__).resolve().parent
+checks = json.loads((out / 'host-check-summary.json').read_text('utf-8'))
+apk = json.loads((root / 'release/Mesting-Music-v1.0.65-verification.json').read_text('utf-8'))
+installed = json.loads((out / 'device-after-install.json').read_text('utf-8'))
+native = json.loads((out / 'native-packaging-verification.json').read_text('utf-8'))
+callbacks = json.loads((out / 'qr-javascript-interface-verification.json').read_text('utf-8'))
+assert installed['code'] == 86 and installed['installedApkSha256'] == apk['sha256']
+assert len(callbacks) == 2 and checks['passed']
+device_test = out / 'device-business-result.json'
+business = json.loads(device_test.read_text('utf-8')) if device_test.exists() else {}
+physical = {
+    'deviceAccess': True, 'installedByAgent': True,
+    'fromVersion': '1.0.64/code85', 'readVersion': '1.0.65/code86',
+    'replaceInstallWithoutClearData': True, 'firstInstallTimeUnchanged': True,
+    'privateCredentialFilesRead': False, 'smsSentByAgent': False,
+    'userSms65Result': business.get('sms', 'pending user manual test'),
+    'qrGeneratedOnDevice': business.get('qrGenerated'),
+    'qrAccountAccepted': False, 'newPreviewPlaybackAccepted': False, 'dspAccepted': False,
+}
+validation = {
+    'version': '1.0.65', 'androidVersionCode': 86, 'status': 'Host checks passed; original-signature candidate installed; business acceptance incomplete',
+    'packageName': 'com.mesting.music', 'flavor': 'beta',
+    'host': checks, 'physical': physical,
+    'prior64UserFeedback': {'ordinaryKugouAndNeteasePlaybackWorks': True,
+        'smsFailed2156': True, 'qrCreationFailedCode0': True},
+    'sms2156Resolved': False, 'nativeRegistrationAndSecurityContextComplete': False,
+    'apk': {k: apk[k] for k in ('file', 'fileSize', 'sha256', 'certificateSha256',
+        'originalSignature', 'abis', 'engineBytesMatchPinnedManifest')},
+    'packaging': {'preservedNonAppNativeLibraries': 12, 'preservedGlassShaders': 7,
+        'originalJniMethods': 5, 'originalJniPublicFields': 12,
+        'sodaNativeDeclarations': len(native['sodaOfficialJniSignaturesChecked']),
+        'javascriptCallbackClassesAndSignatures': len(callbacks)},
+    'sourceDelivery': {'file': 'Mesting-Music-v1.0.65-source.zip',
+        'verificationFile': 'release/Mesting-Music-v1.0.65-source-verification.json',
+        'hashStoredExternallyToAvoidSelfReference': True},
+    'priorSource63ZipStillNotGenerated': True,
+    'oldLogsReplayed': False, 'gitCommitted': False, 'gitPushed': False,
+    'uploaded': False, 'published': False,
+}
+(root / 'docs/validation-2026-11-06-v1.0.65.json').write_text(json.dumps(validation, ensure_ascii=False, indent=2)+'\n', 'utf-8')
+
+handoff = f'''# Mesting 1.0.65/code86 本地交付及覆盖安装交接
+
+2026-11-06，工程D:\\AnLi。用户已确认本轮修复、递增原签名APK／完整源码，并明确允许必要的
+已连接手机调试和REA调查。手机号仍主入口，抖音扫码为已同意的兜底。短信由本人操作。
+
+## 已完成
+
+- 网易云试听统一解析小数时长，补旧短队列的曲库时长；播放接收官方完整结果前有界验证
+  实际音频头，发现明显短片段自动尝试已启用的其他源，保留原歌曲身份／同录音检查／取消。
+  下载规则保持原官方优先与手动选源，未修改下载实现。
+- 汽水QR增加实际BFF固定主机／路径／scan-auth校验，保持原始URL；本地校验不再把
+  成功业务码0显示成服务拒绝。原独立会话、本人验证及Luna资料核验保持。
+- REA分析手机实际官版19.0.0/code100190050公开APK，区分其legacy发送分支与此前21.5
+  的SaaS分支。手机参数独立为QishuiPhoneProtocol，修正SDK601397、补齐字段并去掉
+  混用的SaaS标记；不自动轮换多个请求发送短信。
+- Beta209文件2411真实用例通过／2条件跳过，Stable63、导航55、分析0。定向105已包含，
+  UI复跑不累加；8张主机合成界面图已检查。首轮全量无失败；最终分析另因错误文案修正重验。
+  初始化／清理事件不作为通过用例；早先112事件口径已纠正为105真实用例。
+- 实际APK核验原签名、双ARM、定制引擎、7shader、12旧非app库、原JNI5方法／12字段、
+  DSP5声明及两类JavascriptInterface回调名称／签名。原生14项仅引用64同生产源码／测试
+  runner输入的历史结果，未本轮重跑累加。其他原生／Rust／SDK历史数字也不累加。
+- 65 APK：{apk['fileSize']}字节，SHA256 `{apk['sha256']}`。
+  65完整脏工作区源码另存，实际文件数与源码哈希见同版source-verification.json，不含签名、
+  缓存、手机私有资料、官版APK／反编译正文或本轮私有证据。
+- 按本轮调试范围，已用adb install -r保留数据将85覆盖为86，系统读回1.0.65/code86，
+  原首次安装时间保持。未卸载或清数据；包替换不等于账号／播放／短信／扫码业务验收。
+
+## 未完成及已知边界
+
+- **汽水2156尚不能称解决。** BDInstall.start／注册header／配置encryptor和原生动态安全
+  回调已静态追到，但真实安装注册／本地持久上下文／原生初始化与请求安全因子仍未完整接入。
+  没有随机伪造iid、复制官版凭据或使用外部签名服务器。
+- 19和21.5共存相似类不能证明当次运行分支；反编译回调有重建警告。静态证据与系统包信息
+  不等于真实发码运行捕获。手机只读包信息与公开base.apk；未启动官版或读取其私有账号库。
+- 65短信结果：{physical['userSms65Result']}。agent未发送短信、未读取验证码。
+  65二维码实机生成：{physical['qrGeneratedOnDevice']}；原账号确认登录尚未验收。
+  网易云例曲《可我只是海》—LBI利比的本版实机自动补源／全长也尚未验收。
+- 64覆盖安装已在本聊天另获授权完成，用户确认酷狗和网易云基本播放正常；64短信2156和
+  QR生成失败0是已失败，覆盖更旧的pending状态，不重写64冻结资料。
+- 有界音频头不一定携带全长证据，不能声称整首下载验证。扫码仍为独立PC/Web会话；
+  未适配写入、权益、下载和完整汽水媒体沿用明确提示。GPU／DSP和历史统计缺口不冒称修复。
+- 63完整源码ZIP仍未生成，私有旧before保留当时文件；旧51回收APK不恢复，旧日志不补发。
+
+## 交付和接续
+
+- release/Mesting-Music-v1.0.65.apk及同版APK校验。
+- Mesting-Music-v1.0.65-source.zip及同版source-verification／SHA256说明。
+- docs/fixes-2026-11-06-v1.0.65.md、docs/INSTALL-v1.0.65.md及validation同版JSON。
+- 私有基线／before／REA最终108条证据／测试／构建／覆盖安装：
+  .codex-artifacts/2026-11-06-release165/；after.json为本轮最终只读接收入口。
+
+原68份保护物、签名／锁、全部历史脏改、beta/b6bcd542及空暂存保持，65两项另存。
+没有Git同步、清理、提交、推送、上传或发布。本轮必要设备调试已获授权，不按更旧只读交接
+自行否决活动任务；新会话仍须按最新用户指令和本轮实际验收状态继续，不外推后台或发布授权。
+新接手先读本文与after.json只读核对，不重测／重建／回填已冻结包或源码。
+'''
+(root / 'HANDOFF-CURRENT-SESSION-2026-11-06-v1.0.65.md').write_text(handoff, 'utf-8')
+agents = root / 'AGENTS.md'
+old = agents.read_text('utf-8')
+assert old.startswith('**2026-11-06 当前活动修复1.0.65')
+tail = old.split('\n\n', 1)[1]
+prefix = '**2026-11-06 当前本地1.0.65/code86及授权覆盖安装：先读[65交接](HANDOFF-CURRENT-SESSION-2026-11-06-v1.0.65.md)、[实现与缺口](docs/fixes-2026-11-06-v1.0.65.md)、[人工验收](docs/INSTALL-v1.0.65.md)及[验证](docs/validation-2026-11-06-v1.0.65.json)。用户确认网易云试听播放自动补源、下载规则保持，例曲《可我只是海》—LBI利比；允许本轮必要手机调试和REA。已补小数/旧短队列/官方实际短音频识别和QR固定BFF误拒；REA手机官版19区别旧21.5，手机号统一19契约/SDK601397/字段，BDInstall真实注册和原生动态安全仍缺，2156未宣称解决。Beta209文件2411真实用例通过/2跳过、Stable63、导航55、分析0、8已检查主机图；定向105与UI复跑包含不累加，原生14仅64同生产/runner输入历史，其他历史数字不重跑累加。最终原签名双ARM/定制引擎/7shader/12旧非app库/JNI/DSP声明与两个R8回调另验；65APK/完整源码另存。已保留数据85→86覆盖，首次安装时间保持；安装不代替真实自动换源/短信/扫码/GPU/DSP验收。64用户确认双平台基本播放正常，但64短信2156/QR失败0仍是已失败。手机另仅读公开官版APK/包信息，未官版启动/私有账号库/自动短信/奖励/后台。原68保护物/签名/锁/历史脏改/beta/b6bcd542/空暂存保持，旧51回收APK不恢复，63完整源码ZIP仍未生成。未Git同步清理提交推送上传发布，旧日志不补发。新接续按release165/after.json只读核对，实际用户业务反馈优先，不回填或重建冻结物，不外推后台/发布授权。下方均为历史时点。**\n\n'
+agents.write_text(prefix + tail, 'utf-8')
+print({'docsWritten': 3, 'installed': installed['version'], 'businessAcceptanceIncomplete': True})

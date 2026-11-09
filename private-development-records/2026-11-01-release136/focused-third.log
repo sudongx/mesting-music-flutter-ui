@@ -1,0 +1,1312 @@
+00:00 +0: loading D:/AnLi/test/release_136_listening_audit_test.dart
+00:00 +0: D:/AnLi/test/release_136_listening_audit_test.dart: local 683 minutes does not become fabricated or supposedly cloud-confirmed plays
+00:00 +1: D:/AnLi/test/release_136_listening_audit_test.dart: start receipts, recent matches and duration states remain independent
+00:00 +2: D:/AnLi/test/release_136_listening_audit_test.dart: original start month wins over retry/created date; fallback source is explicit
+00:00 +3: D:/AnLi/test/release_136_listening_audit_test.dart: account filtering, source filtering and duplicate input cannot inflate the report
+00:00 +4: D:/AnLi/test/release_136_listening_audit_test.dart: export whitelist excludes identity, timestamps, song content, cookies and arbitrary fields
+00:00 +5: D:/AnLi/test/release_136_listening_audit_test.dart: detail cap is disclosed and does not truncate totals; media time never substitutes real time
+00:00 +6: D:/AnLi/test/release_136_listening_audit_test.dart: database snapshot is read-only and does not change journal states
+00:00 +7: D:/AnLi/test/release_136_listening_audit_ui_test.dart: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:01 +7: D:/AnLi/test/release_136_listening_audit_ui_test.dart: monthly report separates local totals and saved log fields compact=false
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following ProviderException was thrown running a test:
+Tried to use a provider that is in error state.
+
+A provider threw the following exception:
+Bad state: sharedPreferencesProvider 必须在应用启动时覆盖
+
+The stack trace of the exception:
+#0      sharedPreferencesProvider.<anonymous closure>
+(package:mesting_music/core/persistence/app_preferences.dart:5:3)
+#1      Provider.create (package:riverpod/src/providers/provider.dart:59:36)
+#2      $ProviderElement.create (package:riverpod/src/providers/provider.dart:343:33)
+#3      ProviderElement.buildState (package:riverpod/src/core/element.dart:743:28)
+#4      ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#5      ProviderElement.flush (package:riverpod/src/core/element.dart:699:7)
+#6      $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#7      ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1102:26)
+#8      ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1028:17)
+#9      Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#10     HapticPreferencesController.build
+(package:mesting_music/core/haptics/app_haptics.dart:39:23)
+#11     $NotifierProviderElement.handleCreate (package:riverpod/src/providers/notifier.dart:93:31)
+#12     Notifier.runBuild (package:riverpod/src/providers/notifier/orphan.dart:69:47)
+#13     $ClassProviderElement.create
+(package:riverpod/src/core/provider/notifier_provider.dart:569:43)
+#14     ProviderElement.buildState (package:riverpod/src/core/element.dart:743:28)
+#15     ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#16     ProviderElement.flush (package:riverpod/src/core/element.dart:699:7)
+#17     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#18     ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1102:26)
+#19     ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1028:17)
+#20     Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#21     appHapticsProvider.<anonymous closure>.<anonymous closure>
+(package:mesting_music/core/haptics/app_haptics.dart:94:28)
+#22     AppHaptics.perform (package:mesting_music/core/haptics/app_haptics.dart:107:33)
+#23     AppHaptics.feedback (package:mesting_music/core/haptics/app_haptics.dart:121:52)
+#24     appHaptic (package:mesting_music/core/haptics/app_haptics.dart:131:32)
+#25     BetaGlassButton.build.<anonymous closure>
+(package:mesting_music/shared/widgets/beta_glass_controls.dart:70:19)
+#26     GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#27     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#28     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#29     BaseTapGestureRecognizer.acceptGesture (package:flutter/src/gestures/tap.dart:353:7)
+#30     GestureArenaManager.sweep (package:flutter/src/gestures/arena.dart:173:27)
+#31     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:532:20)
+#32     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#33     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#34     GestureBinding._handlePointerEventImmediately
+(package:flutter/src/gestures/binding.dart:437:7)
+#35     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#36     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure>
+(package:flutter_test/src/binding.dart:1301:42)
+#37     TestWidgetsFlutterBinding.withPointerEventSource
+(package:flutter_test/src/binding.dart:1311:11)
+#38     TestWidgetsFlutterBinding.handlePointerEventForSource
+(package:flutter_test/src/binding.dart:1301:5)
+#39     WidgetTester.sendEventToBinding.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:869:15)
+#40     _rootRun (dart:async/zone_root.dart:35:13)
+#41     _CustomZone.run (dart:async/zone.dart:726:19)
+#42     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#43     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:868:27)
+#44     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:587:26)
+#45     _rootRun (dart:async/zone_root.dart:35:13)
+#46     _CustomZone.run (dart:async/zone.dart:726:19)
+#47     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#48     TestGesture.up (package:flutter_test/src/test_pointer.dart:580:27)
+#49     WidgetController.tapAt.<anonymous closure>
+(package:flutter_test/src/controller.dart:1150:21)
+<asynchronous suspension>
+#50     TestAsyncUtils.guard.<anonymous closure>
+(package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#51     main.export (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:113:5)
+<asynchronous suspension>
+#52     main.<anonymous closure>
+(file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:143:9)
+<asynchronous suspension>
+#53     testWidgets.<anonymous closure>.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#54     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#55     StackZoneSpecification._registerCallback.<anonymous closure>
+(package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+
+
+And rethrown at:
+#0      throwProviderException (package:riverpod/src/common/stack_trace.dart:10:3)
+#1      $ResultError.valueOrProviderException (package:riverpod/src/common/result.dart:108:7)
+#2      ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1031:29)
+#3      Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#4      HapticPreferencesController.build
+(package:mesting_music/core/haptics/app_haptics.dart:39:23)
+#5      $NotifierProviderElement.handleCreate (package:riverpod/src/providers/notifier.dart:93:31)
+#6      Notifier.runBuild (package:riverpod/src/providers/notifier/orphan.dart:69:47)
+#7      $ClassProviderElement.create
+(package:riverpod/src/core/provider/notifier_provider.dart:569:43)
+#8      ProviderElement.buildState (package:riverpod/src/core/element.dart:743:28)
+#9      ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#10     ProviderElement.flush (package:riverpod/src/core/element.dart:699:7)
+#11     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#12     ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1102:26)
+#13     ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1028:17)
+#14     Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#15     appHapticsProvider.<anonymous closure>.<anonymous closure>
+(package:mesting_music/core/haptics/app_haptics.dart:94:28)
+#16     AppHaptics.perform (package:mesting_music/core/haptics/app_haptics.dart:107:33)
+#17     AppHaptics.feedback (package:mesting_music/core/haptics/app_haptics.dart:121:52)
+#18     appHaptic (package:mesting_music/core/haptics/app_haptics.dart:131:32)
+#19     BetaGlassButton.build.<anonymous closure>
+(package:mesting_music/shared/widgets/beta_glass_controls.dart:70:19)
+#20     GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#21     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#22     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#23     BaseTapGestureRecognizer.acceptGesture (package:flutter/src/gestures/tap.dart:353:7)
+#24     GestureArenaManager.sweep (package:flutter/src/gestures/arena.dart:173:27)
+#25     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:532:20)
+#26     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#27     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#28     GestureBinding._handlePointerEventImmediately
+(package:flutter/src/gestures/binding.dart:437:7)
+#29     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#30     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure>
+(package:flutter_test/src/binding.dart:1301:42)
+#31     TestWidgetsFlutterBinding.withPointerEventSource
+(package:flutter_test/src/binding.dart:1311:11)
+#32     TestWidgetsFlutterBinding.handlePointerEventForSource
+(package:flutter_test/src/binding.dart:1301:5)
+#33     WidgetTester.sendEventToBinding.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:869:15)
+#34     _rootRun (dart:async/zone_root.dart:35:13)
+#35     _CustomZone.run (dart:async/zone.dart:726:19)
+#36     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#37     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:868:27)
+#38     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:587:26)
+#39     _rootRun (dart:async/zone_root.dart:35:13)
+#40     _CustomZone.run (dart:async/zone.dart:726:19)
+#41     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#42     TestGesture.up (package:flutter_test/src/test_pointer.dart:580:27)
+#43     WidgetController.tapAt.<anonymous closure>
+(package:flutter_test/src/controller.dart:1150:21)
+<asynchronous suspension>
+#44     TestAsyncUtils.guard.<anonymous closure>
+(package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#45     main.export (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:113:5)
+<asynchronous suspension>
+#46     main.<anonymous closure>
+(file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:143:9)
+<asynchronous suspension>
+#47     testWidgets.<anonymous closure>.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#48     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#49     StackZoneSpecification._registerCallback.<anonymous closure>
+(package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+
+When the exception was thrown, this was the stack:
+#0      throwProviderException (package:riverpod/src/common/stack_trace.dart:10:3)
+#1      $ResultError.valueOrProviderException (package:riverpod/src/common/result.dart:108:7)
+#2      ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1031:29)
+#3      Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#4      appHapticsProvider.<anonymous closure>.<anonymous closure> (package:mesting_music/core/haptics/app_haptics.dart:94:28)
+#5      AppHaptics.perform (package:mesting_music/core/haptics/app_haptics.dart:107:33)
+#6      AppHaptics.feedback (package:mesting_music/core/haptics/app_haptics.dart:121:52)
+#7      appHaptic (package:mesting_music/core/haptics/app_haptics.dart:131:32)
+#8      BetaGlassButton.build.<anonymous closure> (package:mesting_music/shared/widgets/beta_glass_controls.dart:70:19)
+#9      GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#10     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#11     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#12     BaseTapGestureRecognizer.acceptGesture (package:flutter/src/gestures/tap.dart:353:7)
+#13     GestureArenaManager.sweep (package:flutter/src/gestures/arena.dart:173:27)
+#14     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:532:20)
+#15     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#16     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#17     GestureBinding._handlePointerEventImmediately (package:flutter/src/gestures/binding.dart:437:7)
+#18     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#19     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure> (package:flutter_test/src/binding.dart:1301:42)
+#20     TestWidgetsFlutterBinding.withPointerEventSource (package:flutter_test/src/binding.dart:1311:11)
+#21     TestWidgetsFlutterBinding.handlePointerEventForSource (package:flutter_test/src/binding.dart:1301:5)
+#22     WidgetTester.sendEventToBinding.<anonymous closure> (package:flutter_test/src/widget_tester.dart:869:15)
+#25     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#26     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:868:27)
+#27     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:587:26)
+#30     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#31     TestGesture.up (package:flutter_test/src/test_pointer.dart:580:27)
+#32     WidgetController.tapAt.<anonymous closure> (package:flutter_test/src/controller.dart:1150:21)
+<asynchronous suspension>
+#33     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#34     main.export (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:113:5)
+<asynchronous suspension>
+#35     main.<anonymous closure> (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:143:9)
+<asynchronous suspension>
+#36     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#37     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The test description was:
+  monthly report separates local totals and saved log fields compact=false
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:03 +7 -1: D:/AnLi/test/release_136_listening_audit_ui_test.dart: monthly report separates local totals and saved log fields compact=false [E]
+  Test failed. See exception logs above.
+  The test description was: monthly report separates local totals and saved log fields compact=false
+  
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following ProviderException was thrown running a test (but after the test had completed):
+Tried to use a provider that is in error state.
+
+A provider threw the following exception:
+Bad state: sharedPreferencesProvider 必须在应用启动时覆盖
+
+The stack trace of the exception:
+#0      sharedPreferencesProvider.<anonymous closure>
+(package:mesting_music/core/persistence/app_preferences.dart:5:3)
+#1      Provider.create (package:riverpod/src/providers/provider.dart:59:36)
+#2      $ProviderElement.create (package:riverpod/src/providers/provider.dart:343:33)
+#3      ProviderElement.buildState (package:riverpod/src/core/element.dart:743:28)
+#4      ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#5      ProviderElement.flush (package:riverpod/src/core/element.dart:699:7)
+#6      $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#7      ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1102:26)
+#8      ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1028:17)
+#9      Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#10     HapticPreferencesController.build
+(package:mesting_music/core/haptics/app_haptics.dart:39:23)
+#11     $NotifierProviderElement.handleCreate (package:riverpod/src/providers/notifier.dart:93:31)
+#12     Notifier.runBuild (package:riverpod/src/providers/notifier/orphan.dart:69:47)
+#13     $ClassProviderElement.create
+(package:riverpod/src/core/provider/notifier_provider.dart:569:43)
+#14     ProviderElement.buildState (package:riverpod/src/core/element.dart:743:28)
+#15     ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#16     ProviderElement.flush (package:riverpod/src/core/element.dart:699:7)
+#17     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#18     ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1102:26)
+#19     ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1028:17)
+#20     Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#21     appHapticsProvider.<anonymous closure>.<anonymous closure>
+(package:mesting_music/core/haptics/app_haptics.dart:94:28)
+#22     AppHaptics.perform (package:mesting_music/core/haptics/app_haptics.dart:107:33)
+#23     AppHaptics.feedback (package:mesting_music/core/haptics/app_haptics.dart:121:52)
+#24     appHaptic (package:mesting_music/core/haptics/app_haptics.dart:131:32)
+#25     BetaGlassButton.build.<anonymous closure>
+(package:mesting_music/shared/widgets/beta_glass_controls.dart:70:19)
+#26     GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#27     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#28     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#29     BaseTapGestureRecognizer.acceptGesture (package:flutter/src/gestures/tap.dart:353:7)
+#30     GestureArenaManager.sweep (package:flutter/src/gestures/arena.dart:173:27)
+#31     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:532:20)
+#32     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#33     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#34     GestureBinding._handlePointerEventImmediately
+(package:flutter/src/gestures/binding.dart:437:7)
+#35     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#36     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure>
+(package:flutter_test/src/binding.dart:1301:42)
+#37     TestWidgetsFlutterBinding.withPointerEventSource
+(package:flutter_test/src/binding.dart:1311:11)
+#38     TestWidgetsFlutterBinding.handlePointerEventForSource
+(package:flutter_test/src/binding.dart:1301:5)
+#39     WidgetTester.sendEventToBinding.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:869:15)
+#40     _rootRun (dart:async/zone_root.dart:35:13)
+#41     _CustomZone.run (dart:async/zone.dart:726:19)
+#42     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#43     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:868:27)
+#44     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:587:26)
+#45     _rootRun (dart:async/zone_root.dart:35:13)
+#46     _CustomZone.run (dart:async/zone.dart:726:19)
+#47     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#48     TestGesture.up (package:flutter_test/src/test_pointer.dart:580:27)
+#49     WidgetController.tapAt.<anonymous closure>
+(package:flutter_test/src/controller.dart:1150:21)
+<asynchronous suspension>
+#50     TestAsyncUtils.guard.<anonymous closure>
+(package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#51     main.export (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:113:5)
+<asynchronous suspension>
+#52     main.<anonymous closure>
+(file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:143:9)
+<asynchronous suspension>
+#53     testWidgets.<anonymous closure>.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#54     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#55     StackZoneSpecification._registerCallback.<anonymous closure>
+(package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+
+
+And rethrown at:
+#0      throwProviderException (package:riverpod/src/common/stack_trace.dart:10:3)
+#1      $ResultError.valueOrProviderException (package:riverpod/src/common/result.dart:108:7)
+#2      ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1031:29)
+#3      Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#4      HapticPreferencesController.build
+(package:mesting_music/core/haptics/app_haptics.dart:39:23)
+#5      $NotifierProviderElement.handleCreate (package:riverpod/src/providers/notifier.dart:93:31)
+#6      Notifier.runBuild (package:riverpod/src/providers/notifier/orphan.dart:69:47)
+#7      $ClassProviderElement.create
+(package:riverpod/src/core/provider/notifier_provider.dart:569:43)
+#8      ProviderElement.buildState (package:riverpod/src/core/element.dart:743:28)
+#9      ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#10     ProviderElement.flush (package:riverpod/src/core/element.dart:699:7)
+#11     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#12     ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1102:26)
+#13     ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1028:17)
+#14     Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#15     appHapticsProvider.<anonymous closure>.<anonymous closure>
+(package:mesting_music/core/haptics/app_haptics.dart:94:28)
+#16     AppHaptics.perform (package:mesting_music/core/haptics/app_haptics.dart:107:33)
+#17     AppHaptics.feedback (package:mesting_music/core/haptics/app_haptics.dart:121:52)
+#18     appHaptic (package:mesting_music/core/haptics/app_haptics.dart:131:32)
+#19     BetaGlassButton.build.<anonymous closure>
+(package:mesting_music/shared/widgets/beta_glass_controls.dart:70:19)
+#20     GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#21     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#22     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#23     BaseTapGestureRecognizer.acceptGesture (package:flutter/src/gestures/tap.dart:353:7)
+#24     GestureArenaManager.sweep (package:flutter/src/gestures/arena.dart:173:27)
+#25     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:532:20)
+#26     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#27     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#28     GestureBinding._handlePointerEventImmediately
+(package:flutter/src/gestures/binding.dart:437:7)
+#29     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#30     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure>
+(package:flutter_test/src/binding.dart:1301:42)
+#31     TestWidgetsFlutterBinding.withPointerEventSource
+(package:flutter_test/src/binding.dart:1311:11)
+#32     TestWidgetsFlutterBinding.handlePointerEventForSource
+(package:flutter_test/src/binding.dart:1301:5)
+#33     WidgetTester.sendEventToBinding.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:869:15)
+#34     _rootRun (dart:async/zone_root.dart:35:13)
+#35     _CustomZone.run (dart:async/zone.dart:726:19)
+#36     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#37     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:868:27)
+#38     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:587:26)
+#39     _rootRun (dart:async/zone_root.dart:35:13)
+#40     _CustomZone.run (dart:async/zone.dart:726:19)
+#41     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#42     TestGesture.up (package:flutter_test/src/test_pointer.dart:580:27)
+#43     WidgetController.tapAt.<anonymous closure>
+(package:flutter_test/src/controller.dart:1150:21)
+<asynchronous suspension>
+#44     TestAsyncUtils.guard.<anonymous closure>
+(package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#45     main.export (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:113:5)
+<asynchronous suspension>
+#46     main.<anonymous closure>
+(file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:143:9)
+<asynchronous suspension>
+#47     testWidgets.<anonymous closure>.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#48     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#49     StackZoneSpecification._registerCallback.<anonymous closure>
+(package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+
+When the exception was thrown, this was the stack:
+#0      throwProviderException (package:riverpod/src/common/stack_trace.dart:10:3)
+#1      $ResultError.valueOrProviderException (package:riverpod/src/common/result.dart:108:7)
+#2      ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1031:29)
+#3      Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#4      appHapticsProvider.<anonymous closure>.<anonymous closure> (package:mesting_music/core/haptics/app_haptics.dart:94:28)
+#5      AppHaptics.perform (package:mesting_music/core/haptics/app_haptics.dart:107:33)
+#6      AppHaptics.feedback (package:mesting_music/core/haptics/app_haptics.dart:121:52)
+#7      appHaptic (package:mesting_music/core/haptics/app_haptics.dart:131:32)
+#8      BetaGlassButton.build.<anonymous closure> (package:mesting_music/shared/widgets/beta_glass_controls.dart:70:19)
+#9      GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#10     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#11     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#12     BaseTapGestureRecognizer.handlePrimaryPointer (package:flutter/src/gestures/tap.dart:314:7)
+#13     PrimaryPointerGestureRecognizer.handleEvent (package:flutter/src/gestures/recognizer.dart:721:9)
+#14     PointerRouter._dispatch (package:flutter/src/gestures/pointer_router.dart:97:12)
+#15     PointerRouter._dispatchEventToRoutes.<anonymous closure> (package:flutter/src/gestures/pointer_router.dart:140:9)
+#16     _LinkedHashMapMixin.forEach (dart:_compact_hash:765:13)
+#17     PointerRouter._dispatchEventToRoutes (package:flutter/src/gestures/pointer_router.dart:138:18)
+#18     PointerRouter.route (package:flutter/src/gestures/pointer_router.dart:128:7)
+#19     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:528:19)
+#20     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#21     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#22     GestureBinding._handlePointerEventImmediately (package:flutter/src/gestures/binding.dart:437:7)
+#23     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#24     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure> (package:flutter_test/src/binding.dart:1301:42)
+#25     TestWidgetsFlutterBinding.withPointerEventSource (package:flutter_test/src/binding.dart:1311:11)
+#26     TestWidgetsFlutterBinding.handlePointerEventForSource (package:flutter_test/src/binding.dart:1301:5)
+#27     WidgetTester.sendEventToBinding.<anonymous closure> (package:flutter_test/src/widget_tester.dart:869:15)
+#30     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#31     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:868:27)
+#32     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:587:26)
+#35     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#36     TestGesture.up (package:flutter_test/src/test_pointer.dart:580:27)
+#37     WidgetController.tapAt.<anonymous closure> (package:flutter_test/src/controller.dart:1150:21)
+<asynchronous suspension>
+#38     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#39     main.<anonymous closure> (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:147:9)
+<asynchronous suspension>
+#40     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#41     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+════════════════════════════════════════════════════════════════════════════════════════════════════
+  Test failed. See exception logs above.
+  The test description was: monthly report separates local totals and saved log fields compact=false
+  
+00:03 +7 -1: D:/AnLi/test/release_136_listening_audit_ui_test.dart: monthly report separates local totals and saved log fields compact=true
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following ProviderException was thrown running a test:
+Tried to use a provider that is in error state.
+
+A provider threw the following exception:
+Bad state: sharedPreferencesProvider 必须在应用启动时覆盖
+
+The stack trace of the exception:
+#0      sharedPreferencesProvider.<anonymous closure>
+(package:mesting_music/core/persistence/app_preferences.dart:5:3)
+#1      Provider.create (package:riverpod/src/providers/provider.dart:59:36)
+#2      $ProviderElement.create (package:riverpod/src/providers/provider.dart:343:33)
+#3      ProviderElement.buildState (package:riverpod/src/core/element.dart:743:28)
+#4      ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#5      ProviderElement.flush (package:riverpod/src/core/element.dart:699:7)
+#6      $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#7      ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1102:26)
+#8      ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1028:17)
+#9      Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#10     HapticPreferencesController.build
+(package:mesting_music/core/haptics/app_haptics.dart:39:23)
+#11     $NotifierProviderElement.handleCreate (package:riverpod/src/providers/notifier.dart:93:31)
+#12     Notifier.runBuild (package:riverpod/src/providers/notifier/orphan.dart:69:47)
+#13     $ClassProviderElement.create
+(package:riverpod/src/core/provider/notifier_provider.dart:569:43)
+#14     ProviderElement.buildState (package:riverpod/src/core/element.dart:743:28)
+#15     ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#16     ProviderElement.flush (package:riverpod/src/core/element.dart:699:7)
+#17     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#18     ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1102:26)
+#19     ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1028:17)
+#20     Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#21     appHapticsProvider.<anonymous closure>.<anonymous closure>
+(package:mesting_music/core/haptics/app_haptics.dart:94:28)
+#22     AppHaptics.perform (package:mesting_music/core/haptics/app_haptics.dart:107:33)
+#23     AppHaptics.feedback (package:mesting_music/core/haptics/app_haptics.dart:121:52)
+#24     appHaptic (package:mesting_music/core/haptics/app_haptics.dart:131:32)
+#25     BetaGlassButton.build.<anonymous closure>
+(package:mesting_music/shared/widgets/beta_glass_controls.dart:70:19)
+#26     GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#27     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#28     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#29     BaseTapGestureRecognizer.acceptGesture (package:flutter/src/gestures/tap.dart:353:7)
+#30     GestureArenaManager.sweep (package:flutter/src/gestures/arena.dart:173:27)
+#31     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:532:20)
+#32     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#33     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#34     GestureBinding._handlePointerEventImmediately
+(package:flutter/src/gestures/binding.dart:437:7)
+#35     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#36     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure>
+(package:flutter_test/src/binding.dart:1301:42)
+#37     TestWidgetsFlutterBinding.withPointerEventSource
+(package:flutter_test/src/binding.dart:1311:11)
+#38     TestWidgetsFlutterBinding.handlePointerEventForSource
+(package:flutter_test/src/binding.dart:1301:5)
+#39     WidgetTester.sendEventToBinding.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:869:15)
+#40     _rootRun (dart:async/zone_root.dart:35:13)
+#41     _CustomZone.run (dart:async/zone.dart:726:19)
+#42     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#43     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:868:27)
+#44     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:587:26)
+#45     _rootRun (dart:async/zone_root.dart:35:13)
+#46     _CustomZone.run (dart:async/zone.dart:726:19)
+#47     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#48     TestGesture.up (package:flutter_test/src/test_pointer.dart:580:27)
+#49     WidgetController.tapAt.<anonymous closure>
+(package:flutter_test/src/controller.dart:1150:21)
+<asynchronous suspension>
+#50     TestAsyncUtils.guard.<anonymous closure>
+(package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#51     main.export (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:113:5)
+<asynchronous suspension>
+#52     main.<anonymous closure>
+(file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:143:9)
+<asynchronous suspension>
+#53     testWidgets.<anonymous closure>.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#54     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#55     StackZoneSpecification._registerCallback.<anonymous closure>
+(package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+
+
+And rethrown at:
+#0      throwProviderException (package:riverpod/src/common/stack_trace.dart:10:3)
+#1      $ResultError.valueOrProviderException (package:riverpod/src/common/result.dart:108:7)
+#2      ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1031:29)
+#3      Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#4      HapticPreferencesController.build
+(package:mesting_music/core/haptics/app_haptics.dart:39:23)
+#5      $NotifierProviderElement.handleCreate (package:riverpod/src/providers/notifier.dart:93:31)
+#6      Notifier.runBuild (package:riverpod/src/providers/notifier/orphan.dart:69:47)
+#7      $ClassProviderElement.create
+(package:riverpod/src/core/provider/notifier_provider.dart:569:43)
+#8      ProviderElement.buildState (package:riverpod/src/core/element.dart:743:28)
+#9      ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#10     ProviderElement.flush (package:riverpod/src/core/element.dart:699:7)
+#11     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#12     ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1102:26)
+#13     ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1028:17)
+#14     Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#15     appHapticsProvider.<anonymous closure>.<anonymous closure>
+(package:mesting_music/core/haptics/app_haptics.dart:94:28)
+#16     AppHaptics.perform (package:mesting_music/core/haptics/app_haptics.dart:107:33)
+#17     AppHaptics.feedback (package:mesting_music/core/haptics/app_haptics.dart:121:52)
+#18     appHaptic (package:mesting_music/core/haptics/app_haptics.dart:131:32)
+#19     BetaGlassButton.build.<anonymous closure>
+(package:mesting_music/shared/widgets/beta_glass_controls.dart:70:19)
+#20     GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#21     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#22     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#23     BaseTapGestureRecognizer.acceptGesture (package:flutter/src/gestures/tap.dart:353:7)
+#24     GestureArenaManager.sweep (package:flutter/src/gestures/arena.dart:173:27)
+#25     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:532:20)
+#26     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#27     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#28     GestureBinding._handlePointerEventImmediately
+(package:flutter/src/gestures/binding.dart:437:7)
+#29     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#30     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure>
+(package:flutter_test/src/binding.dart:1301:42)
+#31     TestWidgetsFlutterBinding.withPointerEventSource
+(package:flutter_test/src/binding.dart:1311:11)
+#32     TestWidgetsFlutterBinding.handlePointerEventForSource
+(package:flutter_test/src/binding.dart:1301:5)
+#33     WidgetTester.sendEventToBinding.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:869:15)
+#34     _rootRun (dart:async/zone_root.dart:35:13)
+#35     _CustomZone.run (dart:async/zone.dart:726:19)
+#36     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#37     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:868:27)
+#38     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:587:26)
+#39     _rootRun (dart:async/zone_root.dart:35:13)
+#40     _CustomZone.run (dart:async/zone.dart:726:19)
+#41     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#42     TestGesture.up (package:flutter_test/src/test_pointer.dart:580:27)
+#43     WidgetController.tapAt.<anonymous closure>
+(package:flutter_test/src/controller.dart:1150:21)
+<asynchronous suspension>
+#44     TestAsyncUtils.guard.<anonymous closure>
+(package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#45     main.export (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:113:5)
+<asynchronous suspension>
+#46     main.<anonymous closure>
+(file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:143:9)
+<asynchronous suspension>
+#47     testWidgets.<anonymous closure>.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#48     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#49     StackZoneSpecification._registerCallback.<anonymous closure>
+(package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+
+When the exception was thrown, this was the stack:
+#0      throwProviderException (package:riverpod/src/common/stack_trace.dart:10:3)
+#1      $ResultError.valueOrProviderException (package:riverpod/src/common/result.dart:108:7)
+#2      ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1031:29)
+#3      Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#4      appHapticsProvider.<anonymous closure>.<anonymous closure> (package:mesting_music/core/haptics/app_haptics.dart:94:28)
+#5      AppHaptics.perform (package:mesting_music/core/haptics/app_haptics.dart:107:33)
+#6      AppHaptics.feedback (package:mesting_music/core/haptics/app_haptics.dart:121:52)
+#7      appHaptic (package:mesting_music/core/haptics/app_haptics.dart:131:32)
+#8      BetaGlassButton.build.<anonymous closure> (package:mesting_music/shared/widgets/beta_glass_controls.dart:70:19)
+#9      GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#10     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#11     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#12     BaseTapGestureRecognizer.acceptGesture (package:flutter/src/gestures/tap.dart:353:7)
+#13     GestureArenaManager.sweep (package:flutter/src/gestures/arena.dart:173:27)
+#14     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:532:20)
+#15     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#16     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#17     GestureBinding._handlePointerEventImmediately (package:flutter/src/gestures/binding.dart:437:7)
+#18     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#19     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure> (package:flutter_test/src/binding.dart:1301:42)
+#20     TestWidgetsFlutterBinding.withPointerEventSource (package:flutter_test/src/binding.dart:1311:11)
+#21     TestWidgetsFlutterBinding.handlePointerEventForSource (package:flutter_test/src/binding.dart:1301:5)
+#22     WidgetTester.sendEventToBinding.<anonymous closure> (package:flutter_test/src/widget_tester.dart:869:15)
+#25     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#26     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:868:27)
+#27     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:587:26)
+#30     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#31     TestGesture.up (package:flutter_test/src/test_pointer.dart:580:27)
+#32     WidgetController.tapAt.<anonymous closure> (package:flutter_test/src/controller.dart:1150:21)
+<asynchronous suspension>
+#33     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#34     main.export (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:113:5)
+<asynchronous suspension>
+#35     main.<anonymous closure> (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:143:9)
+<asynchronous suspension>
+#36     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#37     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The test description was:
+  monthly report separates local totals and saved log fields compact=true
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:03 +7 -2: D:/AnLi/test/release_136_listening_audit_ui_test.dart: monthly report separates local totals and saved log fields compact=true [E]
+  Test failed. See exception logs above.
+  The test description was: monthly report separates local totals and saved log fields compact=true
+  
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following ProviderException was thrown running a test (but after the test had completed):
+Tried to use a provider that is in error state.
+
+A provider threw the following exception:
+Bad state: sharedPreferencesProvider 必须在应用启动时覆盖
+
+The stack trace of the exception:
+#0      sharedPreferencesProvider.<anonymous closure>
+(package:mesting_music/core/persistence/app_preferences.dart:5:3)
+#1      Provider.create (package:riverpod/src/providers/provider.dart:59:36)
+#2      $ProviderElement.create (package:riverpod/src/providers/provider.dart:343:33)
+#3      ProviderElement.buildState (package:riverpod/src/core/element.dart:743:28)
+#4      ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#5      ProviderElement.flush (package:riverpod/src/core/element.dart:699:7)
+#6      $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#7      ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1102:26)
+#8      ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1028:17)
+#9      Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#10     HapticPreferencesController.build
+(package:mesting_music/core/haptics/app_haptics.dart:39:23)
+#11     $NotifierProviderElement.handleCreate (package:riverpod/src/providers/notifier.dart:93:31)
+#12     Notifier.runBuild (package:riverpod/src/providers/notifier/orphan.dart:69:47)
+#13     $ClassProviderElement.create
+(package:riverpod/src/core/provider/notifier_provider.dart:569:43)
+#14     ProviderElement.buildState (package:riverpod/src/core/element.dart:743:28)
+#15     ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#16     ProviderElement.flush (package:riverpod/src/core/element.dart:699:7)
+#17     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#18     ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1102:26)
+#19     ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1028:17)
+#20     Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#21     appHapticsProvider.<anonymous closure>.<anonymous closure>
+(package:mesting_music/core/haptics/app_haptics.dart:94:28)
+#22     AppHaptics.perform (package:mesting_music/core/haptics/app_haptics.dart:107:33)
+#23     AppHaptics.feedback (package:mesting_music/core/haptics/app_haptics.dart:121:52)
+#24     appHaptic (package:mesting_music/core/haptics/app_haptics.dart:131:32)
+#25     BetaGlassButton.build.<anonymous closure>
+(package:mesting_music/shared/widgets/beta_glass_controls.dart:70:19)
+#26     GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#27     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#28     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#29     BaseTapGestureRecognizer.acceptGesture (package:flutter/src/gestures/tap.dart:353:7)
+#30     GestureArenaManager.sweep (package:flutter/src/gestures/arena.dart:173:27)
+#31     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:532:20)
+#32     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#33     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#34     GestureBinding._handlePointerEventImmediately
+(package:flutter/src/gestures/binding.dart:437:7)
+#35     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#36     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure>
+(package:flutter_test/src/binding.dart:1301:42)
+#37     TestWidgetsFlutterBinding.withPointerEventSource
+(package:flutter_test/src/binding.dart:1311:11)
+#38     TestWidgetsFlutterBinding.handlePointerEventForSource
+(package:flutter_test/src/binding.dart:1301:5)
+#39     WidgetTester.sendEventToBinding.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:869:15)
+#40     _rootRun (dart:async/zone_root.dart:35:13)
+#41     _CustomZone.run (dart:async/zone.dart:726:19)
+#42     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#43     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:868:27)
+#44     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:587:26)
+#45     _rootRun (dart:async/zone_root.dart:35:13)
+#46     _CustomZone.run (dart:async/zone.dart:726:19)
+#47     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#48     TestGesture.up (package:flutter_test/src/test_pointer.dart:580:27)
+#49     WidgetController.tapAt.<anonymous closure>
+(package:flutter_test/src/controller.dart:1150:21)
+<asynchronous suspension>
+#50     TestAsyncUtils.guard.<anonymous closure>
+(package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#51     main.export (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:113:5)
+<asynchronous suspension>
+#52     main.<anonymous closure>
+(file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:143:9)
+<asynchronous suspension>
+#53     testWidgets.<anonymous closure>.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#54     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#55     StackZoneSpecification._registerCallback.<anonymous closure>
+(package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+
+
+And rethrown at:
+#0      throwProviderException (package:riverpod/src/common/stack_trace.dart:10:3)
+#1      $ResultError.valueOrProviderException (package:riverpod/src/common/result.dart:108:7)
+#2      ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1031:29)
+#3      Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#4      HapticPreferencesController.build
+(package:mesting_music/core/haptics/app_haptics.dart:39:23)
+#5      $NotifierProviderElement.handleCreate (package:riverpod/src/providers/notifier.dart:93:31)
+#6      Notifier.runBuild (package:riverpod/src/providers/notifier/orphan.dart:69:47)
+#7      $ClassProviderElement.create
+(package:riverpod/src/core/provider/notifier_provider.dart:569:43)
+#8      ProviderElement.buildState (package:riverpod/src/core/element.dart:743:28)
+#9      ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#10     ProviderElement.flush (package:riverpod/src/core/element.dart:699:7)
+#11     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#12     ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1102:26)
+#13     ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1028:17)
+#14     Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#15     appHapticsProvider.<anonymous closure>.<anonymous closure>
+(package:mesting_music/core/haptics/app_haptics.dart:94:28)
+#16     AppHaptics.perform (package:mesting_music/core/haptics/app_haptics.dart:107:33)
+#17     AppHaptics.feedback (package:mesting_music/core/haptics/app_haptics.dart:121:52)
+#18     appHaptic (package:mesting_music/core/haptics/app_haptics.dart:131:32)
+#19     BetaGlassButton.build.<anonymous closure>
+(package:mesting_music/shared/widgets/beta_glass_controls.dart:70:19)
+#20     GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#21     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#22     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#23     BaseTapGestureRecognizer.acceptGesture (package:flutter/src/gestures/tap.dart:353:7)
+#24     GestureArenaManager.sweep (package:flutter/src/gestures/arena.dart:173:27)
+#25     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:532:20)
+#26     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#27     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#28     GestureBinding._handlePointerEventImmediately
+(package:flutter/src/gestures/binding.dart:437:7)
+#29     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#30     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure>
+(package:flutter_test/src/binding.dart:1301:42)
+#31     TestWidgetsFlutterBinding.withPointerEventSource
+(package:flutter_test/src/binding.dart:1311:11)
+#32     TestWidgetsFlutterBinding.handlePointerEventForSource
+(package:flutter_test/src/binding.dart:1301:5)
+#33     WidgetTester.sendEventToBinding.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:869:15)
+#34     _rootRun (dart:async/zone_root.dart:35:13)
+#35     _CustomZone.run (dart:async/zone.dart:726:19)
+#36     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#37     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:868:27)
+#38     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:587:26)
+#39     _rootRun (dart:async/zone_root.dart:35:13)
+#40     _CustomZone.run (dart:async/zone.dart:726:19)
+#41     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#42     TestGesture.up (package:flutter_test/src/test_pointer.dart:580:27)
+#43     WidgetController.tapAt.<anonymous closure>
+(package:flutter_test/src/controller.dart:1150:21)
+<asynchronous suspension>
+#44     TestAsyncUtils.guard.<anonymous closure>
+(package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#45     main.export (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:113:5)
+<asynchronous suspension>
+#46     main.<anonymous closure>
+(file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:143:9)
+<asynchronous suspension>
+#47     testWidgets.<anonymous closure>.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#48     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#49     StackZoneSpecification._registerCallback.<anonymous closure>
+(package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+
+When the exception was thrown, this was the stack:
+#0      throwProviderException (package:riverpod/src/common/stack_trace.dart:10:3)
+#1      $ResultError.valueOrProviderException (package:riverpod/src/common/result.dart:108:7)
+#2      ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1031:29)
+#3      Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#4      appHapticsProvider.<anonymous closure>.<anonymous closure> (package:mesting_music/core/haptics/app_haptics.dart:94:28)
+#5      AppHaptics.perform (package:mesting_music/core/haptics/app_haptics.dart:107:33)
+#6      AppHaptics.feedback (package:mesting_music/core/haptics/app_haptics.dart:121:52)
+#7      appHaptic (package:mesting_music/core/haptics/app_haptics.dart:131:32)
+#8      BetaGlassButton.build.<anonymous closure> (package:mesting_music/shared/widgets/beta_glass_controls.dart:70:19)
+#9      GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#10     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#11     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#12     BaseTapGestureRecognizer.handlePrimaryPointer (package:flutter/src/gestures/tap.dart:314:7)
+#13     PrimaryPointerGestureRecognizer.handleEvent (package:flutter/src/gestures/recognizer.dart:721:9)
+#14     PointerRouter._dispatch (package:flutter/src/gestures/pointer_router.dart:97:12)
+#15     PointerRouter._dispatchEventToRoutes.<anonymous closure> (package:flutter/src/gestures/pointer_router.dart:140:9)
+#16     _LinkedHashMapMixin.forEach (dart:_compact_hash:765:13)
+#17     PointerRouter._dispatchEventToRoutes (package:flutter/src/gestures/pointer_router.dart:138:18)
+#18     PointerRouter.route (package:flutter/src/gestures/pointer_router.dart:128:7)
+#19     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:528:19)
+#20     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#21     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#22     GestureBinding._handlePointerEventImmediately (package:flutter/src/gestures/binding.dart:437:7)
+#23     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#24     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure> (package:flutter_test/src/binding.dart:1301:42)
+#25     TestWidgetsFlutterBinding.withPointerEventSource (package:flutter_test/src/binding.dart:1311:11)
+#26     TestWidgetsFlutterBinding.handlePointerEventForSource (package:flutter_test/src/binding.dart:1301:5)
+#27     WidgetTester.sendEventToBinding.<anonymous closure> (package:flutter_test/src/widget_tester.dart:869:15)
+#30     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#31     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:868:27)
+#32     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:587:26)
+#35     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#36     TestGesture.up (package:flutter_test/src/test_pointer.dart:580:27)
+#37     WidgetController.tapAt.<anonymous closure> (package:flutter_test/src/controller.dart:1150:21)
+<asynchronous suspension>
+#38     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#39     main.<anonymous closure> (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:147:9)
+<asynchronous suspension>
+#40     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#41     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+════════════════════════════════════════════════════════════════════════════════════════════════════
+  Test failed. See exception logs above.
+  The test description was: monthly report separates local totals and saved log fields compact=true
+  
+00:03 +7 -2: D:/AnLi/test/release_136_listening_audit_ui_test.dart: cancel and account switch prevent copying an old diagnostic
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following ProviderException was thrown running a test:
+Tried to use a provider that is in error state.
+
+A provider threw the following exception:
+Bad state: sharedPreferencesProvider 必须在应用启动时覆盖
+
+The stack trace of the exception:
+#0      sharedPreferencesProvider.<anonymous closure>
+(package:mesting_music/core/persistence/app_preferences.dart:5:3)
+#1      Provider.create (package:riverpod/src/providers/provider.dart:59:36)
+#2      $ProviderElement.create (package:riverpod/src/providers/provider.dart:343:33)
+#3      ProviderElement.buildState (package:riverpod/src/core/element.dart:743:28)
+#4      ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#5      ProviderElement.flush (package:riverpod/src/core/element.dart:699:7)
+#6      $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#7      ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1102:26)
+#8      ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1028:17)
+#9      Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#10     HapticPreferencesController.build
+(package:mesting_music/core/haptics/app_haptics.dart:39:23)
+#11     $NotifierProviderElement.handleCreate (package:riverpod/src/providers/notifier.dart:93:31)
+#12     Notifier.runBuild (package:riverpod/src/providers/notifier/orphan.dart:69:47)
+#13     $ClassProviderElement.create
+(package:riverpod/src/core/provider/notifier_provider.dart:569:43)
+#14     ProviderElement.buildState (package:riverpod/src/core/element.dart:743:28)
+#15     ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#16     ProviderElement.flush (package:riverpod/src/core/element.dart:699:7)
+#17     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#18     ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1102:26)
+#19     ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1028:17)
+#20     Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#21     appHapticsProvider.<anonymous closure>.<anonymous closure>
+(package:mesting_music/core/haptics/app_haptics.dart:94:28)
+#22     AppHaptics.perform (package:mesting_music/core/haptics/app_haptics.dart:107:33)
+#23     AppHaptics.feedback (package:mesting_music/core/haptics/app_haptics.dart:121:52)
+#24     appHaptic (package:mesting_music/core/haptics/app_haptics.dart:131:32)
+#25     BetaGlassButton.build.<anonymous closure>
+(package:mesting_music/shared/widgets/beta_glass_controls.dart:70:19)
+#26     GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#27     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#28     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#29     BaseTapGestureRecognizer.acceptGesture (package:flutter/src/gestures/tap.dart:353:7)
+#30     GestureArenaManager.sweep (package:flutter/src/gestures/arena.dart:173:27)
+#31     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:532:20)
+#32     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#33     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#34     GestureBinding._handlePointerEventImmediately
+(package:flutter/src/gestures/binding.dart:437:7)
+#35     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#36     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure>
+(package:flutter_test/src/binding.dart:1301:42)
+#37     TestWidgetsFlutterBinding.withPointerEventSource
+(package:flutter_test/src/binding.dart:1311:11)
+#38     TestWidgetsFlutterBinding.handlePointerEventForSource
+(package:flutter_test/src/binding.dart:1301:5)
+#39     WidgetTester.sendEventToBinding.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:869:15)
+#40     _rootRun (dart:async/zone_root.dart:35:13)
+#41     _CustomZone.run (dart:async/zone.dart:726:19)
+#42     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#43     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:868:27)
+#44     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:587:26)
+#45     _rootRun (dart:async/zone_root.dart:35:13)
+#46     _CustomZone.run (dart:async/zone.dart:726:19)
+#47     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#48     TestGesture.up (package:flutter_test/src/test_pointer.dart:580:27)
+#49     WidgetController.tapAt.<anonymous closure>
+(package:flutter_test/src/controller.dart:1150:21)
+<asynchronous suspension>
+#50     TestAsyncUtils.guard.<anonymous closure>
+(package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#51     main.export (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:113:5)
+<asynchronous suspension>
+#52     main.<anonymous closure>
+(file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:165:5)
+<asynchronous suspension>
+#53     testWidgets.<anonymous closure>.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#54     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#55     StackZoneSpecification._registerCallback.<anonymous closure>
+(package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+
+
+And rethrown at:
+#0      throwProviderException (package:riverpod/src/common/stack_trace.dart:10:3)
+#1      $ResultError.valueOrProviderException (package:riverpod/src/common/result.dart:108:7)
+#2      ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1031:29)
+#3      Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#4      HapticPreferencesController.build
+(package:mesting_music/core/haptics/app_haptics.dart:39:23)
+#5      $NotifierProviderElement.handleCreate (package:riverpod/src/providers/notifier.dart:93:31)
+#6      Notifier.runBuild (package:riverpod/src/providers/notifier/orphan.dart:69:47)
+#7      $ClassProviderElement.create
+(package:riverpod/src/core/provider/notifier_provider.dart:569:43)
+#8      ProviderElement.buildState (package:riverpod/src/core/element.dart:743:28)
+#9      ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#10     ProviderElement.flush (package:riverpod/src/core/element.dart:699:7)
+#11     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#12     ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1102:26)
+#13     ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1028:17)
+#14     Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#15     appHapticsProvider.<anonymous closure>.<anonymous closure>
+(package:mesting_music/core/haptics/app_haptics.dart:94:28)
+#16     AppHaptics.perform (package:mesting_music/core/haptics/app_haptics.dart:107:33)
+#17     AppHaptics.feedback (package:mesting_music/core/haptics/app_haptics.dart:121:52)
+#18     appHaptic (package:mesting_music/core/haptics/app_haptics.dart:131:32)
+#19     BetaGlassButton.build.<anonymous closure>
+(package:mesting_music/shared/widgets/beta_glass_controls.dart:70:19)
+#20     GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#21     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#22     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#23     BaseTapGestureRecognizer.acceptGesture (package:flutter/src/gestures/tap.dart:353:7)
+#24     GestureArenaManager.sweep (package:flutter/src/gestures/arena.dart:173:27)
+#25     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:532:20)
+#26     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#27     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#28     GestureBinding._handlePointerEventImmediately
+(package:flutter/src/gestures/binding.dart:437:7)
+#29     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#30     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure>
+(package:flutter_test/src/binding.dart:1301:42)
+#31     TestWidgetsFlutterBinding.withPointerEventSource
+(package:flutter_test/src/binding.dart:1311:11)
+#32     TestWidgetsFlutterBinding.handlePointerEventForSource
+(package:flutter_test/src/binding.dart:1301:5)
+#33     WidgetTester.sendEventToBinding.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:869:15)
+#34     _rootRun (dart:async/zone_root.dart:35:13)
+#35     _CustomZone.run (dart:async/zone.dart:726:19)
+#36     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#37     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:868:27)
+#38     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:587:26)
+#39     _rootRun (dart:async/zone_root.dart:35:13)
+#40     _CustomZone.run (dart:async/zone.dart:726:19)
+#41     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#42     TestGesture.up (package:flutter_test/src/test_pointer.dart:580:27)
+#43     WidgetController.tapAt.<anonymous closure>
+(package:flutter_test/src/controller.dart:1150:21)
+<asynchronous suspension>
+#44     TestAsyncUtils.guard.<anonymous closure>
+(package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#45     main.export (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:113:5)
+<asynchronous suspension>
+#46     main.<anonymous closure>
+(file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:165:5)
+<asynchronous suspension>
+#47     testWidgets.<anonymous closure>.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#48     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#49     StackZoneSpecification._registerCallback.<anonymous closure>
+(package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+
+When the exception was thrown, this was the stack:
+#0      throwProviderException (package:riverpod/src/common/stack_trace.dart:10:3)
+#1      $ResultError.valueOrProviderException (package:riverpod/src/common/result.dart:108:7)
+#2      ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1031:29)
+#3      Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#4      appHapticsProvider.<anonymous closure>.<anonymous closure> (package:mesting_music/core/haptics/app_haptics.dart:94:28)
+#5      AppHaptics.perform (package:mesting_music/core/haptics/app_haptics.dart:107:33)
+#6      AppHaptics.feedback (package:mesting_music/core/haptics/app_haptics.dart:121:52)
+#7      appHaptic (package:mesting_music/core/haptics/app_haptics.dart:131:32)
+#8      BetaGlassButton.build.<anonymous closure> (package:mesting_music/shared/widgets/beta_glass_controls.dart:70:19)
+#9      GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#10     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#11     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#12     BaseTapGestureRecognizer.acceptGesture (package:flutter/src/gestures/tap.dart:353:7)
+#13     GestureArenaManager.sweep (package:flutter/src/gestures/arena.dart:173:27)
+#14     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:532:20)
+#15     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#16     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#17     GestureBinding._handlePointerEventImmediately (package:flutter/src/gestures/binding.dart:437:7)
+#18     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#19     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure> (package:flutter_test/src/binding.dart:1301:42)
+#20     TestWidgetsFlutterBinding.withPointerEventSource (package:flutter_test/src/binding.dart:1311:11)
+#21     TestWidgetsFlutterBinding.handlePointerEventForSource (package:flutter_test/src/binding.dart:1301:5)
+#22     WidgetTester.sendEventToBinding.<anonymous closure> (package:flutter_test/src/widget_tester.dart:869:15)
+#25     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#26     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:868:27)
+#27     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:587:26)
+#30     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#31     TestGesture.up (package:flutter_test/src/test_pointer.dart:580:27)
+#32     WidgetController.tapAt.<anonymous closure> (package:flutter_test/src/controller.dart:1150:21)
+<asynchronous suspension>
+#33     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#34     main.export (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:113:5)
+<asynchronous suspension>
+#35     main.<anonymous closure> (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:165:5)
+<asynchronous suspension>
+#36     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#37     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The test description was:
+  cancel and account switch prevent copying an old diagnostic
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:04 +7 -3: D:/AnLi/test/release_136_listening_audit_ui_test.dart: cancel and account switch prevent copying an old diagnostic [E]
+  Test failed. See exception logs above.
+  The test description was: cancel and account switch prevent copying an old diagnostic
+  
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following ProviderException was thrown running a test (but after the test had completed):
+Tried to use a provider that is in error state.
+
+A provider threw the following exception:
+Bad state: sharedPreferencesProvider 必须在应用启动时覆盖
+
+The stack trace of the exception:
+#0      sharedPreferencesProvider.<anonymous closure>
+(package:mesting_music/core/persistence/app_preferences.dart:5:3)
+#1      Provider.create (package:riverpod/src/providers/provider.dart:59:36)
+#2      $ProviderElement.create (package:riverpod/src/providers/provider.dart:343:33)
+#3      ProviderElement.buildState (package:riverpod/src/core/element.dart:743:28)
+#4      ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#5      ProviderElement.flush (package:riverpod/src/core/element.dart:699:7)
+#6      $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#7      ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1102:26)
+#8      ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1028:17)
+#9      Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#10     HapticPreferencesController.build
+(package:mesting_music/core/haptics/app_haptics.dart:39:23)
+#11     $NotifierProviderElement.handleCreate (package:riverpod/src/providers/notifier.dart:93:31)
+#12     Notifier.runBuild (package:riverpod/src/providers/notifier/orphan.dart:69:47)
+#13     $ClassProviderElement.create
+(package:riverpod/src/core/provider/notifier_provider.dart:569:43)
+#14     ProviderElement.buildState (package:riverpod/src/core/element.dart:743:28)
+#15     ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#16     ProviderElement.flush (package:riverpod/src/core/element.dart:699:7)
+#17     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#18     ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1102:26)
+#19     ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1028:17)
+#20     Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#21     appHapticsProvider.<anonymous closure>.<anonymous closure>
+(package:mesting_music/core/haptics/app_haptics.dart:94:28)
+#22     AppHaptics.perform (package:mesting_music/core/haptics/app_haptics.dart:107:33)
+#23     AppHaptics.feedback (package:mesting_music/core/haptics/app_haptics.dart:121:52)
+#24     appHaptic (package:mesting_music/core/haptics/app_haptics.dart:131:32)
+#25     BetaGlassButton.build.<anonymous closure>
+(package:mesting_music/shared/widgets/beta_glass_controls.dart:70:19)
+#26     GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#27     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#28     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#29     BaseTapGestureRecognizer.acceptGesture (package:flutter/src/gestures/tap.dart:353:7)
+#30     GestureArenaManager.sweep (package:flutter/src/gestures/arena.dart:173:27)
+#31     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:532:20)
+#32     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#33     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#34     GestureBinding._handlePointerEventImmediately
+(package:flutter/src/gestures/binding.dart:437:7)
+#35     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#36     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure>
+(package:flutter_test/src/binding.dart:1301:42)
+#37     TestWidgetsFlutterBinding.withPointerEventSource
+(package:flutter_test/src/binding.dart:1311:11)
+#38     TestWidgetsFlutterBinding.handlePointerEventForSource
+(package:flutter_test/src/binding.dart:1301:5)
+#39     WidgetTester.sendEventToBinding.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:869:15)
+#40     _rootRun (dart:async/zone_root.dart:35:13)
+#41     _CustomZone.run (dart:async/zone.dart:726:19)
+#42     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#43     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:868:27)
+#44     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:587:26)
+#45     _rootRun (dart:async/zone_root.dart:35:13)
+#46     _CustomZone.run (dart:async/zone.dart:726:19)
+#47     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#48     TestGesture.up (package:flutter_test/src/test_pointer.dart:580:27)
+#49     WidgetController.tapAt.<anonymous closure>
+(package:flutter_test/src/controller.dart:1150:21)
+<asynchronous suspension>
+#50     TestAsyncUtils.guard.<anonymous closure>
+(package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#51     main.export (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:113:5)
+<asynchronous suspension>
+#52     main.<anonymous closure>
+(file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:165:5)
+<asynchronous suspension>
+#53     testWidgets.<anonymous closure>.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#54     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#55     StackZoneSpecification._registerCallback.<anonymous closure>
+(package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+
+
+And rethrown at:
+#0      throwProviderException (package:riverpod/src/common/stack_trace.dart:10:3)
+#1      $ResultError.valueOrProviderException (package:riverpod/src/common/result.dart:108:7)
+#2      ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1031:29)
+#3      Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#4      HapticPreferencesController.build
+(package:mesting_music/core/haptics/app_haptics.dart:39:23)
+#5      $NotifierProviderElement.handleCreate (package:riverpod/src/providers/notifier.dart:93:31)
+#6      Notifier.runBuild (package:riverpod/src/providers/notifier/orphan.dart:69:47)
+#7      $ClassProviderElement.create
+(package:riverpod/src/core/provider/notifier_provider.dart:569:43)
+#8      ProviderElement.buildState (package:riverpod/src/core/element.dart:743:28)
+#9      ProviderElement.mount (package:riverpod/src/core/element.dart:587:7)
+#10     ProviderElement.flush (package:riverpod/src/core/element.dart:699:7)
+#11     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#12     ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1102:26)
+#13     ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1028:17)
+#14     Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#15     appHapticsProvider.<anonymous closure>.<anonymous closure>
+(package:mesting_music/core/haptics/app_haptics.dart:94:28)
+#16     AppHaptics.perform (package:mesting_music/core/haptics/app_haptics.dart:107:33)
+#17     AppHaptics.feedback (package:mesting_music/core/haptics/app_haptics.dart:121:52)
+#18     appHaptic (package:mesting_music/core/haptics/app_haptics.dart:131:32)
+#19     BetaGlassButton.build.<anonymous closure>
+(package:mesting_music/shared/widgets/beta_glass_controls.dart:70:19)
+#20     GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#21     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#22     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#23     BaseTapGestureRecognizer.acceptGesture (package:flutter/src/gestures/tap.dart:353:7)
+#24     GestureArenaManager.sweep (package:flutter/src/gestures/arena.dart:173:27)
+#25     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:532:20)
+#26     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#27     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#28     GestureBinding._handlePointerEventImmediately
+(package:flutter/src/gestures/binding.dart:437:7)
+#29     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#30     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure>
+(package:flutter_test/src/binding.dart:1301:42)
+#31     TestWidgetsFlutterBinding.withPointerEventSource
+(package:flutter_test/src/binding.dart:1311:11)
+#32     TestWidgetsFlutterBinding.handlePointerEventForSource
+(package:flutter_test/src/binding.dart:1301:5)
+#33     WidgetTester.sendEventToBinding.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:869:15)
+#34     _rootRun (dart:async/zone_root.dart:35:13)
+#35     _CustomZone.run (dart:async/zone.dart:726:19)
+#36     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#37     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:868:27)
+#38     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:587:26)
+#39     _rootRun (dart:async/zone_root.dart:35:13)
+#40     _CustomZone.run (dart:async/zone.dart:726:19)
+#41     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#42     TestGesture.up (package:flutter_test/src/test_pointer.dart:580:27)
+#43     WidgetController.tapAt.<anonymous closure>
+(package:flutter_test/src/controller.dart:1150:21)
+<asynchronous suspension>
+#44     TestAsyncUtils.guard.<anonymous closure>
+(package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#45     main.export (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:113:5)
+<asynchronous suspension>
+#46     main.<anonymous closure>
+(file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:165:5)
+<asynchronous suspension>
+#47     testWidgets.<anonymous closure>.<anonymous closure>
+(package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#48     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#49     StackZoneSpecification._registerCallback.<anonymous closure>
+(package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+
+When the exception was thrown, this was the stack:
+#0      throwProviderException (package:riverpod/src/common/stack_trace.dart:10:3)
+#1      $ResultError.valueOrProviderException (package:riverpod/src/common/result.dart:108:7)
+#2      ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1031:29)
+#3      Ref.read (package:riverpod/src/core/ref.dart:609:30)
+#4      appHapticsProvider.<anonymous closure>.<anonymous closure> (package:mesting_music/core/haptics/app_haptics.dart:94:28)
+#5      AppHaptics.perform (package:mesting_music/core/haptics/app_haptics.dart:107:33)
+#6      AppHaptics.feedback (package:mesting_music/core/haptics/app_haptics.dart:121:52)
+#7      appHaptic (package:mesting_music/core/haptics/app_haptics.dart:131:32)
+#8      BetaGlassButton.build.<anonymous closure> (package:mesting_music/shared/widgets/beta_glass_controls.dart:70:19)
+#9      GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#10     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#11     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#12     BaseTapGestureRecognizer.handlePrimaryPointer (package:flutter/src/gestures/tap.dart:314:7)
+#13     PrimaryPointerGestureRecognizer.handleEvent (package:flutter/src/gestures/recognizer.dart:721:9)
+#14     PointerRouter._dispatch (package:flutter/src/gestures/pointer_router.dart:97:12)
+#15     PointerRouter._dispatchEventToRoutes.<anonymous closure> (package:flutter/src/gestures/pointer_router.dart:140:9)
+#16     _LinkedHashMapMixin.forEach (dart:_compact_hash:765:13)
+#17     PointerRouter._dispatchEventToRoutes (package:flutter/src/gestures/pointer_router.dart:138:18)
+#18     PointerRouter.route (package:flutter/src/gestures/pointer_router.dart:128:7)
+#19     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:528:19)
+#20     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#21     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#22     GestureBinding._handlePointerEventImmediately (package:flutter/src/gestures/binding.dart:437:7)
+#23     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#24     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure> (package:flutter_test/src/binding.dart:1301:42)
+#25     TestWidgetsFlutterBinding.withPointerEventSource (package:flutter_test/src/binding.dart:1311:11)
+#26     TestWidgetsFlutterBinding.handlePointerEventForSource (package:flutter_test/src/binding.dart:1301:5)
+#27     WidgetTester.sendEventToBinding.<anonymous closure> (package:flutter_test/src/widget_tester.dart:869:15)
+#30     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#31     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:868:27)
+#32     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:587:26)
+#35     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#36     TestGesture.up (package:flutter_test/src/test_pointer.dart:580:27)
+#37     WidgetController.tapAt.<anonymous closure> (package:flutter_test/src/controller.dart:1150:21)
+<asynchronous suspension>
+#38     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#39     main.<anonymous closure> (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:168:5)
+<asynchronous suspension>
+#40     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#41     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+════════════════════════════════════════════════════════════════════════════════════════════════════
+  Test failed. See exception logs above.
+  The test description was: cancel and account switch prevent copying an old diagnostic
+  
+00:04 +7 -3: D:/AnLi/test/release_136_listening_audit_ui_test.dart: export button cancels held drag and preserves glass feedback
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: a numeric value within <1> of <346.0>
+  Actual: <362.99999999999994>
+   Which:  differs by <16.999999999999943>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:194:5)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart line 194
+The test description was:
+  export button cancels held drag and preserves glass feedback
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:04 +7 -4: D:/AnLi/test/release_136_listening_audit_ui_test.dart: export button cancels held drag and preserves glass feedback [E]
+  Test failed. See exception logs above.
+  The test description was: export button cancels held drag and preserves glass feedback
+  
+00:04 +7 -4: D:/AnLi/test/release_136_listening_audit_ui_test.dart: (tearDownAll)
+00:04 +7 -4: Some tests failed.

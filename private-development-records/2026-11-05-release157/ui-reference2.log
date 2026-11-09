@@ -1,0 +1,375 @@
+00:00 +0: loading D:/AnLi/test/release_157_ui_test.dart
+00:00 +0: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: chart controls render and play every page; kugou dark=false large=false
+
+Warning: A call to tap() with finder "Found 1 widget with key [<'ranking-play-all'>]: [
+  TextButton-[<'ranking-play-all'>](style: ButtonStyle#46f46(padding: WidgetStatePropertyAll(EdgeInsets(6.0, 10.0, 6.0, 10.0)), mouseCursor: WidgetStateMapper<MouseCursor?>({WidgetState.disabled: null, WidgetState.any: null}), alignment: Alignment.centerLeft), dependencies: [IconTheme, InheritedCupertinoTheme, MediaQuery, _InheritedTheme, _LocalizationsScope-[GlobalKey#9c834], _ScrollableScope], state: _ButtonStyleState#5e2cd),
+]" derived an Offset (Offset(171.0, 24.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderSemanticsAnnotations#1c247 relayoutBoundary=up8
+The hit test result at that offset is: HitTestResult(RenderParagraph#5c728@Offset(93.0, 6.5), RenderFlex#6aea6@Offset(155.0, 16.0), RenderPadding#147e0@Offset(171.0, 24.0), RenderPadding#78aa6@Offset(171.0, 24.0), _RenderColoredBox#80b16@Offset(171.0, 24.0), RenderStack#e791c@Offset(171.0, 24.0), _RenderArtworkViewport#9b732@Offset(171.0, 24.0), _RenderColoredBox#b70c3@Offset(171.0, 24.0), RenderFlex#25a16@Offset(171.0, 24.0), RenderPadding#6b818@Offset(171.0, 24.0), RenderCustomMultiChildLayoutBox#02a37@Offset(171.0, 24.0), _RenderInkFeatures#e1261@Offset(171.0, 24.0), RenderPhysicalModel#a9f3b@Offset(171.0, 24.0), RenderStack#18967@Offset(171.0, 24.0), _RenderLayoutBuilder#a5d9a@Offset(171.0, 24.0), RenderStack#a104a@Offset(171.0, 24.0), _RenderLayoutBuilder#f8499@Offset(171.0, 24.0), RenderSemanticsAnnotations#c8c18@Offset(171.0, 24.0), RenderRepaintBoundary#4f285@Offset(171.0, 24.0), RenderIgnorePointer#cb1d0@Offset(171.0, 24.0), RenderStack#f6d99@Offset(171.0, 24.0), _RenderLayoutBuilder#0752a@Offset(171.0, 24.0), _RenderColoredBox#77fb2@Offset(171.0, 24.0), RenderRepaintBoundary#34e98@Offset(171.0, 24.0), RenderClipRect#d9c09@Offset(171.0, 24.0), RenderRepaintBoundary#20c6e@Offset(171.0, 24.0), RenderSemanticsAnnotations#be7fe@Offset(171.0, 24.0), RenderOffstage#521ea@Offset(171.0, 24.0), RenderSemanticsAnnotations#5057a@Offset(171.0, 24.0), _RenderTheater#c0b5c@Offset(171.0, 24.0), RenderAbsorbPointer#5a110@Offset(171.0, 24.0), RenderPointerListener#59247@Offset(171.0, 24.0), RenderSemanticsAnnotations#b7aef@Offset(171.0, 24.0), RenderRepaintBoundary#f9335@Offset(171.0, 24.0), RenderSemanticsAnnotations#85adf@Offset(171.0, 24.0), RenderSemanticsAnnotations#cd770@Offset(171.0, 24.0), RenderSemanticsAnnotations#b57c4@Offset(171.0, 24.0), RenderTapRegionSurface#1e820@Offset(171.0, 24.0), RenderSemanticsAnnotations#f7ab3@Offset(171.0, 24.0), RenderSemanticsAnnotations#8bac1@Offset(171.0, 24.0), HitTestEntry<HitTestTarget>#584a0(_ReusableRenderView#be31d), HitTestEntry<HitTestTarget>#03621(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2158:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1942:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1075:7)
+#3      main.<anonymous closure> (file:///D:/AnLi/test/release_157_ui_test.dart:174:26)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: <77>
+  Actual: <0>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_157_ui_test.dart:178:13)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_157_ui_test.dart line 178
+The test description was:
+  chart controls render and play every page; kugou dark=false large=false
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:04 +0 -1: chart controls render and play every page; kugou dark=false large=false [E]
+  Test failed. See exception logs above.
+  The test description was: chart controls render and play every page; kugou dark=false large=false
+  
+00:04 +0 -1: chart controls render and play every page; kugou dark=false large=true
+
+Warning: A call to tap() with finder "Found 1 widget with key [<'ranking-play-all'>]: [
+  TextButton-[<'ranking-play-all'>](style: ButtonStyle#46f46(padding: WidgetStatePropertyAll(EdgeInsets(6.0, 10.0, 6.0, 10.0)), mouseCursor: WidgetStateMapper<MouseCursor?>({WidgetState.disabled: null, WidgetState.any: null}), alignment: Alignment.centerLeft), dependencies: [IconTheme, InheritedCupertinoTheme, MediaQuery, _InheritedTheme, _LocalizationsScope-[GlobalKey#7fcd2], _ScrollableScope], state: _ButtonStyleState#8ea87),
+]" derived an Offset (Offset(136.0, 55.5)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderSemanticsAnnotations#b248e relayoutBoundary=up8
+The hit test result at that offset is: HitTestResult(HitTestEntry<HitTestTarget>#9742b(TextSpan(debugLabel: ((englishLike bodyMedium 2021).merge(((((blackMountainView bodyMedium).apply).apply).merge(unknown)).apply)).merge(unknown), inherit: false, color: Color(alpha: 1.0000, red: 0.1255, green: 0.1373, blue: 0.1686, colorSpace: ColorSpace.sRGB), family: MestingQA151, familyFallback: [Noto Sans SC, Microsoft YaHei, sans-serif], size: 20.0, weight: 700, letterSpacing: 0.3, baseline: alphabetic, height: 1.4x, leadingDistribution: even, decoration: Color(alpha: 1.0000, red: 0.1098, green: 0.1098, blue: 0.1176, colorSpace: ColorSpace.sRGB) TextDecoration.none, "测试榜")), RenderParagraph#cfdda@Offset(58.0, 47.5), RenderFlex#f6ef5@Offset(120.0, 47.5), RenderPadding#a1251@Offset(136.0, 55.5), RenderPadding#8341c@Offset(136.0, 55.5), _RenderColoredBox#99106@Offset(136.0, 55.5), RenderStack#134d0@Offset(136.0, 55.5), _RenderArtworkViewport#7aad9@Offset(136.0, 55.5), _RenderColoredBox#cac48@Offset(136.0, 55.5), RenderFlex#2225d@Offset(136.0, 55.5), RenderPadding#537e6@Offset(136.0, 55.5), RenderCustomMultiChildLayoutBox#1d43b@Offset(136.0, 55.5), _RenderInkFeatures#2bc1d@Offset(136.0, 55.5), RenderPhysicalModel#eba89@Offset(136.0, 55.5), RenderStack#6ffca@Offset(136.0, 55.5), _RenderLayoutBuilder#da4cb@Offset(136.0, 55.5), RenderStack#c33be@Offset(136.0, 55.5), _RenderLayoutBuilder#ee673@Offset(136.0, 55.5), RenderSemanticsAnnotations#c4f6f@Offset(136.0, 55.5), RenderRepaintBoundary#e61c8@Offset(136.0, 55.5), RenderIgnorePointer#b99e5@Offset(136.0, 55.5), RenderStack#b9c89@Offset(136.0, 55.5), _RenderLayoutBuilder#587bb@Offset(136.0, 55.5), _RenderColoredBox#e3e0f@Offset(136.0, 55.5), RenderRepaintBoundary#4b5d9@Offset(136.0, 55.5), RenderClipRect#8e96f@Offset(136.0, 55.5), RenderRepaintBoundary#ea755@Offset(136.0, 55.5), RenderSemanticsAnnotations#f8de3@Offset(136.0, 55.5), RenderOffstage#3ae4f@Offset(136.0, 55.5), RenderSemanticsAnnotations#4d8e7@Offset(136.0, 55.5), _RenderTheater#77621@Offset(136.0, 55.5), RenderAbsorbPointer#fa360@Offset(136.0, 55.5), RenderPointerListener#40cfa@Offset(136.0, 55.5), RenderSemanticsAnnotations#b6484@Offset(136.0, 55.5), RenderRepaintBoundary#96969@Offset(136.0, 55.5), RenderSemanticsAnnotations#6b24a@Offset(136.0, 55.5), RenderSemanticsAnnotations#bdf2c@Offset(136.0, 55.5), RenderSemanticsAnnotations#5a335@Offset(136.0, 55.5), RenderTapRegionSurface#4c37d@Offset(136.0, 55.5), RenderSemanticsAnnotations#f0670@Offset(136.0, 55.5), RenderSemanticsAnnotations#1806f@Offset(136.0, 55.5), HitTestEntry<HitTestTarget>#01ccc(_ReusableRenderView#be31d), HitTestEntry<HitTestTarget>#6086d(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2158:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1942:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1075:7)
+#3      main.<anonymous closure> (file:///D:/AnLi/test/release_157_ui_test.dart:174:26)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: <77>
+  Actual: <0>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_157_ui_test.dart:178:13)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_157_ui_test.dart line 178
+The test description was:
+  chart controls render and play every page; kugou dark=false large=true
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:06 +0 -2: chart controls render and play every page; kugou dark=false large=true [E]
+  Test failed. See exception logs above.
+  The test description was: chart controls render and play every page; kugou dark=false large=true
+  
+00:06 +0 -2: chart controls render and play every page; kugou dark=true large=false
+
+Warning: A call to tap() with finder "Found 1 widget with key [<'ranking-play-all'>]: [
+  TextButton-[<'ranking-play-all'>](style: ButtonStyle#46f46(padding: WidgetStatePropertyAll(EdgeInsets(6.0, 10.0, 6.0, 10.0)), mouseCursor: WidgetStateMapper<MouseCursor?>({WidgetState.disabled: null, WidgetState.any: null}), alignment: Alignment.centerLeft), dependencies: [IconTheme, InheritedCupertinoTheme, MediaQuery, _InheritedTheme, _LocalizationsScope-[GlobalKey#ee58e], _ScrollableScope], state: _ButtonStyleState#e79a4),
+]" derived an Offset (Offset(171.0, 24.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderSemanticsAnnotations#92a98 relayoutBoundary=up8
+The hit test result at that offset is: HitTestResult(RenderParagraph#70b52@Offset(93.0, 6.5), RenderFlex#1e896@Offset(155.0, 16.0), RenderPadding#14ab6@Offset(171.0, 24.0), RenderPadding#825ea@Offset(171.0, 24.0), _RenderColoredBox#6d2f3@Offset(171.0, 24.0), RenderStack#de6c7@Offset(171.0, 24.0), _RenderArtworkViewport#9997f@Offset(171.0, 24.0), _RenderColoredBox#833d8@Offset(171.0, 24.0), RenderFlex#31c09@Offset(171.0, 24.0), RenderPadding#576ee@Offset(171.0, 24.0), RenderCustomMultiChildLayoutBox#c5e7d@Offset(171.0, 24.0), _RenderInkFeatures#c4078@Offset(171.0, 24.0), RenderPhysicalModel#ef0d9@Offset(171.0, 24.0), RenderStack#546e3@Offset(171.0, 24.0), _RenderLayoutBuilder#8fc46@Offset(171.0, 24.0), RenderStack#a699f@Offset(171.0, 24.0), _RenderLayoutBuilder#d62f5@Offset(171.0, 24.0), RenderSemanticsAnnotations#c6aa6@Offset(171.0, 24.0), RenderRepaintBoundary#d1b8f@Offset(171.0, 24.0), RenderIgnorePointer#c8334@Offset(171.0, 24.0), RenderStack#1127c@Offset(171.0, 24.0), _RenderLayoutBuilder#602e2@Offset(171.0, 24.0), _RenderColoredBox#a7e9f@Offset(171.0, 24.0), RenderRepaintBoundary#4435e@Offset(171.0, 24.0), RenderClipRect#80dab@Offset(171.0, 24.0), RenderRepaintBoundary#9e9e5@Offset(171.0, 24.0), RenderSemanticsAnnotations#1a90d@Offset(171.0, 24.0), RenderOffstage#2f1b6@Offset(171.0, 24.0), RenderSemanticsAnnotations#e1ae7@Offset(171.0, 24.0), _RenderTheater#cd22d@Offset(171.0, 24.0), RenderAbsorbPointer#70648@Offset(171.0, 24.0), RenderPointerListener#76f97@Offset(171.0, 24.0), RenderSemanticsAnnotations#7c58c@Offset(171.0, 24.0), RenderRepaintBoundary#65f9f@Offset(171.0, 24.0), RenderSemanticsAnnotations#048c6@Offset(171.0, 24.0), RenderSemanticsAnnotations#4760e@Offset(171.0, 24.0), RenderSemanticsAnnotations#ae1b4@Offset(171.0, 24.0), RenderTapRegionSurface#32536@Offset(171.0, 24.0), RenderSemanticsAnnotations#5e1f1@Offset(171.0, 24.0), RenderSemanticsAnnotations#3e2eb@Offset(171.0, 24.0), HitTestEntry<HitTestTarget>#fd860(_ReusableRenderView#be31d), HitTestEntry<HitTestTarget>#69e77(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2158:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1942:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1075:7)
+#3      main.<anonymous closure> (file:///D:/AnLi/test/release_157_ui_test.dart:174:26)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: <77>
+  Actual: <0>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_157_ui_test.dart:178:13)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_157_ui_test.dart line 178
+The test description was:
+  chart controls render and play every page; kugou dark=true large=false
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:08 +0 -3: chart controls render and play every page; kugou dark=true large=false [E]
+  Test failed. See exception logs above.
+  The test description was: chart controls render and play every page; kugou dark=true large=false
+  
+00:08 +0 -3: chart controls render and play every page; kugou dark=true large=true
+
+Warning: A call to tap() with finder "Found 1 widget with key [<'ranking-play-all'>]: [
+  TextButton-[<'ranking-play-all'>](style: ButtonStyle#46f46(padding: WidgetStatePropertyAll(EdgeInsets(6.0, 10.0, 6.0, 10.0)), mouseCursor: WidgetStateMapper<MouseCursor?>({WidgetState.disabled: null, WidgetState.any: null}), alignment: Alignment.centerLeft), dependencies: [IconTheme, InheritedCupertinoTheme, MediaQuery, _InheritedTheme, _LocalizationsScope-[GlobalKey#9ff7a], _ScrollableScope], state: _ButtonStyleState#22aaf),
+]" derived an Offset (Offset(136.0, 55.5)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderSemanticsAnnotations#b947d relayoutBoundary=up8
+The hit test result at that offset is: HitTestResult(HitTestEntry<HitTestTarget>#e4128(TextSpan(debugLabel: ((englishLike bodyMedium 2021).merge(((((whiteMountainView bodyMedium).apply).apply).merge(unknown)).apply)).merge(unknown), inherit: false, color: Color(alpha: 1.0000, red: 0.9608, green: 0.9686, blue: 0.9882, colorSpace: ColorSpace.sRGB), family: MestingQA151, familyFallback: [Noto Sans SC, Microsoft YaHei, sans-serif], size: 20.0, weight: 700, letterSpacing: 0.3, baseline: alphabetic, height: 1.4x, leadingDistribution: even, decoration: Color(alpha: 1.0000, red: 0.9608, green: 0.9608, blue: 0.9686, colorSpace: ColorSpace.sRGB) TextDecoration.none, "测试榜")), RenderParagraph#86ac9@Offset(58.0, 47.5), RenderFlex#ccfca@Offset(120.0, 47.5), RenderPadding#0e353@Offset(136.0, 55.5), RenderPadding#48ef5@Offset(136.0, 55.5), _RenderColoredBox#2ad98@Offset(136.0, 55.5), RenderStack#3b9d8@Offset(136.0, 55.5), _RenderArtworkViewport#5e9a3@Offset(136.0, 55.5), _RenderColoredBox#2eafa@Offset(136.0, 55.5), RenderFlex#fc349@Offset(136.0, 55.5), RenderPadding#f0ee5@Offset(136.0, 55.5), RenderCustomMultiChildLayoutBox#f04f8@Offset(136.0, 55.5), _RenderInkFeatures#3d464@Offset(136.0, 55.5), RenderPhysicalModel#b97c7@Offset(136.0, 55.5), RenderStack#0c16b@Offset(136.0, 55.5), _RenderLayoutBuilder#edd3d@Offset(136.0, 55.5), RenderStack#b7fba@Offset(136.0, 55.5), _RenderLayoutBuilder#4a028@Offset(136.0, 55.5), RenderSemanticsAnnotations#62ad3@Offset(136.0, 55.5), RenderRepaintBoundary#f732c@Offset(136.0, 55.5), RenderIgnorePointer#83f04@Offset(136.0, 55.5), RenderStack#4a238@Offset(136.0, 55.5), _RenderLayoutBuilder#56375@Offset(136.0, 55.5), _RenderColoredBox#be5be@Offset(136.0, 55.5), RenderRepaintBoundary#d2eda@Offset(136.0, 55.5), RenderClipRect#632de@Offset(136.0, 55.5), RenderRepaintBoundary#95b8d@Offset(136.0, 55.5), RenderSemanticsAnnotations#ad871@Offset(136.0, 55.5), RenderOffstage#48212@Offset(136.0, 55.5), RenderSemanticsAnnotations#15958@Offset(136.0, 55.5), _RenderTheater#43f89@Offset(136.0, 55.5), RenderAbsorbPointer#f0244@Offset(136.0, 55.5), RenderPointerListener#de9e5@Offset(136.0, 55.5), RenderSemanticsAnnotations#c9e01@Offset(136.0, 55.5), RenderRepaintBoundary#1a217@Offset(136.0, 55.5), RenderSemanticsAnnotations#b8e24@Offset(136.0, 55.5), RenderSemanticsAnnotations#917b9@Offset(136.0, 55.5), RenderSemanticsAnnotations#804ae@Offset(136.0, 55.5), RenderTapRegionSurface#0f323@Offset(136.0, 55.5), RenderSemanticsAnnotations#cf218@Offset(136.0, 55.5), RenderSemanticsAnnotations#91a82@Offset(136.0, 55.5), HitTestEntry<HitTestTarget>#09ad0(_ReusableRenderView#be31d), HitTestEntry<HitTestTarget>#8d3cd(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2158:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1942:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1075:7)
+#3      main.<anonymous closure> (file:///D:/AnLi/test/release_157_ui_test.dart:174:26)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: <77>
+  Actual: <0>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_157_ui_test.dart:178:13)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_157_ui_test.dart line 178
+The test description was:
+  chart controls render and play every page; kugou dark=true large=true
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:09 +0 -4: chart controls render and play every page; kugou dark=true large=true [E]
+  Test failed. See exception logs above.
+  The test description was: chart controls render and play every page; kugou dark=true large=true
+  
+00:09 +0 -4: chart controls render and play every page; netease dark=false large=false
+
+Warning: A call to tap() with finder "Found 1 widget with key [<'ranking-action-save'>]: [
+  BetaGlassButton-[<'ranking-action-save'>](dependencies: [InheritedCupertinoTheme, _InheritedTheme, _LocalizationsScope-[GlobalKey#5a24f]]),
+]" derived an Offset (Offset(88.0, 239.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderSemanticsAnnotations#f507b relayoutBoundary=up24
+The hit test result at that offset is: HitTestResult(RenderPointerListener#7d841@Offset(88.0, 239.0), RenderSemanticsGestureHandler#cfa5c@Offset(88.0, 239.0), RenderPointerListener#8ea85@Offset(88.0, 239.0), _RenderScrollSemantics#74c7c@Offset(88.0, 239.0), RenderClipRect#e0f29@Offset(88.0, 239.0), RenderStack#c8a2d@Offset(88.0, 239.0), _RenderArtworkViewport#ba6b8@Offset(88.0, 239.0), _RenderColoredBox#7557c@Offset(88.0, 239.0), RenderFlex#29866@Offset(88.0, 239.0), RenderPadding#14d16@Offset(88.0, 239.0), RenderCustomMultiChildLayoutBox#3ce6b@Offset(88.0, 239.0), _RenderInkFeatures#fccad@Offset(88.0, 239.0), RenderPhysicalModel#ea16e@Offset(88.0, 239.0), RenderStack#4872f@Offset(88.0, 239.0), _RenderLayoutBuilder#4bf88@Offset(88.0, 239.0), RenderStack#2c7a8@Offset(88.0, 239.0), _RenderLayoutBuilder#f62cc@Offset(88.0, 239.0), RenderSemanticsAnnotations#cd957@Offset(88.0, 239.0), RenderRepaintBoundary#ac1a7@Offset(88.0, 239.0), RenderIgnorePointer#169a6@Offset(88.0, 239.0), RenderStack#51072@Offset(88.0, 239.0), _RenderLayoutBuilder#ba249@Offset(88.0, 239.0), _RenderColoredBox#6a4b7@Offset(88.0, 239.0), RenderRepaintBoundary#cd943@Offset(88.0, 239.0), RenderClipRect#5011c@Offset(88.0, 239.0), RenderRepaintBoundary#7ffc1@Offset(88.0, 239.0), RenderSemanticsAnnotations#621c2@Offset(88.0, 239.0), RenderOffstage#7ec17@Offset(88.0, 239.0), RenderSemanticsAnnotations#b0e1f@Offset(88.0, 239.0), _RenderTheater#f8cc3@Offset(88.0, 239.0), RenderAbsorbPointer#a6d06@Offset(88.0, 239.0), RenderPointerListener#3da6e@Offset(88.0, 239.0), RenderSemanticsAnnotations#3badc@Offset(88.0, 239.0), RenderRepaintBoundary#0da40@Offset(88.0, 239.0), RenderSemanticsAnnotations#0da7b@Offset(88.0, 239.0), RenderSemanticsAnnotations#53c22@Offset(88.0, 239.0), RenderSemanticsAnnotations#f794d@Offset(88.0, 239.0), RenderTapRegionSurface#09f3a@Offset(88.0, 239.0), RenderSemanticsAnnotations#915c7@Offset(88.0, 239.0), RenderSemanticsAnnotations#632f0@Offset(88.0, 239.0), HitTestEntry<HitTestTarget>#2a700(_ReusableRenderView#be31d), HitTestEntry<HitTestTarget>#d6120(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2158:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1942:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1075:7)
+#3      main.<anonymous closure> (file:///D:/AnLi/test/release_157_ui_test.dart:163:28)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: true
+  Actual: <false>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_157_ui_test.dart:168:15)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_157_ui_test.dart line 168
+The test description was:
+  chart controls render and play every page; netease dark=false large=false
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:11 +0 -5: chart controls render and play every page; netease dark=false large=false [E]
+  Test failed. See exception logs above.
+  The test description was: chart controls render and play every page; netease dark=false large=false
+  
+00:11 +0 -5: chart controls render and play every page; netease dark=false large=true
+
+Warning: A call to tap() with finder "Found 1 widget with key [<'ranking-play-all'>]: [
+  TextButton-[<'ranking-play-all'>](style: ButtonStyle#46f46(padding: WidgetStatePropertyAll(EdgeInsets(6.0, 10.0, 6.0, 10.0)), mouseCursor: WidgetStateMapper<MouseCursor?>({WidgetState.disabled: null, WidgetState.any: null}), alignment: Alignment.centerLeft), dependencies: [IconTheme, InheritedCupertinoTheme, MediaQuery, _InheritedTheme, _LocalizationsScope-[GlobalKey#3895a], _ScrollableScope], state: _ButtonStyleState#1714e),
+]" derived an Offset (Offset(136.0, 55.5)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderSemanticsAnnotations#d2472 relayoutBoundary=up8
+The hit test result at that offset is: HitTestResult(HitTestEntry<HitTestTarget>#26fd0(TextSpan(debugLabel: ((englishLike bodyMedium 2021).merge(((((blackMountainView bodyMedium).apply).apply).merge(unknown)).apply)).merge(unknown), inherit: false, color: Color(alpha: 1.0000, red: 0.1255, green: 0.1373, blue: 0.1686, colorSpace: ColorSpace.sRGB), family: MestingQA151, familyFallback: [Noto Sans SC, Microsoft YaHei, sans-serif], size: 20.0, weight: 700, letterSpacing: 0.3, baseline: alphabetic, height: 1.4x, leadingDistribution: even, decoration: Color(alpha: 1.0000, red: 0.1098, green: 0.1098, blue: 0.1176, colorSpace: ColorSpace.sRGB) TextDecoration.none, "测试榜")), RenderParagraph#e167b@Offset(58.0, 47.5), RenderFlex#4d3d6@Offset(120.0, 47.5), RenderPadding#4d9f0@Offset(136.0, 55.5), RenderPadding#1ba0d@Offset(136.0, 55.5), _RenderColoredBox#e6aaf@Offset(136.0, 55.5), RenderStack#49b68@Offset(136.0, 55.5), _RenderArtworkViewport#692a4@Offset(136.0, 55.5), _RenderColoredBox#dc3cd@Offset(136.0, 55.5), RenderFlex#d38f1@Offset(136.0, 55.5), RenderPadding#1e61d@Offset(136.0, 55.5), RenderCustomMultiChildLayoutBox#c8875@Offset(136.0, 55.5), _RenderInkFeatures#b7192@Offset(136.0, 55.5), RenderPhysicalModel#6d2ea@Offset(136.0, 55.5), RenderStack#27b2f@Offset(136.0, 55.5), _RenderLayoutBuilder#e62e2@Offset(136.0, 55.5), RenderStack#85696@Offset(136.0, 55.5), _RenderLayoutBuilder#cd04d@Offset(136.0, 55.5), RenderSemanticsAnnotations#7c6df@Offset(136.0, 55.5), RenderRepaintBoundary#a0e2e@Offset(136.0, 55.5), RenderIgnorePointer#c3685@Offset(136.0, 55.5), RenderStack#2e443@Offset(136.0, 55.5), _RenderLayoutBuilder#2af41@Offset(136.0, 55.5), _RenderColoredBox#3907d@Offset(136.0, 55.5), RenderRepaintBoundary#9cdd8@Offset(136.0, 55.5), RenderClipRect#c7c56@Offset(136.0, 55.5), RenderRepaintBoundary#015ab@Offset(136.0, 55.5), RenderSemanticsAnnotations#d30bf@Offset(136.0, 55.5), RenderOffstage#320f7@Offset(136.0, 55.5), RenderSemanticsAnnotations#7ff50@Offset(136.0, 55.5), _RenderTheater#4e21b@Offset(136.0, 55.5), RenderAbsorbPointer#1a2c3@Offset(136.0, 55.5), RenderPointerListener#a90ae@Offset(136.0, 55.5), RenderSemanticsAnnotations#87b74@Offset(136.0, 55.5), RenderRepaintBoundary#e00f4@Offset(136.0, 55.5), RenderSemanticsAnnotations#29ea3@Offset(136.0, 55.5), RenderSemanticsAnnotations#fe76f@Offset(136.0, 55.5), RenderSemanticsAnnotations#eb397@Offset(136.0, 55.5), RenderTapRegionSurface#97ffa@Offset(136.0, 55.5), RenderSemanticsAnnotations#8f05b@Offset(136.0, 55.5), RenderSemanticsAnnotations#ef483@Offset(136.0, 55.5), HitTestEntry<HitTestTarget>#2079c(_ReusableRenderView#be31d), HitTestEntry<HitTestTarget>#2200c(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2158:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1942:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1075:7)
+#3      main.<anonymous closure> (file:///D:/AnLi/test/release_157_ui_test.dart:174:26)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: <77>
+  Actual: <0>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_157_ui_test.dart:178:13)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_157_ui_test.dart line 178
+The test description was:
+  chart controls render and play every page; netease dark=false large=true
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:12 +0 -6: chart controls render and play every page; netease dark=false large=true [E]
+  Test failed. See exception logs above.
+  The test description was: chart controls render and play every page; netease dark=false large=true
+  
+00:12 +0 -6: chart controls render and play every page; netease dark=true large=false
+
+Warning: A call to tap() with finder "Found 1 widget with key [<'ranking-action-save'>]: [
+  BetaGlassButton-[<'ranking-action-save'>](dependencies: [InheritedCupertinoTheme, _InheritedTheme, _LocalizationsScope-[GlobalKey#f0f65]]),
+]" derived an Offset (Offset(88.0, 239.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderSemanticsAnnotations#c5c89 relayoutBoundary=up23
+The hit test result at that offset is: HitTestResult(RenderPointerListener#037e3@Offset(88.0, 239.0), RenderSemanticsGestureHandler#65c60@Offset(88.0, 239.0), RenderPointerListener#2f7e3@Offset(88.0, 239.0), _RenderScrollSemantics#4a41f@Offset(88.0, 239.0), RenderClipRect#a95ba@Offset(88.0, 239.0), RenderStack#bf7d6@Offset(88.0, 239.0), _RenderArtworkViewport#99896@Offset(88.0, 239.0), _RenderColoredBox#86f75@Offset(88.0, 239.0), RenderFlex#052eb@Offset(88.0, 239.0), RenderPadding#41f89@Offset(88.0, 239.0), RenderCustomMultiChildLayoutBox#8e0c6@Offset(88.0, 239.0), _RenderInkFeatures#01116@Offset(88.0, 239.0), RenderPhysicalModel#5f3ca@Offset(88.0, 239.0), RenderStack#16561@Offset(88.0, 239.0), _RenderLayoutBuilder#0dcaf@Offset(88.0, 239.0), RenderStack#2ff51@Offset(88.0, 239.0), _RenderLayoutBuilder#d73a1@Offset(88.0, 239.0), RenderSemanticsAnnotations#1cf06@Offset(88.0, 239.0), RenderRepaintBoundary#1ea20@Offset(88.0, 239.0), RenderIgnorePointer#aa6e7@Offset(88.0, 239.0), RenderStack#4ccca@Offset(88.0, 239.0), _RenderLayoutBuilder#6308d@Offset(88.0, 239.0), _RenderColoredBox#82eaf@Offset(88.0, 239.0), RenderRepaintBoundary#1db54@Offset(88.0, 239.0), RenderClipRect#db4fd@Offset(88.0, 239.0), RenderRepaintBoundary#5d764@Offset(88.0, 239.0), RenderSemanticsAnnotations#b623a@Offset(88.0, 239.0), RenderOffstage#14f86@Offset(88.0, 239.0), RenderSemanticsAnnotations#c7d2b@Offset(88.0, 239.0), _RenderTheater#857c9@Offset(88.0, 239.0), RenderAbsorbPointer#dcc4b@Offset(88.0, 239.0), RenderPointerListener#f80a7@Offset(88.0, 239.0), RenderSemanticsAnnotations#4b33c@Offset(88.0, 239.0), RenderRepaintBoundary#c6802@Offset(88.0, 239.0), RenderSemanticsAnnotations#7be64@Offset(88.0, 239.0), RenderSemanticsAnnotations#892a0@Offset(88.0, 239.0), RenderSemanticsAnnotations#386a3@Offset(88.0, 239.0), RenderTapRegionSurface#24157@Offset(88.0, 239.0), RenderSemanticsAnnotations#b46e5@Offset(88.0, 239.0), RenderSemanticsAnnotations#20741@Offset(88.0, 239.0), HitTestEntry<HitTestTarget>#c48c6(_ReusableRenderView#be31d), HitTestEntry<HitTestTarget>#c1678(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2158:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1942:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1075:7)
+#3      main.<anonymous closure> (file:///D:/AnLi/test/release_157_ui_test.dart:163:28)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: true
+  Actual: <false>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_157_ui_test.dart:168:15)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_157_ui_test.dart line 168
+The test description was:
+  chart controls render and play every page; netease dark=true large=false
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:14 +0 -7: chart controls render and play every page; netease dark=true large=false [E]
+  Test failed. See exception logs above.
+  The test description was: chart controls render and play every page; netease dark=true large=false
+  
+00:14 +0 -7: chart controls render and play every page; netease dark=true large=true
+
+Warning: A call to tap() with finder "Found 1 widget with key [<'ranking-play-all'>]: [
+  TextButton-[<'ranking-play-all'>](style: ButtonStyle#46f46(padding: WidgetStatePropertyAll(EdgeInsets(6.0, 10.0, 6.0, 10.0)), mouseCursor: WidgetStateMapper<MouseCursor?>({WidgetState.disabled: null, WidgetState.any: null}), alignment: Alignment.centerLeft), dependencies: [IconTheme, InheritedCupertinoTheme, MediaQuery, _InheritedTheme, _LocalizationsScope-[GlobalKey#10b3a], _ScrollableScope], state: _ButtonStyleState#6e30e),
+]" derived an Offset (Offset(136.0, 55.5)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderSemanticsAnnotations#61b46 relayoutBoundary=up8
+The hit test result at that offset is: HitTestResult(HitTestEntry<HitTestTarget>#932e4(TextSpan(debugLabel: ((englishLike bodyMedium 2021).merge(((((whiteMountainView bodyMedium).apply).apply).merge(unknown)).apply)).merge(unknown), inherit: false, color: Color(alpha: 1.0000, red: 0.9608, green: 0.9686, blue: 0.9882, colorSpace: ColorSpace.sRGB), family: MestingQA151, familyFallback: [Noto Sans SC, Microsoft YaHei, sans-serif], size: 20.0, weight: 700, letterSpacing: 0.3, baseline: alphabetic, height: 1.4x, leadingDistribution: even, decoration: Color(alpha: 1.0000, red: 0.9608, green: 0.9608, blue: 0.9686, colorSpace: ColorSpace.sRGB) TextDecoration.none, "测试榜")), RenderParagraph#c7ccf@Offset(58.0, 47.5), RenderFlex#53ee1@Offset(120.0, 47.5), RenderPadding#098fc@Offset(136.0, 55.5), RenderPadding#9bae1@Offset(136.0, 55.5), _RenderColoredBox#2f7f6@Offset(136.0, 55.5), RenderStack#8cb16@Offset(136.0, 55.5), _RenderArtworkViewport#2b934@Offset(136.0, 55.5), _RenderColoredBox#33d7d@Offset(136.0, 55.5), RenderFlex#c7227@Offset(136.0, 55.5), RenderPadding#099d2@Offset(136.0, 55.5), RenderCustomMultiChildLayoutBox#898a2@Offset(136.0, 55.5), _RenderInkFeatures#6199a@Offset(136.0, 55.5), RenderPhysicalModel#b6ae5@Offset(136.0, 55.5), RenderStack#b9c0e@Offset(136.0, 55.5), _RenderLayoutBuilder#76d22@Offset(136.0, 55.5), RenderStack#8dd06@Offset(136.0, 55.5), _RenderLayoutBuilder#42352@Offset(136.0, 55.5), RenderSemanticsAnnotations#bee3e@Offset(136.0, 55.5), RenderRepaintBoundary#c2d85@Offset(136.0, 55.5), RenderIgnorePointer#75fa8@Offset(136.0, 55.5), RenderStack#46971@Offset(136.0, 55.5), _RenderLayoutBuilder#c824d@Offset(136.0, 55.5), _RenderColoredBox#a52ab@Offset(136.0, 55.5), RenderRepaintBoundary#05691@Offset(136.0, 55.5), RenderClipRect#185b1@Offset(136.0, 55.5), RenderRepaintBoundary#ba2b3@Offset(136.0, 55.5), RenderSemanticsAnnotations#38585@Offset(136.0, 55.5), RenderOffstage#f67cf@Offset(136.0, 55.5), RenderSemanticsAnnotations#11cca@Offset(136.0, 55.5), _RenderTheater#53372@Offset(136.0, 55.5), RenderAbsorbPointer#691ce@Offset(136.0, 55.5), RenderPointerListener#dc8f6@Offset(136.0, 55.5), RenderSemanticsAnnotations#b2ca1@Offset(136.0, 55.5), RenderRepaintBoundary#9bb61@Offset(136.0, 55.5), RenderSemanticsAnnotations#ac5d8@Offset(136.0, 55.5), RenderSemanticsAnnotations#09256@Offset(136.0, 55.5), RenderSemanticsAnnotations#96e9c@Offset(136.0, 55.5), RenderTapRegionSurface#84257@Offset(136.0, 55.5), RenderSemanticsAnnotations#1851e@Offset(136.0, 55.5), RenderSemanticsAnnotations#9346d@Offset(136.0, 55.5), HitTestEntry<HitTestTarget>#b1f9f(_ReusableRenderView#be31d), HitTestEntry<HitTestTarget>#84a3c(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2158:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1942:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1075:7)
+#3      main.<anonymous closure> (file:///D:/AnLi/test/release_157_ui_test.dart:174:26)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: <77>
+  Actual: <0>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_157_ui_test.dart:178:13)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_157_ui_test.dart line 178
+The test description was:
+  chart controls render and play every page; netease dark=true large=true
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:15 +0 -8: chart controls render and play every page; netease dark=true large=true [E]
+  Test failed. See exception logs above.
+  The test description was: chart controls render and play every page; netease dark=true large=true
+  
+00:15 +0 -8: (tearDownAll)
+00:15 +0 -8: Some tests failed.

@@ -1,0 +1,37 @@
+        /* JADX INFO: renamed from: invoke, reason: collision with other method in class */
+        public final void m602invoke() {
+            String mixType;
+            a0<?> a0Var = this.a;
+            lo0.c cVar = a0Var instanceof lo0.c ? (lo0.c) a0Var : null;
+            AutoMixAnalyse autoMixAnalyseS = cVar != null ? cVar.s() : null;
+            HashMap mapE = a.a.e(this.b);
+            if (autoMixAnalyseS == null) {
+                po0.c.i(mapE);
+                return;
+            }
+            JSONObject jSONObject = new JSONObject();
+            AnalyseParams inAnalyseParams = autoMixAnalyseS.getInAnalyseParams();
+            if (inAnalyseParams != null) {
+                jSONObject.put("start_mix_type", inAnalyseParams.getMixType());
+                jSONObject.put("start_mix_time", Long.valueOf(inAnalyseParams.getMixTime()));
+                jSONObject.put("start_mix_skip", Long.valueOf(inAnalyseParams.getMixSkip()));
+            }
+            AnalyseParams outAnalyseParams = autoMixAnalyseS.getOutAnalyseParams();
+            if (outAnalyseParams != null) {
+                jSONObject.put("end_mix_type", outAnalyseParams.getMixType());
+                jSONObject.put("end_mix_time", Long.valueOf(outAnalyseParams.getMixTime()));
+                jSONObject.put("end_mix_skip", Long.valueOf(outAnalyseParams.getMixSkip()));
+            }
+            ko0.b.a("analyseJSON=" + jSONObject);
+            this.b.putAll(jSONObject);
+            AnalyseParams outAnalyseParams2 = autoMixAnalyseS.getOutAnalyseParams();
+            if (outAnalyseParams2 == null || (mixType = outAnalyseParams2.getMixType()) == null) {
+                mixType = "unknown";
+            }
+            mapE.put("strategy", mixType);
+            if (autoMixAnalyseS.getOutAnalyseParams() != null) {
+                po0.c.j(mapE);
+            } else {
+                po0.c.i(mapE);
+            }
+        }

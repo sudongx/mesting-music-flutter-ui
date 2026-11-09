@@ -1,0 +1,8 @@
+    private void G2(@Nullable com.alibaba.fastjson.JSONObject jSONObject) {
+        IPlayService iPlayService;
+        if (jSONObject == null || (iPlayService = this.a) == null || iPlayService.getAudioPlayerMeta() == null) {
+            return;
+        }
+        AudioPlayerMeta audioPlayerMeta = this.a.getAudioPlayerMeta();
+        jSONObject.put("play_extra", f8.a(new Object[]{"deviceType", Integer.valueOf(audioPlayerMeta.getAudioDeviceType()), "readType", Integer.valueOf(audioPlayerMeta.getReadDataType())}));
+    }

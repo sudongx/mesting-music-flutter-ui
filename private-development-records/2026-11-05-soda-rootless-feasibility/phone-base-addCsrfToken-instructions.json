@@ -1,0 +1,425 @@
+{
+  "source_apk_sha256": "b639e67c13e03377f0f9d8068c5e0419b1acd42c7d529362f11ae704b3838741",
+  "dex_entry": "classes21.dex",
+  "dex_sha256": "d28a15c360d503b20d064987620d1a3167e8ad84e3d08b0d12dcf9da18dd265b",
+  "selected_owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+  "scope": "Original DEX instructions, not runtime/data-flow proof.",
+  "methods": [
+    {
+      "method_index": 51204,
+      "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+      "name": "addCsrfToken",
+      "proto_index": 12639,
+      "prototype": "(Ljava/lang/String;Ljava/util/List;)V",
+      "code_offset": 4856840,
+      "registers": 6,
+      "incoming_words": 3,
+      "outgoing_words": 3,
+      "code_unit_count": 71,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            48978,
+            4
+          ],
+          "method": {
+            "method_index": 48978,
+            "owner": "Lcom/bytedance/sdk/account/CsrfTokenManager;",
+            "name": "getCsrfToken",
+            "proto_index": 1022,
+            "prototype": "(Ljava/lang/String;)Landroid/util/Pair;"
+          }
+        },
+        {
+          "code_unit_offset": 3,
+          "opcode": "0xc",
+          "units": [
+            1036
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "opcode": "0x54",
+          "units": [
+            12372,
+            20314
+          ],
+          "field": {
+            "field_index": 20314,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/bytedance/sdk/account/api/call/LocalRequestData;",
+            "name": "localRequestData"
+          }
+        },
+        {
+          "code_unit_offset": 6,
+          "opcode": "0x54",
+          "units": [
+            16724,
+            219
+          ],
+          "field": {
+            "field_index": 219,
+            "owner": "Landroid/util/Pair;",
+            "type": "Ljava/lang/Object;",
+            "name": "first"
+          }
+        },
+        {
+          "code_unit_offset": 8,
+          "opcode": "0x1f",
+          "units": [
+            287,
+            12209
+          ],
+          "type": "Ljava/lang/Integer;"
+        },
+        {
+          "code_unit_offset": 10,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            63518,
+            1
+          ],
+          "method": {
+            "method_index": 63518,
+            "owner": "Ljava/lang/Integer;",
+            "name": "intValue",
+            "proto_index": 77,
+            "prototype": "()I"
+          }
+        },
+        {
+          "code_unit_offset": 13,
+          "opcode": "0xa",
+          "units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 14,
+          "opcode": "0x59",
+          "units": [
+            345,
+            19336
+          ],
+          "field": {
+            "field_index": 19336,
+            "owner": "Lcom/bytedance/sdk/account/api/call/LocalRequestData;",
+            "type": "I",
+            "name": "requestCsrfToken"
+          }
+        },
+        {
+          "code_unit_offset": 16,
+          "opcode": "0x54",
+          "units": [
+            17492,
+            220
+          ],
+          "field": {
+            "field_index": 220,
+            "owner": "Landroid/util/Pair;",
+            "type": "Ljava/lang/Object;",
+            "name": "second"
+          }
+        },
+        {
+          "code_unit_offset": 18,
+          "opcode": "0x1f",
+          "units": [
+            1055,
+            12234
+          ],
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 20,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            1281,
+            4
+          ],
+          "method": {
+            "method_index": 1281,
+            "owner": "Landroid/text/TextUtils;",
+            "name": "isEmpty",
+            "proto_index": 13857,
+            "prototype": "(Ljava/lang/CharSequence;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 23,
+          "opcode": "0xa",
+          "units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 24,
+          "opcode": "0x39",
+          "units": [
+            57,
+            16
+          ]
+        },
+        {
+          "code_unit_offset": 26,
+          "opcode": "0x22",
+          "units": [
+            34,
+            11943
+          ],
+          "type": "Lcom/ss/android/TTHeader;"
+        },
+        {
+          "code_unit_offset": 28,
+          "opcode": "0x1a",
+          "units": [
+            282,
+            60315
+          ],
+          "string_index": 60315,
+          "string": "x-tt-passport-csrf-token"
+        },
+        {
+          "code_unit_offset": 30,
+          "opcode": "0x70",
+          "units": [
+            12400,
+            62610,
+            1040
+          ],
+          "method": {
+            "method_index": 62610,
+            "owner": "Lcom/ss/android/TTHeader;",
+            "name": "<init>",
+            "proto_index": 12298,
+            "prototype": "(Ljava/lang/String;Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 33,
+          "opcode": "0x72",
+          "units": [
+            8306,
+            64275,
+            5
+          ],
+          "method": {
+            "method_index": 64275,
+            "owner": "Ljava/util/List;",
+            "name": "add",
+            "proto_index": 13872,
+            "prototype": "(Ljava/lang/Object;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 36,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            48983,
+            4
+          ],
+          "method": {
+            "method_index": 48983,
+            "owner": "Lcom/bytedance/sdk/account/CsrfTokenManager;",
+            "name": "setCsrfToken",
+            "proto_index": 11943,
+            "prototype": "(Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 39,
+          "opcode": "0x28",
+          "units": [
+            7976
+          ]
+        },
+        {
+          "code_unit_offset": 40,
+          "opcode": "0x1a",
+          "units": [
+            1050,
+            8342
+          ],
+          "string_index": 8342,
+          "string": "BaseAccountApi"
+        },
+        {
+          "code_unit_offset": 42,
+          "opcode": "0x1a",
+          "units": [
+            1306,
+            9030
+          ],
+          "string_index": 9030,
+          "string": "Csrf token is empty: csrf_token_status=%s"
+        },
+        {
+          "code_unit_offset": 44,
+          "opcode": "0x12",
+          "units": [
+            4114
+          ],
+          "const": 1,
+          "dest_register": 0
+        },
+        {
+          "code_unit_offset": 45,
+          "opcode": "0x23",
+          "units": [
+            35,
+            13068
+          ],
+          "type": "[Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 47,
+          "opcode": "0x71",
+          "units": [
+            113,
+            48982,
+            0
+          ],
+          "method": {
+            "method_index": 48982,
+            "owner": "Lcom/bytedance/sdk/account/CsrfTokenManager;",
+            "name": "getCsrfTokenStatus",
+            "proto_index": 13349,
+            "prototype": "()Z"
+          }
+        },
+        {
+          "code_unit_offset": 50,
+          "opcode": "0xa",
+          "units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 51,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            63391,
+            1
+          ],
+          "method": {
+            "method_index": 63391,
+            "owner": "Ljava/lang/Boolean;",
+            "name": "valueOf",
+            "proto_index": 5286,
+            "prototype": "(Z)Ljava/lang/Boolean;"
+          }
+        },
+        {
+          "code_unit_offset": 54,
+          "opcode": "0xc",
+          "units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 55,
+          "opcode": "0x12",
+          "units": [
+            530
+          ],
+          "const": 0,
+          "dest_register": 2
+        },
+        {
+          "code_unit_offset": 56,
+          "opcode": "0x4d",
+          "units": [
+            333,
+            512
+          ]
+        },
+        {
+          "code_unit_offset": 58,
+          "opcode": "0x71",
+          "units": [
+            8305,
+            63657,
+            5
+          ],
+          "method": {
+            "method_index": 63657,
+            "owner": "Ljava/lang/String;",
+            "name": "format",
+            "proto_index": 5912,
+            "prototype": "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 61,
+          "opcode": "0xc",
+          "units": [
+            1292
+          ]
+        },
+        {
+          "code_unit_offset": 62,
+          "opcode": "0x71",
+          "units": [
+            8305,
+            52195,
+            84
+          ],
+          "method": {
+            "method_index": 52195,
+            "owner": "Lcom/bytedance/sdk/account/log/AccountLog;",
+            "name": "d",
+            "proto_index": 12298,
+            "prototype": "(Ljava/lang/String;Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 65,
+          "opcode": "0x28",
+          "units": [
+            1320
+          ]
+        },
+        {
+          "code_unit_offset": 66,
+          "opcode": "0xd",
+          "units": [
+            1037
+          ]
+        },
+        {
+          "code_unit_offset": 67,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            63485,
+            4
+          ],
+          "method": {
+            "method_index": 63485,
+            "owner": "Ljava/lang/Exception;",
+            "name": "printStackTrace",
+            "proto_index": 6867,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 70,
+          "opcode": "0xe",
+          "units": [
+            14
+          ]
+        }
+      ]
+    }
+  ]
+}

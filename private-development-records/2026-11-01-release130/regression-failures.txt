@@ -1,0 +1,804 @@
+production driver opens real downloads, scrolls, swipes and restores the route
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: <true>
+  Actual: <false>
+Production adapter must finish within a bounded viewport action
+
+When the exception was thrown, this was the stack:
+#4      _pump (file:///D:/AnLi/test/release_124_diagnostics_test.dart:389:3)
+<asynchronous suspension>
+#5      main.<anonymous closure> (file:///D:/AnLi/test/release_124_diagnostics_test.dart:325:7)
+<asynchronous suspension>
+#6      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#7      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_124_diagnostics_test.dart line 389
+The test description was:
+  production driver opens real downloads, scrolls, swipes and restores the route
+════════════════════════════════════════════════════════════════════════════════════════════════════
+Test failed. See exception logs above.
+The test description was: production driver opens real downloads, scrolls, swipes and restores the route
+Warning: At least one test in this suite creates an HttpClient. When running a test suite that uses
+TestWidgetsFlutterBinding, all HTTP requests will return status code 400, and no network request
+will actually be made. Any test expecting a real network connection and status code will fail.
+To test code that needs an HttpClient, provide your own HttpClient implementation to the code under
+test, so that your test can consistently provide a testable response to the code under test.
+unavailable private image cache still renders a visible fallback instead of a blank box
+══╡ EXCEPTION CAUGHT BY WIDGETS LIBRARY ╞═══════════════════════════════════════════════════════════
+The following assertion was thrown building _InkResponseStateWidget(gestures: [tap], mouseCursor:
+null, clipped to BoxShape.rectangle, dirty, state: _InkResponseState#314ac):
+No Material widget found.
+_InkResponseStateWidget widgets require a Material widget ancestor within the closest
+LookupBoundary.
+In Material Design, most widgets are conceptually "printed" on a sheet of material. In Flutter's
+material library, that material is represented by the Material widget. It is the Material widget
+that renders ink splashes, for instance. Because of this, many material library widgets require that
+there be a Material widget in the tree above them.
+To introduce a Material widget, you can either directly include one, or use a widget that contains
+Material itself, such as a Card, Dialog, Drawer, or Scaffold.
+The specific widget that could not find a Material ancestor was:
+  _InkResponseStateWidget
+The ancestors of this widget were:
+  ...
+  InkWell
+  Semantics
+  MouseRegion
+  Semantics
+  Listener
+  ...
+
+The relevant error-causing widget was:
+  InkWell InkWell:file:///D:/AnLi/lib/shared/widgets/artwork_image.dart:186:16
+
+When the exception was thrown, this was the stack:
+#0      debugCheckHasMaterial.<anonymous closure> (package:flutter/src/material/debug.dart:40:7)
+#1      debugCheckHasMaterial (package:flutter/src/material/debug.dart:67:4)
+#2      InkResponse.debugCheckContext (package:flutter/src/material/ink_well.dart:721:12)
+#3      _InkResponseState.build (package:flutter/src/material/ink_well.dart:1340:36)
+#4      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931:27)
+#5      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817:15)
+#6      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#7      Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#8      ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799:5)
+#9      StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973:11)
+#10     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793:5)
+...     Normal element mounting (25 frames)
+#35     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587:20)
+#36     Element.updateChild (package:flutter/src/widgets/framework.dart:4059:18)
+#37     _OverlayPortalElement.mount (package:flutter/src/widgets/overlay.dart:2306:14)
+...     Normal element mounting (25 frames)
+#62     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587:20)
+#63     Element.updateChild (package:flutter/src/widgets/framework.dart:4053:20)
+#64     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#65     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#66     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#67     StatefulElement.update (package:flutter/src/widgets/framework.dart:6007:5)
+#68     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#69     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#70     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#71     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#72     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750:15)
+#73     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807:11)
+#74     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111:18)
+#75     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2131:19)
+#76     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#77     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#78     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#79     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#82     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#83     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#84     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#87     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#88     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#89     main.<anonymous closure> (file:///D:/AnLi/test/netease_v118_ui_test.dart:514:20)
+<asynchronous suspension>
+#90     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#91     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY WIDGETS LIBRARY ╞═══════════════════════════════════════════════════════════
+The following assertion was thrown building _InkResponseStateWidget(gestures: [tap], mouseCursor:
+null, clipped to BoxShape.rectangle, state: _InkResponseState#314ac):
+No Material widget found.
+_InkResponseStateWidget widgets require a Material widget ancestor within the closest
+LookupBoundary.
+In Material Design, most widgets are conceptually "printed" on a sheet of material. In Flutter's
+material library, that material is represented by the Material widget. It is the Material widget
+that renders ink splashes, for instance. Because of this, many material library widgets require that
+there be a Material widget in the tree above them.
+To introduce a Material widget, you can either directly include one, or use a widget that contains
+Material itself, such as a Card, Dialog, Drawer, or Scaffold.
+The specific widget that could not find a Material ancestor was:
+  _InkResponseStateWidget
+The ancestors of this widget were:
+  ...
+  InkWell
+  Semantics
+  MouseRegion
+  Semantics
+  Listener
+  ...
+
+The relevant error-causing widget was:
+  InkWell InkWell:file:///D:/AnLi/lib/shared/widgets/artwork_image.dart:186:16
+
+When the exception was thrown, this was the stack:
+#0      debugCheckHasMaterial.<anonymous closure> (package:flutter/src/material/debug.dart:40:7)
+#1      debugCheckHasMaterial (package:flutter/src/material/debug.dart:67:4)
+#2      InkResponse.debugCheckContext (package:flutter/src/material/ink_well.dart:721:12)
+#3      _InkResponseState.build (package:flutter/src/material/ink_well.dart:1340:36)
+#4      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931:27)
+#5      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817:15)
+#6      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#7      Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#8      StatefulElement.update (package:flutter/src/widgets/framework.dart:6007:5)
+#9      Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#10     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#11     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#12     StatelessElement.update (package:flutter/src/widgets/framework.dart:5895:5)
+#13     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#14     SingleChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7122:14)
+#15     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#16     SingleChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7122:14)
+#17     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#18     SingleChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7122:14)
+#19     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#20     SingleChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7122:14)
+#21     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#22     SingleChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7122:14)
+#23     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#24     SingleChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7122:14)
+#25     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#26     _OverlayPortalElement.update (package:flutter/src/widgets/overlay.dart:2313:14)
+#27     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#28     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#29     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#30     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#31     StatefulElement.update (package:flutter/src/widgets/framework.dart:6007:5)
+#32     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#33     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#34     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#35     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#36     StatefulElement.update (package:flutter/src/widgets/framework.dart:6007:5)
+#37     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#38     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#39     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#40     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#41     StatefulElement.update (package:flutter/src/widgets/framework.dart:6007:5)
+#42     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#43     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#44     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#45     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#46     StatefulElement.update (package:flutter/src/widgets/framework.dart:6007:5)
+#47     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#48     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#49     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#50     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#51     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750:15)
+#52     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807:11)
+#53     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111:18)
+#54     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2131:19)
+#55     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#56     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#57     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#58     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#61     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#62     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#63     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#66     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#67     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#68     main.<anonymous closure> (file:///D:/AnLi/test/netease_v118_ui_test.dart:515:20)
+<asynchronous suspension>
+#69     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#70     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: exactly one matching candidate
+  Actual: _IconWidgetFinder:<Found 0 widgets with icon "IconData(U+0F554)": []>
+   Which: means none were found but one was expected
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/netease_v118_ui_test.dart:523:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/netease_v118_ui_test.dart line 523
+The test description was:
+  unavailable private image cache still renders a visible fallback instead of a blank box
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following message was thrown:
+Multiple exceptions (3) were detected during the running of the current test, and at least one was
+unexpected.
+════════════════════════════════════════════════════════════════════════════════════════════════════
+Test failed. See exception logs above.
+The test description was: unavailable private image cache still renders a visible fallback instead of a blank box
+cache failure still decodes the actual remote cover
+══╡ EXCEPTION CAUGHT BY WIDGETS LIBRARY ╞═══════════════════════════════════════════════════════════
+The following assertion was thrown building _InkResponseStateWidget(gestures: [tap], mouseCursor:
+null, clipped to BoxShape.rectangle, dirty, state: _InkResponseState#80a8a):
+No Material widget found.
+_InkResponseStateWidget widgets require a Material widget ancestor within the closest
+LookupBoundary.
+In Material Design, most widgets are conceptually "printed" on a sheet of material. In Flutter's
+material library, that material is represented by the Material widget. It is the Material widget
+that renders ink splashes, for instance. Because of this, many material library widgets require that
+there be a Material widget in the tree above them.
+To introduce a Material widget, you can either directly include one, or use a widget that contains
+Material itself, such as a Card, Dialog, Drawer, or Scaffold.
+The specific widget that could not find a Material ancestor was:
+  _InkResponseStateWidget
+The ancestors of this widget were:
+  ...
+  InkWell
+  Semantics
+  MouseRegion
+  Semantics
+  Listener
+  ...
+
+The relevant error-causing widget was:
+  InkWell InkWell:file:///D:/AnLi/lib/shared/widgets/artwork_image.dart:186:16
+
+When the exception was thrown, this was the stack:
+#0      debugCheckHasMaterial.<anonymous closure> (package:flutter/src/material/debug.dart:40:7)
+#1      debugCheckHasMaterial (package:flutter/src/material/debug.dart:67:4)
+#2      InkResponse.debugCheckContext (package:flutter/src/material/ink_well.dart:721:12)
+#3      _InkResponseState.build (package:flutter/src/material/ink_well.dart:1340:36)
+#4      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931:27)
+#5      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817:15)
+#6      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#7      Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#8      ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799:5)
+#9      StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973:11)
+#10     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793:5)
+...     Normal element mounting (25 frames)
+#35     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587:20)
+#36     Element.updateChild (package:flutter/src/widgets/framework.dart:4059:18)
+#37     _OverlayPortalElement.mount (package:flutter/src/widgets/overlay.dart:2306:14)
+...     Normal element mounting (25 frames)
+#62     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587:20)
+#63     Element.updateChild (package:flutter/src/widgets/framework.dart:4053:20)
+#64     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#65     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#66     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#67     StatefulElement.update (package:flutter/src/widgets/framework.dart:6007:5)
+#68     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#69     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#70     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#71     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#72     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750:15)
+#73     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807:11)
+#74     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111:18)
+#75     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2131:19)
+#76     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#77     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#78     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#79     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#82     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#83     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#84     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#87     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#88     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#89     main.<anonymous closure> (file:///D:/AnLi/test/netease_v118_ui_test.dart:562:18)
+<asynchronous suspension>
+#90     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#91     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY WIDGETS LIBRARY ╞═══════════════════════════════════════════════════════════
+The following assertion was thrown building _InkResponseStateWidget(gestures: [tap], mouseCursor:
+null, clipped to BoxShape.rectangle, state: _InkResponseState#80a8a):
+No Material widget found.
+_InkResponseStateWidget widgets require a Material widget ancestor within the closest
+LookupBoundary.
+In Material Design, most widgets are conceptually "printed" on a sheet of material. In Flutter's
+material library, that material is represented by the Material widget. It is the Material widget
+that renders ink splashes, for instance. Because of this, many material library widgets require that
+there be a Material widget in the tree above them.
+To introduce a Material widget, you can either directly include one, or use a widget that contains
+Material itself, such as a Card, Dialog, Drawer, or Scaffold.
+The specific widget that could not find a Material ancestor was:
+  _InkResponseStateWidget
+The ancestors of this widget were:
+  ...
+  InkWell
+  Semantics
+  MouseRegion
+  Semantics
+  Listener
+  ...
+
+The relevant error-causing widget was:
+  InkWell InkWell:file:///D:/AnLi/lib/shared/widgets/artwork_image.dart:186:16
+
+When the exception was thrown, this was the stack:
+#0      debugCheckHasMaterial.<anonymous closure> (package:flutter/src/material/debug.dart:40:7)
+#1      debugCheckHasMaterial (package:flutter/src/material/debug.dart:67:4)
+#2      InkResponse.debugCheckContext (package:flutter/src/material/ink_well.dart:721:12)
+#3      _InkResponseState.build (package:flutter/src/material/ink_well.dart:1340:36)
+#4      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931:27)
+#5      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817:15)
+#6      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#7      Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#8      StatefulElement.update (package:flutter/src/widgets/framework.dart:6007:5)
+#9      Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#10     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#11     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#12     StatelessElement.update (package:flutter/src/widgets/framework.dart:5895:5)
+#13     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#14     SingleChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7122:14)
+#15     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#16     SingleChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7122:14)
+#17     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#18     SingleChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7122:14)
+#19     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#20     SingleChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7122:14)
+#21     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#22     SingleChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7122:14)
+#23     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#24     SingleChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7122:14)
+#25     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#26     _OverlayPortalElement.update (package:flutter/src/widgets/overlay.dart:2313:14)
+#27     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#28     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#29     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#30     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#31     StatefulElement.update (package:flutter/src/widgets/framework.dart:6007:5)
+#32     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#33     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#34     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#35     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#36     StatefulElement.update (package:flutter/src/widgets/framework.dart:6007:5)
+#37     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#38     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#39     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#40     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#41     StatefulElement.update (package:flutter/src/widgets/framework.dart:6007:5)
+#42     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#43     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#44     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#45     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#46     StatefulElement.update (package:flutter/src/widgets/framework.dart:6007:5)
+#47     Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#48     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#49     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#50     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#51     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750:15)
+#52     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807:11)
+#53     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111:18)
+#54     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2131:19)
+#55     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#56     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#57     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#58     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#61     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#62     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#63     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#66     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#67     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#68     main.<anonymous closure> (file:///D:/AnLi/test/netease_v118_ui_test.dart:563:18)
+<asynchronous suspension>
+#69     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#70     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: null
+  Actual: 'Multiple exceptions (2) were detected during the running of the current test, and at
+least one was unexpected.'
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/netease_v118_ui_test.dart:570:5)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/netease_v118_ui_test.dart line 570
+The test description was:
+  cache failure still decodes the actual remote cover
+════════════════════════════════════════════════════════════════════════════════════════════════════
+Test failed. See exception logs above.
+The test description was: cache failure still decodes the actual remote cover
+real effects and downloads retain chrome, paging and task separation dark=false small=false
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: exactly one matching candidate
+  Actual: _HitTestableWidgetFinder:<Found 0 widgets with text "已完成曲目" (considering only hit-testable
+widgets with a RenderBox): []>
+   Which: means none were found but one was expected
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_124_pages_test.dart:225:11)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_124_pages_test.dart line 225
+The test description was:
+  real effects and downloads retain chrome, paging and task separation dark=false small=false
+════════════════════════════════════════════════════════════════════════════════════════════════════
+Test failed. See exception logs above.
+The test description was: real effects and downloads retain chrome, paging and task separation dark=false small=false
+Warning: At least one test in this suite creates an HttpClient. When running a test suite that uses
+TestWidgetsFlutterBinding, all HTTP requests will return status code 400, and no network request
+will actually be made. Any test expecting a real network connection and status code will fail.
+To test code that needs an HttpClient, provide your own HttpClient implementation to the code under
+test, so that your test can consistently provide a testable response to the code under test.
+public profile fits light phone and opens the follower list
+
+Warning: A call to tap() with finder "Found 1 widget with text "128 粉丝": [
+  Text("128 粉丝", dependencies: [DefaultSelectionStyle, DefaultTextStyle, MediaQuery]),
+]" derived an Offset (Offset(259.3, 210.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderParagraph#f3da6 relayoutBoundary=up18
+The hit test result at that offset is: HitTestResult(_RenderColoredBox#c0a01@Offset(259.3, 142.0), RenderFlex#152a4@Offset(259.3, 210.0), RenderPadding#f0257@Offset(259.3, 210.0), RenderCustomMultiChildLayoutBox#7f15b@Offset(259.3, 210.0), _RenderInkFeatures#01f87@Offset(259.3, 210.0), RenderPhysicalModel#a6409@Offset(259.3, 210.0), RenderCustomMultiChildLayoutBox#5c2f5@Offset(259.3, 210.0), _RenderInkFeatures#e945d@Offset(259.3, 210.0), RenderPhysicalModel#60f9e@Offset(259.3, 210.0), RenderRepaintBoundary#8f7a4@Offset(259.3, 210.0), RenderSemanticsAnnotations#975f3@Offset(259.3, 210.0), RenderRepaintBoundary#c8b2f@Offset(259.3, 210.0), RenderIgnorePointer#12a50@Offset(259.3, 210.0), _RenderColoredBox#59b47@Offset(259.3, 210.0), RenderRepaintBoundary#464b5@Offset(259.3, 210.0), RenderClipRect#cc584@Offset(259.3, 210.0), RenderRepaintBoundary#98b4a@Offset(259.3, 210.0), RenderSemanticsAnnotations#d75f3@Offset(259.3, 210.0), RenderOffstage#11d06@Offset(259.3, 210.0), RenderSemanticsAnnotations#a8a0f@Offset(259.3, 210.0), _RenderTheater#11864@Offset(259.3, 210.0), RenderAbsorbPointer#5dd27@Offset(259.3, 210.0), RenderPointerListener#60ce0@Offset(259.3, 210.0), RenderSemanticsAnnotations#7591e@Offset(259.3, 210.0), RenderCustomPaint#2afa2@Offset(259.3, 210.0), RenderSemanticsAnnotations#43b99@Offset(259.3, 210.0), RenderSemanticsAnnotations#93016@Offset(259.3, 210.0), RenderSemanticsAnnotations#c113a@Offset(259.3, 210.0), RenderTapRegionSurface#d160b@Offset(259.3, 210.0), RenderSemanticsAnnotations#bb115@Offset(259.3, 210.0), RenderSemanticsAnnotations#1f3f8@Offset(259.3, 210.0), HitTestEntry<HitTestTarget>#23d18(_ReusableRenderView#775b4), HitTestEntry<HitTestTarget>#96fde(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2158:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1942:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1075:7)
+#3      main.<anonymous closure> (file:///D:/AnLi/test/release_129_user_ui_test.dart:346:22)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: exactly one matching candidate
+  Actual: _TypeWidgetFinder:<Found 0 widgets with type "NeteaseUserConnectionsPage": []>
+   Which: means none were found but one was expected
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_129_user_ui_test.dart:349:9)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_129_user_ui_test.dart line 349
+The test description was:
+  public profile fits light phone and opens the follower list
+════════════════════════════════════════════════════════════════════════════════════════════════════
+Test failed. See exception logs above.
+The test description was: public profile fits light phone and opens the follower list
+Warning: At least one test in this suite creates an HttpClient. When running a test suite that uses
+TestWidgetsFlutterBinding, all HTTP requests will return status code 400, and no network request
+will actually be made. Any test expecting a real network connection and status code will fail.
+To test code that needs an HttpClient, provide your own HttpClient implementation to the code under
+test, so that your test can consistently provide a testable response to the code under test.
+public profile fits dark narrow large text and opens the follower list
+
+Warning: A call to tap() with finder "Found 1 widget with text "128 粉丝": [
+  Text("128 粉丝", dependencies: [DefaultSelectionStyle, DefaultTextStyle, MediaQuery]),
+]" derived an Offset (Offset(85.7, 364.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderParagraph#30d32 relayoutBoundary=up18
+The hit test result at that offset is: HitTestResult(_RenderColoredBox#c0358@Offset(85.7, 296.0), RenderFlex#6c3b8@Offset(85.7, 364.0), RenderPadding#25e24@Offset(85.7, 364.0), RenderCustomMultiChildLayoutBox#ed5e9@Offset(85.7, 364.0), _RenderInkFeatures#52e5c@Offset(85.7, 364.0), RenderPhysicalModel#30694@Offset(85.7, 364.0), RenderCustomMultiChildLayoutBox#3a25a@Offset(85.7, 364.0), _RenderInkFeatures#c4298@Offset(85.7, 364.0), RenderPhysicalModel#64a79@Offset(85.7, 364.0), RenderRepaintBoundary#07d13@Offset(85.7, 364.0), RenderSemanticsAnnotations#4bb64@Offset(85.7, 364.0), RenderRepaintBoundary#a953b@Offset(85.7, 364.0), RenderIgnorePointer#06a02@Offset(85.7, 364.0), _RenderColoredBox#671ab@Offset(85.7, 364.0), RenderRepaintBoundary#2025a@Offset(85.7, 364.0), RenderClipRect#ff692@Offset(85.7, 364.0), RenderRepaintBoundary#4b3f7@Offset(85.7, 364.0), RenderSemanticsAnnotations#17bd4@Offset(85.7, 364.0), RenderOffstage#3152b@Offset(85.7, 364.0), RenderSemanticsAnnotations#817db@Offset(85.7, 364.0), _RenderTheater#98f32@Offset(85.7, 364.0), RenderAbsorbPointer#5ea82@Offset(85.7, 364.0), RenderPointerListener#80f0b@Offset(85.7, 364.0), RenderSemanticsAnnotations#7e80b@Offset(85.7, 364.0), RenderCustomPaint#1fe43@Offset(85.7, 364.0), RenderSemanticsAnnotations#53c23@Offset(85.7, 364.0), RenderSemanticsAnnotations#66fb2@Offset(85.7, 364.0), RenderSemanticsAnnotations#10775@Offset(85.7, 364.0), RenderTapRegionSurface#edd69@Offset(85.7, 364.0), RenderSemanticsAnnotations#54238@Offset(85.7, 364.0), RenderSemanticsAnnotations#89df6@Offset(85.7, 364.0), HitTestEntry<HitTestTarget>#68047(_ReusableRenderView#775b4), HitTestEntry<HitTestTarget>#49133(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2158:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1942:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1075:7)
+#3      main.<anonymous closure> (file:///D:/AnLi/test/release_129_user_ui_test.dart:346:22)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: exactly one matching candidate
+  Actual: _TypeWidgetFinder:<Found 0 widgets with type "NeteaseUserConnectionsPage": []>
+   Which: means none were found but one was expected
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_129_user_ui_test.dart:349:9)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_129_user_ui_test.dart line 349
+The test description was:
+  public profile fits dark narrow large text and opens the follower list
+════════════════════════════════════════════════════════════════════════════════════════════════════
+Test failed. See exception logs above.
+The test description was: public profile fits dark narrow large text and opens the follower list
+scroll keeps old rows and reveals a new visible batch together
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: true
+  Actual: <false>
+
+When the exception was thrown, this was the stack:
+#4      waitFor (file:///D:/AnLi/test/release_130_artwork_reveal_test.dart:179:3)
+<asynchronous suspension>
+#5      main.<anonymous closure> (file:///D:/AnLi/test/release_130_artwork_reveal_test.dart:266:7)
+<asynchronous suspension>
+#6      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#7      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_130_artwork_reveal_test.dart line 179
+The test description was:
+  scroll keeps old rows and reveals a new visible batch together
+════════════════════════════════════════════════════════════════════════════════════════════════════
+Test failed. See exception logs above.
+The test description was: scroll keeps old rows and reveals a new visible batch together
+complete NetEase My page normal/fast/reverse scrolling dark=false narrow=false
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+pumpAndSettle timed out
+
+When the exception was thrown, this was the stack:
+#0      WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:717:11)
+<asynchronous suspension>
+#1      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#2      main.mount (file:///D:/AnLi/test/release_122_profile_test.dart:74:5)
+<asynchronous suspension>
+#3      main.<anonymous closure> (file:///D:/AnLi/test/release_122_profile_test.dart:83:31)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  complete NetEase My page normal/fast/reverse scrolling dark=false narrow=false
+════════════════════════════════════════════════════════════════════════════════════════════════════
+Test failed. See exception logs above.
+The test description was: complete NetEase My page normal/fast/reverse scrolling dark=false narrow=false
+Warning: At least one test in this suite creates an HttpClient. When running a test suite that uses
+TestWidgetsFlutterBinding, all HTTP requests will return status code 400, and no network request
+will actually be made. Any test expecting a real network connection and status code will fail.
+To test code that needs an HttpClient, provide your own HttpClient implementation to the code under
+test, so that your test can consistently provide a testable response to the code under test.
+a cached file with a valid header but broken decoder recovers to the network image
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: null
+  Actual: FlutterError:<No Material widget found.
+          _InkResponseStateWidget widgets require a Material widget ancestor within the closest
+LookupBoundary.
+          In Material Design, most widgets are conceptually "printed" on a sheet of material. In
+Flutter's material library, that material is represented by the Material widget. It is the Material
+widget that renders ink splashes, for instance. Because of this, many material library widgets
+require that there be a Material widget in the tree above them.
+          To introduce a Material widget, you can either directly include one, or use a widget that
+contains Material itself, such as a Card, Dialog, Drawer, or Scaffold.
+          The specific widget that could not find a Material ancestor was:
+            StatefulElement#ac43b(DEFUNCT)
+          The ancestors of this widget were:
+            StatelessElement#d9e30(DEFUNCT)
+            SingleChildRenderObjectElement#fafef(DEFUNCT)
+            SingleChildRenderObjectElement#8879e(DEFUNCT)
+            SingleChildRenderObjectElement#ba9c0(DEFUNCT)
+            SingleChildRenderObjectElement#7699c(DEFUNCT)
+            SingleChildRenderObjectElement#a3fe2(DEFUNCT)
+            SingleChildRenderObjectElement#df27b(DEFUNCT)
+            _OverlayPortalElement#4de52(DEFUNCT)
+            StatefulElement#60302(DEFUNCT)
+            StatefulElement#4f0ed(DEFUNCT)
+            StatefulElement#12d7e(DEFUNCT)
+            RetainedArtworkFrame-[<'retained-artwork-frame'>]
+            ArtworkImage
+            Semantics
+            Builder
+            RepaintBoundary-[GlobalKey#27d6a]
+            IgnorePointer
+            ListenableBuilder
+            FractionalTranslation
+            SlideTransition
+            FadeTransition
+            FractionalTranslation
+            SlideTransition
+            FadeTransition
+            DualTransitionBuilder
+            ColoredBox
+            FractionalTranslation
+            SlideTransition
+            FadeTransition
+            IgnorePointer
+            FractionalTranslation
+            SlideTransition
+            FadeTransition
+            DualTransitionBuilder
+            _FadeForwardsPageTransition
+            _PredictiveBackGestureDetector
+            _PageTransitionsThemeTransitions<dynamic>
+            ListenableBuilder
+            RepaintBoundary
+            _FocusInheritedScope
+            Semantics
+            _FocusScopeWithExternalFocusNode
+            PrimaryScrollController
+            _ActionsScope
+            Actions
+            Builder
+            PageStorage
+            Offstage
+            _ModalScopeStatus
+            UnmanagedRestorationScope
+            RestorationScope
+            AnimatedBuilder
+            _ModalScope<dynamic>-[LabeledGlobalKey<_ModalScopeState<dynamic>>#a87b2]
+            Semantics
+            Builder
+            _RenderTheaterMarker
+            _EffectiveTickerMode
+            TickerMode
+            _OverlayEntryWidget-[LabeledGlobalKey<_OverlayEntryWidgetState>#9b493]
+            _Theater
+            Overlay-[LabeledGlobalKey<OverlayState>#91c31]
+            UnmanagedRestorationScope
+            _FocusInheritedScope
+            Focus
+            _FocusInheritedScope
+            Focus
+            FocusTraversalGroup
+            AbsorbPointer
+            Listener
+            NotificationListener<NavigationNotification>
+            HeroControllerScope
+            Navigator-[GlobalObjectKey<NavigatorState> _WidgetsAppState#a7d35]
+            _FocusInheritedScope
+            Semantics
+            FocusScope
+            DefaultSelectionStyle
+            _ScaffoldMessengerScope
+            ScaffoldMessenger
+            DefaultSelectionStyle
+            IconTheme
+            IconTheme
+            InheritedCupertinoTheme
+            CupertinoTheme
+            _InheritedTheme
+            Theme
+            AnimatedTheme
+            Builder
+            DefaultTextStyle
+            ValueListenableBuilder<bool>
+            CustomPaint
+            Banner
+            CheckedModeBanner
+            Semantics
+            _FocusInheritedScope
+            Focus
+            Title
+            Directionality
+            _LocalizationsScope-[GlobalKey#53d61]
+            Semantics
+            Localizations
+            ListenableBuilder
+            Semantics
+            _FocusInheritedScope
+            Focus
+            Shortcuts
+            _ShortcutRegistrarScope
+            ShortcutRegistrar
+            TapRegionSurface
+            _FocusInheritedScope
+            Focus
+            FocusTraversalGroup
+            _ActionsScope
+            Actions
+            Semantics
+            _FocusInheritedScope
+            Focus
+            Shortcuts
+            DefaultTextEditingShortcuts
+            Semantics
+            _FocusInheritedScope
+            Focus
+            Shortcuts
+            NotificationListener<NavigationNotification>
+            _SharedAppModel
+            SharedAppData
+            UnmanagedRestorationScope
+            RestorationScope
+            UnmanagedRestorationScope
+            RootRestorationScope
+            WidgetsApp-[GlobalObjectKey _MaterialAppState#28072]
+            HeroControllerScope
+            ScrollConfiguration
+            MaterialApp
+            _FocusInheritedScope
+            _FocusScopeWithExternalFocusNode
+            _FocusInheritedScope
+            Focus
+            FocusTraversalGroup
+            MediaQuery
+            _MediaQueryFromView
+            _PipelineOwnerScope
+            _ViewScope
+            _RawViewInternal-[_DeprecatedRawViewKey TestFlutterView#e2a94]
+            RawView
+            View
+            [root]>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/netease_v120_ui_test.dart:120:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/netease_v120_ui_test.dart line 120
+The test description was:
+  a cached file with a valid header but broken decoder recovers to the network image
+════════════════════════════════════════════════════════════════════════════════════════════════════
+Test failed. See exception logs above.
+The test description was: a cached file with a valid header but broken decoder recovers to the network image
+Warning: At least one test in this suite creates an HttpClient. When running a test suite that uses
+TestWidgetsFlutterBinding, all HTTP requests will return status code 400, and no network request
+will actually be made. Any test expecting a real network connection and status code will fail.
+To test code that needs an HttpClient, provide your own HttpClient implementation to the code under
+test, so that your test can consistently provide a testable response to the code under test.

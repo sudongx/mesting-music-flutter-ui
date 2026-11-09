@@ -1,0 +1,94 @@
+00:00 +0: loading D:/AnLi/test/release_138_listening_safety_test.dart
+00:00 +0: D:/AnLi/test/release_138_listening_safety_test.dart: missing code stays uncertain and never replays
+00:00 +1: D:/AnLi/test/release_138_listening_safety_test.dart: nonnumeric code stays uncertain and never replays
+00:00 +2: D:/AnLi/test/release_138_listening_safety_test.dart: explicit business rejection remains rejected without replay
+00:00 +3: D:/AnLi/test/release_138_listening_safety_test.dart: non-log requests retain their optional business-code contract
+00:00 +4: D:/AnLi/test/release_138_listening_safety_test.dart: seek end opens once after readiness and excludes seek time
+00:00 +5: D:/AnLi/test/release_138_listening_safety_test.dart: seek end cannot open while paused
+00:00 +6: D:/AnLi/test/release_138_listening_safety_test.dart: seek end cannot open while not ready
+00:00 +7: D:/AnLi/test/release_138_listening_safety_test.dart: seek end cannot open while account changed
+00:00 +8: loading D:/AnLi/test/release_138_footprint_units_test.dart
+00:02 +8: D:/AnLi/test/release_138_footprint_units_test.dart: 372 report minutes show 6h12 and 386 period minutes show 6h26
+00:02 +9: D:/AnLi/test/release_138_footprint_units_test.dart: all daily resource categories use the same minute wire contract
+00:02 +10: D:/AnLi/test/release_138_footprint_units_test.dart: historical month reports normalize minutes at the same boundary
+00:02 +11: D:/AnLi/test/release_138_footprint_units_test.dart: zero minutes stay zero and optional absent categories stay absent zero
+00:02 +12: D:/AnLi/test/release_138_footprint_units_test.dart: minute fields reject fractional, negative and missing values
+00:02 +13: D:/AnLi/test/release_138_footprint_units_test.dart: historical total remains seconds and is never multiplied by 60
+00:03 +14: loading D:/AnLi/test/release_138_native_log_test.dart
+00:04 +14: D:/AnLi/test/release_138_native_log_test.dart: RFC8439 section2.3.2 independent ChaCha20 block vector
+00:04 +15: D:/AnLi/test/release_138_native_log_test.dart: independent encoder exactly matches controlled official-native fixture
+00:04 +16: D:/AnLi/test/release_138_native_log_test.dart: invalid sequence and oversized payload never produce an upload file
+00:04 +17: loading D:/AnLi/test/release_138_native_transport_test.dart
+00:06 +17: D:/AnLi/test/release_138_native_transport_test.dart: logout during a native request keeps the old write uncertain
+00:06 +18: D:/AnLi/test/release_138_native_transport_test.dart: a replaced credential is rejected before any native request
+00:06 +19: D:/AnLi/test/release_138_native_transport_test.dart: native accepted requires per-file receipt and never replays
+00:06 +20: D:/AnLi/test/release_138_native_transport_test.dart: native unknown requires per-file receipt and never replays
+00:06 +21: D:/AnLi/test/release_138_native_transport_test.dart: native rejected requires per-file receipt and never replays
+00:06 +22: D:/AnLi/test/release_138_native_transport_test.dart: claim serializes sequence reservation and refuses already dispatched rows
+00:06 +23: D:/AnLi/test/release_138_native_transport_test.dart: candidate flags only new plays and preserves measured timestamps
+00:06 +24: loading D:/AnLi/test/release_137_footprint_test.dart
+00:08 +24: D:/AnLi/test/release_137_footprint_test.dart: month boundary refresh replaces the previous month without adding local or yesterday values
+00:08 +25: D:/AnLi/test/release_137_footprint_test.dart: official report minutes normalize all three categories into internal seconds
+00:08 +26: D:/AnLi/test/release_137_footprint_test.dart: China dates and historical endTime stay in the requested month across UTC midnight
+00:08 +27: D:/AnLi/test/release_137_footprint_test.dart: missing, malformed, duplicate and wrong-month official data are never confirmed zeroes
+00:08 +28: D:/AnLi/test/release_137_footprint_test.dart: report reader uses exact official types/endTime and no playback-write route
+00:09 +29: D:/AnLi/test/release_137_footprint_test.dart: reader coalesces clicks, handles independent failures and retains success timestamps
+00:09 +30: D:/AnLi/test/release_137_footprint_test.dart: new date refresh wins over late previous-day requests and does not relabel old data
+00:09 +31: D:/AnLi/test/release_137_footprint_test.dart: account/dispose invalidation prevents old responses and later requests
+00:09 +32: D:/AnLi/test/release_137_footprint_test.dart: fast historical month changes discard earlier completion and failed refresh keeps same-month result
+00:09 +33: loading D:/AnLi/test/release_137_footprint_ui_test.dart
+00:17 +33: D:/AnLi/test/release_137_footprint_ui_test.dart: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:17 +33: D:/AnLi/test/release_137_footprint_ui_test.dart: official readings, retained failure and monthly comparison compact=false
+00:19 +34: D:/AnLi/test/release_137_footprint_ui_test.dart: official readings, retained failure and monthly comparison compact=true
+00:20 +35: D:/AnLi/test/release_137_footprint_ui_test.dart: late response from first account cannot replace second account readings
+00:20 +36: D:/AnLi/test/release_137_footprint_ui_test.dart: switching account while a request is pending removes all previous readings
+00:20 +37: D:/AnLi/test/release_137_footprint_ui_test.dart: month switch clears previous month and new empty local data is distinct
+00:21 +38: D:/AnLi/test/release_137_footprint_ui_test.dart: history glass button cancels held scrolling without starting a read
+00:21 +39: D:/AnLi/test/release_137_footprint_ui_test.dart: foreground recovery rereads a new day and keeps the old date explicit on failure
+00:21 +40: D:/AnLi/test/release_137_footprint_ui_test.dart: (tearDownAll)
+00:21 +40: loading D:/AnLi/test/release_135_listening_report_test.dart
+00:22 +40: D:/AnLi/test/release_135_listening_report_test.dart: official real/media clocks differ at 2x and ignore seek/buffer/pause
+00:22 +41: D:/AnLi/test/release_135_listening_report_test.dart: queued October event keeps original date and real time while other states never replay
+00:23 +42: D:/AnLi/test/release_135_listening_report_test.dart: new play logs preserve audible start time and speed-weighted duration
+00:23 +43: D:/AnLi/test/release_135_listening_report_test.dart: footprint is read from official calendar route, not recent-song indexing
+00:23 +44: D:/AnLi/test/release_135_listening_report_test.dart: protocol builder never invents monthly playback or negative intervals
+00:23 +45: loading D:/AnLi/test/netease_v114_workflows_test.dart
+00:25 +45: D:/AnLi/test/netease_v114_workflows_test.dart: conversation decodes the peer and last message without profile fields
+00:25 +46: D:/AnLi/test/netease_v114_workflows_test.dart: private text is one eapi send with a fixed selected recipient
+00:26 +47: D:/AnLi/test/netease_v114_workflows_test.dart: private pictures allocate, upload without cookies, then send picinfo
+00:26 +48: D:/AnLi/test/netease_v114_workflows_test.dart: account switch during upload prevents sending a picture to another account
+00:26 +49: D:/AnLi/test/netease_v114_workflows_test.dart: blacklist receipt is not shown as a delivered private message
+00:26 +50: D:/AnLi/test/netease_v114_workflows_test.dart: recent start is immediate once ready and duration excludes pause/buffering
+00:26 +51: D:/AnLi/test/netease_v114_workflows_test.dart: preview uses exact NetEase fallback through the production decision
+00:26 +52: D:/AnLi/test/netease_v114_workflows_test.dart: BugPk outer URLs become HTTPS CDN URLs without sharing credentials
+00:26 +53: D:/AnLi/test/netease_v114_workflows_test.dart: BugPk rejects foreign redirects without following them
+00:26 +54: D:/AnLi/test/netease_v114_workflows_test.dart: bounded audio probing rejects an obviously short preview resource
+00:26 +55: D:/AnLi/test/netease_v114_workflows_test.dart: selecting the next track while the old source is ready does not report a start
+00:26 +56: D:/AnLi/test/netease_v114_workflows_test.dart: together keeps reporting after its creation call and sends official invitation links
+00:26 +57: D:/AnLi/test/netease_v114_workflows_test.dart: together link parsing rejects credentials or foreign hosts
+00:26 +58: D:/AnLi/test/netease_v114_workflows_test.dart: all catalogue entries have task identities and automatic mechanics stay out of forms
+00:26 +59: loading D:/AnLi/test/netease_v112_listening_test.dart
+00:29 +59: D:/AnLi/test/netease_v112_listening_test.dart: reports only real ready, non-seeking elapsed time and sends one event
+00:29 +60: D:/AnLi/test/netease_v112_listening_test.dart: switching accounts checkpoints under the original owner without sending
+00:29 +61: D:/AnLi/test/netease_v112_listening_test.dart: uncertain writes are not automatically replayed after restart
+00:29 +62: D:/AnLi/test/netease_v112_listening_test.dart: never reports Kugou or local tracks to NetEase
+00:29 +63: loading D:/AnLi/test/release_107_listening_sync_test.dart
+00:31 +63: D:/AnLi/test/release_107_listening_sync_test.dart: (setUpAll)
+00:31 +63: D:/AnLi/test/release_107_listening_sync_test.dart: actual heard time excludes pause, buffering and seek, ignores 2x media distance
+00:31 +64: D:/AnLi/test/release_107_listening_sync_test.dart: durable account journal upgrade imports old songs once, never converts the old 625 minutes into a new delta
+00:31 +65: D:/AnLi/test/release_107_listening_sync_test.dart: durable account journal history acceptance stays distinct from official readback and never blindly retries
+00:31 +66: D:/AnLi/test/release_107_listening_sync_test.dart: durable account journal CSCC timeout is unknown and never replays; stale starts are not fabricated later
+00:31 +67: D:/AnLi/test/release_107_listening_sync_test.dart: durable account journal unchanged official duration is not verified, later deltas wait without repeating an uncertain write
+00:31 +68: D:/AnLi/test/release_107_listening_sync_test.dart: durable account journal crash recovery allocates only checkpointed milliseconds and is idempotent
+00:31 +69: D:/AnLi/test/release_107_listening_sync_test.dart: durable account journal account switch prevents pending writes from reaching the next identity
+00:31 +70: D:/AnLi/test/release_107_listening_sync_test.dart: durable account journal explicit verification performs read-back only and never drains queued writes
+00:31 +71: D:/AnLi/test/release_107_listening_sync_test.dart: durable account journal coordinator counts actual intervals and excludes a local file from official reporting
+00:31 +72: D:/AnLi/test/release_107_listening_sync_test.dart: local persistence and playback use content URI, real seconds and file notification art
+00:32 +73: D:/AnLi/test/release_107_listening_sync_test.dart: version 6 migrates additively to 7 and retains old local duration
+00:32 +74: D:/AnLi/test/release_107_listening_sync_test.dart: reporting contracts bind expected identity, registered UUID and real device fields
+00:32 +75: D:/AnLi/test/release_107_listening_sync_test.dart: business status and duplicate normalization do not imply actual booking
+00:32 +76: D:/AnLi/test/release_107_listening_sync_test.dart: (tearDownAll)
+00:32 +76: All tests passed!

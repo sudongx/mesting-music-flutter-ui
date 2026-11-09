@@ -1,0 +1,8 @@
+    static void d(String str, JSONObject jSONObject) {
+        if ("sysdebug".equals(str)) {
+            boolean zContainsKey = jSONObject != null ? jSONObject.containsKey("mspm") : false;
+            if (com.netease.cloudmusic.utils.e0.g() && !zContainsKey) {
+                throw new v0("mspm field must be defined");
+            }
+        }
+    }

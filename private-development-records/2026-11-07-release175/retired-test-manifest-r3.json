@@ -1,0 +1,100 @@
+{
+  "filesRemoved": [
+    "test/auth_backend_status_test.dart",
+    "test/auth_models_test.dart",
+    "test/auth_repository_test.dart",
+    "test/auth_ui_test.dart",
+    "test/avatar_preview_test.dart",
+    "test/chat_message_actions_test.dart",
+    "test/chat_page_test.dart",
+    "test/cloudbase_auth_repository_test.dart",
+    "test/library_cloud_persistence_test.dart",
+    "test/library_sync_api_test.dart",
+    "test/listen_together_test.dart",
+    "test/profile_background_sync_api_test.dart",
+    "test/profile_background_test.dart",
+    "test/saved_messages_page_test.dart",
+    "test/session_store_test.dart",
+    "test/social_attention_test.dart",
+    "test/social_repository_test.dart",
+    "test/social_status_test.dart",
+    "test/social_ui_test.dart",
+    "test/track_share_test.dart"
+  ],
+  "mixedFilesUpdated": [
+    "test/beta10_entry_test.dart",
+    "test/beta18_refinements_test.dart",
+    "test/beta19_refinements_test.dart",
+    "test/beta21_refinements_test.dart",
+    "test/beta5_ui_test.dart",
+    "test/beta_account_exclusivity_test.dart",
+    "test/beta_login_entry_test.dart",
+    "test/beta_player_library_actions_test.dart",
+    "test/daily_recommendation_navigation_test.dart",
+    "test/dual_music_platform_ui_test.dart",
+    "test/first_launch_auth_test.dart",
+    "test/login_artwork_test.dart",
+    "test/music_home_horizontal_sections_test.dart",
+    "test/music_hub_top_bar_test.dart",
+    "test/music_search_ui_test.dart",
+    "test/netease_v118_ui_test.dart",
+    "test/platform_beta4_ui_test.dart",
+    "test/platform_search_paging_test.dart",
+    "test/qishui_accounts_test.dart",
+    "test/qishui_appearance172_ui_test.dart",
+    "test/qishui_capture173_ui_test.dart",
+    "test/qishui_player173_ui_test.dart",
+    "test/release_101_ui_test.dart",
+    "test/release_107_ui_test.dart",
+    "test/release_131_library_test.dart",
+    "test/release_132_notes_test.dart",
+    "test/release_149_ui_test.dart",
+    "test/release_155_ui_test.dart",
+    "test/search_menu_fm_regression_test.dart",
+    "test/user_facing_error_test.dart",
+    "integration_test/beta19_device_performance_test.dart",
+    "integration_test/core_data_regression_test.dart"
+  ],
+  "retiredFeatureCases": [
+    {
+      "path": "test/beta_account_exclusivity_test.dart",
+      "description": "test(\n    'platform login defeats delayed CloudBase restoration and logout persists guest choice',\n    () async {\n      final container = ProviderContainer(overrides: overrides());\n      addTearDown(container.dispose);\n "
+    },
+    {
+      "path": "test/beta_account_exclusivity_test.dart",
+      "description": "test(\n    'Mesting selection blocks a stale platform login callback',\n    () async {\n      final container = ProviderContainer(overrides: overrides());\n      addTearDown(container.dispose);\n      await container.read(pla"
+    },
+    {
+      "path": "test/beta_account_exclusivity_test.dart",
+      "description": "testWidgets(\n    'Kugou sidebar omits Mesting messages and protected pages reject direct access',\n    (tester) async {\n      store.value = const PlatformSession(\n        userId: "[REDACTED]",\n        token: "[REDACTED]",\n        nickna"
+    },
+    {
+      "path": "test/music_hub_top_bar_test.dart",
+      "description": "testWidgets('账号恢复完成前侧栏不会误显示未登录提示', (tester) async {\n    tester.view.physicalSize = const Size(360, 800);\n    tester.view.devicePixelRatio = 1;\n    addTearDown(tester.view.resetPhysicalSize);\n    addTearDown(tester.view.r"
+    },
+    {
+      "path": "test/music_search_ui_test.dart",
+      "description": "testWidgets('搜索预览按网易云风格分层展示歌手、歌曲和联想词', (tester) async {\n    final artist = SocialUser(\n      uid: "[REDACTED]",\n      nickname: '陈粒',\n      followerCount: 7303000,\n    );\n    await tester.pumpWidget(\n      searchApp("
+    },
+    {
+      "path": "test/music_search_ui_test.dart",
+      "description": "testWidgets('搜索结果只保留单曲和用户并默认停留单曲', (tester) async {\n    final users = List.generate(\n      5,\n      (index) => SocialUser(\n        uid: "[REDACTED]",\n        nickname: '用户${index + 1}',\n        followerCount: index + 1,"
+    },
+    {
+      "path": "test/qishui_accounts_test.dart",
+      "description": "test(\n    'cold restore selects only Soda without touching CloudBase or Kugou credentials',\n    () async {\n      final c = container();\n      addTearDown(c.dispose);\n      final identity = await c.read(platformAccountPro"
+    },
+    {
+      "path": "test/release_149_ui_test.dart",
+      "description": "test(\n    'conversation refresh cache is invalidated by owner identity even with a retained repository',\n    () async {\n      final users = NotifierProvider<_User149, AuthUser?>(_User149.new);\n      final repo = _Social1"
+    },
+    {
+      "path": "test/release_149_ui_test.dart",
+      "description": "testWidgets(\n      'messages retain the same owners rows during background reload dark=$dark',\n      (tester) async {\n        var calls = 0;\n        final gate = Completer<List<SocialConversation>>();\n        SocialConve"
+    },
+    {
+      "path": "integration_test/core_data_regression_test.dart",
+      "description": "testWidgets('收藏和歌单上传云端后可在清空本地数据库后恢复', (tester) async {\n    const ownerId = 'cloud-user';\n    final track = testTracks.first;\n    final now = DateTime.utc(2026, 7, 26, 8);\n    final cloudSnapshot = CloudLibrarySnapshot(\n "
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+00:00 +0: loading D:/AnLi/test/release_151_loading_test.dart
+test/release_151_loading_test.dart:112:9: Error: Undefined name 'platformDailyProvider'.
+        platformDailyProvider.overrideWith(
+        ^^^^^^^^^^^^^^^^^^^^^
+test/release_151_loading_test.dart:132:34: Error: Undefined name 'platformDailyProvider'.
+    fixture.container.invalidate(platformDailyProvider);
+                                 ^^^^^^^^^^^^^^^^^^^^^
+00:00 +0 -1: loading D:/AnLi/test/release_151_loading_test.dart [E]
+  Failed to load "D:/AnLi/test/release_151_loading_test.dart":
+  Compilation failed for testPath=D:/AnLi/test/release_151_loading_test.dart: test/release_151_loading_test.dart:112:9: Error: Undefined name 'platformDailyProvider'.
+          platformDailyProvider.overrideWith(
+          ^^^^^^^^^^^^^^^^^^^^^
+  test/release_151_loading_test.dart:132:34: Error: Undefined name 'platformDailyProvider'.
+      fixture.container.invalidate(platformDailyProvider);
+                                   ^^^^^^^^^^^^^^^^^^^^^
+  .
+00:00 +0 -1: loading D:/AnLi/test/release_145_messages_back_test.dart
+00:00 +0 -1: loading D:/AnLi/test/release_151_loading_test.dart [E]
+  Error: The Dart compiler exited unexpectedly.
+  package:flutter_tools/src/base/common.dart 34:3  throwToolExit
+  package:flutter_tools/src/compile.dart 939:11    DefaultResidentCompiler._compile.<fn>
+  dart:async/zone_root.dart 48:47                  _rootRunUnary
+  dart:async/zone.dart 733:19                      _CustomZone.runUnary
+  dart:async/future_impl.dart 948:45               Future._propagateToListeners.handleValueCallback
+  dart:async/future_impl.dart 977:13               Future._propagateToListeners
+  dart:async/future_impl.dart 862:9                Future._propagateToListeners
+  dart:async/future_impl.dart 720:5                Future._completeWithValue
+  dart:async/future_impl.dart 804:7                Future._asyncCompleteWithValue.<fn>
+  dart:async/zone_root.dart 35:13                  _rootRun
+  dart:async/zone.dart 726:19                      _CustomZone.run
+  dart:async/zone.dart 625:7                       _CustomZone.runGuarded
+  dart:async/zone.dart 666:23                      _CustomZone.bindCallbackGuarded.<fn>
+  dart:async/schedule_microtask.dart 40:35         _microtaskLoop
+  dart:async/schedule_microtask.dart 49:5          _startMicrotaskLoop
+  dart:isolate-patch/isolate_patch.dart 127:13     _runPendingImmediateCallback
+  dart:isolate-patch/isolate_patch.dart 194:5      _RawReceivePort._handleMessage
+  
+00:00 +0 -1: D:/AnLi/test/release_145_messages_back_test.dart: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0 -1: D:/AnLi/test/release_145_messages_back_test.dart: actual inbox/chat retain My stack after two backs edge=false
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+The finder "Found 0 widgets with text "我的消息": []" (used in a call to "tap()") could not find any
+matching widgets.
+
+When the exception was thrown, this was the stack:
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2090:7)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1942:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1075:7)
+#3      main.<anonymous closure> (file:///D:/AnLi/test/release_145_messages_back_test.dart:123:22)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  actual inbox/chat retain My stack after two backs edge=false
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:01 +0 -2: D:/AnLi/test/release_145_messages_back_test.dart: actual inbox/chat retain My stack after two backs edge=false [E]
+  Test failed. See exception logs above.
+  The test description was: actual inbox/chat retain My stack after two backs edge=false
+  
+00:01 +0 -2: D:/AnLi/test/release_145_messages_back_test.dart: actual inbox/chat retain My stack after two backs edge=true
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+The finder "Found 0 widgets with text "我的消息": []" (used in a call to "tap()") could not find any
+matching widgets.
+
+When the exception was thrown, this was the stack:
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2090:7)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1942:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1075:7)
+#3      main.<anonymous closure> (file:///D:/AnLi/test/release_145_messages_back_test.dart:123:22)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  actual inbox/chat retain My stack after two backs edge=true
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:01 +0 -3: D:/AnLi/test/release_145_messages_back_test.dart: actual inbox/chat retain My stack after two backs edge=true [E]
+  Test failed. See exception logs above.
+  The test description was: actual inbox/chat retain My stack after two backs edge=true
+  
+00:01 +0 -3: D:/AnLi/test/release_145_messages_back_test.dart: (tearDownAll)
+00:01 +0 -3: Some tests failed.

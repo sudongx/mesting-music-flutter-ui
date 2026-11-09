@@ -1,0 +1,42 @@
+00:00 +0: loading D:/AnLi/test/release_106_ui_test.dart
+00:00 +0: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: glass trigger, flight, pressed row and reverse light
+00:02 +1: glass trigger, flight, pressed row and reverse dark
+00:03 +2: glass trigger, flight, pressed row and reverse small-large-text
+00:03 +3: glass trigger, flight, pressed row and reverse wide
+00:04 +4: real birthday picker uses Chinese and keeps edits local until save
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: '2月'
+  Actual: '二月'
+   Which: is different.
+          Expected: 2月
+            Actual: 二月
+                    ^
+           Differ at offset 0
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_106_ui_test.dart:113:5)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_106_ui_test.dart line 113
+The test description was:
+  real birthday picker uses Chinese and keeps edits local until save
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:06 +4 -1: real birthday picker uses Chinese and keeps edits local until save [E]
+  Test failed. See exception logs above.
+  The test description was: real birthday picker uses Chinese and keeps edits local until save
+  
+00:06 +4 -1: pull refresh has no floating spinner and coalesces one gesture
+00:06 +5 -1: (tearDownAll)
+00:06 +5 -1: Some tests failed.

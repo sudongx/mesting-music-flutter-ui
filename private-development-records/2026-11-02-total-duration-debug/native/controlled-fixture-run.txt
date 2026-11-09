@@ -1,0 +1,10 @@
+FIXTURE_LOG prepare log cache succ : mmap
+FIXTURE_LOG create log seq at path /data/local/tmp/mesting-total-20261102-controlled-fixture/sequence, name = fixture_seq.seq
+is path exist = true
+is seq_file exist = false
+current seq file = seq_file_open_failed
+mmap seq file magic not match, reinit it
+mmap seq created, next seq is 0
+FIXTURE_LOG pre allocated cache file 2 mis hit
+FIXTURE_LOG log flushed flush_fixture_15646_3_954045732
+LOCAL_FIXTURE_COMPLETE; no network implementation exists

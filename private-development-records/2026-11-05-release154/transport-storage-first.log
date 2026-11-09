@@ -1,0 +1,79 @@
+00:00 +0: loading D:/AnLi/test/release_154_network_test.dart
+00:00 +0: D:/AnLi/test/release_154_storage_test.dart: timed-out callers reuse one native read and receive its late completion
+00:00 +1: D:/AnLi/test/release_154_storage_test.dart: timed-out callers reuse one native read and receive its late completion
+00:00 +1 -1: D:/AnLi/test/release_154_storage_test.dart: timed-out callers reuse one native read and receive its late completion
+00:00 +2 -1: D:/AnLi/test/release_154_storage_test.dart: timed-out callers reuse one native read and receive its late completion
+00:00 +2 -1: D:/AnLi/test/release_154_network_test.dart: large streamed response keeps all bytes beyond the JSON bridge limit [E]
+  Expected: <18874385>
+    Actual: <0>
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test\release_154_network_test.dart 48:7             main.<fn>
+  
+Warning: At least one test in this suite creates an HttpClient. When running a test suite that uses
+TestWidgetsFlutterBinding, all HTTP requests will return status code 400, and no network request
+will actually be made. Any test expecting a real network connection and status code will fail.
+To test code that needs an HttpClient, provide your own HttpClient implementation to the code under
+test, so that your test can consistently provide a testable response to the code under test.
+00:00 +3 -1: D:/AnLi/test/release_154_storage_test.dart: timed-out callers reuse one native read and receive its late completion
+00:00 +4 -1: D:/AnLi/test/release_154_storage_test.dart: timed-out callers reuse one native read and receive its late completion
+00:00 +5 -1: D:/AnLi/test/release_154_storage_test.dart: timed-out callers reuse one native read and receive its late completion
+00:00 +6 -1: D:/AnLi/test/release_154_storage_test.dart: timed-out callers reuse one native read and receive its late completion
+00:00 +7 -1: D:/AnLi/test/release_154_network_test.dart: system proxy follows generation changes without replaying a POST
+00:00 +8 -1: D:/AnLi/test/release_154_network_test.dart: system proxy follows generation changes without replaying a POST
+00:00 +8 -2: D:/AnLi/test/release_154_storage_test.dart: failed Kugou cold restore -> verified login -> new-store restore, without touching old bytes
+00:00 +8 -2: D:/AnLi/test/release_154_network_test.dart: system proxy follows generation changes without replaying a POST [E]
+  Expected: 'first'
+    Actual: ''
+     Which: is different. Both strings start the same, but the actual value is missing the following trailing characters: first
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test\release_154_network_test.dart 89:7             main.<fn>
+  
+00:00 +9 -2: D:/AnLi/test/release_154_storage_test.dart: failed Kugou cold restore -> verified login -> new-store restore, without touching old bytes
+00:00 +9 -3: D:/AnLi/test/release_154_storage_test.dart: failed Kugou cold restore -> verified login -> new-store restore, without touching old bytes
+00:00 +9 -3: D:/AnLi/test/release_154_network_test.dart: Dart streams use Android resolver addresses while preserving the HTTP host [E]
+  Expected: 'resolved'
+    Actual: ''
+     Which: is different. Both strings start the same, but the actual value is missing the following trailing characters: resolved
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test\release_154_network_test.dart 121:7            main.<fn>
+  
+00:00 +10 -3: D:/AnLi/test/release_154_storage_test.dart: failed Kugou cold restore -> verified login -> new-store restore, without touching old bytes
+00:00 +11 -3: D:/AnLi/test/release_154_storage_test.dart: failed Kugou cold restore -> verified login -> new-store restore, without touching old bytes
+00:00 +12 -3: D:/AnLi/test/release_154_storage_test.dart: failed Kugou cold restore -> verified login -> new-store restore, without touching old bytes
+00:00 +13 -3: D:/AnLi/test/release_153_storage_test.dart: UI timeout releases the account queue while retry shares the pending native read
+00:00 +14 -3: D:/AnLi/test/release_153_storage_test.dart: UI timeout releases the account queue while retry shares the pending native read
+00:00 +15 -3: D:/AnLi/test/release_153_storage_test.dart: UI timeout releases the account queue while retry shares the pending native read
+00:00 +16 -3: D:/AnLi/test/release_153_storage_test.dart: UI timeout releases the account queue while retry shares the pending native read
+00:00 +17 -3: D:/AnLi/test/release_153_storage_test.dart: UI timeout releases the account queue while retry shares the pending native read
+00:00 +18 -3: D:/AnLi/test/release_153_storage_test.dart: UI timeout releases the account queue while retry shares the pending native read
+00:00 +19 -3: D:/AnLi/test/release_153_storage_test.dart: UI timeout releases the account queue while retry shares the pending native read
+00:00 +20 -3: D:/AnLi/test/release_153_storage_test.dart: UI timeout releases the account queue while retry shares the pending native read
+00:00 +21 -3: D:/AnLi/test/release_153_storage_test.dart: UI timeout releases the account queue while retry shares the pending native read
+00:00 +22 -3: D:/AnLi/test/release_153_storage_test.dart: read retries do not delete credentials on platform failure
+00:01 +23 -3: D:/AnLi/test/release_153_network_test.dart: deadline cancels a stalled header without replaying SMS
+00:01 +24 -3: D:/AnLi/test/release_153_network_test.dart: deadline cancels a stalled body without replaying SMS
+00:01 +25 -3: D:/AnLi/test/release_153_network_test.dart: read retries once, but a write never replays after an uncertain failure
+00:01 +26 -3: D:/AnLi/test/release_153_network_test.dart: platform business rejection is not retried
+00:01 +27 -3: D:/AnLi/test/release_153_network_test.dart: already cancelled reads never dispatch
+00:01 +28 -3: D:/AnLi/test/release_153_network_test.dart: Android sends exact encrypted body and cookies through system transport
+00:01 +29 -3: D:/AnLi/test/release_153_network_test.dart: native timeout never falls back and resends a login
+00:01 +30 -3: D:/AnLi/test/release_153_network_test.dart: missing native method falls back once without losing request bytes
+00:01 +31 -3: D:/AnLi/test/release_153_network_test.dart: a bridge attached after cold bootstrap is used by the next request
+00:01 +32 -3: D:/AnLi/test/release_153_network_test.dart: loopback and unapproved HTTPS hosts never go through platform bridge
+00:01 +33 -3: D:/AnLi/test/release_153_network_test.dart: NetEase transport failure is readable and SMS is dispatched only once
+00:01 +34 -3: D:/AnLi/test/release_153_network_test.dart: SMS requires an explicit successful receipt, not an empty JSON body
+00:01 +35 -3: D:/AnLi/test/release_153_network_test.dart: diagnostics are bounded and never contain request/error credentials
+00:02 +36 -3: D:/AnLi/test/release_153_audio_test.dart: initial cache preparation failure retries same recording directly without skipping queue
+00:03 +37 -3: D:/AnLi/test/release_153_audio_test.dart: a programming failure is surfaced without network replay
+00:03 +38 -3: D:/AnLi/test/release_153_audio_test.dart: only platform-supplied alternatives recover without changing recording or quality
+00:03 +39 -3: D:/AnLi/test/release_153_audio_test.dart: a superseded cache failure cannot overwrite a newer selection
+00:03 +40 -3: D:/AnLi/test/release_153_audio_test.dart: cache header deadline fails its consumer once without unhandled fetch errors
+00:03 +41 -3: D:/AnLi/test/release_153_audio_test.dart: stalled chunks fail instead of publishing a truncated cache
+00:03 +42 -3: D:/AnLi/test/release_153_audio_test.dart: complete cache is flushed before it becomes reusable
+00:03 +43 -3: Some tests failed.

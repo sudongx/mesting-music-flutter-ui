@@ -1,0 +1,47 @@
+00:00 +0: loading D:/AnLi/test/release_129_artwork_test.dart
+00:00 +0: a capsule reuses the larger search thumbnail without another request
+00:00 +0 -1: a capsule reuses the larger search thumbnail without another request [E]
+  Expected: 'C:\\Users\\zyt\\AppData\\Local\\Temp\\artwork129-b261f24c\\mesting_network_image_cache\\cb24205cc0b14f3d01d7cab30c1268aae84ff7cd81e32c0127c127206071f8b2.avatar'
+    Actual: 'C:\\Users\\zyt\\AppData\\Local\\Temp\\artwork129-b261f24c\\mesting_network_image_cache\\b791a0fd703aff36cf2c972f04a0e244855fdb8081ae0555b913c3408549ed1b.avatar'
+     Which: is different.
+            Expected: ... ge_cache\\cb24205cc0 ...
+              Actual: ... ge_cache\\b791a0fd70 ...
+                                    ^
+             Differ at offset 88
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test\release_129_artwork_test.dart 42:5             main.<fn>
+  
+00:00 +0 -1: a newly mounted song page receives the disk thumbnail while HD waits
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: not null
+  Actual: <null>
+The existing thumbnail must be available in the first build, even before HD completes.
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_129_artwork_test.dart:68:5)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_129_artwork_test.dart line 68
+The test description was:
+  a newly mounted song page receives the disk thumbnail while HD waits
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:00 +0 -2: a newly mounted song page receives the disk thumbnail while HD waits [E]
+  Test failed. See exception logs above.
+  The test description was: a newly mounted song page receives the disk thumbnail while HD waits
+  
+Warning: At least one test in this suite creates an HttpClient. When running a test suite that uses
+TestWidgetsFlutterBinding, all HTTP requests will return status code 400, and no network request
+will actually be made. Any test expecting a real network connection and status code will fail.
+To test code that needs an HttpClient, provide your own HttpClient implementation to the code under
+test, so that your test can consistently provide a testable response to the code under test.
+00:00 +0 -2: Some tests failed.

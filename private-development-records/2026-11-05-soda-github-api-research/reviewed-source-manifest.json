@@ -1,0 +1,395 @@
+[
+  {
+    "repository": "MOPELotus/TuneWeave",
+    "commit": "84bc7b34935198caa40f612876f4624a17b40221",
+    "selected_files": [
+      {
+        "path": "crates/tuneweave-provider-soda/src/provider.rs",
+        "sha256": "2414454fe541c1b97bb6aecc530e2b7c56ec9696180bb791dce1d462eff37d47",
+        "url": "https://github.com/MOPELotus/TuneWeave/blob/84bc7b34935198caa40f612876f4624a17b40221/crates/tuneweave-provider-soda/src/provider.rs",
+        "lines": 5134,
+        "relevant_locations": [
+          {
+            "line": 686,
+            "snippet": "            Capability::QrLogin,"
+          },
+          {
+            "line": 687,
+            "snippet": "            Capability::QrLoginVerification,"
+          },
+          {
+            "line": 711,
+            "snippet": "            Capability::AudioDownload,"
+          },
+          {
+            "line": 712,
+            "snippet": "            Capability::AudioStream,"
+          },
+          {
+            "line": 2630,
+            "snippet": "                assert!(requests[1].starts_with(\"POST /luna/pc/track_v2?\"));"
+          },
+          {
+            "line": 3482,
+            "snippet": "                Capability::QrLogin,"
+          },
+          {
+            "line": 3483,
+            "snippet": "                Capability::QrLoginVerification,"
+          },
+          {
+            "line": 3507,
+            "snippet": "                Capability::AudioDownload,"
+          },
+          {
+            "line": 3508,
+            "snippet": "                Capability::AudioStream,"
+          },
+          {
+            "line": 3529,
+            "snippet": "        assert!(provider.supports(Capability::AudioStream));"
+          },
+          {
+            "line": 3530,
+            "snippet": "        assert!(provider.supports(Capability::AudioDownload));"
+          },
+          {
+            "line": 4576,
+            "snippet": "                    assert!(requests[1].starts_with(\"POST /luna/pc/track_v2?\"));"
+          }
+        ]
+      },
+      {
+        "path": "crates/tuneweave-provider-soda/src/login.rs",
+        "sha256": "08419c28cd0dc5dd84812a6de9661576d093933455d5137571b80d0a19f540e9",
+        "url": "https://github.com/MOPELotus/TuneWeave/blob/84bc7b34935198caa40f612876f4624a17b40221/crates/tuneweave-provider-soda/src/login.rs",
+        "lines": 2134,
+        "relevant_locations": [
+          {
+            "line": 26,
+            "snippet": "const QR_CREATE_ENDPOINT: &str = \"https://api.qishui.com/passport/web/get_qrcode/\";"
+          },
+          {
+            "line": 518,
+            "snippet": "            \"/passport/web/get_qrcode/\","
+          }
+        ]
+      },
+      {
+        "path": "crates/tuneweave-provider-soda/src/bdms.rs",
+        "sha256": "ac6688d284fef189db1bfa298d6856d7bb308b7f6dd261eb809c2743a00f3100",
+        "url": "https://github.com/MOPELotus/TuneWeave/blob/84bc7b34935198caa40f612876f4624a17b40221/crates/tuneweave-provider-soda/src/bdms.rs",
+        "lines": 732,
+        "relevant_locations": [
+          {
+            "line": 21,
+            "snippet": "const SIGNER_NODE_ENV: &str = \"TUNEWEAVE_SODA_BDMS_NODE\";"
+          },
+          {
+            "line": 91,
+            "snippet": "        let node = nonempty_env(SIGNER_NODE_ENV);"
+          }
+        ]
+      },
+      {
+        "path": "docs/authentication.md",
+        "sha256": "b39364cd14d31f6b5cd2d4bc0c83c79c34e070a226e9ccfac73e475d0fc17120",
+        "url": "https://github.com/MOPELotus/TuneWeave/blob/84bc7b34935198caa40f612876f4624a17b40221/docs/authentication.md",
+        "lines": 943,
+        "relevant_locations": []
+      }
+    ],
+    "scope": "Public source inspection only; no actual account/signer/media runtime validation"
+  },
+  {
+    "repository": "guohuiyuan/music-lib",
+    "commit": "6353508e84cd357b5bc3acf32d95a16e01bbe20c",
+    "selected_files": [
+      {
+        "path": "soda/login.go",
+        "sha256": "de06083d0743fba0c0ceb70c8abe6176eb52591fdad07184dd21f51635608f23",
+        "url": "https://github.com/guohuiyuan/music-lib/blob/6353508e84cd357b5bc3acf32d95a16e01bbe20c/soda/login.go",
+        "lines": 1462,
+        "relevant_locations": [
+          {
+            "line": 21,
+            "snippet": "\tsodaQRCreateAPI    = \"https://api.qishui.com/passport/web/get_qrcode/\""
+          }
+        ]
+      },
+      {
+        "path": "soda/signature.go",
+        "sha256": "b7d06521ab965c49d98b92600089deed191289eb0c94f6ef5c39a597d14a0c60",
+        "url": "https://github.com/guohuiyuan/music-lib/blob/6353508e84cd357b5bc3acf32d95a16e01bbe20c/soda/signature.go",
+        "lines": 545,
+        "relevant_locations": [
+          {
+            "line": 21,
+            "snippet": "// 30s/60s 试听片段，与是否登录无关；整曲流走 POST /luna/pc/track_v2，服务端只认原生安全"
+          },
+          {
+            "line": 544,
+            "snippet": "\treturn \"https://api.qishui.com/luna/pc/track_v2?\" + params.Encode()"
+          }
+        ]
+      },
+      {
+        "path": "soda/localsigner.go",
+        "sha256": "5716c72e4966d6f23204fb8526d77ed4b5ac7b32ae0a7524f768f8147af88bbd",
+        "url": "https://github.com/guohuiyuan/music-lib/blob/6353508e84cd357b5bc3acf32d95a16e01bbe20c/soda/localsigner.go",
+        "lines": 404,
+        "relevant_locations": [
+          {
+            "line": 21,
+            "snippet": "// 为什么需要它：会员整曲流（POST /luna/pc/track_v2）要求 x-helios / x-medusa，"
+          }
+        ]
+      },
+      {
+        "path": "soda/download.go",
+        "sha256": "618b186bdf51afb880b839ca34758c85ce8f8694c2637c968d6349e5f6802ea1",
+        "url": "https://github.com/guohuiyuan/music-lib/blob/6353508e84cd357b5bc3acf32d95a16e01bbe20c/soda/download.go",
+        "lines": 243,
+        "relevant_locations": [
+          {
+            "line": 113,
+            "snippet": "\t// App 端整曲流（POST /luna/pc/track_v2）需要 Cookie + 应用级签名（x-helios / x-medusa）。"
+          }
+        ]
+      }
+    ],
+    "scope": "Public source inspection only; no actual account/signer/media runtime validation"
+  },
+  {
+    "repository": "Zencok/baka-plugins",
+    "commit": "90890c2195aca32bf30784cd395bccb3b9aa3db0",
+    "selected_files": [
+      {
+        "path": "plugins/qishui.js",
+        "sha256": "f5815a2bc0923439d72f0c8f3d2a42efd07202691098d844cbc62c929ed08cd3",
+        "url": "https://github.com/Zencok/baka-plugins/blob/90890c2195aca32bf30784cd395bccb3b9aa3db0/plugins/qishui.js",
+        "lines": 2534,
+        "relevant_locations": [
+          {
+            "line": 90,
+            "snippet": "const QISHUI_XHEADERS_SIGN_URL = \"https://api.vsaa.cn/api/music/soda/sign-pc.php\";"
+          },
+          {
+            "line": 446,
+            "snippet": "    QISHUI_XHEADERS_SIGN_URL,"
+          }
+        ]
+      }
+    ],
+    "scope": "Public source inspection only; no actual account/signer/media runtime validation"
+  },
+  {
+    "repository": "CharlesPikachu/musicdl",
+    "commit": "dca2f0967e46a8faf8d279737535471102d74ca3",
+    "selected_files": [
+      {
+        "path": "musicdl/modules/sources/soda.py",
+        "sha256": "c3994f381fc8268467d63e1761a12094e9fcfd42af7120a194dd3dfac6eefdfe",
+        "url": "https://github.com/CharlesPikachu/musicdl/blob/dca2f0967e46a8faf8d279737535471102d74ca3/musicdl/modules/sources/soda.py",
+        "lines": 264,
+        "relevant_locations": [
+          {
+            "line": 79,
+            "snippet": "    def _parsewithqiuyu520api(self, search_result: dict, request_overrides: dict = None):"
+          },
+          {
+            "line": 97,
+            "snippet": "    def _parsewithqqovoapi(self, search_result: dict, request_overrides: dict = None):"
+          },
+          {
+            "line": 165,
+            "snippet": "    '''_parsewithofficialvipapiv1'''"
+          },
+          {
+            "line": 166,
+            "snippet": "    def _parsewithofficialvipapiv1(self, search_result: dict, song_info_flac: SongInfo = None, lossless_quality_is_sufficient: bool = True, lossless_quality_definitions: set | list | tuple = {'flac', 'm4a'}, request_overrides: dict = None) -> \"SongInfo\":"
+          },
+          {
+            "line": 178,
+            "snippet": "            (resp := self.post(f'https://api.qishui.com/luna/pc/track_v2?{urlencode(default_query)}', data=json.dumps(body, ensure_ascii=False, separators=(\",\", \":\")), **request_overrides)).raise_for_status(); download_result['track'] = resp2json(resp)"
+          },
+          {
+            "line": 213,
+            "snippet": "                with suppress(Exception): song_info = self._parsewithofficialvipapiv1(search_result=search_result, song_info_flac=song_info_flac, lossless_quality_is_sufficient=lossless_quality_is_sufficient, request_overrides=request_overrides) if (self.soda_auth_info or request_overrides.get('cook"
+          },
+          {
+            "line": 253,
+            "snippet": "                with suppress(Exception): song_info = self._parsewithofficialvipapiv1(search_result=track_info, song_info_flac=song_info_flac, lossless_quality_is_sufficient=lossless_quality_is_sufficient, request_overrides=request_overrides) if (self.soda_auth_info or request_overrides.get('cookies"
+          }
+        ]
+      }
+    ],
+    "scope": "Public source inspection only; no actual account/signer/media runtime validation"
+  },
+  {
+    "repository": "mytv-android/myMusic",
+    "commit": "96e08ba02b6a9999887ca4ae4c82a4f9312735fa",
+    "selected_files": [
+      {
+        "path": "app/src/main/java/com/mytv/mymusic/data/native/SodaWelfare.kt",
+        "sha256": "fb701c0a028f176bacc2436489ca78d4590b5ffe2d4b31b2471e26736a2d0e13",
+        "url": "https://github.com/mytv-android/myMusic/blob/96e08ba02b6a9999887ca4ae4c82a4f9312735fa/app/src/main/java/com/mytv/mymusic/data/native/SodaWelfare.kt",
+        "lines": 239,
+        "relevant_locations": [
+          {
+            "line": 14,
+            "snippet": " * - `POST /luna/commerce/v2/commerce_info`：任务中心状态。**请求体必须带 includes**，"
+          },
+          {
+            "line": 16,
+            "snippet": " * - `POST /luna/commerce/v2/apply_free_vip`：空 body 领取，apply_status=0 表示成功。"
+          },
+          {
+            "line": 38,
+            "snippet": "            \"$API_BASE/luna/commerce/v2/commerce_info?${SodaProvider.welfareAppParams()}\","
+          },
+          {
+            "line": 56,
+            "snippet": "            \"$API_BASE/luna/commerce/v2/apply_free_vip?${SodaProvider.welfareAppParams()}\","
+          }
+        ]
+      },
+      {
+        "path": "app/src/main/java/com/mytv/mymusic/data/native/SodaProvider.kt",
+        "sha256": "2513c04c87b469df8e447337664ea7d851c2e73852507f9e8b19f78d1fc5593c",
+        "url": "https://github.com/mytv-android/myMusic/blob/96e08ba02b6a9999887ca4ae4c82a4f9312735fa/app/src/main/java/com/mytv/mymusic/data/native/SodaProvider.kt",
+        "lines": 3377,
+        "relevant_locations": [
+          {
+            "line": 800,
+            "snippet": "        // 整曲流走 App 端点（POST /luna/pc/track_v2），逐请求签名头 x-helios/x-medusa"
+          },
+          {
+            "line": 871,
+            "snippet": "    // 默认使用 SodaM 的公共签名服务（见 DEFAULT_SIGNER_URL）"
+          },
+          {
+            "line": 1052,
+            "snippet": "        return \"https://api.qishui.com/luna/pc/track_v2?${buildQuery(params)}\""
+          },
+          {
+            "line": 2532,
+            "snippet": "        append(\"https://api.qishui.com/luna/pc/track_v2?\")"
+          },
+          {
+            "line": 2696,
+            "snippet": "        const val DEFAULT_SIGNER_URL = \"http://103.236.75.83:8899/sign\""
+          },
+          {
+            "line": 2776,
+            "snippet": "        fun effectiveSignerUrl(): String = signerUrl.ifBlank { DEFAULT_SIGNER_URL }"
+          },
+          {
+            "line": 2778,
+            "snippet": "        /** 生效的 Token：公共服务的 Token 随 DEFAULT_SIGNER_URL 一起内置。 */"
+          }
+        ]
+      },
+      {
+        "path": "app/src/main/java/com/mytv/mymusic/data/native/SodaQrLogin.kt",
+        "sha256": "3373ea7c594fc0d200228f42f09f4ed45201c579cb7712790465a7f515141852",
+        "url": "https://github.com/mytv-android/myMusic/blob/96e08ba02b6a9999887ca4ae4c82a4f9312735fa/app/src/main/java/com/mytv/mymusic/data/native/SodaQrLogin.kt",
+        "lines": 499,
+        "relevant_locations": [
+          {
+            "line": 67,
+            "snippet": "    /** 创建二维码：`GET /passport/web/get_qrcode/`，返回原样 `qrcode_index_url`；token 写回 [session]。 */"
+          },
+          {
+            "line": 71,
+            "snippet": "            \"/passport/web/get_qrcode/\","
+          }
+        ]
+      },
+      {
+        "path": "app/src/test/java/com/mytv/mymusic/data/native/SodaWelfareTest.kt",
+        "sha256": "3677b8c1f529c3c006af8f6dad9e92342daaef7b9cd88792107307deb7b518d3",
+        "url": "https://github.com/mytv-android/myMusic/blob/96e08ba02b6a9999887ca4ae4c82a4f9312735fa/app/src/test/java/com/mytv/mymusic/data/native/SodaWelfareTest.kt",
+        "lines": 299,
+        "relevant_locations": []
+      }
+    ],
+    "scope": "Public source inspection only; no actual account/signer/media runtime validation"
+  },
+  {
+    "repository": "lladlam/MeloX-Android",
+    "commit": "305801a6ce2257d525ac97ecfbf5eeb6291ec667",
+    "selected_files": [
+      {
+        "path": "docs/QISHUI.md",
+        "sha256": "5bfb7ff6806a3c616642d35b47ef53c61ca13d84356d0b141ab4894123f039b7",
+        "url": "https://github.com/lladlam/MeloX-Android/blob/305801a6ce2257d525ac97ecfbf5eeb6291ec667/docs/QISHUI.md",
+        "lines": 43,
+        "relevant_locations": [
+          {
+            "line": 21,
+            "snippet": "- 账号：`/passport/web/get_qrcode/` 与 `/passport/web/check_qrconnect/`，随后用 `/luna/pc/me` 校验。"
+          }
+        ]
+      }
+    ],
+    "scope": "Public source inspection only; no actual account/signer/media runtime validation"
+  },
+  {
+    "repository": "sodahub-org/libresoda",
+    "commit": "5edd2ff3b825f0a16b1e281204822ee06842df9c",
+    "selected_files": [
+      {
+        "path": "README.md",
+        "sha256": "d593e44898a1d5615e8b9bebe63bbc1fa0170a3b362fb7049289e820417f80bb",
+        "url": "https://github.com/sodahub-org/libresoda/blob/5edd2ff3b825f0a16b1e281204822ee06842df9c/README.md",
+        "lines": 259,
+        "relevant_locations": [
+          {
+            "line": 141,
+            "snippet": "> **整曲（VIP）流的关键前提**：`/luna/pc/track_v2` 要求**逐请求**的应用级签名头"
+          }
+        ]
+      },
+      {
+        "path": "docs/QR-LOGIN.md",
+        "sha256": "44de6bfb88d1b1a58da6835b7cc244dd3df21c230f549a934cc28998ebb214d1",
+        "url": "https://github.com/sodahub-org/libresoda/blob/5edd2ff3b825f0a16b1e281204822ee06842df9c/docs/QR-LOGIN.md",
+        "lines": 230,
+        "relevant_locations": [
+          {
+            "line": 55,
+            "snippet": "| 创建 | `POST /passport/web/get_qrcode/`，带 JS-SDK 公共参数 + `x-tt-passport-verify-portrait` / `x-tt-passport-trace-id`，POST 带 `x-ss-stub = MD5(body)` 大写 |"
+          }
+        ]
+      },
+      {
+        "path": "src/soda/qr_login.rs",
+        "sha256": "1bfbc923f2ebd29aa4f8e5cb87904991b62b27ca672264a2c055f33161f26d12",
+        "url": "https://github.com/sodahub-org/libresoda/blob/5edd2ff3b825f0a16b1e281204822ee06842df9c/src/soda/qr_login.rs",
+        "lines": 1382,
+        "relevant_locations": [
+          {
+            "line": 644,
+            "snippet": "        \"/passport/web/get_qrcode/\","
+          }
+        ]
+      }
+    ],
+    "scope": "Public source inspection only; no actual account/signer/media runtime validation"
+  },
+  {
+    "repository": "1093791954/QishuiHelper",
+    "commit": "19f5a0b7c09df3150dd40d60b78071589df83c2f",
+    "selected_files": [
+      {
+        "path": "README.md",
+        "sha256": "59a7f126dbfd75bf10650c5543bd768d7571dc48e34632c17c7b8173515f5be3",
+        "url": "https://github.com/1093791954/QishuiHelper/blob/19f5a0b7c09df3150dd40d60b78071589df83c2f/README.md",
+        "lines": 141,
+        "relevant_locations": []
+      }
+    ],
+    "scope": "Public source inspection only; no actual account/signer/media runtime validation"
+  }
+]

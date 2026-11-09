@@ -1,0 +1,17 @@
+    private void logJSONRealTime(String str, JSONObject jSONObject) {
+        c0 c0Var;
+        p0.a(jSONObject);
+        p0.d(str, jSONObject);
+        if (needIgnoreLog(str)) {
+            return;
+        }
+        JSONObject jSONObject2 = new JSONObject();
+        jSONObject2.putAll(jSONObject);
+        if (realTimeEnable() && (c0Var = this.mRealTimeStub) != null) {
+            c0Var.logJSON(str, jSONObject);
+        }
+        c0 c0Var2 = this.mBIStub;
+        if (c0Var2 != null) {
+            c0Var2.logJSON(str, jSONObject2);
+        }
+    }

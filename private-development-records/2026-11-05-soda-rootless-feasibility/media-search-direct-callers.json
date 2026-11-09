@@ -1,0 +1,69 @@
+{
+  "scope": "Direct DEX invokes at decoded instruction boundaries; not runtime or reflection coverage",
+  "dex": [
+    {
+      "entry": "classes9.dex",
+      "sha256": "b92150c0f44f48cf8c0237944afe13445c5262d9089b017d672a03a45b92d90a",
+      "callers": [
+        {
+          "method": {
+            "method_index": 12059,
+            "owner": "Lcom/luna/common/arch/net/media/MediaRepo;",
+            "name": "Y",
+            "proto_index": 5213
+          },
+          "code_offset": 1993840,
+          "sites": [
+            {
+              "code_unit_offset": 187,
+              "opcode": "0x72",
+              "target": {
+                "method_index": 12043,
+                "owner": "Lcom/luna/common/arch/net/media/MediaApi;",
+                "name": "getMediaResponse",
+                "proto_index": 5129
+              },
+              "raw_units": [
+                8306,
+                12043,
+                108
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry": "classes8.dex",
+      "sha256": "d3a41ea69d5c03e8fb160d4c961ae64ccb22ab578581b493c022fb62d82ccf09",
+      "callers": [
+        {
+          "method": {
+            "method_index": 27436,
+            "owner": "Lcom/luna/biz/search/result/repo/ResultRepo;",
+            "name": "V",
+            "proto_index": 4727
+          },
+          "code_offset": 3868108,
+          "sites": [
+            {
+              "code_unit_offset": 172,
+              "opcode": "0x72",
+              "target": {
+                "method_index": 27116,
+                "owner": "Lcom/luna/biz/search/result/net/SearchResultApi;",
+                "name": "getSearchResponse",
+                "proto_index": 4822
+              },
+              "raw_units": [
+                12402,
+                27116,
+                3600
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

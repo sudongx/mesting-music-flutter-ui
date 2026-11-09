@@ -1,0 +1,37 @@
+    public final void d() {
+        Integer playTimes;
+        this.auditionSongList = new ArrayList();
+        this.trialSongList = new ArrayList();
+        List<PlayRecordEntity> listU8 = e.R7().u8(0, c(), 30, MediaGiftEvent.ENotifyCoverStart);
+        Intrinsics.checkNotNullExpressionValue(listU8, "getInstance()\n          …UNT_DEFAULT\n            )");
+        ArrayList arrayList = new ArrayList(CollectionsKt.collectionSizeOrDefault(listU8, 10));
+        for (PlayRecordEntity playRecordEntity : listU8) {
+            String extInfoJson = playRecordEntity != null ? playRecordEntity.getExtInfoJson() : null;
+            Long resourceId = playRecordEntity != null ? playRecordEntity.getResourceId() : null;
+            int iIntValue = (playRecordEntity == null || (playTimes = playRecordEntity.getPlayTimes()) == null) ? 0 : playTimes.intValue();
+            if (!(extInfoJson == null || extInfoJson.length() == 0) && resourceId != null) {
+                try {
+                    JSONObject jSONObject = new JSONObject(extInfoJson);
+                    if (!jSONObject.isNull("is_audition") && jSONObject.optInt("is_audition") == 2) {
+                        List<Pair<Long, Integer>> list = this.auditionSongList;
+                        if (list == null) {
+                            throw new NullPointerException("null cannot be cast to non-null type java.util.ArrayList<kotlin.Pair<kotlin.Long, kotlin.Int>>");
+                        }
+                        ((ArrayList) list).add(new Pair(resourceId, Integer.valueOf(iIntValue)));
+                    }
+                    if (e(jSONObject)) {
+                        List<Pair<Long, Integer>> list2 = this.trialSongList;
+                        if (list2 == null) {
+                            throw new NullPointerException("null cannot be cast to non-null type java.util.ArrayList<kotlin.Pair<kotlin.Long, kotlin.Int>>");
+                        }
+                        ((ArrayList) list2).add(new Pair(resourceId, Integer.valueOf(iIntValue)));
+                    } else {
+                        continue;
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+            arrayList.add(Unit.INSTANCE);
+        }
+    }

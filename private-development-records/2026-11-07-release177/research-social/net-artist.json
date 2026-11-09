@@ -1,0 +1,944 @@
+{
+  "class_def_index": 5432,
+  "descriptor": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+  "access_flags": 1,
+  "super": "Ljava/lang/Object;",
+  "interfaces": [
+    "Lcom/luna/common/tea/json/KeepElement;"
+  ],
+  "class_data_offset": 10861982,
+  "static_values_offset": 0,
+  "fields": [
+    {
+      "dex_field_index": 11309,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "artistProfile",
+      "type": "Lcom/luna/common/arch/net/entity/artist/NetArtistProfile;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837382,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/Nullable;",
+          "elements": {}
+        }
+      ]
+    },
+    {
+      "dex_field_index": 11313,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "fromFeed",
+      "type": "Ljava/lang/Boolean;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837382,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/Nullable;",
+          "elements": {}
+        }
+      ]
+    },
+    {
+      "dex_field_index": 11314,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "fullDisplayName",
+      "type": "Ljava/lang/String;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837174,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/NotNull;",
+          "elements": {}
+        }
+      ]
+    },
+    {
+      "dex_field_index": 11315,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "id",
+      "type": "Ljava/lang/String;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837174,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/NotNull;",
+          "elements": {}
+        }
+      ]
+    },
+    {
+      "dex_field_index": 11316,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "name",
+      "type": "Ljava/lang/String;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837174,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/NotNull;",
+          "elements": {}
+        }
+      ]
+    },
+    {
+      "dex_field_index": 11318,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "searchExplainInfo",
+      "type": "Ljava/lang/String;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837382,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/Nullable;",
+          "elements": {}
+        }
+      ]
+    },
+    {
+      "dex_field_index": 11319,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "simpleDisplayName",
+      "type": "Ljava/lang/String;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837174,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/NotNull;",
+          "elements": {}
+        }
+      ]
+    },
+    {
+      "dex_field_index": 11320,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "state",
+      "type": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837382,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/Nullable;",
+          "elements": {}
+        }
+      ]
+    },
+    {
+      "dex_field_index": 11321,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "stats",
+      "type": "Lcom/luna/common/arch/net/entity/artist/NetArtistStats;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837174,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/NotNull;",
+          "elements": {}
+        }
+      ]
+    },
+    {
+      "dex_field_index": 11322,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "urlAvatar",
+      "type": "Lcom/luna/common/arch/net/entity/UrlInfo;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837174,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/NotNull;",
+          "elements": {}
+        }
+      ]
+    },
+    {
+      "dex_field_index": 11323,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "userInfo",
+      "type": "Lcom/luna/common/arch/net/entity/user/UserBrief;",
+      "annotations": [
+        {
+          "annotation_item_offset": 10232386,
+          "visibility": 1,
+          "type": "Lcom/google/gson/annotations/SerializedName;",
+          "elements": {
+            "value": "user"
+          }
+        },
+        {
+          "annotation_item_offset": 9837382,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/Nullable;",
+          "elements": {}
+        }
+      ]
+    }
+  ],
+  "methods": [
+    {
+      "dex_method_index": 23997,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getArtistProfile",
+      "descriptor": "()Lcom/luna/common/arch/net/entity/artist/NetArtistProfile;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837382,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/Nullable;",
+          "elements": {}
+        }
+      ]
+    },
+    {
+      "dex_method_index": 24000,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getFromFeed",
+      "descriptor": "()Ljava/lang/Boolean;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837382,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/Nullable;",
+          "elements": {}
+        }
+      ]
+    },
+    {
+      "dex_method_index": 24001,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getFullDisplayName",
+      "descriptor": "()Ljava/lang/String;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837174,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/NotNull;",
+          "elements": {}
+        }
+      ]
+    },
+    {
+      "dex_method_index": 24002,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getId",
+      "descriptor": "()Ljava/lang/String;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837174,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/NotNull;",
+          "elements": {}
+        }
+      ]
+    },
+    {
+      "dex_method_index": 24003,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getName",
+      "descriptor": "()Ljava/lang/String;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837174,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/NotNull;",
+          "elements": {}
+        }
+      ]
+    },
+    {
+      "dex_method_index": 24004,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getSearchExplainInfo",
+      "descriptor": "()Ljava/lang/String;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837382,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/Nullable;",
+          "elements": {}
+        }
+      ]
+    },
+    {
+      "dex_method_index": 24005,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getSimpleDisplayName",
+      "descriptor": "()Ljava/lang/String;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837174,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/NotNull;",
+          "elements": {}
+        }
+      ]
+    },
+    {
+      "dex_method_index": 24006,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getState",
+      "descriptor": "()Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837382,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/Nullable;",
+          "elements": {}
+        }
+      ]
+    },
+    {
+      "dex_method_index": 24007,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getStats",
+      "descriptor": "()Lcom/luna/common/arch/net/entity/artist/NetArtistStats;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837174,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/NotNull;",
+          "elements": {}
+        }
+      ]
+    },
+    {
+      "dex_method_index": 24008,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getUrlAvatar",
+      "descriptor": "()Lcom/luna/common/arch/net/entity/UrlInfo;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837174,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/NotNull;",
+          "elements": {}
+        }
+      ]
+    },
+    {
+      "dex_method_index": 24009,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getUserInfo",
+      "descriptor": "()Lcom/luna/common/arch/net/entity/user/UserBrief;",
+      "annotations": [
+        {
+          "annotation_item_offset": 9837382,
+          "visibility": 0,
+          "type": "Lorg/jetbrains/annotations/Nullable;",
+          "elements": {}
+        }
+      ]
+    }
+  ],
+  "declared_fields": [
+    {
+      "dex_field_index": 11310,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "changeQuickRedirect",
+      "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+      "access_flags": 9
+    },
+    {
+      "dex_field_index": 11309,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "artistProfile",
+      "type": "Lcom/luna/common/arch/net/entity/artist/NetArtistProfile;",
+      "access_flags": 1
+    },
+    {
+      "dex_field_index": 11311,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "countAlbums",
+      "type": "I",
+      "access_flags": 1
+    },
+    {
+      "dex_field_index": 11312,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "countTracks",
+      "type": "I",
+      "access_flags": 1
+    },
+    {
+      "dex_field_index": 11313,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "fromFeed",
+      "type": "Ljava/lang/Boolean;",
+      "access_flags": 1
+    },
+    {
+      "dex_field_index": 11314,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "fullDisplayName",
+      "type": "Ljava/lang/String;",
+      "access_flags": 1
+    },
+    {
+      "dex_field_index": 11315,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "id",
+      "type": "Ljava/lang/String;",
+      "access_flags": 1
+    },
+    {
+      "dex_field_index": 11316,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "name",
+      "type": "Ljava/lang/String;",
+      "access_flags": 1
+    },
+    {
+      "dex_field_index": 11317,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "robustFieldMap",
+      "type": "Ljava/lang/Object;",
+      "access_flags": 193
+    },
+    {
+      "dex_field_index": 11318,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "searchExplainInfo",
+      "type": "Ljava/lang/String;",
+      "access_flags": 1
+    },
+    {
+      "dex_field_index": 11319,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "simpleDisplayName",
+      "type": "Ljava/lang/String;",
+      "access_flags": 1
+    },
+    {
+      "dex_field_index": 11320,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "state",
+      "type": "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+      "access_flags": 1
+    },
+    {
+      "dex_field_index": 11321,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "stats",
+      "type": "Lcom/luna/common/arch/net/entity/artist/NetArtistStats;",
+      "access_flags": 1
+    },
+    {
+      "dex_field_index": 11322,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "urlAvatar",
+      "type": "Lcom/luna/common/arch/net/entity/UrlInfo;",
+      "access_flags": 1
+    },
+    {
+      "dex_field_index": 11323,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "userInfo",
+      "type": "Lcom/luna/common/arch/net/entity/user/UserBrief;",
+      "access_flags": 1
+    }
+  ],
+  "declared_methods": [
+    {
+      "dex_method_index": 23996,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "<init>",
+      "descriptor": "()V",
+      "access_flags": 65537,
+      "code_item_offset": 3114348
+    },
+    {
+      "dex_method_index": 23997,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getArtistProfile",
+      "descriptor": "()Lcom/luna/common/arch/net/entity/artist/NetArtistProfile;",
+      "access_flags": 17,
+      "code_item_offset": 3114060
+    },
+    {
+      "dex_method_index": 23998,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getCountAlbums",
+      "descriptor": "()I",
+      "access_flags": 17,
+      "code_item_offset": 3114156
+    },
+    {
+      "dex_method_index": 23999,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getCountTracks",
+      "descriptor": "()I",
+      "access_flags": 17,
+      "code_item_offset": 3114180
+    },
+    {
+      "dex_method_index": 24000,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getFromFeed",
+      "descriptor": "()Ljava/lang/Boolean;",
+      "access_flags": 17,
+      "code_item_offset": 3114204
+    },
+    {
+      "dex_method_index": 24001,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getFullDisplayName",
+      "descriptor": "()Ljava/lang/String;",
+      "access_flags": 17,
+      "code_item_offset": 3114228
+    },
+    {
+      "dex_method_index": 24002,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getId",
+      "descriptor": "()Ljava/lang/String;",
+      "access_flags": 17,
+      "code_item_offset": 3114252
+    },
+    {
+      "dex_method_index": 24003,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getName",
+      "descriptor": "()Ljava/lang/String;",
+      "access_flags": 17,
+      "code_item_offset": 3114276
+    },
+    {
+      "dex_method_index": 24004,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getSearchExplainInfo",
+      "descriptor": "()Ljava/lang/String;",
+      "access_flags": 17,
+      "code_item_offset": 3114300
+    },
+    {
+      "dex_method_index": 24005,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getSimpleDisplayName",
+      "descriptor": "()Ljava/lang/String;",
+      "access_flags": 17,
+      "code_item_offset": 3114324
+    },
+    {
+      "dex_method_index": 24006,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getState",
+      "descriptor": "()Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+      "access_flags": 17,
+      "code_item_offset": 3114108
+    },
+    {
+      "dex_method_index": 24007,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getStats",
+      "descriptor": "()Lcom/luna/common/arch/net/entity/artist/NetArtistStats;",
+      "access_flags": 17,
+      "code_item_offset": 3114084
+    },
+    {
+      "dex_method_index": 24008,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getUrlAvatar",
+      "descriptor": "()Lcom/luna/common/arch/net/entity/UrlInfo;",
+      "access_flags": 17,
+      "code_item_offset": 3114036
+    },
+    {
+      "dex_method_index": 24009,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "getUserInfo",
+      "descriptor": "()Lcom/luna/common/arch/net/entity/user/UserBrief;",
+      "access_flags": 17,
+      "code_item_offset": 3114132
+    },
+    {
+      "dex_method_index": 24010,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setArtistProfile",
+      "descriptor": "(Lcom/luna/common/arch/net/entity/artist/NetArtistProfile;)V",
+      "access_flags": 17,
+      "code_item_offset": 3114456
+    },
+    {
+      "dex_method_index": 24011,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setCountAlbums",
+      "descriptor": "(I)V",
+      "access_flags": 17,
+      "code_item_offset": 3114480
+    },
+    {
+      "dex_method_index": 24012,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setCountTracks",
+      "descriptor": "(I)V",
+      "access_flags": 17,
+      "code_item_offset": 3114504
+    },
+    {
+      "dex_method_index": 24013,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setFromFeed",
+      "descriptor": "(Ljava/lang/Boolean;)V",
+      "access_flags": 17,
+      "code_item_offset": 3114528
+    },
+    {
+      "dex_method_index": 24014,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setFullDisplayName",
+      "descriptor": "(Ljava/lang/String;)V",
+      "access_flags": 17,
+      "code_item_offset": 3114552
+    },
+    {
+      "dex_method_index": 24015,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setId",
+      "descriptor": "(Ljava/lang/String;)V",
+      "access_flags": 17,
+      "code_item_offset": 3114608
+    },
+    {
+      "dex_method_index": 24016,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setName",
+      "descriptor": "(Ljava/lang/String;)V",
+      "access_flags": 17,
+      "code_item_offset": 3114664
+    },
+    {
+      "dex_method_index": 24017,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setSearchExplainInfo",
+      "descriptor": "(Ljava/lang/String;)V",
+      "access_flags": 17,
+      "code_item_offset": 3114720
+    },
+    {
+      "dex_method_index": 24018,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setSimpleDisplayName",
+      "descriptor": "(Ljava/lang/String;)V",
+      "access_flags": 17,
+      "code_item_offset": 3114744
+    },
+    {
+      "dex_method_index": 24019,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setState",
+      "descriptor": "(Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;)V",
+      "access_flags": 17,
+      "code_item_offset": 3114800
+    },
+    {
+      "dex_method_index": 24020,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setStats",
+      "descriptor": "(Lcom/luna/common/arch/net/entity/artist/NetArtistStats;)V",
+      "access_flags": 17,
+      "code_item_offset": 3114824
+    },
+    {
+      "dex_method_index": 24021,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setUrlAvatar",
+      "descriptor": "(Lcom/luna/common/arch/net/entity/UrlInfo;)V",
+      "access_flags": 17,
+      "code_item_offset": 3114880
+    },
+    {
+      "dex_method_index": 24022,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setUserInfo",
+      "descriptor": "(Lcom/luna/common/arch/net/entity/user/UserBrief;)V",
+      "access_flags": 17,
+      "code_item_offset": 3114936
+    }
+  ],
+  "annotations": [
+    {
+      "annotation_item_offset": 10264819,
+      "visibility": 1,
+      "type": "Lkotlin/Metadata;",
+      "elements": {
+        "d1": [
+          "��L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\b\n\u0002\u0010\b\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u000e\u0018��2\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003R\u001a\u0010\u0004\u001a\u00020\u0005X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0006\u0010\u0007\"\u0004\b\b\u0010\tR\u001a\u0010\n\u001a\u00020\u0005X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u000b\u0010\u0007\"\u0004\b\f\u0010\tR\u001a\u0010\r\u001a\u00020\u000eX\u000e¢\u0006\u000e\n��\u001a\u0004\b\u000f\u0010\u0010\"\u0004\b\u0011\u0010\u0012R\u001a\u0010\u0013\u001a\u00020\u000eX\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0014\u0010\u0010\"\u0004\b\u0015\u0010\u0012R\u001a\u0010\u0016\u001a\u00020\u0017X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0018\u0010\u0019\"\u0004\b\u001a\u0010\u001bR\u001c\u0010\u001c\u001a\u0004\u0018\u00010\u001dX\u000e¢\u0006\u000e\n��\u001a\u0004\b\u001e\u0010\u001f\"\u0004\b \u0010!R\u001a\u0010\"\u001a\u00020#X\u000e¢\u0006\u000e\n��\u001a\u0004\b$\u0010%\"\u0004\b&\u0010'R\u001c\u0010(\u001a\u0004\u0018\u00010)X\u000e¢\u0006\u000e\n��\u001a\u0004\b*\u0010+\"\u0004\b,\u0010-R\u001e\u0010.\u001a\u0004\u0018\u00010/X\u000e¢\u0006\u0010\n\u0002\u00104\u001a\u0004\b0\u00101\"\u0004\b2\u00103R \u00105\u001a\u0004\u0018\u0001068\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b7\u00108\"\u0004\b9\u0010:R\u001c\u0010;\u001a\u0004\u0018\u00010\u0005X\u000e¢\u0006\u000e\n��\u001a\u0004\b<\u0010\u0007\"\u0004\b=\u0010\tR\u001a\u0010>\u001a\u00020\u0005X\u000e¢\u0006\u000e\n��\u001a\u0004\b?\u0010\u0007\"\u0004\b@\u0010\tR\u001a\u0010A\u001a\u00020\u0005X\u000e¢\u0006\u000e\n��\u001a\u0004\bB\u0010\u0007\"\u0004\bC\u0010\t¨\u0006D"
+        ],
+        "d2": [
+          "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+          "Lcom/luna/common/tea/json/KeepElement;",
+          "<init>",
+          "()V",
+          "id",
+          "",
+          "getId",
+          "()Ljava/lang/String;",
+          "setId",
+          "(Ljava/lang/String;)V",
+          "name",
+          "getName",
+          "setName",
+          "countAlbums",
+          "",
+          "getCountAlbums",
+          "()I",
+          "setCountAlbums",
+          "(I)V",
+          "countTracks",
+          "getCountTracks",
+          "setCountTracks",
+          "stats",
+          "Lcom/luna/common/arch/net/entity/artist/NetArtistStats;",
+          "getStats",
+          "()Lcom/luna/common/arch/net/entity/artist/NetArtistStats;",
+          "setStats",
+          "(Lcom/luna/common/arch/net/entity/artist/NetArtistStats;)V",
+          "state",
+          "Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+          "getState",
+          "()Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;",
+          "setState",
+          "(Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;)V",
+          "urlAvatar",
+          "Lcom/luna/common/arch/net/entity/UrlInfo;",
+          "getUrlAvatar",
+          "()Lcom/luna/common/arch/net/entity/UrlInfo;",
+          "setUrlAvatar",
+          "(Lcom/luna/common/arch/net/entity/UrlInfo;)V",
+          "artistProfile",
+          "Lcom/luna/common/arch/net/entity/artist/NetArtistProfile;",
+          "getArtistProfile",
+          "()Lcom/luna/common/arch/net/entity/artist/NetArtistProfile;",
+          "setArtistProfile",
+          "(Lcom/luna/common/arch/net/entity/artist/NetArtistProfile;)V",
+          "fromFeed",
+          "",
+          "getFromFeed",
+          "()Ljava/lang/Boolean;",
+          "setFromFeed",
+          "(Ljava/lang/Boolean;)V",
+          "Ljava/lang/Boolean;",
+          "userInfo",
+          "Lcom/luna/common/arch/net/entity/user/UserBrief;",
+          "getUserInfo",
+          "()Lcom/luna/common/arch/net/entity/user/UserBrief;",
+          "setUserInfo",
+          "(Lcom/luna/common/arch/net/entity/user/UserBrief;)V",
+          "searchExplainInfo",
+          "getSearchExplainInfo",
+          "setSearchExplainInfo",
+          "simpleDisplayName",
+          "getSimpleDisplayName",
+          "setSimpleDisplayName",
+          "fullDisplayName",
+          "getFullDisplayName",
+          "setFullDisplayName",
+          "common-arch_release"
+        ],
+        "k": {
+          "encoded_kind": 4,
+          "bytes_le_hex": "01",
+          "unsigned_value": 1
+        },
+        "mv": [
+          {
+            "encoded_kind": 4,
+            "bytes_le_hex": "02",
+            "unsigned_value": 2
+          },
+          {
+            "encoded_kind": 4,
+            "bytes_le_hex": "00",
+            "unsigned_value": 0
+          },
+          {
+            "encoded_kind": 4,
+            "bytes_le_hex": "00",
+            "unsigned_value": 0
+          }
+        ],
+        "xi": {
+          "encoded_kind": 4,
+          "bytes_le_hex": "30",
+          "unsigned_value": 48
+        }
+      }
+    }
+  ],
+  "parameter_annotations": [
+    {
+      "dex_method_index": 24010,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setArtistProfile",
+      "descriptor": "(Lcom/luna/common/arch/net/entity/artist/NetArtistProfile;)V",
+      "parameters": [
+        [
+          {
+            "annotation_item_offset": 9837382,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      ]
+    },
+    {
+      "dex_method_index": 24013,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setFromFeed",
+      "descriptor": "(Ljava/lang/Boolean;)V",
+      "parameters": [
+        [
+          {
+            "annotation_item_offset": 9837382,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      ]
+    },
+    {
+      "dex_method_index": 24014,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setFullDisplayName",
+      "descriptor": "(Ljava/lang/String;)V",
+      "parameters": [
+        [
+          {
+            "annotation_item_offset": 9837174,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      ]
+    },
+    {
+      "dex_method_index": 24015,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setId",
+      "descriptor": "(Ljava/lang/String;)V",
+      "parameters": [
+        [
+          {
+            "annotation_item_offset": 9837174,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      ]
+    },
+    {
+      "dex_method_index": 24016,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setName",
+      "descriptor": "(Ljava/lang/String;)V",
+      "parameters": [
+        [
+          {
+            "annotation_item_offset": 9837174,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      ]
+    },
+    {
+      "dex_method_index": 24017,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setSearchExplainInfo",
+      "descriptor": "(Ljava/lang/String;)V",
+      "parameters": [
+        [
+          {
+            "annotation_item_offset": 9837382,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      ]
+    },
+    {
+      "dex_method_index": 24018,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setSimpleDisplayName",
+      "descriptor": "(Ljava/lang/String;)V",
+      "parameters": [
+        [
+          {
+            "annotation_item_offset": 9837174,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      ]
+    },
+    {
+      "dex_method_index": 24019,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setState",
+      "descriptor": "(Lcom/luna/common/arch/net/entity/artist/NetMyArtistState;)V",
+      "parameters": [
+        [
+          {
+            "annotation_item_offset": 9837382,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      ]
+    },
+    {
+      "dex_method_index": 24020,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setStats",
+      "descriptor": "(Lcom/luna/common/arch/net/entity/artist/NetArtistStats;)V",
+      "parameters": [
+        [
+          {
+            "annotation_item_offset": 9837174,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      ]
+    },
+    {
+      "dex_method_index": 24021,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setUrlAvatar",
+      "descriptor": "(Lcom/luna/common/arch/net/entity/UrlInfo;)V",
+      "parameters": [
+        [
+          {
+            "annotation_item_offset": 9837174,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/NotNull;",
+            "elements": {}
+          }
+        ]
+      ]
+    },
+    {
+      "dex_method_index": 24022,
+      "owner": "Lcom/luna/common/arch/net/entity/artist/NetArtist;",
+      "name": "setUserInfo",
+      "descriptor": "(Lcom/luna/common/arch/net/entity/user/UserBrief;)V",
+      "parameters": [
+        [
+          {
+            "annotation_item_offset": 9837382,
+            "visibility": 0,
+            "type": "Lorg/jetbrains/annotations/Nullable;",
+            "elements": {}
+          }
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+    private h0 G() {
+        ILoggerService iLoggerService = (ILoggerService) ServiceFacade.get(ILoggerService.class);
+        if (iLoggerService == null) {
+            throw new IllegalStateException("No Logger Service is initialized.");
+        }
+        s.b bVarE = new s.b().v(t("cache")).A(t("flush")).B(t("migrate")).I(this.f.b).K(this.f.c).w(2097152L).L(this.f.e).t(this.f.f).C(this.f.g).D(this.f.h).y(this.f.i).z(this.f.d).J(this.f.j).M(this.f.k).G(this.f.l).E(this.f.m);
+        this.f.getClass();
+        return iLoggerService.newLogger(bVarE.H(null).F(this.f.s).x(new c()).u());
+    }

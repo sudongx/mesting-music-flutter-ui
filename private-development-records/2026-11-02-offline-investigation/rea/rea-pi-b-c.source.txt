@@ -1,0 +1,28 @@
+{
+  "engine": {
+    "name": "jadx-headless-mcp",
+    "version": "0.7.1",
+    "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+    "worker_count": 1,
+    "heap_limit_mib": 3072
+  },
+  "class_name": "pi.b",
+  "method": {
+    "name": "c",
+    "reported_signature": "c(byte[], java.lang.String): boolean",
+    "overload_index": 0,
+    "is_constructor": false,
+    "dex_descriptor": null
+  },
+  "overload_count": 1,
+  "representation": "java",
+  "body_status": "available",
+  "fell_back": false,
+  "markers": [],
+  "source": {
+    "status": "complete",
+    "text": "    @Override // com.netease.cloudmusic.core.statistic.e0.b\r\n    public boolean c(byte[] bArr, String str) {\r\n        INetworkService iNetworkService = (INetworkService) ServiceFacade.get(INetworkService.class);\r\n        if (iNetworkService == null) {\r\n            return false;\r\n        }\r\n        return iNetworkService.uploadStatisticLog(o42.e.f(this.d, new String[]{\"oc\", URLEncoder.encode(str)}), bArr);\r\n    }",
+    "reported_total_bytes": null
+  }
+}

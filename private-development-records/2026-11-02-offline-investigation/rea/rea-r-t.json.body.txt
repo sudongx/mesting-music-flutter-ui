@@ -1,0 +1,14 @@
+    private void t(List<String> list, Map<String, Boolean> map, long j) {
+        if (list.size() <= 2) {
+            return;
+        }
+        Iterator<String> it = list.iterator();
+        while (it.hasNext()) {
+            String next = it.next();
+            if (p0.h(next, j)) {
+                it.remove();
+                map.put(next, Boolean.TRUE);
+                bz.a.f("StatisticUtils[" + this.h + "]", "filterExpiredFiles file=" + next);
+            }
+        }
+    }

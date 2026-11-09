@@ -1,0 +1,144 @@
+ M AGENTS.md
+ M DESIGN.md
+ M HANDOFF-CURRENT-SESSION-2026-10-28-v1.0.5.md
+ M PRODUCT.md
+ M android/app/src/main/AndroidManifest.xml
+ M android/app/src/main/kotlin/com/mesting/mesting_music/MainActivity.kt
+ M docs/CONTINUE-BETA.md
+ M docs/RELEASE-UPDATE-GUIDE.md
+ M lib/app/mesting_music_app.dart
+ M lib/app/router/app_router.dart
+ M lib/core/audio/mesting_audio_handler.dart
+ M lib/core/audio/playback_mode.dart
+ M lib/core/database/app_database.dart
+ M lib/core/database/app_database.g.dart
+ M lib/core/performance/frame_timing_probe.dart
+ M lib/core/persistence/playback_persistence_controller.dart
+ M lib/features/app_update/data/app_update_release_source.dart
+ M lib/features/app_update/domain/release_history.dart
+ M lib/features/auth/presentation/beta_onboarding_page.dart
+ M lib/features/experience/presentation/beta_bottom_bar.dart
+ M lib/features/experience/presentation/beta_music_shell.dart
+ M lib/features/experience/presentation/beta_now_playing_page.dart
+ M lib/features/experience/presentation/editorial_widgets.dart
+ M lib/features/experience/presentation/floating_playback_pill.dart
+ M lib/features/experience/presentation/music_landing_page.dart
+ M lib/features/experience/presentation/playback_pill_menu.dart
+ M lib/features/experience/presentation/player_more_menu.dart
+ M lib/features/legal/domain/legal_documents.dart
+ M lib/features/library/presentation/music_home_page.dart
+ M lib/features/music_platform/data/music_platform_api.dart
+ M lib/features/music_platform/data/platform_explore.dart
+ M lib/features/music_platform/presentation/music_effects_page.dart
+ M lib/features/music_platform/presentation/platform_recommendations_page.dart
+ M lib/features/music_platform/presentation/platform_reward_calendar.dart
+ M lib/features/music_platform/presentation/platform_search_landing.dart
+ M lib/features/player/presentation/music_shell.dart
+ M lib/features/queue/presentation/beta_playback_queue.dart
+ M lib/features/search/presentation/music_search_page.dart
+ M lib/features/settings/presentation/settings_page.dart
+ M lib/shared/widgets/automatic_song_paging.dart
+ M lib/shared/widgets/beta_glass_action.dart
+ M lib/shared/widgets/beta_glass_controls.dart
+ M lib/shared/widgets/beta_glass_popover.dart
+ M lib/shared/widgets/beta_page_motion.dart
+ M pubspec.lock
+ M pubspec.yaml
+ M test/beta10_entry_test.dart
+ M test/beta17_player_ui_test.dart
+ M test/beta5_ui_test.dart
+ M third_party/liquid_glass_widgets/MESTING_PATCHES.md
+ M third_party/liquid_glass_widgets/package/lib/src/engine/glass_drag_builder.dart
+ M third_party/liquid_glass_widgets/package/lib/src/engine/liquid_glass_layer.dart
+ M third_party/liquid_glass_widgets/package/lib/src/engine/rendering/liquid_glass_render_object.dart
+ M third_party/liquid_glass_widgets/package/lib/src/engine/stretch.dart
+ M third_party/liquid_glass_widgets/package/lib/src/renderer/glass_backdrop_group.dart
+ M third_party/liquid_glass_widgets/package/lib/src/renderer/glass_backdrop_group_boundary.dart
+ M third_party/liquid_glass_widgets/package/lib/src/widgets/surfaces/tab_bar_searchable_internal.dart
+ M third_party/liquid_glass_widgets/package/lib/src/widgets/surfaces/tab_bar_searchable_layout.dart
+ M third_party/liquid_glass_widgets/package/lib/widgets/interactive/glass_button.dart
+ M third_party/liquid_glass_widgets/package/lib/widgets/interactive/liquid_glass_scope.dart
+ M third_party/liquid_glass_widgets/package/lib/widgets/shared/glass_effect.dart
+ M third_party/liquid_glass_widgets/package/shaders/liquid_glass_render.frag
+ M tool/build_android_md3_beta_apk.ps1
+ M tool/build_android_release_apk.ps1
+?? HANDOFF-CURRENT-SESSION-2026-10-28-LOCAL-CLEANUP.md
+?? HANDOFF-CURRENT-SESSION-2026-10-28-UI-SCENE-SYNC.md
+?? HANDOFF-CURRENT-SESSION-2026-10-28-v1.0.10.md
+?? HANDOFF-CURRENT-SESSION-2026-10-28-v1.0.6.md
+?? HANDOFF-CURRENT-SESSION-2026-10-28-v1.0.7.md
+?? HANDOFF-CURRENT-SESSION-2026-10-28-v1.0.8.md
+?? HANDOFF-CURRENT-SESSION-2026-10-28-v1.0.9.md
+?? android/app/src/main/kotlin/com/mesting/mesting_music/LocalMusicBridge.kt
+?? assets/data/release-notes.json
+?? docs/BETA-CONTROL-CONVENTIONS.md
+?? docs/SESSION-HANDOFF-2026-10-28-v1.0.10.md
+?? docs/SESSION-HANDOFF-2026-10-28-v1.0.6.md
+?? docs/SESSION-HANDOFF-2026-10-28-v1.0.7.md
+?? docs/SESSION-HANDOFF-2026-10-28-v1.0.8.md
+?? docs/SESSION-HANDOFF-2026-10-28-v1.0.9.md
+?? docs/fixes-2026-10-28-search-menu-fm.md
+?? docs/fixes-2026-10-28-ui-scene-sync.md
+?? docs/fixes-2026-10-28-v1.0.10.md
+?? docs/fixes-2026-10-28-v1.0.6.md
+?? docs/fixes-2026-10-28-v1.0.7.md
+?? docs/fixes-2026-10-28-v1.0.8.md
+?? docs/fixes-2026-10-28-v1.0.9.md
+?? docs/kugou-listening-sync-investigation-2026-10-28.md
+?? lib/core/audio/actual_listening_counter.dart
+?? lib/features/app_update/data/public_apk_release_notes.dart
+?? lib/features/audiobooks/audiobook_models.dart
+?? lib/features/audiobooks/audiobook_playback.dart
+?? lib/features/audiobooks/audiobook_repository.dart
+?? lib/features/audiobooks/audiobook_resume.dart
+?? lib/features/audiobooks/audiobooks_page.dart
+?? lib/features/experience/presentation/music_functions_page.dart
+?? lib/features/experience/presentation/playback_pill_track_motion.dart
+?? lib/features/experience/presentation/player_glass_button.dart
+?? lib/features/kugou_together/together_controller.dart
+?? lib/features/kugou_together/together_models.dart
+?? lib/features/kugou_together/together_page.dart
+?? lib/features/kugou_together/together_repository.dart
+?? lib/features/local_music/data/local_music_repository.dart
+?? lib/features/local_music/domain/local_music.dart
+?? lib/features/local_music/local_music_providers.dart
+?? lib/features/local_music/presentation/local_music_page.dart
+?? lib/features/music_platform/listening_sync/listening_clock.dart
+?? lib/features/music_platform/listening_sync/listening_sync_coordinator.dart
+?? lib/features/music_platform/listening_sync/listening_sync_models.dart
+?? lib/features/music_platform/listening_sync/listening_sync_providers.dart
+?? lib/features/music_platform/listening_sync/listening_sync_repository.dart
+?? lib/features/music_platform/listening_sync/listening_sync_store.dart
+?? lib/features/music_platform/listening_sync/listening_sync_worker.dart
+?? lib/features/music_platform/listening_sync_page.dart
+?? lib/features/recognition/recognition_repository.dart
+?? lib/features/recognition/song_recognition_page.dart
+?? lib/features/settings/presentation/frame_diagnostics_page.dart
+?? lib/shared/widgets/beta_bottom_search.dart
+?? lib/shared/widgets/beta_glass_menu_item.dart
+?? lib/shared/widgets/quiet_pull_to_refresh.dart
+?? release/Mesting-Music-v1.0.10-SHA256.txt
+?? release/Mesting-Music-v1.0.6-SHA256.txt
+?? release/Mesting-Music-v1.0.7-SHA256.txt
+?? release/Mesting-Music-v1.0.8-SHA256.txt
+?? release/Mesting-Music-v1.0.9-SHA256.txt
+?? test/followup_controls_regression_test.dart
+?? test/release_106_menu_geometry_test.dart
+?? test/release_106_motion_budget_test.dart
+?? test/release_106_ui_test.dart
+?? test/release_106_update_notes_test.dart
+?? test/release_107_book_together_test.dart
+?? test/release_107_listening_sync_test.dart
+?? test/release_107_local_music_test.dart
+?? test/release_107_pcm_and_capture_test.dart
+?? test/release_107_ui_test.dart
+?? test/release_108_diagnostics_ui_test.dart
+?? test/release_108_render_test.dart
+?? test/release_108_shader_test.dart
+?? test/scene_catalog_contract_test.dart
+?? test/search_menu_fm_regression_test.dart
+?? test/support/glass_bilinear_107.glsl
+?? test/support/release_notes_apk_fixture.md
+?? test/support/release_notes_apk_fixture.zip
+?? third_party/liquid_glass_widgets/package/lib/glass_render_diagnostics.dart
+?? third_party/liquid_glass_widgets/package/lib/src/renderer/glass_backdrop_peer.dart

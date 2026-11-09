@@ -1,0 +1,110 @@
+00:00 +0: loading D:/AnLi/test/qishui_root_layout167_test.dart
+00:00 +0: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: only Soda music root replaces the accessory with its own player
+00:00 +1: feed dropdown retries, scrolls and marks the server selection
+
+Warning: A call to tap() with finder "Found 1 widget with text "模式 13": [
+  Text("模式 13", dependencies: [DefaultSelectionStyle, DefaultTextStyle, MediaQuery, _ScrollableScope]),
+]" derived an Offset (Offset(224.0, 522.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+The finder corresponds to this RenderBox: RenderParagraph#06ee8 relayoutBoundary=up29
+The hit test result at that offset is: HitTestResult(_RenderColoredBox#80cba@Offset(224.0, 522.0), RenderConstrainedBox#4b1e4@Offset(224.0, 522.0), RenderMouseRegion#794a0@Offset(224.0, 522.0), RenderSemanticsAnnotations#42f14@Offset(224.0, 522.0), RenderPointerListener#06eb5@Offset(224.0, 522.0), RenderSemanticsGestureHandler#f2cc9@Offset(224.0, 522.0), RenderExcludeSemantics#a75b5@Offset(224.0, 522.0), RenderBlockSemantics#cce2f@Offset(224.0, 522.0), RenderIgnorePointer#992b1@Offset(224.0, 522.0), RenderSemanticsAnnotations#6fba5@Offset(224.0, 522.0), _RenderTheater#4658e@Offset(224.0, 522.0), RenderAbsorbPointer#e4df6@Offset(224.0, 522.0), RenderPointerListener#d4f06@Offset(224.0, 522.0), RenderSemanticsAnnotations#e43ca@Offset(224.0, 522.0), RenderRepaintBoundary#4fee6@Offset(224.0, 522.0), RenderCustomPaint#99535@Offset(224.0, 522.0), RenderSemanticsAnnotations#c953b@Offset(224.0, 522.0), RenderSemanticsAnnotations#2b1a1@Offset(224.0, 522.0), RenderSemanticsAnnotations#3deb5@Offset(224.0, 522.0), RenderTapRegionSurface#b2a20@Offset(224.0, 522.0), RenderSemanticsAnnotations#e11cc@Offset(224.0, 522.0), RenderSemanticsAnnotations#b81aa@Offset(224.0, 522.0), HitTestEntry<HitTestTarget>#aeeb5(_ReusableRenderView#2b346), HitTestEntry<HitTestTarget>#0f8e2(<AutomatedTestWidgetsFlutterBinding>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2158:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1942:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1075:7)
+#3      main.<anonymous closure> (file:///D:/AnLi/test/qishui_root_layout167_test.dart:157:18)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: 'mode-13'
+  Actual: <null>
+   Which: not an <Instance of 'String'>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/qishui_root_layout167_test.dart:159:5)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/qishui_root_layout167_test.dart line 159
+The test description was:
+  feed dropdown retries, scrolls and marks the server selection
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:01 +1 -1: feed dropdown retries, scrolls and marks the server selection [E]
+  Test failed. See exception logs above.
+  The test description was: feed dropdown retries, scrolls and marks the server selection
+  
+00:01 +1 -1: a dismissed old account dropdown cannot choose a mode
+00:01 +2 -1: Mine official hierarchy fits 390.0 at 1.0
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following StateError was thrown running a test:
+Bad state: Too many elements
+
+When the exception was thrown, this was the stack:
+#0      Iterable.single (dart:core/iterable.dart:696:24)
+#1      WidgetController.widget (package:flutter_test/src/controller.dart:823:30)
+#2      WidgetController.scrollUntilVisible.<anonymous closure> (package:flutter_test/src/controller.dart:2422:15)
+#5      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#6      WidgetController.scrollUntilVisible (package:flutter_test/src/controller.dart:2420:27)
+#7      main.<anonymous closure> (file:///D:/AnLi/test/qishui_root_layout167_test.dart:275:20)
+<asynchronous suspension>
+#8      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#9      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 3 frames from dart:async and package:stack_trace)
+
+The test description was:
+  Mine official hierarchy fits 390.0 at 1.0
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +2 -2: Mine official hierarchy fits 390.0 at 1.0 [E]
+  Test failed. See exception logs above.
+  The test description was: Mine official hierarchy fits 390.0 at 1.0
+  
+00:02 +2 -2: Mine official hierarchy fits 320.0 at 1.8
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following StateError was thrown running a test:
+Bad state: Too many elements
+
+When the exception was thrown, this was the stack:
+#0      Iterable.single (dart:core/iterable.dart:696:24)
+#1      WidgetController.widget (package:flutter_test/src/controller.dart:823:30)
+#2      WidgetController.scrollUntilVisible.<anonymous closure> (package:flutter_test/src/controller.dart:2422:15)
+#5      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#6      WidgetController.scrollUntilVisible (package:flutter_test/src/controller.dart:2420:27)
+#7      main.<anonymous closure> (file:///D:/AnLi/test/qishui_root_layout167_test.dart:275:20)
+<asynchronous suspension>
+#8      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#9      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 3 frames from dart:async and package:stack_trace)
+
+The test description was:
+  Mine official hierarchy fits 320.0 at 1.8
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +2 -3: Mine official hierarchy fits 320.0 at 1.8 [E]
+  Test failed. See exception logs above.
+  The test description was: Mine official hierarchy fits 320.0 at 1.8
+  
+00:02 +2 -3: (tearDownAll)
+00:02 +2 -3: Some tests failed.

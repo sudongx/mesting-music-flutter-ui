@@ -1,0 +1,443 @@
+434            -
+  Class descriptor  : 'Lcom/netease/cloudmusic/log/bilog/a;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Ljava/io/Closeable;'
+  Static fields     -
+    #0              : (in Lcom/netease/cloudmusic/log/bilog/a;)
+      name          : 'e'
+      type          : 'I'
+      access        : 0x0009 (PUBLIC STATIC)
+    #1              : (in Lcom/netease/cloudmusic/log/bilog/a;)
+      name          : 'f'
+      type          : 'I'
+      access        : 0x0009 (PUBLIC STATIC)
+  Instance fields   -
+    #0              : (in Lcom/netease/cloudmusic/log/bilog/a;)
+      name          : 'a'
+      type          : 'Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;'
+      access        : 0x0002 (PRIVATE)
+    #1              : (in Lcom/netease/cloudmusic/log/bilog/a;)
+      name          : 'b'
+      type          : 'J'
+      access        : 0x0002 (PRIVATE)
+    #2              : (in Lcom/netease/cloudmusic/log/bilog/a;)
+      name          : 'd'
+      type          : 'Ljava/util/ArrayList;'
+      access        : 0x0002 (PRIVATE)
+  Direct methods    -
+    #0              : (in Lcom/netease/cloudmusic/log/bilog/a;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10008 (STATIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 1
+      insns size    : 12 16-bit code units
+20911c:                                        |[20911c] com.netease.cloudmusic.log.bilog.a.<clinit>:()V
+20912c: 1a00 af79                              |0000: const-string v0, "bilog" // string@79af
+209130: 7110 09c8 0000                         |0002: invoke-static {v0}, Lh3/c;.e:(Ljava/lang/String;)V // method@c809
+209136: 1200                                   |0005: const/4 v0, #int 0 // #0
+209138: 6700 4a0e                              |0006: sput v0, Lcom/netease/cloudmusic/log/bilog/a;.e:I // field@0e4a
+20913c: 1210                                   |0008: const/4 v0, #int 1 // #1
+20913e: 6700 4b0e                              |0009: sput v0, Lcom/netease/cloudmusic/log/bilog/a;.f:I // field@0e4b
+209142: 0e00                                   |000b: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+      locals        :
+
+    #1              : (in Lcom/netease/cloudmusic/log/bilog/a;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 1
+      insns size    : 24 16-bit code units
+209144:                                        |[209144] com.netease.cloudmusic.log.bilog.a.<init>:()V
+209154: 7010 accd 0200                         |0000: invoke-direct {v2}, Ljava/lang/Object;.<init>:()V // method@cdac
+20915a: 2200 4409                              |0003: new-instance v0, Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper; // type@0944
+20915e: 7010 842e 0000                         |0005: invoke-direct {v0}, Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;.<init>:()V // method@2e84
+209164: 5b20 470e                              |0008: iput-object v0, v2, Lcom/netease/cloudmusic/log/bilog/a;.a:Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper; // field@0e47
+209168: 7100 852e 0000                         |000a: invoke-static {}, Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;._allocate:()J // method@2e85
+20916e: 0b00                                   |000d: move-result-wide v0
+209170: 5a20 480e                              |000e: iput-wide v0, v2, Lcom/netease/cloudmusic/log/bilog/a;.b:J // field@0e48
+209174: 2200 4e1e                              |0010: new-instance v0, Ljava/util/ArrayList; // type@1e4e
+209178: 7010 cbce 0000                         |0012: invoke-direct {v0}, Ljava/util/ArrayList;.<init>:()V // method@cecb
+20917e: 5b20 490e                              |0015: iput-object v0, v2, Lcom/netease/cloudmusic/log/bilog/a;.d:Ljava/util/ArrayList; // field@0e49
+209182: 0e00                                   |0017: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+        0x0013 line=20
+        0x0014 line=21
+        0x0015 line=22
+        0x0016 line=23
+        0x0017 line=24
+      locals        :
+        0x0000 - 0x0018 reg=2 this Lcom/netease/cloudmusic/log/bilog/a;
+
+    #2              : (in Lcom/netease/cloudmusic/log/bilog/a;)
+      name          : 'a'
+      type          : '(Ljava/lang/String;)Lcom/netease/cloudmusic/log/bilog/BILogHeaderInfo;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 9 16-bit code units
+2090dc:                                        |[2090dc] com.netease.cloudmusic.log.bilog.a.a:(Ljava/lang/String;)Lcom/netease/cloudmusic/log/bilog/BILogHeaderInfo;
+2090ec: 2200 4309                              |0000: new-instance v0, Lcom/netease/cloudmusic/log/bilog/BILogHeaderInfo; // type@0943
+2090f0: 7010 752e 0000                         |0002: invoke-direct {v0}, Lcom/netease/cloudmusic/log/bilog/BILogHeaderInfo;.<init>:()V // method@2e75
+2090f6: 7120 862e 0100                         |0005: invoke-static {v1, v0}, Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;._checkHeader:(Ljava/lang/String;Lcom/netease/cloudmusic/log/bilog/BILogHeaderInfo;)V // method@2e86
+2090fc: 1100                                   |0008: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+      locals        :
+        0x0000 - 0x0009 reg=1 (null) Ljava/lang/String;
+
+    #3              : (in Lcom/netease/cloudmusic/log/bilog/a;)
+      name          : 'c'
+      type          : '(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 2
+      insns size    : 5 16-bit code units
+209100:                                        |[209100] com.netease.cloudmusic.log.bilog.a.c:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+209110: 7120 8a2e 1000                         |0000: invoke-static {v0, v1}, Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;._getAvailableName:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; // method@2e8a
+209116: 0c00                                   |0003: move-result-object v0
+209118: 1100                                   |0004: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+      locals        :
+        0x0000 - 0x0005 reg=0 (null) Ljava/lang/String;
+        0x0000 - 0x0005 reg=1 (null) Ljava/lang/String;
+
+    #4              : (in Lcom/netease/cloudmusic/log/bilog/a;)
+      name          : 'd'
+      type          : '(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 3
+      ins           : 3
+      outs          : 3
+      insns size    : 5 16-bit code units
+2090c0:                                        |[2090c0] com.netease.cloudmusic.log.bilog.a.d:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+2090d0: 7130 8c2e 1002                         |0000: invoke-static {v0, v1, v2}, Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;._migrateSingleLog:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z // method@2e8c
+2090d6: 0a00                                   |0003: move-result v0
+2090d8: 0f00                                   |0004: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+      locals        :
+        0x0000 - 0x0005 reg=0 (null) Ljava/lang/String;
+        0x0000 - 0x0005 reg=1 (null) Ljava/lang/String;
+        0x0000 - 0x0005 reg=2 (null) Ljava/lang/String;
+
+  Virtual methods   -
+    #0              : (in Lcom/netease/cloudmusic/log/bilog/a;)
+      name          : 'close'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 6
+      ins           : 1
+      outs          : 2
+      insns size    : 19 16-bit code units
+209184:                                        |[209184] com.netease.cloudmusic.log.bilog.a.close:()V
+209194: 1d05                                   |0000: monitor-enter v5
+209196: 5350 480e                              |0001: iget-wide v0, v5, Lcom/netease/cloudmusic/log/bilog/a;.b:J // field@0e48
+20919a: 1602 0000                              |0003: const-wide/16 v2, #int 0 // #0
+20919e: 3104 0002                              |0005: cmp-long v4, v0, v2
+2091a2: 3804 0700                              |0007: if-eqz v4, 000e // +0007
+2091a6: 7120 882e 1000                         |0009: invoke-static {v0, v1}, Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;._deallocate:(J)V // method@2e88
+2091ac: 5a52 480e                              |000c: iput-wide v2, v5, Lcom/netease/cloudmusic/log/bilog/a;.b:J // field@0e48
+2091b0: 1e05                                   |000e: monitor-exit v5
+2091b2: 0e00                                   |000f: return-void
+2091b4: 0d00                                   |0010: move-exception v0
+2091b6: 1e05                                   |0011: monitor-exit v5
+2091b8: 2700                                   |0012: throw v0
+      catches       : 1
+        0x0001 - 0x0012
+          <any> -> 0x0010
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+      locals        :
+        0x0000 - 0x0013 reg=5 this Lcom/netease/cloudmusic/log/bilog/a;
+
+    #1              : (in Lcom/netease/cloudmusic/log/bilog/a;)
+      name          : 'e'
+      type          : '(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIILcom/netease/cloudmusic/log/bilog/b;Ljava/lang/String;Ljava/lang/String;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 29
+      ins           : 13
+      outs          : 15
+      insns size    : 44 16-bit code units
+2091e8:                                        |[2091e8] com.netease.cloudmusic.log.bilog.a.e:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIILcom/netease/cloudmusic/log/bilog/b;Ljava/lang/String;Ljava/lang/String;)V
+2091f8: 0800 1000                              |0000: move-object/from16 v0, v16
+2091fc: 220d 4509                              |0002: new-instance v13, Lcom/netease/cloudmusic/log/bilog/LoggerListenerWrapper; // type@0945
+209200: 0801 1a00                              |0004: move-object/from16 v1, v26
+209204: 7020 952e 1d00                         |0006: invoke-direct {v13, v1}, Lcom/netease/cloudmusic/log/bilog/LoggerListenerWrapper;.<init>:(Lcom/netease/cloudmusic/log/bilog/b;)V // method@2e95
+20920a: 5401 490e                              |0009: iget-object v1, v0, Lcom/netease/cloudmusic/log/bilog/a;.d:Ljava/util/ArrayList; // field@0e49
+20920e: 6e20 cfce d100                         |000b: invoke-virtual {v1, v13}, Ljava/util/ArrayList;.add:(Ljava/lang/Object;)Z // method@cecf
+209214: 5401 470e                              |000e: iget-object v1, v0, Lcom/netease/cloudmusic/log/bilog/a;.a:Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper; // field@0e47
+209218: 5302 480e                              |0010: iget-wide v2, v0, Lcom/netease/cloudmusic/log/bilog/a;.b:J // field@0e48
+20921c: 0804 1100                              |0012: move-object/from16 v4, v17
+209220: 0805 1200                              |0014: move-object/from16 v5, v18
+209224: 0806 1300                              |0016: move-object/from16 v6, v19
+209228: 0807 1400                              |0018: move-object/from16 v7, v20
+20922c: 0808 1500                              |001a: move-object/from16 v8, v21
+209230: 0809 1600                              |001c: move-object/from16 v9, v22
+209234: 020a 1700                              |001e: move/from16 v10, v23
+209238: 020b 1800                              |0020: move/from16 v11, v24
+20923c: 020c 1900                              |0022: move/from16 v12, v25
+209240: 080e 1b00                              |0024: move-object/from16 v14, v27
+209244: 080f 1c00                              |0026: move-object/from16 v15, v28
+209248: 740f 8d2e 0100                         |0028: invoke-virtual/range {v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15}, Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;._open:(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIILcom/netease/cloudmusic/log/bilog/LoggerListenerWrapper;Ljava/lang/String;Ljava/lang/String;)V // method@2e8d
+20924e: 0e00                                   |002b: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+        0x0013 line=20
+        0x0014 line=21
+        0x0015 line=22
+        0x0016 line=23
+        0x0017 line=24
+        0x0018 line=25
+        0x0019 line=26
+        0x001a line=27
+        0x001b line=28
+        0x001c line=29
+        0x001d line=30
+        0x001e line=31
+        0x001f line=32
+        0x0020 line=33
+        0x0021 line=34
+        0x0022 line=35
+        0x0023 line=36
+        0x0024 line=37
+        0x0025 line=38
+        0x0026 line=39
+        0x0027 line=40
+        0x0028 line=41
+        0x0029 line=42
+        0x002a line=43
+        0x002b line=44
+      locals        :
+        0x0000 - 0x002c reg=16 this Lcom/netease/cloudmusic/log/bilog/a;
+        0x0000 - 0x002c reg=17 (null) Ljava/lang/String;
+        0x0000 - 0x002c reg=18 (null) Ljava/lang/String;
+        0x0000 - 0x002c reg=19 (null) Ljava/lang/String;
+        0x0000 - 0x002c reg=20 (null) Ljava/lang/String;
+        0x0000 - 0x002c reg=21 (null) Ljava/lang/String;
+        0x0000 - 0x002c reg=22 (null) Ljava/lang/String;
+        0x0000 - 0x002c reg=23 (null) I
+        0x0000 - 0x002c reg=24 (null) I
+        0x0000 - 0x002c reg=25 (null) I
+        0x0000 - 0x002c reg=26 (null) Lcom/netease/cloudmusic/log/bilog/b;
+        0x0000 - 0x002c reg=27 (null) Ljava/lang/String;
+        0x0000 - 0x002c reg=28 (null) Ljava/lang/String;
+
+    #2              : (in Lcom/netease/cloudmusic/log/bilog/a;)
+      name          : 'f'
+      type          : '(I)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 5
+      ins           : 2
+      outs          : 4
+      insns size    : 8 16-bit code units
+209250:                                        |[209250] com.netease.cloudmusic.log.bilog.a.f:(I)V
+209260: 5430 470e                              |0000: iget-object v0, v3, Lcom/netease/cloudmusic/log/bilog/a;.a:Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper; // field@0e47
+209264: 5331 480e                              |0002: iget-wide v1, v3, Lcom/netease/cloudmusic/log/bilog/a;.b:J // field@0e48
+209268: 6e40 912e 1042                         |0004: invoke-virtual {v0, v1, v2, v4}, Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;._setSeq:(JI)V // method@2e91
+20926e: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+      locals        :
+        0x0000 - 0x0008 reg=3 this Lcom/netease/cloudmusic/log/bilog/a;
+        0x0000 - 0x0008 reg=4 (null) I
+
+    #3              : (in Lcom/netease/cloudmusic/log/bilog/a;)
+      name          : 'flush'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 3
+      insns size    : 8 16-bit code units
+2091c8:                                        |[2091c8] com.netease.cloudmusic.log.bilog.a.flush:()V
+2091d8: 5430 470e                              |0000: iget-object v0, v3, Lcom/netease/cloudmusic/log/bilog/a;.a:Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper; // field@0e47
+2091dc: 5331 480e                              |0002: iget-wide v1, v3, Lcom/netease/cloudmusic/log/bilog/a;.b:J // field@0e48
+2091e0: 6e30 892e 1002                         |0004: invoke-virtual {v0, v1, v2}, Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;._flush:(J)V // method@2e89
+2091e6: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+      locals        :
+        0x0000 - 0x0008 reg=3 this Lcom/netease/cloudmusic/log/bilog/a;
+
+    #4              : (in Lcom/netease/cloudmusic/log/bilog/a;)
+      name          : 'g'
+      type          : '(Ljava/lang/String;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 5
+      ins           : 2
+      outs          : 4
+      insns size    : 8 16-bit code units
+209270:                                        |[209270] com.netease.cloudmusic.log.bilog.a.g:(Ljava/lang/String;)V
+209280: 5430 470e                              |0000: iget-object v0, v3, Lcom/netease/cloudmusic/log/bilog/a;.a:Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper; // field@0e47
+209284: 5331 480e                              |0002: iget-wide v1, v3, Lcom/netease/cloudmusic/log/bilog/a;.b:J // field@0e48
+209288: 6e40 922e 1042                         |0004: invoke-virtual {v0, v1, v2, v4}, Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;._setUserInfo:(JLjava/lang/String;)V // method@2e92
+20928e: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+      locals        :
+        0x0000 - 0x0008 reg=3 this Lcom/netease/cloudmusic/log/bilog/a;
+        0x0000 - 0x0008 reg=4 (null) Ljava/lang/String;
+
+    #5              : (in Lcom/netease/cloudmusic/log/bilog/a;)
+      name          : 'h'
+      type          : '(Ljava/lang/String;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 5
+      ins           : 2
+      outs          : 4
+      insns size    : 8 16-bit code units
+209290:                                        |[209290] com.netease.cloudmusic.log.bilog.a.h:(Ljava/lang/String;)V
+2092a0: 5430 470e                              |0000: iget-object v0, v3, Lcom/netease/cloudmusic/log/bilog/a;.a:Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper; // field@0e47
+2092a4: 5331 480e                              |0002: iget-wide v1, v3, Lcom/netease/cloudmusic/log/bilog/a;.b:J // field@0e48
+2092a8: 6e40 932e 1042                         |0004: invoke-virtual {v0, v1, v2, v4}, Lcom/netease/cloudmusic/log/bilog/BILoggerWrapper;._writeLog:(JLjava/lang/String;)V // method@2e93
+2092ae: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+      locals        :
+        0x0000 - 0x0008 reg=3 this Lcom/netease/cloudmusic/log/bilog/a;
+        0x0000 - 0x0008 reg=4 (null) Ljava/lang/String;
+
+  source_file_idx   : 25025 (ProGuard)
+

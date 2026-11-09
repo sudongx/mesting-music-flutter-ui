@@ -1,0 +1,87 @@
+{
+  "task": "shared UI performance",
+  "productFiles": [
+    {
+      "path": "lib/features/experience/presentation/editorial_widgets.dart",
+      "sha256": "72ab248579ecb6ce808bab1ef559f654139c239f5a1a5722038b93d6203ed89f"
+    },
+    {
+      "path": "lib/features/music_platform/presentation/retained_platform_snapshot.dart",
+      "sha256": "18943cccc61e6ddb8a80aa1613ac15d0219269da292c8e70aa93f079738ad1e4"
+    },
+    {
+      "path": "lib/shared/widgets/artwork_image.dart",
+      "sha256": "eaaca686584318ed4b9cd4c4946cc33982d5e44a9ed95bea0c2e1a62e9c7dd4f"
+    },
+    {
+      "path": "lib/shared/widgets/retained_artwork_frame.dart",
+      "sha256": "7e0bcb52f7e28389671386dd4e77484523797967c4dd8a5a70e0c487f8120749"
+    }
+  ],
+  "testFiles": [
+    "test/performance174_shared_ui_test.dart"
+  ],
+  "inputsBefore": [
+    {
+      "path": "lib/features/experience/presentation/editorial_widgets.dart",
+      "sha256": "34996c4af5b3528a4003d171fa15bdb5750927f21e37d669d7519d23f47f3334"
+    },
+    {
+      "path": "lib/features/music_platform/presentation/retained_platform_snapshot.dart",
+      "sha256": "6cf897194f922a0f02509f160bb11e63b73bc837330af80501882e397c87f557"
+    },
+    {
+      "path": "lib/shared/widgets/artwork_image.dart",
+      "sha256": "8269abe01a7b52d69f8d48e72d7281b56784e24a842e97f673a76494bab40190"
+    },
+    {
+      "path": "lib/shared/widgets/retained_artwork_frame.dart",
+      "sha256": "179ab44b9c083bb04a77bfde8ffe193530423fd2f7184a7a6b929e14fba50466"
+    }
+  ],
+  "baseline73InputsVerified": true,
+  "findings": [
+    "EditorialScroll mounted every SliverToBoxAdapter box section; replace consecutive box groups with lazy SliverList and preserve genuine sliver boundaries/order/physics/padding.",
+    "RetainedPlatformSnapshot included account.isLoading in presentation identity; same-account refresh discarded displayed content. Owner and credential still invalidate across identities.",
+    "ArtworkImage repeatedly attached callbacks to one coalesced pending disk/network promise on dependency/visibility changes. One widget-owned request per identity/cache now guards callbacks and stale completions.",
+    "ArtworkImage visible registrations could see their hidden retained-tab viewport as visible. Now reject deactivated elements and disabled TickerMode before render-tree lookup.",
+    "RetainedArtworkFrame detached/re-attached ready streams on unchanged decoder configurations. Now retain equal provider/config, but detach hidden listeners and resolve source/owner/retry/size/DPR changes."
+  ],
+  "verification": {
+    "r3Log": "shared-ui-tests-r3.jsonl",
+    "r3Files": 6,
+    "r3Passed": 32,
+    "finalNewFileLog": "shared-ui-tests-final.jsonl",
+    "finalNewFilePassed": 5,
+    "counting": "Final new file replaces r3 samefile; total remains32, not37",
+    "analysisLog": "shared-ui-analyze-final.log",
+    "analysisIssues": 0,
+    "lazyFixture": {
+      "sections": 60,
+      "initiallyMounted": 8,
+      "farRowsUnbuiltUntilScroll": true
+    },
+    "realDeviceOrFpsClaims": false
+  },
+  "initialTestFixtureCorrections": [
+    "r1 synthetic image decode awaited under fakeAsync; moved createTestImage into tester.runAsync, stopped only owned stalled runner300484.",
+    "r2 synthetic Localizations omitted required WidgetsLocalizations delegate; addedDefaultWidgetsLocalizations.",
+    "Analysis fixture simulates Riverpod package-internal retained loading state with documented targeted lint suppression."
+  ],
+  "preserved": [
+    "full glass and animations",
+    "rapid tab retargeting and render-child bounds",
+    "route/back/search ownership",
+    "same-owner current rows on refresh failure",
+    "new-account snapshot isolation",
+    "frozen73 source/APK and index/signing/dependency lock"
+  ],
+  "notTouched": [
+    "device/ADB",
+    "real accounts/NAS/helper/deployment",
+    "main.dart/core cache",
+    "Qishui catalog/API/pages",
+    "version/release docs/metadata",
+    "Git index/commits/cleanup"
+  ]
+}

@@ -1,0 +1,49 @@
+    @Override // com.netease.cloudmusic.core.iimage.IImagePrefetch
+    public void cancel(@NotNull String tag) {
+        Triple triple;
+        Set<DataSource> setKeySet;
+        Collection<String> collectionValues;
+        Intrinsics.checkNotNullParameter(tag, "tag");
+        synchronized (stateLock) {
+            Set<a> setRemove = activeBatches.remove(tag);
+            Map<DataSource<Void>, String> mapRemove = inFlight.remove(tag);
+            int i = 0;
+            if (setRemove != null) {
+                for (a aVar : setRemove) {
+                    aVar.getCancelled().set(true);
+                    Iterator<T> it = aVar.c().iterator();
+                    while (it.hasNext()) {
+                        urlCache.c((String) it.next());
+                        i++;
+                    }
+                    aVar.c().clear();
+                }
+            }
+            if (mapRemove != null && (collectionValues = mapRemove.values()) != null) {
+                Iterator<T> it2 = collectionValues.iterator();
+                while (it2.hasNext()) {
+                    urlCache.c((String) it2.next());
+                    i++;
+                }
+            }
+            triple = new Triple(setRemove, mapRemove, Integer.valueOf(i));
+        }
+        Set set = (Set) triple.component1();
+        Map map = (Map) triple.component2();
+        int iIntValue = ((Number) triple.component3()).intValue();
+        if (set == null && map == null) {
+            return;
+        }
+        if (map != null && (setKeySet = map.keySet()) != null) {
+            for (DataSource dataSource : setKeySet) {
+                try {
+                    Result.Companion companion = Result.Companion;
+                    Result.constructor-impl(Boolean.valueOf(dataSource.close()));
+                } catch (Throwable th2) {
+                    Result.Companion companion2 = Result.Companion;
+                    Result.constructor-impl(ResultKt.createFailure(th2));
+                }
+            }
+        }
+        i.a.b(tag, iIntValue);
+    }

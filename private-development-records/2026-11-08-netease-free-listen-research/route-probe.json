@@ -1,0 +1,33 @@
+{
+  "scope": "Offline synthetic fixtures; production Dart parser plus static route projection; no HTTP or APK execution",
+  "rows": [
+    {
+      "fixture": "official_nm",
+      "urlShape": "orpheus://nm/motivationAd/show",
+      "officialRouteProjection": "motivationAd/show",
+      "officialHandlerWouldMatchProjection": true,
+      "currentMestingParserAccepts": false
+    },
+    {
+      "fixture": "official_ne",
+      "urlShape": "orpheus://ne/motivationAd/show",
+      "officialRouteProjection": "motivationAd/show",
+      "officialHandlerWouldMatchProjection": true,
+      "currentMestingParserAccepts": false
+    },
+    {
+      "fixture": "current_fixture_shape",
+      "urlShape": "orpheus://motivationad/show",
+      "officialRouteProjection": "motivationad",
+      "officialHandlerWouldMatchProjection": false,
+      "currentMestingParserAccepts": true
+    },
+    {
+      "fixture": "unrelated_route",
+      "urlShape": "orpheus://nm/motivationAd/unrelated",
+      "officialRouteProjection": "motivationAd/unrelated",
+      "officialHandlerWouldMatchProjection": false,
+      "currentMestingParserAccepts": false
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "evidence_id": "ev_c93b91cccb1241061bc1dff1dfab3529094cbc7448944d3d90e1b270c86503e4",
+  "subject": {
+    "name": "official-current-classes19-analysis-only.apk",
+    "digest": {
+      "sha256": "e8850c1cbc0e7f3551357d5226f151c199963944370c41088b77272cbbaa2f23"
+    },
+    "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-02-duration-phone139\\official-current-classes19-analysis-only.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-analysis-view",
+    "name": "REA analysis view projection",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis-view",
+  "operation": "inspect_analysis_view",
+  "parameters": {
+    "parent_evidence_id": "ev_47b4418de3095caa4c003a3fc66eaab862519e1697301145ab7dca274873d474",
+    "view": {
+      "kind": "summary"
+    }
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "kind": "summary",
+    "view": {
+      "kind": "summary"
+    },
+    "parent_evidence_id": "ev_47b4418de3095caa4c003a3fc66eaab862519e1697301145ab7dca274873d474",
+    "parent_operation": "inspect_android_class",
+    "parent_digest": "47b4418de3095caa4c003a3fc66eaab862519e1697301145ab7dca274873d474",
+    "view_digest": "9902a96edeb644e93c2435359c7de125d88fe90aebddf0a78828fbfa1a8fd049",
+    "artifact": {
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-02-duration-phone139\\official-current-classes19-analysis-only.apk",
+      "sha256": "e8850c1cbc0e7f3551357d5226f151c199963944370c41088b77272cbbaa2f23"
+    },
+    "coverage": {
+      "status": "complete-within-view",
+      "examined": 1,
+      "total": 1,
+      "next_offset": null,
+      "exhausted": true
+    },
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ],
+    "unknowns": [
+      "Static class and method analysis does not establish runtime behavior or APK authenticity."
+    ],
+    "summary": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 3072
+      },
+      "class_name": "com.netease.cloudmusic.music.biz.chat.meta.RawMessage.Companion",
+      "methods": [
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(): void",
+          "overload_index": 0,
+          "is_constructor": true,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(kotlin.jvm.internal.DefaultConstructorMarker): void",
+          "overload_index": 1,
+          "is_constructor": true,
+          "dex_descriptor": "(Lkotlin/jvm/internal/DefaultConstructorMarker;)V"
+        },
+        {
+          "name": "getJsonObj",
+          "reported_signature": "getJsonObj(com.netease.cloudmusic.music.biz.chat.meta.RawMessage): org.json.JSONObject",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lcom/netease/cloudmusic/music/biz/chat/meta/RawMessage;)Lorg/json/JSONObject;"
+        },
+        {
+          "name": "getLocalJsonObj",
+          "reported_signature": "getLocalJsonObj(com.netease.cloudmusic.music.biz.chat.meta.RawMessage): org.json.JSONObject",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lcom/netease/cloudmusic/music/biz/chat/meta/RawMessage;)Lorg/json/JSONObject;"
+        },
+        {
+          "name": "parseArrayFromJson",
+          "reported_signature": "parseArrayFromJson(org.json.JSONArray): java.util.List<com.netease.cloudmusic.music.biz.chat.meta.RawMessage>",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lorg/json/JSONArray;)Ljava/util/List;"
+        },
+        {
+          "name": "parseFromJson",
+          "reported_signature": "parseFromJson(org.json.JSONObject, boolean): com.netease.cloudmusic.music.biz.chat.meta.RawMessage",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lorg/json/JSONObject;Z)Lcom/netease/cloudmusic/music/biz/chat/meta/RawMessage;"
+        },
+        {
+          "name": "parseFromJson$default",
+          "reported_signature": "parseFromJson$default(com.netease.cloudmusic.music.biz.chat.meta.RawMessage$Companion, org.json.JSONObject, boolean, int, java.lang.Object): com.netease.cloudmusic.music.biz.chat.meta.RawMessage",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lcom/netease/cloudmusic/music/biz/chat/meta/RawMessage$Companion;Lorg/json/JSONObject;ZILjava/lang/Object;)Lcom/netease/cloudmusic/music/biz/chat/meta/RawMessage;"
+        },
+        {
+          "name": "parseFromLocalJson",
+          "reported_signature": "parseFromLocalJson(org.json.JSONObject): com.netease.cloudmusic.music.biz.chat.meta.RawMessage",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lorg/json/JSONObject;)Lcom/netease/cloudmusic/music/biz/chat/meta/RawMessage;"
+        }
+      ],
+      "fields": [],
+      "inner_classes": []
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "artifact-path",
+      "path": "D:\\AnLi\\.codex-artifacts\\2026-11-02-duration-phone139\\official-current-classes19-analysis-only.apk"
+    }
+  ],
+  "evidence_links": [
+    "ev_47b4418de3095caa4c003a3fc66eaab862519e1697301145ab7dca274873d474"
+  ]
+}

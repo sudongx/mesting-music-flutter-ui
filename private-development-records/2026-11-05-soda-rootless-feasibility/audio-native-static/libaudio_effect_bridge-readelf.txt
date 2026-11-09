@@ -1,0 +1,110 @@
+ELF Header:
+  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              DYN (Shared object file)
+  Machine:                           AArch64
+  Version:                           0x1
+  Entry point address:               0x1610
+  Start of program headers:          64 (bytes into file)
+  Start of section headers:          33248 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               64 (bytes)
+  Size of program headers:           56 (bytes)
+  Number of program headers:         8
+  Size of section headers:           64 (bytes)
+  Number of section headers:         25
+  Section header string table index: 24
+Dynamic section at offset 0x7ca8 contains 29 entries:
+  Tag                Type           Name/Value
+  0x0000000000000001 (NEEDED)       Shared library: [liblog.so]
+  0x0000000000000001 (NEEDED)       Shared library: [libBYTE_AUDIO_TUNER_CAPI_LITE.so]
+  0x0000000000000001 (NEEDED)       Shared library: [libm.so]
+  0x0000000000000001 (NEEDED)       Shared library: [libc++_shared.so]
+  0x0000000000000001 (NEEDED)       Shared library: [libdl.so]
+  0x0000000000000001 (NEEDED)       Shared library: [libc.so]
+  0x000000000000000e (SONAME)       Library soname: [libaudio_effect_bridge.so]
+  0x000000000000001a (FINI_ARRAY)   0x8c90
+  0x000000000000001c (FINI_ARRAYSZ) 16 (bytes)
+  0x0000000000000004 (HASH)         0x228
+  0x000000006ffffef5 (GNU_HASH)     0x3a8
+  0x0000000000000005 (STRTAB)       0x998
+  0x0000000000000006 (SYMTAB)       0x458
+  0x000000000000000a (STRSZ)        1470 (bytes)
+  0x000000000000000b (SYMENT)       24 (bytes)
+  0x0000000000000003 (PLTGOT)       0x8eb8
+  0x0000000000000002 (PLTRELSZ)     792 (bytes)
+  0x0000000000000014 (PLTREL)       RELA
+  0x0000000000000017 (JMPREL)       0x10c8
+  0x0000000000000007 (RELA)         0x1008
+  0x0000000000000008 (RELASZ)       192 (bytes)
+  0x0000000000000009 (RELAENT)      24 (bytes)
+  0x000000000000001e (FLAGS)        BIND_NOW 
+  0x000000006ffffffb (FLAGS_1)      NOW 
+  0x000000006ffffffe (VERNEED)      0xfc8
+  0x000000006fffffff (VERNEEDNUM)   2
+  0x000000006ffffff0 (VERSYM)       0xf56
+  0x000000006ffffff9 (RELACOUNT)    3
+  0x0000000000000000 (NULL)         0x0
+
+Symbol table '.dynsym' contains 56 entries:
+   Num:    Value          Size Type    Bind   Vis       Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT   UND 
+     1: 0000000000001610     0 SECTION LOCAL  DEFAULT    11 .text
+     2: 0000000000008ca0     0 SECTION LOCAL  DEFAULT    18 .data.rel.ro
+     3: 0000000000000000     0 OBJECT  GLOBAL DEFAULT   UND _ZTVSt12length_error
+     4: 0000000000000000     0 FUNC    WEAK   DEFAULT   UND pthread_create@LIBC
+     5: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND __cxa_throw
+     6: 0000000000000000     0 OBJECT  GLOBAL DEFAULT   UND _ZTISt12length_error
+     7: 0000000000000000     0 FUNC    WEAK   DEFAULT   UND pthread_once@LIBC
+     8: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND __cxa_finalize@LIBC
+     9: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND _Znwm
+    10: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND EffectGetProcessBuffer
+    11: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND abort@LIBC
+    12: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND _ZNSt6__ndk19to_stringEi
+    13: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND dl_iterate_phdr@LIBC
+    14: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND __gxx_personality_v0
+    15: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND __stack_chk_fail@LIBC
+    16: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND _ZNSt12length_errorD1Ev
+    17: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND EffectRelease
+    18: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND EffectCommand
+    19: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND EffectCreate
+    20: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND _ZdaPv
+    21: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND _ZNSt11logic_errorC2EPKc
+    22: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND __cxa_allocate_exception
+    23: 0000000000000000     0 FUNC    WEAK   DEFAULT   UND pthread_mutex_lock@LIBC
+    24: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND _ZdlPv
+    25: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND _Znam
+    26: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND __cxa_free_exception
+    27: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND strlen@LIBC
+    28: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND EffectProcessBuffer
+    29: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND malloc@LIBC
+    30: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND EffectFadeIn
+    31: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND memcpy@LIBC
+    32: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND EffectFadeOut
+    33: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND memset@LIBC
+    34: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND free@LIBC
+    35: 0000000000000000     0 FUNC    WEAK   DEFAULT   UND pthread_mutex_unlock@LIBC
+    36: 0000000000000000     0 FUNC    GLOBAL DEFAULT   UND __cxa_atexit@LIBC
+    37: 0000000000009250     0 NOTYPE  GLOBAL DEFAULT   ABS _bss_end__
+    38: 0000000000002454   200 FUNC    GLOBAL DEFAULT    11 Java_com_luna_audio_effect_AudioEffectBridge_isValidConfigJson
+    39: 0000000000009010     0 NOTYPE  GLOBAL DEFAULT   ABS __bss_start__
+    40: 0000000000009010     0 NOTYPE  GLOBAL DEFAULT   ABS __bss_start
+    41: 00000000000023fc    88 FUNC    GLOBAL DEFAULT    11 Java_com_luna_audio_effect_AudioEffectBridge_createAudioBuffer
+    42: 0000000000001bd4   500 FUNC    GLOBAL DEFAULT    11 Java_com_luna_audio_effect_AudioEffectBridge_processAudio
+    43: 0000000000001dc8   792 FUNC    GLOBAL DEFAULT    11 Java_com_luna_audio_effect_AudioEffectBridge_operateFadeIn
+    44: 0000000000009250     0 NOTYPE  GLOBAL DEFAULT   ABS __end__
+    45: 0000000000009250     0 NOTYPE  GLOBAL DEFAULT   ABS _end
+    46: 0000000000001af4   224 FUNC    GLOBAL DEFAULT    11 _Z26convertInterleavedToPlanarP7_JNIEnvP13_jobjectArrayPKfii
+    47: 0000000000001a14   224 FUNC    GLOBAL DEFAULT    11 _Z26convertPlanarToInterleavedP7_JNIEnvP13_jobjectArrayPfii
+    48: 0000000000009010     0 NOTYPE  GLOBAL DEFAULT   ABS _edata
+    49: 000000000000251c   196 FUNC    WEAK   DEFAULT    11 _ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcm
+    50: 0000000000002718    20 FUNC    WEAK   DEFAULT    11 _ZNKSt6__ndk121__basic_string_commonILb1EE20__throw_length_errorEv
+    51: 00000000000020e0   796 FUNC    GLOBAL DEFAULT    11 Java_com_luna_audio_effect_AudioEffectBridge_operateFadeOut
+    52: 0000000000001a04    16 FUNC    GLOBAL DEFAULT    11 Java_com_luna_audio_effect_AudioEffectBridge_release
+    53: 00000000000025e0   312 FUNC    WEAK   DEFAULT    11 _ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE21__grow_by_and_replaceEmmmmmmPKc
+    54: 0000000000009250     0 NOTYPE  GLOBAL DEFAULT   ABS __bss_end__
+    55: 000000000000164c   952 FUNC    GLOBAL DEFAULT    11 Java_com_luna_audio_effect_AudioEffectBridge_createEffectHandleByConfig

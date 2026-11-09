@@ -1,0 +1,7 @@
+PASS cold paused room acquires the existing media foreground owner
+PASS ordinary playback is observed and never withdrawn
+PASS old engine teardown preserves a newer engine lease
+PASS duplicate requests are idempotent and equal owners stay distinct
+PASS rejected promotion retries and real playback takes over the notification
+PASS an unresponsive engine expires its scheduling and media owners
+6 native media_lease scenarios passed

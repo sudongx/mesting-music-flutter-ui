@@ -1,0 +1,33 @@
+{
+  "phase": "read-only diagnosis and approved-behavior clarification; product not modified",
+  "baselineVersion": "1.0.48+69",
+  "head": "b6bcd5425e0df3e03febdd460b56d0ed42004c52",
+  "branch": "beta",
+  "apkUnchanged": true,
+  "sourceUnchanged": true,
+  "deviceAccess": false,
+  "realAccountAccess": false,
+  "backendAccess": false,
+  "implementationApproved": false,
+  "userDecisions": [
+    "Both scroll-to-top and last-played hints",
+    "All track lists on both platforms",
+    "Per-account and per-list persistence; locate/highlight only",
+    "Retain each entry animation and reverse its path on exit"
+  ],
+  "officialReference": {
+    "package": "com.kugou.android.lite",
+    "version": "5.2.9",
+    "scope": "classes12.dex static analysis; no runtime acceptance",
+    "methods": [
+      "PlaylistRecordManager.n writes recordId/mixId/time to local database",
+      "PlaylistRecordManager.h reads record by recordId",
+      "PlaylistRecordDelegate.g loads saved position for a list",
+      "PlaylistRecordDelegate.e invokes callback with song and position",
+      "PlaylistRecordDelegate.n hides the hint"
+    ]
+  },
+  "memoryUsed": [
+    "MEMORY.md:80-81 for dirty-tree and device boundary; live refs and release were checked again"
+  ]
+}

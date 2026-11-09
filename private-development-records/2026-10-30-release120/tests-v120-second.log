@@ -1,0 +1,172 @@
+00:00 +0: loading D:/AnLi/test/netease_v120_data_test.dart
+00:00 +0: D:/AnLi/test/netease_v120_data_test.dart: the observed unread envelope includes private messages and new followers
+00:00 +1: D:/AnLi/test/netease_v120_data_test.dart: public CDN requests identify the app without leaking credentials to other hosts
+00:00 +2: D:/AnLi/test/netease_v120_data_test.dart: short numeric unread fields and nested counts retain real values
+00:00 +3: D:/AnLi/test/netease_v120_data_test.dart: unknown envelope and unrelated account numbers cannot become unread zero
+00:00 +4: D:/AnLi/test/netease_v120_data_test.dart: negative unread values are bounded without turning dates into counts
+00:00 +5: D:/AnLi/test/netease_v120_data_test.dart: 28 unread conversations survive missing totals, then reading clears only those messages
+00:00 +6: D:/AnLi/test/netease_v120_data_test.dart: an invalid nonempty old disk entry is replaced by an actual image response
+00:01 +7: D:/AnLi/test/netease_v120_ui_test.dart: a cached file with a valid header but broken decoder recovers to the network image
+00:02 +7: D:/AnLi/test/release_120_render_test.dart: first-paint backdrop pass is bounded even before the matte exists
+══╡ EXCEPTION CAUGHT BY RENDERING LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during paint():
+Attempted to create a handle to an already disposed layer: ClipRectLayer#4ecba(handles: 0, clipRect:
+Rect.fromLTRB(350.0, 280.0, 450.0, 320.0), clipBehavior: Clip.hardEdge).
+'package:flutter/src/rendering/layer.dart':
+Failed assertion: line 801 pos 7: 'layer?.debugDisposed != true'
+
+Either the assertion indicates an error in the framework itself, or we should provide substantially
+more information in this error message to help you determine and fix the underlying cause.
+In either case, please report this assertion by filing a bug on GitHub:
+  https://github.com/flutter/flutter/issues/new?template=02_bug.yml
+
+The relevant error-causing widget was:
+  _FirstPaintGlass-[GlobalKey#e02f6]
+  _FirstPaintGlass:file:///D:/AnLi/test/release_120_render_test.dart:56:22
+
+When the exception was thrown, this was the stack:
+#2      LayerHandle.layer= (package:flutter/src/rendering/layer.dart:801:7)
+#3      ContainerLayer.append (package:flutter/src/rendering/layer.dart:1243:25)
+#4      PaintingContext.appendLayer (package:flutter/src/rendering/object.dart:307:21)
+#5      PaintingContext.pushLayer (package:flutter/src/rendering/object.dart:516:5)
+#6      PaintingContext.pushClipRect (package:flutter/src/rendering/object.dart:589:7)
+#7      _FirstPaintRender.paint (file:///D:/AnLi/test/release_120_render_test.dart:33:27)
+#8      RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#9      PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#10     RenderProxyBoxMixin.paint (package:flutter/src/rendering/proxy_box.dart:143:13)
+#11     RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#12     PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#13     RenderShiftedBox.paint (package:flutter/src/rendering/shifted_box.dart:98:15)
+#14     RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#15     PaintingContext.paintChild (package:flutter/src/rendering/object.dart:265:13)
+#16     RenderView.paint (package:flutter/src/rendering/view.dart:320:15)
+#17     RenderObject._paintWithContext (package:flutter/src/rendering/object.dart:3429:7)
+#18     PaintingContext._repaintCompositedChild (package:flutter/src/rendering/object.dart:180:11)
+#19     PaintingContext.repaintCompositedChild (package:flutter/src/rendering/object.dart:125:5)
+#20     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1325:31)
+#21     PipelineOwner.flushPaint (package:flutter/src/rendering/object.dart:1335:15)
+#22     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2137:31)
+#23     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#24     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#25     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#26     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#29     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#30     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#31     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#34     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#35     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#36     main.<anonymous closure> (file:///D:/AnLi/test/release_120_render_test.dart:72:20)
+<asynchronous suspension>
+#37     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#38     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 7 frames from class _AssertionError, dart:async, and package:stack_trace)
+
+The following RenderObject was being processed when the exception was fired: _FirstPaintRender#3d310:
+  needs compositing
+  creator: _FirstPaintGlass-[GlobalKey#e02f6] ← SizedBox ← Center ← Directionality ←
+    _FocusInheritedScope ← _FocusScopeWithExternalFocusNode ← _FocusInheritedScope ← Focus ←
+    FocusTraversalGroup ← MediaQuery ← _MediaQueryFromView ← _PipelineOwnerScope ← ⋯
+  parentData: <none> (can use size)
+  constraints: BoxConstraints(w=100.0, h=40.0)
+  size: Size(100.0, 40.0)
+This RenderObject has no descendants.
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY SCHEDULER LIBRARY ╞═════════════════════════════════════════════════════════
+The following assertion was thrown during a scheduler callback:
+'package:flutter/src/rendering/layer.dart': Failed assertion: line 451 pos 12: '!_debugDisposed': is
+not true.
+
+Either the assertion indicates an error in the framework itself, or we should provide substantially
+more information in this error message to help you determine and fix the underlying cause.
+In either case, please report this assertion by filing a bug on GitHub:
+  https://github.com/flutter/flutter/issues/new?template=02_bug.yml
+
+When the exception was thrown, this was the stack:
+#2      Layer.engineLayer= (package:flutter/src/rendering/layer.dart:451:12)
+#3      ClipRectLayer.addToScene (package:flutter/src/rendering/layer.dart:1667:7)
+#4      Layer._addToSceneWithRetainedRendering (package:flutter/src/rendering/layer.dart:711:5)
+#5      ContainerLayer.addChildrenToScene (package:flutter/src/rendering/layer.dart:1372:13)
+#6      TransformLayer.addToScene (package:flutter/src/rendering/layer.dart:2083:5)
+#7      ContainerLayer.buildScene (package:flutter/src/rendering/layer.dart:1120:5)
+#8      RenderView.compositeFrame (package:flutter/src/rendering/view.dart:356:37)
+#9      AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2141:28)
+#10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#13     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#16     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#17     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#18     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#21     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#22     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#23     main.<anonymous closure> (file:///D:/AnLi/test/release_120_render_test.dart:72:20)
+<asynchronous suspension>
+#24     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#25     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 7 frames from class _AssertionError, dart:async, and package:stack_trace)
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: same instance as ClipRectLayer:<ClipRectLayer#4ecba(handles: 0, clipRect:
+Rect.fromLTRB(350.0, 280.0, 450.0, 320.0), clipBehavior: Clip.hardEdge)>
+  Actual: <null>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_120_render_test.dart:73:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_120_render_test.dart line 73
+The test description was:
+  first-paint backdrop pass is bounded even before the matte exists
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following message was thrown:
+Multiple exceptions (3) were detected during the running of the current test, and at least one was
+unexpected.
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +7 -1: D:/AnLi/test/netease_v120_ui_test.dart: a cached file with a valid header but broken decoder recovers to the network image
+00:02 +7 -1: D:/AnLi/test/release_120_render_test.dart: first-paint backdrop pass is bounded even before the matte exists [E]
+  Test failed. See exception logs above.
+  The test description was: first-paint backdrop pass is bounded even before the matte exists
+  
+00:02 +7 -1: D:/AnLi/test/netease_v120_ui_test.dart: a cached file with a valid header but broken decoder recovers to the network image
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+The value of a painting debug variable was changed by the test.
+
+When the exception was thrown, this was the stack:
+#0      debugAssertAllPaintingVarsUnset.<anonymous closure> (package:flutter/src/painting/debug.dart:203:7)
+#1      debugAssertAllPaintingVarsUnset (package:flutter/src/painting/debug.dart:206:4)
+#2      TestWidgetsFlutterBinding._verifyInvariants (package:flutter_test/src/binding.dart:1736:7)
+#3      AutomatedTestWidgetsFlutterBinding._verifyInvariants (package:flutter_test/src/binding.dart:2224:11)
+#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1703:7)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  a cached file with a valid header but broken decoder recovers to the network image
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +7 -2: D:/AnLi/test/netease_v120_ui_test.dart: a cached file with a valid header but broken decoder recovers to the network image [E]
+  Test failed. See exception logs above.
+  The test description was: a cached file with a valid header but broken decoder recovers to the network image
+  
+Warning: At least one test in this suite creates an HttpClient. When running a test suite that uses
+TestWidgetsFlutterBinding, all HTTP requests will return status code 400, and no network request
+will actually be made. Any test expecting a real network connection and status code will fail.
+To test code that needs an HttpClient, provide your own HttpClient implementation to the code under
+test, so that your test can consistently provide a testable response to the code under test.
+00:02 +7 -2: Some tests failed.

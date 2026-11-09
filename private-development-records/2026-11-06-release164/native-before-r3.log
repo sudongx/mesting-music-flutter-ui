@@ -1,0 +1,18 @@
+ע: D:\AnLi\test\native_soda_audio\SodaAudioProcessorHostTest.javaʹ�û򸲸����ѹ�ʱ�� API��
+ע: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+Exception in thread "main" java.lang.IllegalArgumentException: The source buffer is this buffer
+	at java.base/java.nio.Buffer.createSameBufferException(Buffer.java:265)
+	at java.base/java.nio.ByteBuffer.put(ByteBuffer.java:995)
+	at com.ryanheise.just_audio.SodaAudioProcessor.queueInput(SodaAudioProcessor.java:176)
+	at SodaAudioProcessorHostTest.empty(SodaAudioProcessorHostTest.java:35)
+	at SodaAudioProcessorHostTest.lambda$main$0(SodaAudioProcessorHostTest.java:38)
+	at SodaAudioProcessorHostTest.test(SodaAudioProcessorHostTest.java:16)
+	at SodaAudioProcessorHostTest.main(SodaAudioProcessorHostTest.java:37)
+Traceback (most recent call last):
+  File "D:\AnLi\tool\test_soda_audio_processor.py", line 29, in <module>
+    subprocess.run([str(args.jdk / 'bin/java.exe'), '-cp', ';'.join(map(str, [args.output, jar, guava[0]])), 'SodaAudioProcessorHostTest'], check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zyt\AppData\Local\Programs\Python\Python314\Lib\subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['D:\\CodexCache\\android-build\\jdk\\jdk-17.0.20.1+1\\bin\\java.exe', '-cp', '.codex-artifacts\\2026-11-06-release164\\native-before-r3;.codex-artifacts\\2026-11-06-release164\\native-before-r3\\media3-common-1.9.2.jar;D:\\CodexCache\\android-build\\gradle\\caches\\modules-2\\files-2.1\\com.google.guava\\guava\\33.4.8-jre\\cb7510a733595f02fe633ffff62d40cfc3056e9\\guava-33.4.8-android.jar', 'SodaAudioProcessorHostTest']' returned non-zero exit status 1.

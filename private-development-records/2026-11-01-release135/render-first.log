@@ -1,0 +1,61 @@
+00:00 +0: loading D:/AnLi/test/release_135_scroll_frontier_test.dart
+00:00 +0: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:01 +0: readiness rebuild retains horizontal page position and controller
+00:02 +1: fast fling stops at prepared songs, releases on readiness, and allows upward scrolling bouncing=false
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+'package:flutter/src/rendering/proxy_box.dart': Failed assertion: line 3553 pos 12:
+'!debugNeedsPaint': is not true.
+
+When the exception was thrown, this was the stack:
+#2      RenderRepaintBoundary.toImage (package:flutter/src/rendering/proxy_box.dart:3553:12)
+#3      _shot (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:79:8)
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:196:15)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 3 frames from class _AssertionError and package:stack_trace)
+
+The test description was:
+  fast fling stops at prepared songs, releases on readiness, and allows upward scrolling
+  bouncing=false
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:04 +1 -1: fast fling stops at prepared songs, releases on readiness, and allows upward scrolling bouncing=false [E]
+  Test failed. See exception logs above.
+  The test description was: fast fling stops at prepared songs, releases on readiness, and allows upward scrolling bouncing=false
+  
+00:04 +1 -1: fast fling stops at prepared songs, releases on readiness, and allows upward scrolling bouncing=true
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+'package:flutter/src/rendering/proxy_box.dart': Failed assertion: line 3553 pos 12:
+'!debugNeedsPaint': is not true.
+
+When the exception was thrown, this was the stack:
+#2      RenderRepaintBoundary.toImage (package:flutter/src/rendering/proxy_box.dart:3553:12)
+#3      _shot (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:79:8)
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_135_scroll_frontier_test.dart:196:15)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 3 frames from class _AssertionError and package:stack_trace)
+
+The test description was:
+  fast fling stops at prepared songs, releases on readiness, and allows upward scrolling
+  bouncing=true
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:04 +1 -2: fast fling stops at prepared songs, releases on readiness, and allows upward scrolling bouncing=true [E]
+  Test failed. See exception logs above.
+  The test description was: fast fling stops at prepared songs, releases on readiness, and allows upward scrolling bouncing=true
+  
+00:04 +1 -2: data-page footer has one visible loader and replaces it with retry
+00:04 +2 -2: (tearDownAll)
+00:05 +2 -2: Some tests failed.

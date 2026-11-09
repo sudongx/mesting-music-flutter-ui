@@ -1,0 +1,57 @@
+    @Override // com.netease.cloudmusic.core.statistic.e0.b
+    public String b(String str, JSONObject jSONObject, Map<String, Object> map, long j) {
+        int iQ;
+        String strA = a();
+        long j2 = n3.c(strA).getLong("logSeq", 1L);
+        n3.c(strA).edit().putLong("logSeq", j2 != Long.MAX_VALUE ? 1 + j2 : 1L).commit();
+        jSONObject.put("seq", Long.valueOf(j2));
+        jSONObject.put("pid", Integer.valueOf(Process.myPid()));
+        jSONObject.put("lca", Integer.valueOf(this.f));
+        jSONObject.put("netstatus", this.a);
+        IABTestService iABTestService = (IABTestService) ServiceFacade.get("abtest", IABTestService.class);
+        String aBTestLog = iABTestService != null ? iABTestService.getABTestLog() : null;
+        if (aBTestLog != null) {
+            jSONObject.put("abtest", aBTestLog);
+        }
+        IABTestManager iABTestManager = (IABTestManager) ServiceFacade.get(IABTestManager.class);
+        if (iABTestManager != null) {
+            jSONObject.put("libra_abt", iABTestManager.getLibraLogStr());
+        }
+        ICustomConfig iCustomConfig = (ICustomConfig) ServiceFacade.get(ICustomConfig.class);
+        if (iCustomConfig != null) {
+            Boolean bool = Boolean.TRUE;
+            if (bool.equals(iCustomConfig.getMainAppCustomConfig(bool, "statistic#enable_config_ver_in_log"))) {
+                jSONObject.put("config_ver", Integer.valueOf(iCustomConfig.getMainAppConfigVersionInMemory()));
+            }
+        }
+        if (((IAppGroundManager) ServiceFacade.get(IAppGroundManager.class)).isBackground()) {
+            jSONObject.put("_ib", 1);
+        }
+        String str2 = BuildInfo.i;
+        if (str2 != null) {
+            jSONObject.put("buildType", str2);
+        }
+        if (this.b == 1 && (iQ = com.netease.cloudmusic.network.datapackage.a.q()) != -1) {
+            jSONObject.put("_card", Integer.valueOf(iQ));
+        }
+        try {
+            String strJ = c1.i().j();
+            String strH = c1.i().h();
+            jSONObject.put("net_wn", strJ);
+            jSONObject.put("net_wbid", strH);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        for (Map.Entry<String, Object> entry : map.entrySet()) {
+            jSONObject.put(entry.getKey(), entry.getValue());
+        }
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append((j / 1000) + "\u0001");
+        StringBuilder sb3 = new StringBuilder();
+        sb3.append(str);
+        sb3.append((char) 1);
+        sb2.append(sb3.toString());
+        sb2.append(jSONObject.toString());
+        sb2.append("\n");
+        return sb2.toString();
+    }

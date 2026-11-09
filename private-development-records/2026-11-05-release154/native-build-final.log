@@ -1,0 +1,58 @@
+warning: unused import: `SequentialWriter`
+ --> vendor\tiny_http\src\util\mod.rs:7:28
+  |
+7 | pub use self::sequential::{SequentialWriter, SequentialWriterBuilder};
+  |                            ^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: trait `MustBeShareDummy` is never used
+   --> vendor\tiny_http\src\lib.rs:167:7
+    |
+167 | trait MustBeShareDummy: Sync + Send {}
+    |       ^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` on by default
+
+warning: `tiny_http` (lib) generated 2 warnings (run `cargo fix --lib -p tiny_http` to apply 1 suggestion)
+   Compiling kugou_server v0.1.0 (D:\AnLi\third_party\md3music\rust)
+    Finished `release` profile [optimized] target(s) in 31.59s
+
+    83: 00000000000eb7d0    24 FUNC    GLOBAL DEFAULT    14 get_server_port
+    84: 00000000000eb7bc    20 FUNC    GLOBAL DEFAULT    14 is_server_running
+    85: 00000000000eb694   292 FUNC    GLOBAL DEFAULT    14 start_server
+    86: 00000000000eb7b8     4 FUNC    GLOBAL DEFAULT    14 stop_server
+
+Algorithm : SHA256
+Hash      : 65EC54C56650D719201143C19C0D96EF7E670AD405F1B66890CDC868EF5B8544
+Path      : D:\AnLi\build\md3-native154\aarch64-linux-android\release\libkugou_server.so
+
+warning: unused import: `SequentialWriter`
+ --> vendor\tiny_http\src\util\mod.rs:7:28
+  |
+7 | pub use self::sequential::{SequentialWriter, SequentialWriterBuilder};
+  |                            ^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: trait `MustBeShareDummy` is never used
+   --> vendor\tiny_http\src\lib.rs:167:7
+    |
+167 | trait MustBeShareDummy: Sync + Send {}
+    |       ^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` on by default
+
+warning: `tiny_http` (lib) generated 2 warnings (run `cargo fix --lib -p tiny_http` to apply 1 suggestion)
+   Compiling kugou_server v0.1.0 (D:\AnLi\third_party\md3music\rust)
+    Finished `release` profile [optimized] target(s) in 29.77s
+    75: 00070085    10 FUNC    GLOBAL DEFAULT    13 get_server_port
+    76: 0007007d     8 FUNC    GLOBAL DEFAULT    13 is_server_running
+    77: 0006ffdd   156 FUNC    GLOBAL DEFAULT    13 start_server
+    78: 00070079     4 FUNC    GLOBAL DEFAULT    13 stop_server
+
+Algorithm : SHA256
+Hash      : 686DB42A51CA7FBEADDA46FAD30073D5AAFCCDB00899367D65CF841424E034D8
+Path      : D:\AnLi\build\md3-native154\armv7-linux-androideabi\release\libkugou_server.so
+
+

@@ -1,0 +1,28 @@
+{
+  "engine": {
+    "name": "jadx-headless-mcp",
+    "version": "0.7.1",
+    "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+    "worker_count": 1,
+    "heap_limit_mib": 3072
+  },
+  "class_name": "pi.b",
+  "method": {
+    "name": "b",
+    "reported_signature": "b(java.lang.String, com.alibaba.fastjson.JSONObject, java.util.Map<java.lang.String, java.lang.Object>, long): java.lang.String",
+    "overload_index": 0,
+    "is_constructor": false,
+    "dex_descriptor": null
+  },
+  "overload_count": 1,
+  "representation": "java",
+  "body_status": "available",
+  "fell_back": false,
+  "markers": [],
+  "source": {
+    "status": "complete",
+    "text": "    @Override // com.netease.cloudmusic.core.statistic.e0.b\r\n    public String b(String str, JSONObject jSONObject, Map<String, Object> map, long j) {\r\n        int iQ;\r\n        String strA = a();\r\n        long j2 = n3.c(strA).getLong(\"logSeq\", 1L);\r\n        n3.c(strA).edit().putLong(\"logSeq\", j2 != Long.MAX_VALUE ? 1 + j2 : 1L).commit();\r\n        jSONObject.put(\"seq\", Long.valueOf(j2));\r\n        jSONObject.put(\"pid\", Integer.valueOf(Process.myPid()));\r\n        jSONObject.put(\"lca\", Integer.valueOf(this.f));\r\n        jSONObject.put(\"netstatus\", this.a);\r\n        IABTestService iABTestService = (IABTestService) ServiceFacade.get(\"abtest\", IABTestService.class);\r\n        String aBTestLog = iABTestService != null ? iABTestService.getABTestLog() : null;\r\n        if (aBTestLog != null) {\r\n            jSONObject.put(\"abtest\", aBTestLog);\r\n        }\r\n        IABTestManager iABTestManager = (IABTestManager) ServiceFacade.get(IABTestManager.class);\r\n        if (iABTestManager != null) {\r\n            jSONObject.put(\"libra_abt\", iABTestManager.getLibraLogStr());\r\n        }\r\n        ICustomConfig iCustomConfig = (ICustomConfig) ServiceFacade.get(ICustomConfig.class);\r\n        if (iCustomConfig != null) {\r\n            Boolean bool = Boolean.TRUE;\r\n            if (bool.equals(iCustomConfig.getMainAppCustomConfig(bool, \"statistic#enable_config_ver_in_log\"))) {\r\n                jSONObject.put(\"config_ver\", Integer.valueOf(iCustomConfig.getMainAppConfigVersionInMemory()));\r\n            }\r\n        }\r\n        if (((IAppGroundManager) ServiceFacade.get(IAppGroundManager.class)).isBackground()) {\r\n            jSONObject.put(\"_ib\", 1);\r\n        }\r\n        String str2 = BuildInfo.i;\r\n        if (str2 != null) {\r\n            jSONObject.put(\"buildType\", str2);\r\n        }\r\n        if (this.b == 1 && (iQ = com.netease.cloudmusic.network.datapackage.a.q()) != -1) {\r\n            jSONObject.put(\"_card\", Integer.valueOf(iQ));\r\n        }\r\n        try {\r\n            String strJ = c1.i().j();\r\n            String strH = c1.i().h();\r\n            jSONObject.put(\"net_wn\", strJ);\r\n            jSONObject.put(\"net_wbid\", strH);\r\n        } catch (Exception e) {\r\n            e.printStackTrace();\r\n        }\r\n        for (Map.Entry<String, Object> entry : map.entrySet()) {\r\n            jSONObject.put(entry.getKey(), entry.getValue());\r\n        }\r\n        StringBuilder sb2 = new StringBuilder();\r\n        sb2.append((j / 1000) + \"\\u0001\");\r\n        StringBuilder sb3 = new StringBuilder();\r\n        sb3.append(str);\r\n        sb3.append((char) 1);\r\n        sb2.append(sb3.toString());\r\n        sb2.append(jSONObject.toString());\r\n        sb2.append(\"\\n\");\r\n        return sb2.toString();\r\n    }",
+    "reported_total_bytes": null
+  }
+}

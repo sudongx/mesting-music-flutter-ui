@@ -1,0 +1,269 @@
+00:00 +0: loading D:/AnLi/test/release_133_clearance_test.dart
+00:00 +0: D:/AnLi/test/release_133_clearance_test.dart: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: D:/AnLi/test/release_133_clearance_test.dart: history last tile clears real glass large=false secondary=false
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: a value less than <672.0>
+  Actual: <779.4641647880921>
+   Which: is not a value less than <672.0>
+The entire final row, not just its centre, must be above the real accessory.
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_133_clearance_test.dart:52:9)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_133_clearance_test.dart line 52
+The test description was:
+  history last tile clears real glass large=false secondary=false
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +0 -1: D:/AnLi/test/release_133_clearance_test.dart: history last tile clears real glass large=false secondary=false [E]
+  Test failed. See exception logs above.
+  The test description was: history last tile clears real glass large=false secondary=false
+  
+Warning: At least one test in this suite creates an HttpClient. When running a test suite that uses
+TestWidgetsFlutterBinding, all HTTP requests will return status code 400, and no network request
+will actually be made. Any test expecting a real network connection and status code will fail.
+To test code that needs an HttpClient, provide your own HttpClient implementation to the code under
+test, so that your test can consistently provide a testable response to the code under test.
+00:02 +0 -1: D:/AnLi/test/release_133_clearance_test.dart: history last tile clears real glass large=false secondary=true
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      PersonalProfileFixture.create (file:///D:/AnLi/test/support/personal_profile_fixture.dart:77:22)
+<asynchronous suspension>
+#6      main.<anonymous closure>.<anonymous closure> (file:///D:/AnLi/test/release_133_clearance_test.dart:25:27)
+<asynchronous suspension>
+#7      _AsyncCompleter.complete (dart:async/future_impl.dart:96:3)
+<asynchronous suspension>
+#8      main.<anonymous closure> (file:///D:/AnLi/test/release_133_clearance_test.dart:22:31)
+<asynchronous suspension>
+#9      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#10     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#11     StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: a value less than <762.0>
+  Actual: <762.0>
+   Which: is not a value less than <762.0>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_133_clearance_test.dart:58:9)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_133_clearance_test.dart line 58
+The test description was:
+  history last tile clears real glass large=false secondary=true
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:03 +0 -2: D:/AnLi/test/release_133_clearance_test.dart: history last tile clears real glass large=false secondary=true [E]
+  Test failed. See exception logs above.
+  The test description was: history last tile clears real glass large=false secondary=true
+  
+00:03 +0 -2: D:/AnLi/test/release_133_clearance_test.dart: history last tile clears real glass large=true secondary=false
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      PersonalProfileFixture.create (file:///D:/AnLi/test/support/personal_profile_fixture.dart:77:22)
+<asynchronous suspension>
+#6      main.<anonymous closure>.<anonymous closure> (file:///D:/AnLi/test/release_133_clearance_test.dart:25:27)
+<asynchronous suspension>
+#7      _AsyncCompleter.complete (dart:async/future_impl.dart:96:3)
+<asynchronous suspension>
+#8      main.<anonymous closure> (file:///D:/AnLi/test/release_133_clearance_test.dart:22:31)
+<asynchronous suspension>
+#9      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#10     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#11     StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: a value less than <524.0>
+  Actual: <640.3021031632143>
+   Which: is not a value less than <524.0>
+The entire final row, not just its centre, must be above the real accessory.
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_133_clearance_test.dart:52:9)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_133_clearance_test.dart line 52
+The test description was:
+  history last tile clears real glass large=true secondary=false
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:04 +0 -3: D:/AnLi/test/release_133_clearance_test.dart: history last tile clears real glass large=true secondary=false [E]
+  Test failed. See exception logs above.
+  The test description was: history last tile clears real glass large=true secondary=false
+  
+00:04 +0 -3: D:/AnLi/test/release_133_clearance_test.dart: history last tile clears real glass large=true secondary=true
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      PersonalProfileFixture.create (file:///D:/AnLi/test/support/personal_profile_fixture.dart:77:22)
+<asynchronous suspension>
+#6      main.<anonymous closure>.<anonymous closure> (file:///D:/AnLi/test/release_133_clearance_test.dart:25:27)
+<asynchronous suspension>
+#7      _AsyncCompleter.complete (dart:async/future_impl.dart:96:3)
+<asynchronous suspension>
+#8      main.<anonymous closure> (file:///D:/AnLi/test/release_133_clearance_test.dart:22:31)
+<asynchronous suspension>
+#9      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#10     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#11     StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: a value less than <572.0>
+  Actual: <773.0>
+   Which: is not a value less than <572.0>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_133_clearance_test.dart:58:9)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_133_clearance_test.dart line 58
+The test description was:
+  history last tile clears real glass large=true secondary=true
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:04 +0 -4: D:/AnLi/test/release_133_clearance_test.dart: history last tile clears real glass large=true secondary=true [E]
+  Test failed. See exception logs above.
+  The test description was: history last tile clears real glass large=true secondary=true
+  
+00:04 +0 -4: D:/AnLi/test/release_133_clearance_test.dart: shared form can scroll its final action above primary chrome
+WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. 
+Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true
+Here is the stacktrace from when the database was opened a second time:
+#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)
+#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)
+#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)
+#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)
+#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:150:7)
+#5      PersonalProfileFixture.create (file:///D:/AnLi/test/support/personal_profile_fixture.dart:77:22)
+<asynchronous suspension>
+#6      _AsyncCompleter.complete (dart:async/future_impl.dart:96:3)
+<asynchronous suspension>
+#7      main.<anonymous closure> (file:///D:/AnLi/test/release_133_clearance_test.dart:67:21)
+<asynchronous suspension>
+#8      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#9      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+#10     StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+This warning will only appear on debug builds.
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: a value less than <504.0>
+  Actual: <568.0>
+   Which: is not a value less than <504.0>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_133_clearance_test.dart:73:5)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_133_clearance_test.dart line 73
+The test description was:
+  shared form can scroll its final action above primary chrome
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:05 +0 -5: D:/AnLi/test/release_133_clearance_test.dart: shared form can scroll its final action above primary chrome [E]
+  Test failed. See exception logs above.
+  The test description was: shared form can scroll its final action above primary chrome
+  
+00:05 +0 -5: D:/AnLi/test/release_133_clearance_test.dart: (tearDownAll)
+00:09 +0 -5: D:/AnLi/test/release_133_region_test.dart: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:09 +0 -5: D:/AnLi/test/release_133_region_test.dart: region picker keeps national order and resolves six digit selection selected=false
+00:10 +1 -5: D:/AnLi/test/release_133_region_test.dart: region picker keeps national order and resolves six digit selection selected=true
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: no matching candidates
+  Actual: _TextWidgetFinder:<Found 1 widget with text "440000": [
+            Text("440000", inherit: true, size: 17.0, overflow: ellipsis, maxLines: 1, dependencies:
+[DefaultSelectionStyle, DefaultTextStyle, MediaQuery]),
+          ]>
+   Which: means one was found but none were expected
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_133_region_test.dart:18:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_133_region_test.dart line 18
+The test description was:
+  region picker keeps national order and resolves six digit selection selected=true
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:11 +1 -6: D:/AnLi/test/release_133_region_test.dart: region picker keeps national order and resolves six digit selection selected=true [E]
+  Test failed. See exception logs above.
+  The test description was: region picker keeps national order and resolves six digit selection selected=true
+  
+00:11 +1 -6: D:/AnLi/test/release_133_region_test.dart: (tearDownAll)
+00:11 +1 -6: Some tests failed.

@@ -1,0 +1,29 @@
+    public static String d() {
+        HttpUrl httpUrl;
+        if (a1.b(a1.a()) || ServiceFacade.get(INetworkService.class) == null) {
+            return "";
+        }
+        List allCookies = ((INetworkService) ServiceFacade.get(INetworkService.class)).getAllCookies();
+        String string = new Uri.Builder().scheme("https").authority(u.f().e().n()).build().toString();
+        if (TextUtils.isEmpty(string)) {
+            httpUrl = null;
+        } else {
+            try {
+                httpUrl = HttpUrl.parse(string);
+            } catch (IllegalArgumentException e) {
+                e.printStackTrace();
+                httpUrl = null;
+            }
+        }
+        JSONObject jSONObject = new JSONObject();
+        Iterator it = allCookies.iterator();
+        while (it.hasNext()) {
+            c((Cookie) it.next(), httpUrl, jSONObject);
+        }
+        if (jSONObject.get("MUSIC_U") == null && jSONObject.get("MUSIC_A") == null && jSONObject.get("URS_APPID") == null) {
+            return "";
+        }
+        jSONObject.put("appver", b());
+        jSONObject.put("buildver", a());
+        return jSONObject.toJSONString();
+    }

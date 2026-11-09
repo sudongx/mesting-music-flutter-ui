@@ -1,0 +1,185 @@
+00:00 +0: loading D:/AnLi/test/release_158_ui_test.dart
+test/release_158_ui_test.dart:287:117: Error: Can't find '}' to match '{'.
+    testWidgets('cover play is independent from navigation and reads all 77 songs ${platform.name}', (tester) async {
+                                                                                          ^
+test/release_158_ui_test.dart:303:1: Error: Expected a declaration, but got '}'.
+}
+^
+test/release_158_ui_test.dart:293:172: Error: Expected ';' after this.
+        EditorialCover(cover: profileFixtureCover, title: playlist158.title, onTap: () => opened++, coverAction: const PlatformCollectionPlayButton(item: playlist158))))))));
+                                                                                          ^
+test/release_158_ui_test.dart:294:22: Error: Undefined name 'tester'.
+      await ready146(tester);
+                     ^^^^^^
+test/release_158_ui_test.dart:294:7: Error: 'await' can only be used in 'async' or 'async*' methods.
+      await ready146(tester);
+      ^^^^^
+test/release_158_ui_test.dart:295:13: Error: Undefined name 'tester'.
+      await tester.tap(find.byKey(ValueKey('cover-play-playlist-${playlist158.id}')));
+            ^^^^^^
+test/release_158_ui_test.dart:295:7: Error: 'await' can only be used in 'async' or 'async*' methods.
+      await tester.tap(find.byKey(ValueKey('cover-play-playlist-${playlist158.id}')));
+      ^^^^^
+test/release_158_ui_test.dart:296:43: Error: Undefined name 'tester'.
+      for (var n = 0; n < 8; n++) { await tester.pump(const Duration(milliseconds: 50)); }
+                                          ^^^^^^
+test/release_158_ui_test.dart:296:37: Error: 'await' can only be used in 'async' or 'async*' methods.
+      for (var n = 0; n < 8; n++) { await tester.pump(const Duration(milliseconds: 50)); }
+                                    ^^^^^
+test/release_158_ui_test.dart:297:14: Error: Undefined name 'opened'.
+      expect(opened, 0); expect(queue.received, hasLength(77));
+             ^^^^^^
+test/release_158_ui_test.dart:297:33: Error: Undefined name 'queue'.
+      expect(opened, 0); expect(queue.received, hasLength(77));
+                                ^^^^^
+test/release_158_ui_test.dart:298:13: Error: Undefined name 'tester'.
+      await tester.tap(find.text(playlist158.title)); await tester.pump(); expect(opened, 1);
+            ^^^^^^
+test/release_158_ui_test.dart:298:7: Error: 'await' can only be used in 'async' or 'async*' methods.
+      await tester.tap(find.text(playlist158.title)); await tester.pump(); expect(opened, 1);
+      ^^^^^
+test/release_158_ui_test.dart:298:61: Error: Undefined name 'tester'.
+      await tester.tap(find.text(playlist158.title)); await tester.pump(); expect(opened, 1);
+                                                            ^^^^^^
+test/release_158_ui_test.dart:298:55: Error: 'await' can only be used in 'async' or 'async*' methods.
+      await tester.tap(find.text(playlist158.title)); await tester.pump(); expect(opened, 1);
+                                                      ^^^^^
+test/release_158_ui_test.dart:298:83: Error: Undefined name 'opened'.
+      await tester.tap(find.text(playlist158.title)); await tester.pump(); expect(opened, 1);
+                                                                                  ^^^^^^
+test/release_158_ui_test.dart:299:14: Error: Undefined name 'tester'.
+      expect(tester.takeException(), isNull);
+             ^^^^^^
+test/release_158_ui_test.dart:300:13: Error: Undefined name 'tester'.
+      await tester.pumpWidget(const SizedBox()); await tester.pump();
+            ^^^^^^
+test/release_158_ui_test.dart:300:7: Error: 'await' can only be used in 'async' or 'async*' methods.
+      await tester.pumpWidget(const SizedBox()); await tester.pump();
+      ^^^^^
+test/release_158_ui_test.dart:300:56: Error: Undefined name 'tester'.
+      await tester.pumpWidget(const SizedBox()); await tester.pump();
+                                                       ^^^^^^
+test/release_158_ui_test.dart:300:50: Error: 'await' can only be used in 'async' or 'async*' methods.
+      await tester.pumpWidget(const SizedBox()); await tester.pump();
+                                                 ^^^^^
+test/release_158_ui_test.dart:301:6: Error: Expected an identifier, but got ')'.
+Try inserting an identifier before ')'.
+    });
+     ^
+test/release_158_ui_test.dart:301:5: Error: Expected ';' after this.
+    });
+    ^
+test/release_158_ui_test.dart:301:6: Error: Unexpected token ';'.
+    });
+     ^
+test/release_158_collections_test.dart:58:36: Error: Member not found: 'AppDatabase.forTesting'.
+      final database = AppDatabase.forTesting(NativeDatabase.memory());
+                                   ^^^^^^^^^^
+00:00 +0 -1: loading D:/AnLi/test/release_158_ui_test.dart [E]
+  Failed to load "D:/AnLi/test/release_158_ui_test.dart":
+  Compilation failed for testPath=D:/AnLi/test/release_158_ui_test.dart: test/release_158_ui_test.dart:287:117: Error: Can't find '}' to match '{'.
+      testWidgets('cover play is independent from navigation and reads all 77 songs ${platform.name}', (tester) async {
+                                                                                                                      ^
+  test/release_158_ui_test.dart:303:1: Error: Expected a declaration, but got '}'.
+  }
+  ^
+  test/release_158_ui_test.dart:293:172: Error: Expected ';' after this.
+          EditorialCover(cover: profileFixtureCover, title: playlist158.title, onTap: () => opened++, coverAction: const PlatformCollectionPlayButton(item: playlist158))))))));
+                                                                                                                                                                             ^
+  test/release_158_ui_test.dart:294:22: Error: Undefined name 'tester'.
+        await ready146(tester);
+                       ^^^^^^
+  test/release_158_ui_test.dart:294:7: Error: 'await' can only be used in 'async' or 'async*' methods.
+        await ready146(tester);
+        ^^^^^
+  test/release_158_ui_test.dart:295:13: Error: Undefined name 'tester'.
+        await tester.tap(find.byKey(ValueKey('cover-play-playlist-${playlist158.id}')));
+              ^^^^^^
+  test/release_158_ui_test.dart:295:7: Error: 'await' can only be used in 'async' or 'async*' methods.
+        await tester.tap(find.byKey(ValueKey('cover-play-playlist-${playlist158.id}')));
+        ^^^^^
+  test/release_158_ui_test.dart:296:43: Error: Undefined name 'tester'.
+        for (var n = 0; n < 8; n++) { await tester.pump(const Duration(milliseconds: 50)); }
+                                            ^^^^^^
+  test/release_158_ui_test.dart:296:37: Error: 'await' can only be used in 'async' or 'async*' methods.
+        for (var n = 0; n < 8; n++) { await tester.pump(const Duration(milliseconds: 50)); }
+                                      ^^^^^
+  test/release_158_ui_test.dart:297:14: Error: Undefined name 'opened'.
+        expect(opened, 0); expect(queue.received, hasLength(77));
+               ^^^^^^
+  test/release_158_ui_test.dart:297:33: Error: Undefined name 'queue'.
+        expect(opened, 0); expect(queue.received, hasLength(77));
+                                  ^^^^^
+  test/release_158_ui_test.dart:298:13: Error: Undefined name 'tester'.
+        await tester.tap(find.text(playlist158.title)); await tester.pump(); expect(opened, 1);
+              ^^^^^^
+  test/release_158_ui_test.dart:298:7: Error: 'await' can only be used in 'async' or 'async*' methods.
+        await tester.tap(find.text(playlist158.title)); await tester.pump(); expect(opened, 1);
+        ^^^^^
+  test/release_158_ui_test.dart:298:61: Error: Undefined name 'tester'.
+        await tester.tap(find.text(playlist158.title)); await tester.pump(); expect(opened, 1);
+                                                              ^^^^^^
+  test/release_158_ui_test.dart:298:55: Error: 'await' can only be used in 'async' or 'async*' methods.
+        await tester.tap(find.text(playlist158.title)); await tester.pump(); expect(opened, 1);
+                                                        ^^^^^
+  test/release_158_ui_test.dart:298:83: Error: Undefined name 'opened'.
+        await tester.tap(find.text(playlist158.title)); await tester.pump(); expect(opened, 1);
+                                                                                    ^^^^^^
+  test/release_158_ui_test.dart:299:14: Error: Undefined name 'tester'.
+        expect(tester.takeException(), isNull);
+               ^^^^^^
+  test/release_158_ui_test.dart:300:13: Error: Undefined name 'tester'.
+        await tester.pumpWidget(const SizedBox()); await tester.pump();
+              ^^^^^^
+  test/release_158_ui_test.dart:300:7: Error: 'await' can only be used in 'async' or 'async*' methods.
+        await tester.pumpWidget(const SizedBox()); await tester.pump();
+        ^^^^^
+  test/release_158_ui_test.dart:300:56: Error: Undefined name 'tester'.
+        await tester.pumpWidget(const SizedBox()); await tester.pump();
+                                                         ^^^^^^
+  test/release_158_ui_test.dart:300:50: Error: 'await' can only be used in 'async' or 'async*' methods.
+        await tester.pumpWidget(const SizedBox()); await tester.pump();
+                                                   ^^^^^
+  test/release_158_ui_test.dart:301:6: Error: Expected an identifier, but got ')'.
+  Try inserting an identifier before ')'.
+      });
+       ^
+  test/release_158_ui_test.dart:301:5: Error: Expected ';' after this.
+      });
+      ^
+  test/release_158_ui_test.dart:301:6: Error: Unexpected token ';'.
+      });
+       ^
+  test/release_158_collections_test.dart:58:36: Error: Member not found: 'AppDatabase.forTesting'.
+        final database = AppDatabase.forTesting(NativeDatabase.memory());
+                                     ^^^^^^^^^^
+  .
+  Error: The Dart compiler exited unexpectedly.
+  package:flutter_tools/src/base/common.dart 34:3  throwToolExit
+  package:flutter_tools/src/compile.dart 939:11    DefaultResidentCompiler._compile.<fn>
+  dart:async/zone_root.dart 48:47                  _rootRunUnary
+  dart:async/zone.dart 733:19                      _CustomZone.runUnary
+  dart:async/future_impl.dart 948:45               Future._propagateToListeners.handleValueCallback
+  dart:async/future_impl.dart 977:13               Future._propagateToListeners
+  dart:async/future_impl.dart 862:9                Future._propagateToListeners
+  dart:async/future_impl.dart 720:5                Future._completeWithValue
+  dart:async/future_impl.dart 804:7                Future._asyncCompleteWithValue.<fn>
+  dart:async/zone_root.dart 35:13                  _rootRun
+  dart:async/zone.dart 726:19                      _CustomZone.run
+  dart:async/zone.dart 625:7                       _CustomZone.runGuarded
+  dart:async/zone.dart 666:23                      _CustomZone.bindCallbackGuarded.<fn>
+  dart:async/schedule_microtask.dart 40:35         _microtaskLoop
+  dart:async/schedule_microtask.dart 49:5          _startMicrotaskLoop
+  dart:isolate-patch/isolate_patch.dart 127:13     _runPendingImmediateCallback
+  dart:isolate-patch/isolate_patch.dart 194:5      _RawReceivePort._handleMessage
+  
+test/release_158_collections_test.dart:58:36: Error: Member not found: 'AppDatabase.forTesting'.
+      final database = AppDatabase.forTesting(NativeDatabase.memory());
+                                   ^^^^^^^^^^
+00:00 +0 -2: loading D:/AnLi/test/release_158_collections_test.dart [E]
+  Failed to load "D:/AnLi/test/release_158_collections_test.dart":
+  Compilation failed for testPath=D:/AnLi/test/release_158_collections_test.dart: test/release_158_collections_test.dart:58:36: Error: Member not found: 'AppDatabase.forTesting'.
+        final database = AppDatabase.forTesting(NativeDatabase.memory());
+                                     ^^^^^^^^^^
+  .
+00:00 +0 -2: Some tests failed.

@@ -1,0 +1,248 @@
+966            -
+  Class descriptor  : 'Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;)
+      name          : 'params'
+      type          : 'Ljava/util/Map;'
+      access        : 0x0002 (PRIVATE)
+    #1              : (in Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;)
+      name          : 'uploadFiles'
+      type          : 'Ljava/util/List;'
+      access        : 0x0002 (PRIVATE)
+    #2              : (in Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;)
+      name          : 'url'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0002 (PRIVATE)
+  Direct methods    -
+    #0              : (in Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;)
+      name          : '<init>'
+      type          : '(Ljava/lang/String;)V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 1
+      insns size    : 20 16-bit code units
+2f0d74:                                        |[2f0d74] com.netease.cloudmusic.network.model.MultipleUploadEntity$Builder.<init>:(Ljava/lang/String;)V
+2f0d84: 7010 80c2 0100                         |0000: invoke-direct {v1}, Ljava/lang/Object;.<init>:()V // method@c280
+2f0d8a: 2200 6f27                              |0003: new-instance v0, Ljava/util/HashMap; // type@276f
+2f0d8e: 7010 b9c3 0000                         |0005: invoke-direct {v0}, Ljava/util/HashMap;.<init>:()V // method@c3b9
+2f0d94: 5b10 7a2a                              |0008: iput-object v0, v1, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;.params:Ljava/util/Map; // field@2a7a
+2f0d98: 2200 6327                              |000a: new-instance v0, Ljava/util/ArrayList; // type@2763
+2f0d9c: 7010 70c3 0000                         |000c: invoke-direct {v0}, Ljava/util/ArrayList;.<init>:()V // method@c370
+2f0da2: 5b10 7b2a                              |000f: iput-object v0, v1, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;.uploadFiles:Ljava/util/List; // field@2a7b
+2f0da6: 5b12 7c2a                              |0011: iput-object v2, v1, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;.url:Ljava/lang/String; // field@2a7c
+2f0daa: 0e00                                   |0013: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+        0x0013 line=20
+      locals        :
+        0x0000 - 0x0014 reg=1 this Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;
+        0x0000 - 0x0014 reg=2 (null) Ljava/lang/String;
+
+    #1              : (in Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;)
+      name          : 'a'
+      type          : '(Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;)Ljava/util/Map;'
+      access        : 0x1048 (STATIC BRIDGE SYNTHETIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+2f0d5c:                                        |[2f0d5c] com.netease.cloudmusic.network.model.MultipleUploadEntity$Builder.a:(Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;)Ljava/util/Map;
+2f0d6c: 5400 7a2a                              |0000: iget-object v0, v0, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;.params:Ljava/util/Map; // field@2a7a
+2f0d70: 1100                                   |0002: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+      locals        :
+        0x0000 - 0x0003 reg=0 (null) Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;
+
+    #2              : (in Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;)
+      name          : 'b'
+      type          : '(Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;)Ljava/util/List;'
+      access        : 0x1048 (STATIC BRIDGE SYNTHETIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+2f0d44:                                        |[2f0d44] com.netease.cloudmusic.network.model.MultipleUploadEntity$Builder.b:(Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;)Ljava/util/List;
+2f0d54: 5400 7b2a                              |0000: iget-object v0, v0, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;.uploadFiles:Ljava/util/List; // field@2a7b
+2f0d58: 1100                                   |0002: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+      locals        :
+        0x0000 - 0x0003 reg=0 (null) Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;
+
+    #3              : (in Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;)
+      name          : 'c'
+      type          : '(Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;)Ljava/lang/String;'
+      access        : 0x1048 (STATIC BRIDGE SYNTHETIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+2f0d2c:                                        |[2f0d2c] com.netease.cloudmusic.network.model.MultipleUploadEntity$Builder.c:(Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;)Ljava/lang/String;
+2f0d3c: 5400 7c2a                              |0000: iget-object v0, v0, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;.url:Ljava/lang/String; // field@2a7c
+2f0d40: 1100                                   |0002: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+      locals        :
+        0x0000 - 0x0003 reg=0 (null) Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;
+
+  Virtual methods   -
+    #0              : (in Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;)
+      name          : 'addFile'
+      type          : '(Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;)Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 2
+      insns size    : 6 16-bit code units
+2f0cb4:                                        |[2f0cb4] com.netease.cloudmusic.network.model.MultipleUploadEntity$Builder.addFile:(Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;)Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;
+2f0cc4: 5410 7b2a                              |0000: iget-object v0, v1, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;.uploadFiles:Ljava/util/List; // field@2a7b
+2f0cc8: 7220 e1c3 2000                         |0002: invoke-interface {v0, v2}, Ljava/util/List;.add:(Ljava/lang/Object;)Z // method@c3e1
+2f0cce: 1101                                   |0005: return-object v1
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+      locals        :
+        0x0000 - 0x0006 reg=1 this Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;
+        0x0000 - 0x0006 reg=2 (null) Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;
+
+    #1              : (in Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;)
+      name          : 'addFile'
+      type          : '(Ljava/io/File;Ljava/lang/String;)Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 3
+      outs          : 2
+      insns size    : 10 16-bit code units
+2f0cd0:                                        |[2f0cd0] com.netease.cloudmusic.network.model.MultipleUploadEntity$Builder.addFile:(Ljava/io/File;Ljava/lang/String;)Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;
+2f0ce0: 5410 7b2a                              |0000: iget-object v0, v1, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;.uploadFiles:Ljava/util/List; // field@2a7b
+2f0ce4: 7120 da6a 3200                         |0002: invoke-static {v2, v3}, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile;.create:(Ljava/io/File;Ljava/lang/String;)Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$UploadFile; // method@6ada
+2f0cea: 0c02                                   |0005: move-result-object v2
+2f0cec: 7220 e1c3 2000                         |0006: invoke-interface {v0, v2}, Ljava/util/List;.add:(Ljava/lang/Object;)Z // method@c3e1
+2f0cf2: 1101                                   |0009: return-object v1
+      catches       : (none)
+      positions     :
+        0x0000 line=2
+      locals        :
+        0x0000 - 0x000a reg=1 this Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;
+        0x0000 - 0x000a reg=2 (null) Ljava/io/File;
+        0x0000 - 0x000a reg=3 (null) Ljava/lang/String;
+
+    #2              : (in Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;)
+      name          : 'addParam'
+      type          : '(Ljava/lang/String;Ljava/lang/Object;)Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 3
+      outs          : 3
+      insns size    : 6 16-bit code units
+2f0cf4:                                        |[2f0cf4] com.netease.cloudmusic.network.model.MultipleUploadEntity$Builder.addParam:(Ljava/lang/String;Ljava/lang/Object;)Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;
+2f0d04: 5410 7a2a                              |0000: iget-object v0, v1, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;.params:Ljava/util/Map; // field@2a7a
+2f0d08: 7230 01c4 2003                         |0002: invoke-interface {v0, v2, v3}, Ljava/util/Map;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@c401
+2f0d0e: 1101                                   |0005: return-object v1
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+      locals        :
+        0x0000 - 0x0006 reg=1 this Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;
+        0x0000 - 0x0006 reg=2 (null) Ljava/lang/String;
+        0x0000 - 0x0006 reg=3 (null) Ljava/lang/Object;
+
+    #3              : (in Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;)
+      name          : 'addParams'
+      type          : '(Ljava/util/Map;)Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 2
+      insns size    : 6 16-bit code units
+2f0d10:                                        |[2f0d10] com.netease.cloudmusic.network.model.MultipleUploadEntity$Builder.addParams:(Ljava/util/Map;)Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;
+2f0d20: 5410 7a2a                              |0000: iget-object v0, v1, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;.params:Ljava/util/Map; // field@2a7a
+2f0d24: 7220 02c4 2000                         |0002: invoke-interface {v0, v2}, Ljava/util/Map;.putAll:(Ljava/util/Map;)V // method@c402
+2f0d2a: 1101                                   |0005: return-object v1
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+      locals        :
+        0x0000 - 0x0006 reg=1 this Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;
+        0x0000 - 0x0006 reg=2 (null) Ljava/util/Map;
+
+    #4              : (in Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;)
+      name          : 'build'
+      type          : '()Lcom/netease/cloudmusic/network/model/MultipleUploadEntity;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 3
+      insns size    : 7 16-bit code units
+2f0c94:                                        |[2f0c94] com.netease.cloudmusic.network.model.MultipleUploadEntity$Builder.build:()Lcom/netease/cloudmusic/network/model/MultipleUploadEntity;
+2f0ca4: 2200 5d15                              |0000: new-instance v0, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity; // type@155d
+2f0ca8: 1201                                   |0002: const/4 v1, #int 0 // #0
+2f0caa: 7030 dc6a 2001                         |0003: invoke-direct {v0, v2, v1}, Lcom/netease/cloudmusic/network/model/MultipleUploadEntity;.<init>:(Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;Lcom/netease/cloudmusic/network/model/c;)V // method@6adc
+2f0cb0: 1100                                   |0006: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+      locals        :
+        0x0000 - 0x0007 reg=2 this Lcom/netease/cloudmusic/network/model/MultipleUploadEntity$Builder;
+
+  source_file_idx   : 25392 (ProGuard)
+

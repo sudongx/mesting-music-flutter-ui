@@ -1,0 +1,43 @@
+{
+  "createHttp": 200,
+  "businessCode": 0,
+  "dataFields": [
+    "app_name",
+    "captcha",
+    "copywriting",
+    "desc_url",
+    "description",
+    "error_code",
+    "expire_time",
+    "is_frontier",
+    "qrcode",
+    "qrcode_index_url",
+    "token",
+    "web_name"
+  ],
+  "hasToken": true,
+  "indexHost": "bff-pc.qishui.com",
+  "indexPath": "/ucenter_web/app/sdk-next",
+  "indexQueryKeys": [
+    "next_url",
+    "qr_source_aid",
+    "token",
+    "uc_sdk"
+  ],
+  "imageType": "data:image/png;base64,",
+  "imageLength": 18518,
+  "routeChecks": [
+    {
+      "path": "/ucenter_web/app/sdk-next",
+      "http": 404,
+      "contentType": "text/html",
+      "bytes": 546
+    },
+    {
+      "path": "/light/invoke/scan_login",
+      "http": 200,
+      "contentType": "text/html",
+      "bytes": 4069
+    }
+  ]
+}

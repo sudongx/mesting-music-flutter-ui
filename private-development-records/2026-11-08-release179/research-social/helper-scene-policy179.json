@@ -1,0 +1,74 @@
+{
+  "sourcePath": "C:\\Users\\zyt\\Documents\\Codex\\2026-11-06\\mesting-qishui-signer\\work\\app\\qishui-signer\\src\\policy.mjs",
+  "policySha256": "e7abf0df9dd5f4c2a42aad809f618c67c6458f56e032000ac66612ef6b7888a1",
+  "packageVersion": "0.2.2",
+  "localHead": "de172f68bb15cc1a537f9c9e64a207e2e26cd20f",
+  "selectedLines": [
+    {
+      "line": 68,
+      "text": "      !json.q.trim() || json.search_method !== 'input') fail('invalid_search');"
+    },
+    {
+      "line": 69,
+      "text": "}"
+    },
+    {
+      "line": 70,
+      "text": ""
+    },
+    {
+      "line": 71,
+      "text": "/** The official list declaration has a String cursor and integer count/scene."
+    },
+    {
+      "line": 72,
+      "text": " * Keep the proved scene enum: default=0 (compatibility), Douyin=1, Luna=2."
+    },
+    {
+      "line": 73,
+      "text": " * The App sends an explicit empty first-page cursor, then reuses server cursors."
+    },
+    {
+      "line": 74,
+      "text": " * Match its 256-character/no-whitespace bound without rebuilding signed bytes."
+    },
+    {
+      "line": 75,
+      "text": " */"
+    },
+    {
+      "line": 76,
+      "text": "function validateSocialQuery(params) {"
+    },
+    {
+      "line": 77,
+      "text": "  const cursor = params.get('cursor'), count = params.get('count'), scene = params.get('scene');"
+    },
+    {
+      "line": 78,
+      "text": "  if (cursor === null || cursor.length > 256 || /[\\u0000-\\u0020\\u007f]/.test(cursor) || !/^[0-9]{1,3}$/.test(count ?? '') ||"
+    },
+    {
+      "line": 79,
+      "text": "      Number(count) < 1 || Number(count) > 100 || !['0', '1', '2'].includes(scene)) fail('forbidden_query');"
+    },
+    {
+      "line": 80,
+      "text": "}"
+    },
+    {
+      "line": 81,
+      "text": ""
+    },
+    {
+      "line": 82,
+      "text": "/** Read-only music-wall request: no duration value or nested payload may be"
+    },
+    {
+      "line": 83,
+      "text": " * submitted through this contract. Do not infer a listening-time write API."
+    }
+  ],
+  "networkRequested": false,
+  "deploymentVerified": false
+}

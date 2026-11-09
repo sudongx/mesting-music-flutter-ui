@@ -1,0 +1,30 @@
+{
+  "sourceVersion": "1.0.63/code84",
+  "log": ".codex-artifacts/2026-11-06-soda-sms-2156/playback-user-regression-log-redacted.txt",
+  "logLocalTimestamp": "2026-11-06 10:35:00.966",
+  "exception": "java.lang.IllegalArgumentException: The source buffer is this buffer",
+  "stack": [
+    "java.nio.Buffer.createSameBufferException(Buffer.java:277)",
+    "java.nio.ByteBuffer.put(ByteBuffer.java:1023)",
+    "java.nio.DirectByteBuffer.put(DirectByteBuffer.java:297)",
+    "o2.k.e(SourceFile:185)"
+  ],
+  "mapping": {
+    "file": "build/app/outputs/mapping/betaRelease/mapping.txt",
+    "line": 220347,
+    "classEntry": "com.ryanheise.just_audio.SodaAudioProcessor -> o2.k:"
+  },
+  "currentSource": {
+    "file": "third_party/just_audio/package/android/src/main/java/com/ryanheise/just_audio/SodaAudioProcessor.java",
+    "method": "queueInput",
+    "passthroughLines": [
+      "ByteBuffer output = replaceOutputBuffer(input.remaining());",
+      "output.put(input).flip(); return;"
+    ],
+    "emptyInputGuardPresent": false
+  },
+  "confirmed": "The runtime self-copy exception passes through the newly added SodaAudioProcessor",
+  "unconfirmed": "The exact shared EMPTY_BUFFER trigger must be reproduced against the actual Media3 implementation",
+  "fixImplemented": false,
+  "nativeTestExecuted": false
+}

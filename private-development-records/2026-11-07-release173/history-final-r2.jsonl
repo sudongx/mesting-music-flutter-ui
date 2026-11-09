@@ -1,0 +1,38 @@
+{"protocolVersion":"0.1.1","runnerVersion":"1.30.0","pid":217740,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"D:/AnLi/test/qishui_history173_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading D:/AnLi/test/qishui_history173_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":4}
+{"count":1,"time":10,"type":"allSuites"}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":3442}
+{"group":{"id":2,"suiteID":0,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":14,"line":null,"column":null,"url":null},"type":"group","time":3446}
+{"test":{"id":3,"name":"remote history reads every page in server order and deduplicates boundaries","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":127,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3446}
+{"testID":3,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3478}
+{"test":{"id":4,"name":"looping pagination fails instead of returning a partial full history","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":149,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3479}
+{"testID":4,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3487}
+{"test":{"id":5,"name":"more without a cursor fails and a malformed response is not an empty history","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":163,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3487}
+{"testID":5,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3491}
+{"test":{"id":6,"name":"account changes while reading discard the prior account response","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":179,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3492}
+{"testID":6,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3495}
+{"test":{"id":7,"name":"confirmed playback sends only recent-media body then checks newest cloud item","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":192,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3495}
+{"testID":7,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3504}
+{"test":{"id":8,"name":"a later real replay may reorder history after a confirmed earlier write","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":213,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3505}
+{"testID":8,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3509}
+{"test":{"id":9,"name":"unknown write persists across a new reporter and does not replay when item is merely present","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":228,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3509}
+{"testID":9,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3515}
+{"test":{"id":10,"name":"pending history can be reconciled by top-position readback without another write","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":256,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3516}
+{"testID":10,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3519}
+{"test":{"id":11,"name":"successful dispatch with unreadable readback remains unknown and is not automatically replayed","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":274,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3519}
+{"testID":11,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3523}
+{"test":{"id":12,"name":"definite refusal releases journal for a later explicit playback event","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":291,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3523}
+{"testID":12,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3526}
+{"test":{"id":13,"name":"reporter ignores other platforms and duplicate deliveries but allows a new playback revision","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":310,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3527}
+{"testID":13,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3531}
+{"test":{"id":14,"name":"disposal cancels queued account work and suppresses late statuses","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":337,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3532}
+{"testID":14,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3535}
+{"test":{"id":15,"name":"unknown sync is reported separately without throwing into playback","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":360,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3535}
+{"testID":15,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3539}
+{"test":{"id":16,"name":"actual player restore and failed resolution do not report; confirmed audible play does","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":378,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3539}
+{"testID":16,"error":"Expected: <1>\n  Actual: <0>\n","stackTrace":"package:matcher                                     expect\npackage:flutter_test/src/widget_tester.dart 473:18  expect\ntest\\qishui_history173_test.dart 430:7              main.<fn>\n","isFailure":true,"type":"error","time":4849}
+{"testID":16,"result":"failure","skipped":false,"hidden":false,"type":"testDone","time":4849}
+{"success":false,"type":"done","time":4882}

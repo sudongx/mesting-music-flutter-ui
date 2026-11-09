@@ -1,0 +1,403 @@
+[
+  {
+    "dex": "classes5.dex",
+    "dex_sha256": "6c4c972727e09af1fbff03e377a51a4b30ebd20603d278f52265dc77fad6634e",
+    "class": "Lcom/luna/biz/explore/playlist/net/PlaylistApi$PlaylistSearchRequest;",
+    "fields": [
+      {
+        "field": "a",
+        "type": "Ljava/lang/String;",
+        "json": "playlist_id"
+      },
+      {
+        "field": "b",
+        "type": "Ljava/lang/String;",
+        "json": "query"
+      },
+      {
+        "field": "c",
+        "type": "Ljava/lang/String;",
+        "json": "session_id"
+      },
+      {
+        "field": "d",
+        "type": "Ljava/lang/Integer;",
+        "json": "sort_type"
+      },
+      {
+        "field": "e",
+        "type": "Ljava/lang/Integer;",
+        "json": "limited_free_scene"
+      }
+    ]
+  },
+  {
+    "dex": "classes5.dex",
+    "dex_sha256": "6c4c972727e09af1fbff03e377a51a4b30ebd20603d278f52265dc77fad6634e",
+    "class": "Lcom/luna/biz/entitlement/bean/CheckDownloadRequest;",
+    "fields": [
+      {
+        "field": "tracks",
+        "type": "Ljava/util/List;",
+        "json": "tracks"
+      }
+    ]
+  },
+  {
+    "dex": "classes5.dex",
+    "dex_sha256": "6c4c972727e09af1fbff03e377a51a4b30ebd20603d278f52265dc77fad6634e",
+    "class": "Lcom/luna/biz/explore/playlist/net/PlaylistApi$PlaylistDetailRequest;",
+    "fields": [
+      {
+        "field": "tabQueries",
+        "type": "Ljava/util/List;",
+        "json": "tab_queries"
+      }
+    ]
+  },
+  {
+    "dex": "classes5.dex",
+    "dex_sha256": "6c4c972727e09af1fbff03e377a51a4b30ebd20603d278f52265dc77fad6634e",
+    "class": "Lcom/luna/biz/entitlement/bean/CheckDownloadResponse;",
+    "fields": [
+      {
+        "field": "artistDownloadInfoMap",
+        "type": "Ljava/util/Map;",
+        "json": "artist_download_info_map"
+      },
+      {
+        "field": "noQuotaToastContent",
+        "type": "Ljava/lang/String;",
+        "json": "no_quota_toast_content"
+      },
+      {
+        "field": "remainingDownloadQuota",
+        "type": "J",
+        "json": "remaining_download_quota"
+      },
+      {
+        "field": "trackDownloadEntitlements",
+        "type": "Ljava/util/List;",
+        "json": "track_download_info_list"
+      }
+    ]
+  },
+  {
+    "dex": "classes6.dex",
+    "dex_sha256": "3c4ea3713c6aa50f6883f54d87ef667354fd1f9dc6bf8f5154ab0adc9c5bc19c",
+    "class": "Lcom/luna/biz/me/tab/library/net/GetMyPlaylistRequest;",
+    "fields": [
+      {
+        "field": "a",
+        "type": "Ljava/lang/String;",
+        "json": "cursor"
+      },
+      {
+        "field": "b",
+        "type": "Ljava/lang/Integer;",
+        "json": "count"
+      },
+      {
+        "field": "c",
+        "type": "Ljava/lang/String;",
+        "json": "ab_param"
+      }
+    ]
+  },
+  {
+    "dex": "classes6.dex",
+    "dex_sha256": "3c4ea3713c6aa50f6883f54d87ef667354fd1f9dc6bf8f5154ab0adc9c5bc19c",
+    "class": "Lcom/luna/biz/me/tab/library/net/GetCreatedPlaylistsResponse;",
+    "fields": [
+      {
+        "field": "a",
+        "type": "Ljava/util/List;",
+        "json": "playlists"
+      },
+      {
+        "field": "b",
+        "type": "Ljava/lang/String;",
+        "json": "next_cursor"
+      },
+      {
+        "field": "c",
+        "type": "I",
+        "json": "total_num"
+      },
+      {
+        "field": "d",
+        "type": "Z",
+        "json": "has_more"
+      }
+    ]
+  },
+  {
+    "dex": "classes6.dex",
+    "dex_sha256": "3c4ea3713c6aa50f6883f54d87ef667354fd1f9dc6bf8f5154ab0adc9c5bc19c",
+    "class": "Lcom/luna/biz/me/tab/library/net/GetMixCollectionResponse;",
+    "fields": [
+      {
+        "field": "a",
+        "type": "Ljava/util/List;",
+        "json": "mixed_collections"
+      },
+      {
+        "field": "b",
+        "type": "Ljava/lang/String;",
+        "json": "next_cursor"
+      },
+      {
+        "field": "c",
+        "type": "I",
+        "json": "total_num"
+      },
+      {
+        "field": "d",
+        "type": "Z",
+        "json": "has_more"
+      }
+    ]
+  },
+  {
+    "dex": "classes9.dex",
+    "dex_sha256": "b92150c0f44f48cf8c0237944afe13445c5262d9089b017d672a03a45b92d90a",
+    "class": "Lcom/luna/common/arch/sync/net/IMediaCollectApi$MediaParam;",
+    "fields": [
+      {
+        "field": "abParam",
+        "type": "Ljava/lang/String;",
+        "json": "ab_param"
+      }
+    ]
+  },
+  {
+    "dex": "classes8.dex",
+    "dex_sha256": "d3a41ea69d5c03e8fb160d4c961ae64ccb22ab578581b493c022fb62d82ccf09",
+    "class": "Lcom/luna/biz/search/queueloader/api/RelatedApi$RelatedMediaParams;",
+    "fields": [
+      {
+        "field": "artistIds",
+        "type": "Ljava/util/Collection;",
+        "json": "artist_ids"
+      },
+      {
+        "field": "categoryId",
+        "type": "Ljava/lang/Long;",
+        "json": "category_id"
+      },
+      {
+        "field": "feedRelatedMediaExtra",
+        "type": "Lcom/luna/biz/search/queueloader/api/RelatedApi$FeedRelatedMediaExtra;",
+        "json": "feed_related_media_extra"
+      },
+      {
+        "field": "firstReqTime",
+        "type": "J",
+        "json": "first_req_time"
+      },
+      {
+        "field": "fullMedia",
+        "type": "Z",
+        "json": "full_media"
+      },
+      {
+        "field": "limitedFreeScene",
+        "type": "Ljava/lang/Integer;",
+        "json": "limited_free_scene"
+      },
+      {
+        "field": "mediaList",
+        "type": "Ljava/util/Collection;",
+        "json": "media_list"
+      },
+      {
+        "field": "mediaType",
+        "type": "Ljava/lang/Integer;",
+        "json": "media_type"
+      },
+      {
+        "field": "playedMedia",
+        "type": "Ljava/util/Collection;",
+        "json": "played_media"
+      },
+      {
+        "field": "playerInfoParam",
+        "type": "Lcom/luna/common/arch/net/feedparams/NetFeedPlayerInfoParam;",
+        "json": "player_info_param"
+      },
+      {
+        "field": "reqCount",
+        "type": "I",
+        "json": "req_count"
+      },
+      {
+        "field": "sceneName",
+        "type": "Ljava/lang/String;",
+        "json": "scene_name"
+      },
+      {
+        "field": "searchQuery",
+        "type": "Ljava/lang/String;",
+        "json": "search_query"
+      },
+      {
+        "field": "searchRelatedInfo",
+        "type": "Ljava/lang/String;",
+        "json": "search_related_info"
+      },
+      {
+        "field": "unlimitedFlowInfo",
+        "type": "Ljava/lang/String;",
+        "json": "unlimited_flow_info"
+      }
+    ]
+  },
+  {
+    "dex": "classes8.dex",
+    "dex_sha256": "d3a41ea69d5c03e8fb160d4c961ae64ccb22ab578581b493c022fb62d82ccf09",
+    "class": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+    "fields": [
+      {
+        "field": "abParam",
+        "type": "Ljava/lang/String;",
+        "json": "ab_param"
+      },
+      {
+        "field": "cursor",
+        "type": "Ljava/lang/String;",
+        "json": "cursor"
+      },
+      {
+        "field": "fromSearchId",
+        "type": "Ljava/lang/String;",
+        "json": "from_search_id"
+      },
+      {
+        "field": "lastViewedMedia",
+        "type": "Lcom/luna/common/arch/sync/net/NetMedia;",
+        "json": "last_viewed_media"
+      },
+      {
+        "field": "limitedFreeScene",
+        "type": "Ljava/lang/Integer;",
+        "json": "limited_free_scene"
+      },
+      {
+        "field": "query",
+        "type": "Ljava/lang/String;",
+        "json": "q"
+      },
+      {
+        "field": "sceneName",
+        "type": "Ljava/lang/String;",
+        "json": "scene_name"
+      },
+      {
+        "field": "searchId",
+        "type": "Ljava/lang/String;",
+        "json": "search_id"
+      },
+      {
+        "field": "searchMethod",
+        "type": "Ljava/lang/String;",
+        "json": "search_method"
+      },
+      {
+        "field": "searchScene",
+        "type": "Ljava/lang/String;",
+        "json": "search_scene"
+      },
+      {
+        "field": "searchTransit",
+        "type": "Lcom/luna/common/arch/anchor/SearchTransit;",
+        "json": "transit"
+      },
+      {
+        "field": "searchType",
+        "type": "Lcom/luna/biz/search/result/net/data/SearchType;",
+        "json": "search_type"
+      }
+    ]
+  },
+  {
+    "dex": "classes8.dex",
+    "dex_sha256": "d3a41ea69d5c03e8fb160d4c961ae64ccb22ab578581b493c022fb62d82ccf09",
+    "class": "Lcom/luna/biz/video/tab/listenvideo/net/Related/ListenVideoRelatedApi$RelatedMediaParamsV2;",
+    "fields": [
+      {
+        "field": "categoryId",
+        "type": "Ljava/lang/Long;",
+        "json": "category_id"
+      },
+      {
+        "field": "feedRelatedMediaExtra",
+        "type": "Lcom/luna/biz/video/tab/listenvideo/net/Related/ListenVideoRelatedApi$FeedRelatedMediaExtra;",
+        "json": "feed_related_media_extra"
+      },
+      {
+        "field": "firstReqTime",
+        "type": "J",
+        "json": "first_req_time"
+      },
+      {
+        "field": "mediaList",
+        "type": "Ljava/util/Collection;",
+        "json": "media_list"
+      },
+      {
+        "field": "playedMedia",
+        "type": "Ljava/util/Collection;",
+        "json": "played_media"
+      },
+      {
+        "field": "reqCount",
+        "type": "I",
+        "json": "req_count"
+      },
+      {
+        "field": "sceneName",
+        "type": "Ljava/lang/String;",
+        "json": "scene_name"
+      }
+    ]
+  },
+  {
+    "dex": "classes8.dex",
+    "dex_sha256": "d3a41ea69d5c03e8fb160d4c961ae64ccb22ab578581b493c022fb62d82ccf09",
+    "class": "Lcom/luna/biz/video/videoplaylist/related/net/VideoPlaylistDetailRequest;",
+    "fields": [
+      {
+        "field": "count",
+        "type": "Ljava/lang/Integer;",
+        "json": "count"
+      },
+      {
+        "field": "cursor",
+        "type": "Ljava/lang/Integer;",
+        "json": "cursor"
+      },
+      {
+        "field": "videoId",
+        "type": "J",
+        "json": "video_id"
+      }
+    ]
+  },
+  {
+    "dex": "classes7.dex",
+    "dex_sha256": "353b34c448bda355a863d1f49646d5f350e5afc5c366ac4168b123850f9b7701",
+    "class": "Lcom/luna/biz/playing/player/queue/load/loader/dailymix/net/DailyMixApi$FeedParams;",
+    "fields": [
+      {
+        "field": "fullMedia",
+        "type": "Z",
+        "json": "full_media"
+      },
+      {
+        "field": "playerInfoParam",
+        "type": "Lcom/luna/common/arch/net/feedparams/NetFeedPlayerInfoParam;",
+        "json": "player_info_param"
+      }
+    ]
+  }
+]

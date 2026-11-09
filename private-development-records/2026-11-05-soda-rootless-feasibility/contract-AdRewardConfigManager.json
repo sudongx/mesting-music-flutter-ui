@@ -1,0 +1,3098 @@
+{
+  "source_sha256": "b639e67c13e03377f0f9d8068c5e0419b1acd42c7d529362f11ae704b3838741",
+  "dex_entry": "classes4.dex",
+  "dex_sha256": "2232c2f1c2d5457febff648e65a6698a28ee279381929b592a6fe1e62e182c73",
+  "scope": "Bounded raw DEX annotation reader for selected, byte-identical APK classes.\n\nThis records declarations/annotations, not executable behavior or a call graph.\nIt complements focused REA/JADX analysis when the host cannot run two JVMs.\nIt neither loads classes nor runs APK/native code. No third-party parser code.\n",
+  "classes": [
+    {
+      "class_def_index": 1359,
+      "descriptor": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+      "access_flags": 17,
+      "super": "Ljava/lang/Object;",
+      "interfaces": [],
+      "class_data_offset": 10835601,
+      "static_values_offset": 0,
+      "fields": [
+        {
+          "dex_field_index": 9534,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "a",
+          "type": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10199886,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 9535,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "b",
+          "type": "Lkotlin/Lazy;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10199886,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 9536,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "c",
+          "type": "Ljava/util/ArrayList;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10278993,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "Ljava/util/ArrayList<",
+                  "Lcom/luna/biz/ad/data/api/AdUnitConfig;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 10199886,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 9537,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "d",
+          "type": "Lcom/luna/biz/ad/repo/net/IncentiveConfigResponse;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 9539,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "f",
+          "type": "Lcom/luna/biz/ad/repo/net/AdsConfigResponse;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "dex_method_index": 22020,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "B",
+          "descriptor": "(Ljava/util/List;Ljava/util/List;)Lcom/luna/biz/ad/data/api/AdSource;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279368,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Ljava/util/List<",
+                  "Lcom/luna/biz/ad/data/api/AdUnitConfig;",
+                  ">;",
+                  "Ljava/util/List<",
+                  "Lcom/luna/biz/ad/data/api/AdvertSource;",
+                  ">;)",
+                  "Lcom/luna/biz/ad/data/api/AdSource;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 10199886,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 22022,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "D",
+          "descriptor": "(Lcom/luna/biz/ad/data/AdType;Lcom/luna/biz/ad/data/api/AdSource;Ljava/util/List;)Lcom/luna/biz/ad/data/api/AdUnitConfig;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10278936,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Lcom/luna/biz/ad/data/AdType;",
+                  "Lcom/luna/biz/ad/data/api/AdSource;",
+                  "Ljava/util/List<",
+                  "Lcom/luna/biz/ad/data/api/AdUnitConfig;",
+                  ">;)",
+                  "Lcom/luna/biz/ad/data/api/AdUnitConfig;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 22024,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "F",
+          "descriptor": "()Ljava/util/List;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10274557,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "()",
+                  "Ljava/util/List<",
+                  "Ljava/lang/Integer;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 22029,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "K",
+          "descriptor": "()Lio/reactivex/Observable;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10271126,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "()",
+                  "Lio/reactivex/Observable<",
+                  "Lcom/luna/biz/ad/repo/net/IncentiveConfigResponse;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 22033,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "O",
+          "descriptor": "(Ljava/lang/String;Lcom/luna/biz/ad/data/reward/RewardSettleScene;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/String;)Lio/reactivex/Observable;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279485,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Ljava/lang/String;",
+                  "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+                  "Ljava/lang/String;",
+                  "Ljava/lang/String;",
+                  "Ljava/lang/Long;",
+                  "Ljava/lang/String;",
+                  ")",
+                  "Lio/reactivex/Observable<",
+                  "Lcom/luna/biz/ad/repo/net/LuckyDoActionResponse;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 22048,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "j",
+          "descriptor": "(Lcom/luna/biz/ad/repo/net/AdIncentiveDoneRequest$TaskFrom;ZLjava/lang/Long;ILjava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Lio/reactivex/Observable;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279317,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Lcom/luna/biz/ad/repo/net/AdIncentiveDoneRequest$TaskFrom;",
+                  "Z",
+                  "Ljava/lang/Long;",
+                  "I",
+                  "Ljava/lang/String;",
+                  "Ljava/lang/String;",
+                  "I",
+                  "Ljava/lang/String;",
+                  "Ljava/lang/String;",
+                  ")",
+                  "Lio/reactivex/Observable<",
+                  "Lcom/luna/biz/ad/repo/net/AdsIncentiveDoneResponse;",
+                  ">;"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "dex_method_index": 22053,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "o",
+          "descriptor": "(Ljava/lang/String;Lcom/luna/biz/ad/data/reward/RewardSettleScene;ILjava/lang/Long;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Lio/reactivex/Observable;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279434,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Ljava/lang/String;",
+                  "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+                  "I",
+                  "Ljava/lang/Long;",
+                  "Ljava/lang/String;",
+                  "Ljava/lang/String;",
+                  "I",
+                  "Ljava/lang/String;",
+                  "Ljava/lang/String;",
+                  ")",
+                  "Lio/reactivex/Observable<",
+                  "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 22057,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "s",
+          "descriptor": "()Ljava/lang/Integer;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 22058,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "t",
+          "descriptor": "()Ljava/util/List;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10220993,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "()",
+                  "Ljava/util/List<",
+                  "Lcom/luna/biz/ad/data/api/AdvertSource;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 22060,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "v",
+          "descriptor": "(Ljava/util/List;Ljava/util/List;)Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279401,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Ljava/util/List<",
+                  "Lcom/luna/biz/ad/data/api/AdUnitConfig;",
+                  ">;",
+                  "Ljava/util/List<",
+                  "Lcom/luna/biz/ad/data/api/AdvertSource;",
+                  ">;)",
+                  "Ljava/lang/String;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 22061,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "w",
+          "descriptor": "(Ljava/util/List;Ljava/util/List;)Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279401,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Ljava/util/List<",
+                  "Lcom/luna/biz/ad/data/api/AdUnitConfig;",
+                  ">;",
+                  "Ljava/util/List<",
+                  "Lcom/luna/biz/ad/data/api/AdvertSource;",
+                  ">;)",
+                  "Ljava/lang/String;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 22062,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "x",
+          "descriptor": "(ZLjava/util/List;)Lcom/luna/biz/ad/data/reward/RewardContent;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279527,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(Z",
+                  "Ljava/util/List<",
+                  "Lcom/luna/biz/ad/data/api/AdUnitConfig;",
+                  ">;)",
+                  "Lcom/luna/biz/ad/data/reward/RewardContent;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 22064,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "z",
+          "descriptor": "(Ljava/util/List;Ljava/util/List;)Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279401,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Ljava/util/List<",
+                  "Lcom/luna/biz/ad/data/api/AdUnitConfig;",
+                  ">;",
+                  "Ljava/util/List<",
+                  "Lcom/luna/biz/ad/data/api/AdvertSource;",
+                  ">;)",
+                  "Ljava/lang/String;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "declared_fields": [
+        {
+          "dex_field_index": 9534,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "a",
+          "type": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "access_flags": 25
+        },
+        {
+          "dex_field_index": 9535,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "b",
+          "type": "Lkotlin/Lazy;",
+          "access_flags": 26
+        },
+        {
+          "dex_field_index": 9536,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "c",
+          "type": "Ljava/util/ArrayList;",
+          "access_flags": 74
+        },
+        {
+          "dex_field_index": 9537,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "d",
+          "type": "Lcom/luna/biz/ad/repo/net/IncentiveConfigResponse;",
+          "access_flags": 74
+        },
+        {
+          "dex_field_index": 9538,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "e",
+          "type": "J",
+          "access_flags": 74
+        },
+        {
+          "dex_field_index": 9539,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "f",
+          "type": "Lcom/luna/biz/ad/repo/net/AdsConfigResponse;",
+          "access_flags": 74
+        },
+        {
+          "dex_field_index": 9540,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "g",
+          "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+          "access_flags": 9
+        }
+      ],
+      "declared_methods": [
+        {
+          "dex_method_index": 22017,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "access_flags": 65544,
+          "code_item_offset": 3260024
+        },
+        {
+          "dex_method_index": 22018,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "<init>",
+          "descriptor": "()V",
+          "access_flags": 65538,
+          "code_item_offset": 3260136
+        },
+        {
+          "dex_method_index": 22019,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "A",
+          "descriptor": "(Lcom/luna/biz/ad/strategy/AdRewardConfigManager;Ljava/util/List;Ljava/util/List;ILjava/lang/Object;)Ljava/lang/String;",
+          "access_flags": 4105,
+          "code_item_offset": 3258840
+        },
+        {
+          "dex_method_index": 22021,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "C",
+          "descriptor": "(Lcom/luna/biz/ad/strategy/AdRewardConfigManager;Ljava/util/List;Ljava/util/List;ILjava/lang/Object;)Lcom/luna/biz/ad/data/api/AdSource;",
+          "access_flags": 4105,
+          "code_item_offset": 3254688
+        },
+        {
+          "dex_method_index": 22023,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "E",
+          "descriptor": "(Lcom/luna/biz/ad/strategy/AdRewardConfigManager;Lcom/luna/biz/ad/data/AdType;Lcom/luna/biz/ad/data/api/AdSource;Ljava/util/List;ILjava/lang/Object;)Lcom/luna/biz/ad/data/api/AdUnitConfig;",
+          "access_flags": 4105,
+          "code_item_offset": 3254948
+        },
+        {
+          "dex_method_index": 22027,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "I",
+          "descriptor": "()Z",
+          "access_flags": 18,
+          "code_item_offset": 3254508
+        },
+        {
+          "dex_method_index": 22030,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "L",
+          "descriptor": "(Lcom/luna/biz/ad/repo/net/IncentiveConfigResponse;)Lkotlin/Unit;",
+          "access_flags": 26,
+          "code_item_offset": 3259792
+        },
+        {
+          "dex_method_index": 22031,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "M",
+          "descriptor": "(Lkotlin/jvm/functions/Function1;Ljava/lang/Object;)V",
+          "access_flags": 26,
+          "code_item_offset": 3260252
+        },
+        {
+          "dex_method_index": 22032,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "N",
+          "descriptor": "()Lcom/luna/common/logger/HostLogger;",
+          "access_flags": 26,
+          "code_item_offset": 3256464
+        },
+        {
+          "dex_method_index": 22034,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "P",
+          "descriptor": "(Lcom/luna/biz/ad/strategy/AdRewardConfigManager;Ljava/lang/String;Lcom/luna/biz/ad/data/reward/RewardSettleScene;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/String;ILjava/lang/Object;)Lio/reactivex/Observable;",
+          "access_flags": 4105,
+          "code_item_offset": 3257652
+        },
+        {
+          "dex_method_index": 22035,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "Q",
+          "descriptor": "(Lcom/luna/biz/ad/repo/net/AdsIncentiveDoneResponse;)Lcom/luna/biz/ad/repo/net/LuckyDoActionResponse;",
+          "access_flags": 26,
+          "code_item_offset": 3256212
+        },
+        {
+          "dex_method_index": 22036,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "R",
+          "descriptor": "(Lkotlin/jvm/functions/Function1;Ljava/lang/Object;)Lcom/luna/biz/ad/repo/net/LuckyDoActionResponse;",
+          "access_flags": 26,
+          "code_item_offset": 3256284
+        },
+        {
+          "dex_method_index": 22039,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "a",
+          "descriptor": "(Lkotlin/jvm/functions/Function1;Ljava/lang/Object;)Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "access_flags": 4105,
+          "code_item_offset": 3255928
+        },
+        {
+          "dex_method_index": 22040,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "b",
+          "descriptor": "(Lcom/luna/biz/ad/repo/net/AdsIncentiveDoneResponse;)Lcom/luna/biz/ad/repo/net/LuckyDoActionResponse;",
+          "access_flags": 4105,
+          "code_item_offset": 3256156
+        },
+        {
+          "dex_method_index": 22041,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "c",
+          "descriptor": "(Lkotlin/jvm/functions/Function1;Ljava/lang/Object;)Lcom/luna/biz/ad/repo/net/LuckyDoActionResponse;",
+          "access_flags": 4105,
+          "code_item_offset": 3256184
+        },
+        {
+          "dex_method_index": 22042,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "d",
+          "descriptor": "(Lcom/luna/biz/ad/repo/net/IncentiveConfigResponse;)Lkotlin/Unit;",
+          "access_flags": 4105,
+          "code_item_offset": 3259608
+        },
+        {
+          "dex_method_index": 22043,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "e",
+          "descriptor": "(Lkotlin/jvm/functions/Function1;Ljava/lang/Object;)V",
+          "access_flags": 4105,
+          "code_item_offset": 3259976
+        },
+        {
+          "dex_method_index": 22044,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "f",
+          "descriptor": "(Lkotlin/jvm/functions/Function1;Ljava/lang/Object;)V",
+          "access_flags": 4105,
+          "code_item_offset": 3260000
+        },
+        {
+          "dex_method_index": 22045,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "g",
+          "descriptor": "(Lcom/luna/biz/ad/repo/net/AdsIncentiveDoneResponse;)Lkotlin/Unit;",
+          "access_flags": 4105,
+          "code_item_offset": 3259636
+        },
+        {
+          "dex_method_index": 22046,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "h",
+          "descriptor": "()Lcom/luna/common/logger/HostLogger;",
+          "access_flags": 4105,
+          "code_item_offset": 3256360
+        },
+        {
+          "dex_method_index": 22047,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "i",
+          "descriptor": "(Lcom/luna/biz/ad/repo/net/AdsIncentiveDoneResponse;)Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "access_flags": 4105,
+          "code_item_offset": 3255956
+        },
+        {
+          "dex_method_index": 22048,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "j",
+          "descriptor": "(Lcom/luna/biz/ad/repo/net/AdIncentiveDoneRequest$TaskFrom;ZLjava/lang/Long;ILjava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Lio/reactivex/Observable;",
+          "access_flags": 18,
+          "code_item_offset": 3256704
+        },
+        {
+          "dex_method_index": 22049,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "k",
+          "descriptor": "(Lcom/luna/biz/ad/strategy/AdRewardConfigManager;Lcom/luna/biz/ad/repo/net/AdIncentiveDoneRequest$TaskFrom;ZLjava/lang/Long;ILjava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/reactivex/Observable;",
+          "access_flags": 4104,
+          "code_item_offset": 3256540
+        },
+        {
+          "dex_method_index": 22050,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "l",
+          "descriptor": "(Lcom/luna/biz/ad/repo/net/AdsIncentiveDoneResponse;)Lkotlin/Unit;",
+          "access_flags": 26,
+          "code_item_offset": 3259664
+        },
+        {
+          "dex_method_index": 22051,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "m",
+          "descriptor": "(Lkotlin/jvm/functions/Function1;Ljava/lang/Object;)V",
+          "access_flags": 26,
+          "code_item_offset": 3260188
+        },
+        {
+          "dex_method_index": 22054,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "p",
+          "descriptor": "(Lcom/luna/biz/ad/strategy/AdRewardConfigManager;Ljava/lang/String;Lcom/luna/biz/ad/data/reward/RewardSettleScene;ILjava/lang/Long;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lio/reactivex/Observable;",
+          "access_flags": 4105,
+          "code_item_offset": 3257088
+        },
+        {
+          "dex_method_index": 22055,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "q",
+          "descriptor": "(Lcom/luna/biz/ad/repo/net/AdsIncentiveDoneResponse;)Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "access_flags": 26,
+          "code_item_offset": 3255984
+        },
+        {
+          "dex_method_index": 22056,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "r",
+          "descriptor": "(Lkotlin/jvm/functions/Function1;Ljava/lang/Object;)Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "access_flags": 26,
+          "code_item_offset": 3256080
+        },
+        {
+          "dex_method_index": 22059,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "u",
+          "descriptor": "()Lcom/luna/common/logger/HostLogger;",
+          "access_flags": 18,
+          "code_item_offset": 3256388
+        },
+        {
+          "dex_method_index": 22063,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "y",
+          "descriptor": "(Lcom/luna/biz/ad/strategy/AdRewardConfigManager;ZLjava/util/List;ILjava/lang/Object;)Lcom/luna/biz/ad/data/reward/RewardContent;",
+          "access_flags": 4105,
+          "code_item_offset": 3255472
+        },
+        {
+          "dex_method_index": 22020,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "B",
+          "descriptor": "(Ljava/util/List;Ljava/util/List;)Lcom/luna/biz/ad/data/api/AdSource;",
+          "access_flags": 17,
+          "code_item_offset": 3254736
+        },
+        {
+          "dex_method_index": 22022,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "D",
+          "descriptor": "(Lcom/luna/biz/ad/data/AdType;Lcom/luna/biz/ad/data/api/AdSource;Ljava/util/List;)Lcom/luna/biz/ad/data/api/AdUnitConfig;",
+          "access_flags": 17,
+          "code_item_offset": 3254996
+        },
+        {
+          "dex_method_index": 22024,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "F",
+          "descriptor": "()Ljava/util/List;",
+          "access_flags": 17,
+          "code_item_offset": 3259404
+        },
+        {
+          "dex_method_index": 22025,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "G",
+          "descriptor": "()Z",
+          "access_flags": 17,
+          "code_item_offset": 3254236
+        },
+        {
+          "dex_method_index": 22026,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "H",
+          "descriptor": "()Z",
+          "access_flags": 17,
+          "code_item_offset": 3254404
+        },
+        {
+          "dex_method_index": 22028,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "J",
+          "descriptor": "()Z",
+          "access_flags": 17,
+          "code_item_offset": 3254596
+        },
+        {
+          "dex_method_index": 22029,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "K",
+          "descriptor": "()Lio/reactivex/Observable;",
+          "access_flags": 17,
+          "code_item_offset": 3257524
+        },
+        {
+          "dex_method_index": 22033,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "O",
+          "descriptor": "(Ljava/lang/String;Lcom/luna/biz/ad/data/reward/RewardSettleScene;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/String;)Lio/reactivex/Observable;",
+          "access_flags": 17,
+          "code_item_offset": 3257756
+        },
+        {
+          "dex_method_index": 22037,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "S",
+          "descriptor": "(Lcom/luna/biz/ad/repo/net/AdsConfigResponse;)V",
+          "access_flags": 17,
+          "code_item_offset": 3260316
+        },
+        {
+          "dex_method_index": 22038,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "T",
+          "descriptor": "(Lcom/luna/biz/ad/repo/net/IncentiveConfigResponse;Lcom/luna/biz/ad/data/api/AdRequestScene;)V",
+          "access_flags": 17,
+          "code_item_offset": 3260436
+        },
+        {
+          "dex_method_index": 22052,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "n",
+          "descriptor": "()Z",
+          "access_flags": 17,
+          "code_item_offset": 3253988
+        },
+        {
+          "dex_method_index": 22053,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "o",
+          "descriptor": "(Ljava/lang/String;Lcom/luna/biz/ad/data/reward/RewardSettleScene;ILjava/lang/Long;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Lio/reactivex/Observable;",
+          "access_flags": 17,
+          "code_item_offset": 3257252
+        },
+        {
+          "dex_method_index": 22057,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "s",
+          "descriptor": "()Ljava/lang/Integer;",
+          "access_flags": 17,
+          "code_item_offset": 3257912
+        },
+        {
+          "dex_method_index": 22058,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "t",
+          "descriptor": "()Ljava/util/List;",
+          "access_flags": 17,
+          "code_item_offset": 3259324
+        },
+        {
+          "dex_method_index": 22060,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "v",
+          "descriptor": "(Ljava/util/List;Ljava/util/List;)Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 3258012
+        },
+        {
+          "dex_method_index": 22061,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "w",
+          "descriptor": "(Ljava/util/List;Ljava/util/List;)Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 3258424
+        },
+        {
+          "dex_method_index": 22062,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "x",
+          "descriptor": "(ZLjava/util/List;)Lcom/luna/biz/ad/data/reward/RewardContent;",
+          "access_flags": 17,
+          "code_item_offset": 3255520
+        },
+        {
+          "dex_method_index": 22064,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "z",
+          "descriptor": "(Ljava/util/List;Ljava/util/List;)Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 3258888
+        }
+      ],
+      "annotations": [
+        {
+          "annotation_item_offset": 10279551,
+          "visibility": 1,
+          "type": "Lkotlin/Metadata;",
+          "elements": {
+            "d1": [
+              "��®\u0001\n\u0002\u0018\u0002\n\u0002\u0010��\n\u0002\b\u0003\n\u0002\u0010\u000e\n��\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n��\n\u0002\u0010\t\n��\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010 \n��\n\u0002\u0018\u0002\n��\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n��\n\u0002\u0010\u000b\n��\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0004\bÆ\u0002\u0018��2\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\u000e0\u001bJ\u000e\u0010\u001c\u001a\n\u0012\u0004\u0012\u00020\u001d\u0018\u00010\u001bJ\u0010\u0010\u001e\u001a\u00020\u001f2\b\u0010 \u001a\u0004\u0018\u00010\u0015J\u001c\u0010!\u001a\u00020\u001f2\b\u0010 \u001a\u0004\u0018\u00010\u00112\n\b\u0002\u0010\"\u001a\u0004\u0018\u00010#J\u0006\u0010$\u001a\u00020%J\r\u0010&\u001a\u0004\u0018\u00010'¢\u0006\u0002\u0010(J\u0006\u0010)\u001a\u00020%J\u0006\u0010*\u001a\u00020%J*\u0010+\u001a\u00020,2\u0010\b\u0002\u0010-\u001a\n\u0012\u0004\u0012\u00020\u000e\u0018\u00010\u001b2\u0010\b\u0002\u0010.\u001a\n\u0012\u0004\u0012\u00020\u001d\u0018\u00010\u001bJ*\u0010/\u001a\u0004\u0018\u00010\u00052\u0010\b\u0002\u0010-\u001a\n\u0012\u0004\u0012\u00020\u000e\u0018\u00010\u001b2\u000e\u0010.\u001a\n\u0012\u0004\u0012\u00020\u001d\u0018\u00010\u001bJ,\u00100\u001a\u0004\u0018\u00010\u00052\u0010\b\u0002\u0010-\u001a\n\u0012\u0004\u0012\u00020\u000e\u0018\u00010\u001b2\u0010\b\u0002\u0010.\u001a\n\u0012\u0004\u0012\u00020\u001d\u0018\u00010\u001bJ,\u00101\u001a\u0004\u0018\u00010\u00052\u0010\b\u0002\u0010-\u001a\n\u0012\u0004\u0012\u00020\u000e\u0018\u00010\u001b2\u0010\b\u0002\u0010.\u001a\n\u0012\u0004\u0012\u00020\u001d\u0018\u00010\u001bJ\b\u00102\u001a\u00020%H\u0002J,\u00103\u001a\u0004\u0018\u00010\u000e2\u0006\u00104\u001a\u0002052\b\b\u0002\u00106\u001a\u00020,2\u0010\b\u0002\u0010-\u001a\n\u0012\u0004\u0012\u00020\u000e\u0018\u00010\u001bJ.\u00107\u001a\u0004\u0018\u0001082\u0006\u00104\u001a\u0002052\b\b\u0002\u00106\u001a\u00020,2\u0010\b\u0002\u0010-\u001a\n\u0012\u0004\u0012\u00020\u000e\u0018\u00010\u001bH\u0002J\u000e\u00109\u001a\n\u0012\u0004\u0012\u00020\u0011\u0018\u00010:Jw\u0010;\u001a\n\u0012\u0004\u0012\u00020<\u0018\u00010:2\n\b\u0002\u0010=\u001a\u0004\u0018\u00010\u00052\u0006\u0010>\u001a\u00020?2\b\b\u0002\u0010@\u001a\u00020'2\n\b\u0002\u0010A\u001a\u0004\u0018\u00010\u00132\n\b\u0002\u0010B\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010C\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010D\u001a\u00020'2\n\b\u0002\u0010E\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010F\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010GJu\u0010H\u001a\n\u0012\u0004\u0012\u00020I\u0018\u00010:2\u0006\u0010J\u001a\u00020K2\u0006\u0010L\u001a\u00020%2\n\b\u0002\u0010A\u001a\u0004\u0018\u00010\u00132\b\b\u0002\u0010@\u001a\u00020'2\n\b\u0002\u0010M\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010C\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010D\u001a\u00020'2\n\b\u0002\u0010E\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010F\u001a\u0004\u0018\u00010\u0005H\u0002¢\u0006\u0002\u0010NJW\u0010O\u001a\n\u0012\u0004\u0012\u00020P\u0018\u00010:2\n\b\u0002\u0010=\u001a\u0004\u0018\u00010\u00052\u0006\u0010>\u001a\u00020?2\n\b\u0002\u0010Q\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010R\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010A\u001a\u0004\u0018\u00010\u00132\n\b\u0002\u0010C\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010SJ$\u0010T\u001a\u0004\u0018\u00010U2\b\b\u0002\u0010V\u001a\u00020%2\u0010\b\u0002\u0010-\u001a\n\u0012\u0004\u0012\u00020\u000e\u0018\u00010\u001bJ\u000e\u0010W\u001a\n\u0012\u0004\u0012\u00020'\u0018\u00010\u001bJ\u0006\u0010X\u001a\u00020%R\u000e\u0010\u0004\u001a\u00020\u0005XT¢\u0006\u0002\n��R\u001b\u0010\u0006\u001a\u00020\u00078BX\u0002¢\u0006\f\n\u0004\b\n\u0010\u000b\u001a\u0004\b\b\u0010\tR\u001e\u0010\f\u001a\u0012\u0012\u0004\u0012\u00020\u000e0\rj\b\u0012\u0004\u0012\u00020\u000e`\u000fX\u000e¢\u0006\u0002\n��R\u0010\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u000e¢\u0006\u0002\n��R\u000e\u0010\u0012\u001a\u00020\u0013X\u000e¢\u0006\u0002\n��R\u001c\u0010\u0014\u001a\u0004\u0018\u00010\u0015X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0016\u0010\u0017\"\u0004\b\u0018\u0010\u0019¨\u0006Y"
+            ],
+            "d2": [
+              "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+              "",
+              "<init>",
+              "()V",
+              "TAG",
+              "",
+              "logger",
+              "Lcom/luna/common/logger/HostLogger;",
+              "getLogger",
+              "()Lcom/luna/common/logger/HostLogger;",
+              "logger$delegate",
+              "Lkotlin/Lazy;",
+              "mAdUnitConfig",
+              "Ljava/util/ArrayList;",
+              "Lcom/luna/biz/ad/data/api/AdUnitConfig;",
+              "Lkotlin/collections/ArrayList;",
+              "mIncentiveResponse",
+              "Lcom/luna/biz/ad/repo/net/IncentiveConfigResponse;",
+              "mExpireTime",
+              "",
+              "configResponse",
+              "Lcom/luna/biz/ad/repo/net/AdsConfigResponse;",
+              "getConfigResponse",
+              "()Lcom/luna/biz/ad/repo/net/AdsConfigResponse;",
+              "setConfigResponse",
+              "(Lcom/luna/biz/ad/repo/net/AdsConfigResponse;)V",
+              "getConfig",
+              "",
+              "getIncentiveAdvertSources",
+              "Lcom/luna/biz/ad/data/api/AdvertSource;",
+              "updateConfig",
+              "",
+              "response",
+              "updateIncentiveConfig",
+              "requestScene",
+              "Lcom/luna/biz/ad/data/api/AdRequestScene;",
+              "isRewardAdPreload",
+              "",
+              "getFeedRewardDuration",
+              "",
+              "()Ljava/lang/Integer;",
+              "checkConfigIsValid",
+              "isForbidFirstSlide",
+              "getPriorityRewardType",
+              "Lcom/luna/biz/ad/data/api/AdSource;",
+              "config",
+              "advertSources",
+              "getOceanRewardSlotId",
+              "getPangleRewardSlotId",
+              "getLunaRewardSlotId",
+              "isLastRewardInADay",
+              "getTypeConfig",
+              "adType",
+              "Lcom/luna/biz/ad/data/AdType;",
+              "adSource",
+              "getAdSource",
+              "Lcom/luna/biz/ad/data/api/AdSources;",
+              "loadAdIncentiveConfig",
+              "Lio/reactivex/Observable;",
+              "getAdsRewardSettle",
+              "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+              "transId",
+              "settleScene",
+              "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+              "startType",
+              "riskCheckDuration",
+              "rewardUniqueId",
+              "postDoneExtra",
+              "questsType",
+              "groupId",
+              "trackValue",
+              "(Ljava/lang/String;Lcom/luna/biz/ad/data/reward/RewardSettleScene;ILjava/lang/Long;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Lio/reactivex/Observable;",
+              "adsIncentiveTaskDone",
+              "Lcom/luna/biz/ad/repo/net/AdsIncentiveDoneResponse;",
+              "taskFrom",
+              "Lcom/luna/biz/ad/repo/net/AdIncentiveDoneRequest$TaskFrom;",
+              "isCompensate",
+              "uniqueId",
+              "(Lcom/luna/biz/ad/repo/net/AdIncentiveDoneRequest$TaskFrom;ZLjava/lang/Long;ILjava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Lio/reactivex/Observable;",
+              "luckyDoAction",
+              "Lcom/luna/biz/ad/repo/net/LuckyDoActionResponse;",
+              "taskId",
+              "token",
+              "(Ljava/lang/String;Lcom/luna/biz/ad/data/reward/RewardSettleScene;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/String;)Lio/reactivex/Observable;",
+              "getPangleRewardContent",
+              "Lcom/luna/biz/ad/data/reward/RewardContent;",
+              "isPlayAgain",
+              "getVidList",
+              "hasLunaSvipReward",
+              "biz-ad-impl_release"
+            ],
+            "k": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "01",
+              "unsigned_value": 1
+            },
+            "mv": [
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "02",
+                "unsigned_value": 2
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "01",
+                "unsigned_value": 1
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              }
+            ],
+            "xi": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "30",
+              "unsigned_value": 48
+            }
+          }
+        },
+        {
+          "annotation_item_offset": 10279852,
+          "visibility": 0,
+          "type": "Lkotlin/jvm/internal/SourceDebugExtension;",
+          "elements": {
+            "value": [
+              "SMAP\nAdRewardConfigManager.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AdRewardConfigManager.kt\ncom/luna/biz/ad/strategy/AdRewardConfigManager\n+ 2 LazyLogger.kt\ncom/luna/common/logger/LazyLogger\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 4 HostLogger.kt\ncom/luna/common/logger/HostLogger\n+ 5 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 6 UserPluginExt.kt\ncom/luna/common/arch/user_plugin/UserPluginExtKt\n+ 7 CharSequence.kt\nandroidx/core/text/CharSequenceKt\n*L\n1#1,321:1\n181#2,8:322\n181#2,8:335\n181#2,8:346\n181#2,8:354\n181#2,8:364\n181#2,8:372\n295#3,2:330\n295#3,2:332\n295#3,2:344\n295#3,2:362\n774#3:380\n865#3,2:381\n774#3:383\n865#3,2:384\n295#3:386\n296#3:388\n774#3:389\n865#3,2:390\n1374#3:392\n1460#3,5:393\n295#3,2:398\n1563#3:404\n1634#3,3:405\n1761#3,3:408\n1761#3,3:411\n29#4:334\n30#4:343\n1#5:387\n17#6:400\n17#6:401\n28#7:402\n28#7:403\n*S KotlinDebug\n*F\n+ 1 AdRewardConfigManager.kt\ncom/luna/biz/ad/strategy/AdRewardConfigManager\n*L\n107#1:322,8\n133#1:335,8\n145#1:346,8\n146#1:354,8\n154#1:364,8\n155#1:372,8\n120#1:330,2\n132#1:332,2\n143#1:344,2\n152#1:362,2\n171#1:380\n171#1:381,2\n173#1:383\n173#1:384,2\n173#1:386\n173#1:388\n185#1:389\n185#1:390,2\n186#1:392\n186#1:393,5\n187#1:398,2\n312#1:404\n312#1:405,3\n316#1:408,3\n195#1:411,3\n133#1:334\n133#1:343\n193#1:400\n261#1:401\n299#1:402\n300#1:403\n*E\n"
+            ]
+          }
+        }
+      ],
+      "parameter_annotations": [
+        {
+          "dex_method_index": 22020,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "B",
+          "descriptor": "(Ljava/util/List;Ljava/util/List;)Lcom/luna/biz/ad/data/api/AdSource;",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 22022,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "D",
+          "descriptor": "(Lcom/luna/biz/ad/data/AdType;Lcom/luna/biz/ad/data/api/AdSource;Ljava/util/List;)Lcom/luna/biz/ad/data/api/AdUnitConfig;",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10199886,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10199886,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 22033,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "O",
+          "descriptor": "(Ljava/lang/String;Lcom/luna/biz/ad/data/reward/RewardSettleScene;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/String;)Lio/reactivex/Observable;",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10199886,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 22037,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "S",
+          "descriptor": "(Lcom/luna/biz/ad/repo/net/AdsConfigResponse;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 22038,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "T",
+          "descriptor": "(Lcom/luna/biz/ad/repo/net/IncentiveConfigResponse;Lcom/luna/biz/ad/data/api/AdRequestScene;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 22053,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "o",
+          "descriptor": "(Ljava/lang/String;Lcom/luna/biz/ad/data/reward/RewardSettleScene;ILjava/lang/Long;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Lio/reactivex/Observable;",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10199886,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ],
+            [],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 22060,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "v",
+          "descriptor": "(Ljava/util/List;Ljava/util/List;)Ljava/lang/String;",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 22061,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "w",
+          "descriptor": "(Ljava/util/List;Ljava/util/List;)Ljava/lang/String;",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 22062,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "x",
+          "descriptor": "(ZLjava/util/List;)Lcom/luna/biz/ad/data/reward/RewardContent;",
+          "parameters": [
+            [],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 22064,
+          "owner": "Lcom/luna/biz/ad/strategy/AdRewardConfigManager;",
+          "name": "z",
+          "descriptor": "(Ljava/util/List;Ljava/util/List;)Ljava/lang/String;",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "class_def_index": 982,
+      "descriptor": "Lcom/luna/biz/ad/adns/mannor/reward/api/IRewardVideoAdShowListener;",
+      "access_flags": 1537,
+      "super": "Ljava/lang/Object;",
+      "interfaces": [],
+      "class_data_offset": 10815314,
+      "static_values_offset": 0,
+      "fields": [],
+      "methods": [
+        {
+          "dex_method_index": 15153,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/IRewardVideoAdShowListener;",
+          "name": "provideOneStageRewardConfig",
+          "descriptor": "()Lcom/ss/android/excitingvideo/reward/ability/OneStageRewardConfig;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10199886,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "declared_fields": [],
+      "declared_methods": [
+        {
+          "dex_method_index": 15147,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/IRewardVideoAdShowListener;",
+          "name": "a",
+          "descriptor": "(Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;)V",
+          "access_flags": 1025,
+          "code_item_offset": 0
+        },
+        {
+          "dex_method_index": 15148,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/IRewardVideoAdShowListener;",
+          "name": "b",
+          "descriptor": "(Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;Lcom/ss/android/excitingvideo/reward/ability/ReceivedRewardInfo;)V",
+          "access_flags": 1025,
+          "code_item_offset": 0
+        },
+        {
+          "dex_method_index": 15149,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/IRewardVideoAdShowListener;",
+          "name": "onClose",
+          "descriptor": "()V",
+          "access_flags": 1025,
+          "code_item_offset": 0
+        },
+        {
+          "dex_method_index": 15150,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/IRewardVideoAdShowListener;",
+          "name": "onError",
+          "descriptor": "(ILjava/lang/String;Lorg/json/JSONObject;)V",
+          "access_flags": 1025,
+          "code_item_offset": 0
+        },
+        {
+          "dex_method_index": 15151,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/IRewardVideoAdShowListener;",
+          "name": "onShow",
+          "descriptor": "(II)V",
+          "access_flags": 1025,
+          "code_item_offset": 0
+        },
+        {
+          "dex_method_index": 15152,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/IRewardVideoAdShowListener;",
+          "name": "onSuccess",
+          "descriptor": "()V",
+          "access_flags": 1025,
+          "code_item_offset": 0
+        },
+        {
+          "dex_method_index": 15153,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/IRewardVideoAdShowListener;",
+          "name": "provideOneStageRewardConfig",
+          "descriptor": "()Lcom/ss/android/excitingvideo/reward/ability/OneStageRewardConfig;",
+          "access_flags": 1025,
+          "code_item_offset": 0
+        }
+      ],
+      "annotations": [
+        {
+          "annotation_item_offset": 10245332,
+          "visibility": 2,
+          "type": "Ldalvik/annotation/MemberClasses;",
+          "elements": {
+            "value": [
+              {
+                "type_descriptor": "Lcom/luna/biz/ad/adns/mannor/reward/api/IRewardVideoAdShowListener$DefaultImpls;"
+              }
+            ]
+          }
+        },
+        {
+          "annotation_item_offset": 10245344,
+          "visibility": 1,
+          "type": "Lkotlin/Metadata;",
+          "elements": {
+            "d1": [
+              "��:\n\u0002\u0018\u0002\n\u0002\u0010��\n��\n\u0002\u0010\u0002\n��\n\u0002\u0010\b\n��\n\u0002\u0010\u000e\n��\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n��\bf\u0018��2\u00020\u0001J&\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\b\u0010\u0006\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\tH&J\b\u0010\n\u001a\u00020\u0003H&J\u0018\u0010\u000b\u001a\u00020\u00032\u0006\u0010\f\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u0005H&J\u0010\u0010\u000e\u001a\u00020\u00032\u0006\u0010\u000f\u001a\u00020\u0010H&J\b\u0010\u0011\u001a\u00020\u0003H&J\b\u0010\u0012\u001a\u00020\u0013H\u0016J\u001a\u0010\u0014\u001a\u00020\u00032\u0006\u0010\u000f\u001a\u00020\u00102\b\u0010\u0015\u001a\u0004\u0018\u00010\u0016H\u0016¨\u0006\u0017"
+            ],
+            "d2": [
+              "Lcom/luna/biz/ad/adns/mannor/reward/api/IRewardVideoAdShowListener;",
+              "",
+              "onError",
+              "",
+              "code",
+              "",
+              "msg",
+              "",
+              "extra",
+              "Lorg/json/JSONObject;",
+              "onSuccess",
+              "onShow",
+              "showTimes",
+              "showTimesWithoutChange",
+              "onComplete",
+              "params",
+              "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+              "onClose",
+              "provideOneStageRewardConfig",
+              "Lcom/ss/android/excitingvideo/reward/ability/OneStageRewardConfig;",
+              "onRewardReceived",
+              "receivedRewardInfo",
+              "Lcom/ss/android/excitingvideo/reward/ability/ReceivedRewardInfo;",
+              "biz-ad-impl_release"
+            ],
+            "k": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "01",
+              "unsigned_value": 1
+            },
+            "mv": [
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "02",
+                "unsigned_value": 2
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "01",
+                "unsigned_value": 1
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              }
+            ],
+            "xi": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "30",
+              "unsigned_value": 48
+            }
+          }
+        }
+      ],
+      "parameter_annotations": [
+        {
+          "dex_method_index": 15147,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/IRewardVideoAdShowListener;",
+          "name": "a",
+          "descriptor": "(Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10199886,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 15148,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/IRewardVideoAdShowListener;",
+          "name": "b",
+          "descriptor": "(Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;Lcom/ss/android/excitingvideo/reward/ability/ReceivedRewardInfo;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10199886,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 15150,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/IRewardVideoAdShowListener;",
+          "name": "onError",
+          "descriptor": "(ILjava/lang/String;Lorg/json/JSONObject;)V",
+          "parameters": [
+            [],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "class_def_index": 984,
+      "descriptor": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+      "access_flags": 17,
+      "super": "Ljava/lang/Object;",
+      "interfaces": [],
+      "class_data_offset": 10815415,
+      "static_values_offset": 0,
+      "fields": [
+        {
+          "dex_field_index": 6212,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "e",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "dex_method_index": 15165,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "b",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 15171,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "toString",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10199886,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "declared_fields": [
+        {
+          "dex_field_index": 6213,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "f",
+          "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+          "access_flags": 9
+        },
+        {
+          "dex_field_index": 6208,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "a",
+          "type": "I",
+          "access_flags": 18
+        },
+        {
+          "dex_field_index": 6209,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "b",
+          "type": "I",
+          "access_flags": 18
+        },
+        {
+          "dex_field_index": 6210,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "c",
+          "type": "I",
+          "access_flags": 18
+        },
+        {
+          "dex_field_index": 6211,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "d",
+          "type": "Z",
+          "access_flags": 18
+        },
+        {
+          "dex_field_index": 6212,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "e",
+          "type": "Ljava/lang/String;",
+          "access_flags": 2
+        }
+      ],
+      "declared_methods": [
+        {
+          "dex_method_index": 15162,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "<init>",
+          "descriptor": "(IIIZLjava/lang/String;)V",
+          "access_flags": 65537,
+          "code_item_offset": 2660500
+        },
+        {
+          "dex_method_index": 15163,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "<init>",
+          "descriptor": "(IIIZLjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V",
+          "access_flags": 69633,
+          "code_item_offset": 2660652
+        },
+        {
+          "dex_method_index": 15164,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "a",
+          "descriptor": "()I",
+          "access_flags": 17,
+          "code_item_offset": 2660096
+        },
+        {
+          "dex_method_index": 15165,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "b",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 2660288
+        },
+        {
+          "dex_method_index": 15166,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "c",
+          "descriptor": "()I",
+          "access_flags": 17,
+          "code_item_offset": 2660120
+        },
+        {
+          "dex_method_index": 15167,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "d",
+          "descriptor": "()I",
+          "access_flags": 17,
+          "code_item_offset": 2660144
+        },
+        {
+          "dex_method_index": 15168,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "e",
+          "descriptor": "()Z",
+          "access_flags": 17,
+          "code_item_offset": 2660072
+        },
+        {
+          "dex_method_index": 15169,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "equals",
+          "descriptor": "(Ljava/lang/Object;)Z",
+          "access_flags": 1,
+          "code_item_offset": 2659916
+        },
+        {
+          "dex_method_index": 15170,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "hashCode",
+          "descriptor": "()I",
+          "access_flags": 1,
+          "code_item_offset": 2660168
+        },
+        {
+          "dex_method_index": 15171,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "toString",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 1,
+          "code_item_offset": 2660312
+        }
+      ],
+      "annotations": [
+        {
+          "annotation_item_offset": 10245564,
+          "visibility": 1,
+          "type": "Lkotlin/Metadata;",
+          "elements": {
+            "d1": [
+              "�� \n\u0002\u0018\u0002\n\u0002\u0010��\n��\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000b\n��\n\u0002\u0010\u000e\n\u0002\b\u0016\b\b\u0018��2\u00020\u0001B5\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\u0004\b\n\u0010\u000bJ\t\u0010\u0015\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0016\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0017\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0018\u001a\u00020\u0007HÆ\u0003J\u000b\u0010\u0019\u001a\u0004\u0018\u00010\tHÆ\u0003J=\u0010\u001a\u001a\u00020��2\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\tHÆ\u0001J\u0013\u0010\u001b\u001a\u00020\u00072\b\u0010\u001c\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001d\u001a\u00020\u0003HÖ\u0001J\t\u0010\u001e\u001a\u00020\tHÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n��\u001a\u0004\b\f\u0010\rR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n��\u001a\u0004\b\u000e\u0010\rR\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n��\u001a\u0004\b\u000f\u0010\rR\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n��\u001a\u0004\b\u0006\u0010\u0010R\u001c\u0010\b\u001a\u0004\u0018\u00010\tX\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0011\u0010\u0012\"\u0004\b\u0013\u0010\u0014¨\u0006\u001f"
+            ],
+            "d2": [
+              "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+              "",
+              "watchTime",
+              "",
+              "inspireTime",
+              "rewardedTimes",
+              "isFallbackAd",
+              "",
+              "postDoneExtra",
+              "",
+              "<init>",
+              "(IIIZLjava/lang/String;)V",
+              "getWatchTime",
+              "()I",
+              "getInspireTime",
+              "getRewardedTimes",
+              "()Z",
+              "getPostDoneExtra",
+              "()Ljava/lang/String;",
+              "setPostDoneExtra",
+              "(Ljava/lang/String;)V",
+              "component1",
+              "component2",
+              "component3",
+              "component4",
+              "component5",
+              "copy",
+              "equals",
+              "other",
+              "hashCode",
+              "toString",
+              "biz-ad-impl_release"
+            ],
+            "k": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "01",
+              "unsigned_value": 1
+            },
+            "mv": [
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "02",
+                "unsigned_value": 2
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "01",
+                "unsigned_value": 1
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              }
+            ],
+            "xi": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "30",
+              "unsigned_value": 48
+            }
+          }
+        }
+      ],
+      "parameter_annotations": [
+        {
+          "dex_method_index": 15162,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "<init>",
+          "descriptor": "(IIIZLjava/lang/String;)V",
+          "parameters": [
+            [],
+            [],
+            [],
+            [],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 15169,
+          "owner": "Lcom/luna/biz/ad/adns/mannor/reward/api/RewardVideoAdCompleteParams;",
+          "name": "equals",
+          "descriptor": "(Ljava/lang/Object;)Z",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "class_def_index": 1135,
+      "descriptor": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+      "access_flags": 16401,
+      "super": "Ljava/lang/Enum;",
+      "interfaces": [],
+      "class_data_offset": 10824772,
+      "static_values_offset": 0,
+      "fields": [],
+      "methods": [
+        {
+          "dex_method_index": 17868,
+          "owner": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "name": "<init>",
+          "descriptor": "(Ljava/lang/String;II)V",
+          "annotations": [
+            {
+              "annotation_item_offset": 10195708,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(I)V"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "dex_method_index": 17869,
+          "owner": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "name": "getEntries",
+          "descriptor": "()Lkotlin/enums/EnumEntries;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10260945,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "()",
+                  "Lkotlin/enums/EnumEntries<",
+                  "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 10199886,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "declared_fields": [
+        {
+          "dex_field_index": 7924,
+          "owner": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "name": "$ENTRIES",
+          "type": "Lkotlin/enums/EnumEntries;",
+          "access_flags": 4122
+        },
+        {
+          "dex_field_index": 7925,
+          "owner": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "name": "$VALUES",
+          "type": "[Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "access_flags": 4122
+        },
+        {
+          "dex_field_index": 7926,
+          "owner": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "name": "COMPENSATE",
+          "type": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "access_flags": 16409
+        },
+        {
+          "dex_field_index": 7927,
+          "owner": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "name": "COMPENSATE_FROM_CSJ",
+          "type": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "access_flags": 16409
+        },
+        {
+          "dex_field_index": 7928,
+          "owner": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "name": "COMPENSATE_OCEAN_ENGINE",
+          "type": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "access_flags": 16409
+        },
+        {
+          "dex_field_index": 7929,
+          "owner": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "name": "FEED_REWARD",
+          "type": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "access_flags": 16409
+        },
+        {
+          "dex_field_index": 7930,
+          "owner": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "name": "NORMAL",
+          "type": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "access_flags": 16409
+        },
+        {
+          "dex_field_index": 7931,
+          "owner": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "name": "OCEAN_ENGINE",
+          "type": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "access_flags": 16409
+        },
+        {
+          "dex_field_index": 7932,
+          "owner": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "name": "changeQuickRedirect",
+          "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+          "access_flags": 9
+        },
+        {
+          "dex_field_index": 7933,
+          "owner": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "name": "robustFieldMap",
+          "type": "Ljava/lang/Object;",
+          "access_flags": 193
+        },
+        {
+          "dex_field_index": 7934,
+          "owner": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "name": "scene",
+          "type": "I",
+          "access_flags": 18
+        }
+      ],
+      "declared_methods": [
+        {
+          "dex_method_index": 17866,
+          "owner": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "name": "$values",
+          "descriptor": "()[Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "access_flags": 4122,
+          "code_item_offset": 2923876
+        },
+        {
+          "dex_method_index": 17867,
+          "owner": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "name": "<clinit>",
+          "descriptor": "()V",
+          "access_flags": 65544,
+          "code_item_offset": 2924084
+        },
+        {
+          "dex_method_index": 17868,
+          "owner": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "name": "<init>",
+          "descriptor": "(Ljava/lang/String;II)V",
+          "access_flags": 65538,
+          "code_item_offset": 2924280
+        },
+        {
+          "dex_method_index": 17869,
+          "owner": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "name": "getEntries",
+          "descriptor": "()Lkotlin/enums/EnumEntries;",
+          "access_flags": 9,
+          "code_item_offset": 2924060
+        },
+        {
+          "dex_method_index": 17871,
+          "owner": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "name": "valueOf",
+          "descriptor": "(Ljava/lang/String;)Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "access_flags": 9,
+          "code_item_offset": 2923800
+        },
+        {
+          "dex_method_index": 17872,
+          "owner": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "name": "values",
+          "descriptor": "()[Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "access_flags": 9,
+          "code_item_offset": 2923960
+        },
+        {
+          "dex_method_index": 17870,
+          "owner": "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+          "name": "getScene",
+          "descriptor": "()I",
+          "access_flags": 17,
+          "code_item_offset": 2924036
+        }
+      ],
+      "annotations": [
+        {
+          "annotation_item_offset": 10260966,
+          "visibility": 2,
+          "type": "Ldalvik/annotation/Signature;",
+          "elements": {
+            "value": [
+              "Ljava/lang/Enum<",
+              "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+              ">;"
+            ]
+          }
+        },
+        {
+          "annotation_item_offset": 10260984,
+          "visibility": 1,
+          "type": "Lkotlin/Metadata;",
+          "elements": {
+            "d1": [
+              "��\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n��\n\u0002\u0010\b\n\u0002\b\u000b\b\u0002\u0018��2\b\u0012\u0004\u0012\u00020��0\u0001B\u0011\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n��\u001a\u0004\b\u0006\u0010\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\nj\u0002\b\u000bj\u0002\b\fj\u0002\b\r¨\u0006\u000e"
+            ],
+            "d2": [
+              "Lcom/luna/biz/ad/data/reward/RewardSettleScene;",
+              "",
+              "scene",
+              "",
+              "<init>",
+              "(Ljava/lang/String;II)V",
+              "getScene",
+              "()I",
+              "NORMAL",
+              "COMPENSATE",
+              "COMPENSATE_FROM_CSJ",
+              "OCEAN_ENGINE",
+              "COMPENSATE_OCEAN_ENGINE",
+              "FEED_REWARD",
+              "biz-ad-api_release"
+            ],
+            "k": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "01",
+              "unsigned_value": 1
+            },
+            "mv": [
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "02",
+                "unsigned_value": 2
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "01",
+                "unsigned_value": 1
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              }
+            ],
+            "xi": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "30",
+              "unsigned_value": 48
+            }
+          }
+        }
+      ],
+      "parameter_annotations": []
+    },
+    {
+      "class_def_index": 4374,
+      "descriptor": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+      "access_flags": 1,
+      "super": "Ljava/lang/Object;",
+      "interfaces": [
+        "Lcom/luna/common/tea/json/KeepElement;"
+      ],
+      "class_data_offset": 10992596,
+      "static_values_offset": 0,
+      "fields": [
+        {
+          "dex_field_index": 9033,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "amount",
+          "type": "J",
+          "annotations": [
+            {
+              "annotation_item_offset": 10260163,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "amount"
+              }
+            }
+          ]
+        },
+        {
+          "dex_field_index": 9034,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "capabilities",
+          "type": "Lcom/luna/biz/ad/repo/net/IncentiveRewardCapabilities;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10309019,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "capabilities"
+              }
+            },
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 9036,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "claimStatus",
+          "type": "Ljava/lang/Integer;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10512842,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "claim_status"
+              }
+            },
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 9037,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "expireTime",
+          "type": "Ljava/lang/Long;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10512520,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "expire_time"
+              }
+            },
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 9038,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "rewardType",
+          "type": "I",
+          "annotations": [
+            {
+              "annotation_item_offset": 10453937,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "reward_type"
+              }
+            }
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "dex_method_index": 21010,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "component3",
+          "descriptor": "()Ljava/lang/Long;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 21011,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "component4",
+          "descriptor": "()Ljava/lang/Integer;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 21012,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "component5",
+          "descriptor": "()Lcom/luna/biz/ad/repo/net/IncentiveRewardCapabilities;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 21013,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "copy",
+          "descriptor": "(IJLjava/lang/Long;Ljava/lang/Integer;Lcom/luna/biz/ad/repo/net/IncentiveRewardCapabilities;)Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10199886,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 21017,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "getCapabilities",
+          "descriptor": "()Lcom/luna/biz/ad/repo/net/IncentiveRewardCapabilities;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 21018,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "getClaimStatus",
+          "descriptor": "()Ljava/lang/Integer;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 21019,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "getExpireTime",
+          "descriptor": "()Ljava/lang/Long;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 21022,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "toString",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10199886,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "declared_fields": [
+        {
+          "dex_field_index": 9035,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "changeQuickRedirect",
+          "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+          "access_flags": 9
+        },
+        {
+          "dex_field_index": 9033,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "amount",
+          "type": "J",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 9034,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "capabilities",
+          "type": "Lcom/luna/biz/ad/repo/net/IncentiveRewardCapabilities;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 9036,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "claimStatus",
+          "type": "Ljava/lang/Integer;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 9037,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "expireTime",
+          "type": "Ljava/lang/Long;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 9038,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "rewardType",
+          "type": "I",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 9039,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "robustFieldMap",
+          "type": "Ljava/lang/Object;",
+          "access_flags": 193
+        }
+      ],
+      "declared_methods": [
+        {
+          "dex_method_index": 21006,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "<init>",
+          "descriptor": "(IJLjava/lang/Long;Ljava/lang/Integer;Lcom/luna/biz/ad/repo/net/IncentiveRewardCapabilities;)V",
+          "access_flags": 65537,
+          "code_item_offset": 3168376
+        },
+        {
+          "dex_method_index": 21007,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "<init>",
+          "descriptor": "(IJLjava/lang/Long;Ljava/lang/Integer;Lcom/luna/biz/ad/repo/net/IncentiveRewardCapabilities;ILkotlin/jvm/internal/DefaultConstructorMarker;)V",
+          "access_flags": 69633,
+          "code_item_offset": 3168508
+        },
+        {
+          "dex_method_index": 21014,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "copy$default",
+          "descriptor": "(Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;IJLjava/lang/Long;Ljava/lang/Integer;Lcom/luna/biz/ad/repo/net/IncentiveRewardCapabilities;ILjava/lang/Object;)Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "access_flags": 4105,
+          "code_item_offset": 3167600
+        },
+        {
+          "dex_method_index": 21008,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "component1",
+          "descriptor": "()I",
+          "access_flags": 17,
+          "code_item_offset": 3167844
+        },
+        {
+          "dex_method_index": 21009,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "component2",
+          "descriptor": "()J",
+          "access_flags": 17,
+          "code_item_offset": 3168328
+        },
+        {
+          "dex_method_index": 21010,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "component3",
+          "descriptor": "()Ljava/lang/Long;",
+          "access_flags": 17,
+          "code_item_offset": 3168092
+        },
+        {
+          "dex_method_index": 21011,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "component4",
+          "descriptor": "()Ljava/lang/Integer;",
+          "access_flags": 17,
+          "code_item_offset": 3168044
+        },
+        {
+          "dex_method_index": 21012,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "component5",
+          "descriptor": "()Lcom/luna/biz/ad/repo/net/IncentiveRewardCapabilities;",
+          "access_flags": 17,
+          "code_item_offset": 3167552
+        },
+        {
+          "dex_method_index": 21013,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "copy",
+          "descriptor": "(IJLjava/lang/Long;Ljava/lang/Integer;Lcom/luna/biz/ad/repo/net/IncentiveRewardCapabilities;)Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "access_flags": 17,
+          "code_item_offset": 3167708
+        },
+        {
+          "dex_method_index": 21015,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "equals",
+          "descriptor": "(Ljava/lang/Object;)Z",
+          "access_flags": 1,
+          "code_item_offset": 3167376
+        },
+        {
+          "dex_method_index": 21016,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "getAmount",
+          "descriptor": "()J",
+          "access_flags": 17,
+          "code_item_offset": 3168352
+        },
+        {
+          "dex_method_index": 21017,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "getCapabilities",
+          "descriptor": "()Lcom/luna/biz/ad/repo/net/IncentiveRewardCapabilities;",
+          "access_flags": 17,
+          "code_item_offset": 3167576
+        },
+        {
+          "dex_method_index": 21018,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "getClaimStatus",
+          "descriptor": "()Ljava/lang/Integer;",
+          "access_flags": 17,
+          "code_item_offset": 3168068
+        },
+        {
+          "dex_method_index": 21019,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "getExpireTime",
+          "descriptor": "()Ljava/lang/Long;",
+          "access_flags": 17,
+          "code_item_offset": 3168116
+        },
+        {
+          "dex_method_index": 21020,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "getRewardType",
+          "descriptor": "()I",
+          "access_flags": 17,
+          "code_item_offset": 3167868
+        },
+        {
+          "dex_method_index": 21021,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "hashCode",
+          "descriptor": "()I",
+          "access_flags": 1,
+          "code_item_offset": 3167892
+        },
+        {
+          "dex_method_index": 21022,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "toString",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 1,
+          "code_item_offset": 3168140
+        }
+      ],
+      "annotations": [
+        {
+          "annotation_item_offset": 10512852,
+          "visibility": 1,
+          "type": "Lkotlin/Metadata;",
+          "elements": {
+            "d1": [
+              "��4\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n��\n\u0002\u0010\b\n��\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0016\n\u0002\u0010\u000b\n��\n\u0002\u0010��\n\u0002\b\u0002\n\u0002\u0010\u000e\n��\b\b\u0018��2\u00020\u0001B;\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\u0004\b\n\u0010\u000bJ\t\u0010\u0018\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0019\u001a\u00020\u0005HÆ\u0003J\u0010\u0010\u001a\u001a\u0004\u0018\u00010\u0005HÆ\u0003¢\u0006\u0002\u0010\u0011J\u0010\u0010\u001b\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u0014J\u000b\u0010\u001c\u001a\u0004\u0018\u00010\tHÆ\u0003JF\u0010\u001d\u001a\u00020��2\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\tHÆ\u0001¢\u0006\u0002\u0010\u001eJ\u0013\u0010\u001f\u001a\u00020 2\b\u0010!\u001a\u0004\u0018\u00010\"HÖ\u0003J\t\u0010#\u001a\u00020\u0003HÖ\u0001J\t\u0010$\u001a\u00020%HÖ\u0001R\u0016\u0010\u0002\u001a\u00020\u00038\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b\f\u0010\rR\u0016\u0010\u0004\u001a\u00020\u00058\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0006\u001a\u0004\u0018\u00010\u00058\u0006X\u0004¢\u0006\n\n\u0002\u0010\u0012\u001a\u0004\b\u0010\u0010\u0011R\u001a\u0010\u0007\u001a\u0004\u0018\u00010\u00038\u0006X\u0004¢\u0006\n\n\u0002\u0010\u0015\u001a\u0004\b\u0013\u0010\u0014R\u0018\u0010\b\u001a\u0004\u0018\u00010\t8\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b\u0016\u0010\u0017¨\u0006&"
+            ],
+            "d2": [
+              "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+              "Lcom/luna/common/tea/json/KeepElement;",
+              "rewardType",
+              "",
+              "amount",
+              "",
+              "expireTime",
+              "claimStatus",
+              "capabilities",
+              "Lcom/luna/biz/ad/repo/net/IncentiveRewardCapabilities;",
+              "<init>",
+              "(IJLjava/lang/Long;Ljava/lang/Integer;Lcom/luna/biz/ad/repo/net/IncentiveRewardCapabilities;)V",
+              "getRewardType",
+              "()I",
+              "getAmount",
+              "()J",
+              "getExpireTime",
+              "()Ljava/lang/Long;",
+              "Ljava/lang/Long;",
+              "getClaimStatus",
+              "()Ljava/lang/Integer;",
+              "Ljava/lang/Integer;",
+              "getCapabilities",
+              "()Lcom/luna/biz/ad/repo/net/IncentiveRewardCapabilities;",
+              "component1",
+              "component2",
+              "component3",
+              "component4",
+              "component5",
+              "copy",
+              "(IJLjava/lang/Long;Ljava/lang/Integer;Lcom/luna/biz/ad/repo/net/IncentiveRewardCapabilities;)Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+              "equals",
+              "",
+              "other",
+              "",
+              "hashCode",
+              "toString",
+              "",
+              "biz-ad-impl_release"
+            ],
+            "k": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "01",
+              "unsigned_value": 1
+            },
+            "mv": [
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "02",
+                "unsigned_value": 2
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "01",
+                "unsigned_value": 1
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              }
+            ],
+            "xi": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "30",
+              "unsigned_value": 48
+            }
+          }
+        }
+      ],
+      "parameter_annotations": [
+        {
+          "dex_method_index": 21006,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "<init>",
+          "descriptor": "(IJLjava/lang/Long;Ljava/lang/Integer;Lcom/luna/biz/ad/repo/net/IncentiveRewardCapabilities;)V",
+          "parameters": [
+            [],
+            [],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 21013,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "copy",
+          "descriptor": "(IJLjava/lang/Long;Ljava/lang/Integer;Lcom/luna/biz/ad/repo/net/IncentiveRewardCapabilities;)Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "parameters": [
+            [],
+            [],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 21015,
+          "owner": "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+          "name": "equals",
+          "descriptor": "(Ljava/lang/Object;)Z",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "class_def_index": 8822,
+      "descriptor": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+      "access_flags": 1,
+      "super": "Lcom/luna/common/arch/net/BaseResponse;",
+      "interfaces": [],
+      "class_data_offset": 11221093,
+      "static_values_offset": 0,
+      "fields": [
+        {
+          "dex_field_index": 8990,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "isValid",
+          "type": "Ljava/lang/Boolean;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 8991,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "playEntitlements",
+          "type": "Lcom/luna/common/arch/net/entity/commerce/NetPlayEntitlements;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 8992,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "rewardDetails",
+          "type": "Ljava/util/Map;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10640632,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "reward_details"
+              }
+            },
+            {
+              "annotation_item_offset": 10640642,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "Ljava/util/Map<",
+                  "Ljava/lang/Integer;",
+                  "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "dex_method_index": 20899,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "getPlayEntitlements",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/commerce/NetPlayEntitlements;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 20900,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "getRewardDetails",
+          "descriptor": "()Ljava/util/Map;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10640608,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "()",
+                  "Ljava/util/Map<",
+                  "Ljava/lang/Integer;",
+                  "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 20901,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "isValid",
+          "descriptor": "()Ljava/lang/Boolean;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10200078,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 20903,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "setRewardDetails",
+          "descriptor": "(Ljava/util/Map;)V",
+          "annotations": [
+            {
+              "annotation_item_offset": 10713680,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Ljava/util/Map<",
+                  "Ljava/lang/Integer;",
+                  "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+                  ">;)V"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "declared_fields": [
+        {
+          "dex_field_index": 8989,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "changeQuickRedirect",
+          "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+          "access_flags": 9
+        },
+        {
+          "dex_field_index": 8990,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "isValid",
+          "type": "Ljava/lang/Boolean;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 8991,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "playEntitlements",
+          "type": "Lcom/luna/common/arch/net/entity/commerce/NetPlayEntitlements;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 8992,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "rewardDetails",
+          "type": "Ljava/util/Map;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 8993,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "robustFieldMap",
+          "type": "Ljava/lang/Object;",
+          "access_flags": 193
+        }
+      ],
+      "declared_methods": [
+        {
+          "dex_method_index": 20898,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "<init>",
+          "descriptor": "()V",
+          "access_flags": 65537,
+          "code_item_offset": 3160800
+        },
+        {
+          "dex_method_index": 20899,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "getPlayEntitlements",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/commerce/NetPlayEntitlements;",
+          "access_flags": 17,
+          "code_item_offset": 3160728
+        },
+        {
+          "dex_method_index": 20900,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "getRewardDetails",
+          "descriptor": "()Ljava/util/Map;",
+          "access_flags": 17,
+          "code_item_offset": 3160776
+        },
+        {
+          "dex_method_index": 20901,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "isValid",
+          "descriptor": "()Ljava/lang/Boolean;",
+          "access_flags": 17,
+          "code_item_offset": 3160752
+        },
+        {
+          "dex_method_index": 20902,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "setPlayEntitlements",
+          "descriptor": "(Lcom/luna/common/arch/net/entity/commerce/NetPlayEntitlements;)V",
+          "access_flags": 17,
+          "code_item_offset": 3160852
+        },
+        {
+          "dex_method_index": 20903,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "setRewardDetails",
+          "descriptor": "(Ljava/util/Map;)V",
+          "access_flags": 17,
+          "code_item_offset": 3160876
+        },
+        {
+          "dex_method_index": 20904,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "setValid",
+          "descriptor": "(Ljava/lang/Boolean;)V",
+          "access_flags": 17,
+          "code_item_offset": 3160900
+        }
+      ],
+      "annotations": [
+        {
+          "annotation_item_offset": 10713704,
+          "visibility": 1,
+          "type": "Lkotlin/Metadata;",
+          "elements": {
+            "d1": [
+              "��,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010$\n\u0002\u0010\b\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018��2\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003R\u001e\u0010\u0004\u001a\u0004\u0018\u00010\u0005X\u000e¢\u0006\u0010\n\u0002\u0010\t\u001a\u0004\b\u0004\u0010\u0006\"\u0004\b\u0007\u0010\bR\u001c\u0010\n\u001a\u0004\u0018\u00010\u000bX\u000e¢\u0006\u000e\n��\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR,\u0010\u0010\u001a\u0010\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u0013\u0018\u00010\u00118\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0014\u0010\u0015\"\u0004\b\u0016\u0010\u0017¨\u0006\u0018"
+            ],
+            "d2": [
+              "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+              "Lcom/luna/common/arch/net/BaseResponse;",
+              "<init>",
+              "()V",
+              "isValid",
+              "",
+              "()Ljava/lang/Boolean;",
+              "setValid",
+              "(Ljava/lang/Boolean;)V",
+              "Ljava/lang/Boolean;",
+              "playEntitlements",
+              "Lcom/luna/common/arch/net/entity/commerce/NetPlayEntitlements;",
+              "getPlayEntitlements",
+              "()Lcom/luna/common/arch/net/entity/commerce/NetPlayEntitlements;",
+              "setPlayEntitlements",
+              "(Lcom/luna/common/arch/net/entity/commerce/NetPlayEntitlements;)V",
+              "rewardDetails",
+              "",
+              "",
+              "Lcom/luna/biz/ad/repo/net/IncentiveRewardDetail;",
+              "getRewardDetails",
+              "()Ljava/util/Map;",
+              "setRewardDetails",
+              "(Ljava/util/Map;)V",
+              "biz-ad-impl_release"
+            ],
+            "k": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "01",
+              "unsigned_value": 1
+            },
+            "mv": [
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "02",
+                "unsigned_value": 2
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "01",
+                "unsigned_value": 1
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              }
+            ],
+            "xi": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "30",
+              "unsigned_value": 48
+            }
+          }
+        }
+      ],
+      "parameter_annotations": [
+        {
+          "dex_method_index": 20902,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "setPlayEntitlements",
+          "descriptor": "(Lcom/luna/common/arch/net/entity/commerce/NetPlayEntitlements;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 20903,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "setRewardDetails",
+          "descriptor": "(Ljava/util/Map;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 20904,
+          "owner": "Lcom/luna/biz/ad/repo/net/AdsRewardSettleResponse;",
+          "name": "setValid",
+          "descriptor": "(Ljava/lang/Boolean;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10200078,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

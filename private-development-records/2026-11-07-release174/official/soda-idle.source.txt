@@ -1,0 +1,85 @@
+.method public e(Lcom/luna/common/arch/init/stage/MessageQueueIdleWithPageLoadComplete;Landroid/app/Application;)V
+    .registers 9
+    .param p1    # Lcom/luna/common/arch/init/stage/MessageQueueIdleWithPageLoadComplete;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Landroid/app/Application;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    sget-object v3, Lcom/luna/biz/main/init/preload/PreloadTabDataTask;->d:Lcom/bytedance/hotfix/base/ChangeQuickRedirect;
+
+    if-eqz v3, :cond_14
+
+    const/4 v4, 0x0
+
+    const v5, 0xe8bd
+
+    move-object v0, p1
+
+    move-object v1, p2
+
+    move-object v2, p0
+
+    invoke-static/range {v0 .. v5}, Lcom/bytedance/hotfix/PatchProxy;->proxy(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lcom/bytedance/hotfix/base/ChangeQuickRedirect;ZI)Lcom/bytedance/hotfix/PatchProxyResult;
+
+    move-result-object p1
+
+    iget-boolean p1, p1, Lcom/bytedance/hotfix/PatchProxyResult;->isSupported:Z
+
+    if-eqz p1, :cond_14
+
+    return-void
+
+    .line 41
+    :cond_14
+    sget-object p1, Lcom/luna/common/arch/net/preload/NewPreloadTabDataConfig;->a:Lcom/luna/common/arch/net/preload/NewPreloadTabDataConfig;
+
+    invoke-virtual {p1}, Lcom/luna/common/arch/net/preload/NewPreloadTabDataConfig;->a()Z
+
+    move-result p2
+
+    if-eqz p2, :cond_3b
+
+    .line 42
+    sget-boolean p2, Lcom/luna/biz/main/init/preload/PreloadTabDataTask;->c:Z
+
+    if-nez p2, :cond_3b
+
+    .line 43
+    invoke-static {}, Lcom/luna/biz/explore/IExploreServiceKt;->a()Lcom/luna/biz/explore/IExploreService;
+
+    move-result-object p2
+
+    if-eqz p2, :cond_29
+
+    invoke-interface {p2}, Lcom/luna/biz/explore/IExploreService;->u()V
+
+    .line 44
+    :cond_29
+    invoke-virtual {p1}, Lcom/luna/common/arch/net/preload/NewPreloadTabDataConfig;->b()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_38
+
+    .line 45
+    invoke-static {}, Lcom/luna/biz/me/IMeServiceKt;->getMeService()Lcom/luna/biz/me/IMeService;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_38
+
+    invoke-interface {p1}, Lcom/luna/biz/me/IMeService;->preloadUserData()V
+
+    :cond_38
+    const/4 p1, 0x1
+
+    .line 47
+    sput-boolean p1, Lcom/luna/biz/main/init/preload/PreloadTabDataTask;->c:Z
+
+    :cond_3b
+    return-void
+.end method

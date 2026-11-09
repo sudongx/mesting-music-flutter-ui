@@ -1,0 +1,164 @@
+00:00 +0: loading D:/AnLi/test/qishui_ui_test.dart
+00:00 +0: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: three visual tabs retain the old four-branch routing contract
+00:00 +1: phone form 390.0 scale 1.0 starts no network request
+00:01 +2: phone form 320.0 scale 1.8 starts no network request
+00:01 +3: discovery uses real adapter data and only three visible destinations
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: ['/luna/discover/mix']
+  Actual: ['/luna/discover/mix', '/luna/discover/mix']
+   Which: at location [1] is ['/luna/discover/mix', '/luna/discover/mix'] which longer than expected
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/qishui_ui_test.dart:114:5)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/qishui_ui_test.dart line 114
+The test description was:
+  discovery uses real adapter data and only three visible destinations
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +3 -1: discovery uses real adapter data and only three visible destinations [E]
+  Test failed. See exception logs above.
+  The test description was: discovery uses real adapter data and only three visible destinations
+  
+00:02 +3 -1: music root shows actual feed and a mode entry in dark theme
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+setState() or markNeedsBuild() called during build.
+This UncontrolledProviderScope widget cannot be marked as needing to build because the framework is
+already in the process of building widgets. A widget can be marked as needing to be built during the
+build phase only if one of its ancestors is currently building. This exception is allowed because
+the framework builds parent widgets before children, which means a dirty descendant will always be
+built. Otherwise, the framework might not visit this widget during this build phase.
+The widget on which setState() or markNeedsBuild() was called was:
+  UncontrolledProviderScope
+The widget which was currently being built when the offending call was made was:
+  _QishuiContent-[<'qishui:qishui:fixture-user:eaa2baae8bf006a100cdbfc3fe466c3807471be2e6700502702f81c4deaa7cbe:music'>]
+
+When the exception was thrown, this was the stack:
+#0      Element.markNeedsBuild.<anonymous closure> (package:flutter/src/widgets/framework.dart:5373:9)
+#1      Element.markNeedsBuild (package:flutter/src/widgets/framework.dart:5385:6)
+#2      State.setState (package:flutter/src/widgets/framework.dart:1219:15)
+#3      _UncontrolledProviderScopeState.scheduleRefresh (package:flutter_riverpod/src/core/provider_scope.dart:318:5)
+#4      ProviderScheduler._scheduleRefreshTask (package:riverpod/src/core/scheduler.dart:150:18)
+#5      ProviderScheduler._scheduleTaskWithVsyncs (package:riverpod/src/core/scheduler.dart:139:31)
+#6      ProviderScheduler._scheduleTask (package:riverpod/src/core/scheduler.dart:123:19)
+#7      ProviderScheduler.scheduleProviderRefresh (package:riverpod/src/core/scheduler.dart:87:5)
+#8      ProviderElement.invalidateSelf (package:riverpod/src/core/element.dart:821:25)
+#9      Ref._invalidateSelf (package:riverpod/src/core/ref.dart:349:14)
+#10     Ref.watch.<anonymous closure> (package:riverpod/src/core/ref.dart:728:24)
+#11     InternalProviderContainer.runBinaryGuarded (package:riverpod/src/core/provider_container.dart:765:9)
+#12     ProviderSubscriptionImpl._notifyData (package:riverpod/src/core/provider_subscription.dart:183:32)
+#13     InternalProviderContainer.runBinaryGuarded (package:riverpod/src/core/provider_container.dart:765:9)
+#14     ProviderElement._notifyListeners (package:riverpod/src/core/element.dart:893:21)
+#15     ProviderElement._performRebuild (package:riverpod/src/core/element.dart:654:9)
+#16     ProviderElement.flush (package:riverpod/src/core/element.dart:705:7)
+#17     ProviderElement._maybeRebuildDependencies.<anonymous closure> (package:riverpod/src/core/element.dart:718:41)
+#18     ProviderElement.visitAncestors (package:riverpod/src/core/element.dart:1384:16)
+#19     ProviderElement._maybeRebuildDependencies (package:riverpod/src/core/element.dart:718:5)
+#20     ProviderElement.flush (package:riverpod/src/core/element.dart:702:5)
+#21     $ProviderBaseImpl._addListener (package:riverpod/src/core/provider/provider.dart:119:24)
+#22     ProviderContainer.listen (package:riverpod/src/core/provider_container.dart:1102:26)
+#23     ProviderContainer.read (package:riverpod/src/core/provider_container.dart:1028:17)
+#24     ConsumerStatefulElement.read (package:flutter_riverpod/src/core/consumer.dart:558:59)
+#25     _QishuiContentState._load (package:mesting_music/features/music_platform/qishui/qishui_pages.dart:69:29)
+#26     _QishuiContentState._content (package:mesting_music/features/music_platform/qishui/qishui_pages.dart:65:34)
+#27     _QishuiContentState._content (package:mesting_music/features/music_platform/qishui/qishui_pages.dart)
+#28     _QishuiContentState.build (package:mesting_music/features/music_platform/qishui/qishui_pages.dart:216:45)
+#29     StatefulElement.build (package:flutter/src/widgets/framework.dart:5931:27)
+#30     ConsumerStatefulElement.build (package:flutter_riverpod/src/core/consumer.dart:460:20)
+#31     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817:15)
+#32     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#33     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#34     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799:5)
+#35     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973:11)
+#36     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793:5)
+#37     ConsumerStatefulElement.mount (package:flutter_riverpod/src/core/consumer.dart:389:11)
+#38     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587:20)
+#39     Element.updateChild (package:flutter/src/widgets/framework.dart:4053:20)
+#40     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841:16)
+#41     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982:11)
+#42     Element.rebuild (package:flutter/src/widgets/framework.dart:5529:7)
+#43     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750:15)
+#44     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807:11)
+#45     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111:18)
+#46     _LayoutBuilderElement._rebuildWithConstraints (package:flutter/src/widgets/layout_builder.dart:270:12)
+#47     RenderAbstractLayoutBuilderMixin.layoutCallback (package:flutter/src/widgets/layout_builder.dart:333:38)
+#48     RenderObjectWithLayoutCallbackMixin.runLayoutCallback.<anonymous closure> (package:flutter/src/rendering/object.dart:4162:33)
+#49     RenderObject.invokeLayoutCallback.<anonymous closure> (package:flutter/src/rendering/object.dart:2887:17)
+#50     PipelineOwner._enableMutationsToDirtySubtrees (package:flutter/src/rendering/object.dart:1223:15)
+#51     RenderObject.invokeLayoutCallback (package:flutter/src/rendering/object.dart:2886:14)
+#52     RenderObjectWithLayoutCallbackMixin.runLayoutCallback (package:flutter/src/rendering/object.dart:4162:5)
+#53     _RenderLayoutBuilder.performLayout (package:flutter/src/widgets/layout_builder.dart:447:5)
+#54     RenderObject._layoutWithoutResize (package:flutter/src/rendering/object.dart:2616:7)
+#55     PipelineOwner.flushLayout (package:flutter/src/rendering/object.dart:1174:18)
+#56     PipelineOwner.flushLayout (package:flutter/src/rendering/object.dart:1187:15)
+#57     AutomatedTestWidgetsFlutterBinding.drawFrame (package:flutter_test/src/binding.dart:2133:27)
+#58     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#59     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430:15)
+#60     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345:9)
+#61     AutomatedTestWidgetsFlutterBinding.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1960:9)
+#64     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#65     AutomatedTestWidgetsFlutterBinding.pump (package:flutter_test/src/binding.dart:1949:27)
+#66     WidgetTester.pump.<anonymous closure> (package:flutter_test/src/widget_tester.dart:652:53)
+#69     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#70     WidgetTester.pump (package:flutter_test/src/widget_tester.dart:652:27)
+#71     main.mount (file:///D:/AnLi/test/qishui_ui_test.dart:92:48)
+<asynchronous suspension>
+#72     main.<anonymous closure> (file:///D:/AnLi/test/qishui_ui_test.dart:118:5)
+<asynchronous suspension>
+#73     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#74     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+The test description was:
+  music root shows actual feed and a mode entry in dark theme
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +3 -2: music root shows actual feed and a mode entry in dark theme [E]
+  Test failed. See exception logs above.
+  The test description was: music root shows actual feed and a mode entry in dark theme
+  
+00:02 +3 -2: mine remains usable on narrow screens with large text
+00:02 +4 -2: business refusal is visible and offers retry instead of fake catalog rows
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: ['/luna/discover/mix']
+  Actual: ['/luna/discover/mix', '/luna/discover/mix']
+   Which: at location [1] is ['/luna/discover/mix', '/luna/discover/mix'] which longer than expected
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/qishui_ui_test.dart:131:5)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/qishui_ui_test.dart line 131
+The test description was:
+  business refusal is visible and offers retry instead of fake catalog rows
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +4 -3: business refusal is visible and offers retry instead of fake catalog rows [E]
+  Test failed. See exception logs above.
+  The test description was: business refusal is visible and offers retry instead of fake catalog rows
+  
+00:02 +4 -3: welfare page only reads on entry, never claims or settles advertising
+00:03 +5 -3: (tearDownAll)
+00:03 +5 -3: Some tests failed.

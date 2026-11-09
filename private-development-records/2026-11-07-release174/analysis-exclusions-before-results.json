@@ -1,0 +1,17 @@
+{
+  "recordedAtUtc": "2026-11-07T04:07:41.727885+00:00",
+  "afterReportExportedYet": false,
+  "excludedScenarios": [
+    "netease/history",
+    "kugou/history"
+  ],
+  "reason": "Current production driver routes history to /profile/listening; AuthProtectedPage always renders Mesting account guard under a beta platform identity. Passive device screenshot confirms guard. Sampled transitions are not platform-history coverage.",
+  "evidence": [
+    "device/after-full-progress2.png",
+    "lib/features/settings/presentation/production_diagnostic_driver.dart:340",
+    "lib/app/router/app_router.dart:330",
+    "lib/features/auth/presentation/auth_protected_page.dart:39"
+  ],
+  "userInstruction": "Record newly discovered issues only; wait for user confirmation before changing product.",
+  "productCodeModifiedForThisFinding": false
+}

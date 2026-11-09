@@ -1,0 +1,23 @@
+ע: D:\AnLi\test\native_soda_audio\SodaAudioProcessorHostTest.javaʹ�û򸲸����ѹ�ʱ�� API��
+ע: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+Exception in thread "main" java.lang.NoClassDefFoundError: com/google/common/base/Preconditions
+	at androidx.media3.common.audio.AudioProcessor$StreamMetadata.<init>(AudioProcessor.java:153)
+	at androidx.media3.common.audio.AudioProcessor$StreamMetadata.<clinit>(AudioProcessor.java:138)
+	at androidx.media3.common.audio.BaseAudioProcessor.flush(BaseAudioProcessor.java:90)
+	at SodaAudioProcessorHostTest.processor(SodaAudioProcessorHostTest.java:20)
+	at SodaAudioProcessorHostTest.lambda$main$0(SodaAudioProcessorHostTest.java:38)
+	at SodaAudioProcessorHostTest.test(SodaAudioProcessorHostTest.java:16)
+	at SodaAudioProcessorHostTest.main(SodaAudioProcessorHostTest.java:37)
+Caused by: java.lang.ClassNotFoundException: com.google.common.base.Preconditions
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 7 more
+Traceback (most recent call last):
+  File "D:\AnLi\tool\test_soda_audio_processor.py", line 27, in <module>
+    subprocess.run([str(args.jdk / 'bin/java.exe'), '-cp', str(args.output) + ';' + str(jar), 'SodaAudioProcessorHostTest'], check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zyt\AppData\Local\Programs\Python\Python314\Lib\subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['D:\\CodexCache\\android-build\\jdk\\jdk-17.0.20.1+1\\bin\\java.exe', '-cp', '.codex-artifacts\\2026-11-06-release164\\native-before;.codex-artifacts\\2026-11-06-release164\\native-before\\media3-common-1.9.2.jar', 'SodaAudioProcessorHostTest']' returned non-zero exit status 1.

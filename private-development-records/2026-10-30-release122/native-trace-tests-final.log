@@ -1,0 +1,12 @@
+PASS: known AOSP signal, thread and frame; all private payloads omitted
+PASS: map value before key and crashing tid after thread map
+PASS: only the crashing thread is exported
+PASS: frame count is capped; later fields are still read
+PASS: unknown thread names and URL-like function names are removed
+PASS: protobuf default zero fault address is retained when present flag is true
+PASS: negative int32 signal code uses the ten-byte varint representation
+PASS: empty or missing crashing thread is explicit
+PASS: truncation and invalid field/wire/varint cannot escape as exceptions
+PASS: large opaque memory is skipped without exporting or decoding it
+PASS: oversized field stops within the bounded scan
+NATIVE_TRACE_TESTS_PASSED=11

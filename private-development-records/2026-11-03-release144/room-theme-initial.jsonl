@@ -1,0 +1,13 @@
+{"protocolVersion":"0.1.1","runnerVersion":"1.30.0","pid":125300,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"D:/AnLi/test/release_144_room_theme_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading D:/AnLi/test/release_144_room_theme_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":1}
+{"count":1,"time":6,"type":"allSuites"}
+test/release_144_room_theme_test.dart:29:31: Error: The method '_Messages.friends' has fewer positional arguments than those of overridden method 'NeteaseMessagesRepository.friends'.
+  Future<List<NeteasePerson>> friends() async => const [
+                              ^
+lib/features/music_platform/netease/messages/netease_messages_repository.dart:352:31: Context: This is the overridden method ('friends').
+  Future<List<NeteasePerson>> friends([int offset = 0]) async {
+                              ^
+{"testID":1,"error":"Failed to load \"D:/AnLi/test/release_144_room_theme_test.dart\":\nCompilation failed for testPath=D:/AnLi/test/release_144_room_theme_test.dart: test/release_144_room_theme_test.dart:29:31: Error: The method '_Messages.friends' has fewer positional arguments than those of overridden method 'NeteaseMessagesRepository.friends'.\n  Future<List<NeteasePerson>> friends() async => const [\n                              ^\nlib/features/music_platform/netease/messages/netease_messages_repository.dart:352:31: Context: This is the overridden method ('friends').\n  Future<List<NeteasePerson>> friends([int offset = 0]) async {\n                              ^\n.","stackTrace":"","isFailure":false,"type":"error","time":8114}
+{"testID":1,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":8120}
+{"success":false,"type":"done","time":8124}

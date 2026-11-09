@@ -1,0 +1,35 @@
+{"protocolVersion":"0.1.1","runnerVersion":"1.30.0","pid":329528,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"D:/AnLi/test/qishui_history173_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading D:/AnLi/test/qishui_history173_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":1}
+{"count":1,"time":5,"type":"allSuites"}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":3640}
+{"group":{"id":2,"suiteID":0,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":14,"line":null,"column":null,"url":null},"type":"group","time":3645}
+{"test":{"id":3,"name":"remote history reads every page in server order and deduplicates boundaries","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":127,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3647}
+{"testID":3,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3677}
+{"test":{"id":4,"name":"looping pagination fails instead of returning a partial full history","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":149,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3678}
+{"testID":4,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3685}
+{"test":{"id":5,"name":"more without a cursor fails and a malformed response is not an empty history","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":163,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3686}
+{"testID":5,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3689}
+{"test":{"id":6,"name":"account changes while reading discard the prior account response","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":179,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3689}
+{"testID":6,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3691}
+{"test":{"id":7,"name":"confirmed playback sends only recent-media body then checks newest cloud item","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":192,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3691}
+{"testID":7,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3700}
+{"test":{"id":8,"name":"a later real replay may reorder history after a confirmed earlier write","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":213,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3700}
+{"testID":8,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3703}
+{"test":{"id":9,"name":"unknown write persists across a new reporter and does not replay when item is merely present","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":228,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3704}
+{"testID":9,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3711}
+{"test":{"id":10,"name":"pending history can be reconciled by top-position readback without another write","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":256,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3711}
+{"testID":10,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3714}
+{"test":{"id":11,"name":"successful dispatch with unreadable readback remains unknown and is not automatically replayed","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":274,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3714}
+{"testID":11,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3717}
+{"test":{"id":12,"name":"definite refusal releases journal for a later explicit playback event","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":291,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3717}
+{"testID":12,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3720}
+{"test":{"id":13,"name":"reporter ignores other platforms and duplicate deliveries but allows a new playback revision","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":310,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3720}
+{"testID":13,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3725}
+{"test":{"id":14,"name":"disposal cancels queued account work and suppresses late statuses","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":337,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3725}
+{"testID":14,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3729}
+{"test":{"id":15,"name":"unknown sync is reported separately without throwing into playback","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":360,"column":3,"url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3729}
+{"testID":15,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3731}
+{"test":{"id":16,"name":"actual player restore and failed resolution do not report; confirmed audible play does","suiteID":0,"groupIDs":[2],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":378,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_history173_test.dart"},"type":"testStart","time":3732}

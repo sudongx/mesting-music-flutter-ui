@@ -1,0 +1,49 @@
+{
+  "error": {
+    "code": "provider_timeout",
+    "category": "timeout",
+    "message": "Analysis took too long. Try a smaller request, then run `rea doctor` if it continues.",
+    "retryable": true,
+    "remediation": {
+      "action": "Analysis took too long. Try a smaller request, then run `rea doctor` if it continues."
+    },
+    "details": {
+      "operation": "inspect_android_package",
+      "timeout_ms": 120000,
+      "partial_observation": {
+        "provider_id": "jadx",
+        "operation": "inspect_android_package",
+        "target": {
+          "selected_path": "D:\\AnLi\\.codex-artifacts\\2026-11-01-together-history-review\\com.netease.cloudmusic-9.6.15.apk",
+          "path": "D:\\AnLi\\.codex-artifacts\\2026-11-01-together-history-review\\com.netease.cloudmusic-9.6.15.apk",
+          "sha256": "e6427bcb35ccd9e8858ee55c46ec3db56b2f09871adcd8e897244d96cfcf7894",
+          "format": "apk"
+        },
+        "provider_facts": {
+          "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+          "bridge_name": "rea-jadx-bridge",
+          "bridge_version": "1",
+          "server_name": "rea-jadx-bridge",
+          "server_version": "1",
+          "engine_version": "0.7.1"
+        },
+        "calls": [
+          {
+            "operation": "rea_jvm_status",
+            "input": {},
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "{\"max_heap_bytes\":3221225472,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":8,\"java_version\":\"17.0.20.1\"}"
+                }
+              ],
+              "isError": false
+            }
+          }
+        ]
+      }
+    }
+  }
+}

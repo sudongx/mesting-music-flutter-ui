@@ -1,0 +1,136 @@
+.method protected realOnPostExecute(Ljava/util/List;)V
+    .registers 7
+    .param p1    # Ljava/util/List;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lcom/netease/cloudmusic/db/dao/impl/PlayRecordEntity;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 2
+    new-instance v0, Lorg/json/JSONArray;
+
+    invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
+
+    if-eqz p1, :cond_44
+
+    .line 3
+    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    :goto_b
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_44
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/netease/cloudmusic/db/dao/impl/PlayRecordEntity;
+
+    .line 4
+    new-instance v2, Lorg/json/JSONObject;
+
+    invoke-direct {v2}, Lorg/json/JSONObject;-><init>()V
+
+    .line 5
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/db/dao/impl/PlayRecordEntity;->getResourceId()Ljava/lang/Long;
+
+    move-result-object v3
+
+    const-string v4, "id"
+
+    invoke-virtual {v2, v4, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string v3, "timestamp"
+
+    .line 6
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/db/dao/impl/PlayRecordEntity;->getEndPlayTime()Ljava/lang/Long;
+
+    move-result-object v4
+
+    invoke-virtual {v2, v3, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string v3, "play_times"
+
+    .line 7
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/db/dao/impl/PlayRecordEntity;->getPlayTimes()Ljava/lang/Integer;
+
+    move-result-object v4
+
+    invoke-virtual {v2, v3, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string v3, "duration"
+
+    .line 8
+    invoke-virtual {v1}, Lcom/netease/cloudmusic/db/dao/impl/PlayRecordEntity;->getPlayTimeDuration()Ljava/lang/Long;
+
+    move-result-object v1
+
+    invoke-virtual {v2, v3, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 9
+    invoke-virtual {v0, v2}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
+
+    goto :goto_b
+
+    .line 10
+    :cond_44
+    new-instance p1, Lorg/json/JSONObject;
+
+    invoke-direct {p1}, Lorg/json/JSONObject;-><init>()V
+
+    .line 11
+    iget-object v1, p0, Lws0/d$a;->b:Lorg/json/JSONObject;
+
+    const-string v2, "seq"
+
+    invoke-virtual {v1, v2}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string v1, "records"
+
+    .line 12
+    invoke-virtual {p1, v1, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 13
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "records="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 14
+    iget-object v0, p0, Lws0/d$a;->c:Lws0/a;
+
+    invoke-virtual {p1}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v1, "result.toString()"
+
+    invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v1, "callback"
+
+    invoke-virtual {v0, v1, p1}, Lws0/a;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method

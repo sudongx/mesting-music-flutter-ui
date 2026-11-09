@@ -1,0 +1,38 @@
+00:00 +0: loading D:/AnLi/test/release_124_diagnostics_test.dart
+00:00 +0: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: production driver opens real downloads, scrolls, swipes and restores the route
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following assertion was thrown running a test:
+A ValueNotifier<bool> was used after being disposed.
+Once you have called dispose() on a ValueNotifier<bool>, it can no longer be used.
+
+When the exception was thrown, this was the stack:
+#0      ChangeNotifier.debugAssertNotDisposed.<anonymous closure> (package:flutter/src/foundation/change_notifier.dart:182:9)
+#1      ChangeNotifier.debugAssertNotDisposed (package:flutter/src/foundation/change_notifier.dart:189:6)
+#2      ChangeNotifier.notifyListeners (package:flutter/src/foundation/change_notifier.dart:411:27)
+#3      ValueNotifier.value= (package:flutter/src/foundation/change_notifier.dart:560:5)
+#4      ScrollPosition.beginActivity (package:flutter/src/widgets/scroll_position.dart:1032:25)
+#5      ScrollPositionWithSingleContext.beginActivity (package:flutter/src/widgets/scroll_position_with_single_context.dart:120:11)
+#6      ScrollPositionWithSingleContext.animateTo (package:flutter/src/widgets/scroll_position_with_single_context.dart:192:5)
+#7      ProductionDiagnosticDriver._pages (package:mesting_music/features/settings/presentation/production_diagnostic_driver.dart:726:24)
+<asynchronous suspension>
+#8      _pump.<anonymous closure> (file:///D:/AnLi/test/release_124_diagnostics_test.dart:378:5)
+<asynchronous suspension>
+
+The test description was:
+  production driver opens real downloads, scrolls, swipes and restores the route
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:52 +0 -1: production driver opens real downloads, scrolls, swipes and restores the route [E]
+  Test failed. See exception logs above.
+  The test description was: production driver opens real downloads, scrolls, swipes and restores the route
+  
+Warning: At least one test in this suite creates an HttpClient. When running a test suite that uses
+TestWidgetsFlutterBinding, all HTTP requests will return status code 400, and no network request
+will actually be made. Any test expecting a real network connection and status code will fail.
+To test code that needs an HttpClient, provide your own HttpClient implementation to the code under
+test, so that your test can consistently provide a testable response to the code under test.
+00:52 +0 -1: (tearDownAll)
+00:52 +0 -1: Some tests failed.

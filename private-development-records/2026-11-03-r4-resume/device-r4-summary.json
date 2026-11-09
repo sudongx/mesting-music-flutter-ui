@@ -1,0 +1,116 @@
+{
+  "version": "1.0.45",
+  "androidVersionCode": 66,
+  "candidate": "R4",
+  "authorizedScope": "Continuous same-scope candidate installation and direct dual-app track changes; whitelisted capture <=180 seconds per round.",
+  "installedApkSha256": "a1d064216f6bdf74e41be700238c6fbe79be6b9c6941434a7dab82e288183cf5",
+  "replacementInstallationsWithDigestReadback": 2,
+  "clearDataRequested": false,
+  "trackChangeCasesPassed": 7,
+  "trackChangeCasesFailed": 0,
+  "cases": [
+    {
+      "case": 1,
+      "scenario": "首次覆盖安装恢复；分身未手动播放，主实例向后台分身切歌",
+      "passed": true,
+      "observedWithinSeconds": 4.69,
+      "matchedBeforeReceiverOpened": true
+    },
+    {
+      "case": 2,
+      "scenario": "分身切歌，主实例后台接收",
+      "passed": true,
+      "observedWithinSeconds": 4.83,
+      "matchedBeforeReceiverOpened": true
+    },
+    {
+      "case": 3,
+      "scenario": "双方回桌面，系统媒体下一首明确指向分身",
+      "passed": true,
+      "observedWithinSeconds": 6.99,
+      "matchedBeforeReceiverOpened": true
+    },
+    {
+      "case": 4,
+      "scenario": "双方留在后台数分钟后，再次从系统媒体控件切歌",
+      "passed": true,
+      "observedWithinSeconds": 7.09,
+      "matchedBeforeReceiverOpened": true
+    },
+    {
+      "case": 5,
+      "scenario": "再次覆盖同一候选；主实例从未播放，分身向后台主实例切歌",
+      "passed": true,
+      "observedWithinSeconds": 2.47,
+      "matchedBeforeReceiverOpened": true
+    },
+    {
+      "case": 6,
+      "scenario": "主实例切歌，分身后台接收",
+      "passed": true,
+      "observedWithinSeconds": 4.85,
+      "matchedBeforeReceiverOpened": true
+    },
+    {
+      "case": 7,
+      "scenario": "双方回桌面，系统媒体下一首明确指向主实例",
+      "passed": true,
+      "observedWithinSeconds": 7.11,
+      "matchedBeforeReceiverOpened": true
+    }
+  ],
+  "captures": [
+    {
+      "capture": 1,
+      "seconds": 164.36,
+      "samples": 70,
+      "stopped": true,
+      "rawLogcatPersisted": false
+    },
+    {
+      "capture": 2,
+      "seconds": 33.73,
+      "samples": 11,
+      "stopped": true,
+      "rawLogcatPersisted": false
+    },
+    {
+      "capture": 3,
+      "seconds": 85.29,
+      "samples": 36,
+      "stopped": true,
+      "rawLogcatPersisted": false
+    }
+  ],
+  "totalSamplesAcrossSeparateCaptures": 117,
+  "allCapturesStopped": true,
+  "leaseForegroundReleaseChecksPassed": 2,
+  "coldRestoreNoPlayingBeforeManualTrackChange": true,
+  "transientFailuresRetained": [
+    {
+      "capture": 3,
+      "phase": "httpFailed",
+      "operation": "roomCheck",
+      "captureElapsedSeconds": 61.476,
+      "nextTickCompletedAfterSeconds": 5.219
+    },
+    {
+      "capture": 3,
+      "phase": "tickFailed",
+      "operation": null,
+      "captureElapsedSeconds": 61.476,
+      "nextTickCompletedAfterSeconds": 5.219
+    }
+  ],
+  "mediaFocusInterferenceExcludedPlaybackPauseAcceptance": true,
+  "scopeRepairVerified": "First restored never-played rooms and bidirectional track changes in the tested same-phone dual-profile environment.",
+  "allBackgroundBehaviorVerified": false,
+  "lockScreenVerified": false,
+  "separateDevicesVerified": false,
+  "longTermPowerAndVendorPolicyVerified": false,
+  "exitRoomOnDeviceTested": false,
+  "unrelatedAccountWritesPerformed": false,
+  "historicalOfficialProfileTotalFixed": false,
+  "october683MinutesRecovered": false,
+  "finalUi": "Main instance returned to foreground; room and accounts retained."
+}

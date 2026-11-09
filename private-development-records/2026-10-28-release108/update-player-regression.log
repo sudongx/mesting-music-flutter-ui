@@ -1,0 +1,104 @@
+00:00 +0: loading D:/AnLi/test/release_106_update_notes_test.dart
+00:00 +0: D:/AnLi/test/release_106_update_notes_test.dart: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: D:/AnLi/test/release_106_update_notes_test.dart: official effect icons retain each effect identity even for the same preset
+00:00 +1: D:/AnLi/test/release_106_update_notes_test.dart: unknown future notes are read before downloading the APK
+00:00 +1 -1: D:/AnLi/test/release_106_update_notes_test.dart: unknown future notes are read before downloading the APK [E]
+  Expected: ['修复未来版本示例问题', '升级前即可阅读的更新说明']
+    Actual: [
+              '优化玻璃折射的重复纹理采样，保留现有色散、模糊、清晰度与全部动画。',
+              '底栏与播放胶囊在稳定且绘制范围安全时共享背景读取，收展、按压形变及淡出期间自动隔离。',
+              '流畅度诊断增加应用版本、主题、显示尺寸及玻璃绘制计数，并对齐切换标记与原始帧时间。',
+              '停止诊断后等待末批帧数据收齐，便于复测页面切换与胶囊收展；实际帧率以真机测试为准。'
+            ]
+     Which: at location [0] is '优化玻璃折射的重复纹理采样，保留现有色散、模糊、清晰度与全部动画。' instead of '修复未来版本示例问题'
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test\release_106_update_notes_test.dart 114:5       main.<fn>
+  
+00:00 +1 -1: D:/AnLi/test/release_106_update_notes_test.dart: publisher metadata avoids ZIP requests and unknown notes never inherit current-version notes
+00:00 +2 -1: D:/AnLi/test/release_106_update_notes_test.dart: ignored Range and changed ETag fail closed without blocking update discovery
+00:00 +2 -2: D:/AnLi/test/release_106_update_notes_test.dart: ignored Range and changed ETag fail closed without blocking update discovery [E]
+  Expected: empty
+    Actual: [
+              '优化玻璃折射的重复纹理采样，保留现有色散、模糊、清晰度与全部动画。',
+              '底栏与播放胶囊在稳定且绘制范围安全时共享背景读取，收展、按压形变及淡出期间自动隔离。',
+              '流畅度诊断增加应用版本、主题、显示尺寸及玻璃绘制计数，并对齐切换标记与原始帧时间。',
+              '停止诊断后等待末批帧数据收齐，便于复测页面切换与胶囊收展；实际帧率以真机测试为准。'
+            ]
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test\release_106_update_notes_test.dart 155:9       main.<fn>
+  
+00:00 +2 -2: D:/AnLi/test/release_106_update_notes_test.dart: notes with a different version identity or damaged ZIP are rejected
+00:00 +2 -3: D:/AnLi/test/release_106_update_notes_test.dart: notes with a different version identity or damaged ZIP are rejected [E]
+  Expected: empty
+    Actual: [
+              '优化玻璃折射的重复纹理采样，保留现有色散、模糊、清晰度与全部动画。',
+              '底栏与播放胶囊在稳定且绘制范围安全时共享背景读取，收展、按压形变及淡出期间自动隔离。',
+              '流畅度诊断增加应用版本、主题、显示尺寸及玻璃绘制计数，并对齐切换标记与原始帧时间。',
+              '停止诊断后等待末批帧数据收齐，便于复测页面切换与胶囊收展；实际帧率以真机测试为准。'
+            ]
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test\release_106_update_notes_test.dart 174:7       main.<fn>
+  
+00:00 +2 -3: D:/AnLi/test/release_106_update_notes_test.dart: installed 1.0.6 opens target 1.0.8 notes before installation
+00:01 +3 -3: D:/AnLi/test/release_106_update_notes_test.dart: (tearDownAll)
+00:01 +3 -3: loading D:/AnLi/test/release_106_menu_geometry_test.dart
+00:03 +3 -3: D:/AnLi/test/release_106_menu_geometry_test.dart: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:03 +3 -3: D:/AnLi/test/release_106_menu_geometry_test.dart: menu transforms are current before paint, including first entry and rapid reversal
+00:03 +4 -3: D:/AnLi/test/release_106_menu_geometry_test.dart: (tearDownAll)
+00:03 +4 -3: loading D:/AnLi/test/release_106_ui_test.dart
+00:05 +4 -3: D:/AnLi/test/release_106_ui_test.dart: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:05 +4 -3: D:/AnLi/test/release_106_ui_test.dart: glass trigger, flight, pressed row and reverse light
+00:06 +5 -3: D:/AnLi/test/release_106_ui_test.dart: glass trigger, flight, pressed row and reverse dark
+00:06 +6 -3: D:/AnLi/test/release_106_ui_test.dart: glass trigger, flight, pressed row and reverse small-large-text
+00:07 +7 -3: D:/AnLi/test/release_106_ui_test.dart: glass trigger, flight, pressed row and reverse wide
+00:07 +8 -3: D:/AnLi/test/release_106_ui_test.dart: real birthday picker uses Chinese and keeps edits local until save
+00:07 +9 -3: D:/AnLi/test/release_106_ui_test.dart: pull refresh has no floating spinner and coalesces one gesture
+00:07 +10 -3: D:/AnLi/test/release_106_ui_test.dart: (tearDownAll)
+00:07 +10 -3: loading D:/AnLi/test/beta17_player_ui_test.dart
+00:09 +10 -3: D:/AnLi/test/beta17_player_ui_test.dart: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:09 +10 -3: D:/AnLi/test/beta17_player_ui_test.dart: queue mode changes announce results and use distinct repeat icons
+00:10 +11 -3: D:/AnLi/test/beta17_player_ui_test.dart: device card follows route events and keeps Beta selection in its glass card
+00:10 +12 -3: D:/AnLi/test/beta17_player_ui_test.dart: (tearDownAll)
+00:10 +12 -3: loading D:/AnLi/test/music_ring_update_test.dart
+00:11 +12 -3: D:/AnLi/test/music_ring_update_test.dart: hosted request binds music, real APK code, hash and both origins
+00:11 +13 -3: D:/AnLi/test/music_ring_update_test.dart: external COS discards stale hosted mirror and never resolves health
+00:11 +14 -3: D:/AnLi/test/music_ring_update_test.dart: wrong hosted app cannot start an SDK transfer
+00:11 +15 -3: D:/AnLi/test/music_ring_update_test.dart: SDK completes, promotes into installer allowlist and reuses valid cache
+00:11 +16 -3: D:/AnLi/test/music_ring_update_test.dart: file changed while install permission dialog is open is rejected
+00:11 +17 -3: D:/AnLi/test/music_ring_update_test.dart: SDK digest failure does not install or launch a second HTTP download
+00:11 +18 -3: D:/AnLi/test/music_ring_update_test.dart: pause waits for cleanup, retains displayed progress and releases SDK owner
+00:11 +19 -3: D:/AnLi/test/music_ring_update_test.dart: cancel before asynchronous initialization performs no transfer
+00:11 +20 -3: D:/AnLi/test/music_ring_update_test.dart: overlap and clear during initialization cannot steal cancellation owner
+00:11 +21 -3: D:/AnLi/test/music_ring_update_test.dart: temporary directory failure remains retryable on the same adapter
+00:11 +22 -3: D:/AnLi/test/music_ring_update_test.dart: dispose during initialization prevents late SDK creation
+00:11 +23 -3: D:/AnLi/test/music_ring_update_test.dart: cache purge removes only SDK-owned files and allows a new engine
+00:11 +24 -3: D:/AnLi/test/music_ring_update_test.dart: pre-SDK partial finishes once with original Range protocol
+00:11 +25 -3: D:/AnLi/test/music_ring_update_test.dart: SDK network failure keeps host recoverable without duplicate legacy requests
+00:11 +26 -3: D:/AnLi/test/music_ring_update_test.dart: real SDK external HTTPS mirror succeeds with every hosted socket blocked
+00:11 +27 -3: D:/AnLi/test/music_ring_update_test.dart: real hosted SDK transfer completes through HTTPS when control sockets fail
+[AppUpgradeP2P] {"at":"2026-10-28T06:40:03.852258Z","stage":"routing","code":"platform_unsupported"}
+[AppUpgradeP2P] {"at":"2026-10-28T06:40:03.858243Z","stage":"https","code":"http_response","http_status":200,"source":"service_main"}
+[AppUpgradeP2P] {"at":"2026-10-28T06:40:03.890157Z","stage":"performance","code":"file_hash_profile","metrics":{"full_sha_us":819,"full_sha_scans":1}}
+[AppUpgradeP2P] {"at":"2026-10-28T06:40:03.895144Z","stage":"https","code":"https_file_promoted"}
+[AppUpgradeP2P] {"at":"2026-10-28T06:40:03.896141Z","stage":"final","code":"verified_https_hash_reused"}
+[AppUpgradeP2P] {"at":"2026-10-28T06:40:03.898136Z","stage":"final","code":"apk_verified","verified":true}
+00:11 +28 -3: D:/AnLi/test/music_ring_update_test.dart: controller with SDK reaches installer after verified completion
+00:12 +29 -3: Some tests failed.

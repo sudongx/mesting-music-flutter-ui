@@ -1,0 +1,130 @@
+{
+  "evidence_id": "ev_e2edf1954812f6f8fd6ed5a0d67ada044d4cb49ccd989c77ea0625fbfa9ef3a1",
+  "subject": {
+    "name": "kugou-classes12-analysis.apk",
+    "digest": {
+      "sha256": "4ff4ff6db9dabfe621d7825770558f488e2f7bbe656e0c995bd0eaa9b8595be1"
+    },
+    "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-07-release174\\official\\kugou-classes12-analysis.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "D:/AnLi/.codex-artifacts/2026-11-07-release174/official/kugou-classes12-analysis.apk",
+    "class_name": "com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel",
+    "method_name": "z"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "10"
+    },
+    "bridge_sha256": "f9d6d68eadd3d51a89e2debda359454c20534560080d4438f9b9cfe5a19f0b2e",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "C:\\Users\\zyt\\AppData\\Local\\Temp\\rea-android-dac77087707ce0746fca666fc2d7aa90\\target.apk",
+      "class_count": 2347,
+      "resource_count": 2,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":8,\"java_version\":\"17.0.20.1\",\"max_heap_bytes\":3221225472,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"raw_name\":\"\\u003cclinit\\u003e\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\",\"signature\":\"\\u003cclinit\\u003e(): void\",\"dex_descriptor\":\"()V\"},{\"raw_name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"signature\":\"\\u003cinit\\u003e(): void\",\"dex_descriptor\":\"()V\"},{\"raw_name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"signature\":\"\\u003cinit\\u003e(android.os.Parcel): void\",\"dex_descriptor\":\"(Landroid/os/Parcel;)V\"},{\"raw_name\":\"A\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"A\",\"signature\":\"A(java.lang.String): com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel\",\"dex_descriptor\":\"(Ljava/lang/String;)Lcom/kugou/android/netmusic/discovery/dailybills/DailyBillCacheModel;\"},{\"raw_name\":\"B\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"B\",\"signature\":\"B(java.lang.String): com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel\",\"dex_descriptor\":\"(Ljava/lang/String;)Lcom/kugou/android/netmusic/discovery/dailybills/DailyBillCacheModel;\"},{\"raw_name\":\"C\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"C\",\"signature\":\"C(boolean): void\",\"dex_descriptor\":\"(Z)V\"},{\"raw_name\":\"D\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"D\",\"signature\":\"D(java.util.List\\u003ccom.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel$DailyBillPage\\u003e): void\",\"dex_descriptor\":\"(Ljava/util/List;)V\"},{\"raw_name\":\"E\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"E\",\"signature\":\"E(int): void\",\"dex_descriptor\":\"(I)V\"},{\"raw_name\":\"F\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"F\",\"signature\":\"F(java.lang.String): com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel\",\"dex_descriptor\":\"(Ljava/lang/String;)Lcom/kugou/android/netmusic/discovery/dailybills/DailyBillCacheModel;\"},{\"raw_name\":\"G\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"G\",\"signature\":\"G(java.lang.String): com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel\",\"dex_descriptor\":\"(Ljava/lang/String;)Lcom/kugou/android/netmusic/discovery/dailybills/DailyBillCacheModel;\"},{\"raw_name\":\"H\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"H\",\"signature\":\"H(java.lang.String): void\",\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"raw_name\":\"I\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"I\",\"signature\":\"I(java.util.List\\u003ccom.kugou.android.common.entity.KGSong\\u003e): java.util.List\\u003ccom.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel$DailyBillPage\\u003e\",\"dex_descriptor\":\"(Ljava/util/List;)Ljava/util/List;\"},{\"raw_name\":\"J\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"J\",\"signature\":\"J(java.util.List\\u003ccom.kugou.android.common.entity.KGSong\\u003e, int): java.util.List\\u003ccom.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel$DailyBillPage\\u003e\",\"dex_descriptor\":\"(Ljava/util/List;I)Ljava/util/List;\"},{\"raw_name\":\"a\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"a\",\"signature\":\"a(com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel$DailyBillPage): void\",\"dex_descriptor\":\"(Lcom/kugou/android/netmusic/discovery/dailybills/DailyBillCacheModel$DailyBillPage;)V\"},{\"raw_name\":\"b\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"b\",\"signature\":\"b(java.util.Collection\\u003ccom.kugou.android.common.entity.KGMusic\\u003e): void\",\"dex_descriptor\":\"(Ljava/util/Collection;)V\"},{\"raw_name\":\"c\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"c\",\"signature\":\"c(java.util.Collection\\u003ccom.kugou.android.common.entity.KGSong\\u003e): void\",\"dex_descriptor\":\"(Ljava/util/Collection;)V\"},{\"raw_name\":\"d\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"d\",\"signature\":\"d(java.util.Collection\\u003ccom.kugou.android.common.entity.KGSong\\u003e): void\",\"dex_descriptor\":\"(Ljava/util/Collection;)V\"},{\"raw_name\":\"describeContents\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"describeContents\",\"signature\":\"describeContents(): int\",\"dex_descriptor\":\"()I\"},{\"raw_name\":\"e\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"e\",\"signature\":\"e(java.lang.String): com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel\",\"dex_descriptor\":\"(Ljava/lang/String;)Lcom/kugou/android/netmusic/discovery/dailybills/DailyBillCacheModel;\"},{\"raw_name\":\"f\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"f\",\"signature\":\"f(): java.util.List\\u003ccom.kugou.android.common.entity.KGSong\\u003e\",\"dex_descriptor\":\"()Ljava/util/List;\"},{\"raw_name\":\"g\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"g\",\"signature\":\"g(java.lang.String): java.util.List\\u003ccom.kugou.android.common.entity.KGSong\\u003e\",\"dex_descriptor\":\"(Ljava/lang/String;)Ljava/util/List;\"},{\"raw_name\":\"h\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"h\",\"signature\":\"h(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\"},{\"raw_name\":\"i\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"i\",\"signature\":\"i(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\"},{\"raw_name\":\"j\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"j\",\"signature\":\"j(): com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel$DailyBillPage\",\"dex_descriptor\":\"()Lcom/kugou/android/netmusic/discovery/dailybills/DailyBillCacheModel$DailyBillPage;\"},{\"raw_name\":\"k\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"k\",\"signature\":\"k(): int\",\"dex_descriptor\":\"()I\"},{\"raw_name\":\"l\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"l\",\"signature\":\"l(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\"},{\"raw_name\":\"m\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"m\",\"signature\":\"m(int): com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel$DailyBillPage\",\"dex_descriptor\":\"(I)Lcom/kugou/android/netmusic/discovery/dailybills/DailyBillCacheModel$DailyBillPage;\"},{\"raw_name\":\"n\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"n\",\"signature\":\"n(): java.util.List\\u003ccom.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel$DailyBillPage\\u003e\",\"dex_descriptor\":\"()Ljava/util/List;\"},{\"raw_name\":\"o\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"o\",\"signature\":\"o(): int\",\"dex_descriptor\":\"()I\"},{\"raw_name\":\"p\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"p\",\"signature\":\"p(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\"},{\"raw_name\":\"q\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"q\",\"signature\":\"q(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\"},{\"raw_name\":\"r\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"r\",\"signature\":\"r(): boolean\",\"dex_descriptor\":\"()Z\"},{\"raw_name\":\"s\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"s\",\"signature\":\"s(): boolean\",\"dex_descriptor\":\"()Z\"},{\"raw_name\":\"t\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"t\",\"signature\":\"t(): void\",\"dex_descriptor\":\"()V\"},{\"raw_name\":\"toJson\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"toJson\",\"signature\":\"toJson(): org.json.JSONObject\",\"dex_descriptor\":\"()Lorg/json/JSONObject;\"},{\"raw_name\":\"u\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"u\",\"signature\":\"u(java.lang.String): void\",\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"raw_name\":\"v\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"v\",\"signature\":\"v(java.lang.String): void\",\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"raw_name\":\"w\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"w\",\"signature\":\"w(boolean): com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel\",\"dex_descriptor\":\"(Z)Lcom/kugou/android/netmusic/discovery/dailybills/DailyBillCacheModel;\"},{\"raw_name\":\"writeToParcel\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"writeToParcel\",\"signature\":\"writeToParcel(android.os.Parcel, int): void\",\"dex_descriptor\":\"(Landroid/os/Parcel;I)V\"},{\"raw_name\":\"z\",\"def_pos\":0,\"is_constructor\":false,\"name\":\"z\",\"signature\":\"z(java.lang.String): void\",\"dex_descriptor\":\"(Ljava/lang/String;)V\"}],\"full_name\":\"com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel\",\"inner_classes\":[\"com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel.DailyBillPage\",\"com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel.a\"],\"field_count\":18,\"method_count\":40,\"raw_name\":\"com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel\",\"name\":\"DailyBillCacheModel\",\"inner_class_count\":2,\"inner_class_raw_names\":[\"com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel$DailyBillPage\",\"com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel$a\"],\"fields\":[{\"raw_name\":\"CREATOR\",\"name\":\"CREATOR\",\"type\":\"android.os.Parcelable$Creator\\u003ccom.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel\\u003e\",\"def_pos\":0,\"dex_type\":\"Landroid/os/Parcelable$Creator;\"},{\"raw_name\":\"d\",\"name\":\"d\",\"type\":\"int\",\"def_pos\":0,\"dex_type\":\"I\"},{\"raw_name\":\"e\",\"name\":\"e\",\"type\":\"java.lang.String\",\"def_pos\":0,\"dex_type\":\"Ljava/lang/String;\"},{\"raw_name\":\"f\",\"name\":\"f\",\"type\":\"int\",\"def_pos\":0,\"dex_type\":\"I\"},{\"raw_name\":\"g\",\"name\":\"g\",\"type\":\"int\",\"def_pos\":0,\"dex_type\":\"I\"},{\"raw_name\":\"h\",\"name\":\"h\",\"type\":\"boolean\",\"def_pos\":0,\"dex_type\":\"Z\"},{\"raw_name\":\"i\",\"name\":\"i\",\"type\":\"java.lang.String\",\"def_pos\":0,\"dex_type\":\"Ljava/lang/String;\"},{\"raw_name\":\"j\",\"name\":\"j\",\"type\":\"java.lang.String\",\"def_pos\":0,\"dex_type\":\"Ljava/lang/String;\"},{\"raw_name\":\"n\",\"name\":\"n\",\"type\":\"java.lang.String\",\"def_pos\":0,\"dex_type\":\"Ljava/lang/String;\"},{\"raw_name\":\"o\",\"name\":\"o\",\"type\":\"java.lang.String\",\"def_pos\":0,\"dex_type\":\"Ljava/lang/String;\"},{\"raw_name\":\"p\",\"name\":\"p\",\"type\":\"java.lang.String\",\"def_pos\":0,\"dex_type\":\"Ljava/lang/String;\"},{\"raw_name\":\"q\",\"name\":\"q\",\"type\":\"boolean\",\"def_pos\":0,\"dex_type\":\"Z\"},{\"raw_name\":\"r\",\"name\":\"r\",\"type\":\"boolean\",\"def_pos\":0,\"dex_type\":\"Z\"},{\"raw_name\":\"s\",\"name\":\"s\",\"type\":\"boolean\",\"def_pos\":0,\"dex_type\":\"Z\"},{\"raw_name\":\"t\",\"name\":\"t\",\"type\":\"boolean\",\"def_pos\":0,\"dex_type\":\"Z\"},{\"raw_name\":\"u\",\"name\":\"u\",\"type\":\"java.lang.String\",\"def_pos\":0,\"dex_type\":\"Ljava/lang/String;\"},{\"raw_name\":\"v\",\"name\":\"v\",\"type\":\"java.lang.String\",\"def_pos\":0,\"dex_type\":\"Ljava/lang/String;\"},{\"raw_name\":\"w\",\"name\":\"w\",\"type\":\"java.util.List\\u003ccom.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel$DailyBillPage\\u003e\",\"def_pos\":0,\"dex_type\":\"Ljava/util/List;\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel",
+          "method_name": "z",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"class_name\":\"com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel\",\"dex_descriptor\":\"(Ljava/lang/String;)V\",\"overload_count\":1,\"method_name\":\"z\",\"overload_index\":0,\"full_name\":\"com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel.z\",\"fell_back\":false,\"markers\":[],\"body\":\"    public void z(String str) {\\r\\n        this.e \\u003d str;\\r\\n    }\",\"mode\":\"java\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 3072
+    },
+    "class_name": "com.kugou.android.netmusic.discovery.dailybills.DailyBillCacheModel",
+    "method": {
+      "name": "z",
+      "reported_signature": "z(java.lang.String): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Ljava/lang/String;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public void z(String str) {\r\n        this.e = str;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

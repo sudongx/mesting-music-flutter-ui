@@ -1,0 +1,3761 @@
+{
+  "source_sha256": "b639e67c13e03377f0f9d8068c5e0419b1acd42c7d529362f11ae704b3838741",
+  "scope": "Selected original class definitions and instruction-boundary direct invoke users; not runtime or complete data-flow proof.",
+  "dex": [
+    {
+      "entry": "classes.dex",
+      "sha256": "95717faa88378ab6b4e0c9d849e3218accd167f9baf79fe7a7296b37d4be50f4",
+      "classes": [],
+      "targets": [],
+      "callers": [],
+      "errors": []
+    },
+    {
+      "entry": "classes10.dex",
+      "sha256": "0f617b7092a7d6eed07bc85b95f9b5f62188858388b4efd51bff5e5574804cae",
+      "classes": [
+        {
+          "class_def_index": 957,
+          "descriptor": "Lcom/ss/android/IAccountNetworkService;"
+        },
+        {
+          "class_def_index": 963,
+          "descriptor": "Lcom/ss/android/TTAccountConfig;"
+        },
+        {
+          "class_def_index": 984,
+          "descriptor": "Lcom/ss/android/account/TTAccountInit$2;"
+        },
+        {
+          "class_def_index": 985,
+          "descriptor": "Lcom/ss/android/account/TTAccountInit$3;"
+        },
+        {
+          "class_def_index": 986,
+          "descriptor": "Lcom/ss/android/account/TTAccountInit$4;"
+        },
+        {
+          "class_def_index": 987,
+          "descriptor": "Lcom/ss/android/account/TTAccountInit$CheckTokenHandler;"
+        },
+        {
+          "class_def_index": 988,
+          "descriptor": "Lcom/ss/android/account/TTAccountInit;"
+        },
+        {
+          "class_def_index": 1014,
+          "descriptor": "Lcom/ss/android/account/group_onekey/network/AccountGroupNetworkHelper$preGetToken$1$onResult$3;"
+        },
+        {
+          "class_def_index": 1015,
+          "descriptor": "Lcom/ss/android/account/group_onekey/network/AccountGroupNetworkHelper;"
+        },
+        {
+          "class_def_index": 5702,
+          "descriptor": "Lcom/ss/android/AbsTTAccountConfig;"
+        },
+        {
+          "class_def_index": 5720,
+          "descriptor": "Lcom/ss/android/account/group_onekey/network/AccountGroupNetworkHelper$preGetToken$1;"
+        },
+        {
+          "class_def_index": 5721,
+          "descriptor": "Lcom/ss/android/account/group_onekey/network/AccountGroupNetworkHelper$requestGetToken$3;"
+        },
+        {
+          "class_def_index": 7239,
+          "descriptor": "Lcom/ss/android/account/TTAccountInit$1;"
+        },
+        {
+          "class_def_index": 7240,
+          "descriptor": "Lcom/ss/android/account/TTAccountInit$5;"
+        },
+        {
+          "class_def_index": 7244,
+          "descriptor": "Lcom/ss/android/account/group_onekey/network/AccountGroupNetworkHelper$requestGetToken$3$onSuccess$1;"
+        },
+        {
+          "class_def_index": 8334,
+          "descriptor": "Lcom/ss/android/account/group_onekey/network/AccountGroupNetworkHelper$preGetToken$1$onResult$1;"
+        }
+      ],
+      "targets": [],
+      "callers": [],
+      "errors": []
+    },
+    {
+      "entry": "classes11.dex",
+      "sha256": "8b2b5cdcfb18d2b85071c639b288bf07e2c0908b33956c2db2c624c0c96dfd66",
+      "classes": [
+        {
+          "class_def_index": 451,
+          "descriptor": "Lcom/ss/android/ugc/aweme/account/saas/impl/utils/TTAccountConfigExtractorKt;"
+        },
+        {
+          "class_def_index": 4642,
+          "descriptor": "Lcom/ss/android/ugc/aweme/account/saas/impl/utils/ExtractTTAccountConfig$defaultHost$1;"
+        },
+        {
+          "class_def_index": 4644,
+          "descriptor": "Lcom/ss/android/ugc/aweme/account/saas/impl/utils/TTAccountConfigExtractorKt$extractHostEnv$1;"
+        },
+        {
+          "class_def_index": 4645,
+          "descriptor": "Lcom/ss/android/ugc/aweme/account/saas/impl/utils/TTAccountConfigExtractorKt$extractLogDepend$1;"
+        },
+        {
+          "class_def_index": 4646,
+          "descriptor": "Lcom/ss/android/ugc/aweme/account/saas/impl/utils/TTAccountConfigExtractorKt$extractMonitorDepend$1;"
+        },
+        {
+          "class_def_index": 4647,
+          "descriptor": "Lcom/ss/android/ugc/aweme/account/saas/impl/utils/TTAccountConfigExtractorKt$extractThirdPartyDepend$1;"
+        },
+        {
+          "class_def_index": 4648,
+          "descriptor": "Lcom/ss/android/ugc/aweme/account/saas/impl/utils/TTAccountConfigExtractorKt$extractUIOperationDepend$1;"
+        },
+        {
+          "class_def_index": 9447,
+          "descriptor": "Lcom/ss/android/ugc/aweme/account/saas/impl/utils/TTAccountConfigExtractorKt$extractExperimentalFeatureEnabledDepend$1;"
+        },
+        {
+          "class_def_index": 9448,
+          "descriptor": "Lcom/ss/android/ugc/aweme/account/saas/impl/utils/TTAccountConfigExtractorKt$extractRouterDepend$1;"
+        },
+        {
+          "class_def_index": 9449,
+          "descriptor": "Lcom/ss/android/ugc/aweme/account/saas/impl/utils/TTAccountConfigExtractorKt$extractUIOperationDepend$1$getLottie$1;"
+        },
+        {
+          "class_def_index": 9735,
+          "descriptor": "Lcom/ss/android/ugc/aweme/account/saas/impl/utils/ExtractTTAccountConfig;"
+        }
+      ],
+      "targets": [
+        {
+          "method_index": 6177,
+          "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SendSmsCodeParams;",
+          "name": "<init>",
+          "proto_index": 10735,
+          "prototype": "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "method_index": 6178,
+          "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SendSmsCodeParams;",
+          "name": "<init>",
+          "proto_index": 10736,
+          "prototype": "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V"
+        },
+        {
+          "method_index": 6179,
+          "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SendSmsCodeParams;",
+          "name": "<init>",
+          "proto_index": 10935,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;)V"
+        },
+        {
+          "method_index": 6180,
+          "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SendSmsCodeParams;",
+          "name": "<init>",
+          "proto_index": 10936,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V"
+        },
+        {
+          "method_index": 6416,
+          "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SmsLoginParams;",
+          "name": "<init>",
+          "proto_index": 6452,
+          "prototype": "()V"
+        },
+        {
+          "method_index": 6417,
+          "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SmsLoginParams;",
+          "name": "<init>",
+          "proto_index": 11011,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;ZZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;)V"
+        },
+        {
+          "method_index": 6418,
+          "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SmsLoginParams;",
+          "name": "<init>",
+          "proto_index": 11012,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;ZZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V"
+        },
+        {
+          "method_index": 6419,
+          "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SmsLoginParams;",
+          "name": "<init>",
+          "proto_index": 11087,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+        }
+      ],
+      "callers": [
+        {
+          "method_index": 6177,
+          "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SendSmsCodeParams;",
+          "name": "<init>",
+          "proto_index": 10735,
+          "prototype": "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;)V",
+          "class_def_index": 4536,
+          "code_offset": 2026392,
+          "sites": [
+            {
+              "code_unit_offset": 34,
+              "opcode": "0x76",
+              "target": {
+                "method_index": 6179,
+                "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SendSmsCodeParams;",
+                "name": "<init>",
+                "proto_index": 10935,
+                "prototype": "(Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;)V"
+              },
+              "raw_units": [
+                6006,
+                6179,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 6178,
+          "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SendSmsCodeParams;",
+          "name": "<init>",
+          "proto_index": 10736,
+          "prototype": "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V",
+          "class_def_index": 4536,
+          "code_offset": 2026484,
+          "sites": [
+            {
+              "code_unit_offset": 20,
+              "opcode": "0x76",
+              "target": {
+                "method_index": 6177,
+                "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SendSmsCodeParams;",
+                "name": "<init>",
+                "proto_index": 10735,
+                "prototype": "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;)V"
+              },
+              "raw_units": [
+                1910,
+                6177,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 6180,
+          "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SendSmsCodeParams;",
+          "name": "<init>",
+          "proto_index": 10936,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V",
+          "class_def_index": 4536,
+          "code_offset": 2026724,
+          "sites": [
+            {
+              "code_unit_offset": 183,
+              "opcode": "0x76",
+              "target": {
+                "method_index": 6179,
+                "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SendSmsCodeParams;",
+                "name": "<init>",
+                "proto_index": 10935,
+                "prototype": "(Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;)V"
+              },
+              "raw_units": [
+                6006,
+                6179,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 6203,
+          "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SendSmsCodeParams;",
+          "name": "copy",
+          "proto_index": 1982,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;)Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SendSmsCodeParams;",
+          "class_def_index": 4536,
+          "code_offset": 2023588,
+          "sites": [
+            {
+              "code_unit_offset": 48,
+              "opcode": "0x76",
+              "target": {
+                "method_index": 6179,
+                "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SendSmsCodeParams;",
+                "name": "<init>",
+                "proto_index": 10935,
+                "prototype": "(Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;)V"
+              },
+              "raw_units": [
+                6006,
+                6179,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 6416,
+          "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SmsLoginParams;",
+          "name": "<init>",
+          "proto_index": 6452,
+          "prototype": "()V",
+          "class_def_index": 4541,
+          "code_offset": 2043856,
+          "sites": [
+            {
+              "code_unit_offset": 38,
+              "opcode": "0x76",
+              "target": {
+                "method_index": 6418,
+                "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SmsLoginParams;",
+                "name": "<init>",
+                "proto_index": 11012,
+                "prototype": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;ZZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V"
+              },
+              "raw_units": [
+                6774,
+                6418,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 6418,
+          "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SmsLoginParams;",
+          "name": "<init>",
+          "proto_index": 11012,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;ZZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V",
+          "class_def_index": 4541,
+          "code_offset": 2044244,
+          "sites": [
+            {
+              "code_unit_offset": 259,
+              "opcode": "0x76",
+              "target": {
+                "method_index": 6417,
+                "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SmsLoginParams;",
+                "name": "<init>",
+                "proto_index": 11011,
+                "prototype": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;ZZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;)V"
+              },
+              "raw_units": [
+                6262,
+                6417,
+                25
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 6419,
+          "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SmsLoginParams;",
+          "name": "<init>",
+          "proto_index": 11087,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V",
+          "class_def_index": 4541,
+          "code_offset": 2043956,
+          "sites": [
+            {
+              "code_unit_offset": 40,
+              "opcode": "0x76",
+              "target": {
+                "method_index": 6417,
+                "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SmsLoginParams;",
+                "name": "<init>",
+                "proto_index": 11011,
+                "prototype": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;ZZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;)V"
+              },
+              "raw_units": [
+                6262,
+                6417,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 6443,
+          "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SmsLoginParams;",
+          "name": "copy",
+          "proto_index": 2002,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;ZZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;)Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SmsLoginParams;",
+          "class_def_index": 4541,
+          "code_offset": 2040564,
+          "sites": [
+            {
+              "code_unit_offset": 50,
+              "opcode": "0x76",
+              "target": {
+                "method_index": 6417,
+                "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SmsLoginParams;",
+                "name": "<init>",
+                "proto_index": 11011,
+                "prototype": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;ZZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;)V"
+              },
+              "raw_units": [
+                6262,
+                6417,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 9706,
+          "owner": "Lcom/ss/android/ugc/aweme/account/saas/impl/biz/errorhandler/ResponseErrorHandler4047;",
+          "name": "handleErrorWithParams",
+          "proto_index": 5044,
+          "prototype": "(Lcom/ss/android/ugc/aweme/account/saas/impl/biz/errorhandler/ResponseErrorHandler4047$Companion$ErrorHandler4047Params;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;",
+          "class_def_index": 6510,
+          "code_offset": 2224936,
+          "sites": [
+            {
+              "code_unit_offset": 57,
+              "opcode": "0x76",
+              "target": {
+                "method_index": 6418,
+                "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SmsLoginParams;",
+                "name": "<init>",
+                "proto_index": 11012,
+                "prototype": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;ZZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V"
+              },
+              "raw_units": [
+                6774,
+                6418,
+                1
+              ]
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "entry": "classes12.dex",
+      "sha256": "f78bd7d3c9a9468d92338457d8e2d90b6d78d997f60bc293d485e8dc9721cf96",
+      "classes": [],
+      "targets": [],
+      "callers": [],
+      "errors": []
+    },
+    {
+      "entry": "classes13.dex",
+      "sha256": "d8c83ee071700656dd19945ab54bdde023b305f19c86cfa72ad272dc10b1eb57",
+      "classes": [],
+      "targets": [],
+      "callers": [],
+      "errors": []
+    },
+    {
+      "entry": "classes14.dex",
+      "sha256": "3492eb413ac2f16331b2371aba9efe77056f4649a9df62412992de7678491079",
+      "classes": [],
+      "targets": [],
+      "callers": [],
+      "errors": []
+    },
+    {
+      "entry": "classes15.dex",
+      "sha256": "0e9946760afd3241d86e583282ca8fb7a190dff2183bde2f8c19665fcaddc111",
+      "classes": [],
+      "targets": [],
+      "callers": [],
+      "errors": []
+    },
+    {
+      "entry": "classes16.dex",
+      "sha256": "275cdd713dfcbc0c48ea487c06007a078024bc255d7fa23fffd624f3993054c6",
+      "classes": [
+        {
+          "class_def_index": 97,
+          "descriptor": "Lcom/bytedance/account/sdk/login/ui/XAccountHost$LoginView;"
+        },
+        {
+          "class_def_index": 98,
+          "descriptor": "Lcom/bytedance/account/sdk/login/ui/XAccountHost;"
+        },
+        {
+          "class_def_index": 99,
+          "descriptor": "Lcom/bytedance/account/sdk/login/ui/XAccountHostActivity$1$1;"
+        },
+        {
+          "class_def_index": 100,
+          "descriptor": "Lcom/bytedance/account/sdk/login/ui/XAccountHostActivity$1;"
+        },
+        {
+          "class_def_index": 101,
+          "descriptor": "Lcom/bytedance/account/sdk/login/ui/XAccountHostActivity$2;"
+        },
+        {
+          "class_def_index": 102,
+          "descriptor": "Lcom/bytedance/account/sdk/login/ui/XAccountHostActivity$3;"
+        },
+        {
+          "class_def_index": 103,
+          "descriptor": "Lcom/bytedance/account/sdk/login/ui/XAccountHostActivity$Action;"
+        },
+        {
+          "class_def_index": 104,
+          "descriptor": "Lcom/bytedance/account/sdk/login/ui/XAccountHostHalfActivity$1;"
+        },
+        {
+          "class_def_index": 105,
+          "descriptor": "Lcom/bytedance/account/sdk/login/ui/XAccountHostHalfActivity$Action;"
+        },
+        {
+          "class_def_index": 5403,
+          "descriptor": "Lcom/bytedance/account/sdk/login/ui/XAccountHostActivity$4;"
+        },
+        {
+          "class_def_index": 5404,
+          "descriptor": "Lcom/bytedance/account/sdk/login/ui/XAccountHostHalfActivity$2;"
+        },
+        {
+          "class_def_index": 10075,
+          "descriptor": "Lcom/bytedance/account/sdk/login/ui/XAccountHostActivity;"
+        },
+        {
+          "class_def_index": 10076,
+          "descriptor": "Lcom/bytedance/account/sdk/login/ui/XAccountHostHalfActivity;"
+        }
+      ],
+      "targets": [
+        {
+          "method_index": 61768,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "<init>",
+          "proto_index": 12297,
+          "prototype": "(Ljava/lang/String;I)V"
+        },
+        {
+          "method_index": 61769,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "build",
+          "proto_index": 4899,
+          "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+        },
+        {
+          "method_index": 61770,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "setCheckRegister",
+          "proto_index": 4895,
+          "prototype": "(I)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+        },
+        {
+          "method_index": 61771,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "setExtraInfo",
+          "proto_index": 4897,
+          "prototype": "(Ljava/util/Map;)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+        },
+        {
+          "method_index": 61772,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "setTicket",
+          "proto_index": 4896,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+        },
+        {
+          "method_index": 61773,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "setUnbindExist",
+          "proto_index": 4898,
+          "prototype": "(Z)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+        },
+        {
+          "method_index": 61779,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "<init>",
+          "proto_index": 7128,
+          "prototype": "()V"
+        },
+        {
+          "method_index": 61780,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "build",
+          "proto_index": 4906,
+          "prototype": "()Lcom/bytedance/sdk/account/param/UserLoginParam;"
+        },
+        {
+          "method_index": 61781,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setAccount",
+          "proto_index": 4903,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 61782,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setCode",
+          "proto_index": 4903,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 61783,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setDTicket",
+          "proto_index": 4903,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 61784,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setExtraInfo",
+          "proto_index": 4904,
+          "prototype": "(Ljava/util/Map;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 61785,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setFrom",
+          "proto_index": 4903,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 61786,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setLoginOnly",
+          "proto_index": 4905,
+          "prototype": "(Z)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 61787,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setLoginScene",
+          "proto_index": 4903,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 61788,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setMixMode",
+          "proto_index": 4903,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 61789,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setMobile",
+          "proto_index": 4903,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 61790,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setPassword",
+          "proto_index": 4903,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 61791,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setProviderAppId",
+          "proto_index": 4903,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 61792,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setSecUserId",
+          "proto_index": 4903,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 61793,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setToken",
+          "proto_index": 4903,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        }
+      ],
+      "callers": [
+        {
+          "method_index": 3030,
+          "owner": "Lcom/bytedance/account/sdk/login/manager/handle/CodeVerifyLoginHandler;",
+          "name": "g",
+          "proto_index": 12794,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;Lcom/bytedance/sdk/account/error/handler/ErrorHandler$HandlerCallback;)V",
+          "class_def_index": 5393,
+          "code_offset": 1545932,
+          "sites": [
+            {
+              "code_unit_offset": 15,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61768,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 12297,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                61768,
+                532
+              ]
+            },
+            {
+              "code_unit_offset": 18,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61771,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "setExtraInfo",
+                "proto_index": 4897,
+                "prototype": "(Ljava/util/Map;)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61771,
+                4
+              ]
+            },
+            {
+              "code_unit_offset": 22,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61769,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4899,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                61769,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 3682,
+          "owner": "Lcom/bytedance/account/sdk/login/ui/change/presenter/ChangeMobilePresenter;",
+          "name": "q0",
+          "proto_index": 12714,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;)V",
+          "class_def_index": 8080,
+          "code_offset": 1583336,
+          "sites": [
+            {
+              "code_unit_offset": 55,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61768,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 12297,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                61768,
+                770
+              ]
+            },
+            {
+              "code_unit_offset": 58,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61769,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4899,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                61769,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 3683,
+          "owner": "Lcom/bytedance/account/sdk/login/ui/change/presenter/ChangeMobilePresenter;",
+          "name": "r0",
+          "proto_index": 12714,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;)V",
+          "class_def_index": 8080,
+          "code_offset": 1583512,
+          "sites": [
+            {
+              "code_unit_offset": 48,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61768,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 12297,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                61768,
+                770
+              ]
+            },
+            {
+              "code_unit_offset": 52,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61770,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "setCheckRegister",
+                "proto_index": 4895,
+                "prototype": "(I)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61770,
+                50
+              ]
+            },
+            {
+              "code_unit_offset": 58,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61772,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "setTicket",
+                "proto_index": 4896,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61772,
+                50
+              ]
+            },
+            {
+              "code_unit_offset": 62,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61769,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4899,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                61769,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 3774,
+          "owner": "Lcom/bytedance/account/sdk/login/ui/change/presenter/ChangeMobileSmsCodeInputPresenter;",
+          "name": "q",
+          "proto_index": 12288,
+          "prototype": "(Ljava/lang/String;)V",
+          "class_def_index": 8084,
+          "code_offset": 1589200,
+          "sites": [
+            {
+              "code_unit_offset": 33,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61768,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 12297,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                61768,
+                577
+              ]
+            },
+            {
+              "code_unit_offset": 38,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61772,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "setTicket",
+                "proto_index": 4896,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61772,
+                33
+              ]
+            },
+            {
+              "code_unit_offset": 43,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61770,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "setCheckRegister",
+                "proto_index": 4895,
+                "prototype": "(I)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61770,
+                33
+              ]
+            },
+            {
+              "code_unit_offset": 47,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61769,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4899,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                61769,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 3776,
+          "owner": "Lcom/bytedance/account/sdk/login/ui/change/presenter/ChangeMobileSmsCodeInputPresenter;",
+          "name": "r",
+          "proto_index": 12288,
+          "prototype": "(Ljava/lang/String;)V",
+          "class_def_index": 8084,
+          "code_offset": 1589560,
+          "sites": [
+            {
+              "code_unit_offset": 33,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61768,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 12297,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                61768,
+                577
+              ]
+            },
+            {
+              "code_unit_offset": 36,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61769,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4899,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                61769,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 3778,
+          "owner": "Lcom/bytedance/account/sdk/login/ui/change/presenter/ChangeMobileSmsCodeInputPresenter;",
+          "name": "s",
+          "proto_index": 12288,
+          "prototype": "(Ljava/lang/String;)V",
+          "class_def_index": 8084,
+          "code_offset": 1589360,
+          "sites": [
+            {
+              "code_unit_offset": 50,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61768,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 12297,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                61768,
+                850
+              ]
+            },
+            {
+              "code_unit_offset": 55,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61772,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "setTicket",
+                "proto_index": 4896,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61772,
+                50
+              ]
+            },
+            {
+              "code_unit_offset": 59,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61773,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "setUnbindExist",
+                "proto_index": 4898,
+                "prototype": "(Z)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61773,
+                18
+              ]
+            },
+            {
+              "code_unit_offset": 64,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61770,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "setCheckRegister",
+                "proto_index": 4895,
+                "prototype": "(I)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61770,
+                33
+              ]
+            },
+            {
+              "code_unit_offset": 68,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61769,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4899,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                61769,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 3861,
+          "owner": "Lcom/bytedance/account/sdk/login/ui/change/presenter/ChangePasswordCodeInputPresenter;",
+          "name": "g",
+          "proto_index": 13525,
+          "prototype": "(ZZ)V",
+          "class_def_index": 8089,
+          "code_offset": 1593460,
+          "sites": [
+            {
+              "code_unit_offset": 36,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61768,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 12297,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                61768,
+                18
+              ]
+            },
+            {
+              "code_unit_offset": 39,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61769,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4899,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                61769,
+                2
+              ]
+            },
+            {
+              "code_unit_offset": 58,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61768,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 12297,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                61768,
+                18
+              ]
+            },
+            {
+              "code_unit_offset": 61,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61769,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4899,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                61769,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 3870,
+          "owner": "Lcom/bytedance/account/sdk/login/ui/change/presenter/ChangePasswordCodeInputPresenter;",
+          "name": "n",
+          "proto_index": 7128,
+          "prototype": "()V",
+          "class_def_index": 8089,
+          "code_offset": 1593752,
+          "sites": [
+            {
+              "code_unit_offset": 22,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61768,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 12297,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                61768,
+                288
+              ]
+            },
+            {
+              "code_unit_offset": 25,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61769,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4899,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                61769,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 3924,
+          "owner": "Lcom/bytedance/account/sdk/login/ui/change/presenter/ChangePasswordPresenter;",
+          "name": "A",
+          "proto_index": 12288,
+          "prototype": "(Ljava/lang/String;)V",
+          "class_def_index": 8093,
+          "code_offset": 1598528,
+          "sites": [
+            {
+              "code_unit_offset": 18,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61768,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 12297,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                61768,
+                464
+              ]
+            },
+            {
+              "code_unit_offset": 21,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61769,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4899,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                61769,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 4241,
+          "owner": "Lcom/bytedance/account/sdk/login/ui/common/SmsCodeInputPresenter;",
+          "name": "R",
+          "proto_index": 12916,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V",
+          "class_def_index": 8102,
+          "code_offset": 1620544,
+          "sites": [
+            {
+              "code_unit_offset": 61,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61779,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "<init>",
+                "proto_index": 7128,
+                "prototype": "()V"
+              },
+              "raw_units": [
+                4208,
+                61779,
+                0
+              ]
+            },
+            {
+              "code_unit_offset": 64,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61789,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setMobile",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61789,
+                144
+              ]
+            },
+            {
+              "code_unit_offset": 68,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61782,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setCode",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61782,
+                160
+              ]
+            },
+            {
+              "code_unit_offset": 72,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61784,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setExtraInfo",
+                "proto_index": 4904,
+                "prototype": "(Ljava/util/Map;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61784,
+                186
+              ]
+            },
+            {
+              "code_unit_offset": 77,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61786,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setLoginOnly",
+                "proto_index": 4905,
+                "prototype": "(Z)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61786,
+                186
+              ]
+            },
+            {
+              "code_unit_offset": 81,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61788,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setMixMode",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61788,
+                42
+              ]
+            },
+            {
+              "code_unit_offset": 85,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61780,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "build",
+                "proto_index": 4906,
+                "prototype": "()Lcom/bytedance/sdk/account/param/UserLoginParam;"
+              },
+              "raw_units": [
+                4206,
+                61780,
+                10
+              ]
+            },
+            {
+              "code_unit_offset": 138,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61779,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "<init>",
+                "proto_index": 7128,
+                "prototype": "()V"
+              },
+              "raw_units": [
+                4208,
+                61779,
+                0
+              ]
+            },
+            {
+              "code_unit_offset": 141,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61789,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setMobile",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61789,
+                144
+              ]
+            },
+            {
+              "code_unit_offset": 145,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61782,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setCode",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61782,
+                160
+              ]
+            },
+            {
+              "code_unit_offset": 149,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61784,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setExtraInfo",
+                "proto_index": 4904,
+                "prototype": "(Ljava/util/Map;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61784,
+                186
+              ]
+            },
+            {
+              "code_unit_offset": 153,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61788,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setMixMode",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61788,
+                42
+              ]
+            },
+            {
+              "code_unit_offset": 157,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61780,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "build",
+                "proto_index": 4906,
+                "prototype": "()Lcom/bytedance/sdk/account/param/UserLoginParam;"
+              },
+              "raw_units": [
+                4206,
+                61780,
+                10
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 4298,
+          "owner": "Lcom/bytedance/account/sdk/login/ui/common/SmsCodeInputPresenter;",
+          "name": "y",
+          "proto_index": 12916,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V",
+          "class_def_index": 8102,
+          "code_offset": 1623004,
+          "sites": [
+            {
+              "code_unit_offset": 35,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61768,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 12297,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                61768,
+                35
+              ]
+            },
+            {
+              "code_unit_offset": 38,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61771,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "setExtraInfo",
+                "proto_index": 4897,
+                "prototype": "(Ljava/util/Map;)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61771,
+                67
+              ]
+            },
+            {
+              "code_unit_offset": 42,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61769,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4899,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                61769,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 3506,
+          "owner": "Lcom/bytedance/account/sdk/login/ui/bind/presenter/MobileSmsBindPresenter;",
+          "name": "C",
+          "proto_index": 12733,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;IZ)V",
+          "class_def_index": 9886,
+          "code_offset": 1574396,
+          "sites": [
+            {
+              "code_unit_offset": 92,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61768,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 12297,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                61768,
+                1377
+              ]
+            },
+            {
+              "code_unit_offset": 95,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61769,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4899,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                61769,
+                1
+              ]
+            },
+            {
+              "code_unit_offset": 114,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61768,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 12297,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                61768,
+                1377
+              ]
+            },
+            {
+              "code_unit_offset": 117,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61769,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4899,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                61769,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 4413,
+          "owner": "Lcom/bytedance/account/sdk/login/ui/login/presenter/MobileOneLoginPresenter$MyOneKeyMaskMobileLoginAdapter;",
+          "name": "doQuickAuthLogin",
+          "proto_index": 12899,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lcom/bytedance/sdk/account/api/callback/LoginByTicketCallback;)V",
+          "class_def_index": 9899,
+          "code_offset": 1629340,
+          "sites": [
+            {
+              "code_unit_offset": 2,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61779,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "<init>",
+                "proto_index": 7128,
+                "prototype": "()V"
+              },
+              "raw_units": [
+                4208,
+                61779,
+                5
+              ]
+            },
+            {
+              "code_unit_offset": 5,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61793,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setToken",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61793,
+                21
+              ]
+            },
+            {
+              "code_unit_offset": 9,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61785,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setFrom",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61785,
+                33
+              ]
+            },
+            {
+              "code_unit_offset": 14,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61786,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setLoginOnly",
+                "proto_index": 4905,
+                "prototype": "(Z)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61786,
+                33
+              ]
+            },
+            {
+              "code_unit_offset": 18,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61791,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setProviderAppId",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61791,
+                49
+              ]
+            },
+            {
+              "code_unit_offset": 22,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61784,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setExtraInfo",
+                "proto_index": 4904,
+                "prototype": "(Ljava/util/Map;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61784,
+                65
+              ]
+            },
+            {
+              "code_unit_offset": 26,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61780,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "build",
+                "proto_index": 4906,
+                "prototype": "()Lcom/bytedance/sdk/account/param/UserLoginParam;"
+              },
+              "raw_units": [
+                4206,
+                61780,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 4414,
+          "owner": "Lcom/bytedance/account/sdk/login/ui/login/presenter/MobileOneLoginPresenter$MyOneKeyMaskMobileLoginAdapter;",
+          "name": "doQuickAuthLoginOnly",
+          "proto_index": 12919,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lcom/bytedance/sdk/account/api/callback/LoginByTicketCallback;)V",
+          "class_def_index": 9899,
+          "code_offset": 1629424,
+          "sites": [
+            {
+              "code_unit_offset": 2,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61779,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "<init>",
+                "proto_index": 7128,
+                "prototype": "()V"
+              },
+              "raw_units": [
+                4208,
+                61779,
+                4
+              ]
+            },
+            {
+              "code_unit_offset": 5,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61793,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setToken",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61793,
+                20
+              ]
+            },
+            {
+              "code_unit_offset": 9,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61785,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setFrom",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61785,
+                33
+              ]
+            },
+            {
+              "code_unit_offset": 14,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61786,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setLoginOnly",
+                "proto_index": 4905,
+                "prototype": "(Z)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61786,
+                33
+              ]
+            },
+            {
+              "code_unit_offset": 18,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61784,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setExtraInfo",
+                "proto_index": 4904,
+                "prototype": "(Ljava/util/Map;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61784,
+                49
+              ]
+            },
+            {
+              "code_unit_offset": 22,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61780,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "build",
+                "proto_index": 4906,
+                "prototype": "()Lcom/bytedance/sdk/account/param/UserLoginParam;"
+              },
+              "raw_units": [
+                4206,
+                61780,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 4470,
+          "owner": "Lcom/bytedance/account/sdk/login/ui/login/presenter/MobileSmsLoginPresenter;",
+          "name": "l",
+          "proto_index": 12932,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;Z)V",
+          "class_def_index": 9901,
+          "code_offset": 1633156,
+          "sites": [
+            {
+              "code_unit_offset": 110,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61768,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 12297,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                61768,
+                515
+              ]
+            },
+            {
+              "code_unit_offset": 113,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61769,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4899,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                61769,
+                3
+              ]
+            },
+            {
+              "code_unit_offset": 132,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61768,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 12297,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                61768,
+                515
+              ]
+            },
+            {
+              "code_unit_offset": 135,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61769,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4899,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                61769,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 4520,
+          "owner": "Lcom/bytedance/account/sdk/login/ui/login/presenter/PasswordLoginPresenter;",
+          "name": "h",
+          "proto_index": 12716,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;I)V",
+          "class_def_index": 9902,
+          "code_offset": 1636132,
+          "sites": [
+            {
+              "code_unit_offset": 57,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61779,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "<init>",
+                "proto_index": 7128,
+                "prototype": "()V"
+              },
+              "raw_units": [
+                4208,
+                61779,
+                0
+              ]
+            },
+            {
+              "code_unit_offset": 60,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61781,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setAccount",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61781,
+                128
+              ]
+            },
+            {
+              "code_unit_offset": 64,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61790,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setPassword",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61790,
+                144
+              ]
+            },
+            {
+              "code_unit_offset": 68,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61788,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setMixMode",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61788,
+                25
+              ]
+            },
+            {
+              "code_unit_offset": 72,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61780,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "build",
+                "proto_index": 4906,
+                "prototype": "()Lcom/bytedance/sdk/account/param/UserLoginParam;"
+              },
+              "raw_units": [
+                4206,
+                61780,
+                9
+              ]
+            },
+            {
+              "code_unit_offset": 123,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61779,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "<init>",
+                "proto_index": 7128,
+                "prototype": "()V"
+              },
+              "raw_units": [
+                4208,
+                61779,
+                0
+              ]
+            },
+            {
+              "code_unit_offset": 126,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61789,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setMobile",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61789,
+                128
+              ]
+            },
+            {
+              "code_unit_offset": 130,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61790,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setPassword",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61790,
+                144
+              ]
+            },
+            {
+              "code_unit_offset": 134,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61788,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setMixMode",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61788,
+                25
+              ]
+            },
+            {
+              "code_unit_offset": 138,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61780,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "build",
+                "proto_index": 4906,
+                "prototype": "()Lcom/bytedance/sdk/account/param/UserLoginParam;"
+              },
+              "raw_units": [
+                4206,
+                61780,
+                9
+              ]
+            },
+            {
+              "code_unit_offset": 187,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61779,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "<init>",
+                "proto_index": 7128,
+                "prototype": "()V"
+              },
+              "raw_units": [
+                4208,
+                61779,
+                0
+              ]
+            },
+            {
+              "code_unit_offset": 190,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61781,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setAccount",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61781,
+                128
+              ]
+            },
+            {
+              "code_unit_offset": 194,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61790,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setPassword",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61790,
+                144
+              ]
+            },
+            {
+              "code_unit_offset": 198,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61788,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setMixMode",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61788,
+                25
+              ]
+            },
+            {
+              "code_unit_offset": 202,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61780,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "build",
+                "proto_index": 4906,
+                "prototype": "()Lcom/bytedance/sdk/account/param/UserLoginParam;"
+              },
+              "raw_units": [
+                4206,
+                61780,
+                9
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 4615,
+          "owner": "Lcom/bytedance/account/sdk/login/ui/login/presenter/ShareLoginPresenter;",
+          "name": "G",
+          "proto_index": 7128,
+          "prototype": "()V",
+          "class_def_index": 9907,
+          "code_offset": 1642600,
+          "sites": [
+            {
+              "code_unit_offset": 86,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61779,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "<init>",
+                "proto_index": 7128,
+                "prototype": "()V"
+              },
+              "raw_units": [
+                4208,
+                61779,
+                1
+              ]
+            },
+            {
+              "code_unit_offset": 95,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61792,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setSecUserId",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61792,
+                33
+              ]
+            },
+            {
+              "code_unit_offset": 101,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61787,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setLoginScene",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61787,
+                33
+              ]
+            },
+            {
+              "code_unit_offset": 111,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61783,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setDTicket",
+                "proto_index": 4903,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61783,
+                33
+              ]
+            },
+            {
+              "code_unit_offset": 115,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61780,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "build",
+                "proto_index": 4906,
+                "prototype": "()Lcom/bytedance/sdk/account/param/UserLoginParam;"
+              },
+              "raw_units": [
+                4206,
+                61780,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 4863,
+          "owner": "Lcom/bytedance/account/sdk/login/ui/login/view/UpSmsLoginFragment;",
+          "name": "wb",
+          "proto_index": 12288,
+          "prototype": "(Ljava/lang/String;)V",
+          "class_def_index": 10088,
+          "code_offset": 1660616,
+          "sites": [
+            {
+              "code_unit_offset": 36,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 61779,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "<init>",
+                "proto_index": 7128,
+                "prototype": "()V"
+              },
+              "raw_units": [
+                4208,
+                61779,
+                1
+              ]
+            },
+            {
+              "code_unit_offset": 39,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61784,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "setExtraInfo",
+                "proto_index": 4904,
+                "prototype": "(Ljava/util/Map;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                61784,
+                1
+              ]
+            },
+            {
+              "code_unit_offset": 43,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 61780,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+                "name": "build",
+                "proto_index": 4906,
+                "prototype": "()Lcom/bytedance/sdk/account/param/UserLoginParam;"
+              },
+              "raw_units": [
+                4206,
+                61780,
+                0
+              ]
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "entry": "classes17.dex",
+      "sha256": "bfe5fd18230c87f7238e1b50f838a4f8b0e9d481a762aca6090e8a6b8b65e766",
+      "classes": [],
+      "targets": [],
+      "callers": [],
+      "errors": []
+    },
+    {
+      "entry": "classes18.dex",
+      "sha256": "4cb0fce90ee8a62a30e719a567d6acd3838fc13fca01777fbed3063235947f7a",
+      "classes": [
+        {
+          "class_def_index": 6849,
+          "descriptor": "Lcom/bytedance/antiaddiction/protection/model/PhoneNumberResponse;"
+        },
+        {
+          "class_def_index": 7591,
+          "descriptor": "Lcom/bytedance/antiaddiction/protection/api/TeenModeApiHelper$getPhoneNumber$1;"
+        }
+      ],
+      "targets": [],
+      "callers": [],
+      "errors": []
+    },
+    {
+      "entry": "classes19.dex",
+      "sha256": "24289b51b0e0246b0971c163cf2049018fddeec99ab78d29e2173dddc669fa35",
+      "classes": [
+        {
+          "class_def_index": 92,
+          "descriptor": "Lcom/bytedance/bdp/appbase/auth/constant/PermissionConstant$ExtraDataKey$PhoneNumber;"
+        },
+        {
+          "class_def_index": 1680,
+          "descriptor": "Lcom/bytedance/bdp/serviceapi/hostimpl/account/listener/BdpBindPhoneNumberCallback;"
+        }
+      ],
+      "targets": [],
+      "callers": [],
+      "errors": []
+    },
+    {
+      "entry": "classes2.dex",
+      "sha256": "96d07882e05e5806c36ffdb3158a3642aa76b0a7f12f29bb4f74ef8e6b23c462",
+      "classes": [],
+      "targets": [],
+      "callers": [],
+      "errors": []
+    },
+    {
+      "entry": "classes20.dex",
+      "sha256": "2aa0f9546768ea6273c1dbd56a66c6b385f96b59a55a59d5d0f5d7a9c5db88d7",
+      "classes": [],
+      "targets": [],
+      "callers": [],
+      "errors": []
+    },
+    {
+      "entry": "classes21.dex",
+      "sha256": "d28a15c360d503b20d064987620d1a3167e8ad84e3d08b0d12dcf9da18dd265b",
+      "classes": [
+        {
+          "class_def_index": 5146,
+          "descriptor": "Lcom/bytedance/sdk/account/execute/ApiRequest$Builder;"
+        },
+        {
+          "class_def_index": 5147,
+          "descriptor": "Lcom/bytedance/sdk/account/execute/ApiRequest;"
+        },
+        {
+          "class_def_index": 5435,
+          "descriptor": "Lcom/bytedance/sdk/account/settings/IAccountHostSettingsDepend;"
+        },
+        {
+          "class_def_index": 8115,
+          "descriptor": "Lcom/bytedance/sdk/account/settings/AccountHostSettingsManager$hostSettingsDepend$1;"
+        },
+        {
+          "class_def_index": 8116,
+          "descriptor": "Lcom/bytedance/sdk/account/settings/AccountHostSettingsManager;"
+        },
+        {
+          "class_def_index": 9671,
+          "descriptor": "Lcom/bytedance/sdk/account/settings/AccountHostSettingsManager$tokenInitDecisionCache$2;"
+        }
+      ],
+      "targets": [
+        {
+          "method_index": 53236,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "<init>",
+          "proto_index": 11949,
+          "prototype": "(Ljava/lang/String;I)V"
+        },
+        {
+          "method_index": 53237,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "access$000",
+          "proto_index": 5814,
+          "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Ljava/lang/String;"
+        },
+        {
+          "method_index": 53238,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "access$100",
+          "proto_index": 5814,
+          "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Ljava/lang/String;"
+        },
+        {
+          "method_index": 53239,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "access$1000",
+          "proto_index": 5814,
+          "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Ljava/lang/String;"
+        },
+        {
+          "method_index": 53240,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "access$1100",
+          "proto_index": 6420,
+          "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Ljava/util/Map;"
+        },
+        {
+          "method_index": 53241,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "access$200",
+          "proto_index": 263,
+          "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)I"
+        },
+        {
+          "method_index": 53242,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "access$300",
+          "proto_index": 5814,
+          "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Ljava/lang/String;"
+        },
+        {
+          "method_index": 53243,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "access$400",
+          "proto_index": 13781,
+          "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Z"
+        },
+        {
+          "method_index": 53244,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "access$500",
+          "proto_index": 263,
+          "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)I"
+        },
+        {
+          "method_index": 53245,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "access$600",
+          "proto_index": 5814,
+          "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Ljava/lang/String;"
+        },
+        {
+          "method_index": 53246,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "access$700",
+          "proto_index": 13781,
+          "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Z"
+        },
+        {
+          "method_index": 53247,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "access$800",
+          "proto_index": 5814,
+          "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Ljava/lang/String;"
+        },
+        {
+          "method_index": 53248,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "access$900",
+          "proto_index": 5814,
+          "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Ljava/lang/String;"
+        },
+        {
+          "method_index": 53249,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "build",
+          "proto_index": 4149,
+          "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+        },
+        {
+          "method_index": 53250,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "setAuthToken",
+          "proto_index": 4146,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+        },
+        {
+          "method_index": 53251,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "setAutoRead",
+          "proto_index": 4148,
+          "prototype": "(Z)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+        },
+        {
+          "method_index": 53252,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "setCaptcha",
+          "proto_index": 4146,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+        },
+        {
+          "method_index": 53253,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "setCheckRegister",
+          "proto_index": 4145,
+          "prototype": "(I)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+        },
+        {
+          "method_index": 53254,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "setExtraInfo",
+          "proto_index": 4147,
+          "prototype": "(Ljava/util/Map;)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+        },
+        {
+          "method_index": 53255,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "setOldMobile",
+          "proto_index": 4146,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+        },
+        {
+          "method_index": 53256,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "setSharkTicket",
+          "proto_index": 4146,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+        },
+        {
+          "method_index": 53257,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "setTicket",
+          "proto_index": 4146,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+        },
+        {
+          "method_index": 53258,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "setUnbindExist",
+          "proto_index": 4148,
+          "prototype": "(Z)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+        },
+        {
+          "method_index": 53259,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "setUnusableMobileTicket",
+          "proto_index": 4146,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+        },
+        {
+          "method_index": 53260,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam;",
+          "name": "<init>",
+          "proto_index": 10988,
+          "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)V"
+        },
+        {
+          "method_index": 53261,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam;",
+          "name": "<init>",
+          "proto_index": 10989,
+          "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;Lcom/bytedance/sdk/account/param/SendCodeParam$1;)V"
+        },
+        {
+          "method_index": 53282,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "<init>",
+          "proto_index": 6867,
+          "prototype": "()V"
+        },
+        {
+          "method_index": 53283,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "build",
+          "proto_index": 4158,
+          "prototype": "()Lcom/bytedance/sdk/account/param/UserLoginParam;"
+        },
+        {
+          "method_index": 53284,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "getEmail$account_sdk_core_release",
+          "proto_index": 5609,
+          "prototype": "()Ljava/lang/String;"
+        },
+        {
+          "method_index": 53285,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setAccount",
+          "proto_index": 4155,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 53286,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setCode",
+          "proto_index": 4155,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 53287,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setDTicket",
+          "proto_index": 4155,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 53288,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setEmail",
+          "proto_index": 4155,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 53289,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setEmail$account_sdk_core_release",
+          "proto_index": 11943,
+          "prototype": "(Ljava/lang/String;)V"
+        },
+        {
+          "method_index": 53290,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setExtraInfo",
+          "proto_index": 4156,
+          "prototype": "(Ljava/util/Map;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 53291,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setFrom",
+          "proto_index": 4155,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 53292,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setLoginOnly",
+          "proto_index": 4157,
+          "prototype": "(Z)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 53293,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setLoginScene",
+          "proto_index": 4155,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 53294,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setMixMode",
+          "proto_index": 4155,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 53295,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setMobile",
+          "proto_index": 4155,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 53296,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setPassword",
+          "proto_index": 4155,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 53297,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setProviderAppId",
+          "proto_index": 4155,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 53298,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setScene",
+          "proto_index": 4154,
+          "prototype": "(I)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 53299,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setSecUserId",
+          "proto_index": 4155,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 53300,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setSmsCodeKey",
+          "proto_index": 4155,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 53301,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setToken",
+          "proto_index": 4155,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 53302,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "setUsername",
+          "proto_index": 4155,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;"
+        },
+        {
+          "method_index": 53303,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam;",
+          "name": "<init>",
+          "proto_index": 12509,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/util/Map;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "method_index": 53304,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam;",
+          "name": "<init>",
+          "proto_index": 12510,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/util/Map;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V"
+        }
+      ],
+      "callers": [
+        {
+          "method_index": 50143,
+          "owner": "Lcom/bytedance/sdk/account/helper/ChangeMobileHelper;",
+          "name": "sendCodeToNew",
+          "proto_index": 12613,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;ZLcom/bytedance/sdk/account/AccountSdkCallback;)V",
+          "class_def_index": 5151,
+          "code_offset": 4772096,
+          "sites": [
+            {
+              "code_unit_offset": 4,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 53236,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 11949,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                53236,
+                288
+              ]
+            },
+            {
+              "code_unit_offset": 7,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 53258,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "setUnbindExist",
+                "proto_index": 4148,
+                "prototype": "(Z)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                53258,
+                64
+              ]
+            },
+            {
+              "code_unit_offset": 11,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 53257,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "setTicket",
+                "proto_index": 4146,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                53257,
+                50
+              ]
+            },
+            {
+              "code_unit_offset": 16,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 53253,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "setCheckRegister",
+                "proto_index": 4145,
+                "prototype": "(I)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                53253,
+                50
+              ]
+            },
+            {
+              "code_unit_offset": 20,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 53249,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4149,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                53249,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 50144,
+          "owner": "Lcom/bytedance/sdk/account/helper/ChangeMobileHelper;",
+          "name": "sendCodeToNewIgnoreConflict",
+          "proto_index": 12380,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;Lcom/bytedance/sdk/account/AccountSdkCallback;)V",
+          "class_def_index": 5151,
+          "code_offset": 4772176,
+          "sites": [
+            {
+              "code_unit_offset": 4,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 53236,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 11949,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                53236,
+                288
+              ]
+            },
+            {
+              "code_unit_offset": 7,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 53257,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "setTicket",
+                "proto_index": 4146,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                53257,
+                48
+              ]
+            },
+            {
+              "code_unit_offset": 12,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 53253,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "setCheckRegister",
+                "proto_index": 4145,
+                "prototype": "(I)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                53253,
+                50
+              ]
+            },
+            {
+              "code_unit_offset": 16,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 53249,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4149,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                53249,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 50145,
+          "owner": "Lcom/bytedance/sdk/account/helper/ChangeMobileHelper;",
+          "name": "sendCodeToOld",
+          "proto_index": 10753,
+          "prototype": "(Lcom/bytedance/sdk/account/AccountSdkCallback;)V",
+          "class_def_index": 5151,
+          "code_offset": 4772248,
+          "sites": [
+            {
+              "code_unit_offset": 9,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 53236,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 11949,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                53236,
+                801
+              ]
+            },
+            {
+              "code_unit_offset": 12,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 53249,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4149,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                53249,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 50146,
+          "owner": "Lcom/bytedance/sdk/account/helper/ChangeMobileHelper;",
+          "name": "sendCodeToOld",
+          "proto_index": 12188,
+          "prototype": "(Ljava/lang/String;Lcom/bytedance/sdk/account/AccountSdkCallback;)V",
+          "class_def_index": 5151,
+          "code_offset": 4772304,
+          "sites": [
+            {
+              "code_unit_offset": 8,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 53236,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 11949,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                53236,
+                561
+              ]
+            },
+            {
+              "code_unit_offset": 11,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 53249,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4149,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                53249,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 53249,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "build",
+          "proto_index": 4149,
+          "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;",
+          "class_def_index": 5287,
+          "code_offset": 4973188,
+          "sites": [
+            {
+              "code_unit_offset": 3,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 53261,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam;",
+                "name": "<init>",
+                "proto_index": 10989,
+                "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;Lcom/bytedance/sdk/account/param/SendCodeParam$1;)V"
+              },
+              "raw_units": [
+                12400,
+                53261,
+                288
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 53260,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam;",
+          "name": "<init>",
+          "proto_index": 10988,
+          "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)V",
+          "class_def_index": 5288,
+          "code_offset": 4974208,
+          "sites": [
+            {
+              "code_unit_offset": 3,
+              "opcode": "0x71",
+              "target": {
+                "method_index": 53237,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "access$000",
+                "proto_index": 5814,
+                "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Ljava/lang/String;"
+              },
+              "raw_units": [
+                4209,
+                53237,
+                3
+              ]
+            },
+            {
+              "code_unit_offset": 9,
+              "opcode": "0x71",
+              "target": {
+                "method_index": 53238,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "access$100",
+                "proto_index": 5814,
+                "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Ljava/lang/String;"
+              },
+              "raw_units": [
+                4209,
+                53238,
+                3
+              ]
+            },
+            {
+              "code_unit_offset": 15,
+              "opcode": "0x71",
+              "target": {
+                "method_index": 53241,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "access$200",
+                "proto_index": 263,
+                "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)I"
+              },
+              "raw_units": [
+                4209,
+                53241,
+                3
+              ]
+            },
+            {
+              "code_unit_offset": 21,
+              "opcode": "0x71",
+              "target": {
+                "method_index": 53242,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "access$300",
+                "proto_index": 5814,
+                "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Ljava/lang/String;"
+              },
+              "raw_units": [
+                4209,
+                53242,
+                3
+              ]
+            },
+            {
+              "code_unit_offset": 27,
+              "opcode": "0x71",
+              "target": {
+                "method_index": 53243,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "access$400",
+                "proto_index": 13781,
+                "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Z"
+              },
+              "raw_units": [
+                4209,
+                53243,
+                3
+              ]
+            },
+            {
+              "code_unit_offset": 33,
+              "opcode": "0x71",
+              "target": {
+                "method_index": 53244,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "access$500",
+                "proto_index": 263,
+                "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)I"
+              },
+              "raw_units": [
+                4209,
+                53244,
+                3
+              ]
+            },
+            {
+              "code_unit_offset": 39,
+              "opcode": "0x71",
+              "target": {
+                "method_index": 53245,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "access$600",
+                "proto_index": 5814,
+                "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Ljava/lang/String;"
+              },
+              "raw_units": [
+                4209,
+                53245,
+                3
+              ]
+            },
+            {
+              "code_unit_offset": 45,
+              "opcode": "0x71",
+              "target": {
+                "method_index": 53246,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "access$700",
+                "proto_index": 13781,
+                "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Z"
+              },
+              "raw_units": [
+                4209,
+                53246,
+                3
+              ]
+            },
+            {
+              "code_unit_offset": 51,
+              "opcode": "0x71",
+              "target": {
+                "method_index": 53247,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "access$800",
+                "proto_index": 5814,
+                "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Ljava/lang/String;"
+              },
+              "raw_units": [
+                4209,
+                53247,
+                3
+              ]
+            },
+            {
+              "code_unit_offset": 57,
+              "opcode": "0x71",
+              "target": {
+                "method_index": 53248,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "access$900",
+                "proto_index": 5814,
+                "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Ljava/lang/String;"
+              },
+              "raw_units": [
+                4209,
+                53248,
+                3
+              ]
+            },
+            {
+              "code_unit_offset": 63,
+              "opcode": "0x71",
+              "target": {
+                "method_index": 53239,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "access$1000",
+                "proto_index": 5814,
+                "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Ljava/lang/String;"
+              },
+              "raw_units": [
+                4209,
+                53239,
+                3
+              ]
+            },
+            {
+              "code_unit_offset": 73,
+              "opcode": "0x71",
+              "target": {
+                "method_index": 53240,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "access$1100",
+                "proto_index": 6420,
+                "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Ljava/util/Map;"
+              },
+              "raw_units": [
+                4209,
+                53240,
+                3
+              ]
+            },
+            {
+              "code_unit_offset": 87,
+              "opcode": "0x71",
+              "target": {
+                "method_index": 53240,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "access$1100",
+                "proto_index": 6420,
+                "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Ljava/util/Map;"
+              },
+              "raw_units": [
+                4209,
+                53240,
+                3
+              ]
+            },
+            {
+              "code_unit_offset": 103,
+              "opcode": "0x71",
+              "target": {
+                "method_index": 53240,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "access$1100",
+                "proto_index": 6420,
+                "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)Ljava/util/Map;"
+              },
+              "raw_units": [
+                4209,
+                53240,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 53261,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam;",
+          "name": "<init>",
+          "proto_index": 10989,
+          "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;Lcom/bytedance/sdk/account/param/SendCodeParam$1;)V",
+          "class_def_index": 5288,
+          "code_offset": 4974444,
+          "sites": [
+            {
+              "code_unit_offset": 0,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 53260,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam;",
+                "name": "<init>",
+                "proto_index": 10988,
+                "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;)V"
+              },
+              "raw_units": [
+                8304,
+                53260,
+                16
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 53262,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam;",
+          "name": "getBindParam",
+          "proto_index": 4150,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/SendCodeParam;",
+          "class_def_index": 5288,
+          "code_offset": 4973740,
+          "sites": [
+            {
+              "code_unit_offset": 4,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 53236,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 11949,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                53236,
+                288
+              ]
+            },
+            {
+              "code_unit_offset": 7,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 53249,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4149,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                53249,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 53263,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam;",
+          "name": "getLoginParam",
+          "proto_index": 4150,
+          "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/SendCodeParam;",
+          "class_def_index": 5288,
+          "code_offset": 4973780,
+          "sites": [
+            {
+              "code_unit_offset": 4,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 53236,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 11949,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                53236,
+                288
+              ]
+            },
+            {
+              "code_unit_offset": 7,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 53249,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4149,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                53249,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 53283,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam$Builder;",
+          "name": "build",
+          "proto_index": 4158,
+          "prototype": "()Lcom/bytedance/sdk/account/param/UserLoginParam;",
+          "class_def_index": 5291,
+          "code_offset": 4975196,
+          "sites": [
+            {
+              "code_unit_offset": 52,
+              "opcode": "0x76",
+              "target": {
+                "method_index": 53304,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam;",
+                "name": "<init>",
+                "proto_index": 12510,
+                "prototype": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/util/Map;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V"
+              },
+              "raw_units": [
+                4982,
+                53304,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 53304,
+          "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam;",
+          "name": "<init>",
+          "proto_index": 12510,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/util/Map;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V",
+          "class_def_index": 5292,
+          "code_offset": 4976820,
+          "sites": [
+            {
+              "code_unit_offset": 0,
+              "opcode": "0x76",
+              "target": {
+                "method_index": 53303,
+                "owner": "Lcom/bytedance/sdk/account/param/UserLoginParam;",
+                "name": "<init>",
+                "proto_index": 12509,
+                "prototype": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/util/Map;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+              },
+              "raw_units": [
+                4726,
+                53303,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 50560,
+          "owner": "Lcom/bytedance/sdk/account/impl/BDAccountAPIV3Impl;",
+          "name": "sendCodeStandard",
+          "proto_index": 12321,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;ILcom/bytedance/sdk/account/mobile/thread/call/SendCodeCallback;)V",
+          "class_def_index": 7892,
+          "code_offset": 4806016,
+          "sites": [
+            {
+              "code_unit_offset": 2,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 53236,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 11949,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                53236,
+                1056
+              ]
+            },
+            {
+              "code_unit_offset": 5,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 53252,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "setCaptcha",
+                "proto_index": 4146,
+                "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;"
+              },
+              "raw_units": [
+                8302,
+                53252,
+                48
+              ]
+            },
+            {
+              "code_unit_offset": 9,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 53249,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 4149,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                53249,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "entry": "classes3.dex",
+      "sha256": "5018263b895c0dd09ac9602300a1006e9a04913414d557c395909e9b972f4482",
+      "classes": [],
+      "targets": [],
+      "callers": [],
+      "errors": []
+    },
+    {
+      "entry": "classes4.dex",
+      "sha256": "2232c2f1c2d5457febff648e65a6698a28ee279381929b592a6fe1e62e182c73",
+      "classes": [],
+      "targets": [],
+      "callers": [],
+      "errors": []
+    },
+    {
+      "entry": "classes5.dex",
+      "sha256": "6c4c972727e09af1fbff03e377a51a4b30ebd20603d278f52265dc77fad6634e",
+      "classes": [],
+      "targets": [],
+      "callers": [],
+      "errors": []
+    },
+    {
+      "entry": "classes6.dex",
+      "sha256": "3c4ea3713c6aa50f6883f54d87ef667354fd1f9dc6bf8f5154ab0adc9c5bc19c",
+      "classes": [],
+      "targets": [],
+      "callers": [],
+      "errors": []
+    },
+    {
+      "entry": "classes7.dex",
+      "sha256": "353b34c448bda355a863d1f49646d5f350e5afc5c366ac4168b123850f9b7701",
+      "classes": [],
+      "targets": [],
+      "callers": [],
+      "errors": []
+    },
+    {
+      "entry": "classes8.dex",
+      "sha256": "d3a41ea69d5c03e8fb160d4c961ae64ccb22ab578581b493c022fb62d82ccf09",
+      "classes": [
+        {
+          "class_def_index": 47,
+          "descriptor": "Lcom/luna/biz/playing/playpage/track/account/IAccountDialogHost;"
+        },
+        {
+          "class_def_index": 814,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/init/XAccountInitTaskKt;"
+        },
+        {
+          "class_def_index": 815,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/init/XAccountInitTaskProxy$Companion;"
+        },
+        {
+          "class_def_index": 816,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/init/XAccountInitTaskProxy;"
+        },
+        {
+          "class_def_index": 858,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/util/IESSaasInitUtils;"
+        },
+        {
+          "class_def_index": 4151,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/init/ReadDouYinShareAccountInitTask$onEvent$callback$1;"
+        },
+        {
+          "class_def_index": 4152,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/init/XAccountInitTaskKt$shareTokenConfigDelegate$1;"
+        },
+        {
+          "class_def_index": 4153,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/init/XAccountInitTaskProxy$mExternalDepend$1;"
+        },
+        {
+          "class_def_index": 4154,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/init/XAccountInitTaskProxy$mXAccountLogProcessor$1;"
+        },
+        {
+          "class_def_index": 4188,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/util/IESSaasInitUtils$getIXAccountNetworkService$1;"
+        },
+        {
+          "class_def_index": 6632,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/init/ReadDouYinShareAccountInitTask;"
+        },
+        {
+          "class_def_index": 6634,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/init/XAccountInitEarlyTask;"
+        },
+        {
+          "class_def_index": 6635,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/init/XAccountInitTask;"
+        },
+        {
+          "class_def_index": 6675,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/util/IESSaasInitUtils$getExternalDependConfig$1;"
+        },
+        {
+          "class_def_index": 9457,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/init/XAccountInitTaskProxy$setCurrentHistoryNewestState$1;"
+        },
+        {
+          "class_def_index": 9461,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/util/IESSaasInitUtils$getIXAccountNetworkService$1$authLogin$1;"
+        },
+        {
+          "class_def_index": 9462,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/util/IESSaasInitUtils$getIXAccountNetworkService$1$authShareLogin$1;"
+        },
+        {
+          "class_def_index": 9463,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/util/IESSaasInitUtils$getIXAccountNetworkService$1$bindLogin$1;"
+        },
+        {
+          "class_def_index": 9464,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/util/IESSaasInitUtils$getIXAccountNetworkService$1$carrierOneLogin$1;"
+        },
+        {
+          "class_def_index": 9465,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/util/IESSaasInitUtils$getIXAccountNetworkService$1$complexOneLogin$1;"
+        },
+        {
+          "class_def_index": 9466,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/util/IESSaasInitUtils$getIXAccountNetworkService$1$phonePasswordLogin$1;"
+        },
+        {
+          "class_def_index": 9467,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/util/IESSaasInitUtils$getIXAccountNetworkService$1$safeVerify$1;"
+        },
+        {
+          "class_def_index": 9468,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/util/IESSaasInitUtils$getIXAccountNetworkService$1$sendEmailCode$1;"
+        },
+        {
+          "class_def_index": 9469,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/util/IESSaasInitUtils$getIXAccountNetworkService$1$sendSmsCode$1;"
+        },
+        {
+          "class_def_index": 9470,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/util/IESSaasInitUtils$getIXAccountNetworkService$1$smsLogin$1;"
+        },
+        {
+          "class_def_index": 9471,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/util/IESSaasInitUtils$getIXAccountNetworkService$1$upSmsLogin$1;"
+        },
+        {
+          "class_def_index": 9472,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/util/IESSaasInitUtils$sendRequest$1$res$1;"
+        },
+        {
+          "class_def_index": 9473,
+          "descriptor": "Lcom/luna/biz/profile/impl/account/util/IESSaasInitUtils$sendRequest$1;"
+        }
+      ],
+      "targets": [
+        {
+          "method_index": 2607,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "<init>",
+          "proto_index": 11739,
+          "prototype": "(Ljava/lang/String;I)V"
+        },
+        {
+          "method_index": 2608,
+          "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+          "name": "build",
+          "proto_index": 973,
+          "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+        },
+        {
+          "method_index": 60633,
+          "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SendSmsCodeParams;",
+          "name": "<init>",
+          "proto_index": 11993,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V"
+        },
+        {
+          "method_index": 60637,
+          "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SmsLoginParams;",
+          "name": "<init>",
+          "proto_index": 12135,
+          "prototype": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;ZZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V"
+        }
+      ],
+      "callers": [
+        {
+          "method_index": 21508,
+          "owner": "Lcom/luna/biz/profile/impl/account/util/LoginParamExtUtils;",
+          "name": "g",
+          "proto_index": 4638,
+          "prototype": "(Lcom/bytedance/sdk/account/param/SendCodeParam;)Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SendSmsCodeParams;",
+          "class_def_index": 862,
+          "code_offset": 3221600,
+          "sites": [
+            {
+              "code_unit_offset": 230,
+              "opcode": "0x76",
+              "target": {
+                "method_index": 60633,
+                "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SendSmsCodeParams;",
+                "name": "<init>",
+                "proto_index": 11993,
+                "prototype": "(Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V"
+              },
+              "raw_units": [
+                6518,
+                60633,
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 21510,
+          "owner": "Lcom/luna/biz/profile/impl/account/util/LoginParamExtUtils;",
+          "name": "i",
+          "proto_index": 4641,
+          "prototype": "(Lcom/bytedance/sdk/account/param/UserLoginParam;)Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SmsLoginParams;",
+          "class_def_index": 862,
+          "code_offset": 3222312,
+          "sites": [
+            {
+              "code_unit_offset": 359,
+              "opcode": "0x76",
+              "target": {
+                "method_index": 60637,
+                "owner": "Lcom/ss/android/ugc/aweme/account/saas/api/login/bean/SmsLoginParams;",
+                "name": "<init>",
+                "proto_index": 12135,
+                "prototype": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;ZZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;ILkotlin/jvm/internal/DefaultConstructorMarker;)V"
+              },
+              "raw_units": [
+                6774,
+                60637,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "method_index": 19668,
+          "owner": "Lcom/luna/biz/profile/impl/account/impl/DefaultAccountManager$sendSmsCode$2;",
+          "name": "invokeSuspend",
+          "proto_index": 5211,
+          "prototype": "(Ljava/lang/Object;)Ljava/lang/Object;",
+          "class_def_index": 9448,
+          "code_offset": 3059764,
+          "sites": [
+            {
+              "code_unit_offset": 76,
+              "opcode": "0x70",
+              "target": {
+                "method_index": 2607,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "<init>",
+                "proto_index": 11739,
+                "prototype": "(Ljava/lang/String;I)V"
+              },
+              "raw_units": [
+                12400,
+                2607,
+                2162
+              ]
+            },
+            {
+              "code_unit_offset": 79,
+              "opcode": "0x6e",
+              "target": {
+                "method_index": 2608,
+                "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam$Builder;",
+                "name": "build",
+                "proto_index": 973,
+                "prototype": "()Lcom/bytedance/sdk/account/param/SendCodeParam;"
+              },
+              "raw_units": [
+                4206,
+                2608,
+                2
+              ]
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "entry": "classes9.dex",
+      "sha256": "b92150c0f44f48cf8c0237944afe13445c5262d9089b017d672a03a45b92d90a",
+      "classes": [],
+      "targets": [],
+      "callers": [],
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+00:00 +0: loading D:/AnLi/test/qishui_root_layout167_test.dart
+00:00 +0: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: only Soda music root replaces the accessory with its own player
+00:00 +1: feed dropdown retries, scrolls and marks the server selection
+══╡ EXCEPTION CAUGHT BY GESTURE ╞═══════════════════════════════════════════════════════════════════
+The following assertion was thrown while handling a gesture:
+setState() callback argument returned a Future.
+The setState() method on _QishuiModeOptionsState#c28a4 was called with a closure or method that
+returned a Future. Maybe it is marked as "async".
+Instead of performing asynchronous work inside a call to setState(), first execute the work (without
+updating the widget state), and then synchronously update the state inside a call to setState().
+
+When the exception was thrown, this was the stack:
+#0      State.setState.<anonymous closure> (package:flutter/src/widgets/framework.dart:1202:9)
+#1      State.setState (package:flutter/src/widgets/framework.dart:1218:6)
+#2      _QishuiModeOptionsState.build.<anonymous closure>.<anonymous closure> (package:mesting_music/features/music_platform/qishui/qishui_feed_mode_menu.dart:106:36)
+#3      _InkResponseState.handleTap (package:flutter/src/material/ink_well.dart:1224:21)
+#4      GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
+#5      TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:758:11)
+#6      BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:383:5)
+#7      BaseTapGestureRecognizer.handlePrimaryPointer (package:flutter/src/gestures/tap.dart:314:7)
+#8      PrimaryPointerGestureRecognizer.handleEvent (package:flutter/src/gestures/recognizer.dart:721:9)
+#9      PointerRouter._dispatch (package:flutter/src/gestures/pointer_router.dart:97:12)
+#10     PointerRouter._dispatchEventToRoutes.<anonymous closure> (package:flutter/src/gestures/pointer_router.dart:140:9)
+#11     _LinkedHashMapMixin.forEach (dart:_compact_hash:765:13)
+#12     PointerRouter._dispatchEventToRoutes (package:flutter/src/gestures/pointer_router.dart:138:18)
+#13     PointerRouter.route (package:flutter/src/gestures/pointer_router.dart:128:7)
+#14     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:528:19)
+#15     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:498:22)
+#16     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
+#17     GestureBinding._handlePointerEventImmediately (package:flutter/src/gestures/binding.dart:437:7)
+#18     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
+#19     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure> (package:flutter_test/src/binding.dart:1301:42)
+#20     TestWidgetsFlutterBinding.withPointerEventSource (package:flutter_test/src/binding.dart:1311:11)
+#21     TestWidgetsFlutterBinding.handlePointerEventForSource (package:flutter_test/src/binding.dart:1301:5)
+#22     WidgetTester.sendEventToBinding.<anonymous closure> (package:flutter_test/src/widget_tester.dart:869:15)
+#25     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#26     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:868:27)
+#27     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:587:26)
+#30     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#31     TestGesture.up (package:flutter_test/src/test_pointer.dart:580:27)
+#32     WidgetController.tapAt.<anonymous closure> (package:flutter_test/src/controller.dart:1150:21)
+<asynchronous suspension>
+#33     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
+<asynchronous suspension>
+#34     main.<anonymous closure> (file:///D:/AnLi/test/qishui_root_layout167_test.dart:146:5)
+<asynchronous suspension>
+#35     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#36     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 5 frames from dart:async and package:stack_trace)
+
+Handler: "onTap"
+Recognizer:
+  TapGestureRecognizer#9be8a
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following StateError was thrown running a test:
+Bad state: No element
+
+When the exception was thrown, this was the stack:
+#0      Iterable.single (dart:core/iterable.dart:694:25)
+#1      WidgetController.widget (package:flutter_test/src/controller.dart:823:30)
+#2      WidgetController.scrollUntilVisible.<anonymous closure> (package:flutter_test/src/controller.dart:2422:15)
+#5      TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
+#6      WidgetController.scrollUntilVisible (package:flutter_test/src/controller.dart:2420:27)
+#7      main.<anonymous closure> (file:///D:/AnLi/test/qishui_root_layout167_test.dart:148:18)
+<asynchronous suspension>
+#8      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#9      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 3 frames from dart:async and package:stack_trace)
+
+The test description was:
+  feed dropdown retries, scrolls and marks the server selection
+════════════════════════════════════════════════════════════════════════════════════════════════════
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following message was thrown:
+Multiple exceptions (2) were detected during the running of the current test, and at least one was
+unexpected.
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:01 +1 -1: feed dropdown retries, scrolls and marks the server selection [E]
+  Test failed. See exception logs above.
+  The test description was: feed dropdown retries, scrolls and marks the server selection
+  
+00:01 +1 -1: a dismissed old account dropdown cannot choose a mode
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: at least one matching candidate
+  Actual: _ElementPredicateWidgetFinder:<Found 0 widgets with element matching predicate: []>
+   Which: means none were found but some were expected
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/qishui_root_layout167_test.dart:206:5)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/qishui_root_layout167_test.dart line 206
+The test description was:
+  a dismissed old account dropdown cannot choose a mode
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:01 +1 -2: a dismissed old account dropdown cannot choose a mode [E]
+  Test failed. See exception logs above.
+  The test description was: a dismissed old account dropdown cannot choose a mode
+  
+00:01 +1 -2: Mine official hierarchy fits 390.0 at 1.0
+00:02 +2 -2: Mine official hierarchy fits 320.0 at 1.8
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following StateError was thrown running a test:
+Bad state: No element
+
+When the exception was thrown, this was the stack:
+#0      Iterable.single (dart:core/iterable.dart:694:25)
+#1      WidgetController.element (package:flutter_test/src/controller.dart:883:30)
+#2      WidgetController.ensureVisible (package:flutter_test/src/controller.dart:2382:32)
+#3      main.<anonymous closure> (file:///D:/AnLi/test/qishui_root_layout167_test.dart:273:22)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+The test description was:
+  Mine official hierarchy fits 320.0 at 1.8
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +2 -3: Mine official hierarchy fits 320.0 at 1.8 [E]
+  Test failed. See exception logs above.
+  The test description was: Mine official hierarchy fits 320.0 at 1.8
+  
+00:02 +2 -3: (tearDownAll)
+00:02 +2 -3: Some tests failed.

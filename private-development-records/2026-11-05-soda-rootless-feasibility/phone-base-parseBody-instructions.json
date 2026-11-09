@@ -1,0 +1,356 @@
+{
+  "source_apk_sha256": "b639e67c13e03377f0f9d8068c5e0419b1acd42c7d529362f11ae704b3838741",
+  "dex_entry": "classes21.dex",
+  "dex_sha256": "d28a15c360d503b20d064987620d1a3167e8ad84e3d08b0d12dcf9da18dd265b",
+  "selected_owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+  "scope": "Original DEX instructions, not runtime/data-flow proof.",
+  "methods": [
+    {
+      "method_index": 51224,
+      "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+      "name": "parseBody",
+      "proto_index": 14060,
+      "prototype": "(Lorg/json/JSONObject;)Z",
+      "code_offset": 4853808,
+      "registers": 6,
+      "incoming_words": 2,
+      "outgoing_words": 4,
+      "code_unit_count": 58,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x54",
+          "units": [
+            16468,
+            20312
+          ],
+          "field": {
+            "field_index": 20312,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/bytedance/sdk/account/execute/ApiResponse;",
+            "name": "apiResponse"
+          }
+        },
+        {
+          "code_unit_offset": 2,
+          "opcode": "0x5b",
+          "units": [
+            1371,
+            19734
+          ],
+          "field": {
+            "field_index": 19734,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiResponse;",
+            "type": "Lorg/json/JSONObject;",
+            "name": "body"
+          }
+        },
+        {
+          "code_unit_offset": 4,
+          "opcode": "0x70",
+          "units": [
+            8304,
+            51225,
+            84
+          ],
+          "method": {
+            "method_index": 51225,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "name": "parseData",
+            "proto_index": 6830,
+            "prototype": "(Lorg/json/JSONObject;)Lorg/json/JSONObject;"
+          }
+        },
+        {
+          "code_unit_offset": 7,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 8,
+          "opcode": "0x1a",
+          "units": [
+            282,
+            48461
+          ],
+          "string_index": 48461,
+          "string": "message"
+        },
+        {
+          "code_unit_offset": 10,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            65199,
+            21
+          ],
+          "method": {
+            "method_index": 65199,
+            "owner": "Lorg/json/JSONObject;",
+            "name": "optString",
+            "proto_index": 5867,
+            "prototype": "(Ljava/lang/String;)Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 13,
+          "opcode": "0xc",
+          "units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 14,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            1281,
+            2
+          ],
+          "method": {
+            "method_index": 1281,
+            "owner": "Landroid/text/TextUtils;",
+            "name": "isEmpty",
+            "proto_index": 13857,
+            "prototype": "(Ljava/lang/CharSequence;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 17,
+          "opcode": "0xa",
+          "units": [
+            778
+          ]
+        },
+        {
+          "code_unit_offset": 18,
+          "opcode": "0x39",
+          "units": [
+            825,
+            7
+          ]
+        },
+        {
+          "code_unit_offset": 20,
+          "opcode": "0x70",
+          "units": [
+            16496,
+            51228,
+            8276
+          ],
+          "method": {
+            "method_index": 51228,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "name": "parseInner",
+            "proto_index": 14068,
+            "prototype": "(Lorg/json/JSONObject;Lorg/json/JSONObject;Ljava/lang/String;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 23,
+          "opcode": "0xa",
+          "units": [
+            1290
+          ]
+        },
+        {
+          "code_unit_offset": 24,
+          "opcode": "0xf",
+          "units": [
+            1295
+          ]
+        },
+        {
+          "code_unit_offset": 25,
+          "opcode": "0x38",
+          "units": [
+            56,
+            15
+          ]
+        },
+        {
+          "code_unit_offset": 27,
+          "opcode": "0x70",
+          "units": [
+            8304,
+            51225,
+            4
+          ],
+          "method": {
+            "method_index": 51225,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "name": "parseData",
+            "proto_index": 6830,
+            "prototype": "(Lorg/json/JSONObject;)Lorg/json/JSONObject;"
+          }
+        },
+        {
+          "code_unit_offset": 30,
+          "opcode": "0xc",
+          "units": [
+            1292
+          ]
+        },
+        {
+          "code_unit_offset": 31,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            65199,
+            16
+          ],
+          "method": {
+            "method_index": 65199,
+            "owner": "Lorg/json/JSONObject;",
+            "name": "optString",
+            "proto_index": 5867,
+            "prototype": "(Ljava/lang/String;)Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 34,
+          "opcode": "0xc",
+          "units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 35,
+          "opcode": "0x70",
+          "units": [
+            16496,
+            51228,
+            5380
+          ],
+          "method": {
+            "method_index": 51228,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "name": "parseInner",
+            "proto_index": 14068,
+            "prototype": "(Lorg/json/JSONObject;Lorg/json/JSONObject;Ljava/lang/String;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 38,
+          "opcode": "0xa",
+          "units": [
+            1290
+          ]
+        },
+        {
+          "code_unit_offset": 39,
+          "opcode": "0xf",
+          "units": [
+            1295
+          ]
+        },
+        {
+          "code_unit_offset": 40,
+          "opcode": "0x22",
+          "units": [
+            34,
+            12722
+          ],
+          "type": "Lorg/json/JSONObject;"
+        },
+        {
+          "code_unit_offset": 42,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            65173,
+            0
+          ],
+          "method": {
+            "method_index": 65173,
+            "owner": "Lorg/json/JSONObject;",
+            "name": "<init>",
+            "proto_index": 6867,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 45,
+          "opcode": "0x1a",
+          "units": [
+            282,
+            57892
+          ],
+          "string_index": 57892,
+          "string": "success"
+        },
+        {
+          "code_unit_offset": 47,
+          "opcode": "0x70",
+          "units": [
+            16496,
+            51228,
+            4180
+          ],
+          "method": {
+            "method_index": 51228,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "name": "parseInner",
+            "proto_index": 14068,
+            "prototype": "(Lorg/json/JSONObject;Lorg/json/JSONObject;Ljava/lang/String;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 50,
+          "opcode": "0xa",
+          "units": [
+            1290
+          ]
+        },
+        {
+          "code_unit_offset": 51,
+          "opcode": "0xf",
+          "units": [
+            1295
+          ]
+        },
+        {
+          "code_unit_offset": 52,
+          "opcode": "0xd",
+          "units": [
+            1293
+          ]
+        },
+        {
+          "code_unit_offset": 53,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            63485,
+            5
+          ],
+          "method": {
+            "method_index": 63485,
+            "owner": "Ljava/lang/Exception;",
+            "name": "printStackTrace",
+            "proto_index": 6867,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 56,
+          "opcode": "0x12",
+          "units": [
+            1298
+          ],
+          "const": 0,
+          "dest_register": 5
+        },
+        {
+          "code_unit_offset": 57,
+          "opcode": "0xf",
+          "units": [
+            1295
+          ]
+        }
+      ]
+    }
+  ]
+}

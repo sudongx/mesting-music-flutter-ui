@@ -1,0 +1,28 @@
+{
+  "engine": {
+    "name": "jadx-headless-mcp",
+    "version": "0.7.1",
+    "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+    "worker_count": 1,
+    "heap_limit_mib": 3072
+  },
+  "class_name": "com.netease.cloudmusic.core.statistic.f0",
+  "method": {
+    "name": "J",
+    "reported_signature": "J(java.util.Map<java.lang.String, java.util.List<java.lang.String>>): void",
+    "overload_index": 0,
+    "is_constructor": false,
+    "dex_descriptor": null
+  },
+  "overload_count": 1,
+  "representation": "java",
+  "body_status": "available",
+  "fell_back": false,
+  "markers": [],
+  "source": {
+    "status": "complete",
+    "text": "    private synchronized void J(Map<String, List<String>> map) {\r\n        if (NeteaseMusicUtils.K0()) {\r\n            if (map.size() == 0) {\r\n                return;\r\n            }\r\n            for (Map.Entry<String, List<String>> entry : map.entrySet()) {\r\n                try {\r\n                    String key = entry.getKey();\r\n                    String string = n3.c(E()).getString(key, \"\");\r\n                    for (String str : entry.getValue()) {\r\n                        if (com.netease.cloudmusic.utils.e0.g()) {\r\n                            Log.d(this.m, \">>>>>uploadLog:\" + str);\r\n                        }\r\n                        File file = new File(y(str));\r\n                        byte[] bArrX = new byte[0];\r\n                        if (file.length() != 0) {\r\n                            bArrX = y5.x(file.getAbsolutePath());\r\n                        }\r\n                        if (this.o) {\r\n                            log(\"sysdebug\", IAPMTracker.KEY_COMMON_KEY_MSPM, \"StatisticUtilsDoUpload\", \"obj\", getClass().getSimpleName());\r\n                        }\r\n                        e0.b bVar = this.c.g;\r\n                        if (bVar != null && bVar.c(bArrX, string)) {\r\n                            file.delete();\r\n                            if (com.netease.cloudmusic.utils.e0.g()) {\r\n                                Log.d(this.m, \">>>>>deletefiles:\" + file.getAbsolutePath());\r\n                            }\r\n                            if (!this.j.equals(key) && !D().equals(key)) {\r\n                                n3.c(E()).edit().remove(key).commit();\r\n                            }\r\n                        }\r\n                    }\r\n                } catch (CMNetworkIOException | j32.h e2) {\r\n                    e2.printStackTrace();\r\n                }\r\n            }\r\n        }\r\n    }",
+    "reported_total_bytes": null
+  }
+}

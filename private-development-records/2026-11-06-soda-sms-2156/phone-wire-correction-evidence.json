@@ -1,0 +1,82 @@
+{
+  "originalApkSha256": "b639e67c13e03377f0f9d8068c5e0419b1acd42c7d529362f11ae704b3838741",
+  "dex": "classes21.dex",
+  "dexSha256": "d28a15c360d503b20d064987620d1a3167e8ad84e3d08b0d12dcf9da18dd265b",
+  "selectedOwner": "Lcom/bytedance/sdk/account/param/SendCodeParam;",
+  "method": "toMap",
+  "mobileMixInstructions": [
+    {
+      "code_unit_offset": 13,
+      "opcode": "0x54",
+      "units": [
+        24916,
+        21285
+      ],
+      "field": {
+        "field_index": 21285,
+        "owner": "Lcom/bytedance/sdk/account/param/SendCodeParam;",
+        "type": "Ljava/lang/String;",
+        "name": "mobile"
+      }
+    },
+    {
+      "code_unit_offset": 15,
+      "opcode": "0x71",
+      "units": [
+        4209,
+        3016,
+        1
+      ],
+      "method": {
+        "method_index": 3016,
+        "owner": "Lcom/bytedance/common/utility/StringUtils;",
+        "name": "encryptWithXor",
+        "proto_index": 5867,
+        "prototype": "(Ljava/lang/String;)Ljava/lang/String;"
+      }
+    },
+    {
+      "code_unit_offset": 18,
+      "opcode": "0xc",
+      "units": [
+        268
+      ]
+    },
+    {
+      "code_unit_offset": 19,
+      "opcode": "0x1a",
+      "units": [
+        538,
+        48616
+      ],
+      "string_index": 48616,
+      "string": "mobile"
+    },
+    {
+      "code_unit_offset": 21,
+      "opcode": "0x72",
+      "units": [
+        12402,
+        64320,
+        288
+      ],
+      "method": {
+        "method_index": 64320,
+        "owner": "Ljava/util/Map;",
+        "name": "put",
+        "proto_index": 5504,
+        "prototype": "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+      }
+    }
+  ],
+  "syntheticWireVector": {
+    "input": "+8613800000000",
+    "mobile": "2e3d3334363d3535353535353535",
+    "type24": "3731",
+    "mix_mode": "1"
+  },
+  "saasCaveat": "SendSmsCodeParams.toMap preserves its mobile field; this alone does not prove the final request should contain plaintext. Its caller branch must be distinguished from the SDK path.",
+  "chosenContract": "Passport SDK mixed mobile exactly once; live service acceptance still requires manual device result",
+  "userFailure": "Mesting2156, same number official receives SMS",
+  "agentSmsSent": false
+}

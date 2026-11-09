@@ -1,0 +1,39 @@
+00:00 +0: loading D:/AnLi/test/release_130_artwork_reveal_test.dart
+00:00 +0: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: multiple pending data sections share the first-screen gate before any covers exist
+00:00 +1: an unresolved cover reaches explicit retry instead of holding the viewport forever
+00:01 +2: common page reveals first-screen text only with decoded artwork, semantics and taps
+00:02 +3: scroll keeps old rows and reveals a new visible batch together
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: true
+  Actual: <false>
+
+When the exception was thrown, this was the stack:
+#4      waitFor (file:///D:/AnLi/test/release_130_artwork_reveal_test.dart:182:3)
+<asynchronous suspension>
+#5      main.<anonymous closure> (file:///D:/AnLi/test/release_130_artwork_reveal_test.dart:339:7)
+<asynchronous suspension>
+#6      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#7      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_130_artwork_reveal_test.dart line 182
+The test description was:
+  scroll keeps old rows and reveals a new visible batch together
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:04 +3 -1: scroll keeps old rows and reveals a new visible batch together [E]
+  Test failed. See exception logs above.
+  The test description was: scroll keeps old rows and reveals a new visible batch together
+  
+00:04 +3 -1: one failed cover offers retry without holding successful rows
+00:06 +4 -1: prepared thumbnail paints immediately while a larger request waits
+00:06 +5 -1: (tearDownAll)
+00:07 +5 -1: Some tests failed.

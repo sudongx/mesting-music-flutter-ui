@@ -1,0 +1,17 @@
+ע: D:\AnLi\test\native_soda_audio\SodaAudioProcessorHostTest.javaʹ�û򸲸����ѹ�ʱ�� API��
+ע: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+PASS first shared EMPTY_BUFFER never self-copies
+PASS empty input before configure is harmless
+PASS empty input preserves unread output
+PASS exact ordinary bypass encoding=2 bytes=4
+PASS exact ordinary bypass encoding=2 bytes=2048
+PASS exact ordinary bypass encoding=2 bytes=8192
+PASS exact ordinary bypass encoding=4 bytes=4
+PASS exact ordinary bypass encoding=4 bytes=2048
+PASS exact ordinary bypass encoding=4 bytes=8192
+PASS flush and reset accept the shared empty sentinel repeatedly
+PASS failed native creation preserves every fragmented PCM16 byte at EOS
+PASS disabling effect drains an already buffered partial block
+PASS float effect tail has no extra padded frames
+PASS empty EOS completes without creating an output buffer
+Soda audio host regression: 14 passed; actual Media3 1.9.2 classes, native bridge simulated.

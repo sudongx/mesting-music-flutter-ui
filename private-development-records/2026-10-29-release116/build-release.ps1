@@ -1,0 +1,7 @@
+$ErrorActionPreference = 'Stop'
+Set-Location -LiteralPath 'D:/AnLi'
+. ./.codex-artifacts/2026-10-27-v1.0.1/env.ps1
+# Process-local build limits; no global SDK/Gradle configuration changes.
+$env:GRADLE_OPTS = '-Dorg.gradle.jvmargs="-Xmx3g -XX:MaxMetaspaceSize=1024m -XX:ReservedCodeCacheSize=256m" -Dorg.gradle.workers.max=1 -Dorg.gradle.daemon=false'
+& ./tool/build_android_release_apk.ps1 -FlutterSdkRoot 'D:/CodexCache/flutter-3.41.9' -VersionName '1.0.16' -VersionCode 37
+if ($LASTEXITCODE -ne 0) { throw 'Release build failed' }

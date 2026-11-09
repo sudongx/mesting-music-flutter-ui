@@ -1,0 +1,1394 @@
+{
+  "source_sha256": "b639e67c13e03377f0f9d8068c5e0419b1acd42c7d529362f11ae704b3838741",
+  "dex_entry": "classes8.dex",
+  "dex_sha256": "d3a41ea69d5c03e8fb160d4c961ae64ccb22ab578581b493c022fb62d82ccf09",
+  "scope": "Bounded raw DEX annotation reader for selected, byte-identical APK classes.\n\nThis records declarations/annotations, not executable behavior or a call graph.\nIt complements focused REA/JADX analysis when the host cannot run two JVMs.\nIt neither loads classes nor runs APK/native code. No third-party parser code.\n",
+  "classes": [
+    {
+      "class_def_index": 1417,
+      "descriptor": "Lcom/luna/biz/search/result/net/SearchResultApi;",
+      "access_flags": 1537,
+      "super": "Ljava/lang/Object;",
+      "interfaces": [],
+      "class_data_offset": 11025182,
+      "static_values_offset": 0,
+      "fields": [],
+      "methods": [
+        {
+          "dex_method_index": 27116,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi;",
+          "name": "getSearchResponse",
+          "descriptor": "(Ljava/lang/String;Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;)Lio/reactivex/Observable;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10372472,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/POST;",
+              "elements": {
+                "value": "/luna/search/{search_type}"
+              }
+            },
+            {
+              "annotation_item_offset": 10372482,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Ljava/lang/String;",
+                  "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+                  ")",
+                  "Lio/reactivex/Observable<",
+                  "Lcom/luna/biz/search/result/net/data/SearchResponse;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 10279490,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27117,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi;",
+          "name": "loadSearchCategory",
+          "descriptor": "(Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;)Lio/reactivex/Observable;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10372522,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/POST;",
+              "elements": {
+                "value": "/luna/search-categories"
+              }
+            },
+            {
+              "annotation_item_offset": 10372532,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+                  ")",
+                  "Lio/reactivex/Observable<",
+                  "Lcom/luna/biz/search/result/net/data/SearchCategoryResponse;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 10279490,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "annotation_item_offset": 10372559,
+          "visibility": 2,
+          "type": "Ldalvik/annotation/MemberClasses;",
+          "elements": {
+            "value": [
+              {
+                "type_descriptor": "Lcom/luna/biz/search/result/net/SearchResultApi$Companion;"
+              },
+              {
+                "type_descriptor": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;"
+              }
+            ]
+          }
+        },
+        {
+          "annotation_item_offset": 10372574,
+          "visibility": 1,
+          "type": "Lkotlin/Metadata;",
+          "elements": {
+            "d1": [
+              "��(\n\u0002\u0018\u0002\n\u0002\u0010��\n��\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n��\n\u0002\u0010\u000e\n��\n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n\u0002\b\u0004\bf\u0018�� \f2\u00020\u0001:\u0002\f\rJ\"\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0001\u0010\u0005\u001a\u00020\u00062\b\b\u0001\u0010\u0007\u001a\u00020\bH'J\u0018\u0010\t\u001a\b\u0012\u0004\u0012\u00020\n0\u00032\b\b\u0001\u0010\u000b\u001a\u00020\bH'¨\u0006\u000e"
+            ],
+            "d2": [
+              "Lcom/luna/biz/search/result/net/SearchResultApi;",
+              "",
+              "getSearchResponse",
+              "Lio/reactivex/Observable;",
+              "Lcom/luna/biz/search/result/net/data/SearchResponse;",
+              "type",
+              "",
+              "searchRequest",
+              "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+              "loadSearchCategory",
+              "Lcom/luna/biz/search/result/net/data/SearchCategoryResponse;",
+              "request",
+              "Companion",
+              "SearchRequest",
+              "biz-search-impl_release"
+            ],
+            "k": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "01",
+              "unsigned_value": 1
+            },
+            "mv": [
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "02",
+                "unsigned_value": 2
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "01",
+                "unsigned_value": 1
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              }
+            ],
+            "xi": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "30",
+              "unsigned_value": 48
+            }
+          }
+        }
+      ],
+      "parameter_annotations": [
+        {
+          "dex_method_index": 27116,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi;",
+          "name": "getSearchResponse",
+          "descriptor": "(Ljava/lang/String;Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;)Lio/reactivex/Observable;",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10372512,
+                "visibility": 1,
+                "type": "Lcom/bytedance/retrofit2/http/Path;",
+                "elements": {
+                  "value": "search_type"
+                }
+              },
+              {
+                "annotation_item_offset": 10279490,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10316370,
+                "visibility": 1,
+                "type": "Lcom/bytedance/retrofit2/http/Body;",
+                "elements": {}
+              },
+              {
+                "annotation_item_offset": 10279490,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 27117,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi;",
+          "name": "loadSearchCategory",
+          "descriptor": "(Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;)Lio/reactivex/Observable;",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10316370,
+                "visibility": 1,
+                "type": "Lcom/bytedance/retrofit2/http/Body;",
+                "elements": {}
+              },
+              {
+                "annotation_item_offset": 10279490,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "class_def_index": 4410,
+      "descriptor": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+      "access_flags": 1,
+      "super": "Ljava/lang/Object;",
+      "interfaces": [
+        "Lcom/luna/common/tea/json/KeepElement;"
+      ],
+      "class_data_offset": 11169871,
+      "static_values_offset": 0,
+      "fields": [
+        {
+          "dex_field_index": 14261,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "abParam",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10566841,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "ab_param"
+              }
+            },
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 14263,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "cursor",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10598061,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "cursor"
+              }
+            },
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 14264,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "fromSearchId",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10598091,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "from_search_id"
+              }
+            },
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 14265,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "lastViewedMedia",
+          "type": "Lcom/luna/common/arch/sync/net/NetMedia;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10598111,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "last_viewed_media"
+              }
+            },
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 14266,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "limitedFreeScene",
+          "type": "Ljava/lang/Integer;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10593713,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "limited_free_scene"
+              }
+            },
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 14267,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "query",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10598051,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "q"
+              }
+            },
+            {
+              "annotation_item_offset": 10279490,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 14269,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "sceneName",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10590519,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "scene_name"
+              }
+            },
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 14270,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "searchId",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10598071,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "search_id"
+              }
+            },
+            {
+              "annotation_item_offset": 10279490,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 14271,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "searchMethod",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10598081,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "search_method"
+              }
+            },
+            {
+              "annotation_item_offset": 10279490,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 14272,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "searchScene",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10598101,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "search_scene"
+              }
+            },
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 14273,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "searchTransit",
+          "type": "Lcom/luna/common/arch/anchor/SearchTransit;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10598121,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "transit"
+              }
+            },
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 14274,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "searchType",
+          "type": "Lcom/luna/biz/search/result/net/data/SearchType;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10373364,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "search_type"
+              }
+            },
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "dex_method_index": 27077,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "component1",
+          "descriptor": "()Lcom/luna/biz/search/result/net/data/SearchType;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27078,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "component10",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27079,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "component11",
+          "descriptor": "()Lcom/luna/common/arch/anchor/SearchTransit;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27080,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "component12",
+          "descriptor": "()Ljava/lang/Integer;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27081,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "component2",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279490,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27082,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "component3",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27083,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "component4",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279490,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27084,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "component5",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279490,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27085,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "component6",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27086,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "component7",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27087,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "component8",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27088,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "component9",
+          "descriptor": "()Lcom/luna/common/arch/sync/net/NetMedia;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27089,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "copy",
+          "descriptor": "(Lcom/luna/biz/search/result/net/data/SearchType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/luna/common/arch/sync/net/NetMedia;Ljava/lang/String;Lcom/luna/common/arch/anchor/SearchTransit;Ljava/lang/Integer;)Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279490,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27092,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "getAbParam",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27093,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "getCursor",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27094,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "getFromSearchId",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27095,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "getLastViewedMedia",
+          "descriptor": "()Lcom/luna/common/arch/sync/net/NetMedia;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27096,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "getLimitedFreeScene",
+          "descriptor": "()Ljava/lang/Integer;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27097,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "getQuery",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279490,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27098,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "getSceneName",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27099,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "getSearchId",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279490,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27100,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "getSearchMethod",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279490,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27101,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "getSearchScene",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27102,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "getSearchTransit",
+          "descriptor": "()Lcom/luna/common/arch/anchor/SearchTransit;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27103,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "getSearchType",
+          "descriptor": "()Lcom/luna/biz/search/result/net/data/SearchType;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279494,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27115,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "toString",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10279490,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "annotation_item_offset": 10372372,
+          "visibility": 2,
+          "type": "Ldalvik/annotation/EnclosingClass;",
+          "elements": {
+            "value": {
+              "type_descriptor": "Lcom/luna/biz/search/result/net/SearchResultApi;"
+            }
+          }
+        },
+        {
+          "annotation_item_offset": 10598131,
+          "visibility": 2,
+          "type": "Ldalvik/annotation/InnerClass;",
+          "elements": {
+            "accessFlags": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "19",
+              "unsigned_value": 25
+            },
+            "name": "SearchRequest"
+          }
+        },
+        {
+          "annotation_item_offset": 10598146,
+          "visibility": 1,
+          "type": "Lkotlin/Metadata;",
+          "elements": {
+            "d1": [
+              "��<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n��\n\u0002\u0018\u0002\n��\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n��\n\u0002\u0010\b\n\u0002\b0\n\u0002\u0010\u000b\n��\n\u0002\u0010��\n\u0002\b\u0003\b\b\u0018��2\u00020\u0001B\u0001\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\u0006\u0010\b\u001a\u00020\u0005\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\r\u0012\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u0010\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0012¢\u0006\u0004\b\u0013\u0010\u0014J\u000b\u00104\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\t\u00105\u001a\u00020\u0005HÆ\u0003J\u000b\u00106\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u00107\u001a\u00020\u0005HÆ\u0003J\t\u00108\u001a\u00020\u0005HÆ\u0003J\u000b\u00109\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010:\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010;\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010<\u001a\u0004\u0018\u00010\rHÆ\u0003J\u000b\u0010=\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010>\u001a\u0004\u0018\u00010\u0010HÆ\u0003J\u0010\u0010?\u001a\u0004\u0018\u00010\u0012HÆ\u0003¢\u0006\u0002\u00102J\u0001\u0010@\u001a\u00020��2\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\b\b\u0002\u0010\b\u001a\u00020\u00052\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\r2\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00102\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0012HÆ\u0001¢\u0006\u0002\u0010AJ\u0013\u0010B\u001a\u00020C2\b\u0010D\u001a\u0004\u0018\u00010EHÖ\u0003J\t\u0010F\u001a\u00020\u0012HÖ\u0001J\t\u0010G\u001a\u00020\u0005HÖ\u0001R\u0018\u0010\u0002\u001a\u0004\u0018\u00010\u00038\u0006X\u0004¢\u0006\b\n��\u001a\u0004\b\u0015\u0010\u0016R\u001e\u0010\u0004\u001a\u00020\u00058\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0017\u0010\u0018\"\u0004\b\u0019\u0010\u001aR \u0010\u0006\u001a\u0004\u0018\u00010\u00058\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u001b\u0010\u0018\"\u0004\b\u001c\u0010\u001aR\u001e\u0010\u0007\u001a\u00020\u00058\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u001d\u0010\u0018\"\u0004\b\u001e\u0010\u001aR\u001e\u0010\b\u001a\u00020\u00058\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u001f\u0010\u0018\"\u0004\b \u0010\u001aR \u0010\t\u001a\u0004\u0018\u00010\u00058\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b!\u0010\u0018\"\u0004\b\"\u0010\u001aR \u0010\n\u001a\u0004\u0018\u00010\u00058\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b#\u0010\u0018\"\u0004\b$\u0010\u001aR \u0010\u000b\u001a\u0004\u0018\u00010\u00058\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b%\u0010\u0018\"\u0004\b&\u0010\u001aR \u0010\f\u001a\u0004\u0018\u00010\r8\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b'\u0010(\"\u0004\b)\u0010*R \u0010\u000e\u001a\u0004\u0018\u00010\u00058\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b+\u0010\u0018\"\u0004\b,\u0010\u001aR \u0010\u000f\u001a\u0004\u0018\u00010\u00108\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b-\u0010.\"\u0004\b/\u00100R\u001a\u0010\u0011\u001a\u0004\u0018\u00010\u00128\u0006X\u0004¢\u0006\n\n\u0002\u00103\u001a\u0004\b1\u00102¨\u0006H"
+            ],
+            "d2": [
+              "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+              "Lcom/luna/common/tea/json/KeepElement;",
+              "searchType",
+              "Lcom/luna/biz/search/result/net/data/SearchType;",
+              "query",
+              "",
+              "cursor",
+              "searchId",
+              "searchMethod",
+              "fromSearchId",
+              "searchScene",
+              "abParam",
+              "lastViewedMedia",
+              "Lcom/luna/common/arch/sync/net/NetMedia;",
+              "sceneName",
+              "searchTransit",
+              "Lcom/luna/common/arch/anchor/SearchTransit;",
+              "limitedFreeScene",
+              "",
+              "<init>",
+              "(Lcom/luna/biz/search/result/net/data/SearchType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/luna/common/arch/sync/net/NetMedia;Ljava/lang/String;Lcom/luna/common/arch/anchor/SearchTransit;Ljava/lang/Integer;)V",
+              "getSearchType",
+              "()Lcom/luna/biz/search/result/net/data/SearchType;",
+              "getQuery",
+              "()Ljava/lang/String;",
+              "setQuery",
+              "(Ljava/lang/String;)V",
+              "getCursor",
+              "setCursor",
+              "getSearchId",
+              "setSearchId",
+              "getSearchMethod",
+              "setSearchMethod",
+              "getFromSearchId",
+              "setFromSearchId",
+              "getSearchScene",
+              "setSearchScene",
+              "getAbParam",
+              "setAbParam",
+              "getLastViewedMedia",
+              "()Lcom/luna/common/arch/sync/net/NetMedia;",
+              "setLastViewedMedia",
+              "(Lcom/luna/common/arch/sync/net/NetMedia;)V",
+              "getSceneName",
+              "setSceneName",
+              "getSearchTransit",
+              "()Lcom/luna/common/arch/anchor/SearchTransit;",
+              "setSearchTransit",
+              "(Lcom/luna/common/arch/anchor/SearchTransit;)V",
+              "getLimitedFreeScene",
+              "()Ljava/lang/Integer;",
+              "Ljava/lang/Integer;",
+              "component1",
+              "component2",
+              "component3",
+              "component4",
+              "component5",
+              "component6",
+              "component7",
+              "component8",
+              "component9",
+              "component10",
+              "component11",
+              "component12",
+              "copy",
+              "(Lcom/luna/biz/search/result/net/data/SearchType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/luna/common/arch/sync/net/NetMedia;Ljava/lang/String;Lcom/luna/common/arch/anchor/SearchTransit;Ljava/lang/Integer;)Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+              "equals",
+              "",
+              "other",
+              "",
+              "hashCode",
+              "toString",
+              "biz-search-impl_release"
+            ],
+            "k": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "01",
+              "unsigned_value": 1
+            },
+            "mv": [
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "02",
+                "unsigned_value": 2
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "01",
+                "unsigned_value": 1
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              }
+            ],
+            "xi": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "30",
+              "unsigned_value": 48
+            }
+          }
+        }
+      ],
+      "parameter_annotations": [
+        {
+          "dex_method_index": 27075,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "<init>",
+          "descriptor": "(Lcom/luna/biz/search/result/net/data/SearchType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/luna/common/arch/sync/net/NetMedia;Ljava/lang/String;Lcom/luna/common/arch/anchor/SearchTransit;Ljava/lang/Integer;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279490,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279490,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279490,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 27089,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "copy",
+          "descriptor": "(Lcom/luna/biz/search/result/net/data/SearchType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/luna/common/arch/sync/net/NetMedia;Ljava/lang/String;Lcom/luna/common/arch/anchor/SearchTransit;Ljava/lang/Integer;)Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279490,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279490,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279490,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 27091,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "equals",
+          "descriptor": "(Ljava/lang/Object;)Z",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 27105,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "setAbParam",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 27106,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "setCursor",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 27107,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "setFromSearchId",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 27108,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "setLastViewedMedia",
+          "descriptor": "(Lcom/luna/common/arch/sync/net/NetMedia;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 27109,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "setQuery",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10279490,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 27110,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "setSceneName",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 27111,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "setSearchId",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10279490,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 27112,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "setSearchMethod",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10279490,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 27113,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "setSearchScene",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 27114,
+          "owner": "Lcom/luna/biz/search/result/net/SearchResultApi$SearchRequest;",
+          "name": "setSearchTransit",
+          "descriptor": "(Lcom/luna/common/arch/anchor/SearchTransit;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 10279494,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+00:00 +0: loading D:/AnLi/test/release_136_listening_audit_ui_test.dart
+00:00 +0: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: month selection loads a distinct snapshot and cancelling preview never copies
+fixture menu returned: 2026-11, field mounted=false
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: exactly one matching candidate
+  Actual: _TextWidgetFinder:<Found 0 widgets with text "全部歌曲真实收听：0 分钟 0 秒": []>
+   Which: means none were found but one was expected
+听歌上报诊断 | 只读取本机记录，不修改统计、不补发、不联网核验。页面是读取时的快照，可刷新更新。 | 统计月份 | 2026-10 | 重新读取本机记录 | 本机每日统计 |
+全部歌曲真实收听：683 分钟 0 秒 | 其中网易云歌曲：683 分钟 0 秒 | 其他来源：0 分钟 0 秒 | 逐次时长上报 | 时长记录：1 条，已知真实收听 2 分钟 0 秒 |
+真实时长无法从记录确定：0 条 | 接口已接收：1 条，已知 2 分钟 0 秒 | 开始播放记录：0 条，最近播放匹配 0 条 | 历史字段检查 | 缺少真实秒数字段 realtime：1 条时长记录
+| 缺少原始时间字段 startlogtime：1 条时长记录 | 旧版或无版本标记：1 条时长记录 |
+本机按收听日统计，逐次记录按可确定的开始日期归月，跨午夜时不能直接相减。旧版缺少字段仅说明保存的记录不完整；接口接收和最近播放匹配都不能证明已计入云村足迹。 | 搜索歌曲、歌手 | 发现 | 功能 |
+音乐库 | 我的 | 发现
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart:201:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_136_listening_audit_ui_test.dart line 201
+The test description was:
+  month selection loads a distinct snapshot and cancelling preview never copies
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +0 -1: month selection loads a distinct snapshot and cancelling preview never copies [E]
+  Test failed. See exception logs above.
+  The test description was: month selection loads a distinct snapshot and cancelling preview never copies
+  
+00:02 +0 -1: (tearDownAll)
+00:02 +0 -1: Some tests failed.

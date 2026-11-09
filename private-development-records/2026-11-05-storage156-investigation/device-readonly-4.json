@@ -1,0 +1,267 @@
+{
+  "targetPackage": "com.mesting.music",
+  "targetUid": 10529,
+  "targetVersionCode": 77,
+  "mode": "raw-file-read-and-keystore-unwrap-only",
+  "stores": [
+    {
+      "namespace": "legacy",
+      "localConfigKeys": 3,
+      "keyAlgorithm": "RSA_ECB_OAEPwithSHA_256andMGF1Padding",
+      "storageAlgorithm": "AES_GCM_NoPadding",
+      "encryptedEntryCount": 2,
+      "wrappedGcmPresent": true,
+      "wrappedCbcPresent": false,
+      "knownEntriesPresent": {
+        "mesting_music_platform_netease_session_v1": true,
+        "mesting_music_platform_kugou_session_v1": false,
+        "mesting_music_platform_kugou_accounts_v2": true
+      },
+      "aliases": [
+        {
+          "alias": "com.mesting.music.FlutterSecureStoragePluginKeyOAEP",
+          "exists": true,
+          "createdMillis": 1793776140305,
+          "certificateSha256": "0132fbc7887e00716cf5aae5a188e9e974bff5294640c63ba00dc3ad8e187ec5",
+          "keyHandlePresent": true,
+          "authRequired": false,
+          "invalidatedByBiometricEnrollment": false,
+          "securityLevel": 1,
+          "keySize": 2048,
+          "purposes": 3,
+          "memoryOnlyChallenges": [
+            {
+              "provider": "AndroidKeyStoreBCWorkaround",
+              "publicEncryptSuccess": true,
+              "privateDecryptSuccess": false,
+              "failure": [
+                {
+                  "class": "android.security.keystore.KeyPermanentlyInvalidatedException"
+                }
+              ]
+            },
+            {
+              "provider": "default",
+              "publicEncryptSuccess": true,
+              "privateDecryptSuccess": false,
+              "failure": [
+                {
+                  "class": "android.security.keystore.KeyPermanentlyInvalidatedException"
+                }
+              ]
+            }
+          ],
+          "unwrapAttempts": [
+            {
+              "wrappedKind": "gcm",
+              "unwrapSuccess": false,
+              "failure": [
+                {
+                  "class": "android.security.keystore.KeyPermanentlyInvalidatedException"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "alias": "com.mesting.music.FlutterSecureStoragePluginKey",
+          "exists": false
+        }
+      ]
+    },
+    {
+      "namespace": "mesting_verified_recovery_v1",
+      "localConfigKeys": 0,
+      "keyAlgorithm": "absent",
+      "storageAlgorithm": "absent",
+      "encryptedEntryCount": 0,
+      "wrappedGcmPresent": false,
+      "wrappedCbcPresent": false,
+      "knownEntriesPresent": {
+        "mesting_music_platform_netease_session_v1": false,
+        "mesting_music_platform_kugou_session_v1": false,
+        "mesting_music_platform_kugou_accounts_v2": false
+      },
+      "aliases": [
+        {
+          "alias": "com.mesting.music.FlutterSecureStoragePluginKeyOAEP.mesting_verified_recovery_v1",
+          "exists": true,
+          "createdMillis": 1793833545661,
+          "certificateSha256": "ede22d943a97d78744d59fd8619a8ada0fe150a665aacb909a0771f073bf8cd6",
+          "keyHandlePresent": true,
+          "authRequired": false,
+          "invalidatedByBiometricEnrollment": false,
+          "securityLevel": 1,
+          "keySize": 2048,
+          "purposes": 3,
+          "memoryOnlyChallenges": [
+            {
+              "provider": "AndroidKeyStoreBCWorkaround",
+              "publicEncryptSuccess": true,
+              "privateDecryptSuccess": false,
+              "failure": [
+                {
+                  "class": "android.security.keystore.KeyPermanentlyInvalidatedException"
+                }
+              ]
+            },
+            {
+              "provider": "default",
+              "publicEncryptSuccess": true,
+              "privateDecryptSuccess": false,
+              "failure": [
+                {
+                  "class": "android.security.keystore.KeyPermanentlyInvalidatedException"
+                }
+              ]
+            }
+          ],
+          "unwrapAttempts": []
+        },
+        {
+          "alias": "com.mesting.music.FlutterSecureStoragePluginKey.mesting_verified_recovery_v1",
+          "exists": false
+        }
+      ]
+    }
+  ],
+  "selectedAccount": "kugou",
+  "filesBefore": {
+    "FlutterSecureStorageConfiguration.xml": {
+      "exists": false
+    },
+    "FlutterSecureStorageConfiguration.xml.bak": {
+      "exists": false
+    },
+    "FlutterSecureStorageConfiguration:FlutterSecureStorage.xml": {
+      "exists": true,
+      "bytes": 307,
+      "modifiedMillis": 1793844993027,
+      "sha256": "d47b81ed5456db01e5e425e2b21513ab54625459650e9413da2970f2828bdffb"
+    },
+    "FlutterSecureStorageConfiguration:FlutterSecureStorage.xml.bak": {
+      "exists": false
+    },
+    "FlutterSecureStorage.xml": {
+      "exists": true,
+      "bytes": 2881,
+      "modifiedMillis": 1793845072639,
+      "sha256": "ccaa92cadd27998a3fd31cf73cef969cef6b9c972b132bae41f6c8e2126d0528"
+    },
+    "FlutterSecureStorage.xml.bak": {
+      "exists": false
+    },
+    "FlutterSecureKeyStorage.xml": {
+      "exists": true,
+      "bytes": 536,
+      "modifiedMillis": 1793844993119,
+      "sha256": "d5bfd7c0be4e1cf7f8839c043aeeb43026573981d5dac7592874a7a8c4e5de97"
+    },
+    "FlutterSecureKeyStorage.xml.bak": {
+      "exists": false
+    },
+    "FlutterSecureStorageConfiguration:mesting_verified_recovery_v1.xml": {
+      "exists": false
+    },
+    "FlutterSecureStorageConfiguration:mesting_verified_recovery_v1.xml.bak": {
+      "exists": false
+    },
+    "mesting_verified_recovery_v1.xml": {
+      "exists": false
+    },
+    "mesting_verified_recovery_v1.xml.bak": {
+      "exists": false
+    },
+    "FlutterSecureKeyStorage:mesting_verified_recovery_v1.xml": {
+      "exists": false
+    },
+    "FlutterSecureKeyStorage:mesting_verified_recovery_v1.xml.bak": {
+      "exists": false
+    },
+    "MestingVerifiedCredentialSlotsV2.xml": {
+      "exists": false
+    },
+    "MestingVerifiedCredentialSlotsV2.xml.bak": {
+      "exists": false
+    },
+    "FlutterSharedPreferences.xml": {
+      "exists": true,
+      "bytes": 1814,
+      "modifiedMillis": 1793845073463,
+      "sha256": "3f23627eefc15a0b66af13bb9f768695c249bb885f4bed4e4c2e840f868218ee"
+    },
+    "FlutterSharedPreferences.xml.bak": {
+      "exists": false
+    }
+  },
+  "filesAfter": {
+    "FlutterSecureStorageConfiguration.xml": {
+      "exists": false
+    },
+    "FlutterSecureStorageConfiguration.xml.bak": {
+      "exists": false
+    },
+    "FlutterSecureStorageConfiguration:FlutterSecureStorage.xml": {
+      "exists": true,
+      "bytes": 307,
+      "modifiedMillis": 1793844993027,
+      "sha256": "d47b81ed5456db01e5e425e2b21513ab54625459650e9413da2970f2828bdffb"
+    },
+    "FlutterSecureStorageConfiguration:FlutterSecureStorage.xml.bak": {
+      "exists": false
+    },
+    "FlutterSecureStorage.xml": {
+      "exists": true,
+      "bytes": 2881,
+      "modifiedMillis": 1793845072639,
+      "sha256": "ccaa92cadd27998a3fd31cf73cef969cef6b9c972b132bae41f6c8e2126d0528"
+    },
+    "FlutterSecureStorage.xml.bak": {
+      "exists": false
+    },
+    "FlutterSecureKeyStorage.xml": {
+      "exists": true,
+      "bytes": 536,
+      "modifiedMillis": 1793844993119,
+      "sha256": "d5bfd7c0be4e1cf7f8839c043aeeb43026573981d5dac7592874a7a8c4e5de97"
+    },
+    "FlutterSecureKeyStorage.xml.bak": {
+      "exists": false
+    },
+    "FlutterSecureStorageConfiguration:mesting_verified_recovery_v1.xml": {
+      "exists": false
+    },
+    "FlutterSecureStorageConfiguration:mesting_verified_recovery_v1.xml.bak": {
+      "exists": false
+    },
+    "mesting_verified_recovery_v1.xml": {
+      "exists": false
+    },
+    "mesting_verified_recovery_v1.xml.bak": {
+      "exists": false
+    },
+    "FlutterSecureKeyStorage:mesting_verified_recovery_v1.xml": {
+      "exists": false
+    },
+    "FlutterSecureKeyStorage:mesting_verified_recovery_v1.xml.bak": {
+      "exists": false
+    },
+    "MestingVerifiedCredentialSlotsV2.xml": {
+      "exists": false
+    },
+    "MestingVerifiedCredentialSlotsV2.xml.bak": {
+      "exists": false
+    },
+    "FlutterSharedPreferences.xml": {
+      "exists": true,
+      "bytes": 1814,
+      "modifiedMillis": 1793845073463,
+      "sha256": "3f23627eefc15a0b66af13bb9f768695c249bb885f4bed4e4c2e840f868218ee"
+    },
+    "FlutterSharedPreferences.xml.bak": {
+      "exists": false
+    }
+  },
+  "originalSecureFilesUnchanged": false,
+  "filesUnchangedDuringRead": true
+}

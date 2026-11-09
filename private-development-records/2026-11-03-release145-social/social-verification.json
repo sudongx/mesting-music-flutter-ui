@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-03",
+  "scope": "NetEase own following/fans interaction",
+  "hostTests": {
+    "release_145_connections_test.dart": {"passed": 19},
+    "release_145_connections_ui_test.dart": {"passed": 12},
+    "release_129_users_test.dart": {"passed": 6},
+    "release_129_user_ui_test.dart": {"passed": 5},
+    "totalPassed": 42,
+    "finalWholeFilesPassed": true,
+    "commands": [
+      "flutter test --no-pub --flavor beta --dart-define=CAPTURE_145_CONNECTIONS=true test/release_145_connections_ui_test.dart test/release_145_connections_test.dart --reporter expanded",
+      "flutter test --no-pub --flavor beta test/release_129_user_ui_test.dart test/release_129_users_test.dart --reporter expanded"
+    ],
+    "note": "An earlier concurrent old-UI run reported a deferred ink_sparkle shader load error. The complete affected existing files were rerun successfully. New UI tests use deterministic NoSplash only in their synthetic test theme."
+  },
+  "staticAnalysis": {"files": 8, "issues": 0},
+  "renderedAndVisuallyInspected": [
+    "ui/following-light.png",
+    "ui/following-dark.png",
+    "ui/fans-light.png",
+    "ui/fans-dark.png",
+    "ui/following-narrow-dark-large-text.png"
+  ],
+  "integration": {
+    "pageImport": "lib/features/music_platform/netease/netease_personal_connections_page.dart",
+    "entryPoint": "openNeteasePersonalConnections(context, ownerId: account.ownerId, initialFollowers: bool)",
+    "page": "NeteasePersonalConnectionsPage(ownerId: 'netease:<userId>', initialFollowers: bool)",
+    "summaryProviderImport": "lib/features/music_platform/netease/netease_user_providers.dart",
+    "summaryProvider": "neteasePersonalStatsProvider",
+    "summaryFields": ["ownerId", "following", "followers"],
+    "summarySafety": "Display summary only when ownerId matches the active account; count fields are nullable official fields, never loaded-list totals."
+  },
+  "contracts": {
+    "reaSummary": "rea-sdk-summary.json",
+    "reaSources": ["user_follows.js", "user_followeds.js", "artist_sublist.js", "artist_sub.js", "user_follow_mixed.js"],
+    "reconstruction": "Static captured SDK contracts only; selected JavaScript parsed inertly with no package execution.",
+    "userRead": "/user/follows and /user/followeds, raw offset/limit 30",
+    "artistRead": "/artist/sublist, independently paginated raw offset/limit 30",
+    "userWrite": "/follow with actual user id and t=1/0",
+    "artistWrite": "/artist/sub with artist id and subscribe=true/false",
+    "searchAndSort": "Locally search and filter every paginated relation. Default and nickname ordering are supported; time ordering requires a complete set of explicit upstream relationship timestamps."
+  },
+  "realAccountTraffic": false,
+  "deviceAccess": false,
+  "adbAccess": false,
+  "buildOrRelease": false,
+  "remainingUnknowns": [
+    "Live account permissions, server response variations and official-account acceptance remain unverified.",
+    "Captured mixed-follow SDK fixes sortType=0; alternate mixed server search/sort contracts are not proven.",
+    "Missing upstream relationship times disable time sorting rather than inventing dates."
+  ]
+}

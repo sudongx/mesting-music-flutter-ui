@@ -1,0 +1,3480 @@
+{
+  "original_sha256": "68bd9ab99e45875527959ec6e2a6bf48bcd43e817b503e4870d83c65d4bf5fa8",
+  "dex_entry": "classes21.dex",
+  "dex_sha256": "c47f44dc60c42b66915773063ae79256f0cc9cfb6517ee1785aa539fafceb32a",
+  "classes": [
+    {
+      "class_def_index": 1699,
+      "descriptor": "Lcom/luna/common/arch/sync/net/UserFollowApi;",
+      "access_flags": 1537,
+      "super": "Ljava/lang/Object;",
+      "interfaces": [],
+      "class_data_offset": 10674478,
+      "static_values_offset": 0,
+      "fields": [],
+      "methods": [
+        {
+          "dex_method_index": 33326,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowApi;",
+          "name": "cancelFollowUser",
+          "descriptor": "(Ljava/lang/String;)Lio/reactivex/Observable;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9845958,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/FormUrlEncoded;",
+              "elements": {}
+            },
+            {
+              "annotation_item_offset": 9992014,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/POST;",
+              "elements": {
+                "value": "/luna/me/unfollow"
+              }
+            },
+            {
+              "annotation_item_offset": 9991977,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Ljava/lang/String;",
+                  ")",
+                  "Lio/reactivex/Observable<",
+                  "Lcom/luna/common/arch/sync/net/UserFollowResponse;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 33327,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowApi;",
+          "name": "followUser",
+          "descriptor": "(Ljava/lang/String;)Lio/reactivex/Observable;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9845958,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/FormUrlEncoded;",
+              "elements": {}
+            },
+            {
+              "annotation_item_offset": 9991967,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/POST;",
+              "elements": {
+                "value": "/luna/me/follow"
+              }
+            },
+            {
+              "annotation_item_offset": 9991977,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Ljava/lang/String;",
+                  ")",
+                  "Lio/reactivex/Observable<",
+                  "Lcom/luna/common/arch/sync/net/UserFollowResponse;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 33328,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowApi;",
+          "name": "getFollower",
+          "descriptor": "(Ljava/lang/String;Ljava/lang/String;II)Lio/reactivex/Observable;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9992074,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/GET;",
+              "elements": {
+                "value": "/luna/users/{user_id}/follower"
+              }
+            },
+            {
+              "annotation_item_offset": 9992034,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Ljava/lang/String;",
+                  "Ljava/lang/String;",
+                  "II)",
+                  "Lio/reactivex/Observable<",
+                  "Lcom/luna/common/arch/sync/net/UserFollowListResponse;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 33329,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowApi;",
+          "name": "getFollowing",
+          "descriptor": "(Ljava/lang/String;Ljava/lang/String;II)Lio/reactivex/Observable;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9992024,
+              "visibility": 1,
+              "type": "Lcom/bytedance/retrofit2/http/GET;",
+              "elements": {
+                "value": "/luna/users/{user_id}/following"
+              }
+            },
+            {
+              "annotation_item_offset": 9992034,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Ljava/lang/String;",
+                  "Ljava/lang/String;",
+                  "II)",
+                  "Lio/reactivex/Observable<",
+                  "Lcom/luna/common/arch/sync/net/UserFollowListResponse;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "declared_fields": [],
+      "declared_methods": [
+        {
+          "dex_method_index": 33326,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowApi;",
+          "name": "cancelFollowUser",
+          "descriptor": "(Ljava/lang/String;)Lio/reactivex/Observable;",
+          "access_flags": 1025,
+          "code_item_offset": 0
+        },
+        {
+          "dex_method_index": 33327,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowApi;",
+          "name": "followUser",
+          "descriptor": "(Ljava/lang/String;)Lio/reactivex/Observable;",
+          "access_flags": 1025,
+          "code_item_offset": 0
+        },
+        {
+          "dex_method_index": 33328,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowApi;",
+          "name": "getFollower",
+          "descriptor": "(Ljava/lang/String;Ljava/lang/String;II)Lio/reactivex/Observable;",
+          "access_flags": 1025,
+          "code_item_offset": 0
+        },
+        {
+          "dex_method_index": 33329,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowApi;",
+          "name": "getFollowing",
+          "descriptor": "(Ljava/lang/String;Ljava/lang/String;II)Lio/reactivex/Observable;",
+          "access_flags": 1025,
+          "code_item_offset": 0
+        }
+      ],
+      "annotations": [
+        {
+          "annotation_item_offset": 9992084,
+          "visibility": 2,
+          "type": "Ldalvik/annotation/MemberClasses;",
+          "elements": {
+            "value": [
+              {
+                "type_descriptor": "Lcom/luna/common/arch/sync/net/UserFollowApi$Companion;"
+              }
+            ]
+          }
+        },
+        {
+          "annotation_item_offset": 9992096,
+          "visibility": 1,
+          "type": "Lkotlin/Metadata;",
+          "elements": {
+            "d1": [
+              "��,\n\u0002\u0018\u0002\n\u0002\u0010��\n��\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n��\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0004\bf\u0018�� \u00102\u00020\u0001:\u0001\u0010J\u0018\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0001\u0010\u0005\u001a\u00020\u0006H'J\u0018\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\b\b\u0001\u0010\u0005\u001a\u00020\u0006H'J6\u0010\b\u001a\b\u0012\u0004\u0012\u00020\t0\u00032\b\b\u0001\u0010\n\u001a\u00020\u00062\b\b\u0001\u0010\u000b\u001a\u00020\u00062\b\b\u0001\u0010\f\u001a\u00020\r2\b\b\u0001\u0010\u000e\u001a\u00020\rH'J6\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\t0\u00032\b\b\u0001\u0010\n\u001a\u00020\u00062\b\b\u0001\u0010\u000b\u001a\u00020\u00062\b\b\u0001\u0010\f\u001a\u00020\r2\b\b\u0001\u0010\u000e\u001a\u00020\rH'¨\u0006\u0011"
+            ],
+            "d2": [
+              "Lcom/luna/common/arch/sync/net/UserFollowApi;",
+              "",
+              "followUser",
+              "Lio/reactivex/Observable;",
+              "Lcom/luna/common/arch/sync/net/UserFollowResponse;",
+              "toUserId",
+              "",
+              "cancelFollowUser",
+              "getFollowing",
+              "Lcom/luna/common/arch/sync/net/UserFollowListResponse;",
+              "userID",
+              "cursor",
+              "count",
+              "",
+              "sceneType",
+              "getFollower",
+              "Companion",
+              "common-arch_release"
+            ],
+            "k": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "01",
+              "unsigned_value": 1
+            },
+            "mv": [
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "02",
+                "unsigned_value": 2
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              }
+            ],
+            "xi": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "30",
+              "unsigned_value": 48
+            }
+          }
+        }
+      ],
+      "parameter_annotations": [
+        {
+          "dex_method_index": 33326,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowApi;",
+          "name": "cancelFollowUser",
+          "descriptor": "(Ljava/lang/String;)Lio/reactivex/Observable;",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9992004,
+                "visibility": 1,
+                "type": "Lcom/bytedance/retrofit2/http/Field;",
+                "elements": {
+                  "value": "user_id"
+                }
+              },
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 33327,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowApi;",
+          "name": "followUser",
+          "descriptor": "(Ljava/lang/String;)Lio/reactivex/Observable;",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9992004,
+                "visibility": 1,
+                "type": "Lcom/bytedance/retrofit2/http/Field;",
+                "elements": {
+                  "value": "user_id"
+                }
+              },
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 33328,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowApi;",
+          "name": "getFollower",
+          "descriptor": "(Ljava/lang/String;Ljava/lang/String;II)Lio/reactivex/Observable;",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9992064,
+                "visibility": 1,
+                "type": "Lcom/bytedance/retrofit2/http/Path;",
+                "elements": {
+                  "value": "user_id"
+                }
+              },
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9844997,
+                "visibility": 1,
+                "type": "Lcom/bytedance/retrofit2/http/Query;",
+                "elements": {
+                  "value": "cursor"
+                }
+              },
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9844987,
+                "visibility": 1,
+                "type": "Lcom/bytedance/retrofit2/http/Query;",
+                "elements": {
+                  "value": "count"
+                }
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9847991,
+                "visibility": 1,
+                "type": "Lcom/bytedance/retrofit2/http/Query;",
+                "elements": {
+                  "value": "scene"
+                }
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 33329,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowApi;",
+          "name": "getFollowing",
+          "descriptor": "(Ljava/lang/String;Ljava/lang/String;II)Lio/reactivex/Observable;",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9992064,
+                "visibility": 1,
+                "type": "Lcom/bytedance/retrofit2/http/Path;",
+                "elements": {
+                  "value": "user_id"
+                }
+              },
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9844997,
+                "visibility": 1,
+                "type": "Lcom/bytedance/retrofit2/http/Query;",
+                "elements": {
+                  "value": "cursor"
+                }
+              },
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9844987,
+                "visibility": 1,
+                "type": "Lcom/bytedance/retrofit2/http/Query;",
+                "elements": {
+                  "value": "count"
+                }
+              }
+            ],
+            [
+              {
+                "annotation_item_offset": 9847991,
+                "visibility": 1,
+                "type": "Lcom/bytedance/retrofit2/http/Query;",
+                "elements": {
+                  "value": "scene"
+                }
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "class_def_index": 9140,
+      "descriptor": "Lcom/luna/common/arch/sync/net/UserFollowResponse;",
+      "access_flags": 1,
+      "super": "Lcom/luna/common/arch/net/BaseResponse;",
+      "interfaces": [],
+      "class_data_offset": 11089599,
+      "static_values_offset": 0,
+      "fields": [
+        {
+          "dex_field_index": 15084,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowResponse;",
+          "name": "followStatus",
+          "type": "I",
+          "annotations": [
+            {
+              "annotation_item_offset": 10265519,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "follow_status"
+              }
+            }
+          ]
+        },
+        {
+          "dex_field_index": 15086,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowResponse;",
+          "name": "toUserId",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10233367,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "user_id"
+              }
+            },
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "dex_method_index": 33335,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowResponse;",
+          "name": "getToUserId",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "declared_fields": [
+        {
+          "dex_field_index": 15083,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowResponse;",
+          "name": "changeQuickRedirect",
+          "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+          "access_flags": 9
+        },
+        {
+          "dex_field_index": 15084,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowResponse;",
+          "name": "followStatus",
+          "type": "I",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 15085,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowResponse;",
+          "name": "robustFieldMap",
+          "type": "Ljava/lang/Object;",
+          "access_flags": 193
+        },
+        {
+          "dex_field_index": 15086,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowResponse;",
+          "name": "toUserId",
+          "type": "Ljava/lang/String;",
+          "access_flags": 1
+        }
+      ],
+      "declared_methods": [
+        {
+          "dex_method_index": 33333,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowResponse;",
+          "name": "<init>",
+          "descriptor": "()V",
+          "access_flags": 65537,
+          "code_item_offset": 3672452
+        },
+        {
+          "dex_method_index": 33334,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowResponse;",
+          "name": "getFollowStatus",
+          "descriptor": "()I",
+          "access_flags": 17,
+          "code_item_offset": 3672404
+        },
+        {
+          "dex_method_index": 33335,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowResponse;",
+          "name": "getToUserId",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 3672428
+        },
+        {
+          "dex_method_index": 33336,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowResponse;",
+          "name": "setFollowStatus",
+          "descriptor": "(I)V",
+          "access_flags": 17,
+          "code_item_offset": 3672504
+        },
+        {
+          "dex_method_index": 33337,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowResponse;",
+          "name": "setToUserId",
+          "descriptor": "(Ljava/lang/String;)V",
+          "access_flags": 17,
+          "code_item_offset": 3672528
+        }
+      ],
+      "annotations": [
+        {
+          "annotation_item_offset": 10540054,
+          "visibility": 1,
+          "type": "Lkotlin/Metadata;",
+          "elements": {
+            "d1": [
+              "��\u001c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\u0005\u0018��2\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003R \u0010\u0004\u001a\u0004\u0018\u00010\u00058\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0006\u0010\u0007\"\u0004\b\b\u0010\tR\u001e\u0010\n\u001a\u00020\u000b8\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000f¨\u0006\u0010"
+            ],
+            "d2": [
+              "Lcom/luna/common/arch/sync/net/UserFollowResponse;",
+              "Lcom/luna/common/arch/net/BaseResponse;",
+              "<init>",
+              "()V",
+              "toUserId",
+              "",
+              "getToUserId",
+              "()Ljava/lang/String;",
+              "setToUserId",
+              "(Ljava/lang/String;)V",
+              "followStatus",
+              "",
+              "getFollowStatus",
+              "()I",
+              "setFollowStatus",
+              "(I)V",
+              "common-arch_release"
+            ],
+            "k": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "01",
+              "unsigned_value": 1
+            },
+            "mv": [
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "02",
+                "unsigned_value": 2
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              }
+            ],
+            "xi": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "30",
+              "unsigned_value": 48
+            }
+          }
+        }
+      ],
+      "parameter_annotations": [
+        {
+          "dex_method_index": 33337,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowResponse;",
+          "name": "setToUserId",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837382,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "class_def_index": 9367,
+      "descriptor": "Lcom/luna/common/arch/sync/net/UserFollowListResponse;",
+      "access_flags": 1,
+      "super": "Lcom/luna/common/arch/sync/net/BasePageResponse;",
+      "interfaces": [],
+      "class_data_offset": 11109598,
+      "static_values_offset": 0,
+      "fields": [
+        {
+          "dex_field_index": 15082,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowListResponse;",
+          "name": "users",
+          "type": "Ljava/util/ArrayList;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10569576,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "follow_items"
+              }
+            },
+            {
+              "annotation_item_offset": 10569586,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "Ljava/util/ArrayList<",
+                  "Lcom/luna/common/arch/net/entity/MixedFollowItem;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "dex_method_index": 33331,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowListResponse;",
+          "name": "getUsers",
+          "descriptor": "()Ljava/util/ArrayList;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10569534,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "()",
+                  "Ljava/util/ArrayList<",
+                  "Lcom/luna/common/arch/net/entity/MixedFollowItem;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 33332,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowListResponse;",
+          "name": "setUsers",
+          "descriptor": "(Ljava/util/ArrayList;)V",
+          "annotations": [
+            {
+              "annotation_item_offset": 10569555,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Ljava/util/ArrayList<",
+                  "Lcom/luna/common/arch/net/entity/MixedFollowItem;",
+                  ">;)V"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "declared_fields": [
+        {
+          "dex_field_index": 15080,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowListResponse;",
+          "name": "changeQuickRedirect",
+          "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+          "access_flags": 9
+        },
+        {
+          "dex_field_index": 15081,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowListResponse;",
+          "name": "robustFieldMap",
+          "type": "Ljava/lang/Object;",
+          "access_flags": 193
+        },
+        {
+          "dex_field_index": 15082,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowListResponse;",
+          "name": "users",
+          "type": "Ljava/util/ArrayList;",
+          "access_flags": 1
+        }
+      ],
+      "declared_methods": [
+        {
+          "dex_method_index": 33330,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowListResponse;",
+          "name": "<init>",
+          "descriptor": "()V",
+          "access_flags": 65537,
+          "code_item_offset": 3672276
+        },
+        {
+          "dex_method_index": 33331,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowListResponse;",
+          "name": "getUsers",
+          "descriptor": "()Ljava/util/ArrayList;",
+          "access_flags": 17,
+          "code_item_offset": 3672252
+        },
+        {
+          "dex_method_index": 33332,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowListResponse;",
+          "name": "setUsers",
+          "descriptor": "(Ljava/util/ArrayList;)V",
+          "access_flags": 17,
+          "code_item_offset": 3672348
+        }
+      ],
+      "annotations": [
+        {
+          "annotation_item_offset": 10569604,
+          "visibility": 1,
+          "type": "Lkotlin/Metadata;",
+          "elements": {
+            "d1": [
+              "��\u001c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018��2\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003R.\u0010\u0004\u001a\u0012\u0012\u0004\u0012\u00020\u00060\u0005j\b\u0012\u0004\u0012\u00020\u0006`\u00078\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b\b\u0010\t\"\u0004\b\n\u0010\u000b¨\u0006\f"
+            ],
+            "d2": [
+              "Lcom/luna/common/arch/sync/net/UserFollowListResponse;",
+              "Lcom/luna/common/arch/sync/net/BasePageResponse;",
+              "<init>",
+              "()V",
+              "users",
+              "Ljava/util/ArrayList;",
+              "Lcom/luna/common/arch/net/entity/MixedFollowItem;",
+              "Lkotlin/collections/ArrayList;",
+              "getUsers",
+              "()Ljava/util/ArrayList;",
+              "setUsers",
+              "(Ljava/util/ArrayList;)V",
+              "common-arch_release"
+            ],
+            "k": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "01",
+              "unsigned_value": 1
+            },
+            "mv": [
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "02",
+                "unsigned_value": 2
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              }
+            ],
+            "xi": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "30",
+              "unsigned_value": 48
+            }
+          }
+        }
+      ],
+      "parameter_annotations": [
+        {
+          "dex_method_index": 33332,
+          "owner": "Lcom/luna/common/arch/sync/net/UserFollowListResponse;",
+          "name": "setUsers",
+          "descriptor": "(Ljava/util/ArrayList;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "class_def_index": 5569,
+      "descriptor": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+      "access_flags": 1,
+      "super": "Ljava/lang/Object;",
+      "interfaces": [
+        "Lcom/luna/common/tea/json/KeepElement;"
+      ],
+      "class_data_offset": 10879377,
+      "static_values_offset": 0,
+      "fields": [
+        {
+          "dex_field_index": 12997,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "allCommentsLikedDetail",
+          "type": "Lcom/luna/common/arch/net/entity/user/NetAllCommentsLikedDetail;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 13001,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "countCollectedMedia",
+          "type": "Ljava/lang/Long;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "dex_method_index": 27054,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "getAllCommentsLikedDetail",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/user/NetAllCommentsLikedDetail;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 27057,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "getCountCollectedMedia",
+          "descriptor": "()Ljava/lang/Long;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "declared_fields": [
+        {
+          "dex_field_index": 12998,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "changeQuickRedirect",
+          "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+          "access_flags": 9
+        },
+        {
+          "dex_field_index": 12997,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "allCommentsLikedDetail",
+          "type": "Lcom/luna/common/arch/net/entity/user/NetAllCommentsLikedDetail;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12999,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "countAllLiked",
+          "type": "I",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 13000,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "countAsset",
+          "type": "I",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 13001,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "countCollectedMedia",
+          "type": "Ljava/lang/Long;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 13002,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "countFollower",
+          "type": "I",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 13003,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "countFollowing",
+          "type": "I",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 13004,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "countLunaFollower",
+          "type": "I",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 13005,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "countLunaFollowing",
+          "type": "I",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 13006,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "robustFieldMap",
+          "type": "Ljava/lang/Object;",
+          "access_flags": 193
+        }
+      ],
+      "declared_methods": [
+        {
+          "dex_method_index": 27052,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "<init>",
+          "descriptor": "()V",
+          "access_flags": 65537,
+          "code_item_offset": 3287400
+        },
+        {
+          "dex_method_index": 27053,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "appendToUser",
+          "descriptor": "(Lcom/luna/common/arch/db/entity/User;)V",
+          "access_flags": 17,
+          "code_item_offset": 3287452
+        },
+        {
+          "dex_method_index": 27054,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "getAllCommentsLikedDetail",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/user/NetAllCommentsLikedDetail;",
+          "access_flags": 17,
+          "code_item_offset": 3287208
+        },
+        {
+          "dex_method_index": 27055,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "getCountAllLiked",
+          "descriptor": "()I",
+          "access_flags": 17,
+          "code_item_offset": 3287232
+        },
+        {
+          "dex_method_index": 27056,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "getCountAsset",
+          "descriptor": "()I",
+          "access_flags": 17,
+          "code_item_offset": 3287256
+        },
+        {
+          "dex_method_index": 27057,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "getCountCollectedMedia",
+          "descriptor": "()Ljava/lang/Long;",
+          "access_flags": 17,
+          "code_item_offset": 3287376
+        },
+        {
+          "dex_method_index": 27058,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "getCountFollower",
+          "descriptor": "()I",
+          "access_flags": 17,
+          "code_item_offset": 3287280
+        },
+        {
+          "dex_method_index": 27059,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "getCountFollowing",
+          "descriptor": "()I",
+          "access_flags": 17,
+          "code_item_offset": 3287304
+        },
+        {
+          "dex_method_index": 27060,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "getCountLunaFollower",
+          "descriptor": "()I",
+          "access_flags": 17,
+          "code_item_offset": 3287328
+        },
+        {
+          "dex_method_index": 27061,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "getCountLunaFollowing",
+          "descriptor": "()I",
+          "access_flags": 17,
+          "code_item_offset": 3287352
+        },
+        {
+          "dex_method_index": 27062,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "setCountAllLiked",
+          "descriptor": "(I)V",
+          "access_flags": 17,
+          "code_item_offset": 3287600
+        },
+        {
+          "dex_method_index": 27063,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "setCountAsset",
+          "descriptor": "(I)V",
+          "access_flags": 17,
+          "code_item_offset": 3287624
+        },
+        {
+          "dex_method_index": 27064,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "setCountFollower",
+          "descriptor": "(I)V",
+          "access_flags": 17,
+          "code_item_offset": 3287648
+        },
+        {
+          "dex_method_index": 27065,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "setCountFollowing",
+          "descriptor": "(I)V",
+          "access_flags": 17,
+          "code_item_offset": 3287672
+        },
+        {
+          "dex_method_index": 27066,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "setCountLunaFollower",
+          "descriptor": "(I)V",
+          "access_flags": 17,
+          "code_item_offset": 3287696
+        },
+        {
+          "dex_method_index": 27067,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "setCountLunaFollowing",
+          "descriptor": "(I)V",
+          "access_flags": 17,
+          "code_item_offset": 3287720
+        }
+      ],
+      "annotations": [
+        {
+          "annotation_item_offset": 10289896,
+          "visibility": 1,
+          "type": "Lkotlin/Metadata;",
+          "elements": {
+            "d1": [
+              "��0\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0014\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\t\n\u0002\b\u0004\n\u0002\u0010\u0002\n��\n\u0002\u0018\u0002\n��\u0018��2\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003J\u000e\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020%R\u001a\u0010\u0004\u001a\u00020\u0005X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0006\u0010\u0007\"\u0004\b\b\u0010\tR\u001a\u0010\n\u001a\u00020\u0005X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u000b\u0010\u0007\"\u0004\b\f\u0010\tR\u001a\u0010\r\u001a\u00020\u0005X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u000e\u0010\u0007\"\u0004\b\u000f\u0010\tR\u001a\u0010\u0010\u001a\u00020\u0005X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0011\u0010\u0007\"\u0004\b\u0012\u0010\tR\u001a\u0010\u0013\u001a\u00020\u0005X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0014\u0010\u0007\"\u0004\b\u0015\u0010\tR\u001a\u0010\u0016\u001a\u00020\u0005X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0017\u0010\u0007\"\u0004\b\u0018\u0010\tR\u0013\u0010\u0019\u001a\u0004\u0018\u00010\u001a¢\u0006\b\n��\u001a\u0004\b\u001b\u0010\u001cR\u0015\u0010\u001d\u001a\u0004\u0018\u00010\u001e¢\u0006\n\n\u0002\u0010!\u001a\u0004\b\u001f\u0010 ¨\u0006&"
+            ],
+            "d2": [
+              "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+              "Lcom/luna/common/tea/json/KeepElement;",
+              "<init>",
+              "()V",
+              "countAllLiked",
+              "",
+              "getCountAllLiked",
+              "()I",
+              "setCountAllLiked",
+              "(I)V",
+              "countFollowing",
+              "getCountFollowing",
+              "setCountFollowing",
+              "countFollower",
+              "getCountFollower",
+              "setCountFollower",
+              "countLunaFollowing",
+              "getCountLunaFollowing",
+              "setCountLunaFollowing",
+              "countLunaFollower",
+              "getCountLunaFollower",
+              "setCountLunaFollower",
+              "countAsset",
+              "getCountAsset",
+              "setCountAsset",
+              "allCommentsLikedDetail",
+              "Lcom/luna/common/arch/net/entity/user/NetAllCommentsLikedDetail;",
+              "getAllCommentsLikedDetail",
+              "()Lcom/luna/common/arch/net/entity/user/NetAllCommentsLikedDetail;",
+              "countCollectedMedia",
+              "",
+              "getCountCollectedMedia",
+              "()Ljava/lang/Long;",
+              "Ljava/lang/Long;",
+              "appendToUser",
+              "",
+              "user",
+              "Lcom/luna/common/arch/db/entity/User;",
+              "common-arch_release"
+            ],
+            "k": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "01",
+              "unsigned_value": 1
+            },
+            "mv": [
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "02",
+                "unsigned_value": 2
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              }
+            ],
+            "xi": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "30",
+              "unsigned_value": 48
+            }
+          }
+        }
+      ],
+      "parameter_annotations": [
+        {
+          "dex_method_index": 27053,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetUserStats;",
+          "name": "appendToUser",
+          "descriptor": "(Lcom/luna/common/arch/db/entity/User;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "class_def_index": 5565,
+      "descriptor": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+      "access_flags": 1,
+      "super": "Ljava/lang/Object;",
+      "interfaces": [
+        "Lcom/luna/common/tea/json/KeepElement;"
+      ],
+      "class_data_offset": 10878316,
+      "static_values_offset": 0,
+      "fields": [
+        {
+          "dex_field_index": 12905,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "aiCreatorInfo",
+          "type": "Lcom/luna/common/arch/net/entity/user/AiCreatorInfo;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10288668,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "ai_creator_info"
+              }
+            },
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12906,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "aiCreatorStatus",
+          "type": "Ljava/lang/Integer;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12907,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "artistBrief",
+          "type": "Lcom/luna/common/arch/net/entity/artist/ArtistBrief;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10288718,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "artist_brief"
+              }
+            },
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12908,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "artistId",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10233377,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "artist_id"
+              }
+            },
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12909,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "avatarFrame",
+          "type": "Lcom/luna/common/arch/net/entity/AvatarFrameResource;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12910,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "banUserFunctions",
+          "type": "Ljava/util/ArrayList;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10288698,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "ban_user_functions"
+              }
+            },
+            {
+              "annotation_item_offset": 10160568,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "Ljava/util/ArrayList<",
+                  "Ljava/lang/Integer;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12911,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "birthday",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12914,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "displayLocations",
+          "type": "Ljava/util/List;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9869930,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "Ljava/util/List<",
+                  "Ljava/lang/String;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12915,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "douyinId",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12916,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "enableAppList",
+          "type": "Z",
+          "annotations": [
+            {
+              "annotation_item_offset": 10288768,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "enable_app_list"
+              }
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12917,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "gender",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12918,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "id",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12919,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "ipLocation",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12920,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "isLiveActive",
+          "type": "Z",
+          "annotations": [
+            {
+              "annotation_item_offset": 10288758,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "is_live_active"
+              }
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12921,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "isMusicCurator",
+          "type": "Z",
+          "annotations": [
+            {
+              "annotation_item_offset": 10288678,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "is_music_curator"
+              }
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12923,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "isVip",
+          "type": "Z",
+          "annotations": [
+            {
+              "annotation_item_offset": 10288748,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "is_vip"
+              }
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12924,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "largerAvatarUrl",
+          "type": "Lcom/luna/common/arch/net/entity/UrlInfo;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12925,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "location",
+          "type": "Lcom/luna/common/arch/net/entity/profile/UserLocation;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12926,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "lunaRegisterTime",
+          "type": "J",
+          "annotations": [
+            {
+              "annotation_item_offset": 10288688,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "luna_register_time"
+              }
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12927,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "maskedPhoneNo",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10288728,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "masked_phone_no"
+              }
+            },
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12928,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "mediumAvatarUrl",
+          "type": "Lcom/luna/common/arch/net/entity/UrlInfo;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12929,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "nickname",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12932,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "school",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12933,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "schoolInfo",
+          "type": "Lcom/luna/common/arch/net/entity/profile/UserSchool;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12934,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "secUid",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10288738,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "sec_uid"
+              }
+            },
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12936,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "signature",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12937,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "userArtistType",
+          "type": "I",
+          "annotations": [
+            {
+              "annotation_item_offset": 10288708,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "user_artist_type"
+              }
+            }
+          ]
+        },
+        {
+          "dex_field_index": 12938,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "vipStage",
+          "type": "Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10273935,
+              "visibility": 1,
+              "type": "Lcom/google/gson/annotations/SerializedName;",
+              "elements": {
+                "value": "vip_stage"
+              }
+            },
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "dex_method_index": 26900,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getAiCreatorInfo",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/user/AiCreatorInfo;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26901,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getAiCreatorStatus",
+          "descriptor": "()Ljava/lang/Integer;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26902,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getArtistBrief",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/artist/ArtistBrief;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26903,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getArtistId",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26904,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getAvatarFrame",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/AvatarFrameResource;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26905,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getBanUserFunctions",
+          "descriptor": "()Ljava/util/ArrayList;",
+          "annotations": [
+            {
+              "annotation_item_offset": 10160526,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "()",
+                  "Ljava/util/ArrayList<",
+                  "Ljava/lang/Integer;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26906,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getBirthday",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26908,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getDisplayLocations",
+          "descriptor": "()Ljava/util/List;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9869869,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "()",
+                  "Ljava/util/List<",
+                  "Ljava/lang/String;",
+                  ">;"
+                ]
+              }
+            },
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26909,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getDouyinId",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26911,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getGender",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26912,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getId",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26913,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getIpLocation",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26914,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getLargerAvatarUrl",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/UrlInfo;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26915,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getLocation",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/profile/UserLocation;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26917,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getMaskedPhoneNo",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26918,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getMediumAvatarUrl",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/UrlInfo;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26919,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getNickname",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26921,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getSchool",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26922,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getSchoolInfo",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/profile/UserSchool;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26923,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getSecUid",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26925,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getSignature",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837174,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/NotNull;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26927,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getVipStage",
+          "descriptor": "()Ljava/lang/String;",
+          "annotations": [
+            {
+              "annotation_item_offset": 9837382,
+              "visibility": 0,
+              "type": "Lorg/jetbrains/annotations/Nullable;",
+              "elements": {}
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26938,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setBanUserFunctions",
+          "descriptor": "(Ljava/util/ArrayList;)V",
+          "annotations": [
+            {
+              "annotation_item_offset": 10288647,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Ljava/util/ArrayList<",
+                  "Ljava/lang/Integer;",
+                  ">;)V"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "dex_method_index": 26941,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setDisplayLocations",
+          "descriptor": "(Ljava/util/List;)V",
+          "annotations": [
+            {
+              "annotation_item_offset": 9875863,
+              "visibility": 2,
+              "type": "Ldalvik/annotation/Signature;",
+              "elements": {
+                "value": [
+                  "(",
+                  "Ljava/util/List<",
+                  "Ljava/lang/String;",
+                  ">;)V"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "declared_fields": [
+        {
+          "dex_field_index": 12913,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "changeQuickRedirect",
+          "type": "Lcom/bytedance/hotfix/base/ChangeQuickRedirect;",
+          "access_flags": 9
+        },
+        {
+          "dex_field_index": 12904,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "age",
+          "type": "I",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12905,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "aiCreatorInfo",
+          "type": "Lcom/luna/common/arch/net/entity/user/AiCreatorInfo;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12906,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "aiCreatorStatus",
+          "type": "Ljava/lang/Integer;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12907,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "artistBrief",
+          "type": "Lcom/luna/common/arch/net/entity/artist/ArtistBrief;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12908,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "artistId",
+          "type": "Ljava/lang/String;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12909,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "avatarFrame",
+          "type": "Lcom/luna/common/arch/net/entity/AvatarFrameResource;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12910,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "banUserFunctions",
+          "type": "Ljava/util/ArrayList;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12911,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "birthday",
+          "type": "Ljava/lang/String;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12912,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "birthdayHideLevel",
+          "type": "I",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12914,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "displayLocations",
+          "type": "Ljava/util/List;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12915,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "douyinId",
+          "type": "Ljava/lang/String;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12916,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "enableAppList",
+          "type": "Z",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12917,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "gender",
+          "type": "Ljava/lang/String;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12918,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "id",
+          "type": "Ljava/lang/String;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12919,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "ipLocation",
+          "type": "Ljava/lang/String;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12920,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "isLiveActive",
+          "type": "Z",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12921,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "isMusicCurator",
+          "type": "Z",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12922,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "isMusician",
+          "type": "Z",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12923,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "isVip",
+          "type": "Z",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12924,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "largerAvatarUrl",
+          "type": "Lcom/luna/common/arch/net/entity/UrlInfo;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12925,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "location",
+          "type": "Lcom/luna/common/arch/net/entity/profile/UserLocation;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12926,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "lunaRegisterTime",
+          "type": "J",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12927,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "maskedPhoneNo",
+          "type": "Ljava/lang/String;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12928,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "mediumAvatarUrl",
+          "type": "Lcom/luna/common/arch/net/entity/UrlInfo;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12929,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "nickname",
+          "type": "Ljava/lang/String;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12930,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "profileHideLevel",
+          "type": "I",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12931,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "robustFieldMap",
+          "type": "Ljava/lang/Object;",
+          "access_flags": 193
+        },
+        {
+          "dex_field_index": 12932,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "school",
+          "type": "Ljava/lang/String;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12933,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "schoolInfo",
+          "type": "Lcom/luna/common/arch/net/entity/profile/UserSchool;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12934,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "secUid",
+          "type": "Ljava/lang/String;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12935,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "secret",
+          "type": "Z",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12936,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "signature",
+          "type": "Ljava/lang/String;",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12937,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "userArtistType",
+          "type": "I",
+          "access_flags": 1
+        },
+        {
+          "dex_field_index": 12938,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "vipStage",
+          "type": "Ljava/lang/String;",
+          "access_flags": 1
+        }
+      ],
+      "declared_methods": [
+        {
+          "dex_method_index": 26897,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "<init>",
+          "descriptor": "()V",
+          "access_flags": 65537,
+          "code_item_offset": 3283380
+        },
+        {
+          "dex_method_index": 26898,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "appendToUser",
+          "descriptor": "(Lcom/luna/common/arch/db/entity/User;)V",
+          "access_flags": 17,
+          "code_item_offset": 3283564
+        },
+        {
+          "dex_method_index": 26899,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getAge",
+          "descriptor": "()I",
+          "access_flags": 17,
+          "code_item_offset": 3282900
+        },
+        {
+          "dex_method_index": 26900,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getAiCreatorInfo",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/user/AiCreatorInfo;",
+          "access_flags": 17,
+          "code_item_offset": 3282876
+        },
+        {
+          "dex_method_index": 26901,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getAiCreatorStatus",
+          "descriptor": "()Ljava/lang/Integer;",
+          "access_flags": 17,
+          "code_item_offset": 3282996
+        },
+        {
+          "dex_method_index": 26902,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getArtistBrief",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/artist/ArtistBrief;",
+          "access_flags": 17,
+          "code_item_offset": 3282804
+        },
+        {
+          "dex_method_index": 26903,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getArtistId",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 3283020
+        },
+        {
+          "dex_method_index": 26904,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getAvatarFrame",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/AvatarFrameResource;",
+          "access_flags": 17,
+          "code_item_offset": 3282732
+        },
+        {
+          "dex_method_index": 26905,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getBanUserFunctions",
+          "descriptor": "()Ljava/util/ArrayList;",
+          "access_flags": 17,
+          "code_item_offset": 3283308
+        },
+        {
+          "dex_method_index": 26906,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getBirthday",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 3283044
+        },
+        {
+          "dex_method_index": 26907,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getBirthdayHideLevel",
+          "descriptor": "()I",
+          "access_flags": 17,
+          "code_item_offset": 3282924
+        },
+        {
+          "dex_method_index": 26908,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getDisplayLocations",
+          "descriptor": "()Ljava/util/List;",
+          "access_flags": 17,
+          "code_item_offset": 3283332
+        },
+        {
+          "dex_method_index": 26909,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getDouyinId",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 3283068
+        },
+        {
+          "dex_method_index": 26910,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getEnableAppList",
+          "descriptor": "()Z",
+          "access_flags": 17,
+          "code_item_offset": 3282588
+        },
+        {
+          "dex_method_index": 26911,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getGender",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 3283092
+        },
+        {
+          "dex_method_index": 26912,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getId",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 3283116
+        },
+        {
+          "dex_method_index": 26913,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getIpLocation",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 3283140
+        },
+        {
+          "dex_method_index": 26914,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getLargerAvatarUrl",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/UrlInfo;",
+          "access_flags": 17,
+          "code_item_offset": 3282756
+        },
+        {
+          "dex_method_index": 26915,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getLocation",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/profile/UserLocation;",
+          "access_flags": 17,
+          "code_item_offset": 3282828
+        },
+        {
+          "dex_method_index": 26916,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getLunaRegisterTime",
+          "descriptor": "()J",
+          "access_flags": 17,
+          "code_item_offset": 3283356
+        },
+        {
+          "dex_method_index": 26917,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getMaskedPhoneNo",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 3283164
+        },
+        {
+          "dex_method_index": 26918,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getMediumAvatarUrl",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/UrlInfo;",
+          "access_flags": 17,
+          "code_item_offset": 3282780
+        },
+        {
+          "dex_method_index": 26919,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getNickname",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 3283188
+        },
+        {
+          "dex_method_index": 26920,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getProfileHideLevel",
+          "descriptor": "()I",
+          "access_flags": 17,
+          "code_item_offset": 3282948
+        },
+        {
+          "dex_method_index": 26921,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getSchool",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 3283212
+        },
+        {
+          "dex_method_index": 26922,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getSchoolInfo",
+          "descriptor": "()Lcom/luna/common/arch/net/entity/profile/UserSchool;",
+          "access_flags": 17,
+          "code_item_offset": 3282852
+        },
+        {
+          "dex_method_index": 26923,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getSecUid",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 3283236
+        },
+        {
+          "dex_method_index": 26924,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getSecret",
+          "descriptor": "()Z",
+          "access_flags": 17,
+          "code_item_offset": 3282612
+        },
+        {
+          "dex_method_index": 26925,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getSignature",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 3283260
+        },
+        {
+          "dex_method_index": 26926,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getUserArtistType",
+          "descriptor": "()I",
+          "access_flags": 17,
+          "code_item_offset": 3282972
+        },
+        {
+          "dex_method_index": 26927,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "getVipStage",
+          "descriptor": "()Ljava/lang/String;",
+          "access_flags": 17,
+          "code_item_offset": 3283284
+        },
+        {
+          "dex_method_index": 26928,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "isLiveActive",
+          "descriptor": "()Z",
+          "access_flags": 17,
+          "code_item_offset": 3282636
+        },
+        {
+          "dex_method_index": 26929,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "isMusicCurator",
+          "descriptor": "()Z",
+          "access_flags": 17,
+          "code_item_offset": 3282660
+        },
+        {
+          "dex_method_index": 26930,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "isMusician",
+          "descriptor": "()Z",
+          "access_flags": 17,
+          "code_item_offset": 3282684
+        },
+        {
+          "dex_method_index": 26931,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "isVip",
+          "descriptor": "()Z",
+          "access_flags": 17,
+          "code_item_offset": 3282708
+        },
+        {
+          "dex_method_index": 26932,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setAge",
+          "descriptor": "(I)V",
+          "access_flags": 17,
+          "code_item_offset": 3284044
+        },
+        {
+          "dex_method_index": 26933,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setAiCreatorInfo",
+          "descriptor": "(Lcom/luna/common/arch/net/entity/user/AiCreatorInfo;)V",
+          "access_flags": 17,
+          "code_item_offset": 3284068
+        },
+        {
+          "dex_method_index": 26934,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setAiCreatorStatus",
+          "descriptor": "(Ljava/lang/Integer;)V",
+          "access_flags": 17,
+          "code_item_offset": 3284092
+        },
+        {
+          "dex_method_index": 26935,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setArtistBrief",
+          "descriptor": "(Lcom/luna/common/arch/net/entity/artist/ArtistBrief;)V",
+          "access_flags": 17,
+          "code_item_offset": 3284116
+        },
+        {
+          "dex_method_index": 26936,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setArtistId",
+          "descriptor": "(Ljava/lang/String;)V",
+          "access_flags": 17,
+          "code_item_offset": 3284140
+        },
+        {
+          "dex_method_index": 26937,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setAvatarFrame",
+          "descriptor": "(Lcom/luna/common/arch/net/entity/AvatarFrameResource;)V",
+          "access_flags": 17,
+          "code_item_offset": 3284196
+        },
+        {
+          "dex_method_index": 26938,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setBanUserFunctions",
+          "descriptor": "(Ljava/util/ArrayList;)V",
+          "access_flags": 17,
+          "code_item_offset": 3284252
+        },
+        {
+          "dex_method_index": 26939,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setBirthday",
+          "descriptor": "(Ljava/lang/String;)V",
+          "access_flags": 17,
+          "code_item_offset": 3284276
+        },
+        {
+          "dex_method_index": 26940,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setBirthdayHideLevel",
+          "descriptor": "(I)V",
+          "access_flags": 17,
+          "code_item_offset": 3284332
+        },
+        {
+          "dex_method_index": 26941,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setDisplayLocations",
+          "descriptor": "(Ljava/util/List;)V",
+          "access_flags": 17,
+          "code_item_offset": 3284356
+        },
+        {
+          "dex_method_index": 26942,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setDouyinId",
+          "descriptor": "(Ljava/lang/String;)V",
+          "access_flags": 17,
+          "code_item_offset": 3284380
+        },
+        {
+          "dex_method_index": 26943,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setEnableAppList",
+          "descriptor": "(Z)V",
+          "access_flags": 17,
+          "code_item_offset": 3284436
+        },
+        {
+          "dex_method_index": 26944,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setGender",
+          "descriptor": "(Ljava/lang/String;)V",
+          "access_flags": 17,
+          "code_item_offset": 3284460
+        },
+        {
+          "dex_method_index": 26945,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setId",
+          "descriptor": "(Ljava/lang/String;)V",
+          "access_flags": 17,
+          "code_item_offset": 3284516
+        },
+        {
+          "dex_method_index": 26946,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setIpLocation",
+          "descriptor": "(Ljava/lang/String;)V",
+          "access_flags": 17,
+          "code_item_offset": 3284572
+        },
+        {
+          "dex_method_index": 26947,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setLargerAvatarUrl",
+          "descriptor": "(Lcom/luna/common/arch/net/entity/UrlInfo;)V",
+          "access_flags": 17,
+          "code_item_offset": 3284628
+        },
+        {
+          "dex_method_index": 26948,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setLiveActive",
+          "descriptor": "(Z)V",
+          "access_flags": 17,
+          "code_item_offset": 3284684
+        },
+        {
+          "dex_method_index": 26949,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setLocation",
+          "descriptor": "(Lcom/luna/common/arch/net/entity/profile/UserLocation;)V",
+          "access_flags": 17,
+          "code_item_offset": 3284708
+        },
+        {
+          "dex_method_index": 26950,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setLunaRegisterTime",
+          "descriptor": "(J)V",
+          "access_flags": 17,
+          "code_item_offset": 3284732
+        },
+        {
+          "dex_method_index": 26951,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setMaskedPhoneNo",
+          "descriptor": "(Ljava/lang/String;)V",
+          "access_flags": 17,
+          "code_item_offset": 3284756
+        },
+        {
+          "dex_method_index": 26952,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setMediumAvatarUrl",
+          "descriptor": "(Lcom/luna/common/arch/net/entity/UrlInfo;)V",
+          "access_flags": 17,
+          "code_item_offset": 3284780
+        },
+        {
+          "dex_method_index": 26953,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setMusicCurator",
+          "descriptor": "(Z)V",
+          "access_flags": 17,
+          "code_item_offset": 3284836
+        },
+        {
+          "dex_method_index": 26954,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setMusician",
+          "descriptor": "(Z)V",
+          "access_flags": 17,
+          "code_item_offset": 3284860
+        },
+        {
+          "dex_method_index": 26955,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setNickname",
+          "descriptor": "(Ljava/lang/String;)V",
+          "access_flags": 17,
+          "code_item_offset": 3284884
+        },
+        {
+          "dex_method_index": 26956,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setProfileHideLevel",
+          "descriptor": "(I)V",
+          "access_flags": 17,
+          "code_item_offset": 3284940
+        },
+        {
+          "dex_method_index": 26957,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setSchool",
+          "descriptor": "(Ljava/lang/String;)V",
+          "access_flags": 17,
+          "code_item_offset": 3284964
+        },
+        {
+          "dex_method_index": 26958,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setSchoolInfo",
+          "descriptor": "(Lcom/luna/common/arch/net/entity/profile/UserSchool;)V",
+          "access_flags": 17,
+          "code_item_offset": 3285020
+        },
+        {
+          "dex_method_index": 26959,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setSecUid",
+          "descriptor": "(Ljava/lang/String;)V",
+          "access_flags": 17,
+          "code_item_offset": 3285044
+        },
+        {
+          "dex_method_index": 26960,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setSecret",
+          "descriptor": "(Z)V",
+          "access_flags": 17,
+          "code_item_offset": 3285068
+        },
+        {
+          "dex_method_index": 26961,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setSignature",
+          "descriptor": "(Ljava/lang/String;)V",
+          "access_flags": 17,
+          "code_item_offset": 3285092
+        },
+        {
+          "dex_method_index": 26962,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setUserArtistType",
+          "descriptor": "(I)V",
+          "access_flags": 17,
+          "code_item_offset": 3285148
+        },
+        {
+          "dex_method_index": 26963,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setVip",
+          "descriptor": "(Z)V",
+          "access_flags": 17,
+          "code_item_offset": 3285172
+        },
+        {
+          "dex_method_index": 26964,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setVipStage",
+          "descriptor": "(Ljava/lang/String;)V",
+          "access_flags": 17,
+          "code_item_offset": 3285196
+        }
+      ],
+      "annotations": [
+        {
+          "annotation_item_offset": 10288778,
+          "visibility": 1,
+          "type": "Lkotlin/Metadata;",
+          "elements": {
+            "d1": [
+              "��|\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010 \n\u0002\b\b\n\u0002\u0010\u000b\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\t\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0015\n\u0002\u0010\u0002\n��\n\u0002\u0018\u0002\n��\u0018��2\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003J\u0012\u0010\u0001\u001a\u00030\u00012\b\u0010\u0001\u001a\u00030\u0001R\u001a\u0010\u0004\u001a\u00020\u0005X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0006\u0010\u0007\"\u0004\b\b\u0010\tR\u001a\u0010\n\u001a\u00020\u0005X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u000b\u0010\u0007\"\u0004\b\f\u0010\tR\u001a\u0010\r\u001a\u00020\u0005X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u000e\u0010\u0007\"\u0004\b\u000f\u0010\tR\u001a\u0010\u0010\u001a\u00020\u0005X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0011\u0010\u0007\"\u0004\b\u0012\u0010\tR\u001a\u0010\u0013\u001a\u00020\u0014X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u0015\u0010\u0016\"\u0004\b\u0017\u0010\u0018R\u001a\u0010\u0019\u001a\u00020\u0014X\u000e¢\u0006\u000e\n��\u001a\u0004\b\u001a\u0010\u0016\"\u0004\b\u001b\u0010\u0018R\u001a\u0010\u001c\u001a\u00020\u001dX\u000e¢\u0006\u000e\n��\u001a\u0004\b\u001e\u0010\u001f\"\u0004\b \u0010!R\u001a\u0010\"\u001a\u00020\u0005X\u000e¢\u0006\u000e\n��\u001a\u0004\b#\u0010\u0007\"\u0004\b$\u0010\tR\u001a\u0010%\u001a\u00020\u0005X\u000e¢\u0006\u000e\n��\u001a\u0004\b&\u0010\u0007\"\u0004\b'\u0010\tR\u001a\u0010(\u001a\u00020)X\u000e¢\u0006\u000e\n��\u001a\u0004\b*\u0010+\"\u0004\b,\u0010-R\"\u0010.\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010/X\u000e¢\u0006\u000e\n��\u001a\u0004\b0\u00101\"\u0004\b2\u00103R\u001a\u00104\u001a\u00020\u0005X\u000e¢\u0006\u000e\n��\u001a\u0004\b5\u0010\u0007\"\u0004\b6\u0010\tR\u001a\u00107\u001a\u000208X\u000e¢\u0006\u000e\n��\u001a\u0004\b9\u0010:\"\u0004\b;\u0010<R\u001e\u0010=\u001a\u00020\u00058\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b>\u0010\u0007\"\u0004\b?\u0010\tR\u001a\u0010@\u001a\u00020\u0005X\u000e¢\u0006\u000e\n��\u001a\u0004\bA\u0010\u0007\"\u0004\bB\u0010\tR\u001a\u0010C\u001a\u00020)X\u000e¢\u0006\u000e\n��\u001a\u0004\bD\u0010+\"\u0004\bE\u0010-R\u001c\u0010F\u001a\u0004\u0018\u00010GX\u000e¢\u0006\u000e\n��\u001a\u0004\bH\u0010I\"\u0004\bJ\u0010KR\u001c\u0010L\u001a\u0004\u0018\u00010MX\u000e¢\u0006\u000e\n��\u001a\u0004\bN\u0010O\"\u0004\bP\u0010QR\u001a\u0010R\u001a\u00020)X\u000e¢\u0006\u000e\n��\u001a\u0004\bS\u0010+\"\u0004\bT\u0010-R\u001e\u0010U\u001a\u0004\u0018\u00010)X\u000e¢\u0006\u0010\n\u0002\u0010Z\u001a\u0004\bV\u0010W\"\u0004\bX\u0010YR \u0010[\u001a\u0004\u0018\u00010\\8\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b]\u0010^\"\u0004\b_\u0010`R\u001e\u0010a\u001a\u0002088\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\ba\u0010:\"\u0004\bb\u0010<R\u001e\u0010c\u001a\u00020d8\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\be\u0010f\"\u0004\bg\u0010hR2\u0010i\u001a\u0016\u0012\u0004\u0012\u00020)\u0018\u00010jj\n\u0012\u0004\u0012\u00020)\u0018\u0001`k8\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\bl\u0010m\"\u0004\bn\u0010oR\u001a\u0010p\u001a\u000208X\u000e¢\u0006\u000e\n��\u001a\u0004\bp\u0010:\"\u0004\bq\u0010<R\u001e\u0010r\u001a\u00020)8\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\bs\u0010+\"\u0004\bt\u0010-R \u0010u\u001a\u0004\u0018\u00010v8\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\bw\u0010x\"\u0004\by\u0010zR \u0010{\u001a\u0004\u0018\u00010\u00058\u0006@\u0006X\u000e¢\u0006\u000e\n��\u001a\u0004\b|\u0010\u0007\"\u0004\b}\u0010\tR!\u0010~\u001a\u0004\u0018\u00010\u00058\u0006@\u0006X\u000e¢\u0006\u000f\n��\u001a\u0004\b\u0010\u0007\"\u0005\b\u0001\u0010\tR!\u0010\u0001\u001a\u0002088\u0006@\u0006X\u000e¢\u0006\u0010\n��\u001a\u0005\b\u0001\u0010:\"\u0005\b\u0001\u0010<R#\u0010\u0001\u001a\u0004\u0018\u00010\u00058\u0006@\u0006X\u000e¢\u0006\u0010\n��\u001a\u0005\b\u0001\u0010\u0007\"\u0005\b\u0001\u0010\tR!\u0010\u0001\u001a\u0002088\u0006@\u0006X\u000e¢\u0006\u0010\n��\u001a\u0005\b\u0001\u0010:\"\u0005\b\u0001\u0010<R!\u0010\u0001\u001a\u0002088\u0006@\u0006X\u000e¢\u0006\u0010\n��\u001a\u0005\b\u0001\u0010:\"\u0005\b\u0001\u0010<¨\u0006\u0001"
+            ],
+            "d2": [
+              "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+              "Lcom/luna/common/tea/json/KeepElement;",
+              "<init>",
+              "()V",
+              "id",
+              "",
+              "getId",
+              "()Ljava/lang/String;",
+              "setId",
+              "(Ljava/lang/String;)V",
+              "nickname",
+              "getNickname",
+              "setNickname",
+              "douyinId",
+              "getDouyinId",
+              "setDouyinId",
+              "ipLocation",
+              "getIpLocation",
+              "setIpLocation",
+              "largerAvatarUrl",
+              "Lcom/luna/common/arch/net/entity/UrlInfo;",
+              "getLargerAvatarUrl",
+              "()Lcom/luna/common/arch/net/entity/UrlInfo;",
+              "setLargerAvatarUrl",
+              "(Lcom/luna/common/arch/net/entity/UrlInfo;)V",
+              "mediumAvatarUrl",
+              "getMediumAvatarUrl",
+              "setMediumAvatarUrl",
+              "avatarFrame",
+              "Lcom/luna/common/arch/net/entity/AvatarFrameResource;",
+              "getAvatarFrame",
+              "()Lcom/luna/common/arch/net/entity/AvatarFrameResource;",
+              "setAvatarFrame",
+              "(Lcom/luna/common/arch/net/entity/AvatarFrameResource;)V",
+              "signature",
+              "getSignature",
+              "setSignature",
+              "gender",
+              "getGender",
+              "setGender",
+              "age",
+              "",
+              "getAge",
+              "()I",
+              "setAge",
+              "(I)V",
+              "displayLocations",
+              "",
+              "getDisplayLocations",
+              "()Ljava/util/List;",
+              "setDisplayLocations",
+              "(Ljava/util/List;)V",
+              "school",
+              "getSchool",
+              "setSchool",
+              "secret",
+              "",
+              "getSecret",
+              "()Z",
+              "setSecret",
+              "(Z)V",
+              "artistId",
+              "getArtistId",
+              "setArtistId",
+              "birthday",
+              "getBirthday",
+              "setBirthday",
+              "birthdayHideLevel",
+              "getBirthdayHideLevel",
+              "setBirthdayHideLevel",
+              "location",
+              "Lcom/luna/common/arch/net/entity/profile/UserLocation;",
+              "getLocation",
+              "()Lcom/luna/common/arch/net/entity/profile/UserLocation;",
+              "setLocation",
+              "(Lcom/luna/common/arch/net/entity/profile/UserLocation;)V",
+              "schoolInfo",
+              "Lcom/luna/common/arch/net/entity/profile/UserSchool;",
+              "getSchoolInfo",
+              "()Lcom/luna/common/arch/net/entity/profile/UserSchool;",
+              "setSchoolInfo",
+              "(Lcom/luna/common/arch/net/entity/profile/UserSchool;)V",
+              "profileHideLevel",
+              "getProfileHideLevel",
+              "setProfileHideLevel",
+              "aiCreatorStatus",
+              "getAiCreatorStatus",
+              "()Ljava/lang/Integer;",
+              "setAiCreatorStatus",
+              "(Ljava/lang/Integer;)V",
+              "Ljava/lang/Integer;",
+              "aiCreatorInfo",
+              "Lcom/luna/common/arch/net/entity/user/AiCreatorInfo;",
+              "getAiCreatorInfo",
+              "()Lcom/luna/common/arch/net/entity/user/AiCreatorInfo;",
+              "setAiCreatorInfo",
+              "(Lcom/luna/common/arch/net/entity/user/AiCreatorInfo;)V",
+              "isMusicCurator",
+              "setMusicCurator",
+              "lunaRegisterTime",
+              "",
+              "getLunaRegisterTime",
+              "()J",
+              "setLunaRegisterTime",
+              "(J)V",
+              "banUserFunctions",
+              "Ljava/util/ArrayList;",
+              "Lkotlin/collections/ArrayList;",
+              "getBanUserFunctions",
+              "()Ljava/util/ArrayList;",
+              "setBanUserFunctions",
+              "(Ljava/util/ArrayList;)V",
+              "isMusician",
+              "setMusician",
+              "userArtistType",
+              "getUserArtistType",
+              "setUserArtistType",
+              "artistBrief",
+              "Lcom/luna/common/arch/net/entity/artist/ArtistBrief;",
+              "getArtistBrief",
+              "()Lcom/luna/common/arch/net/entity/artist/ArtistBrief;",
+              "setArtistBrief",
+              "(Lcom/luna/common/arch/net/entity/artist/ArtistBrief;)V",
+              "maskedPhoneNo",
+              "getMaskedPhoneNo",
+              "setMaskedPhoneNo",
+              "secUid",
+              "getSecUid",
+              "setSecUid",
+              "isVip",
+              "setVip",
+              "vipStage",
+              "getVipStage",
+              "setVipStage",
+              "isLiveActive",
+              "setLiveActive",
+              "enableAppList",
+              "getEnableAppList",
+              "setEnableAppList",
+              "appendToUser",
+              "",
+              "user",
+              "Lcom/luna/common/arch/db/entity/User;",
+              "common-arch_release"
+            ],
+            "k": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "01",
+              "unsigned_value": 1
+            },
+            "mv": [
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "02",
+                "unsigned_value": 2
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              },
+              {
+                "encoded_kind": 4,
+                "bytes_le_hex": "00",
+                "unsigned_value": 0
+              }
+            ],
+            "xi": {
+              "encoded_kind": 4,
+              "bytes_le_hex": "30",
+              "unsigned_value": 48
+            }
+          }
+        }
+      ],
+      "parameter_annotations": [
+        {
+          "dex_method_index": 26898,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "appendToUser",
+          "descriptor": "(Lcom/luna/common/arch/db/entity/User;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26933,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setAiCreatorInfo",
+          "descriptor": "(Lcom/luna/common/arch/net/entity/user/AiCreatorInfo;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837382,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26934,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setAiCreatorStatus",
+          "descriptor": "(Ljava/lang/Integer;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837382,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26935,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setArtistBrief",
+          "descriptor": "(Lcom/luna/common/arch/net/entity/artist/ArtistBrief;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837382,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26936,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setArtistId",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26937,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setAvatarFrame",
+          "descriptor": "(Lcom/luna/common/arch/net/entity/AvatarFrameResource;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26938,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setBanUserFunctions",
+          "descriptor": "(Ljava/util/ArrayList;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837382,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26939,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setBirthday",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26941,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setDisplayLocations",
+          "descriptor": "(Ljava/util/List;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837382,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26942,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setDouyinId",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26944,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setGender",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26945,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setId",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26946,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setIpLocation",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26947,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setLargerAvatarUrl",
+          "descriptor": "(Lcom/luna/common/arch/net/entity/UrlInfo;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26949,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setLocation",
+          "descriptor": "(Lcom/luna/common/arch/net/entity/profile/UserLocation;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837382,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26951,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setMaskedPhoneNo",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837382,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26952,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setMediumAvatarUrl",
+          "descriptor": "(Lcom/luna/common/arch/net/entity/UrlInfo;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26955,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setNickname",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26957,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setSchool",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26958,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setSchoolInfo",
+          "descriptor": "(Lcom/luna/common/arch/net/entity/profile/UserSchool;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837382,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26959,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setSecUid",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837382,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26961,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setSignature",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837174,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/NotNull;",
+                "elements": {}
+              }
+            ]
+          ]
+        },
+        {
+          "dex_method_index": 26964,
+          "owner": "Lcom/luna/common/arch/net/entity/user/NetMyInfo;",
+          "name": "setVipStage",
+          "descriptor": "(Ljava/lang/String;)V",
+          "parameters": [
+            [
+              {
+                "annotation_item_offset": 9837382,
+                "visibility": 0,
+                "type": "Lorg/jetbrains/annotations/Nullable;",
+                "elements": {}
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4059 @@
+{
+  "source_apk_sha256": "b639e67c13e03377f0f9d8068c5e0419b1acd42c7d529362f11ae704b3838741",
+  "dex_entry": "classes10.dex",
+  "dex_sha256": "0f617b7092a7d6eed07bc85b95f9b5f62188858388b4efd51bff5e5574804cae",
+  "selected_owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+  "scope": "Original DEX instructions, not runtime/data-flow proof.",
+  "methods": [
+    {
+      "method_index": 18236,
+      "owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+      "name": "<init>",
+      "proto_index": 7150,
+      "prototype": "()V",
+      "code_offset": 2378480,
+      "registers": 1,
+      "incoming_words": 1,
+      "outgoing_words": 1,
+      "code_unit_count": 4,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            63881,
+            0
+          ],
+          "method": {
+            "method_index": 63881,
+            "owner": "Ljava/lang/Object;",
+            "name": "<init>",
+            "proto_index": 7150,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 3,
+          "opcode": "0xe",
+          "units": [
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "method_index": 18238,
+      "owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+      "name": "convertResponse",
+      "proto_index": 2920,
+      "prototype": "(Lcom/bytedance/retrofit2/Call;)Lcom/ss/android/TTResponse;",
+      "code_offset": 2377688,
+      "registers": 7,
+      "incoming_words": 2,
+      "outgoing_words": 5,
+      "code_unit_count": 116,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x12",
+          "units": [
+            18
+          ],
+          "const": 0,
+          "dest_register": 0
+        },
+        {
+          "code_unit_offset": 1,
+          "opcode": "0x39",
+          "units": [
+            1593,
+            3
+          ]
+        },
+        {
+          "code_unit_offset": 3,
+          "opcode": "0x11",
+          "units": [
+            17
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            4127,
+            6
+          ],
+          "method": {
+            "method_index": 4127,
+            "owner": "Lcom/bytedance/retrofit2/Call;",
+            "name": "execute",
+            "proto_index": 1556,
+            "prototype": "()Lcom/bytedance/retrofit2/SsResponse;"
+          }
+        },
+        {
+          "code_unit_offset": 7,
+          "opcode": "0xc",
+          "units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 8,
+          "opcode": "0x39",
+          "units": [
+            313,
+            3
+          ]
+        },
+        {
+          "code_unit_offset": 10,
+          "opcode": "0x11",
+          "units": [
+            17
+          ]
+        },
+        {
+          "code_unit_offset": 11,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            4137,
+            1
+          ],
+          "method": {
+            "method_index": 4137,
+            "owner": "Lcom/bytedance/retrofit2/SsResponse;",
+            "name": "raw",
+            "proto_index": 1565,
+            "prototype": "()Lcom/bytedance/retrofit2/client/Response;"
+          }
+        },
+        {
+          "code_unit_offset": 14,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 15,
+          "opcode": "0x38",
+          "units": [
+            56,
+            19
+          ]
+        },
+        {
+          "code_unit_offset": 17,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            4137,
+            1
+          ],
+          "method": {
+            "method_index": 4137,
+            "owner": "Lcom/bytedance/retrofit2/SsResponse;",
+            "name": "raw",
+            "proto_index": 1565,
+            "prototype": "()Lcom/bytedance/retrofit2/client/Response;"
+          }
+        },
+        {
+          "code_unit_offset": 20,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 21,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            4156,
+            0
+          ],
+          "method": {
+            "method_index": 4156,
+            "owner": "Lcom/bytedance/retrofit2/client/Response;",
+            "name": "getUrl",
+            "proto_index": 6095,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 24,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 25,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            4137,
+            1
+          ],
+          "method": {
+            "method_index": 4137,
+            "owner": "Lcom/bytedance/retrofit2/SsResponse;",
+            "name": "raw",
+            "proto_index": 1565,
+            "prototype": "()Lcom/bytedance/retrofit2/client/Response;"
+          }
+        },
+        {
+          "code_unit_offset": 28,
+          "opcode": "0xc",
+          "units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 29,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            4155,
+            2
+          ],
+          "method": {
+            "method_index": 4155,
+            "owner": "Lcom/bytedance/retrofit2/client/Response;",
+            "name": "getStatus",
+            "proto_index": 62,
+            "prototype": "()I"
+          }
+        },
+        {
+          "code_unit_offset": 32,
+          "opcode": "0xa",
+          "units": [
+            522
+          ]
+        },
+        {
+          "code_unit_offset": 33,
+          "opcode": "0x28",
+          "units": [
+            1064
+          ]
+        },
+        {
+          "code_unit_offset": 34,
+          "opcode": "0x1a",
+          "units": [
+            26,
+            0
+          ],
+          "string_index": 0,
+          "string": ""
+        },
+        {
+          "code_unit_offset": 36,
+          "opcode": "0x12",
+          "units": [
+            61970
+          ],
+          "const": -1,
+          "dest_register": 2
+        },
+        {
+          "code_unit_offset": 37,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            4135,
+            1
+          ],
+          "method": {
+            "method_index": 4135,
+            "owner": "Lcom/bytedance/retrofit2/SsResponse;",
+            "name": "headers",
+            "proto_index": 6686,
+            "prototype": "()Ljava/util/List;"
+          }
+        },
+        {
+          "code_unit_offset": 40,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 41,
+          "opcode": "0x70",
+          "units": [
+            8304,
+            18246,
+            53
+          ],
+          "method": {
+            "method_index": 18246,
+            "owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+            "name": "parseHeaders",
+            "proto_index": 6757,
+            "prototype": "(Ljava/util/List;)Ljava/util/List;"
+          }
+        },
+        {
+          "code_unit_offset": 44,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 45,
+          "opcode": "0x22",
+          "units": [
+            1058,
+            3790
+          ],
+          "type": "Lcom/ss/android/TTResponse;"
+        },
+        {
+          "code_unit_offset": 47,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            4132,
+            1
+          ],
+          "method": {
+            "method_index": 4132,
+            "owner": "Lcom/bytedance/retrofit2/SsResponse;",
+            "name": "body",
+            "proto_index": 5930,
+            "prototype": "()Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 50,
+          "opcode": "0xc",
+          "units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 51,
+          "opcode": "0x1f",
+          "units": [
+            287,
+            10760
+          ],
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 53,
+          "opcode": "0x70",
+          "units": [
+            20848,
+            18016,
+            12804
+          ],
+          "method": {
+            "method_index": 18016,
+            "owner": "Lcom/ss/android/TTResponse;",
+            "name": "<init>",
+            "proto_index": 12271,
+            "prototype": "(Ljava/lang/String;ILjava/util/List;Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 56,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            4129,
+            6
+          ],
+          "method": {
+            "method_index": 4129,
+            "owner": "Lcom/bytedance/retrofit2/Call;",
+            "name": "request",
+            "proto_index": 1564,
+            "prototype": "()Lcom/bytedance/retrofit2/client/Request;"
+          }
+        },
+        {
+          "code_unit_offset": 59,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 60,
+          "opcode": "0x38",
+          "units": [
+            56,
+            55
+          ]
+        },
+        {
+          "code_unit_offset": 62,
+          "opcode": "0x22",
+          "units": [
+            34,
+            3789
+          ],
+          "type": "Lcom/ss/android/TTRequest;"
+        },
+        {
+          "code_unit_offset": 64,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            4129,
+            6
+          ],
+          "method": {
+            "method_index": 4129,
+            "owner": "Lcom/bytedance/retrofit2/Call;",
+            "name": "request",
+            "proto_index": 1564,
+            "prototype": "()Lcom/bytedance/retrofit2/client/Request;"
+          }
+        },
+        {
+          "code_unit_offset": 67,
+          "opcode": "0xc",
+          "units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 68,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            4147,
+            1
+          ],
+          "method": {
+            "method_index": 4147,
+            "owner": "Lcom/bytedance/retrofit2/client/Request;",
+            "name": "getMaxLength",
+            "proto_index": 62,
+            "prototype": "()I"
+          }
+        },
+        {
+          "code_unit_offset": 71,
+          "opcode": "0xa",
+          "units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 72,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            4129,
+            6
+          ],
+          "method": {
+            "method_index": 4129,
+            "owner": "Lcom/bytedance/retrofit2/Call;",
+            "name": "request",
+            "proto_index": 1564,
+            "prototype": "()Lcom/bytedance/retrofit2/client/Request;"
+          }
+        },
+        {
+          "code_unit_offset": 75,
+          "opcode": "0xc",
+          "units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 76,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            4150,
+            2
+          ],
+          "method": {
+            "method_index": 4150,
+            "owner": "Lcom/bytedance/retrofit2/client/Request;",
+            "name": "getUrl",
+            "proto_index": 6095,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 79,
+          "opcode": "0xc",
+          "units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 80,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            4129,
+            6
+          ],
+          "method": {
+            "method_index": 4129,
+            "owner": "Lcom/bytedance/retrofit2/Call;",
+            "name": "request",
+            "proto_index": 1564,
+            "prototype": "()Lcom/bytedance/retrofit2/client/Request;"
+          }
+        },
+        {
+          "code_unit_offset": 83,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 84,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            4146,
+            3
+          ],
+          "method": {
+            "method_index": 4146,
+            "owner": "Lcom/bytedance/retrofit2/client/Request;",
+            "name": "getHeaders",
+            "proto_index": 6686,
+            "prototype": "()Ljava/util/List;"
+          }
+        },
+        {
+          "code_unit_offset": 87,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 88,
+          "opcode": "0x70",
+          "units": [
+            8304,
+            18246,
+            53
+          ],
+          "method": {
+            "method_index": 18246,
+            "owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+            "name": "parseHeaders",
+            "proto_index": 6757,
+            "prototype": "(Ljava/util/List;)Ljava/util/List;"
+          }
+        },
+        {
+          "code_unit_offset": 91,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 92,
+          "opcode": "0x70",
+          "units": [
+            16496,
+            18015,
+            12816
+          ],
+          "method": {
+            "method_index": 18015,
+            "owner": "Lcom/ss/android/TTRequest;",
+            "name": "<init>",
+            "proto_index": 7480,
+            "prototype": "(ILjava/lang/String;Ljava/util/List;)V"
+          }
+        },
+        {
+          "code_unit_offset": 95,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            18028,
+            4
+          ],
+          "method": {
+            "method_index": 18028,
+            "owner": "Lcom/ss/android/TTResponse;",
+            "name": "setTtRequest",
+            "proto_index": 9328,
+            "prototype": "(Lcom/ss/android/TTRequest;)V"
+          }
+        },
+        {
+          "code_unit_offset": 98,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            4129,
+            6
+          ],
+          "method": {
+            "method_index": 4129,
+            "owner": "Lcom/bytedance/retrofit2/Call;",
+            "name": "request",
+            "proto_index": 1564,
+            "prototype": "()Lcom/bytedance/retrofit2/client/Request;"
+          }
+        },
+        {
+          "code_unit_offset": 101,
+          "opcode": "0xc",
+          "units": [
+            1548
+          ]
+        },
+        {
+          "code_unit_offset": 102,
+          "opcode": "0x1c",
+          "units": [
+            28,
+            10433
+          ],
+          "type": "Lcom/ss/android/token/AccountRequestTag;"
+        },
+        {
+          "code_unit_offset": 104,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            4152,
+            6
+          ],
+          "method": {
+            "method_index": 4152,
+            "owner": "Lcom/bytedance/retrofit2/client/Request;",
+            "name": "tag",
+            "proto_index": 6023,
+            "prototype": "(Ljava/lang/Class;)Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 107,
+          "opcode": "0xc",
+          "units": [
+            1548
+          ]
+        },
+        {
+          "code_unit_offset": 108,
+          "opcode": "0x1f",
+          "units": [
+            1567,
+            10433
+          ],
+          "type": "Lcom/ss/android/token/AccountRequestTag;"
+        },
+        {
+          "code_unit_offset": 110,
+          "opcode": "0x38",
+          "units": [
+            1592,
+            5
+          ]
+        },
+        {
+          "code_unit_offset": 112,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            18026,
+            100
+          ],
+          "method": {
+            "method_index": 18026,
+            "owner": "Lcom/ss/android/TTResponse;",
+            "name": "setAccountRequestTag",
+            "proto_index": 12009,
+            "prototype": "(Lcom/ss/android/token/AccountRequestTag;)V"
+          }
+        },
+        {
+          "code_unit_offset": 115,
+          "opcode": "0x11",
+          "units": [
+            1041
+          ]
+        }
+      ]
+    },
+    {
+      "method_index": 18239,
+      "owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+      "name": "doRealExecuteGet",
+      "proto_index": 1531,
+      "prototype": "(ILjava/lang/String;Ljava/util/List;I)Lcom/bytedance/retrofit2/Call;",
+      "code_offset": 2376860,
+      "registers": 14,
+      "incoming_words": 5,
+      "outgoing_words": 7,
+      "code_unit_count": 103,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            3639,
+            11
+          ],
+          "method": {
+            "method_index": 3639,
+            "owner": "Lcom/bytedance/common/utility/StringUtils;",
+            "name": "isEmpty",
+            "proto_index": 13981,
+            "prototype": "(Ljava/lang/String;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 3,
+          "opcode": "0xa",
+          "units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "opcode": "0x12",
+          "units": [
+            274
+          ],
+          "const": 0,
+          "dest_register": 1
+        },
+        {
+          "code_unit_offset": 5,
+          "opcode": "0x38",
+          "units": [
+            56,
+            3
+          ]
+        },
+        {
+          "code_unit_offset": 7,
+          "opcode": "0x11",
+          "units": [
+            273
+          ]
+        },
+        {
+          "code_unit_offset": 8,
+          "opcode": "0x22",
+          "units": [
+            1570,
+            10884
+          ],
+          "type": "Ljava/util/LinkedHashMap;"
+        },
+        {
+          "code_unit_offset": 10,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            64363,
+            6
+          ],
+          "method": {
+            "method_index": 64363,
+            "owner": "Ljava/util/LinkedHashMap;",
+            "name": "<init>",
+            "proto_index": 7150,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 13,
+          "opcode": "0x71",
+          "units": [
+            8305,
+            3736,
+            107
+          ],
+          "method": {
+            "method_index": 3736,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/http/util/UrlUtils;",
+            "name": "parseUrl",
+            "proto_index": 920,
+            "prototype": "(Ljava/lang/String;Ljava/util/Map;)Landroid/util/Pair;"
+          }
+        },
+        {
+          "code_unit_offset": 16,
+          "opcode": "0xc",
+          "units": [
+            2828
+          ]
+        },
+        {
+          "code_unit_offset": 17,
+          "opcode": "0x54",
+          "units": [
+            45140,
+            167
+          ],
+          "field": {
+            "field_index": 167,
+            "owner": "Landroid/util/Pair;",
+            "type": "Ljava/lang/Object;",
+            "name": "first"
+          }
+        },
+        {
+          "code_unit_offset": 19,
+          "opcode": "0x1f",
+          "units": [
+            31,
+            10760
+          ],
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 21,
+          "opcode": "0x54",
+          "units": [
+            47956,
+            168
+          ],
+          "field": {
+            "field_index": 168,
+            "owner": "Landroid/util/Pair;",
+            "type": "Ljava/lang/Object;",
+            "name": "second"
+          }
+        },
+        {
+          "code_unit_offset": 23,
+          "opcode": "0x7",
+          "units": [
+            46343
+          ]
+        },
+        {
+          "code_unit_offset": 24,
+          "opcode": "0x1f",
+          "units": [
+            1311,
+            10760
+          ],
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 26,
+          "opcode": "0x1c",
+          "units": [
+            2844,
+            1461
+          ],
+          "type": "Lcom/bytedance/ttnet/INetworkApi;"
+        },
+        {
+          "code_unit_offset": 28,
+          "opcode": "0x71",
+          "units": [
+            8305,
+            4584,
+            176
+          ],
+          "method": {
+            "method_index": 4584,
+            "owner": "Lcom/bytedance/ttnet/utils/RetrofitUtils;",
+            "name": "createSsService",
+            "proto_index": 6047,
+            "prototype": "(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 31,
+          "opcode": "0xc",
+          "units": [
+            2828
+          ]
+        },
+        {
+          "code_unit_offset": 32,
+          "opcode": "0x7",
+          "units": [
+            45575
+          ]
+        },
+        {
+          "code_unit_offset": 33,
+          "opcode": "0x1f",
+          "units": [
+            543,
+            1461
+          ],
+          "type": "Lcom/bytedance/ttnet/INetworkApi;"
+        },
+        {
+          "code_unit_offset": 35,
+          "opcode": "0x22",
+          "units": [
+            1826,
+            10886
+          ],
+          "type": "Ljava/util/LinkedList;"
+        },
+        {
+          "code_unit_offset": 37,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            64383,
+            7
+          ],
+          "method": {
+            "method_index": 64383,
+            "owner": "Ljava/util/LinkedList;",
+            "name": "<init>",
+            "proto_index": 7150,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 40,
+          "opcode": "0x38",
+          "units": [
+            3128,
+            43
+          ]
+        },
+        {
+          "code_unit_offset": 42,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64408,
+            12
+          ],
+          "method": {
+            "method_index": 64408,
+            "owner": "Ljava/util/List;",
+            "name": "isEmpty",
+            "proto_index": 13361,
+            "prototype": "()Z"
+          }
+        },
+        {
+          "code_unit_offset": 45,
+          "opcode": "0xa",
+          "units": [
+            2826
+          ]
+        },
+        {
+          "code_unit_offset": 46,
+          "opcode": "0x39",
+          "units": [
+            2873,
+            37
+          ]
+        },
+        {
+          "code_unit_offset": 48,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64409,
+            12
+          ],
+          "method": {
+            "method_index": 64409,
+            "owner": "Ljava/util/List;",
+            "name": "iterator",
+            "proto_index": 6678,
+            "prototype": "()Ljava/util/Iterator;"
+          }
+        },
+        {
+          "code_unit_offset": 51,
+          "opcode": "0xc",
+          "units": [
+            2828
+          ]
+        },
+        {
+          "code_unit_offset": 52,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64360,
+            11
+          ],
+          "method": {
+            "method_index": 64360,
+            "owner": "Ljava/util/Iterator;",
+            "name": "hasNext",
+            "proto_index": 13361,
+            "prototype": "()Z"
+          }
+        },
+        {
+          "code_unit_offset": 55,
+          "opcode": "0xa",
+          "units": [
+            3082
+          ]
+        },
+        {
+          "code_unit_offset": 56,
+          "opcode": "0x38",
+          "units": [
+            3128,
+            27
+          ]
+        },
+        {
+          "code_unit_offset": 58,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64361,
+            11
+          ],
+          "method": {
+            "method_index": 64361,
+            "owner": "Ljava/util/Iterator;",
+            "name": "next",
+            "proto_index": 5930,
+            "prototype": "()Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 61,
+          "opcode": "0xc",
+          "units": [
+            3084
+          ]
+        },
+        {
+          "code_unit_offset": 62,
+          "opcode": "0x1f",
+          "units": [
+            3103,
+            3788
+          ],
+          "type": "Lcom/ss/android/TTHeader;"
+        },
+        {
+          "code_unit_offset": 64,
+          "opcode": "0x38",
+          "units": [
+            3128,
+            65524
+          ]
+        },
+        {
+          "code_unit_offset": 66,
+          "opcode": "0x22",
+          "units": [
+            34,
+            1234
+          ],
+          "type": "Lcom/bytedance/retrofit2/client/Header;"
+        },
+        {
+          "code_unit_offset": 68,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            18011,
+            12
+          ],
+          "method": {
+            "method_index": 18011,
+            "owner": "Lcom/ss/android/TTHeader;",
+            "name": "getName",
+            "proto_index": 6095,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 71,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 72,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            18012,
+            12
+          ],
+          "method": {
+            "method_index": 18012,
+            "owner": "Lcom/ss/android/TTHeader;",
+            "name": "getValue",
+            "proto_index": 6095,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 75,
+          "opcode": "0xc",
+          "units": [
+            3084
+          ]
+        },
+        {
+          "code_unit_offset": 76,
+          "opcode": "0x70",
+          "units": [
+            12400,
+            4139,
+            3120
+          ],
+          "method": {
+            "method_index": 4139,
+            "owner": "Lcom/bytedance/retrofit2/client/Header;",
+            "name": "<init>",
+            "proto_index": 12458,
+            "prototype": "(Ljava/lang/String;Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 79,
+          "opcode": "0x72",
+          "units": [
+            8306,
+            64402,
+            7
+          ],
+          "method": {
+            "method_index": 64402,
+            "owner": "Ljava/util/List;",
+            "name": "add",
+            "proto_index": 13974,
+            "prototype": "(Ljava/lang/Object;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 82,
+          "opcode": "0x28",
+          "units": [
+            57896
+          ]
+        },
+        {
+          "code_unit_offset": 83,
+          "opcode": "0x38",
+          "units": [
+            568,
+            19
+          ]
+        },
+        {
+          "code_unit_offset": 85,
+          "opcode": "0x38",
+          "units": [
+            3384,
+            9
+          ]
+        },
+        {
+          "code_unit_offset": 87,
+          "opcode": "0x22",
+          "units": [
+            290,
+            1469
+          ],
+          "type": "Lcom/bytedance/ttnet/http/RequestContext;"
+        },
+        {
+          "code_unit_offset": 89,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            4582,
+            1
+          ],
+          "method": {
+            "method_index": 4582,
+            "owner": "Lcom/bytedance/ttnet/http/RequestContext;",
+            "name": "<init>",
+            "proto_index": 7150,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 92,
+          "opcode": "0x59",
+          "units": [
+            7513,
+            389
+          ],
+          "field": {
+            "field_index": 389,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/http/BaseRequestContext;",
+            "type": "I",
+            "name": "request_flag"
+          }
+        },
+        {
+          "code_unit_offset": 94,
+          "opcode": "0x7",
+          "units": [
+            6151
+          ]
+        },
+        {
+          "code_unit_offset": 95,
+          "opcode": "0x12",
+          "units": [
+            4882
+          ],
+          "const": 1,
+          "dest_register": 3
+        },
+        {
+          "code_unit_offset": 96,
+          "opcode": "0x1",
+          "units": [
+            41985
+          ]
+        },
+        {
+          "code_unit_offset": 97,
+          "opcode": "0x78",
+          "units": [
+            1912,
+            4568,
+            2
+          ],
+          "method": {
+            "method_index": 4568,
+            "owner": "Lcom/bytedance/ttnet/INetworkApi;",
+            "name": "doGet",
+            "proto_index": 1550,
+            "prototype": "(ZILjava/lang/String;Ljava/util/Map;Ljava/util/List;Ljava/lang/Object;)Lcom/bytedance/retrofit2/Call;"
+          }
+        },
+        {
+          "code_unit_offset": 100,
+          "opcode": "0xc",
+          "units": [
+            2572
+          ]
+        },
+        {
+          "code_unit_offset": 101,
+          "opcode": "0x11",
+          "units": [
+            2577
+          ]
+        },
+        {
+          "code_unit_offset": 102,
+          "opcode": "0x11",
+          "units": [
+            273
+          ]
+        }
+      ]
+    },
+    {
+      "method_index": 18240,
+      "owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+      "name": "doRealExecutePost",
+      "proto_index": 1534,
+      "prototype": "(ILjava/lang/String;Ljava/util/Map;Ljava/util/List;I)Lcom/bytedance/retrofit2/Call;",
+      "code_offset": 2377084,
+      "registers": 15,
+      "incoming_words": 6,
+      "outgoing_words": 7,
+      "code_unit_count": 138,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            3639,
+            11
+          ],
+          "method": {
+            "method_index": 3639,
+            "owner": "Lcom/bytedance/common/utility/StringUtils;",
+            "name": "isEmpty",
+            "proto_index": 13981,
+            "prototype": "(Ljava/lang/String;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 3,
+          "opcode": "0xa",
+          "units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "opcode": "0x12",
+          "units": [
+            274
+          ],
+          "const": 0,
+          "dest_register": 1
+        },
+        {
+          "code_unit_offset": 5,
+          "opcode": "0x38",
+          "units": [
+            56,
+            3
+          ]
+        },
+        {
+          "code_unit_offset": 7,
+          "opcode": "0x11",
+          "units": [
+            273
+          ]
+        },
+        {
+          "code_unit_offset": 8,
+          "opcode": "0x22",
+          "units": [
+            1314,
+            10884
+          ],
+          "type": "Ljava/util/LinkedHashMap;"
+        },
+        {
+          "code_unit_offset": 10,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            64363,
+            5
+          ],
+          "method": {
+            "method_index": 64363,
+            "owner": "Ljava/util/LinkedHashMap;",
+            "name": "<init>",
+            "proto_index": 7150,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 13,
+          "opcode": "0x71",
+          "units": [
+            8305,
+            3736,
+            91
+          ],
+          "method": {
+            "method_index": 3736,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/http/util/UrlUtils;",
+            "name": "parseUrl",
+            "proto_index": 920,
+            "prototype": "(Ljava/lang/String;Ljava/util/Map;)Landroid/util/Pair;"
+          }
+        },
+        {
+          "code_unit_offset": 16,
+          "opcode": "0xc",
+          "units": [
+            2828
+          ]
+        },
+        {
+          "code_unit_offset": 17,
+          "opcode": "0x54",
+          "units": [
+            45140,
+            167
+          ],
+          "field": {
+            "field_index": 167,
+            "owner": "Landroid/util/Pair;",
+            "type": "Ljava/lang/Object;",
+            "name": "first"
+          }
+        },
+        {
+          "code_unit_offset": 19,
+          "opcode": "0x1f",
+          "units": [
+            31,
+            10760
+          ],
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 21,
+          "opcode": "0x54",
+          "units": [
+            47956,
+            168
+          ],
+          "field": {
+            "field_index": 168,
+            "owner": "Landroid/util/Pair;",
+            "type": "Ljava/lang/Object;",
+            "name": "second"
+          }
+        },
+        {
+          "code_unit_offset": 23,
+          "opcode": "0x7",
+          "units": [
+            46087
+          ]
+        },
+        {
+          "code_unit_offset": 24,
+          "opcode": "0x1f",
+          "units": [
+            1055,
+            10760
+          ],
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 26,
+          "opcode": "0x1c",
+          "units": [
+            2844,
+            1461
+          ],
+          "type": "Lcom/bytedance/ttnet/INetworkApi;"
+        },
+        {
+          "code_unit_offset": 28,
+          "opcode": "0x71",
+          "units": [
+            8305,
+            4584,
+            176
+          ],
+          "method": {
+            "method_index": 4584,
+            "owner": "Lcom/bytedance/ttnet/utils/RetrofitUtils;",
+            "name": "createSsService",
+            "proto_index": 6047,
+            "prototype": "(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 31,
+          "opcode": "0xc",
+          "units": [
+            2828
+          ]
+        },
+        {
+          "code_unit_offset": 32,
+          "opcode": "0x7",
+          "units": [
+            45575
+          ]
+        },
+        {
+          "code_unit_offset": 33,
+          "opcode": "0x1f",
+          "units": [
+            543,
+            1461
+          ],
+          "type": "Lcom/bytedance/ttnet/INetworkApi;"
+        },
+        {
+          "code_unit_offset": 35,
+          "opcode": "0x22",
+          "units": [
+            1826,
+            10886
+          ],
+          "type": "Ljava/util/LinkedList;"
+        },
+        {
+          "code_unit_offset": 37,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            64383,
+            7
+          ],
+          "method": {
+            "method_index": 64383,
+            "owner": "Ljava/util/LinkedList;",
+            "name": "<init>",
+            "proto_index": 7150,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 40,
+          "opcode": "0x38",
+          "units": [
+            3384,
+            43
+          ]
+        },
+        {
+          "code_unit_offset": 42,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64415,
+            13
+          ],
+          "method": {
+            "method_index": 64415,
+            "owner": "Ljava/util/List;",
+            "name": "size",
+            "proto_index": 62,
+            "prototype": "()I"
+          }
+        },
+        {
+          "code_unit_offset": 45,
+          "opcode": "0xa",
+          "units": [
+            2826
+          ]
+        },
+        {
+          "code_unit_offset": 46,
+          "opcode": "0x38",
+          "units": [
+            2872,
+            37
+          ]
+        },
+        {
+          "code_unit_offset": 48,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64409,
+            13
+          ],
+          "method": {
+            "method_index": 64409,
+            "owner": "Ljava/util/List;",
+            "name": "iterator",
+            "proto_index": 6678,
+            "prototype": "()Ljava/util/Iterator;"
+          }
+        },
+        {
+          "code_unit_offset": 51,
+          "opcode": "0xc",
+          "units": [
+            2828
+          ]
+        },
+        {
+          "code_unit_offset": 52,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64360,
+            11
+          ],
+          "method": {
+            "method_index": 64360,
+            "owner": "Ljava/util/Iterator;",
+            "name": "hasNext",
+            "proto_index": 13361,
+            "prototype": "()Z"
+          }
+        },
+        {
+          "code_unit_offset": 55,
+          "opcode": "0xa",
+          "units": [
+            3338
+          ]
+        },
+        {
+          "code_unit_offset": 56,
+          "opcode": "0x38",
+          "units": [
+            3384,
+            27
+          ]
+        },
+        {
+          "code_unit_offset": 58,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64361,
+            11
+          ],
+          "method": {
+            "method_index": 64361,
+            "owner": "Ljava/util/Iterator;",
+            "name": "next",
+            "proto_index": 5930,
+            "prototype": "()Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 61,
+          "opcode": "0xc",
+          "units": [
+            3340
+          ]
+        },
+        {
+          "code_unit_offset": 62,
+          "opcode": "0x1f",
+          "units": [
+            3359,
+            3788
+          ],
+          "type": "Lcom/ss/android/TTHeader;"
+        },
+        {
+          "code_unit_offset": 64,
+          "opcode": "0x38",
+          "units": [
+            3384,
+            65524
+          ]
+        },
+        {
+          "code_unit_offset": 66,
+          "opcode": "0x22",
+          "units": [
+            34,
+            1234
+          ],
+          "type": "Lcom/bytedance/retrofit2/client/Header;"
+        },
+        {
+          "code_unit_offset": 68,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            18011,
+            13
+          ],
+          "method": {
+            "method_index": 18011,
+            "owner": "Lcom/ss/android/TTHeader;",
+            "name": "getName",
+            "proto_index": 6095,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 71,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 72,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            18012,
+            13
+          ],
+          "method": {
+            "method_index": 18012,
+            "owner": "Lcom/ss/android/TTHeader;",
+            "name": "getValue",
+            "proto_index": 6095,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 75,
+          "opcode": "0xc",
+          "units": [
+            3340
+          ]
+        },
+        {
+          "code_unit_offset": 76,
+          "opcode": "0x70",
+          "units": [
+            12400,
+            4139,
+            3376
+          ],
+          "method": {
+            "method_index": 4139,
+            "owner": "Lcom/bytedance/retrofit2/client/Header;",
+            "name": "<init>",
+            "proto_index": 12458,
+            "prototype": "(Ljava/lang/String;Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 79,
+          "opcode": "0x72",
+          "units": [
+            8306,
+            64402,
+            7
+          ],
+          "method": {
+            "method_index": 64402,
+            "owner": "Ljava/util/List;",
+            "name": "add",
+            "proto_index": 13974,
+            "prototype": "(Ljava/lang/Object;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 82,
+          "opcode": "0x28",
+          "units": [
+            57896
+          ]
+        },
+        {
+          "code_unit_offset": 83,
+          "opcode": "0x22",
+          "units": [
+            1570,
+            10884
+          ],
+          "type": "Ljava/util/LinkedHashMap;"
+        },
+        {
+          "code_unit_offset": 85,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            64363,
+            6
+          ],
+          "method": {
+            "method_index": 64363,
+            "owner": "Ljava/util/LinkedHashMap;",
+            "name": "<init>",
+            "proto_index": 7150,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 88,
+          "opcode": "0x38",
+          "units": [
+            3128,
+            11
+          ]
+        },
+        {
+          "code_unit_offset": 90,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64433,
+            12
+          ],
+          "method": {
+            "method_index": 64433,
+            "owner": "Ljava/util/Map;",
+            "name": "isEmpty",
+            "proto_index": 13361,
+            "prototype": "()Z"
+          }
+        },
+        {
+          "code_unit_offset": 93,
+          "opcode": "0xa",
+          "units": [
+            2826
+          ]
+        },
+        {
+          "code_unit_offset": 94,
+          "opcode": "0x39",
+          "units": [
+            2873,
+            5
+          ]
+        },
+        {
+          "code_unit_offset": 96,
+          "opcode": "0x72",
+          "units": [
+            8306,
+            64436,
+            198
+          ],
+          "method": {
+            "method_index": 64436,
+            "owner": "Ljava/util/Map;",
+            "name": "putAll",
+            "proto_index": 12901,
+            "prototype": "(Ljava/util/Map;)V"
+          }
+        },
+        {
+          "code_unit_offset": 99,
+          "opcode": "0x1a",
+          "units": [
+            2842,
+            34483
+          ],
+          "string_index": 34483,
+          "string": "account_sdk_ignore_common_param"
+        },
+        {
+          "code_unit_offset": 101,
+          "opcode": "0x72",
+          "units": [
+            8306,
+            64432,
+            182
+          ],
+          "method": {
+            "method_index": 64432,
+            "owner": "Ljava/util/Map;",
+            "name": "get",
+            "proto_index": 6033,
+            "prototype": "(Ljava/lang/Object;)Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 104,
+          "opcode": "0xc",
+          "units": [
+            2828
+          ]
+        },
+        {
+          "code_unit_offset": 105,
+          "opcode": "0x1f",
+          "units": [
+            2847,
+            10713
+          ],
+          "type": "Ljava/lang/CharSequence;"
+        },
+        {
+          "code_unit_offset": 107,
+          "opcode": "0x1a",
+          "units": [
+            3098,
+            6557
+          ],
+          "string_index": 6557,
+          "string": "1"
+        },
+        {
+          "code_unit_offset": 109,
+          "opcode": "0x71",
+          "units": [
+            8305,
+            1188,
+            203
+          ],
+          "method": {
+            "method_index": 1188,
+            "owner": "Landroid/text/TextUtils;",
+            "name": "equals",
+            "proto_index": 13963,
+            "prototype": "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 112,
+          "opcode": "0xa",
+          "units": [
+            2826
+          ]
+        },
+        {
+          "code_unit_offset": 113,
+          "opcode": "0x39",
+          "units": [
+            2873,
+            6
+          ]
+        },
+        {
+          "code_unit_offset": 115,
+          "opcode": "0x12",
+          "units": [
+            6930
+          ],
+          "const": 1,
+          "dest_register": 11
+        },
+        {
+          "code_unit_offset": 116,
+          "opcode": "0x71",
+          "units": [
+            8305,
+            3704,
+            182
+          ],
+          "method": {
+            "method_index": 3704,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/http/NetworkParams;",
+            "name": "putCommonParams",
+            "proto_index": 12946,
+            "prototype": "(Ljava/util/Map;Z)V"
+          }
+        },
+        {
+          "code_unit_offset": 119,
+          "opcode": "0x38",
+          "units": [
+            568,
+            18
+          ]
+        },
+        {
+          "code_unit_offset": 121,
+          "opcode": "0x38",
+          "units": [
+            3640,
+            9
+          ]
+        },
+        {
+          "code_unit_offset": 123,
+          "opcode": "0x22",
+          "units": [
+            290,
+            1469
+          ],
+          "type": "Lcom/bytedance/ttnet/http/RequestContext;"
+        },
+        {
+          "code_unit_offset": 125,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            4582,
+            1
+          ],
+          "method": {
+            "method_index": 4582,
+            "owner": "Lcom/bytedance/ttnet/http/RequestContext;",
+            "name": "<init>",
+            "proto_index": 7150,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 128,
+          "opcode": "0x59",
+          "units": [
+            7769,
+            389
+          ],
+          "field": {
+            "field_index": 389,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/http/BaseRequestContext;",
+            "type": "I",
+            "name": "request_flag"
+          }
+        },
+        {
+          "code_unit_offset": 130,
+          "opcode": "0x7",
+          "units": [
+            6151
+          ]
+        },
+        {
+          "code_unit_offset": 131,
+          "opcode": "0x1",
+          "units": [
+            41729
+          ]
+        },
+        {
+          "code_unit_offset": 132,
+          "opcode": "0x78",
+          "units": [
+            1912,
+            4569,
+            2
+          ],
+          "method": {
+            "method_index": 4569,
+            "owner": "Lcom/bytedance/ttnet/INetworkApi;",
+            "name": "doPost",
+            "proto_index": 1536,
+            "prototype": "(ILjava/lang/String;Ljava/util/Map;Ljava/util/Map;Ljava/util/List;Ljava/lang/Object;)Lcom/bytedance/retrofit2/Call;"
+          }
+        },
+        {
+          "code_unit_offset": 135,
+          "opcode": "0xc",
+          "units": [
+            2572
+          ]
+        },
+        {
+          "code_unit_offset": 136,
+          "opcode": "0x11",
+          "units": [
+            2577
+          ]
+        },
+        {
+          "code_unit_offset": 137,
+          "opcode": "0x11",
+          "units": [
+            273
+          ]
+        }
+      ]
+    },
+    {
+      "method_index": 18241,
+      "owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+      "name": "doRealExecutePostFile",
+      "proto_index": 1533,
+      "prototype": "(ILjava/lang/String;Ljava/util/Map;Ljava/util/List;)Lcom/bytedance/retrofit2/Call;",
+      "code_offset": 2377376,
+      "registers": 13,
+      "incoming_words": 5,
+      "outgoing_words": 6,
+      "code_unit_count": 148,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            3639,
+            10
+          ],
+          "method": {
+            "method_index": 3639,
+            "owner": "Lcom/bytedance/common/utility/StringUtils;",
+            "name": "isEmpty",
+            "proto_index": 13981,
+            "prototype": "(Ljava/lang/String;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 3,
+          "opcode": "0xa",
+          "units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "opcode": "0x12",
+          "units": [
+            274
+          ],
+          "const": 0,
+          "dest_register": 1
+        },
+        {
+          "code_unit_offset": 5,
+          "opcode": "0x38",
+          "units": [
+            56,
+            3
+          ]
+        },
+        {
+          "code_unit_offset": 7,
+          "opcode": "0x11",
+          "units": [
+            273
+          ]
+        },
+        {
+          "code_unit_offset": 8,
+          "opcode": "0x22",
+          "units": [
+            1314,
+            10884
+          ],
+          "type": "Ljava/util/LinkedHashMap;"
+        },
+        {
+          "code_unit_offset": 10,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            64363,
+            5
+          ],
+          "method": {
+            "method_index": 64363,
+            "owner": "Ljava/util/LinkedHashMap;",
+            "name": "<init>",
+            "proto_index": 7150,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 13,
+          "opcode": "0x71",
+          "units": [
+            8305,
+            3736,
+            90
+          ],
+          "method": {
+            "method_index": 3736,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/http/util/UrlUtils;",
+            "name": "parseUrl",
+            "proto_index": 920,
+            "prototype": "(Ljava/lang/String;Ljava/util/Map;)Landroid/util/Pair;"
+          }
+        },
+        {
+          "code_unit_offset": 16,
+          "opcode": "0xc",
+          "units": [
+            2572
+          ]
+        },
+        {
+          "code_unit_offset": 17,
+          "opcode": "0x54",
+          "units": [
+            41044,
+            167
+          ],
+          "field": {
+            "field_index": 167,
+            "owner": "Landroid/util/Pair;",
+            "type": "Ljava/lang/Object;",
+            "name": "first"
+          }
+        },
+        {
+          "code_unit_offset": 19,
+          "opcode": "0x1f",
+          "units": [
+            31,
+            10760
+          ],
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 21,
+          "opcode": "0x54",
+          "units": [
+            43604,
+            168
+          ],
+          "field": {
+            "field_index": 168,
+            "owner": "Landroid/util/Pair;",
+            "type": "Ljava/lang/Object;",
+            "name": "second"
+          }
+        },
+        {
+          "code_unit_offset": 23,
+          "opcode": "0x7",
+          "units": [
+            41991
+          ]
+        },
+        {
+          "code_unit_offset": 24,
+          "opcode": "0x1f",
+          "units": [
+            1055,
+            10760
+          ],
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 26,
+          "opcode": "0x1c",
+          "units": [
+            2588,
+            1461
+          ],
+          "type": "Lcom/bytedance/ttnet/INetworkApi;"
+        },
+        {
+          "code_unit_offset": 28,
+          "opcode": "0x71",
+          "units": [
+            8305,
+            4584,
+            160
+          ],
+          "method": {
+            "method_index": 4584,
+            "owner": "Lcom/bytedance/ttnet/utils/RetrofitUtils;",
+            "name": "createSsService",
+            "proto_index": 6047,
+            "prototype": "(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 31,
+          "opcode": "0xc",
+          "units": [
+            2572
+          ]
+        },
+        {
+          "code_unit_offset": 32,
+          "opcode": "0x7",
+          "units": [
+            41479
+          ]
+        },
+        {
+          "code_unit_offset": 33,
+          "opcode": "0x1f",
+          "units": [
+            543,
+            1461
+          ],
+          "type": "Lcom/bytedance/ttnet/INetworkApi;"
+        },
+        {
+          "code_unit_offset": 35,
+          "opcode": "0x22",
+          "units": [
+            1826,
+            10886
+          ],
+          "type": "Ljava/util/LinkedList;"
+        },
+        {
+          "code_unit_offset": 37,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            64383,
+            7
+          ],
+          "method": {
+            "method_index": 64383,
+            "owner": "Ljava/util/LinkedList;",
+            "name": "<init>",
+            "proto_index": 7150,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 40,
+          "opcode": "0x38",
+          "units": [
+            3128,
+            41
+          ]
+        },
+        {
+          "code_unit_offset": 42,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64415,
+            12
+          ],
+          "method": {
+            "method_index": 64415,
+            "owner": "Ljava/util/List;",
+            "name": "size",
+            "proto_index": 62,
+            "prototype": "()I"
+          }
+        },
+        {
+          "code_unit_offset": 45,
+          "opcode": "0xa",
+          "units": [
+            2570
+          ]
+        },
+        {
+          "code_unit_offset": 46,
+          "opcode": "0x3d",
+          "units": [
+            2621,
+            35
+          ]
+        },
+        {
+          "code_unit_offset": 48,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64409,
+            12
+          ],
+          "method": {
+            "method_index": 64409,
+            "owner": "Ljava/util/List;",
+            "name": "iterator",
+            "proto_index": 6678,
+            "prototype": "()Ljava/util/Iterator;"
+          }
+        },
+        {
+          "code_unit_offset": 51,
+          "opcode": "0xc",
+          "units": [
+            2572
+          ]
+        },
+        {
+          "code_unit_offset": 52,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64360,
+            10
+          ],
+          "method": {
+            "method_index": 64360,
+            "owner": "Ljava/util/Iterator;",
+            "name": "hasNext",
+            "proto_index": 13361,
+            "prototype": "()Z"
+          }
+        },
+        {
+          "code_unit_offset": 55,
+          "opcode": "0xa",
+          "units": [
+            3082
+          ]
+        },
+        {
+          "code_unit_offset": 56,
+          "opcode": "0x38",
+          "units": [
+            3128,
+            25
+          ]
+        },
+        {
+          "code_unit_offset": 58,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64361,
+            10
+          ],
+          "method": {
+            "method_index": 64361,
+            "owner": "Ljava/util/Iterator;",
+            "name": "next",
+            "proto_index": 5930,
+            "prototype": "()Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 61,
+          "opcode": "0xc",
+          "units": [
+            3084
+          ]
+        },
+        {
+          "code_unit_offset": 62,
+          "opcode": "0x1f",
+          "units": [
+            3103,
+            3788
+          ],
+          "type": "Lcom/ss/android/TTHeader;"
+        },
+        {
+          "code_unit_offset": 64,
+          "opcode": "0x22",
+          "units": [
+            34,
+            1234
+          ],
+          "type": "Lcom/bytedance/retrofit2/client/Header;"
+        },
+        {
+          "code_unit_offset": 66,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            18011,
+            12
+          ],
+          "method": {
+            "method_index": 18011,
+            "owner": "Lcom/ss/android/TTHeader;",
+            "name": "getName",
+            "proto_index": 6095,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 69,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 70,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            18012,
+            12
+          ],
+          "method": {
+            "method_index": 18012,
+            "owner": "Lcom/ss/android/TTHeader;",
+            "name": "getValue",
+            "proto_index": 6095,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 73,
+          "opcode": "0xc",
+          "units": [
+            3084
+          ]
+        },
+        {
+          "code_unit_offset": 74,
+          "opcode": "0x70",
+          "units": [
+            12400,
+            4139,
+            3120
+          ],
+          "method": {
+            "method_index": 4139,
+            "owner": "Lcom/bytedance/retrofit2/client/Header;",
+            "name": "<init>",
+            "proto_index": 12458,
+            "prototype": "(Ljava/lang/String;Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 77,
+          "opcode": "0x72",
+          "units": [
+            8306,
+            64402,
+            7
+          ],
+          "method": {
+            "method_index": 64402,
+            "owner": "Ljava/util/List;",
+            "name": "add",
+            "proto_index": 13974,
+            "prototype": "(Ljava/lang/Object;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 80,
+          "opcode": "0x28",
+          "units": [
+            58408
+          ]
+        },
+        {
+          "code_unit_offset": 81,
+          "opcode": "0x22",
+          "units": [
+            2594,
+            10884
+          ],
+          "type": "Ljava/util/LinkedHashMap;"
+        },
+        {
+          "code_unit_offset": 83,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            64363,
+            10
+          ],
+          "method": {
+            "method_index": 64363,
+            "owner": "Ljava/util/LinkedHashMap;",
+            "name": "<init>",
+            "proto_index": 7150,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 86,
+          "opcode": "0x12",
+          "units": [
+            7186
+          ],
+          "const": 1,
+          "dest_register": 12
+        },
+        {
+          "code_unit_offset": 87,
+          "opcode": "0x71",
+          "units": [
+            8305,
+            3704,
+            202
+          ],
+          "method": {
+            "method_index": 3704,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/http/NetworkParams;",
+            "name": "putCommonParams",
+            "proto_index": 12946,
+            "prototype": "(Ljava/util/Map;Z)V"
+          }
+        },
+        {
+          "code_unit_offset": 90,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64433,
+            10
+          ],
+          "method": {
+            "method_index": 64433,
+            "owner": "Ljava/util/Map;",
+            "name": "isEmpty",
+            "proto_index": 13361,
+            "prototype": "()Z"
+          }
+        },
+        {
+          "code_unit_offset": 93,
+          "opcode": "0xa",
+          "units": [
+            3082
+          ]
+        },
+        {
+          "code_unit_offset": 94,
+          "opcode": "0x39",
+          "units": [
+            3129,
+            44
+          ]
+        },
+        {
+          "code_unit_offset": 96,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64431,
+            10
+          ],
+          "method": {
+            "method_index": 64431,
+            "owner": "Ljava/util/Map;",
+            "name": "entrySet",
+            "proto_index": 6849,
+            "prototype": "()Ljava/util/Set;"
+          }
+        },
+        {
+          "code_unit_offset": 99,
+          "opcode": "0xc",
+          "units": [
+            2572
+          ]
+        },
+        {
+          "code_unit_offset": 100,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64481,
+            10
+          ],
+          "method": {
+            "method_index": 64481,
+            "owner": "Ljava/util/Set;",
+            "name": "iterator",
+            "proto_index": 6678,
+            "prototype": "()Ljava/util/Iterator;"
+          }
+        },
+        {
+          "code_unit_offset": 103,
+          "opcode": "0xc",
+          "units": [
+            2572
+          ]
+        },
+        {
+          "code_unit_offset": 104,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64360,
+            10
+          ],
+          "method": {
+            "method_index": 64360,
+            "owner": "Ljava/util/Iterator;",
+            "name": "hasNext",
+            "proto_index": 13361,
+            "prototype": "()Z"
+          }
+        },
+        {
+          "code_unit_offset": 107,
+          "opcode": "0xa",
+          "units": [
+            3082
+          ]
+        },
+        {
+          "code_unit_offset": 108,
+          "opcode": "0x38",
+          "units": [
+            3128,
+            30
+          ]
+        },
+        {
+          "code_unit_offset": 110,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64361,
+            10
+          ],
+          "method": {
+            "method_index": 64361,
+            "owner": "Ljava/util/Iterator;",
+            "name": "next",
+            "proto_index": 5930,
+            "prototype": "()Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 113,
+          "opcode": "0xc",
+          "units": [
+            3084
+          ]
+        },
+        {
+          "code_unit_offset": 114,
+          "opcode": "0x1f",
+          "units": [
+            3103,
+            10890
+          ],
+          "type": "Ljava/util/Map$Entry;"
+        },
+        {
+          "code_unit_offset": 116,
+          "opcode": "0x39",
+          "units": [
+            3129,
+            3
+          ]
+        },
+        {
+          "code_unit_offset": 118,
+          "opcode": "0x28",
+          "units": [
+            61992
+          ]
+        },
+        {
+          "code_unit_offset": 119,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64426,
+            12
+          ],
+          "method": {
+            "method_index": 64426,
+            "owner": "Ljava/util/Map$Entry;",
+            "name": "getKey",
+            "proto_index": 5930,
+            "prototype": "()Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 122,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 123,
+          "opcode": "0x22",
+          "units": [
+            802,
+            1261
+          ],
+          "type": "Lcom/bytedance/retrofit2/mime/TypedString;"
+        },
+        {
+          "code_unit_offset": 125,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64427,
+            12
+          ],
+          "method": {
+            "method_index": 64427,
+            "owner": "Ljava/util/Map$Entry;",
+            "name": "getValue",
+            "proto_index": 5930,
+            "prototype": "()Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 128,
+          "opcode": "0xc",
+          "units": [
+            3084
+          ]
+        },
+        {
+          "code_unit_offset": 129,
+          "opcode": "0x1f",
+          "units": [
+            3103,
+            10760
+          ],
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 131,
+          "opcode": "0x70",
+          "units": [
+            8304,
+            4165,
+            195
+          ],
+          "method": {
+            "method_index": 4165,
+            "owner": "Lcom/bytedance/retrofit2/mime/TypedString;",
+            "name": "<init>",
+            "proto_index": 12221,
+            "prototype": "(Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 134,
+          "opcode": "0x72",
+          "units": [
+            12402,
+            64435,
+            779
+          ],
+          "method": {
+            "method_index": 64435,
+            "owner": "Ljava/util/Map;",
+            "name": "put",
+            "proto_index": 6035,
+            "prototype": "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 137,
+          "opcode": "0x28",
+          "units": [
+            57128
+          ]
+        },
+        {
+          "code_unit_offset": 138,
+          "opcode": "0x38",
+          "units": [
+            568,
+            9
+          ]
+        },
+        {
+          "code_unit_offset": 140,
+          "opcode": "0x1",
+          "units": [
+            37633
+          ]
+        },
+        {
+          "code_unit_offset": 141,
+          "opcode": "0x7",
+          "units": [
+            46599
+          ]
+        },
+        {
+          "code_unit_offset": 142,
+          "opcode": "0x78",
+          "units": [
+            1656,
+            4572,
+            2
+          ],
+          "method": {
+            "method_index": 4572,
+            "owner": "Lcom/bytedance/ttnet/INetworkApi;",
+            "name": "postMultiPart",
+            "proto_index": 1535,
+            "prototype": "(ILjava/lang/String;Ljava/util/Map;Ljava/util/Map;Ljava/util/List;)Lcom/bytedance/retrofit2/Call;"
+          }
+        },
+        {
+          "code_unit_offset": 145,
+          "opcode": "0xc",
+          "units": [
+            2316
+          ]
+        },
+        {
+          "code_unit_offset": 146,
+          "opcode": "0x11",
+          "units": [
+            2321
+          ]
+        },
+        {
+          "code_unit_offset": 147,
+          "opcode": "0x11",
+          "units": [
+            273
+          ]
+        }
+      ]
+    },
+    {
+      "method_index": 18246,
+      "owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+      "name": "parseHeaders",
+      "proto_index": 6757,
+      "prototype": "(Ljava/util/List;)Ljava/util/List;",
+      "code_offset": 2378364,
+      "registers": 6,
+      "incoming_words": 2,
+      "outgoing_words": 3,
+      "code_unit_count": 49,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x22",
+          "units": [
+            34,
+            10871
+          ],
+          "type": "Ljava/util/ArrayList;"
+        },
+        {
+          "code_unit_offset": 2,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            64257,
+            0
+          ],
+          "method": {
+            "method_index": 64257,
+            "owner": "Ljava/util/ArrayList;",
+            "name": "<init>",
+            "proto_index": 7150,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 5,
+          "opcode": "0x38",
+          "units": [
+            1336,
+            43
+          ]
+        },
+        {
+          "code_unit_offset": 7,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64408,
+            5
+          ],
+          "method": {
+            "method_index": 64408,
+            "owner": "Ljava/util/List;",
+            "name": "isEmpty",
+            "proto_index": 13361,
+            "prototype": "()Z"
+          }
+        },
+        {
+          "code_unit_offset": 10,
+          "opcode": "0xa",
+          "units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 11,
+          "opcode": "0x39",
+          "units": [
+            313,
+            37
+          ]
+        },
+        {
+          "code_unit_offset": 13,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64409,
+            5
+          ],
+          "method": {
+            "method_index": 64409,
+            "owner": "Ljava/util/List;",
+            "name": "iterator",
+            "proto_index": 6678,
+            "prototype": "()Ljava/util/Iterator;"
+          }
+        },
+        {
+          "code_unit_offset": 16,
+          "opcode": "0xc",
+          "units": [
+            1292
+          ]
+        },
+        {
+          "code_unit_offset": 17,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64360,
+            5
+          ],
+          "method": {
+            "method_index": 64360,
+            "owner": "Ljava/util/Iterator;",
+            "name": "hasNext",
+            "proto_index": 13361,
+            "prototype": "()Z"
+          }
+        },
+        {
+          "code_unit_offset": 20,
+          "opcode": "0xa",
+          "units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 21,
+          "opcode": "0x38",
+          "units": [
+            312,
+            27
+          ]
+        },
+        {
+          "code_unit_offset": 23,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64361,
+            5
+          ],
+          "method": {
+            "method_index": 64361,
+            "owner": "Ljava/util/Iterator;",
+            "name": "next",
+            "proto_index": 5930,
+            "prototype": "()Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 26,
+          "opcode": "0xc",
+          "units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 27,
+          "opcode": "0x1f",
+          "units": [
+            287,
+            1234
+          ],
+          "type": "Lcom/bytedance/retrofit2/client/Header;"
+        },
+        {
+          "code_unit_offset": 29,
+          "opcode": "0x38",
+          "units": [
+            312,
+            65524
+          ]
+        },
+        {
+          "code_unit_offset": 31,
+          "opcode": "0x22",
+          "units": [
+            546,
+            3788
+          ],
+          "type": "Lcom/ss/android/TTHeader;"
+        },
+        {
+          "code_unit_offset": 33,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            4140,
+            1
+          ],
+          "method": {
+            "method_index": 4140,
+            "owner": "Lcom/bytedance/retrofit2/client/Header;",
+            "name": "getName",
+            "proto_index": 6095,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 36,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 37,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            4141,
+            1
+          ],
+          "method": {
+            "method_index": 4141,
+            "owner": "Lcom/bytedance/retrofit2/client/Header;",
+            "name": "getValue",
+            "proto_index": 6095,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 40,
+          "opcode": "0xc",
+          "units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 41,
+          "opcode": "0x70",
+          "units": [
+            12400,
+            18009,
+            306
+          ],
+          "method": {
+            "method_index": 18009,
+            "owner": "Lcom/ss/android/TTHeader;",
+            "name": "<init>",
+            "proto_index": 12458,
+            "prototype": "(Ljava/lang/String;Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 44,
+          "opcode": "0x72",
+          "units": [
+            8306,
+            64402,
+            32
+          ],
+          "method": {
+            "method_index": 64402,
+            "owner": "Ljava/util/List;",
+            "name": "add",
+            "proto_index": 13974,
+            "prototype": "(Ljava/lang/Object;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 47,
+          "opcode": "0x28",
+          "units": [
+            57896
+          ]
+        },
+        {
+          "code_unit_offset": 48,
+          "opcode": "0x11",
+          "units": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "method_index": 18237,
+      "owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+      "name": "checkResponseException",
+      "proto_index": 124,
+      "prototype": "(Landroid/content/Context;Ljava/lang/Throwable;)I",
+      "code_offset": 2378188,
+      "registers": 6,
+      "incoming_words": 3,
+      "outgoing_words": 1,
+      "code_unit_count": 46,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x20",
+          "units": [
+            21536,
+            1017
+          ],
+          "type": "Lcom/bytedance/frameworks/baselib/network/http/cronet/impl/CronetIOException;"
+        },
+        {
+          "code_unit_offset": 2,
+          "opcode": "0x13",
+          "units": [
+            19,
+            65510
+          ],
+          "const": -26,
+          "dest_register": 0
+        },
+        {
+          "code_unit_offset": 4,
+          "opcode": "0x13",
+          "units": [
+            275,
+            429
+          ],
+          "const": 429,
+          "dest_register": 1
+        },
+        {
+          "code_unit_offset": 6,
+          "opcode": "0x38",
+          "units": [
+            1080,
+            25
+          ]
+        },
+        {
+          "code_unit_offset": 8,
+          "opcode": "0x7",
+          "units": [
+            21511
+          ]
+        },
+        {
+          "code_unit_offset": 9,
+          "opcode": "0x1f",
+          "units": [
+            1055,
+            1017
+          ],
+          "type": "Lcom/bytedance/frameworks/baselib/network/http/cronet/impl/CronetIOException;"
+        },
+        {
+          "code_unit_offset": 11,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            3713,
+            4
+          ],
+          "method": {
+            "method_index": 3713,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/http/cronet/impl/CronetIOException;",
+            "name": "getCronetInternalErrorCode",
+            "proto_index": 62,
+            "prototype": "()I"
+          }
+        },
+        {
+          "code_unit_offset": 14,
+          "opcode": "0xa",
+          "units": [
+            1034
+          ]
+        },
+        {
+          "code_unit_offset": 15,
+          "opcode": "0x13",
+          "units": [
+            531,
+            64981
+          ],
+          "const": -555,
+          "dest_register": 2
+        },
+        {
+          "code_unit_offset": 17,
+          "opcode": "0x33",
+          "units": [
+            9267,
+            5
+          ]
+        },
+        {
+          "code_unit_offset": 19,
+          "opcode": "0x13",
+          "units": [
+            1043,
+            65509
+          ],
+          "const": -27,
+          "dest_register": 4
+        },
+        {
+          "code_unit_offset": 21,
+          "opcode": "0xf",
+          "units": [
+            1039
+          ]
+        },
+        {
+          "code_unit_offset": 22,
+          "opcode": "0x1f",
+          "units": [
+            1311,
+            1017
+          ],
+          "type": "Lcom/bytedance/frameworks/baselib/network/http/cronet/impl/CronetIOException;"
+        },
+        {
+          "code_unit_offset": 24,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            3716,
+            5
+          ],
+          "method": {
+            "method_index": 3716,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/http/cronet/impl/CronetIOException;",
+            "name": "getStatusCode",
+            "proto_index": 62,
+            "prototype": "()I"
+          }
+        },
+        {
+          "code_unit_offset": 27,
+          "opcode": "0xa",
+          "units": [
+            1034
+          ]
+        },
+        {
+          "code_unit_offset": 28,
+          "opcode": "0x33",
+          "units": [
+            5171,
+            16
+          ]
+        },
+        {
+          "code_unit_offset": 30,
+          "opcode": "0xf",
+          "units": [
+            15
+          ]
+        },
+        {
+          "code_unit_offset": 31,
+          "opcode": "0x20",
+          "units": [
+            21536,
+            1020
+          ],
+          "type": "Lcom/bytedance/frameworks/baselib/network/http/exception/HttpResponseException;"
+        },
+        {
+          "code_unit_offset": 33,
+          "opcode": "0x38",
+          "units": [
+            1080,
+            11
+          ]
+        },
+        {
+          "code_unit_offset": 35,
+          "opcode": "0x1f",
+          "units": [
+            1311,
+            1020
+          ],
+          "type": "Lcom/bytedance/frameworks/baselib/network/http/exception/HttpResponseException;"
+        },
+        {
+          "code_unit_offset": 37,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            3719,
+            5
+          ],
+          "method": {
+            "method_index": 3719,
+            "owner": "Lcom/bytedance/frameworks/baselib/network/http/exception/HttpResponseException;",
+            "name": "getStatusCode",
+            "proto_index": 62,
+            "prototype": "()I"
+          }
+        },
+        {
+          "code_unit_offset": 40,
+          "opcode": "0xa",
+          "units": [
+            1034
+          ]
+        },
+        {
+          "code_unit_offset": 41,
+          "opcode": "0x33",
+          "units": [
+            5171,
+            3
+          ]
+        },
+        {
+          "code_unit_offset": 43,
+          "opcode": "0xf",
+          "units": [
+            15
+          ]
+        },
+        {
+          "code_unit_offset": 44,
+          "opcode": "0x12",
+          "units": [
+            1042
+          ],
+          "const": 0,
+          "dest_register": 4
+        },
+        {
+          "code_unit_offset": 45,
+          "opcode": "0xf",
+          "units": [
+            1039
+          ]
+        }
+      ]
+    },
+    {
+      "method_index": 18242,
+      "owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+      "name": "executeGet",
+      "proto_index": 2917,
+      "prototype": "(ILjava/lang/String;Ljava/util/List;I)Lcom/ss/android/TTResponse;",
+      "code_offset": 2377936,
+      "registers": 5,
+      "incoming_words": 5,
+      "outgoing_words": 5,
+      "code_unit_count": 9,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x70",
+          "units": [
+            21616,
+            18239,
+            12816
+          ],
+          "method": {
+            "method_index": 18239,
+            "owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+            "name": "doRealExecuteGet",
+            "proto_index": 1531,
+            "prototype": "(ILjava/lang/String;Ljava/util/List;I)Lcom/bytedance/retrofit2/Call;"
+          }
+        },
+        {
+          "code_unit_offset": 3,
+          "opcode": "0xc",
+          "units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "opcode": "0x70",
+          "units": [
+            8304,
+            18238,
+            16
+          ],
+          "method": {
+            "method_index": 18238,
+            "owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+            "name": "convertResponse",
+            "proto_index": 2920,
+            "prototype": "(Lcom/bytedance/retrofit2/Call;)Lcom/ss/android/TTResponse;"
+          }
+        },
+        {
+          "code_unit_offset": 7,
+          "opcode": "0xc",
+          "units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 8,
+          "opcode": "0x11",
+          "units": [
+            273
+          ]
+        }
+      ]
+    },
+    {
+      "method_index": 18243,
+      "owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+      "name": "executePost",
+      "proto_index": 2919,
+      "prototype": "(ILjava/lang/String;Ljava/util/Map;Ljava/util/List;I)Lcom/ss/android/TTResponse;",
+      "code_offset": 2377972,
+      "registers": 6,
+      "incoming_words": 6,
+      "outgoing_words": 6,
+      "code_unit_count": 9,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x76",
+          "units": [
+            1654,
+            18240,
+            0
+          ],
+          "method": {
+            "method_index": 18240,
+            "owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+            "name": "doRealExecutePost",
+            "proto_index": 1534,
+            "prototype": "(ILjava/lang/String;Ljava/util/Map;Ljava/util/List;I)Lcom/bytedance/retrofit2/Call;"
+          }
+        },
+        {
+          "code_unit_offset": 3,
+          "opcode": "0xc",
+          "units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "opcode": "0x70",
+          "units": [
+            8304,
+            18238,
+            16
+          ],
+          "method": {
+            "method_index": 18238,
+            "owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+            "name": "convertResponse",
+            "proto_index": 2920,
+            "prototype": "(Lcom/bytedance/retrofit2/Call;)Lcom/ss/android/TTResponse;"
+          }
+        },
+        {
+          "code_unit_offset": 7,
+          "opcode": "0xc",
+          "units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 8,
+          "opcode": "0x11",
+          "units": [
+            273
+          ]
+        }
+      ]
+    },
+    {
+      "method_index": 18244,
+      "owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+      "name": "getPublicIpv4Address",
+      "proto_index": 6686,
+      "prototype": "()Ljava/util/List;",
+      "code_offset": 2378308,
+      "registers": 2,
+      "incoming_words": 1,
+      "outgoing_words": 0,
+      "code_unit_count": 5,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x71",
+          "units": [
+            113,
+            4576,
+            0
+          ],
+          "method": {
+            "method_index": 4576,
+            "owner": "Lcom/bytedance/ttnet/TTNetInit;",
+            "name": "getPublicIPv4List",
+            "proto_index": 6686,
+            "prototype": "()Ljava/util/List;"
+          }
+        },
+        {
+          "code_unit_offset": 3,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "opcode": "0x11",
+          "units": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "method_index": 18245,
+      "owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+      "name": "getPublicIpv6Address",
+      "proto_index": 6686,
+      "prototype": "()Ljava/util/List;",
+      "code_offset": 2378336,
+      "registers": 2,
+      "incoming_words": 1,
+      "outgoing_words": 0,
+      "code_unit_count": 5,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x71",
+          "units": [
+            113,
+            4577,
+            0
+          ],
+          "method": {
+            "method_index": 4577,
+            "owner": "Lcom/bytedance/ttnet/TTNetInit;",
+            "name": "getPublicIPv6List",
+            "proto_index": 6686,
+            "prototype": "()Ljava/util/List;"
+          }
+        },
+        {
+          "code_unit_offset": 3,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "opcode": "0x11",
+          "units": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "method_index": 18247,
+      "owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+      "name": "postFile",
+      "proto_index": 2918,
+      "prototype": "(ILjava/lang/String;Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Lcom/ss/android/TTResponse;",
+      "code_offset": 2378008,
+      "registers": 12,
+      "incoming_words": 7,
+      "outgoing_words": 5,
+      "code_unit_count": 82,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            3639,
+            7
+          ],
+          "method": {
+            "method_index": 3639,
+            "owner": "Lcom/bytedance/common/utility/StringUtils;",
+            "name": "isEmpty",
+            "proto_index": 13981,
+            "prototype": "(Ljava/lang/String;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 3,
+          "opcode": "0xa",
+          "units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "opcode": "0x12",
+          "units": [
+            274
+          ],
+          "const": 0,
+          "dest_register": 1
+        },
+        {
+          "code_unit_offset": 5,
+          "opcode": "0x38",
+          "units": [
+            56,
+            3
+          ]
+        },
+        {
+          "code_unit_offset": 7,
+          "opcode": "0x11",
+          "units": [
+            273
+          ]
+        },
+        {
+          "code_unit_offset": 8,
+          "opcode": "0x22",
+          "units": [
+            34,
+            10884
+          ],
+          "type": "Ljava/util/LinkedHashMap;"
+        },
+        {
+          "code_unit_offset": 10,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            64363,
+            0
+          ],
+          "method": {
+            "method_index": 64363,
+            "owner": "Ljava/util/LinkedHashMap;",
+            "name": "<init>",
+            "proto_index": 7150,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 13,
+          "opcode": "0x38",
+          "units": [
+            2104,
+            47
+          ]
+        },
+        {
+          "code_unit_offset": 15,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64433,
+            8
+          ],
+          "method": {
+            "method_index": 64433,
+            "owner": "Ljava/util/Map;",
+            "name": "isEmpty",
+            "proto_index": 13361,
+            "prototype": "()Z"
+          }
+        },
+        {
+          "code_unit_offset": 18,
+          "opcode": "0xa",
+          "units": [
+            522
+          ]
+        },
+        {
+          "code_unit_offset": 19,
+          "opcode": "0x39",
+          "units": [
+            569,
+            41
+          ]
+        },
+        {
+          "code_unit_offset": 21,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64431,
+            8
+          ],
+          "method": {
+            "method_index": 64431,
+            "owner": "Ljava/util/Map;",
+            "name": "entrySet",
+            "proto_index": 6849,
+            "prototype": "()Ljava/util/Set;"
+          }
+        },
+        {
+          "code_unit_offset": 24,
+          "opcode": "0xc",
+          "units": [
+            2060
+          ]
+        },
+        {
+          "code_unit_offset": 25,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64481,
+            8
+          ],
+          "method": {
+            "method_index": 64481,
+            "owner": "Ljava/util/Set;",
+            "name": "iterator",
+            "proto_index": 6678,
+            "prototype": "()Ljava/util/Iterator;"
+          }
+        },
+        {
+          "code_unit_offset": 28,
+          "opcode": "0xc",
+          "units": [
+            2060
+          ]
+        },
+        {
+          "code_unit_offset": 29,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64360,
+            8
+          ],
+          "method": {
+            "method_index": 64360,
+            "owner": "Ljava/util/Iterator;",
+            "name": "hasNext",
+            "proto_index": 13361,
+            "prototype": "()Z"
+          }
+        },
+        {
+          "code_unit_offset": 32,
+          "opcode": "0xa",
+          "units": [
+            522
+          ]
+        },
+        {
+          "code_unit_offset": 33,
+          "opcode": "0x38",
+          "units": [
+            568,
+            27
+          ]
+        },
+        {
+          "code_unit_offset": 35,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64361,
+            8
+          ],
+          "method": {
+            "method_index": 64361,
+            "owner": "Ljava/util/Iterator;",
+            "name": "next",
+            "proto_index": 5930,
+            "prototype": "()Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 38,
+          "opcode": "0xc",
+          "units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 39,
+          "opcode": "0x1f",
+          "units": [
+            543,
+            10890
+          ],
+          "type": "Ljava/util/Map$Entry;"
+        },
+        {
+          "code_unit_offset": 41,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64426,
+            2
+          ],
+          "method": {
+            "method_index": 64426,
+            "owner": "Ljava/util/Map$Entry;",
+            "name": "getKey",
+            "proto_index": 5930,
+            "prototype": "()Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 44,
+          "opcode": "0xc",
+          "units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 45,
+          "opcode": "0x22",
+          "units": [
+            1058,
+            1261
+          ],
+          "type": "Lcom/bytedance/retrofit2/mime/TypedString;"
+        },
+        {
+          "code_unit_offset": 47,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            64427,
+            2
+          ],
+          "method": {
+            "method_index": 64427,
+            "owner": "Ljava/util/Map$Entry;",
+            "name": "getValue",
+            "proto_index": 5930,
+            "prototype": "()Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 50,
+          "opcode": "0xc",
+          "units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 51,
+          "opcode": "0x1f",
+          "units": [
+            543,
+            10760
+          ],
+          "type": "Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 53,
+          "opcode": "0x70",
+          "units": [
+            8304,
+            4165,
+            36
+          ],
+          "method": {
+            "method_index": 4165,
+            "owner": "Lcom/bytedance/retrofit2/mime/TypedString;",
+            "name": "<init>",
+            "proto_index": 12221,
+            "prototype": "(Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 56,
+          "opcode": "0x72",
+          "units": [
+            12402,
+            64435,
+            1072
+          ],
+          "method": {
+            "method_index": 64435,
+            "owner": "Ljava/util/Map;",
+            "name": "put",
+            "proto_index": 6035,
+            "prototype": "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 59,
+          "opcode": "0x28",
+          "units": [
+            57896
+          ]
+        },
+        {
+          "code_unit_offset": 60,
+          "opcode": "0x22",
+          "units": [
+            2082,
+            1258
+          ],
+          "type": "Lcom/bytedance/retrofit2/mime/TypedFile;"
+        },
+        {
+          "code_unit_offset": 62,
+          "opcode": "0x22",
+          "units": [
+            546,
+            10680
+          ],
+          "type": "Ljava/io/File;"
+        },
+        {
+          "code_unit_offset": 64,
+          "opcode": "0x70",
+          "units": [
+            8304,
+            63584,
+            162
+          ],
+          "method": {
+            "method_index": 63584,
+            "owner": "Ljava/io/File;",
+            "name": "<init>",
+            "proto_index": 12221,
+            "prototype": "(Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 67,
+          "opcode": "0x70",
+          "units": [
+            12400,
+            4160,
+            536
+          ],
+          "method": {
+            "method_index": 4160,
+            "owner": "Lcom/bytedance/retrofit2/mime/TypedFile;",
+            "name": "<init>",
+            "proto_index": 12433,
+            "prototype": "(Ljava/lang/String;Ljava/io/File;)V"
+          }
+        },
+        {
+          "code_unit_offset": 70,
+          "opcode": "0x72",
+          "units": [
+            12402,
+            64435,
+            2192
+          ],
+          "method": {
+            "method_index": 64435,
+            "owner": "Ljava/util/Map;",
+            "name": "put",
+            "proto_index": 6035,
+            "prototype": "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 73,
+          "opcode": "0x70",
+          "units": [
+            23408,
+            18241,
+            1893
+          ],
+          "method": {
+            "method_index": 18241,
+            "owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+            "name": "doRealExecutePostFile",
+            "proto_index": 1533,
+            "prototype": "(ILjava/lang/String;Ljava/util/Map;Ljava/util/List;)Lcom/bytedance/retrofit2/Call;"
+          }
+        },
+        {
+          "code_unit_offset": 76,
+          "opcode": "0xc",
+          "units": [
+            1548
+          ]
+        },
+        {
+          "code_unit_offset": 77,
+          "opcode": "0x70",
+          "units": [
+            8304,
+            18238,
+            101
+          ],
+          "method": {
+            "method_index": 18238,
+            "owner": "Lcom/ss/android/account/adapter/NetworkAdapter;",
+            "name": "convertResponse",
+            "proto_index": 2920,
+            "prototype": "(Lcom/bytedance/retrofit2/Call;)Lcom/ss/android/TTResponse;"
+          }
+        },
+        {
+          "code_unit_offset": 80,
+          "opcode": "0xc",
+          "units": [
+            1548
+          ]
+        },
+        {
+          "code_unit_offset": 81,
+          "opcode": "0x11",
+          "units": [
+            1553
+          ]
+        }
+      ]
+    }
+  ]
+}

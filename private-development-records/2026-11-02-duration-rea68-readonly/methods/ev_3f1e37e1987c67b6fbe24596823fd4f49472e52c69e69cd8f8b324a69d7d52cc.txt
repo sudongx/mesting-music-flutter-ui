@@ -1,0 +1,50 @@
+    public void h() {
+        MusicInfo currentMusic = getCurrentMusic();
+        if (AttachResourceKt.getConfig(currentMusic).getDisablePlvPld()) {
+            ia.t0.q("BasePlayerManager", ">>>>>>> logMusicStart 记录视频播放点 >>>> ", ia.t0.c("musicInfo: ", currentMusic, " isVideoMusic: ", Boolean.valueOf(ic.c(currentMusic)), " config: ", AttachResourceKt.getConfig(currentMusic)));
+            a2.C1(currentMusic.getFilterMusicId(), f2.Video.getType());
+            d1.g(currentMusic);
+            return;
+        }
+        hr.a.h(currentMusic);
+        if (currentMusic == null) {
+            return;
+        }
+        boolean zIsRawBizTypeProgram = currentMusic.isRawBizTypeProgram();
+        if (mc.M(currentMusic)) {
+            xz0.b.f(xz0.b.d(currentMusic));
+            return;
+        }
+        this.G = 0L;
+        a2.C1(currentMusic.getFilterMusicId(), f2.Music.getType());
+        b0(i0());
+        com.alibaba.fastjson.JSONObject jSONObjectR2 = R2(new Object[0]);
+        for (Map.Entry entry : y41.d.a.d(currentMusic).entrySet()) {
+            String str = (String) entry.getKey();
+            String str2 = (String) entry.getValue();
+            if (!str.isEmpty() && !str2.isEmpty()) {
+                jSONObjectR2.put(str, str2);
+            }
+        }
+        if (jSONObjectR2 != null) {
+            P2(jSONObjectR2, currentMusic);
+            if (com.netease.cloudmusic.k.i()) {
+                ij.f("Music");
+                ka.d.k.f().e(jSONObjectR2.getInnerMap()).a();
+            }
+            ia.t0.q("BasePlayerManager", ">>>>>>> 音乐播放 musicStart info >>>> ", jSONObjectR2);
+            String string = jSONObjectR2.getString("source");
+            if (zIsRawBizTypeProgram) {
+                pl0.c.a.f("startplay", jSONObjectR2);
+                ia.p0.v3();
+            } else if ("userfm".equals(string)) {
+                sr.p("startplay", "MusicPlayerMananger_logMusicStart_userfm", jSONObjectR2);
+            } else {
+                sr.h("startplay", jSONObjectR2);
+            }
+            if (!zIsRawBizTypeProgram) {
+                this.B.d(jSONObjectR2);
+            }
+            ql0.c.INSTANCE.d();
+        }
+    }

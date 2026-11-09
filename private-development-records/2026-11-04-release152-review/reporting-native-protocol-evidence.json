@@ -1,0 +1,532 @@
+[
+  {
+    "evidence_id": "ev_47b9dcb06f2a0c9e1ac415ec32b361ea9cb687ce56e6f0d7b1e74b1623daa3ed",
+    "subject": {
+      "name": "classes10-focus.apk",
+      "digest": {
+        "sha256": "ea0b02936414b71478f8906ae187f5a60dd9f858a98162892a1f8a5dd5436f1a"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes10-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "provider": {
+      "id": "rea-analysis-view",
+      "name": "REA analysis view projection",
+      "version": "1"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis-view",
+    "operation": "inspect_analysis_view",
+    "parameters": {
+      "parent_evidence_id": "ev_4ea7e204f745a018aaced45d239485fa6f042e5e5116e799bd7278cb6137f7da",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_4ea7e204f745a018aaced45d239485fa6f042e5e5116e799bd7278cb6137f7da",
+      "parent_operation": "inspect_android_method",
+      "parent_digest": "4ea7e204f745a018aaced45d239485fa6f042e5e5116e799bd7278cb6137f7da",
+      "view_digest": "14744a417d1e30ed778697254b8016560f663c482942e00faa04d0d4e68c1c1c",
+      "artifact": {
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes10-focus.apk",
+        "sha256": "ea0b02936414b71478f8906ae187f5a60dd9f858a98162892a1f8a5dd5436f1a"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 1,
+        "total": 1,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+      ],
+      "unknowns": [
+        "Static class and method analysis does not establish runtime behavior or APK authenticity."
+      ],
+      "summary": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "ec6.a",
+        "method": {
+          "name": "b",
+          "reported_signature": "b(int, int): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(II)Ljava/lang/String;"
+        },
+        "overload_count": 1,
+        "representation": "java",
+        "body_status": "available",
+        "fell_back": false,
+        "markers": [],
+        "source": {
+          "status": "complete",
+          "text": "    public static String b(@IntRange(from = Long.MIN_VALUE, to = Long.MAX_VALUE) int i, @IntRange(from = -7, to = 0) int i2) {\r\n        int iB0;\r\n        int iG0;\r\n        long jF0 = SystemUtils.f0();\r\n        if (i == 2) {\r\n            iG0 = l0.g0(jF0);\r\n            iB0 = l0.b0(jF0) + i2;\r\n            if (iB0 <= 0) {\r\n                iG0 = l0.g0(jF0) + i2;\r\n                iB0 = 12;\r\n            }\r\n        } else {\r\n            int iG1 = l0.g0(jF0);\r\n            int iU = l0.U(jF0) + (i2 * 7);\r\n            if (iU <= 0) {\r\n                iG1--;\r\n                iU += l0.a0(iG1);\r\n            }\r\n            l0.a aVarF0 = l0.f0(iG1, iU);\r\n            int i3 = aVarF0.a;\r\n            iB0 = aVarF0.b;\r\n            iG0 = i3;\r\n        }\r\n        String strValueOf = String.valueOf(iB0);\r\n        if (strValueOf.length() == 1) {\r\n            strValueOf = RingPetRecProtocol.SCENE_TYPE_NORMAL + strValueOf;\r\n        }\r\n        return iG0 + strValueOf;\r\n    }",
+          "reported_total_bytes": null
+        }
+      }
+    },
+    "confidence": "derived",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ],
+    "relationship_coverage": null,
+    "locations": [
+      {
+        "kind": "artifact-path",
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes10-focus.apk"
+      }
+    ],
+    "evidence_links": [
+      "ev_4ea7e204f745a018aaced45d239485fa6f042e5e5116e799bd7278cb6137f7da"
+    ]
+  },
+  {
+    "evidence_id": "ev_3f0b71f5a83633c81ac45ce18bd05d408234afe918eedc3858a648ac01f84930",
+    "subject": {
+      "name": "classes17-focus.apk",
+      "digest": {
+        "sha256": "3c4625fe23c7750d7605bc14f2546a74bf0edb9ee3996b1db916690637e48a19"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes17-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "provider": {
+      "id": "rea-analysis-view",
+      "name": "REA analysis view projection",
+      "version": "1"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis-view",
+    "operation": "inspect_analysis_view",
+    "parameters": {
+      "parent_evidence_id": "ev_049ff5dcf0268bfca73d9e473b77a2cf411bb88e287645794e79c5ca95f6a544",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_049ff5dcf0268bfca73d9e473b77a2cf411bb88e287645794e79c5ca95f6a544",
+      "parent_operation": "inspect_android_method",
+      "parent_digest": "049ff5dcf0268bfca73d9e473b77a2cf411bb88e287645794e79c5ca95f6a544",
+      "view_digest": "94edda5e4df3043f8099827fad71de531d0f9052ef41bfbaba0b4d4cd1e900c1",
+      "artifact": {
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes17-focus.apk",
+        "sha256": "3c4625fe23c7750d7605bc14f2546a74bf0edb9ee3996b1db916690637e48a19"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 1,
+        "total": 1,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+      ],
+      "unknowns": [
+        "Static class and method analysis does not establish runtime behavior or APK authenticity."
+      ],
+      "summary": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "sf5.a",
+        "method": {
+          "name": "C",
+          "reported_signature": "C(long, java.lang.String, int, java.lang.String): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(JLjava/lang/String;ILjava/lang/String;)Z"
+        },
+        "overload_count": 1,
+        "representation": "java",
+        "body_status": "available",
+        "fell_back": false,
+        "markers": [],
+        "source": {
+          "status": "complete",
+          "text": "    public static boolean C(@IntRange(from = 0, to = Long.MAX_VALUE) long j, String str, @IntRange(from = Long.MIN_VALUE, to = Long.MAX_VALUE) int i, String str2) {\r\n        int iUpdate;\r\n        ContentValues contentValues = new ContentValues();\r\n        contentValues.put(\"need_report\", (Integer) 0);\r\n        try {\r\n            iUpdate = oc3.c.g().getContentResolver().update(d.r, contentValues, \"user_id = ? AND mid = ? AND date_type = ? AND date = ? \", l5.N0(new Object[]{Long.valueOf(j), str, Integer.valueOf(i), str2}));\r\n        } catch (Exception e) {\r\n            n2.a0(\"yijunwu_listen\", e);\r\n            iUpdate = 0;\r\n        }\r\n        return iUpdate >= 1;\r\n    }",
+          "reported_total_bytes": null
+        }
+      }
+    },
+    "confidence": "derived",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ],
+    "relationship_coverage": null,
+    "locations": [
+      {
+        "kind": "artifact-path",
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes17-focus.apk"
+      }
+    ],
+    "evidence_links": [
+      "ev_049ff5dcf0268bfca73d9e473b77a2cf411bb88e287645794e79c5ca95f6a544"
+    ]
+  },
+  {
+    "evidence_id": "ev_69883b89258ba2198d08ae329df05dfc9af1ecdf4dba61d81d15367d2b863833",
+    "subject": {
+      "name": "classes17-focus.apk",
+      "digest": {
+        "sha256": "3c4625fe23c7750d7605bc14f2546a74bf0edb9ee3996b1db916690637e48a19"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes17-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "provider": {
+      "id": "rea-analysis-view",
+      "name": "REA analysis view projection",
+      "version": "1"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis-view",
+    "operation": "inspect_analysis_view",
+    "parameters": {
+      "parent_evidence_id": "ev_b6e2a351da63c0c772f4cd816899ad286b224d04e1db408ec3eca28f7798142a",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_b6e2a351da63c0c772f4cd816899ad286b224d04e1db408ec3eca28f7798142a",
+      "parent_operation": "inspect_android_method",
+      "parent_digest": "b6e2a351da63c0c772f4cd816899ad286b224d04e1db408ec3eca28f7798142a",
+      "view_digest": "5b3595cfb2daebe05a443843e6257502a3ff84426cba5b9f2a96cf6f7c23b28c",
+      "artifact": {
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes17-focus.apk",
+        "sha256": "3c4625fe23c7750d7605bc14f2546a74bf0edb9ee3996b1db916690637e48a19"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 1,
+        "total": 1,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+      ],
+      "unknowns": [
+        "Static class and method analysis does not establish runtime behavior or APK authenticity."
+      ],
+      "summary": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "sf5.a",
+        "method": {
+          "name": "z",
+          "reported_signature": "z(sf5.a$a): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lsf5/a$a;)Z"
+        },
+        "overload_count": 1,
+        "representation": "java",
+        "body_status": "available",
+        "fell_back": false,
+        "markers": [],
+        "source": {
+          "status": "complete",
+          "text": "    public static boolean z(C0298a c0298a) {\r\n        C0298a c0298aI = i(c0298a);\r\n        c0298a.j = SystemUtils.f0();\r\n        if (c0298aI == null) {\r\n            long jX = x(c0298a);\r\n            if (n2.f) {\r\n                n2.f(\"yijunwu_listen\", \"insert id: \" + jX);\r\n            }\r\n            return jX != -1;\r\n        }\r\n        c0298a.a = c0298aI.a;\r\n        if (c0298a.d == 5) {\r\n            c0298a.h |= c0298aI.h;\r\n        } else {\r\n            c0298a.h = Math.max(c0298a.h, c0298aI.h);\r\n        }\r\n        if (n2.f) {\r\n            n2.f(\"yijunwu_listen\", \"update: \" + c0298a);\r\n        }\r\n        return A(c0298a);\r\n    }",
+          "reported_total_bytes": null
+        }
+      }
+    },
+    "confidence": "derived",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ],
+    "relationship_coverage": null,
+    "locations": [
+      {
+        "kind": "artifact-path",
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes17-focus.apk"
+      }
+    ],
+    "evidence_links": [
+      "ev_b6e2a351da63c0c772f4cd816899ad286b224d04e1db408ec3eca28f7798142a"
+    ]
+  },
+  {
+    "evidence_id": "ev_2472f459d60b6ae6c609efe507d7d014e350a27c45984cd9af9d2c810dcbf0ea",
+    "subject": {
+      "name": "classes26-focus.apk",
+      "digest": {
+        "sha256": "cd951a0c5010ca390448c8b3763afda28c0da5b66020fcd63095d19708f056ce"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes26-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "provider": {
+      "id": "rea-analysis-view",
+      "name": "REA analysis view projection",
+      "version": "1"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis-view",
+    "operation": "inspect_analysis_view",
+    "parameters": {
+      "parent_evidence_id": "ev_7a04758cf3f1ca2702f64862b1fbb3065d87472126e54c12a842e5bd4f68c0ab",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_7a04758cf3f1ca2702f64862b1fbb3065d87472126e54c12a842e5bd4f68c0ab",
+      "parent_operation": "inspect_android_method",
+      "parent_digest": "7a04758cf3f1ca2702f64862b1fbb3065d87472126e54c12a842e5bd4f68c0ab",
+      "view_digest": "ecd5edb08d9012c8720a2b9a2cef5935757e3e2ca12ccae6d31c376988d29d90",
+      "artifact": {
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes26-focus.apk",
+        "sha256": "cd951a0c5010ca390448c8b3763afda28c0da5b66020fcd63095d19708f056ce"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 1,
+        "total": 1,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+      ],
+      "unknowns": [
+        "Static class and method analysis does not establish runtime behavior or APK authenticity."
+      ],
+      "summary": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "zs.a",
+        "method": {
+          "name": "k",
+          "reported_signature": "k(int, boolean): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(IZ)Z"
+        },
+        "overload_count": 1,
+        "representation": "java",
+        "body_status": "available",
+        "fell_back": false,
+        "markers": [],
+        "source": {
+          "status": "complete",
+          "text": "    /* JADX WARN: Code duplicated, block: B:97:0x026e  */\r\n    /* JADX WARN: Code duplicated, block: B:99:0x0277  */\r\n    private synchronized boolean k(@IntRange(from = Long.MIN_VALUE, to = Long.MAX_VALUE) int i2, boolean z) {\r\n        boolean z2;\r\n        dt.a aVar;\r\n        long j;\r\n        long j2;\r\n        boolean z3;\r\n        String str;\r\n        kc3.a aVar2;\r\n        int i3;\r\n        boolean z4;\r\n        int i4;\r\n        if (SwordSwitches.switches6 != null) {\r\n            SwordProxyResult swordProxyResultProxy2Arg = SwordProxy.proxy2Arg(Integer.valueOf(i2), Boolean.valueOf(z), this, 541994808380464L);\r\n            if (swordProxyResultProxy2Arg.isSupported) {\r\n                return ((Boolean) swordProxyResultProxy2Arg.result).booleanValue();\r\n            }\r\n        }\r\n        if (n2.f) {\r\n            n2.f(\"yijunwu_listen\", \"download dateType: \" + i2);\r\n        }\r\n        dt.a aVar3 = new dt.a();\r\n        aVar3.b();\r\n        boolean z5 = !et.a.b(i2) || z;\r\n        String strA = ec6.a.a(i2);\r\n        ListenSongQueryResult listenSongQueryResultE = ListenSongDataModel.e(i2, ec6.a.a(i2), z5, sf5.b.d(th3.a.x1(), i2, strA));\r\n        boolean z6 = listenSongQueryResultE != null && listenSongQueryResultE.status == 1;\r\n        if (z6 && ye5.f.c(listenSongQueryResultE.data)) {\r\n            long jElapsedRealtime = SystemClock.elapsedRealtime();\r\n            j = -1;\r\n            j2 = -1;\r\n            boolean z7 = true;\r\n            for (ListenSongQueryResult.DataBean dataBean : listenSongQueryResultE.data) {\r\n                if (dataBean != null && !l5.u0(dataBean.mid)) {\r\n                    ArrayList arrayList = new ArrayList();\r\n                    arrayList.add(h(dataBean.mid, 5, i2, strA, 0L, dataBean.listen_day));\r\n                    arrayList.add(h(dataBean.mid, 4, i2, strA, 0L, dataBean.listen_time));\r\n                    t(false, dataBean.mid, 1, i2, strA, dataBean.song_sort_list, arrayList);\r\n                    t(false, dataBean.mid, 2, i2, strA, dataBean.singer_sort_list, arrayList);\r\n                    t(true, dataBean.mid, 3, i2, strA, dataBean.style_sort_list, arrayList);\r\n                    t(true, dataBean.mid, 6, i2, strA, dataBean.week_day_listen_time, arrayList);\r\n                    if (n2.f) {\r\n                        n2.f(\"yijunwu_listen\", \"data.size : \" + arrayList.size());\r\n                    }\r\n                    for (sf5.a.a aVar4 : arrayList) {\r\n                        if (dataBean.mid.equals(SystemUtils.r2())) {\r\n                            if (n2.f) {\r\n                                n2.f(\"yijunwu_listen\", \"自己的手机，覆盖数据，使用大的数据\");\r\n                            }\r\n                            boolean z8 = z7 && sf5.a.z(aVar4);\r\n                            int i5 = aVar4.d;\r\n                            if (i5 == 4) {\r\n                                z7 = z8;\r\n                                j = aVar4.h;\r\n                            } else if (i5 == 5) {\r\n                                z7 = z8;\r\n                                j2 = aVar4.h;\r\n                            } else {\r\n                                z7 = z8;\r\n                            }\r\n                        } else {\r\n                            z7 = z7 && sf5.a.y(aVar4);\r\n                        }\r\n                    }\r\n                    sf5.b.a aVar5 = new sf5.b.a();\r\n                    aVar5.f = dataBean.upload_time;\r\n                    aVar5.b = th3.a.x1();\r\n                    aVar5.c = i2;\r\n                    aVar5.d = strA;\r\n                    aVar5.e = dataBean.mid;\r\n                    sf5.b.g(aVar5);\r\n                }\r\n                z6 = z6;\r\n                aVar3 = aVar3;\r\n            }\r\n            z2 = z6;\r\n            aVar = aVar3;\r\n            if (n2.f) {\r\n                n2.f(\"yijunwu_listen\", \"download: \" + (SystemClock.elapsedRealtime() - jElapsedRealtime));\r\n            }\r\n            z3 = z7;\r\n        } else {\r\n            z2 = z6;\r\n            aVar = aVar3;\r\n            j = -1;\r\n            j2 = -1;\r\n            z3 = true;\r\n        }\r\n        if (n2.f) {\r\n            n2.f(\"yijunwu_listen\", \"isSucceed: \" + z2 + \", isDBSucceed: \" + z3);\r\n        }\r\n        if (z2 && z3) {\r\n            et.a.h(i2, true);\r\n        }\r\n        if (listenSongQueryResultE != null) {\r\n            i3 = listenSongQueryResultE.errcode;\r\n            str = listenSongQueryResultE.errmsg;\r\n            aVar2 = listenSongQueryResultE.netApmData;\r\n        } else {\r\n            str = \"\";\r\n            aVar2 = null;\r\n            i3 = -1;\r\n        }\r\n        if (z2) {\r\n            if (j != -1) {\r\n                z4 = z2;\r\n                z(100, null, 0, \"\", i2, strA, j, -1L, j2, null, null, null, null, -1);\r\n            }\r\n            if (j != -1) {\r\n                i4 = 11;\r\n            } else {\r\n                i4 = 10;\r\n            }\r\n            aVar.a(z4, i3, aVar2, i4);\r\n            return z4;\r\n        }\r\n        y(z5 ? 101 : 102, aVar2, i3, str, i2, strA);\r\n        z4 = z2;\r\n        if (j != -1) {\r\n            i4 = 11;\r\n        } else {\r\n            i4 = 10;\r\n        }\r\n        aVar.a(z4, i3, aVar2, i4);\r\n        return z4;\r\n    }",
+          "reported_total_bytes": null
+        }
+      }
+    },
+    "confidence": "derived",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ],
+    "relationship_coverage": null,
+    "locations": [
+      {
+        "kind": "artifact-path",
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes26-focus.apk"
+      }
+    ],
+    "evidence_links": [
+      "ev_7a04758cf3f1ca2702f64862b1fbb3065d87472126e54c12a842e5bd4f68c0ab"
+    ]
+  },
+  {
+    "evidence_id": "ev_2fc97d4a61b7b99c0442b42c3e662ff5cc2d612618b99dff3ba8f72388af8c12",
+    "subject": {
+      "name": "classes10-focus.apk",
+      "digest": {
+        "sha256": "ea0b02936414b71478f8906ae187f5a60dd9f858a98162892a1f8a5dd5436f1a"
+      },
+      "local_path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes10-focus.apk",
+      "format": "apk",
+      "architecture": null
+    },
+    "provider": {
+      "id": "rea-analysis-view",
+      "name": "REA analysis view projection",
+      "version": "1"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis-view",
+    "operation": "inspect_analysis_view",
+    "parameters": {
+      "parent_evidence_id": "ev_37274eafd3096a263bbb633d6fc623ed02d806912df75cad5ba9988a95c55bb5",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_37274eafd3096a263bbb633d6fc623ed02d806912df75cad5ba9988a95c55bb5",
+      "parent_operation": "inspect_android_method",
+      "parent_digest": "37274eafd3096a263bbb633d6fc623ed02d806912df75cad5ba9988a95c55bb5",
+      "view_digest": "fa4778cbbc06baa2cf97d8c841e41b736a988dfa05f9b8438603fe451d9fa13a",
+      "artifact": {
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes10-focus.apk",
+        "sha256": "ea0b02936414b71478f8906ae187f5a60dd9f858a98162892a1f8a5dd5436f1a"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 1,
+        "total": 1,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+        "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+        "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+        "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+        "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+      ],
+      "unknowns": [
+        "Static class and method analysis does not establish runtime behavior or APK authenticity."
+      ],
+      "summary": {
+        "engine": {
+          "name": "jadx-headless-mcp",
+          "version": "0.7.1",
+          "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+          "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+          "worker_count": 1,
+          "heap_limit_mib": 3072
+        },
+        "class_name": "ec6.a",
+        "method": {
+          "name": "d",
+          "reported_signature": "d(): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Z"
+        },
+        "overload_count": 1,
+        "representation": "java",
+        "body_status": "available",
+        "fell_back": false,
+        "markers": [],
+        "source": {
+          "status": "complete",
+          "text": "    public static boolean d() {\r\n        return e.N().h(KGConfigKeys.ew);\r\n    }",
+          "reported_total_bytes": null
+        }
+      }
+    },
+    "confidence": "derived",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summaries are parsed once by REA's bridge from the exact root AndroidManifest.xml resource, using namespace-aware XML attributes; decoded XML is retained. These summaries do not verify APK signatures, split APKs or Android runtime capture.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed."
+    ],
+    "relationship_coverage": null,
+    "locations": [
+      {
+        "kind": "artifact-path",
+        "path": "D:\\AnLi\\.codex-artifacts\\2026-11-04-release152-review\\private\\classes10-focus.apk"
+      }
+    ],
+    "evidence_links": [
+      "ev_37274eafd3096a263bbb633d6fc623ed02d806912df75cad5ba9988a95c55bb5"
+    ]
+  }
+]

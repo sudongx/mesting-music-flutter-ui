@@ -1,0 +1,36 @@
+00:00 +0: loading D:/AnLi/test/release_130_artwork_reveal_test.dart
+00:00 +0: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: common page reveals first-screen text only with decoded artwork, semantics and taps
+00:01 +1: scroll keeps old rows and reveals a new visible batch together
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: a value greater than <0>
+  Actual: <0>
+   Which: is not a value greater than <0>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_130_artwork_reveal_test.dart:242:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_130_artwork_reveal_test.dart line 242
+The test description was:
+  scroll keeps old rows and reveals a new visible batch together
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:02 +1 -1: scroll keeps old rows and reveals a new visible batch together [E]
+  Test failed. See exception logs above.
+  The test description was: scroll keeps old rows and reveals a new visible batch together
+  
+00:02 +1 -1: one failed cover offers retry without holding successful rows
+00:04 +2 -1: prepared thumbnail paints immediately while a larger request waits
+00:04 +3 -1: (tearDownAll)
+00:04 +3 -1: Some tests failed.

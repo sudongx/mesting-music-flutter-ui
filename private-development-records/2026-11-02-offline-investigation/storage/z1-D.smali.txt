@@ -1,0 +1,41 @@
+.method private final D()Landroid/content/SharedPreferences;
+    .registers 5
+
+    .line 1
+    const-class v0, Lwf/b;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/netease/cloudmusic/common/ServiceFacade;->get(Ljava/lang/Class;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Lwf/b;
+
+    .line 8
+    .line 9
+    const/4 v1, 0x1
+
+    .line 10
+    sget-object v2, Ljm0/z1;->c:Lwf/d;
+
+    .line 11
+    .line 12
+    const-string v3, "PREF_KEY_PLAYER_DEBUG"
+
+    .line 13
+    .line 14
+    invoke-interface {v0, v3, v1, v2}, Lwf/b;->getPreference(Ljava/lang/String;ZLwf/d;)Lte2/e;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    return-object v0
+.end method

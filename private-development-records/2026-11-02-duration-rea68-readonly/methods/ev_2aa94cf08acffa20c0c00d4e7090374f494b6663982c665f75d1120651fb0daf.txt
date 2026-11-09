@@ -1,0 +1,22 @@
+    @SuppressLint({"TryCatchExceptionError"})
+    private void P2(@Nullable com.alibaba.fastjson.JSONObject jSONObject, @Nullable MusicInfo musicInfo) {
+        PlayExtraInfo musicSource;
+        if (jSONObject == null || musicInfo == null || (musicSource = musicInfo.getMusicSource()) == null) {
+            return;
+        }
+        String rPCExtraConfig = musicSource.getRPCExtraConfig();
+        if (vr.e(rPCExtraConfig)) {
+            return;
+        }
+        try {
+            for (Map.Entry entry : JSON.parseObject(rPCExtraConfig).entrySet()) {
+                String str = (String) entry.getKey();
+                if (vr.g(str)) {
+                    jSONObject.put(str, entry.getValue());
+                }
+            }
+        } catch (Exception e2) {
+            e2.printStackTrace();
+            ia.t0.n("BasePlayerManager", "fillRPCExtraConfig", ia.t0.c("exception", Log.getStackTraceString(e2)));
+        }
+    }

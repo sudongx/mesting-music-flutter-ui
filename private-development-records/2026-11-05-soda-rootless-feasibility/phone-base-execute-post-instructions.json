@@ -1,0 +1,592 @@
+{
+  "source_apk_sha256": "b639e67c13e03377f0f9d8068c5e0419b1acd42c7d529362f11ae704b3838741",
+  "dex_entry": "classes21.dex",
+  "dex_sha256": "d28a15c360d503b20d064987620d1a3167e8ad84e3d08b0d12dcf9da18dd265b",
+  "selected_owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+  "scope": "Original DEX instructions, not runtime/data-flow proof.",
+  "methods": [
+    {
+      "method_index": 51211,
+      "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+      "name": "executePost",
+      "proto_index": 5061,
+      "prototype": "(Ljava/lang/String;Ljava/util/Map;Ljava/util/List;)Lcom/ss/android/TTResponse;",
+      "code_offset": 4855800,
+      "registers": 7,
+      "incoming_words": 4,
+      "outgoing_words": 5,
+      "code_unit_count": 104,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x22",
+          "units": [
+            34,
+            12361
+          ],
+          "type": "Ljava/util/HashMap;"
+        },
+        {
+          "code_unit_offset": 2,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            64200,
+            0
+          ],
+          "method": {
+            "method_index": 64200,
+            "owner": "Ljava/util/HashMap;",
+            "name": "<init>",
+            "proto_index": 6867,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 5,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            55813,
+            4
+          ],
+          "method": {
+            "method_index": 55813,
+            "owner": "Lcom/bytedance/sdk/account/utils/NetworkUtils;",
+            "name": "getPathWithCommonQuery",
+            "proto_index": 4223,
+            "prototype": "(Ljava/lang/String;)Lcom/bytedance/sdk/account/safety/ParamLimitUrlBuilder;"
+          }
+        },
+        {
+          "code_unit_offset": 8,
+          "opcode": "0xc",
+          "units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 9,
+          "opcode": "0x38",
+          "units": [
+            1336,
+            5
+          ]
+        },
+        {
+          "code_unit_offset": 11,
+          "opcode": "0x72",
+          "units": [
+            8306,
+            64321,
+            80
+          ],
+          "method": {
+            "method_index": 64321,
+            "owner": "Ljava/util/Map;",
+            "name": "putAll",
+            "proto_index": 12907,
+            "prototype": "(Ljava/util/Map;)V"
+          }
+        },
+        {
+          "code_unit_offset": 14,
+          "opcode": "0x1a",
+          "units": [
+            1306,
+            33109
+          ],
+          "string_index": 33109,
+          "string": "account_sdk_source"
+        },
+        {
+          "code_unit_offset": 16,
+          "opcode": "0x1a",
+          "units": [
+            538,
+            33945
+          ],
+          "string_index": 33945,
+          "string": "app"
+        },
+        {
+          "code_unit_offset": 18,
+          "opcode": "0x72",
+          "units": [
+            12402,
+            64320,
+            592
+          ],
+          "method": {
+            "method_index": 64320,
+            "owner": "Ljava/util/Map;",
+            "name": "put",
+            "proto_index": 5504,
+            "prototype": "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 21,
+          "opcode": "0x1a",
+          "units": [
+            1306,
+            51109
+          ],
+          "string_index": 51109,
+          "string": "passport_support_flow"
+        },
+        {
+          "code_unit_offset": 23,
+          "opcode": "0x71",
+          "units": [
+            113,
+            50041,
+            0
+          ],
+          "method": {
+            "method_index": 50041,
+            "owner": "Lcom/bytedance/sdk/account/error/handler/ErrorHandlerCenter;",
+            "name": "getPassportSupportFlow",
+            "proto_index": 5609,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 26,
+          "opcode": "0xc",
+          "units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 27,
+          "opcode": "0x72",
+          "units": [
+            12402,
+            64320,
+            592
+          ],
+          "method": {
+            "method_index": 64320,
+            "owner": "Ljava/util/Map;",
+            "name": "put",
+            "proto_index": 5504,
+            "prototype": "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 30,
+          "opcode": "0x39",
+          "units": [
+            1593,
+            7
+          ]
+        },
+        {
+          "code_unit_offset": 32,
+          "opcode": "0x22",
+          "units": [
+            1570,
+            12351
+          ],
+          "type": "Ljava/util/ArrayList;"
+        },
+        {
+          "code_unit_offset": 34,
+          "opcode": "0x70",
+          "units": [
+            4208,
+            64089,
+            6
+          ],
+          "method": {
+            "method_index": 64089,
+            "owner": "Ljava/util/ArrayList;",
+            "name": "<init>",
+            "proto_index": 6867,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 37,
+          "opcode": "0x71",
+          "units": [
+            113,
+            62635,
+            0
+          ],
+          "method": {
+            "method_index": 62635,
+            "owner": "Lcom/ss/android/account/TTAccountInit;",
+            "name": "getConfig",
+            "proto_index": 5054,
+            "prototype": "()Lcom/ss/android/TTAccountConfig;"
+          }
+        },
+        {
+          "code_unit_offset": 40,
+          "opcode": "0xc",
+          "units": [
+            1292
+          ]
+        },
+        {
+          "code_unit_offset": 41,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            62602,
+            5
+          ],
+          "method": {
+            "method_index": 62602,
+            "owner": "Lcom/ss/android/TTAccountConfig;",
+            "name": "isSupportMultiLogin",
+            "proto_index": 13349,
+            "prototype": "()Z"
+          }
+        },
+        {
+          "code_unit_offset": 44,
+          "opcode": "0xa",
+          "units": [
+            1290
+          ]
+        },
+        {
+          "code_unit_offset": 45,
+          "opcode": "0x38",
+          "units": [
+            1336,
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 47,
+          "opcode": "0x1a",
+          "units": [
+            1306,
+            48798
+          ],
+          "string_index": 48798,
+          "string": "multi_login"
+        },
+        {
+          "code_unit_offset": 49,
+          "opcode": "0x1a",
+          "units": [
+            538,
+            6968
+          ],
+          "string_index": 6968,
+          "string": "1"
+        },
+        {
+          "code_unit_offset": 51,
+          "opcode": "0x72",
+          "units": [
+            12402,
+            64320,
+            592
+          ],
+          "method": {
+            "method_index": 64320,
+            "owner": "Ljava/util/Map;",
+            "name": "put",
+            "proto_index": 5504,
+            "prototype": "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+          }
+        },
+        {
+          "code_unit_offset": 54,
+          "opcode": "0x6e",
+          "units": [
+            12398,
+            51205,
+            1123
+          ],
+          "method": {
+            "method_index": 51205,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "name": "addRequestHeader",
+            "proto_index": 12886,
+            "prototype": "(Ljava/util/List;Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 57,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            51219,
+            3
+          ],
+          "method": {
+            "method_index": 51219,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "name": "needCsrfToken",
+            "proto_index": 13349,
+            "prototype": "()Z"
+          }
+        },
+        {
+          "code_unit_offset": 60,
+          "opcode": "0xa",
+          "units": [
+            1290
+          ]
+        },
+        {
+          "code_unit_offset": 61,
+          "opcode": "0x38",
+          "units": [
+            1336,
+            5
+          ]
+        },
+        {
+          "code_unit_offset": 63,
+          "opcode": "0x6e",
+          "units": [
+            12398,
+            51204,
+            1603
+          ],
+          "method": {
+            "method_index": 51204,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "name": "addCsrfToken",
+            "proto_index": 12639,
+            "prototype": "(Ljava/lang/String;Ljava/util/List;)V"
+          }
+        },
+        {
+          "code_unit_offset": 66,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            55950,
+            1
+          ],
+          "method": {
+            "method_index": 55950,
+            "owner": "Lcom/bytedance/sdk/account/utils/UrlBuilder;",
+            "name": "toString",
+            "proto_index": 5609,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 69,
+          "opcode": "0xc",
+          "units": [
+            1036
+          ]
+        },
+        {
+          "code_unit_offset": 70,
+          "opcode": "0x54",
+          "units": [
+            13652,
+            20312
+          ],
+          "field": {
+            "field_index": 20312,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/bytedance/sdk/account/execute/ApiResponse;",
+            "name": "apiResponse"
+          }
+        },
+        {
+          "code_unit_offset": 72,
+          "opcode": "0x5b",
+          "units": [
+            21595,
+            19741
+          ],
+          "field": {
+            "field_index": 19741,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiResponse;",
+            "type": "Ljava/lang/String;",
+            "name": "mRequestUrl"
+          }
+        },
+        {
+          "code_unit_offset": 74,
+          "opcode": "0x54",
+          "units": [
+            13652,
+            20318
+          ],
+          "field": {
+            "field_index": 20318,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/bytedance/sdk/account/impl/AccountApiMonitor;",
+            "name": "monitor"
+          }
+        },
+        {
+          "code_unit_offset": 76,
+          "opcode": "0x71",
+          "units": [
+            113,
+            63733,
+            0
+          ],
+          "method": {
+            "method_index": 63733,
+            "owner": "Ljava/lang/System;",
+            "name": "currentTimeMillis",
+            "proto_index": 409,
+            "prototype": "()J"
+          }
+        },
+        {
+          "code_unit_offset": 79,
+          "opcode": "0xb",
+          "units": [
+            267
+          ]
+        },
+        {
+          "code_unit_offset": 80,
+          "opcode": "0x6e",
+          "units": [
+            12398,
+            50386,
+            533
+          ],
+          "method": {
+            "method_index": 50386,
+            "owner": "Lcom/bytedance/sdk/account/impl/AccountApiMonitor;",
+            "name": "onBeforeSendRequest",
+            "proto_index": 7292,
+            "prototype": "(J)V"
+          }
+        },
+        {
+          "code_unit_offset": 83,
+          "opcode": "0x54",
+          "units": [
+            13652,
+            20311
+          ],
+          "field": {
+            "field_index": 20311,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "name": "apiRequest"
+          }
+        },
+        {
+          "code_unit_offset": 85,
+          "opcode": "0x52",
+          "units": [
+            21842,
+            19731
+          ],
+          "field": {
+            "field_index": 19731,
+            "owner": "Lcom/bytedance/sdk/account/execute/ApiRequest;",
+            "type": "I",
+            "name": "requestFlag"
+          }
+        },
+        {
+          "code_unit_offset": 87,
+          "opcode": "0x14",
+          "units": [
+            276,
+            65535,
+            32767
+          ],
+          "const": 2147483647,
+          "dest_register": 1
+        },
+        {
+          "code_unit_offset": 90,
+          "opcode": "0x71",
+          "units": [
+            21873,
+            55810,
+            24641
+          ],
+          "method": {
+            "method_index": 55810,
+            "owner": "Lcom/bytedance/sdk/account/utils/NetworkUtils;",
+            "name": "executePost",
+            "proto_index": 5060,
+            "prototype": "(ILjava/lang/String;Ljava/util/Map;Ljava/util/List;I)Lcom/ss/android/TTResponse;"
+          }
+        },
+        {
+          "code_unit_offset": 93,
+          "opcode": "0xc",
+          "units": [
+            1036
+          ]
+        },
+        {
+          "code_unit_offset": 94,
+          "opcode": "0x54",
+          "units": [
+            13652,
+            20318
+          ],
+          "field": {
+            "field_index": 20318,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Lcom/bytedance/sdk/account/impl/AccountApiMonitor;",
+            "name": "monitor"
+          }
+        },
+        {
+          "code_unit_offset": 96,
+          "opcode": "0x71",
+          "units": [
+            113,
+            63733,
+            0
+          ],
+          "method": {
+            "method_index": 63733,
+            "owner": "Ljava/lang/System;",
+            "name": "currentTimeMillis",
+            "proto_index": 409,
+            "prototype": "()J"
+          }
+        },
+        {
+          "code_unit_offset": 99,
+          "opcode": "0xb",
+          "units": [
+            11
+          ]
+        },
+        {
+          "code_unit_offset": 100,
+          "opcode": "0x6e",
+          "units": [
+            12398,
+            50385,
+            261
+          ],
+          "method": {
+            "method_index": 50385,
+            "owner": "Lcom/bytedance/sdk/account/impl/AccountApiMonitor;",
+            "name": "onAfterSendRequest",
+            "proto_index": 7292,
+            "prototype": "(J)V"
+          }
+        },
+        {
+          "code_unit_offset": 103,
+          "opcode": "0x11",
+          "units": [
+            1041
+          ]
+        }
+      ]
+    }
+  ]
+}

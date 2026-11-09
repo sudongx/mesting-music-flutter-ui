@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-03",
+  "timezone": "Asia/Shanghai",
+  "appVersion": "1.0.44",
+  "versionCode": 65,
+  "installedVersionReadBack": true,
+  "readOnlyDeviceAuthorization": "[REDACTED]",
+  "userConfirmedOutcome": "Still follows peer only while Mesting is foreground; catches song/progress/play-pause on returning.",
+  "samples": 52,
+  "captureElapsedSeconds": 183.47,
+  "sameProcessAliveThroughout": true,
+  "foregroundMediaServiceThroughout": true,
+  "audioWakeSamples": 52,
+  "togetherWakeSamples": 45,
+  "restrictBackgroundData": "disabled at initial read",
+  "runAnyInBackground": "allow at initial read",
+  "standbyBucket": 10,
+  "limitations": [
+    "Existing native/Dart counters have no exported UI, log, broadcast or provider entry; no observation of HTTP or command application phases.",
+    "The first sampler used dumpsys window windows, which provides no focus fields on this device. Its mestingFocused values are invalid and excluded from phase conclusions. Use separately verified-focus-samples.jsonl only.",
+    "Media-session timestamps and metadata fingerprints do not identify the exact peer operation without internal sequence/phase events."
+  ],
+  "verifiedFocusSamples": 31,
+  "deviceChangedByAgent": false,
+  "appInstalledByAgent": false,
+  "playbackControlledByAgent": false,
+  "accountRequestsByAgent": false,
+  "captureComplete": true,
+  "captures": {
+    "media-service-samples.jsonl": "2afc5a309eb4b3116862149c14c35733b0decd996782aeeaf7bf8a217e2cf2b0",
+    "verified-focus-samples.jsonl": "1c9cd51223f62480457ac9eb0b5ba90a2188ace26cbdfb4c7edfef25f82f476f",
+    "mesting-pid-logcat-private.log": "64244a8aab47bc6f2cf8d431f49f91433ca4200504988bbb41b809d63dba0311"
+  }
+}

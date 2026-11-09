@@ -1,0 +1,382 @@
+{
+  "source_apk_sha256": "b639e67c13e03377f0f9d8068c5e0419b1acd42c7d529362f11ae704b3838741",
+  "dex_entry": "classes21.dex",
+  "dex_sha256": "d28a15c360d503b20d064987620d1a3167e8ad84e3d08b0d12dcf9da18dd265b",
+  "selected_owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+  "scope": "Original DEX instructions, not runtime/data-flow proof.",
+  "methods": [
+    {
+      "method_index": 51205,
+      "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+      "name": "addRequestHeader",
+      "proto_index": 12886,
+      "prototype": "(Ljava/util/List;Ljava/lang/String;)V",
+      "code_offset": 4857016,
+      "registers": 6,
+      "incoming_words": 3,
+      "outgoing_words": 3,
+      "code_unit_count": 66,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "opcode": "0x39",
+          "units": [
+            1081,
+            3
+          ]
+        },
+        {
+          "code_unit_offset": 2,
+          "opcode": "0xe",
+          "units": [
+            14
+          ]
+        },
+        {
+          "code_unit_offset": 3,
+          "opcode": "0x54",
+          "units": [
+            12372,
+            20316
+          ],
+          "field": {
+            "field_index": 20316,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Landroid/content/Context;",
+            "name": "mContext"
+          }
+        },
+        {
+          "code_unit_offset": 5,
+          "opcode": "0x39",
+          "units": [
+            57,
+            3
+          ]
+        },
+        {
+          "code_unit_offset": 7,
+          "opcode": "0xe",
+          "units": [
+            14
+          ]
+        },
+        {
+          "code_unit_offset": 8,
+          "opcode": "0x6e",
+          "units": [
+            8302,
+            51217,
+            83
+          ],
+          "method": {
+            "method_index": 51217,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "name": "isAllowShareToken",
+            "proto_index": 13893,
+            "prototype": "(Ljava/lang/String;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 11,
+          "opcode": "0xa",
+          "units": [
+            1290
+          ]
+        },
+        {
+          "code_unit_offset": 12,
+          "opcode": "0x38",
+          "units": [
+            1336,
+            53
+          ]
+        },
+        {
+          "code_unit_offset": 14,
+          "opcode": "0x54",
+          "units": [
+            13652,
+            20316
+          ],
+          "field": {
+            "field_index": 20316,
+            "owner": "Lcom/bytedance/sdk/account/impl/BaseAccountApi;",
+            "type": "Landroid/content/Context;",
+            "name": "mContext"
+          }
+        },
+        {
+          "code_unit_offset": 16,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            50899,
+            5
+          ],
+          "method": {
+            "method_index": 50899,
+            "owner": "Lcom/bytedance/sdk/account/impl/BDAccountManager;",
+            "name": "instance",
+            "proto_index": 3904,
+            "prototype": "(Landroid/content/Context;)Lcom/bytedance/sdk/account/impl/BDAccountManager;"
+          }
+        },
+        {
+          "code_unit_offset": 19,
+          "opcode": "0xc",
+          "units": [
+            1292
+          ]
+        },
+        {
+          "code_unit_offset": 20,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            49387,
+            5
+          ],
+          "method": {
+            "method_index": 49387,
+            "owner": "Lcom/bytedance/sdk/account/api/IBDAccount;",
+            "name": "getMultiSid",
+            "proto_index": 5609,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 23,
+          "opcode": "0xc",
+          "units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 24,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            1281,
+            0
+          ],
+          "method": {
+            "method_index": 1281,
+            "owner": "Landroid/text/TextUtils;",
+            "name": "isEmpty",
+            "proto_index": 13857,
+            "prototype": "(Ljava/lang/CharSequence;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 27,
+          "opcode": "0xa",
+          "units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 28,
+          "opcode": "0x39",
+          "units": [
+            313,
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 30,
+          "opcode": "0x22",
+          "units": [
+            290,
+            11943
+          ],
+          "type": "Lcom/ss/android/TTHeader;"
+        },
+        {
+          "code_unit_offset": 32,
+          "opcode": "0x1a",
+          "units": [
+            538,
+            60312
+          ],
+          "string_index": 60312,
+          "string": "x-tt-multi-sids"
+        },
+        {
+          "code_unit_offset": 34,
+          "opcode": "0x70",
+          "units": [
+            12400,
+            62610,
+            33
+          ],
+          "method": {
+            "method_index": 62610,
+            "owner": "Lcom/ss/android/TTHeader;",
+            "name": "<init>",
+            "proto_index": 12298,
+            "prototype": "(Ljava/lang/String;Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 37,
+          "opcode": "0x72",
+          "units": [
+            8306,
+            64275,
+            20
+          ],
+          "method": {
+            "method_index": 64275,
+            "owner": "Ljava/util/List;",
+            "name": "add",
+            "proto_index": 13872,
+            "prototype": "(Ljava/lang/Object;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 40,
+          "opcode": "0x72",
+          "units": [
+            4210,
+            49395,
+            5
+          ],
+          "method": {
+            "method_index": 49395,
+            "owner": "Lcom/bytedance/sdk/account/api/IBDAccount;",
+            "name": "getSecMultiSid",
+            "proto_index": 5609,
+            "prototype": "()Ljava/lang/String;"
+          }
+        },
+        {
+          "code_unit_offset": 43,
+          "opcode": "0xc",
+          "units": [
+            1292
+          ]
+        },
+        {
+          "code_unit_offset": 44,
+          "opcode": "0x71",
+          "units": [
+            4209,
+            1281,
+            5
+          ],
+          "method": {
+            "method_index": 1281,
+            "owner": "Landroid/text/TextUtils;",
+            "name": "isEmpty",
+            "proto_index": 13857,
+            "prototype": "(Ljava/lang/CharSequence;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 47,
+          "opcode": "0xa",
+          "units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 48,
+          "opcode": "0x39",
+          "units": [
+            57,
+            17
+          ]
+        },
+        {
+          "code_unit_offset": 50,
+          "opcode": "0x22",
+          "units": [
+            34,
+            11943
+          ],
+          "type": "Lcom/ss/android/TTHeader;"
+        },
+        {
+          "code_unit_offset": 52,
+          "opcode": "0x1a",
+          "units": [
+            282,
+            60313
+          ],
+          "string_index": 60313,
+          "string": "x-tt-multi-sids-sec"
+        },
+        {
+          "code_unit_offset": 54,
+          "opcode": "0x70",
+          "units": [
+            12400,
+            62610,
+            1296
+          ],
+          "method": {
+            "method_index": 62610,
+            "owner": "Lcom/ss/android/TTHeader;",
+            "name": "<init>",
+            "proto_index": 12298,
+            "prototype": "(Ljava/lang/String;Ljava/lang/String;)V"
+          }
+        },
+        {
+          "code_unit_offset": 57,
+          "opcode": "0x72",
+          "units": [
+            8306,
+            64275,
+            4
+          ],
+          "method": {
+            "method_index": 64275,
+            "owner": "Ljava/util/List;",
+            "name": "add",
+            "proto_index": 13872,
+            "prototype": "(Ljava/lang/Object;)Z"
+          }
+        },
+        {
+          "code_unit_offset": 60,
+          "opcode": "0x28",
+          "units": [
+            1320
+          ]
+        },
+        {
+          "code_unit_offset": 61,
+          "opcode": "0xd",
+          "units": [
+            1037
+          ]
+        },
+        {
+          "code_unit_offset": 62,
+          "opcode": "0x6e",
+          "units": [
+            4206,
+            63485,
+            4
+          ],
+          "method": {
+            "method_index": 63485,
+            "owner": "Ljava/lang/Exception;",
+            "name": "printStackTrace",
+            "proto_index": 6867,
+            "prototype": "()V"
+          }
+        },
+        {
+          "code_unit_offset": 65,
+          "opcode": "0xe",
+          "units": [
+            14
+          ]
+        }
+      ]
+    }
+  ]
+}

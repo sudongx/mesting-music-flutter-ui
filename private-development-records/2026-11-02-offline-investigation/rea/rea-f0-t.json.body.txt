@@ -1,0 +1,39 @@
+    private void t(Map<String, List<String>> map) {
+        if (map == null || o22.u.f() == null || !o22.u.f().c().K().c("log")) {
+            return;
+        }
+        ArrayList<File> arrayList = new ArrayList();
+        ArrayList arrayList2 = new ArrayList();
+        Iterator<Map.Entry<String, List<String>>> it = map.entrySet().iterator();
+        long length = 0;
+        while (it.hasNext()) {
+            Iterator<String> it2 = it.next().getValue().iterator();
+            while (it2.hasNext()) {
+                File file = new File(y(it2.next()));
+                if (file.exists()) {
+                    length += file.length();
+                    arrayList.add(file);
+                }
+            }
+        }
+        if (length < 209715200) {
+            return;
+        }
+        Collections.sort(arrayList, new f());
+        if (arrayList.size() <= 10) {
+            for (File file2 : arrayList) {
+                arrayList2.add(file2);
+                length -= file2.length();
+                if (length < 209715200) {
+                    break;
+                }
+            }
+        } else {
+            arrayList2.addAll(arrayList.subList(0, 10));
+        }
+        arrayList.removeAll(arrayList2);
+        Iterator it3 = arrayList2.iterator();
+        while (it3.hasNext()) {
+            ((File) it3.next()).delete();
+        }
+    }

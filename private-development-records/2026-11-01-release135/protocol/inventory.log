@@ -1,0 +1,253 @@
+{'dex': 'classes10.dex', 'string': 'com/netease/play/record/PlayerShareHolder.class:refreshSysGallery:(Ljava/io/File;)V line-399'}
+{'dex': 'classes10.dex', 'string': 'getDisplayDuration'}
+{'dex': 'classes11.dex', 'string': '/mlog/songAggregationPage'}
+{'dex': 'classes11.dex', 'string': 'ACTION_PLAYSONG_CHANGED'}
+{'dex': 'classes11.dex', 'string': 'com.netease.cloudmusic.module.mp.utils.MusicLogProvider'}
+{'dex': 'classes11.dex', 'string': 'playlive_captureMusicAudo_playSongChanged'}
+{'dex': 'classes13.dex', 'string': 'DEFAULT_AUTOPLAY_TIME'}
+{'dex': 'classes13.dex', 'string': 'FH-MinimumPlayDuration'}
+{'dex': 'classes13.dex', 'string': 'MinimumPlayDuration'}
+{'dex': 'classes13.dex', 'string': 'create table if not exists message (id integer primary key autoincrement,messageid text,taskid text,appid text,info text,msgextra blob,key text,status integer,createtime integer,expect_redisplay_time integer, redisplay_freq integer,redisplay_duration integer ,redisplay_num integer,notify_status integer ) '}
+{'dex': 'classes13.dex', 'string': 'expect_redisplay_time'}
+{'dex': 'classes13.dex', 'string': 'shouldDisplayLogMessage'}
+{'dex': 'classes13.dex', 'string': "status = '1' and notify_status = '1' and redisplay_freq != '0' and redisplay_num <= redisplay_freq  order by expect_redisplay_time asc limit 1"}
+{'dex': 'classes13.dex', 'string': "status = '1' and notify_status = '1' and redisplay_freq != '0' and redisplay_num <= redisplay_freq and expect_redisplay_time <= "}
+{'dex': 'classes13.dex', 'string': 'yc-playsong'}
+{'dex': 'classes14.dex', 'string': '  AND end_play_time >= '}
+{'dex': 'classes14.dex', 'string': '  AND play_time_duration >= '}
+{'dex': 'classes14.dex', 'string': '  GROUP BY resource_id  ORDER BY end_play_time desc  LIMIT '}
+{'dex': 'classes14.dex', 'string': ' AND end_play_time <= '}
+{'dex': 'classes14.dex', 'string': ' AND end_play_time = '}
+{'dex': 'classes14.dex', 'string': ' AND end_play_time >= '}
+{'dex': 'classes14.dex', 'string': ' AND start_play_time >= '}
+{'dex': 'classes14.dex', 'string': ')  GROUP BY resource_id  ORDER BY end_play_time desc '}
+{'dex': 'classes14.dex', 'string': 'CREATE INDEX IF NOT EXISTS play_timestamp_index ON %s (%s)'}
+{'dex': 'classes14.dex', 'string': 'CREATE TABLE IF NOT EXISTS recent_play_resource (source_type INTEGER, source_id INTEGER, source_content VARCHAR, simple_music VARCHAR, userid INTEGER, play_timestamp INTEGER, resource_id INTEGER)'}
+{'dex': 'classes14.dex', 'string': 'SELECT MIN(end_play_time) FROM play_record WHERE user_id = '}
+{'dex': 'classes14.dex', 'string': 'SELECT resource_id, start_play_time, max(end_play_time) as play_time,  play_time_duration as duration,  ext_info_json as ext_info  FROM play_record  WHERE user_id = '}
+{'dex': 'classes14.dex', 'string': 'SELECT resource_id,ext_info_json,max(end_play_time) as play_time, sum(play_time_duration) as duration, count(1) as count FROM play_record  WHERE user_id = '}
+{'dex': 'classes14.dex', 'string': 'SELECT resource_id,max(end_play_time) as play_time, sum(play_time_duration) as duration, count(1) as count FROM play_record  WHERE user_id = '}
+{'dex': 'classes14.dex', 'string': 'currentPlaySongId'}
+{'dex': 'classes14.dex', 'string': 'end_play_time'}
+{'dex': 'classes14.dex', 'string': 'end_play_time >= ? AND end_play_time < ?'}
+{'dex': 'classes14.dex', 'string': 'getPlayDuration'}
+{'dex': 'classes14.dex', 'string': 'inflate.findViewById<TextView>(R.id.playDuration)'}
+{'dex': 'classes14.dex', 'string': 'playDuration'}
+{'dex': 'classes14.dex', 'string': 'playLogMap'}
+{'dex': 'classes14.dex', 'string': 'play_time_duration'}
+{'dex': 'classes14.dex', 'string': 'play_timestamp'}
+{'dex': 'classes14.dex', 'string': 'reportPlayDuration'}
+{'dex': 'classes14.dex', 'string': 'start_play_time'}
+{'dex': 'classes14.dex', 'string': 'unplaySongIds'}
+{'dex': 'classes15.dex', 'string': 'currentDisplaySongNameIndex'}
+{'dex': 'classes15.dex', 'string': 'getDisplayDuration'}
+{'dex': 'classes15.dex', 'string': 'homePageConfig#playLogConsumeTime'}
+{'dex': 'classes15.dex', 'string': 'last_grab_play_time'}
+{'dex': 'classes15.dex', 'string': 'mPlayLogHelper'}
+{'dex': 'classes15.dex', 'string': 'trySaveAuditionPlayLog: '}
+{'dex': 'classes15.dex', 'string': 'tsSongPlayLog'}
+{'dex': 'classes16.dex', 'string': ', playDuration='}
+{'dex': 'classes16.dex', 'string': ', videoValidPlayDuration='}
+{'dex': 'classes16.dex', 'string': 'AdDynamicImageValidPlayReporter.kt'}
+{'dex': 'classes16.dex', 'string': 'com.netease.cloudmusic.module.ad.AdDynamicImageValidPlayReporter$startTick$1'}
+{'dex': 'classes16.dex', 'string': 'displayDuration'}
+{'dex': 'classes16.dex', 'string': 'getDisplayDuration'}
+{'dex': 'classes16.dex', 'string': 'getPlayDuration'}
+{'dex': 'classes16.dex', 'string': 'getPlaySongs'}
+{'dex': 'classes16.dex', 'string': 'moshi.adapter(Long::clas��"videoValidPlayDuration")'}
+{'dex': 'classes16.dex', 'string': 'of("url", "monitorType",��"videoValidPlayDuration")'}
+{'dex': 'classes16.dex', 'string': 'picDisplayDuration'}
+{'dex': 'classes16.dex', 'string': 'playDuration'}
+{'dex': 'classes16.dex', 'string': 'playSongs'}
+{'dex': 'classes16.dex', 'string': 'setDisplayDuration'}
+{'dex': 'classes16.dex', 'string': 'setPlaySongs'}
+{'dex': 'classes16.dex', 'string': 'videoValidPlayDuration'}
+{'dex': 'classes17.dex', 'string': ', playSongIds='}
+{'dex': 'classes17.dex', 'string': ', roomPlaySongInfo='}
+{'dex': 'classes17.dex', 'string': ', todayTotalPlaySongCount='}
+{'dex': 'classes17.dex', 'string': 'EGG_PLAY_TIMEOUT'}
+{'dex': 'classes17.dex', 'string': 'MomentCommentExtra(displayDuration='}
+{'dex': 'classes17.dex', 'string': 'RPC: �����б��еĸ���(PlaySongHandler): '}
+{'dex': 'classes17.dex', 'string': '[mock]PlayList#GET_RESOURCE_PLAY_TIMES='}
+{'dex': 'classes17.dex', 'string': 'buildPlayList#GET_RESOURCE_PLAY_TIMES='}
+{'dex': 'classes17.dex', 'string': 'displayDuration'}
+{'dex': 'classes17.dex', 'string': 'displayLog'}
+{'dex': 'classes17.dex', 'string': 'getPlaySong'}
+{'dex': 'classes17.dex', 'string': 'getPlaySongId'}
+{'dex': 'classes17.dex', 'string': 'getPlaySongIds'}
+{'dex': 'classes17.dex', 'string': 'getPlaySongUniqueRedCnt'}
+{'dex': 'classes17.dex', 'string': 'getPlaySongZanCnt'}
+{'dex': 'classes17.dex', 'string': 'getRoomPlaySongInfo'}
+{'dex': 'classes17.dex', 'string': 'lastSongPlayDuration'}
+{'dex': 'classes17.dex', 'string': 'moshi.adapter(Long::clas��Set(), "displayDuration")'}
+{'dex': 'classes17.dex', 'string': 'moshi.adapter(Types.newP��mptySet(), "playSongIds")'}
+{'dex': 'classes17.dex', 'string': 'of("displayDuration", "t��    "nextRequestDelayMs")'}
+{'dex': 'classes17.dex', 'string': 'playSong'}
+{'dex': 'classes17.dex', 'string': 'playSongId'}
+{'dex': 'classes17.dex', 'string': 'playSongIds'}
+{'dex': 'classes17.dex', 'string': 'playSongUniqueRedCnt'}
+{'dex': 'classes17.dex', 'string': 'playSongZanCnt'}
+{'dex': 'classes17.dex', 'string': 'roomPlaySongInfo'}
+{'dex': 'classes17.dex', 'string': 'setPlayDuration'}
+{'dex': 'classes17.dex', 'string': 'setPlaySong'}
+{'dex': 'classes17.dex', 'string': 'setPlaySongId'}
+{'dex': 'classes17.dex', 'string': 'setPlaySongIds'}
+{'dex': 'classes17.dex', 'string': 'setPlaySongUniqueRedCnt'}
+{'dex': 'classes17.dex', 'string': 'setPlaySongZanCnt'}
+{'dex': 'classes17.dex', 'string': 'setRoomPlaySongInfo'}
+{'dex': 'classes17.dex', 'string': 'todayTotalPlaySongCount'}
+{'dex': 'classes17.dex', 'string': '�ϴ�����ָ��(�б��滻), playSongIds: '}
+{'dex': 'classes17.dex', 'string': '�б����ʧ��(FLT_URL_PLAYLIST_CHANGE)��playSongIds: '}
+{'dex': 'classes18.dex', 'string': '()Lcom/netease/cloudmusic/module/player/meta/RefreshPlayDurationConfig;'}
+{'dex': 'classes18.dex', 'string': '(Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;)Lcom/netease/cloudmusic/module/player/meta/PlayerMinPlayDurationConfigModel;'}
+{'dex': 'classes18.dex', 'string': ', unplaySongIds='}
+{'dex': 'classes18.dex', 'string': 'AUDIO_PLAY_TIME_PROVIDER_KV'}
+{'dex': 'classes18.dex', 'string': 'DailyRecommendPlayOpt preProcessPlaySongs error='}
+{'dex': 'classes18.dex', 'string': 'DailyRecommendPlayOpt preProcessPlaySongs size='}
+{'dex': 'classes18.dex', 'string': 'FH-MinimumPlayDuration'}
+{'dex': 'classes18.dex', 'string': 'FH-MinimumPlayDuration.'}
+{'dex': 'classes18.dex', 'string': 'HomePlayListOpt prePlaySongPrivilegesArray size='}
+{'dex': 'classes18.dex', 'string': 'HomePlayListOpt preProcessPlaySongs error='}
+{'dex': 'classes18.dex', 'string': 'HomePlayListOpt preProcessPlaySongs prePlaySongs is null'}
+{'dex': 'classes18.dex', 'string': 'HomePlayListOpt preProcessPlaySongs size='}
+{'dex': 'classes18.dex', 'string': 'KEY_PLAY_TIME'}
+{'dex': 'classes18.dex', 'string': 'NewUserListenMusicLoginGuideHelper.kt'}
+{'dex': 'classes18.dex', 'string': 'PLAY_TIMES_ATTENUATION_RATE'}
+{'dex': 'classes18.dex', 'string': 'PLAY_TIME_ATTENUATION_RATE'}
+{'dex': 'classes18.dex', 'string': 'PlaySongRcmdUriHandler.kt'}
+{'dex': 'classes18.dex', 'string': 'PlaySongsHandler ctrpJson parsed, size='}
+{'dex': 'classes18.dex', 'string': 'PlayerMinPlayDurationConfigModel(beginBitrate='}
+{'dex': 'classes18.dex', 'string': 'RefreshPlayDurationConfig(networkBatchSize='}
+{'dex': 'classes18.dex', 'string': 'SP_KEY_PLAY_TIMES_ATTENUATION_RATE'}
+{'dex': 'classes18.dex', 'string': 'SP_KEY_PLAY_TIME_ATTENUATION_RATE'}
+{'dex': 'classes18.dex', 'string': 'Super calls with default arguments not supported in this target, function: playSongs'}
+{'dex': 'classes18.dex', 'string': '[Lcom/netease/cloudmusic/module/player/meta/PlayerMinPlayDurationConfigModel;'}
+{'dex': 'classes18.dex', 'string': 'api("mlog/playlist/mylik��eds"))\n                })'}
+{'dex': 'classes18.dex', 'string': 'audioPlayer#refreshPlayDuration'}
+{'dex': 'classes18.dex', 'string': 'com.netease.cloudmusic.module.newuser.NewUserListenMusicLoginGuideHelper$tryShow$2'}
+{'dex': 'classes18.dex', 'string': 'com.netease.cloudmusic.module.newuser.NewUserListenMusicLoginGuideHelper$tryShow$2$1'}
+{'dex': 'classes18.dex', 'string': 'com.netease.cloudmusic.module.player.router.PlaySongRcmdUriHandler$handleInternal$1'}
+{'dex': 'classes18.dex', 'string': 'com.netease.cloudmusic.module.player.router.PlaySongRcmdUriHandler$handleInternal$1$musicInfos$1'}
+{'dex': 'classes18.dex', 'string': 'com/netease/cloudmusic/module/mp/utils/MusicLogHandler$AddHandler.class:handle:(Lorg/json/JSONObject;JLjava/lang/String;)V line-39'}
+{'dex': 'classes18.dex', 'string': 'getPlaySong'}
+{'dex': 'classes18.dex', 'string': 'getPlaySongUrlInfo'}
+{'dex': 'classes18.dex', 'string': 'getPlaySongUrlInfo:'}
+{'dex': 'classes18.dex', 'string': 'getPlaySongUrlInfo?id='}
+{'dex': 'classes18.dex', 'string': 'getPlaySongUrlInfoByParams'}
+{'dex': 'classes18.dex', 'string': 'getPlaySongUrlInfoByParams/songUrlInfo='}
+{'dex': 'classes18.dex', 'string': 'getPlaySongUrlInfoByParams/songUrlInfo=null'}
+{'dex': 'classes18.dex', 'string': 'getRoomPlaySongInfo'}
+{'dex': 'classes18.dex', 'string': 'getUnplaySongIds'}
+{'dex': 'classes18.dex', 'string': 'gotoPlaySongId'}
+{'dex': 'classes18.dex', 'string': 'innerGetMusics(prePlaySongsArray)'}
+{'dex': 'classes18.dex', 'string': 'mlog/playlist/mylike/bytime/get'}
+{'dex': 'classes18.dex', 'string': 'playLogInterceptor'}
+{'dex': 'classes18.dex', 'string': 'playLogMap'}
+{'dex': 'classes18.dex', 'string': 'playLogTypeMode'}
+{'dex': 'classes18.dex', 'string': 'playSongIfInList'}
+{'dex': 'classes18.dex', 'string': 'playSongs'}
+{'dex': 'classes18.dex', 'string': 'play_time'}
+{'dex': 'classes18.dex', 'string': 'podcast_play_time_fixed'}
+{'dex': 'classes18.dex', 'string': 'prePlaySongPrivileges'}
+{'dex': 'classes18.dex', 'string': 'prePlaySongs'}
+{'dex': 'classes18.dex', 'string': 'prePlaySongsCount'}
+{'dex': 'classes18.dex', 'string': 'random_setting_play_time_attenuation_rate'}
+{'dex': 'classes18.dex', 'string': 'random_setting_play_times_attenuation_rate'}
+{'dex': 'classes18.dex', 'string': 'unplaySongIds'}
+{'dex': 'classes18.dex', 'string': 'usePlayLogType'}
+{'dex': 'classes19.dex', 'string': 'AIDJ#syncPlaySongVolume'}
+{'dex': 'classes19.dex', 'string': 'AutoPlayLogContext'}
+{'dex': 'classes19.dex', 'string': 'AutoPlayLogParamCenterBaseState'}
+{'dex': 'classes19.dex', 'string': 'AutoPlayLogParamCenterNewListState'}
+{'dex': 'classes19.dex', 'string': 'AutoPlayLogParamCenterSongPlayState'}
+{'dex': 'classes19.dex', 'string': 'AutoPlaySongLogParam(id='}
+{'dex': 'classes19.dex', 'string': 'addPlayDuration minutes='}
+{'dex': 'classes19.dex', 'string': 'analyse_doPlayLog, id='}
+{'dex': 'classes19.dex', 'string': 'analyse_doStartPlayLog, id='}
+{'dex': 'classes19.dex', 'string': 'getDisplayDuration'}
+{'dex': 'classes19.dex', 'string': 'getPlayDuration'}
+{'dex': 'classes19.dex', 'string': 'inflate.findViewById<TextView>(R.id.playDuration)'}
+{'dex': 'classes19.dex', 'string': 'launchMusicLogin'}
+{'dex': 'classes19.dex', 'string': 'mlog/song/tsmeta'}
+{'dex': 'classes19.dex', 'string': 'mlog/songmlog/bysocre/get/v2'}
+{'dex': 'classes19.dex', 'string': 'mlog/songmlog/bytime/get/v2'}
+{'dex': 'classes19.dex', 'string': 'normalAudioPlayDuration'}
+{'dex': 'classes19.dex', 'string': 'playDuration'}
+{'dex': 'classes19.dex', 'string': 'play_times'}
+{'dex': 'classes19.dex', 'string': 'realTimeAudioPlayDuration'}
+{'dex': 'classes19.dex', 'string': 'setPlayDuration'}
+{'dex': 'classes19.dex', 'string': 'shouldDisplayLogMessage'}
+{'dex': 'classes2.dex', 'string': 'shouldDisplayLogMessage'}
+{'dex': 'classes20.dex', 'string': ', playDuration='}
+{'dex': 'classes20.dex', 'string': '/api/mlog/song/play/block/page'}
+{'dex': 'classes20.dex', 'string': '/api/play-record/playlist/list'}
+{'dex': 'classes20.dex', 'string': '/api/play-record/song/list'}
+{'dex': 'classes20.dex', 'string': 'getCurrentMusicLog'}
+{'dex': 'classes20.dex', 'string': 'getPlayDuration'}
+{'dex': 'classes20.dex', 'string': 'mlog/playlist/song/v1'}
+{'dex': 'classes20.dex', 'string': 'mlog/song/classification/v1'}
+{'dex': 'classes20.dex', 'string': 'mlog/song/star'}
+{'dex': 'classes20.dex', 'string': 'mlog/song/url'}
+{'dex': 'classes20.dex', 'string': 'play-record/playlist/list'}
+{'dex': 'classes20.dex', 'string': 'play-record/song/list'}
+{'dex': 'classes20.dex', 'string': 'playDuration'}
+{'dex': 'classes20.dex', 'string': 'playLogState'}
+{'dex': 'classes20.dex', 'string': 'playSongId:'}
+{'dex': 'classes20.dex', 'string': 'playSongModel'}
+{'dex': 'classes20.dex', 'string': 'playSongObserver'}
+{'dex': 'classes20.dex', 'string': 'play_times'}
+{'dex': 'classes20.dex', 'string': 'play_timestamp'}
+{'dex': 'classes20.dex', 'string': 'recentPlaySongId'}
+{'dex': 'classes20.dex', 'string': 'recentPlaySonglistId'}
+{'dex': 'classes20.dex', 'string': 'videoLogPlayDuration'}
+{'dex': 'classes3.dex', 'string': 'MediaButtonPlayLog'}
+{'dex': 'classes3.dex', 'string': 'PLAY_TIME'}
+{'dex': 'classes3.dex', 'string': 'TransSignalPlayLog'}
+{'dex': 'classes3.dex', 'string': 'displayDuration'}
+{'dex': 'classes3.dex', 'string': 'getPlaySongs'}
+{'dex': 'classes3.dex', 'string': 'last_grab_play_time'}
+{'dex': 'classes3.dex', 'string': 'launchMusicLogin'}
+{'dex': 'classes3.dex', 'string': 'loadWithValidPlayReport'}
+{'dex': 'classes3.dex', 'string': 'playDuration'}
+{'dex': 'classes3.dex', 'string': 'playSongs'}
+{'dex': 'classes3.dex', 'string': 'play_times'}
+{'dex': 'classes3.dex', 'string': 'setDisplayDuration'}
+{'dex': 'classes3.dex', 'string': 'setPlaySongs'}
+{'dex': 'classes4.dex', 'string': 'PlayDurationRecord(resourceId='}
+{'dex': 'classes4.dex', 'string': 'cell_voiceplay_timestamp'}
+{'dex': 'classes4.dex', 'string': 'getPlaySongDuration'}
+{'dex': 'classes4.dex', 'string': 'getPlaySongDurationTitle'}
+{'dex': 'classes4.dex', 'string': 'playDuration'}
+{'dex': 'classes4.dex', 'string': 'playSongDuration'}
+{'dex': 'classes4.dex', 'string': 'playSongDurationTitle'}
+{'dex': 'classes4.dex', 'string': 'play_times'}
+{'dex': 'classes4.dex', 'string': 'podcast_scene_fm_last_guide_display_time'}
+{'dex': 'classes4.dex', 'string': 'setPlaySongDuration'}
+{'dex': 'classes4.dex', 'string': 'setPlaySongDurationTitle'}
+{'dex': 'classes5.dex', 'string': '$displayDuration'}
+{'dex': 'classes5.dex', 'string': 'displayDuration'}
+{'dex': 'classes5.dex', 'string': 'displayDurationMs'}
+{'dex': 'classes5.dex', 'string': 'dynamicVideoPlayLog'}
+{'dex': 'classes5.dex', 'string': 'getPlaySongs'}
+{'dex': 'classes5.dex', 'string': 'isPlaySongMinCount'}
+{'dex': 'classes5.dex', 'string': 'launchMusicLogin'}
+{'dex': 'classes5.dex', 'string': 'listeningTime'}
+{'dex': 'classes5.dex', 'string': 'listeningTimeTxt'}
+{'dex': 'classes5.dex', 'string': 'loadWithValidPlayReport'}
+{'dex': 'classes5.dex', 'string': 'playSongCountRecently'}
+{'dex': 'classes5.dex', 'string': 'setPlayDuration'}
+{'dex': 'classes6.dex', 'string': 'com.netease.cloudmusic.action.PLAY_TIMER'}
+{'dex': 'classes6.dex', 'string': 'launchMusicLogin'}
+{'dex': 'classes6.dex', 'string': 'mlog/playlist/cards/get'}
+{'dex': 'classes6.dex', 'string': 'playDuration'}
+{'dex': 'classes7.dex', 'string': 'com.netease.cloudmusic.ui.LunaProfileListeningTimeCustomView'}
+{'dex': 'classes7.dex', 'string': 'com.netease.cloudmusic.ui.T1LunaProfileListeningTimeCustomView'}
+{'dex': 'classes7.dex', 'string': 'playDuration'}
+{'dex': 'classes7.dex', 'string': 'setPlayDuration'}
+{'dex': 'classes8.dex', 'string': 'launchMusicLogin'}
+{'dex': 'classes8.dex', 'string': 'startlive-playsong-search'}
+{'dex': 'classes9.dex', 'string': 'getPlayDuration'}
+{'dex': 'classes9.dex', 'string': 'launchMusicLogin'}
+{'dex': 'classes9.dex', 'string': 'playsong'}
+{'dex': 'classes9.dex', 'string': 'startlive-playsong-search'}
+class candidates 683

@@ -1,0 +1,54 @@
+00:00 +0: loading D:/AnLi/test/release_103_ui_test.dart
+00:00 +0: (setUpAll)
+[LiquidGlass] Initializing library...
+[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)
+[LiquidGlass] Initialization complete.
+00:00 +0: profile read failure is retryable and exposes no editable empty draft
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: exactly one matching candidate
+  Actual: _TextWidgetFinder:<Found 0 widgets with text "重试": []>
+   Which: means none were found but one was expected
+AsyncLoading<PlatformProfileInfo>(error: 音乐平台暂时未能完成请求（错误码 1），请稍后重试, stackTrace: #0
+MusicPlatformApi._request
+(package:mesting_music/features/music_platform/data/music_platform_api.dart:210:9)
+<asynchronous suspension>
+#1      PlatformProfileRepository.fetch
+(package:mesting_music/features/music_platform/data/platform_profile_repository.dart:16:9)
+<asynchronous suspension>
+#2      BrowseCacheWatch.run (package:mesting_music/core/cache/browse_response_cache.dart:461:14)
+<asynchronous suspension>
+#3      ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure>
+(package:riverpod/src/core/element.dart:232:17)
+<asynchronous suspension>
+#4      ElementWithFuture.handleFuture.<anonymous closure>.<anonymous closure>
+(package:riverpod/src/core/element.dart:237:29)
+<asynchronous suspension>
+, retrying); [编辑个人资料, Test Track One, Test Artist, 搜索歌曲、歌手, 发现, 功能, 音乐库, 我的, 发现, 功能, 音乐库, 我的]
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///D:/AnLi/test/release_103_ui_test.dart:694:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///D:/AnLi/test/release_103_ui_test.dart line 694
+The test description was:
+  profile read failure is retryable and exposes no editable empty draft
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:03 +0 -1: profile read failure is retryable and exposes no editable empty draft [E]
+  Test failed. See exception logs above.
+  The test description was: profile read failure is retryable and exposes no editable empty draft
+  
+Warning: At least one test in this suite creates an HttpClient. When running a test suite that uses
+TestWidgetsFlutterBinding, all HTTP requests will return status code 400, and no network request
+will actually be made. Any test expecting a real network connection and status code will fail.
+To test code that needs an HttpClient, provide your own HttpClient implementation to the code under
+test, so that your test can consistently provide a testable response to the code under test.
+00:03 +0 -1: (tearDownAll)
+00:03 +0 -1: Some tests failed.

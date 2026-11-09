@@ -1,0 +1,26 @@
+{
+  "version": "1.0.76",
+  "candidate": 3,
+  "menuFullyDismissed": true,
+  "greyLowerVeilAbsentInReviewedScenes": true,
+  "platformHomeAndTopRestored": true,
+  "queueBlackLoadingVeilAbsent": true,
+  "finalOutputListShowsLocalAndConnectedBluetooth": true,
+  "evidence": {
+    "playerMoreMenuKugou": "final76-player-menu-visual: before/held-open/closed/reverse-closed images and15s recording; long hold and dismissal inspected",
+    "profileMenuKugou": "final76-profile-menu-visual: before/held-open/closed/reverse-closed images and15s recording inspected",
+    "neteaseAndKugouAutomatedMenus": "after76-core-report.json:12 successful stages,48 individually verified open+close cycles,0 menu items selected",
+    "laterPagesAfterMenus": "screen-final76-core-progress3/4/5/6/7/final76-core-finish-check2: reviewed NetEase player after menu,Kugou Tab,local music,Soda profile/playlist and completed diagnostic page; no retained player menu or grey horizontal lower veil",
+    "queueFirstKugou": "final76-kugou-queue-first:16 visual frames starting0.8s of recording at10Hz andafter images; no solid black loading gate",
+    "queueFirstNetease": "final76-netease-queue-first:16 visual frames starting0.8s of recording at10Hz andafter images; no solid black loading gate; some uncached row covers arrive later",
+    "platformReturn": "final76-netease-to-qishui andfinal76-qishui-to-netease:16 frames per recording at10Hz plusafter0.2/0.6/1.5/3.5s images reviewed; selector visibly slides out to prepared Discovery/top with cached covers,NetEase prior profile is not restored as landing page",
+    "outputList": "screen-final76-output-list.png: both local andvivoTWS5;Bluetooth shown selected,playback remains paused"
+  },
+  "limits": [
+    "These named scenes were reviewed; no all-page or long-term artifact-free acceptance.",
+    "Encoded recording and10Hz visual extraction cannot establish120FPS or input-to-photon latency.",
+    "The queue automatic scenarios were skipped byqueue_empty preconditions, despite manual visible queues; no successful automatic queue-stage timing claim.",
+    "No slow/failed network or memory-pressure device case was forced; host snapshot tests cover replacement readiness/failure and identity isolation.",
+    "Generic final76 fixed captures were onKugou after cold start; final76-netease fixed captures replace them for matching75 NetEase baseline."
+  ]
+}

@@ -1,0 +1,88 @@
+00:00 +0: loading D:/AnLi/test/release_129_discovery_test.dart
+lib/features/music_platform/discovery_startup_cache.dart:38:18: Error: The getter 'hasValue' isn't defined for the type 'Object?'.
+ - 'Object' is from 'dart:core'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'hasValue'.
+        if (next.hasValue) {
+                 ^^^^^^^^
+lib/features/music_platform/discovery_startup_cache.dart:39:34: Error: The getter 'value' isn't defined for the type 'Object?'.
+ - 'Object' is from 'dart:core'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'value'.
+          restored.complete(next.value);
+                                 ^^^^^
+lib/features/music_platform/discovery_startup_cache.dart:40:25: Error: The getter 'hasError' isn't defined for the type 'Object?'.
+ - 'Object' is from 'dart:core'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'hasError'.
+        } else if (next.hasError) {
+                        ^^^^^^^^
+00:00 +0 -1: loading D:/AnLi/test/release_129_discovery_test.dart [E]
+  Failed to load "D:/AnLi/test/release_129_discovery_test.dart":
+  Compilation failed for testPath=D:/AnLi/test/release_129_discovery_test.dart: lib/features/music_platform/discovery_startup_cache.dart:38:18: Error: The getter 'hasValue' isn't defined for the type 'Object?'.
+   - 'Object' is from 'dart:core'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'hasValue'.
+          if (next.hasValue) {
+                   ^^^^^^^^
+  lib/features/music_platform/discovery_startup_cache.dart:39:34: Error: The getter 'value' isn't defined for the type 'Object?'.
+   - 'Object' is from 'dart:core'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'value'.
+            restored.complete(next.value);
+                                   ^^^^^
+  lib/features/music_platform/discovery_startup_cache.dart:40:25: Error: The getter 'hasError' isn't defined for the type 'Object?'.
+   - 'Object' is from 'dart:core'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'hasError'.
+          } else if (next.hasError) {
+                          ^^^^^^^^
+  .
+00:00 +0 -1: loading D:/AnLi/test/release_129_artwork_test.dart
+00:00 +0 -1: loading D:/AnLi/test/release_129_discovery_test.dart [E]
+  Error: The Dart compiler exited unexpectedly.
+  package:flutter_tools/src/base/common.dart 34:3  throwToolExit
+  package:flutter_tools/src/compile.dart 939:11    DefaultResidentCompiler._compile.<fn>
+  dart:async/zone_root.dart 48:47                  _rootRunUnary
+  dart:async/zone.dart 733:19                      _CustomZone.runUnary
+  dart:async/future_impl.dart 948:45               Future._propagateToListeners.handleValueCallback
+  dart:async/future_impl.dart 977:13               Future._propagateToListeners
+  dart:async/future_impl.dart 862:9                Future._propagateToListeners
+  dart:async/future_impl.dart 720:5                Future._completeWithValue
+  dart:async/future_impl.dart 804:7                Future._asyncCompleteWithValue.<fn>
+  dart:async/zone_root.dart 35:13                  _rootRun
+  dart:async/zone.dart 726:19                      _CustomZone.run
+  dart:async/zone.dart 625:7                       _CustomZone.runGuarded
+  dart:async/zone.dart 666:23                      _CustomZone.bindCallbackGuarded.<fn>
+  dart:async/schedule_microtask.dart 40:35         _microtaskLoop
+  dart:async/schedule_microtask.dart 49:5          _startMicrotaskLoop
+  dart:isolate-patch/isolate_patch.dart 127:13     _runPendingImmediateCallback
+  dart:isolate-patch/isolate_patch.dart 194:5      _RawReceivePort._handleMessage
+  
+00:00 +0 -1: D:/AnLi/test/release_129_artwork_test.dart: a capsule reuses the larger search thumbnail without another request
+00:00 +1 -1: D:/AnLi/test/release_129_artwork_test.dart: a newly mounted song page receives the disk thumbnail while HD waits
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following PathAccessException was thrown while running async test code:
+Deletion failed, path = 'C:\Users\zyt\AppData\Local\Temp\artwork129-page-a2f3749' (OS Error:
+另一个程序正在使用此文件，进程无法访问。, errno = 32)
+
+When the exception was thrown, this was the stack:
+#0      _checkForErrorResponse (dart:io/common.dart:58:9)
+#1      _Directory._delete.<anonymous closure> (dart:io/directory_impl.dart:208:7)
+<asynchronous suspension>
+<asynchronous suspension>
+#8      main.<anonymous closure> (file:///D:/AnLi/test/release_129_artwork_test.dart:101:7)
+<asynchronous suspension>
+#9      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#10     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided 7 frames from dart:async and package:stack_trace)
+
+The exception was caught asynchronously.
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:00 +1 -2: D:/AnLi/test/release_129_artwork_test.dart: a newly mounted song page receives the disk thumbnail while HD waits [E]
+  Test failed. See exception logs above.
+  The test description was: a newly mounted song page receives the disk thumbnail while HD waits
+  
+Warning: At least one test in this suite creates an HttpClient. When running a test suite that uses
+TestWidgetsFlutterBinding, all HTTP requests will return status code 400, and no network request
+will actually be made. Any test expecting a real network connection and status code will fail.
+To test code that needs an HttpClient, provide your own HttpClient implementation to the code under
+test, so that your test can consistently provide a testable response to the code under test.
+00:00 +1 -2: Some tests failed.

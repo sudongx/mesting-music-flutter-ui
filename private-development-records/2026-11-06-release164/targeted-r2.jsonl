@@ -1,0 +1,183 @@
+{"protocolVersion":"0.1.1","runnerVersion":"1.30.0","pid":315400,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading D:/AnLi/test/qishui_qr_protocol_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":2}
+{"suite":{"id":2,"platform":"vm","path":"D:/AnLi/test/qishui_qr_ui_test.dart"},"type":"suite","time":7}
+{"test":{"id":3,"name":"loading D:/AnLi/test/qishui_qr_ui_test.dart","suiteID":2,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":7}
+{"count":5,"time":8,"type":"allSuites"}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":21114}
+{"group":{"id":4,"suiteID":0,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":20,"line":null,"column":null,"url":null},"type":"group","time":21123}
+{"test":{"id":5,"name":"QR preserves the exact official URL and creates no mobile installation identity","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":104,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"testStart","time":21126}
+{"testID":5,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21189}
+{"test":{"id":6,"name":"scanned is not authenticated even if cookies are present","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":120,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"testStart","time":21190}
+{"testID":6,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21207}
+{"test":{"id":7,"name":"confirmed requires fresh cookies plus authenticated Luna profile","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":132,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"testStart","time":21207}
+{"testID":7,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21219}
+{"test":{"id":8,"name":"stale cookie jar cannot start a new login","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":147,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"testStart","time":21220}
+{"testID":8,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21230}
+{"test":{"id":9,"name":"mobile-domain credentials cannot become a web QR session","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":154,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"testStart","time":21231}
+{"testID":9,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21240}
+{"test":{"id":10,"name":"unknown status never becomes success from a residual cookie","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":163,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"testStart","time":21240}
+{"testID":10,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21246}
+{"test":{"id":11,"name":"cookie without a profile identity is rejected","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":172,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"testStart","time":21246}
+{"testID":11,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21254}
+{"test":{"id":12,"name":"rate limit cools down instead of making repeated requests","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":181,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"testStart","time":21255}
+{"testID":12,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21261}
+{"test":{"id":13,"name":"expired QR stops querying upstream","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":196,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"testStart","time":21262}
+{"testID":13,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21267}
+{"test":{"id":14,"name":"MFA is user initiated and confirmation carries original biz_params","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":206,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"testStart","time":21268}
+{"testID":14,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21277}
+{"test":{"id":15,"name":"untrusted post-confirmation redirect is never requested","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":234,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"testStart","time":21278}
+{"testID":15,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21286}
+{"test":{"id":16,"name":"trusted redirect must lead to actual authenticated profile","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":248,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"testStart","time":21287}
+{"testID":16,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21293}
+{"test":{"id":17,"name":"leaving during profile read rejects the late login result","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":262,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"testStart","time":21294}
+{"testID":17,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21301}
+{"test":{"id":18,"name":"concurrent polls are coalesced inside the QR transaction","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":279,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"testStart","time":21302}
+{"testID":18,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21309}
+{"test":{"id":19,"name":"QR URLs reject lookalike domains, userinfo, plain HTTP and foreign ports","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":291,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"testStart","time":21309}
+{"testID":19,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21313}
+{"test":{"id":20,"name":"SMS business details remove phone OTP mixed secrets URLs and tokens","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":304,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"testStart","time":21314}
+{"testID":20,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21331}
+{"test":{"id":21,"name":"legacy encrypted sessions restore as mobile; web scope survives roundtrip","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":323,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"testStart","time":21331}
+{"testID":21,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21352}
+{"test":{"id":22,"name":"web account reads stay on web host without mobile context or credential transplantation","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":350,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"testStart","time":21353}
+{"testID":22,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21435}
+{"test":{"id":23,"name":"native transport suppresses raw platform exceptions containing credentials","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":402,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"testStart","time":21436}
+{"testID":23,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21453}
+{"test":{"id":24,"name":"biz_params retain encoded values and refuse invalid nested formats","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":430,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_protocol_test.dart"},"type":"testStart","time":21453}
+{"testID":24,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21463}
+{"suite":{"id":25,"platform":"vm","path":"D:/AnLi/test/qishui_ui_test.dart"},"type":"suite","time":21519}
+{"test":{"id":26,"name":"loading D:/AnLi/test/qishui_ui_test.dart","suiteID":25,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":21520}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":3,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":23927}
+{"group":{"id":27,"suiteID":2,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":6,"line":null,"column":null,"url":null},"type":"group","time":23927}
+{"test":{"id":28,"name":"(setUpAll)","suiteID":2,"groupIDs":[27],"metadata":{"skip":false,"skipReason":null},"line":19,"column":3,"url":"file:///D:/AnLi/test/qishui_qr_ui_test.dart"},"type":"testStart","time":23928}
+{"testID":28,"messageType":"print","message":"[LiquidGlass] Initializing library...","type":"print","time":24030}
+{"testID":28,"messageType":"print","message":"[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)","type":"print","time":24040}
+{"testID":28,"messageType":"print","message":"[LiquidGlass] Initialization complete.","type":"print","time":24044}
+{"testID":28,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":25059}
+{"test":{"id":29,"name":"QR waiting fits 390.0 scale 1.0","suiteID":2,"groupIDs":[27],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":104,"root_column":5,"root_url":"file:///D:/AnLi/test/qishui_qr_ui_test.dart"},"type":"testStart","time":25060}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":29,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":27723}
+{"test":{"id":30,"name":"QR waiting fits 320.0 scale 1.8","suiteID":2,"groupIDs":[27],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":104,"root_column":5,"root_url":"file:///D:/AnLi/test/qishui_qr_ui_test.dart"},"type":"testStart","time":27732}
+{"testID":30,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":28023}
+{"test":{"id":31,"name":"QR waiting fits 768.0 scale 1.0","suiteID":2,"groupIDs":[27],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":104,"root_column":5,"root_url":"file:///D:/AnLi/test/qishui_qr_ui_test.dart"},"type":"testStart","time":28024}
+{"testID":26,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":28177}
+{"group":{"id":32,"suiteID":25,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":11,"line":null,"column":null,"url":null},"type":"group","time":28178}
+{"test":{"id":33,"name":"(setUpAll)","suiteID":25,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":40,"column":3,"url":"file:///D:/AnLi/test/qishui_ui_test.dart"},"type":"testStart","time":28178}
+{"testID":31,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":28279}
+{"test":{"id":34,"name":"QR security verification is explicit and stops polling","suiteID":2,"groupIDs":[27],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":125,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_qr_ui_test.dart"},"type":"testStart","time":28279}
+{"testID":33,"messageType":"print","message":"[LiquidGlass] Initializing library...","type":"print","time":28294}
+{"testID":33,"messageType":"print","message":"[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)","type":"print","time":28295}
+{"testID":33,"messageType":"print","message":"[LiquidGlass] Initialization complete.","type":"print","time":28300}
+{"testID":33,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":28302}
+{"test":{"id":35,"name":"three visual tabs retain the old four-branch routing contract","suiteID":25,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":241,"column":3,"url":"file:///D:/AnLi/test/qishui_ui_test.dart"},"type":"testStart","time":28303}
+{"testID":35,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":28325}
+{"test":{"id":36,"name":"phone form 390.0 scale 1.0 starts no network request","suiteID":25,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":252,"root_column":5,"root_url":"file:///D:/AnLi/test/qishui_ui_test.dart"},"type":"testStart","time":28326}
+{"testID":34,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":28519}
+{"test":{"id":37,"name":"expired QR hides the live symbol and offers regeneration","suiteID":2,"groupIDs":[27],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":144,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_qr_ui_test.dart"},"type":"testStart","time":28519}
+{"testID":37,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":28758}
+{"test":{"id":38,"name":"late QR creation after leaving does not update a disposed page","suiteID":2,"groupIDs":[27],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":159,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_qr_ui_test.dart"},"type":"testStart","time":28759}
+{"testID":38,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":28912}
+{"test":{"id":39,"name":"(tearDownAll)","suiteID":2,"groupIDs":[27],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":28913}
+{"testID":39,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":28917}
+{"suite":{"id":40,"platform":"vm","path":"D:/AnLi/test/qishui_protocol_test.dart"},"type":"suite","time":28989}
+{"test":{"id":41,"name":"loading D:/AnLi/test/qishui_protocol_test.dart","suiteID":40,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":28990}
+{"testID":36,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":30391}
+{"test":{"id":42,"name":"phone form 320.0 scale 1.8 starts no network request","suiteID":25,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":252,"root_column":5,"root_url":"file:///D:/AnLi/test/qishui_ui_test.dart"},"type":"testStart","time":30392}
+{"testID":42,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":30681}
+{"test":{"id":43,"name":"discovery uses real adapter data and only three visible destinations","suiteID":25,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":279,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_ui_test.dart"},"type":"testStart","time":30681}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":43,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":31439}
+{"test":{"id":44,"name":"music root shows actual feed and a mode entry in dark theme","suiteID":25,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":294,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_ui_test.dart"},"type":"testStart","time":31440}
+{"testID":44,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":31899}
+{"test":{"id":45,"name":"mine remains usable on narrow screens with large text","suiteID":25,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":309,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_ui_test.dart"},"type":"testStart","time":31904}
+{"testID":45,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":32388}
+{"test":{"id":46,"name":"SMS refusal identifies the send stage and never starts a success countdown","suiteID":25,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":326,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_ui_test.dart"},"type":"testStart","time":32389}
+{"testID":46,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":32888}
+{"test":{"id":47,"name":"business refusal is visible and offers retry instead of fake catalog rows","suiteID":25,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":349,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_ui_test.dart"},"type":"testStart","time":32889}
+{"testID":47,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":32956}
+{"test":{"id":48,"name":"tablet playlist cells fit their cover and scaled title","suiteID":25,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":365,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_ui_test.dart"},"type":"testStart","time":32956}
+{"testID":48,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33101}
+{"test":{"id":49,"name":"a pushed private page hides the old account and cancels reads on switch","suiteID":25,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":379,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_ui_test.dart"},"type":"testStart","time":33101}
+{"testID":41,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":33114}
+{"group":{"id":50,"suiteID":40,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":23,"line":null,"column":null,"url":null},"type":"group","time":33114}
+{"test":{"id":51,"name":"pinned catalog fixture yields exact Soda IDs and full catalog duration","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":92,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33114}
+{"testID":51,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33205}
+{"test":{"id":52,"name":"Passport SDK vectors mix mobile and scenario once at the wire boundary","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":114,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33205}
+{"testID":52,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33226}
+{"test":{"id":53,"name":"phone flow requires business success, complete headers and own Luna identity","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":126,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33227}
+{"testID":53,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33356}
+{"test":{"id":54,"name":"business SMS refusal is never retried or reported as success","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":197,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33356}
+{"testID":54,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33374}
+{"test":{"id":55,"name":"success JSON without session cookies is not a login","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":226,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33375}
+{"testID":55,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33388}
+{"test":{"id":56,"name":"malformed and empty HTTP200 results cannot become usable data","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":245,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33389}
+{"testID":56,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33408}
+{"testID":49,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33409}
+{"test":{"id":57,"name":"an old account response cannot mutate the new cookie jar","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":260,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33409}
+{"test":{"id":58,"name":"welfare page only reads on entry, never claims or settles advertising","suiteID":25,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":407,"root_column":3,"root_url":"file:///D:/AnLi/test/qishui_ui_test.dart"},"type":"testStart","time":33410}
+{"testID":57,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33420}
+{"test":{"id":59,"name":"expired and unrelated cookies never accompany a Luna request","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":282,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33421}
+{"testID":59,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33428}
+{"test":{"id":60,"name":"preview and encrypted models never become full playback","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":314,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33429}
+{"testID":60,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33509}
+{"test":{"id":61,"name":"actual audio header supplies quality and receives no private headers","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":334,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33509}
+{"testID":61,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33549}
+{"test":{"id":62,"name":"streaming permission alone cannot authorize a download","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":356,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33551}
+{"testID":62,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33563}
+{"test":{"id":63,"name":"download needs the exact track, quality and an explicit unmetered grant","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":366,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33563}
+{"testID":63,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33583}
+{"test":{"id":64,"name":"effect grants cannot be inferred from activity VIP or expired local data","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":402,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33583}
+{"testID":64,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33590}
+{"test":{"id":65,"name":"late effect qualification cannot re-enable DSP after account reset","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":422,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33591}
+{"testID":65,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33599}
+{"test":{"id":66,"name":"expired CSRF cookies are never sent as header credentials","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":466,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33599}
+{"testID":66,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33605}
+{"test":{"id":67,"name":"a rotated session is durably persisted with the same account epoch","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":495,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33605}
+{"testID":67,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33610}
+{"test":{"id":68,"name":"preparation failure cannot be classified as an unknown dispatched write","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":523,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33613}
+{"testID":68,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33625}
+{"test":{"id":69,"name":"an unconfirmed SMS may be submitted if it actually arrives without resending","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":551,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33626}
+{"testID":69,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33635}
+{"test":{"id":70,"name":"old activity calendar entries never confirm today or replace missing server time","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":591,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33635}
+{"testID":70,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33641}
+{"test":{"id":71,"name":"catalog milliseconds never stand in for missing player duration","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":616,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33642}
+{"testID":71,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33646}
+{"test":{"id":72,"name":"late playback resolution cannot load audio after the selecting owner is gone","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":635,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33647}
+{"testID":58,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33659}
+{"test":{"id":73,"name":"(tearDownAll)","suiteID":25,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":33660}
+{"testID":73,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":33662}
+{"suite":{"id":74,"platform":"vm","path":"D:/AnLi/test/qishui_accounts_test.dart"},"type":"suite","time":33820}
+{"test":{"id":75,"name":"loading D:/AnLi/test/qishui_accounts_test.dart","suiteID":74,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":33820}
+{"testID":72,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33883}
+{"test":{"id":76,"name":"line timing survives Soda verbatim lyric conversion","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":676,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33884}
+{"testID":76,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33893}
+{"test":{"id":77,"name":"activity calendar success and advertising minutes stay independent","suiteID":40,"groupIDs":[50],"metadata":{"skip":false,"skipReason":null},"line":680,"column":3,"url":"file:///D:/AnLi/test/qishui_protocol_test.dart"},"type":"testStart","time":33893}
+{"testID":77,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":33901}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":75,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":35525}
+{"group":{"id":78,"suiteID":74,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":8,"line":null,"column":null,"url":null},"type":"group","time":35526}
+{"test":{"id":79,"name":"cold restore selects only Soda without touching CloudBase or Kugou credentials","suiteID":74,"groupIDs":[78],"metadata":{"skip":false,"skipReason":null},"line":138,"column":3,"url":"file:///D:/AnLi/test/qishui_accounts_test.dart"},"type":"testStart","time":35526}
+{"testID":79,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":35675}
+{"test":{"id":80,"name":"switching among all three accounts keeps stores isolated and playback owners explicit","suiteID":74,"groupIDs":[78],"metadata":{"skip":false,"skipReason":null},"line":154,"column":3,"url":"file:///D:/AnLi/test/qishui_accounts_test.dart"},"type":"testStart","time":35675}
+{"testID":80,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":35694}
+{"test":{"id":81,"name":"logout clears only the active Soda login and persists guest choice","suiteID":74,"groupIDs":[78],"metadata":{"skip":false,"skipReason":null},"line":183,"column":3,"url":"file:///D:/AnLi/test/qishui_accounts_test.dart"},"type":"testStart","time":35694}
+{"testID":81,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":35704}
+{"test":{"id":82,"name":"failed Soda save preserves the active Kugou login and retained Soda bytes","suiteID":74,"groupIDs":[78],"metadata":{"skip":false,"skipReason":null},"line":199,"column":3,"url":"file:///D:/AnLi/test/qishui_accounts_test.dart"},"type":"testStart","time":35705}
+{"testID":82,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":35717}
+{"test":{"id":83,"name":"cancelled verified login cannot publish or change the selected account","suiteID":74,"groupIDs":[78],"metadata":{"skip":false,"skipReason":null},"line":223,"column":3,"url":"file:///D:/AnLi/test/qishui_accounts_test.dart"},"type":"testStart","time":35718}
+{"testID":83,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":35726}
+{"test":{"id":84,"name":"late token refresh after logout cannot recreate a credential","suiteID":74,"groupIDs":[78],"metadata":{"skip":false,"skipReason":null},"line":242,"column":3,"url":"file:///D:/AnLi/test/qishui_accounts_test.dart"},"type":"testStart","time":35726}
+{"testID":84,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":35734}
+{"test":{"id":85,"name":"Soda route guard blocks old anonymous HTTP before starting the Kugou server","suiteID":74,"groupIDs":[78],"metadata":{"skip":false,"skipReason":null},"line":257,"column":3,"url":"file:///D:/AnLi/test/qishui_accounts_test.dart"},"type":"testStart","time":35734}
+{"testID":85,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":35740}
+{"test":{"id":86,"name":"refreshed secret bytes retain one login epoch across encrypted serialization","suiteID":74,"groupIDs":[78],"metadata":{"skip":false,"skipReason":null},"line":278,"column":3,"url":"file:///D:/AnLi/test/qishui_accounts_test.dart"},"type":"testStart","time":35740}
+{"testID":86,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":35745}
+{"success":true,"type":"done","time":35774}

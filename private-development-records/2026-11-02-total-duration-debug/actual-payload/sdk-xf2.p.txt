@@ -1,0 +1,1015 @@
+3488            -
+  Class descriptor  : 'Lxf2/p;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lxf2/p;)
+      name          : 'a'
+      type          : '(I)Lcom/netease/cloudmusic/core/statistic/s0;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 20
+      ins           : 1
+      outs          : 5
+      insns size    : 233 16-bit code units
+504e68:                                        |[504e68] xf2.p.a:(I)Lcom/netease/cloudmusic/core/statistic/s0;
+504e78: 6200 b76e                              |0000: sget-object v0, Lvf2/b;.c:Ljava/lang/String; // field@6eb7
+504e7c: 6201 b86e                              |0002: sget-object v1, Lvf2/b;.d:Ljava/lang/String; // field@6eb8
+504e80: 7701 e5f0 1300                         |0004: invoke-static/range {v19}, Lxf2/p;.h:(I)Ljava/lang/String; // method@f0e5
+504e86: 0c02                                   |0007: move-result-object v2
+504e88: 7701 dff0 1300                         |0008: invoke-static/range {v19}, Lxf2/p;.b:(I)Ljava/lang/String; // method@f0df
+504e8e: 0c03                                   |000b: move-result-object v3
+504e90: 7701 e3f0 1300                         |000c: invoke-static/range {v19}, Lxf2/p;.f:(I)Ljava/lang/String; // method@f0e3
+504e96: 0c04                                   |000f: move-result-object v4
+504e98: 7701 e2f0 1300                         |0010: invoke-static/range {v19}, Lxf2/p;.e:(I)J // method@f0e2
+504e9e: 0b05                                   |0013: move-result-wide v5
+504ea0: 1607 0000                              |0014: const-wide/16 v7, #int 0 // #0
+504ea4: 7130 a20c 7308                         |0016: invoke-static {v3, v7, v8}, Lcg2/a;.k:(Ljava/lang/String;J)J // method@0ca2
+504eaa: 0b07                                   |0019: move-result-wide v7
+504eac: 7100 9d0c 0000                         |001a: invoke-static {}, Lcg2/a;.f:()J // method@0c9d
+504eb2: 0b09                                   |001d: move-result-wide v9
+504eb4: 7100 9e0c 0000                         |001e: invoke-static {}, Lcg2/a;.g:()J // method@0c9e
+504eba: 0b0b                                   |0021: move-result-wide v11
+504ebc: 123d                                   |0022: const/4 v13, #int 3 // #3
+504ebe: 7110 a00c 0d00                         |0023: invoke-static {v13}, Lcg2/a;.i:(I)I // method@0ca0
+504ec4: 0a0d                                   |0026: move-result v13
+504ec6: 220e ba27                              |0027: new-instance v14, Ljava/util/HashMap; // type@27ba
+504eca: 7010 f6c0 0e00                         |0029: invoke-direct {v14}, Ljava/util/HashMap;.<init>:()V // method@c0f6
+504ed0: 1a0f 0356                              |002c: const-string v15, "LogUploadFailedInterval" // string@5603
+504ed4: 7110 c0bf 0d00                         |002e: invoke-static {v13}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@bfc0
+504eda: 0c0d                                   |0031: move-result-object v13
+504edc: 6e30 ffc0 fe0d                         |0032: invoke-virtual {v14, v15, v13}, Ljava/util/HashMap;.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@c0ff
+504ee2: 7701 e1f0 1300                         |0035: invoke-static/range {v19}, Lxf2/p;.d:(I)Ljava/lang/String; // method@f0e1
+504ee8: 0c0d                                   |0038: move-result-object v13
+504eea: 220f e005                              |0039: new-instance v15, Lcom/netease/cloudmusic/core/statistic/encrypt/i; // type@05e0
+504eee: 7010 ed12 0f00                         |003b: invoke-direct {v15}, Lcom/netease/cloudmusic/core/statistic/encrypt/i;.<init>:()V // method@12ed
+504ef4: 0510 0700                              |003e: move-wide/from16 v16, v7
+504ef8: 2207 ed34                              |0040: new-instance v7, Lxf2/o; // type@34ed
+504efc: 7010 daf0 0700                         |0042: invoke-direct {v7}, Lxf2/o;.<init>:()V // method@f0da
+504f02: 0208 1300                              |0045: move/from16 v8, v19
+504f06: 715d e4f0 28f3                         |0047: invoke-static {v8, v2, v3, v15, v13}, Lxf2/p;.g:(ILjava/lang/String;Ljava/lang/String;Lcom/netease/cloudmusic/core/statistic/z0;Ljava/lang/String;)Lcom/netease/cloudmusic/core/statistic/s0$c; // method@f0e4
+504f0c: 0c02                                   |004a: move-result-object v2
+504f0e: 7220 0a13 7200                         |004b: invoke-interface {v2, v7}, Lcom/netease/cloudmusic/core/statistic/s0$c;.j:(Lcom/netease/cloudmusic/core/statistic/z;)V // method@130a
+504f14: 7100 990c 0000                         |004e: invoke-static {}, Lcg2/a;.b:()Z // method@0c99
+504f1a: 0a07                                   |0051: move-result v7
+504f1c: 7110 e712 0700                         |0052: invoke-static {v7}, Lcom/netease/cloudmusic/core/statistic/encrypt/StatisticNetworkAgent;.f:(Z)V // method@12e7
+504f22: 7100 9a0c 0000                         |0055: invoke-static {}, Lcg2/a;.c:()Z // method@0c9a
+504f28: 0a07                                   |0058: move-result v7
+504f2a: 7110 e812 0700                         |0059: invoke-static {v7}, Lcom/netease/cloudmusic/core/statistic/encrypt/StatisticNetworkAgent;.g:(Z)V // method@12e8
+504f30: 2207 e605                              |005c: new-instance v7, Lcom/netease/cloudmusic/core/statistic/s0$b; // type@05e6
+504f34: 7010 f512 0700                         |005e: invoke-direct {v7}, Lcom/netease/cloudmusic/core/statistic/s0$b;.<init>:()V // method@12f5
+504f3a: 6e20 ff12 0700                         |0061: invoke-virtual {v7, v0}, Lcom/netease/cloudmusic/core/statistic/s0$b;.J:(Ljava/lang/String;)Lcom/netease/cloudmusic/core/statistic/s0$b; // method@12ff
+504f40: 0c00                                   |0064: move-result-object v0
+504f42: 7100 9f0c 0000                         |0065: invoke-static {}, Lcg2/a;.h:()Ljava/lang/Double; // method@0c9f
+504f48: 0c0d                                   |0068: move-result-object v13
+504f4a: 0812 0700                              |0069: move-object/from16 v18, v7
+504f4e: 6e10 a1bf 0d00                         |006b: invoke-virtual {v13}, Ljava/lang/Double;.doubleValue:()D // method@bfa1
+504f54: 0b07                                   |006e: move-result-wide v7
+504f56: 6e30 0213 7008                         |006f: invoke-virtual {v0, v7, v8}, Lcom/netease/cloudmusic/core/statistic/s0$b;.M:(D)Lcom/netease/cloudmusic/core/statistic/s0$b; // method@1302
+504f5c: 0c00                                   |0072: move-result-object v0
+504f5e: 7110 a50c 0300                         |0073: invoke-static {v3}, Lcg2/a;.n:(Ljava/lang/String;)J // method@0ca5
+504f64: 0b07                                   |0076: move-result-wide v7
+504f66: 6e30 0313 7008                         |0077: invoke-virtual {v0, v7, v8}, Lcom/netease/cloudmusic/core/statistic/s0$b;.N:(J)Lcom/netease/cloudmusic/core/statistic/s0$b; // method@1303
+504f6c: 0c00                                   |007a: move-result-object v0
+504f6e: 6e20 0113 1000                         |007b: invoke-virtual {v0, v1}, Lcom/netease/cloudmusic/core/statistic/s0$b;.L:(Ljava/lang/String;)Lcom/netease/cloudmusic/core/statistic/s0$b; // method@1301
+504f74: 0c00                                   |007e: move-result-object v0
+504f76: 6e20 f612 3000                         |007f: invoke-virtual {v0, v3}, Lcom/netease/cloudmusic/core/statistic/s0$b;.A:(Ljava/lang/String;)Lcom/netease/cloudmusic/core/statistic/s0$b; // method@12f6
+504f7c: 0c00                                   |0082: move-result-object v0
+504f7e: 6e20 0013 4000                         |0083: invoke-virtual {v0, v4}, Lcom/netease/cloudmusic/core/statistic/s0$b;.K:(Ljava/lang/String;)Lcom/netease/cloudmusic/core/statistic/s0$b; // method@1300
+504f84: 0c00                                   |0086: move-result-object v0
+504f86: 6e20 f712 e000                         |0087: invoke-virtual {v0, v14}, Lcom/netease/cloudmusic/core/statistic/s0$b;.B:(Ljava/util/Map;)Lcom/netease/cloudmusic/core/statistic/s0$b; // method@12f7
+504f8c: 0c00                                   |008a: move-result-object v0
+504f8e: 7100 ee12 0000                         |008b: invoke-static {}, Lcom/netease/cloudmusic/core/statistic/encrypt/k;.d:()Ljava/lang/String; // method@12ee
+504f94: 0c01                                   |008e: move-result-object v1
+504f96: 6e20 0713 1000                         |008f: invoke-virtual {v0, v1}, Lcom/netease/cloudmusic/core/statistic/s0$b;.R:(Ljava/lang/String;)Lcom/netease/cloudmusic/core/statistic/s0$b; // method@1307
+504f9c: 0c00                                   |0092: move-result-object v0
+504f9e: 6e30 fa12 5006                         |0093: invoke-virtual {v0, v5, v6}, Lcom/netease/cloudmusic/core/statistic/s0$b;.E:(J)Lcom/netease/cloudmusic/core/statistic/s0$b; // method@12fa
+504fa4: 0c00                                   |0096: move-result-object v0
+504fa6: 6e30 fb12 900a                         |0097: invoke-virtual {v0, v9, v10}, Lcom/netease/cloudmusic/core/statistic/s0$b;.F:(J)Lcom/netease/cloudmusic/core/statistic/s0$b; // method@12fb
+504fac: 0c00                                   |009a: move-result-object v0
+504fae: 6e30 fc12 b00c                         |009b: invoke-virtual {v0, v11, v12}, Lcom/netease/cloudmusic/core/statistic/s0$b;.G:(J)Lcom/netease/cloudmusic/core/statistic/s0$b; // method@12fc
+504fb4: 0c00                                   |009e: move-result-object v0
+504fb6: 0504 1000                              |009f: move-wide/from16 v4, v16
+504fba: 6e30 f912 4005                         |00a1: invoke-virtual {v0, v4, v5}, Lcom/netease/cloudmusic/core/statistic/s0$b;.D:(J)Lcom/netease/cloudmusic/core/statistic/s0$b; // method@12f9
+504fc0: 0c00                                   |00a4: move-result-object v0
+504fc2: 6e20 0913 2000                         |00a5: invoke-virtual {v0, v2}, Lcom/netease/cloudmusic/core/statistic/s0$b;.z:(Lcom/netease/cloudmusic/core/statistic/s0$c;)Lcom/netease/cloudmusic/core/statistic/s0$b; // method@1309
+504fc8: 0c00                                   |00a8: move-result-object v0
+504fca: 6e20 0413 f000                         |00a9: invoke-virtual {v0, v15}, Lcom/netease/cloudmusic/core/statistic/s0$b;.O:(Lcom/netease/cloudmusic/core/statistic/z0;)Lcom/netease/cloudmusic/core/statistic/s0$b; // method@1304
+504fd0: 0c00                                   |00ac: move-result-object v0
+504fd2: 2201 de05                              |00ad: new-instance v1, Lcom/netease/cloudmusic/core/statistic/encrypt/a; // type@05de
+504fd6: 1a02 537e                              |00af: const-string v2, "com.netease.cloudmusic.action.UPDATE_CRASH_HANDLER_USERID" // string@7e53
+504fda: 7020 ea12 2100                         |00b1: invoke-direct {v1, v2}, Lcom/netease/cloudmusic/core/statistic/encrypt/a;.<init>:(Ljava/lang/String;)V // method@12ea
+504fe0: 6e20 fe12 1000                         |00b4: invoke-virtual {v0, v1}, Lcom/netease/cloudmusic/core/statistic/s0$b;.I:(Lcom/netease/cloudmusic/core/statistic/s0$d;)Lcom/netease/cloudmusic/core/statistic/s0$b; // method@12fe
+504fe6: 0c00                                   |00b7: move-result-object v0
+504fe8: 2201 da34                              |00b8: new-instance v1, Lxf2/a; // type@34da
+504fec: 7020 90f0 3100                         |00ba: invoke-direct {v1, v3}, Lxf2/a;.<init>:(Ljava/lang/String;)V // method@f090
+504ff2: 6e20 f812 1000                         |00bd: invoke-virtual {v0, v1}, Lcom/netease/cloudmusic/core/statistic/s0$b;.C:(Lcom/netease/cloudmusic/core/statistic/x;)Lcom/netease/cloudmusic/core/statistic/s0$b; // method@12f8
+504ff8: 0c00                                   |00c0: move-result-object v0
+504ffa: 2201 eb34                              |00c1: new-instance v1, Lxf2/n; // type@34eb
+504ffe: 7010 d3f0 0100                         |00c3: invoke-direct {v1}, Lxf2/n;.<init>:()V // method@f0d3
+505004: 6e20 0513 1000                         |00c6: invoke-virtual {v0, v1}, Lcom/netease/cloudmusic/core/statistic/s0$b;.P:(Lcom/netease/cloudmusic/core/statistic/d0;)Lcom/netease/cloudmusic/core/statistic/s0$b; // method@1305
+50500a: 0c00                                   |00c9: move-result-object v0
+50500c: 7701 e0f0 1300                         |00ca: invoke-static/range {v19}, Lxf2/p;.c:(I)Lcom/netease/cloudmusic/core/statistic/p1; // method@f0e0
+505012: 0c01                                   |00cd: move-result-object v1
+505014: 6e20 0613 1000                         |00ce: invoke-virtual {v0, v1}, Lcom/netease/cloudmusic/core/statistic/s0$b;.Q:(Lcom/netease/cloudmusic/core/statistic/p1;)Lcom/netease/cloudmusic/core/statistic/s0$b; // method@1306
+50501a: 7100 b89c 0000                         |00d1: invoke-static {}, Lcom/netease/cloudmusic/utils/e0;.g:()Z // method@9cb8
+505020: 0a00                                   |00d4: move-result v0
+505022: 3800 0d00                              |00d5: if-eqz v0, 00e2 // +000d
+505026: 2200 d805                              |00d7: new-instance v0, Lcom/netease/cloudmusic/core/statistic/debug/orpheusTest/BILoggerOrpheusTest; // type@05d8
+50502a: 7010 dc12 0000                         |00d9: invoke-direct {v0}, Lcom/netease/cloudmusic/core/statistic/debug/orpheusTest/BILoggerOrpheusTest;.<init>:()V // method@12dc
+505030: 0801 1200                              |00dc: move-object/from16 v1, v18
+505034: 6e20 fd12 0100                         |00de: invoke-virtual {v1, v0}, Lcom/netease/cloudmusic/core/statistic/s0$b;.H:(Lcom/netease/cloudmusic/core/statistic/y;)Lcom/netease/cloudmusic/core/statistic/s0$b; // method@12fd
+50503a: 2803                                   |00e1: goto 00e4 // +0003
+50503c: 0801 1200                              |00e2: move-object/from16 v1, v18
+505040: 6e10 0813 0100                         |00e4: invoke-virtual {v1}, Lcom/netease/cloudmusic/core/statistic/s0$b;.y:()Lcom/netease/cloudmusic/core/statistic/s0; // method@1308
+505046: 0c00                                   |00e7: move-result-object v0
+505048: 1100                                   |00e8: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+        0x0013 line=20
+        0x0014 line=21
+        0x0015 line=22
+        0x0016 line=23
+        0x0017 line=24
+        0x0018 line=25
+        0x0019 line=26
+        0x001a line=27
+        0x001b line=28
+        0x001c line=29
+        0x001d line=30
+        0x001e line=31
+        0x001f line=32
+        0x0020 line=33
+        0x0021 line=34
+        0x0022 line=35
+        0x0023 line=36
+        0x0024 line=37
+        0x0025 line=38
+        0x0026 line=39
+        0x0027 line=40
+        0x0028 line=41
+        0x0029 line=42
+        0x002a line=43
+        0x002b line=44
+        0x002c line=45
+        0x002d line=46
+        0x002e line=47
+        0x002f line=48
+        0x0030 line=49
+        0x0031 line=50
+        0x0032 line=51
+        0x0033 line=52
+        0x0034 line=53
+        0x0035 line=54
+        0x0036 line=55
+        0x0037 line=56
+        0x0038 line=57
+        0x0039 line=58
+        0x003a line=59
+        0x003b line=60
+        0x003c line=61
+        0x003d line=62
+        0x003e line=63
+        0x003f line=64
+        0x0040 line=65
+        0x0041 line=66
+        0x0042 line=67
+        0x0043 line=68
+        0x0044 line=69
+        0x0045 line=70
+        0x0046 line=71
+        0x0047 line=72
+        0x0048 line=73
+        0x0049 line=74
+        0x004a line=75
+        0x004b line=76
+        0x004c line=77
+        0x004d line=78
+        0x004e line=79
+        0x004f line=80
+        0x0050 line=81
+        0x0051 line=82
+        0x0052 line=83
+        0x0053 line=84
+        0x0054 line=85
+        0x0055 line=86
+        0x0056 line=87
+        0x0057 line=88
+        0x0058 line=89
+        0x0059 line=90
+        0x005a line=91
+        0x005b line=92
+        0x005c line=93
+        0x005d line=94
+        0x005e line=95
+        0x005f line=96
+        0x0060 line=97
+        0x0061 line=98
+        0x0062 line=99
+        0x0063 line=100
+        0x0064 line=101
+        0x0065 line=102
+        0x0066 line=103
+        0x0067 line=104
+        0x0068 line=105
+        0x0069 line=106
+        0x006a line=107
+        0x006b line=108
+        0x006c line=109
+        0x006d line=110
+        0x006e line=111
+        0x006f line=112
+        0x0070 line=113
+        0x0071 line=114
+        0x0072 line=115
+        0x0073 line=116
+        0x0074 line=117
+        0x0075 line=118
+        0x0076 line=119
+        0x0077 line=120
+        0x0078 line=121
+        0x0079 line=122
+        0x007a line=123
+        0x007b line=124
+        0x007c line=125
+        0x007d line=126
+        0x007e line=127
+        0x007f line=128
+        0x0080 line=129
+        0x0081 line=130
+        0x0082 line=131
+        0x0083 line=132
+        0x0084 line=133
+        0x0085 line=134
+        0x0086 line=135
+        0x0087 line=136
+        0x0088 line=137
+        0x0089 line=138
+        0x008a line=139
+        0x008b line=140
+        0x008c line=141
+        0x008d line=142
+        0x008e line=143
+        0x008f line=144
+        0x0090 line=145
+        0x0091 line=146
+        0x0092 line=147
+        0x0093 line=148
+        0x0094 line=149
+        0x0095 line=150
+        0x0096 line=151
+        0x0097 line=152
+        0x0098 line=153
+        0x0099 line=154
+        0x009a line=155
+        0x009b line=156
+        0x009c line=157
+        0x009d line=158
+        0x009e line=159
+        0x009f line=160
+        0x00a0 line=161
+        0x00a1 line=162
+        0x00a2 line=163
+        0x00a3 line=164
+        0x00a4 line=165
+        0x00a5 line=166
+        0x00a6 line=167
+        0x00a7 line=168
+        0x00a8 line=169
+        0x00a9 line=170
+        0x00aa line=171
+        0x00ab line=172
+        0x00ac line=173
+        0x00ad line=174
+        0x00ae line=175
+        0x00af line=176
+        0x00b0 line=177
+        0x00b1 line=178
+        0x00b2 line=179
+        0x00b3 line=180
+        0x00b4 line=181
+        0x00b5 line=182
+        0x00b6 line=183
+        0x00b7 line=184
+        0x00b8 line=185
+        0x00b9 line=186
+        0x00ba line=187
+        0x00bb line=188
+        0x00bc line=189
+        0x00bd line=190
+        0x00be line=191
+        0x00bf line=192
+        0x00c0 line=193
+        0x00c1 line=194
+        0x00c2 line=195
+        0x00c3 line=196
+        0x00c4 line=197
+        0x00c5 line=198
+        0x00c6 line=199
+        0x00c7 line=200
+        0x00c8 line=201
+        0x00c9 line=202
+        0x00ca line=203
+        0x00cb line=204
+        0x00cc line=205
+        0x00cd line=206
+        0x00ce line=207
+        0x00cf line=208
+        0x00d0 line=209
+        0x00d1 line=210
+        0x00d2 line=211
+        0x00d3 line=212
+        0x00d4 line=213
+        0x00d5 line=214
+        0x00d6 line=215
+        0x00d7 line=216
+        0x00d8 line=217
+        0x00d9 line=218
+        0x00da line=219
+        0x00db line=220
+        0x00dc line=221
+        0x00dd line=222
+        0x00de line=223
+        0x00df line=224
+        0x00e0 line=225
+        0x00e1 line=226
+        0x00e2 line=227
+        0x00e3 line=228
+        0x00e4 line=229
+        0x00e5 line=230
+        0x00e6 line=231
+        0x00e7 line=232
+        0x00e8 line=233
+      locals        :
+        0x0000 - 0x00e9 reg=19 (null) I
+
+    #1              : (in Lxf2/p;)
+      name          : 'b'
+      type          : '(I)Ljava/lang/String;'
+      access        : 0x000a (PRIVATE STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 40 16-bit code units
+50520c:                                        |[50520c] xf2.p.b:(I)Ljava/lang/String;
+50521c: 2b01 1a00 0000                         |0000: packed-switch v1, 0000001a // +0000001a
+505222: 2201 6827                              |0003: new-instance v1, Ljava/lang/IllegalArgumentException; // type@2768
+505226: 1a00 426c                              |0005: const-string v0, "Unsupported configuration type" // string@6c42
+50522a: 7020 b8bf 0100                         |0007: invoke-direct {v1, v0}, Ljava/lang/IllegalArgumentException;.<init>:(Ljava/lang/String;)V // method@bfb8
+505230: 2701                                   |000a: throw v1
+505232: 1a01 21d1                              |000b: const-string v1, "sysdebug" // string@d121
+505236: 280c                                   |000d: goto 0019 // +000c
+505238: 1a01 548c                              |000e: const-string v1, "fast" // string@8c54
+50523c: 2809                                   |0010: goto 0019 // +0009
+50523e: 1a01 a7ae                              |0011: const-string v1, "monitor" // string@aea7
+505242: 2806                                   |0013: goto 0019 // +0006
+505244: 1a01 edd4                              |0014: const-string v1, "ua" // string@d4ed
+505248: 2803                                   |0016: goto 0019 // +0003
+50524a: 1a01 ad78                              |0017: const-string v1, "bi" // string@78ad
+50524e: 1101                                   |0019: return-object v1
+505250: 0001 0500 e803 0000 1700 0000 1400 ... |001a: packed-switch-data (14 units)
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+        0x0013 line=20
+        0x0014 line=21
+        0x0015 line=22
+        0x0016 line=23
+        0x0017 line=24
+        0x0018 line=25
+        0x0019 line=26
+        0x001a line=27
+      locals        :
+        0x0000 - 0x0028 reg=1 (null) I
+
+    #2              : (in Lxf2/p;)
+      name          : 'c'
+      type          : '(I)Lcom/netease/cloudmusic/core/statistic/p1;'
+      access        : 0x000a (PRIVATE STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 32 16-bit code units
+5051bc:                                        |[5051bc] xf2.p.c:(I)Lcom/netease/cloudmusic/core/statistic/p1;
+5051cc: 1300 ea03                              |0000: const/16 v0, #int 1002 // #3ea
+5051d0: 3201 1600                              |0002: if-eq v1, v0, 0018 // +0016
+5051d4: 1300 ec03                              |0004: const/16 v0, #int 1004 // #3ec
+5051d8: 3201 0a00                              |0006: if-eq v1, v0, 0010 // +000a
+5051dc: 2201 db34                              |0008: new-instance v1, Lxf2/b; // type@34db
+5051e0: 1a00 4ea9                              |000a: const-string v0, "log_core" // string@a94e
+5051e4: 7020 93f0 0100                         |000c: invoke-direct {v1, v0}, Lxf2/b;.<init>:(Ljava/lang/String;)V // method@f093
+5051ea: 2810                                   |000f: goto 001f // +0010
+5051ec: 2201 db34                              |0010: new-instance v1, Lxf2/b; // type@34db
+5051f0: 1a00 51a9                              |0012: const-string v0, "log_sys" // string@a951
+5051f4: 7020 93f0 0100                         |0014: invoke-direct {v1, v0}, Lxf2/b;.<init>:(Ljava/lang/String;)V // method@f093
+5051fa: 2808                                   |0017: goto 001f // +0008
+5051fc: 2201 db34                              |0018: new-instance v1, Lxf2/b; // type@34db
+505200: 1a00 50a9                              |001a: const-string v0, "log_monitor" // string@a950
+505204: 7020 93f0 0100                         |001c: invoke-direct {v1, v0}, Lxf2/b;.<init>:(Ljava/lang/String;)V // method@f093
+50520a: 1101                                   |001f: return-object v1
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+        0x0013 line=20
+        0x0014 line=21
+        0x0015 line=22
+        0x0016 line=23
+        0x0017 line=24
+        0x0018 line=25
+        0x0019 line=26
+        0x001a line=27
+        0x001b line=28
+        0x001c line=29
+        0x001d line=30
+        0x001e line=31
+        0x001f line=32
+      locals        :
+        0x0000 - 0x0020 reg=1 (null) I
+
+    #3              : (in Lxf2/p;)
+      name          : 'd'
+      type          : '(I)Ljava/lang/String;'
+      access        : 0x000a (PRIVATE STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 2 16-bit code units
+50526c:                                        |[50526c] xf2.p.d:(I)Ljava/lang/String;
+50527c: 1200                                   |0000: const/4 v0, #int 0 // #0
+50527e: 1100                                   |0001: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+      locals        :
+        0x0000 - 0x0002 reg=0 (null) I
+
+    #4              : (in Lxf2/p;)
+      name          : 'e'
+      type          : '(I)J'
+      access        : 0x000a (PRIVATE STATIC)
+      code          -
+      registers     : 5
+      ins           : 1
+      outs          : 2
+      insns size    : 60 16-bit code units
+50533c:                                        |[50533c] xf2.p.e:(I)J
+50534c: 1600 3075                              |0000: const-wide/16 v0, #int 30000 // #7530
+505350: 2b04 2c00 0000                         |0002: packed-switch v4, 0000002e // +0000002c
+505356: 2204 6827                              |0005: new-instance v4, Ljava/lang/IllegalArgumentException; // type@2768
+50535a: 1a00 426c                              |0007: const-string v0, "Unsupported configuration type" // string@6c42
+50535e: 7020 b8bf 0400                         |0009: invoke-direct {v4, v0}, Ljava/lang/IllegalArgumentException;.<init>:(Ljava/lang/String;)V // method@bfb8
+505364: 2704                                   |000c: throw v4
+505366: 1600 b80b                              |000d: const-wide/16 v0, #int 3000 // #bb8
+50536a: 2811                                   |000f: goto 0020 // +0011
+50536c: 7100 b89c 0000                         |0010: invoke-static {}, Lcom/netease/cloudmusic/utils/e0;.g:()Z // method@9cb8
+505372: 0a04                                   |0013: move-result v4
+505374: 3804 0700                              |0014: if-eqz v4, 001b // +0007
+505378: 7100 9c0c 0000                         |0016: invoke-static {}, Lcg2/a;.e:()J // method@0c9c
+50537e: 0b00                                   |0019: move-result-wide v0
+505380: 2806                                   |001a: goto 0020 // +0006
+505382: 7100 a10c 0000                         |001b: invoke-static {}, Lcg2/a;.j:()I // method@0ca1
+505388: 0a04                                   |001e: move-result v4
+50538a: 8140                                   |001f: int-to-long v0, v4
+50538c: 1602 0000                              |0020: const-wide/16 v2, #int 0 // #0
+505390: 3104 0002                              |0022: cmp-long v4, v0, v2
+505394: 3d04 0300                              |0024: if-lez v4, 0027 // +0003
+505398: 2806                                   |0026: goto 002c // +0006
+50539a: 7100 a10c 0000                         |0027: invoke-static {}, Lcg2/a;.j:()I // method@0ca1
+5053a0: 0a04                                   |002a: move-result v4
+5053a2: 8140                                   |002b: int-to-long v0, v4
+5053a4: 1000                                   |002c: return-wide v0
+5053a6: 0000                                   |002d: nop // spacer
+5053a8: 0001 0500 e803 0000 0e00 0000 0e00 ... |002e: packed-switch-data (14 units)
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+        0x0013 line=20
+        0x0014 line=21
+        0x0015 line=22
+        0x0016 line=23
+        0x0017 line=24
+        0x0018 line=25
+        0x0019 line=26
+        0x001a line=27
+        0x001b line=28
+        0x001c line=29
+        0x001d line=30
+        0x001e line=31
+        0x001f line=32
+        0x0020 line=33
+        0x0021 line=34
+        0x0022 line=35
+        0x0023 line=36
+        0x0024 line=37
+        0x0025 line=38
+        0x0026 line=39
+        0x0027 line=40
+        0x0028 line=41
+        0x0029 line=42
+        0x002a line=43
+        0x002b line=44
+        0x002c line=45
+        0x002d line=46
+        0x002e line=47
+      locals        :
+        0x0000 - 0x003c reg=4 (null) I
+
+    #5              : (in Lxf2/p;)
+      name          : 'f'
+      type          : '(I)Ljava/lang/String;'
+      access        : 0x000a (PRIVATE STATIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 0
+      insns size    : 32 16-bit code units
+505280:                                        |[505280] xf2.p.f:(I)Ljava/lang/String;
+505290: 2b00 1200 0000                         |0000: packed-switch v0, 00000012 // +00000012
+505296: 1a00 0000                              |0003: const-string v0, "" // string@0000
+50529a: 280c                                   |0005: goto 0011 // +000c
+50529c: 1a00 9c21                              |0006: const-string v0, "FAST_SEQ" // string@219c
+5052a0: 2809                                   |0008: goto 0011 // +0009
+5052a2: 1a00 5c62                              |0009: const-string v0, "MONITOR_SEQ" // string@625c
+5052a6: 2806                                   |000b: goto 0011 // +0006
+5052a8: 1a00 a86b                              |000c: const-string v0, "UA_SEQ" // string@6ba8
+5052ac: 2803                                   |000e: goto 0011 // +0003
+5052ae: 1a00 231d                              |000f: const-string v0, "BI_SEQ" // string@1d23
+5052b2: 1100                                   |0011: return-object v0
+5052b4: 0001 0500 e803 0000 0f00 0000 0c00 ... |0012: packed-switch-data (14 units)
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+      locals        :
+        0x0000 - 0x0020 reg=0 (null) I
+
+    #6              : (in Lxf2/p;)
+      name          : 'g'
+      type          : '(ILjava/lang/String;Ljava/lang/String;Lcom/netease/cloudmusic/core/statistic/z0;Ljava/lang/String;)Lcom/netease/cloudmusic/core/statistic/s0$c;'
+      access        : 0x000a (PRIVATE STATIC)
+      code          -
+      registers     : 13
+      ins           : 5
+      outs          : 6
+      insns size    : 176 16-bit code units
+50504c:                                        |[50504c] xf2.p.g:(ILjava/lang/String;Ljava/lang/String;Lcom/netease/cloudmusic/core/statistic/z0;Ljava/lang/String;)Lcom/netease/cloudmusic/core/statistic/s0$c;
+50505c: 2b08 a200 0000                         |0000: packed-switch v8, 000000a2 // +000000a2
+505062: 2208 6827                              |0003: new-instance v8, Ljava/lang/IllegalArgumentException; // type@2768
+505066: 1a09 426c                              |0005: const-string v9, "Unsupported configuration type" // string@6c42
+50506a: 7020 b8bf 9800                         |0007: invoke-direct {v8, v9}, Ljava/lang/IllegalArgumentException;.<init>:(Ljava/lang/String;)V // method@bfb8
+505070: 2708                                   |000a: throw v8
+505072: 1c08 b505                              |000b: const-class v8, Lcom/netease/cloudmusic/core/icustomconfig/ICustomConfig; // type@05b5
+505076: 7110 d211 0800                         |000d: invoke-static {v8}, Lcom/netease/cloudmusic/common/ServiceFacade;.get:(Ljava/lang/Class;)Ljava/lang/Object; // method@11d2
+50507c: 0c08                                   |0010: move-result-object v8
+50507e: 1f08 b505                              |0011: check-cast v8, Lcom/netease/cloudmusic/core/icustomconfig/ICustomConfig; // type@05b5
+505082: 3808 1500                              |0013: if-eqz v8, 0028 // +0015
+505086: 6200 894f                              |0015: sget-object v0, Ljava/lang/Boolean;.TRUE:Ljava/lang/Boolean; // field@4f89
+50508a: 1a01 07a9                              |0017: const-string v1, "log#sysaction_domain_changed" // string@a907
+50508e: 2410 7539 0100                         |0019: filled-new-array {v1}, [Ljava/lang/String; // type@3975
+505094: 0c01                                   |001c: move-result-object v1
+505096: 7230 7112 0801                         |001d: invoke-interface {v8, v0, v1}, Lcom/netease/cloudmusic/core/icustomconfig/ICustomConfig;.getMainAppCustomConfig:(Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object; // method@1271
+50509c: 0c08                                   |0020: move-result-object v8
+50509e: 1f08 5727                              |0021: check-cast v8, Ljava/lang/Boolean; // type@2757
+5050a2: 6e10 84bf 0800                         |0023: invoke-virtual {v8}, Ljava/lang/Boolean;.booleanValue:()Z // method@bf84
+5050a8: 0a08                                   |0026: move-result v8
+5050aa: 2802                                   |0027: goto 0029 // +0002
+5050ac: 1218                                   |0028: const/4 v8, #int 1 // #1
+5050ae: 3808 1200                              |0029: if-eqz v8, 003b // +0012
+5050b2: 2208 e634                              |002b: new-instance v8, Lxf2/l; // type@34e6
+5050b6: 7100 f2fb 0000                         |002d: invoke-static {}, Lzv/a;.O:()Lzv/a; // method@fbf2
+5050bc: 0c01                                   |0030: move-result-object v1
+5050be: 0780                                   |0031: move-object v0, v8
+5050c0: 0792                                   |0032: move-object v2, v9
+5050c2: 07a3                                   |0033: move-object v3, v10
+5050c4: 07b4                                   |0034: move-object v4, v11
+5050c6: 07c5                                   |0035: move-object v5, v12
+5050c8: 7606 c4f0 0000                         |0036: invoke-direct/range {v0, v1, v2, v3, v4, v5}, Lxf2/l;.<init>:(Lj62/a;Ljava/lang/String;Ljava/lang/String;Lcom/netease/cloudmusic/core/statistic/z0;Ljava/lang/String;)V // method@f0c4
+5050ce: 2900 6800                              |0039: goto/16 00a1 // +0068
+5050d2: 2208 ef34                              |003b: new-instance v8, Lxf2/q; // type@34ef
+5050d6: 7100 f2fb 0000                         |003d: invoke-static {}, Lzv/a;.O:()Lzv/a; // method@fbf2
+5050dc: 0c03                                   |0040: move-result-object v3
+5050de: 0782                                   |0041: move-object v2, v8
+5050e0: 0794                                   |0042: move-object v4, v9
+5050e2: 07a5                                   |0043: move-object v5, v10
+5050e4: 07b6                                   |0044: move-object v6, v11
+5050e6: 07c7                                   |0045: move-object v7, v12
+5050e8: 7606 e7f0 0200                         |0046: invoke-direct/range {v2, v3, v4, v5, v6, v7}, Lxf2/q;.<init>:(Lj62/a;Ljava/lang/String;Ljava/lang/String;Lcom/netease/cloudmusic/core/statistic/z0;Ljava/lang/String;)V // method@f0e7
+5050ee: 2900 5800                              |0049: goto/16 00a1 // +0058
+5050f2: 2208 e634                              |004b: new-instance v8, Lxf2/l; // type@34e6
+5050f6: 7100 f2fb 0000                         |004d: invoke-static {}, Lzv/a;.O:()Lzv/a; // method@fbf2
+5050fc: 0c01                                   |0050: move-result-object v1
+5050fe: 0780                                   |0051: move-object v0, v8
+505100: 0792                                   |0052: move-object v2, v9
+505102: 07a3                                   |0053: move-object v3, v10
+505104: 07b4                                   |0054: move-object v4, v11
+505106: 07c5                                   |0055: move-object v5, v12
+505108: 7606 c4f0 0000                         |0056: invoke-direct/range {v0, v1, v2, v3, v4, v5}, Lxf2/l;.<init>:(Lj62/a;Ljava/lang/String;Ljava/lang/String;Lcom/netease/cloudmusic/core/statistic/z0;Ljava/lang/String;)V // method@f0c4
+50510e: 2848                                   |0059: goto 00a1 // +0048
+505110: 7100 e6f0 0000                         |005a: invoke-static {}, Lxf2/p;.i:()Z // method@f0e6
+505116: 0a08                                   |005d: move-result v8
+505118: 3808 1100                              |005e: if-eqz v8, 006f // +0011
+50511c: 2208 e134                              |0060: new-instance v8, Lxf2/g; // type@34e1
+505120: 7100 f2fb 0000                         |0062: invoke-static {}, Lzv/a;.O:()Lzv/a; // method@fbf2
+505126: 0c01                                   |0065: move-result-object v1
+505128: 0780                                   |0066: move-object v0, v8
+50512a: 0792                                   |0067: move-object v2, v9
+50512c: 07a3                                   |0068: move-object v3, v10
+50512e: 07b4                                   |0069: move-object v4, v11
+505130: 07c5                                   |006a: move-object v5, v12
+505132: 7606 aff0 0000                         |006b: invoke-direct/range {v0, v1, v2, v3, v4, v5}, Lxf2/g;.<init>:(Lj62/a;Ljava/lang/String;Ljava/lang/String;Lcom/netease/cloudmusic/core/statistic/z0;Ljava/lang/String;)V // method@f0af
+505138: 2833                                   |006e: goto 00a1 // +0033
+50513a: 2208 de34                              |006f: new-instance v8, Lxf2/d; // type@34de
+50513e: 7100 f2fb 0000                         |0071: invoke-static {}, Lzv/a;.O:()Lzv/a; // method@fbf2
+505144: 0c03                                   |0074: move-result-object v3
+505146: 0782                                   |0075: move-object v2, v8
+505148: 0794                                   |0076: move-object v4, v9
+50514a: 07a5                                   |0077: move-object v5, v10
+50514c: 07b6                                   |0078: move-object v6, v11
+50514e: 07c7                                   |0079: move-object v7, v12
+505150: 7606 9ff0 0200                         |007a: invoke-direct/range {v2, v3, v4, v5, v6, v7}, Lxf2/d;.<init>:(Lj62/a;Ljava/lang/String;Ljava/lang/String;Lcom/netease/cloudmusic/core/statistic/z0;Ljava/lang/String;)V // method@f09f
+505156: 2824                                   |007d: goto 00a1 // +0024
+505158: 7100 e6f0 0000                         |007e: invoke-static {}, Lxf2/p;.i:()Z // method@f0e6
+50515e: 0a08                                   |0081: move-result v8
+505160: 3808 1100                              |0082: if-eqz v8, 0093 // +0011
+505164: 2208 e734                              |0084: new-instance v8, Lxf2/m; // type@34e7
+505168: 7100 f2fb 0000                         |0086: invoke-static {}, Lzv/a;.O:()Lzv/a; // method@fbf2
+50516e: 0c01                                   |0089: move-result-object v1
+505170: 0780                                   |008a: move-object v0, v8
+505172: 0792                                   |008b: move-object v2, v9
+505174: 07a3                                   |008c: move-object v3, v10
+505176: 07b4                                   |008d: move-object v4, v11
+505178: 07c5                                   |008e: move-object v5, v12
+50517a: 7606 c7f0 0000                         |008f: invoke-direct/range {v0, v1, v2, v3, v4, v5}, Lxf2/m;.<init>:(Lj62/a;Ljava/lang/String;Ljava/lang/String;Lcom/netease/cloudmusic/core/statistic/z0;Ljava/lang/String;)V // method@f0c7
+505180: 280f                                   |0092: goto 00a1 // +000f
+505182: 2208 ef34                              |0093: new-instance v8, Lxf2/q; // type@34ef
+505186: 7100 f2fb 0000                         |0095: invoke-static {}, Lzv/a;.O:()Lzv/a; // method@fbf2
+50518c: 0c03                                   |0098: move-result-object v3
+50518e: 0782                                   |0099: move-object v2, v8
+505190: 0794                                   |009a: move-object v4, v9
+505192: 07a5                                   |009b: move-object v5, v10
+505194: 07b6                                   |009c: move-object v6, v11
+505196: 07c7                                   |009d: move-object v7, v12
+505198: 7606 e7f0 0200                         |009e: invoke-direct/range {v2, v3, v4, v5, v6, v7}, Lxf2/q;.<init>:(Lj62/a;Ljava/lang/String;Ljava/lang/String;Lcom/netease/cloudmusic/core/statistic/z0;Ljava/lang/String;)V // method@f0e7
+50519e: 1108                                   |00a1: return-object v8
+5051a0: 0001 0500 e803 0000 7e00 0000 5a00 ... |00a2: packed-switch-data (14 units)
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+        0x0013 line=20
+        0x0014 line=21
+        0x0015 line=22
+        0x0016 line=23
+        0x0017 line=24
+        0x0018 line=25
+        0x0019 line=26
+        0x001a line=27
+        0x001b line=28
+        0x001c line=29
+        0x001d line=30
+        0x001e line=31
+        0x001f line=32
+        0x0020 line=33
+        0x0021 line=34
+        0x0022 line=35
+        0x0023 line=36
+        0x0024 line=37
+        0x0025 line=38
+        0x0026 line=39
+        0x0027 line=40
+        0x0028 line=41
+        0x0029 line=42
+        0x002a line=43
+        0x002b line=44
+        0x002c line=45
+        0x002d line=46
+        0x002e line=47
+        0x002f line=48
+        0x0030 line=49
+        0x0031 line=50
+        0x0032 line=51
+        0x0033 line=52
+        0x0034 line=53
+        0x0035 line=54
+        0x0036 line=55
+        0x0037 line=56
+        0x0038 line=57
+        0x0039 line=58
+        0x003a line=59
+        0x003b line=60
+        0x003c line=61
+        0x003d line=62
+        0x003e line=63
+        0x003f line=64
+        0x0040 line=65
+        0x0041 line=66
+        0x0042 line=67
+        0x0043 line=68
+        0x0044 line=69
+        0x0045 line=70
+        0x0046 line=71
+        0x0047 line=72
+        0x0048 line=73
+        0x0049 line=74
+        0x004a line=75
+        0x004b line=76
+        0x004c line=77
+        0x004d line=78
+        0x004e line=79
+        0x004f line=80
+        0x0050 line=81
+        0x0051 line=82
+        0x0052 line=83
+        0x0053 line=84
+        0x0054 line=85
+        0x0055 line=86
+        0x0056 line=87
+        0x0057 line=88
+        0x0058 line=89
+        0x0059 line=90
+        0x005a line=91
+        0x005b line=92
+        0x005c line=93
+        0x005d line=94
+        0x005e line=95
+        0x005f line=96
+        0x0060 line=97
+        0x0061 line=98
+        0x0062 line=99
+        0x0063 line=100
+        0x0064 line=101
+        0x0065 line=102
+        0x0066 line=103
+        0x0067 line=104
+        0x0068 line=105
+        0x0069 line=106
+        0x006a line=107
+        0x006b line=108
+        0x006c line=109
+        0x006d line=110
+        0x006e line=111
+        0x006f line=112
+        0x0070 line=113
+        0x0071 line=114
+        0x0072 line=115
+        0x0073 line=116
+        0x0074 line=117
+        0x0075 line=118
+        0x0076 line=119
+        0x0077 line=120
+        0x0078 line=121
+        0x0079 line=122
+        0x007a line=123
+        0x007b line=124
+        0x007c line=125
+        0x007d line=126
+        0x007e line=127
+        0x007f line=128
+        0x0080 line=129
+        0x0081 line=130
+        0x0082 line=131
+        0x0083 line=132
+        0x0084 line=133
+        0x0085 line=134
+        0x0086 line=135
+        0x0087 line=136
+        0x0088 line=137
+        0x0089 line=138
+        0x008a line=139
+        0x008b line=140
+        0x008c line=141
+        0x008d line=142
+        0x008e line=143
+        0x008f line=144
+        0x0090 line=145
+        0x0091 line=146
+        0x0092 line=147
+        0x0093 line=148
+        0x0094 line=149
+        0x0095 line=150
+        0x0096 line=151
+        0x0097 line=152
+        0x0098 line=153
+        0x0099 line=154
+        0x009a line=155
+        0x009b line=156
+        0x009c line=157
+        0x009d line=158
+        0x009e line=159
+        0x009f line=160
+        0x00a0 line=161
+        0x00a1 line=162
+        0x00a2 line=163
+      locals        :
+        0x0000 - 0x00b0 reg=8 (null) I
+        0x0000 - 0x00b0 reg=9 (null) Ljava/lang/String;
+        0x0000 - 0x00b0 reg=10 (null) Ljava/lang/String;
+        0x0000 - 0x00b0 reg=11 (null) Lcom/netease/cloudmusic/core/statistic/z0;
+        0x0000 - 0x00b0 reg=12 (null) Ljava/lang/String;
+
+    #7              : (in Lxf2/p;)
+      name          : 'h'
+      type          : '(I)Ljava/lang/String;'
+      access        : 0x000a (PRIVATE STATIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 46 16-bit code units
+5052d0:                                        |[5052d0] xf2.p.h:(I)Ljava/lang/String;
+5052e0: 1a00 2d7d                              |0000: const-string v0, "clientlog/encrypt/upload" // string@7d2d
+5052e4: 2b01 1e00 0000                         |0002: packed-switch v1, 00000020 // +0000001e
+5052ea: 2201 6827                              |0005: new-instance v1, Ljava/lang/IllegalArgumentException; // type@2768
+5052ee: 1a00 426c                              |0007: const-string v0, "Unsupported configuration type" // string@6c42
+5052f2: 7020 b8bf 0100                         |0009: invoke-direct {v1, v0}, Ljava/lang/IllegalArgumentException;.<init>:(Ljava/lang/String;)V // method@bfb8
+5052f8: 2701                                   |000c: throw v1
+5052fa: 1a00 307d                              |000d: const-string v0, "clientlog/encrypt/upload/sysaction" // string@7d30
+5052fe: 2810                                   |000f: goto 001f // +0010
+505300: 1a00 2e7d                              |0010: const-string v0, "clientlog/encrypt/upload/fastaction" // string@7d2e
+505304: 280d                                   |0012: goto 001f // +000d
+505306: 1a00 2f7d                              |0013: const-string v0, "clientlog/encrypt/upload/monitor" // string@7d2f
+50530a: 280a                                   |0015: goto 001f // +000a
+50530c: 7100 a396 0000                         |0016: invoke-static {}, Lcom/netease/cloudmusic/statistic/monitor/LogMonitorConfigManager;.b:()Z // method@96a3
+505312: 0a01                                   |0019: move-result v1
+505314: 3801 0500                              |001a: if-eqz v1, 001f // +0005
+505318: 1a01 317d                              |001c: const-string v1, "clientlog/encrypt/upload/v2" // string@7d31
+50531c: 0710                                   |001e: move-object v0, v1
+50531e: 1100                                   |001f: return-object v0
+505320: 0001 0500 e803 0000 1d00 0000 1400 ... |0020: packed-switch-data (14 units)
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+        0x0005 line=6
+        0x0006 line=7
+        0x0007 line=8
+        0x0008 line=9
+        0x0009 line=10
+        0x000a line=11
+        0x000b line=12
+        0x000c line=13
+        0x000d line=14
+        0x000e line=15
+        0x000f line=16
+        0x0010 line=17
+        0x0011 line=18
+        0x0012 line=19
+        0x0013 line=20
+        0x0014 line=21
+        0x0015 line=22
+        0x0016 line=23
+        0x0017 line=24
+        0x0018 line=25
+        0x0019 line=26
+        0x001a line=27
+        0x001b line=28
+        0x001c line=29
+        0x001d line=30
+        0x001e line=31
+        0x001f line=32
+        0x0020 line=33
+      locals        :
+        0x0000 - 0x002e reg=1 (null) I
+
+    #8              : (in Lxf2/p;)
+      name          : 'i'
+      type          : '()Z'
+      access        : 0x000a (PRIVATE STATIC)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 5 16-bit code units
+504e4c:                                        |[504e4c] xf2.p.i:()Z
+504e5c: 7100 980c 0000                         |0000: invoke-static {}, Lcg2/a;.a:()Z // method@0c98
+504e62: 0a00                                   |0003: move-result v0
+504e64: 0f00                                   |0004: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=1
+        0x0001 line=2
+        0x0002 line=3
+        0x0003 line=4
+        0x0004 line=5
+      locals        :
+
+  Virtual methods   -
+  source_file_idx   : 25996 (ProGuard)
+

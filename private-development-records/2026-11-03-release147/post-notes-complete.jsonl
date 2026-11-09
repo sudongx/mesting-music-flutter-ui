@@ -1,0 +1,290 @@
+{"protocolVersion":"0.1.1","runnerVersion":"1.30.0","pid":325008,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"D:/AnLi/test/app_update_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading D:/AnLi/test/app_update_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":1}
+{"suite":{"id":2,"platform":"vm","path":"D:/AnLi/test/beta_update_isolation_test.dart"},"type":"suite","time":7}
+{"test":{"id":3,"name":"loading D:/AnLi/test/beta_update_isolation_test.dart","suiteID":2,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":7}
+{"count":9,"time":9,"type":"allSuites"}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":3,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":9998}
+{"group":{"id":4,"suiteID":2,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":null,"column":null,"url":null},"type":"group","time":10001}
+{"test":{"id":5,"name":"Beta requests its own feed and rejects a formal package manifest","suiteID":2,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":22,"column":3,"url":"file:///D:/AnLi/test/beta_update_isolation_test.dart"},"type":"testStart","time":10002}
+{"testID":5,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10062}
+{"suite":{"id":6,"platform":"vm","path":"D:/AnLi/test/csnas_app_update_test.dart"},"type":"suite","time":10096}
+{"test":{"id":7,"name":"loading D:/AnLi/test/csnas_app_update_test.dart","suiteID":6,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":10096}
+{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":10558}
+{"group":{"id":8,"suiteID":0,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":10,"line":null,"column":null,"url":null},"type":"group","time":10560}
+{"test":{"id":9,"name":"更新清单严格比较包名、版本号与强制更新范围","suiteID":0,"groupIDs":[8],"metadata":{"skip":false,"skipReason":null},"line":113,"column":3,"url":"file:///D:/AnLi/test/app_update_test.dart"},"type":"testStart","time":10560}
+{"testID":9,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10620}
+{"test":{"id":10,"name":"仓库下载 APK 后校验大小和 SHA-256 再交给安装桥接","suiteID":0,"groupIDs":[8],"metadata":{"skip":false,"skipReason":null},"line":130,"column":3,"url":"file:///D:/AnLi/test/app_update_test.dart"},"type":"testStart","time":10620}
+{"testID":10,"error":"当前安装包标识不受支持","stackTrace":"package:mesting_music/features/app_update/data/app_update_repository.dart 125:9  AppUpdateRepository.check\n","isFailure":false,"type":"error","time":10664}
+{"testID":10,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":10664}
+{"test":{"id":11,"name":"SHA-256 不匹配时删除临时安装包并阻止安装","suiteID":0,"groupIDs":[8],"metadata":{"skip":false,"skipReason":null},"line":174,"column":3,"url":"file:///D:/AnLi/test/app_update_test.dart"},"type":"testStart","time":10665}
+{"testID":11,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10716}
+{"test":{"id":12,"name":"主动暂停会保留已写入的安装包进度","suiteID":0,"groupIDs":[8],"metadata":{"skip":false,"skipReason":null},"line":208,"column":3,"url":"file:///D:/AnLi/test/app_update_test.dart"},"type":"testStart","time":10716}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":12,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10825}
+{"test":{"id":13,"name":"下载流仍未结束时已把已报告进度直接写入持久文件","suiteID":0,"groupIDs":[8],"metadata":{"skip":false,"skipReason":null},"line":258,"column":3,"url":"file:///D:/AnLi/test/app_update_test.dart"},"type":"testStart","time":10826}
+{"testID":13,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10915}
+{"test":{"id":14,"name":"进程重建后识别残片并使用 HTTP Range 继续下载","suiteID":0,"groupIDs":[8],"metadata":{"skip":false,"skipReason":null},"line":311,"column":3,"url":"file:///D:/AnLi/test/app_update_test.dart"},"type":"testStart","time":10916}
+{"testID":14,"error":"Expected: AppUpdatePhase:<AppUpdatePhase.paused>\n  Actual: AppUpdatePhase:<AppUpdatePhase.failed>\n","stackTrace":"package:matcher                                     expect\npackage:flutter_test/src/widget_tester.dart 473:18  expect\ntest\\app_update_test.dart 389:5                     main.<fn>\n","isFailure":true,"type":"error","time":11052}
+{"testID":14,"result":"failure","skipped":false,"hidden":false,"type":"testDone","time":11052}
+{"test":{"id":15,"name":"服务器忽略 Range 时校验重复前缀且进度不归零","suiteID":0,"groupIDs":[8],"metadata":{"skip":false,"skipReason":null},"line":402,"column":3,"url":"file:///D:/AnLi/test/app_update_test.dart"},"type":"testStart","time":11053}
+{"testID":15,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":11137}
+{"test":{"id":16,"name":"更新抽屉展示版本、更新内容和强制更新状态","suiteID":0,"groupIDs":[8],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":451,"root_column":3,"root_url":"file:///D:/AnLi/test/app_update_test.dart"},"type":"testStart","time":11138}
+{"testID":7,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":11388}
+{"group":{"id":17,"suiteID":6,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":8,"line":null,"column":null,"url":null},"type":"group","time":11388}
+{"test":{"id":18,"name":"unavailable update storage is recoverable and releases the owner","suiteID":6,"groupIDs":[17],"metadata":{"skip":false,"skipReason":null},"line":61,"column":3,"url":"file:///D:/AnLi/test/csnas_app_update_test.dart"},"type":"testStart","time":11388}
+{"testID":18,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":11559}
+{"test":{"id":19,"name":"repeated download/install actions share one owner and one installer intent","suiteID":6,"groupIDs":[17],"metadata":{"skip":false,"skipReason":null},"line":107,"column":3,"url":"file:///D:/AnLi/test/csnas_app_update_test.dart"},"type":"testStart","time":11560}
+{"testID":19,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":11582}
+{"test":{"id":20,"name":"public metadata orders real APK build codes across the public-name migration","suiteID":6,"groupIDs":[17],"metadata":{"skip":false,"skipReason":null},"line":146,"column":3,"url":"file:///D:/AnLi/test/csnas_app_update_test.dart"},"type":"testStart","time":11582}
+{"testID":20,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":11592}
+{"test":{"id":21,"name":"missing build/foreign slug/foreign URL/invalid SHA are rejected before download","suiteID":6,"groupIDs":[17],"metadata":{"skip":false,"skipReason":null},"line":175,"column":3,"url":"file:///D:/AnLi/test/csnas_app_update_test.dart"},"type":"testStart","time":11593}
+{"testID":21,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":11606}
+{"test":{"id":22,"name":"one bounded HTTPS mirror attempt uses the same verified release","suiteID":6,"groupIDs":[17],"metadata":{"skip":false,"skipReason":null},"line":198,"column":3,"url":"file:///D:/AnLi/test/csnas_app_update_test.dart"},"type":"testStart","time":11607}
+{"testID":22,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":11721}
+{"test":{"id":23,"name":"429 does not loop or silently switch mirrors","suiteID":6,"groupIDs":[17],"metadata":{"skip":false,"skipReason":null},"line":229,"column":3,"url":"file:///D:/AnLi/test/csnas_app_update_test.dart"},"type":"testStart","time":11721}
+{"testID":23,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":11749}
+{"test":{"id":24,"name":"resume persists origin session and If-Range; a 200 fully replaces Ring partial bytes","suiteID":6,"groupIDs":[17],"metadata":{"skip":false,"skipReason":null},"line":249,"column":3,"url":"file:///D:/AnLi/test/csnas_app_update_test.dart"},"type":"testStart","time":11749}
+{"testID":24,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":11840}
+{"test":{"id":25,"name":"external HTTPS redirects never receive platform session/device headers","suiteID":6,"groupIDs":[17],"metadata":{"skip":false,"skipReason":null},"line":310,"column":3,"url":"file:///D:/AnLi/test/csnas_app_update_test.dart"},"type":"testStart","time":11841}
+{"testID":25,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":11858}
+{"suite":{"id":26,"platform":"vm","path":"D:/AnLi/test/music_ring_update_test.dart"},"type":"suite","time":11880}
+{"test":{"id":27,"name":"loading D:/AnLi/test/music_ring_update_test.dart","suiteID":26,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":11880}
+{"testID":16,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":11974}
+{"test":{"id":28,"name":"版本更新入口使用共享液态玻璃且内容层保持透明","suiteID":0,"groupIDs":[8],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":478,"root_column":3,"root_url":"file:///D:/AnLi/test/app_update_test.dart"},"type":"testStart","time":11974}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":28,"messageType":"print","message":"══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════\nThe following StateError was thrown running a test:\nBad state: No element\n\nWhen the exception was thrown, this was the stack:\n#0      Iterable.single (dart:core/iterable.dart:694:25)\n#1      WidgetController.widget (package:flutter_test/src/controller.dart:823:30)\n#2      main.<anonymous closure> (file:///D:/AnLi/test/app_update_test.dart:506:33)\n<asynchronous suspension>\n#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)\n<asynchronous suspension>\n#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)\n<asynchronous suspension>\n<asynchronous suspension>\n(elided one frame from package:stack_trace)\n\nThe test description was:\n  版本更新入口使用共享液态玻璃且内容层保持透明\n════════════════════════════════════════════════════════════════════════════════════════════════════","type":"print","time":12595}
+{"testID":28,"error":"Test failed. See exception logs above.\nThe test description was: 版本更新入口使用共享液态玻璃且内容层保持透明","stackTrace":"","isFailure":false,"type":"error","time":12617}
+{"testID":28,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":12618}
+{"test":{"id":29,"name":"下载抽屉可以暂停并显示持久化续传进度","suiteID":0,"groupIDs":[8],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":524,"root_column":3,"root_url":"file:///D:/AnLi/test/app_update_test.dart"},"type":"testStart","time":12618}
+{"testID":29,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12730}
+{"suite":{"id":30,"platform":"vm","path":"D:/AnLi/test/release_106_update_notes_test.dart"},"type":"suite","time":12760}
+{"test":{"id":31,"name":"loading D:/AnLi/test/release_106_update_notes_test.dart","suiteID":30,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":12760}
+{"testID":27,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":12893}
+{"group":{"id":32,"suiteID":26,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":17,"line":null,"column":null,"url":null},"type":"group","time":12894}
+{"test":{"id":33,"name":"hosted request binds music, real APK code, hash and both origins","suiteID":26,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":170,"column":3,"url":"file:///D:/AnLi/test/music_ring_update_test.dart"},"type":"testStart","time":12894}
+{"testID":33,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12948}
+{"test":{"id":34,"name":"external COS discards stale hosted mirror and never resolves health","suiteID":26,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":180,"column":3,"url":"file:///D:/AnLi/test/music_ring_update_test.dart"},"type":"testStart","time":12949}
+{"testID":34,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12953}
+{"test":{"id":35,"name":"wrong hosted app cannot start an SDK transfer","suiteID":26,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":192,"column":3,"url":"file:///D:/AnLi/test/music_ring_update_test.dart"},"type":"testStart","time":12954}
+{"testID":35,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12981}
+{"test":{"id":36,"name":"SDK completes, promotes into installer allowlist and reuses valid cache","suiteID":26,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":205,"column":3,"url":"file:///D:/AnLi/test/music_ring_update_test.dart"},"type":"testStart","time":12981}
+{"testID":36,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13131}
+{"test":{"id":37,"name":"file changed while install permission dialog is open is rejected","suiteID":26,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":235,"column":3,"url":"file:///D:/AnLi/test/music_ring_update_test.dart"},"type":"testStart","time":13132}
+{"testID":37,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13190}
+{"test":{"id":38,"name":"SDK digest failure does not install or launch a second HTTP download","suiteID":26,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":251,"column":3,"url":"file:///D:/AnLi/test/music_ring_update_test.dart"},"type":"testStart","time":13190}
+{"testID":38,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13224}
+{"test":{"id":39,"name":"pause waits for cleanup, retains displayed progress and releases SDK owner","suiteID":26,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":266,"column":3,"url":"file:///D:/AnLi/test/music_ring_update_test.dart"},"type":"testStart","time":13224}
+{"testID":39,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13355}
+{"test":{"id":40,"name":"cancel before asynchronous initialization performs no transfer","suiteID":26,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":295,"column":3,"url":"file:///D:/AnLi/test/music_ring_update_test.dart"},"type":"testStart","time":13356}
+{"testID":40,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13362}
+{"test":{"id":41,"name":"overlap and clear during initialization cannot steal cancellation owner","suiteID":26,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":314,"column":3,"url":"file:///D:/AnLi/test/music_ring_update_test.dart"},"type":"testStart","time":13362}
+{"testID":41,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13392}
+{"test":{"id":42,"name":"temporary directory failure remains retryable on the same adapter","suiteID":26,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":358,"column":3,"url":"file:///D:/AnLi/test/music_ring_update_test.dart"},"type":"testStart","time":13393}
+{"testID":42,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13468}
+{"test":{"id":43,"name":"dispose during initialization prevents late SDK creation","suiteID":26,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":385,"column":3,"url":"file:///D:/AnLi/test/music_ring_update_test.dart"},"type":"testStart","time":13468}
+{"testID":43,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13474}
+{"test":{"id":44,"name":"cache purge removes only SDK-owned files and allows a new engine","suiteID":26,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":405,"column":3,"url":"file:///D:/AnLi/test/music_ring_update_test.dart"},"type":"testStart","time":13475}
+{"testID":44,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13700}
+{"test":{"id":45,"name":"pre-SDK partial finishes once with original Range protocol","suiteID":26,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":432,"column":3,"url":"file:///D:/AnLi/test/music_ring_update_test.dart"},"type":"testStart","time":13701}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":45,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13773}
+{"test":{"id":46,"name":"SDK network failure keeps host recoverable without duplicate legacy requests","suiteID":26,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":460,"column":3,"url":"file:///D:/AnLi/test/music_ring_update_test.dart"},"type":"testStart","time":13773}
+{"testID":46,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13783}
+{"test":{"id":47,"name":"real SDK external HTTPS mirror succeeds with every hosted socket blocked","suiteID":26,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":478,"column":3,"url":"file:///D:/AnLi/test/music_ring_update_test.dart"},"type":"testStart","time":13784}
+{"testID":47,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13840}
+{"test":{"id":48,"name":"real hosted SDK transfer completes through HTTPS when control sockets fail","suiteID":26,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":524,"column":3,"url":"file:///D:/AnLi/test/music_ring_update_test.dart"},"type":"testStart","time":13841}
+{"testID":48,"messageType":"print","message":"[AppUpgradeP2P] {\"at\":\"2026-11-03T14:29:31.956337Z\",\"stage\":\"routing\",\"code\":\"platform_unsupported\"}","type":"print","time":13877}
+{"testID":48,"messageType":"print","message":"[AppUpgradeP2P] {\"at\":\"2026-11-03T14:29:31.965967Z\",\"stage\":\"https\",\"code\":\"http_response\",\"http_status\":200,\"source\":\"service_main\"}","type":"print","time":13888}
+{"testID":48,"messageType":"print","message":"[AppUpgradeP2P] {\"at\":\"2026-11-03T14:29:31.974934Z\",\"stage\":\"performance\",\"code\":\"file_hash_profile\",\"metrics\":{\"full_sha_us\":1429,\"full_sha_scans\":1}}","type":"print","time":13898}
+{"testID":48,"messageType":"print","message":"[AppUpgradeP2P] {\"at\":\"2026-11-03T14:29:31.982913Z\",\"stage\":\"https\",\"code\":\"https_file_promoted\"}","type":"print","time":13900}
+{"testID":48,"messageType":"print","message":"[AppUpgradeP2P] {\"at\":\"2026-11-03T14:29:31.984908Z\",\"stage\":\"final\",\"code\":\"verified_https_hash_reused\"}","type":"print","time":13902}
+{"testID":48,"messageType":"print","message":"[AppUpgradeP2P] {\"at\":\"2026-11-03T14:29:31.986902Z\",\"stage\":\"final\",\"code\":\"apk_verified\",\"verified\":true}","type":"print","time":13905}
+{"testID":48,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":13916}
+{"test":{"id":49,"name":"controller with SDK reaches installer after verified completion","suiteID":26,"groupIDs":[32],"metadata":{"skip":false,"skipReason":null},"line":560,"column":3,"url":"file:///D:/AnLi/test/music_ring_update_test.dart"},"type":"testStart","time":13916}
+{"testID":49,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14008}
+{"suite":{"id":50,"platform":"vm","path":"D:/AnLi/test/release_132_notes_test.dart"},"type":"suite","time":14041}
+{"test":{"id":51,"name":"loading D:/AnLi/test/release_132_notes_test.dart","suiteID":50,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":14041}
+{"testID":31,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":14372}
+{"group":{"id":52,"suiteID":30,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":6,"line":null,"column":null,"url":null},"type":"group","time":14372}
+{"test":{"id":53,"name":"(setUpAll)","suiteID":30,"groupIDs":[52],"metadata":{"skip":false,"skipReason":null},"line":46,"column":3,"url":"file:///D:/AnLi/test/release_106_update_notes_test.dart"},"type":"testStart","time":14372}
+{"testID":53,"messageType":"print","message":"[LiquidGlass] Initializing library...","type":"print","time":14482}
+{"testID":53,"messageType":"print","message":"[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)","type":"print","time":14483}
+{"testID":53,"messageType":"print","message":"[LiquidGlass] Initialization complete.","type":"print","time":14483}
+{"testID":53,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":14484}
+{"test":{"id":54,"name":"official effect icons retain each effect identity even for the same preset","suiteID":30,"groupIDs":[52],"metadata":{"skip":false,"skipReason":null},"line":47,"column":3,"url":"file:///D:/AnLi/test/release_106_update_notes_test.dart"},"type":"testStart","time":14484}
+{"testID":54,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14497}
+{"test":{"id":55,"name":"unknown future notes are read before downloading the APK","suiteID":30,"groupIDs":[52],"metadata":{"skip":false,"skipReason":null},"line":97,"column":3,"url":"file:///D:/AnLi/test/release_106_update_notes_test.dart"},"type":"testStart","time":14498}
+{"testID":55,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14538}
+{"test":{"id":56,"name":"publisher metadata avoids ZIP requests and unknown notes never inherit current-version notes","suiteID":30,"groupIDs":[52],"metadata":{"skip":false,"skipReason":null},"line":118,"column":3,"url":"file:///D:/AnLi/test/release_106_update_notes_test.dart"},"type":"testStart","time":14539}
+{"testID":56,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14543}
+{"test":{"id":57,"name":"ignored Range and changed ETag fail closed without blocking update discovery","suiteID":30,"groupIDs":[52],"metadata":{"skip":false,"skipReason":null},"line":136,"column":3,"url":"file:///D:/AnLi/test/release_106_update_notes_test.dart"},"type":"testStart","time":14544}
+{"testID":57,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14553}
+{"test":{"id":58,"name":"notes with a different version identity or damaged ZIP are rejected","suiteID":30,"groupIDs":[52],"metadata":{"skip":false,"skipReason":null},"line":160,"column":3,"url":"file:///D:/AnLi/test/release_106_update_notes_test.dart"},"type":"testStart","time":14553}
+{"testID":58,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14583}
+{"test":{"id":59,"name":"installed 1.0.6 opens target 99.0.1 notes before installation","suiteID":30,"groupIDs":[52],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":202,"root_column":3,"root_url":"file:///D:/AnLi/test/release_106_update_notes_test.dart"},"type":"testStart","time":14583}
+{"testID":59,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":15675}
+{"test":{"id":60,"name":"(tearDownAll)","suiteID":30,"groupIDs":[52],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":15676}
+{"testID":60,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":15687}
+{"suite":{"id":61,"platform":"vm","path":"D:/AnLi/test/music_home_catalogues_test.dart"},"type":"suite","time":15715}
+{"test":{"id":62,"name":"loading D:/AnLi/test/music_home_catalogues_test.dart","suiteID":61,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":15715}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":51,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":17113}
+{"group":{"id":63,"suiteID":50,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":6,"line":null,"column":null,"url":null},"type":"group","time":17114}
+{"test":{"id":64,"name":"(setUpAll)","suiteID":50,"groupIDs":[63],"metadata":{"skip":false,"skipReason":null},"line":56,"column":3,"url":"file:///D:/AnLi/test/release_132_notes_test.dart"},"type":"testStart","time":17114}
+{"testID":64,"messageType":"print","message":"[LiquidGlass] Initializing library...","type":"print","time":17264}
+{"testID":64,"messageType":"print","message":"[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)","type":"print","time":17265}
+{"testID":64,"messageType":"print","message":"[LiquidGlass] Initialization complete.","type":"print","time":17265}
+{"testID":64,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":17265}
+{"test":{"id":65,"name":"receipt is isolated by package and exact installed build","suiteID":50,"groupIDs":[63],"metadata":{"skip":false,"skipReason":null},"line":134,"column":3,"url":"file:///D:/AnLi/test/release_132_notes_test.dart"},"type":"testStart","time":17266}
+{"testID":65,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":17287}
+{"test":{"id":66,"name":"installed notes present above Router offline, acknowledge only after close and once per launch/build","suiteID":50,"groupIDs":[63],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":160,"root_column":3,"root_url":"file:///D:/AnLi/test/release_132_notes_test.dart"},"type":"testStart","time":17287}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":62,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":18885}
+{"group":{"id":67,"suiteID":61,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":7,"line":null,"column":null,"url":null},"type":"group","time":18885}
+{"test":{"id":68,"name":"public release legal copy describes the current app without a Beta label","suiteID":61,"groupIDs":[67],"metadata":{"skip":false,"skipReason":null},"line":36,"column":3,"url":"file:///D:/AnLi/test/music_home_catalogues_test.dart"},"type":"testStart","time":18885}
+{"testID":68,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":18917}
+{"test":{"id":69,"name":"theme and scene details send the actual upstream identifier fields","suiteID":61,"groupIDs":[67],"metadata":{"skip":false,"skipReason":null},"line":50,"column":3,"url":"file:///D:/AnLi/test/music_home_catalogues_test.dart"},"type":"testStart","time":18917}
+{"testID":69,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":18968}
+{"test":{"id":70,"name":"scene with no music module never falls through to videos, books or generic music","suiteID":61,"groupIDs":[67],"metadata":{"skip":false,"skipReason":null},"line":145,"column":3,"url":"file:///D:/AnLi/test/music_home_catalogues_test.dart"},"type":"testStart","time":18968}
+{"testID":70,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":18980}
+{"test":{"id":71,"name":"theme aliases retain real names/covers and ignore unusable records","suiteID":61,"groupIDs":[67],"metadata":{"skip":false,"skipReason":null},"line":189,"column":3,"url":"file:///D:/AnLi/test/music_home_catalogues_test.dart"},"type":"testStart","time":18981}
+{"testID":71,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":18989}
+{"test":{"id":72,"name":"catalogue account switch discards an in-flight former account response","suiteID":61,"groupIDs":[67],"metadata":{"skip":false,"skipReason":null},"line":214,"column":3,"url":"file:///D:/AnLi/test/music_home_catalogues_test.dart"},"type":"testStart","time":18990}
+{"testID":66,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":19011}
+{"test":{"id":73,"name":"entry and foreground gate notes; interrupted sheet is not consumed","suiteID":50,"groupIDs":[63],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":189,"root_column":3,"root_url":"file:///D:/AnLi/test/release_132_notes_test.dart"},"type":"testStart","time":19011}
+{"testID":72,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":19133}
+{"test":{"id":74,"name":"home consumes only music catalogue routes and filters non-music channels","suiteID":61,"groupIDs":[67],"metadata":{"skip":false,"skipReason":null},"line":272,"column":3,"url":"file:///D:/AnLi/test/music_home_catalogues_test.dart"},"type":"testStart","time":19133}
+{"testID":74,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":19137}
+{"test":{"id":75,"name":"a paused output preference is not represented as a selected real route","suiteID":61,"groupIDs":[67],"metadata":{"skip":false,"skipReason":null},"line":308,"column":3,"url":"file:///D:/AnLi/test/music_home_catalogues_test.dart"},"type":"testStart","time":19138}
+{"testID":75,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":19143}
+{"suite":{"id":76,"platform":"vm","path":"D:/AnLi/test/scene_catalog_contract_test.dart"},"type":"suite","time":19188}
+{"test":{"id":77,"name":"loading D:/AnLi/test/scene_catalog_contract_test.dart","suiteID":76,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":19188}
+{"testID":73,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":19267}
+{"test":{"id":78,"name":"unknown installed versions never inherit bundled notes","suiteID":50,"groupIDs":[63],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":226,"root_column":3,"root_url":"file:///D:/AnLi/test/release_132_notes_test.dart"},"type":"testStart","time":19267}
+{"testID":78,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":19308}
+{"test":{"id":79,"name":"slow version read cannot show notes while backgrounded","suiteID":50,"groupIDs":[63],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":242,"root_column":3,"root_url":"file:///D:/AnLi/test/release_132_notes_test.dart"},"type":"testStart","time":19308}
+{"testID":79,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":19387}
+{"test":{"id":80,"name":"settings independent history entry reads current and both missing versions offline","suiteID":50,"groupIDs":[63],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":258,"root_column":3,"root_url":"file:///D:/AnLi/test/release_132_notes_test.dart"},"type":"testStart","time":19387}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":77,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":20722}
+{"group":{"id":81,"suiteID":76,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":4,"line":null,"column":null,"url":null},"type":"group","time":20722}
+{"test":{"id":82,"name":"grouped live scene module resolves its own audio tag and real tracks","suiteID":76,"groupIDs":[81],"metadata":{"skip":false,"skipReason":null},"line":59,"column":3,"url":"file:///D:/AnLi/test/scene_catalog_contract_test.dart"},"type":"testStart","time":20722}
+{"testID":82,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20787}
+{"test":{"id":83,"name":"catalogue music_tag avoids module guesswork and uses the official scene icon","suiteID":76,"groupIDs":[81],"metadata":{"skip":false,"skipReason":null},"line":105,"column":3,"url":"file:///D:/AnLi/test/scene_catalog_contract_test.dart"},"type":"testStart","time":20788}
+{"testID":83,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20795}
+{"test":{"id":84,"name":"legacy flat module stays supported and non-audio modules are excluded","suiteID":76,"groupIDs":[81],"metadata":{"skip":false,"skipReason":null},"line":140,"column":3,"url":"file:///D:/AnLi/test/scene_catalog_contract_test.dart"},"type":"testStart","time":20795}
+{"testID":84,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20799}
+{"test":{"id":85,"name":"collection-only scene retains global IDs and never sends playlist tags to audio_list","suiteID":76,"groupIDs":[81],"metadata":{"skip":false,"skipReason":null},"line":179,"column":3,"url":"file:///D:/AnLi/test/scene_catalog_contract_test.dart"},"type":"testStart","time":20799}
+{"testID":85,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":20813}
+{"suite":{"id":86,"platform":"vm","path":"D:/AnLi/test/release_147_collection_ui_test.dart"},"type":"suite","time":20840}
+{"test":{"id":87,"name":"loading D:/AnLi/test/release_147_collection_ui_test.dart","suiteID":86,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":20840}
+{"testID":80,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":21152}
+{"test":{"id":88,"name":"(tearDownAll)","suiteID":50,"groupIDs":[63],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":21153}
+{"testID":88,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":21163}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":null}}]
+{"testID":87,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":22509}
+{"group":{"id":89,"suiteID":86,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":4,"line":null,"column":null,"url":null},"type":"group","time":22510}
+{"test":{"id":90,"name":"(setUpAll)","suiteID":86,"groupIDs":[89],"metadata":{"skip":false,"skipReason":null},"line":68,"column":3,"url":"file:///D:/AnLi/test/release_147_collection_ui_test.dart"},"type":"testStart","time":22510}
+{"testID":90,"messageType":"print","message":"[LiquidGlass] Initializing library...","type":"print","time":22531}
+{"testID":90,"messageType":"print","message":"[LiquidGlass] PerformanceMonitor started (budget: 16 ms, threshold: 60 frames)","type":"print","time":22580}
+{"testID":90,"messageType":"print","message":"[LiquidGlass] Initialization complete.","type":"print","time":22582}
+{"testID":90,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":22582}
+{"test":{"id":91,"name":"3000 favorites page/search/membership use the complete owner collection dark=false","suiteID":86,"groupIDs":[89],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":89,"root_column":5,"root_url":"file:///D:/AnLi/test/release_147_collection_ui_test.dart"},"type":"testStart","time":22582}
+{"testID":91,"messageType":"print","message":"WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. ","type":"print","time":23786}
+{"testID":91,"messageType":"print","message":"Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true","type":"print","time":23793}
+{"testID":91,"messageType":"print","message":"Here is the stacktrace from when the database was opened a second time:","type":"print","time":23797}
+{"testID":91,"messageType":"print","message":"#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)","type":"print","time":23797}
+{"testID":91,"messageType":"print","message":"#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)","type":"print","time":23800}
+{"testID":91,"messageType":"print","message":"#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)","type":"print","time":24409}
+{"testID":91,"messageType":"print","message":"#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)","type":"print","time":24410}
+{"testID":91,"messageType":"print","message":"#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:151:7)","type":"print","time":24410}
+{"testID":91,"messageType":"print","message":"#5      PersonalProfileFixture.create (file:///D:/AnLi/test/support/personal_profile_fixture.dart:91:22)","type":"print","time":24410}
+{"testID":91,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":24411}
+{"testID":91,"messageType":"print","message":"#6      main.<anonymous closure> (file:///D:/AnLi/test/release_147_collection_ui_test.dart:95:25)","type":"print","time":24411}
+{"testID":91,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":24411}
+{"testID":91,"messageType":"print","message":"#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)","type":"print","time":24411}
+{"testID":91,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":24412}
+{"testID":91,"messageType":"print","message":"#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)","type":"print","time":24412}
+{"testID":91,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":24412}
+{"testID":91,"messageType":"print","message":"#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)","type":"print","time":24412}
+{"testID":91,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":24412}
+{"testID":91,"messageType":"print","message":"This warning will only appear on debug builds.","type":"print","time":24412}
+{"testID":91,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":24413}
+{"test":{"id":92,"name":"fixed new-song response reveals thirty rows at a time dark=false","suiteID":86,"groupIDs":[89],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":149,"root_column":5,"root_url":"file:///D:/AnLi/test/release_147_collection_ui_test.dart"},"type":"testStart","time":24413}
+{"testID":92,"messageType":"print","message":"WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. ","type":"print","time":25537}
+{"testID":92,"messageType":"print","message":"Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true","type":"print","time":25537}
+{"testID":92,"messageType":"print","message":"Here is the stacktrace from when the database was opened a second time:","type":"print","time":25537}
+{"testID":92,"messageType":"print","message":"#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)","type":"print","time":25538}
+{"testID":92,"messageType":"print","message":"#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)","type":"print","time":25538}
+{"testID":92,"messageType":"print","message":"#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)","type":"print","time":25538}
+{"testID":92,"messageType":"print","message":"#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)","type":"print","time":25538}
+{"testID":92,"messageType":"print","message":"#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:151:7)","type":"print","time":25538}
+{"testID":92,"messageType":"print","message":"#5      PersonalProfileFixture.create (file:///D:/AnLi/test/support/personal_profile_fixture.dart:91:22)","type":"print","time":25538}
+{"testID":92,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":25538}
+{"testID":92,"messageType":"print","message":"#6      main.<anonymous closure> (file:///D:/AnLi/test/release_147_collection_ui_test.dart:154:25)","type":"print","time":25539}
+{"testID":92,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":25539}
+{"testID":92,"messageType":"print","message":"#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)","type":"print","time":25539}
+{"testID":92,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":25539}
+{"testID":92,"messageType":"print","message":"#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)","type":"print","time":25539}
+{"testID":92,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":25539}
+{"testID":92,"messageType":"print","message":"#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)","type":"print","time":25540}
+{"testID":92,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":25540}
+{"testID":92,"messageType":"print","message":"This warning will only appear on debug builds.","type":"print","time":25540}
+{"testID":92,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":25540}
+{"test":{"id":93,"name":"3000 favorites page/search/membership use the complete owner collection dark=true","suiteID":86,"groupIDs":[89],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":89,"root_column":5,"root_url":"file:///D:/AnLi/test/release_147_collection_ui_test.dart"},"type":"testStart","time":25541}
+{"testID":93,"messageType":"print","message":"WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. ","type":"print","time":25949}
+{"testID":93,"messageType":"print","message":"Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true","type":"print","time":25950}
+{"testID":93,"messageType":"print","message":"Here is the stacktrace from when the database was opened a second time:","type":"print","time":25950}
+{"testID":93,"messageType":"print","message":"#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)","type":"print","time":25950}
+{"testID":93,"messageType":"print","message":"#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)","type":"print","time":25950}
+{"testID":93,"messageType":"print","message":"#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)","type":"print","time":25950}
+{"testID":93,"messageType":"print","message":"#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)","type":"print","time":25952}
+{"testID":93,"messageType":"print","message":"#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:151:7)","type":"print","time":25952}
+{"testID":93,"messageType":"print","message":"#5      PersonalProfileFixture.create (file:///D:/AnLi/test/support/personal_profile_fixture.dart:91:22)","type":"print","time":25952}
+{"testID":93,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":25952}
+{"testID":93,"messageType":"print","message":"#6      main.<anonymous closure> (file:///D:/AnLi/test/release_147_collection_ui_test.dart:95:25)","type":"print","time":25953}
+{"testID":93,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":25953}
+{"testID":93,"messageType":"print","message":"#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)","type":"print","time":25953}
+{"testID":93,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":25953}
+{"testID":93,"messageType":"print","message":"#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)","type":"print","time":25953}
+{"testID":93,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":25953}
+{"testID":93,"messageType":"print","message":"#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)","type":"print","time":25953}
+{"testID":93,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":25954}
+{"testID":93,"messageType":"print","message":"This warning will only appear on debug builds.","type":"print","time":25954}
+{"testID":93,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":25954}
+{"test":{"id":94,"name":"fixed new-song response reveals thirty rows at a time dark=true","suiteID":86,"groupIDs":[89],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":149,"root_column":5,"root_url":"file:///D:/AnLi/test/release_147_collection_ui_test.dart"},"type":"testStart","time":25954}
+{"testID":94,"messageType":"print","message":"WARNING (drift): It looks like you've created the database class AppDatabase multiple times. When these two databases use the same QueryExecutor, race conditions will occur and might corrupt the database. ","type":"print","time":26852}
+{"testID":94,"messageType":"print","message":"Try to follow the advice at https://drift.simonbinder.eu/faq/#using-the-database or, if you know what you're doing, set driftRuntimeOptions.dontWarnAboutMultipleDatabases = true","type":"print","time":26852}
+{"testID":94,"messageType":"print","message":"Here is the stacktrace from when the database was opened a second time:","type":"print","time":26852}
+{"testID":94,"messageType":"print","message":"#0      GeneratedDatabase._handleInstantiated (package:drift/src/runtime/api/db_base.dart:96:30)","type":"print","time":26853}
+{"testID":94,"messageType":"print","message":"#1      GeneratedDatabase._whenConstructed (package:drift/src/runtime/api/db_base.dart:73:12)","type":"print","time":26853}
+{"testID":94,"messageType":"print","message":"#2      new GeneratedDatabase (package:drift/src/runtime/api/db_base.dart:64:5)","type":"print","time":26853}
+{"testID":94,"messageType":"print","message":"#3      new _$AppDatabase (package:mesting_music/core/database/app_database.g.dart:3834:36)","type":"print","time":26853}
+{"testID":94,"messageType":"print","message":"#4      new AppDatabase (package:mesting_music/core/database/app_database.dart:151:7)","type":"print","time":26853}
+{"testID":94,"messageType":"print","message":"#5      PersonalProfileFixture.create (file:///D:/AnLi/test/support/personal_profile_fixture.dart:91:22)","type":"print","time":26853}
+{"testID":94,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":26853}
+{"testID":94,"messageType":"print","message":"#6      main.<anonymous closure> (file:///D:/AnLi/test/release_147_collection_ui_test.dart:154:25)","type":"print","time":26854}
+{"testID":94,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":26854}
+{"testID":94,"messageType":"print","message":"#7      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)","type":"print","time":26854}
+{"testID":94,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":26854}
+{"testID":94,"messageType":"print","message":"#8      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1682:5)","type":"print","time":26854}
+{"testID":94,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":26854}
+{"testID":94,"messageType":"print","message":"#9      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)","type":"print","time":26854}
+{"testID":94,"messageType":"print","message":"<asynchronous suspension>","type":"print","time":26854}
+{"testID":94,"messageType":"print","message":"This warning will only appear on debug builds.","type":"print","time":26855}
+{"testID":94,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":26855}
+{"test":{"id":95,"name":"(tearDownAll)","suiteID":86,"groupIDs":[89],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":26855}
+{"testID":95,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":26857}
+{"success":false,"type":"done","time":26895}

@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "D:\AnLi\.codex-artifacts\2026-11-07-archive161-176\archive.py", line 96, in <module>
+    if __name__=='__main__':prepare()
+                            ~~~~~~~^^
+  File "D:\AnLi\.codex-artifacts\2026-11-07-archive161-176\archive.py", line 82, in prepare
+    C.archive_verify(commit,entries)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\AnLi\.codex-artifacts\2026-11-05-github-gitee-150-160\common160.py", line 84, in archive_verify
+    with tarfile.open(fileobj=process.stdout,mode='r|') as archive:
+         ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zyt\AppData\Local\Programs\Python\Python314\Lib\tarfile.py", line 1938, in open
+    t = cls(name, filemode, stream, **kwargs)
+  File "C:\Users\zyt\AppData\Local\Programs\Python\Python314\Lib\tarfile.py", line 1801, in __init__
+    self.firstmember = self.next()
+                       ~~~~~~~~~^^
+  File "C:\Users\zyt\AppData\Local\Programs\Python\Python314\Lib\tarfile.py", line 2852, in next
+    raise ReadError("empty file") from None
+tarfile.ReadError: empty file
