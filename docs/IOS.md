@@ -34,7 +34,10 @@ flutter test test/app_update_test.dart --no-pub
 flutter test integration_test/ios_platform_test.dart --no-pub --flavor beta -d <模拟器 ID>
 flutter build ios --simulator --debug --flavor beta --no-pub
 flutter build ipa --release --flavor beta --no-pub --no-codesign
+tool/verify_ios_archive.sh
 ```
+
+Release 使用 `STRIP_STYLE=non-global` 并显式保留 `_start_server` 链接入口，防止仅 Debug 可用而归档后的 FFI 符号丢失。归档后须检查最终可执行文件的导出表，不能只检查静态库。[Flutter FFI 符号保留说明](https://docs.flutter.dev/platform-integration/legacy-ffi-plugin#stripping-symbols)。
 
 集成测试实际验证 iOS 原生版本读取、Rust 服务启动和搜索、Keychain 读写、本地索引、音频输出、下载保存、应用播放器播放与暂停。测试入口会覆盖模拟器中的可执行文件，验收后应重新安装正常 `lib/main.dart` 构建。
 

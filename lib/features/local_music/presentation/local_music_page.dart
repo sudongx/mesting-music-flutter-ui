@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import '../../music_platform/presentation/song_actions_sheet.dart';
 import '../../../shared/widgets/song_list_tools.dart';
 import '../../../shared/widgets/beta_content_insets.dart';
@@ -244,7 +245,9 @@ class _LocalMusicPageState extends ConsumerState<LocalMusicPage> {
                                     child: Row(
                                       children: [
                                         _ImportButton(
-                                          label: '扫描手机',
+                                          label: defaultTargetPlatform == TargetPlatform.iOS
+                                              ? '选择音乐'
+                                              : '扫描手机',
                                           icon: CupertinoIcons.search_circle,
                                           onPressed: busy
                                               ? null
@@ -393,11 +396,13 @@ class _LocalMusicPageState extends ConsumerState<LocalMusicPage> {
                             ),
                           )
                         else if (state.library.entries.isEmpty)
-                          const SliverToBoxAdapter(
+                          SliverToBoxAdapter(
                             child: _EmptyLibrary(
                               icon: CupertinoIcons.music_albums,
                               title: '把喜欢的音乐留在身边',
-                              message: '扫描手机中的音频，或选择文件与文件夹导入。音乐会保留在这台设备上。',
+                              message: defaultTargetPlatform == TargetPlatform.iOS
+                                  ? '从“文件”选择音频或文件夹，导入后可离线播放。'
+                                  : '扫描手机中的音频，或选择文件与文件夹导入。音乐会保留在这台设备上。',
                             ),
                           )
                         else if (showingFolders && visibleFolders.isEmpty)
