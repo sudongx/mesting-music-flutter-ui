@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import '../../music_platform/qishui/qishui_signer_settings_page.dart';
 import '../../music_platform/qishui/qishui_providers.dart';
 import '../../music_platform/qishui/qishui_account_page.dart';
@@ -39,6 +40,7 @@ class SettingsPage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final platform = ref.watch(platformAccountProvider).value;
+    final androidUpdates = defaultTargetPlatform == TargetPlatform.android;
     final appVersion = ref.watch(appVersionProvider);
     final updateState = ref.watch(appUpdateControllerProvider);
     final topInset = MediaQuery.paddingOf(context).top;
@@ -257,19 +259,28 @@ class SettingsPage extends ConsumerWidget {
                       key: const ValueKey('settings-check-update'),
                       icon: Icons.system_update_rounded,
                       iconColor: const Color(0xFF4A86D8),
-                      title: '版本更新',
-                      subtitle: _updateSubtitle(appVersion, updateState),
+                      title: androidUpdates ? '版本更新' : '应用版本',
+                      subtitle: androidUpdates
+                          ? _updateSubtitle(appVersion, updateState)
+                          : appVersion.when(
+                              data: (v) =>
+                                  '${v.versionName} · 通过 TestFlight 更新',
+                              loading: () => '正在读取版本',
+                              error: (_, _) => '通过 TestFlight 更新',
+                            ),
                       loading: updateState.phase == AppUpdatePhase.checking,
                       highlighted:
                           updateState.phase == AppUpdatePhase.available,
-                      onTap: DistributionChannel.isBeta
+                      onTap: !androidUpdates
+                          ? null
+                          : DistributionChannel.isBeta
                           ? () => checkForUpdatesAndShowSheet(context, ref)
                           : updateState.busy
                           ? null
                           : () => _checkForUpdates(context, ref),
                     ),
                     const _SettingsDivider(),
-                    if (DistributionChannel.isBeta) ...[
+                    if (DistributionChannel.isBeta && androidUpdates) ...[
                       _SettingsTile(
                         key: const ValueKey('settings-release-history'),
                         icon: Icons.history_rounded,

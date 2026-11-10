@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -40,9 +41,9 @@ class PlayerOutputDialog extends ConsumerStatefulWidget {
 
 class _PlayerOutputDialogState extends ConsumerState<PlayerOutputDialog> {
   double? _drag;
-  // Beta opens the real device list immediately; Formal keeps its existing
-  // summary followed by the platform picker. This never initiates a transfer.
-  final bool _devices = DistributionChannel.isBeta;
+  // iOS route selection belongs to its system AirPlay picker.
+  final bool _devices =
+      DistributionChannel.isBeta && defaultTargetPlatform != TargetPlatform.iOS;
   @override
   Widget build(BuildContext context) {
     final output = ref.watch(audioOutputProvider);

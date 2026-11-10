@@ -14,7 +14,9 @@ typedef _StartDart = int Function(int, Pointer<Utf8>);
 /// Calls the upstream C ABI rather than JNI names tied to md3Music's package.
 /// dlopen and server startup run off the UI isolate. Rust binds only loopback.
 int _startNative(String directory) {
-  final library = DynamicLibrary.open('libkugou_server.so');
+  final library = Platform.isIOS
+      ? DynamicLibrary.process()
+      : DynamicLibrary.open('libkugou_server.so');
   final start = library.lookupFunction<_StartNative, _StartDart>(
     'start_server',
   );
@@ -42,33 +44,42 @@ class EmbeddedMusicServer implements MusicServer {
   });
 
   Future<Uri> _start() async {
-    if (!Platform.isAndroid) {
-      throw StateError('音乐平台本机服务目前仅在 Android 版中提供');
+    if (!Platform.isAndroid && !Platform.isIOS) {
+      throw StateError('音乐平台本机服务目前仅在 Android 和 iOS 版中提供');
     }
-    // Install the captured Java class/VM before any Rust module can dispatch an
-    // external request. A missing engine plugin is retried only before dispatch;
-    // no SMS/login is replayed through a second transport after an uncertain send.
-    const network = MethodChannel('com.mesting.music/network');
-    final watch = Stopwatch()..start();
-    try {
-      for (var attempt = 0; ; attempt++) {
-        try {
-          final ready = await network.invokeMethod<bool>('prepareKugou')
-              .timeout(const Duration(seconds: 8));
-          if (ready != true) throw const FormatException('System transport not ready');
-          break;
-        } on MissingPluginException {
-          if (attempt >= 15) rethrow;
-          await Future<void>.delayed(const Duration(milliseconds: 100));
+    if (Platform.isAndroid) {
+      // Install the captured Java class/VM before any Rust module can dispatch an
+      // external request. A missing engine plugin is retried only before dispatch;
+      // no SMS/login is replayed through a second transport after an uncertain send.
+      const network = MethodChannel('com.mesting.music/network');
+      final watch = Stopwatch()..start();
+      try {
+        for (var attempt = 0; ; attempt++) {
+          try {
+            final ready = await network
+                .invokeMethod<bool>('prepareKugou')
+                .timeout(const Duration(seconds: 8));
+            if (ready != true) {
+              throw const FormatException('System transport not ready');
+            }
+            break;
+          } on MissingPluginException {
+            if (attempt >= 15) rethrow;
+            await Future<void>.delayed(const Duration(milliseconds: 100));
+          }
         }
+      } on Object catch (error) {
+        final outcome = classifyMusicNetworkError(error);
+        MusicNetworkDiagnostics.shared.record(
+          platform: 'kugou',
+          operation: MusicNetworkOperation.other,
+          outcome: outcome,
+          phase: MusicDiagnosticPhase.networkPrepare,
+          transport: 'system',
+          elapsedMs: watch.elapsedMilliseconds,
+        );
+        throw MusicTransportException(outcome);
       }
-    } on Object catch (error) {
-      final outcome = classifyMusicNetworkError(error);
-      MusicNetworkDiagnostics.shared.record(platform: 'kugou',
-        operation: MusicNetworkOperation.other, outcome: outcome,
-        phase: MusicDiagnosticPhase.networkPrepare, transport: 'system',
-        elapsedMs: watch.elapsedMilliseconds);
-      throw MusicTransportException(outcome);
     }
     final root = await getApplicationSupportDirectory();
     final directory = Directory('${root.path}/music_platform/runtime');

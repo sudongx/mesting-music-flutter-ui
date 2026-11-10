@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -23,12 +24,20 @@ class _MusicEqualizerPageState extends ConsumerState<MusicEqualizerPage> {
   void initState() {
     super.initState();
     Future.microtask(() {
-      if (mounted) ref.read(musicEqualizerProvider).bind();
+      if (mounted && defaultTargetPlatform != TargetPlatform.iOS) {
+        ref.read(musicEqualizerProvider).bind();
+      }
     });
   }
 
   @override
   Widget build(BuildContext context) {
+    if (defaultTargetPlatform == TargetPlatform.iOS) {
+      return const MusicFeaturePage(
+        title: '均衡器',
+        child: MusicFeatureMessage(message: 'iOS 暂未提供本地均衡器，音乐将以原始音效播放。'),
+      );
+    }
     final controller = ref.watch(musicEqualizerProvider);
     final scheme = Theme.of(context).colorScheme;
     return MusicFeaturePage(

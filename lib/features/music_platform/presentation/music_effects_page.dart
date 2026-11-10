@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import '../qishui/qishui_providers.dart';
 import '../qishui/qishui_effects_page.dart';
 import '../../../shared/widgets/beta_content_insets.dart';
@@ -43,6 +44,12 @@ class _MusicEffectsPageState extends ConsumerState<MusicEffectsPage> {
 
   @override
   Widget build(BuildContext context) {
+    if (defaultTargetPlatform == TargetPlatform.iOS) {
+      return const MusicFeaturePage(
+        title: '音效',
+        child: MusicFeatureMessage(message: 'iOS 暂未提供本地音效，音乐将以原始音效播放。'),
+      );
+    }
     if (ref.watch(usesQishuiProvider)) return const QishuiEffectsPage();
     if (ref.watch(usesNeteaseProvider)) return const MusicEqualizerPage();
     return BetaPageSearchLayout(

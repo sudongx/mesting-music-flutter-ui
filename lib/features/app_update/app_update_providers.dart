@@ -30,7 +30,10 @@ final appUpdatePlatformProvider = Provider<AppUpdatePlatform>(
 
 final appUpdateDownloadTransportProvider =
     Provider<AppUpdateDownloadTransport?>((ref) {
-      if (!DistributionChannel.isBeta) return null;
+      if (!DistributionChannel.isBeta ||
+          defaultTargetPlatform == TargetPlatform.iOS) {
+        return null;
+      }
       final transport = RingAppUpdateTransport(
         directoryProvider: getApplicationSupportDirectory,
       );
@@ -57,6 +60,7 @@ final appVersionProvider = FutureProvider<AppVersionInfo>((ref) {
 });
 
 final autoAppUpdateChecksEnabledProvider = Provider<bool>((ref) {
+  if (defaultTargetPlatform == TargetPlatform.iOS) return false;
   return const bool.fromEnvironment(
     'ENABLE_APP_UPDATE_CHECKS',
     defaultValue: kReleaseMode,
@@ -66,6 +70,7 @@ final autoAppUpdateChecksEnabledProvider = Provider<bool>((ref) {
 /// Installed notes work offline even when the remote update service is down.
 /// Tests opt in explicitly; release builds show each installed build once.
 final autoInstalledReleaseNotesEnabledProvider = Provider<bool>((ref) {
+  if (defaultTargetPlatform == TargetPlatform.iOS) return false;
   return const bool.fromEnvironment(
     'ENABLE_RELEASE_NOTES',
     defaultValue: kReleaseMode,
