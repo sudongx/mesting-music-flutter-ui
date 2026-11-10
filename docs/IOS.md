@@ -47,3 +47,20 @@ flutter build ipa --release --flavor beta --no-pub --no-codesign
 在 Runner 的 Signing & Capabilities 中设置已确认团队和 Bundle ID，使用未上传过的构建号签名归档，再导出 App Store Connect IPA。`--no-codesign` 仅验证设备架构，不能用于上传。发布时仍需根据真实情况填写加密出口合规、测试说明与 App 隐私信息；外部测试是否需要审核以 App Store Connect 实际状态为准。
 
 发布完成以 App Store Connect 中构建处理成功且目标 TestFlight 测试组可用为准。
+
+## 本次自动化结果（2026-11-11）
+
+基于上游 `beta` 的 `649542a`，应用版本 `1.0.90+111`。
+
+| 检查 | 实际结果 |
+| --- | --- |
+| 锁定依赖安装、静态分析 | 通过，分析 0 问题 |
+| 平台可用性、Stable 更新、本地音乐、排版、分享、VIP 测试 | 47 项通过 |
+| Beta 导航、平台回归、1.0.90 集成回归 | 27 项通过 |
+| iPhone 17 Pro / iOS 26.5 原生集成测试 | 3 项通过 |
+| 正常 main 入口的模拟器构建、安装和启动 | 通过 |
+| iOS arm64 Release 无签名归档 | 通过，图标与应用设置验证通过 |
+| 图形界面操作验收 | 等待 Mac 解锁及欢迎页协议确认 |
+| TestFlight 签名、上传和处理 | 未执行，等待正确的团队和应用发布配置 |
+
+无签名归档仅证明设备架构可构建，尚不能安装到实体 iPhone，也不代表已通过 App Store Connect 上传验证。

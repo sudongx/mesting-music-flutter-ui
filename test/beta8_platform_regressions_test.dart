@@ -124,7 +124,12 @@ void main() {
             'hash_high': 'hires',
           },
         }),
-        PlatformAudioQuality.values.toSet(),
+        {
+          PlatformAudioQuality.standard,
+          PlatformAudioQuality.high,
+          PlatformAudioQuality.lossless,
+          PlatformAudioQuality.hiRes,
+        },
       );
       expect(
         PlatformQualityCatalog.parse({

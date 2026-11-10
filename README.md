@@ -1,5 +1,7 @@
 # Mesting Music
 
+本分支新增 iOS Beta 工程，[iOS 构建与验收说明](docs/IOS.md)记录运行方法、平台差异和 TestFlight 发布前置条件。iOS 版本尚未发布。
+
 `beta`源码以1.0.90/code111为基础，新增装扮角色与[八场景渲染实验室](docs/glass-render-lab.md)。这些源码改动尚未作为新的APK发布，实际设备表现仍需验收。下方版本交接与归档说明保留历史记录。
 
 **当前维护代码：1.0.24 / Android code45，开发分支 beta，待手机验收。** 新电脑先读[跨电脑总交接](HANDOFF-GITHUB-2026-10-31-v1.0.24.md)、[接续入口](docs/CONTINUE-BETA.md)与AGENTS.md。
