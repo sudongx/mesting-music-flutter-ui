@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+import '../domain/ios_legal_documents.dart';
 import '../../../shared/widgets/artwork_scroll_frontier.dart';
 import '../../../shared/widgets/beta_content_insets.dart';
 import 'package:flutter/material.dart';
@@ -42,13 +44,13 @@ class LegalDocumentsPage extends StatelessWidget {
               ),
               const SizedBox(height: 24),
               _LegalDocumentLink(
-                document: legalDocumentFor(LegalDocumentType.userAgreement),
+                document: _platformLegalDocumentFor(LegalDocumentType.userAgreement),
                 icon: Icons.menu_book_rounded,
                 onTap: () => context.push('/legal/user-agreement'),
               ),
               const SizedBox(height: 12),
               _LegalDocumentLink(
-                document: legalDocumentFor(LegalDocumentType.privacyPolicy),
+                document: _platformLegalDocumentFor(LegalDocumentType.privacyPolicy),
                 icon: Icons.verified_user_outlined,
                 onTap: () => context.push('/legal/privacy-policy'),
               ),
@@ -85,7 +87,7 @@ class LegalDocumentPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final document = legalDocumentFor(documentType);
+    final document = _platformLegalDocumentFor(documentType);
     final top = MediaQuery.paddingOf(context).top;
     final tokens = context.musicThemeTokens;
     return CustomScrollView(
@@ -308,3 +310,8 @@ void _goBack(BuildContext context) {
     context.go('/music/settings');
   }
 }
+
+LegalDocument _platformLegalDocumentFor(LegalDocumentType type) =>
+    defaultTargetPlatform == TargetPlatform.iOS
+    ? iosLegalDocumentFor(type)
+    : legalDocumentFor(type);
