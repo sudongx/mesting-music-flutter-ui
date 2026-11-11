@@ -1,6 +1,6 @@
 # Mesting Music
 
-本分支新增 iOS Beta 工程，[iOS 构建与验收说明](docs/IOS.md)记录运行方法、平台差异和 TestFlight 发布前置条件。iOS 版本尚未发布。
+本分支新增 iOS Beta 工程，[iOS 构建与验收说明](docs/IOS.md)记录运行方法、平台差异和 TestFlight 发布前置条件。首个 iOS 版本 `1.0.90 (111)` 已开放 TestFlight 内部测试，当前未发布至 App Store。
 
 `beta`源码以1.0.90/code111为基础，新增装扮角色与[八场景渲染实验室](docs/glass-render-lab.md)。这些源码改动尚未作为新的APK发布，实际设备表现仍需验收。下方版本交接与归档说明保留历史记录。
 
